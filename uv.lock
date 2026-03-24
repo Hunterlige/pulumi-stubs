@@ -13,15 +13,7 @@ members = [
     "pulumi-aws-stubs",
     "pulumi-azure-native-stubs",
     "pulumi-gcp-stubs",
-]
-
-[manifest.dependency-groups]
-dev = [
-    { name = "pulumi-aws", specifier = "==7.23.0" },
-    { name = "pulumi-azure-native", specifier = "==3.16.0" },
-    { name = "pulumi-gcp", specifier = "==9.16.0" },
-    { name = "pyright", specifier = ">=1.1.408" },
-    { name = "ruff", specifier = ">=0.15.7" },
+    "pulumi-stubs",
 ]
 
 [[package]]
@@ -481,6 +473,41 @@ wheels = [
 name = "pulumi-gcp-stubs"
 version = "0.1.0"
 source = { editable = "packages/pulumi-gcp-stubs" }
+
+[[package]]
+name = "pulumi-stubs"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pulumi-aws-stubs" },
+    { name = "pulumi-azure-native-stubs" },
+    { name = "pulumi-gcp-stubs" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pulumi-aws" },
+    { name = "pulumi-azure-native" },
+    { name = "pulumi-gcp" },
+    { name = "pyright" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pulumi-aws-stubs", editable = "packages/pulumi-aws-stubs" },
+    { name = "pulumi-azure-native-stubs", editable = "packages/pulumi-azure-native-stubs" },
+    { name = "pulumi-gcp-stubs", editable = "packages/pulumi-gcp-stubs" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pulumi-aws", specifier = "==7.23.0" },
+    { name = "pulumi-azure-native", specifier = "==3.16.0" },
+    { name = "pulumi-gcp", specifier = "==9.16.0" },
+    { name = "pyright", specifier = ">=1.1.408" },
+    { name = "ruff", specifier = ">=0.15.7" },
+]
 
 [[package]]
 name = "pyright"
