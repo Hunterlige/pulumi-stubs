@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,240 +5,223 @@ from typing import Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
+if sys.version_info >= (3, 11): ...
+else: ...
 __all__ = [..., ...]
+
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleArgs:
-    def __init__(__self__, *, folder: pulumi.Input[_builtins.str], custom_config: Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enablement_state: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        folder: pulumi.Input[_builtins.str],
+        custom_config: Optional[
+            pulumi.Input[
+                ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+            ]
+        ] = ...,
+        display_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        enablement_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def folder(self) -> pulumi.Input[_builtins.str]: ...
     @folder.setter
-    def folder(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def folder(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="customConfig")
-    def custom_config(self) -> Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]]:
-        
-        ...
-    
+    def custom_config(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+        ]
+    ]: ...
     @custom_config.setter
-    def custom_config(self, value: Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]]): # -> None:
-        ...
-    
+    def custom_config(
+        self,
+        value: Optional[
+            pulumi.Input[
+                ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="displayName")
-    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="enablementState")
-    def enablement_state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def enablement_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enablement_state.setter
-    def enablement_state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def enablement_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _ManagementFolderSecurityHealthAnalyticsCustomModuleState:
-    def __init__(__self__, *, ancestor_module: Optional[pulumi.Input[_builtins.str]] = ..., custom_config: Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enablement_state: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., last_editor: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., update_time: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        ancestor_module: Optional[pulumi.Input[_builtins.str]] = ...,
+        custom_config: Optional[
+            pulumi.Input[
+                ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+            ]
+        ] = ...,
+        display_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        enablement_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_editor: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        update_time: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ancestorModule")
-    def ancestor_module(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def ancestor_module(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ancestor_module.setter
-    def ancestor_module(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def ancestor_module(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="customConfig")
-    def custom_config(self) -> Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]]:
-        
-        ...
-    
+    def custom_config(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+        ]
+    ]: ...
     @custom_config.setter
-    def custom_config(self, value: Optional[pulumi.Input[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs]]): # -> None:
-        ...
-    
+    def custom_config(
+        self,
+        value: Optional[
+            pulumi.Input[
+                ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="displayName")
-    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @display_name.setter
-    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="enablementState")
-    def enablement_state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def enablement_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @enablement_state.setter
-    def enablement_state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def enablement_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def folder(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @folder.setter
-    def folder(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def folder(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="lastEditor")
-    def last_editor(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def last_editor(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_editor.setter
-    def last_editor(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def last_editor(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
-    def update_time(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token(...)
 class ManagementFolderSecurityHealthAnalyticsCustomModule(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., custom_config: Optional[pulumi.Input[Union[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs, ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict]]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enablement_state: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        custom_config: Optional[
+            pulumi.Input[
+                Union[
+                    ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs,
+                    ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict,
+                ]
+            ]
+        ] = ...,
+        display_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        enablement_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: ManagementFolderSecurityHealthAnalyticsCustomModuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: ManagementFolderSecurityHealthAnalyticsCustomModuleArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., ancestor_module: Optional[pulumi.Input[_builtins.str]] = ..., custom_config: Optional[pulumi.Input[Union[ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs, ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict]]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enablement_state: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., last_editor: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., update_time: Optional[pulumi.Input[_builtins.str]] = ...) -> ManagementFolderSecurityHealthAnalyticsCustomModule:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        ancestor_module: Optional[pulumi.Input[_builtins.str]] = ...,
+        custom_config: Optional[
+            pulumi.Input[
+                Union[
+                    ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs,
+                    ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict,
+                ]
+            ]
+        ] = ...,
+        display_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        enablement_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_editor: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        update_time: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> ManagementFolderSecurityHealthAnalyticsCustomModule: ...
     @_builtins.property
     @pulumi.getter(name="ancestorModule")
-    def ancestor_module(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def ancestor_module(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="customConfig")
-    def custom_config(self) -> pulumi.Output[Optional[outputs.ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfig]]:
-        
-        ...
-    
+    def custom_config(
+        self,
+    ) -> pulumi.Output[
+        Optional[
+            outputs.ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfig
+        ]
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="displayName")
-    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="enablementState")
-    def enablement_state(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def enablement_state(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def folder(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastEditor")
-    def last_editor(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def last_editor(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
-    def update_time(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def update_time(self) -> pulumi.Output[_builtins.str]: ...

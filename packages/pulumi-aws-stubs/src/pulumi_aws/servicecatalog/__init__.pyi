@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -30,4 +28,3 @@ from .tag_option import *
 from .tag_option_resource_association import *
 from ._inputs import *
 from . import outputs
-

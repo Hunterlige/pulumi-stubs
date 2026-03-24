@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -13,4 +11,3 @@ from .runtime_template_iam_policy import *
 from .schedule import *
 from ._inputs import *
 from . import outputs
-

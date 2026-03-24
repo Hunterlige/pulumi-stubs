@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,178 +5,157 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['SourceIamBindingArgs', 'SourceIamBinding']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["SourceIamBindingArgs", "SourceIamBinding"]
+
 @pulumi.input_type
 class SourceIamBindingArgs:
-    def __init__(__self__, *, members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], organization: pulumi.Input[_builtins.str], role: pulumi.Input[_builtins.str], source: pulumi.Input[_builtins.str], condition: Optional[pulumi.Input[SourceIamBindingConditionArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        organization: pulumi.Input[_builtins.str],
+        role: pulumi.Input[_builtins.str],
+        source: pulumi.Input[_builtins.str],
+        condition: Optional[pulumi.Input[SourceIamBindingConditionArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        ...
-    
+    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @members.setter
-    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def organization(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def organization(self) -> pulumi.Input[_builtins.str]: ...
     @organization.setter
-    def organization(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def organization(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def role(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def source(self) -> pulumi.Input[_builtins.str]: ...
     @source.setter
-    def source(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[SourceIamBindingConditionArgs]]:
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[SourceIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[SourceIamBindingConditionArgs]]): # -> None:
-        ...
-    
-
+    def condition(
+        self, value: Optional[pulumi.Input[SourceIamBindingConditionArgs]]
+    ): ...
 
 @pulumi.input_type
 class _SourceIamBindingState:
-    def __init__(__self__, *, condition: Optional[pulumi.Input[SourceIamBindingConditionArgs]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., organization: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        condition: Optional[pulumi.Input[SourceIamBindingConditionArgs]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        organization: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        source: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[SourceIamBindingConditionArgs]]:
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[SourceIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[SourceIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[SourceIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        ...
-    
+    def members(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @members.setter
-    def members(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def members(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def organization(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def organization(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @organization.setter
-    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def organization(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def source(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source.setter
-    def source(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def source(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token(...)
 class SourceIamBinding(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[SourceIamBindingConditionArgs, SourceIamBindingConditionArgsDict]]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., organization: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[SourceIamBindingConditionArgs, SourceIamBindingConditionArgsDict]
+            ]
+        ] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        organization: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        source: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: SourceIamBindingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: SourceIamBindingArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[SourceIamBindingConditionArgs, SourceIamBindingConditionArgsDict]]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., organization: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ...) -> SourceIamBinding:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[SourceIamBindingConditionArgs, SourceIamBindingConditionArgsDict]
+            ]
+        ] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        organization: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        source: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> SourceIamBinding: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> pulumi.Output[Optional[outputs.SourceIamBindingCondition]]:
-        ...
-    
+    def condition(
+        self,
+    ) -> pulumi.Output[Optional[outputs.SourceIamBindingCondition]]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def etag(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Output[Sequence[_builtins.str]]:
-        ...
-    
+    def members(self) -> pulumi.Output[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def organization(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def organization(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def role(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
-
-
+    def source(self) -> pulumi.Output[_builtins.str]: ...

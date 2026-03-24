@@ -1,62 +1,38 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Any, Optional
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['RepositoryExternalConnections', 'RepositoryUpstream']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["RepositoryExternalConnections", "RepositoryUpstream"]
+
 @pulumi.output_type
 class RepositoryExternalConnections(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, external_connection_name: _builtins.str, package_format: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        external_connection_name: _builtins.str,
+        package_format: Optional[_builtins.str] = ...,
+        status: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="externalConnectionName")
-    def external_connection_name(self) -> _builtins.str:
-        
-        ...
-    
+    def external_connection_name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="packageFormat")
-    def package_format(self) -> Optional[_builtins.str]:
-        ...
-    
+    def package_format(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> Optional[_builtins.str]:
-        ...
-    
-
+    def status(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class RepositoryUpstream(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, repository_name: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(__self__, *, repository_name: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter(name="repositoryName")
-    def repository_name(self) -> _builtins.str:
-        
-        ...
-    
-
-
+    def repository_name(self) -> _builtins.str: ...

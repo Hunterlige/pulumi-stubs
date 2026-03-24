@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -28,4 +26,3 @@ from .service_perimeter_resource import *
 from .service_perimeters import *
 from ._inputs import *
 from . import outputs
-

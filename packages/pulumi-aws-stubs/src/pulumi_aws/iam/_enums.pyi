@@ -1,10 +1,9 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['ManagedPolicy', 'PolicyDocumentVersion', 'PolicyStatementEffect']
+__all__ = ["ManagedPolicy", "PolicyDocumentVersion", "PolicyStatementEffect"]
+
 @pulumi.type_token("aws:iam/ManagedPolicy:ManagedPolicy")
 class ManagedPolicy(_builtins.str, Enum):
     API_GATEWAY_SERVICE_ROLE_POLICY = ...
@@ -1170,18 +1169,12 @@ class ManagedPolicy(_builtins.str, Enum):
     WELL_ARCHITECTED_CONSOLE_FULL_ACCESS = ...
     WELL_ARCHITECTED_CONSOLE_READ_ONLY_ACCESS = ...
 
-
 @pulumi.type_token(...)
 class PolicyDocumentVersion(_builtins.str, Enum):
-    
     POLICY_DOCUMENT_VERSION_2012_10_17 = ...
     POLICY_DOCUMENT_VERSION_2008_10_17 = ...
 
-
 @pulumi.type_token(...)
 class PolicyStatementEffect(_builtins.str, Enum):
-    
     ALLOW = ...
     DENY = ...
-
-

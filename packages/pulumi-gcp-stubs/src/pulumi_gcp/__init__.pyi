@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 import pulumi_gcp.accessapproval as __accessapproval
@@ -283,5 +281,4 @@ if typing.TYPE_CHECKING:
     workbench = __workbench
     workflows = __workflows
     workstations = __workstations
-else:
-    ...
+else: ...

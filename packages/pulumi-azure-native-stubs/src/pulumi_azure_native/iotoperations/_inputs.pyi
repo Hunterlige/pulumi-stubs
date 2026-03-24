@@ -1,3730 +1,3785 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Any, Mapping, NotRequired, Optional, Sequence, TypedDict, Union
 from ._enums import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['AdvancedSettingsArgs', 'AdvancedSettingsArgsDict', 'AkriConnectorTemplateAioMetadataArgs', 'AkriConnectorTemplateAioMetadataArgsDict', 'AkriConnectorTemplateBucketizedAllocationArgs', 'AkriConnectorTemplateBucketizedAllocationArgsDict', ..., ..., 'AkriConnectorTemplateDeviceInboundEndpointTypeArgs', ..., 'AkriConnectorTemplateDiagnosticsArgs', 'AkriConnectorTemplateDiagnosticsArgsDict', 'AkriConnectorTemplateHelmAdvancedConfigurationArgs', ..., 'AkriConnectorTemplateHelmAuthSecretRefArgs', 'AkriConnectorTemplateHelmAuthSecretRefArgsDict', 'AkriConnectorTemplateHelmConfigurationSettingsArgs', ..., 'AkriConnectorTemplateHelmConfigurationArgs', 'AkriConnectorTemplateHelmConfigurationArgsDict', ..., ..., 'AkriConnectorTemplateHelmContainerRegistryArgs', 'AkriConnectorTemplateHelmContainerRegistryArgsDict', 'AkriConnectorTemplateHelmDeleteConfigurationArgs', ..., 'AkriConnectorTemplateHelmInstallConfigurationArgs', ..., 'AkriConnectorTemplateHelmRegistryEndpointRefArgs', ..., 'AkriConnectorTemplateHelmUpgradeConfigurationArgs', ..., 'AkriConnectorTemplateManagedConfigurationArgs', 'AkriConnectorTemplateManagedConfigurationArgsDict', 'AkriConnectorTemplatePersistentVolumeClaimArgs', 'AkriConnectorTemplatePersistentVolumeClaimArgsDict', 'AkriConnectorTemplatePropertiesArgs', 'AkriConnectorTemplatePropertiesArgsDict', ..., ..., 'AkriConnectorTemplateRuntimeImageConfigurationArgs', ..., ..., ..., 'AkriConnectorTemplateTrustListArgs', 'AkriConnectorTemplateTrustListArgsDict', 'AkriConnectorsContainerRegistrySettingsArgs', 'AkriConnectorsContainerRegistrySettingsArgsDict', 'AkriConnectorsContainerRegistryArgs', 'AkriConnectorsContainerRegistryArgsDict', 'AkriConnectorsDiagnosticsLogsArgs', 'AkriConnectorsDiagnosticsLogsArgsDict', 'AkriConnectorsDigestArgs', 'AkriConnectorsDigestArgsDict', 'AkriConnectorsImagePullSecretArgs', 'AkriConnectorsImagePullSecretArgsDict', 'AkriConnectorsMqttConnectionConfigurationArgs', 'AkriConnectorsMqttConnectionConfigurationArgsDict', 'AkriConnectorsRegistryEndpointRefArgs', 'AkriConnectorsRegistryEndpointRefArgsDict', 'AkriConnectorsSecretArgs', 'AkriConnectorsSecretArgsDict', 'AkriConnectorsServiceAccountAuthenticationArgs', 'AkriConnectorsServiceAccountAuthenticationArgsDict', 'AkriConnectorsServiceAccountTokenSettingsArgs', 'AkriConnectorsServiceAccountTokenSettingsArgsDict', 'AkriConnectorsTagArgs', 'AkriConnectorsTagArgsDict', 'AuthorizationConfigArgs', 'AuthorizationConfigArgsDict', 'AuthorizationRuleArgs', 'AuthorizationRuleArgsDict', 'BackendChainArgs', 'BackendChainArgsDict', 'BatchingConfigurationArgs', 'BatchingConfigurationArgsDict', 'BrokerAuthenticationPropertiesArgs', 'BrokerAuthenticationPropertiesArgsDict', 'BrokerAuthenticatorCustomAuthArgs', 'BrokerAuthenticatorCustomAuthArgsDict', 'BrokerAuthenticatorMethodCustomArgs', 'BrokerAuthenticatorMethodCustomArgsDict', 'BrokerAuthenticatorMethodSatArgs', 'BrokerAuthenticatorMethodSatArgsDict', 'BrokerAuthenticatorMethodX509AttributesArgs', 'BrokerAuthenticatorMethodX509AttributesArgsDict', 'BrokerAuthenticatorMethodX509Args', 'BrokerAuthenticatorMethodX509ArgsDict', 'BrokerAuthenticatorMethodsArgs', 'BrokerAuthenticatorMethodsArgsDict', 'BrokerAuthorizationPropertiesArgs', 'BrokerAuthorizationPropertiesArgsDict', 'BrokerDiagnosticsArgs', 'BrokerDiagnosticsArgsDict', 'BrokerListenerPropertiesArgs', 'BrokerListenerPropertiesArgsDict', 'BrokerPropertiesArgs', 'BrokerPropertiesArgsDict', 'BrokerResourceRuleArgs', 'BrokerResourceRuleArgsDict', 'CardinalityArgs', 'CardinalityArgsDict', 'CertManagerCertOptionsArgs', 'CertManagerCertOptionsArgsDict', 'CertManagerCertificateSpecArgs', 'CertManagerCertificateSpecArgsDict', 'CertManagerIssuerRefArgs', 'CertManagerIssuerRefArgsDict', 'CertManagerPrivateKeyArgs', 'CertManagerPrivateKeyArgsDict', 'ClientConfigArgs', 'ClientConfigArgsDict', 'DataflowBuiltInTransformationDatasetArgs', 'DataflowBuiltInTransformationDatasetArgsDict', 'DataflowBuiltInTransformationFilterArgs', 'DataflowBuiltInTransformationFilterArgsDict', 'DataflowBuiltInTransformationMapArgs', 'DataflowBuiltInTransformationMapArgsDict', 'DataflowBuiltInTransformationSettingsArgs', 'DataflowBuiltInTransformationSettingsArgsDict', 'DataflowDestinationOperationSettingsArgs', 'DataflowDestinationOperationSettingsArgsDict', 'DataflowEndpointAuthenticationAccessTokenArgs', 'DataflowEndpointAuthenticationAccessTokenArgsDict', 'DataflowEndpointAuthenticationSaslArgs', 'DataflowEndpointAuthenticationSaslArgsDict', ..., ..., ..., ..., ..., ..., 'DataflowEndpointAuthenticationX509Args', 'DataflowEndpointAuthenticationX509ArgsDict', 'DataflowEndpointDataExplorerAuthenticationArgs', 'DataflowEndpointDataExplorerAuthenticationArgsDict', 'DataflowEndpointDataExplorerArgs', 'DataflowEndpointDataExplorerArgsDict', 'DataflowEndpointDataLakeStorageAuthenticationArgs', ..., 'DataflowEndpointDataLakeStorageArgs', 'DataflowEndpointDataLakeStorageArgsDict', 'DataflowEndpointFabricOneLakeAuthenticationArgs', ..., 'DataflowEndpointFabricOneLakeNamesArgs', 'DataflowEndpointFabricOneLakeNamesArgsDict', 'DataflowEndpointFabricOneLakeArgs', 'DataflowEndpointFabricOneLakeArgsDict', 'DataflowEndpointKafkaAuthenticationArgs', 'DataflowEndpointKafkaAuthenticationArgsDict', 'DataflowEndpointKafkaBatchingArgs', 'DataflowEndpointKafkaBatchingArgsDict', 'DataflowEndpointKafkaArgs', 'DataflowEndpointKafkaArgsDict', 'DataflowEndpointLocalStorageArgs', 'DataflowEndpointLocalStorageArgsDict', 'DataflowEndpointMqttAuthenticationArgs', 'DataflowEndpointMqttAuthenticationArgsDict', 'DataflowEndpointMqttArgs', 'DataflowEndpointMqttArgsDict', 'DataflowEndpointPropertiesArgs', 'DataflowEndpointPropertiesArgsDict', 'DataflowGraphConnectionInputArgs', 'DataflowGraphConnectionInputArgsDict', 'DataflowGraphConnectionOutputArgs', 'DataflowGraphConnectionOutputArgsDict', 'DataflowGraphConnectionSchemaSettingsArgs', 'DataflowGraphConnectionSchemaSettingsArgsDict', 'DataflowGraphDestinationNodeSettingsArgs', 'DataflowGraphDestinationNodeSettingsArgsDict', 'DataflowGraphDestinationNodeArgs', 'DataflowGraphDestinationNodeArgsDict', 'DataflowGraphDestinationSchemaSettingsArgs', 'DataflowGraphDestinationSchemaSettingsArgsDict', 'DataflowGraphGraphNodeConfigurationArgs', 'DataflowGraphGraphNodeConfigurationArgsDict', 'DataflowGraphGraphNodeArgs', 'DataflowGraphGraphNodeArgsDict', 'DataflowGraphNodeConnectionArgs', 'DataflowGraphNodeConnectionArgsDict', 'DataflowGraphNodeGraphSettingsArgs', 'DataflowGraphNodeGraphSettingsArgsDict', 'DataflowGraphPropertiesArgs', 'DataflowGraphPropertiesArgsDict', 'DataflowGraphSourceNodeArgs', 'DataflowGraphSourceNodeArgsDict', 'DataflowGraphSourceSettingsArgs', 'DataflowGraphSourceSettingsArgsDict', 'DataflowOperationArgs', 'DataflowOperationArgsDict', 'DataflowProfilePropertiesArgs', 'DataflowProfilePropertiesArgsDict', 'DataflowPropertiesArgs', 'DataflowPropertiesArgsDict', 'DataflowSourceOperationSettingsArgs', 'DataflowSourceOperationSettingsArgsDict', 'DiagnosticsLogsArgs', 'DiagnosticsLogsArgsDict', 'DiskBackedMessageBufferArgs', 'DiskBackedMessageBufferArgsDict', 'ExtendedLocationArgs', 'ExtendedLocationArgsDict', 'FrontendArgs', 'FrontendArgsDict', 'GenerateResourceLimitsArgs', 'GenerateResourceLimitsArgsDict', 'InstancePropertiesArgs', 'InstancePropertiesArgsDict', 'KubernetesReferenceArgs', 'KubernetesReferenceArgsDict', 'ListenerPortArgs', 'ListenerPortArgsDict', 'LocalKubernetesReferenceArgs', 'LocalKubernetesReferenceArgsDict', 'ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'MetricsArgs', 'MetricsArgsDict', 'PrincipalDefinitionArgs', 'PrincipalDefinitionArgsDict', 'ProfileDiagnosticsArgs', 'ProfileDiagnosticsArgsDict', 'RegistryEndpointAnonymousAuthenticationArgs', 'RegistryEndpointAnonymousAuthenticationArgsDict', ..., ..., 'RegistryEndpointArtifactPullSecretSettingsArgs', 'RegistryEndpointArtifactPullSecretSettingsArgsDict', 'RegistryEndpointPropertiesArgs', 'RegistryEndpointPropertiesArgsDict', ..., ..., ..., ..., 'RegistryEndpointTrustedSettingsArgs', 'RegistryEndpointTrustedSettingsArgsDict', 'RegistryEndpointTrustedSigningKeyConfigMapArgs', 'RegistryEndpointTrustedSigningKeyConfigMapArgsDict', 'RegistryEndpointTrustedSigningKeySecretArgs', 'RegistryEndpointTrustedSigningKeySecretArgsDict', ..., ..., ..., ..., 'SanForCertArgs', 'SanForCertArgsDict', 'SchemaRegistryRefArgs', 'SchemaRegistryRefArgsDict', 'SelfCheckArgs', 'SelfCheckArgsDict', 'SelfTracingArgs', 'SelfTracingArgsDict', 'StateStoreResourceRuleArgs', 'StateStoreResourceRuleArgsDict', 'SubscriberQueueLimitArgs', 'SubscriberQueueLimitArgsDict', 'TlsCertMethodArgs', 'TlsCertMethodArgsDict', 'TlsPropertiesArgs', 'TlsPropertiesArgsDict', 'TracesArgs', 'TracesArgsDict', 'VolumeClaimResourceRequirementsArgs', 'VolumeClaimResourceRequirementsArgsDict', 'VolumeClaimSpecSelectorMatchExpressionsArgs', 'VolumeClaimSpecSelectorMatchExpressionsArgsDict', 'VolumeClaimSpecSelectorArgs', 'VolumeClaimSpecSelectorArgsDict', 'VolumeClaimSpecArgs', 'VolumeClaimSpecArgsDict', 'X509ManualCertificateArgs', 'X509ManualCertificateArgsDict']
-class AdvancedSettingsArgsDict(TypedDict):
-    
-    clients: NotRequired[pulumi.Input[ClientConfigArgsDict]]
-    encrypt_internal_traffic: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-    internal_certs: NotRequired[pulumi.Input[CertManagerCertOptionsArgsDict]]
+"""
+This type stub file was generated by pyright.
+"""
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "AdvancedSettingsArgs",
+    "AdvancedSettingsArgsDict",
+    "AkriConnectorTemplateAioMetadataArgs",
+    "AkriConnectorTemplateAioMetadataArgsDict",
+    "AkriConnectorTemplateBucketizedAllocationArgs",
+    "AkriConnectorTemplateBucketizedAllocationArgsDict",
+    ...,
+    ...,
+    "AkriConnectorTemplateDeviceInboundEndpointTypeArgs",
+    ...,
+    "AkriConnectorTemplateDiagnosticsArgs",
+    "AkriConnectorTemplateDiagnosticsArgsDict",
+    "AkriConnectorTemplateHelmAdvancedConfigurationArgs",
+    ...,
+    "AkriConnectorTemplateHelmAuthSecretRefArgs",
+    "AkriConnectorTemplateHelmAuthSecretRefArgsDict",
+    "AkriConnectorTemplateHelmConfigurationSettingsArgs",
+    ...,
+    "AkriConnectorTemplateHelmConfigurationArgs",
+    "AkriConnectorTemplateHelmConfigurationArgsDict",
+    ...,
+    ...,
+    "AkriConnectorTemplateHelmContainerRegistryArgs",
+    "AkriConnectorTemplateHelmContainerRegistryArgsDict",
+    "AkriConnectorTemplateHelmDeleteConfigurationArgs",
+    ...,
+    "AkriConnectorTemplateHelmInstallConfigurationArgs",
+    ...,
+    "AkriConnectorTemplateHelmRegistryEndpointRefArgs",
+    ...,
+    "AkriConnectorTemplateHelmUpgradeConfigurationArgs",
+    ...,
+    "AkriConnectorTemplateManagedConfigurationArgs",
+    "AkriConnectorTemplateManagedConfigurationArgsDict",
+    "AkriConnectorTemplatePersistentVolumeClaimArgs",
+    "AkriConnectorTemplatePersistentVolumeClaimArgsDict",
+    "AkriConnectorTemplatePropertiesArgs",
+    "AkriConnectorTemplatePropertiesArgsDict",
+    ...,
+    ...,
+    "AkriConnectorTemplateRuntimeImageConfigurationArgs",
+    ...,
+    ...,
+    ...,
+    "AkriConnectorTemplateTrustListArgs",
+    "AkriConnectorTemplateTrustListArgsDict",
+    "AkriConnectorsContainerRegistrySettingsArgs",
+    "AkriConnectorsContainerRegistrySettingsArgsDict",
+    "AkriConnectorsContainerRegistryArgs",
+    "AkriConnectorsContainerRegistryArgsDict",
+    "AkriConnectorsDiagnosticsLogsArgs",
+    "AkriConnectorsDiagnosticsLogsArgsDict",
+    "AkriConnectorsDigestArgs",
+    "AkriConnectorsDigestArgsDict",
+    "AkriConnectorsImagePullSecretArgs",
+    "AkriConnectorsImagePullSecretArgsDict",
+    "AkriConnectorsMqttConnectionConfigurationArgs",
+    "AkriConnectorsMqttConnectionConfigurationArgsDict",
+    "AkriConnectorsRegistryEndpointRefArgs",
+    "AkriConnectorsRegistryEndpointRefArgsDict",
+    "AkriConnectorsSecretArgs",
+    "AkriConnectorsSecretArgsDict",
+    "AkriConnectorsServiceAccountAuthenticationArgs",
+    "AkriConnectorsServiceAccountAuthenticationArgsDict",
+    "AkriConnectorsServiceAccountTokenSettingsArgs",
+    "AkriConnectorsServiceAccountTokenSettingsArgsDict",
+    "AkriConnectorsTagArgs",
+    "AkriConnectorsTagArgsDict",
+    "AuthorizationConfigArgs",
+    "AuthorizationConfigArgsDict",
+    "AuthorizationRuleArgs",
+    "AuthorizationRuleArgsDict",
+    "BackendChainArgs",
+    "BackendChainArgsDict",
+    "BatchingConfigurationArgs",
+    "BatchingConfigurationArgsDict",
+    "BrokerAuthenticationPropertiesArgs",
+    "BrokerAuthenticationPropertiesArgsDict",
+    "BrokerAuthenticatorCustomAuthArgs",
+    "BrokerAuthenticatorCustomAuthArgsDict",
+    "BrokerAuthenticatorMethodCustomArgs",
+    "BrokerAuthenticatorMethodCustomArgsDict",
+    "BrokerAuthenticatorMethodSatArgs",
+    "BrokerAuthenticatorMethodSatArgsDict",
+    "BrokerAuthenticatorMethodX509AttributesArgs",
+    "BrokerAuthenticatorMethodX509AttributesArgsDict",
+    "BrokerAuthenticatorMethodX509Args",
+    "BrokerAuthenticatorMethodX509ArgsDict",
+    "BrokerAuthenticatorMethodsArgs",
+    "BrokerAuthenticatorMethodsArgsDict",
+    "BrokerAuthorizationPropertiesArgs",
+    "BrokerAuthorizationPropertiesArgsDict",
+    "BrokerDiagnosticsArgs",
+    "BrokerDiagnosticsArgsDict",
+    "BrokerListenerPropertiesArgs",
+    "BrokerListenerPropertiesArgsDict",
+    "BrokerPropertiesArgs",
+    "BrokerPropertiesArgsDict",
+    "BrokerResourceRuleArgs",
+    "BrokerResourceRuleArgsDict",
+    "CardinalityArgs",
+    "CardinalityArgsDict",
+    "CertManagerCertOptionsArgs",
+    "CertManagerCertOptionsArgsDict",
+    "CertManagerCertificateSpecArgs",
+    "CertManagerCertificateSpecArgsDict",
+    "CertManagerIssuerRefArgs",
+    "CertManagerIssuerRefArgsDict",
+    "CertManagerPrivateKeyArgs",
+    "CertManagerPrivateKeyArgsDict",
+    "ClientConfigArgs",
+    "ClientConfigArgsDict",
+    "DataflowBuiltInTransformationDatasetArgs",
+    "DataflowBuiltInTransformationDatasetArgsDict",
+    "DataflowBuiltInTransformationFilterArgs",
+    "DataflowBuiltInTransformationFilterArgsDict",
+    "DataflowBuiltInTransformationMapArgs",
+    "DataflowBuiltInTransformationMapArgsDict",
+    "DataflowBuiltInTransformationSettingsArgs",
+    "DataflowBuiltInTransformationSettingsArgsDict",
+    "DataflowDestinationOperationSettingsArgs",
+    "DataflowDestinationOperationSettingsArgsDict",
+    "DataflowEndpointAuthenticationAccessTokenArgs",
+    "DataflowEndpointAuthenticationAccessTokenArgsDict",
+    "DataflowEndpointAuthenticationSaslArgs",
+    "DataflowEndpointAuthenticationSaslArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "DataflowEndpointAuthenticationX509Args",
+    "DataflowEndpointAuthenticationX509ArgsDict",
+    "DataflowEndpointDataExplorerAuthenticationArgs",
+    "DataflowEndpointDataExplorerAuthenticationArgsDict",
+    "DataflowEndpointDataExplorerArgs",
+    "DataflowEndpointDataExplorerArgsDict",
+    "DataflowEndpointDataLakeStorageAuthenticationArgs",
+    ...,
+    "DataflowEndpointDataLakeStorageArgs",
+    "DataflowEndpointDataLakeStorageArgsDict",
+    "DataflowEndpointFabricOneLakeAuthenticationArgs",
+    ...,
+    "DataflowEndpointFabricOneLakeNamesArgs",
+    "DataflowEndpointFabricOneLakeNamesArgsDict",
+    "DataflowEndpointFabricOneLakeArgs",
+    "DataflowEndpointFabricOneLakeArgsDict",
+    "DataflowEndpointKafkaAuthenticationArgs",
+    "DataflowEndpointKafkaAuthenticationArgsDict",
+    "DataflowEndpointKafkaBatchingArgs",
+    "DataflowEndpointKafkaBatchingArgsDict",
+    "DataflowEndpointKafkaArgs",
+    "DataflowEndpointKafkaArgsDict",
+    "DataflowEndpointLocalStorageArgs",
+    "DataflowEndpointLocalStorageArgsDict",
+    "DataflowEndpointMqttAuthenticationArgs",
+    "DataflowEndpointMqttAuthenticationArgsDict",
+    "DataflowEndpointMqttArgs",
+    "DataflowEndpointMqttArgsDict",
+    "DataflowEndpointPropertiesArgs",
+    "DataflowEndpointPropertiesArgsDict",
+    "DataflowGraphConnectionInputArgs",
+    "DataflowGraphConnectionInputArgsDict",
+    "DataflowGraphConnectionOutputArgs",
+    "DataflowGraphConnectionOutputArgsDict",
+    "DataflowGraphConnectionSchemaSettingsArgs",
+    "DataflowGraphConnectionSchemaSettingsArgsDict",
+    "DataflowGraphDestinationNodeSettingsArgs",
+    "DataflowGraphDestinationNodeSettingsArgsDict",
+    "DataflowGraphDestinationNodeArgs",
+    "DataflowGraphDestinationNodeArgsDict",
+    "DataflowGraphDestinationSchemaSettingsArgs",
+    "DataflowGraphDestinationSchemaSettingsArgsDict",
+    "DataflowGraphGraphNodeConfigurationArgs",
+    "DataflowGraphGraphNodeConfigurationArgsDict",
+    "DataflowGraphGraphNodeArgs",
+    "DataflowGraphGraphNodeArgsDict",
+    "DataflowGraphNodeConnectionArgs",
+    "DataflowGraphNodeConnectionArgsDict",
+    "DataflowGraphNodeGraphSettingsArgs",
+    "DataflowGraphNodeGraphSettingsArgsDict",
+    "DataflowGraphPropertiesArgs",
+    "DataflowGraphPropertiesArgsDict",
+    "DataflowGraphSourceNodeArgs",
+    "DataflowGraphSourceNodeArgsDict",
+    "DataflowGraphSourceSettingsArgs",
+    "DataflowGraphSourceSettingsArgsDict",
+    "DataflowOperationArgs",
+    "DataflowOperationArgsDict",
+    "DataflowProfilePropertiesArgs",
+    "DataflowProfilePropertiesArgsDict",
+    "DataflowPropertiesArgs",
+    "DataflowPropertiesArgsDict",
+    "DataflowSourceOperationSettingsArgs",
+    "DataflowSourceOperationSettingsArgsDict",
+    "DiagnosticsLogsArgs",
+    "DiagnosticsLogsArgsDict",
+    "DiskBackedMessageBufferArgs",
+    "DiskBackedMessageBufferArgsDict",
+    "ExtendedLocationArgs",
+    "ExtendedLocationArgsDict",
+    "FrontendArgs",
+    "FrontendArgsDict",
+    "GenerateResourceLimitsArgs",
+    "GenerateResourceLimitsArgsDict",
+    "InstancePropertiesArgs",
+    "InstancePropertiesArgsDict",
+    "KubernetesReferenceArgs",
+    "KubernetesReferenceArgsDict",
+    "ListenerPortArgs",
+    "ListenerPortArgsDict",
+    "LocalKubernetesReferenceArgs",
+    "LocalKubernetesReferenceArgsDict",
+    "ManagedServiceIdentityArgs",
+    "ManagedServiceIdentityArgsDict",
+    "MetricsArgs",
+    "MetricsArgsDict",
+    "PrincipalDefinitionArgs",
+    "PrincipalDefinitionArgsDict",
+    "ProfileDiagnosticsArgs",
+    "ProfileDiagnosticsArgsDict",
+    "RegistryEndpointAnonymousAuthenticationArgs",
+    "RegistryEndpointAnonymousAuthenticationArgsDict",
+    ...,
+    ...,
+    "RegistryEndpointArtifactPullSecretSettingsArgs",
+    "RegistryEndpointArtifactPullSecretSettingsArgsDict",
+    "RegistryEndpointPropertiesArgs",
+    "RegistryEndpointPropertiesArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "RegistryEndpointTrustedSettingsArgs",
+    "RegistryEndpointTrustedSettingsArgsDict",
+    "RegistryEndpointTrustedSigningKeyConfigMapArgs",
+    "RegistryEndpointTrustedSigningKeyConfigMapArgsDict",
+    "RegistryEndpointTrustedSigningKeySecretArgs",
+    "RegistryEndpointTrustedSigningKeySecretArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "SanForCertArgs",
+    "SanForCertArgsDict",
+    "SchemaRegistryRefArgs",
+    "SchemaRegistryRefArgsDict",
+    "SelfCheckArgs",
+    "SelfCheckArgsDict",
+    "SelfTracingArgs",
+    "SelfTracingArgsDict",
+    "StateStoreResourceRuleArgs",
+    "StateStoreResourceRuleArgsDict",
+    "SubscriberQueueLimitArgs",
+    "SubscriberQueueLimitArgsDict",
+    "TlsCertMethodArgs",
+    "TlsCertMethodArgsDict",
+    "TlsPropertiesArgs",
+    "TlsPropertiesArgsDict",
+    "TracesArgs",
+    "TracesArgsDict",
+    "VolumeClaimResourceRequirementsArgs",
+    "VolumeClaimResourceRequirementsArgsDict",
+    "VolumeClaimSpecSelectorMatchExpressionsArgs",
+    "VolumeClaimSpecSelectorMatchExpressionsArgsDict",
+    "VolumeClaimSpecSelectorArgs",
+    "VolumeClaimSpecSelectorArgsDict",
+    "VolumeClaimSpecArgs",
+    "VolumeClaimSpecArgsDict",
+    "X509ManualCertificateArgs",
+    "X509ManualCertificateArgsDict",
+]
 
+class AdvancedSettingsArgsDict(TypedDict):
+    clients: NotRequired[pulumi.Input[ClientConfigArgsDict]]
+    encrypt_internal_traffic: NotRequired[
+        pulumi.Input[Union[_builtins.str, OperationalMode]]
+    ]
+    internal_certs: NotRequired[pulumi.Input[CertManagerCertOptionsArgsDict]]
+    ...
 
 @pulumi.input_type
 class AdvancedSettingsArgs:
-    def __init__(__self__, *, clients: Optional[pulumi.Input[ClientConfigArgs]] = ..., encrypt_internal_traffic: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., internal_certs: Optional[pulumi.Input[CertManagerCertOptionsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        clients: Optional[pulumi.Input[ClientConfigArgs]] = ...,
+        encrypt_internal_traffic: Optional[
+            pulumi.Input[Union[_builtins.str, OperationalMode]]
+        ] = ...,
+        internal_certs: Optional[pulumi.Input[CertManagerCertOptionsArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def clients(self) -> Optional[pulumi.Input[ClientConfigArgs]]:
-        
-        ...
-    
+    def clients(self) -> Optional[pulumi.Input[ClientConfigArgs]]: ...
     @clients.setter
-    def clients(self, value: Optional[pulumi.Input[ClientConfigArgs]]): # -> None:
-        ...
-    
+    def clients(self, value: Optional[pulumi.Input[ClientConfigArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="encryptInternalTraffic")
-    def encrypt_internal_traffic(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def encrypt_internal_traffic(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @encrypt_internal_traffic.setter
-    def encrypt_internal_traffic(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def encrypt_internal_traffic(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="internalCerts")
-    def internal_certs(self) -> Optional[pulumi.Input[CertManagerCertOptionsArgs]]:
-        
-        ...
-    
+    def internal_certs(self) -> Optional[pulumi.Input[CertManagerCertOptionsArgs]]: ...
     @internal_certs.setter
-    def internal_certs(self, value: Optional[pulumi.Input[CertManagerCertOptionsArgs]]): # -> None:
-        ...
-    
-
+    def internal_certs(
+        self, value: Optional[pulumi.Input[CertManagerCertOptionsArgs]]
+    ): ...
 
 class AkriConnectorTemplateAioMetadataArgsDict(TypedDict):
-    
     aio_max_version: NotRequired[pulumi.Input[_builtins.str]]
     aio_min_version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateAioMetadataArgs:
-    def __init__(__self__, *, aio_max_version: Optional[pulumi.Input[_builtins.str]] = ..., aio_min_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        aio_max_version: Optional[pulumi.Input[_builtins.str]] = ...,
+        aio_min_version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="aioMaxVersion")
-    def aio_max_version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def aio_max_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aio_max_version.setter
-    def aio_max_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def aio_max_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="aioMinVersion")
-    def aio_min_version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def aio_min_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aio_min_version.setter
-    def aio_min_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def aio_min_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class AkriConnectorTemplateBucketizedAllocationArgsDict(TypedDict):
-    
     bucket_size: pulumi.Input[_builtins.int]
     policy: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateBucketizedAllocationArgs:
-    def __init__(__self__, *, bucket_size: pulumi.Input[_builtins.int], policy: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket_size: pulumi.Input[_builtins.int],
+        policy: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="bucketSize")
-    def bucket_size(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def bucket_size(self) -> pulumi.Input[_builtins.int]: ...
     @bucket_size.setter
-    def bucket_size(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def bucket_size(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter
-    def policy(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def policy(self) -> pulumi.Input[_builtins.str]: ...
     @policy.setter
-    def policy(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def policy(self, value: pulumi.Input[_builtins.str]): ...
 
-
-class AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgsDict(TypedDict):
-    
+class AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgsDict(
+    TypedDict
+):
     additional_config_schema_ref: NotRequired[pulumi.Input[_builtins.str]]
     default_dataset_config_schema_ref: NotRequired[pulumi.Input[_builtins.str]]
     default_events_config_schema_ref: NotRequired[pulumi.Input[_builtins.str]]
     default_process_control_config_schema_ref: NotRequired[pulumi.Input[_builtins.str]]
     default_streams_config_schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs:
-    def __init__(__self__, *, additional_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., default_dataset_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., default_events_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., default_process_control_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., default_streams_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        additional_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_dataset_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_events_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_process_control_config_schema_ref: Optional[
+            pulumi.Input[_builtins.str]
+        ] = ...,
+        default_streams_config_schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="additionalConfigSchemaRef")
-    def additional_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def additional_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @additional_config_schema_ref.setter
-    def additional_config_schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def additional_config_schema_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultDatasetConfigSchemaRef")
-    def default_dataset_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_dataset_config_schema_ref(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_dataset_config_schema_ref.setter
-    def default_dataset_config_schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def default_dataset_config_schema_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultEventsConfigSchemaRef")
-    def default_events_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_events_config_schema_ref(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_events_config_schema_ref.setter
-    def default_events_config_schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def default_events_config_schema_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultProcessControlConfigSchemaRef")
-    def default_process_control_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_process_control_config_schema_ref(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_process_control_config_schema_ref.setter
-    def default_process_control_config_schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def default_process_control_config_schema_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultStreamsConfigSchemaRef")
-    def default_streams_config_schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_streams_config_schema_ref(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_streams_config_schema_ref.setter
-    def default_streams_config_schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def default_streams_config_schema_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
 
 class AkriConnectorTemplateDeviceInboundEndpointTypeArgsDict(TypedDict):
-    
     endpoint_type: pulumi.Input[_builtins.str]
-    configuration_schema_refs: NotRequired[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgsDict]]
+    configuration_schema_refs: NotRequired[
+        pulumi.Input[
+            AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgsDict
+        ]
+    ]
     description: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateDeviceInboundEndpointTypeArgs:
-    def __init__(__self__, *, endpoint_type: pulumi.Input[_builtins.str], configuration_schema_refs: Optional[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        endpoint_type: pulumi.Input[_builtins.str],
+        configuration_schema_refs: Optional[
+            pulumi.Input[
+                AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs
+            ]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="endpointType")
-    def endpoint_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint_type(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_type.setter
-    def endpoint_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="configurationSchemaRefs")
-    def configuration_schema_refs(self) -> Optional[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs]]:
-        
-        ...
-    
+    def configuration_schema_refs(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs
+        ]
+    ]: ...
     @configuration_schema_refs.setter
-    def configuration_schema_refs(self, value: Optional[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs]]): # -> None:
-        ...
-    
+    def configuration_schema_refs(
+        self,
+        value: Optional[
+            pulumi.Input[
+                AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class AkriConnectorTemplateDiagnosticsArgsDict(TypedDict):
-    
     logs: pulumi.Input[AkriConnectorsDiagnosticsLogsArgsDict]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateDiagnosticsArgs:
-    def __init__(__self__, *, logs: pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, logs: pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def logs(self) -> pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]:
-        
-        ...
-    
+    def logs(self) -> pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]: ...
     @logs.setter
-    def logs(self, value: pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]): # -> None:
-        ...
-    
-
+    def logs(self, value: pulumi.Input[AkriConnectorsDiagnosticsLogsArgs]): ...
 
 class AkriConnectorTemplateHelmAdvancedConfigurationArgsDict(TypedDict):
-    
-    delete: NotRequired[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgsDict]]
-    install: NotRequired[pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgsDict]]
-    upgrade: NotRequired[pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgsDict]]
-
+    delete: NotRequired[
+        pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgsDict]
+    ]
+    install: NotRequired[
+        pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgsDict]
+    ]
+    upgrade: NotRequired[
+        pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmAdvancedConfigurationArgs:
-    def __init__(__self__, *, delete: Optional[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]] = ..., install: Optional[pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]] = ..., upgrade: Optional[pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        delete: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]
+        ] = ...,
+        install: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]
+        ] = ...,
+        upgrade: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def delete(self) -> Optional[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]]:
-        
-        ...
-    
+    def delete(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]]): # -> None:
-        ...
-    
+    def delete(
+        self,
+        value: Optional[pulumi.Input[AkriConnectorTemplateHelmDeleteConfigurationArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def install(self) -> Optional[pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]]:
-        
-        ...
-    
+    def install(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]]: ...
     @install.setter
-    def install(self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]]): # -> None:
-        ...
-    
+    def install(
+        self,
+        value: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmInstallConfigurationArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def upgrade(self) -> Optional[pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]]:
-        
-        ...
-    
+    def upgrade(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]]: ...
     @upgrade.setter
-    def upgrade(self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def upgrade(
+        self,
+        value: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmUpgradeConfigurationArgs]
+        ],
+    ): ...
 
 class AkriConnectorTemplateHelmAuthSecretRefArgsDict(TypedDict):
-    
     password_key: pulumi.Input[_builtins.str]
     secret_ref: pulumi.Input[_builtins.str]
     username_key: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmAuthSecretRefArgs:
-    def __init__(__self__, *, password_key: pulumi.Input[_builtins.str], secret_ref: pulumi.Input[_builtins.str], username_key: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        password_key: pulumi.Input[_builtins.str],
+        secret_ref: pulumi.Input[_builtins.str],
+        username_key: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="passwordKey")
-    def password_key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def password_key(self) -> pulumi.Input[_builtins.str]: ...
     @password_key.setter
-    def password_key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def password_key(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="usernameKey")
-    def username_key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def username_key(self) -> pulumi.Input[_builtins.str]: ...
     @username_key.setter
-    def username_key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def username_key(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplateHelmConfigurationSettingsArgsDict(TypedDict):
-    
     release_name: pulumi.Input[_builtins.str]
     repository_name: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    advanced_configuration: NotRequired[pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgsDict]]
-    registry_settings: NotRequired[pulumi.Input[Union[AkriConnectorTemplateHelmContainerRegistryArgsDict, AkriConnectorTemplateHelmRegistryEndpointRefArgsDict]]]
+    advanced_configuration: NotRequired[
+        pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgsDict]
+    ]
+    registry_settings: NotRequired[
+        pulumi.Input[
+            Union[
+                AkriConnectorTemplateHelmContainerRegistryArgsDict,
+                AkriConnectorTemplateHelmRegistryEndpointRefArgsDict,
+            ]
+        ]
+    ]
     values: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmConfigurationSettingsArgs:
-    def __init__(__self__, *, release_name: pulumi.Input[_builtins.str], repository_name: pulumi.Input[_builtins.str], version: pulumi.Input[_builtins.str], advanced_configuration: Optional[pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]] = ..., registry_settings: Optional[pulumi.Input[Union[AkriConnectorTemplateHelmContainerRegistryArgs, AkriConnectorTemplateHelmRegistryEndpointRefArgs]]] = ..., values: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        release_name: pulumi.Input[_builtins.str],
+        repository_name: pulumi.Input[_builtins.str],
+        version: pulumi.Input[_builtins.str],
+        advanced_configuration: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]
+        ] = ...,
+        registry_settings: Optional[
+            pulumi.Input[
+                Union[
+                    AkriConnectorTemplateHelmContainerRegistryArgs,
+                    AkriConnectorTemplateHelmRegistryEndpointRefArgs,
+                ]
+            ]
+        ] = ...,
+        values: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="releaseName")
-    def release_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def release_name(self) -> pulumi.Input[_builtins.str]: ...
     @release_name.setter
-    def release_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def release_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="repositoryName")
-    def repository_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def repository_name(self) -> pulumi.Input[_builtins.str]: ...
     @repository_name.setter
-    def repository_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def repository_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def version(self) -> pulumi.Input[_builtins.str]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def version(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="advancedConfiguration")
-    def advanced_configuration(self) -> Optional[pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]]:
-        
-        ...
-    
+    def advanced_configuration(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]]: ...
     @advanced_configuration.setter
-    def advanced_configuration(self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]]): # -> None:
-        ...
-    
+    def advanced_configuration(
+        self,
+        value: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmAdvancedConfigurationArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="registrySettings")
-    def registry_settings(self) -> Optional[pulumi.Input[Union[AkriConnectorTemplateHelmContainerRegistryArgs, AkriConnectorTemplateHelmRegistryEndpointRefArgs]]]:
-        
-        ...
-    
+    def registry_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Union[
+                AkriConnectorTemplateHelmContainerRegistryArgs,
+                AkriConnectorTemplateHelmRegistryEndpointRefArgs,
+            ]
+        ]
+    ]: ...
     @registry_settings.setter
-    def registry_settings(self, value: Optional[pulumi.Input[Union[AkriConnectorTemplateHelmContainerRegistryArgs, AkriConnectorTemplateHelmRegistryEndpointRefArgs]]]): # -> None:
-        ...
-    
+    def registry_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Union[
+                    AkriConnectorTemplateHelmContainerRegistryArgs,
+                    AkriConnectorTemplateHelmRegistryEndpointRefArgs,
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def values(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def values(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @values.setter
-    def values(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def values(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class AkriConnectorTemplateHelmConfigurationArgsDict(TypedDict):
-    
-    helm_configuration_settings: pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgsDict]
+    helm_configuration_settings: pulumi.Input[
+        AkriConnectorTemplateHelmConfigurationSettingsArgsDict
+    ]
     runtime_configuration_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmConfigurationArgs:
-    def __init__(__self__, *, helm_configuration_settings: pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgs], runtime_configuration_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        helm_configuration_settings: pulumi.Input[
+            AkriConnectorTemplateHelmConfigurationSettingsArgs
+        ],
+        runtime_configuration_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="helmConfigurationSettings")
-    def helm_configuration_settings(self) -> pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgs]:
-        
-        ...
-    
+    def helm_configuration_settings(
+        self,
+    ) -> pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgs]: ...
     @helm_configuration_settings.setter
-    def helm_configuration_settings(self, value: pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgs]): # -> None:
-        ...
-    
+    def helm_configuration_settings(
+        self, value: pulumi.Input[AkriConnectorTemplateHelmConfigurationSettingsArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfigurationType")
-    def runtime_configuration_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def runtime_configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @runtime_configuration_type.setter
-    def runtime_configuration_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def runtime_configuration_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplateHelmContainerRegistrySettingsArgsDict(TypedDict):
-    
     registry: pulumi.Input[_builtins.str]
-    auth_secret_ref: NotRequired[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgsDict]]
-
+    auth_secret_ref: NotRequired[
+        pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmContainerRegistrySettingsArgs:
-    def __init__(__self__, *, registry: pulumi.Input[_builtins.str], auth_secret_ref: Optional[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        registry: pulumi.Input[_builtins.str],
+        auth_secret_ref: Optional[
+            pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def registry(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry(self) -> pulumi.Input[_builtins.str]: ...
     @registry.setter
-    def registry(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def registry(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="authSecretRef")
-    def auth_secret_ref(self) -> Optional[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]]:
-        
-        ...
-    
+    def auth_secret_ref(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]]: ...
     @auth_secret_ref.setter
-    def auth_secret_ref(self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]]): # -> None:
-        ...
-    
-
+    def auth_secret_ref(
+        self, value: Optional[pulumi.Input[AkriConnectorTemplateHelmAuthSecretRefArgs]]
+    ): ...
 
 class AkriConnectorTemplateHelmContainerRegistryArgsDict(TypedDict):
-    
-    container_registry_settings: pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgsDict]
+    container_registry_settings: pulumi.Input[
+        AkriConnectorTemplateHelmContainerRegistrySettingsArgsDict
+    ]
     registry_settings_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmContainerRegistryArgs:
-    def __init__(__self__, *, container_registry_settings: pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgs], registry_settings_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        container_registry_settings: pulumi.Input[
+            AkriConnectorTemplateHelmContainerRegistrySettingsArgs
+        ],
+        registry_settings_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="containerRegistrySettings")
-    def container_registry_settings(self) -> pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgs]:
-        
-        ...
-    
+    def container_registry_settings(
+        self,
+    ) -> pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgs]: ...
     @container_registry_settings.setter
-    def container_registry_settings(self, value: pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgs]): # -> None:
-        ...
-    
+    def container_registry_settings(
+        self,
+        value: pulumi.Input[AkriConnectorTemplateHelmContainerRegistrySettingsArgs],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="registrySettingsType")
-    def registry_settings_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_settings_type(self) -> pulumi.Input[_builtins.str]: ...
     @registry_settings_type.setter
-    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplateHelmDeleteConfigurationArgsDict(TypedDict):
-    
     atomic: NotRequired[pulumi.Input[_builtins.bool]]
     disable_hooks: NotRequired[pulumi.Input[_builtins.bool]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
     wait: NotRequired[pulumi.Input[_builtins.bool]]
     wait_for_jobs: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmDeleteConfigurationArgs:
-    def __init__(__self__, *, atomic: Optional[pulumi.Input[_builtins.bool]] = ..., disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ..., timeout: Optional[pulumi.Input[_builtins.int]] = ..., wait: Optional[pulumi.Input[_builtins.bool]] = ..., wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        atomic: Optional[pulumi.Input[_builtins.bool]] = ...,
+        disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ...,
+        timeout: Optional[pulumi.Input[_builtins.int]] = ...,
+        wait: Optional[pulumi.Input[_builtins.bool]] = ...,
+        wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @atomic.setter
-    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="disableHooks")
-    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_hooks.setter
-    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout.setter
-    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="waitForJobs")
-    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_jobs.setter
-    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
 
 class AkriConnectorTemplateHelmInstallConfigurationArgsDict(TypedDict):
-    
     atomic: NotRequired[pulumi.Input[_builtins.bool]]
     disable_hooks: NotRequired[pulumi.Input[_builtins.bool]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
     wait: NotRequired[pulumi.Input[_builtins.bool]]
     wait_for_jobs: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmInstallConfigurationArgs:
-    def __init__(__self__, *, atomic: Optional[pulumi.Input[_builtins.bool]] = ..., disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ..., timeout: Optional[pulumi.Input[_builtins.int]] = ..., wait: Optional[pulumi.Input[_builtins.bool]] = ..., wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        atomic: Optional[pulumi.Input[_builtins.bool]] = ...,
+        disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ...,
+        timeout: Optional[pulumi.Input[_builtins.int]] = ...,
+        wait: Optional[pulumi.Input[_builtins.bool]] = ...,
+        wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @atomic.setter
-    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="disableHooks")
-    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_hooks.setter
-    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout.setter
-    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="waitForJobs")
-    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_jobs.setter
-    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
 
 class AkriConnectorTemplateHelmRegistryEndpointRefArgsDict(TypedDict):
-    
     registry_endpoint_ref: pulumi.Input[_builtins.str]
     registry_settings_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmRegistryEndpointRefArgs:
-    def __init__(__self__, *, registry_endpoint_ref: pulumi.Input[_builtins.str], registry_settings_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        registry_endpoint_ref: pulumi.Input[_builtins.str],
+        registry_settings_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="registryEndpointRef")
-    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @registry_endpoint_ref.setter
-    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="registrySettingsType")
-    def registry_settings_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_settings_type(self) -> pulumi.Input[_builtins.str]: ...
     @registry_settings_type.setter
-    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplateHelmUpgradeConfigurationArgsDict(TypedDict):
-    
     atomic: NotRequired[pulumi.Input[_builtins.bool]]
     disable_hooks: NotRequired[pulumi.Input[_builtins.bool]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
     wait: NotRequired[pulumi.Input[_builtins.bool]]
     wait_for_jobs: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateHelmUpgradeConfigurationArgs:
-    def __init__(__self__, *, atomic: Optional[pulumi.Input[_builtins.bool]] = ..., disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ..., timeout: Optional[pulumi.Input[_builtins.int]] = ..., wait: Optional[pulumi.Input[_builtins.bool]] = ..., wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        atomic: Optional[pulumi.Input[_builtins.bool]] = ...,
+        disable_hooks: Optional[pulumi.Input[_builtins.bool]] = ...,
+        timeout: Optional[pulumi.Input[_builtins.int]] = ...,
+        wait: Optional[pulumi.Input[_builtins.bool]] = ...,
+        wait_for_jobs: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def atomic(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @atomic.setter
-    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def atomic(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="disableHooks")
-    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def disable_hooks(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @disable_hooks.setter
-    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def disable_hooks(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout.setter
-    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait.setter
-    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="waitForJobs")
-    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def wait_for_jobs(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @wait_for_jobs.setter
-    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def wait_for_jobs(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
 
 class AkriConnectorTemplateManagedConfigurationArgsDict(TypedDict):
-    
-    managed_configuration_settings: pulumi.Input[Union[AkriConnectorTemplateRuntimeImageConfigurationArgsDict, AkriConnectorTemplateRuntimeStatefulSetConfigurationArgsDict]]
+    managed_configuration_settings: pulumi.Input[
+        Union[
+            AkriConnectorTemplateRuntimeImageConfigurationArgsDict,
+            AkriConnectorTemplateRuntimeStatefulSetConfigurationArgsDict,
+        ]
+    ]
     runtime_configuration_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateManagedConfigurationArgs:
-    def __init__(__self__, *, managed_configuration_settings: pulumi.Input[Union[AkriConnectorTemplateRuntimeImageConfigurationArgs, AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs]], runtime_configuration_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        managed_configuration_settings: pulumi.Input[
+            Union[
+                AkriConnectorTemplateRuntimeImageConfigurationArgs,
+                AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs,
+            ]
+        ],
+        runtime_configuration_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="managedConfigurationSettings")
-    def managed_configuration_settings(self) -> pulumi.Input[Union[AkriConnectorTemplateRuntimeImageConfigurationArgs, AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs]]:
-        
-        ...
-    
+    def managed_configuration_settings(
+        self,
+    ) -> pulumi.Input[
+        Union[
+            AkriConnectorTemplateRuntimeImageConfigurationArgs,
+            AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs,
+        ]
+    ]: ...
     @managed_configuration_settings.setter
-    def managed_configuration_settings(self, value: pulumi.Input[Union[AkriConnectorTemplateRuntimeImageConfigurationArgs, AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs]]): # -> None:
-        ...
-    
+    def managed_configuration_settings(
+        self,
+        value: pulumi.Input[
+            Union[
+                AkriConnectorTemplateRuntimeImageConfigurationArgs,
+                AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs,
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfigurationType")
-    def runtime_configuration_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def runtime_configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @runtime_configuration_type.setter
-    def runtime_configuration_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def runtime_configuration_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplatePersistentVolumeClaimArgsDict(TypedDict):
-    
     claim_name: pulumi.Input[_builtins.str]
     mount_path: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplatePersistentVolumeClaimArgs:
-    def __init__(__self__, *, claim_name: pulumi.Input[_builtins.str], mount_path: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        claim_name: pulumi.Input[_builtins.str],
+        mount_path: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="claimName")
-    def claim_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def claim_name(self) -> pulumi.Input[_builtins.str]: ...
     @claim_name.setter
-    def claim_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def claim_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="mountPath")
-    def mount_path(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def mount_path(self) -> pulumi.Input[_builtins.str]: ...
     @mount_path.setter
-    def mount_path(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def mount_path(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorTemplatePropertiesArgsDict(TypedDict):
-    
-    device_inbound_endpoint_types: pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgsDict]]]
-    runtime_configuration: pulumi.Input[Union[AkriConnectorTemplateHelmConfigurationArgsDict, AkriConnectorTemplateManagedConfigurationArgsDict]]
+    device_inbound_endpoint_types: pulumi.Input[
+        Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgsDict]]
+    ]
+    runtime_configuration: pulumi.Input[
+        Union[
+            AkriConnectorTemplateHelmConfigurationArgsDict,
+            AkriConnectorTemplateManagedConfigurationArgsDict,
+        ]
+    ]
     aio_metadata: NotRequired[pulumi.Input[AkriConnectorTemplateAioMetadataArgsDict]]
     diagnostics: NotRequired[pulumi.Input[AkriConnectorTemplateDiagnosticsArgsDict]]
-    mqtt_connection_configuration: NotRequired[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgsDict]]
-
+    mqtt_connection_configuration: NotRequired[
+        pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplatePropertiesArgs:
-    def __init__(__self__, *, device_inbound_endpoint_types: pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]], runtime_configuration: pulumi.Input[Union[AkriConnectorTemplateHelmConfigurationArgs, AkriConnectorTemplateManagedConfigurationArgs]], aio_metadata: Optional[pulumi.Input[AkriConnectorTemplateAioMetadataArgs]] = ..., diagnostics: Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]] = ..., mqtt_connection_configuration: Optional[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        device_inbound_endpoint_types: pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]
+        ],
+        runtime_configuration: pulumi.Input[
+            Union[
+                AkriConnectorTemplateHelmConfigurationArgs,
+                AkriConnectorTemplateManagedConfigurationArgs,
+            ]
+        ],
+        aio_metadata: Optional[
+            pulumi.Input[AkriConnectorTemplateAioMetadataArgs]
+        ] = ...,
+        diagnostics: Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]] = ...,
+        mqtt_connection_configuration: Optional[
+            pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="deviceInboundEndpointTypes")
-    def device_inbound_endpoint_types(self) -> pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]]:
-        
-        ...
-    
+    def device_inbound_endpoint_types(
+        self,
+    ) -> pulumi.Input[
+        Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]
+    ]: ...
     @device_inbound_endpoint_types.setter
-    def device_inbound_endpoint_types(self, value: pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]]): # -> None:
-        ...
-    
+    def device_inbound_endpoint_types(
+        self,
+        value: pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplateDeviceInboundEndpointTypeArgs]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="runtimeConfiguration")
-    def runtime_configuration(self) -> pulumi.Input[Union[AkriConnectorTemplateHelmConfigurationArgs, AkriConnectorTemplateManagedConfigurationArgs]]:
-        
-        ...
-    
+    def runtime_configuration(
+        self,
+    ) -> pulumi.Input[
+        Union[
+            AkriConnectorTemplateHelmConfigurationArgs,
+            AkriConnectorTemplateManagedConfigurationArgs,
+        ]
+    ]: ...
     @runtime_configuration.setter
-    def runtime_configuration(self, value: pulumi.Input[Union[AkriConnectorTemplateHelmConfigurationArgs, AkriConnectorTemplateManagedConfigurationArgs]]): # -> None:
-        ...
-    
+    def runtime_configuration(
+        self,
+        value: pulumi.Input[
+            Union[
+                AkriConnectorTemplateHelmConfigurationArgs,
+                AkriConnectorTemplateManagedConfigurationArgs,
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="aioMetadata")
-    def aio_metadata(self) -> Optional[pulumi.Input[AkriConnectorTemplateAioMetadataArgs]]:
-        
-        ...
-    
+    def aio_metadata(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateAioMetadataArgs]]: ...
     @aio_metadata.setter
-    def aio_metadata(self, value: Optional[pulumi.Input[AkriConnectorTemplateAioMetadataArgs]]): # -> None:
-        ...
-    
+    def aio_metadata(
+        self, value: Optional[pulumi.Input[AkriConnectorTemplateAioMetadataArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def diagnostics(self) -> Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]]:
-        
-        ...
-    
+    def diagnostics(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]]: ...
     @diagnostics.setter
-    def diagnostics(self, value: Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]]): # -> None:
-        ...
-    
+    def diagnostics(
+        self, value: Optional[pulumi.Input[AkriConnectorTemplateDiagnosticsArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mqttConnectionConfiguration")
-    def mqtt_connection_configuration(self) -> Optional[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]]:
-        
-        ...
-    
+    def mqtt_connection_configuration(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]]: ...
     @mqtt_connection_configuration.setter
-    def mqtt_connection_configuration(self, value: Optional[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def mqtt_connection_configuration(
+        self,
+        value: Optional[pulumi.Input[AkriConnectorsMqttConnectionConfigurationArgs]],
+    ): ...
 
 class AkriConnectorTemplateRuntimeImageConfigurationSettingsArgsDict(TypedDict):
-    
     image_name: pulumi.Input[_builtins.str]
-    image_pull_policy: NotRequired[pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]]
-    registry_settings: NotRequired[pulumi.Input[Union[AkriConnectorsContainerRegistryArgsDict, AkriConnectorsRegistryEndpointRefArgsDict]]]
+    image_pull_policy: NotRequired[
+        pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]
+    ]
+    registry_settings: NotRequired[
+        pulumi.Input[
+            Union[
+                AkriConnectorsContainerRegistryArgsDict,
+                AkriConnectorsRegistryEndpointRefArgsDict,
+            ]
+        ]
+    ]
     replicas: NotRequired[pulumi.Input[_builtins.int]]
-    tag_digest_settings: NotRequired[pulumi.Input[Union[AkriConnectorsDigestArgsDict, AkriConnectorsTagArgsDict]]]
-
+    tag_digest_settings: NotRequired[
+        pulumi.Input[Union[AkriConnectorsDigestArgsDict, AkriConnectorsTagArgsDict]]
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs:
-    def __init__(__self__, *, image_name: pulumi.Input[_builtins.str], image_pull_policy: Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]] = ..., registry_settings: Optional[pulumi.Input[Union[AkriConnectorsContainerRegistryArgs, AkriConnectorsRegistryEndpointRefArgs]]] = ..., replicas: Optional[pulumi.Input[_builtins.int]] = ..., tag_digest_settings: Optional[pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        image_name: pulumi.Input[_builtins.str],
+        image_pull_policy: Optional[
+            pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]
+        ] = ...,
+        registry_settings: Optional[
+            pulumi.Input[
+                Union[
+                    AkriConnectorsContainerRegistryArgs,
+                    AkriConnectorsRegistryEndpointRefArgs,
+                ]
+            ]
+        ] = ...,
+        replicas: Optional[pulumi.Input[_builtins.int]] = ...,
+        tag_digest_settings: Optional[
+            pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="imageName")
-    def image_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def image_name(self) -> pulumi.Input[_builtins.str]: ...
     @image_name.setter
-    def image_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def image_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="imagePullPolicy")
-    def image_pull_policy(self) -> Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]]:
-        
-        ...
-    
+    def image_pull_policy(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]
+    ]: ...
     @image_pull_policy.setter
-    def image_pull_policy(self, value: Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]]): # -> None:
-        ...
-    
+    def image_pull_policy(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, AkriConnectorsImagePullPolicy]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="registrySettings")
-    def registry_settings(self) -> Optional[pulumi.Input[Union[AkriConnectorsContainerRegistryArgs, AkriConnectorsRegistryEndpointRefArgs]]]:
-        
-        ...
-    
+    def registry_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Union[
+                AkriConnectorsContainerRegistryArgs,
+                AkriConnectorsRegistryEndpointRefArgs,
+            ]
+        ]
+    ]: ...
     @registry_settings.setter
-    def registry_settings(self, value: Optional[pulumi.Input[Union[AkriConnectorsContainerRegistryArgs, AkriConnectorsRegistryEndpointRefArgs]]]): # -> None:
-        ...
-    
+    def registry_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Union[
+                    AkriConnectorsContainerRegistryArgs,
+                    AkriConnectorsRegistryEndpointRefArgs,
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def replicas(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def replicas(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replicas.setter
-    def replicas(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def replicas(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="tagDigestSettings")
-    def tag_digest_settings(self) -> Optional[pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]]:
-        
-        ...
-    
+    def tag_digest_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]
+    ]: ...
     @tag_digest_settings.setter
-    def tag_digest_settings(self, value: Optional[pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]]): # -> None:
-        ...
-    
-
+    def tag_digest_settings(
+        self,
+        value: Optional[
+            pulumi.Input[Union[AkriConnectorsDigestArgs, AkriConnectorsTagArgs]]
+        ],
+    ): ...
 
 class AkriConnectorTemplateRuntimeImageConfigurationArgsDict(TypedDict):
-    
-    image_configuration_settings: pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgsDict]
+    image_configuration_settings: pulumi.Input[
+        AkriConnectorTemplateRuntimeImageConfigurationSettingsArgsDict
+    ]
     managed_configuration_type: pulumi.Input[_builtins.str]
-    additional_configuration: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    allocation: NotRequired[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgsDict]]
+    additional_configuration: NotRequired[
+        pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+    ]
+    allocation: NotRequired[
+        pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgsDict]
+    ]
     persistent_volume_claim_templates: NotRequired[pulumi.Input[Sequence[Any]]]
-    persistent_volume_claims: NotRequired[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgsDict]]]]
-    secrets: NotRequired[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgsDict]]]]
+    persistent_volume_claims: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgsDict]]
+        ]
+    ]
+    secrets: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgsDict]]]
+    ]
     trust_settings: NotRequired[pulumi.Input[AkriConnectorTemplateTrustListArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateRuntimeImageConfigurationArgs:
-    def __init__(__self__, *, image_configuration_settings: pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs], managed_configuration_type: pulumi.Input[_builtins.str], additional_configuration: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., allocation: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]] = ..., persistent_volume_claim_templates: Optional[pulumi.Input[Sequence[Any]]] = ..., persistent_volume_claims: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]] = ..., secrets: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]] = ..., trust_settings: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        image_configuration_settings: pulumi.Input[
+            AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs
+        ],
+        managed_configuration_type: pulumi.Input[_builtins.str],
+        additional_configuration: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        allocation: Optional[
+            pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]
+        ] = ...,
+        persistent_volume_claim_templates: Optional[pulumi.Input[Sequence[Any]]] = ...,
+        persistent_volume_claims: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+            ]
+        ] = ...,
+        secrets: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]
+        ] = ...,
+        trust_settings: Optional[
+            pulumi.Input[AkriConnectorTemplateTrustListArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="imageConfigurationSettings")
-    def image_configuration_settings(self) -> pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs]:
-        
-        ...
-    
+    def image_configuration_settings(
+        self,
+    ) -> pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs]: ...
     @image_configuration_settings.setter
-    def image_configuration_settings(self, value: pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs]): # -> None:
-        ...
-    
+    def image_configuration_settings(
+        self,
+        value: pulumi.Input[AkriConnectorTemplateRuntimeImageConfigurationSettingsArgs],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="managedConfigurationType")
-    def managed_configuration_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def managed_configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @managed_configuration_type.setter
-    def managed_configuration_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def managed_configuration_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="additionalConfiguration")
-    def additional_configuration(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def additional_configuration(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @additional_configuration.setter
-    def additional_configuration(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def additional_configuration(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def allocation(self) -> Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]:
-        
-        ...
-    
+    def allocation(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]: ...
     @allocation.setter
-    def allocation(self, value: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]): # -> None:
-        ...
-    
+    def allocation(
+        self,
+        value: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaimTemplates")
-    def persistent_volume_claim_templates(self) -> Optional[pulumi.Input[Sequence[Any]]]:
-        
-        ...
-    
+    def persistent_volume_claim_templates(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[Any]]]: ...
     @persistent_volume_claim_templates.setter
-    def persistent_volume_claim_templates(self, value: Optional[pulumi.Input[Sequence[Any]]]): # -> None:
-        ...
-    
+    def persistent_volume_claim_templates(
+        self, value: Optional[pulumi.Input[Sequence[Any]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaims")
-    def persistent_volume_claims(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]]:
-        
-        ...
-    
+    def persistent_volume_claims(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+        ]
+    ]: ...
     @persistent_volume_claims.setter
-    def persistent_volume_claims(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]]): # -> None:
-        ...
-    
+    def persistent_volume_claims(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def secrets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]:
-        
-        ...
-    
+    def secrets(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]: ...
     @secrets.setter
-    def secrets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]): # -> None:
-        ...
-    
+    def secrets(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="trustSettings")
-    def trust_settings(self) -> Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]:
-        
-        ...
-    
+    def trust_settings(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]: ...
     @trust_settings.setter
-    def trust_settings(self, value: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]): # -> None:
-        ...
-    
-
+    def trust_settings(
+        self, value: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]
+    ): ...
 
 class AkriConnectorTemplateRuntimeStatefulSetConfigurationArgsDict(TypedDict):
-    
     managed_configuration_type: pulumi.Input[_builtins.str]
     stateful_set_configuration_settings: Any
-    additional_configuration: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    allocation: NotRequired[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgsDict]]
+    additional_configuration: NotRequired[
+        pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+    ]
+    allocation: NotRequired[
+        pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgsDict]
+    ]
     persistent_volume_claim_templates: NotRequired[pulumi.Input[Sequence[Any]]]
-    persistent_volume_claims: NotRequired[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgsDict]]]]
-    secrets: NotRequired[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgsDict]]]]
+    persistent_volume_claims: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgsDict]]
+        ]
+    ]
+    secrets: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgsDict]]]
+    ]
     trust_settings: NotRequired[pulumi.Input[AkriConnectorTemplateTrustListArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateRuntimeStatefulSetConfigurationArgs:
-    def __init__(__self__, *, managed_configuration_type: pulumi.Input[_builtins.str], stateful_set_configuration_settings: Any, additional_configuration: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., allocation: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]] = ..., persistent_volume_claim_templates: Optional[pulumi.Input[Sequence[Any]]] = ..., persistent_volume_claims: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]] = ..., secrets: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]] = ..., trust_settings: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        managed_configuration_type: pulumi.Input[_builtins.str],
+        stateful_set_configuration_settings: Any,
+        additional_configuration: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        allocation: Optional[
+            pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]
+        ] = ...,
+        persistent_volume_claim_templates: Optional[pulumi.Input[Sequence[Any]]] = ...,
+        persistent_volume_claims: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+            ]
+        ] = ...,
+        secrets: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]
+        ] = ...,
+        trust_settings: Optional[
+            pulumi.Input[AkriConnectorTemplateTrustListArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="managedConfigurationType")
-    def managed_configuration_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def managed_configuration_type(self) -> pulumi.Input[_builtins.str]: ...
     @managed_configuration_type.setter
-    def managed_configuration_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def managed_configuration_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="statefulSetConfigurationSettings")
-    def stateful_set_configuration_settings(self) -> Any:
-        
-        ...
-    
+    def stateful_set_configuration_settings(self) -> Any: ...
     @stateful_set_configuration_settings.setter
-    def stateful_set_configuration_settings(self, value: Any): # -> None:
-        ...
-    
+    def stateful_set_configuration_settings(self, value: Any): ...
     @_builtins.property
     @pulumi.getter(name="additionalConfiguration")
-    def additional_configuration(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def additional_configuration(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @additional_configuration.setter
-    def additional_configuration(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def additional_configuration(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def allocation(self) -> Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]:
-        
-        ...
-    
+    def allocation(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]: ...
     @allocation.setter
-    def allocation(self, value: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]]): # -> None:
-        ...
-    
+    def allocation(
+        self,
+        value: Optional[pulumi.Input[AkriConnectorTemplateBucketizedAllocationArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaimTemplates")
-    def persistent_volume_claim_templates(self) -> Optional[pulumi.Input[Sequence[Any]]]:
-        
-        ...
-    
+    def persistent_volume_claim_templates(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[Any]]]: ...
     @persistent_volume_claim_templates.setter
-    def persistent_volume_claim_templates(self, value: Optional[pulumi.Input[Sequence[Any]]]): # -> None:
-        ...
-    
+    def persistent_volume_claim_templates(
+        self, value: Optional[pulumi.Input[Sequence[Any]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaims")
-    def persistent_volume_claims(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]]:
-        
-        ...
-    
+    def persistent_volume_claims(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+        ]
+    ]: ...
     @persistent_volume_claims.setter
-    def persistent_volume_claims(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]]]): # -> None:
-        ...
-    
+    def persistent_volume_claims(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[AkriConnectorTemplatePersistentVolumeClaimArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def secrets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]:
-        
-        ...
-    
+    def secrets(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]: ...
     @secrets.setter
-    def secrets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]]): # -> None:
-        ...
-    
+    def secrets(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsSecretArgs]]]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="trustSettings")
-    def trust_settings(self) -> Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]:
-        
-        ...
-    
+    def trust_settings(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]: ...
     @trust_settings.setter
-    def trust_settings(self, value: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]): # -> None:
-        ...
-    
-
+    def trust_settings(
+        self, value: Optional[pulumi.Input[AkriConnectorTemplateTrustListArgs]]
+    ): ...
 
 class AkriConnectorTemplateTrustListArgsDict(TypedDict):
-    
     trust_list_secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorTemplateTrustListArgs:
-    def __init__(__self__, *, trust_list_secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, trust_list_secret_ref: pulumi.Input[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="trustListSecretRef")
-    def trust_list_secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def trust_list_secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @trust_list_secret_ref.setter
-    def trust_list_secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def trust_list_secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsContainerRegistrySettingsArgsDict(TypedDict):
-    
     registry: pulumi.Input[_builtins.str]
-    image_pull_secrets: NotRequired[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgsDict]]]]
-
+    image_pull_secrets: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgsDict]]]
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorsContainerRegistrySettingsArgs:
-    def __init__(__self__, *, registry: pulumi.Input[_builtins.str], image_pull_secrets: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        registry: pulumi.Input[_builtins.str],
+        image_pull_secrets: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def registry(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry(self) -> pulumi.Input[_builtins.str]: ...
     @registry.setter
-    def registry(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def registry(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="imagePullSecrets")
-    def image_pull_secrets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]]:
-        
-        ...
-    
+    def image_pull_secrets(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]
+    ]: ...
     @image_pull_secrets.setter
-    def image_pull_secrets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]]): # -> None:
-        ...
-    
-
+    def image_pull_secrets(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AkriConnectorsImagePullSecretArgs]]]
+        ],
+    ): ...
 
 class AkriConnectorsContainerRegistryArgsDict(TypedDict):
-    
-    container_registry_settings: pulumi.Input[AkriConnectorsContainerRegistrySettingsArgsDict]
+    container_registry_settings: pulumi.Input[
+        AkriConnectorsContainerRegistrySettingsArgsDict
+    ]
     registry_settings_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsContainerRegistryArgs:
-    def __init__(__self__, *, container_registry_settings: pulumi.Input[AkriConnectorsContainerRegistrySettingsArgs], registry_settings_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        container_registry_settings: pulumi.Input[
+            AkriConnectorsContainerRegistrySettingsArgs
+        ],
+        registry_settings_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="containerRegistrySettings")
-    def container_registry_settings(self) -> pulumi.Input[AkriConnectorsContainerRegistrySettingsArgs]:
-        
-        ...
-    
+    def container_registry_settings(
+        self,
+    ) -> pulumi.Input[AkriConnectorsContainerRegistrySettingsArgs]: ...
     @container_registry_settings.setter
-    def container_registry_settings(self, value: pulumi.Input[AkriConnectorsContainerRegistrySettingsArgs]): # -> None:
-        ...
-    
+    def container_registry_settings(
+        self, value: pulumi.Input[AkriConnectorsContainerRegistrySettingsArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="registrySettingsType")
-    def registry_settings_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_settings_type(self) -> pulumi.Input[_builtins.str]: ...
     @registry_settings_type.setter
-    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsDiagnosticsLogsArgsDict(TypedDict):
-    
     level: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsDiagnosticsLogsArgs:
-    def __init__(__self__, *, level: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, level: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def level(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @level.setter
-    def level(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class AkriConnectorsDigestArgsDict(TypedDict):
-    
     digest: pulumi.Input[_builtins.str]
     tag_digest_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsDigestArgs:
-    def __init__(__self__, *, digest: pulumi.Input[_builtins.str], tag_digest_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        digest: pulumi.Input[_builtins.str],
+        tag_digest_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def digest(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def digest(self) -> pulumi.Input[_builtins.str]: ...
     @digest.setter
-    def digest(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def digest(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tagDigestType")
-    def tag_digest_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tag_digest_type(self) -> pulumi.Input[_builtins.str]: ...
     @tag_digest_type.setter
-    def tag_digest_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def tag_digest_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsImagePullSecretArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsImagePullSecretArgs:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsMqttConnectionConfigurationArgsDict(TypedDict):
-    
-    authentication: NotRequired[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgsDict]]
+    authentication: NotRequired[
+        pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgsDict]
+    ]
     host: NotRequired[pulumi.Input[_builtins.str]]
     keep_alive_seconds: NotRequired[pulumi.Input[_builtins.int]]
     max_inflight_messages: NotRequired[pulumi.Input[_builtins.int]]
-    protocol: NotRequired[pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]]
+    protocol: NotRequired[
+        pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]
+    ]
     session_expiry_seconds: NotRequired[pulumi.Input[_builtins.int]]
     tls: NotRequired[pulumi.Input[TlsPropertiesArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsMqttConnectionConfigurationArgs:
-    def __init__(__self__, *, authentication: Optional[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]] = ..., host: Optional[pulumi.Input[_builtins.str]] = ..., keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ..., max_inflight_messages: Optional[pulumi.Input[_builtins.int]] = ..., protocol: Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]] = ..., session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ..., tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: Optional[
+            pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]
+        ] = ...,
+        host: Optional[pulumi.Input[_builtins.str]] = ...,
+        keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_inflight_messages: Optional[pulumi.Input[_builtins.int]] = ...,
+        protocol: Optional[
+            pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]
+        ] = ...,
+        session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> Optional[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> Optional[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]]: ...
     @authentication.setter
-    def authentication(self, value: Optional[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]]): # -> None:
-        ...
-    
+    def authentication(
+        self,
+        value: Optional[pulumi.Input[AkriConnectorsServiceAccountAuthenticationArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="keepAliveSeconds")
-    def keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @keep_alive_seconds.setter
-    def keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxInflightMessages")
-    def max_inflight_messages(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_inflight_messages(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_inflight_messages.setter
-    def max_inflight_messages(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_inflight_messages(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]]:
-        
-        ...
-    
+    def protocol(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]
+    ]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]]): # -> None:
-        ...
-    
+    def protocol(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, AkriConnectorsMqttProtocolType]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="sessionExpirySeconds")
-    def session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @session_expiry_seconds.setter
-    def session_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def session_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]:
-        
-        ...
-    
+    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]: ...
     @tls.setter
-    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): # -> None:
-        ...
-    
-
+    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): ...
 
 class AkriConnectorsRegistryEndpointRefArgsDict(TypedDict):
-    
     registry_endpoint_ref: pulumi.Input[_builtins.str]
     registry_settings_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsRegistryEndpointRefArgs:
-    def __init__(__self__, *, registry_endpoint_ref: pulumi.Input[_builtins.str], registry_settings_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        registry_endpoint_ref: pulumi.Input[_builtins.str],
+        registry_settings_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="registryEndpointRef")
-    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @registry_endpoint_ref.setter
-    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="registrySettingsType")
-    def registry_settings_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_settings_type(self) -> pulumi.Input[_builtins.str]: ...
     @registry_settings_type.setter
-    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def registry_settings_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsSecretArgsDict(TypedDict):
-    
     secret_alias: pulumi.Input[_builtins.str]
     secret_key: pulumi.Input[_builtins.str]
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsSecretArgs:
-    def __init__(__self__, *, secret_alias: pulumi.Input[_builtins.str], secret_key: pulumi.Input[_builtins.str], secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        secret_alias: pulumi.Input[_builtins.str],
+        secret_key: pulumi.Input[_builtins.str],
+        secret_ref: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretAlias")
-    def secret_alias(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_alias(self) -> pulumi.Input[_builtins.str]: ...
     @secret_alias.setter
-    def secret_alias(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_alias(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="secretKey")
-    def secret_key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_key(self) -> pulumi.Input[_builtins.str]: ...
     @secret_key.setter
-    def secret_key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_key(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsServiceAccountAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[_builtins.str]
-    service_account_token_settings: pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgsDict]
-
+    service_account_token_settings: pulumi.Input[
+        AkriConnectorsServiceAccountTokenSettingsArgsDict
+    ]
+    ...
 
 @pulumi.input_type
 class AkriConnectorsServiceAccountAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[_builtins.str], service_account_token_settings: pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[_builtins.str],
+        service_account_token_settings: pulumi.Input[
+            AkriConnectorsServiceAccountTokenSettingsArgs
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def method(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountTokenSettings")
-    def service_account_token_settings(self) -> pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgs]:
-        
-        ...
-    
+    def service_account_token_settings(
+        self,
+    ) -> pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgs]: ...
     @service_account_token_settings.setter
-    def service_account_token_settings(self, value: pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgs]): # -> None:
-        ...
-    
-
+    def service_account_token_settings(
+        self, value: pulumi.Input[AkriConnectorsServiceAccountTokenSettingsArgs]
+    ): ...
 
 class AkriConnectorsServiceAccountTokenSettingsArgsDict(TypedDict):
-    
     audience: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsServiceAccountTokenSettingsArgs:
-    def __init__(__self__, *, audience: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, audience: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def audience(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def audience(self) -> pulumi.Input[_builtins.str]: ...
     @audience.setter
-    def audience(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def audience(self, value: pulumi.Input[_builtins.str]): ...
 
 class AkriConnectorsTagArgsDict(TypedDict):
-    
     tag: pulumi.Input[_builtins.str]
     tag_digest_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class AkriConnectorsTagArgs:
-    def __init__(__self__, *, tag: pulumi.Input[_builtins.str], tag_digest_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        tag: pulumi.Input[_builtins.str],
+        tag_digest_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def tag(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tag(self) -> pulumi.Input[_builtins.str]: ...
     @tag.setter
-    def tag(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def tag(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tagDigestType")
-    def tag_digest_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tag_digest_type(self) -> pulumi.Input[_builtins.str]: ...
     @tag_digest_type.setter
-    def tag_digest_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def tag_digest_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class AuthorizationConfigArgsDict(TypedDict):
-    
     cache: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
     rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgsDict]]]]
-
+    ...
 
 @pulumi.input_type
 class AuthorizationConfigArgs:
-    def __init__(__self__, *, cache: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., rules: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cache: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+        rules: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cache(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def cache(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @cache.setter
-    def cache(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def cache(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]]:
-        
-        ...
-    
+    def rules(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]]: ...
     @rules.setter
-    def rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]]): # -> None:
-        ...
-    
-
+    def rules(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationRuleArgs]]]],
+    ): ...
 
 class AuthorizationRuleArgsDict(TypedDict):
-    
     broker_resources: pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgsDict]]]
     principals: pulumi.Input[PrincipalDefinitionArgsDict]
-    state_store_resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgsDict]]]]
-
+    state_store_resources: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgsDict]]]
+    ]
+    ...
 
 @pulumi.input_type
 class AuthorizationRuleArgs:
-    def __init__(__self__, *, broker_resources: pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]], principals: pulumi.Input[PrincipalDefinitionArgs], state_store_resources: Optional[pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        broker_resources: pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]],
+        principals: pulumi.Input[PrincipalDefinitionArgs],
+        state_store_resources: Optional[
+            pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="brokerResources")
-    def broker_resources(self) -> pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]]:
-        
-        ...
-    
+    def broker_resources(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]]: ...
     @broker_resources.setter
-    def broker_resources(self, value: pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]]): # -> None:
-        ...
-    
+    def broker_resources(
+        self, value: pulumi.Input[Sequence[pulumi.Input[BrokerResourceRuleArgs]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def principals(self) -> pulumi.Input[PrincipalDefinitionArgs]:
-        
-        ...
-    
+    def principals(self) -> pulumi.Input[PrincipalDefinitionArgs]: ...
     @principals.setter
-    def principals(self, value: pulumi.Input[PrincipalDefinitionArgs]): # -> None:
-        ...
-    
+    def principals(self, value: pulumi.Input[PrincipalDefinitionArgs]): ...
     @_builtins.property
     @pulumi.getter(name="stateStoreResources")
-    def state_store_resources(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]]:
-        
-        ...
-    
+    def state_store_resources(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]]: ...
     @state_store_resources.setter
-    def state_store_resources(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]]): # -> None:
-        ...
-    
-
+    def state_store_resources(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[StateStoreResourceRuleArgs]]]
+        ],
+    ): ...
 
 class BackendChainArgsDict(TypedDict):
-    
     partitions: pulumi.Input[_builtins.int]
     redundancy_factor: pulumi.Input[_builtins.int]
     workers: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class BackendChainArgs:
-    def __init__(__self__, *, partitions: pulumi.Input[_builtins.int], redundancy_factor: pulumi.Input[_builtins.int], workers: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        partitions: pulumi.Input[_builtins.int],
+        redundancy_factor: pulumi.Input[_builtins.int],
+        workers: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def partitions(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def partitions(self) -> pulumi.Input[_builtins.int]: ...
     @partitions.setter
-    def partitions(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def partitions(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter(name="redundancyFactor")
-    def redundancy_factor(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def redundancy_factor(self) -> pulumi.Input[_builtins.int]: ...
     @redundancy_factor.setter
-    def redundancy_factor(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def redundancy_factor(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter
-    def workers(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def workers(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @workers.setter
-    def workers(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def workers(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class BatchingConfigurationArgsDict(TypedDict):
-    
     latency_seconds: NotRequired[pulumi.Input[_builtins.int]]
     max_messages: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class BatchingConfigurationArgs:
-    def __init__(__self__, *, latency_seconds: Optional[pulumi.Input[_builtins.int]] = ..., max_messages: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        latency_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_messages: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="latencySeconds")
-    def latency_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def latency_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @latency_seconds.setter
-    def latency_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def latency_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxMessages")
-    def max_messages(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_messages(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_messages.setter
-    def max_messages(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def max_messages(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class BrokerAuthenticationPropertiesArgsDict(TypedDict):
-    
-    authentication_methods: pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgsDict]]]
-
+    authentication_methods: pulumi.Input[
+        Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgsDict]]
+    ]
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticationPropertiesArgs:
-    def __init__(__self__, *, authentication_methods: pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication_methods: pulumi.Input[
+            Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="authenticationMethods")
-    def authentication_methods(self) -> pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]]:
-        
-        ...
-    
+    def authentication_methods(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]]: ...
     @authentication_methods.setter
-    def authentication_methods(self, value: pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]]): # -> None:
-        ...
-    
-
+    def authentication_methods(
+        self,
+        value: pulumi.Input[Sequence[pulumi.Input[BrokerAuthenticatorMethodsArgs]]],
+    ): ...
 
 class BrokerAuthenticatorCustomAuthArgsDict(TypedDict):
-    
     x509: pulumi.Input[X509ManualCertificateArgsDict]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorCustomAuthArgs:
-    def __init__(__self__, *, x509: pulumi.Input[X509ManualCertificateArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, x509: pulumi.Input[X509ManualCertificateArgs]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def x509(self) -> pulumi.Input[X509ManualCertificateArgs]:
-        
-        ...
-    
+    def x509(self) -> pulumi.Input[X509ManualCertificateArgs]: ...
     @x509.setter
-    def x509(self, value: pulumi.Input[X509ManualCertificateArgs]): # -> None:
-        ...
-    
-
+    def x509(self, value: pulumi.Input[X509ManualCertificateArgs]): ...
 
 class BrokerAuthenticatorMethodCustomArgsDict(TypedDict):
-    
     endpoint: pulumi.Input[_builtins.str]
     auth: NotRequired[pulumi.Input[BrokerAuthenticatorCustomAuthArgsDict]]
     ca_cert_config_map: NotRequired[pulumi.Input[_builtins.str]]
     headers: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorMethodCustomArgs:
-    def __init__(__self__, *, endpoint: pulumi.Input[_builtins.str], auth: Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]] = ..., ca_cert_config_map: Optional[pulumi.Input[_builtins.str]] = ..., headers: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        endpoint: pulumi.Input[_builtins.str],
+        auth: Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]] = ...,
+        ca_cert_config_map: Optional[pulumi.Input[_builtins.str]] = ...,
+        headers: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def endpoint(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def auth(self) -> Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]]:
-        
-        ...
-    
+    def auth(self) -> Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]]: ...
     @auth.setter
-    def auth(self, value: Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]]): # -> None:
-        ...
-    
+    def auth(
+        self, value: Optional[pulumi.Input[BrokerAuthenticatorCustomAuthArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="caCertConfigMap")
-    def ca_cert_config_map(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def ca_cert_config_map(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ca_cert_config_map.setter
-    def ca_cert_config_map(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def ca_cert_config_map(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def headers(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def headers(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @headers.setter
-    def headers(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def headers(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class BrokerAuthenticatorMethodSatArgsDict(TypedDict):
-    
     audiences: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorMethodSatArgs:
-    def __init__(__self__, *, audiences: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, audiences: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def audiences(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def audiences(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @audiences.setter
-    def audiences(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
-
+    def audiences(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
 
 class BrokerAuthenticatorMethodX509AttributesArgsDict(TypedDict):
-    
     attributes: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     subject: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorMethodX509AttributesArgs:
-    def __init__(__self__, *, attributes: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]], subject: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        attributes: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]],
+        subject: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def attributes(self) -> pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def attributes(self) -> pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]: ...
     @attributes.setter
-    def attributes(self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def attributes(
+        self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def subject(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def subject(self) -> pulumi.Input[_builtins.str]: ...
     @subject.setter
-    def subject(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def subject(self, value: pulumi.Input[_builtins.str]): ...
 
 class BrokerAuthenticatorMethodX509ArgsDict(TypedDict):
-    
-    authorization_attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgsDict]]]]
+    authorization_attributes: NotRequired[
+        pulumi.Input[
+            Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgsDict]]
+        ]
+    ]
     trusted_client_ca_cert: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorMethodX509Args:
-    def __init__(__self__, *, authorization_attributes: Optional[pulumi.Input[Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]]] = ..., trusted_client_ca_cert: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authorization_attributes: Optional[
+            pulumi.Input[
+                Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]
+            ]
+        ] = ...,
+        trusted_client_ca_cert: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="authorizationAttributes")
-    def authorization_attributes(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]]]:
-        
-        ...
-    
+    def authorization_attributes(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]
+        ]
+    ]: ...
     @authorization_attributes.setter
-    def authorization_attributes(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]]]): # -> None:
-        ...
-    
+    def authorization_attributes(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Mapping[str, pulumi.Input[BrokerAuthenticatorMethodX509AttributesArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="trustedClientCaCert")
-    def trusted_client_ca_cert(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def trusted_client_ca_cert(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trusted_client_ca_cert.setter
-    def trusted_client_ca_cert(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def trusted_client_ca_cert(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class BrokerAuthenticatorMethodsArgsDict(TypedDict):
-    
     method: pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]]
     custom_settings: NotRequired[pulumi.Input[BrokerAuthenticatorMethodCustomArgsDict]]
-    service_account_token_settings: NotRequired[pulumi.Input[BrokerAuthenticatorMethodSatArgsDict]]
+    service_account_token_settings: NotRequired[
+        pulumi.Input[BrokerAuthenticatorMethodSatArgsDict]
+    ]
     x509_settings: NotRequired[pulumi.Input[BrokerAuthenticatorMethodX509ArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthenticatorMethodsArgs:
-    def __init__(__self__, *, method: pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]], custom_settings: Optional[pulumi.Input[BrokerAuthenticatorMethodCustomArgs]] = ..., service_account_token_settings: Optional[pulumi.Input[BrokerAuthenticatorMethodSatArgs]] = ..., x509_settings: Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]],
+        custom_settings: Optional[
+            pulumi.Input[BrokerAuthenticatorMethodCustomArgs]
+        ] = ...,
+        service_account_token_settings: Optional[
+            pulumi.Input[BrokerAuthenticatorMethodSatArgs]
+        ] = ...,
+        x509_settings: Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]]:
-        
-        ...
-    
+    def method(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]]): # -> None:
-        ...
-    
+    def method(
+        self, value: pulumi.Input[Union[_builtins.str, BrokerAuthenticationMethod]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="customSettings")
-    def custom_settings(self) -> Optional[pulumi.Input[BrokerAuthenticatorMethodCustomArgs]]:
-        
-        ...
-    
+    def custom_settings(
+        self,
+    ) -> Optional[pulumi.Input[BrokerAuthenticatorMethodCustomArgs]]: ...
     @custom_settings.setter
-    def custom_settings(self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodCustomArgs]]): # -> None:
-        ...
-    
+    def custom_settings(
+        self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodCustomArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountTokenSettings")
-    def service_account_token_settings(self) -> Optional[pulumi.Input[BrokerAuthenticatorMethodSatArgs]]:
-        
-        ...
-    
+    def service_account_token_settings(
+        self,
+    ) -> Optional[pulumi.Input[BrokerAuthenticatorMethodSatArgs]]: ...
     @service_account_token_settings.setter
-    def service_account_token_settings(self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodSatArgs]]): # -> None:
-        ...
-    
+    def service_account_token_settings(
+        self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodSatArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="x509Settings")
-    def x509_settings(self) -> Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]]:
-        
-        ...
-    
+    def x509_settings(
+        self,
+    ) -> Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]]: ...
     @x509_settings.setter
-    def x509_settings(self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]]): # -> None:
-        ...
-    
-
+    def x509_settings(
+        self, value: Optional[pulumi.Input[BrokerAuthenticatorMethodX509Args]]
+    ): ...
 
 class BrokerAuthorizationPropertiesArgsDict(TypedDict):
-    
     authorization_policies: pulumi.Input[AuthorizationConfigArgsDict]
-
+    ...
 
 @pulumi.input_type
 class BrokerAuthorizationPropertiesArgs:
-    def __init__(__self__, *, authorization_policies: pulumi.Input[AuthorizationConfigArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, authorization_policies: pulumi.Input[AuthorizationConfigArgs]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="authorizationPolicies")
-    def authorization_policies(self) -> pulumi.Input[AuthorizationConfigArgs]:
-        
-        ...
-    
+    def authorization_policies(self) -> pulumi.Input[AuthorizationConfigArgs]: ...
     @authorization_policies.setter
-    def authorization_policies(self, value: pulumi.Input[AuthorizationConfigArgs]): # -> None:
-        ...
-    
-
+    def authorization_policies(self, value: pulumi.Input[AuthorizationConfigArgs]): ...
 
 class BrokerDiagnosticsArgsDict(TypedDict):
-    
     logs: NotRequired[pulumi.Input[DiagnosticsLogsArgsDict]]
     metrics: NotRequired[pulumi.Input[MetricsArgsDict]]
     self_check: NotRequired[pulumi.Input[SelfCheckArgsDict]]
     traces: NotRequired[pulumi.Input[TracesArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class BrokerDiagnosticsArgs:
-    def __init__(__self__, *, logs: Optional[pulumi.Input[DiagnosticsLogsArgs]] = ..., metrics: Optional[pulumi.Input[MetricsArgs]] = ..., self_check: Optional[pulumi.Input[SelfCheckArgs]] = ..., traces: Optional[pulumi.Input[TracesArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        logs: Optional[pulumi.Input[DiagnosticsLogsArgs]] = ...,
+        metrics: Optional[pulumi.Input[MetricsArgs]] = ...,
+        self_check: Optional[pulumi.Input[SelfCheckArgs]] = ...,
+        traces: Optional[pulumi.Input[TracesArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def logs(self) -> Optional[pulumi.Input[DiagnosticsLogsArgs]]:
-        
-        ...
-    
+    def logs(self) -> Optional[pulumi.Input[DiagnosticsLogsArgs]]: ...
     @logs.setter
-    def logs(self, value: Optional[pulumi.Input[DiagnosticsLogsArgs]]): # -> None:
-        ...
-    
+    def logs(self, value: Optional[pulumi.Input[DiagnosticsLogsArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def metrics(self) -> Optional[pulumi.Input[MetricsArgs]]:
-        
-        ...
-    
+    def metrics(self) -> Optional[pulumi.Input[MetricsArgs]]: ...
     @metrics.setter
-    def metrics(self, value: Optional[pulumi.Input[MetricsArgs]]): # -> None:
-        ...
-    
+    def metrics(self, value: Optional[pulumi.Input[MetricsArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="selfCheck")
-    def self_check(self) -> Optional[pulumi.Input[SelfCheckArgs]]:
-        
-        ...
-    
+    def self_check(self) -> Optional[pulumi.Input[SelfCheckArgs]]: ...
     @self_check.setter
-    def self_check(self, value: Optional[pulumi.Input[SelfCheckArgs]]): # -> None:
-        ...
-    
+    def self_check(self, value: Optional[pulumi.Input[SelfCheckArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def traces(self) -> Optional[pulumi.Input[TracesArgs]]:
-        
-        ...
-    
+    def traces(self) -> Optional[pulumi.Input[TracesArgs]]: ...
     @traces.setter
-    def traces(self, value: Optional[pulumi.Input[TracesArgs]]): # -> None:
-        ...
-    
-
+    def traces(self, value: Optional[pulumi.Input[TracesArgs]]): ...
 
 class BrokerListenerPropertiesArgsDict(TypedDict):
-    
     ports: pulumi.Input[Sequence[pulumi.Input[ListenerPortArgsDict]]]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     service_type: NotRequired[pulumi.Input[Union[_builtins.str, ServiceType]]]
-
+    ...
 
 @pulumi.input_type
 class BrokerListenerPropertiesArgs:
-    def __init__(__self__, *, ports: pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]], service_name: Optional[pulumi.Input[_builtins.str]] = ..., service_type: Optional[pulumi.Input[Union[_builtins.str, ServiceType]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        ports: pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]],
+        service_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        service_type: Optional[pulumi.Input[Union[_builtins.str, ServiceType]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def ports(self) -> pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]]:
-        
-        ...
-    
+    def ports(self) -> pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]]: ...
     @ports.setter
-    def ports(self, value: pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]]): # -> None:
-        ...
-    
+    def ports(self, value: pulumi.Input[Sequence[pulumi.Input[ListenerPortArgs]]]): ...
     @_builtins.property
     @pulumi.getter(name="serviceName")
-    def service_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def service_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_name.setter
-    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def service_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="serviceType")
-    def service_type(self) -> Optional[pulumi.Input[Union[_builtins.str, ServiceType]]]:
-        
-        ...
-    
+    def service_type(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, ServiceType]]]: ...
     @service_type.setter
-    def service_type(self, value: Optional[pulumi.Input[Union[_builtins.str, ServiceType]]]): # -> None:
-        ...
-    
-
+    def service_type(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, ServiceType]]]
+    ): ...
 
 class BrokerPropertiesArgsDict(TypedDict):
-    
     advanced: NotRequired[pulumi.Input[AdvancedSettingsArgsDict]]
     cardinality: NotRequired[pulumi.Input[CardinalityArgsDict]]
     diagnostics: NotRequired[pulumi.Input[BrokerDiagnosticsArgsDict]]
-    disk_backed_message_buffer: NotRequired[pulumi.Input[DiskBackedMessageBufferArgsDict]]
+    disk_backed_message_buffer: NotRequired[
+        pulumi.Input[DiskBackedMessageBufferArgsDict]
+    ]
     generate_resource_limits: NotRequired[pulumi.Input[GenerateResourceLimitsArgsDict]]
     memory_profile: NotRequired[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]]
-
+    ...
 
 @pulumi.input_type
 class BrokerPropertiesArgs:
-    def __init__(__self__, *, advanced: Optional[pulumi.Input[AdvancedSettingsArgs]] = ..., cardinality: Optional[pulumi.Input[CardinalityArgs]] = ..., diagnostics: Optional[pulumi.Input[BrokerDiagnosticsArgs]] = ..., disk_backed_message_buffer: Optional[pulumi.Input[DiskBackedMessageBufferArgs]] = ..., generate_resource_limits: Optional[pulumi.Input[GenerateResourceLimitsArgs]] = ..., memory_profile: Optional[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        advanced: Optional[pulumi.Input[AdvancedSettingsArgs]] = ...,
+        cardinality: Optional[pulumi.Input[CardinalityArgs]] = ...,
+        diagnostics: Optional[pulumi.Input[BrokerDiagnosticsArgs]] = ...,
+        disk_backed_message_buffer: Optional[
+            pulumi.Input[DiskBackedMessageBufferArgs]
+        ] = ...,
+        generate_resource_limits: Optional[
+            pulumi.Input[GenerateResourceLimitsArgs]
+        ] = ...,
+        memory_profile: Optional[
+            pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def advanced(self) -> Optional[pulumi.Input[AdvancedSettingsArgs]]:
-        
-        ...
-    
+    def advanced(self) -> Optional[pulumi.Input[AdvancedSettingsArgs]]: ...
     @advanced.setter
-    def advanced(self, value: Optional[pulumi.Input[AdvancedSettingsArgs]]): # -> None:
-        ...
-    
+    def advanced(self, value: Optional[pulumi.Input[AdvancedSettingsArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def cardinality(self) -> Optional[pulumi.Input[CardinalityArgs]]:
-        
-        ...
-    
+    def cardinality(self) -> Optional[pulumi.Input[CardinalityArgs]]: ...
     @cardinality.setter
-    def cardinality(self, value: Optional[pulumi.Input[CardinalityArgs]]): # -> None:
-        ...
-    
+    def cardinality(self, value: Optional[pulumi.Input[CardinalityArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def diagnostics(self) -> Optional[pulumi.Input[BrokerDiagnosticsArgs]]:
-        
-        ...
-    
+    def diagnostics(self) -> Optional[pulumi.Input[BrokerDiagnosticsArgs]]: ...
     @diagnostics.setter
-    def diagnostics(self, value: Optional[pulumi.Input[BrokerDiagnosticsArgs]]): # -> None:
-        ...
-    
+    def diagnostics(self, value: Optional[pulumi.Input[BrokerDiagnosticsArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="diskBackedMessageBuffer")
-    def disk_backed_message_buffer(self) -> Optional[pulumi.Input[DiskBackedMessageBufferArgs]]:
-        
-        ...
-    
+    def disk_backed_message_buffer(
+        self,
+    ) -> Optional[pulumi.Input[DiskBackedMessageBufferArgs]]: ...
     @disk_backed_message_buffer.setter
-    def disk_backed_message_buffer(self, value: Optional[pulumi.Input[DiskBackedMessageBufferArgs]]): # -> None:
-        ...
-    
+    def disk_backed_message_buffer(
+        self, value: Optional[pulumi.Input[DiskBackedMessageBufferArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="generateResourceLimits")
-    def generate_resource_limits(self) -> Optional[pulumi.Input[GenerateResourceLimitsArgs]]:
-        
-        ...
-    
+    def generate_resource_limits(
+        self,
+    ) -> Optional[pulumi.Input[GenerateResourceLimitsArgs]]: ...
     @generate_resource_limits.setter
-    def generate_resource_limits(self, value: Optional[pulumi.Input[GenerateResourceLimitsArgs]]): # -> None:
-        ...
-    
+    def generate_resource_limits(
+        self, value: Optional[pulumi.Input[GenerateResourceLimitsArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="memoryProfile")
-    def memory_profile(self) -> Optional[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]]:
-        
-        ...
-    
+    def memory_profile(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]]: ...
     @memory_profile.setter
-    def memory_profile(self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]]): # -> None:
-        ...
-    
-
+    def memory_profile(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerMemoryProfile]]]
+    ): ...
 
 class BrokerResourceRuleArgsDict(TypedDict):
-    
     method: pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]]
     client_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     topics: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class BrokerResourceRuleArgs:
-    def __init__(__self__, *, method: pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]], client_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., topics: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]],
+        client_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        topics: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]]:
-        
-        ...
-    
+    def method(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]]): # -> None:
-        ...
-    
+    def method(
+        self, value: pulumi.Input[Union[_builtins.str, BrokerResourceDefinitionMethods]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="clientIds")
-    def client_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def client_ids(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @client_ids.setter
-    def client_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def client_ids(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def topics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def topics(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @topics.setter
-    def topics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def topics(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class CardinalityArgsDict(TypedDict):
-    
     backend_chain: pulumi.Input[BackendChainArgsDict]
     frontend: pulumi.Input[FrontendArgsDict]
-
+    ...
 
 @pulumi.input_type
 class CardinalityArgs:
-    def __init__(__self__, *, backend_chain: pulumi.Input[BackendChainArgs], frontend: pulumi.Input[FrontendArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        backend_chain: pulumi.Input[BackendChainArgs],
+        frontend: pulumi.Input[FrontendArgs],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="backendChain")
-    def backend_chain(self) -> pulumi.Input[BackendChainArgs]:
-        
-        ...
-    
+    def backend_chain(self) -> pulumi.Input[BackendChainArgs]: ...
     @backend_chain.setter
-    def backend_chain(self, value: pulumi.Input[BackendChainArgs]): # -> None:
-        ...
-    
+    def backend_chain(self, value: pulumi.Input[BackendChainArgs]): ...
     @_builtins.property
     @pulumi.getter
-    def frontend(self) -> pulumi.Input[FrontendArgs]:
-        
-        ...
-    
+    def frontend(self) -> pulumi.Input[FrontendArgs]: ...
     @frontend.setter
-    def frontend(self, value: pulumi.Input[FrontendArgs]): # -> None:
-        ...
-    
-
+    def frontend(self, value: pulumi.Input[FrontendArgs]): ...
 
 class CertManagerCertOptionsArgsDict(TypedDict):
-    
     duration: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[CertManagerPrivateKeyArgsDict]
     renew_before: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CertManagerCertOptionsArgs:
-    def __init__(__self__, *, duration: pulumi.Input[_builtins.str], private_key: pulumi.Input[CertManagerPrivateKeyArgs], renew_before: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        duration: pulumi.Input[_builtins.str],
+        private_key: pulumi.Input[CertManagerPrivateKeyArgs],
+        renew_before: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def duration(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def duration(self) -> pulumi.Input[_builtins.str]: ...
     @duration.setter
-    def duration(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def duration(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="privateKey")
-    def private_key(self) -> pulumi.Input[CertManagerPrivateKeyArgs]:
-        
-        ...
-    
+    def private_key(self) -> pulumi.Input[CertManagerPrivateKeyArgs]: ...
     @private_key.setter
-    def private_key(self, value: pulumi.Input[CertManagerPrivateKeyArgs]): # -> None:
-        ...
-    
+    def private_key(self, value: pulumi.Input[CertManagerPrivateKeyArgs]): ...
     @_builtins.property
     @pulumi.getter(name="renewBefore")
-    def renew_before(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def renew_before(self) -> pulumi.Input[_builtins.str]: ...
     @renew_before.setter
-    def renew_before(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def renew_before(self, value: pulumi.Input[_builtins.str]): ...
 
 class CertManagerCertificateSpecArgsDict(TypedDict):
-    
     issuer_ref: pulumi.Input[CertManagerIssuerRefArgsDict]
     duration: NotRequired[pulumi.Input[_builtins.str]]
     private_key: NotRequired[pulumi.Input[CertManagerPrivateKeyArgsDict]]
     renew_before: NotRequired[pulumi.Input[_builtins.str]]
     san: NotRequired[pulumi.Input[SanForCertArgsDict]]
     secret_name: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class CertManagerCertificateSpecArgs:
-    def __init__(__self__, *, issuer_ref: pulumi.Input[CertManagerIssuerRefArgs], duration: Optional[pulumi.Input[_builtins.str]] = ..., private_key: Optional[pulumi.Input[CertManagerPrivateKeyArgs]] = ..., renew_before: Optional[pulumi.Input[_builtins.str]] = ..., san: Optional[pulumi.Input[SanForCertArgs]] = ..., secret_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        issuer_ref: pulumi.Input[CertManagerIssuerRefArgs],
+        duration: Optional[pulumi.Input[_builtins.str]] = ...,
+        private_key: Optional[pulumi.Input[CertManagerPrivateKeyArgs]] = ...,
+        renew_before: Optional[pulumi.Input[_builtins.str]] = ...,
+        san: Optional[pulumi.Input[SanForCertArgs]] = ...,
+        secret_name: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="issuerRef")
-    def issuer_ref(self) -> pulumi.Input[CertManagerIssuerRefArgs]:
-        
-        ...
-    
+    def issuer_ref(self) -> pulumi.Input[CertManagerIssuerRefArgs]: ...
     @issuer_ref.setter
-    def issuer_ref(self, value: pulumi.Input[CertManagerIssuerRefArgs]): # -> None:
-        ...
-    
+    def issuer_ref(self, value: pulumi.Input[CertManagerIssuerRefArgs]): ...
     @_builtins.property
     @pulumi.getter
-    def duration(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @duration.setter
-    def duration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="privateKey")
-    def private_key(self) -> Optional[pulumi.Input[CertManagerPrivateKeyArgs]]:
-        
-        ...
-    
+    def private_key(self) -> Optional[pulumi.Input[CertManagerPrivateKeyArgs]]: ...
     @private_key.setter
-    def private_key(self, value: Optional[pulumi.Input[CertManagerPrivateKeyArgs]]): # -> None:
-        ...
-    
+    def private_key(self, value: Optional[pulumi.Input[CertManagerPrivateKeyArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="renewBefore")
-    def renew_before(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def renew_before(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @renew_before.setter
-    def renew_before(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def renew_before(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def san(self) -> Optional[pulumi.Input[SanForCertArgs]]:
-        
-        ...
-    
+    def san(self) -> Optional[pulumi.Input[SanForCertArgs]]: ...
     @san.setter
-    def san(self, value: Optional[pulumi.Input[SanForCertArgs]]): # -> None:
-        ...
-    
+    def san(self, value: Optional[pulumi.Input[SanForCertArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="secretName")
-    def secret_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def secret_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_name.setter
-    def secret_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def secret_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class CertManagerIssuerRefArgsDict(TypedDict):
-    
     group: pulumi.Input[_builtins.str]
     kind: pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]]
     name: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CertManagerIssuerRefArgs:
-    def __init__(__self__, *, group: Optional[pulumi.Input[_builtins.str]] = ..., kind: pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]], name: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        group: Optional[pulumi.Input[_builtins.str]] = ...,
+        kind: pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]],
+        name: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def group(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def group(self) -> pulumi.Input[_builtins.str]: ...
     @group.setter
-    def group(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def group(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def kind(self) -> pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]]:
-        
-        ...
-    
+    def kind(self) -> pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]]): # -> None:
-        ...
-    
+    def kind(
+        self, value: pulumi.Input[Union[_builtins.str, CertManagerIssuerKind]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def name(self, value: pulumi.Input[_builtins.str]): ...
 
 class CertManagerPrivateKeyArgsDict(TypedDict):
-    
     algorithm: pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]]
     rotation_policy: pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]
-
+    ...
 
 @pulumi.input_type
 class CertManagerPrivateKeyArgs:
-    def __init__(__self__, *, algorithm: pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]], rotation_policy: pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        algorithm: pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]],
+        rotation_policy: pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def algorithm(self) -> pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]]:
-        
-        ...
-    
+    def algorithm(self) -> pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]]: ...
     @algorithm.setter
-    def algorithm(self, value: pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]]): # -> None:
-        ...
-    
+    def algorithm(
+        self, value: pulumi.Input[Union[_builtins.str, PrivateKeyAlgorithm]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="rotationPolicy")
-    def rotation_policy(self) -> pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]:
-        
-        ...
-    
+    def rotation_policy(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]: ...
     @rotation_policy.setter
-    def rotation_policy(self, value: pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]): # -> None:
-        ...
-    
-
+    def rotation_policy(
+        self, value: pulumi.Input[Union[_builtins.str, PrivateKeyRotationPolicy]]
+    ): ...
 
 class ClientConfigArgsDict(TypedDict):
-    
     max_keep_alive_seconds: NotRequired[pulumi.Input[_builtins.int]]
     max_message_expiry_seconds: NotRequired[pulumi.Input[_builtins.int]]
     max_packet_size_bytes: NotRequired[pulumi.Input[_builtins.int]]
     max_receive_maximum: NotRequired[pulumi.Input[_builtins.int]]
     max_session_expiry_seconds: NotRequired[pulumi.Input[_builtins.int]]
     subscriber_queue_limit: NotRequired[pulumi.Input[SubscriberQueueLimitArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class ClientConfigArgs:
-    def __init__(__self__, *, max_keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ..., max_message_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ..., max_packet_size_bytes: Optional[pulumi.Input[_builtins.int]] = ..., max_receive_maximum: Optional[pulumi.Input[_builtins.int]] = ..., max_session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ..., subscriber_queue_limit: Optional[pulumi.Input[SubscriberQueueLimitArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        max_keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_message_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_packet_size_bytes: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_receive_maximum: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        subscriber_queue_limit: Optional[pulumi.Input[SubscriberQueueLimitArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="maxKeepAliveSeconds")
-    def max_keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_keep_alive_seconds.setter
-    def max_keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxMessageExpirySeconds")
-    def max_message_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_message_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_message_expiry_seconds.setter
-    def max_message_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_message_expiry_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="maxPacketSizeBytes")
-    def max_packet_size_bytes(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_packet_size_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_packet_size_bytes.setter
-    def max_packet_size_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_packet_size_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxReceiveMaximum")
-    def max_receive_maximum(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_receive_maximum(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_receive_maximum.setter
-    def max_receive_maximum(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_receive_maximum(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxSessionExpirySeconds")
-    def max_session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_session_expiry_seconds.setter
-    def max_session_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_session_expiry_seconds(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="subscriberQueueLimit")
-    def subscriber_queue_limit(self) -> Optional[pulumi.Input[SubscriberQueueLimitArgs]]:
-        
-        ...
-    
+    def subscriber_queue_limit(
+        self,
+    ) -> Optional[pulumi.Input[SubscriberQueueLimitArgs]]: ...
     @subscriber_queue_limit.setter
-    def subscriber_queue_limit(self, value: Optional[pulumi.Input[SubscriberQueueLimitArgs]]): # -> None:
-        ...
-    
-
+    def subscriber_queue_limit(
+        self, value: Optional[pulumi.Input[SubscriberQueueLimitArgs]]
+    ): ...
 
 class DataflowBuiltInTransformationDatasetArgsDict(TypedDict):
-    
     inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     key: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     expression: NotRequired[pulumi.Input[_builtins.str]]
     schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataflowBuiltInTransformationDatasetArgs:
-    def __init__(__self__, *, inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], key: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., expression: Optional[pulumi.Input[_builtins.str]] = ..., schema_ref: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        key: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        expression: Optional[pulumi.Input[_builtins.str]] = ...,
+        schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @inputs.setter
-    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def key(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="schemaRef")
-    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_ref.setter
-    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataflowBuiltInTransformationFilterArgsDict(TypedDict):
-    
     expression: pulumi.Input[_builtins.str]
     inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[Union[_builtins.str, FilterType]]]
-
+    ...
 
 @pulumi.input_type
 class DataflowBuiltInTransformationFilterArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], description: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, FilterType]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[Union[_builtins.str, FilterType]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @inputs.setter
-    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, FilterType]]]:
-        
-        ...
-    
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, FilterType]]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, FilterType]]]): # -> None:
-        ...
-    
-
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, FilterType]]]): ...
 
 class DataflowBuiltInTransformationMapArgsDict(TypedDict):
-    
     inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     output: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     expression: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[Union[_builtins.str, DataflowMappingType]]]
-
+    ...
 
 @pulumi.input_type
 class DataflowBuiltInTransformationMapArgs:
-    def __init__(__self__, *, inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], output: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., expression: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        inputs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        output: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        expression: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def inputs(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @inputs.setter
-    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def inputs(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def output(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def output(self) -> pulumi.Input[_builtins.str]: ...
     @output.setter
-    def output(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def output(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expression.setter
-    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]]:
-        
-        ...
-    
+    def type(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]]): # -> None:
-        ...
-    
-
+    def type(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowMappingType]]]
+    ): ...
 
 class DataflowBuiltInTransformationSettingsArgsDict(TypedDict):
-    
-    datasets: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgsDict]]]]
-    filter: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgsDict]]]]
-    map: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgsDict]]]]
+    datasets: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgsDict]]
+        ]
+    ]
+    filter: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgsDict]]
+        ]
+    ]
+    map: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgsDict]]]
+    ]
     schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-    serialization_format: NotRequired[pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]]
-
+    serialization_format: NotRequired[
+        pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowBuiltInTransformationSettingsArgs:
-    def __init__(__self__, *, datasets: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]]] = ..., filter: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]]] = ..., map: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]] = ..., schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., serialization_format: Optional[pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        datasets: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]
+            ]
+        ] = ...,
+        filter: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]
+            ]
+        ] = ...,
+        map: Optional[
+            pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]
+        ] = ...,
+        schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        serialization_format: Optional[
+            pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def datasets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]]]:
-        
-        ...
-    
+    def datasets(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]]
+    ]: ...
     @datasets.setter
-    def datasets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]]]): # -> None:
-        ...
-    
+    def datasets(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowBuiltInTransformationDatasetArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def filter(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]]]:
-        
-        ...
-    
+    def filter(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]]
+    ]: ...
     @filter.setter
-    def filter(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]]]): # -> None:
-        ...
-    
+    def filter(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowBuiltInTransformationFilterArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def map(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]]:
-        
-        ...
-    
+    def map(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]
+    ]: ...
     @map.setter
-    def map(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]]): # -> None:
-        ...
-    
+    def map(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[DataflowBuiltInTransformationMapArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="schemaRef")
-    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_ref.setter
-    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="serializationFormat")
-    def serialization_format(self) -> Optional[pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]]:
-        
-        ...
-    
+    def serialization_format(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]
+    ]: ...
     @serialization_format.setter
-    def serialization_format(self, value: Optional[pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]]): # -> None:
-        ...
-    
-
+    def serialization_format(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, TransformationSerializationFormat]]
+        ],
+    ): ...
 
 class DataflowDestinationOperationSettingsArgsDict(TypedDict):
-    
     data_destination: pulumi.Input[_builtins.str]
     endpoint_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowDestinationOperationSettingsArgs:
-    def __init__(__self__, *, data_destination: pulumi.Input[_builtins.str], endpoint_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        data_destination: pulumi.Input[_builtins.str],
+        endpoint_ref: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDestination")
-    def data_destination(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def data_destination(self) -> pulumi.Input[_builtins.str]: ...
     @data_destination.setter
-    def data_destination(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def data_destination(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="endpointRef")
-    def endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_ref.setter
-    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointAuthenticationAccessTokenArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationAccessTokenArgs:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointAuthenticationSaslArgsDict(TypedDict):
-    
-    sasl_type: pulumi.Input[Union[_builtins.str, DataflowEndpointAuthenticationSaslType]]
+    sasl_type: pulumi.Input[
+        Union[_builtins.str, DataflowEndpointAuthenticationSaslType]
+    ]
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationSaslArgs:
-    def __init__(__self__, *, sasl_type: pulumi.Input[Union[_builtins.str, DataflowEndpointAuthenticationSaslType]], secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        sasl_type: pulumi.Input[
+            Union[_builtins.str, DataflowEndpointAuthenticationSaslType]
+        ],
+        secret_ref: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="saslType")
-    def sasl_type(self) -> pulumi.Input[Union[_builtins.str, DataflowEndpointAuthenticationSaslType]]:
-        
-        ...
-    
+    def sasl_type(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, DataflowEndpointAuthenticationSaslType]]: ...
     @sasl_type.setter
-    def sasl_type(self, value: pulumi.Input[Union[_builtins.str, DataflowEndpointAuthenticationSaslType]]): # -> None:
-        ...
-    
+    def sasl_type(
+        self,
+        value: pulumi.Input[
+            Union[_builtins.str, DataflowEndpointAuthenticationSaslType]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointAuthenticationServiceAccountTokenArgsDict(TypedDict):
-    
     audience: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationServiceAccountTokenArgs:
-    def __init__(__self__, *, audience: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, audience: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def audience(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def audience(self) -> pulumi.Input[_builtins.str]: ...
     @audience.setter
-    def audience(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def audience(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict(TypedDict):
-    
     audience: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs:
-    def __init__(__self__, *, audience: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, audience: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def audience(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def audience(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audience.setter
-    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict(TypedDict):
-    
     client_id: pulumi.Input[_builtins.str]
     tenant_id: pulumi.Input[_builtins.str]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs:
-    def __init__(__self__, *, client_id: pulumi.Input[_builtins.str], tenant_id: pulumi.Input[_builtins.str], scope: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        client_id: pulumi.Input[_builtins.str],
+        tenant_id: pulumi.Input[_builtins.str],
+        scope: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="clientId")
-    def client_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def client_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tenant_id(self) -> pulumi.Input[_builtins.str]: ...
     @tenant_id.setter
-    def tenant_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def tenant_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def scope(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataflowEndpointAuthenticationX509ArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointAuthenticationX509Args:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointDataExplorerAuthenticationArgsDict(TypedDict):
-    
     method: Any
-    system_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict]]
-    user_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]]
-
+    system_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[
+            DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict
+        ]
+    ]
+    user_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowEndpointDataExplorerAuthenticationArgs:
-    def __init__(__self__, *, method: Any, system_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]] = ..., user_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: Any,
+        system_assigned_managed_identity_settings: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ] = ...,
+        user_assigned_managed_identity_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> Any:
-        
-        ...
-    
+    def method(self) -> Any: ...
     @method.setter
-    def method(self, value: Any): # -> None:
-        ...
-    
+    def method(self, value: Any): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]
+    ]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+    ]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
-
+    def user_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ],
+    ): ...
 
 class DataflowEndpointDataExplorerArgsDict(TypedDict):
-    
     authentication: pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgsDict]
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     batching: NotRequired[pulumi.Input[BatchingConfigurationArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointDataExplorerArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs], database: pulumi.Input[_builtins.str], host: pulumi.Input[_builtins.str], batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs],
+        database: pulumi.Input[_builtins.str],
+        host: pulumi.Input[_builtins.str],
+        batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs]): # -> None:
-        ...
-    
+    def authentication(
+        self, value: pulumi.Input[DataflowEndpointDataExplorerAuthenticationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def database(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def database(self) -> pulumi.Input[_builtins.str]: ...
     @database.setter
-    def database(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def database(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def host(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]:
-        
-        ...
-    
+    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]: ...
     @batching.setter
-    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): ...
 
 class DataflowEndpointDataLakeStorageAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]]
-    access_token_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgsDict]]
-    system_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict]]
-    user_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]]
-
+    access_token_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgsDict]
+    ]
+    system_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[
+            DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict
+        ]
+    ]
+    user_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowEndpointDataLakeStorageAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]], access_token_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]] = ..., system_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]] = ..., user_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]],
+        access_token_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]
+        ] = ...,
+        system_assigned_managed_identity_settings: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ] = ...,
+        user_assigned_managed_identity_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]]:
-        
-        ...
-    
+    def method(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]]): # -> None:
-        ...
-    
+    def method(
+        self, value: pulumi.Input[Union[_builtins.str, DataLakeStorageAuthMethod]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="accessTokenSettings")
-    def access_token_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]]:
-        
-        ...
-    
+    def access_token_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]]: ...
     @access_token_settings.setter
-    def access_token_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]]): # -> None:
-        ...
-    
+    def access_token_settings(
+        self,
+        value: Optional[pulumi.Input[DataflowEndpointAuthenticationAccessTokenArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]
+    ]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+    ]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
-
+    def user_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ],
+    ): ...
 
 class DataflowEndpointDataLakeStorageArgsDict(TypedDict):
-    
     authentication: pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgsDict]
     host: pulumi.Input[_builtins.str]
     batching: NotRequired[pulumi.Input[BatchingConfigurationArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointDataLakeStorageArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs], host: pulumi.Input[_builtins.str], batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs],
+        host: pulumi.Input[_builtins.str],
+        batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs]): # -> None:
-        ...
-    
+    def authentication(
+        self, value: pulumi.Input[DataflowEndpointDataLakeStorageAuthenticationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def host(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]:
-        
-        ...
-    
+    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]: ...
     @batching.setter
-    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): ...
 
 class DataflowEndpointFabricOneLakeAuthenticationArgsDict(TypedDict):
-    
     method: Any
-    system_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict]]
-    user_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]]
-
+    system_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[
+            DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict
+        ]
+    ]
+    user_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowEndpointFabricOneLakeAuthenticationArgs:
-    def __init__(__self__, *, method: Any, system_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]] = ..., user_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: Any,
+        system_assigned_managed_identity_settings: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ] = ...,
+        user_assigned_managed_identity_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> Any:
-        
-        ...
-    
+    def method(self) -> Any: ...
     @method.setter
-    def method(self, value: Any): # -> None:
-        ...
-    
+    def method(self, value: Any): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]
+    ]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+    ]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
-
+    def user_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ],
+    ): ...
 
 class DataflowEndpointFabricOneLakeNamesArgsDict(TypedDict):
-    
     lakehouse_name: pulumi.Input[_builtins.str]
     workspace_name: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointFabricOneLakeNamesArgs:
-    def __init__(__self__, *, lakehouse_name: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        lakehouse_name: pulumi.Input[_builtins.str],
+        workspace_name: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="lakehouseName")
-    def lakehouse_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def lakehouse_name(self) -> pulumi.Input[_builtins.str]: ...
     @lakehouse_name.setter
-    def lakehouse_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def lakehouse_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="workspaceName")
-    def workspace_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def workspace_name(self) -> pulumi.Input[_builtins.str]: ...
     @workspace_name.setter
-    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointFabricOneLakeArgsDict(TypedDict):
-    
     authentication: pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgsDict]
     host: pulumi.Input[_builtins.str]
     names: pulumi.Input[DataflowEndpointFabricOneLakeNamesArgsDict]
-    one_lake_path_type: pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]]
+    one_lake_path_type: pulumi.Input[
+        Union[_builtins.str, DataflowEndpointFabricPathType]
+    ]
     batching: NotRequired[pulumi.Input[BatchingConfigurationArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointFabricOneLakeArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs], host: pulumi.Input[_builtins.str], names: pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs], one_lake_path_type: pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]], batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs],
+        host: pulumi.Input[_builtins.str],
+        names: pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs],
+        one_lake_path_type: pulumi.Input[
+            Union[_builtins.str, DataflowEndpointFabricPathType]
+        ],
+        batching: Optional[pulumi.Input[BatchingConfigurationArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs]): # -> None:
-        ...
-    
+    def authentication(
+        self, value: pulumi.Input[DataflowEndpointFabricOneLakeAuthenticationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def host(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def names(self) -> pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs]:
-        
-        ...
-    
+    def names(self) -> pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs]: ...
     @names.setter
-    def names(self, value: pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs]): # -> None:
-        ...
-    
+    def names(self, value: pulumi.Input[DataflowEndpointFabricOneLakeNamesArgs]): ...
     @_builtins.property
     @pulumi.getter(name="oneLakePathType")
-    def one_lake_path_type(self) -> pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]]:
-        
-        ...
-    
+    def one_lake_path_type(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]]: ...
     @one_lake_path_type.setter
-    def one_lake_path_type(self, value: pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]]): # -> None:
-        ...
-    
+    def one_lake_path_type(
+        self, value: pulumi.Input[Union[_builtins.str, DataflowEndpointFabricPathType]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]:
-        
-        ...
-    
+    def batching(self) -> Optional[pulumi.Input[BatchingConfigurationArgs]]: ...
     @batching.setter
-    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def batching(self, value: Optional[pulumi.Input[BatchingConfigurationArgs]]): ...
 
 class DataflowEndpointKafkaAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[Union[_builtins.str, KafkaAuthMethod]]
     sasl_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSaslArgsDict]]
-    system_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict]]
-    user_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]]
-    x509_certificate_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationX509ArgsDict]]
-
+    system_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[
+            DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict
+        ]
+    ]
+    user_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]
+    ]
+    x509_certificate_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationX509ArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowEndpointKafkaAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[Union[_builtins.str, KafkaAuthMethod]], sasl_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSaslArgs]] = ..., system_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]] = ..., user_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]] = ..., x509_certificate_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[Union[_builtins.str, KafkaAuthMethod]],
+        sasl_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationSaslArgs]
+        ] = ...,
+        system_assigned_managed_identity_settings: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ] = ...,
+        user_assigned_managed_identity_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ] = ...,
+        x509_certificate_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationX509Args]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, KafkaAuthMethod]]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[Union[_builtins.str, KafkaAuthMethod]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, KafkaAuthMethod]]): # -> None:
-        ...
-    
+    def method(self, value: pulumi.Input[Union[_builtins.str, KafkaAuthMethod]]): ...
     @_builtins.property
     @pulumi.getter(name="saslSettings")
-    def sasl_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSaslArgs]]:
-        
-        ...
-    
+    def sasl_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSaslArgs]]: ...
     @sasl_settings.setter
-    def sasl_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSaslArgs]]): # -> None:
-        ...
-    
+    def sasl_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSaslArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]
+    ]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+    ]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="x509CertificateSettings")
-    def x509_certificate_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]:
-        
-        ...
-    
+    def x509_certificate_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]: ...
     @x509_certificate_settings.setter
-    def x509_certificate_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]): # -> None:
-        ...
-    
-
+    def x509_certificate_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]
+    ): ...
 
 class DataflowEndpointKafkaBatchingArgsDict(TypedDict):
-    
     latency_ms: NotRequired[pulumi.Input[_builtins.int]]
     max_bytes: NotRequired[pulumi.Input[_builtins.int]]
     max_messages: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointKafkaBatchingArgs:
-    def __init__(__self__, *, latency_ms: Optional[pulumi.Input[_builtins.int]] = ..., max_bytes: Optional[pulumi.Input[_builtins.int]] = ..., max_messages: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        latency_ms: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_bytes: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_messages: Optional[pulumi.Input[_builtins.int]] = ...,
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="latencyMs")
-    def latency_ms(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def latency_ms(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @latency_ms.setter
-    def latency_ms(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def latency_ms(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxBytes")
-    def max_bytes(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_bytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_bytes.setter
-    def max_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxMessages")
-    def max_messages(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_messages(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_messages.setter
-    def max_messages(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_messages(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
-
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
 
 class DataflowEndpointKafkaArgsDict(TypedDict):
-    
     authentication: pulumi.Input[DataflowEndpointKafkaAuthenticationArgsDict]
     host: pulumi.Input[_builtins.str]
     batching: NotRequired[pulumi.Input[DataflowEndpointKafkaBatchingArgsDict]]
-    cloud_event_attributes: NotRequired[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]
-    compression: NotRequired[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]]
+    cloud_event_attributes: NotRequired[
+        pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]
+    ]
+    compression: NotRequired[
+        pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]
+    ]
     consumer_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    copy_mqtt_properties: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-    kafka_acks: NotRequired[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]]
-    partition_strategy: NotRequired[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]]
+    copy_mqtt_properties: NotRequired[
+        pulumi.Input[Union[_builtins.str, OperationalMode]]
+    ]
+    kafka_acks: NotRequired[
+        pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]
+    ]
+    partition_strategy: NotRequired[
+        pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]
+    ]
     tls: NotRequired[pulumi.Input[TlsPropertiesArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointKafkaArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[DataflowEndpointKafkaAuthenticationArgs], host: pulumi.Input[_builtins.str], batching: Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]] = ..., cloud_event_attributes: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]] = ..., compression: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]] = ..., consumer_group_id: Optional[pulumi.Input[_builtins.str]] = ..., copy_mqtt_properties: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., kafka_acks: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]] = ..., partition_strategy: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]] = ..., tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[DataflowEndpointKafkaAuthenticationArgs],
+        host: pulumi.Input[_builtins.str],
+        batching: Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]] = ...,
+        cloud_event_attributes: Optional[
+            pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]
+        ] = ...,
+        compression: Optional[
+            pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]
+        ] = ...,
+        consumer_group_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        copy_mqtt_properties: Optional[
+            pulumi.Input[Union[_builtins.str, OperationalMode]]
+        ] = ...,
+        kafka_acks: Optional[
+            pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]
+        ] = ...,
+        partition_strategy: Optional[
+            pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]
+        ] = ...,
+        tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[DataflowEndpointKafkaAuthenticationArgs]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[DataflowEndpointKafkaAuthenticationArgs]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[DataflowEndpointKafkaAuthenticationArgs]): # -> None:
-        ...
-    
+    def authentication(
+        self, value: pulumi.Input[DataflowEndpointKafkaAuthenticationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def host(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def batching(self) -> Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]]:
-        
-        ...
-    
+    def batching(self) -> Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]]: ...
     @batching.setter
-    def batching(self, value: Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]]): # -> None:
-        ...
-    
+    def batching(
+        self, value: Optional[pulumi.Input[DataflowEndpointKafkaBatchingArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="cloudEventAttributes")
-    def cloud_event_attributes(self) -> Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]:
-        
-        ...
-    
+    def cloud_event_attributes(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]: ...
     @cloud_event_attributes.setter
-    def cloud_event_attributes(self, value: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]): # -> None:
-        ...
-    
+    def cloud_event_attributes(
+        self,
+        value: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def compression(self) -> Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]]:
-        
-        ...
-    
+    def compression(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]
+    ]: ...
     @compression.setter
-    def compression(self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]]): # -> None:
-        ...
-    
+    def compression(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaCompression]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="consumerGroupId")
-    def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def consumer_group_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @consumer_group_id.setter
-    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def consumer_group_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="copyMqttProperties")
-    def copy_mqtt_properties(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def copy_mqtt_properties(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @copy_mqtt_properties.setter
-    def copy_mqtt_properties(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def copy_mqtt_properties(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="kafkaAcks")
-    def kafka_acks(self) -> Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]]:
-        
-        ...
-    
+    def kafka_acks(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]]: ...
     @kafka_acks.setter
-    def kafka_acks(self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]]): # -> None:
-        ...
-    
+    def kafka_acks(
+        self,
+        value: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaAcks]]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="partitionStrategy")
-    def partition_strategy(self) -> Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]]:
-        
-        ...
-    
+    def partition_strategy(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]
+    ]: ...
     @partition_strategy.setter
-    def partition_strategy(self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]]): # -> None:
-        ...
-    
+    def partition_strategy(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, DataflowEndpointKafkaPartitionStrategy]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]:
-        
-        ...
-    
+    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]: ...
     @tls.setter
-    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): # -> None:
-        ...
-    
-
+    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): ...
 
 class DataflowEndpointLocalStorageArgsDict(TypedDict):
-    
     persistent_volume_claim_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointLocalStorageArgs:
-    def __init__(__self__, *, persistent_volume_claim_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, persistent_volume_claim_ref: pulumi.Input[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaimRef")
-    def persistent_volume_claim_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def persistent_volume_claim_ref(self) -> pulumi.Input[_builtins.str]: ...
     @persistent_volume_claim_ref.setter
-    def persistent_volume_claim_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def persistent_volume_claim_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowEndpointMqttAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[Union[_builtins.str, MqttAuthMethod]]
-    service_account_token_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgsDict]]
-    system_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict]]
-    user_assigned_managed_identity_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]]
-    x509_certificate_settings: NotRequired[pulumi.Input[DataflowEndpointAuthenticationX509ArgsDict]]
-
+    service_account_token_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgsDict]
+    ]
+    system_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[
+            DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgsDict
+        ]
+    ]
+    user_assigned_managed_identity_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgsDict]
+    ]
+    x509_certificate_settings: NotRequired[
+        pulumi.Input[DataflowEndpointAuthenticationX509ArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowEndpointMqttAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[Union[_builtins.str, MqttAuthMethod]], service_account_token_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]] = ..., system_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]] = ..., user_assigned_managed_identity_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]] = ..., x509_certificate_settings: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[Union[_builtins.str, MqttAuthMethod]],
+        service_account_token_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]
+        ] = ...,
+        system_assigned_managed_identity_settings: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ] = ...,
+        user_assigned_managed_identity_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ] = ...,
+        x509_certificate_settings: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationX509Args]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, MqttAuthMethod]]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[Union[_builtins.str, MqttAuthMethod]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, MqttAuthMethod]]): # -> None:
-        ...
-    
+    def method(self, value: pulumi.Input[Union[_builtins.str, MqttAuthMethod]]): ...
     @_builtins.property
     @pulumi.getter(name="serviceAccountTokenSettings")
-    def service_account_token_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]]:
-        
-        ...
-    
+    def service_account_token_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]
+    ]: ...
     @service_account_token_settings.setter
-    def service_account_token_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]]): # -> None:
-        ...
-    
+    def service_account_token_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationServiceAccountTokenArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]
+    ]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                DataflowEndpointAuthenticationSystemAssignedManagedIdentityArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+    ]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]]): # -> None:
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+        value: Optional[
+            pulumi.Input[DataflowEndpointAuthenticationUserAssignedManagedIdentityArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="x509CertificateSettings")
-    def x509_certificate_settings(self) -> Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]:
-        
-        ...
-    
+    def x509_certificate_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]: ...
     @x509_certificate_settings.setter
-    def x509_certificate_settings(self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]): # -> None:
-        ...
-    
-
+    def x509_certificate_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointAuthenticationX509Args]]
+    ): ...
 
 class DataflowEndpointMqttArgsDict(TypedDict):
-    
     authentication: pulumi.Input[DataflowEndpointMqttAuthenticationArgsDict]
     client_id_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    cloud_event_attributes: NotRequired[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]
+    cloud_event_attributes: NotRequired[
+        pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]
+    ]
     host: NotRequired[pulumi.Input[_builtins.str]]
     keep_alive_seconds: NotRequired[pulumi.Input[_builtins.int]]
     max_inflight_messages: NotRequired[pulumi.Input[_builtins.int]]
@@ -3733,2272 +3788,2018 @@ class DataflowEndpointMqttArgsDict(TypedDict):
     retain: NotRequired[pulumi.Input[Union[_builtins.str, MqttRetainType]]]
     session_expiry_seconds: NotRequired[pulumi.Input[_builtins.int]]
     tls: NotRequired[pulumi.Input[TlsPropertiesArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointMqttArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[DataflowEndpointMqttAuthenticationArgs], client_id_prefix: Optional[pulumi.Input[_builtins.str]] = ..., cloud_event_attributes: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]] = ..., host: Optional[pulumi.Input[_builtins.str]] = ..., keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ..., max_inflight_messages: Optional[pulumi.Input[_builtins.int]] = ..., protocol: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]] = ..., qos: Optional[pulumi.Input[_builtins.int]] = ..., retain: Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]] = ..., session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ..., tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[DataflowEndpointMqttAuthenticationArgs],
+        client_id_prefix: Optional[pulumi.Input[_builtins.str]] = ...,
+        cloud_event_attributes: Optional[
+            pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]
+        ] = ...,
+        host: Optional[pulumi.Input[_builtins.str]] = ...,
+        keep_alive_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        max_inflight_messages: Optional[pulumi.Input[_builtins.int]] = ...,
+        protocol: Optional[
+            pulumi.Input[Union[_builtins.str, BrokerProtocolType]]
+        ] = ...,
+        qos: Optional[pulumi.Input[_builtins.int]] = ...,
+        retain: Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]] = ...,
+        session_expiry_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        tls: Optional[pulumi.Input[TlsPropertiesArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[DataflowEndpointMqttAuthenticationArgs]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[DataflowEndpointMqttAuthenticationArgs]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[DataflowEndpointMqttAuthenticationArgs]): # -> None:
-        ...
-    
+    def authentication(
+        self, value: pulumi.Input[DataflowEndpointMqttAuthenticationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="clientIdPrefix")
-    def client_id_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def client_id_prefix(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @client_id_prefix.setter
-    def client_id_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def client_id_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="cloudEventAttributes")
-    def cloud_event_attributes(self) -> Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]:
-        
-        ...
-    
+    def cloud_event_attributes(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]: ...
     @cloud_event_attributes.setter
-    def cloud_event_attributes(self, value: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]]): # -> None:
-        ...
-    
+    def cloud_event_attributes(
+        self,
+        value: Optional[pulumi.Input[Union[_builtins.str, CloudEventAttributeType]]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def host(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @host.setter
-    def host(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="keepAliveSeconds")
-    def keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def keep_alive_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @keep_alive_seconds.setter
-    def keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def keep_alive_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="maxInflightMessages")
-    def max_inflight_messages(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def max_inflight_messages(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @max_inflight_messages.setter
-    def max_inflight_messages(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def max_inflight_messages(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]:
-        
-        ...
-    
+    def protocol(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]): # -> None:
-        ...
-    
+    def protocol(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def qos(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def qos(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @qos.setter
-    def qos(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def qos(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def retain(self) -> Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]]:
-        
-        ...
-    
+    def retain(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]]: ...
     @retain.setter
-    def retain(self, value: Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]]): # -> None:
-        ...
-    
+    def retain(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, MqttRetainType]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="sessionExpirySeconds")
-    def session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def session_expiry_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @session_expiry_seconds.setter
-    def session_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def session_expiry_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]:
-        
-        ...
-    
+    def tls(self) -> Optional[pulumi.Input[TlsPropertiesArgs]]: ...
     @tls.setter
-    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): # -> None:
-        ...
-    
-
+    def tls(self, value: Optional[pulumi.Input[TlsPropertiesArgs]]): ...
 
 class DataflowEndpointPropertiesArgsDict(TypedDict):
-    
     endpoint_type: pulumi.Input[Union[_builtins.str, EndpointType]]
-    data_explorer_settings: NotRequired[pulumi.Input[DataflowEndpointDataExplorerArgsDict]]
-    data_lake_storage_settings: NotRequired[pulumi.Input[DataflowEndpointDataLakeStorageArgsDict]]
-    fabric_one_lake_settings: NotRequired[pulumi.Input[DataflowEndpointFabricOneLakeArgsDict]]
+    data_explorer_settings: NotRequired[
+        pulumi.Input[DataflowEndpointDataExplorerArgsDict]
+    ]
+    data_lake_storage_settings: NotRequired[
+        pulumi.Input[DataflowEndpointDataLakeStorageArgsDict]
+    ]
+    fabric_one_lake_settings: NotRequired[
+        pulumi.Input[DataflowEndpointFabricOneLakeArgsDict]
+    ]
     kafka_settings: NotRequired[pulumi.Input[DataflowEndpointKafkaArgsDict]]
-    local_storage_settings: NotRequired[pulumi.Input[DataflowEndpointLocalStorageArgsDict]]
+    local_storage_settings: NotRequired[
+        pulumi.Input[DataflowEndpointLocalStorageArgsDict]
+    ]
     mqtt_settings: NotRequired[pulumi.Input[DataflowEndpointMqttArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowEndpointPropertiesArgs:
-    def __init__(__self__, *, endpoint_type: pulumi.Input[Union[_builtins.str, EndpointType]], data_explorer_settings: Optional[pulumi.Input[DataflowEndpointDataExplorerArgs]] = ..., data_lake_storage_settings: Optional[pulumi.Input[DataflowEndpointDataLakeStorageArgs]] = ..., fabric_one_lake_settings: Optional[pulumi.Input[DataflowEndpointFabricOneLakeArgs]] = ..., kafka_settings: Optional[pulumi.Input[DataflowEndpointKafkaArgs]] = ..., local_storage_settings: Optional[pulumi.Input[DataflowEndpointLocalStorageArgs]] = ..., mqtt_settings: Optional[pulumi.Input[DataflowEndpointMqttArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        endpoint_type: pulumi.Input[Union[_builtins.str, EndpointType]],
+        data_explorer_settings: Optional[
+            pulumi.Input[DataflowEndpointDataExplorerArgs]
+        ] = ...,
+        data_lake_storage_settings: Optional[
+            pulumi.Input[DataflowEndpointDataLakeStorageArgs]
+        ] = ...,
+        fabric_one_lake_settings: Optional[
+            pulumi.Input[DataflowEndpointFabricOneLakeArgs]
+        ] = ...,
+        kafka_settings: Optional[pulumi.Input[DataflowEndpointKafkaArgs]] = ...,
+        local_storage_settings: Optional[
+            pulumi.Input[DataflowEndpointLocalStorageArgs]
+        ] = ...,
+        mqtt_settings: Optional[pulumi.Input[DataflowEndpointMqttArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="endpointType")
-    def endpoint_type(self) -> pulumi.Input[Union[_builtins.str, EndpointType]]:
-        
-        ...
-    
+    def endpoint_type(self) -> pulumi.Input[Union[_builtins.str, EndpointType]]: ...
     @endpoint_type.setter
-    def endpoint_type(self, value: pulumi.Input[Union[_builtins.str, EndpointType]]): # -> None:
-        ...
-    
+    def endpoint_type(
+        self, value: pulumi.Input[Union[_builtins.str, EndpointType]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="dataExplorerSettings")
-    def data_explorer_settings(self) -> Optional[pulumi.Input[DataflowEndpointDataExplorerArgs]]:
-        
-        ...
-    
+    def data_explorer_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointDataExplorerArgs]]: ...
     @data_explorer_settings.setter
-    def data_explorer_settings(self, value: Optional[pulumi.Input[DataflowEndpointDataExplorerArgs]]): # -> None:
-        ...
-    
+    def data_explorer_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointDataExplorerArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="dataLakeStorageSettings")
-    def data_lake_storage_settings(self) -> Optional[pulumi.Input[DataflowEndpointDataLakeStorageArgs]]:
-        
-        ...
-    
+    def data_lake_storage_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointDataLakeStorageArgs]]: ...
     @data_lake_storage_settings.setter
-    def data_lake_storage_settings(self, value: Optional[pulumi.Input[DataflowEndpointDataLakeStorageArgs]]): # -> None:
-        ...
-    
+    def data_lake_storage_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointDataLakeStorageArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="fabricOneLakeSettings")
-    def fabric_one_lake_settings(self) -> Optional[pulumi.Input[DataflowEndpointFabricOneLakeArgs]]:
-        
-        ...
-    
+    def fabric_one_lake_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointFabricOneLakeArgs]]: ...
     @fabric_one_lake_settings.setter
-    def fabric_one_lake_settings(self, value: Optional[pulumi.Input[DataflowEndpointFabricOneLakeArgs]]): # -> None:
-        ...
-    
+    def fabric_one_lake_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointFabricOneLakeArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="kafkaSettings")
-    def kafka_settings(self) -> Optional[pulumi.Input[DataflowEndpointKafkaArgs]]:
-        
-        ...
-    
+    def kafka_settings(self) -> Optional[pulumi.Input[DataflowEndpointKafkaArgs]]: ...
     @kafka_settings.setter
-    def kafka_settings(self, value: Optional[pulumi.Input[DataflowEndpointKafkaArgs]]): # -> None:
-        ...
-    
+    def kafka_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointKafkaArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="localStorageSettings")
-    def local_storage_settings(self) -> Optional[pulumi.Input[DataflowEndpointLocalStorageArgs]]:
-        
-        ...
-    
+    def local_storage_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowEndpointLocalStorageArgs]]: ...
     @local_storage_settings.setter
-    def local_storage_settings(self, value: Optional[pulumi.Input[DataflowEndpointLocalStorageArgs]]): # -> None:
-        ...
-    
+    def local_storage_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointLocalStorageArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mqttSettings")
-    def mqtt_settings(self) -> Optional[pulumi.Input[DataflowEndpointMqttArgs]]:
-        
-        ...
-    
+    def mqtt_settings(self) -> Optional[pulumi.Input[DataflowEndpointMqttArgs]]: ...
     @mqtt_settings.setter
-    def mqtt_settings(self, value: Optional[pulumi.Input[DataflowEndpointMqttArgs]]): # -> None:
-        ...
-    
-
+    def mqtt_settings(
+        self, value: Optional[pulumi.Input[DataflowEndpointMqttArgs]]
+    ): ...
 
 class DataflowGraphConnectionInputArgsDict(TypedDict):
-    
     name: pulumi.Input[_builtins.str]
     schema: NotRequired[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphConnectionInputArgs:
-    def __init__(__self__, *, name: pulumi.Input[_builtins.str], schema: Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: pulumi.Input[_builtins.str],
+        schema: Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def schema(self) -> Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]]:
-        
-        ...
-    
+    def schema(
+        self,
+    ) -> Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]]: ...
     @schema.setter
-    def schema(self, value: Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]]): # -> None:
-        ...
-    
-
+    def schema(
+        self, value: Optional[pulumi.Input[DataflowGraphConnectionSchemaSettingsArgs]]
+    ): ...
 
 class DataflowGraphConnectionOutputArgsDict(TypedDict):
-    
     name: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphConnectionOutputArgs:
-    def __init__(__self__, *, name: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def name(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowGraphConnectionSchemaSettingsArgsDict(TypedDict):
-    
     schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-    serialization_format: NotRequired[pulumi.Input[Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]]]
-
+    serialization_format: NotRequired[
+        pulumi.Input[
+            Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowGraphConnectionSchemaSettingsArgs:
-    def __init__(__self__, *, schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., serialization_format: Optional[pulumi.Input[Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        serialization_format: Optional[
+            pulumi.Input[
+                Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="schemaRef")
-    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_ref.setter
-    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="serializationFormat")
-    def serialization_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]]]:
-        
-        ...
-    
+    def serialization_format(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]
+        ]
+    ]: ...
     @serialization_format.setter
-    def serialization_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]]]): # -> None:
-        ...
-    
-
+    def serialization_format(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Union[_builtins.str, DataflowGraphConnectionSchemaSerializationFormat]
+            ]
+        ],
+    ): ...
 
 class DataflowGraphDestinationNodeSettingsArgsDict(TypedDict):
-    
     data_destination: pulumi.Input[_builtins.str]
     endpoint_ref: pulumi.Input[_builtins.str]
-    output_schema_settings: NotRequired[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgsDict]]
-
+    output_schema_settings: NotRequired[
+        pulumi.Input[DataflowGraphDestinationSchemaSettingsArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowGraphDestinationNodeSettingsArgs:
-    def __init__(__self__, *, data_destination: pulumi.Input[_builtins.str], endpoint_ref: pulumi.Input[_builtins.str], output_schema_settings: Optional[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        data_destination: pulumi.Input[_builtins.str],
+        endpoint_ref: pulumi.Input[_builtins.str],
+        output_schema_settings: Optional[
+            pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDestination")
-    def data_destination(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def data_destination(self) -> pulumi.Input[_builtins.str]: ...
     @data_destination.setter
-    def data_destination(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def data_destination(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="endpointRef")
-    def endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_ref.setter
-    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="outputSchemaSettings")
-    def output_schema_settings(self) -> Optional[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]]:
-        
-        ...
-    
+    def output_schema_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]]: ...
     @output_schema_settings.setter
-    def output_schema_settings(self, value: Optional[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]]): # -> None:
-        ...
-    
-
+    def output_schema_settings(
+        self, value: Optional[pulumi.Input[DataflowGraphDestinationSchemaSettingsArgs]]
+    ): ...
 
 class DataflowGraphDestinationNodeArgsDict(TypedDict):
-    
     destination_settings: pulumi.Input[DataflowGraphDestinationNodeSettingsArgsDict]
     name: pulumi.Input[_builtins.str]
     node_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphDestinationNodeArgs:
-    def __init__(__self__, *, destination_settings: pulumi.Input[DataflowGraphDestinationNodeSettingsArgs], name: pulumi.Input[_builtins.str], node_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        destination_settings: pulumi.Input[DataflowGraphDestinationNodeSettingsArgs],
+        name: pulumi.Input[_builtins.str],
+        node_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="destinationSettings")
-    def destination_settings(self) -> pulumi.Input[DataflowGraphDestinationNodeSettingsArgs]:
-        
-        ...
-    
+    def destination_settings(
+        self,
+    ) -> pulumi.Input[DataflowGraphDestinationNodeSettingsArgs]: ...
     @destination_settings.setter
-    def destination_settings(self, value: pulumi.Input[DataflowGraphDestinationNodeSettingsArgs]): # -> None:
-        ...
-    
+    def destination_settings(
+        self, value: pulumi.Input[DataflowGraphDestinationNodeSettingsArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
-    def node_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def node_type(self) -> pulumi.Input[_builtins.str]: ...
     @node_type.setter
-    def node_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def node_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowGraphDestinationSchemaSettingsArgsDict(TypedDict):
-    
-    serialization_format: pulumi.Input[Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]]
+    serialization_format: pulumi.Input[
+        Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]
+    ]
     schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphDestinationSchemaSettingsArgs:
-    def __init__(__self__, *, serialization_format: pulumi.Input[Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]], schema_ref: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        serialization_format: pulumi.Input[
+            Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]
+        ],
+        schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="serializationFormat")
-    def serialization_format(self) -> pulumi.Input[Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]]:
-        
-        ...
-    
+    def serialization_format(
+        self,
+    ) -> pulumi.Input[
+        Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]
+    ]: ...
     @serialization_format.setter
-    def serialization_format(self, value: pulumi.Input[Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]]): # -> None:
-        ...
-    
+    def serialization_format(
+        self,
+        value: pulumi.Input[
+            Union[_builtins.str, DataflowGraphDestinationSchemaSerializationFormat]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="schemaRef")
-    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_ref.setter
-    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataflowGraphGraphNodeConfigurationArgsDict(TypedDict):
-    
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphGraphNodeConfigurationArgs:
-    def __init__(__self__, *, key: pulumi.Input[_builtins.str], value: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        key: pulumi.Input[_builtins.str],
+        value: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def key(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def value(self) -> pulumi.Input[_builtins.str]: ...
     @value.setter
-    def value(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def value(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowGraphGraphNodeArgsDict(TypedDict):
-    
     graph_settings: pulumi.Input[DataflowGraphNodeGraphSettingsArgsDict]
     name: pulumi.Input[_builtins.str]
     node_type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphGraphNodeArgs:
-    def __init__(__self__, *, graph_settings: pulumi.Input[DataflowGraphNodeGraphSettingsArgs], name: pulumi.Input[_builtins.str], node_type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        graph_settings: pulumi.Input[DataflowGraphNodeGraphSettingsArgs],
+        name: pulumi.Input[_builtins.str],
+        node_type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="graphSettings")
-    def graph_settings(self) -> pulumi.Input[DataflowGraphNodeGraphSettingsArgs]:
-        
-        ...
-    
+    def graph_settings(self) -> pulumi.Input[DataflowGraphNodeGraphSettingsArgs]: ...
     @graph_settings.setter
-    def graph_settings(self, value: pulumi.Input[DataflowGraphNodeGraphSettingsArgs]): # -> None:
-        ...
-    
+    def graph_settings(
+        self, value: pulumi.Input[DataflowGraphNodeGraphSettingsArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
-    def node_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def node_type(self) -> pulumi.Input[_builtins.str]: ...
     @node_type.setter
-    def node_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def node_type(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataflowGraphNodeConnectionArgsDict(TypedDict):
-    
     from_: pulumi.Input[DataflowGraphConnectionInputArgsDict]
     to: pulumi.Input[DataflowGraphConnectionOutputArgsDict]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphNodeConnectionArgs:
-    def __init__(__self__, *, from_: pulumi.Input[DataflowGraphConnectionInputArgs], to: pulumi.Input[DataflowGraphConnectionOutputArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        from_: pulumi.Input[DataflowGraphConnectionInputArgs],
+        to: pulumi.Input[DataflowGraphConnectionOutputArgs],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="from")
-    def from_(self) -> pulumi.Input[DataflowGraphConnectionInputArgs]:
-        
-        ...
-    
+    def from_(self) -> pulumi.Input[DataflowGraphConnectionInputArgs]: ...
     @from_.setter
-    def from_(self, value: pulumi.Input[DataflowGraphConnectionInputArgs]): # -> None:
-        ...
-    
+    def from_(self, value: pulumi.Input[DataflowGraphConnectionInputArgs]): ...
     @_builtins.property
     @pulumi.getter
-    def to(self) -> pulumi.Input[DataflowGraphConnectionOutputArgs]:
-        
-        ...
-    
+    def to(self) -> pulumi.Input[DataflowGraphConnectionOutputArgs]: ...
     @to.setter
-    def to(self, value: pulumi.Input[DataflowGraphConnectionOutputArgs]): # -> None:
-        ...
-    
-
+    def to(self, value: pulumi.Input[DataflowGraphConnectionOutputArgs]): ...
 
 class DataflowGraphNodeGraphSettingsArgsDict(TypedDict):
-    
     artifact: pulumi.Input[_builtins.str]
     registry_endpoint_ref: pulumi.Input[_builtins.str]
-    configuration: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgsDict]]]]
-
+    configuration: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgsDict]]
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowGraphNodeGraphSettingsArgs:
-    def __init__(__self__, *, artifact: pulumi.Input[_builtins.str], registry_endpoint_ref: pulumi.Input[_builtins.str], configuration: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        artifact: pulumi.Input[_builtins.str],
+        registry_endpoint_ref: pulumi.Input[_builtins.str],
+        configuration: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def artifact(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def artifact(self) -> pulumi.Input[_builtins.str]: ...
     @artifact.setter
-    def artifact(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def artifact(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="registryEndpointRef")
-    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def registry_endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @registry_endpoint_ref.setter
-    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def registry_endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def configuration(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]]]:
-        
-        ...
-    
+    def configuration(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]]
+    ]: ...
     @configuration.setter
-    def configuration(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]]]): # -> None:
-        ...
-    
-
+    def configuration(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataflowGraphGraphNodeConfigurationArgs]]
+            ]
+        ],
+    ): ...
 
 class DataflowGraphPropertiesArgsDict(TypedDict):
-    
-    node_connections: pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgsDict]]]
-    nodes: pulumi.Input[Sequence[pulumi.Input[Union[DataflowGraphDestinationNodeArgsDict, DataflowGraphGraphNodeArgsDict, DataflowGraphSourceNodeArgsDict]]]]
+    node_connections: pulumi.Input[
+        Sequence[pulumi.Input[DataflowGraphNodeConnectionArgsDict]]
+    ]
+    nodes: pulumi.Input[
+        Sequence[
+            pulumi.Input[
+                Union[
+                    DataflowGraphDestinationNodeArgsDict,
+                    DataflowGraphGraphNodeArgsDict,
+                    DataflowGraphSourceNodeArgsDict,
+                ]
+            ]
+        ]
+    ]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-    request_disk_persistence: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-
+    request_disk_persistence: NotRequired[
+        pulumi.Input[Union[_builtins.str, OperationalMode]]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowGraphPropertiesArgs:
-    def __init__(__self__, *, node_connections: pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]], nodes: pulumi.Input[Sequence[pulumi.Input[Union[DataflowGraphDestinationNodeArgs, DataflowGraphGraphNodeArgs, DataflowGraphSourceNodeArgs]]]], mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., request_disk_persistence: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        node_connections: pulumi.Input[
+            Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]
+        ],
+        nodes: pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    Union[
+                        DataflowGraphDestinationNodeArgs,
+                        DataflowGraphGraphNodeArgs,
+                        DataflowGraphSourceNodeArgs,
+                    ]
+                ]
+            ]
+        ],
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+        request_disk_persistence: Optional[
+            pulumi.Input[Union[_builtins.str, OperationalMode]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="nodeConnections")
-    def node_connections(self) -> pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]]:
-        
-        ...
-    
+    def node_connections(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]]: ...
     @node_connections.setter
-    def node_connections(self, value: pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]]): # -> None:
-        ...
-    
+    def node_connections(
+        self,
+        value: pulumi.Input[Sequence[pulumi.Input[DataflowGraphNodeConnectionArgs]]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def nodes(self) -> pulumi.Input[Sequence[pulumi.Input[Union[DataflowGraphDestinationNodeArgs, DataflowGraphGraphNodeArgs, DataflowGraphSourceNodeArgs]]]]:
-        
-        ...
-    
+    def nodes(
+        self,
+    ) -> pulumi.Input[
+        Sequence[
+            pulumi.Input[
+                Union[
+                    DataflowGraphDestinationNodeArgs,
+                    DataflowGraphGraphNodeArgs,
+                    DataflowGraphSourceNodeArgs,
+                ]
+            ]
+        ]
+    ]: ...
     @nodes.setter
-    def nodes(self, value: pulumi.Input[Sequence[pulumi.Input[Union[DataflowGraphDestinationNodeArgs, DataflowGraphGraphNodeArgs, DataflowGraphSourceNodeArgs]]]]): # -> None:
-        ...
-    
+    def nodes(
+        self,
+        value: pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    Union[
+                        DataflowGraphDestinationNodeArgs,
+                        DataflowGraphGraphNodeArgs,
+                        DataflowGraphSourceNodeArgs,
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="requestDiskPersistence")
-    def request_disk_persistence(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def request_disk_persistence(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @request_disk_persistence.setter
-    def request_disk_persistence(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
-
+    def request_disk_persistence(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
 
 class DataflowGraphSourceNodeArgsDict(TypedDict):
-    
     name: pulumi.Input[_builtins.str]
     node_type: pulumi.Input[_builtins.str]
     source_settings: pulumi.Input[DataflowGraphSourceSettingsArgsDict]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphSourceNodeArgs:
-    def __init__(__self__, *, name: pulumi.Input[_builtins.str], node_type: pulumi.Input[_builtins.str], source_settings: pulumi.Input[DataflowGraphSourceSettingsArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: pulumi.Input[_builtins.str],
+        node_type: pulumi.Input[_builtins.str],
+        source_settings: pulumi.Input[DataflowGraphSourceSettingsArgs],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="nodeType")
-    def node_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def node_type(self) -> pulumi.Input[_builtins.str]: ...
     @node_type.setter
-    def node_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def node_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="sourceSettings")
-    def source_settings(self) -> pulumi.Input[DataflowGraphSourceSettingsArgs]:
-        
-        ...
-    
+    def source_settings(self) -> pulumi.Input[DataflowGraphSourceSettingsArgs]: ...
     @source_settings.setter
-    def source_settings(self, value: pulumi.Input[DataflowGraphSourceSettingsArgs]): # -> None:
-        ...
-    
-
+    def source_settings(self, value: pulumi.Input[DataflowGraphSourceSettingsArgs]): ...
 
 class DataflowGraphSourceSettingsArgsDict(TypedDict):
-    
     data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     endpoint_ref: pulumi.Input[_builtins.str]
     asset_ref: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataflowGraphSourceSettingsArgs:
-    def __init__(__self__, *, data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], endpoint_ref: pulumi.Input[_builtins.str], asset_ref: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        endpoint_ref: pulumi.Input[_builtins.str],
+        asset_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataSources")
-    def data_sources(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def data_sources(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @data_sources.setter
-    def data_sources(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def data_sources(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="endpointRef")
-    def endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_ref.setter
-    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="assetRef")
-    def asset_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def asset_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @asset_ref.setter
-    def asset_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def asset_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataflowOperationArgsDict(TypedDict):
-    
     operation_type: pulumi.Input[Union[_builtins.str, OperationType]]
-    built_in_transformation_settings: NotRequired[pulumi.Input[DataflowBuiltInTransformationSettingsArgsDict]]
-    destination_settings: NotRequired[pulumi.Input[DataflowDestinationOperationSettingsArgsDict]]
+    built_in_transformation_settings: NotRequired[
+        pulumi.Input[DataflowBuiltInTransformationSettingsArgsDict]
+    ]
+    destination_settings: NotRequired[
+        pulumi.Input[DataflowDestinationOperationSettingsArgsDict]
+    ]
     name: NotRequired[pulumi.Input[_builtins.str]]
     source_settings: NotRequired[pulumi.Input[DataflowSourceOperationSettingsArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DataflowOperationArgs:
-    def __init__(__self__, *, operation_type: pulumi.Input[Union[_builtins.str, OperationType]], built_in_transformation_settings: Optional[pulumi.Input[DataflowBuiltInTransformationSettingsArgs]] = ..., destination_settings: Optional[pulumi.Input[DataflowDestinationOperationSettingsArgs]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., source_settings: Optional[pulumi.Input[DataflowSourceOperationSettingsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        operation_type: pulumi.Input[Union[_builtins.str, OperationType]],
+        built_in_transformation_settings: Optional[
+            pulumi.Input[DataflowBuiltInTransformationSettingsArgs]
+        ] = ...,
+        destination_settings: Optional[
+            pulumi.Input[DataflowDestinationOperationSettingsArgs]
+        ] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_settings: Optional[
+            pulumi.Input[DataflowSourceOperationSettingsArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="operationType")
-    def operation_type(self) -> pulumi.Input[Union[_builtins.str, OperationType]]:
-        
-        ...
-    
+    def operation_type(self) -> pulumi.Input[Union[_builtins.str, OperationType]]: ...
     @operation_type.setter
-    def operation_type(self, value: pulumi.Input[Union[_builtins.str, OperationType]]): # -> None:
-        ...
-    
+    def operation_type(
+        self, value: pulumi.Input[Union[_builtins.str, OperationType]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="builtInTransformationSettings")
-    def built_in_transformation_settings(self) -> Optional[pulumi.Input[DataflowBuiltInTransformationSettingsArgs]]:
-        
-        ...
-    
+    def built_in_transformation_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowBuiltInTransformationSettingsArgs]]: ...
     @built_in_transformation_settings.setter
-    def built_in_transformation_settings(self, value: Optional[pulumi.Input[DataflowBuiltInTransformationSettingsArgs]]): # -> None:
-        ...
-    
+    def built_in_transformation_settings(
+        self, value: Optional[pulumi.Input[DataflowBuiltInTransformationSettingsArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="destinationSettings")
-    def destination_settings(self) -> Optional[pulumi.Input[DataflowDestinationOperationSettingsArgs]]:
-        
-        ...
-    
+    def destination_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowDestinationOperationSettingsArgs]]: ...
     @destination_settings.setter
-    def destination_settings(self, value: Optional[pulumi.Input[DataflowDestinationOperationSettingsArgs]]): # -> None:
-        ...
-    
+    def destination_settings(
+        self, value: Optional[pulumi.Input[DataflowDestinationOperationSettingsArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceSettings")
-    def source_settings(self) -> Optional[pulumi.Input[DataflowSourceOperationSettingsArgs]]:
-        
-        ...
-    
+    def source_settings(
+        self,
+    ) -> Optional[pulumi.Input[DataflowSourceOperationSettingsArgs]]: ...
     @source_settings.setter
-    def source_settings(self, value: Optional[pulumi.Input[DataflowSourceOperationSettingsArgs]]): # -> None:
-        ...
-    
-
+    def source_settings(
+        self, value: Optional[pulumi.Input[DataflowSourceOperationSettingsArgs]]
+    ): ...
 
 class DataflowProfilePropertiesArgsDict(TypedDict):
-    
     diagnostics: NotRequired[pulumi.Input[ProfileDiagnosticsArgsDict]]
     instance_count: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class DataflowProfilePropertiesArgs:
-    def __init__(__self__, *, diagnostics: Optional[pulumi.Input[ProfileDiagnosticsArgs]] = ..., instance_count: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        diagnostics: Optional[pulumi.Input[ProfileDiagnosticsArgs]] = ...,
+        instance_count: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def diagnostics(self) -> Optional[pulumi.Input[ProfileDiagnosticsArgs]]:
-        
-        ...
-    
+    def diagnostics(self) -> Optional[pulumi.Input[ProfileDiagnosticsArgs]]: ...
     @diagnostics.setter
-    def diagnostics(self, value: Optional[pulumi.Input[ProfileDiagnosticsArgs]]): # -> None:
-        ...
-    
+    def diagnostics(self, value: Optional[pulumi.Input[ProfileDiagnosticsArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="instanceCount")
-    def instance_count(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def instance_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @instance_count.setter
-    def instance_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def instance_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class DataflowPropertiesArgsDict(TypedDict):
-    
     operations: pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgsDict]]]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-
+    ...
 
 @pulumi.input_type
 class DataflowPropertiesArgs:
-    def __init__(__self__, *, operations: pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]], mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        operations: pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]],
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def operations(self) -> pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]]:
-        
-        ...
-    
+    def operations(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]]: ...
     @operations.setter
-    def operations(self, value: pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]]): # -> None:
-        ...
-    
+    def operations(
+        self, value: pulumi.Input[Sequence[pulumi.Input[DataflowOperationArgs]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
-
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
 
 class DataflowSourceOperationSettingsArgsDict(TypedDict):
-    
     data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     endpoint_ref: pulumi.Input[_builtins.str]
     asset_ref: NotRequired[pulumi.Input[_builtins.str]]
     schema_ref: NotRequired[pulumi.Input[_builtins.str]]
-    serialization_format: NotRequired[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]]
-
+    serialization_format: NotRequired[
+        pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]
+    ]
+    ...
 
 @pulumi.input_type
 class DataflowSourceOperationSettingsArgs:
-    def __init__(__self__, *, data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], endpoint_ref: pulumi.Input[_builtins.str], asset_ref: Optional[pulumi.Input[_builtins.str]] = ..., schema_ref: Optional[pulumi.Input[_builtins.str]] = ..., serialization_format: Optional[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        data_sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        endpoint_ref: pulumi.Input[_builtins.str],
+        asset_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        schema_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        serialization_format: Optional[
+            pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataSources")
-    def data_sources(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def data_sources(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @data_sources.setter
-    def data_sources(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def data_sources(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="endpointRef")
-    def endpoint_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint_ref(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint_ref.setter
-    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="assetRef")
-    def asset_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def asset_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @asset_ref.setter
-    def asset_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def asset_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="schemaRef")
-    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def schema_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @schema_ref.setter
-    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def schema_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="serializationFormat")
-    def serialization_format(self) -> Optional[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]]:
-        
-        ...
-    
+    def serialization_format(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]]: ...
     @serialization_format.setter
-    def serialization_format(self, value: Optional[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]]): # -> None:
-        ...
-    
-
+    def serialization_format(
+        self,
+        value: Optional[pulumi.Input[Union[_builtins.str, SourceSerializationFormat]]],
+    ): ...
 
 class DiagnosticsLogsArgsDict(TypedDict):
-    
     level: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DiagnosticsLogsArgs:
-    def __init__(__self__, *, level: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, level: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def level(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def level(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @level.setter
-    def level(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def level(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DiskBackedMessageBufferArgsDict(TypedDict):
-    
     max_size: pulumi.Input[_builtins.str]
     ephemeral_volume_claim_spec: NotRequired[pulumi.Input[VolumeClaimSpecArgsDict]]
     persistent_volume_claim_spec: NotRequired[pulumi.Input[VolumeClaimSpecArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class DiskBackedMessageBufferArgs:
-    def __init__(__self__, *, max_size: pulumi.Input[_builtins.str], ephemeral_volume_claim_spec: Optional[pulumi.Input[VolumeClaimSpecArgs]] = ..., persistent_volume_claim_spec: Optional[pulumi.Input[VolumeClaimSpecArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        max_size: pulumi.Input[_builtins.str],
+        ephemeral_volume_claim_spec: Optional[pulumi.Input[VolumeClaimSpecArgs]] = ...,
+        persistent_volume_claim_spec: Optional[pulumi.Input[VolumeClaimSpecArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="maxSize")
-    def max_size(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def max_size(self) -> pulumi.Input[_builtins.str]: ...
     @max_size.setter
-    def max_size(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def max_size(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="ephemeralVolumeClaimSpec")
-    def ephemeral_volume_claim_spec(self) -> Optional[pulumi.Input[VolumeClaimSpecArgs]]:
-        
-        ...
-    
+    def ephemeral_volume_claim_spec(
+        self,
+    ) -> Optional[pulumi.Input[VolumeClaimSpecArgs]]: ...
     @ephemeral_volume_claim_spec.setter
-    def ephemeral_volume_claim_spec(self, value: Optional[pulumi.Input[VolumeClaimSpecArgs]]): # -> None:
-        ...
-    
+    def ephemeral_volume_claim_spec(
+        self, value: Optional[pulumi.Input[VolumeClaimSpecArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="persistentVolumeClaimSpec")
-    def persistent_volume_claim_spec(self) -> Optional[pulumi.Input[VolumeClaimSpecArgs]]:
-        
-        ...
-    
+    def persistent_volume_claim_spec(
+        self,
+    ) -> Optional[pulumi.Input[VolumeClaimSpecArgs]]: ...
     @persistent_volume_claim_spec.setter
-    def persistent_volume_claim_spec(self, value: Optional[pulumi.Input[VolumeClaimSpecArgs]]): # -> None:
-        ...
-    
-
+    def persistent_volume_claim_spec(
+        self, value: Optional[pulumi.Input[VolumeClaimSpecArgs]]
+    ): ...
 
 class ExtendedLocationArgsDict(TypedDict):
-    
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]
-
+    ...
 
 @pulumi.input_type
 class ExtendedLocationArgs:
-    def __init__(__self__, *, name: pulumi.Input[_builtins.str], type: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: pulumi.Input[_builtins.str],
+        type: pulumi.Input[Union[_builtins.str, ExtendedLocationType]],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> pulumi.Input[Union[_builtins.str, ExtendedLocationType]]:
-        
-        ...
-    
+    def type(self) -> pulumi.Input[Union[_builtins.str, ExtendedLocationType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]): # -> None:
-        ...
-    
-
+    def type(self, value: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]): ...
 
 class FrontendArgsDict(TypedDict):
-    
     replicas: pulumi.Input[_builtins.int]
     workers: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class FrontendArgs:
-    def __init__(__self__, *, replicas: pulumi.Input[_builtins.int], workers: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        replicas: pulumi.Input[_builtins.int],
+        workers: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def replicas(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def replicas(self) -> pulumi.Input[_builtins.int]: ...
     @replicas.setter
-    def replicas(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def replicas(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter
-    def workers(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def workers(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @workers.setter
-    def workers(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def workers(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class GenerateResourceLimitsArgsDict(TypedDict):
-    
     cpu: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-
+    ...
 
 @pulumi.input_type
 class GenerateResourceLimitsArgs:
-    def __init__(__self__, *, cpu: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cpu: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cpu(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def cpu(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
-
+    def cpu(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
 
 class InstancePropertiesArgsDict(TypedDict):
-    
     schema_registry_ref: pulumi.Input[SchemaRegistryRefArgsDict]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class InstancePropertiesArgs:
-    def __init__(__self__, *, schema_registry_ref: pulumi.Input[SchemaRegistryRefArgs], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        schema_registry_ref: pulumi.Input[SchemaRegistryRefArgs],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="schemaRegistryRef")
-    def schema_registry_ref(self) -> pulumi.Input[SchemaRegistryRefArgs]:
-        
-        ...
-    
+    def schema_registry_ref(self) -> pulumi.Input[SchemaRegistryRefArgs]: ...
     @schema_registry_ref.setter
-    def schema_registry_ref(self, value: pulumi.Input[SchemaRegistryRefArgs]): # -> None:
-        ...
-    
+    def schema_registry_ref(self, value: pulumi.Input[SchemaRegistryRefArgs]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class KubernetesReferenceArgsDict(TypedDict):
-    
     kind: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     api_group: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class KubernetesReferenceArgs:
-    def __init__(__self__, *, kind: pulumi.Input[_builtins.str], name: pulumi.Input[_builtins.str], api_group: Optional[pulumi.Input[_builtins.str]] = ..., namespace: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        kind: pulumi.Input[_builtins.str],
+        name: pulumi.Input[_builtins.str],
+        api_group: Optional[pulumi.Input[_builtins.str]] = ...,
+        namespace: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def kind(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def kind(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="apiGroup")
-    def api_group(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def api_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_group.setter
-    def api_group(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def api_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def namespace(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @namespace.setter
-    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ListenerPortArgsDict(TypedDict):
-    
     port: pulumi.Input[_builtins.int]
     authentication_ref: NotRequired[pulumi.Input[_builtins.str]]
     authorization_ref: NotRequired[pulumi.Input[_builtins.str]]
     node_port: NotRequired[pulumi.Input[_builtins.int]]
     protocol: NotRequired[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]
     tls: NotRequired[pulumi.Input[TlsCertMethodArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class ListenerPortArgs:
-    def __init__(__self__, *, port: pulumi.Input[_builtins.int], authentication_ref: Optional[pulumi.Input[_builtins.str]] = ..., authorization_ref: Optional[pulumi.Input[_builtins.str]] = ..., node_port: Optional[pulumi.Input[_builtins.int]] = ..., protocol: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]] = ..., tls: Optional[pulumi.Input[TlsCertMethodArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        port: pulumi.Input[_builtins.int],
+        authentication_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        authorization_ref: Optional[pulumi.Input[_builtins.str]] = ...,
+        node_port: Optional[pulumi.Input[_builtins.int]] = ...,
+        protocol: Optional[
+            pulumi.Input[Union[_builtins.str, BrokerProtocolType]]
+        ] = ...,
+        tls: Optional[pulumi.Input[TlsCertMethodArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def port(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def port(self) -> pulumi.Input[_builtins.int]: ...
     @port.setter
-    def port(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def port(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter(name="authenticationRef")
-    def authentication_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def authentication_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authentication_ref.setter
-    def authentication_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def authentication_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="authorizationRef")
-    def authorization_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def authorization_ref(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_ref.setter
-    def authorization_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def authorization_ref(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="nodePort")
-    def node_port(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def node_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @node_port.setter
-    def node_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def node_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]:
-        
-        ...
-    
+    def protocol(
+        self,
+    ) -> Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]: ...
     @protocol.setter
-    def protocol(self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]): # -> None:
-        ...
-    
+    def protocol(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, BrokerProtocolType]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def tls(self) -> Optional[pulumi.Input[TlsCertMethodArgs]]:
-        
-        ...
-    
+    def tls(self) -> Optional[pulumi.Input[TlsCertMethodArgs]]: ...
     @tls.setter
-    def tls(self, value: Optional[pulumi.Input[TlsCertMethodArgs]]): # -> None:
-        ...
-    
-
+    def tls(self, value: Optional[pulumi.Input[TlsCertMethodArgs]]): ...
 
 class LocalKubernetesReferenceArgsDict(TypedDict):
-    
     kind: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     api_group: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class LocalKubernetesReferenceArgs:
-    def __init__(__self__, *, kind: pulumi.Input[_builtins.str], name: pulumi.Input[_builtins.str], api_group: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        kind: pulumi.Input[_builtins.str],
+        name: pulumi.Input[_builtins.str],
+        api_group: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def kind(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def kind(self) -> pulumi.Input[_builtins.str]: ...
     @kind.setter
-    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def kind(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="apiGroup")
-    def api_group(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def api_group(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @api_group.setter
-    def api_group(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def api_group(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ManagedServiceIdentityArgsDict(TypedDict):
-    
     type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
-    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    user_assigned_identities: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
+    ...
 
 @pulumi.input_type
 class ManagedServiceIdentityArgs:
-    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]],
+        user_assigned_identities: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
-        
-        ...
-    
+    def type(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]: ...
     @type.setter
-    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
-        ...
-    
+    def type(
+        self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
-    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def user_assigned_identities(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @user_assigned_identities.setter
-    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def user_assigned_identities(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class MetricsArgsDict(TypedDict):
-    
     prometheus_port: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class MetricsArgs:
-    def __init__(__self__, *, prometheus_port: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, prometheus_port: Optional[pulumi.Input[_builtins.int]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="prometheusPort")
-    def prometheus_port(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def prometheus_port(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @prometheus_port.setter
-    def prometheus_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def prometheus_port(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class PrincipalDefinitionArgsDict(TypedDict):
-    
-    attributes: NotRequired[pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]]
+    attributes: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
+    ]
     client_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     usernames: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class PrincipalDefinitionArgs:
-    def __init__(__self__, *, attributes: Optional[pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]] = ..., client_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., usernames: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        attributes: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+            ]
+        ] = ...,
+        client_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        usernames: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def attributes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]]:
-        
-        ...
-    
+    def attributes(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
+    ]: ...
     @attributes.setter
-    def attributes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]]): # -> None:
-        ...
-    
+    def attributes(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="clientIds")
-    def client_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def client_ids(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @client_ids.setter
-    def client_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def client_ids(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def usernames(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def usernames(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @usernames.setter
-    def usernames(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def usernames(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class ProfileDiagnosticsArgsDict(TypedDict):
-    
     logs: NotRequired[pulumi.Input[DiagnosticsLogsArgsDict]]
     metrics: NotRequired[pulumi.Input[MetricsArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class ProfileDiagnosticsArgs:
-    def __init__(__self__, *, logs: Optional[pulumi.Input[DiagnosticsLogsArgs]] = ..., metrics: Optional[pulumi.Input[MetricsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        logs: Optional[pulumi.Input[DiagnosticsLogsArgs]] = ...,
+        metrics: Optional[pulumi.Input[MetricsArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def logs(self) -> Optional[pulumi.Input[DiagnosticsLogsArgs]]:
-        
-        ...
-    
+    def logs(self) -> Optional[pulumi.Input[DiagnosticsLogsArgs]]: ...
     @logs.setter
-    def logs(self, value: Optional[pulumi.Input[DiagnosticsLogsArgs]]): # -> None:
-        ...
-    
+    def logs(self, value: Optional[pulumi.Input[DiagnosticsLogsArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def metrics(self) -> Optional[pulumi.Input[MetricsArgs]]:
-        
-        ...
-    
+    def metrics(self) -> Optional[pulumi.Input[MetricsArgs]]: ...
     @metrics.setter
-    def metrics(self, value: Optional[pulumi.Input[MetricsArgs]]): # -> None:
-        ...
-    
-
+    def metrics(self, value: Optional[pulumi.Input[MetricsArgs]]): ...
 
 class RegistryEndpointAnonymousAuthenticationArgsDict(TypedDict):
-    
     anonymous_settings: Any
     method: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointAnonymousAuthenticationArgs:
-    def __init__(__self__, *, anonymous_settings: Any, method: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, anonymous_settings: Any, method: pulumi.Input[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="anonymousSettings")
-    def anonymous_settings(self) -> Any:
-        
-        ...
-    
+    def anonymous_settings(self) -> Any: ...
     @anonymous_settings.setter
-    def anonymous_settings(self, value: Any): # -> None:
-        ...
-    
+    def anonymous_settings(self, value: Any): ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def method(self, value: pulumi.Input[_builtins.str]): ...
 
 class RegistryEndpointArtifactPullSecretAuthenticationArgsDict(TypedDict):
-    
-    artifact_pull_secret_settings: pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgsDict]
+    artifact_pull_secret_settings: pulumi.Input[
+        RegistryEndpointArtifactPullSecretSettingsArgsDict
+    ]
     method: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointArtifactPullSecretAuthenticationArgs:
-    def __init__(__self__, *, artifact_pull_secret_settings: pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgs], method: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        artifact_pull_secret_settings: pulumi.Input[
+            RegistryEndpointArtifactPullSecretSettingsArgs
+        ],
+        method: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="artifactPullSecretSettings")
-    def artifact_pull_secret_settings(self) -> pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgs]:
-        
-        ...
-    
+    def artifact_pull_secret_settings(
+        self,
+    ) -> pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgs]: ...
     @artifact_pull_secret_settings.setter
-    def artifact_pull_secret_settings(self, value: pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgs]): # -> None:
-        ...
-    
+    def artifact_pull_secret_settings(
+        self, value: pulumi.Input[RegistryEndpointArtifactPullSecretSettingsArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def method(self, value: pulumi.Input[_builtins.str]): ...
 
 class RegistryEndpointArtifactPullSecretSettingsArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointArtifactPullSecretSettingsArgs:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
 
 class RegistryEndpointPropertiesArgsDict(TypedDict):
-    
-    authentication: pulumi.Input[Union[RegistryEndpointAnonymousAuthenticationArgsDict, RegistryEndpointArtifactPullSecretAuthenticationArgsDict, RegistryEndpointSystemAssignedIdentityAuthenticationArgsDict, RegistryEndpointUserAssignedIdentityAuthenticationArgsDict]]
+    authentication: pulumi.Input[
+        Union[
+            RegistryEndpointAnonymousAuthenticationArgsDict,
+            RegistryEndpointArtifactPullSecretAuthenticationArgsDict,
+            RegistryEndpointSystemAssignedIdentityAuthenticationArgsDict,
+            RegistryEndpointUserAssignedIdentityAuthenticationArgsDict,
+        ]
+    ]
     host: pulumi.Input[_builtins.str]
     trust_settings: NotRequired[pulumi.Input[RegistryEndpointTrustedSettingsArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointPropertiesArgs:
-    def __init__(__self__, *, authentication: pulumi.Input[Union[RegistryEndpointAnonymousAuthenticationArgs, RegistryEndpointArtifactPullSecretAuthenticationArgs, RegistryEndpointSystemAssignedIdentityAuthenticationArgs, RegistryEndpointUserAssignedIdentityAuthenticationArgs]], host: pulumi.Input[_builtins.str], trust_settings: Optional[pulumi.Input[RegistryEndpointTrustedSettingsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        authentication: pulumi.Input[
+            Union[
+                RegistryEndpointAnonymousAuthenticationArgs,
+                RegistryEndpointArtifactPullSecretAuthenticationArgs,
+                RegistryEndpointSystemAssignedIdentityAuthenticationArgs,
+                RegistryEndpointUserAssignedIdentityAuthenticationArgs,
+            ]
+        ],
+        host: pulumi.Input[_builtins.str],
+        trust_settings: Optional[
+            pulumi.Input[RegistryEndpointTrustedSettingsArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def authentication(self) -> pulumi.Input[Union[RegistryEndpointAnonymousAuthenticationArgs, RegistryEndpointArtifactPullSecretAuthenticationArgs, RegistryEndpointSystemAssignedIdentityAuthenticationArgs, RegistryEndpointUserAssignedIdentityAuthenticationArgs]]:
-        
-        ...
-    
+    def authentication(
+        self,
+    ) -> pulumi.Input[
+        Union[
+            RegistryEndpointAnonymousAuthenticationArgs,
+            RegistryEndpointArtifactPullSecretAuthenticationArgs,
+            RegistryEndpointSystemAssignedIdentityAuthenticationArgs,
+            RegistryEndpointUserAssignedIdentityAuthenticationArgs,
+        ]
+    ]: ...
     @authentication.setter
-    def authentication(self, value: pulumi.Input[Union[RegistryEndpointAnonymousAuthenticationArgs, RegistryEndpointArtifactPullSecretAuthenticationArgs, RegistryEndpointSystemAssignedIdentityAuthenticationArgs, RegistryEndpointUserAssignedIdentityAuthenticationArgs]]): # -> None:
-        ...
-    
+    def authentication(
+        self,
+        value: pulumi.Input[
+            Union[
+                RegistryEndpointAnonymousAuthenticationArgs,
+                RegistryEndpointArtifactPullSecretAuthenticationArgs,
+                RegistryEndpointSystemAssignedIdentityAuthenticationArgs,
+                RegistryEndpointUserAssignedIdentityAuthenticationArgs,
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def host(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def host(self) -> pulumi.Input[_builtins.str]: ...
     @host.setter
-    def host(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def host(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="trustSettings")
-    def trust_settings(self) -> Optional[pulumi.Input[RegistryEndpointTrustedSettingsArgs]]:
-        
-        ...
-    
+    def trust_settings(
+        self,
+    ) -> Optional[pulumi.Input[RegistryEndpointTrustedSettingsArgs]]: ...
     @trust_settings.setter
-    def trust_settings(self, value: Optional[pulumi.Input[RegistryEndpointTrustedSettingsArgs]]): # -> None:
-        ...
-    
-
+    def trust_settings(
+        self, value: Optional[pulumi.Input[RegistryEndpointTrustedSettingsArgs]]
+    ): ...
 
 class RegistryEndpointSystemAssignedIdentityAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[_builtins.str]
-    system_assigned_managed_identity_settings: pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgsDict]
-
+    system_assigned_managed_identity_settings: pulumi.Input[
+        RegistryEndpointSystemAssignedManagedIdentitySettingsArgsDict
+    ]
+    ...
 
 @pulumi.input_type
 class RegistryEndpointSystemAssignedIdentityAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[_builtins.str], system_assigned_managed_identity_settings: pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[_builtins.str],
+        system_assigned_managed_identity_settings: pulumi.Input[
+            RegistryEndpointSystemAssignedManagedIdentitySettingsArgs
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def method(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="systemAssignedManagedIdentitySettings")
-    def system_assigned_managed_identity_settings(self) -> pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgs]:
-        
-        ...
-    
+    def system_assigned_managed_identity_settings(
+        self,
+    ) -> pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgs]: ...
     @system_assigned_managed_identity_settings.setter
-    def system_assigned_managed_identity_settings(self, value: pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgs]): # -> None:
-        ...
-    
-
+    def system_assigned_managed_identity_settings(
+        self,
+        value: pulumi.Input[RegistryEndpointSystemAssignedManagedIdentitySettingsArgs],
+    ): ...
 
 class RegistryEndpointSystemAssignedManagedIdentitySettingsArgsDict(TypedDict):
-    
     audience: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointSystemAssignedManagedIdentitySettingsArgs:
-    def __init__(__self__, *, audience: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, audience: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def audience(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def audience(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audience.setter
-    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class RegistryEndpointTrustedSettingsArgsDict(TypedDict):
-    
-    trusted_signing_keys: pulumi.Input[Union[RegistryEndpointTrustedSigningKeyConfigMapArgsDict, RegistryEndpointTrustedSigningKeySecretArgsDict]]
-
+    trusted_signing_keys: pulumi.Input[
+        Union[
+            RegistryEndpointTrustedSigningKeyConfigMapArgsDict,
+            RegistryEndpointTrustedSigningKeySecretArgsDict,
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class RegistryEndpointTrustedSettingsArgs:
-    def __init__(__self__, *, trusted_signing_keys: pulumi.Input[Union[RegistryEndpointTrustedSigningKeyConfigMapArgs, RegistryEndpointTrustedSigningKeySecretArgs]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        trusted_signing_keys: pulumi.Input[
+            Union[
+                RegistryEndpointTrustedSigningKeyConfigMapArgs,
+                RegistryEndpointTrustedSigningKeySecretArgs,
+            ]
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="trustedSigningKeys")
-    def trusted_signing_keys(self) -> pulumi.Input[Union[RegistryEndpointTrustedSigningKeyConfigMapArgs, RegistryEndpointTrustedSigningKeySecretArgs]]:
-        
-        ...
-    
+    def trusted_signing_keys(
+        self,
+    ) -> pulumi.Input[
+        Union[
+            RegistryEndpointTrustedSigningKeyConfigMapArgs,
+            RegistryEndpointTrustedSigningKeySecretArgs,
+        ]
+    ]: ...
     @trusted_signing_keys.setter
-    def trusted_signing_keys(self, value: pulumi.Input[Union[RegistryEndpointTrustedSigningKeyConfigMapArgs, RegistryEndpointTrustedSigningKeySecretArgs]]): # -> None:
-        ...
-    
-
+    def trusted_signing_keys(
+        self,
+        value: pulumi.Input[
+            Union[
+                RegistryEndpointTrustedSigningKeyConfigMapArgs,
+                RegistryEndpointTrustedSigningKeySecretArgs,
+            ]
+        ],
+    ): ...
 
 class RegistryEndpointTrustedSigningKeyConfigMapArgsDict(TypedDict):
-    
     config_map_ref: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointTrustedSigningKeyConfigMapArgs:
-    def __init__(__self__, *, config_map_ref: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config_map_ref: pulumi.Input[_builtins.str],
+        type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configMapRef")
-    def config_map_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def config_map_ref(self) -> pulumi.Input[_builtins.str]: ...
     @config_map_ref.setter
-    def config_map_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def config_map_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def type(self, value: pulumi.Input[_builtins.str]): ...
 
 class RegistryEndpointTrustedSigningKeySecretArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointTrustedSigningKeySecretArgs:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        secret_ref: pulumi.Input[_builtins.str],
+        type: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> pulumi.Input[_builtins.str]: ...
     @type.setter
-    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def type(self, value: pulumi.Input[_builtins.str]): ...
 
 class RegistryEndpointUserAssignedIdentityAuthenticationArgsDict(TypedDict):
-    
     method: pulumi.Input[_builtins.str]
-    user_assigned_managed_identity_settings: pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgsDict]
-
+    user_assigned_managed_identity_settings: pulumi.Input[
+        RegistryEndpointUserAssignedManagedIdentitySettingsArgsDict
+    ]
+    ...
 
 @pulumi.input_type
 class RegistryEndpointUserAssignedIdentityAuthenticationArgs:
-    def __init__(__self__, *, method: pulumi.Input[_builtins.str], user_assigned_managed_identity_settings: pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        method: pulumi.Input[_builtins.str],
+        user_assigned_managed_identity_settings: pulumi.Input[
+            RegistryEndpointUserAssignedManagedIdentitySettingsArgs
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def method(self) -> pulumi.Input[_builtins.str]: ...
     @method.setter
-    def method(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def method(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="userAssignedManagedIdentitySettings")
-    def user_assigned_managed_identity_settings(self) -> pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgs]:
-        
-        ...
-    
+    def user_assigned_managed_identity_settings(
+        self,
+    ) -> pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgs]: ...
     @user_assigned_managed_identity_settings.setter
-    def user_assigned_managed_identity_settings(self, value: pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgs]): # -> None:
-        ...
-    
-
+    def user_assigned_managed_identity_settings(
+        self,
+        value: pulumi.Input[RegistryEndpointUserAssignedManagedIdentitySettingsArgs],
+    ): ...
 
 class RegistryEndpointUserAssignedManagedIdentitySettingsArgsDict(TypedDict):
-    
     client_id: pulumi.Input[_builtins.str]
     tenant_id: pulumi.Input[_builtins.str]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class RegistryEndpointUserAssignedManagedIdentitySettingsArgs:
-    def __init__(__self__, *, client_id: pulumi.Input[_builtins.str], tenant_id: pulumi.Input[_builtins.str], scope: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        client_id: pulumi.Input[_builtins.str],
+        tenant_id: pulumi.Input[_builtins.str],
+        scope: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="clientId")
-    def client_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def client_id(self) -> pulumi.Input[_builtins.str]: ...
     @client_id.setter
-    def client_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def client_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tenant_id(self) -> pulumi.Input[_builtins.str]: ...
     @tenant_id.setter
-    def tenant_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def tenant_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def scope(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def scope(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @scope.setter
-    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class SanForCertArgsDict(TypedDict):
-    
     dns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ip: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-
+    ...
 
 @pulumi.input_type
 class SanForCertArgs:
-    def __init__(__self__, *, dns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], ip: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        dns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        ip: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def dns(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def dns(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @dns.setter
-    def dns(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def dns(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def ip(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def ip(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @ip.setter
-    def ip(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
-
+    def ip(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
 
 class SchemaRegistryRefArgsDict(TypedDict):
-    
     resource_id: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class SchemaRegistryRefArgs:
-    def __init__(__self__, *, resource_id: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, resource_id: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="resourceId")
-    def resource_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def resource_id(self) -> pulumi.Input[_builtins.str]: ...
     @resource_id.setter
-    def resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def resource_id(self, value: pulumi.Input[_builtins.str]): ...
 
 class SelfCheckArgsDict(TypedDict):
-    
     interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class SelfCheckArgs:
-    def __init__(__self__, *, interval_seconds: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., timeout_seconds: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        interval_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+        timeout_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="intervalSeconds")
-    def interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval_seconds.setter
-    def interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="timeoutSeconds")
-    def timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def timeout_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @timeout_seconds.setter
-    def timeout_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def timeout_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class SelfTracingArgsDict(TypedDict):
-    
     interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
-
+    ...
 
 @pulumi.input_type
 class SelfTracingArgs:
-    def __init__(__self__, *, interval_seconds: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        interval_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="intervalSeconds")
-    def interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @interval_seconds.setter
-    def interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
-
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
 
 class StateStoreResourceRuleArgsDict(TypedDict):
-    
     key_type: pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]]
     keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     method: pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]]
-
+    ...
 
 @pulumi.input_type
 class StateStoreResourceRuleArgs:
-    def __init__(__self__, *, key_type: pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]], keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], method: pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        key_type: pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]],
+        keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        method: pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyType")
-    def key_type(self) -> pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]]:
-        
-        ...
-    
+    def key_type(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]]: ...
     @key_type.setter
-    def key_type(self, value: pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]]): # -> None:
-        ...
-    
+    def key_type(
+        self, value: pulumi.Input[Union[_builtins.str, StateStoreResourceKeyTypes]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def keys(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def keys(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @keys.setter
-    def keys(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def keys(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def method(self) -> pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]]:
-        
-        ...
-    
+    def method(
+        self,
+    ) -> pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]]: ...
     @method.setter
-    def method(self, value: pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]]): # -> None:
-        ...
-    
-
+    def method(
+        self,
+        value: pulumi.Input[Union[_builtins.str, StateStoreResourceDefinitionMethods]],
+    ): ...
 
 class SubscriberQueueLimitArgsDict(TypedDict):
-    
     length: NotRequired[pulumi.Input[_builtins.float]]
-    strategy: NotRequired[pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]]
-
+    strategy: NotRequired[
+        pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]
+    ]
+    ...
 
 @pulumi.input_type
 class SubscriberQueueLimitArgs:
-    def __init__(__self__, *, length: Optional[pulumi.Input[_builtins.float]] = ..., strategy: Optional[pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        length: Optional[pulumi.Input[_builtins.float]] = ...,
+        strategy: Optional[
+            pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def length(self) -> Optional[pulumi.Input[_builtins.float]]:
-        
-        ...
-    
+    def length(self) -> Optional[pulumi.Input[_builtins.float]]: ...
     @length.setter
-    def length(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
-        ...
-    
+    def length(self, value: Optional[pulumi.Input[_builtins.float]]): ...
     @_builtins.property
     @pulumi.getter
-    def strategy(self) -> Optional[pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]]:
-        
-        ...
-    
+    def strategy(
+        self,
+    ) -> Optional[
+        pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]
+    ]: ...
     @strategy.setter
-    def strategy(self, value: Optional[pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]]): # -> None:
-        ...
-    
-
+    def strategy(
+        self,
+        value: Optional[
+            pulumi.Input[Union[_builtins.str, SubscriberMessageDropStrategy]]
+        ],
+    ): ...
 
 class TlsCertMethodArgsDict(TypedDict):
-    
     mode: pulumi.Input[Union[_builtins.str, TlsCertMethodMode]]
-    cert_manager_certificate_spec: NotRequired[pulumi.Input[CertManagerCertificateSpecArgsDict]]
+    cert_manager_certificate_spec: NotRequired[
+        pulumi.Input[CertManagerCertificateSpecArgsDict]
+    ]
     manual: NotRequired[pulumi.Input[X509ManualCertificateArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class TlsCertMethodArgs:
-    def __init__(__self__, *, mode: pulumi.Input[Union[_builtins.str, TlsCertMethodMode]], cert_manager_certificate_spec: Optional[pulumi.Input[CertManagerCertificateSpecArgs]] = ..., manual: Optional[pulumi.Input[X509ManualCertificateArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        mode: pulumi.Input[Union[_builtins.str, TlsCertMethodMode]],
+        cert_manager_certificate_spec: Optional[
+            pulumi.Input[CertManagerCertificateSpecArgs]
+        ] = ...,
+        manual: Optional[pulumi.Input[X509ManualCertificateArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> pulumi.Input[Union[_builtins.str, TlsCertMethodMode]]:
-        
-        ...
-    
+    def mode(self) -> pulumi.Input[Union[_builtins.str, TlsCertMethodMode]]: ...
     @mode.setter
-    def mode(self, value: pulumi.Input[Union[_builtins.str, TlsCertMethodMode]]): # -> None:
-        ...
-    
+    def mode(self, value: pulumi.Input[Union[_builtins.str, TlsCertMethodMode]]): ...
     @_builtins.property
     @pulumi.getter(name="certManagerCertificateSpec")
-    def cert_manager_certificate_spec(self) -> Optional[pulumi.Input[CertManagerCertificateSpecArgs]]:
-        
-        ...
-    
+    def cert_manager_certificate_spec(
+        self,
+    ) -> Optional[pulumi.Input[CertManagerCertificateSpecArgs]]: ...
     @cert_manager_certificate_spec.setter
-    def cert_manager_certificate_spec(self, value: Optional[pulumi.Input[CertManagerCertificateSpecArgs]]): # -> None:
-        ...
-    
+    def cert_manager_certificate_spec(
+        self, value: Optional[pulumi.Input[CertManagerCertificateSpecArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def manual(self) -> Optional[pulumi.Input[X509ManualCertificateArgs]]:
-        
-        ...
-    
+    def manual(self) -> Optional[pulumi.Input[X509ManualCertificateArgs]]: ...
     @manual.setter
-    def manual(self, value: Optional[pulumi.Input[X509ManualCertificateArgs]]): # -> None:
-        ...
-    
-
+    def manual(self, value: Optional[pulumi.Input[X509ManualCertificateArgs]]): ...
 
 class TlsPropertiesArgsDict(TypedDict):
-    
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
     trusted_ca_certificate_config_map_ref: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class TlsPropertiesArgs:
-    def __init__(__self__, *, mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., trusted_ca_certificate_config_map_ref: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+        trusted_ca_certificate_config_map_ref: Optional[
+            pulumi.Input[_builtins.str]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="trustedCaCertificateConfigMapRef")
-    def trusted_ca_certificate_config_map_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def trusted_ca_certificate_config_map_ref(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @trusted_ca_certificate_config_map_ref.setter
-    def trusted_ca_certificate_config_map_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def trusted_ca_certificate_config_map_ref(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
 
 class TracesArgsDict(TypedDict):
-    
     cache_size_megabytes: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[Union[_builtins.str, OperationalMode]]]
     self_tracing: NotRequired[pulumi.Input[SelfTracingArgsDict]]
     span_channel_capacity: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class TracesArgs:
-    def __init__(__self__, *, cache_size_megabytes: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ..., self_tracing: Optional[pulumi.Input[SelfTracingArgs]] = ..., span_channel_capacity: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cache_size_megabytes: Optional[pulumi.Input[_builtins.int]] = ...,
+        mode: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]] = ...,
+        self_tracing: Optional[pulumi.Input[SelfTracingArgs]] = ...,
+        span_channel_capacity: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="cacheSizeMegabytes")
-    def cache_size_megabytes(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def cache_size_megabytes(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @cache_size_megabytes.setter
-    def cache_size_megabytes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def cache_size_megabytes(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]): # -> None:
-        ...
-    
+    def mode(
+        self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalMode]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="selfTracing")
-    def self_tracing(self) -> Optional[pulumi.Input[SelfTracingArgs]]:
-        
-        ...
-    
+    def self_tracing(self) -> Optional[pulumi.Input[SelfTracingArgs]]: ...
     @self_tracing.setter
-    def self_tracing(self, value: Optional[pulumi.Input[SelfTracingArgs]]): # -> None:
-        ...
-    
+    def self_tracing(self, value: Optional[pulumi.Input[SelfTracingArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="spanChannelCapacity")
-    def span_channel_capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def span_channel_capacity(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @span_channel_capacity.setter
-    def span_channel_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def span_channel_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class VolumeClaimResourceRequirementsArgsDict(TypedDict):
-    
     limits: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     requests: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class VolumeClaimResourceRequirementsArgs:
-    def __init__(__self__, *, limits: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., requests: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        limits: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        requests: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def limits(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def limits(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @limits.setter
-    def limits(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def limits(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def requests(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def requests(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @requests.setter
-    def requests(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def requests(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class VolumeClaimSpecSelectorMatchExpressionsArgsDict(TypedDict):
-    
     key: pulumi.Input[_builtins.str]
     operator: pulumi.Input[Union[_builtins.str, OperatorValues]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class VolumeClaimSpecSelectorMatchExpressionsArgs:
-    def __init__(__self__, *, key: pulumi.Input[_builtins.str], operator: pulumi.Input[Union[_builtins.str, OperatorValues]], values: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        key: pulumi.Input[_builtins.str],
+        operator: pulumi.Input[Union[_builtins.str, OperatorValues]],
+        values: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def key(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def key(self) -> pulumi.Input[_builtins.str]: ...
     @key.setter
-    def key(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def key(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def operator(self) -> pulumi.Input[Union[_builtins.str, OperatorValues]]:
-        
-        ...
-    
+    def operator(self) -> pulumi.Input[Union[_builtins.str, OperatorValues]]: ...
     @operator.setter
-    def operator(self, value: pulumi.Input[Union[_builtins.str, OperatorValues]]): # -> None:
-        ...
-    
+    def operator(self, value: pulumi.Input[Union[_builtins.str, OperatorValues]]): ...
     @_builtins.property
     @pulumi.getter
-    def values(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def values(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @values.setter
-    def values(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def values(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class VolumeClaimSpecSelectorArgsDict(TypedDict):
-    
-    match_expressions: NotRequired[pulumi.Input[Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgsDict]]]]
+    match_expressions: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgsDict]]
+        ]
+    ]
     match_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class VolumeClaimSpecSelectorArgs:
-    def __init__(__self__, *, match_expressions: Optional[pulumi.Input[Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]]] = ..., match_labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        match_expressions: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]
+            ]
+        ] = ...,
+        match_labels: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="matchExpressions")
-    def match_expressions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]]]:
-        
-        ...
-    
+    def match_expressions(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]
+        ]
+    ]: ...
     @match_expressions.setter
-    def match_expressions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]]]): # -> None:
-        ...
-    
+    def match_expressions(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[VolumeClaimSpecSelectorMatchExpressionsArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="matchLabels")
-    def match_labels(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def match_labels(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @match_labels.setter
-    def match_labels(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def match_labels(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class VolumeClaimSpecArgsDict(TypedDict):
-    
     access_modes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     data_source: NotRequired[pulumi.Input[LocalKubernetesReferenceArgsDict]]
     data_source_ref: NotRequired[pulumi.Input[KubernetesReferenceArgsDict]]
@@ -6007,116 +5808,86 @@ class VolumeClaimSpecArgsDict(TypedDict):
     storage_class_name: NotRequired[pulumi.Input[_builtins.str]]
     volume_mode: NotRequired[pulumi.Input[_builtins.str]]
     volume_name: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class VolumeClaimSpecArgs:
-    def __init__(__self__, *, access_modes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., data_source: Optional[pulumi.Input[LocalKubernetesReferenceArgs]] = ..., data_source_ref: Optional[pulumi.Input[KubernetesReferenceArgs]] = ..., resources: Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]] = ..., selector: Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]] = ..., storage_class_name: Optional[pulumi.Input[_builtins.str]] = ..., volume_mode: Optional[pulumi.Input[_builtins.str]] = ..., volume_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        access_modes: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        data_source: Optional[pulumi.Input[LocalKubernetesReferenceArgs]] = ...,
+        data_source_ref: Optional[pulumi.Input[KubernetesReferenceArgs]] = ...,
+        resources: Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]] = ...,
+        selector: Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]] = ...,
+        storage_class_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        volume_mode: Optional[pulumi.Input[_builtins.str]] = ...,
+        volume_name: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="accessModes")
-    def access_modes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def access_modes(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @access_modes.setter
-    def access_modes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def access_modes(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="dataSource")
-    def data_source(self) -> Optional[pulumi.Input[LocalKubernetesReferenceArgs]]:
-        
-        ...
-    
+    def data_source(self) -> Optional[pulumi.Input[LocalKubernetesReferenceArgs]]: ...
     @data_source.setter
-    def data_source(self, value: Optional[pulumi.Input[LocalKubernetesReferenceArgs]]): # -> None:
-        ...
-    
+    def data_source(
+        self, value: Optional[pulumi.Input[LocalKubernetesReferenceArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="dataSourceRef")
-    def data_source_ref(self) -> Optional[pulumi.Input[KubernetesReferenceArgs]]:
-        
-        ...
-    
+    def data_source_ref(self) -> Optional[pulumi.Input[KubernetesReferenceArgs]]: ...
     @data_source_ref.setter
-    def data_source_ref(self, value: Optional[pulumi.Input[KubernetesReferenceArgs]]): # -> None:
-        ...
-    
+    def data_source_ref(
+        self, value: Optional[pulumi.Input[KubernetesReferenceArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def resources(self) -> Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]]:
-        
-        ...
-    
+    def resources(
+        self,
+    ) -> Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]]: ...
     @resources.setter
-    def resources(self, value: Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]]): # -> None:
-        ...
-    
+    def resources(
+        self, value: Optional[pulumi.Input[VolumeClaimResourceRequirementsArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def selector(self) -> Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]]:
-        
-        ...
-    
+    def selector(self) -> Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]]: ...
     @selector.setter
-    def selector(self, value: Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]]): # -> None:
-        ...
-    
+    def selector(self, value: Optional[pulumi.Input[VolumeClaimSpecSelectorArgs]]): ...
     @_builtins.property
     @pulumi.getter(name="storageClassName")
-    def storage_class_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def storage_class_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class_name.setter
-    def storage_class_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def storage_class_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="volumeMode")
-    def volume_mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def volume_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_mode.setter
-    def volume_mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def volume_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="volumeName")
-    def volume_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def volume_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_name.setter
-    def volume_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def volume_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class X509ManualCertificateArgsDict(TypedDict):
-    
     secret_ref: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class X509ManualCertificateArgs:
-    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, secret_ref: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretRef")
-    def secret_ref(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_ref(self) -> pulumi.Input[_builtins.str]: ...
     @secret_ref.setter
-    def secret_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
-
+    def secret_ref(self, value: pulumi.Input[_builtins.str]): ...

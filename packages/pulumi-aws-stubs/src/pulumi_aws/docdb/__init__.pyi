@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -15,4 +13,3 @@ from .global_cluster import *
 from .subnet_group import *
 from ._inputs import *
 from . import outputs
-

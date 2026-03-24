@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -35,4 +33,3 @@ from .user_custom_permission import *
 from .vpc_connection import *
 from ._inputs import *
 from . import outputs
-

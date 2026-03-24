@@ -1,180 +1,366 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import NotRequired, Optional, Sequence, TypedDict
 from .. import _utilities
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['FeatureFleetDefaultMemberConfigArgs', 'FeatureFleetDefaultMemberConfigArgsDict', ..., ..., ..., ..., ..., ..., ..., ..., 'FeatureFleetDefaultMemberConfigMeshArgs', 'FeatureFleetDefaultMemberConfigMeshArgsDict', ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., 'FeatureIamBindingConditionArgs', 'FeatureIamBindingConditionArgsDict', 'FeatureIamMemberConditionArgs', 'FeatureIamMemberConditionArgsDict', 'FeatureMembershipConfigmanagementArgs', 'FeatureMembershipConfigmanagementArgsDict', 'FeatureMembershipConfigmanagementConfigSyncArgs', ..., ..., ..., ..., ..., 'FeatureMembershipConfigmanagementConfigSyncGitArgs', ..., 'FeatureMembershipConfigmanagementConfigSyncOciArgs', ..., ..., ..., ..., ..., ..., ..., 'FeatureMembershipMeshArgs', 'FeatureMembershipMeshArgsDict', 'FeatureMembershipPolicycontrollerArgs', 'FeatureMembershipPolicycontrollerArgsDict', ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., 'FeatureResourceStateArgs', 'FeatureResourceStateArgsDict', 'FeatureSpecArgs', 'FeatureSpecArgsDict', 'FeatureSpecClusterupgradeArgs', 'FeatureSpecClusterupgradeArgsDict', 'FeatureSpecClusterupgradeGkeUpgradeOverrideArgs', ..., ..., ..., ..., ..., 'FeatureSpecClusterupgradePostConditionsArgs', 'FeatureSpecClusterupgradePostConditionsArgsDict', 'FeatureSpecFleetobservabilityArgs', 'FeatureSpecFleetobservabilityArgsDict', 'FeatureSpecFleetobservabilityLoggingConfigArgs', 'FeatureSpecFleetobservabilityLoggingConfigArgsDict', ..., ..., ..., ..., 'FeatureSpecMulticlusteringressArgs', 'FeatureSpecMulticlusteringressArgsDict', 'FeatureSpecRbacrolebindingactuationArgs', 'FeatureSpecRbacrolebindingactuationArgsDict', 'FeatureSpecWorkloadidentityArgs', 'FeatureSpecWorkloadidentityArgsDict', 'FeatureStateArgs', 'FeatureStateArgsDict', 'FeatureStateStateArgs', 'FeatureStateStateArgsDict', 'FleetDefaultClusterConfigArgs', 'FleetDefaultClusterConfigArgsDict', ..., ..., ..., ..., 'FleetDefaultClusterConfigSecurityPostureConfigArgs', ..., 'FleetStateArgs', 'FleetStateArgsDict', 'MembershipAuthorityArgs', 'MembershipAuthorityArgsDict', 'MembershipBindingStateArgs', 'MembershipBindingStateArgsDict', 'MembershipEndpointArgs', 'MembershipEndpointArgsDict', 'MembershipEndpointGkeClusterArgs', 'MembershipEndpointGkeClusterArgsDict', 'MembershipIamBindingConditionArgs', 'MembershipIamBindingConditionArgsDict', 'MembershipIamMemberConditionArgs', 'MembershipIamMemberConditionArgsDict', 'MembershipRbacRoleBindingRoleArgs', 'MembershipRbacRoleBindingRoleArgsDict', 'MembershipRbacRoleBindingStateArgs', 'MembershipRbacRoleBindingStateArgsDict', 'NamespaceStateArgs', 'NamespaceStateArgsDict', 'RolloutSequenceStageArgs', 'RolloutSequenceStageArgsDict', 'RolloutSequenceStageClusterSelectorArgs', 'RolloutSequenceStageClusterSelectorArgsDict', 'ScopeIamBindingConditionArgs', 'ScopeIamBindingConditionArgsDict', 'ScopeIamMemberConditionArgs', 'ScopeIamMemberConditionArgsDict', 'ScopeRbacRoleBindingRoleArgs', 'ScopeRbacRoleBindingRoleArgsDict', 'ScopeRbacRoleBindingStateArgs', 'ScopeRbacRoleBindingStateArgsDict', 'ScopeStateArgs', 'ScopeStateArgsDict']
-class FeatureFleetDefaultMemberConfigArgsDict(TypedDict):
-    configmanagement: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgsDict]]
-    mesh: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgsDict]]
-    policycontroller: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgsDict]]
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "FeatureFleetDefaultMemberConfigArgs",
+    "FeatureFleetDefaultMemberConfigArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureFleetDefaultMemberConfigMeshArgs",
+    "FeatureFleetDefaultMemberConfigMeshArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureIamBindingConditionArgs",
+    "FeatureIamBindingConditionArgsDict",
+    "FeatureIamMemberConditionArgs",
+    "FeatureIamMemberConditionArgsDict",
+    "FeatureMembershipConfigmanagementArgs",
+    "FeatureMembershipConfigmanagementArgsDict",
+    "FeatureMembershipConfigmanagementConfigSyncArgs",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureMembershipConfigmanagementConfigSyncGitArgs",
+    ...,
+    "FeatureMembershipConfigmanagementConfigSyncOciArgs",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureMembershipMeshArgs",
+    "FeatureMembershipMeshArgsDict",
+    "FeatureMembershipPolicycontrollerArgs",
+    "FeatureMembershipPolicycontrollerArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureResourceStateArgs",
+    "FeatureResourceStateArgsDict",
+    "FeatureSpecArgs",
+    "FeatureSpecArgsDict",
+    "FeatureSpecClusterupgradeArgs",
+    "FeatureSpecClusterupgradeArgsDict",
+    "FeatureSpecClusterupgradeGkeUpgradeOverrideArgs",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureSpecClusterupgradePostConditionsArgs",
+    "FeatureSpecClusterupgradePostConditionsArgsDict",
+    "FeatureSpecFleetobservabilityArgs",
+    "FeatureSpecFleetobservabilityArgsDict",
+    "FeatureSpecFleetobservabilityLoggingConfigArgs",
+    "FeatureSpecFleetobservabilityLoggingConfigArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "FeatureSpecMulticlusteringressArgs",
+    "FeatureSpecMulticlusteringressArgsDict",
+    "FeatureSpecRbacrolebindingactuationArgs",
+    "FeatureSpecRbacrolebindingactuationArgsDict",
+    "FeatureSpecWorkloadidentityArgs",
+    "FeatureSpecWorkloadidentityArgsDict",
+    "FeatureStateArgs",
+    "FeatureStateArgsDict",
+    "FeatureStateStateArgs",
+    "FeatureStateStateArgsDict",
+    "FleetDefaultClusterConfigArgs",
+    "FleetDefaultClusterConfigArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "FleetDefaultClusterConfigSecurityPostureConfigArgs",
+    ...,
+    "FleetStateArgs",
+    "FleetStateArgsDict",
+    "MembershipAuthorityArgs",
+    "MembershipAuthorityArgsDict",
+    "MembershipBindingStateArgs",
+    "MembershipBindingStateArgsDict",
+    "MembershipEndpointArgs",
+    "MembershipEndpointArgsDict",
+    "MembershipEndpointGkeClusterArgs",
+    "MembershipEndpointGkeClusterArgsDict",
+    "MembershipIamBindingConditionArgs",
+    "MembershipIamBindingConditionArgsDict",
+    "MembershipIamMemberConditionArgs",
+    "MembershipIamMemberConditionArgsDict",
+    "MembershipRbacRoleBindingRoleArgs",
+    "MembershipRbacRoleBindingRoleArgsDict",
+    "MembershipRbacRoleBindingStateArgs",
+    "MembershipRbacRoleBindingStateArgsDict",
+    "NamespaceStateArgs",
+    "NamespaceStateArgsDict",
+    "RolloutSequenceStageArgs",
+    "RolloutSequenceStageArgsDict",
+    "RolloutSequenceStageClusterSelectorArgs",
+    "RolloutSequenceStageClusterSelectorArgsDict",
+    "ScopeIamBindingConditionArgs",
+    "ScopeIamBindingConditionArgsDict",
+    "ScopeIamMemberConditionArgs",
+    "ScopeIamMemberConditionArgsDict",
+    "ScopeRbacRoleBindingRoleArgs",
+    "ScopeRbacRoleBindingRoleArgsDict",
+    "ScopeRbacRoleBindingStateArgs",
+    "ScopeRbacRoleBindingStateArgsDict",
+    "ScopeStateArgs",
+    "ScopeStateArgsDict",
+]
 
+class FeatureFleetDefaultMemberConfigArgsDict(TypedDict):
+    configmanagement: NotRequired[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgsDict]
+    ]
+    mesh: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgsDict]]
+    policycontroller: NotRequired[
+        pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigArgs:
-    def __init__(__self__, *, configmanagement: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]] = ..., mesh: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]] = ..., policycontroller: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        configmanagement: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]
+        ] = ...,
+        mesh: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]] = ...,
+        policycontroller: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def configmanagement(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]]:
-        
-        ...
-    
+    def configmanagement(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]
+    ]: ...
     @configmanagement.setter
-    def configmanagement(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]]): # -> None:
-        ...
-    
+    def configmanagement(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def mesh(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]]:
-        
-        ...
-    
+    def mesh(
+        self,
+    ) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]]: ...
     @mesh.setter
-    def mesh(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]]): # -> None:
-        ...
-    
+    def mesh(
+        self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigMeshArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def policycontroller(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]]:
-        
-        ...
-    
+    def policycontroller(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]
+    ]: ...
     @policycontroller.setter
-    def policycontroller(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]]): # -> None:
-        ...
-    
-
+    def policycontroller(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgs]
+        ],
+    ): ...
 
 class FeatureFleetDefaultMemberConfigConfigmanagementArgsDict(TypedDict):
-    config_sync: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgsDict]]
+    config_sync: NotRequired[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgsDict]
+    ]
     management: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementArgs:
-    def __init__(__self__, *, config_sync: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]] = ..., management: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config_sync: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]
+        ] = ...,
+        management: Optional[pulumi.Input[_builtins.str]] = ...,
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configSync")
-    def config_sync(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]]:
-        
-        ...
-    
+    def config_sync(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]
+    ]: ...
     @config_sync.setter
-    def config_sync(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]]): # -> None:
-        ...
-    
+    def config_sync(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def management(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def management(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @management.setter
-    def management(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def management(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    git: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgsDict]]
+    git: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgsDict
+        ]
+    ]
     metrics_gcp_service_account_email: NotRequired[pulumi.Input[_builtins.str]]
-    oci: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgsDict]]
+    oci: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgsDict
+        ]
+    ]
     prevent_drift: NotRequired[pulumi.Input[_builtins.bool]]
     source_format: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs:
-    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., git: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs]] = ..., metrics_gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., oci: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs]] = ..., prevent_drift: Optional[pulumi.Input[_builtins.bool]] = ..., source_format: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        git: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs
+            ]
+        ] = ...,
+        metrics_gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        oci: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs
+            ]
+        ] = ...,
+        prevent_drift: Optional[pulumi.Input[_builtins.bool]] = ...,
+        source_format: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def git(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs]]:
-        
-        ...
-    
+    def git(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs]
+    ]: ...
     @git.setter
-    def git(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs]]): # -> None:
-        ...
-    
+    def git(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="metricsGcpServiceAccountEmail")
-    def metrics_gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def metrics_gcp_service_account_email(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metrics_gcp_service_account_email.setter
-    def metrics_gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def metrics_gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def oci(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs]]:
-        
-        ...
-    
+    def oci(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs]
+    ]: ...
     @oci.setter
-    def oci(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs]]): # -> None:
-        ...
-    
+    def oci(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="preventDrift")
-    def prevent_drift(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def prevent_drift(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @prevent_drift.setter
-    def prevent_drift(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def prevent_drift(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceFormat")
-    def source_format(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_format.setter
-    def source_format(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def source_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgsDict(TypedDict):
     secret_type: pulumi.Input[_builtins.str]
@@ -185,95 +371,64 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgsDict(Typed
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_rev: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs:
-    def __init__(__self__, *, secret_type: pulumi.Input[_builtins.str], gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., https_proxy: Optional[pulumi.Input[_builtins.str]] = ..., policy_dir: Optional[pulumi.Input[_builtins.str]] = ..., sync_branch: Optional[pulumi.Input[_builtins.str]] = ..., sync_repo: Optional[pulumi.Input[_builtins.str]] = ..., sync_rev: Optional[pulumi.Input[_builtins.str]] = ..., sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        secret_type: pulumi.Input[_builtins.str],
+        gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        https_proxy: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_dir: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_branch: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_repo: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_rev: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretType")
-    def secret_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_type(self) -> pulumi.Input[_builtins.str]: ...
     @secret_type.setter
-    def secret_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="gcpServiceAccountEmail")
-    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_service_account_email.setter
-    def gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="httpsProxy")
-    def https_proxy(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def https_proxy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @https_proxy.setter
-    def https_proxy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def https_proxy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="policyDir")
-    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_dir.setter
-    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncBranch")
-    def sync_branch(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_branch(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_branch.setter
-    def sync_branch(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_branch(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRepo")
-    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_repo.setter
-    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRev")
-    def sync_rev(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_rev(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_rev.setter
-    def sync_rev(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_rev(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncWaitSecs")
-    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_wait_secs.setter
-    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgsDict(TypedDict):
     secret_type: pulumi.Input[_builtins.str]
@@ -282,937 +437,1085 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgsDict(Typed
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs:
-    def __init__(__self__, *, secret_type: pulumi.Input[_builtins.str], gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., policy_dir: Optional[pulumi.Input[_builtins.str]] = ..., sync_repo: Optional[pulumi.Input[_builtins.str]] = ..., sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        secret_type: pulumi.Input[_builtins.str],
+        gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_dir: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_repo: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...,
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretType")
-    def secret_type(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def secret_type(self) -> pulumi.Input[_builtins.str]: ...
     @secret_type.setter
-    def secret_type(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def secret_type(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="gcpServiceAccountEmail")
-    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_service_account_email.setter
-    def gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="policyDir")
-    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_dir.setter
-    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRepo")
-    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_repo.setter
-    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncWaitSecs")
-    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_wait_secs.setter
-    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
     @_utilities.deprecated(...)
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureFleetDefaultMemberConfigMeshArgsDict(TypedDict):
     management: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigMeshArgs:
-    def __init__(__self__, *, management: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, management: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def management(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def management(self) -> pulumi.Input[_builtins.str]: ...
     @management.setter
-    def management(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def management(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureFleetDefaultMemberConfigPolicycontrollerArgsDict(TypedDict):
-    policy_controller_hub_config: pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgsDict]
+    policy_controller_hub_config: pulumi.Input[
+        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgsDict
+    ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerArgs:
-    def __init__(__self__, *, policy_controller_hub_config: pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs], version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        policy_controller_hub_config: pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs
+        ],
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="policyControllerHubConfig")
-    def policy_controller_hub_config(self) -> pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs]:
-        
-        ...
-    
+    def policy_controller_hub_config(
+        self,
+    ) -> pulumi.Input[
+        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs
+    ]: ...
     @policy_controller_hub_config.setter
-    def policy_controller_hub_config(self, value: pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs]): # -> None:
-        ...
-    
+    def policy_controller_hub_config(
+        self,
+        value: pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgsDict(
+    TypedDict
+):
     install_spec: pulumi.Input[_builtins.str]
     audit_interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
     constraint_violation_limit: NotRequired[pulumi.Input[_builtins.int]]
-    deployment_configs: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict]]]]
-    exemptable_namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    deployment_configs: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict
+                ]
+            ]
+        ]
+    ]
+    exemptable_namespaces: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
     log_denies_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    monitoring: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict]]
+    monitoring: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict
+        ]
+    ]
     mutation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    policy_content: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict]]
+    policy_content: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict
+        ]
+    ]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs:
-    def __init__(__self__, *, install_spec: pulumi.Input[_builtins.str], audit_interval_seconds: Optional[pulumi.Input[_builtins.int]] = ..., constraint_violation_limit: Optional[pulumi.Input[_builtins.int]] = ..., deployment_configs: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]] = ..., exemptable_namespaces: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., monitoring: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs]] = ..., mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., policy_content: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]] = ..., referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        install_spec: pulumi.Input[_builtins.str],
+        audit_interval_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        constraint_violation_limit: Optional[pulumi.Input[_builtins.int]] = ...,
+        deployment_configs: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        exemptable_namespaces: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        monitoring: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+            ]
+        ] = ...,
+        mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        policy_content: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+            ]
+        ] = ...,
+        referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="installSpec")
-    def install_spec(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def install_spec(self) -> pulumi.Input[_builtins.str]: ...
     @install_spec.setter
-    def install_spec(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def install_spec(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="auditIntervalSeconds")
-    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @audit_interval_seconds.setter
-    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="constraintViolationLimit")
-    def constraint_violation_limit(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def constraint_violation_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @constraint_violation_limit.setter
-    def constraint_violation_limit(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def constraint_violation_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigs")
-    def deployment_configs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]]:
-        
-        ...
-    
+    def deployment_configs(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                ]
+            ]
+        ]
+    ]: ...
     @deployment_configs.setter
-    def deployment_configs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]]): # -> None:
-        ...
-    
+    def deployment_configs(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="exemptableNamespaces")
-    def exemptable_namespaces(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def exemptable_namespaces(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @exemptable_namespaces.setter
-    def exemptable_namespaces(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def exemptable_namespaces(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="logDeniesEnabled")
-    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @log_denies_enabled.setter
-    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def monitoring(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs]]:
-        
-        ...
-    
+    def monitoring(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+        ]
+    ]: ...
     @monitoring.setter
-    def monitoring(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs]]): # -> None:
-        ...
-    
+    def monitoring(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mutationEnabled")
-    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mutation_enabled.setter
-    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="policyContent")
-    def policy_content(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]]:
-        
-        ...
-    
+    def policy_content(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+        ]
+    ]: ...
     @policy_content.setter
-    def policy_content(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]]): # -> None:
-        ...
-    
+    def policy_content(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="referentialRulesEnabled")
-    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @referential_rules_enabled.setter
-    def referential_rules_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def referential_rules_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict(
+    TypedDict
+):
     component: pulumi.Input[_builtins.str]
-    container_resources: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict]]
+    container_resources: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict
+        ]
+    ]
     pod_affinity: NotRequired[pulumi.Input[_builtins.str]]
-    pod_tolerations: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict]]]]
+    pod_tolerations: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict
+                ]
+            ]
+        ]
+    ]
     replica_count: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs:
-    def __init__(__self__, *, component: pulumi.Input[_builtins.str], container_resources: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]] = ..., pod_affinity: Optional[pulumi.Input[_builtins.str]] = ..., pod_tolerations: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]] = ..., replica_count: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        component: pulumi.Input[_builtins.str],
+        container_resources: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+            ]
+        ] = ...,
+        pod_affinity: Optional[pulumi.Input[_builtins.str]] = ...,
+        pod_tolerations: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        replica_count: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def component(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def component(self) -> pulumi.Input[_builtins.str]: ...
     @component.setter
-    def component(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def component(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="containerResources")
-    def container_resources(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]]:
-        
-        ...
-    
+    def container_resources(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+        ]
+    ]: ...
     @container_resources.setter
-    def container_resources(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]]): # -> None:
-        ...
-    
+    def container_resources(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="podAffinity")
-    def pod_affinity(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def pod_affinity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pod_affinity.setter
-    def pod_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def pod_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="podTolerations")
-    def pod_tolerations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]]:
-        
-        ...
-    
+    def pod_tolerations(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                ]
+            ]
+        ]
+    ]: ...
     @pod_tolerations.setter
-    def pod_tolerations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]]): # -> None:
-        ...
-    
+    def pod_tolerations(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
-    def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict(TypedDict):
-    limits: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict]]
-    requests: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict]]
-
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict(
+    TypedDict
+):
+    limits: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict
+        ]
+    ]
+    requests: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs:
-    def __init__(__self__, *, limits: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]] = ..., requests: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        limits: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+            ]
+        ] = ...,
+        requests: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def limits(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]]:
-        
-        ...
-    
+    def limits(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+        ]
+    ]: ...
     @limits.setter
-    def limits(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]]): # -> None:
-        ...
-    
+    def limits(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def requests(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]]:
-        
-        ...
-    
+    def requests(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+        ]
+    ]: ...
     @requests.setter
-    def requests(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]]): # -> None:
-        ...
-    
+    def requests(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+            ]
+        ],
+    ): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict(
+    TypedDict
+):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs:
-    def __init__(__self__, *, cpu: Optional[pulumi.Input[_builtins.str]] = ..., memory: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cpu: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def memory(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict(
+    TypedDict
+):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs:
-    def __init__(__self__, *, cpu: Optional[pulumi.Input[_builtins.str]] = ..., memory: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cpu: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def memory(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict(
+    TypedDict
+):
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs:
-    def __init__(__self__, *, effect: Optional[pulumi.Input[_builtins.str]] = ..., key: Optional[pulumi.Input[_builtins.str]] = ..., operator: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        effect: Optional[pulumi.Input[_builtins.str]] = ...,
+        key: Optional[pulumi.Input[_builtins.str]] = ...,
+        operator: Optional[pulumi.Input[_builtins.str]] = ...,
+        value: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def effect(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def effect(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effect.setter
-    def effect(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def effect(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def operator(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def operator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operator.setter
-    def operator(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def operator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict(
+    TypedDict
+):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs:
-    def __init__(__self__, *, backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def backends(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def backends(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @backends.setter
-    def backends(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def backends(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict(TypedDict):
-    bundles: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict]]]]
-    template_library: NotRequired[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict]]
-
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict(
+    TypedDict
+):
+    bundles: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict
+                ]
+            ]
+        ]
+    ]
+    template_library: NotRequired[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs:
-    def __init__(__self__, *, bundles: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]] = ..., template_library: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bundles: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        template_library: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bundles(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]]:
-        
-        ...
-    
+    def bundles(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                ]
+            ]
+        ]
+    ]: ...
     @bundles.setter
-    def bundles(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]]): # -> None:
-        ...
-    
+    def bundles(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="templateLibrary")
-    def template_library(self) -> Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]]:
-        
-        ...
-    
+    def template_library(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+        ]
+    ]: ...
     @template_library.setter
-    def template_library(self, value: Optional[pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]]): # -> None:
-        ...
-    
+    def template_library(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+            ]
+        ],
+    ): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict(
+    TypedDict
+):
     bundle: pulumi.Input[_builtins.str]
-    exempted_namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    exempted_namespaces: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs:
-    def __init__(__self__, *, bundle: pulumi.Input[_builtins.str], exempted_namespaces: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bundle: pulumi.Input[_builtins.str],
+        exempted_namespaces: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bundle(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def bundle(self) -> pulumi.Input[_builtins.str]: ...
     @bundle.setter
-    def bundle(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def bundle(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="exemptedNamespaces")
-    def exempted_namespaces(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def exempted_namespaces(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @exempted_namespaces.setter
-    def exempted_namespaces(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def exempted_namespaces(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
-
-class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict(TypedDict):
+class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict(
+    TypedDict
+):
     installation: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs:
-    def __init__(__self__, *, installation: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, installation: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def installation(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def installation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @installation.setter
-    def installation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def installation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureIamBindingConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureIamMemberConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipConfigmanagementArgsDict(TypedDict):
-    config_sync: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgsDict]]
-    hierarchy_controller: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgsDict]]
+    config_sync: NotRequired[
+        pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgsDict]
+    ]
+    hierarchy_controller: NotRequired[
+        pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgsDict]
+    ]
     management: NotRequired[pulumi.Input[_builtins.str]]
-    policy_controller: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgsDict]]
+    policy_controller: NotRequired[
+        pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgsDict]
+    ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementArgs:
-    def __init__(__self__, *, config_sync: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]] = ..., hierarchy_controller: Optional[pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]] = ..., management: Optional[pulumi.Input[_builtins.str]] = ..., policy_controller: Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config_sync: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]
+        ] = ...,
+        hierarchy_controller: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]
+        ] = ...,
+        management: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_controller: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]
+        ] = ...,
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configSync")
-    def config_sync(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]]:
-        
-        ...
-    
+    def config_sync(
+        self,
+    ) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]]: ...
     @config_sync.setter
-    def config_sync(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]]): # -> None:
-        ...
-    
+    def config_sync(
+        self,
+        value: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="hierarchyController")
-    def hierarchy_controller(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]]:
-        
-        ...
-    
+    def hierarchy_controller(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]
+    ]: ...
     @hierarchy_controller.setter
-    def hierarchy_controller(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]]): # -> None:
-        ...
-    
+    def hierarchy_controller(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementHierarchyControllerArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def management(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def management(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @management.setter
-    def management(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def management(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="policyController")
-    def policy_controller(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]]:
-        
-        ...
-    
+    def policy_controller(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]
+    ]: ...
     @policy_controller.setter
-    def policy_controller(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]]): # -> None:
-        ...
-    
+    def policy_controller(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipConfigmanagementConfigSyncArgsDict(TypedDict):
-    deployment_overrides: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgsDict]]]]
+    deployment_overrides: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgsDict
+                ]
+            ]
+        ]
+    ]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    git: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgsDict]]
+    git: NotRequired[
+        pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgsDict]
+    ]
     metrics_gcp_service_account_email: NotRequired[pulumi.Input[_builtins.str]]
-    oci: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgsDict]]
+    oci: NotRequired[
+        pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgsDict]
+    ]
     prevent_drift: NotRequired[pulumi.Input[_builtins.bool]]
     source_format: NotRequired[pulumi.Input[_builtins.str]]
     stop_syncing: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncArgs:
-    def __init__(__self__, *, deployment_overrides: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs]]]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., git: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]] = ..., metrics_gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., oci: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]] = ..., prevent_drift: Optional[pulumi.Input[_builtins.bool]] = ..., source_format: Optional[pulumi.Input[_builtins.str]] = ..., stop_syncing: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        deployment_overrides: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        git: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]
+        ] = ...,
+        metrics_gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        oci: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]
+        ] = ...,
+        prevent_drift: Optional[pulumi.Input[_builtins.bool]] = ...,
+        source_format: Optional[pulumi.Input[_builtins.str]] = ...,
+        stop_syncing: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="deploymentOverrides")
-    def deployment_overrides(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs]]]]:
-        
-        ...
-    
+    def deployment_overrides(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs
+                ]
+            ]
+        ]
+    ]: ...
     @deployment_overrides.setter
-    def deployment_overrides(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs]]]]): # -> None:
-        ...
-    
+    def deployment_overrides(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def git(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]]:
-        
-        ...
-    
+    def git(
+        self,
+    ) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]]: ...
     @git.setter
-    def git(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]]): # -> None:
-        ...
-    
+    def git(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementConfigSyncGitArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="metricsGcpServiceAccountEmail")
-    def metrics_gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def metrics_gcp_service_account_email(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.str]]: ...
     @metrics_gcp_service_account_email.setter
-    def metrics_gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def metrics_gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def oci(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]]:
-        
-        ...
-    
+    def oci(
+        self,
+    ) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]]: ...
     @oci.setter
-    def oci(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]]): # -> None:
-        ...
-    
+    def oci(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureMembershipConfigmanagementConfigSyncOciArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="preventDrift")
-    def prevent_drift(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def prevent_drift(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @prevent_drift.setter
-    def prevent_drift(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def prevent_drift(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceFormat")
-    def source_format(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_format(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_format.setter
-    def source_format(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def source_format(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="stopSyncing")
-    def stop_syncing(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def stop_syncing(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @stop_syncing.setter
-    def stop_syncing(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def stop_syncing(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
 
 class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgsDict(TypedDict):
-    containers: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgsDict]]]]
+    containers: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgsDict
+                ]
+            ]
+        ]
+    ]
     deployment_name: NotRequired[pulumi.Input[_builtins.str]]
     deployment_namespace: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs:
-    def __init__(__self__, *, containers: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs]]]] = ..., deployment_name: Optional[pulumi.Input[_builtins.str]] = ..., deployment_namespace: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        containers: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        deployment_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        deployment_namespace: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def containers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs]]]]:
-        
-        ...
-    
+    def containers(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs
+                ]
+            ]
+        ]
+    ]: ...
     @containers.setter
-    def containers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs]]]]): # -> None:
-        ...
-    
+    def containers(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="deploymentName")
-    def deployment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def deployment_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_name.setter
-    def deployment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def deployment_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="deploymentNamespace")
-    def deployment_namespace(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def deployment_namespace(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deployment_namespace.setter
-    def deployment_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def deployment_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgsDict(TypedDict):
+class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgsDict(
+    TypedDict
+):
     container_name: NotRequired[pulumi.Input[_builtins.str]]
     cpu_limit: NotRequired[pulumi.Input[_builtins.str]]
     cpu_request: NotRequired[pulumi.Input[_builtins.str]]
     memory_limit: NotRequired[pulumi.Input[_builtins.str]]
     memory_request: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs:
-    def __init__(__self__, *, container_name: Optional[pulumi.Input[_builtins.str]] = ..., cpu_limit: Optional[pulumi.Input[_builtins.str]] = ..., cpu_request: Optional[pulumi.Input[_builtins.str]] = ..., memory_limit: Optional[pulumi.Input[_builtins.str]] = ..., memory_request: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        container_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        cpu_limit: Optional[pulumi.Input[_builtins.str]] = ...,
+        cpu_request: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory_limit: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory_request: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="containerName")
-    def container_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def container_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @container_name.setter
-    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="cpuLimit")
-    def cpu_limit(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu_limit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu_limit.setter
-    def cpu_limit(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu_limit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="cpuRequest")
-    def cpu_request(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu_request(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu_request.setter
-    def cpu_request(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu_request(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="memoryLimit")
-    def memory_limit(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory_limit(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory_limit.setter
-    def memory_limit(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def memory_limit(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="memoryRequest")
-    def memory_request(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory_request(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory_request.setter
-    def memory_request(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def memory_request(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipConfigmanagementConfigSyncGitArgsDict(TypedDict):
     gcp_service_account_email: NotRequired[pulumi.Input[_builtins.str]]
@@ -1223,95 +1526,64 @@ class FeatureMembershipConfigmanagementConfigSyncGitArgsDict(TypedDict):
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_rev: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncGitArgs:
-    def __init__(__self__, *, gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., https_proxy: Optional[pulumi.Input[_builtins.str]] = ..., policy_dir: Optional[pulumi.Input[_builtins.str]] = ..., secret_type: Optional[pulumi.Input[_builtins.str]] = ..., sync_branch: Optional[pulumi.Input[_builtins.str]] = ..., sync_repo: Optional[pulumi.Input[_builtins.str]] = ..., sync_rev: Optional[pulumi.Input[_builtins.str]] = ..., sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        https_proxy: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_dir: Optional[pulumi.Input[_builtins.str]] = ...,
+        secret_type: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_branch: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_repo: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_rev: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="gcpServiceAccountEmail")
-    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_service_account_email.setter
-    def gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="httpsProxy")
-    def https_proxy(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def https_proxy(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @https_proxy.setter
-    def https_proxy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def https_proxy(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="policyDir")
-    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_dir.setter
-    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="secretType")
-    def secret_type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def secret_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_type.setter
-    def secret_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def secret_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncBranch")
-    def sync_branch(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_branch(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_branch.setter
-    def sync_branch(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_branch(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRepo")
-    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_repo.setter
-    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRev")
-    def sync_rev(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_rev(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_rev.setter
-    def sync_rev(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_rev(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncWaitSecs")
-    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_wait_secs.setter
-    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipConfigmanagementConfigSyncOciArgsDict(TypedDict):
     gcp_service_account_email: NotRequired[pulumi.Input[_builtins.str]]
@@ -1319,1830 +1591,1833 @@ class FeatureMembershipConfigmanagementConfigSyncOciArgsDict(TypedDict):
     secret_type: NotRequired[pulumi.Input[_builtins.str]]
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncOciArgs:
-    def __init__(__self__, *, gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ..., policy_dir: Optional[pulumi.Input[_builtins.str]] = ..., secret_type: Optional[pulumi.Input[_builtins.str]] = ..., sync_repo: Optional[pulumi.Input[_builtins.str]] = ..., sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        gcp_service_account_email: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_dir: Optional[pulumi.Input[_builtins.str]] = ...,
+        secret_type: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_repo: Optional[pulumi.Input[_builtins.str]] = ...,
+        sync_wait_secs: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="gcpServiceAccountEmail")
-    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def gcp_service_account_email(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @gcp_service_account_email.setter
-    def gcp_service_account_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def gcp_service_account_email(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="policyDir")
-    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def policy_dir(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @policy_dir.setter
-    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def policy_dir(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="secretType")
-    def secret_type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def secret_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @secret_type.setter
-    def secret_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def secret_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncRepo")
-    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_repo(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_repo.setter
-    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sync_repo(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="syncWaitSecs")
-    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sync_wait_secs(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sync_wait_secs.setter
-    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def sync_wait_secs(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipConfigmanagementHierarchyControllerArgsDict(TypedDict):
     enable_hierarchical_resource_quota: NotRequired[pulumi.Input[_builtins.bool]]
     enable_pod_tree_labels: NotRequired[pulumi.Input[_builtins.bool]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementHierarchyControllerArgs:
-    def __init__(__self__, *, enable_hierarchical_resource_quota: Optional[pulumi.Input[_builtins.bool]] = ..., enable_pod_tree_labels: Optional[pulumi.Input[_builtins.bool]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        enable_hierarchical_resource_quota: Optional[
+            pulumi.Input[_builtins.bool]
+        ] = ...,
+        enable_pod_tree_labels: Optional[pulumi.Input[_builtins.bool]] = ...,
+        enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="enableHierarchicalResourceQuota")
-    def enable_hierarchical_resource_quota(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enable_hierarchical_resource_quota(
+        self,
+    ) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_hierarchical_resource_quota.setter
-    def enable_hierarchical_resource_quota(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def enable_hierarchical_resource_quota(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="enablePodTreeLabels")
-    def enable_pod_tree_labels(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enable_pod_tree_labels(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enable_pod_tree_labels.setter
-    def enable_pod_tree_labels(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def enable_pod_tree_labels(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
 
 class FeatureMembershipConfigmanagementPolicyControllerArgsDict(TypedDict):
     audit_interval_seconds: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    exemptable_namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    exemptable_namespaces: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
     log_denies_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    monitoring: NotRequired[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerMonitoringArgsDict]]
+    monitoring: NotRequired[
+        pulumi.Input[
+            FeatureMembershipConfigmanagementPolicyControllerMonitoringArgsDict
+        ]
+    ]
     mutation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     template_library_installed: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementPolicyControllerArgs:
-    def __init__(__self__, *, audit_interval_seconds: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., exemptable_namespaces: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., monitoring: Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs]] = ..., mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., template_library_installed: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        audit_interval_seconds: Optional[pulumi.Input[_builtins.str]] = ...,
+        enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        exemptable_namespaces: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        monitoring: Optional[
+            pulumi.Input[
+                FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs
+            ]
+        ] = ...,
+        mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        template_library_installed: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="auditIntervalSeconds")
-    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @audit_interval_seconds.setter
-    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @enabled.setter
-    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="exemptableNamespaces")
-    def exemptable_namespaces(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def exemptable_namespaces(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @exemptable_namespaces.setter
-    def exemptable_namespaces(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def exemptable_namespaces(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="logDeniesEnabled")
-    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @log_denies_enabled.setter
-    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def monitoring(self) -> Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs]]:
-        
-        ...
-    
+    def monitoring(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs]
+    ]: ...
     @monitoring.setter
-    def monitoring(self, value: Optional[pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs]]): # -> None:
-        ...
-    
+    def monitoring(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mutationEnabled")
-    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mutation_enabled.setter
-    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="referentialRulesEnabled")
-    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @referential_rules_enabled.setter
-    def referential_rules_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def referential_rules_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="templateLibraryInstalled")
-    def template_library_installed(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def template_library_installed(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @template_library_installed.setter
-    def template_library_installed(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
-
+    def template_library_installed(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ): ...
 
 class FeatureMembershipConfigmanagementPolicyControllerMonitoringArgsDict(TypedDict):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs:
-    def __init__(__self__, *, backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def backends(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def backends(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @backends.setter
-    def backends(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def backends(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class FeatureMembershipMeshArgsDict(TypedDict):
     control_plane: NotRequired[pulumi.Input[_builtins.str]]
     management: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipMeshArgs:
-    def __init__(__self__, *, control_plane: Optional[pulumi.Input[_builtins.str]] = ..., management: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        control_plane: Optional[pulumi.Input[_builtins.str]] = ...,
+        management: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="controlPlane")
     @_utilities.deprecated("""Deprecated in favor of the `management` field""")
-    def control_plane(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def control_plane(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @control_plane.setter
-    def control_plane(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def control_plane(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def management(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def management(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @management.setter
-    def management(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def management(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipPolicycontrollerArgsDict(TypedDict):
-    policy_controller_hub_config: pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgsDict]
+    policy_controller_hub_config: pulumi.Input[
+        FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgsDict
+    ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerArgs:
-    def __init__(__self__, *, policy_controller_hub_config: pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs], version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        policy_controller_hub_config: pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs
+        ],
+        version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="policyControllerHubConfig")
-    def policy_controller_hub_config(self) -> pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs]:
-        
-        ...
-    
+    def policy_controller_hub_config(
+        self,
+    ) -> pulumi.Input[
+        FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs
+    ]: ...
     @policy_controller_hub_config.setter
-    def policy_controller_hub_config(self, value: pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs]): # -> None:
-        ...
-    
+    def policy_controller_hub_config(
+        self,
+        value: pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @version.setter
-    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgsDict(TypedDict):
     audit_interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
     constraint_violation_limit: NotRequired[pulumi.Input[_builtins.int]]
-    deployment_configs: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict]]]]
-    exemptable_namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    deployment_configs: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict
+                ]
+            ]
+        ]
+    ]
+    exemptable_namespaces: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
     install_spec: NotRequired[pulumi.Input[_builtins.str]]
     log_denies_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    monitoring: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict]]
+    monitoring: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict
+        ]
+    ]
     mutation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    policy_content: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict]]
+    policy_content: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict
+        ]
+    ]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs:
-    def __init__(__self__, *, audit_interval_seconds: Optional[pulumi.Input[_builtins.int]] = ..., constraint_violation_limit: Optional[pulumi.Input[_builtins.int]] = ..., deployment_configs: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]] = ..., exemptable_namespaces: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., install_spec: Optional[pulumi.Input[_builtins.str]] = ..., log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., monitoring: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs]] = ..., mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., policy_content: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]] = ..., referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        audit_interval_seconds: Optional[pulumi.Input[_builtins.int]] = ...,
+        constraint_violation_limit: Optional[pulumi.Input[_builtins.int]] = ...,
+        deployment_configs: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        exemptable_namespaces: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        install_spec: Optional[pulumi.Input[_builtins.str]] = ...,
+        log_denies_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        monitoring: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+            ]
+        ] = ...,
+        mutation_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+        policy_content: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+            ]
+        ] = ...,
+        referential_rules_enabled: Optional[pulumi.Input[_builtins.bool]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="auditIntervalSeconds")
-    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def audit_interval_seconds(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @audit_interval_seconds.setter
-    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def audit_interval_seconds(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="constraintViolationLimit")
-    def constraint_violation_limit(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def constraint_violation_limit(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @constraint_violation_limit.setter
-    def constraint_violation_limit(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def constraint_violation_limit(
+        self, value: Optional[pulumi.Input[_builtins.int]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="deploymentConfigs")
-    def deployment_configs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]]:
-        
-        ...
-    
+    def deployment_configs(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                ]
+            ]
+        ]
+    ]: ...
     @deployment_configs.setter
-    def deployment_configs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs]]]]): # -> None:
-        ...
-    
+    def deployment_configs(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="exemptableNamespaces")
-    def exemptable_namespaces(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def exemptable_namespaces(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @exemptable_namespaces.setter
-    def exemptable_namespaces(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def exemptable_namespaces(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="installSpec")
-    def install_spec(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def install_spec(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @install_spec.setter
-    def install_spec(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def install_spec(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="logDeniesEnabled")
-    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def log_denies_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @log_denies_enabled.setter
-    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def log_denies_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def monitoring(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs]]:
-        
-        ...
-    
+    def monitoring(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+        ]
+    ]: ...
     @monitoring.setter
-    def monitoring(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs]]): # -> None:
-        ...
-    
+    def monitoring(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mutationEnabled")
-    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def mutation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @mutation_enabled.setter
-    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def mutation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="policyContent")
-    def policy_content(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]]:
-        
-        ...
-    
+    def policy_content(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+        ]
+    ]: ...
     @policy_content.setter
-    def policy_content(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs]]): # -> None:
-        ...
-    
+    def policy_content(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="referentialRulesEnabled")
-    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def referential_rules_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @referential_rules_enabled.setter
-    def referential_rules_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def referential_rules_enabled(
+        self, value: Optional[pulumi.Input[_builtins.bool]]
+    ): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgsDict(
+    TypedDict
+):
     component_name: pulumi.Input[_builtins.str]
-    container_resources: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict]]
+    container_resources: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict
+        ]
+    ]
     pod_affinity: NotRequired[pulumi.Input[_builtins.str]]
-    pod_tolerations: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict]]]]
+    pod_tolerations: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict
+                ]
+            ]
+        ]
+    ]
     replica_count: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs:
-    def __init__(__self__, *, component_name: pulumi.Input[_builtins.str], container_resources: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]] = ..., pod_affinity: Optional[pulumi.Input[_builtins.str]] = ..., pod_tolerations: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]] = ..., replica_count: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        component_name: pulumi.Input[_builtins.str],
+        container_resources: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+            ]
+        ] = ...,
+        pod_affinity: Optional[pulumi.Input[_builtins.str]] = ...,
+        pod_tolerations: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        replica_count: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="componentName")
-    def component_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def component_name(self) -> pulumi.Input[_builtins.str]: ...
     @component_name.setter
-    def component_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def component_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="containerResources")
-    def container_resources(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]]:
-        
-        ...
-    
+    def container_resources(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+        ]
+    ]: ...
     @container_resources.setter
-    def container_resources(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs]]): # -> None:
-        ...
-    
+    def container_resources(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="podAffinity")
-    def pod_affinity(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def pod_affinity(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pod_affinity.setter
-    def pod_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def pod_affinity(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="podTolerations")
-    def pod_tolerations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]]:
-        
-        ...
-    
+    def pod_tolerations(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                ]
+            ]
+        ]
+    ]: ...
     @pod_tolerations.setter
-    def pod_tolerations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs]]]]): # -> None:
-        ...
-    
+    def pod_tolerations(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
-    def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @replica_count.setter
-    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict(TypedDict):
-    limits: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict]]
-    requests: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict]]
-
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgsDict(
+    TypedDict
+):
+    limits: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict
+        ]
+    ]
+    requests: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs:
-    def __init__(__self__, *, limits: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]] = ..., requests: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        limits: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+            ]
+        ] = ...,
+        requests: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def limits(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]]:
-        
-        ...
-    
+    def limits(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+        ]
+    ]: ...
     @limits.setter
-    def limits(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs]]): # -> None:
-        ...
-    
+    def limits(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def requests(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]]:
-        
-        ...
-    
+    def requests(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+        ]
+    ]: ...
     @requests.setter
-    def requests(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs]]): # -> None:
-        ...
-    
+    def requests(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs
+            ]
+        ],
+    ): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgsDict(
+    TypedDict
+):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs:
-    def __init__(__self__, *, cpu: Optional[pulumi.Input[_builtins.str]] = ..., memory: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cpu: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def memory(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict(
+    TypedDict
+):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs:
-    def __init__(__self__, *, cpu: Optional[pulumi.Input[_builtins.str]] = ..., memory: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        cpu: Optional[pulumi.Input[_builtins.str]] = ...,
+        memory: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def cpu(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @cpu.setter
-    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def cpu(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def memory(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def memory(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @memory.setter
-    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def memory(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgsDict(
+    TypedDict
+):
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs:
-    def __init__(__self__, *, effect: Optional[pulumi.Input[_builtins.str]] = ..., key: Optional[pulumi.Input[_builtins.str]] = ..., operator: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        effect: Optional[pulumi.Input[_builtins.str]] = ...,
+        key: Optional[pulumi.Input[_builtins.str]] = ...,
+        operator: Optional[pulumi.Input[_builtins.str]] = ...,
+        value: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def effect(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def effect(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @effect.setter
-    def effect(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def effect(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key.setter
-    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def operator(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def operator(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @operator.setter
-    def operator(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def operator(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @value.setter
-    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgsDict(
+    TypedDict
+):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs:
-    def __init__(__self__, *, backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        backends: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def backends(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def backends(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @backends.setter
-    def backends(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def backends(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict(TypedDict):
-    bundles: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict]]]]
-    template_library: NotRequired[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict]]
-
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgsDict(
+    TypedDict
+):
+    bundles: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict
+                ]
+            ]
+        ]
+    ]
+    template_library: NotRequired[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs:
-    def __init__(__self__, *, bundles: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]] = ..., template_library: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bundles: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+        template_library: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bundles(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]]:
-        
-        ...
-    
+    def bundles(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                ]
+            ]
+        ]
+    ]: ...
     @bundles.setter
-    def bundles(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs]]]]): # -> None:
-        ...
-    
+    def bundles(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="templateLibrary")
-    def template_library(self) -> Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]]:
-        
-        ...
-    
+    def template_library(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+        ]
+    ]: ...
     @template_library.setter
-    def template_library(self, value: Optional[pulumi.Input[FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs]]): # -> None:
-        ...
-    
+    def template_library(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs
+            ]
+        ],
+    ): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgsDict(
+    TypedDict
+):
     bundle_name: pulumi.Input[_builtins.str]
-    exempted_namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    exempted_namespaces: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs:
-    def __init__(__self__, *, bundle_name: pulumi.Input[_builtins.str], exempted_namespaces: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bundle_name: pulumi.Input[_builtins.str],
+        exempted_namespaces: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="bundleName")
-    def bundle_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def bundle_name(self) -> pulumi.Input[_builtins.str]: ...
     @bundle_name.setter
-    def bundle_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def bundle_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="exemptedNamespaces")
-    def exempted_namespaces(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def exempted_namespaces(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @exempted_namespaces.setter
-    def exempted_namespaces(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def exempted_namespaces(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
-
-class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict(TypedDict):
+class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict(
+    TypedDict
+):
     installation: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs:
-    def __init__(__self__, *, installation: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, installation: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def installation(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def installation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @installation.setter
-    def installation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def installation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureResourceStateArgsDict(TypedDict):
     has_resources: NotRequired[pulumi.Input[_builtins.bool]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureResourceStateArgs:
-    def __init__(__self__, *, has_resources: Optional[pulumi.Input[_builtins.bool]] = ..., state: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        has_resources: Optional[pulumi.Input[_builtins.bool]] = ...,
+        state: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="hasResources")
-    def has_resources(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def has_resources(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @has_resources.setter
-    def has_resources(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def has_resources(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureSpecArgsDict(TypedDict):
     clusterupgrade: NotRequired[pulumi.Input[FeatureSpecClusterupgradeArgsDict]]
     fleetobservability: NotRequired[pulumi.Input[FeatureSpecFleetobservabilityArgsDict]]
-    multiclusteringress: NotRequired[pulumi.Input[FeatureSpecMulticlusteringressArgsDict]]
-    rbacrolebindingactuation: NotRequired[pulumi.Input[FeatureSpecRbacrolebindingactuationArgsDict]]
+    multiclusteringress: NotRequired[
+        pulumi.Input[FeatureSpecMulticlusteringressArgsDict]
+    ]
+    rbacrolebindingactuation: NotRequired[
+        pulumi.Input[FeatureSpecRbacrolebindingactuationArgsDict]
+    ]
     workloadidentity: NotRequired[pulumi.Input[FeatureSpecWorkloadidentityArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecArgs:
-    def __init__(__self__, *, clusterupgrade: Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]] = ..., fleetobservability: Optional[pulumi.Input[FeatureSpecFleetobservabilityArgs]] = ..., multiclusteringress: Optional[pulumi.Input[FeatureSpecMulticlusteringressArgs]] = ..., rbacrolebindingactuation: Optional[pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]] = ..., workloadidentity: Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        clusterupgrade: Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]] = ...,
+        fleetobservability: Optional[
+            pulumi.Input[FeatureSpecFleetobservabilityArgs]
+        ] = ...,
+        multiclusteringress: Optional[
+            pulumi.Input[FeatureSpecMulticlusteringressArgs]
+        ] = ...,
+        rbacrolebindingactuation: Optional[
+            pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]
+        ] = ...,
+        workloadidentity: Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def clusterupgrade(self) -> Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]]:
-        
-        ...
-    
+    def clusterupgrade(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]]: ...
     @clusterupgrade.setter
-    def clusterupgrade(self, value: Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]]): # -> None:
-        ...
-    
+    def clusterupgrade(
+        self, value: Optional[pulumi.Input[FeatureSpecClusterupgradeArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def fleetobservability(self) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityArgs]]:
-        
-        ...
-    
+    def fleetobservability(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityArgs]]: ...
     @fleetobservability.setter
-    def fleetobservability(self, value: Optional[pulumi.Input[FeatureSpecFleetobservabilityArgs]]): # -> None:
-        ...
-    
+    def fleetobservability(
+        self, value: Optional[pulumi.Input[FeatureSpecFleetobservabilityArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def multiclusteringress(self) -> Optional[pulumi.Input[FeatureSpecMulticlusteringressArgs]]:
-        
-        ...
-    
+    def multiclusteringress(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecMulticlusteringressArgs]]: ...
     @multiclusteringress.setter
-    def multiclusteringress(self, value: Optional[pulumi.Input[FeatureSpecMulticlusteringressArgs]]): # -> None:
-        ...
-    
+    def multiclusteringress(
+        self, value: Optional[pulumi.Input[FeatureSpecMulticlusteringressArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def rbacrolebindingactuation(self) -> Optional[pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]]:
-        
-        ...
-    
+    def rbacrolebindingactuation(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]]: ...
     @rbacrolebindingactuation.setter
-    def rbacrolebindingactuation(self, value: Optional[pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]]): # -> None:
-        ...
-    
+    def rbacrolebindingactuation(
+        self, value: Optional[pulumi.Input[FeatureSpecRbacrolebindingactuationArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def workloadidentity(self) -> Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]]:
-        
-        ...
-    
+    def workloadidentity(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]]: ...
     @workloadidentity.setter
-    def workloadidentity(self, value: Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]]): # -> None:
-        ...
-    
-
+    def workloadidentity(
+        self, value: Optional[pulumi.Input[FeatureSpecWorkloadidentityArgs]]
+    ): ...
 
 class FeatureSpecClusterupgradeArgsDict(TypedDict):
     upstream_fleets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    gke_upgrade_overrides: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgsDict]]]]
-    post_conditions: NotRequired[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgsDict]]
-
+    gke_upgrade_overrides: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgsDict]]
+        ]
+    ]
+    post_conditions: NotRequired[
+        pulumi.Input[FeatureSpecClusterupgradePostConditionsArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeArgs:
-    def __init__(__self__, *, upstream_fleets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], gke_upgrade_overrides: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]]] = ..., post_conditions: Optional[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        upstream_fleets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        gke_upgrade_overrides: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]
+            ]
+        ] = ...,
+        post_conditions: Optional[
+            pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="upstreamFleets")
-    def upstream_fleets(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def upstream_fleets(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @upstream_fleets.setter
-    def upstream_fleets(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def upstream_fleets(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="gkeUpgradeOverrides")
-    def gke_upgrade_overrides(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]]]:
-        
-        ...
-    
+    def gke_upgrade_overrides(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]
+        ]
+    ]: ...
     @gke_upgrade_overrides.setter
-    def gke_upgrade_overrides(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]]]): # -> None:
-        ...
-    
+    def gke_upgrade_overrides(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="postConditions")
-    def post_conditions(self) -> Optional[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]]:
-        
-        ...
-    
+    def post_conditions(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]]: ...
     @post_conditions.setter
-    def post_conditions(self, value: Optional[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]]): # -> None:
-        ...
-    
-
+    def post_conditions(
+        self, value: Optional[pulumi.Input[FeatureSpecClusterupgradePostConditionsArgs]]
+    ): ...
 
 class FeatureSpecClusterupgradeGkeUpgradeOverrideArgsDict(TypedDict):
-    post_conditions: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgsDict]
+    post_conditions: pulumi.Input[
+        FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgsDict
+    ]
     upgrade: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgsDict]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverrideArgs:
-    def __init__(__self__, *, post_conditions: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs], upgrade: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        post_conditions: pulumi.Input[
+            FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs
+        ],
+        upgrade: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="postConditions")
-    def post_conditions(self) -> pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs]:
-        
-        ...
-    
+    def post_conditions(
+        self,
+    ) -> pulumi.Input[
+        FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs
+    ]: ...
     @post_conditions.setter
-    def post_conditions(self, value: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs]): # -> None:
-        ...
-    
+    def post_conditions(
+        self,
+        value: pulumi.Input[
+            FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def upgrade(self) -> pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs]:
-        
-        ...
-    
+    def upgrade(
+        self,
+    ) -> pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs]: ...
     @upgrade.setter
-    def upgrade(self, value: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs]): # -> None:
-        ...
-    
-
+    def upgrade(
+        self,
+        value: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs],
+    ): ...
 
 class FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgsDict(TypedDict):
     soaking: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs:
-    def __init__(__self__, *, soaking: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, soaking: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def soaking(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def soaking(self) -> pulumi.Input[_builtins.str]: ...
     @soaking.setter
-    def soaking(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def soaking(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs:
-    def __init__(__self__, *, name: pulumi.Input[_builtins.str], version: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: pulumi.Input[_builtins.str],
+        version: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Input[_builtins.str]: ...
     @name.setter
-    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def version(self) -> pulumi.Input[_builtins.str]: ...
     @version.setter
-    def version(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def version(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureSpecClusterupgradePostConditionsArgsDict(TypedDict):
     soaking: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradePostConditionsArgs:
-    def __init__(__self__, *, soaking: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, soaking: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def soaking(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def soaking(self) -> pulumi.Input[_builtins.str]: ...
     @soaking.setter
-    def soaking(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def soaking(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureSpecFleetobservabilityArgsDict(TypedDict):
-    logging_config: NotRequired[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgsDict]]
-
+    logging_config: NotRequired[
+        pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityArgs:
-    def __init__(__self__, *, logging_config: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        logging_config: Optional[
+            pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="loggingConfig")
-    def logging_config(self) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]]:
-        
-        ...
-    
+    def logging_config(
+        self,
+    ) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]]: ...
     @logging_config.setter
-    def logging_config(self, value: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]]): # -> None:
-        ...
-    
-
+    def logging_config(
+        self,
+        value: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgs]],
+    ): ...
 
 class FeatureSpecFleetobservabilityLoggingConfigArgsDict(TypedDict):
-    default_config: NotRequired[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgsDict]]
-    fleet_scope_logs_config: NotRequired[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgsDict]]
-
+    default_config: NotRequired[
+        pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgsDict]
+    ]
+    fleet_scope_logs_config: NotRequired[
+        pulumi.Input[
+            FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigArgs:
-    def __init__(__self__, *, default_config: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]] = ..., fleet_scope_logs_config: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        default_config: Optional[
+            pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]
+        ] = ...,
+        fleet_scope_logs_config: Optional[
+            pulumi.Input[
+                FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="defaultConfig")
-    def default_config(self) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]]:
-        
-        ...
-    
+    def default_config(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]
+    ]: ...
     @default_config.setter
-    def default_config(self, value: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]]): # -> None:
-        ...
-    
+    def default_config(
+        self,
+        value: Optional[
+            pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="fleetScopeLogsConfig")
-    def fleet_scope_logs_config(self) -> Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs]]:
-        
-        ...
-    
+    def fleet_scope_logs_config(
+        self,
+    ) -> Optional[
+        pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs]
+    ]: ...
     @fleet_scope_logs_config.setter
-    def fleet_scope_logs_config(self, value: Optional[pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs]]): # -> None:
-        ...
-    
-
+    def fleet_scope_logs_config(
+        self,
+        value: Optional[
+            pulumi.Input[
+                FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs
+            ]
+        ],
+    ): ...
 
 class FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs:
-    def __init__(__self__, *, mode: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, mode: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs:
-    def __init__(__self__, *, mode: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, mode: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FeatureSpecMulticlusteringressArgsDict(TypedDict):
     config_membership: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecMulticlusteringressArgs:
-    def __init__(__self__, *, config_membership: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, config_membership: pulumi.Input[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configMembership")
-    def config_membership(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def config_membership(self) -> pulumi.Input[_builtins.str]: ...
     @config_membership.setter
-    def config_membership(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def config_membership(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureSpecRbacrolebindingactuationArgsDict(TypedDict):
-    allowed_custom_roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-
+    allowed_custom_roles: NotRequired[
+        pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ]
+    ...
 
 @pulumi.input_type
 class FeatureSpecRbacrolebindingactuationArgs:
-    def __init__(__self__, *, allowed_custom_roles: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        allowed_custom_roles: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allowedCustomRoles")
-    def allowed_custom_roles(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def allowed_custom_roles(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @allowed_custom_roles.setter
-    def allowed_custom_roles(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def allowed_custom_roles(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
 
 class FeatureSpecWorkloadidentityArgsDict(TypedDict):
     scope_tenancy_pool: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class FeatureSpecWorkloadidentityArgs:
-    def __init__(__self__, *, scope_tenancy_pool: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, scope_tenancy_pool: pulumi.Input[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="scopeTenancyPool")
-    def scope_tenancy_pool(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def scope_tenancy_pool(self) -> pulumi.Input[_builtins.str]: ...
     @scope_tenancy_pool.setter
-    def scope_tenancy_pool(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def scope_tenancy_pool(self, value: pulumi.Input[_builtins.str]): ...
 
 class FeatureStateArgsDict(TypedDict):
     states: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgsDict]]]]
-
+    ...
 
 @pulumi.input_type
 class FeatureStateArgs:
-    def __init__(__self__, *, states: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        states: Optional[
+            pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def states(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]]:
-        
-        ...
-    
+    def states(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]]: ...
     @states.setter
-    def states(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]]): # -> None:
-        ...
-    
-
+    def states(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgs]]]],
+    ): ...
 
 class FeatureStateStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
     description: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FeatureStateStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., update_time: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        code: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        update_time: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="updateTime")
-    def update_time(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def update_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update_time.setter
-    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FleetDefaultClusterConfigArgsDict(TypedDict):
-    binary_authorization_config: NotRequired[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgsDict]]
-    security_posture_config: NotRequired[pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgsDict]]
-
+    binary_authorization_config: NotRequired[
+        pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgsDict]
+    ]
+    security_posture_config: NotRequired[
+        pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigArgs:
-    def __init__(__self__, *, binary_authorization_config: Optional[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]] = ..., security_posture_config: Optional[pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        binary_authorization_config: Optional[
+            pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]
+        ] = ...,
+        security_posture_config: Optional[
+            pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="binaryAuthorizationConfig")
-    def binary_authorization_config(self) -> Optional[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]]:
-        
-        ...
-    
+    def binary_authorization_config(
+        self,
+    ) -> Optional[
+        pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]
+    ]: ...
     @binary_authorization_config.setter
-    def binary_authorization_config(self, value: Optional[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]]): # -> None:
-        ...
-    
+    def binary_authorization_config(
+        self,
+        value: Optional[
+            pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="securityPostureConfig")
-    def security_posture_config(self) -> Optional[pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]]:
-        
-        ...
-    
+    def security_posture_config(
+        self,
+    ) -> Optional[pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]]: ...
     @security_posture_config.setter
-    def security_posture_config(self, value: Optional[pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]]): # -> None:
-        ...
-    
-
+    def security_posture_config(
+        self,
+        value: Optional[
+            pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgs]
+        ],
+    ): ...
 
 class FleetDefaultClusterConfigBinaryAuthorizationConfigArgsDict(TypedDict):
     evaluation_mode: NotRequired[pulumi.Input[_builtins.str]]
-    policy_bindings: NotRequired[pulumi.Input[Sequence[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgsDict]]]]
-
+    policy_bindings: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgsDict
+                ]
+            ]
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigBinaryAuthorizationConfigArgs:
-    def __init__(__self__, *, evaluation_mode: Optional[pulumi.Input[_builtins.str]] = ..., policy_bindings: Optional[pulumi.Input[Sequence[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        evaluation_mode: Optional[pulumi.Input[_builtins.str]] = ...,
+        policy_bindings: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="evaluationMode")
-    def evaluation_mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def evaluation_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @evaluation_mode.setter
-    def evaluation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def evaluation_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="policyBindings")
-    def policy_bindings(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs]]]]:
-        
-        ...
-    
+    def policy_bindings(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs
+                ]
+            ]
+        ]
+    ]: ...
     @policy_bindings.setter
-    def policy_bindings(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs]]]]): # -> None:
-        ...
-    
+    def policy_bindings(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
 
-
-class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgsDict(TypedDict):
+class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgsDict(
+    TypedDict
+):
     name: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs:
-    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, name: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FleetDefaultClusterConfigSecurityPostureConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     vulnerability_mode: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigSecurityPostureConfigArgs:
-    def __init__(__self__, *, mode: Optional[pulumi.Input[_builtins.str]] = ..., vulnerability_mode: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        mode: Optional[pulumi.Input[_builtins.str]] = ...,
+        vulnerability_mode: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mode.setter
-    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="vulnerabilityMode")
-    def vulnerability_mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def vulnerability_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @vulnerability_mode.setter
-    def vulnerability_mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def vulnerability_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class FleetStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class FleetStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class MembershipAuthorityArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class MembershipAuthorityArgs:
-    def __init__(__self__, *, issuer: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, issuer: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def issuer(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def issuer(self) -> pulumi.Input[_builtins.str]: ...
     @issuer.setter
-    def issuer(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def issuer(self, value: pulumi.Input[_builtins.str]): ...
 
 class MembershipBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class MembershipBindingStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class MembershipEndpointArgsDict(TypedDict):
     gke_cluster: NotRequired[pulumi.Input[MembershipEndpointGkeClusterArgsDict]]
-
+    ...
 
 @pulumi.input_type
 class MembershipEndpointArgs:
-    def __init__(__self__, *, gke_cluster: Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        gke_cluster: Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="gkeCluster")
-    def gke_cluster(self) -> Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]]:
-        
-        ...
-    
+    def gke_cluster(
+        self,
+    ) -> Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]]: ...
     @gke_cluster.setter
-    def gke_cluster(self, value: Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]]): # -> None:
-        ...
-    
-
+    def gke_cluster(
+        self, value: Optional[pulumi.Input[MembershipEndpointGkeClusterArgs]]
+    ): ...
 
 class MembershipEndpointGkeClusterArgsDict(TypedDict):
     resource_link: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class MembershipEndpointGkeClusterArgs:
-    def __init__(__self__, *, resource_link: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, resource_link: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="resourceLink")
-    def resource_link(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def resource_link(self) -> pulumi.Input[_builtins.str]: ...
     @resource_link.setter
-    def resource_link(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def resource_link(self, value: pulumi.Input[_builtins.str]): ...
 
 class MembershipIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class MembershipIamBindingConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class MembershipIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class MembershipIamMemberConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class MembershipRbacRoleBindingRoleArgsDict(TypedDict):
     predefined_role: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class MembershipRbacRoleBindingRoleArgs:
-    def __init__(__self__, *, predefined_role: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, predefined_role: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="predefinedRole")
-    def predefined_role(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def predefined_role(self) -> pulumi.Input[_builtins.str]: ...
     @predefined_role.setter
-    def predefined_role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def predefined_role(self, value: pulumi.Input[_builtins.str]): ...
 
 class MembershipRbacRoleBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class MembershipRbacRoleBindingStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class NamespaceStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class NamespaceStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class RolloutSequenceStageArgsDict(TypedDict):
     fleet_projects: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    cluster_selector: NotRequired[pulumi.Input[RolloutSequenceStageClusterSelectorArgsDict]]
+    cluster_selector: NotRequired[
+        pulumi.Input[RolloutSequenceStageClusterSelectorArgsDict]
+    ]
     soak_duration: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class RolloutSequenceStageArgs:
-    def __init__(__self__, *, fleet_projects: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], cluster_selector: Optional[pulumi.Input[RolloutSequenceStageClusterSelectorArgs]] = ..., soak_duration: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        fleet_projects: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        cluster_selector: Optional[
+            pulumi.Input[RolloutSequenceStageClusterSelectorArgs]
+        ] = ...,
+        soak_duration: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="fleetProjects")
-    def fleet_projects(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def fleet_projects(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @fleet_projects.setter
-    def fleet_projects(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def fleet_projects(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="clusterSelector")
-    def cluster_selector(self) -> Optional[pulumi.Input[RolloutSequenceStageClusterSelectorArgs]]:
-        
-        ...
-    
+    def cluster_selector(
+        self,
+    ) -> Optional[pulumi.Input[RolloutSequenceStageClusterSelectorArgs]]: ...
     @cluster_selector.setter
-    def cluster_selector(self, value: Optional[pulumi.Input[RolloutSequenceStageClusterSelectorArgs]]): # -> None:
-        ...
-    
+    def cluster_selector(
+        self, value: Optional[pulumi.Input[RolloutSequenceStageClusterSelectorArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="soakDuration")
-    def soak_duration(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def soak_duration(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @soak_duration.setter
-    def soak_duration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def soak_duration(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class RolloutSequenceStageClusterSelectorArgsDict(TypedDict):
     label_selector: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class RolloutSequenceStageClusterSelectorArgs:
-    def __init__(__self__, *, label_selector: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, label_selector: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="labelSelector")
-    def label_selector(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def label_selector(self) -> pulumi.Input[_builtins.str]: ...
     @label_selector.setter
-    def label_selector(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def label_selector(self, value: pulumi.Input[_builtins.str]): ...
 
 class ScopeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class ScopeIamBindingConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ScopeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class ScopeIamMemberConditionArgs:
-    def __init__(__self__, *, expression: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expression: pulumi.Input[_builtins.str],
+        title: pulumi.Input[_builtins.str],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expression(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def expression(self) -> pulumi.Input[_builtins.str]: ...
     @expression.setter
-    def expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def title(self) -> pulumi.Input[_builtins.str]:
-        ...
-    
+    def title(self) -> pulumi.Input[_builtins.str]: ...
     @title.setter
-    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def title(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ScopeRbacRoleBindingRoleArgsDict(TypedDict):
     custom_role: NotRequired[pulumi.Input[_builtins.str]]
     predefined_role: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class ScopeRbacRoleBindingRoleArgs:
-    def __init__(__self__, *, custom_role: Optional[pulumi.Input[_builtins.str]] = ..., predefined_role: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        custom_role: Optional[pulumi.Input[_builtins.str]] = ...,
+        predefined_role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="customRole")
-    def custom_role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def custom_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @custom_role.setter
-    def custom_role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def custom_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="predefinedRole")
-    def predefined_role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def predefined_role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @predefined_role.setter
-    def predefined_role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def predefined_role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ScopeRbacRoleBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class ScopeRbacRoleBindingStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class ScopeStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class ScopeStateArgs:
-    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @code.setter
-    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
-
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): ...

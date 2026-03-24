@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -43,4 +41,3 @@ from .v2_project_notification_config import *
 from .v2_project_scc_big_query_export import *
 from ._inputs import *
 from . import outputs
-

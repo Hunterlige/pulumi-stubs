@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,189 +5,157 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['ConfigIamBindingArgs', 'ConfigIamBinding']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["ConfigIamBindingArgs", "ConfigIamBinding"]
+
 @pulumi.input_type
 class ConfigIamBindingArgs:
-    def __init__(__self__, *, config: pulumi.Input[_builtins.str], members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], role: pulumi.Input[_builtins.str], condition: Optional[pulumi.Input[ConfigIamBindingConditionArgs]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config: pulumi.Input[_builtins.str],
+        members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        role: pulumi.Input[_builtins.str],
+        condition: Optional[pulumi.Input[ConfigIamBindingConditionArgs]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def config(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def config(self) -> pulumi.Input[_builtins.str]: ...
     @config.setter
-    def config(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def config(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @members.setter
-    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def role(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[ConfigIamBindingConditionArgs]]:
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[ConfigIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[ConfigIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[ConfigIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _ConfigIamBindingState:
-    def __init__(__self__, *, condition: Optional[pulumi.Input[ConfigIamBindingConditionArgs]] = ..., config: Optional[pulumi.Input[_builtins.str]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        condition: Optional[pulumi.Input[ConfigIamBindingConditionArgs]] = ...,
+        config: Optional[pulumi.Input[_builtins.str]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[ConfigIamBindingConditionArgs]]:
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[ConfigIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[ConfigIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[ConfigIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def config(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def config(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @config.setter
-    def config(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def config(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def members(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @members.setter
-    def members(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def members(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token(...)
 class ConfigIamBinding(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[ConfigIamBindingConditionArgs, ConfigIamBindingConditionArgsDict]]] = ..., config: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[ConfigIamBindingConditionArgs, ConfigIamBindingConditionArgsDict]
+            ]
+        ] = ...,
+        config: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: ConfigIamBindingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: ConfigIamBindingArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[ConfigIamBindingConditionArgs, ConfigIamBindingConditionArgsDict]]] = ..., config: Optional[pulumi.Input[_builtins.str]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> ConfigIamBinding:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[ConfigIamBindingConditionArgs, ConfigIamBindingConditionArgsDict]
+            ]
+        ] = ...,
+        config: Optional[pulumi.Input[_builtins.str]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> ConfigIamBinding: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> pulumi.Output[Optional[outputs.ConfigIamBindingCondition]]:
-        ...
-    
+    def condition(
+        self,
+    ) -> pulumi.Output[Optional[outputs.ConfigIamBindingCondition]]: ...
     @_builtins.property
     @pulumi.getter
-    def config(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def config(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def etag(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Output[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Output[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def project(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def role(self) -> pulumi.Output[_builtins.str]: ...

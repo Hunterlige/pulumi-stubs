@@ -1,859 +1,882 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import NotRequired, Optional, Sequence, TypedDict
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['AwsLogSourceSourceArgs', 'AwsLogSourceSourceArgsDict', 'CustomLogSourceAttributeArgs', 'CustomLogSourceAttributeArgsDict', 'CustomLogSourceConfigurationArgs', 'CustomLogSourceConfigurationArgsDict', ..., ..., 'CustomLogSourceConfigurationProviderIdentityArgs', ..., 'CustomLogSourceProviderDetailArgs', 'CustomLogSourceProviderDetailArgsDict', 'DataLakeConfigurationArgs', 'DataLakeConfigurationArgsDict', 'DataLakeConfigurationEncryptionConfigurationArgs', ..., 'DataLakeConfigurationLifecycleConfigurationArgs', ..., ..., ..., ..., ..., 'DataLakeConfigurationReplicationConfigurationArgs', ..., 'DataLakeTimeoutsArgs', 'DataLakeTimeoutsArgsDict', 'SubscriberNotificationConfigurationArgs', 'SubscriberNotificationConfigurationArgsDict', ..., ..., ..., ..., 'SubscriberSourceArgs', 'SubscriberSourceArgsDict', 'SubscriberSourceAwsLogSourceResourceArgs', 'SubscriberSourceAwsLogSourceResourceArgsDict', 'SubscriberSourceCustomLogSourceResourceArgs', 'SubscriberSourceCustomLogSourceResourceArgsDict', ..., ..., ..., ..., 'SubscriberSubscriberIdentityArgs', 'SubscriberSubscriberIdentityArgsDict', 'SubscriberTimeoutsArgs', 'SubscriberTimeoutsArgsDict']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "AwsLogSourceSourceArgs",
+    "AwsLogSourceSourceArgsDict",
+    "CustomLogSourceAttributeArgs",
+    "CustomLogSourceAttributeArgsDict",
+    "CustomLogSourceConfigurationArgs",
+    "CustomLogSourceConfigurationArgsDict",
+    ...,
+    ...,
+    "CustomLogSourceConfigurationProviderIdentityArgs",
+    ...,
+    "CustomLogSourceProviderDetailArgs",
+    "CustomLogSourceProviderDetailArgsDict",
+    "DataLakeConfigurationArgs",
+    "DataLakeConfigurationArgsDict",
+    "DataLakeConfigurationEncryptionConfigurationArgs",
+    ...,
+    "DataLakeConfigurationLifecycleConfigurationArgs",
+    ...,
+    ...,
+    ...,
+    ...,
+    ...,
+    "DataLakeConfigurationReplicationConfigurationArgs",
+    ...,
+    "DataLakeTimeoutsArgs",
+    "DataLakeTimeoutsArgsDict",
+    "SubscriberNotificationConfigurationArgs",
+    "SubscriberNotificationConfigurationArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "SubscriberSourceArgs",
+    "SubscriberSourceArgsDict",
+    "SubscriberSourceAwsLogSourceResourceArgs",
+    "SubscriberSourceAwsLogSourceResourceArgsDict",
+    "SubscriberSourceCustomLogSourceResourceArgs",
+    "SubscriberSourceCustomLogSourceResourceArgsDict",
+    ...,
+    ...,
+    ...,
+    ...,
+    "SubscriberSubscriberIdentityArgs",
+    "SubscriberSubscriberIdentityArgsDict",
+    "SubscriberTimeoutsArgs",
+    "SubscriberTimeoutsArgsDict",
+]
+
 class AwsLogSourceSourceArgsDict(TypedDict):
     regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     source_name: pulumi.Input[_builtins.str]
     accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class AwsLogSourceSourceArgs:
-    def __init__(__self__, *, regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], source_name: pulumi.Input[_builtins.str], accounts: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., source_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        source_name: pulumi.Input[_builtins.str],
+        accounts: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        source_version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def regions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def regions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @regions.setter
-    def regions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def regions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceName")
-    def source_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def source_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_name.setter
-    def source_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def accounts(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def accounts(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @accounts.setter
-    def accounts(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def accounts(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="sourceVersion")
-    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_version.setter
-    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class CustomLogSourceAttributeArgsDict(TypedDict):
     crawler_arn: pulumi.Input[_builtins.str]
     database_arn: pulumi.Input[_builtins.str]
     table_arn: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CustomLogSourceAttributeArgs:
-    def __init__(__self__, *, crawler_arn: pulumi.Input[_builtins.str], database_arn: pulumi.Input[_builtins.str], table_arn: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        crawler_arn: pulumi.Input[_builtins.str],
+        database_arn: pulumi.Input[_builtins.str],
+        table_arn: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="crawlerArn")
-    def crawler_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def crawler_arn(self) -> pulumi.Input[_builtins.str]: ...
     @crawler_arn.setter
-    def crawler_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def crawler_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="databaseArn")
-    def database_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def database_arn(self) -> pulumi.Input[_builtins.str]: ...
     @database_arn.setter
-    def database_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def database_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tableArn")
-    def table_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def table_arn(self) -> pulumi.Input[_builtins.str]: ...
     @table_arn.setter
-    def table_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def table_arn(self, value: pulumi.Input[_builtins.str]): ...
 
 class CustomLogSourceConfigurationArgsDict(TypedDict):
-    crawler_configuration: pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgsDict]
-    provider_identity: pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgsDict]
-
+    crawler_configuration: pulumi.Input[
+        CustomLogSourceConfigurationCrawlerConfigurationArgsDict
+    ]
+    provider_identity: pulumi.Input[
+        CustomLogSourceConfigurationProviderIdentityArgsDict
+    ]
+    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationArgs:
-    def __init__(__self__, *, crawler_configuration: pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgs], provider_identity: pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgs]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        crawler_configuration: pulumi.Input[
+            CustomLogSourceConfigurationCrawlerConfigurationArgs
+        ],
+        provider_identity: pulumi.Input[
+            CustomLogSourceConfigurationProviderIdentityArgs
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="crawlerConfiguration")
-    def crawler_configuration(self) -> pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgs]:
-        
-        ...
-    
+    def crawler_configuration(
+        self,
+    ) -> pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgs]: ...
     @crawler_configuration.setter
-    def crawler_configuration(self, value: pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgs]): # -> None:
-        ...
-    
+    def crawler_configuration(
+        self, value: pulumi.Input[CustomLogSourceConfigurationCrawlerConfigurationArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="providerIdentity")
-    def provider_identity(self) -> pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgs]:
-        
-        ...
-    
+    def provider_identity(
+        self,
+    ) -> pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgs]: ...
     @provider_identity.setter
-    def provider_identity(self, value: pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgs]): # -> None:
-        ...
-    
-
+    def provider_identity(
+        self, value: pulumi.Input[CustomLogSourceConfigurationProviderIdentityArgs]
+    ): ...
 
 class CustomLogSourceConfigurationCrawlerConfigurationArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationCrawlerConfigurationArgs:
-    def __init__(__self__, *, role_arn: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, role_arn: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
-    def role_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
 
 class CustomLogSourceConfigurationProviderIdentityArgsDict(TypedDict):
     external_id: pulumi.Input[_builtins.str]
     principal: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationProviderIdentityArgs:
-    def __init__(__self__, *, external_id: pulumi.Input[_builtins.str], principal: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        external_id: pulumi.Input[_builtins.str],
+        principal: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="externalId")
-    def external_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def external_id(self) -> pulumi.Input[_builtins.str]: ...
     @external_id.setter
-    def external_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def external_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def principal(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def principal(self) -> pulumi.Input[_builtins.str]: ...
     @principal.setter
-    def principal(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def principal(self, value: pulumi.Input[_builtins.str]): ...
 
 class CustomLogSourceProviderDetailArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class CustomLogSourceProviderDetailArgs:
-    def __init__(__self__, *, location: pulumi.Input[_builtins.str], role_arn: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        location: pulumi.Input[_builtins.str],
+        role_arn: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def location(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
-    def role_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataLakeConfigurationArgsDict(TypedDict):
     region: pulumi.Input[_builtins.str]
-    encryption_configurations: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgsDict]]]]
-    lifecycle_configuration: NotRequired[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgsDict]]
-    replication_configuration: NotRequired[pulumi.Input[DataLakeConfigurationReplicationConfigurationArgsDict]]
-
+    encryption_configurations: NotRequired[
+        pulumi.Input[
+            Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgsDict]]
+        ]
+    ]
+    lifecycle_configuration: NotRequired[
+        pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgsDict]
+    ]
+    replication_configuration: NotRequired[
+        pulumi.Input[DataLakeConfigurationReplicationConfigurationArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationArgs:
-    def __init__(__self__, *, region: pulumi.Input[_builtins.str], encryption_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]]] = ..., lifecycle_configuration: Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]] = ..., replication_configuration: Optional[pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        region: pulumi.Input[_builtins.str],
+        encryption_configurations: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]
+            ]
+        ] = ...,
+        lifecycle_configuration: Optional[
+            pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]
+        ] = ...,
+        replication_configuration: Optional[
+            pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Input[_builtins.str]: ...
     @region.setter
-    def region(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def region(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
-    def encryption_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]]]:
-        
-        ...
-    
+    def encryption_configurations(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]
+        ]
+    ]: ...
     @encryption_configurations.setter
-    def encryption_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]]]): # -> None:
-        ...
-    
+    def encryption_configurations(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[pulumi.Input[DataLakeConfigurationEncryptionConfigurationArgs]]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="lifecycleConfiguration")
-    def lifecycle_configuration(self) -> Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]]:
-        
-        ...
-    
+    def lifecycle_configuration(
+        self,
+    ) -> Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]]: ...
     @lifecycle_configuration.setter
-    def lifecycle_configuration(self, value: Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]]): # -> None:
-        ...
-    
+    def lifecycle_configuration(
+        self,
+        value: Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationArgs]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="replicationConfiguration")
-    def replication_configuration(self) -> Optional[pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]]:
-        
-        ...
-    
+    def replication_configuration(
+        self,
+    ) -> Optional[pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]]: ...
     @replication_configuration.setter
-    def replication_configuration(self, value: Optional[pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]]): # -> None:
-        ...
-    
-
+    def replication_configuration(
+        self,
+        value: Optional[
+            pulumi.Input[DataLakeConfigurationReplicationConfigurationArgs]
+        ],
+    ): ...
 
 class DataLakeConfigurationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_id: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationEncryptionConfigurationArgs:
-    def __init__(__self__, *, kms_key_id: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, kms_key_id: pulumi.Input[_builtins.str]) -> None: ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def kms_key_id(self) -> pulumi.Input[_builtins.str]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def kms_key_id(self, value: pulumi.Input[_builtins.str]): ...
 
 class DataLakeConfigurationLifecycleConfigurationArgsDict(TypedDict):
-    expiration: NotRequired[pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgsDict]]
-    transitions: NotRequired[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationLifecycleConfigurationTransitionArgsDict]]]]
-
+    expiration: NotRequired[
+        pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgsDict]
+    ]
+    transitions: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[
+                    DataLakeConfigurationLifecycleConfigurationTransitionArgsDict
+                ]
+            ]
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationArgs:
-    def __init__(__self__, *, expiration: Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]] = ..., transitions: Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationLifecycleConfigurationTransitionArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        expiration: Optional[
+            pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]
+        ] = ...,
+        transitions: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        DataLakeConfigurationLifecycleConfigurationTransitionArgs
+                    ]
+                ]
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def expiration(self) -> Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]]:
-        
-        ...
-    
+    def expiration(
+        self,
+    ) -> Optional[
+        pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]
+    ]: ...
     @expiration.setter
-    def expiration(self, value: Optional[pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]]): # -> None:
-        ...
-    
+    def expiration(
+        self,
+        value: Optional[
+            pulumi.Input[DataLakeConfigurationLifecycleConfigurationExpirationArgs]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def transitions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationLifecycleConfigurationTransitionArgs]]]]:
-        
-        ...
-    
+    def transitions(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[DataLakeConfigurationLifecycleConfigurationTransitionArgs]
+            ]
+        ]
+    ]: ...
     @transitions.setter
-    def transitions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[DataLakeConfigurationLifecycleConfigurationTransitionArgs]]]]): # -> None:
-        ...
-    
-
+    def transitions(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        DataLakeConfigurationLifecycleConfigurationTransitionArgs
+                    ]
+                ]
+            ]
+        ],
+    ): ...
 
 class DataLakeConfigurationLifecycleConfigurationExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
-
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationExpirationArgs:
-    def __init__(__self__, *, days: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, days: Optional[pulumi.Input[_builtins.int]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def days(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 class DataLakeConfigurationLifecycleConfigurationTransitionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationTransitionArgs:
-    def __init__(__self__, *, days: Optional[pulumi.Input[_builtins.int]] = ..., storage_class: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        days: Optional[pulumi.Input[_builtins.int]] = ...,
+        storage_class: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def days(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @days.setter
-    def days(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="storageClass")
-    def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def storage_class(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_class.setter
-    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def storage_class(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataLakeConfigurationReplicationConfigurationArgsDict(TypedDict):
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataLakeConfigurationReplicationConfigurationArgs:
-    def __init__(__self__, *, regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        role_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def regions(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @regions.setter
-    def regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def regions(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
-    def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_arn.setter
-    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class DataLakeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class DataLakeTimeoutsArgs:
-    def __init__(__self__, *, create: Optional[pulumi.Input[_builtins.str]] = ..., delete: Optional[pulumi.Input[_builtins.str]] = ..., update: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        create: Optional[pulumi.Input[_builtins.str]] = ...,
+        delete: Optional[pulumi.Input[_builtins.str]] = ...,
+        update: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def create(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def delete(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def update(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class SubscriberNotificationConfigurationArgsDict(TypedDict):
-    https_notification_configuration: NotRequired[pulumi.Input[SubscriberNotificationConfigurationHttpsNotificationConfigurationArgsDict]]
-    sqs_notification_configuration: NotRequired[pulumi.Input[SubscriberNotificationConfigurationSqsNotificationConfigurationArgsDict]]
-
+    https_notification_configuration: NotRequired[
+        pulumi.Input[
+            SubscriberNotificationConfigurationHttpsNotificationConfigurationArgsDict
+        ]
+    ]
+    sqs_notification_configuration: NotRequired[
+        pulumi.Input[
+            SubscriberNotificationConfigurationSqsNotificationConfigurationArgsDict
+        ]
+    ]
+    ...
 
 @pulumi.input_type
 class SubscriberNotificationConfigurationArgs:
-    def __init__(__self__, *, https_notification_configuration: Optional[pulumi.Input[SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs]] = ..., sqs_notification_configuration: Optional[pulumi.Input[SubscriberNotificationConfigurationSqsNotificationConfigurationArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        https_notification_configuration: Optional[
+            pulumi.Input[
+                SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs
+            ]
+        ] = ...,
+        sqs_notification_configuration: Optional[
+            pulumi.Input[
+                SubscriberNotificationConfigurationSqsNotificationConfigurationArgs
+            ]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="httpsNotificationConfiguration")
-    def https_notification_configuration(self) -> Optional[pulumi.Input[SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs]]:
-        
-        ...
-    
+    def https_notification_configuration(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs
+        ]
+    ]: ...
     @https_notification_configuration.setter
-    def https_notification_configuration(self, value: Optional[pulumi.Input[SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs]]): # -> None:
-        ...
-    
+    def https_notification_configuration(
+        self,
+        value: Optional[
+            pulumi.Input[
+                SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="sqsNotificationConfiguration")
-    def sqs_notification_configuration(self) -> Optional[pulumi.Input[SubscriberNotificationConfigurationSqsNotificationConfigurationArgs]]:
-        
-        ...
-    
+    def sqs_notification_configuration(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            SubscriberNotificationConfigurationSqsNotificationConfigurationArgs
+        ]
+    ]: ...
     @sqs_notification_configuration.setter
-    def sqs_notification_configuration(self, value: Optional[pulumi.Input[SubscriberNotificationConfigurationSqsNotificationConfigurationArgs]]): # -> None:
-        ...
-    
+    def sqs_notification_configuration(
+        self,
+        value: Optional[
+            pulumi.Input[
+                SubscriberNotificationConfigurationSqsNotificationConfigurationArgs
+            ]
+        ],
+    ): ...
 
-
-class SubscriberNotificationConfigurationHttpsNotificationConfigurationArgsDict(TypedDict):
+class SubscriberNotificationConfigurationHttpsNotificationConfigurationArgsDict(
+    TypedDict
+):
     endpoint: pulumi.Input[_builtins.str]
     target_role_arn: pulumi.Input[_builtins.str]
     authorization_api_key_name: NotRequired[pulumi.Input[_builtins.str]]
     authorization_api_key_value: NotRequired[pulumi.Input[_builtins.str]]
     http_method: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs:
-    def __init__(__self__, *, endpoint: pulumi.Input[_builtins.str], target_role_arn: pulumi.Input[_builtins.str], authorization_api_key_name: Optional[pulumi.Input[_builtins.str]] = ..., authorization_api_key_value: Optional[pulumi.Input[_builtins.str]] = ..., http_method: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        endpoint: pulumi.Input[_builtins.str],
+        target_role_arn: pulumi.Input[_builtins.str],
+        authorization_api_key_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        authorization_api_key_value: Optional[pulumi.Input[_builtins.str]] = ...,
+        http_method: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def endpoint(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def endpoint(self) -> pulumi.Input[_builtins.str]: ...
     @endpoint.setter
-    def endpoint(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def endpoint(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="targetRoleArn")
-    def target_role_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def target_role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @target_role_arn.setter
-    def target_role_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def target_role_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="authorizationApiKeyName")
-    def authorization_api_key_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def authorization_api_key_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_api_key_name.setter
-    def authorization_api_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def authorization_api_key_name(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="authorizationApiKeyValue")
-    def authorization_api_key_value(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def authorization_api_key_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @authorization_api_key_value.setter
-    def authorization_api_key_value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def authorization_api_key_value(
+        self, value: Optional[pulumi.Input[_builtins.str]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="httpMethod")
-    def http_method(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def http_method(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @http_method.setter
-    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def http_method(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
-
-class SubscriberNotificationConfigurationSqsNotificationConfigurationArgsDict(TypedDict):
-    ...
-
+class SubscriberNotificationConfigurationSqsNotificationConfigurationArgsDict(
+    TypedDict
+): ...
 
 @pulumi.input_type
 class SubscriberNotificationConfigurationSqsNotificationConfigurationArgs:
-    def __init__(__self__) -> None:
-        ...
-    
-
+    def __init__(__self__) -> None: ...
 
 class SubscriberSourceArgsDict(TypedDict):
-    aws_log_source_resource: NotRequired[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgsDict]]
-    custom_log_source_resource: NotRequired[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgsDict]]
-
+    aws_log_source_resource: NotRequired[
+        pulumi.Input[SubscriberSourceAwsLogSourceResourceArgsDict]
+    ]
+    custom_log_source_resource: NotRequired[
+        pulumi.Input[SubscriberSourceCustomLogSourceResourceArgsDict]
+    ]
+    ...
 
 @pulumi.input_type
 class SubscriberSourceArgs:
-    def __init__(__self__, *, aws_log_source_resource: Optional[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]] = ..., custom_log_source_resource: Optional[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        aws_log_source_resource: Optional[
+            pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]
+        ] = ...,
+        custom_log_source_resource: Optional[
+            pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="awsLogSourceResource")
-    def aws_log_source_resource(self) -> Optional[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]]:
-        
-        ...
-    
+    def aws_log_source_resource(
+        self,
+    ) -> Optional[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]]: ...
     @aws_log_source_resource.setter
-    def aws_log_source_resource(self, value: Optional[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]]): # -> None:
-        ...
-    
+    def aws_log_source_resource(
+        self, value: Optional[pulumi.Input[SubscriberSourceAwsLogSourceResourceArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="customLogSourceResource")
-    def custom_log_source_resource(self) -> Optional[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]]:
-        
-        ...
-    
+    def custom_log_source_resource(
+        self,
+    ) -> Optional[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]]: ...
     @custom_log_source_resource.setter
-    def custom_log_source_resource(self, value: Optional[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]]): # -> None:
-        ...
-    
-
+    def custom_log_source_resource(
+        self, value: Optional[pulumi.Input[SubscriberSourceCustomLogSourceResourceArgs]]
+    ): ...
 
 class SubscriberSourceAwsLogSourceResourceArgsDict(TypedDict):
     source_name: pulumi.Input[_builtins.str]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class SubscriberSourceAwsLogSourceResourceArgs:
-    def __init__(__self__, *, source_name: pulumi.Input[_builtins.str], source_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        source_name: pulumi.Input[_builtins.str],
+        source_version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sourceName")
-    def source_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def source_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_name.setter
-    def source_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="sourceVersion")
-    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_version.setter
-    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class SubscriberSourceCustomLogSourceResourceArgsDict(TypedDict):
     source_name: pulumi.Input[_builtins.str]
-    attributes: NotRequired[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgsDict]]]]
-    providers: NotRequired[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgsDict]]]]
+    attributes: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgsDict]
+            ]
+        ]
+    ]
+    providers: NotRequired[
+        pulumi.Input[
+            Sequence[
+                pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgsDict]
+            ]
+        ]
+    ]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceArgs:
-    def __init__(__self__, *, source_name: pulumi.Input[_builtins.str], attributes: Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]]]] = ..., providers: Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]]]] = ..., source_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        source_name: pulumi.Input[_builtins.str],
+        attributes: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]
+                ]
+            ]
+        ] = ...,
+        providers: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]
+                ]
+            ]
+        ] = ...,
+        source_version: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sourceName")
-    def source_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def source_name(self) -> pulumi.Input[_builtins.str]: ...
     @source_name.setter
-    def source_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def attributes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]]]]:
-        
-        ...
-    
+    def attributes(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]]
+        ]
+    ]: ...
     @attributes.setter
-    def attributes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]]]]): # -> None:
-        ...
-    
+    def attributes(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[SubscriberSourceCustomLogSourceResourceAttributeArgs]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def providers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]]]]:
-        
-        ...
-    
+    def providers(
+        self,
+    ) -> Optional[
+        pulumi.Input[
+            Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]]
+        ]
+    ]: ...
     @providers.setter
-    def providers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]]]]): # -> None:
-        ...
-    
+    def providers(
+        self,
+        value: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[SubscriberSourceCustomLogSourceResourceProviderArgs]
+                ]
+            ]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="sourceVersion")
-    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_version(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_version.setter
-    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def source_version(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 class SubscriberSourceCustomLogSourceResourceAttributeArgsDict(TypedDict):
     crawler_arn: pulumi.Input[_builtins.str]
     database_arn: pulumi.Input[_builtins.str]
     table_arn: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceAttributeArgs:
-    def __init__(__self__, *, crawler_arn: pulumi.Input[_builtins.str], database_arn: pulumi.Input[_builtins.str], table_arn: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        crawler_arn: pulumi.Input[_builtins.str],
+        database_arn: pulumi.Input[_builtins.str],
+        table_arn: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="crawlerArn")
-    def crawler_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def crawler_arn(self) -> pulumi.Input[_builtins.str]: ...
     @crawler_arn.setter
-    def crawler_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def crawler_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="databaseArn")
-    def database_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def database_arn(self) -> pulumi.Input[_builtins.str]: ...
     @database_arn.setter
-    def database_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def database_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tableArn")
-    def table_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def table_arn(self) -> pulumi.Input[_builtins.str]: ...
     @table_arn.setter
-    def table_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def table_arn(self, value: pulumi.Input[_builtins.str]): ...
 
 class SubscriberSourceCustomLogSourceResourceProviderArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceProviderArgs:
-    def __init__(__self__, *, location: pulumi.Input[_builtins.str], role_arn: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        location: pulumi.Input[_builtins.str],
+        role_arn: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def location(self) -> pulumi.Input[_builtins.str]: ...
     @location.setter
-    def location(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def location(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="roleArn")
-    def role_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role_arn(self) -> pulumi.Input[_builtins.str]: ...
     @role_arn.setter
-    def role_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def role_arn(self, value: pulumi.Input[_builtins.str]): ...
 
 class SubscriberSubscriberIdentityArgsDict(TypedDict):
     external_id: pulumi.Input[_builtins.str]
     principal: pulumi.Input[_builtins.str]
-
+    ...
 
 @pulumi.input_type
 class SubscriberSubscriberIdentityArgs:
-    def __init__(__self__, *, external_id: pulumi.Input[_builtins.str], principal: pulumi.Input[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        external_id: pulumi.Input[_builtins.str],
+        principal: pulumi.Input[_builtins.str],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="externalId")
-    def external_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def external_id(self) -> pulumi.Input[_builtins.str]: ...
     @external_id.setter
-    def external_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def external_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def principal(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def principal(self) -> pulumi.Input[_builtins.str]: ...
     @principal.setter
-    def principal(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
-
+    def principal(self, value: pulumi.Input[_builtins.str]): ...
 
 class SubscriberTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class SubscriberTimeoutsArgs:
-    def __init__(__self__, *, create: Optional[pulumi.Input[_builtins.str]] = ..., delete: Optional[pulumi.Input[_builtins.str]] = ..., update: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        create: Optional[pulumi.Input[_builtins.str]] = ...,
+        delete: Optional[pulumi.Input[_builtins.str]] = ...,
+        update: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def create(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def create(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @create.setter
-    def create(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def create(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def delete(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def delete(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @delete.setter
-    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def delete(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def update(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def update(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @update.setter
-    def update(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
-
+    def update(self, value: Optional[pulumi.Input[_builtins.str]]): ...

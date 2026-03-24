@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -12,4 +10,3 @@ from .prepared_statement import *
 from .workgroup import *
 from ._inputs import *
 from . import outputs
-

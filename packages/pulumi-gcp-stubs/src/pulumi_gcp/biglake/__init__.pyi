@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -23,4 +21,3 @@ from .iceberg_table_iam_policy import *
 from .table import *
 from ._inputs import *
 from . import outputs
-

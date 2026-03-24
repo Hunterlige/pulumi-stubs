@@ -1,13 +1,11 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['Metric', 'MetricsGranularity', 'NotificationType']
+__all__ = ["Metric", "MetricsGranularity", "NotificationType"]
+
 @pulumi.type_token("aws:autoscaling/Metric:Metric")
 class Metric(_builtins.str, Enum):
-    
     GROUP_MIN_SIZE = ...
     GROUP_MAX_SIZE = ...
     GROUP_DESIRED_CAPACITY = ...
@@ -29,20 +27,14 @@ class Metric(_builtins.str, Enum):
     GROUP_AND_WARM_POOL_DESIRED_CAPACITY = ...
     GROUP_AND_WARM_POOL_TOTAL_CAPACITY = ...
 
-
 @pulumi.type_token(...)
 class MetricsGranularity(_builtins.str, Enum):
-    
     ONE_MINUTE = ...
-
 
 @pulumi.type_token("aws:autoscaling/NotificationType:NotificationType")
 class NotificationType(_builtins.str, Enum):
-    
     INSTANCE_LAUNCH = ...
     INSTANCE_TERMINATE = ...
     INSTANCE_LAUNCH_ERROR = ...
     INSTANCE_TERMINATE_ERROR = ...
     TEST_NOTIFICATION = ...
-
-

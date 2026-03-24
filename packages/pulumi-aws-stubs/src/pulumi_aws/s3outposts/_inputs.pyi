@@ -1,34 +1,23 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import NotRequired, Optional, TypedDict
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['EndpointNetworkInterfaceArgs', 'EndpointNetworkInterfaceArgsDict']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["EndpointNetworkInterfaceArgs", "EndpointNetworkInterfaceArgsDict"]
+
 class EndpointNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
-
+    ...
 
 @pulumi.input_type
 class EndpointNetworkInterfaceArgs:
-    def __init__(__self__, *, network_interface_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, network_interface_id: Optional[pulumi.Input[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceId")
-    def network_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def network_interface_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @network_interface_id.setter
-    def network_interface_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
-
+    def network_interface_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...

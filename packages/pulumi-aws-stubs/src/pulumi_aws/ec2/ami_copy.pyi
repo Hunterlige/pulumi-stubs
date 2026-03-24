@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,736 +5,596 @@ from typing import Mapping, Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['AmiCopyArgs', 'AmiCopy']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["AmiCopyArgs", "AmiCopy"]
+
 @pulumi.input_type
 class AmiCopyArgs:
-    def __init__(__self__, *, source_ami_id: pulumi.Input[_builtins.str], source_ami_region: pulumi.Input[_builtins.str], deprecation_time: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., ebs_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., ephemeral_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        source_ami_id: pulumi.Input[_builtins.str],
+        source_ami_region: pulumi.Input[_builtins.str],
+        deprecation_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        ebs_block_devices: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]
+        ] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ephemeral_block_devices: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+        ] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiId")
-    def source_ami_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def source_ami_id(self) -> pulumi.Input[_builtins.str]: ...
     @source_ami_id.setter
-    def source_ami_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source_ami_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiRegion")
-    def source_ami_region(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def source_ami_region(self) -> pulumi.Input[_builtins.str]: ...
     @source_ami_region.setter
-    def source_ami_region(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def source_ami_region(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="deprecationTime")
-    def deprecation_time(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def deprecation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deprecation_time.setter
-    def deprecation_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def deprecation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="destinationOutpostArn")
-    def destination_outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def destination_outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_outpost_arn.setter
-    def destination_outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def destination_outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ebsBlockDevices")
-    def ebs_block_devices(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]:
-        
-        ...
-    
+    def ebs_block_devices(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]: ...
     @ebs_block_devices.setter
-    def ebs_block_devices(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]): # -> None:
-        ...
-    
+    def ebs_block_devices(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypted.setter
-    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="ephemeralBlockDevices")
-    def ephemeral_block_devices(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]]:
-        
-        ...
-    
+    def ephemeral_block_devices(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+    ]: ...
     @ephemeral_block_devices.setter
-    def ephemeral_block_devices(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]]): # -> None:
-        ...
-    
+    def ephemeral_block_devices(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.input_type
 class _AmiCopyState:
-    def __init__(__self__, *, architecture: Optional[pulumi.Input[_builtins.str]] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., boot_mode: Optional[pulumi.Input[_builtins.str]] = ..., deprecation_time: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., ebs_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]] = ..., ena_support: Optional[pulumi.Input[_builtins.bool]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., ephemeral_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]] = ..., hypervisor: Optional[pulumi.Input[_builtins.str]] = ..., image_location: Optional[pulumi.Input[_builtins.str]] = ..., image_owner_alias: Optional[pulumi.Input[_builtins.str]] = ..., image_type: Optional[pulumi.Input[_builtins.str]] = ..., imds_support: Optional[pulumi.Input[_builtins.str]] = ..., kernel_id: Optional[pulumi.Input[_builtins.str]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., last_launched_time: Optional[pulumi.Input[_builtins.str]] = ..., manage_ebs_snapshots: Optional[pulumi.Input[_builtins.bool]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., owner_id: Optional[pulumi.Input[_builtins.str]] = ..., platform: Optional[pulumi.Input[_builtins.str]] = ..., platform_details: Optional[pulumi.Input[_builtins.str]] = ..., public: Optional[pulumi.Input[_builtins.bool]] = ..., ramdisk_id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., root_device_name: Optional[pulumi.Input[_builtins.str]] = ..., root_snapshot_id: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_id: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_region: Optional[pulumi.Input[_builtins.str]] = ..., sriov_net_support: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tpm_support: Optional[pulumi.Input[_builtins.str]] = ..., uefi_data: Optional[pulumi.Input[_builtins.str]] = ..., usage_operation: Optional[pulumi.Input[_builtins.str]] = ..., virtualization_type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        architecture: Optional[pulumi.Input[_builtins.str]] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        boot_mode: Optional[pulumi.Input[_builtins.str]] = ...,
+        deprecation_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        ebs_block_devices: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]
+        ] = ...,
+        ena_support: Optional[pulumi.Input[_builtins.bool]] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ephemeral_block_devices: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+        ] = ...,
+        hypervisor: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_location: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_owner_alias: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_type: Optional[pulumi.Input[_builtins.str]] = ...,
+        imds_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        kernel_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_launched_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        manage_ebs_snapshots: Optional[pulumi.Input[_builtins.bool]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        platform: Optional[pulumi.Input[_builtins.str]] = ...,
+        platform_details: Optional[pulumi.Input[_builtins.str]] = ...,
+        public: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ramdisk_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        root_device_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        root_snapshot_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_region: Optional[pulumi.Input[_builtins.str]] = ...,
+        sriov_net_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        tpm_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        uefi_data: Optional[pulumi.Input[_builtins.str]] = ...,
+        usage_operation: Optional[pulumi.Input[_builtins.str]] = ...,
+        virtualization_type: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def architecture(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def architecture(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @architecture.setter
-    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def architecture(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="bootMode")
-    def boot_mode(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def boot_mode(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @boot_mode.setter
-    def boot_mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def boot_mode(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="deprecationTime")
-    def deprecation_time(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def deprecation_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @deprecation_time.setter
-    def deprecation_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def deprecation_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="destinationOutpostArn")
-    def destination_outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def destination_outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @destination_outpost_arn.setter
-    def destination_outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def destination_outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ebsBlockDevices")
-    def ebs_block_devices(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]:
-        
-        ...
-    
+    def ebs_block_devices(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]: ...
     @ebs_block_devices.setter
-    def ebs_block_devices(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]]): # -> None:
-        ...
-    
+    def ebs_block_devices(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEbsBlockDeviceArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="enaSupport")
-    def ena_support(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def ena_support(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @ena_support.setter
-    def ena_support(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def ena_support(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypted.setter
-    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="ephemeralBlockDevices")
-    def ephemeral_block_devices(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]]:
-        
-        ...
-    
+    def ephemeral_block_devices(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+    ]: ...
     @ephemeral_block_devices.setter
-    def ephemeral_block_devices(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]]): # -> None:
-        ...
-    
+    def ephemeral_block_devices(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[AmiCopyEphemeralBlockDeviceArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def hypervisor(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def hypervisor(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @hypervisor.setter
-    def hypervisor(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def hypervisor(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="imageLocation")
-    def image_location(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def image_location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_location.setter
-    def image_location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def image_location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="imageOwnerAlias")
-    def image_owner_alias(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def image_owner_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_owner_alias.setter
-    def image_owner_alias(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def image_owner_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="imageType")
-    def image_type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def image_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @image_type.setter
-    def image_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def image_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="imdsSupport")
-    def imds_support(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def imds_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @imds_support.setter
-    def imds_support(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def imds_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="kernelId")
-    def kernel_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def kernel_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kernel_id.setter
-    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def kernel_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="lastLaunchedTime")
-    def last_launched_time(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def last_launched_time(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_launched_time.setter
-    def last_launched_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def last_launched_time(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="manageEbsSnapshots")
-    def manage_ebs_snapshots(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        ...
-    
+    def manage_ebs_snapshots(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @manage_ebs_snapshots.setter
-    def manage_ebs_snapshots(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def manage_ebs_snapshots(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
-    def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def platform(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def platform(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform.setter
-    def platform(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def platform(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="platformDetails")
-    def platform_details(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def platform_details(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @platform_details.setter
-    def platform_details(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def platform_details(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def public(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        ...
-    
+    def public(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @public.setter
-    def public(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def public(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="ramdiskId")
-    def ramdisk_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def ramdisk_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @ramdisk_id.setter
-    def ramdisk_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def ramdisk_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="rootDeviceName")
-    def root_device_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def root_device_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_device_name.setter
-    def root_device_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def root_device_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="rootSnapshotId")
-    def root_snapshot_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def root_snapshot_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @root_snapshot_id.setter
-    def root_snapshot_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def root_snapshot_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiId")
-    def source_ami_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_ami_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_ami_id.setter
-    def source_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def source_ami_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiRegion")
-    def source_ami_region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def source_ami_region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @source_ami_region.setter
-    def source_ami_region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def source_ami_region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="sriovNetSupport")
-    def sriov_net_support(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def sriov_net_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @sriov_net_support.setter
-    def sriov_net_support(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def sriov_net_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        ...
-    
+    def tags_all(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags_all.setter
-    def tags_all(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags_all(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tpmSupport")
-    def tpm_support(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def tpm_support(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tpm_support.setter
-    def tpm_support(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def tpm_support(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="uefiData")
-    def uefi_data(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def uefi_data(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @uefi_data.setter
-    def uefi_data(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def uefi_data(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="usageOperation")
-    def usage_operation(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def usage_operation(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @usage_operation.setter
-    def usage_operation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def usage_operation(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="virtualizationType")
-    def virtualization_type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def virtualization_type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @virtualization_type.setter
-    def virtualization_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def virtualization_type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("aws:ec2/amiCopy:AmiCopy")
 class AmiCopy(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., deprecation_time: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., ebs_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AmiCopyEbsBlockDeviceArgs, AmiCopyEbsBlockDeviceArgsDict]]]]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., ephemeral_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AmiCopyEphemeralBlockDeviceArgs, AmiCopyEphemeralBlockDeviceArgsDict]]]]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_id: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        deprecation_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        ebs_block_devices: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[AmiCopyEbsBlockDeviceArgs, AmiCopyEbsBlockDeviceArgsDict]
+                    ]
+                ]
+            ]
+        ] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ephemeral_block_devices: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            AmiCopyEphemeralBlockDeviceArgs,
+                            AmiCopyEphemeralBlockDeviceArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: AmiCopyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: AmiCopyArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., architecture: Optional[pulumi.Input[_builtins.str]] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., boot_mode: Optional[pulumi.Input[_builtins.str]] = ..., deprecation_time: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., ebs_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AmiCopyEbsBlockDeviceArgs, AmiCopyEbsBlockDeviceArgsDict]]]]] = ..., ena_support: Optional[pulumi.Input[_builtins.bool]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., ephemeral_block_devices: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AmiCopyEphemeralBlockDeviceArgs, AmiCopyEphemeralBlockDeviceArgsDict]]]]] = ..., hypervisor: Optional[pulumi.Input[_builtins.str]] = ..., image_location: Optional[pulumi.Input[_builtins.str]] = ..., image_owner_alias: Optional[pulumi.Input[_builtins.str]] = ..., image_type: Optional[pulumi.Input[_builtins.str]] = ..., imds_support: Optional[pulumi.Input[_builtins.str]] = ..., kernel_id: Optional[pulumi.Input[_builtins.str]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., last_launched_time: Optional[pulumi.Input[_builtins.str]] = ..., manage_ebs_snapshots: Optional[pulumi.Input[_builtins.bool]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., owner_id: Optional[pulumi.Input[_builtins.str]] = ..., platform: Optional[pulumi.Input[_builtins.str]] = ..., platform_details: Optional[pulumi.Input[_builtins.str]] = ..., public: Optional[pulumi.Input[_builtins.bool]] = ..., ramdisk_id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., root_device_name: Optional[pulumi.Input[_builtins.str]] = ..., root_snapshot_id: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_id: Optional[pulumi.Input[_builtins.str]] = ..., source_ami_region: Optional[pulumi.Input[_builtins.str]] = ..., sriov_net_support: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tpm_support: Optional[pulumi.Input[_builtins.str]] = ..., uefi_data: Optional[pulumi.Input[_builtins.str]] = ..., usage_operation: Optional[pulumi.Input[_builtins.str]] = ..., virtualization_type: Optional[pulumi.Input[_builtins.str]] = ...) -> AmiCopy:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        architecture: Optional[pulumi.Input[_builtins.str]] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        boot_mode: Optional[pulumi.Input[_builtins.str]] = ...,
+        deprecation_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        destination_outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        ebs_block_devices: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[AmiCopyEbsBlockDeviceArgs, AmiCopyEbsBlockDeviceArgsDict]
+                    ]
+                ]
+            ]
+        ] = ...,
+        ena_support: Optional[pulumi.Input[_builtins.bool]] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ephemeral_block_devices: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            AmiCopyEphemeralBlockDeviceArgs,
+                            AmiCopyEphemeralBlockDeviceArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        hypervisor: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_location: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_owner_alias: Optional[pulumi.Input[_builtins.str]] = ...,
+        image_type: Optional[pulumi.Input[_builtins.str]] = ...,
+        imds_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        kernel_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_launched_time: Optional[pulumi.Input[_builtins.str]] = ...,
+        manage_ebs_snapshots: Optional[pulumi.Input[_builtins.bool]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        platform: Optional[pulumi.Input[_builtins.str]] = ...,
+        platform_details: Optional[pulumi.Input[_builtins.str]] = ...,
+        public: Optional[pulumi.Input[_builtins.bool]] = ...,
+        ramdisk_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        root_device_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        root_snapshot_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        source_ami_region: Optional[pulumi.Input[_builtins.str]] = ...,
+        sriov_net_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        tpm_support: Optional[pulumi.Input[_builtins.str]] = ...,
+        uefi_data: Optional[pulumi.Input[_builtins.str]] = ...,
+        usage_operation: Optional[pulumi.Input[_builtins.str]] = ...,
+        virtualization_type: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> AmiCopy: ...
     @_builtins.property
     @pulumi.getter
-    def architecture(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def architecture(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="bootMode")
-    def boot_mode(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def boot_mode(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deprecationTime")
-    def deprecation_time(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def deprecation_time(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="destinationOutpostArn")
-    def destination_outpost_arn(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def destination_outpost_arn(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="ebsBlockDevices")
-    def ebs_block_devices(self) -> pulumi.Output[Sequence[outputs.AmiCopyEbsBlockDevice]]:
-        
-        ...
-    
+    def ebs_block_devices(
+        self,
+    ) -> pulumi.Output[Sequence[outputs.AmiCopyEbsBlockDevice]]: ...
     @_builtins.property
     @pulumi.getter(name="enaSupport")
-    def ena_support(self) -> pulumi.Output[_builtins.bool]:
-        
-        ...
-    
+    def ena_support(self) -> pulumi.Output[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> pulumi.Output[Optional[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> pulumi.Output[Optional[_builtins.bool]]: ...
     @_builtins.property
     @pulumi.getter(name="ephemeralBlockDevices")
-    def ephemeral_block_devices(self) -> pulumi.Output[Sequence[outputs.AmiCopyEphemeralBlockDevice]]:
-        
-        ...
-    
+    def ephemeral_block_devices(
+        self,
+    ) -> pulumi.Output[Sequence[outputs.AmiCopyEphemeralBlockDevice]]: ...
     @_builtins.property
     @pulumi.getter
-    def hypervisor(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def hypervisor(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imageLocation")
-    def image_location(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def image_location(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imageOwnerAlias")
-    def image_owner_alias(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def image_owner_alias(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imageType")
-    def image_type(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def image_type(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imdsSupport")
-    def imds_support(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def imds_support(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="kernelId")
-    def kernel_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def kernel_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def kms_key_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastLaunchedTime")
-    def last_launched_time(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def last_launched_time(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="manageEbsSnapshots")
-    def manage_ebs_snapshots(self) -> pulumi.Output[_builtins.bool]:
-        ...
-    
+    def manage_ebs_snapshots(self) -> pulumi.Output[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
-    def owner_id(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def owner_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def platform(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def platform(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="platformDetails")
-    def platform_details(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def platform_details(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def public(self) -> pulumi.Output[_builtins.bool]:
-        ...
-    
+    def public(self) -> pulumi.Output[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="ramdiskId")
-    def ramdisk_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def ramdisk_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rootDeviceName")
-    def root_device_name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def root_device_name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rootSnapshotId")
-    def root_snapshot_id(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def root_snapshot_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiId")
-    def source_ami_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def source_ami_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceAmiRegion")
-    def source_ami_region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def source_ami_region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sriovNetSupport")
-    def sriov_net_support(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def sriov_net_support(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
-        
-        ...
-    
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]: ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]:
-        ...
-    
+    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="tpmSupport")
-    def tpm_support(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def tpm_support(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="uefiData")
-    def uefi_data(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def uefi_data(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="usageOperation")
-    def usage_operation(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def usage_operation(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="virtualizationType")
-    def virtualization_type(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def virtualization_type(self) -> pulumi.Output[_builtins.str]: ...

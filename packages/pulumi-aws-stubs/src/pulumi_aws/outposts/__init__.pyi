@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -11,4 +9,3 @@ from .get_outpost_instance_types import *
 from .get_outposts import *
 from .get_site import *
 from .get_sites import *
-

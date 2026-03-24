@@ -1,72 +1,63 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Sequence, Union
 from . import outputs
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetTagsResult', 'AwaitableGetTagsResult', 'get_tags', 'get_tags_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["GetTagsResult", "AwaitableGetTagsResult", "get_tags", "get_tags_output"]
+
 @pulumi.output_type
 class GetTagsResult:
-    
-    def __init__(__self__, filter=..., id=..., location=..., package_name=..., project=..., repository_id=..., tags=...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        filter=...,
+        id=...,
+        location=...,
+        package_name=...,
+        project=...,
+        repository_id=...,
+        tags=...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def filter(self) -> Optional[_builtins.str]:
-        ...
-    
+    def filter(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="packageName")
-    def package_name(self) -> _builtins.str:
-        ...
-    
+    def package_name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[_builtins.str]:
-        ...
-    
+    def project(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="repositoryId")
-    def repository_id(self) -> _builtins.str:
-        ...
-    
+    def repository_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Sequence[outputs.GetTagsTagResult]:
-        
-        ...
-    
-
+    def tags(self) -> Sequence[outputs.GetTagsTagResult]: ...
 
 class AwaitableGetTagsResult(GetTagsResult):
-    def __await__(self): # -> Generator[Never, Any, GetTagsResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_tags(filter: Optional[_builtins.str] = ..., location: Optional[_builtins.str] = ..., package_name: Optional[_builtins.str] = ..., project: Optional[_builtins.str] = ..., repository_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTagsResult:
-    
-    ...
-
-def get_tags_output(filter: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., package_name: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., repository_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTagsResult]:
-    
-    ...
-
+def get_tags(
+    filter: Optional[_builtins.str] = ...,
+    location: Optional[_builtins.str] = ...,
+    package_name: Optional[_builtins.str] = ...,
+    project: Optional[_builtins.str] = ...,
+    repository_id: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetTagsResult: ...
+def get_tags_output(
+    filter: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    location: Optional[pulumi.Input[_builtins.str]] = ...,
+    package_name: Optional[pulumi.Input[_builtins.str]] = ...,
+    project: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    repository_id: Optional[pulumi.Input[_builtins.str]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetTagsResult]: ...

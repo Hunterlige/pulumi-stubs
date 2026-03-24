@@ -1,57 +1,40 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Union
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetServiceIamPolicyResult', 'AwaitableGetServiceIamPolicyResult', 'get_service_iam_policy', 'get_service_iam_policy_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "GetServiceIamPolicyResult",
+    "AwaitableGetServiceIamPolicyResult",
+    "get_service_iam_policy",
+    "get_service_iam_policy_output",
+]
+
 @pulumi.output_type
 class GetServiceIamPolicyResult:
-    
-    def __init__(__self__, etag=..., id=..., name=..., policy_data=...) -> None:
-        ...
-    
+    def __init__(__self__, etag=..., id=..., name=..., policy_data=...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> _builtins.str:
-        
-        ...
-    
+    def etag(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="policyData")
-    def policy_data(self) -> _builtins.str:
-        
-        ...
-    
-
+    def policy_data(self) -> _builtins.str: ...
 
 class AwaitableGetServiceIamPolicyResult(GetServiceIamPolicyResult):
-    def __await__(self): # -> Generator[Never, Any, GetServiceIamPolicyResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_service_iam_policy(name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetServiceIamPolicyResult:
-    
-    ...
-
-def get_service_iam_policy_output(name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetServiceIamPolicyResult]:
-    
-    ...
-
+def get_service_iam_policy(
+    name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...
+) -> AwaitableGetServiceIamPolicyResult: ...
+def get_service_iam_policy_output(
+    name: Optional[pulumi.Input[_builtins.str]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetServiceIamPolicyResult]: ...

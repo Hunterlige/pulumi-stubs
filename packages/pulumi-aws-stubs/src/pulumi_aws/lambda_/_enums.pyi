@@ -1,13 +1,11 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['Runtime']
+__all__ = ["Runtime"]
+
 @pulumi.type_token("aws:lambda/Runtime:Runtime")
 class Runtime(_builtins.str, Enum):
-    
     DOTNET6 = ...
     DOTNET8 = ...
     DOTNET10 = ...
@@ -48,5 +46,3 @@ class Runtime(_builtins.str, Enum):
     PYTHON3D8 = ...
     RUBY2D5 = ...
     RUBY2D7 = ...
-
-

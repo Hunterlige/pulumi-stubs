@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -23,4 +21,3 @@ from .odb_network import *
 from .odb_subnet import *
 from ._inputs import *
 from . import outputs
-

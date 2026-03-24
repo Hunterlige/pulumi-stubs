@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,282 +5,216 @@ from typing import Mapping, Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['VirtualRouterArgs', 'VirtualRouter']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["VirtualRouterArgs", "VirtualRouter"]
+
 @pulumi.input_type
 class VirtualRouterArgs:
-    def __init__(__self__, *, mesh_name: pulumi.Input[_builtins.str], spec: pulumi.Input[VirtualRouterSpecArgs], mesh_owner: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        mesh_name: pulumi.Input[_builtins.str],
+        spec: pulumi.Input[VirtualRouterSpecArgs],
+        mesh_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="meshName")
-    def mesh_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def mesh_name(self) -> pulumi.Input[_builtins.str]: ...
     @mesh_name.setter
-    def mesh_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def mesh_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def spec(self) -> pulumi.Input[VirtualRouterSpecArgs]:
-        
-        ...
-    
+    def spec(self) -> pulumi.Input[VirtualRouterSpecArgs]: ...
     @spec.setter
-    def spec(self, value: pulumi.Input[VirtualRouterSpecArgs]): # -> None:
-        ...
-    
+    def spec(self, value: pulumi.Input[VirtualRouterSpecArgs]): ...
     @_builtins.property
     @pulumi.getter(name="meshOwner")
-    def mesh_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mesh_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mesh_owner.setter
-    def mesh_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def mesh_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.input_type
 class _VirtualRouterState:
-    def __init__(__self__, *, arn: Optional[pulumi.Input[_builtins.str]] = ..., created_date: Optional[pulumi.Input[_builtins.str]] = ..., last_updated_date: Optional[pulumi.Input[_builtins.str]] = ..., mesh_name: Optional[pulumi.Input[_builtins.str]] = ..., mesh_owner: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner: Optional[pulumi.Input[_builtins.str]] = ..., spec: Optional[pulumi.Input[VirtualRouterSpecArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        created_date: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_updated_date: Optional[pulumi.Input[_builtins.str]] = ...,
+        mesh_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        mesh_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        resource_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        spec: Optional[pulumi.Input[VirtualRouterSpecArgs]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="createdDate")
-    def created_date(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def created_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @created_date.setter
-    def created_date(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def created_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedDate")
-    def last_updated_date(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def last_updated_date(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @last_updated_date.setter
-    def last_updated_date(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def last_updated_date(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="meshName")
-    def mesh_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mesh_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mesh_name.setter
-    def mesh_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def mesh_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="meshOwner")
-    def mesh_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def mesh_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @mesh_owner.setter
-    def mesh_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def mesh_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="resourceOwner")
-    def resource_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def resource_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_owner.setter
-    def resource_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def resource_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def spec(self) -> Optional[pulumi.Input[VirtualRouterSpecArgs]]:
-        
-        ...
-    
+    def spec(self) -> Optional[pulumi.Input[VirtualRouterSpecArgs]]: ...
     @spec.setter
-    def spec(self, value: Optional[pulumi.Input[VirtualRouterSpecArgs]]): # -> None:
-        ...
-    
+    def spec(self, value: Optional[pulumi.Input[VirtualRouterSpecArgs]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags_all(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags_all.setter
-    def tags_all(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags_all(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.type_token("aws:appmesh/virtualRouter:VirtualRouter")
 class VirtualRouter(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., mesh_name: Optional[pulumi.Input[_builtins.str]] = ..., mesh_owner: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., spec: Optional[pulumi.Input[Union[VirtualRouterSpecArgs, VirtualRouterSpecArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        mesh_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        mesh_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        spec: Optional[
+            pulumi.Input[Union[VirtualRouterSpecArgs, VirtualRouterSpecArgsDict]]
+        ] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: VirtualRouterArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: VirtualRouterArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., created_date: Optional[pulumi.Input[_builtins.str]] = ..., last_updated_date: Optional[pulumi.Input[_builtins.str]] = ..., mesh_name: Optional[pulumi.Input[_builtins.str]] = ..., mesh_owner: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner: Optional[pulumi.Input[_builtins.str]] = ..., spec: Optional[pulumi.Input[Union[VirtualRouterSpecArgs, VirtualRouterSpecArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> VirtualRouter:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        created_date: Optional[pulumi.Input[_builtins.str]] = ...,
+        last_updated_date: Optional[pulumi.Input[_builtins.str]] = ...,
+        mesh_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        mesh_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        resource_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        spec: Optional[
+            pulumi.Input[Union[VirtualRouterSpecArgs, VirtualRouterSpecArgsDict]]
+        ] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> VirtualRouter: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="createdDate")
-    def created_date(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def created_date(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastUpdatedDate")
-    def last_updated_date(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def last_updated_date(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="meshName")
-    def mesh_name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def mesh_name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="meshOwner")
-    def mesh_owner(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def mesh_owner(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="resourceOwner")
-    def resource_owner(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def resource_owner(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def spec(self) -> pulumi.Output[outputs.VirtualRouterSpec]:
-        
-        ...
-    
+    def spec(self) -> pulumi.Output[outputs.VirtualRouterSpec]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
-        
-        ...
-    
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]: ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]:
-        
-        ...
-    
-
-
+    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]: ...

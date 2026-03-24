@@ -1,10 +1,9 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['RecordType']
+__all__ = ["RecordType"]
+
 @pulumi.type_token("aws:route53/RecordType:RecordType")
 class RecordType(_builtins.str, Enum):
     A = ...
@@ -19,5 +18,3 @@ class RecordType(_builtins.str, Enum):
     SPF = ...
     SRV = ...
     TXT = ...
-
-

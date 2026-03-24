@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -34,4 +32,3 @@ from .workload_identity_pool_namespace import *
 from .workload_identity_pool_provider import *
 from ._inputs import *
 from . import outputs
-

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -18,4 +16,3 @@ from .retention_configuration import *
 from .rule import *
 from ._inputs import *
 from . import outputs
-

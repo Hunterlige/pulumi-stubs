@@ -1,62 +1,51 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Sequence, Union
 from . import outputs
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetIamCustomRolesResult', 'AwaitableGetIamCustomRolesResult', 'get_iam_custom_roles', 'get_iam_custom_roles_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "GetIamCustomRolesResult",
+    "AwaitableGetIamCustomRolesResult",
+    "get_iam_custom_roles",
+    "get_iam_custom_roles_output",
+]
+
 @pulumi.output_type
 class GetIamCustomRolesResult:
-    
-    def __init__(__self__, id=..., org_id=..., roles=..., show_deleted=..., view=...) -> None:
-        ...
-    
+    def __init__(
+        __self__, id=..., org_id=..., roles=..., show_deleted=..., view=...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="orgId")
-    def org_id(self) -> Optional[_builtins.str]:
-        ...
-    
+    def org_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def roles(self) -> Sequence[outputs.GetIamCustomRolesRoleResult]:
-        
-        ...
-    
+    def roles(self) -> Sequence[outputs.GetIamCustomRolesRoleResult]: ...
     @_builtins.property
     @pulumi.getter(name="showDeleted")
-    def show_deleted(self) -> Optional[_builtins.bool]:
-        ...
-    
+    def show_deleted(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def view(self) -> Optional[_builtins.str]:
-        ...
-    
-
+    def view(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetIamCustomRolesResult(GetIamCustomRolesResult):
-    def __await__(self): # -> Generator[Never, Any, GetIamCustomRolesResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_iam_custom_roles(org_id: Optional[_builtins.str] = ..., show_deleted: Optional[_builtins.bool] = ..., view: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetIamCustomRolesResult:
-    
-    ...
-
-def get_iam_custom_roles_output(org_id: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., show_deleted: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., view: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetIamCustomRolesResult]:
-    
-    ...
-
+def get_iam_custom_roles(
+    org_id: Optional[_builtins.str] = ...,
+    show_deleted: Optional[_builtins.bool] = ...,
+    view: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetIamCustomRolesResult: ...
+def get_iam_custom_roles_output(
+    org_id: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    show_deleted: Optional[pulumi.Input[Optional[_builtins.bool]]] = ...,
+    view: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetIamCustomRolesResult]: ...

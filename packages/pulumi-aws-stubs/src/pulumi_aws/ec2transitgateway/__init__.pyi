@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -43,4 +41,3 @@ from .vpc_attachment import *
 from .vpc_attachment_accepter import *
 from ._inputs import *
 from . import outputs
-

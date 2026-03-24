@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -30,4 +28,3 @@ from .scope_iam_policy import *
 from .scope_rbac_role_binding import *
 from ._inputs import *
 from . import outputs
-

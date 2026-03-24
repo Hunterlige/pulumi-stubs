@@ -1,77 +1,71 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Union
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetAssetIamPolicyResult', 'AwaitableGetAssetIamPolicyResult', 'get_asset_iam_policy', 'get_asset_iam_policy_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "GetAssetIamPolicyResult",
+    "AwaitableGetAssetIamPolicyResult",
+    "get_asset_iam_policy",
+    "get_asset_iam_policy_output",
+]
+
 @pulumi.output_type
 class GetAssetIamPolicyResult:
-    
-    def __init__(__self__, asset=..., dataplex_zone=..., etag=..., id=..., lake=..., location=..., policy_data=..., project=...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        asset=...,
+        dataplex_zone=...,
+        etag=...,
+        id=...,
+        lake=...,
+        location=...,
+        policy_data=...,
+        project=...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def asset(self) -> _builtins.str:
-        ...
-    
+    def asset(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="dataplexZone")
-    def dataplex_zone(self) -> _builtins.str:
-        ...
-    
+    def dataplex_zone(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> _builtins.str:
-        
-        ...
-    
+    def etag(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def lake(self) -> _builtins.str:
-        ...
-    
+    def lake(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="policyData")
-    def policy_data(self) -> _builtins.str:
-        
-        ...
-    
+    def policy_data(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> _builtins.str:
-        ...
-    
-
+    def project(self) -> _builtins.str: ...
 
 class AwaitableGetAssetIamPolicyResult(GetAssetIamPolicyResult):
-    def __await__(self): # -> Generator[Never, Any, GetAssetIamPolicyResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_asset_iam_policy(asset: Optional[_builtins.str] = ..., dataplex_zone: Optional[_builtins.str] = ..., lake: Optional[_builtins.str] = ..., location: Optional[_builtins.str] = ..., project: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAssetIamPolicyResult:
-    
-    ...
-
-def get_asset_iam_policy_output(asset: Optional[pulumi.Input[_builtins.str]] = ..., dataplex_zone: Optional[pulumi.Input[_builtins.str]] = ..., lake: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAssetIamPolicyResult]:
-    
-    ...
-
+def get_asset_iam_policy(
+    asset: Optional[_builtins.str] = ...,
+    dataplex_zone: Optional[_builtins.str] = ...,
+    lake: Optional[_builtins.str] = ...,
+    location: Optional[_builtins.str] = ...,
+    project: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetAssetIamPolicyResult: ...
+def get_asset_iam_policy_output(
+    asset: Optional[pulumi.Input[_builtins.str]] = ...,
+    dataplex_zone: Optional[pulumi.Input[_builtins.str]] = ...,
+    lake: Optional[pulumi.Input[_builtins.str]] = ...,
+    location: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    project: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetAssetIamPolicyResult]: ...

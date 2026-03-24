@@ -1,18 +1,24 @@
-
-
 import builtins as _builtins
 import warnings
 import sys
 import pulumi
 import pulumi.runtime
-from typing import Any, Mapping, NotRequired, Optional, Sequence, TypeAlias, TypedDict, Union, overload
+from typing import (
+    Any,
+    Mapping,
+    NotRequired,
+    Optional,
+    Sequence,
+    TypeAlias,
+    TypedDict,
+    Union,
+    overload,
+)
 from .. import _utilities
 from . import outputs
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
+if sys.version_info >= (3, 11): ...
+else: ...
 accessApprovalCustomEndpoint: Optional[str]
 accessContextManagerCustomEndpoint: Optional[str]
 accessToken: Optional[str]

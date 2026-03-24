@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,237 +5,199 @@ from typing import Mapping, Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['RepositoryArgs', 'Repository']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["RepositoryArgs", "Repository"]
+
 @pulumi.input_type
 class RepositoryArgs:
-    def __init__(__self__, *, repository_name: pulumi.Input[_builtins.str], catalog_data: Optional[pulumi.Input[RepositoryCatalogDataArgs]] = ..., force_destroy: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        repository_name: pulumi.Input[_builtins.str],
+        catalog_data: Optional[pulumi.Input[RepositoryCatalogDataArgs]] = ...,
+        force_destroy: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="repositoryName")
-    def repository_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def repository_name(self) -> pulumi.Input[_builtins.str]: ...
     @repository_name.setter
-    def repository_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def repository_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="catalogData")
-    def catalog_data(self) -> Optional[pulumi.Input[RepositoryCatalogDataArgs]]:
-        
-        ...
-    
+    def catalog_data(self) -> Optional[pulumi.Input[RepositoryCatalogDataArgs]]: ...
     @catalog_data.setter
-    def catalog_data(self, value: Optional[pulumi.Input[RepositoryCatalogDataArgs]]): # -> None:
-        ...
-    
+    def catalog_data(
+        self, value: Optional[pulumi.Input[RepositoryCatalogDataArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
-    def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        ...
-    
+    def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.input_type
 class _RepositoryState:
-    def __init__(__self__, *, arn: Optional[pulumi.Input[_builtins.str]] = ..., catalog_data: Optional[pulumi.Input[RepositoryCatalogDataArgs]] = ..., force_destroy: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., registry_id: Optional[pulumi.Input[_builtins.str]] = ..., repository_name: Optional[pulumi.Input[_builtins.str]] = ..., repository_uri: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        catalog_data: Optional[pulumi.Input[RepositoryCatalogDataArgs]] = ...,
+        force_destroy: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        registry_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        repository_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        repository_uri: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="catalogData")
-    def catalog_data(self) -> Optional[pulumi.Input[RepositoryCatalogDataArgs]]:
-        
-        ...
-    
+    def catalog_data(self) -> Optional[pulumi.Input[RepositoryCatalogDataArgs]]: ...
     @catalog_data.setter
-    def catalog_data(self, value: Optional[pulumi.Input[RepositoryCatalogDataArgs]]): # -> None:
-        ...
-    
+    def catalog_data(
+        self, value: Optional[pulumi.Input[RepositoryCatalogDataArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
-    def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        ...
-    
+    def force_destroy(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @force_destroy.setter
-    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def force_destroy(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="registryId")
-    def registry_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def registry_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @registry_id.setter
-    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def registry_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="repositoryName")
-    def repository_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def repository_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repository_name.setter
-    def repository_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def repository_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="repositoryUri")
-    def repository_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def repository_uri(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @repository_uri.setter
-    def repository_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def repository_uri(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags_all(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags_all.setter
-    def tags_all(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags_all(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.type_token("aws:ecrpublic/repository:Repository")
 class Repository(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., catalog_data: Optional[pulumi.Input[Union[RepositoryCatalogDataArgs, RepositoryCatalogDataArgsDict]]] = ..., force_destroy: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., repository_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        catalog_data: Optional[
+            pulumi.Input[
+                Union[RepositoryCatalogDataArgs, RepositoryCatalogDataArgsDict]
+            ]
+        ] = ...,
+        force_destroy: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        repository_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: RepositoryArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: RepositoryArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., catalog_data: Optional[pulumi.Input[Union[RepositoryCatalogDataArgs, RepositoryCatalogDataArgsDict]]] = ..., force_destroy: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., registry_id: Optional[pulumi.Input[_builtins.str]] = ..., repository_name: Optional[pulumi.Input[_builtins.str]] = ..., repository_uri: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> Repository:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        catalog_data: Optional[
+            pulumi.Input[
+                Union[RepositoryCatalogDataArgs, RepositoryCatalogDataArgsDict]
+            ]
+        ] = ...,
+        force_destroy: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        registry_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        repository_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        repository_uri: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> Repository: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="catalogData")
-    def catalog_data(self) -> pulumi.Output[Optional[outputs.RepositoryCatalogData]]:
-        
-        ...
-    
+    def catalog_data(
+        self,
+    ) -> pulumi.Output[Optional[outputs.RepositoryCatalogData]]: ...
     @_builtins.property
     @pulumi.getter(name="forceDestroy")
-    def force_destroy(self) -> pulumi.Output[Optional[_builtins.bool]]:
-        ...
-    
+    def force_destroy(self) -> pulumi.Output[Optional[_builtins.bool]]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="registryId")
-    def registry_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def registry_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="repositoryName")
-    def repository_name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def repository_name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="repositoryUri")
-    def repository_uri(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def repository_uri(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
-        
-        ...
-    
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]: ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]:
-        
-        ...
-    
-
-
+    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]: ...

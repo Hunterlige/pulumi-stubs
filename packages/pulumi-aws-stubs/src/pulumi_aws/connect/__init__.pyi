@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -38,4 +36,3 @@ from .user_hierarchy_structure import *
 from .vocabulary import *
 from ._inputs import *
 from . import outputs
-

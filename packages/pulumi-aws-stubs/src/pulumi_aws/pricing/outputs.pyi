@@ -1,31 +1,17 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetProductFilterResult']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["GetProductFilterResult"]
+
 @pulumi.output_type
 class GetProductFilterResult(dict):
-    def __init__(__self__, *, field: _builtins.str, value: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, field: _builtins.str, value: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def field(self) -> _builtins.str:
-        
-        ...
-    
+    def field(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> _builtins.str:
-        
-        ...
-    
-
-
+    def value(self) -> _builtins.str: ...

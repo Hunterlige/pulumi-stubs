@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -11,4 +9,3 @@ from .v_mware_node_pool import *
 from .vmware_admin_cluster import *
 from ._inputs import *
 from . import outputs
-

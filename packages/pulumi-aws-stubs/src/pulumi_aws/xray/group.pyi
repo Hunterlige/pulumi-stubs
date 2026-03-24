@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,208 +5,191 @@ from typing import Mapping, Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GroupArgs', 'Group']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["GroupArgs", "Group"]
+
 @pulumi.input_type
 class GroupArgs:
-    def __init__(__self__, *, filter_expression: pulumi.Input[_builtins.str], group_name: pulumi.Input[_builtins.str], insights_configuration: Optional[pulumi.Input[GroupInsightsConfigurationArgs]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        filter_expression: pulumi.Input[_builtins.str],
+        group_name: pulumi.Input[_builtins.str],
+        insights_configuration: Optional[
+            pulumi.Input[GroupInsightsConfigurationArgs]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="filterExpression")
-    def filter_expression(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def filter_expression(self) -> pulumi.Input[_builtins.str]: ...
     @filter_expression.setter
-    def filter_expression(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def filter_expression(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="groupName")
-    def group_name(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def group_name(self) -> pulumi.Input[_builtins.str]: ...
     @group_name.setter
-    def group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def group_name(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="insightsConfiguration")
-    def insights_configuration(self) -> Optional[pulumi.Input[GroupInsightsConfigurationArgs]]:
-        
-        ...
-    
+    def insights_configuration(
+        self,
+    ) -> Optional[pulumi.Input[GroupInsightsConfigurationArgs]]: ...
     @insights_configuration.setter
-    def insights_configuration(self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]): # -> None:
-        ...
-    
+    def insights_configuration(
+        self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.input_type
 class _GroupState:
-    def __init__(__self__, *, arn: Optional[pulumi.Input[_builtins.str]] = ..., filter_expression: Optional[pulumi.Input[_builtins.str]] = ..., group_name: Optional[pulumi.Input[_builtins.str]] = ..., insights_configuration: Optional[pulumi.Input[GroupInsightsConfigurationArgs]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        filter_expression: Optional[pulumi.Input[_builtins.str]] = ...,
+        group_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        insights_configuration: Optional[
+            pulumi.Input[GroupInsightsConfigurationArgs]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="filterExpression")
-    def filter_expression(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def filter_expression(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @filter_expression.setter
-    def filter_expression(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def filter_expression(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="groupName")
-    def group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def group_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @group_name.setter
-    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="insightsConfiguration")
-    def insights_configuration(self) -> Optional[pulumi.Input[GroupInsightsConfigurationArgs]]:
-        
-        ...
-    
+    def insights_configuration(
+        self,
+    ) -> Optional[pulumi.Input[GroupInsightsConfigurationArgs]]: ...
     @insights_configuration.setter
-    def insights_configuration(self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]): # -> None:
-        ...
-    
+    def insights_configuration(
+        self, value: Optional[pulumi.Input[GroupInsightsConfigurationArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags_all(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags_all.setter
-    def tags_all(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
-
+    def tags_all(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
 
 @pulumi.type_token("aws:xray/group:Group")
 class Group(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., filter_expression: Optional[pulumi.Input[_builtins.str]] = ..., group_name: Optional[pulumi.Input[_builtins.str]] = ..., insights_configuration: Optional[pulumi.Input[Union[GroupInsightsConfigurationArgs, GroupInsightsConfigurationArgsDict]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        filter_expression: Optional[pulumi.Input[_builtins.str]] = ...,
+        group_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        insights_configuration: Optional[
+            pulumi.Input[
+                Union[
+                    GroupInsightsConfigurationArgs, GroupInsightsConfigurationArgsDict
+                ]
+            ]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: GroupArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: GroupArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., filter_expression: Optional[pulumi.Input[_builtins.str]] = ..., group_name: Optional[pulumi.Input[_builtins.str]] = ..., insights_configuration: Optional[pulumi.Input[Union[GroupInsightsConfigurationArgs, GroupInsightsConfigurationArgsDict]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> Group:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        filter_expression: Optional[pulumi.Input[_builtins.str]] = ...,
+        group_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        insights_configuration: Optional[
+            pulumi.Input[
+                Union[
+                    GroupInsightsConfigurationArgs, GroupInsightsConfigurationArgsDict
+                ]
+            ]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+    ) -> Group: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="filterExpression")
-    def filter_expression(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def filter_expression(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="groupName")
-    def group_name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def group_name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="insightsConfiguration")
-    def insights_configuration(self) -> pulumi.Output[outputs.GroupInsightsConfiguration]:
-        
-        ...
-    
+    def insights_configuration(
+        self,
+    ) -> pulumi.Output[outputs.GroupInsightsConfiguration]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
-        
-        ...
-    
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]: ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]:
-        
-        ...
-    
-
-
+    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]: ...

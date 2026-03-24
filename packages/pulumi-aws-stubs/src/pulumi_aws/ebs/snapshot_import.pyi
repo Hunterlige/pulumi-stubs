@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,456 +5,357 @@ from typing import Mapping, Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['SnapshotImportArgs', 'SnapshotImport']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["SnapshotImportArgs", "SnapshotImport"]
+
 @pulumi.input_type
 class SnapshotImportArgs:
-    def __init__(__self__, *, disk_container: pulumi.Input[SnapshotImportDiskContainerArgs], client_data: Optional[pulumi.Input[SnapshotImportClientDataArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_tier: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        disk_container: pulumi.Input[SnapshotImportDiskContainerArgs],
+        client_data: Optional[pulumi.Input[SnapshotImportClientDataArgs]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        role_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        storage_tier: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskContainer")
-    def disk_container(self) -> pulumi.Input[SnapshotImportDiskContainerArgs]:
-        
-        ...
-    
+    def disk_container(self) -> pulumi.Input[SnapshotImportDiskContainerArgs]: ...
     @disk_container.setter
-    def disk_container(self, value: pulumi.Input[SnapshotImportDiskContainerArgs]): # -> None:
-        ...
-    
+    def disk_container(self, value: pulumi.Input[SnapshotImportDiskContainerArgs]): ...
     @_builtins.property
     @pulumi.getter(name="clientData")
-    def client_data(self) -> Optional[pulumi.Input[SnapshotImportClientDataArgs]]:
-        
-        ...
-    
+    def client_data(self) -> Optional[pulumi.Input[SnapshotImportClientDataArgs]]: ...
     @client_data.setter
-    def client_data(self, value: Optional[pulumi.Input[SnapshotImportClientDataArgs]]): # -> None:
-        ...
-    
+    def client_data(
+        self, value: Optional[pulumi.Input[SnapshotImportClientDataArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypted.setter
-    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="permanentRestore")
-    def permanent_restore(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def permanent_restore(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @permanent_restore.setter
-    def permanent_restore(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def permanent_restore(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="roleName")
-    def role_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_name.setter
-    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="storageTier")
-    def storage_tier(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def storage_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_tier.setter
-    def storage_tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def storage_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="temporaryRestoreDays")
-    def temporary_restore_days(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def temporary_restore_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @temporary_restore_days.setter
-    def temporary_restore_days(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def temporary_restore_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 @pulumi.input_type
 class _SnapshotImportState:
-    def __init__(__self__, *, arn: Optional[pulumi.Input[_builtins.str]] = ..., client_data: Optional[pulumi.Input[SnapshotImportClientDataArgs]] = ..., data_encryption_key_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., disk_container: Optional[pulumi.Input[SnapshotImportDiskContainerArgs]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., owner_alias: Optional[pulumi.Input[_builtins.str]] = ..., owner_id: Optional[pulumi.Input[_builtins.str]] = ..., permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_tier: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ..., volume_id: Optional[pulumi.Input[_builtins.str]] = ..., volume_size: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        client_data: Optional[pulumi.Input[SnapshotImportClientDataArgs]] = ...,
+        data_encryption_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        disk_container: Optional[pulumi.Input[SnapshotImportDiskContainerArgs]] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_alias: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        role_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        storage_tier: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ...,
+        volume_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        volume_size: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="clientData")
-    def client_data(self) -> Optional[pulumi.Input[SnapshotImportClientDataArgs]]:
-        
-        ...
-    
+    def client_data(self) -> Optional[pulumi.Input[SnapshotImportClientDataArgs]]: ...
     @client_data.setter
-    def client_data(self, value: Optional[pulumi.Input[SnapshotImportClientDataArgs]]): # -> None:
-        ...
-    
+    def client_data(
+        self, value: Optional[pulumi.Input[SnapshotImportClientDataArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="dataEncryptionKeyId")
-    def data_encryption_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def data_encryption_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @data_encryption_key_id.setter
-    def data_encryption_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def data_encryption_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="diskContainer")
-    def disk_container(self) -> Optional[pulumi.Input[SnapshotImportDiskContainerArgs]]:
-        
-        ...
-    
+    def disk_container(
+        self,
+    ) -> Optional[pulumi.Input[SnapshotImportDiskContainerArgs]]: ...
     @disk_container.setter
-    def disk_container(self, value: Optional[pulumi.Input[SnapshotImportDiskContainerArgs]]): # -> None:
-        ...
-    
+    def disk_container(
+        self, value: Optional[pulumi.Input[SnapshotImportDiskContainerArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @encrypted.setter
-    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def encrypted(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def kms_key_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @kms_key_id.setter
-    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def kms_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="outpostArn")
-    def outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def outpost_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @outpost_arn.setter
-    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def outpost_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ownerAlias")
-    def owner_alias(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def owner_alias(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_alias.setter
-    def owner_alias(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def owner_alias(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
-    def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def owner_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_id.setter
-    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def owner_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="permanentRestore")
-    def permanent_restore(self) -> Optional[pulumi.Input[_builtins.bool]]:
-        
-        ...
-    
+    def permanent_restore(self) -> Optional[pulumi.Input[_builtins.bool]]: ...
     @permanent_restore.setter
-    def permanent_restore(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
-        ...
-    
+    def permanent_restore(self, value: Optional[pulumi.Input[_builtins.bool]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="roleName")
-    def role_name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role_name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role_name.setter
-    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="storageTier")
-    def storage_tier(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def storage_tier(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @storage_tier.setter
-    def storage_tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def storage_tier(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags.setter
-    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def tags_all(
+        self,
+    ) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]: ...
     @tags_all.setter
-    def tags_all(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def tags_all(
+        self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="temporaryRestoreDays")
-    def temporary_restore_days(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def temporary_restore_days(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @temporary_restore_days.setter
-    def temporary_restore_days(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def temporary_restore_days(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="volumeId")
-    def volume_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def volume_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @volume_id.setter
-    def volume_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def volume_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="volumeSize")
-    def volume_size(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def volume_size(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @volume_size.setter
-    def volume_size(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def volume_size(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 @pulumi.type_token("aws:ebs/snapshotImport:SnapshotImport")
 class SnapshotImport(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., client_data: Optional[pulumi.Input[Union[SnapshotImportClientDataArgs, SnapshotImportClientDataArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., disk_container: Optional[pulumi.Input[Union[SnapshotImportDiskContainerArgs, SnapshotImportDiskContainerArgsDict]]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_tier: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        client_data: Optional[
+            pulumi.Input[
+                Union[SnapshotImportClientDataArgs, SnapshotImportClientDataArgsDict]
+            ]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        disk_container: Optional[
+            pulumi.Input[
+                Union[
+                    SnapshotImportDiskContainerArgs, SnapshotImportDiskContainerArgsDict
+                ]
+            ]
+        ] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        role_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        storage_tier: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: SnapshotImportArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: SnapshotImportArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., client_data: Optional[pulumi.Input[Union[SnapshotImportClientDataArgs, SnapshotImportClientDataArgsDict]]] = ..., data_encryption_key_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., disk_container: Optional[pulumi.Input[Union[SnapshotImportDiskContainerArgs, SnapshotImportDiskContainerArgsDict]]] = ..., encrypted: Optional[pulumi.Input[_builtins.bool]] = ..., kms_key_id: Optional[pulumi.Input[_builtins.str]] = ..., outpost_arn: Optional[pulumi.Input[_builtins.str]] = ..., owner_alias: Optional[pulumi.Input[_builtins.str]] = ..., owner_id: Optional[pulumi.Input[_builtins.str]] = ..., permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_tier: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tags_all: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ..., volume_id: Optional[pulumi.Input[_builtins.str]] = ..., volume_size: Optional[pulumi.Input[_builtins.int]] = ...) -> SnapshotImport:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        client_data: Optional[
+            pulumi.Input[
+                Union[SnapshotImportClientDataArgs, SnapshotImportClientDataArgsDict]
+            ]
+        ] = ...,
+        data_encryption_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        disk_container: Optional[
+            pulumi.Input[
+                Union[
+                    SnapshotImportDiskContainerArgs, SnapshotImportDiskContainerArgsDict
+                ]
+            ]
+        ] = ...,
+        encrypted: Optional[pulumi.Input[_builtins.bool]] = ...,
+        kms_key_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        outpost_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_alias: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        permanent_restore: Optional[pulumi.Input[_builtins.bool]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        role_name: Optional[pulumi.Input[_builtins.str]] = ...,
+        storage_tier: Optional[pulumi.Input[_builtins.str]] = ...,
+        tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...,
+        tags_all: Optional[
+            pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+        ] = ...,
+        temporary_restore_days: Optional[pulumi.Input[_builtins.int]] = ...,
+        volume_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        volume_size: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> SnapshotImport: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="clientData")
-    def client_data(self) -> pulumi.Output[Optional[outputs.SnapshotImportClientData]]:
-        
-        ...
-    
+    def client_data(
+        self,
+    ) -> pulumi.Output[Optional[outputs.SnapshotImportClientData]]: ...
     @_builtins.property
     @pulumi.getter(name="dataEncryptionKeyId")
-    def data_encryption_key_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def data_encryption_key_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskContainer")
-    def disk_container(self) -> pulumi.Output[outputs.SnapshotImportDiskContainer]:
-        
-        ...
-    
+    def disk_container(self) -> pulumi.Output[outputs.SnapshotImportDiskContainer]: ...
     @_builtins.property
     @pulumi.getter
-    def encrypted(self) -> pulumi.Output[Optional[_builtins.bool]]:
-        
-        ...
-    
+    def encrypted(self) -> pulumi.Output[Optional[_builtins.bool]]: ...
     @_builtins.property
     @pulumi.getter(name="kmsKeyId")
-    def kms_key_id(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def kms_key_id(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="outpostArn")
-    def outpost_arn(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def outpost_arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="ownerAlias")
-    def owner_alias(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def owner_alias(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="ownerId")
-    def owner_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def owner_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="permanentRestore")
-    def permanent_restore(self) -> pulumi.Output[Optional[_builtins.bool]]:
-        
-        ...
-    
+    def permanent_restore(self) -> pulumi.Output[Optional[_builtins.bool]]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="roleName")
-    def role_name(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def role_name(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="storageTier")
-    def storage_tier(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def storage_tier(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
-        
-        ...
-    
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]: ...
     @_builtins.property
     @pulumi.getter(name="tagsAll")
-    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]:
-        
-        ...
-    
+    def tags_all(self) -> pulumi.Output[Mapping[str, _builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="temporaryRestoreDays")
-    def temporary_restore_days(self) -> pulumi.Output[Optional[_builtins.int]]:
-        
-        ...
-    
+    def temporary_restore_days(self) -> pulumi.Output[Optional[_builtins.int]]: ...
     @_builtins.property
     @pulumi.getter(name="volumeId")
-    def volume_id(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def volume_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="volumeSize")
-    def volume_size(self) -> pulumi.Output[_builtins.int]:
-        
-        ...
-    
-
-
+    def volume_size(self) -> pulumi.Output[_builtins.int]: ...

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -8,205 +6,173 @@ from .. import _utilities
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['BucketObjectLockConfigurationV2Args', 'BucketObjectLockConfigurationV2']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["BucketObjectLockConfigurationV2Args", "BucketObjectLockConfigurationV2"]
+
 @pulumi.input_type
 class BucketObjectLockConfigurationV2Args:
-    def __init__(__self__, *, bucket: pulumi.Input[_builtins.str], expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., rule: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]] = ..., token: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: pulumi.Input[_builtins.str],
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        rule: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]] = ...,
+        token: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def bucket(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="objectLockEnabled")
-    def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def rule(self) -> Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]:
-        
-        ...
-    
+    def rule(
+        self,
+    ) -> Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]: ...
     @rule.setter
-    def rule(self, value: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]): # -> None:
-        ...
-    
+    def rule(
+        self, value: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def token(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @token.setter
-    def token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _BucketObjectLockConfigurationV2State:
-    def __init__(__self__, *, bucket: Optional[pulumi.Input[_builtins.str]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., rule: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]] = ..., token: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        rule: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]] = ...,
+        token: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="objectLockEnabled")
-    def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def object_lock_enabled(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @object_lock_enabled.setter
-    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def object_lock_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def rule(self) -> Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]:
-        
-        ...
-    
+    def rule(
+        self,
+    ) -> Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]: ...
     @rule.setter
-    def rule(self, value: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]): # -> None:
-        ...
-    
+    def rule(
+        self, value: Optional[pulumi.Input[BucketObjectLockConfigurationV2RuleArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def token(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def token(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @token.setter
-    def token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def token(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token(...)
 class BucketObjectLockConfigurationV2(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., rule: Optional[pulumi.Input[Union[BucketObjectLockConfigurationV2RuleArgs, BucketObjectLockConfigurationV2RuleArgsDict]]] = ..., token: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        rule: Optional[
+            pulumi.Input[
+                Union[
+                    BucketObjectLockConfigurationV2RuleArgs,
+                    BucketObjectLockConfigurationV2RuleArgsDict,
+                ]
+            ]
+        ] = ...,
+        token: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: BucketObjectLockConfigurationV2Args, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: BucketObjectLockConfigurationV2Args,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., rule: Optional[pulumi.Input[Union[BucketObjectLockConfigurationV2RuleArgs, BucketObjectLockConfigurationV2RuleArgsDict]]] = ..., token: Optional[pulumi.Input[_builtins.str]] = ...) -> BucketObjectLockConfigurationV2:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        object_lock_enabled: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        rule: Optional[
+            pulumi.Input[
+                Union[
+                    BucketObjectLockConfigurationV2RuleArgs,
+                    BucketObjectLockConfigurationV2RuleArgsDict,
+                ]
+            ]
+        ] = ...,
+        token: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> BucketObjectLockConfigurationV2: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="objectLockEnabled")
-    def object_lock_enabled(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def object_lock_enabled(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def rule(self) -> pulumi.Output[Optional[outputs.BucketObjectLockConfigurationV2Rule]]:
-        
-        ...
-    
+    def rule(
+        self,
+    ) -> pulumi.Output[Optional[outputs.BucketObjectLockConfigurationV2Rule]]: ...
     @_builtins.property
     @pulumi.getter
-    def token(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
-
-
+    def token(self) -> pulumi.Output[Optional[_builtins.str]]: ...

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -22,4 +20,3 @@ from .slo import *
 from .uptime_check_config import *
 from ._inputs import *
 from . import outputs
-

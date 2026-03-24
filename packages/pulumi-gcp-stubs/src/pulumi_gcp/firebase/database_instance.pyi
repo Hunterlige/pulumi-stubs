@@ -1,228 +1,161 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, overload
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['DatabaseInstanceArgs', 'DatabaseInstance']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["DatabaseInstanceArgs", "DatabaseInstance"]
+
 @pulumi.input_type
 class DatabaseInstanceArgs:
-    def __init__(__self__, *, instance_id: pulumi.Input[_builtins.str], region: pulumi.Input[_builtins.str], desired_state: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        instance_id: pulumi.Input[_builtins.str],
+        region: pulumi.Input[_builtins.str],
+        desired_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
-    def instance_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def instance_id(self) -> pulumi.Input[_builtins.str]: ...
     @instance_id.setter
-    def instance_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def instance_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Input[_builtins.str]: ...
     @region.setter
-    def region(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def region(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="desiredState")
-    def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_state.setter
-    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _DatabaseInstanceState:
-    def __init__(__self__, *, database_url: Optional[pulumi.Input[_builtins.str]] = ..., desired_state: Optional[pulumi.Input[_builtins.str]] = ..., instance_id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        database_url: Optional[pulumi.Input[_builtins.str]] = ...,
+        desired_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        instance_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        state: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="databaseUrl")
-    def database_url(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def database_url(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @database_url.setter
-    def database_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def database_url(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="desiredState")
-    def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def desired_state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @desired_state.setter
-    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def desired_state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
-    def instance_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def instance_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @instance_id.setter
-    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def instance_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def state(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def state(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @state.setter
-    def state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def type(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @type.setter
-    def type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("gcp:firebase/databaseInstance:DatabaseInstance")
 class DatabaseInstance(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., desired_state: Optional[pulumi.Input[_builtins.str]] = ..., instance_id: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        desired_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        instance_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: DatabaseInstanceArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: DatabaseInstanceArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., database_url: Optional[pulumi.Input[_builtins.str]] = ..., desired_state: Optional[pulumi.Input[_builtins.str]] = ..., instance_id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ...) -> DatabaseInstance:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        database_url: Optional[pulumi.Input[_builtins.str]] = ...,
+        desired_state: Optional[pulumi.Input[_builtins.str]] = ...,
+        instance_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        state: Optional[pulumi.Input[_builtins.str]] = ...,
+        type: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> DatabaseInstance: ...
     @_builtins.property
     @pulumi.getter(name="databaseUrl")
-    def database_url(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def database_url(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="desiredState")
-    def desired_state(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def desired_state(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="instanceId")
-    def instance_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def instance_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def project(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def state(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def state(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
-
-
+    def type(self) -> pulumi.Output[Optional[_builtins.str]]: ...

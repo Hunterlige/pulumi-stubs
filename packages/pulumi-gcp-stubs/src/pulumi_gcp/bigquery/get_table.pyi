@@ -1,236 +1,209 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Mapping, Optional, Sequence, Union
 from . import outputs
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetTableResult', 'AwaitableGetTableResult', 'get_table', 'get_table_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["GetTableResult", "AwaitableGetTableResult", "get_table", "get_table_output"]
+
 @pulumi.output_type
 class GetTableResult:
-    
-    def __init__(__self__, biglake_configurations=..., clusterings=..., creation_time=..., dataset_id=..., deletion_protection=..., description=..., effective_labels=..., encryption_configurations=..., etag=..., expiration_time=..., external_catalog_table_options=..., external_data_configurations=..., friendly_name=..., generated_schema_columns=..., id=..., ignore_auto_generated_schema=..., ignore_schema_changes=..., labels=..., last_modified_time=..., location=..., materialized_views=..., max_staleness=..., num_bytes=..., num_long_term_bytes=..., num_rows=..., project=..., pulumi_labels=..., range_partitionings=..., require_partition_filter=..., resource_tags=..., schema=..., schema_foreign_type_infos=..., self_link=..., table_constraints=..., table_id=..., table_metadata_view=..., table_replication_infos=..., time_partitionings=..., type=..., views=...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        biglake_configurations=...,
+        clusterings=...,
+        creation_time=...,
+        dataset_id=...,
+        deletion_protection=...,
+        description=...,
+        effective_labels=...,
+        encryption_configurations=...,
+        etag=...,
+        expiration_time=...,
+        external_catalog_table_options=...,
+        external_data_configurations=...,
+        friendly_name=...,
+        generated_schema_columns=...,
+        id=...,
+        ignore_auto_generated_schema=...,
+        ignore_schema_changes=...,
+        labels=...,
+        last_modified_time=...,
+        location=...,
+        materialized_views=...,
+        max_staleness=...,
+        num_bytes=...,
+        num_long_term_bytes=...,
+        num_rows=...,
+        project=...,
+        pulumi_labels=...,
+        range_partitionings=...,
+        require_partition_filter=...,
+        resource_tags=...,
+        schema=...,
+        schema_foreign_type_infos=...,
+        self_link=...,
+        table_constraints=...,
+        table_id=...,
+        table_metadata_view=...,
+        table_replication_infos=...,
+        time_partitionings=...,
+        type=...,
+        views=...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="biglakeConfigurations")
-    def biglake_configurations(self) -> Sequence[outputs.GetTableBiglakeConfigurationResult]:
-        ...
-    
+    def biglake_configurations(
+        self,
+    ) -> Sequence[outputs.GetTableBiglakeConfigurationResult]: ...
     @_builtins.property
     @pulumi.getter
-    def clusterings(self) -> Sequence[_builtins.str]:
-        ...
-    
+    def clusterings(self) -> Sequence[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="creationTime")
-    def creation_time(self) -> _builtins.int:
-        ...
-    
+    def creation_time(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="datasetId")
-    def dataset_id(self) -> _builtins.str:
-        ...
-    
+    def dataset_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="deletionProtection")
-    def deletion_protection(self) -> _builtins.bool:
-        ...
-    
+    def deletion_protection(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> _builtins.str:
-        ...
-    
+    def description(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="effectiveLabels")
-    def effective_labels(self) -> Mapping[str, _builtins.str]:
-        ...
-    
+    def effective_labels(self) -> Mapping[str, _builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="encryptionConfigurations")
-    def encryption_configurations(self) -> Sequence[outputs.GetTableEncryptionConfigurationResult]:
-        ...
-    
+    def encryption_configurations(
+        self,
+    ) -> Sequence[outputs.GetTableEncryptionConfigurationResult]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> _builtins.str:
-        ...
-    
+    def etag(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="expirationTime")
-    def expiration_time(self) -> _builtins.int:
-        ...
-    
+    def expiration_time(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="externalCatalogTableOptions")
-    def external_catalog_table_options(self) -> Sequence[outputs.GetTableExternalCatalogTableOptionResult]:
-        ...
-    
+    def external_catalog_table_options(
+        self,
+    ) -> Sequence[outputs.GetTableExternalCatalogTableOptionResult]: ...
     @_builtins.property
     @pulumi.getter(name="externalDataConfigurations")
-    def external_data_configurations(self) -> Sequence[outputs.GetTableExternalDataConfigurationResult]:
-        ...
-    
+    def external_data_configurations(
+        self,
+    ) -> Sequence[outputs.GetTableExternalDataConfigurationResult]: ...
     @_builtins.property
     @pulumi.getter(name="friendlyName")
-    def friendly_name(self) -> _builtins.str:
-        ...
-    
+    def friendly_name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="generatedSchemaColumns")
-    def generated_schema_columns(self) -> _builtins.str:
-        ...
-    
+    def generated_schema_columns(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="ignoreAutoGeneratedSchema")
-    def ignore_auto_generated_schema(self) -> _builtins.bool:
-        ...
-    
+    def ignore_auto_generated_schema(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="ignoreSchemaChanges")
-    def ignore_schema_changes(self) -> Sequence[_builtins.str]:
-        ...
-    
+    def ignore_schema_changes(self) -> Sequence[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def labels(self) -> Mapping[str, _builtins.str]:
-        ...
-    
+    def labels(self) -> Mapping[str, _builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
-    def last_modified_time(self) -> _builtins.int:
-        ...
-    
+    def last_modified_time(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="materializedViews")
-    def materialized_views(self) -> Sequence[outputs.GetTableMaterializedViewResult]:
-        ...
-    
+    def materialized_views(
+        self,
+    ) -> Sequence[outputs.GetTableMaterializedViewResult]: ...
     @_builtins.property
     @pulumi.getter(name="maxStaleness")
-    def max_staleness(self) -> _builtins.str:
-        ...
-    
+    def max_staleness(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="numBytes")
-    def num_bytes(self) -> _builtins.int:
-        ...
-    
+    def num_bytes(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="numLongTermBytes")
-    def num_long_term_bytes(self) -> _builtins.int:
-        ...
-    
+    def num_long_term_bytes(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="numRows")
-    def num_rows(self) -> _builtins.int:
-        ...
-    
+    def num_rows(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[_builtins.str]:
-        ...
-    
+    def project(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="pulumiLabels")
-    def pulumi_labels(self) -> Mapping[str, _builtins.str]:
-        ...
-    
+    def pulumi_labels(self) -> Mapping[str, _builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rangePartitionings")
-    def range_partitionings(self) -> Sequence[outputs.GetTableRangePartitioningResult]:
-        ...
-    
+    def range_partitionings(
+        self,
+    ) -> Sequence[outputs.GetTableRangePartitioningResult]: ...
     @_builtins.property
     @pulumi.getter(name="requirePartitionFilter")
-    def require_partition_filter(self) -> _builtins.bool:
-        ...
-    
+    def require_partition_filter(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="resourceTags")
-    def resource_tags(self) -> Mapping[str, _builtins.str]:
-        ...
-    
+    def resource_tags(self) -> Mapping[str, _builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def schema(self) -> _builtins.str:
-        ...
-    
+    def schema(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="schemaForeignTypeInfos")
-    def schema_foreign_type_infos(self) -> Sequence[outputs.GetTableSchemaForeignTypeInfoResult]:
-        ...
-    
+    def schema_foreign_type_infos(
+        self,
+    ) -> Sequence[outputs.GetTableSchemaForeignTypeInfoResult]: ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
-    def self_link(self) -> _builtins.str:
-        ...
-    
+    def self_link(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tableConstraints")
-    def table_constraints(self) -> Sequence[outputs.GetTableTableConstraintResult]:
-        ...
-    
+    def table_constraints(self) -> Sequence[outputs.GetTableTableConstraintResult]: ...
     @_builtins.property
     @pulumi.getter(name="tableId")
-    def table_id(self) -> _builtins.str:
-        ...
-    
+    def table_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tableMetadataView")
-    def table_metadata_view(self) -> _builtins.str:
-        ...
-    
+    def table_metadata_view(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tableReplicationInfos")
-    def table_replication_infos(self) -> Sequence[outputs.GetTableTableReplicationInfoResult]:
-        ...
-    
+    def table_replication_infos(
+        self,
+    ) -> Sequence[outputs.GetTableTableReplicationInfoResult]: ...
     @_builtins.property
     @pulumi.getter(name="timePartitionings")
-    def time_partitionings(self) -> Sequence[outputs.GetTableTimePartitioningResult]:
-        ...
-    
+    def time_partitionings(
+        self,
+    ) -> Sequence[outputs.GetTableTimePartitioningResult]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> _builtins.str:
-        ...
-    
+    def type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def views(self) -> Sequence[outputs.GetTableViewResult]:
-        ...
-    
-
+    def views(self) -> Sequence[outputs.GetTableViewResult]: ...
 
 class AwaitableGetTableResult(GetTableResult):
-    def __await__(self): # -> Generator[Never, Any, GetTableResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_table(dataset_id: Optional[_builtins.str] = ..., project: Optional[_builtins.str] = ..., table_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTableResult:
-    
-    ...
-
-def get_table_output(dataset_id: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., table_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTableResult]:
-    
-    ...
-
+def get_table(
+    dataset_id: Optional[_builtins.str] = ...,
+    project: Optional[_builtins.str] = ...,
+    table_id: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetTableResult: ...
+def get_table_output(
+    dataset_id: Optional[pulumi.Input[_builtins.str]] = ...,
+    project: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    table_id: Optional[pulumi.Input[_builtins.str]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetTableResult]: ...

@@ -1,196 +1,186 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Sequence, Union
 from . import outputs
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetInstanceGroupManagerResult', 'AwaitableGetInstanceGroupManagerResult', 'get_instance_group_manager', 'get_instance_group_manager_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "GetInstanceGroupManagerResult",
+    "AwaitableGetInstanceGroupManagerResult",
+    "get_instance_group_manager",
+    "get_instance_group_manager_output",
+]
+
 @pulumi.output_type
 class GetInstanceGroupManagerResult:
-    
-    def __init__(__self__, all_instances_configs=..., auto_healing_policies=..., base_instance_name=..., creation_timestamp=..., description=..., fingerprint=..., id=..., instance_group=..., instance_group_manager_id=..., instance_lifecycle_policies=..., list_managed_instances_results=..., name=..., named_ports=..., operation=..., params=..., project=..., resource_policies=..., self_link=..., standby_policies=..., stateful_disks=..., stateful_external_ips=..., stateful_internal_ips=..., statuses=..., target_pools=..., target_size=..., target_stopped_size=..., target_suspended_size=..., update_policies=..., versions=..., wait_for_instances=..., wait_for_instances_status=..., zone=...) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        all_instances_configs=...,
+        auto_healing_policies=...,
+        base_instance_name=...,
+        creation_timestamp=...,
+        description=...,
+        fingerprint=...,
+        id=...,
+        instance_group=...,
+        instance_group_manager_id=...,
+        instance_lifecycle_policies=...,
+        list_managed_instances_results=...,
+        name=...,
+        named_ports=...,
+        operation=...,
+        params=...,
+        project=...,
+        resource_policies=...,
+        self_link=...,
+        standby_policies=...,
+        stateful_disks=...,
+        stateful_external_ips=...,
+        stateful_internal_ips=...,
+        statuses=...,
+        target_pools=...,
+        target_size=...,
+        target_stopped_size=...,
+        target_suspended_size=...,
+        update_policies=...,
+        versions=...,
+        wait_for_instances=...,
+        wait_for_instances_status=...,
+        zone=...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allInstancesConfigs")
-    def all_instances_configs(self) -> Sequence[outputs.GetInstanceGroupManagerAllInstancesConfigResult]:
-        ...
-    
+    def all_instances_configs(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerAllInstancesConfigResult]: ...
     @_builtins.property
     @pulumi.getter(name="autoHealingPolicies")
-    def auto_healing_policies(self) -> Sequence[outputs.GetInstanceGroupManagerAutoHealingPolicyResult]:
-        ...
-    
+    def auto_healing_policies(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerAutoHealingPolicyResult]: ...
     @_builtins.property
     @pulumi.getter(name="baseInstanceName")
-    def base_instance_name(self) -> _builtins.str:
-        ...
-    
+    def base_instance_name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
-    def creation_timestamp(self) -> _builtins.str:
-        ...
-    
+    def creation_timestamp(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> _builtins.str:
-        ...
-    
+    def description(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def fingerprint(self) -> _builtins.str:
-        ...
-    
+    def fingerprint(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="instanceGroup")
-    def instance_group(self) -> _builtins.str:
-        ...
-    
+    def instance_group(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="instanceGroupManagerId")
-    def instance_group_manager_id(self) -> _builtins.int:
-        ...
-    
+    def instance_group_manager_id(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="instanceLifecyclePolicies")
-    def instance_lifecycle_policies(self) -> Sequence[outputs.GetInstanceGroupManagerInstanceLifecyclePolicyResult]:
-        ...
-    
+    def instance_lifecycle_policies(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerInstanceLifecyclePolicyResult]: ...
     @_builtins.property
     @pulumi.getter(name="listManagedInstancesResults")
-    def list_managed_instances_results(self) -> _builtins.str:
-        ...
-    
+    def list_managed_instances_results(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="namedPorts")
-    def named_ports(self) -> Sequence[outputs.GetInstanceGroupManagerNamedPortResult]:
-        ...
-    
+    def named_ports(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerNamedPortResult]: ...
     @_builtins.property
     @pulumi.getter
-    def operation(self) -> _builtins.str:
-        ...
-    
+    def operation(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def params(self) -> Sequence[outputs.GetInstanceGroupManagerParamResult]:
-        ...
-    
+    def params(self) -> Sequence[outputs.GetInstanceGroupManagerParamResult]: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[_builtins.str]:
-        ...
-    
+    def project(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="resourcePolicies")
-    def resource_policies(self) -> Sequence[outputs.GetInstanceGroupManagerResourcePolicyResult]:
-        ...
-    
+    def resource_policies(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerResourcePolicyResult]: ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
-    def self_link(self) -> Optional[_builtins.str]:
-        ...
-    
+    def self_link(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="standbyPolicies")
-    def standby_policies(self) -> Sequence[outputs.GetInstanceGroupManagerStandbyPolicyResult]:
-        ...
-    
+    def standby_policies(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerStandbyPolicyResult]: ...
     @_builtins.property
     @pulumi.getter(name="statefulDisks")
-    def stateful_disks(self) -> Sequence[outputs.GetInstanceGroupManagerStatefulDiskResult]:
-        ...
-    
+    def stateful_disks(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerStatefulDiskResult]: ...
     @_builtins.property
     @pulumi.getter(name="statefulExternalIps")
-    def stateful_external_ips(self) -> Sequence[outputs.GetInstanceGroupManagerStatefulExternalIpResult]:
-        ...
-    
+    def stateful_external_ips(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerStatefulExternalIpResult]: ...
     @_builtins.property
     @pulumi.getter(name="statefulInternalIps")
-    def stateful_internal_ips(self) -> Sequence[outputs.GetInstanceGroupManagerStatefulInternalIpResult]:
-        ...
-    
+    def stateful_internal_ips(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerStatefulInternalIpResult]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Sequence[outputs.GetInstanceGroupManagerStatusResult]:
-        ...
-    
+    def statuses(self) -> Sequence[outputs.GetInstanceGroupManagerStatusResult]: ...
     @_builtins.property
     @pulumi.getter(name="targetPools")
-    def target_pools(self) -> Sequence[_builtins.str]:
-        ...
-    
+    def target_pools(self) -> Sequence[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="targetSize")
-    def target_size(self) -> _builtins.int:
-        ...
-    
+    def target_size(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="targetStoppedSize")
-    def target_stopped_size(self) -> _builtins.int:
-        ...
-    
+    def target_stopped_size(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="targetSuspendedSize")
-    def target_suspended_size(self) -> _builtins.int:
-        ...
-    
+    def target_suspended_size(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="updatePolicies")
-    def update_policies(self) -> Sequence[outputs.GetInstanceGroupManagerUpdatePolicyResult]:
-        ...
-    
+    def update_policies(
+        self,
+    ) -> Sequence[outputs.GetInstanceGroupManagerUpdatePolicyResult]: ...
     @_builtins.property
     @pulumi.getter
-    def versions(self) -> Sequence[outputs.GetInstanceGroupManagerVersionResult]:
-        ...
-    
+    def versions(self) -> Sequence[outputs.GetInstanceGroupManagerVersionResult]: ...
     @_builtins.property
     @pulumi.getter(name="waitForInstances")
-    def wait_for_instances(self) -> _builtins.bool:
-        ...
-    
+    def wait_for_instances(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="waitForInstancesStatus")
-    def wait_for_instances_status(self) -> _builtins.str:
-        ...
-    
+    def wait_for_instances_status(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def zone(self) -> Optional[_builtins.str]:
-        ...
-    
-
+    def zone(self) -> Optional[_builtins.str]: ...
 
 class AwaitableGetInstanceGroupManagerResult(GetInstanceGroupManagerResult):
-    def __await__(self): # -> Generator[Never, Any, GetInstanceGroupManagerResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_instance_group_manager(name: Optional[_builtins.str] = ..., project: Optional[_builtins.str] = ..., self_link: Optional[_builtins.str] = ..., zone: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetInstanceGroupManagerResult:
-    
-    ...
-
-def get_instance_group_manager_output(name: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., self_link: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., zone: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetInstanceGroupManagerResult]:
-    
-    ...
-
+def get_instance_group_manager(
+    name: Optional[_builtins.str] = ...,
+    project: Optional[_builtins.str] = ...,
+    self_link: Optional[_builtins.str] = ...,
+    zone: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetInstanceGroupManagerResult: ...
+def get_instance_group_manager_output(
+    name: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    project: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    self_link: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    zone: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetInstanceGroupManagerResult]: ...

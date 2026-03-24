@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -9,4 +7,3 @@ from .routing_control import *
 from .safety_rule import *
 from ._inputs import *
 from . import outputs
-

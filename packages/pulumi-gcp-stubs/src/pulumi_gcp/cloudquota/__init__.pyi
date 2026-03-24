@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -9,4 +7,3 @@ from .s_quota_adjuster_settings import *
 from .s_quota_preference import *
 from ._inputs import *
 from . import outputs
-

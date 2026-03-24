@@ -1,10 +1,15 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['InstancePlatform', 'InstanceType', 'PlacementStrategy', 'ProtocolType', 'Tenancy']
+__all__ = [
+    "InstancePlatform",
+    "InstanceType",
+    "PlacementStrategy",
+    "ProtocolType",
+    "Tenancy",
+]
+
 @pulumi.type_token("aws:ec2/InstancePlatform:InstancePlatform")
 class InstancePlatform(_builtins.str, Enum):
     LINUX_UNIX = ...
@@ -15,7 +20,6 @@ class InstancePlatform(_builtins.str, Enum):
     WINDOWS_WITH_SQL_SERVER_ENTERPRISE = ...
     WINDOWS_WITH_SQL_SERVER_STANDARD = ...
     WINDOWS_WITH_SQL_SERVER_WEB = ...
-
 
 @pulumi.type_token("aws:ec2/InstanceType:InstanceType")
 class InstanceType(_builtins.str, Enum):
@@ -805,13 +809,10 @@ class InstanceType(_builtins.str, Enum):
     Z1D_METAL = ...
     Z1D_X_LARGE = ...
 
-
 @pulumi.type_token("aws:ec2/PlacementStrategy:PlacementStrategy")
 class PlacementStrategy(_builtins.str, Enum):
-    
     SPREAD = ...
     CLUSTER = ...
-
 
 @pulumi.type_token("aws:ec2/ProtocolType:ProtocolType")
 class ProtocolType(_builtins.str, Enum):
@@ -820,10 +821,7 @@ class ProtocolType(_builtins.str, Enum):
     UDP = ...
     ICMP = ...
 
-
 @pulumi.type_token("aws:ec2/Tenancy:Tenancy")
 class Tenancy(_builtins.str, Enum):
     DEFAULT = ...
     DEDICATED = ...
-
-

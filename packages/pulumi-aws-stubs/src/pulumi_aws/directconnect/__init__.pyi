@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -28,4 +26,3 @@ from .private_virtual_interface import *
 from .public_virtual_interface import *
 from .transit_virtual_interface import *
 from . import outputs
-

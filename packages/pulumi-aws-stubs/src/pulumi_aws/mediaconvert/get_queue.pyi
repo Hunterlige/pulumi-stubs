@@ -1,68 +1,48 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Mapping, Optional, Union
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetQueueResult', 'AwaitableGetQueueResult', 'get_queue', 'get_queue_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["GetQueueResult", "AwaitableGetQueueResult", "get_queue", "get_queue_output"]
+
 @pulumi.output_type
 class GetQueueResult:
-    
-    def __init__(__self__, arn=..., id=..., name=..., region=..., status=..., tags=...) -> None:
-        ...
-    
+    def __init__(
+        __self__, arn=..., id=..., name=..., region=..., status=..., tags=...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> _builtins.str:
-        
-        ...
-    
+    def arn(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> _builtins.str:
-        ...
-    
+    def region(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> _builtins.str:
-        
-        ...
-    
+    def status(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Mapping[str, _builtins.str]:
-        
-        ...
-    
-
+    def tags(self) -> Mapping[str, _builtins.str]: ...
 
 class AwaitableGetQueueResult(GetQueueResult):
-    def __await__(self): # -> Generator[Never, Any, GetQueueResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_queue(id: Optional[_builtins.str] = ..., region: Optional[_builtins.str] = ..., tags: Optional[Mapping[str, _builtins.str]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetQueueResult:
-    
-    ...
-
-def get_queue_output(id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., tags: Optional[pulumi.Input[Optional[Mapping[str, _builtins.str]]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetQueueResult]:
-    
-    ...
-
+def get_queue(
+    id: Optional[_builtins.str] = ...,
+    region: Optional[_builtins.str] = ...,
+    tags: Optional[Mapping[str, _builtins.str]] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetQueueResult: ...
+def get_queue_output(
+    id: Optional[pulumi.Input[_builtins.str]] = ...,
+    region: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    tags: Optional[pulumi.Input[Optional[Mapping[str, _builtins.str]]]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetQueueResult]: ...

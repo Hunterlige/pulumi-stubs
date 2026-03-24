@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -37,4 +35,3 @@ from .transit_gateway_route_table_attachment import *
 from .vpc_attachment import *
 from ._inputs import *
 from . import outputs
-

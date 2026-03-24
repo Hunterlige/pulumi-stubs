@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -22,4 +20,3 @@ from .tenant import *
 from .tenant_resource_association import *
 from ._inputs import *
 from . import outputs
-

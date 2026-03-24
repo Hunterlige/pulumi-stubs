@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -10,4 +8,3 @@ from .prevention_job_trigger import *
 from .prevention_stored_info_type import *
 from ._inputs import *
 from . import outputs
-

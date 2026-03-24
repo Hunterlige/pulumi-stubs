@@ -75,8 +75,7 @@ class GetPrimaryContactResult:
     def website_url(self) -> _builtins.str: ...
 
 class AwaitableGetPrimaryContactResult(GetPrimaryContactResult):
-    def __await__(self):  # -> Generator[Never, Any, GetPrimaryContactResult]:
-        ...
+    def __await__(self): ...
 
 def get_primary_contact(
     account_id: Optional[_builtins.str] = ...,

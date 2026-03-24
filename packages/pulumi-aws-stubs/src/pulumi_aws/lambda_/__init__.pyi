@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -27,4 +25,3 @@ from .provisioned_concurrency_config import *
 from .runtime_management_config import *
 from ._inputs import *
 from . import outputs
-

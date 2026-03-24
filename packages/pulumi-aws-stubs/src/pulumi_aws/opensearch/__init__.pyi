@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -28,4 +26,3 @@ from .serverless_vpc_endpoint import *
 from .vpc_endpoint import *
 from ._inputs import *
 from . import outputs
-

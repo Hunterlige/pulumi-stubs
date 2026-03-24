@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -14,4 +12,3 @@ from .get_dns_authorization import *
 from .trust_config import *
 from ._inputs import *
 from . import outputs
-

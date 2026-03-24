@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 import pulumi_aws.accessanalyzer as __accessanalyzer
@@ -478,5 +476,4 @@ if typing.TYPE_CHECKING:
     workspaces = __workspaces
     workspacesweb = __workspacesweb
     xray = __xray
-else:
-    ...
+else: ...

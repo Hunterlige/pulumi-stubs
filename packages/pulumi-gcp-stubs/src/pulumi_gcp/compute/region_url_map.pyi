@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,396 +5,443 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['RegionUrlMapArgs', 'RegionUrlMap']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["RegionUrlMapArgs", "RegionUrlMap"]
+
 @pulumi.input_type
 class RegionUrlMapArgs:
-    def __init__(__self__, *, default_route_action: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]] = ..., default_service: Optional[pulumi.Input[_builtins.str]] = ..., default_url_redirect: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., header_action: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]] = ..., host_rules: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., path_matchers: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        default_route_action: Optional[
+            pulumi.Input[RegionUrlMapDefaultRouteActionArgs]
+        ] = ...,
+        default_service: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_url_redirect: Optional[
+            pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        header_action: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]] = ...,
+        host_rules: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]
+        ] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        path_matchers: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+        ] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tests: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteAction")
-    def default_route_action(self) -> Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]:
-        
-        ...
-    
+    def default_route_action(
+        self,
+    ) -> Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]: ...
     @default_route_action.setter
-    def default_route_action(self, value: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]): # -> None:
-        ...
-    
+    def default_route_action(
+        self, value: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultService")
-    def default_service(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_service.setter
-    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="defaultUrlRedirect")
-    def default_url_redirect(self) -> Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]:
-        
-        ...
-    
+    def default_url_redirect(
+        self,
+    ) -> Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]: ...
     @default_url_redirect.setter
-    def default_url_redirect(self, value: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]): # -> None:
-        ...
-    
+    def default_url_redirect(
+        self, value: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="headerAction")
-    def header_action(self) -> Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]:
-        
-        ...
-    
+    def header_action(self) -> Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]: ...
     @header_action.setter
-    def header_action(self, value: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]): # -> None:
-        ...
-    
+    def header_action(
+        self, value: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="hostRules")
-    def host_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]:
-        
-        ...
-    
+    def host_rules(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]: ...
     @host_rules.setter
-    def host_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]): # -> None:
-        ...
-    
+    def host_rules(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="pathMatchers")
-    def path_matchers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]]:
-        
-        ...
-    
+    def path_matchers(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+    ]: ...
     @path_matchers.setter
-    def path_matchers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]]): # -> None:
-        ...
-    
+    def path_matchers(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tests(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]:
-        
-        ...
-    
+    def tests(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]: ...
     @tests.setter
-    def tests(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]): # -> None:
-        ...
-    
-
+    def tests(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]],
+    ): ...
 
 @pulumi.input_type
 class _RegionUrlMapState:
-    def __init__(__self__, *, creation_timestamp: Optional[pulumi.Input[_builtins.str]] = ..., default_route_action: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]] = ..., default_service: Optional[pulumi.Input[_builtins.str]] = ..., default_url_redirect: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., fingerprint: Optional[pulumi.Input[_builtins.str]] = ..., header_action: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]] = ..., host_rules: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]] = ..., map_id: Optional[pulumi.Input[_builtins.int]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., path_matchers: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., self_link: Optional[pulumi.Input[_builtins.str]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        creation_timestamp: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_route_action: Optional[
+            pulumi.Input[RegionUrlMapDefaultRouteActionArgs]
+        ] = ...,
+        default_service: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_url_redirect: Optional[
+            pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        fingerprint: Optional[pulumi.Input[_builtins.str]] = ...,
+        header_action: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]] = ...,
+        host_rules: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]
+        ] = ...,
+        map_id: Optional[pulumi.Input[_builtins.int]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        path_matchers: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+        ] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        self_link: Optional[pulumi.Input[_builtins.str]] = ...,
+        tests: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
-    def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def creation_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @creation_timestamp.setter
-    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def creation_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteAction")
-    def default_route_action(self) -> Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]:
-        
-        ...
-    
+    def default_route_action(
+        self,
+    ) -> Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]: ...
     @default_route_action.setter
-    def default_route_action(self, value: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]): # -> None:
-        ...
-    
+    def default_route_action(
+        self, value: Optional[pulumi.Input[RegionUrlMapDefaultRouteActionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="defaultService")
-    def default_service(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def default_service(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @default_service.setter
-    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def default_service(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="defaultUrlRedirect")
-    def default_url_redirect(self) -> Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]:
-        
-        ...
-    
+    def default_url_redirect(
+        self,
+    ) -> Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]: ...
     @default_url_redirect.setter
-    def default_url_redirect(self, value: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]): # -> None:
-        ...
-    
+    def default_url_redirect(
+        self, value: Optional[pulumi.Input[RegionUrlMapDefaultUrlRedirectArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def fingerprint(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @fingerprint.setter
-    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def fingerprint(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="headerAction")
-    def header_action(self) -> Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]:
-        
-        ...
-    
+    def header_action(self) -> Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]: ...
     @header_action.setter
-    def header_action(self, value: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]): # -> None:
-        ...
-    
+    def header_action(
+        self, value: Optional[pulumi.Input[RegionUrlMapHeaderActionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter(name="hostRules")
-    def host_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]:
-        
-        ...
-    
+    def host_rules(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]: ...
     @host_rules.setter
-    def host_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]]): # -> None:
-        ...
-    
+    def host_rules(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapHostRuleArgs]]]],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="mapId")
-    def map_id(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def map_id(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @map_id.setter
-    def map_id(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def map_id(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="pathMatchers")
-    def path_matchers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]]:
-        
-        ...
-    
+    def path_matchers(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+    ]: ...
     @path_matchers.setter
-    def path_matchers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]]): # -> None:
-        ...
-    
+    def path_matchers(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegionUrlMapPathMatcherArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @project.setter
-    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
-    def self_link(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def self_link(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @self_link.setter
-    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def self_link(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def tests(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]:
-        
-        ...
-    
+    def tests(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]: ...
     @tests.setter
-    def tests(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]]): # -> None:
-        ...
-    
-
+    def tests(
+        self,
+        value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionUrlMapTestArgs]]]],
+    ): ...
 
 @pulumi.type_token("gcp:compute/regionUrlMap:RegionUrlMap")
 class RegionUrlMap(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., default_route_action: Optional[pulumi.Input[Union[RegionUrlMapDefaultRouteActionArgs, RegionUrlMapDefaultRouteActionArgsDict]]] = ..., default_service: Optional[pulumi.Input[_builtins.str]] = ..., default_url_redirect: Optional[pulumi.Input[Union[RegionUrlMapDefaultUrlRedirectArgs, RegionUrlMapDefaultUrlRedirectArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., header_action: Optional[pulumi.Input[Union[RegionUrlMapHeaderActionArgs, RegionUrlMapHeaderActionArgsDict]]] = ..., host_rules: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapHostRuleArgs, RegionUrlMapHostRuleArgsDict]]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., path_matchers: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapPathMatcherArgs, RegionUrlMapPathMatcherArgsDict]]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapTestArgs, RegionUrlMapTestArgsDict]]]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        default_route_action: Optional[
+            pulumi.Input[
+                Union[
+                    RegionUrlMapDefaultRouteActionArgs,
+                    RegionUrlMapDefaultRouteActionArgsDict,
+                ]
+            ]
+        ] = ...,
+        default_service: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_url_redirect: Optional[
+            pulumi.Input[
+                Union[
+                    RegionUrlMapDefaultUrlRedirectArgs,
+                    RegionUrlMapDefaultUrlRedirectArgsDict,
+                ]
+            ]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        header_action: Optional[
+            pulumi.Input[
+                Union[RegionUrlMapHeaderActionArgs, RegionUrlMapHeaderActionArgsDict]
+            ]
+        ] = ...,
+        host_rules: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[RegionUrlMapHostRuleArgs, RegionUrlMapHostRuleArgsDict]
+                    ]
+                ]
+            ]
+        ] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        path_matchers: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            RegionUrlMapPathMatcherArgs, RegionUrlMapPathMatcherArgsDict
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        tests: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[Union[RegionUrlMapTestArgs, RegionUrlMapTestArgsDict]]
+                ]
+            ]
+        ] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: Optional[RegionUrlMapArgs] = ..., opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: Optional[RegionUrlMapArgs] = ...,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., creation_timestamp: Optional[pulumi.Input[_builtins.str]] = ..., default_route_action: Optional[pulumi.Input[Union[RegionUrlMapDefaultRouteActionArgs, RegionUrlMapDefaultRouteActionArgsDict]]] = ..., default_service: Optional[pulumi.Input[_builtins.str]] = ..., default_url_redirect: Optional[pulumi.Input[Union[RegionUrlMapDefaultUrlRedirectArgs, RegionUrlMapDefaultUrlRedirectArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., fingerprint: Optional[pulumi.Input[_builtins.str]] = ..., header_action: Optional[pulumi.Input[Union[RegionUrlMapHeaderActionArgs, RegionUrlMapHeaderActionArgsDict]]] = ..., host_rules: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapHostRuleArgs, RegionUrlMapHostRuleArgsDict]]]]] = ..., map_id: Optional[pulumi.Input[_builtins.int]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., path_matchers: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapPathMatcherArgs, RegionUrlMapPathMatcherArgsDict]]]]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., self_link: Optional[pulumi.Input[_builtins.str]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegionUrlMapTestArgs, RegionUrlMapTestArgsDict]]]]] = ...) -> RegionUrlMap:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        creation_timestamp: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_route_action: Optional[
+            pulumi.Input[
+                Union[
+                    RegionUrlMapDefaultRouteActionArgs,
+                    RegionUrlMapDefaultRouteActionArgsDict,
+                ]
+            ]
+        ] = ...,
+        default_service: Optional[pulumi.Input[_builtins.str]] = ...,
+        default_url_redirect: Optional[
+            pulumi.Input[
+                Union[
+                    RegionUrlMapDefaultUrlRedirectArgs,
+                    RegionUrlMapDefaultUrlRedirectArgsDict,
+                ]
+            ]
+        ] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        fingerprint: Optional[pulumi.Input[_builtins.str]] = ...,
+        header_action: Optional[
+            pulumi.Input[
+                Union[RegionUrlMapHeaderActionArgs, RegionUrlMapHeaderActionArgsDict]
+            ]
+        ] = ...,
+        host_rules: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[RegionUrlMapHostRuleArgs, RegionUrlMapHostRuleArgsDict]
+                    ]
+                ]
+            ]
+        ] = ...,
+        map_id: Optional[pulumi.Input[_builtins.int]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        path_matchers: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            RegionUrlMapPathMatcherArgs, RegionUrlMapPathMatcherArgsDict
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        project: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        self_link: Optional[pulumi.Input[_builtins.str]] = ...,
+        tests: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[Union[RegionUrlMapTestArgs, RegionUrlMapTestArgsDict]]
+                ]
+            ]
+        ] = ...,
+    ) -> RegionUrlMap: ...
     @_builtins.property
     @pulumi.getter(name="creationTimestamp")
-    def creation_timestamp(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def creation_timestamp(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="defaultRouteAction")
-    def default_route_action(self) -> pulumi.Output[Optional[outputs.RegionUrlMapDefaultRouteAction]]:
-        
-        ...
-    
+    def default_route_action(
+        self,
+    ) -> pulumi.Output[Optional[outputs.RegionUrlMapDefaultRouteAction]]: ...
     @_builtins.property
     @pulumi.getter(name="defaultService")
-    def default_service(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def default_service(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="defaultUrlRedirect")
-    def default_url_redirect(self) -> pulumi.Output[Optional[outputs.RegionUrlMapDefaultUrlRedirect]]:
-        
-        ...
-    
+    def default_url_redirect(
+        self,
+    ) -> pulumi.Output[Optional[outputs.RegionUrlMapDefaultUrlRedirect]]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def fingerprint(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def fingerprint(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="headerAction")
-    def header_action(self) -> pulumi.Output[Optional[outputs.RegionUrlMapHeaderAction]]:
-        
-        ...
-    
+    def header_action(
+        self,
+    ) -> pulumi.Output[Optional[outputs.RegionUrlMapHeaderAction]]: ...
     @_builtins.property
     @pulumi.getter(name="hostRules")
-    def host_rules(self) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapHostRule]]]:
-        
-        ...
-    
+    def host_rules(
+        self,
+    ) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapHostRule]]]: ...
     @_builtins.property
     @pulumi.getter(name="mapId")
-    def map_id(self) -> pulumi.Output[_builtins.int]:
-        
-        ...
-    
+    def map_id(self) -> pulumi.Output[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="pathMatchers")
-    def path_matchers(self) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapPathMatcher]]]:
-        
-        ...
-    
+    def path_matchers(
+        self,
+    ) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapPathMatcher]]]: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def project(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="selfLink")
-    def self_link(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def self_link(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tests(self) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapTest]]]:
-        
-        ...
-    
-
-
+    def tests(self) -> pulumi.Output[Optional[Sequence[outputs.RegionUrlMapTest]]]: ...

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -26,4 +24,3 @@ from .network import *
 from .network_peering_connection import *
 from ._inputs import *
 from . import outputs
-

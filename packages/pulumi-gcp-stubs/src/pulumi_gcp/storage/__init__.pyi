@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -48,4 +46,3 @@ from .transfer_agent_pool import *
 from .transfer_job import *
 from ._inputs import *
 from . import outputs
-

@@ -1,382 +1,277 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Sequence, overload
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['HostedPublicVirtualInterfaceArgs', 'HostedPublicVirtualInterface']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["HostedPublicVirtualInterfaceArgs", "HostedPublicVirtualInterface"]
+
 @pulumi.input_type
 class HostedPublicVirtualInterfaceArgs:
-    def __init__(__self__, *, address_family: pulumi.Input[_builtins.str], bgp_asn: pulumi.Input[_builtins.int], connection_id: pulumi.Input[_builtins.str], owner_account_id: pulumi.Input[_builtins.str], route_filter_prefixes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], vlan: pulumi.Input[_builtins.int], amazon_address: Optional[pulumi.Input[_builtins.str]] = ..., bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ..., customer_address: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        address_family: pulumi.Input[_builtins.str],
+        bgp_asn: pulumi.Input[_builtins.int],
+        connection_id: pulumi.Input[_builtins.str],
+        owner_account_id: pulumi.Input[_builtins.str],
+        route_filter_prefixes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        vlan: pulumi.Input[_builtins.int],
+        amazon_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ...,
+        customer_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="addressFamily")
-    def address_family(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def address_family(self) -> pulumi.Input[_builtins.str]: ...
     @address_family.setter
-    def address_family(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def address_family(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="bgpAsn")
-    def bgp_asn(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def bgp_asn(self) -> pulumi.Input[_builtins.int]: ...
     @bgp_asn.setter
-    def bgp_asn(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def bgp_asn(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter(name="connectionId")
-    def connection_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def connection_id(self) -> pulumi.Input[_builtins.str]: ...
     @connection_id.setter
-    def connection_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def connection_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
-    def owner_account_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def owner_account_id(self) -> pulumi.Input[_builtins.str]: ...
     @owner_account_id.setter
-    def owner_account_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def owner_account_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="routeFilterPrefixes")
-    def route_filter_prefixes(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def route_filter_prefixes(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @route_filter_prefixes.setter
-    def route_filter_prefixes(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def route_filter_prefixes(
+        self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def vlan(self) -> pulumi.Input[_builtins.int]:
-        
-        ...
-    
+    def vlan(self) -> pulumi.Input[_builtins.int]: ...
     @vlan.setter
-    def vlan(self, value: pulumi.Input[_builtins.int]): # -> None:
-        ...
-    
+    def vlan(self, value: pulumi.Input[_builtins.int]): ...
     @_builtins.property
     @pulumi.getter(name="amazonAddress")
-    def amazon_address(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def amazon_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @amazon_address.setter
-    def amazon_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def amazon_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="bgpAuthKey")
-    def bgp_auth_key(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def bgp_auth_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bgp_auth_key.setter
-    def bgp_auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def bgp_auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="customerAddress")
-    def customer_address(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def customer_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_address.setter
-    def customer_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def customer_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _HostedPublicVirtualInterfaceState:
-    def __init__(__self__, *, address_family: Optional[pulumi.Input[_builtins.str]] = ..., amazon_address: Optional[pulumi.Input[_builtins.str]] = ..., amazon_side_asn: Optional[pulumi.Input[_builtins.str]] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., aws_device: Optional[pulumi.Input[_builtins.str]] = ..., bgp_asn: Optional[pulumi.Input[_builtins.int]] = ..., bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ..., connection_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_address: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., owner_account_id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., route_filter_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vlan: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        address_family: Optional[pulumi.Input[_builtins.str]] = ...,
+        amazon_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        amazon_side_asn: Optional[pulumi.Input[_builtins.str]] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        aws_device: Optional[pulumi.Input[_builtins.str]] = ...,
+        bgp_asn: Optional[pulumi.Input[_builtins.int]] = ...,
+        bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ...,
+        connection_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        customer_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_account_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        route_filter_prefixes: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        vlan: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="addressFamily")
-    def address_family(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def address_family(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @address_family.setter
-    def address_family(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def address_family(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="amazonAddress")
-    def amazon_address(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def amazon_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @amazon_address.setter
-    def amazon_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def amazon_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="amazonSideAsn")
-    def amazon_side_asn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        ...
-    
+    def amazon_side_asn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @amazon_side_asn.setter
-    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def amazon_side_asn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @arn.setter
-    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="awsDevice")
-    def aws_device(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def aws_device(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @aws_device.setter
-    def aws_device(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def aws_device(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="bgpAsn")
-    def bgp_asn(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def bgp_asn(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @bgp_asn.setter
-    def bgp_asn(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
+    def bgp_asn(self, value: Optional[pulumi.Input[_builtins.int]]): ...
     @_builtins.property
     @pulumi.getter(name="bgpAuthKey")
-    def bgp_auth_key(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def bgp_auth_key(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bgp_auth_key.setter
-    def bgp_auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def bgp_auth_key(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="connectionId")
-    def connection_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def connection_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @connection_id.setter
-    def connection_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def connection_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="customerAddress")
-    def customer_address(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def customer_address(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @customer_address.setter
-    def customer_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def customer_address(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
-    def owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def owner_account_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @owner_account_id.setter
-    def owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def owner_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="routeFilterPrefixes")
-    def route_filter_prefixes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def route_filter_prefixes(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @route_filter_prefixes.setter
-    def route_filter_prefixes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def route_filter_prefixes(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def vlan(self) -> Optional[pulumi.Input[_builtins.int]]:
-        
-        ...
-    
+    def vlan(self) -> Optional[pulumi.Input[_builtins.int]]: ...
     @vlan.setter
-    def vlan(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
-        ...
-    
-
+    def vlan(self, value: Optional[pulumi.Input[_builtins.int]]): ...
 
 @pulumi.type_token(...)
 class HostedPublicVirtualInterface(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., address_family: Optional[pulumi.Input[_builtins.str]] = ..., amazon_address: Optional[pulumi.Input[_builtins.str]] = ..., bgp_asn: Optional[pulumi.Input[_builtins.int]] = ..., bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ..., connection_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_address: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., owner_account_id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., route_filter_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vlan: Optional[pulumi.Input[_builtins.int]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        address_family: Optional[pulumi.Input[_builtins.str]] = ...,
+        amazon_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        bgp_asn: Optional[pulumi.Input[_builtins.int]] = ...,
+        bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ...,
+        connection_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        customer_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_account_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        route_filter_prefixes: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        vlan: Optional[pulumi.Input[_builtins.int]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: HostedPublicVirtualInterfaceArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: HostedPublicVirtualInterfaceArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., address_family: Optional[pulumi.Input[_builtins.str]] = ..., amazon_address: Optional[pulumi.Input[_builtins.str]] = ..., amazon_side_asn: Optional[pulumi.Input[_builtins.str]] = ..., arn: Optional[pulumi.Input[_builtins.str]] = ..., aws_device: Optional[pulumi.Input[_builtins.str]] = ..., bgp_asn: Optional[pulumi.Input[_builtins.int]] = ..., bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ..., connection_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_address: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., owner_account_id: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., route_filter_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vlan: Optional[pulumi.Input[_builtins.int]] = ...) -> HostedPublicVirtualInterface:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        address_family: Optional[pulumi.Input[_builtins.str]] = ...,
+        amazon_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        amazon_side_asn: Optional[pulumi.Input[_builtins.str]] = ...,
+        arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        aws_device: Optional[pulumi.Input[_builtins.str]] = ...,
+        bgp_asn: Optional[pulumi.Input[_builtins.int]] = ...,
+        bgp_auth_key: Optional[pulumi.Input[_builtins.str]] = ...,
+        connection_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        customer_address: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        owner_account_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        route_filter_prefixes: Optional[
+            pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+        ] = ...,
+        vlan: Optional[pulumi.Input[_builtins.int]] = ...,
+    ) -> HostedPublicVirtualInterface: ...
     @_builtins.property
     @pulumi.getter(name="addressFamily")
-    def address_family(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def address_family(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="amazonAddress")
-    def amazon_address(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def amazon_address(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="amazonSideAsn")
-    def amazon_side_asn(self) -> pulumi.Output[_builtins.str]:
-        ...
-    
+    def amazon_side_asn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def arn(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="awsDevice")
-    def aws_device(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def aws_device(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="bgpAsn")
-    def bgp_asn(self) -> pulumi.Output[_builtins.int]:
-        
-        ...
-    
+    def bgp_asn(self) -> pulumi.Output[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="bgpAuthKey")
-    def bgp_auth_key(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def bgp_auth_key(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="connectionId")
-    def connection_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def connection_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="customerAddress")
-    def customer_address(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def customer_address(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="ownerAccountId")
-    def owner_account_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def owner_account_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="routeFilterPrefixes")
-    def route_filter_prefixes(self) -> pulumi.Output[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def route_filter_prefixes(self) -> pulumi.Output[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def vlan(self) -> pulumi.Output[_builtins.int]:
-        
-        ...
-    
-
-
+    def vlan(self) -> pulumi.Output[_builtins.int]: ...

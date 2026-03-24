@@ -1,13 +1,11 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['Region']
+__all__ = ["Region"]
+
 @pulumi.type_token("aws:index/Region:Region")
 class Region(_builtins.str, Enum):
-    
     AF_SOUTH1 = ...
     AP_EAST1 = ...
     AP_EAST2 = ...
@@ -49,5 +47,3 @@ class Region(_builtins.str, Enum):
     USISO_WEST1 = ...
     USISOB_EAST1 = ...
     EUISOE_WEST1 = ...
-
-

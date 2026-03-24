@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,8918 +5,6402 @@ from typing import Any, Mapping, Optional, Sequence
 from . import outputs
 from ._enums import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['AccessControlRulesIdentityResponse', 'AccessControlRulesPrivilegeResponse', 'AccessControlRulesResponse', 'AccessControlRulesRoleAssignmentResponse', 'AccessControlRulesRoleResponse', 'AdditionalCapabilitiesResponse', 'AdditionalReplicaSetResponse', 'AdditionalUnattendContentResponse', 'ApiEntityReferenceResponse', 'ApiErrorBaseResponse', 'ApiErrorResponse', 'ApplicationProfileResponse', 'AutomaticOSUpgradePolicyResponse', 'AutomaticRepairsPolicyResponse', 'AutomaticZoneRebalancingPolicyResponse', 'AvailablePatchSummaryResponse', 'BillingProfileResponse', 'BootDiagnosticsInstanceViewResponse', 'BootDiagnosticsResponse', 'CapacityReservationGroupInstanceViewResponse', 'CapacityReservationInstanceViewResponse', 'CapacityReservationInstanceViewWithNameResponse', 'CapacityReservationProfileResponse', 'CapacityReservationUtilizationResponse', 'CloudServiceExtensionProfileResponse', 'CloudServiceExtensionPropertiesResponse', 'CloudServiceNetworkProfileResponse', 'CloudServiceOsProfileResponse', 'CloudServicePropertiesResponse', 'CloudServiceRoleProfilePropertiesResponse', 'CloudServiceRoleProfileResponse', 'CloudServiceRoleSkuResponse', 'CloudServiceVaultAndSecretReferenceResponse', 'CloudServiceVaultCertificateResponse', 'CloudServiceVaultSecretGroupResponse', 'CommunityGalleryInfoResponse', 'CopyCompletionErrorResponse', 'CreationDataResponse', 'DataDiskImageEncryptionResponse', 'DataDiskResponse', 'DedicatedHostAllocatableVMResponse', 'DedicatedHostAvailableCapacityResponse', 'DedicatedHostGroupInstanceViewResponse', ..., 'DedicatedHostInstanceViewResponse', 'DedicatedHostInstanceViewWithNameResponse', 'DefaultVirtualMachineScaleSetInfoResponse', 'DiagnosticsProfileResponse', 'DiffDiskSettingsResponse', 'DisallowedResponse', 'DiskEncryptionSetParametersResponse', 'DiskEncryptionSettingsResponse', 'DiskInstanceViewResponse', 'DiskPurchasePlanResponse', 'DiskRestorePointAttributesResponse', 'DiskRestorePointInstanceViewResponse', 'DiskRestorePointReplicationStatusResponse', 'DiskSecurityProfileResponse', 'DiskSkuResponse', 'EncryptionIdentityResponse', 'EncryptionImagesResponse', 'EncryptionResponse', 'EncryptionSetIdentityResponse', 'EncryptionSettingsCollectionResponse', 'EncryptionSettingsElementResponse', 'EventGridAndResourceGraphResponse', 'ExecutedValidationResponse', 'ExtendedLocationResponse', 'ExtensionResponse', 'GalleryApplicationCustomActionParameterResponse', 'GalleryApplicationCustomActionResponse', 'GalleryApplicationVersionPublishingProfileResponse', 'GalleryApplicationVersionSafetyProfileResponse', 'GalleryArtifactVersionFullSourceResponse', 'GalleryDataDiskImageResponse', 'GalleryDiskImageSourceResponse', 'GalleryExtendedLocationResponse', 'GalleryIdentifierResponse', 'GalleryIdentityResponse', 'GalleryImageFeatureResponse', 'GalleryImageIdentifierResponse', 'GalleryImageVersionPublishingProfileResponse', 'GalleryImageVersionSafetyProfileResponse', 'GalleryImageVersionStorageProfileResponse', 'GalleryImageVersionUefiSettingsResponse', 'GalleryInVMAccessControlProfilePropertiesResponse', 'GalleryOSDiskImageResponse', 'GalleryScriptParameterResponse', 'GalleryScriptPropertiesResponse', 'GalleryScriptVersionPropertiesResponse', 'GalleryScriptVersionPublishingProfileResponse', 'GalleryScriptVersionSafetyProfileResponse', 'GalleryTargetExtendedLocationResponse', 'HardwareProfileResponse', 'HostEndpointSettingsResponse', 'ImageDataDiskResponse', 'ImageDiskReferenceResponse', 'ImageOSDiskResponse', 'ImagePurchasePlanResponse', 'ImageReferenceResponse', 'ImageStorageProfileResponse', 'ImageVersionSecurityProfileResponse', 'InnerErrorResponse', 'InstanceViewStatusResponse', 'KeyForDiskEncryptionSetResponse', 'KeyVaultAndKeyReferenceResponse', 'KeyVaultAndSecretReferenceResponse', 'KeyVaultKeyReferenceResponse', 'KeyVaultSecretReferenceResponse', 'LastPatchInstallationSummaryResponse', 'LinuxConfigurationResponse', 'LinuxPatchSettingsResponse', ..., 'LoadBalancerConfigurationPropertiesResponse', 'LoadBalancerConfigurationResponse', ..., 'LoadBalancerFrontendIpConfigurationResponse', 'LogAnalyticsOutputResponse', 'MaintenanceRedeployStatusResponse', 'ManagedDiskParametersResponse', 'NetworkInterfaceReferenceResponse', 'NetworkProfileResponse', 'OSDiskImageEncryptionResponse', 'OSDiskImageSecurityProfileResponse', 'OSDiskResponse', 'OSImageNotificationProfileResponse', 'OSProfileResponse', 'PatchSettingsResponse', 'PlacementResponse', 'PlanResponse', 'PlatformAttributeResponse', 'PolicyViolationResponse', 'PriorityMixPolicyResponse', 'PrivateEndpointConnectionResponse', 'PrivateEndpointResponse', 'PrivateLinkServiceConnectionStateResponse', 'PropertyUpdatesInProgressResponse', 'ProximityPlacementGroupPropertiesIntentResponse', 'ProxyAgentSettingsResponse', 'PublicIPAddressSkuResponse', 'RecommendedMachineConfigurationResponse', 'RegionalReplicationStatusResponse', 'RegionalSharingStatusResponse', 'ReplicationStatusResponse', 'ResiliencyPolicyResponse', 'ResilientVMCreationPolicyResponse', 'ResilientVMDeletionPolicyResponse', 'ResourceRangeResponse', 'ResourceSharingProfileResponse', 'RestorePointCollectionSourcePropertiesResponse', 'RestorePointEncryptionResponse', 'RestorePointInstanceViewResponse', 'RestorePointResponse', 'RestorePointSourceMetadataResponse', 'RestorePointSourceVMDataDiskResponse', 'RestorePointSourceVMOSDiskResponse', 'RestorePointSourceVMStorageProfileResponse', 'RollingUpgradePolicyResponse', 'RunCommandInputParameterResponse', 'RunCommandManagedIdentityResponse', 'ScaleInPolicyResponse', 'ScheduledEventsAdditionalPublishingTargetsResponse', 'ScheduledEventsPolicyResponse', 'ScheduledEventsProfileResponse', 'ScriptSourceResponse', 'SecurityPostureReferenceResponse', 'SecurityProfileResponse', 'ServiceArtifactReferenceResponse', 'ShareInfoElementResponse', 'SharingProfileGroupResponse', 'SharingProfileResponse', 'SharingStatusResponse', 'SkuProfileResponse', 'SkuProfileVMSizeResponse', 'SkuResponse', 'SnapshotSkuResponse', 'SoftDeletePolicyResponse', 'SourceVaultResponse', 'SpotRestorePolicyResponse', 'SshConfigurationResponse', 'SshPublicKeyResponse', 'StorageProfileResponse', 'SubResourceReadOnlyResponse', 'SubResourceResponse', 'SubResourceWithColocationStatusResponse', 'SupportedCapabilitiesResponse', 'SystemDataResponse', 'SystemDataResponseV1', 'TargetRegionResponse', 'TerminateNotificationProfileResponse', 'UefiKeyResponse', 'UefiKeySignaturesResponse', 'UefiSettingsResponse', 'UpgradePolicyResponse', 'UserArtifactManageResponse', 'UserArtifactSettingsResponse', 'UserArtifactSourceResponse', 'UserAssignedIdentitiesValueResponse', 'UserInitiatedRebootResponse', 'UserInitiatedRedeployResponse', 'VMDiskSecurityProfileResponse', 'VMGalleryApplicationResponse', 'VMSizePropertiesResponse', 'ValidationsProfileResponse', 'VaultCertificateResponse', 'VaultSecretGroupResponse', 'VirtualHardDiskResponse', 'VirtualMachineAgentInstanceViewResponse', 'VirtualMachineExtensionHandlerInstanceViewResponse', 'VirtualMachineExtensionInstanceViewResponse', 'VirtualMachineExtensionResponse', 'VirtualMachineHealthStatusResponse', 'VirtualMachineIdentityResponse', 'VirtualMachineInstanceViewResponse', 'VirtualMachineIpTagResponse', ..., ..., ..., 'VirtualMachinePatchStatusResponse', 'VirtualMachinePublicIPAddressConfigurationResponse', ..., 'VirtualMachineRunCommandInstanceViewResponse', 'VirtualMachineRunCommandScriptSourceResponse', 'VirtualMachineScaleSetDataDiskResponse', 'VirtualMachineScaleSetExtensionProfileResponse', 'VirtualMachineScaleSetExtensionResponse', 'VirtualMachineScaleSetHardwareProfileResponse', 'VirtualMachineScaleSetIPConfigurationResponse', 'VirtualMachineScaleSetIdentityResponse', 'VirtualMachineScaleSetIpTagResponse', ..., 'VirtualMachineScaleSetMigrationInfoResponse', ..., 'VirtualMachineScaleSetNetworkConfigurationResponse', 'VirtualMachineScaleSetNetworkProfileResponse', 'VirtualMachineScaleSetOSDiskResponse', 'VirtualMachineScaleSetOSProfileResponse', ..., ..., 'VirtualMachineScaleSetStorageProfileResponse', 'VirtualMachineScaleSetVMInstanceViewResponse', ..., 'VirtualMachineScaleSetVMProfileResponse', 'VirtualMachineScaleSetVMProtectionPolicyResponse', 'WinRMConfigurationResponse', 'WinRMListenerResponse', 'WindowsConfigurationResponse', ...]
+"""
+This type stub file was generated by pyright.
+"""
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "AccessControlRulesIdentityResponse",
+    "AccessControlRulesPrivilegeResponse",
+    "AccessControlRulesResponse",
+    "AccessControlRulesRoleAssignmentResponse",
+    "AccessControlRulesRoleResponse",
+    "AdditionalCapabilitiesResponse",
+    "AdditionalReplicaSetResponse",
+    "AdditionalUnattendContentResponse",
+    "ApiEntityReferenceResponse",
+    "ApiErrorBaseResponse",
+    "ApiErrorResponse",
+    "ApplicationProfileResponse",
+    "AutomaticOSUpgradePolicyResponse",
+    "AutomaticRepairsPolicyResponse",
+    "AutomaticZoneRebalancingPolicyResponse",
+    "AvailablePatchSummaryResponse",
+    "BillingProfileResponse",
+    "BootDiagnosticsInstanceViewResponse",
+    "BootDiagnosticsResponse",
+    "CapacityReservationGroupInstanceViewResponse",
+    "CapacityReservationInstanceViewResponse",
+    "CapacityReservationInstanceViewWithNameResponse",
+    "CapacityReservationProfileResponse",
+    "CapacityReservationUtilizationResponse",
+    "CloudServiceExtensionProfileResponse",
+    "CloudServiceExtensionPropertiesResponse",
+    "CloudServiceNetworkProfileResponse",
+    "CloudServiceOsProfileResponse",
+    "CloudServicePropertiesResponse",
+    "CloudServiceRoleProfilePropertiesResponse",
+    "CloudServiceRoleProfileResponse",
+    "CloudServiceRoleSkuResponse",
+    "CloudServiceVaultAndSecretReferenceResponse",
+    "CloudServiceVaultCertificateResponse",
+    "CloudServiceVaultSecretGroupResponse",
+    "CommunityGalleryInfoResponse",
+    "CopyCompletionErrorResponse",
+    "CreationDataResponse",
+    "DataDiskImageEncryptionResponse",
+    "DataDiskResponse",
+    "DedicatedHostAllocatableVMResponse",
+    "DedicatedHostAvailableCapacityResponse",
+    "DedicatedHostGroupInstanceViewResponse",
+    ...,
+    "DedicatedHostInstanceViewResponse",
+    "DedicatedHostInstanceViewWithNameResponse",
+    "DefaultVirtualMachineScaleSetInfoResponse",
+    "DiagnosticsProfileResponse",
+    "DiffDiskSettingsResponse",
+    "DisallowedResponse",
+    "DiskEncryptionSetParametersResponse",
+    "DiskEncryptionSettingsResponse",
+    "DiskInstanceViewResponse",
+    "DiskPurchasePlanResponse",
+    "DiskRestorePointAttributesResponse",
+    "DiskRestorePointInstanceViewResponse",
+    "DiskRestorePointReplicationStatusResponse",
+    "DiskSecurityProfileResponse",
+    "DiskSkuResponse",
+    "EncryptionIdentityResponse",
+    "EncryptionImagesResponse",
+    "EncryptionResponse",
+    "EncryptionSetIdentityResponse",
+    "EncryptionSettingsCollectionResponse",
+    "EncryptionSettingsElementResponse",
+    "EventGridAndResourceGraphResponse",
+    "ExecutedValidationResponse",
+    "ExtendedLocationResponse",
+    "ExtensionResponse",
+    "GalleryApplicationCustomActionParameterResponse",
+    "GalleryApplicationCustomActionResponse",
+    "GalleryApplicationVersionPublishingProfileResponse",
+    "GalleryApplicationVersionSafetyProfileResponse",
+    "GalleryArtifactVersionFullSourceResponse",
+    "GalleryDataDiskImageResponse",
+    "GalleryDiskImageSourceResponse",
+    "GalleryExtendedLocationResponse",
+    "GalleryIdentifierResponse",
+    "GalleryIdentityResponse",
+    "GalleryImageFeatureResponse",
+    "GalleryImageIdentifierResponse",
+    "GalleryImageVersionPublishingProfileResponse",
+    "GalleryImageVersionSafetyProfileResponse",
+    "GalleryImageVersionStorageProfileResponse",
+    "GalleryImageVersionUefiSettingsResponse",
+    "GalleryInVMAccessControlProfilePropertiesResponse",
+    "GalleryOSDiskImageResponse",
+    "GalleryScriptParameterResponse",
+    "GalleryScriptPropertiesResponse",
+    "GalleryScriptVersionPropertiesResponse",
+    "GalleryScriptVersionPublishingProfileResponse",
+    "GalleryScriptVersionSafetyProfileResponse",
+    "GalleryTargetExtendedLocationResponse",
+    "HardwareProfileResponse",
+    "HostEndpointSettingsResponse",
+    "ImageDataDiskResponse",
+    "ImageDiskReferenceResponse",
+    "ImageOSDiskResponse",
+    "ImagePurchasePlanResponse",
+    "ImageReferenceResponse",
+    "ImageStorageProfileResponse",
+    "ImageVersionSecurityProfileResponse",
+    "InnerErrorResponse",
+    "InstanceViewStatusResponse",
+    "KeyForDiskEncryptionSetResponse",
+    "KeyVaultAndKeyReferenceResponse",
+    "KeyVaultAndSecretReferenceResponse",
+    "KeyVaultKeyReferenceResponse",
+    "KeyVaultSecretReferenceResponse",
+    "LastPatchInstallationSummaryResponse",
+    "LinuxConfigurationResponse",
+    "LinuxPatchSettingsResponse",
+    ...,
+    "LoadBalancerConfigurationPropertiesResponse",
+    "LoadBalancerConfigurationResponse",
+    ...,
+    "LoadBalancerFrontendIpConfigurationResponse",
+    "LogAnalyticsOutputResponse",
+    "MaintenanceRedeployStatusResponse",
+    "ManagedDiskParametersResponse",
+    "NetworkInterfaceReferenceResponse",
+    "NetworkProfileResponse",
+    "OSDiskImageEncryptionResponse",
+    "OSDiskImageSecurityProfileResponse",
+    "OSDiskResponse",
+    "OSImageNotificationProfileResponse",
+    "OSProfileResponse",
+    "PatchSettingsResponse",
+    "PlacementResponse",
+    "PlanResponse",
+    "PlatformAttributeResponse",
+    "PolicyViolationResponse",
+    "PriorityMixPolicyResponse",
+    "PrivateEndpointConnectionResponse",
+    "PrivateEndpointResponse",
+    "PrivateLinkServiceConnectionStateResponse",
+    "PropertyUpdatesInProgressResponse",
+    "ProximityPlacementGroupPropertiesIntentResponse",
+    "ProxyAgentSettingsResponse",
+    "PublicIPAddressSkuResponse",
+    "RecommendedMachineConfigurationResponse",
+    "RegionalReplicationStatusResponse",
+    "RegionalSharingStatusResponse",
+    "ReplicationStatusResponse",
+    "ResiliencyPolicyResponse",
+    "ResilientVMCreationPolicyResponse",
+    "ResilientVMDeletionPolicyResponse",
+    "ResourceRangeResponse",
+    "ResourceSharingProfileResponse",
+    "RestorePointCollectionSourcePropertiesResponse",
+    "RestorePointEncryptionResponse",
+    "RestorePointInstanceViewResponse",
+    "RestorePointResponse",
+    "RestorePointSourceMetadataResponse",
+    "RestorePointSourceVMDataDiskResponse",
+    "RestorePointSourceVMOSDiskResponse",
+    "RestorePointSourceVMStorageProfileResponse",
+    "RollingUpgradePolicyResponse",
+    "RunCommandInputParameterResponse",
+    "RunCommandManagedIdentityResponse",
+    "ScaleInPolicyResponse",
+    "ScheduledEventsAdditionalPublishingTargetsResponse",
+    "ScheduledEventsPolicyResponse",
+    "ScheduledEventsProfileResponse",
+    "ScriptSourceResponse",
+    "SecurityPostureReferenceResponse",
+    "SecurityProfileResponse",
+    "ServiceArtifactReferenceResponse",
+    "ShareInfoElementResponse",
+    "SharingProfileGroupResponse",
+    "SharingProfileResponse",
+    "SharingStatusResponse",
+    "SkuProfileResponse",
+    "SkuProfileVMSizeResponse",
+    "SkuResponse",
+    "SnapshotSkuResponse",
+    "SoftDeletePolicyResponse",
+    "SourceVaultResponse",
+    "SpotRestorePolicyResponse",
+    "SshConfigurationResponse",
+    "SshPublicKeyResponse",
+    "StorageProfileResponse",
+    "SubResourceReadOnlyResponse",
+    "SubResourceResponse",
+    "SubResourceWithColocationStatusResponse",
+    "SupportedCapabilitiesResponse",
+    "SystemDataResponse",
+    "SystemDataResponseV1",
+    "TargetRegionResponse",
+    "TerminateNotificationProfileResponse",
+    "UefiKeyResponse",
+    "UefiKeySignaturesResponse",
+    "UefiSettingsResponse",
+    "UpgradePolicyResponse",
+    "UserArtifactManageResponse",
+    "UserArtifactSettingsResponse",
+    "UserArtifactSourceResponse",
+    "UserAssignedIdentitiesValueResponse",
+    "UserInitiatedRebootResponse",
+    "UserInitiatedRedeployResponse",
+    "VMDiskSecurityProfileResponse",
+    "VMGalleryApplicationResponse",
+    "VMSizePropertiesResponse",
+    "ValidationsProfileResponse",
+    "VaultCertificateResponse",
+    "VaultSecretGroupResponse",
+    "VirtualHardDiskResponse",
+    "VirtualMachineAgentInstanceViewResponse",
+    "VirtualMachineExtensionHandlerInstanceViewResponse",
+    "VirtualMachineExtensionInstanceViewResponse",
+    "VirtualMachineExtensionResponse",
+    "VirtualMachineHealthStatusResponse",
+    "VirtualMachineIdentityResponse",
+    "VirtualMachineInstanceViewResponse",
+    "VirtualMachineIpTagResponse",
+    ...,
+    ...,
+    ...,
+    "VirtualMachinePatchStatusResponse",
+    "VirtualMachinePublicIPAddressConfigurationResponse",
+    ...,
+    "VirtualMachineRunCommandInstanceViewResponse",
+    "VirtualMachineRunCommandScriptSourceResponse",
+    "VirtualMachineScaleSetDataDiskResponse",
+    "VirtualMachineScaleSetExtensionProfileResponse",
+    "VirtualMachineScaleSetExtensionResponse",
+    "VirtualMachineScaleSetHardwareProfileResponse",
+    "VirtualMachineScaleSetIPConfigurationResponse",
+    "VirtualMachineScaleSetIdentityResponse",
+    "VirtualMachineScaleSetIpTagResponse",
+    ...,
+    "VirtualMachineScaleSetMigrationInfoResponse",
+    ...,
+    "VirtualMachineScaleSetNetworkConfigurationResponse",
+    "VirtualMachineScaleSetNetworkProfileResponse",
+    "VirtualMachineScaleSetOSDiskResponse",
+    "VirtualMachineScaleSetOSProfileResponse",
+    ...,
+    ...,
+    "VirtualMachineScaleSetStorageProfileResponse",
+    "VirtualMachineScaleSetVMInstanceViewResponse",
+    ...,
+    "VirtualMachineScaleSetVMProfileResponse",
+    "VirtualMachineScaleSetVMProtectionPolicyResponse",
+    "WinRMConfigurationResponse",
+    "WinRMListenerResponse",
+    "WindowsConfigurationResponse",
+    ...,
+]
+
 @pulumi.output_type
 class AccessControlRulesIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, exe_path: Optional[_builtins.str] = ..., group_name: Optional[_builtins.str] = ..., process_name: Optional[_builtins.str] = ..., user_name: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        exe_path: Optional[_builtins.str] = ...,
+        group_name: Optional[_builtins.str] = ...,
+        process_name: Optional[_builtins.str] = ...,
+        user_name: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="exePath")
-    def exe_path(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def exe_path(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="groupName")
-    def group_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def group_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="processName")
-    def process_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def process_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="userName")
-    def user_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def user_name(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class AccessControlRulesPrivilegeResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, path: _builtins.str, query_parameters: Optional[Mapping[str, _builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        path: _builtins.str,
+        query_parameters: Optional[Mapping[str, _builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def path(self) -> _builtins.str:
-        
-        ...
-    
+    def path(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="queryParameters")
-    def query_parameters(self) -> Optional[Mapping[str, _builtins.str]]:
-        
-        ...
-    
-
+    def query_parameters(self) -> Optional[Mapping[str, _builtins.str]]: ...
 
 @pulumi.output_type
 class AccessControlRulesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, identities: Optional[Sequence[outputs.AccessControlRulesIdentityResponse]] = ..., privileges: Optional[Sequence[outputs.AccessControlRulesPrivilegeResponse]] = ..., role_assignments: Optional[Sequence[outputs.AccessControlRulesRoleAssignmentResponse]] = ..., roles: Optional[Sequence[outputs.AccessControlRulesRoleResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        identities: Optional[
+            Sequence[outputs.AccessControlRulesIdentityResponse]
+        ] = ...,
+        privileges: Optional[
+            Sequence[outputs.AccessControlRulesPrivilegeResponse]
+        ] = ...,
+        role_assignments: Optional[
+            Sequence[outputs.AccessControlRulesRoleAssignmentResponse]
+        ] = ...,
+        roles: Optional[Sequence[outputs.AccessControlRulesRoleResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def identities(self) -> Optional[Sequence[outputs.AccessControlRulesIdentityResponse]]:
-        
-        ...
-    
+    def identities(
+        self,
+    ) -> Optional[Sequence[outputs.AccessControlRulesIdentityResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def privileges(self) -> Optional[Sequence[outputs.AccessControlRulesPrivilegeResponse]]:
-        
-        ...
-    
+    def privileges(
+        self,
+    ) -> Optional[Sequence[outputs.AccessControlRulesPrivilegeResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="roleAssignments")
-    def role_assignments(self) -> Optional[Sequence[outputs.AccessControlRulesRoleAssignmentResponse]]:
-        
-        ...
-    
+    def role_assignments(
+        self,
+    ) -> Optional[Sequence[outputs.AccessControlRulesRoleAssignmentResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def roles(self) -> Optional[Sequence[outputs.AccessControlRulesRoleResponse]]:
-        
-        ...
-    
-
+    def roles(self) -> Optional[Sequence[outputs.AccessControlRulesRoleResponse]]: ...
 
 @pulumi.output_type
 class AccessControlRulesRoleAssignmentResponse(dict):
-    
-    def __init__(__self__, *, identities: Sequence[_builtins.str], role: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, identities: Sequence[_builtins.str], role: _builtins.str
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def identities(self) -> Sequence[_builtins.str]:
-        
-        ...
-    
+    def identities(self) -> Sequence[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> _builtins.str:
-        
-        ...
-    
-
+    def role(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class AccessControlRulesRoleResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, privileges: Sequence[_builtins.str]) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, name: _builtins.str, privileges: Sequence[_builtins.str]
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def privileges(self) -> Sequence[_builtins.str]:
-        
-        ...
-    
-
+    def privileges(self) -> Sequence[_builtins.str]: ...
 
 @pulumi.output_type
 class AdditionalCapabilitiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, hibernation_enabled: Optional[_builtins.bool] = ..., ultra_ssd_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        hibernation_enabled: Optional[_builtins.bool] = ...,
+        ultra_ssd_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="hibernationEnabled")
-    def hibernation_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def hibernation_enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="ultraSSDEnabled")
-    def ultra_ssd_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def ultra_ssd_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class AdditionalReplicaSetResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, regional_replica_count: Optional[_builtins.int] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        regional_replica_count: Optional[_builtins.int] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="regionalReplicaCount")
-    def regional_replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def regional_replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class AdditionalUnattendContentResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, component_name: Optional[_builtins.str] = ..., content: Optional[_builtins.str] = ..., pass_name: Optional[_builtins.str] = ..., setting_name: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        component_name: Optional[_builtins.str] = ...,
+        content: Optional[_builtins.str] = ...,
+        pass_name: Optional[_builtins.str] = ...,
+        setting_name: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="componentName")
-    def component_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def component_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def content(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def content(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="passName")
-    def pass_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def pass_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="settingName")
-    def setting_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def setting_name(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ApiEntityReferenceResponse(dict):
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ApiErrorBaseResponse(dict):
-    
-    def __init__(__self__, *, code: Optional[_builtins.str] = ..., message: Optional[_builtins.str] = ..., target: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        code: Optional[_builtins.str] = ...,
+        message: Optional[_builtins.str] = ...,
+        target: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def code(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def message(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def message(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def target(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def target(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ApiErrorResponse(dict):
-    
-    def __init__(__self__, *, code: Optional[_builtins.str] = ..., details: Optional[Sequence[outputs.ApiErrorBaseResponse]] = ..., innererror: Optional[outputs.InnerErrorResponse] = ..., message: Optional[_builtins.str] = ..., target: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        code: Optional[_builtins.str] = ...,
+        details: Optional[Sequence[outputs.ApiErrorBaseResponse]] = ...,
+        innererror: Optional[outputs.InnerErrorResponse] = ...,
+        message: Optional[_builtins.str] = ...,
+        target: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def code(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def details(self) -> Optional[Sequence[outputs.ApiErrorBaseResponse]]:
-        
-        ...
-    
+    def details(self) -> Optional[Sequence[outputs.ApiErrorBaseResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def innererror(self) -> Optional[outputs.InnerErrorResponse]:
-        
-        ...
-    
+    def innererror(self) -> Optional[outputs.InnerErrorResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def message(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def message(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def target(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def target(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ApplicationProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, gallery_applications: Optional[Sequence[outputs.VMGalleryApplicationResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        gallery_applications: Optional[
+            Sequence[outputs.VMGalleryApplicationResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="galleryApplications")
-    def gallery_applications(self) -> Optional[Sequence[outputs.VMGalleryApplicationResponse]]:
-        
-        ...
-    
-
+    def gallery_applications(
+        self,
+    ) -> Optional[Sequence[outputs.VMGalleryApplicationResponse]]: ...
 
 @pulumi.output_type
 class AutomaticOSUpgradePolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disable_automatic_rollback: Optional[_builtins.bool] = ..., enable_automatic_os_upgrade: Optional[_builtins.bool] = ..., os_rolling_upgrade_deferral: Optional[_builtins.bool] = ..., use_rolling_upgrade_policy: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disable_automatic_rollback: Optional[_builtins.bool] = ...,
+        enable_automatic_os_upgrade: Optional[_builtins.bool] = ...,
+        os_rolling_upgrade_deferral: Optional[_builtins.bool] = ...,
+        use_rolling_upgrade_policy: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="disableAutomaticRollback")
-    def disable_automatic_rollback(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def disable_automatic_rollback(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticOSUpgrade")
-    def enable_automatic_os_upgrade(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_automatic_os_upgrade(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="osRollingUpgradeDeferral")
-    def os_rolling_upgrade_deferral(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def os_rolling_upgrade_deferral(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="useRollingUpgradePolicy")
-    def use_rolling_upgrade_policy(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def use_rolling_upgrade_policy(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class AutomaticRepairsPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ..., grace_period: Optional[_builtins.str] = ..., repair_action: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[_builtins.bool] = ...,
+        grace_period: Optional[_builtins.str] = ...,
+        repair_action: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="gracePeriod")
-    def grace_period(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def grace_period(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="repairAction")
-    def repair_action(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def repair_action(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class AutomaticZoneRebalancingPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ..., rebalance_behavior: Optional[_builtins.str] = ..., rebalance_strategy: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[_builtins.bool] = ...,
+        rebalance_behavior: Optional[_builtins.str] = ...,
+        rebalance_strategy: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="rebalanceBehavior")
-    def rebalance_behavior(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def rebalance_behavior(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rebalanceStrategy")
-    def rebalance_strategy(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def rebalance_strategy(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class AvailablePatchSummaryResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, assessment_activity_id: _builtins.str, critical_and_security_patch_count: _builtins.int, error: outputs.ApiErrorResponse, last_modified_time: _builtins.str, other_patch_count: _builtins.int, reboot_pending: _builtins.bool, start_time: _builtins.str, status: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        assessment_activity_id: _builtins.str,
+        critical_and_security_patch_count: _builtins.int,
+        error: outputs.ApiErrorResponse,
+        last_modified_time: _builtins.str,
+        other_patch_count: _builtins.int,
+        reboot_pending: _builtins.bool,
+        start_time: _builtins.str,
+        status: _builtins.str,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assessmentActivityId")
-    def assessment_activity_id(self) -> _builtins.str:
-        
-        ...
-    
+    def assessment_activity_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="criticalAndSecurityPatchCount")
-    def critical_and_security_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def critical_and_security_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def error(self) -> outputs.ApiErrorResponse:
-        
-        ...
-    
+    def error(self) -> outputs.ApiErrorResponse: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
-    def last_modified_time(self) -> _builtins.str:
-        
-        ...
-    
+    def last_modified_time(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="otherPatchCount")
-    def other_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def other_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="rebootPending")
-    def reboot_pending(self) -> _builtins.bool:
-        
-        ...
-    
+    def reboot_pending(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="startTime")
-    def start_time(self) -> _builtins.str:
-        
-        ...
-    
+    def start_time(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> _builtins.str:
-        
-        ...
-    
-
+    def status(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class BillingProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, max_price: Optional[_builtins.float] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(__self__, *, max_price: Optional[_builtins.float] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter(name="maxPrice")
-    def max_price(self) -> Optional[_builtins.float]:
-        
-        ...
-    
-
+    def max_price(self) -> Optional[_builtins.float]: ...
 
 @pulumi.output_type
 class BootDiagnosticsInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, console_screenshot_blob_uri: _builtins.str, serial_console_log_blob_uri: _builtins.str, status: outputs.InstanceViewStatusResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        console_screenshot_blob_uri: _builtins.str,
+        serial_console_log_blob_uri: _builtins.str,
+        status: outputs.InstanceViewStatusResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="consoleScreenshotBlobUri")
-    def console_screenshot_blob_uri(self) -> _builtins.str:
-        
-        ...
-    
+    def console_screenshot_blob_uri(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="serialConsoleLogBlobUri")
-    def serial_console_log_blob_uri(self) -> _builtins.str:
-        
-        ...
-    
+    def serial_console_log_blob_uri(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> outputs.InstanceViewStatusResponse:
-        
-        ...
-    
-
+    def status(self) -> outputs.InstanceViewStatusResponse: ...
 
 @pulumi.output_type
 class BootDiagnosticsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ..., storage_uri: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[_builtins.bool] = ...,
+        storage_uri: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="storageUri")
-    def storage_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_uri(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CapacityReservationGroupInstanceViewResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, capacity_reservations: Sequence[outputs.CapacityReservationInstanceViewWithNameResponse], shared_subscription_ids: Sequence[outputs.SubResourceReadOnlyResponse]) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        capacity_reservations: Sequence[
+            outputs.CapacityReservationInstanceViewWithNameResponse
+        ],
+        shared_subscription_ids: Sequence[outputs.SubResourceReadOnlyResponse],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="capacityReservations")
-    def capacity_reservations(self) -> Sequence[outputs.CapacityReservationInstanceViewWithNameResponse]:
-        
-        ...
-    
+    def capacity_reservations(
+        self,
+    ) -> Sequence[outputs.CapacityReservationInstanceViewWithNameResponse]: ...
     @_builtins.property
     @pulumi.getter(name="sharedSubscriptionIds")
-    def shared_subscription_ids(self) -> Sequence[outputs.SubResourceReadOnlyResponse]:
-        
-        ...
-    
-
+    def shared_subscription_ids(
+        self,
+    ) -> Sequence[outputs.SubResourceReadOnlyResponse]: ...
 
 @pulumi.output_type
 class CapacityReservationInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., utilization_info: Optional[outputs.CapacityReservationUtilizationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        utilization_info: Optional[
+            outputs.CapacityReservationUtilizationResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="utilizationInfo")
-    def utilization_info(self) -> Optional[outputs.CapacityReservationUtilizationResponse]:
-        
-        ...
-    
-
+    def utilization_info(
+        self,
+    ) -> Optional[outputs.CapacityReservationUtilizationResponse]: ...
 
 @pulumi.output_type
 class CapacityReservationInstanceViewWithNameResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., utilization_info: Optional[outputs.CapacityReservationUtilizationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        utilization_info: Optional[
+            outputs.CapacityReservationUtilizationResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="utilizationInfo")
-    def utilization_info(self) -> Optional[outputs.CapacityReservationUtilizationResponse]:
-        
-        ...
-    
-
+    def utilization_info(
+        self,
+    ) -> Optional[outputs.CapacityReservationUtilizationResponse]: ...
 
 @pulumi.output_type
 class CapacityReservationProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, capacity_reservation_group: Optional[outputs.SubResourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        capacity_reservation_group: Optional[outputs.SubResourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="capacityReservationGroup")
-    def capacity_reservation_group(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
-
+    def capacity_reservation_group(self) -> Optional[outputs.SubResourceResponse]: ...
 
 @pulumi.output_type
 class CapacityReservationUtilizationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, current_capacity: _builtins.int, virtual_machines_allocated: Sequence[outputs.SubResourceReadOnlyResponse]) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        current_capacity: _builtins.int,
+        virtual_machines_allocated: Sequence[outputs.SubResourceReadOnlyResponse],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="currentCapacity")
-    def current_capacity(self) -> _builtins.int:
-        
-        ...
-    
+    def current_capacity(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="virtualMachinesAllocated")
-    def virtual_machines_allocated(self) -> Sequence[outputs.SubResourceReadOnlyResponse]:
-        
-        ...
-    
-
+    def virtual_machines_allocated(
+        self,
+    ) -> Sequence[outputs.SubResourceReadOnlyResponse]: ...
 
 @pulumi.output_type
 class CloudServiceExtensionProfileResponse(dict):
-    
-    def __init__(__self__, *, extensions: Optional[Sequence[outputs.ExtensionResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, extensions: Optional[Sequence[outputs.ExtensionResponse]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def extensions(self) -> Optional[Sequence[outputs.ExtensionResponse]]:
-        
-        ...
-    
-
+    def extensions(self) -> Optional[Sequence[outputs.ExtensionResponse]]: ...
 
 @pulumi.output_type
 class CloudServiceExtensionPropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, provisioning_state: _builtins.str, auto_upgrade_minor_version: Optional[_builtins.bool] = ..., force_update_tag: Optional[_builtins.str] = ..., protected_settings: Optional[Any] = ..., protected_settings_from_key_vault: Optional[outputs.CloudServiceVaultAndSecretReferenceResponse] = ..., publisher: Optional[_builtins.str] = ..., roles_applied_to: Optional[Sequence[_builtins.str]] = ..., settings: Optional[Any] = ..., type: Optional[_builtins.str] = ..., type_handler_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        provisioning_state: _builtins.str,
+        auto_upgrade_minor_version: Optional[_builtins.bool] = ...,
+        force_update_tag: Optional[_builtins.str] = ...,
+        protected_settings: Optional[Any] = ...,
+        protected_settings_from_key_vault: Optional[
+            outputs.CloudServiceVaultAndSecretReferenceResponse
+        ] = ...,
+        publisher: Optional[_builtins.str] = ...,
+        roles_applied_to: Optional[Sequence[_builtins.str]] = ...,
+        settings: Optional[Any] = ...,
+        type: Optional[_builtins.str] = ...,
+        type_handler_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="autoUpgradeMinorVersion")
-    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
-    def force_update_tag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def force_update_tag(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
-    def protected_settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def protected_settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettingsFromKeyVault")
-    def protected_settings_from_key_vault(self) -> Optional[outputs.CloudServiceVaultAndSecretReferenceResponse]:
-        
-        ...
-    
+    def protected_settings_from_key_vault(
+        self,
+    ) -> Optional[outputs.CloudServiceVaultAndSecretReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def publisher(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rolesAppliedTo")
-    def roles_applied_to(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def roles_applied_to(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
-    def type_handler_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CloudServiceNetworkProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, load_balancer_configurations: Optional[Sequence[outputs.LoadBalancerConfigurationResponse]] = ..., slot_type: Optional[_builtins.str] = ..., swappable_cloud_service: Optional[outputs.SubResourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        load_balancer_configurations: Optional[
+            Sequence[outputs.LoadBalancerConfigurationResponse]
+        ] = ...,
+        slot_type: Optional[_builtins.str] = ...,
+        swappable_cloud_service: Optional[outputs.SubResourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerConfigurations")
-    def load_balancer_configurations(self) -> Optional[Sequence[outputs.LoadBalancerConfigurationResponse]]:
-        
-        ...
-    
+    def load_balancer_configurations(
+        self,
+    ) -> Optional[Sequence[outputs.LoadBalancerConfigurationResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="slotType")
-    def slot_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def slot_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="swappableCloudService")
-    def swappable_cloud_service(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
-
+    def swappable_cloud_service(self) -> Optional[outputs.SubResourceResponse]: ...
 
 @pulumi.output_type
 class CloudServiceOsProfileResponse(dict):
-    
-    def __init__(__self__, *, secrets: Optional[Sequence[outputs.CloudServiceVaultSecretGroupResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        secrets: Optional[Sequence[outputs.CloudServiceVaultSecretGroupResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def secrets(self) -> Optional[Sequence[outputs.CloudServiceVaultSecretGroupResponse]]:
-        
-        ...
-    
-
+    def secrets(
+        self,
+    ) -> Optional[Sequence[outputs.CloudServiceVaultSecretGroupResponse]]: ...
 
 @pulumi.output_type
 class CloudServicePropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, provisioning_state: _builtins.str, unique_id: _builtins.str, allow_model_override: Optional[_builtins.bool] = ..., configuration: Optional[_builtins.str] = ..., configuration_url: Optional[_builtins.str] = ..., extension_profile: Optional[outputs.CloudServiceExtensionProfileResponse] = ..., network_profile: Optional[outputs.CloudServiceNetworkProfileResponse] = ..., os_profile: Optional[outputs.CloudServiceOsProfileResponse] = ..., package_url: Optional[_builtins.str] = ..., role_profile: Optional[outputs.CloudServiceRoleProfileResponse] = ..., start_cloud_service: Optional[_builtins.bool] = ..., upgrade_mode: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        provisioning_state: _builtins.str,
+        unique_id: _builtins.str,
+        allow_model_override: Optional[_builtins.bool] = ...,
+        configuration: Optional[_builtins.str] = ...,
+        configuration_url: Optional[_builtins.str] = ...,
+        extension_profile: Optional[outputs.CloudServiceExtensionProfileResponse] = ...,
+        network_profile: Optional[outputs.CloudServiceNetworkProfileResponse] = ...,
+        os_profile: Optional[outputs.CloudServiceOsProfileResponse] = ...,
+        package_url: Optional[_builtins.str] = ...,
+        role_profile: Optional[outputs.CloudServiceRoleProfileResponse] = ...,
+        start_cloud_service: Optional[_builtins.bool] = ...,
+        upgrade_mode: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="uniqueId")
-    def unique_id(self) -> _builtins.str:
-        
-        ...
-    
+    def unique_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="allowModelOverride")
-    def allow_model_override(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def allow_model_override(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def configuration(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def configuration(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="configurationUrl")
-    def configuration_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def configuration_url(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="extensionProfile")
-    def extension_profile(self) -> Optional[outputs.CloudServiceExtensionProfileResponse]:
-        
-        ...
-    
+    def extension_profile(
+        self,
+    ) -> Optional[outputs.CloudServiceExtensionProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
-    def network_profile(self) -> Optional[outputs.CloudServiceNetworkProfileResponse]:
-        
-        ...
-    
+    def network_profile(
+        self,
+    ) -> Optional[outputs.CloudServiceNetworkProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
-    def os_profile(self) -> Optional[outputs.CloudServiceOsProfileResponse]:
-        
-        ...
-    
+    def os_profile(self) -> Optional[outputs.CloudServiceOsProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="packageUrl")
-    def package_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def package_url(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="roleProfile")
-    def role_profile(self) -> Optional[outputs.CloudServiceRoleProfileResponse]:
-        
-        ...
-    
+    def role_profile(self) -> Optional[outputs.CloudServiceRoleProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="startCloudService")
-    def start_cloud_service(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def start_cloud_service(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="upgradeMode")
-    def upgrade_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def upgrade_mode(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CloudServiceRoleProfilePropertiesResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., sku: Optional[outputs.CloudServiceRoleSkuResponse] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        sku: Optional[outputs.CloudServiceRoleSkuResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def sku(self) -> Optional[outputs.CloudServiceRoleSkuResponse]:
-        
-        ...
-    
-
+    def sku(self) -> Optional[outputs.CloudServiceRoleSkuResponse]: ...
 
 @pulumi.output_type
 class CloudServiceRoleProfileResponse(dict):
-    
-    def __init__(__self__, *, roles: Optional[Sequence[outputs.CloudServiceRoleProfilePropertiesResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        roles: Optional[
+            Sequence[outputs.CloudServiceRoleProfilePropertiesResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def roles(self) -> Optional[Sequence[outputs.CloudServiceRoleProfilePropertiesResponse]]:
-        
-        ...
-    
-
+    def roles(
+        self,
+    ) -> Optional[Sequence[outputs.CloudServiceRoleProfilePropertiesResponse]]: ...
 
 @pulumi.output_type
 class CloudServiceRoleSkuResponse(dict):
-    
-    def __init__(__self__, *, capacity: Optional[_builtins.float] = ..., name: Optional[_builtins.str] = ..., tier: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        capacity: Optional[_builtins.float] = ...,
+        name: Optional[_builtins.str] = ...,
+        tier: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def capacity(self) -> Optional[_builtins.float]:
-        
-        ...
-    
+    def capacity(self) -> Optional[_builtins.float]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tier(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def tier(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CloudServiceVaultAndSecretReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, secret_url: Optional[_builtins.str] = ..., source_vault: Optional[outputs.SubResourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        secret_url: Optional[_builtins.str] = ...,
+        source_vault: Optional[outputs.SubResourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretUrl")
-    def secret_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def secret_url(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
-
+    def source_vault(self) -> Optional[outputs.SubResourceResponse]: ...
 
 @pulumi.output_type
 class CloudServiceVaultCertificateResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, certificate_url: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, certificate_url: Optional[_builtins.str] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="certificateUrl")
-    def certificate_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def certificate_url(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CloudServiceVaultSecretGroupResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, source_vault: Optional[outputs.SubResourceResponse] = ..., vault_certificates: Optional[Sequence[outputs.CloudServiceVaultCertificateResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        source_vault: Optional[outputs.SubResourceResponse] = ...,
+        vault_certificates: Optional[
+            Sequence[outputs.CloudServiceVaultCertificateResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def source_vault(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="vaultCertificates")
-    def vault_certificates(self) -> Optional[Sequence[outputs.CloudServiceVaultCertificateResponse]]:
-        
-        ...
-    
-
+    def vault_certificates(
+        self,
+    ) -> Optional[Sequence[outputs.CloudServiceVaultCertificateResponse]]: ...
 
 @pulumi.output_type
 class CommunityGalleryInfoResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, community_gallery_enabled: _builtins.bool, public_names: Sequence[_builtins.str], eula: Optional[_builtins.str] = ..., public_name_prefix: Optional[_builtins.str] = ..., publisher_contact: Optional[_builtins.str] = ..., publisher_uri: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        community_gallery_enabled: _builtins.bool,
+        public_names: Sequence[_builtins.str],
+        eula: Optional[_builtins.str] = ...,
+        public_name_prefix: Optional[_builtins.str] = ...,
+        publisher_contact: Optional[_builtins.str] = ...,
+        publisher_uri: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="communityGalleryEnabled")
-    def community_gallery_enabled(self) -> _builtins.bool:
-        
-        ...
-    
+    def community_gallery_enabled(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="publicNames")
-    def public_names(self) -> Sequence[_builtins.str]:
-        
-        ...
-    
+    def public_names(self) -> Sequence[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def eula(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def eula(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicNamePrefix")
-    def public_name_prefix(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def public_name_prefix(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publisherContact")
-    def publisher_contact(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def publisher_contact(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publisherUri")
-    def publisher_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def publisher_uri(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class CopyCompletionErrorResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, error_code: _builtins.str, error_message: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, error_code: _builtins.str, error_message: _builtins.str
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="errorCode")
-    def error_code(self) -> _builtins.str:
-        
-        ...
-    
+    def error_code(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="errorMessage")
-    def error_message(self) -> _builtins.str:
-        
-        ...
-    
-
+    def error_message(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class CreationDataResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, create_option: _builtins.str, source_unique_id: _builtins.str, elastic_san_resource_id: Optional[_builtins.str] = ..., gallery_image_reference: Optional[outputs.ImageDiskReferenceResponse] = ..., image_reference: Optional[outputs.ImageDiskReferenceResponse] = ..., logical_sector_size: Optional[_builtins.int] = ..., performance_plus: Optional[_builtins.bool] = ..., provisioned_bandwidth_copy_speed: Optional[_builtins.str] = ..., security_data_uri: Optional[_builtins.str] = ..., source_resource_id: Optional[_builtins.str] = ..., source_uri: Optional[_builtins.str] = ..., storage_account_id: Optional[_builtins.str] = ..., upload_size_bytes: Optional[_builtins.float] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        create_option: _builtins.str,
+        source_unique_id: _builtins.str,
+        elastic_san_resource_id: Optional[_builtins.str] = ...,
+        gallery_image_reference: Optional[outputs.ImageDiskReferenceResponse] = ...,
+        image_reference: Optional[outputs.ImageDiskReferenceResponse] = ...,
+        logical_sector_size: Optional[_builtins.int] = ...,
+        performance_plus: Optional[_builtins.bool] = ...,
+        provisioned_bandwidth_copy_speed: Optional[_builtins.str] = ...,
+        security_data_uri: Optional[_builtins.str] = ...,
+        source_resource_id: Optional[_builtins.str] = ...,
+        source_uri: Optional[_builtins.str] = ...,
+        storage_account_id: Optional[_builtins.str] = ...,
+        upload_size_bytes: Optional[_builtins.float] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createOption")
-    def create_option(self) -> _builtins.str:
-        
-        ...
-    
+    def create_option(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceUniqueId")
-    def source_unique_id(self) -> _builtins.str:
-        
-        ...
-    
+    def source_unique_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="elasticSanResourceId")
-    def elastic_san_resource_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def elastic_san_resource_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="galleryImageReference")
-    def gallery_image_reference(self) -> Optional[outputs.ImageDiskReferenceResponse]:
-        
-        ...
-    
+    def gallery_image_reference(
+        self,
+    ) -> Optional[outputs.ImageDiskReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
-    def image_reference(self) -> Optional[outputs.ImageDiskReferenceResponse]:
-        
-        ...
-    
+    def image_reference(self) -> Optional[outputs.ImageDiskReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="logicalSectorSize")
-    def logical_sector_size(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def logical_sector_size(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="performancePlus")
-    def performance_plus(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def performance_plus(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="provisionedBandwidthCopySpeed")
-    def provisioned_bandwidth_copy_speed(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def provisioned_bandwidth_copy_speed(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="securityDataUri")
-    def security_data_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def security_data_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceResourceId")
-    def source_resource_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def source_resource_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceUri")
-    def source_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def source_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
-    def storage_account_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="uploadSizeBytes")
-    def upload_size_bytes(self) -> Optional[_builtins.float]:
-        
-        ...
-    
-
+    def upload_size_bytes(self) -> Optional[_builtins.float]: ...
 
 @pulumi.output_type
 class DataDiskImageEncryptionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, lun: _builtins.int, disk_encryption_set_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        lun: _builtins.int,
+        disk_encryption_set_id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
-    def disk_encryption_set_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def disk_encryption_set_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DataDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, create_option: _builtins.str, disk_iops_read_write: _builtins.float, disk_m_bps_read_write: _builtins.float, lun: _builtins.int, caching: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., detach_option: Optional[_builtins.str] = ..., disk_size_gb: Optional[_builtins.int] = ..., image: Optional[outputs.VirtualHardDiskResponse] = ..., managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ..., name: Optional[_builtins.str] = ..., source_resource: Optional[outputs.ApiEntityReferenceResponse] = ..., to_be_detached: Optional[_builtins.bool] = ..., vhd: Optional[outputs.VirtualHardDiskResponse] = ..., write_accelerator_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        create_option: _builtins.str,
+        disk_iops_read_write: _builtins.float,
+        disk_m_bps_read_write: _builtins.float,
+        lun: _builtins.int,
+        caching: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        detach_option: Optional[_builtins.str] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        image: Optional[outputs.VirtualHardDiskResponse] = ...,
+        managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...,
+        name: Optional[_builtins.str] = ...,
+        source_resource: Optional[outputs.ApiEntityReferenceResponse] = ...,
+        to_be_detached: Optional[_builtins.bool] = ...,
+        vhd: Optional[outputs.VirtualHardDiskResponse] = ...,
+        write_accelerator_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createOption")
-    def create_option(self) -> _builtins.str:
-        
-        ...
-    
+    def create_option(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="diskIOPSReadWrite")
-    def disk_iops_read_write(self) -> _builtins.float:
-        
-        ...
-    
+    def disk_iops_read_write(self) -> _builtins.float: ...
     @_builtins.property
     @pulumi.getter(name="diskMBpsReadWrite")
-    def disk_m_bps_read_write(self) -> _builtins.float:
-        
-        ...
-    
+    def disk_m_bps_read_write(self) -> _builtins.float: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="detachOption")
-    def detach_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def detach_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def image(self) -> Optional[outputs.VirtualHardDiskResponse]:
-        
-        ...
-    
+    def image(self) -> Optional[outputs.VirtualHardDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]:
-        
-        ...
-    
+    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sourceResource")
-    def source_resource(self) -> Optional[outputs.ApiEntityReferenceResponse]:
-        
-        ...
-    
+    def source_resource(self) -> Optional[outputs.ApiEntityReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="toBeDetached")
-    def to_be_detached(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def to_be_detached(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def vhd(self) -> Optional[outputs.VirtualHardDiskResponse]:
-        
-        ...
-    
+    def vhd(self) -> Optional[outputs.VirtualHardDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def write_accelerator_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class DedicatedHostAllocatableVMResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, count: Optional[_builtins.float] = ..., vm_size: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        count: Optional[_builtins.float] = ...,
+        vm_size: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def count(self) -> Optional[_builtins.float]:
-        
-        ...
-    
+    def count(self) -> Optional[_builtins.float]: ...
     @_builtins.property
     @pulumi.getter(name="vmSize")
-    def vm_size(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def vm_size(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DedicatedHostAvailableCapacityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, allocatable_vms: Optional[Sequence[outputs.DedicatedHostAllocatableVMResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        allocatable_vms: Optional[
+            Sequence[outputs.DedicatedHostAllocatableVMResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allocatableVMs")
-    def allocatable_vms(self) -> Optional[Sequence[outputs.DedicatedHostAllocatableVMResponse]]:
-        
-        ...
-    
-
+    def allocatable_vms(
+        self,
+    ) -> Optional[Sequence[outputs.DedicatedHostAllocatableVMResponse]]: ...
 
 @pulumi.output_type
 class DedicatedHostGroupInstanceViewResponse(dict):
-    def __init__(__self__, *, hosts: Optional[Sequence[outputs.DedicatedHostInstanceViewWithNameResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        hosts: Optional[
+            Sequence[outputs.DedicatedHostInstanceViewWithNameResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def hosts(self) -> Optional[Sequence[outputs.DedicatedHostInstanceViewWithNameResponse]]:
-        
-        ...
-    
-
+    def hosts(
+        self,
+    ) -> Optional[Sequence[outputs.DedicatedHostInstanceViewWithNameResponse]]: ...
 
 @pulumi.output_type
 class DedicatedHostGroupPropertiesAdditionalCapabilitiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, ultra_ssd_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, ultra_ssd_enabled: Optional[_builtins.bool] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ultraSSDEnabled")
-    def ultra_ssd_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def ultra_ssd_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class DedicatedHostInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, asset_id: _builtins.str, available_capacity: Optional[outputs.DedicatedHostAvailableCapacityResponse] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        asset_id: _builtins.str,
+        available_capacity: Optional[
+            outputs.DedicatedHostAvailableCapacityResponse
+        ] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assetId")
-    def asset_id(self) -> _builtins.str:
-        
-        ...
-    
+    def asset_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="availableCapacity")
-    def available_capacity(self) -> Optional[outputs.DedicatedHostAvailableCapacityResponse]:
-        
-        ...
-    
+    def available_capacity(
+        self,
+    ) -> Optional[outputs.DedicatedHostAvailableCapacityResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
-
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
 
 @pulumi.output_type
 class DedicatedHostInstanceViewWithNameResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, asset_id: _builtins.str, name: _builtins.str, available_capacity: Optional[outputs.DedicatedHostAvailableCapacityResponse] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        asset_id: _builtins.str,
+        name: _builtins.str,
+        available_capacity: Optional[
+            outputs.DedicatedHostAvailableCapacityResponse
+        ] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assetId")
-    def asset_id(self) -> _builtins.str:
-        
-        ...
-    
+    def asset_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="availableCapacity")
-    def available_capacity(self) -> Optional[outputs.DedicatedHostAvailableCapacityResponse]:
-        
-        ...
-    
+    def available_capacity(
+        self,
+    ) -> Optional[outputs.DedicatedHostAvailableCapacityResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
-
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
 
 @pulumi.output_type
 class DefaultVirtualMachineScaleSetInfoResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, constrained_maximum_capacity: _builtins.bool, default_virtual_machine_scale_set: outputs.SubResourceResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        constrained_maximum_capacity: _builtins.bool,
+        default_virtual_machine_scale_set: outputs.SubResourceResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="constrainedMaximumCapacity")
-    def constrained_maximum_capacity(self) -> _builtins.bool:
-        
-        ...
-    
+    def constrained_maximum_capacity(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="defaultVirtualMachineScaleSet")
-    def default_virtual_machine_scale_set(self) -> outputs.SubResourceResponse:
-        
-        ...
-    
-
+    def default_virtual_machine_scale_set(self) -> outputs.SubResourceResponse: ...
 
 @pulumi.output_type
 class DiagnosticsProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, boot_diagnostics: Optional[outputs.BootDiagnosticsResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, boot_diagnostics: Optional[outputs.BootDiagnosticsResponse] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="bootDiagnostics")
-    def boot_diagnostics(self) -> Optional[outputs.BootDiagnosticsResponse]:
-        
-        ...
-    
-
+    def boot_diagnostics(self) -> Optional[outputs.BootDiagnosticsResponse]: ...
 
 @pulumi.output_type
 class DiffDiskSettingsResponse(dict):
-    
-    def __init__(__self__, *, option: Optional[_builtins.str] = ..., placement: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        option: Optional[_builtins.str] = ...,
+        placement: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def placement(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def placement(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DisallowedResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_types: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, disk_types: Optional[Sequence[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskTypes")
-    def disk_types(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def disk_types(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class DiskEncryptionSetParametersResponse(dict):
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DiskEncryptionSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_key: Optional[outputs.KeyVaultSecretReferenceResponse] = ..., enabled: Optional[_builtins.bool] = ..., key_encryption_key: Optional[outputs.KeyVaultKeyReferenceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_key: Optional[outputs.KeyVaultSecretReferenceResponse] = ...,
+        enabled: Optional[_builtins.bool] = ...,
+        key_encryption_key: Optional[outputs.KeyVaultKeyReferenceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionKey")
-    def disk_encryption_key(self) -> Optional[outputs.KeyVaultSecretReferenceResponse]:
-        
-        ...
-    
+    def disk_encryption_key(
+        self,
+    ) -> Optional[outputs.KeyVaultSecretReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
-    def key_encryption_key(self) -> Optional[outputs.KeyVaultKeyReferenceResponse]:
-        
-        ...
-    
-
+    def key_encryption_key(self) -> Optional[outputs.KeyVaultKeyReferenceResponse]: ...
 
 @pulumi.output_type
 class DiskInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, encryption_settings: Optional[Sequence[outputs.DiskEncryptionSettingsResponse]] = ..., name: Optional[_builtins.str] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        encryption_settings: Optional[
+            Sequence[outputs.DiskEncryptionSettingsResponse]
+        ] = ...,
+        name: Optional[_builtins.str] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
-    def encryption_settings(self) -> Optional[Sequence[outputs.DiskEncryptionSettingsResponse]]:
-        
-        ...
-    
+    def encryption_settings(
+        self,
+    ) -> Optional[Sequence[outputs.DiskEncryptionSettingsResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
-
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
 
 @pulumi.output_type
 class DiskPurchasePlanResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, product: _builtins.str, publisher: _builtins.str, promotion_code: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        product: _builtins.str,
+        publisher: _builtins.str,
+        promotion_code: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def product(self) -> _builtins.str:
-        
-        ...
-    
+    def product(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> _builtins.str:
-        
-        ...
-    
+    def publisher(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="promotionCode")
-    def promotion_code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def promotion_code(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DiskRestorePointAttributesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, encryption: Optional[outputs.RestorePointEncryptionResponse] = ..., source_disk_restore_point: Optional[outputs.ApiEntityReferenceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        encryption: Optional[outputs.RestorePointEncryptionResponse] = ...,
+        source_disk_restore_point: Optional[outputs.ApiEntityReferenceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def encryption(self) -> Optional[outputs.RestorePointEncryptionResponse]:
-        
-        ...
-    
+    def encryption(self) -> Optional[outputs.RestorePointEncryptionResponse]: ...
     @_builtins.property
     @pulumi.getter(name="sourceDiskRestorePoint")
-    def source_disk_restore_point(self) -> Optional[outputs.ApiEntityReferenceResponse]:
-        
-        ...
-    
-
+    def source_disk_restore_point(
+        self,
+    ) -> Optional[outputs.ApiEntityReferenceResponse]: ...
 
 @pulumi.output_type
 class DiskRestorePointInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ..., replication_status: Optional[outputs.DiskRestorePointReplicationStatusResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: Optional[_builtins.str] = ...,
+        replication_status: Optional[
+            outputs.DiskRestorePointReplicationStatusResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="replicationStatus")
-    def replication_status(self) -> Optional[outputs.DiskRestorePointReplicationStatusResponse]:
-        
-        ...
-    
-
+    def replication_status(
+        self,
+    ) -> Optional[outputs.DiskRestorePointReplicationStatusResponse]: ...
 
 @pulumi.output_type
 class DiskRestorePointReplicationStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, completion_percent: Optional[_builtins.int] = ..., status: Optional[outputs.InstanceViewStatusResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        completion_percent: Optional[_builtins.int] = ...,
+        status: Optional[outputs.InstanceViewStatusResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="completionPercent")
-    def completion_percent(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def completion_percent(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> Optional[outputs.InstanceViewStatusResponse]:
-        
-        ...
-    
-
+    def status(self) -> Optional[outputs.InstanceViewStatusResponse]: ...
 
 @pulumi.output_type
 class DiskSecurityProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, secure_vm_disk_encryption_set_id: Optional[_builtins.str] = ..., security_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        secure_vm_disk_encryption_set_id: Optional[_builtins.str] = ...,
+        security_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secureVMDiskEncryptionSetId")
-    def secure_vm_disk_encryption_set_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def secure_vm_disk_encryption_set_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="securityType")
-    def security_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def security_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class DiskSkuResponse(dict):
-    
-    def __init__(__self__, *, tier: _builtins.str, name: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, tier: _builtins.str, name: Optional[_builtins.str] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def tier(self) -> _builtins.str:
-        
-        ...
-    
+    def tier(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def name(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class EncryptionIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, user_assigned_identity_resource_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, user_assigned_identity_resource_id: Optional[_builtins.str] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentityResourceId")
-    def user_assigned_identity_resource_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def user_assigned_identity_resource_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class EncryptionImagesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, data_disk_images: Optional[Sequence[outputs.DataDiskImageEncryptionResponse]] = ..., os_disk_image: Optional[outputs.OSDiskImageEncryptionResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        data_disk_images: Optional[
+            Sequence[outputs.DataDiskImageEncryptionResponse]
+        ] = ...,
+        os_disk_image: Optional[outputs.OSDiskImageEncryptionResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDiskImages")
-    def data_disk_images(self) -> Optional[Sequence[outputs.DataDiskImageEncryptionResponse]]:
-        
-        ...
-    
+    def data_disk_images(
+        self,
+    ) -> Optional[Sequence[outputs.DataDiskImageEncryptionResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="osDiskImage")
-    def os_disk_image(self) -> Optional[outputs.OSDiskImageEncryptionResponse]:
-        
-        ...
-    
-
+    def os_disk_image(self) -> Optional[outputs.OSDiskImageEncryptionResponse]: ...
 
 @pulumi.output_type
 class EncryptionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set_id: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set_id: Optional[_builtins.str] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
-    def disk_encryption_set_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def disk_encryption_set_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class EncryptionSetIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: Optional[_builtins.str] = ..., user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        principal_id: _builtins.str,
+        tenant_id: _builtins.str,
+        type: Optional[_builtins.str] = ...,
+        user_assigned_identities: Optional[
+            Mapping[str, outputs.UserAssignedIdentitiesValueResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="principalId")
-    def principal_id(self) -> _builtins.str:
-        
-        ...
-    
+    def principal_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> _builtins.str:
-        
-        ...
-    
+    def tenant_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
-    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]:
-        
-        ...
-    
-
+    def user_assigned_identities(
+        self,
+    ) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]: ...
 
 @pulumi.output_type
 class EncryptionSettingsCollectionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: _builtins.bool, encryption_settings: Optional[Sequence[outputs.EncryptionSettingsElementResponse]] = ..., encryption_settings_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: _builtins.bool,
+        encryption_settings: Optional[
+            Sequence[outputs.EncryptionSettingsElementResponse]
+        ] = ...,
+        encryption_settings_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> _builtins.bool:
-        
-        ...
-    
+    def enabled(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
-    def encryption_settings(self) -> Optional[Sequence[outputs.EncryptionSettingsElementResponse]]:
-        
-        ...
-    
+    def encryption_settings(
+        self,
+    ) -> Optional[Sequence[outputs.EncryptionSettingsElementResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettingsVersion")
-    def encryption_settings_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def encryption_settings_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class EncryptionSettingsElementResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_key: Optional[outputs.KeyVaultAndSecretReferenceResponse] = ..., key_encryption_key: Optional[outputs.KeyVaultAndKeyReferenceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_key: Optional[outputs.KeyVaultAndSecretReferenceResponse] = ...,
+        key_encryption_key: Optional[outputs.KeyVaultAndKeyReferenceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionKey")
-    def disk_encryption_key(self) -> Optional[outputs.KeyVaultAndSecretReferenceResponse]:
-        
-        ...
-    
+    def disk_encryption_key(
+        self,
+    ) -> Optional[outputs.KeyVaultAndSecretReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="keyEncryptionKey")
-    def key_encryption_key(self) -> Optional[outputs.KeyVaultAndKeyReferenceResponse]:
-        
-        ...
-    
-
+    def key_encryption_key(
+        self,
+    ) -> Optional[outputs.KeyVaultAndKeyReferenceResponse]: ...
 
 @pulumi.output_type
 class EventGridAndResourceGraphResponse(dict):
-    
-    def __init__(__self__, *, enable: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, enable: Optional[_builtins.bool] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enable(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def enable(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class ExecutedValidationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, status: _builtins.str, execution_time: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        status: _builtins.str,
+        execution_time: Optional[_builtins.str] = ...,
+        type: Optional[_builtins.str] = ...,
+        version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> _builtins.str:
-        
-        ...
-    
+    def status(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="executionTime")
-    def execution_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def execution_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ExtendedLocationResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ExtensionResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., properties: Optional[outputs.CloudServiceExtensionPropertiesResponse] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        properties: Optional[outputs.CloudServiceExtensionPropertiesResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def properties(self) -> Optional[outputs.CloudServiceExtensionPropertiesResponse]:
-        
-        ...
-    
-
+    def properties(
+        self,
+    ) -> Optional[outputs.CloudServiceExtensionPropertiesResponse]: ...
 
 @pulumi.output_type
 class GalleryApplicationCustomActionParameterResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, default_value: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., required: Optional[_builtins.bool] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        default_value: Optional[_builtins.str] = ...,
+        description: Optional[_builtins.str] = ...,
+        required: Optional[_builtins.bool] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
-    def default_value(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def default_value(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def required(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def required(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryApplicationCustomActionResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, script: _builtins.str, description: Optional[_builtins.str] = ..., parameters: Optional[Sequence[outputs.GalleryApplicationCustomActionParameterResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        script: _builtins.str,
+        description: Optional[_builtins.str] = ...,
+        parameters: Optional[
+            Sequence[outputs.GalleryApplicationCustomActionParameterResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def script(self) -> _builtins.str:
-        
-        ...
-    
+    def script(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def parameters(self) -> Optional[Sequence[outputs.GalleryApplicationCustomActionParameterResponse]]:
-        
-        ...
-    
-
+    def parameters(
+        self,
+    ) -> Optional[
+        Sequence[outputs.GalleryApplicationCustomActionParameterResponse]
+    ]: ...
 
 @pulumi.output_type
 class GalleryApplicationVersionPublishingProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, published_date: _builtins.str, source: outputs.UserArtifactSourceResponse, advanced_settings: Optional[Mapping[str, _builtins.str]] = ..., custom_actions: Optional[Sequence[outputs.GalleryApplicationCustomActionResponse]] = ..., enable_health_check: Optional[_builtins.bool] = ..., end_of_life_date: Optional[_builtins.str] = ..., exclude_from_latest: Optional[_builtins.bool] = ..., manage_actions: Optional[outputs.UserArtifactManageResponse] = ..., replica_count: Optional[_builtins.int] = ..., replication_mode: Optional[_builtins.str] = ..., settings: Optional[outputs.UserArtifactSettingsResponse] = ..., storage_account_type: Optional[_builtins.str] = ..., target_extended_locations: Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]] = ..., target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        published_date: _builtins.str,
+        source: outputs.UserArtifactSourceResponse,
+        advanced_settings: Optional[Mapping[str, _builtins.str]] = ...,
+        custom_actions: Optional[
+            Sequence[outputs.GalleryApplicationCustomActionResponse]
+        ] = ...,
+        enable_health_check: Optional[_builtins.bool] = ...,
+        end_of_life_date: Optional[_builtins.str] = ...,
+        exclude_from_latest: Optional[_builtins.bool] = ...,
+        manage_actions: Optional[outputs.UserArtifactManageResponse] = ...,
+        replica_count: Optional[_builtins.int] = ...,
+        replication_mode: Optional[_builtins.str] = ...,
+        settings: Optional[outputs.UserArtifactSettingsResponse] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+        target_extended_locations: Optional[
+            Sequence[outputs.GalleryTargetExtendedLocationResponse]
+        ] = ...,
+        target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="publishedDate")
-    def published_date(self) -> _builtins.str:
-        
-        ...
-    
+    def published_date(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> outputs.UserArtifactSourceResponse:
-        
-        ...
-    
+    def source(self) -> outputs.UserArtifactSourceResponse: ...
     @_builtins.property
     @pulumi.getter(name="advancedSettings")
-    def advanced_settings(self) -> Optional[Mapping[str, _builtins.str]]:
-        
-        ...
-    
+    def advanced_settings(self) -> Optional[Mapping[str, _builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="customActions")
-    def custom_actions(self) -> Optional[Sequence[outputs.GalleryApplicationCustomActionResponse]]:
-        
-        ...
-    
+    def custom_actions(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryApplicationCustomActionResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="enableHealthCheck")
-    def enable_health_check(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_health_check(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
-    def end_of_life_date(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def end_of_life_date(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
-    def exclude_from_latest(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def exclude_from_latest(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="manageActions")
-    def manage_actions(self) -> Optional[outputs.UserArtifactManageResponse]:
-        ...
-    
+    def manage_actions(self) -> Optional[outputs.UserArtifactManageResponse]: ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
-    def replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
-    def replication_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def replication_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def settings(self) -> Optional[outputs.UserArtifactSettingsResponse]:
-        
-        ...
-    
+    def settings(self) -> Optional[outputs.UserArtifactSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
-    def target_extended_locations(self) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]:
-        
-        ...
-    
+    def target_extended_locations(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
-    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]:
-        
-        ...
-    
-
+    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]: ...
 
 @pulumi.output_type
 class GalleryApplicationVersionSafetyProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allowDeletionOfReplicatedLocations")
-    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class GalleryArtifactVersionFullSourceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, community_gallery_image_id: Optional[_builtins.str] = ..., id: Optional[_builtins.str] = ..., virtual_machine_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        community_gallery_image_id: Optional[_builtins.str] = ...,
+        id: Optional[_builtins.str] = ...,
+        virtual_machine_id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="communityGalleryImageId")
-    def community_gallery_image_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def community_gallery_image_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="virtualMachineId")
-    def virtual_machine_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def virtual_machine_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryDataDiskImageResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, lun: _builtins.int, size_in_gb: _builtins.int, host_caching: Optional[_builtins.str] = ..., source: Optional[outputs.GalleryDiskImageSourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        lun: _builtins.int,
+        size_in_gb: _builtins.int,
+        host_caching: Optional[_builtins.str] = ...,
+        source: Optional[outputs.GalleryDiskImageSourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="sizeInGB")
-    def size_in_gb(self) -> _builtins.int:
-        
-        ...
-    
+    def size_in_gb(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="hostCaching")
-    def host_caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def host_caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> Optional[outputs.GalleryDiskImageSourceResponse]:
-        
-        ...
-    
-
+    def source(self) -> Optional[outputs.GalleryDiskImageSourceResponse]: ...
 
 @pulumi.output_type
 class GalleryDiskImageSourceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ..., storage_account_id: Optional[_builtins.str] = ..., uri: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: Optional[_builtins.str] = ...,
+        storage_account_id: Optional[_builtins.str] = ...,
+        uri: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountId")
-    def storage_account_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def uri(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryExtendedLocationResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryIdentifierResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, unique_name: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(__self__, *, unique_name: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter(name="uniqueName")
-    def unique_name(self) -> _builtins.str:
-        
-        ...
-    
-
+    def unique_name(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class GalleryIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: Optional[_builtins.str] = ..., user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        principal_id: _builtins.str,
+        tenant_id: _builtins.str,
+        type: Optional[_builtins.str] = ...,
+        user_assigned_identities: Optional[
+            Mapping[str, outputs.UserAssignedIdentitiesValueResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="principalId")
-    def principal_id(self) -> _builtins.str:
-        
-        ...
-    
+    def principal_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> _builtins.str:
-        
-        ...
-    
+    def tenant_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
-    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]:
-        
-        ...
-    
-
+    def user_assigned_identities(
+        self,
+    ) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]: ...
 
 @pulumi.output_type
 class GalleryImageFeatureResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., starts_at_version: Optional[_builtins.str] = ..., value: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        starts_at_version: Optional[_builtins.str] = ...,
+        value: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="startsAtVersion")
-    def starts_at_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def starts_at_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def value(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryImageIdentifierResponse(dict):
-    
-    def __init__(__self__, *, offer: _builtins.str, publisher: _builtins.str, sku: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, offer: _builtins.str, publisher: _builtins.str, sku: _builtins.str
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def offer(self) -> _builtins.str:
-        
-        ...
-    
+    def offer(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> _builtins.str:
-        
-        ...
-    
+    def publisher(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def sku(self) -> _builtins.str:
-        
-        ...
-    
-
+    def sku(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class GalleryImageVersionPublishingProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, published_date: _builtins.str, end_of_life_date: Optional[_builtins.str] = ..., exclude_from_latest: Optional[_builtins.bool] = ..., replica_count: Optional[_builtins.int] = ..., replication_mode: Optional[_builtins.str] = ..., storage_account_type: Optional[_builtins.str] = ..., target_extended_locations: Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]] = ..., target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        published_date: _builtins.str,
+        end_of_life_date: Optional[_builtins.str] = ...,
+        exclude_from_latest: Optional[_builtins.bool] = ...,
+        replica_count: Optional[_builtins.int] = ...,
+        replication_mode: Optional[_builtins.str] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+        target_extended_locations: Optional[
+            Sequence[outputs.GalleryTargetExtendedLocationResponse]
+        ] = ...,
+        target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="publishedDate")
-    def published_date(self) -> _builtins.str:
-        
-        ...
-    
+    def published_date(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
-    def end_of_life_date(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def end_of_life_date(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
-    def exclude_from_latest(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def exclude_from_latest(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
-    def replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
-    def replication_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def replication_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
-    def target_extended_locations(self) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]:
-        
-        ...
-    
+    def target_extended_locations(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
-    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]:
-        
-        ...
-    
-
+    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]: ...
 
 @pulumi.output_type
 class GalleryImageVersionSafetyProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, policy_violations: Sequence[outputs.PolicyViolationResponse], reported_for_policy_violation: _builtins.bool, allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ..., block_deletion_before_end_of_life: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        policy_violations: Sequence[outputs.PolicyViolationResponse],
+        reported_for_policy_violation: _builtins.bool,
+        allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ...,
+        block_deletion_before_end_of_life: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="policyViolations")
-    def policy_violations(self) -> Sequence[outputs.PolicyViolationResponse]:
-        
-        ...
-    
+    def policy_violations(self) -> Sequence[outputs.PolicyViolationResponse]: ...
     @_builtins.property
     @pulumi.getter(name="reportedForPolicyViolation")
-    def reported_for_policy_violation(self) -> _builtins.bool:
-        
-        ...
-    
+    def reported_for_policy_violation(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="allowDeletionOfReplicatedLocations")
-    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="blockDeletionBeforeEndOfLife")
-    def block_deletion_before_end_of_life(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def block_deletion_before_end_of_life(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class GalleryImageVersionStorageProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, data_disk_images: Optional[Sequence[outputs.GalleryDataDiskImageResponse]] = ..., os_disk_image: Optional[outputs.GalleryOSDiskImageResponse] = ..., source: Optional[outputs.GalleryArtifactVersionFullSourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        data_disk_images: Optional[
+            Sequence[outputs.GalleryDataDiskImageResponse]
+        ] = ...,
+        os_disk_image: Optional[outputs.GalleryOSDiskImageResponse] = ...,
+        source: Optional[outputs.GalleryArtifactVersionFullSourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDiskImages")
-    def data_disk_images(self) -> Optional[Sequence[outputs.GalleryDataDiskImageResponse]]:
-        
-        ...
-    
+    def data_disk_images(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryDataDiskImageResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="osDiskImage")
-    def os_disk_image(self) -> Optional[outputs.GalleryOSDiskImageResponse]:
-        
-        ...
-    
+    def os_disk_image(self) -> Optional[outputs.GalleryOSDiskImageResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> Optional[outputs.GalleryArtifactVersionFullSourceResponse]:
-        
-        ...
-    
-
+    def source(self) -> Optional[outputs.GalleryArtifactVersionFullSourceResponse]: ...
 
 @pulumi.output_type
 class GalleryImageVersionUefiSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, additional_signatures: Optional[outputs.UefiKeySignaturesResponse] = ..., signature_template_names: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        additional_signatures: Optional[outputs.UefiKeySignaturesResponse] = ...,
+        signature_template_names: Optional[Sequence[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="additionalSignatures")
-    def additional_signatures(self) -> Optional[outputs.UefiKeySignaturesResponse]:
-        
-        ...
-    
+    def additional_signatures(self) -> Optional[outputs.UefiKeySignaturesResponse]: ...
     @_builtins.property
     @pulumi.getter(name="signatureTemplateNames")
-    def signature_template_names(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def signature_template_names(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class GalleryInVMAccessControlProfilePropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, applicable_host_endpoint: _builtins.str, os_type: _builtins.str, provisioning_state: _builtins.str, description: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        applicable_host_endpoint: _builtins.str,
+        os_type: _builtins.str,
+        provisioning_state: _builtins.str,
+        description: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="applicableHostEndpoint")
-    def applicable_host_endpoint(self) -> _builtins.str:
-        
-        ...
-    
+    def applicable_host_endpoint(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="osType")
-    def os_type(self) -> _builtins.str:
-        
-        ...
-    
+    def os_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def description(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryOSDiskImageResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, size_in_gb: _builtins.int, host_caching: Optional[_builtins.str] = ..., source: Optional[outputs.GalleryDiskImageSourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        size_in_gb: _builtins.int,
+        host_caching: Optional[_builtins.str] = ...,
+        source: Optional[outputs.GalleryDiskImageSourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sizeInGB")
-    def size_in_gb(self) -> _builtins.int:
-        
-        ...
-    
+    def size_in_gb(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="hostCaching")
-    def host_caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def host_caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> Optional[outputs.GalleryDiskImageSourceResponse]:
-        
-        ...
-    
-
+    def source(self) -> Optional[outputs.GalleryDiskImageSourceResponse]: ...
 
 @pulumi.output_type
 class GalleryScriptParameterResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, default_value: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., enum_values: Optional[Sequence[_builtins.str]] = ..., max_value: Optional[_builtins.str] = ..., min_value: Optional[_builtins.str] = ..., required: Optional[_builtins.bool] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        default_value: Optional[_builtins.str] = ...,
+        description: Optional[_builtins.str] = ...,
+        enum_values: Optional[Sequence[_builtins.str]] = ...,
+        max_value: Optional[_builtins.str] = ...,
+        min_value: Optional[_builtins.str] = ...,
+        required: Optional[_builtins.bool] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="defaultValue")
-    def default_value(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def default_value(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="enumValues")
-    def enum_values(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def enum_values(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="maxValue")
-    def max_value(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def max_value(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="minValue")
-    def min_value(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def min_value(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def required(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def required(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryScriptPropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, provisioning_state: _builtins.str, supported_os_type: _builtins.str, description: Optional[_builtins.str] = ..., end_of_life_date: Optional[_builtins.str] = ..., eula: Optional[_builtins.str] = ..., privacy_statement_uri: Optional[_builtins.str] = ..., release_note_uri: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        provisioning_state: _builtins.str,
+        supported_os_type: _builtins.str,
+        description: Optional[_builtins.str] = ...,
+        end_of_life_date: Optional[_builtins.str] = ...,
+        eula: Optional[_builtins.str] = ...,
+        privacy_statement_uri: Optional[_builtins.str] = ...,
+        release_note_uri: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="supportedOSType")
-    def supported_os_type(self) -> _builtins.str:
-        
-        ...
-    
+    def supported_os_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
-    def end_of_life_date(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def end_of_life_date(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def eula(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def eula(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="privacyStatementUri")
-    def privacy_statement_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def privacy_statement_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="releaseNoteUri")
-    def release_note_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def release_note_uri(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class GalleryScriptVersionPropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, provisioning_state: _builtins.str, publishing_profile: outputs.GalleryScriptVersionPublishingProfileResponse, replication_status: outputs.ReplicationStatusResponse, safety_profile: Optional[outputs.GalleryScriptVersionSafetyProfileResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        provisioning_state: _builtins.str,
+        publishing_profile: outputs.GalleryScriptVersionPublishingProfileResponse,
+        replication_status: outputs.ReplicationStatusResponse,
+        safety_profile: Optional[
+            outputs.GalleryScriptVersionSafetyProfileResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="publishingProfile")
-    def publishing_profile(self) -> outputs.GalleryScriptVersionPublishingProfileResponse:
-        
-        ...
-    
+    def publishing_profile(
+        self,
+    ) -> outputs.GalleryScriptVersionPublishingProfileResponse: ...
     @_builtins.property
     @pulumi.getter(name="replicationStatus")
-    def replication_status(self) -> outputs.ReplicationStatusResponse:
-        
-        ...
-    
+    def replication_status(self) -> outputs.ReplicationStatusResponse: ...
     @_builtins.property
     @pulumi.getter(name="safetyProfile")
-    def safety_profile(self) -> Optional[outputs.GalleryScriptVersionSafetyProfileResponse]:
-        
-        ...
-    
-
+    def safety_profile(
+        self,
+    ) -> Optional[outputs.GalleryScriptVersionSafetyProfileResponse]: ...
 
 @pulumi.output_type
 class GalleryScriptVersionPublishingProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, published_date: _builtins.str, source: outputs.ScriptSourceResponse, end_of_life_date: Optional[_builtins.str] = ..., exclude_from_latest: Optional[_builtins.bool] = ..., replica_count: Optional[_builtins.int] = ..., replication_mode: Optional[_builtins.str] = ..., storage_account_strategy: Optional[_builtins.str] = ..., storage_account_type: Optional[_builtins.str] = ..., target_extended_locations: Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]] = ..., target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        published_date: _builtins.str,
+        source: outputs.ScriptSourceResponse,
+        end_of_life_date: Optional[_builtins.str] = ...,
+        exclude_from_latest: Optional[_builtins.bool] = ...,
+        replica_count: Optional[_builtins.int] = ...,
+        replication_mode: Optional[_builtins.str] = ...,
+        storage_account_strategy: Optional[_builtins.str] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+        target_extended_locations: Optional[
+            Sequence[outputs.GalleryTargetExtendedLocationResponse]
+        ] = ...,
+        target_regions: Optional[Sequence[outputs.TargetRegionResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="publishedDate")
-    def published_date(self) -> _builtins.str:
-        
-        ...
-    
+    def published_date(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def source(self) -> outputs.ScriptSourceResponse:
-        
-        ...
-    
+    def source(self) -> outputs.ScriptSourceResponse: ...
     @_builtins.property
     @pulumi.getter(name="endOfLifeDate")
-    def end_of_life_date(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def end_of_life_date(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
-    def exclude_from_latest(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def exclude_from_latest(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="replicaCount")
-    def replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="replicationMode")
-    def replication_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def replication_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountStrategy")
-    def storage_account_strategy(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_strategy(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="targetExtendedLocations")
-    def target_extended_locations(self) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]:
-        
-        ...
-    
+    def target_extended_locations(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryTargetExtendedLocationResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="targetRegions")
-    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]:
-        
-        ...
-    
-
+    def target_regions(self) -> Optional[Sequence[outputs.TargetRegionResponse]]: ...
 
 @pulumi.output_type
 class GalleryScriptVersionSafetyProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        allow_deletion_of_replicated_locations: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allowDeletionOfReplicatedLocations")
-    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def allow_deletion_of_replicated_locations(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class GalleryTargetExtendedLocationResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, encryption: Optional[outputs.EncryptionImagesResponse] = ..., extended_location: Optional[outputs.GalleryExtendedLocationResponse] = ..., extended_location_replica_count: Optional[_builtins.int] = ..., name: Optional[_builtins.str] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        encryption: Optional[outputs.EncryptionImagesResponse] = ...,
+        extended_location: Optional[outputs.GalleryExtendedLocationResponse] = ...,
+        extended_location_replica_count: Optional[_builtins.int] = ...,
+        name: Optional[_builtins.str] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def encryption(self) -> Optional[outputs.EncryptionImagesResponse]:
-        
-        ...
-    
+    def encryption(self) -> Optional[outputs.EncryptionImagesResponse]: ...
     @_builtins.property
     @pulumi.getter(name="extendedLocation")
-    def extended_location(self) -> Optional[outputs.GalleryExtendedLocationResponse]:
-        
-        ...
-    
+    def extended_location(
+        self,
+    ) -> Optional[outputs.GalleryExtendedLocationResponse]: ...
     @_builtins.property
     @pulumi.getter(name="extendedLocationReplicaCount")
-    def extended_location_replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def extended_location_replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class HardwareProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, vm_size: Optional[_builtins.str] = ..., vm_size_properties: Optional[outputs.VMSizePropertiesResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        vm_size: Optional[_builtins.str] = ...,
+        vm_size_properties: Optional[outputs.VMSizePropertiesResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="vmSize")
-    def vm_size(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def vm_size(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="vmSizeProperties")
-    def vm_size_properties(self) -> Optional[outputs.VMSizePropertiesResponse]:
-        
-        ...
-    
-
+    def vm_size_properties(self) -> Optional[outputs.VMSizePropertiesResponse]: ...
 
 @pulumi.output_type
 class HostEndpointSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, in_vm_access_control_profile_reference_id: Optional[_builtins.str] = ..., mode: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        in_vm_access_control_profile_reference_id: Optional[_builtins.str] = ...,
+        mode: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="inVMAccessControlProfileReferenceId")
-    def in_vm_access_control_profile_reference_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def in_vm_access_control_profile_reference_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def mode(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImageDataDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, lun: _builtins.int, blob_uri: Optional[_builtins.str] = ..., caching: Optional[_builtins.str] = ..., disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., disk_size_gb: Optional[_builtins.int] = ..., managed_disk: Optional[outputs.SubResourceResponse] = ..., snapshot: Optional[outputs.SubResourceResponse] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        lun: _builtins.int,
+        blob_uri: Optional[_builtins.str] = ...,
+        caching: Optional[_builtins.str] = ...,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        managed_disk: Optional[outputs.SubResourceResponse] = ...,
+        snapshot: Optional[outputs.SubResourceResponse] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="blobUri")
-    def blob_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def blob_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def managed_disk(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def snapshot(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def snapshot(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImageDiskReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, community_gallery_image_id: Optional[_builtins.str] = ..., id: Optional[_builtins.str] = ..., lun: Optional[_builtins.int] = ..., shared_gallery_image_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        community_gallery_image_id: Optional[_builtins.str] = ...,
+        id: Optional[_builtins.str] = ...,
+        lun: Optional[_builtins.int] = ...,
+        shared_gallery_image_id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="communityGalleryImageId")
-    def community_gallery_image_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def community_gallery_image_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def lun(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="sharedGalleryImageId")
-    def shared_gallery_image_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def shared_gallery_image_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImageOSDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, os_state: _builtins.str, os_type: _builtins.str, blob_uri: Optional[_builtins.str] = ..., caching: Optional[_builtins.str] = ..., disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., disk_size_gb: Optional[_builtins.int] = ..., managed_disk: Optional[outputs.SubResourceResponse] = ..., snapshot: Optional[outputs.SubResourceResponse] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        os_state: _builtins.str,
+        os_type: _builtins.str,
+        blob_uri: Optional[_builtins.str] = ...,
+        caching: Optional[_builtins.str] = ...,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        managed_disk: Optional[outputs.SubResourceResponse] = ...,
+        snapshot: Optional[outputs.SubResourceResponse] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="osState")
-    def os_state(self) -> _builtins.str:
-        
-        ...
-    
+    def os_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="osType")
-    def os_type(self) -> _builtins.str:
-        
-        ...
-    
+    def os_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="blobUri")
-    def blob_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def blob_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def managed_disk(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def snapshot(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def snapshot(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImagePurchasePlanResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., product: Optional[_builtins.str] = ..., publisher: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        product: Optional[_builtins.str] = ...,
+        publisher: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def product(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def product(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def publisher(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImageReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, exact_version: _builtins.str, community_gallery_image_id: Optional[_builtins.str] = ..., id: Optional[_builtins.str] = ..., offer: Optional[_builtins.str] = ..., publisher: Optional[_builtins.str] = ..., shared_gallery_image_id: Optional[_builtins.str] = ..., sku: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        exact_version: _builtins.str,
+        community_gallery_image_id: Optional[_builtins.str] = ...,
+        id: Optional[_builtins.str] = ...,
+        offer: Optional[_builtins.str] = ...,
+        publisher: Optional[_builtins.str] = ...,
+        shared_gallery_image_id: Optional[_builtins.str] = ...,
+        sku: Optional[_builtins.str] = ...,
+        version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="exactVersion")
-    def exact_version(self) -> _builtins.str:
-        
-        ...
-    
+    def exact_version(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="communityGalleryImageId")
-    def community_gallery_image_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def community_gallery_image_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def offer(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def offer(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def publisher(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="sharedGalleryImageId")
-    def shared_gallery_image_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def shared_gallery_image_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def sku(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def sku(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ImageStorageProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, data_disks: Optional[Sequence[outputs.ImageDataDiskResponse]] = ..., os_disk: Optional[outputs.ImageOSDiskResponse] = ..., zone_resilient: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        data_disks: Optional[Sequence[outputs.ImageDataDiskResponse]] = ...,
+        os_disk: Optional[outputs.ImageOSDiskResponse] = ...,
+        zone_resilient: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDisks")
-    def data_disks(self) -> Optional[Sequence[outputs.ImageDataDiskResponse]]:
-        
-        ...
-    
+    def data_disks(self) -> Optional[Sequence[outputs.ImageDataDiskResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
-    def os_disk(self) -> Optional[outputs.ImageOSDiskResponse]:
-        
-        ...
-    
+    def os_disk(self) -> Optional[outputs.ImageOSDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="zoneResilient")
-    def zone_resilient(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def zone_resilient(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class ImageVersionSecurityProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, uefi_settings: Optional[outputs.GalleryImageVersionUefiSettingsResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        uefi_settings: Optional[outputs.GalleryImageVersionUefiSettingsResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="uefiSettings")
-    def uefi_settings(self) -> Optional[outputs.GalleryImageVersionUefiSettingsResponse]:
-        
-        ...
-    
-
+    def uefi_settings(
+        self,
+    ) -> Optional[outputs.GalleryImageVersionUefiSettingsResponse]: ...
 
 @pulumi.output_type
 class InnerErrorResponse(dict):
-    
-    def __init__(__self__, *, errordetail: Optional[_builtins.str] = ..., exceptiontype: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        errordetail: Optional[_builtins.str] = ...,
+        exceptiontype: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def errordetail(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def errordetail(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def exceptiontype(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def exceptiontype(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class InstanceViewStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, code: Optional[_builtins.str] = ..., display_status: Optional[_builtins.str] = ..., level: Optional[_builtins.str] = ..., message: Optional[_builtins.str] = ..., time: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        code: Optional[_builtins.str] = ...,
+        display_status: Optional[_builtins.str] = ...,
+        level: Optional[_builtins.str] = ...,
+        message: Optional[_builtins.str] = ...,
+        time: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def code(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="displayStatus")
-    def display_status(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def display_status(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def level(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def level(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def message(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def message(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def time(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class KeyForDiskEncryptionSetResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, key_url: _builtins.str, source_vault: Optional[outputs.SourceVaultResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        key_url: _builtins.str,
+        source_vault: Optional[outputs.SourceVaultResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyUrl")
-    def key_url(self) -> _builtins.str:
-        
-        ...
-    
+    def key_url(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> Optional[outputs.SourceVaultResponse]:
-        
-        ...
-    
-
+    def source_vault(self) -> Optional[outputs.SourceVaultResponse]: ...
 
 @pulumi.output_type
 class KeyVaultAndKeyReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, key_url: _builtins.str, source_vault: outputs.SourceVaultResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, key_url: _builtins.str, source_vault: outputs.SourceVaultResponse
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyUrl")
-    def key_url(self) -> _builtins.str:
-        
-        ...
-    
+    def key_url(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> outputs.SourceVaultResponse:
-        
-        ...
-    
-
+    def source_vault(self) -> outputs.SourceVaultResponse: ...
 
 @pulumi.output_type
 class KeyVaultAndSecretReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, secret_url: _builtins.str, source_vault: outputs.SourceVaultResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        secret_url: _builtins.str,
+        source_vault: outputs.SourceVaultResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretUrl")
-    def secret_url(self) -> _builtins.str:
-        
-        ...
-    
+    def secret_url(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> outputs.SourceVaultResponse:
-        
-        ...
-    
-
+    def source_vault(self) -> outputs.SourceVaultResponse: ...
 
 @pulumi.output_type
 class KeyVaultKeyReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, key_url: _builtins.str, source_vault: outputs.SubResourceResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, key_url: _builtins.str, source_vault: outputs.SubResourceResponse
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyUrl")
-    def key_url(self) -> _builtins.str:
-        
-        ...
-    
+    def key_url(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> outputs.SubResourceResponse:
-        
-        ...
-    
-
+    def source_vault(self) -> outputs.SubResourceResponse: ...
 
 @pulumi.output_type
 class KeyVaultSecretReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, secret_url: _builtins.str, source_vault: outputs.SubResourceResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        secret_url: _builtins.str,
+        source_vault: outputs.SubResourceResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secretUrl")
-    def secret_url(self) -> _builtins.str:
-        
-        ...
-    
+    def secret_url(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> outputs.SubResourceResponse:
-        
-        ...
-    
-
+    def source_vault(self) -> outputs.SubResourceResponse: ...
 
 @pulumi.output_type
 class LastPatchInstallationSummaryResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, error: outputs.ApiErrorResponse, excluded_patch_count: _builtins.int, failed_patch_count: _builtins.int, installation_activity_id: _builtins.str, installed_patch_count: _builtins.int, last_modified_time: _builtins.str, maintenance_window_exceeded: _builtins.bool, not_selected_patch_count: _builtins.int, pending_patch_count: _builtins.int, start_time: _builtins.str, status: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        error: outputs.ApiErrorResponse,
+        excluded_patch_count: _builtins.int,
+        failed_patch_count: _builtins.int,
+        installation_activity_id: _builtins.str,
+        installed_patch_count: _builtins.int,
+        last_modified_time: _builtins.str,
+        maintenance_window_exceeded: _builtins.bool,
+        not_selected_patch_count: _builtins.int,
+        pending_patch_count: _builtins.int,
+        start_time: _builtins.str,
+        status: _builtins.str,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def error(self) -> outputs.ApiErrorResponse:
-        
-        ...
-    
+    def error(self) -> outputs.ApiErrorResponse: ...
     @_builtins.property
     @pulumi.getter(name="excludedPatchCount")
-    def excluded_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def excluded_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="failedPatchCount")
-    def failed_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def failed_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="installationActivityId")
-    def installation_activity_id(self) -> _builtins.str:
-        
-        ...
-    
+    def installation_activity_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="installedPatchCount")
-    def installed_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def installed_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedTime")
-    def last_modified_time(self) -> _builtins.str:
-        
-        ...
-    
+    def last_modified_time(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindowExceeded")
-    def maintenance_window_exceeded(self) -> _builtins.bool:
-        
-        ...
-    
+    def maintenance_window_exceeded(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="notSelectedPatchCount")
-    def not_selected_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def not_selected_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="pendingPatchCount")
-    def pending_patch_count(self) -> _builtins.int:
-        
-        ...
-    
+    def pending_patch_count(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="startTime")
-    def start_time(self) -> _builtins.str:
-        
-        ...
-    
+    def start_time(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> _builtins.str:
-        
-        ...
-    
-
+    def status(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class LinuxConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disable_password_authentication: Optional[_builtins.bool] = ..., enable_vm_agent_platform_updates: Optional[_builtins.bool] = ..., patch_settings: Optional[outputs.LinuxPatchSettingsResponse] = ..., provision_vm_agent: Optional[_builtins.bool] = ..., ssh: Optional[outputs.SshConfigurationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disable_password_authentication: Optional[_builtins.bool] = ...,
+        enable_vm_agent_platform_updates: Optional[_builtins.bool] = ...,
+        patch_settings: Optional[outputs.LinuxPatchSettingsResponse] = ...,
+        provision_vm_agent: Optional[_builtins.bool] = ...,
+        ssh: Optional[outputs.SshConfigurationResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="disablePasswordAuthentication")
-    def disable_password_authentication(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def disable_password_authentication(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableVMAgentPlatformUpdates")
-    def enable_vm_agent_platform_updates(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_vm_agent_platform_updates(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="patchSettings")
-    def patch_settings(self) -> Optional[outputs.LinuxPatchSettingsResponse]:
-        
-        ...
-    
+    def patch_settings(self) -> Optional[outputs.LinuxPatchSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="provisionVMAgent")
-    def provision_vm_agent(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def provision_vm_agent(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def ssh(self) -> Optional[outputs.SshConfigurationResponse]:
-        
-        ...
-    
-
+    def ssh(self) -> Optional[outputs.SshConfigurationResponse]: ...
 
 @pulumi.output_type
 class LinuxPatchSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, assessment_mode: Optional[_builtins.str] = ..., automatic_by_platform_settings: Optional[outputs.LinuxVMGuestPatchAutomaticByPlatformSettingsResponse] = ..., patch_mode: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        assessment_mode: Optional[_builtins.str] = ...,
+        automatic_by_platform_settings: Optional[
+            outputs.LinuxVMGuestPatchAutomaticByPlatformSettingsResponse
+        ] = ...,
+        patch_mode: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assessmentMode")
-    def assessment_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def assessment_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="automaticByPlatformSettings")
-    def automatic_by_platform_settings(self) -> Optional[outputs.LinuxVMGuestPatchAutomaticByPlatformSettingsResponse]:
-        
-        ...
-    
+    def automatic_by_platform_settings(
+        self,
+    ) -> Optional[outputs.LinuxVMGuestPatchAutomaticByPlatformSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
-    def patch_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def patch_mode(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class LinuxVMGuestPatchAutomaticByPlatformSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, bypass_platform_safety_checks_on_user_schedule: Optional[_builtins.bool] = ..., reboot_setting: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        bypass_platform_safety_checks_on_user_schedule: Optional[_builtins.bool] = ...,
+        reboot_setting: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="bypassPlatformSafetyChecksOnUserSchedule")
-    def bypass_platform_safety_checks_on_user_schedule(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def bypass_platform_safety_checks_on_user_schedule(
+        self,
+    ) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="rebootSetting")
-    def reboot_setting(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def reboot_setting(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class LoadBalancerConfigurationPropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, frontend_ip_configurations: Sequence[outputs.LoadBalancerFrontendIpConfigurationResponse]) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        frontend_ip_configurations: Sequence[
+            outputs.LoadBalancerFrontendIpConfigurationResponse
+        ],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="frontendIpConfigurations")
-    def frontend_ip_configurations(self) -> Sequence[outputs.LoadBalancerFrontendIpConfigurationResponse]:
-        
-        ...
-    
-
+    def frontend_ip_configurations(
+        self,
+    ) -> Sequence[outputs.LoadBalancerFrontendIpConfigurationResponse]: ...
 
 @pulumi.output_type
 class LoadBalancerConfigurationResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, properties: outputs.LoadBalancerConfigurationPropertiesResponse, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        properties: outputs.LoadBalancerConfigurationPropertiesResponse,
+        id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def properties(self) -> outputs.LoadBalancerConfigurationPropertiesResponse:
-        
-        ...
-    
+    def properties(self) -> outputs.LoadBalancerConfigurationPropertiesResponse: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class LoadBalancerFrontendIpConfigurationPropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, private_ip_address: Optional[_builtins.str] = ..., public_ip_address: Optional[outputs.SubResourceResponse] = ..., subnet: Optional[outputs.SubResourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        private_ip_address: Optional[_builtins.str] = ...,
+        public_ip_address: Optional[outputs.SubResourceResponse] = ...,
+        subnet: Optional[outputs.SubResourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="privateIPAddress")
-    def private_ip_address(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def private_ip_address(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddress")
-    def public_ip_address(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def public_ip_address(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def subnet(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
-
+    def subnet(self) -> Optional[outputs.SubResourceResponse]: ...
 
 @pulumi.output_type
 class LoadBalancerFrontendIpConfigurationResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, properties: outputs.LoadBalancerFrontendIpConfigurationPropertiesResponse) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        properties: outputs.LoadBalancerFrontendIpConfigurationPropertiesResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def properties(self) -> outputs.LoadBalancerFrontendIpConfigurationPropertiesResponse:
-        
-        ...
-    
-
+    def properties(
+        self,
+    ) -> outputs.LoadBalancerFrontendIpConfigurationPropertiesResponse: ...
 
 @pulumi.output_type
 class LogAnalyticsOutputResponse(dict):
-    
-    def __init__(__self__, *, output: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, output: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def output(self) -> _builtins.str:
-        
-        ...
-    
-
+    def output(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class MaintenanceRedeployStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, is_customer_initiated_maintenance_allowed: Optional[_builtins.bool] = ..., last_operation_message: Optional[_builtins.str] = ..., last_operation_result_code: Optional[_builtins.str] = ..., maintenance_window_end_time: Optional[_builtins.str] = ..., maintenance_window_start_time: Optional[_builtins.str] = ..., pre_maintenance_window_end_time: Optional[_builtins.str] = ..., pre_maintenance_window_start_time: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        is_customer_initiated_maintenance_allowed: Optional[_builtins.bool] = ...,
+        last_operation_message: Optional[_builtins.str] = ...,
+        last_operation_result_code: Optional[_builtins.str] = ...,
+        maintenance_window_end_time: Optional[_builtins.str] = ...,
+        maintenance_window_start_time: Optional[_builtins.str] = ...,
+        pre_maintenance_window_end_time: Optional[_builtins.str] = ...,
+        pre_maintenance_window_start_time: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="isCustomerInitiatedMaintenanceAllowed")
-    def is_customer_initiated_maintenance_allowed(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def is_customer_initiated_maintenance_allowed(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="lastOperationMessage")
-    def last_operation_message(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def last_operation_message(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastOperationResultCode")
-    def last_operation_result_code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def last_operation_result_code(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindowEndTime")
-    def maintenance_window_end_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def maintenance_window_end_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="maintenanceWindowStartTime")
-    def maintenance_window_start_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def maintenance_window_start_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="preMaintenanceWindowEndTime")
-    def pre_maintenance_window_end_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def pre_maintenance_window_end_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="preMaintenanceWindowStartTime")
-    def pre_maintenance_window_start_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def pre_maintenance_window_start_time(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ManagedDiskParametersResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., id: Optional[_builtins.str] = ..., security_profile: Optional[outputs.VMDiskSecurityProfileResponse] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        id: Optional[_builtins.str] = ...,
+        security_profile: Optional[outputs.VMDiskSecurityProfileResponse] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
-    def security_profile(self) -> Optional[outputs.VMDiskSecurityProfileResponse]:
-        
-        ...
-    
+    def security_profile(self) -> Optional[outputs.VMDiskSecurityProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class NetworkInterfaceReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, delete_option: Optional[_builtins.str] = ..., id: Optional[_builtins.str] = ..., primary: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        delete_option: Optional[_builtins.str] = ...,
+        id: Optional[_builtins.str] = ...,
+        primary: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def primary(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def primary(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class NetworkProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, network_api_version: Optional[_builtins.str] = ..., network_interface_configurations: Optional[Sequence[outputs.VirtualMachineNetworkInterfaceConfigurationResponse]] = ..., network_interfaces: Optional[Sequence[outputs.NetworkInterfaceReferenceResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        network_api_version: Optional[_builtins.str] = ...,
+        network_interface_configurations: Optional[
+            Sequence[outputs.VirtualMachineNetworkInterfaceConfigurationResponse]
+        ] = ...,
+        network_interfaces: Optional[
+            Sequence[outputs.NetworkInterfaceReferenceResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="networkApiVersion")
-    def network_api_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def network_api_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceConfigurations")
-    def network_interface_configurations(self) -> Optional[Sequence[outputs.VirtualMachineNetworkInterfaceConfigurationResponse]]:
-        
-        ...
-    
+    def network_interface_configurations(
+        self,
+    ) -> Optional[
+        Sequence[outputs.VirtualMachineNetworkInterfaceConfigurationResponse]
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaces")
-    def network_interfaces(self) -> Optional[Sequence[outputs.NetworkInterfaceReferenceResponse]]:
-        
-        ...
-    
-
+    def network_interfaces(
+        self,
+    ) -> Optional[Sequence[outputs.NetworkInterfaceReferenceResponse]]: ...
 
 @pulumi.output_type
 class OSDiskImageEncryptionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set_id: Optional[_builtins.str] = ..., security_profile: Optional[outputs.OSDiskImageSecurityProfileResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set_id: Optional[_builtins.str] = ...,
+        security_profile: Optional[outputs.OSDiskImageSecurityProfileResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSetId")
-    def disk_encryption_set_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def disk_encryption_set_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
-    def security_profile(self) -> Optional[outputs.OSDiskImageSecurityProfileResponse]:
-        
-        ...
-    
-
+    def security_profile(
+        self,
+    ) -> Optional[outputs.OSDiskImageSecurityProfileResponse]: ...
 
 @pulumi.output_type
 class OSDiskImageSecurityProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, confidential_vm_encryption_type: Optional[_builtins.str] = ..., secure_vm_disk_encryption_set_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        confidential_vm_encryption_type: Optional[_builtins.str] = ...,
+        secure_vm_disk_encryption_set_id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="confidentialVMEncryptionType")
-    def confidential_vm_encryption_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def confidential_vm_encryption_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="secureVMDiskEncryptionSetId")
-    def secure_vm_disk_encryption_set_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def secure_vm_disk_encryption_set_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class OSDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, create_option: _builtins.str, caching: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., diff_disk_settings: Optional[outputs.DiffDiskSettingsResponse] = ..., disk_size_gb: Optional[_builtins.int] = ..., encryption_settings: Optional[outputs.DiskEncryptionSettingsResponse] = ..., image: Optional[outputs.VirtualHardDiskResponse] = ..., managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ..., name: Optional[_builtins.str] = ..., os_type: Optional[_builtins.str] = ..., vhd: Optional[outputs.VirtualHardDiskResponse] = ..., write_accelerator_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        create_option: _builtins.str,
+        caching: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        diff_disk_settings: Optional[outputs.DiffDiskSettingsResponse] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        encryption_settings: Optional[outputs.DiskEncryptionSettingsResponse] = ...,
+        image: Optional[outputs.VirtualHardDiskResponse] = ...,
+        managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...,
+        name: Optional[_builtins.str] = ...,
+        os_type: Optional[_builtins.str] = ...,
+        vhd: Optional[outputs.VirtualHardDiskResponse] = ...,
+        write_accelerator_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createOption")
-    def create_option(self) -> _builtins.str:
-        
-        ...
-    
+    def create_option(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diffDiskSettings")
-    def diff_disk_settings(self) -> Optional[outputs.DiffDiskSettingsResponse]:
-        
-        ...
-    
+    def diff_disk_settings(self) -> Optional[outputs.DiffDiskSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
-    def encryption_settings(self) -> Optional[outputs.DiskEncryptionSettingsResponse]:
-        
-        ...
-    
+    def encryption_settings(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def image(self) -> Optional[outputs.VirtualHardDiskResponse]:
-        
-        ...
-    
+    def image(self) -> Optional[outputs.VirtualHardDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]:
-        
-        ...
-    
+    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="osType")
-    def os_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def vhd(self) -> Optional[outputs.VirtualHardDiskResponse]:
-        
-        ...
-    
+    def vhd(self) -> Optional[outputs.VirtualHardDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def write_accelerator_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class OSImageNotificationProfileResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enable: Optional[_builtins.bool] = ..., not_before_timeout: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enable: Optional[_builtins.bool] = ...,
+        not_before_timeout: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enable(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="notBeforeTimeout")
-    def not_before_timeout(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def not_before_timeout(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class OSProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, admin_password: Optional[_builtins.str] = ..., admin_username: Optional[_builtins.str] = ..., allow_extension_operations: Optional[_builtins.bool] = ..., computer_name: Optional[_builtins.str] = ..., custom_data: Optional[_builtins.str] = ..., linux_configuration: Optional[outputs.LinuxConfigurationResponse] = ..., require_guest_provision_signal: Optional[_builtins.bool] = ..., secrets: Optional[Sequence[outputs.VaultSecretGroupResponse]] = ..., windows_configuration: Optional[outputs.WindowsConfigurationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        admin_password: Optional[_builtins.str] = ...,
+        admin_username: Optional[_builtins.str] = ...,
+        allow_extension_operations: Optional[_builtins.bool] = ...,
+        computer_name: Optional[_builtins.str] = ...,
+        custom_data: Optional[_builtins.str] = ...,
+        linux_configuration: Optional[outputs.LinuxConfigurationResponse] = ...,
+        require_guest_provision_signal: Optional[_builtins.bool] = ...,
+        secrets: Optional[Sequence[outputs.VaultSecretGroupResponse]] = ...,
+        windows_configuration: Optional[outputs.WindowsConfigurationResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="adminPassword")
-    def admin_password(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def admin_password(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="adminUsername")
-    def admin_username(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def admin_username(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="allowExtensionOperations")
-    def allow_extension_operations(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def allow_extension_operations(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="computerName")
-    def computer_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def computer_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="customData")
-    def custom_data(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def custom_data(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="linuxConfiguration")
-    def linux_configuration(self) -> Optional[outputs.LinuxConfigurationResponse]:
-        
-        ...
-    
+    def linux_configuration(self) -> Optional[outputs.LinuxConfigurationResponse]: ...
     @_builtins.property
     @pulumi.getter(name="requireGuestProvisionSignal")
-    def require_guest_provision_signal(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def require_guest_provision_signal(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def secrets(self) -> Optional[Sequence[outputs.VaultSecretGroupResponse]]:
-        
-        ...
-    
+    def secrets(self) -> Optional[Sequence[outputs.VaultSecretGroupResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="windowsConfiguration")
-    def windows_configuration(self) -> Optional[outputs.WindowsConfigurationResponse]:
-        
-        ...
-    
-
+    def windows_configuration(
+        self,
+    ) -> Optional[outputs.WindowsConfigurationResponse]: ...
 
 @pulumi.output_type
 class PatchSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, assessment_mode: Optional[_builtins.str] = ..., automatic_by_platform_settings: Optional[outputs.WindowsVMGuestPatchAutomaticByPlatformSettingsResponse] = ..., enable_hotpatching: Optional[_builtins.bool] = ..., patch_mode: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        assessment_mode: Optional[_builtins.str] = ...,
+        automatic_by_platform_settings: Optional[
+            outputs.WindowsVMGuestPatchAutomaticByPlatformSettingsResponse
+        ] = ...,
+        enable_hotpatching: Optional[_builtins.bool] = ...,
+        patch_mode: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assessmentMode")
-    def assessment_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def assessment_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="automaticByPlatformSettings")
-    def automatic_by_platform_settings(self) -> Optional[outputs.WindowsVMGuestPatchAutomaticByPlatformSettingsResponse]:
-        
-        ...
-    
+    def automatic_by_platform_settings(
+        self,
+    ) -> Optional[outputs.WindowsVMGuestPatchAutomaticByPlatformSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="enableHotpatching")
-    def enable_hotpatching(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_hotpatching(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="patchMode")
-    def patch_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def patch_mode(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class PlacementResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, exclude_zones: Optional[Sequence[_builtins.str]] = ..., include_zones: Optional[Sequence[_builtins.str]] = ..., zone_placement_policy: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        exclude_zones: Optional[Sequence[_builtins.str]] = ...,
+        include_zones: Optional[Sequence[_builtins.str]] = ...,
+        zone_placement_policy: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="excludeZones")
-    def exclude_zones(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def exclude_zones(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="includeZones")
-    def include_zones(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def include_zones(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="zonePlacementPolicy")
-    def zone_placement_policy(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def zone_placement_policy(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class PlanResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., product: Optional[_builtins.str] = ..., promotion_code: Optional[_builtins.str] = ..., publisher: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        product: Optional[_builtins.str] = ...,
+        promotion_code: Optional[_builtins.str] = ...,
+        publisher: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def product(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def product(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="promotionCode")
-    def promotion_code(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def promotion_code(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def publisher(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class PlatformAttributeResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, value: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, name: _builtins.str, value: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> _builtins.str:
-        
-        ...
-    
-
+    def value(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class PolicyViolationResponse(dict):
-    
-    def __init__(__self__, *, category: Optional[_builtins.str] = ..., details: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        category: Optional[_builtins.str] = ...,
+        details: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def category(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def category(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def details(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def details(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class PriorityMixPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, base_regular_priority_count: Optional[_builtins.int] = ..., regular_priority_percentage_above_base: Optional[_builtins.int] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        base_regular_priority_count: Optional[_builtins.int] = ...,
+        regular_priority_percentage_above_base: Optional[_builtins.int] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="baseRegularPriorityCount")
-    def base_regular_priority_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def base_regular_priority_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="regularPriorityPercentageAboveBase")
-    def regular_priority_percentage_above_base(self) -> Optional[_builtins.int]:
-        
-        ...
-    
-
+    def regular_priority_percentage_above_base(self) -> Optional[_builtins.int]: ...
 
 @pulumi.output_type
 class PrivateEndpointConnectionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, name: _builtins.str, private_endpoint: outputs.PrivateEndpointResponse, private_link_service_connection_state: outputs.PrivateLinkServiceConnectionStateResponse, provisioning_state: _builtins.str, system_data: outputs.SystemDataResponse, type: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        name: _builtins.str,
+        private_endpoint: outputs.PrivateEndpointResponse,
+        private_link_service_connection_state: outputs.PrivateLinkServiceConnectionStateResponse,
+        provisioning_state: _builtins.str,
+        system_data: outputs.SystemDataResponse,
+        type: _builtins.str,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="privateEndpoint")
-    def private_endpoint(self) -> outputs.PrivateEndpointResponse:
-        
-        ...
-    
+    def private_endpoint(self) -> outputs.PrivateEndpointResponse: ...
     @_builtins.property
     @pulumi.getter(name="privateLinkServiceConnectionState")
-    def private_link_service_connection_state(self) -> outputs.PrivateLinkServiceConnectionStateResponse:
-        
-        ...
-    
+    def private_link_service_connection_state(
+        self,
+    ) -> outputs.PrivateLinkServiceConnectionStateResponse: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="systemData")
-    def system_data(self) -> outputs.SystemDataResponse:
-        
-        ...
-    
+    def system_data(self) -> outputs.SystemDataResponse: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> _builtins.str:
-        
-        ...
-    
-
+    def type(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class PrivateEndpointResponse(dict):
-    
-    def __init__(__self__, *, id: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
-
+    def id(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class PrivateLinkServiceConnectionStateResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, actions_required: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        actions_required: Optional[_builtins.str] = ...,
+        description: Optional[_builtins.str] = ...,
+        status: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="actionsRequired")
-    def actions_required(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def actions_required(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def description(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def status(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class PropertyUpdatesInProgressResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, target_tier: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(__self__, *, target_tier: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter(name="targetTier")
-    def target_tier(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def target_tier(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ProximityPlacementGroupPropertiesIntentResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, vm_sizes: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, vm_sizes: Optional[Sequence[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="vmSizes")
-    def vm_sizes(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def vm_sizes(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class ProxyAgentSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ..., imds: Optional[outputs.HostEndpointSettingsResponse] = ..., key_incarnation_id: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ..., wire_server: Optional[outputs.HostEndpointSettingsResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[_builtins.bool] = ...,
+        imds: Optional[outputs.HostEndpointSettingsResponse] = ...,
+        key_incarnation_id: Optional[_builtins.int] = ...,
+        mode: Optional[_builtins.str] = ...,
+        wire_server: Optional[outputs.HostEndpointSettingsResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def imds(self) -> Optional[outputs.HostEndpointSettingsResponse]:
-        
-        ...
-    
+    def imds(self) -> Optional[outputs.HostEndpointSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="keyIncarnationId")
-    def key_incarnation_id(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def key_incarnation_id(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="wireServer")
-    def wire_server(self) -> Optional[outputs.HostEndpointSettingsResponse]:
-        
-        ...
-    
-
+    def wire_server(self) -> Optional[outputs.HostEndpointSettingsResponse]: ...
 
 @pulumi.output_type
 class PublicIPAddressSkuResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., tier: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        tier: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tier(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def tier(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class RecommendedMachineConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, memory: Optional[outputs.ResourceRangeResponse] = ..., v_cpus: Optional[outputs.ResourceRangeResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        memory: Optional[outputs.ResourceRangeResponse] = ...,
+        v_cpus: Optional[outputs.ResourceRangeResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def memory(self) -> Optional[outputs.ResourceRangeResponse]:
-        
-        ...
-    
+    def memory(self) -> Optional[outputs.ResourceRangeResponse]: ...
     @_builtins.property
     @pulumi.getter(name="vCPUs")
-    def v_cpus(self) -> Optional[outputs.ResourceRangeResponse]:
-        
-        ...
-    
-
+    def v_cpus(self) -> Optional[outputs.ResourceRangeResponse]: ...
 
 @pulumi.output_type
 class RegionalReplicationStatusResponse(dict):
-    
-    def __init__(__self__, *, details: _builtins.str, progress: _builtins.int, region: _builtins.str, state: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        details: _builtins.str,
+        progress: _builtins.int,
+        region: _builtins.str,
+        state: _builtins.str,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def details(self) -> _builtins.str:
-        
-        ...
-    
+    def details(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def progress(self) -> _builtins.int:
-        
-        ...
-    
+    def progress(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> _builtins.str:
-        
-        ...
-    
+    def region(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def state(self) -> _builtins.str:
-        
-        ...
-    
-
+    def state(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class RegionalSharingStatusResponse(dict):
-    
-    def __init__(__self__, *, state: _builtins.str, details: Optional[_builtins.str] = ..., region: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        state: _builtins.str,
+        details: Optional[_builtins.str] = ...,
+        region: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def state(self) -> _builtins.str:
-        
-        ...
-    
+    def state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def details(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def details(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def region(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ReplicationStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, aggregated_state: _builtins.str, summary: Sequence[outputs.RegionalReplicationStatusResponse]) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        aggregated_state: _builtins.str,
+        summary: Sequence[outputs.RegionalReplicationStatusResponse],
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="aggregatedState")
-    def aggregated_state(self) -> _builtins.str:
-        
-        ...
-    
+    def aggregated_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def summary(self) -> Sequence[outputs.RegionalReplicationStatusResponse]:
-        
-        ...
-    
-
+    def summary(self) -> Sequence[outputs.RegionalReplicationStatusResponse]: ...
 
 @pulumi.output_type
 class ResiliencyPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, automatic_zone_rebalancing_policy: Optional[outputs.AutomaticZoneRebalancingPolicyResponse] = ..., resilient_vm_creation_policy: Optional[outputs.ResilientVMCreationPolicyResponse] = ..., resilient_vm_deletion_policy: Optional[outputs.ResilientVMDeletionPolicyResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        automatic_zone_rebalancing_policy: Optional[
+            outputs.AutomaticZoneRebalancingPolicyResponse
+        ] = ...,
+        resilient_vm_creation_policy: Optional[
+            outputs.ResilientVMCreationPolicyResponse
+        ] = ...,
+        resilient_vm_deletion_policy: Optional[
+            outputs.ResilientVMDeletionPolicyResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="automaticZoneRebalancingPolicy")
-    def automatic_zone_rebalancing_policy(self) -> Optional[outputs.AutomaticZoneRebalancingPolicyResponse]:
-        
-        ...
-    
+    def automatic_zone_rebalancing_policy(
+        self,
+    ) -> Optional[outputs.AutomaticZoneRebalancingPolicyResponse]: ...
     @_builtins.property
     @pulumi.getter(name="resilientVMCreationPolicy")
-    def resilient_vm_creation_policy(self) -> Optional[outputs.ResilientVMCreationPolicyResponse]:
-        
-        ...
-    
+    def resilient_vm_creation_policy(
+        self,
+    ) -> Optional[outputs.ResilientVMCreationPolicyResponse]: ...
     @_builtins.property
     @pulumi.getter(name="resilientVMDeletionPolicy")
-    def resilient_vm_deletion_policy(self) -> Optional[outputs.ResilientVMDeletionPolicyResponse]:
-        
-        ...
-    
-
+    def resilient_vm_deletion_policy(
+        self,
+    ) -> Optional[outputs.ResilientVMDeletionPolicyResponse]: ...
 
 @pulumi.output_type
 class ResilientVMCreationPolicyResponse(dict):
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class ResilientVMDeletionPolicyResponse(dict):
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class ResourceRangeResponse(dict):
-    
-    def __init__(__self__, *, max: Optional[_builtins.int] = ..., min: Optional[_builtins.int] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        max: Optional[_builtins.int] = ...,
+        min: Optional[_builtins.int] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def max(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def max(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def min(self) -> Optional[_builtins.int]:
-        
-        ...
-    
-
+    def min(self) -> Optional[_builtins.int]: ...
 
 @pulumi.output_type
 class ResourceSharingProfileResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, subscription_ids: Optional[Sequence[outputs.SubResourceResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        subscription_ids: Optional[Sequence[outputs.SubResourceResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="subscriptionIds")
-    def subscription_ids(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
-
+    def subscription_ids(self) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
 
 @pulumi.output_type
 class RestorePointCollectionSourcePropertiesResponse(dict):
-    
-    def __init__(__self__, *, location: _builtins.str, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, location: _builtins.str, id: Optional[_builtins.str] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class RestorePointEncryptionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class RestorePointInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_restore_points: Optional[Sequence[outputs.DiskRestorePointInstanceViewResponse]] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_restore_points: Optional[
+            Sequence[outputs.DiskRestorePointInstanceViewResponse]
+        ] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskRestorePoints")
-    def disk_restore_points(self) -> Optional[Sequence[outputs.DiskRestorePointInstanceViewResponse]]:
-        
-        ...
-    
+    def disk_restore_points(
+        self,
+    ) -> Optional[Sequence[outputs.DiskRestorePointInstanceViewResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
-
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
 
 @pulumi.output_type
 class RestorePointResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, instance_view: outputs.RestorePointInstanceViewResponse, name: _builtins.str, provisioning_state: _builtins.str, system_data: outputs.SystemDataResponse, type: _builtins.str, consistency_mode: Optional[_builtins.str] = ..., exclude_disks: Optional[Sequence[outputs.ApiEntityReferenceResponse]] = ..., source_metadata: Optional[outputs.RestorePointSourceMetadataResponse] = ..., source_restore_point: Optional[outputs.ApiEntityReferenceResponse] = ..., time_created: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        instance_view: outputs.RestorePointInstanceViewResponse,
+        name: _builtins.str,
+        provisioning_state: _builtins.str,
+        system_data: outputs.SystemDataResponse,
+        type: _builtins.str,
+        consistency_mode: Optional[_builtins.str] = ...,
+        exclude_disks: Optional[Sequence[outputs.ApiEntityReferenceResponse]] = ...,
+        source_metadata: Optional[outputs.RestorePointSourceMetadataResponse] = ...,
+        source_restore_point: Optional[outputs.ApiEntityReferenceResponse] = ...,
+        time_created: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="instanceView")
-    def instance_view(self) -> outputs.RestorePointInstanceViewResponse:
-        
-        ...
-    
+    def instance_view(self) -> outputs.RestorePointInstanceViewResponse: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="systemData")
-    def system_data(self) -> outputs.SystemDataResponse:
-        
-        ...
-    
+    def system_data(self) -> outputs.SystemDataResponse: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> _builtins.str:
-        
-        ...
-    
+    def type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="consistencyMode")
-    def consistency_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def consistency_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="excludeDisks")
-    def exclude_disks(self) -> Optional[Sequence[outputs.ApiEntityReferenceResponse]]:
-        
-        ...
-    
+    def exclude_disks(
+        self,
+    ) -> Optional[Sequence[outputs.ApiEntityReferenceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="sourceMetadata")
-    def source_metadata(self) -> Optional[outputs.RestorePointSourceMetadataResponse]:
-        
-        ...
-    
+    def source_metadata(
+        self,
+    ) -> Optional[outputs.RestorePointSourceMetadataResponse]: ...
     @_builtins.property
     @pulumi.getter(name="sourceRestorePoint")
-    def source_restore_point(self) -> Optional[outputs.ApiEntityReferenceResponse]:
-        
-        ...
-    
+    def source_restore_point(self) -> Optional[outputs.ApiEntityReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="timeCreated")
-    def time_created(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def time_created(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class RestorePointSourceMetadataResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, diagnostics_profile: outputs.DiagnosticsProfileResponse, hardware_profile: outputs.HardwareProfileResponse, hyper_v_generation: _builtins.str, license_type: _builtins.str, location: _builtins.str, os_profile: outputs.OSProfileResponse, security_profile: outputs.SecurityProfileResponse, user_data: _builtins.str, vm_id: _builtins.str, storage_profile: Optional[outputs.RestorePointSourceVMStorageProfileResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        diagnostics_profile: outputs.DiagnosticsProfileResponse,
+        hardware_profile: outputs.HardwareProfileResponse,
+        hyper_v_generation: _builtins.str,
+        license_type: _builtins.str,
+        location: _builtins.str,
+        os_profile: outputs.OSProfileResponse,
+        security_profile: outputs.SecurityProfileResponse,
+        user_data: _builtins.str,
+        vm_id: _builtins.str,
+        storage_profile: Optional[
+            outputs.RestorePointSourceVMStorageProfileResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diagnosticsProfile")
-    def diagnostics_profile(self) -> outputs.DiagnosticsProfileResponse:
-        
-        ...
-    
+    def diagnostics_profile(self) -> outputs.DiagnosticsProfileResponse: ...
     @_builtins.property
     @pulumi.getter(name="hardwareProfile")
-    def hardware_profile(self) -> outputs.HardwareProfileResponse:
-        
-        ...
-    
+    def hardware_profile(self) -> outputs.HardwareProfileResponse: ...
     @_builtins.property
     @pulumi.getter(name="hyperVGeneration")
-    def hyper_v_generation(self) -> _builtins.str:
-        
-        ...
-    
+    def hyper_v_generation(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
-    def license_type(self) -> _builtins.str:
-        
-        ...
-    
+    def license_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
-    def os_profile(self) -> outputs.OSProfileResponse:
-        
-        ...
-    
+    def os_profile(self) -> outputs.OSProfileResponse: ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
-    def security_profile(self) -> outputs.SecurityProfileResponse:
-        
-        ...
-    
+    def security_profile(self) -> outputs.SecurityProfileResponse: ...
     @_builtins.property
     @pulumi.getter(name="userData")
-    def user_data(self) -> _builtins.str:
-        
-        ...
-    
+    def user_data(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="vmId")
-    def vm_id(self) -> _builtins.str:
-        
-        ...
-    
+    def vm_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
-    def storage_profile(self) -> Optional[outputs.RestorePointSourceVMStorageProfileResponse]:
-        
-        ...
-    
-
+    def storage_profile(
+        self,
+    ) -> Optional[outputs.RestorePointSourceVMStorageProfileResponse]: ...
 
 @pulumi.output_type
 class RestorePointSourceVMDataDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, caching: _builtins.str, disk_size_gb: _builtins.int, lun: _builtins.int, name: _builtins.str, write_accelerator_enabled: _builtins.bool, disk_restore_point: Optional[outputs.DiskRestorePointAttributesResponse] = ..., managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        caching: _builtins.str,
+        disk_size_gb: _builtins.int,
+        lun: _builtins.int,
+        name: _builtins.str,
+        write_accelerator_enabled: _builtins.bool,
+        disk_restore_point: Optional[outputs.DiskRestorePointAttributesResponse] = ...,
+        managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> _builtins.str:
-        
-        ...
-    
+    def caching(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> _builtins.int:
-        
-        ...
-    
+    def disk_size_gb(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> _builtins.bool:
-        
-        ...
-    
+    def write_accelerator_enabled(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="diskRestorePoint")
-    def disk_restore_point(self) -> Optional[outputs.DiskRestorePointAttributesResponse]:
-        
-        ...
-    
+    def disk_restore_point(
+        self,
+    ) -> Optional[outputs.DiskRestorePointAttributesResponse]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]:
-        
-        ...
-    
-
+    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]: ...
 
 @pulumi.output_type
 class RestorePointSourceVMOSDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, caching: _builtins.str, disk_size_gb: _builtins.int, encryption_settings: outputs.DiskEncryptionSettingsResponse, name: _builtins.str, os_type: _builtins.str, write_accelerator_enabled: _builtins.bool, disk_restore_point: Optional[outputs.DiskRestorePointAttributesResponse] = ..., managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        caching: _builtins.str,
+        disk_size_gb: _builtins.int,
+        encryption_settings: outputs.DiskEncryptionSettingsResponse,
+        name: _builtins.str,
+        os_type: _builtins.str,
+        write_accelerator_enabled: _builtins.bool,
+        disk_restore_point: Optional[outputs.DiskRestorePointAttributesResponse] = ...,
+        managed_disk: Optional[outputs.ManagedDiskParametersResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> _builtins.str:
-        
-        ...
-    
+    def caching(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> _builtins.int:
-        
-        ...
-    
+    def disk_size_gb(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter(name="encryptionSettings")
-    def encryption_settings(self) -> outputs.DiskEncryptionSettingsResponse:
-        
-        ...
-    
+    def encryption_settings(self) -> outputs.DiskEncryptionSettingsResponse: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="osType")
-    def os_type(self) -> _builtins.str:
-        
-        ...
-    
+    def os_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> _builtins.bool:
-        
-        ...
-    
+    def write_accelerator_enabled(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="diskRestorePoint")
-    def disk_restore_point(self) -> Optional[outputs.DiskRestorePointAttributesResponse]:
-        
-        ...
-    
+    def disk_restore_point(
+        self,
+    ) -> Optional[outputs.DiskRestorePointAttributesResponse]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]:
-        
-        ...
-    
-
+    def managed_disk(self) -> Optional[outputs.ManagedDiskParametersResponse]: ...
 
 @pulumi.output_type
 class RestorePointSourceVMStorageProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_controller_type: _builtins.str, data_disks: Optional[Sequence[outputs.RestorePointSourceVMDataDiskResponse]] = ..., os_disk: Optional[outputs.RestorePointSourceVMOSDiskResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_controller_type: _builtins.str,
+        data_disks: Optional[
+            Sequence[outputs.RestorePointSourceVMDataDiskResponse]
+        ] = ...,
+        os_disk: Optional[outputs.RestorePointSourceVMOSDiskResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskControllerType")
-    def disk_controller_type(self) -> _builtins.str:
-        
-        ...
-    
+    def disk_controller_type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="dataDisks")
-    def data_disks(self) -> Optional[Sequence[outputs.RestorePointSourceVMDataDiskResponse]]:
-        
-        ...
-    
+    def data_disks(
+        self,
+    ) -> Optional[Sequence[outputs.RestorePointSourceVMDataDiskResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
-    def os_disk(self) -> Optional[outputs.RestorePointSourceVMOSDiskResponse]:
-        
-        ...
-    
-
+    def os_disk(self) -> Optional[outputs.RestorePointSourceVMOSDiskResponse]: ...
 
 @pulumi.output_type
 class RollingUpgradePolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enable_cross_zone_upgrade: Optional[_builtins.bool] = ..., max_batch_instance_percent: Optional[_builtins.int] = ..., max_surge: Optional[_builtins.bool] = ..., max_unhealthy_instance_percent: Optional[_builtins.int] = ..., max_unhealthy_upgraded_instance_percent: Optional[_builtins.int] = ..., pause_time_between_batches: Optional[_builtins.str] = ..., prioritize_unhealthy_instances: Optional[_builtins.bool] = ..., rollback_failed_instances_on_policy_breach: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enable_cross_zone_upgrade: Optional[_builtins.bool] = ...,
+        max_batch_instance_percent: Optional[_builtins.int] = ...,
+        max_surge: Optional[_builtins.bool] = ...,
+        max_unhealthy_instance_percent: Optional[_builtins.int] = ...,
+        max_unhealthy_upgraded_instance_percent: Optional[_builtins.int] = ...,
+        pause_time_between_batches: Optional[_builtins.str] = ...,
+        prioritize_unhealthy_instances: Optional[_builtins.bool] = ...,
+        rollback_failed_instances_on_policy_breach: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="enableCrossZoneUpgrade")
-    def enable_cross_zone_upgrade(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_cross_zone_upgrade(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="maxBatchInstancePercent")
-    def max_batch_instance_percent(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def max_batch_instance_percent(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="maxSurge")
-    def max_surge(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def max_surge(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="maxUnhealthyInstancePercent")
-    def max_unhealthy_instance_percent(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def max_unhealthy_instance_percent(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="maxUnhealthyUpgradedInstancePercent")
-    def max_unhealthy_upgraded_instance_percent(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def max_unhealthy_upgraded_instance_percent(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="pauseTimeBetweenBatches")
-    def pause_time_between_batches(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def pause_time_between_batches(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="prioritizeUnhealthyInstances")
-    def prioritize_unhealthy_instances(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def prioritize_unhealthy_instances(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="rollbackFailedInstancesOnPolicyBreach")
-    def rollback_failed_instances_on_policy_breach(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def rollback_failed_instances_on_policy_breach(
+        self,
+    ) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class RunCommandInputParameterResponse(dict):
-    
-    def __init__(__self__, *, name: _builtins.str, value: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, name: _builtins.str, value: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> _builtins.str:
-        
-        ...
-    
-
+    def value(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class RunCommandManagedIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, client_id: Optional[_builtins.str] = ..., object_id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        client_id: Optional[_builtins.str] = ...,
+        object_id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="clientId")
-    def client_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def client_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="objectId")
-    def object_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def object_id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ScaleInPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, force_deletion: Optional[_builtins.bool] = ..., prioritize_unhealthy_vms: Optional[_builtins.bool] = ..., rules: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        force_deletion: Optional[_builtins.bool] = ...,
+        prioritize_unhealthy_vms: Optional[_builtins.bool] = ...,
+        rules: Optional[Sequence[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="forceDeletion")
-    def force_deletion(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def force_deletion(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="prioritizeUnhealthyVMs")
-    def prioritize_unhealthy_vms(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def prioritize_unhealthy_vms(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def rules(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def rules(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class ScheduledEventsAdditionalPublishingTargetsResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, event_grid_and_resource_graph: Optional[outputs.EventGridAndResourceGraphResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        event_grid_and_resource_graph: Optional[
+            outputs.EventGridAndResourceGraphResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="eventGridAndResourceGraph")
-    def event_grid_and_resource_graph(self) -> Optional[outputs.EventGridAndResourceGraphResponse]:
-        
-        ...
-    
-
+    def event_grid_and_resource_graph(
+        self,
+    ) -> Optional[outputs.EventGridAndResourceGraphResponse]: ...
 
 @pulumi.output_type
 class ScheduledEventsPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, scheduled_events_additional_publishing_targets: Optional[outputs.ScheduledEventsAdditionalPublishingTargetsResponse] = ..., user_initiated_reboot: Optional[outputs.UserInitiatedRebootResponse] = ..., user_initiated_redeploy: Optional[outputs.UserInitiatedRedeployResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        scheduled_events_additional_publishing_targets: Optional[
+            outputs.ScheduledEventsAdditionalPublishingTargetsResponse
+        ] = ...,
+        user_initiated_reboot: Optional[outputs.UserInitiatedRebootResponse] = ...,
+        user_initiated_redeploy: Optional[outputs.UserInitiatedRedeployResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="scheduledEventsAdditionalPublishingTargets")
-    def scheduled_events_additional_publishing_targets(self) -> Optional[outputs.ScheduledEventsAdditionalPublishingTargetsResponse]:
-        
-        ...
-    
+    def scheduled_events_additional_publishing_targets(
+        self,
+    ) -> Optional[outputs.ScheduledEventsAdditionalPublishingTargetsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="userInitiatedReboot")
-    def user_initiated_reboot(self) -> Optional[outputs.UserInitiatedRebootResponse]:
-        
-        ...
-    
+    def user_initiated_reboot(
+        self,
+    ) -> Optional[outputs.UserInitiatedRebootResponse]: ...
     @_builtins.property
     @pulumi.getter(name="userInitiatedRedeploy")
-    def user_initiated_redeploy(self) -> Optional[outputs.UserInitiatedRedeployResponse]:
-        
-        ...
-    
-
+    def user_initiated_redeploy(
+        self,
+    ) -> Optional[outputs.UserInitiatedRedeployResponse]: ...
 
 @pulumi.output_type
 class ScheduledEventsProfileResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, os_image_notification_profile: Optional[outputs.OSImageNotificationProfileResponse] = ..., terminate_notification_profile: Optional[outputs.TerminateNotificationProfileResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        os_image_notification_profile: Optional[
+            outputs.OSImageNotificationProfileResponse
+        ] = ...,
+        terminate_notification_profile: Optional[
+            outputs.TerminateNotificationProfileResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="osImageNotificationProfile")
-    def os_image_notification_profile(self) -> Optional[outputs.OSImageNotificationProfileResponse]:
-        
-        ...
-    
+    def os_image_notification_profile(
+        self,
+    ) -> Optional[outputs.OSImageNotificationProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="terminateNotificationProfile")
-    def terminate_notification_profile(self) -> Optional[outputs.TerminateNotificationProfileResponse]:
-        
-        ...
-    
-
+    def terminate_notification_profile(
+        self,
+    ) -> Optional[outputs.TerminateNotificationProfileResponse]: ...
 
 @pulumi.output_type
 class ScriptSourceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, script_link: _builtins.str, parameters: Optional[Sequence[outputs.GalleryScriptParameterResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        script_link: _builtins.str,
+        parameters: Optional[Sequence[outputs.GalleryScriptParameterResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="scriptLink")
-    def script_link(self) -> _builtins.str:
-        
-        ...
-    
+    def script_link(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def parameters(self) -> Optional[Sequence[outputs.GalleryScriptParameterResponse]]:
-        
-        ...
-    
-
+    def parameters(
+        self,
+    ) -> Optional[Sequence[outputs.GalleryScriptParameterResponse]]: ...
 
 @pulumi.output_type
 class SecurityPostureReferenceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, exclude_extensions: Optional[Sequence[_builtins.str]] = ..., is_overridable: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        exclude_extensions: Optional[Sequence[_builtins.str]] = ...,
+        is_overridable: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="excludeExtensions")
-    def exclude_extensions(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def exclude_extensions(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="isOverridable")
-    def is_overridable(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def is_overridable(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class SecurityProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, encryption_at_host: Optional[_builtins.bool] = ..., encryption_identity: Optional[outputs.EncryptionIdentityResponse] = ..., proxy_agent_settings: Optional[outputs.ProxyAgentSettingsResponse] = ..., security_type: Optional[_builtins.str] = ..., uefi_settings: Optional[outputs.UefiSettingsResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        encryption_at_host: Optional[_builtins.bool] = ...,
+        encryption_identity: Optional[outputs.EncryptionIdentityResponse] = ...,
+        proxy_agent_settings: Optional[outputs.ProxyAgentSettingsResponse] = ...,
+        security_type: Optional[_builtins.str] = ...,
+        uefi_settings: Optional[outputs.UefiSettingsResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="encryptionAtHost")
-    def encryption_at_host(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def encryption_at_host(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="encryptionIdentity")
-    def encryption_identity(self) -> Optional[outputs.EncryptionIdentityResponse]:
-        
-        ...
-    
+    def encryption_identity(self) -> Optional[outputs.EncryptionIdentityResponse]: ...
     @_builtins.property
     @pulumi.getter(name="proxyAgentSettings")
-    def proxy_agent_settings(self) -> Optional[outputs.ProxyAgentSettingsResponse]:
-        
-        ...
-    
+    def proxy_agent_settings(self) -> Optional[outputs.ProxyAgentSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="securityType")
-    def security_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def security_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="uefiSettings")
-    def uefi_settings(self) -> Optional[outputs.UefiSettingsResponse]:
-        
-        ...
-    
-
+    def uefi_settings(self) -> Optional[outputs.UefiSettingsResponse]: ...
 
 @pulumi.output_type
 class ServiceArtifactReferenceResponse(dict):
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class ShareInfoElementResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, vm_uri: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(__self__, *, vm_uri: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter(name="vmUri")
-    def vm_uri(self) -> _builtins.str:
-        
-        ...
-    
-
+    def vm_uri(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class SharingProfileGroupResponse(dict):
-    
-    def __init__(__self__, *, ids: Optional[Sequence[_builtins.str]] = ..., type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        ids: Optional[Sequence[_builtins.str]] = ...,
+        type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def ids(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def ids(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SharingProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, groups: Sequence[outputs.SharingProfileGroupResponse], community_gallery_info: Optional[outputs.CommunityGalleryInfoResponse] = ..., permissions: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        groups: Sequence[outputs.SharingProfileGroupResponse],
+        community_gallery_info: Optional[outputs.CommunityGalleryInfoResponse] = ...,
+        permissions: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def groups(self) -> Sequence[outputs.SharingProfileGroupResponse]:
-        
-        ...
-    
+    def groups(self) -> Sequence[outputs.SharingProfileGroupResponse]: ...
     @_builtins.property
     @pulumi.getter(name="communityGalleryInfo")
-    def community_gallery_info(self) -> Optional[outputs.CommunityGalleryInfoResponse]:
-        
-        ...
-    
+    def community_gallery_info(
+        self,
+    ) -> Optional[outputs.CommunityGalleryInfoResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def permissions(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def permissions(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SharingStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, aggregated_state: _builtins.str, summary: Optional[Sequence[outputs.RegionalSharingStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        aggregated_state: _builtins.str,
+        summary: Optional[Sequence[outputs.RegionalSharingStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="aggregatedState")
-    def aggregated_state(self) -> _builtins.str:
-        
-        ...
-    
+    def aggregated_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def summary(self) -> Optional[Sequence[outputs.RegionalSharingStatusResponse]]:
-        
-        ...
-    
-
+    def summary(self) -> Optional[Sequence[outputs.RegionalSharingStatusResponse]]: ...
 
 @pulumi.output_type
 class SkuProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, allocation_strategy: Optional[_builtins.str] = ..., vm_sizes: Optional[Sequence[outputs.SkuProfileVMSizeResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        allocation_strategy: Optional[_builtins.str] = ...,
+        vm_sizes: Optional[Sequence[outputs.SkuProfileVMSizeResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="allocationStrategy")
-    def allocation_strategy(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def allocation_strategy(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="vmSizes")
-    def vm_sizes(self) -> Optional[Sequence[outputs.SkuProfileVMSizeResponse]]:
-        
-        ...
-    
-
+    def vm_sizes(self) -> Optional[Sequence[outputs.SkuProfileVMSizeResponse]]: ...
 
 @pulumi.output_type
 class SkuProfileVMSizeResponse(dict):
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., rank: Optional[_builtins.int] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        rank: Optional[_builtins.int] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def rank(self) -> Optional[_builtins.int]:
-        
-        ...
-    
-
+    def rank(self) -> Optional[_builtins.int]: ...
 
 @pulumi.output_type
 class SkuResponse(dict):
-    
-    def __init__(__self__, *, capacity: Optional[_builtins.float] = ..., name: Optional[_builtins.str] = ..., tier: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        capacity: Optional[_builtins.float] = ...,
+        name: Optional[_builtins.str] = ...,
+        tier: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def capacity(self) -> Optional[_builtins.float]:
-        
-        ...
-    
+    def capacity(self) -> Optional[_builtins.float]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tier(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def tier(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SnapshotSkuResponse(dict):
-    
-    def __init__(__self__, *, tier: _builtins.str, name: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, tier: _builtins.str, name: Optional[_builtins.str] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def tier(self) -> _builtins.str:
-        
-        ...
-    
+    def tier(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def name(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SoftDeletePolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, is_soft_delete_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, is_soft_delete_enabled: Optional[_builtins.bool] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="isSoftDeleteEnabled")
-    def is_soft_delete_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def is_soft_delete_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class SourceVaultResponse(dict):
-    
-    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SpotRestorePolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enabled: Optional[_builtins.bool] = ..., restore_timeout: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enabled: Optional[_builtins.bool] = ...,
+        restore_timeout: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="restoreTimeout")
-    def restore_timeout(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def restore_timeout(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SshConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, public_keys: Optional[Sequence[outputs.SshPublicKeyResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, public_keys: Optional[Sequence[outputs.SshPublicKeyResponse]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="publicKeys")
-    def public_keys(self) -> Optional[Sequence[outputs.SshPublicKeyResponse]]:
-        
-        ...
-    
-
+    def public_keys(self) -> Optional[Sequence[outputs.SshPublicKeyResponse]]: ...
 
 @pulumi.output_type
 class SshPublicKeyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, key_data: Optional[_builtins.str] = ..., path: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        key_data: Optional[_builtins.str] = ...,
+        path: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyData")
-    def key_data(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def key_data(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def path(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def path(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class StorageProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, align_regional_disks_to_vm_zone: Optional[_builtins.bool] = ..., data_disks: Optional[Sequence[outputs.DataDiskResponse]] = ..., disk_controller_type: Optional[_builtins.str] = ..., image_reference: Optional[outputs.ImageReferenceResponse] = ..., os_disk: Optional[outputs.OSDiskResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        align_regional_disks_to_vm_zone: Optional[_builtins.bool] = ...,
+        data_disks: Optional[Sequence[outputs.DataDiskResponse]] = ...,
+        disk_controller_type: Optional[_builtins.str] = ...,
+        image_reference: Optional[outputs.ImageReferenceResponse] = ...,
+        os_disk: Optional[outputs.OSDiskResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="alignRegionalDisksToVMZone")
-    def align_regional_disks_to_vm_zone(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def align_regional_disks_to_vm_zone(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="dataDisks")
-    def data_disks(self) -> Optional[Sequence[outputs.DataDiskResponse]]:
-        
-        ...
-    
+    def data_disks(self) -> Optional[Sequence[outputs.DataDiskResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="diskControllerType")
-    def disk_controller_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def disk_controller_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
-    def image_reference(self) -> Optional[outputs.ImageReferenceResponse]:
-        
-        ...
-    
+    def image_reference(self) -> Optional[outputs.ImageReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
-    def os_disk(self) -> Optional[outputs.OSDiskResponse]:
-        
-        ...
-    
-
+    def os_disk(self) -> Optional[outputs.OSDiskResponse]: ...
 
 @pulumi.output_type
 class SubResourceReadOnlyResponse(dict):
-    def __init__(__self__, *, id: _builtins.str) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: _builtins.str) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
-
+    def id(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class SubResourceResponse(dict):
-    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SubResourceWithColocationStatusResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, colocation_status: Optional[outputs.InstanceViewStatusResponse] = ..., id: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        colocation_status: Optional[outputs.InstanceViewStatusResponse] = ...,
+        id: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="colocationStatus")
-    def colocation_status(self) -> Optional[outputs.InstanceViewStatusResponse]:
-        
-        ...
-    
+    def colocation_status(self) -> Optional[outputs.InstanceViewStatusResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def id(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SupportedCapabilitiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, accelerated_network: Optional[_builtins.bool] = ..., architecture: Optional[_builtins.str] = ..., disk_controller_types: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        accelerated_network: Optional[_builtins.bool] = ...,
+        architecture: Optional[_builtins.str] = ...,
+        disk_controller_types: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="acceleratedNetwork")
-    def accelerated_network(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def accelerated_network(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def architecture(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def architecture(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskControllerTypes")
-    def disk_controller_types(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def disk_controller_types(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SystemDataResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        created_at: Optional[_builtins.str] = ...,
+        created_by: Optional[_builtins.str] = ...,
+        created_by_type: Optional[_builtins.str] = ...,
+        last_modified_at: Optional[_builtins.str] = ...,
+        last_modified_by: Optional[_builtins.str] = ...,
+        last_modified_by_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
-    def created_at(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def created_at(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="createdBy")
-    def created_by(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def created_by(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="createdByType")
-    def created_by_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def created_by_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedAt")
-    def last_modified_at(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def last_modified_at(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedBy")
-    def last_modified_by(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def last_modified_by(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedByType")
-    def last_modified_by_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def last_modified_by_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class SystemDataResponseV1(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, created_at: _builtins.str, last_modified_at: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, created_at: _builtins.str, last_modified_at: _builtins.str
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createdAt")
-    def created_at(self) -> _builtins.str:
-        
-        ...
-    
+    def created_at(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="lastModifiedAt")
-    def last_modified_at(self) -> _builtins.str:
-        
-        ...
-    
-
+    def last_modified_at(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class TargetRegionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, additional_replica_sets: Optional[Sequence[outputs.AdditionalReplicaSetResponse]] = ..., encryption: Optional[outputs.EncryptionImagesResponse] = ..., exclude_from_latest: Optional[_builtins.bool] = ..., regional_replica_count: Optional[_builtins.int] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        additional_replica_sets: Optional[
+            Sequence[outputs.AdditionalReplicaSetResponse]
+        ] = ...,
+        encryption: Optional[outputs.EncryptionImagesResponse] = ...,
+        exclude_from_latest: Optional[_builtins.bool] = ...,
+        regional_replica_count: Optional[_builtins.int] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="additionalReplicaSets")
-    def additional_replica_sets(self) -> Optional[Sequence[outputs.AdditionalReplicaSetResponse]]:
-        
-        ...
-    
+    def additional_replica_sets(
+        self,
+    ) -> Optional[Sequence[outputs.AdditionalReplicaSetResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def encryption(self) -> Optional[outputs.EncryptionImagesResponse]:
-        
-        ...
-    
+    def encryption(self) -> Optional[outputs.EncryptionImagesResponse]: ...
     @_builtins.property
     @pulumi.getter(name="excludeFromLatest")
-    def exclude_from_latest(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def exclude_from_latest(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="regionalReplicaCount")
-    def regional_replica_count(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def regional_replica_count(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class TerminateNotificationProfileResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enable: Optional[_builtins.bool] = ..., not_before_timeout: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enable: Optional[_builtins.bool] = ...,
+        not_before_timeout: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def enable(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="notBeforeTimeout")
-    def not_before_timeout(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def not_before_timeout(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class UefiKeyResponse(dict):
-    
-    def __init__(__self__, *, type: Optional[_builtins.str] = ..., value: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        type: Optional[_builtins.str] = ...,
+        value: Optional[Sequence[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def value(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def value(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class UefiKeySignaturesResponse(dict):
-    
-    def __init__(__self__, *, db: Optional[Sequence[outputs.UefiKeyResponse]] = ..., dbx: Optional[Sequence[outputs.UefiKeyResponse]] = ..., kek: Optional[Sequence[outputs.UefiKeyResponse]] = ..., pk: Optional[outputs.UefiKeyResponse] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        db: Optional[Sequence[outputs.UefiKeyResponse]] = ...,
+        dbx: Optional[Sequence[outputs.UefiKeyResponse]] = ...,
+        kek: Optional[Sequence[outputs.UefiKeyResponse]] = ...,
+        pk: Optional[outputs.UefiKeyResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def db(self) -> Optional[Sequence[outputs.UefiKeyResponse]]:
-        
-        ...
-    
+    def db(self) -> Optional[Sequence[outputs.UefiKeyResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def dbx(self) -> Optional[Sequence[outputs.UefiKeyResponse]]:
-        
-        ...
-    
+    def dbx(self) -> Optional[Sequence[outputs.UefiKeyResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def kek(self) -> Optional[Sequence[outputs.UefiKeyResponse]]:
-        
-        ...
-    
+    def kek(self) -> Optional[Sequence[outputs.UefiKeyResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def pk(self) -> Optional[outputs.UefiKeyResponse]:
-        
-        ...
-    
-
+    def pk(self) -> Optional[outputs.UefiKeyResponse]: ...
 
 @pulumi.output_type
 class UefiSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, secure_boot_enabled: Optional[_builtins.bool] = ..., v_tpm_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        secure_boot_enabled: Optional[_builtins.bool] = ...,
+        v_tpm_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="secureBootEnabled")
-    def secure_boot_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def secure_boot_enabled(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="vTpmEnabled")
-    def v_tpm_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def v_tpm_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class UpgradePolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, automatic_os_upgrade_policy: Optional[outputs.AutomaticOSUpgradePolicyResponse] = ..., mode: Optional[_builtins.str] = ..., rolling_upgrade_policy: Optional[outputs.RollingUpgradePolicyResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        automatic_os_upgrade_policy: Optional[
+            outputs.AutomaticOSUpgradePolicyResponse
+        ] = ...,
+        mode: Optional[_builtins.str] = ...,
+        rolling_upgrade_policy: Optional[outputs.RollingUpgradePolicyResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="automaticOSUpgradePolicy")
-    def automatic_os_upgrade_policy(self) -> Optional[outputs.AutomaticOSUpgradePolicyResponse]:
-        
-        ...
-    
+    def automatic_os_upgrade_policy(
+        self,
+    ) -> Optional[outputs.AutomaticOSUpgradePolicyResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="rollingUpgradePolicy")
-    def rolling_upgrade_policy(self) -> Optional[outputs.RollingUpgradePolicyResponse]:
-        
-        ...
-    
-
+    def rolling_upgrade_policy(
+        self,
+    ) -> Optional[outputs.RollingUpgradePolicyResponse]: ...
 
 @pulumi.output_type
 class UserArtifactManageResponse(dict):
-    def __init__(__self__, *, install: _builtins.str, remove: _builtins.str, update: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        install: _builtins.str,
+        remove: _builtins.str,
+        update: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def install(self) -> _builtins.str:
-        
-        ...
-    
+    def install(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def remove(self) -> _builtins.str:
-        
-        ...
-    
+    def remove(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def update(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def update(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class UserArtifactSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, config_file_name: Optional[_builtins.str] = ..., package_file_name: Optional[_builtins.str] = ..., script_behavior_after_reboot: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        config_file_name: Optional[_builtins.str] = ...,
+        package_file_name: Optional[_builtins.str] = ...,
+        script_behavior_after_reboot: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configFileName")
-    def config_file_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def config_file_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="packageFileName")
-    def package_file_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def package_file_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="scriptBehaviorAfterReboot")
-    def script_behavior_after_reboot(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def script_behavior_after_reboot(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class UserArtifactSourceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, media_link: _builtins.str, default_configuration_link: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        media_link: _builtins.str,
+        default_configuration_link: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="mediaLink")
-    def media_link(self) -> _builtins.str:
-        
-        ...
-    
+    def media_link(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="defaultConfigurationLink")
-    def default_configuration_link(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def default_configuration_link(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class UserAssignedIdentitiesValueResponse(dict):
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, client_id: _builtins.str, principal_id: _builtins.str) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, client_id: _builtins.str, principal_id: _builtins.str
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="clientId")
-    def client_id(self) -> _builtins.str:
-        
-        ...
-    
+    def client_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="principalId")
-    def principal_id(self) -> _builtins.str:
-        
-        ...
-    
-
+    def principal_id(self) -> _builtins.str: ...
 
 @pulumi.output_type
 class UserInitiatedRebootResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, automatically_approve: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, automatically_approve: Optional[_builtins.bool] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="automaticallyApprove")
-    def automatically_approve(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def automatically_approve(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class UserInitiatedRedeployResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, automatically_approve: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, automatically_approve: Optional[_builtins.bool] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="automaticallyApprove")
-    def automatically_approve(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def automatically_approve(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VMDiskSecurityProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., security_encryption_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        security_encryption_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter(name="securityEncryptionType")
-    def security_encryption_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def security_encryption_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VMGalleryApplicationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, package_reference_id: _builtins.str, configuration_reference: Optional[_builtins.str] = ..., enable_automatic_upgrade: Optional[_builtins.bool] = ..., order: Optional[_builtins.int] = ..., tags: Optional[_builtins.str] = ..., treat_failure_as_deployment_failure: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        package_reference_id: _builtins.str,
+        configuration_reference: Optional[_builtins.str] = ...,
+        enable_automatic_upgrade: Optional[_builtins.bool] = ...,
+        order: Optional[_builtins.int] = ...,
+        tags: Optional[_builtins.str] = ...,
+        treat_failure_as_deployment_failure: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="packageReferenceId")
-    def package_reference_id(self) -> _builtins.str:
-        
-        ...
-    
+    def package_reference_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="configurationReference")
-    def configuration_reference(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def configuration_reference(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
-    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def order(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def order(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def tags(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="treatFailureAsDeploymentFailure")
-    def treat_failure_as_deployment_failure(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def treat_failure_as_deployment_failure(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VMSizePropertiesResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, v_cpus_available: Optional[_builtins.int] = ..., v_cpus_per_core: Optional[_builtins.int] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        v_cpus_available: Optional[_builtins.int] = ...,
+        v_cpus_per_core: Optional[_builtins.int] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="vCPUsAvailable")
-    def v_cpus_available(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def v_cpus_available(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="vCPUsPerCore")
-    def v_cpus_per_core(self) -> Optional[_builtins.int]:
-        
-        ...
-    
-
+    def v_cpus_per_core(self) -> Optional[_builtins.int]: ...
 
 @pulumi.output_type
 class ValidationsProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, executed_validations: Optional[Sequence[outputs.ExecutedValidationResponse]] = ..., platform_attributes: Optional[Sequence[outputs.PlatformAttributeResponse]] = ..., validation_etag: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        executed_validations: Optional[
+            Sequence[outputs.ExecutedValidationResponse]
+        ] = ...,
+        platform_attributes: Optional[
+            Sequence[outputs.PlatformAttributeResponse]
+        ] = ...,
+        validation_etag: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="executedValidations")
-    def executed_validations(self) -> Optional[Sequence[outputs.ExecutedValidationResponse]]:
-        ...
-    
+    def executed_validations(
+        self,
+    ) -> Optional[Sequence[outputs.ExecutedValidationResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="platformAttributes")
-    def platform_attributes(self) -> Optional[Sequence[outputs.PlatformAttributeResponse]]:
-        
-        ...
-    
+    def platform_attributes(
+        self,
+    ) -> Optional[Sequence[outputs.PlatformAttributeResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="validationEtag")
-    def validation_etag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def validation_etag(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VaultCertificateResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, certificate_store: Optional[_builtins.str] = ..., certificate_url: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        certificate_store: Optional[_builtins.str] = ...,
+        certificate_url: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="certificateStore")
-    def certificate_store(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def certificate_store(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="certificateUrl")
-    def certificate_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def certificate_url(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VaultSecretGroupResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, source_vault: Optional[outputs.SubResourceResponse] = ..., vault_certificates: Optional[Sequence[outputs.VaultCertificateResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        source_vault: Optional[outputs.SubResourceResponse] = ...,
+        vault_certificates: Optional[Sequence[outputs.VaultCertificateResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="sourceVault")
-    def source_vault(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def source_vault(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="vaultCertificates")
-    def vault_certificates(self) -> Optional[Sequence[outputs.VaultCertificateResponse]]:
-        
-        ...
-    
-
+    def vault_certificates(
+        self,
+    ) -> Optional[Sequence[outputs.VaultCertificateResponse]]: ...
 
 @pulumi.output_type
 class VirtualHardDiskResponse(dict):
-    
-    def __init__(__self__, *, uri: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, uri: Optional[_builtins.str] = ...) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def uri(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineAgentInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, extension_handlers: Optional[Sequence[outputs.VirtualMachineExtensionHandlerInstanceViewResponse]] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., vm_agent_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        extension_handlers: Optional[
+            Sequence[outputs.VirtualMachineExtensionHandlerInstanceViewResponse]
+        ] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        vm_agent_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="extensionHandlers")
-    def extension_handlers(self) -> Optional[Sequence[outputs.VirtualMachineExtensionHandlerInstanceViewResponse]]:
-        
-        ...
-    
+    def extension_handlers(
+        self,
+    ) -> Optional[
+        Sequence[outputs.VirtualMachineExtensionHandlerInstanceViewResponse]
+    ]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="vmAgentVersion")
-    def vm_agent_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def vm_agent_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineExtensionHandlerInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, status: Optional[outputs.InstanceViewStatusResponse] = ..., type: Optional[_builtins.str] = ..., type_handler_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        status: Optional[outputs.InstanceViewStatusResponse] = ...,
+        type: Optional[_builtins.str] = ...,
+        type_handler_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> Optional[outputs.InstanceViewStatusResponse]:
-        
-        ...
-    
+    def status(self) -> Optional[outputs.InstanceViewStatusResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
-    def type_handler_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineExtensionInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: Optional[_builtins.str] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., substatuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., type: Optional[_builtins.str] = ..., type_handler_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: Optional[_builtins.str] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        substatuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        type: Optional[_builtins.str] = ...,
+        type_handler_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def substatuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def substatuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
-    def type_handler_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineExtensionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, location: _builtins.str, name: _builtins.str, provisioning_state: _builtins.str, system_data: outputs.SystemDataResponse, type: _builtins.str, auto_upgrade_minor_version: Optional[_builtins.bool] = ..., enable_automatic_upgrade: Optional[_builtins.bool] = ..., force_update_tag: Optional[_builtins.str] = ..., instance_view: Optional[outputs.VirtualMachineExtensionInstanceViewResponse] = ..., protected_settings: Optional[Any] = ..., protected_settings_from_key_vault: Optional[outputs.KeyVaultSecretReferenceResponse] = ..., provision_after_extensions: Optional[Sequence[_builtins.str]] = ..., publisher: Optional[_builtins.str] = ..., settings: Optional[Any] = ..., suppress_failures: Optional[_builtins.bool] = ..., tags: Optional[Mapping[str, _builtins.str]] = ..., type_handler_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        location: _builtins.str,
+        name: _builtins.str,
+        provisioning_state: _builtins.str,
+        system_data: outputs.SystemDataResponse,
+        type: _builtins.str,
+        auto_upgrade_minor_version: Optional[_builtins.bool] = ...,
+        enable_automatic_upgrade: Optional[_builtins.bool] = ...,
+        force_update_tag: Optional[_builtins.str] = ...,
+        instance_view: Optional[
+            outputs.VirtualMachineExtensionInstanceViewResponse
+        ] = ...,
+        protected_settings: Optional[Any] = ...,
+        protected_settings_from_key_vault: Optional[
+            outputs.KeyVaultSecretReferenceResponse
+        ] = ...,
+        provision_after_extensions: Optional[Sequence[_builtins.str]] = ...,
+        publisher: Optional[_builtins.str] = ...,
+        settings: Optional[Any] = ...,
+        suppress_failures: Optional[_builtins.bool] = ...,
+        tags: Optional[Mapping[str, _builtins.str]] = ...,
+        type_handler_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> _builtins.str:
-        
-        ...
-    
+    def location(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="systemData")
-    def system_data(self) -> outputs.SystemDataResponse:
-        
-        ...
-    
+    def system_data(self) -> outputs.SystemDataResponse: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> _builtins.str:
-        
-        ...
-    
+    def type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="autoUpgradeMinorVersion")
-    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
-    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
-    def force_update_tag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def force_update_tag(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="instanceView")
-    def instance_view(self) -> Optional[outputs.VirtualMachineExtensionInstanceViewResponse]:
-        
-        ...
-    
+    def instance_view(
+        self,
+    ) -> Optional[outputs.VirtualMachineExtensionInstanceViewResponse]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
-    def protected_settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def protected_settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettingsFromKeyVault")
-    def protected_settings_from_key_vault(self) -> Optional[outputs.KeyVaultSecretReferenceResponse]:
-        
-        ...
-    
+    def protected_settings_from_key_vault(
+        self,
+    ) -> Optional[outputs.KeyVaultSecretReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="provisionAfterExtensions")
-    def provision_after_extensions(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def provision_after_extensions(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def publisher(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter(name="suppressFailures")
-    def suppress_failures(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def suppress_failures(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
-        
-        ...
-    
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
-    def type_handler_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineHealthStatusResponse(dict):
-    
-    def __init__(__self__, *, status: outputs.InstanceViewStatusResponse) -> None:
-        
-        ...
-    
+    def __init__(__self__, *, status: outputs.InstanceViewStatusResponse) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def status(self) -> outputs.InstanceViewStatusResponse:
-        
-        ...
-    
-
+    def status(self) -> outputs.InstanceViewStatusResponse: ...
 
 @pulumi.output_type
 class VirtualMachineIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: Optional[_builtins.str] = ..., user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        principal_id: _builtins.str,
+        tenant_id: _builtins.str,
+        type: Optional[_builtins.str] = ...,
+        user_assigned_identities: Optional[
+            Mapping[str, outputs.UserAssignedIdentitiesValueResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="principalId")
-    def principal_id(self) -> _builtins.str:
-        
-        ...
-    
+    def principal_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> _builtins.str:
-        
-        ...
-    
+    def tenant_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
-    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]:
-        
-        ...
-    
-
+    def user_assigned_identities(
+        self,
+    ) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]: ...
 
 @pulumi.output_type
 class VirtualMachineInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, assigned_host: _builtins.str, is_vm_in_standby_pool: _builtins.bool, vm_health: outputs.VirtualMachineHealthStatusResponse, boot_diagnostics: Optional[outputs.BootDiagnosticsInstanceViewResponse] = ..., computer_name: Optional[_builtins.str] = ..., disks: Optional[Sequence[outputs.DiskInstanceViewResponse]] = ..., extensions: Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]] = ..., hyper_v_generation: Optional[_builtins.str] = ..., maintenance_redeploy_status: Optional[outputs.MaintenanceRedeployStatusResponse] = ..., os_name: Optional[_builtins.str] = ..., os_version: Optional[_builtins.str] = ..., patch_status: Optional[outputs.VirtualMachinePatchStatusResponse] = ..., platform_fault_domain: Optional[_builtins.int] = ..., platform_update_domain: Optional[_builtins.int] = ..., rdp_thumb_print: Optional[_builtins.str] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., vm_agent: Optional[outputs.VirtualMachineAgentInstanceViewResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        assigned_host: _builtins.str,
+        is_vm_in_standby_pool: _builtins.bool,
+        vm_health: outputs.VirtualMachineHealthStatusResponse,
+        boot_diagnostics: Optional[outputs.BootDiagnosticsInstanceViewResponse] = ...,
+        computer_name: Optional[_builtins.str] = ...,
+        disks: Optional[Sequence[outputs.DiskInstanceViewResponse]] = ...,
+        extensions: Optional[
+            Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]
+        ] = ...,
+        hyper_v_generation: Optional[_builtins.str] = ...,
+        maintenance_redeploy_status: Optional[
+            outputs.MaintenanceRedeployStatusResponse
+        ] = ...,
+        os_name: Optional[_builtins.str] = ...,
+        os_version: Optional[_builtins.str] = ...,
+        patch_status: Optional[outputs.VirtualMachinePatchStatusResponse] = ...,
+        platform_fault_domain: Optional[_builtins.int] = ...,
+        platform_update_domain: Optional[_builtins.int] = ...,
+        rdp_thumb_print: Optional[_builtins.str] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        vm_agent: Optional[outputs.VirtualMachineAgentInstanceViewResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assignedHost")
-    def assigned_host(self) -> _builtins.str:
-        
-        ...
-    
+    def assigned_host(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="isVMInStandbyPool")
-    def is_vm_in_standby_pool(self) -> _builtins.bool:
-        
-        ...
-    
+    def is_vm_in_standby_pool(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="vmHealth")
-    def vm_health(self) -> outputs.VirtualMachineHealthStatusResponse:
-        
-        ...
-    
+    def vm_health(self) -> outputs.VirtualMachineHealthStatusResponse: ...
     @_builtins.property
     @pulumi.getter(name="bootDiagnostics")
-    def boot_diagnostics(self) -> Optional[outputs.BootDiagnosticsInstanceViewResponse]:
-        
-        ...
-    
+    def boot_diagnostics(
+        self,
+    ) -> Optional[outputs.BootDiagnosticsInstanceViewResponse]: ...
     @_builtins.property
     @pulumi.getter(name="computerName")
-    def computer_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def computer_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def disks(self) -> Optional[Sequence[outputs.DiskInstanceViewResponse]]:
-        
-        ...
-    
+    def disks(self) -> Optional[Sequence[outputs.DiskInstanceViewResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def extensions(self) -> Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]]:
-        
-        ...
-    
+    def extensions(
+        self,
+    ) -> Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="hyperVGeneration")
-    def hyper_v_generation(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def hyper_v_generation(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="maintenanceRedeployStatus")
-    def maintenance_redeploy_status(self) -> Optional[outputs.MaintenanceRedeployStatusResponse]:
-        
-        ...
-    
+    def maintenance_redeploy_status(
+        self,
+    ) -> Optional[outputs.MaintenanceRedeployStatusResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osName")
-    def os_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
-    def os_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="patchStatus")
-    def patch_status(self) -> Optional[outputs.VirtualMachinePatchStatusResponse]:
-        
-        ...
-    
+    def patch_status(self) -> Optional[outputs.VirtualMachinePatchStatusResponse]: ...
     @_builtins.property
     @pulumi.getter(name="platformFaultDomain")
-    def platform_fault_domain(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def platform_fault_domain(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="platformUpdateDomain")
-    def platform_update_domain(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def platform_update_domain(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="rdpThumbPrint")
-    def rdp_thumb_print(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def rdp_thumb_print(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="vmAgent")
-    def vm_agent(self) -> Optional[outputs.VirtualMachineAgentInstanceViewResponse]:
-        
-        ...
-    
-
+    def vm_agent(self) -> Optional[outputs.VirtualMachineAgentInstanceViewResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineIpTagResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, ip_tag_type: Optional[_builtins.str] = ..., tag: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        ip_tag_type: Optional[_builtins.str] = ...,
+        tag: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ipTagType")
-    def ip_tag_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def ip_tag_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def tag(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineNetworkInterfaceConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, ip_configurations: Sequence[outputs.VirtualMachineNetworkInterfaceIPConfigurationResponse], name: _builtins.str, auxiliary_mode: Optional[_builtins.str] = ..., auxiliary_sku: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., disable_tcp_state_tracking: Optional[_builtins.bool] = ..., dns_settings: Optional[outputs.VirtualMachineNetworkInterfaceDnsSettingsConfigurationResponse] = ..., dscp_configuration: Optional[outputs.SubResourceResponse] = ..., enable_accelerated_networking: Optional[_builtins.bool] = ..., enable_fpga: Optional[_builtins.bool] = ..., enable_ip_forwarding: Optional[_builtins.bool] = ..., network_security_group: Optional[outputs.SubResourceResponse] = ..., primary: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        ip_configurations: Sequence[
+            outputs.VirtualMachineNetworkInterfaceIPConfigurationResponse
+        ],
+        name: _builtins.str,
+        auxiliary_mode: Optional[_builtins.str] = ...,
+        auxiliary_sku: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        disable_tcp_state_tracking: Optional[_builtins.bool] = ...,
+        dns_settings: Optional[
+            outputs.VirtualMachineNetworkInterfaceDnsSettingsConfigurationResponse
+        ] = ...,
+        dscp_configuration: Optional[outputs.SubResourceResponse] = ...,
+        enable_accelerated_networking: Optional[_builtins.bool] = ...,
+        enable_fpga: Optional[_builtins.bool] = ...,
+        enable_ip_forwarding: Optional[_builtins.bool] = ...,
+        network_security_group: Optional[outputs.SubResourceResponse] = ...,
+        primary: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
-    def ip_configurations(self) -> Sequence[outputs.VirtualMachineNetworkInterfaceIPConfigurationResponse]:
-        
-        ...
-    
+    def ip_configurations(
+        self,
+    ) -> Sequence[outputs.VirtualMachineNetworkInterfaceIPConfigurationResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="auxiliaryMode")
-    def auxiliary_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def auxiliary_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="auxiliarySku")
-    def auxiliary_sku(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def auxiliary_sku(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="disableTcpStateTracking")
-    def disable_tcp_state_tracking(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def disable_tcp_state_tracking(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
-    def dns_settings(self) -> Optional[outputs.VirtualMachineNetworkInterfaceDnsSettingsConfigurationResponse]:
-        
-        ...
-    
+    def dns_settings(
+        self,
+    ) -> Optional[
+        outputs.VirtualMachineNetworkInterfaceDnsSettingsConfigurationResponse
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="dscpConfiguration")
-    def dscp_configuration(self) -> Optional[outputs.SubResourceResponse]:
-        ...
-    
+    def dscp_configuration(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleratedNetworking")
-    def enable_accelerated_networking(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_accelerated_networking(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableFpga")
-    def enable_fpga(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_fpga(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableIPForwarding")
-    def enable_ip_forwarding(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_ip_forwarding(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
-    def network_security_group(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def network_security_group(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def primary(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def primary(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VirtualMachineNetworkInterfaceDnsSettingsConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, dns_servers: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, dns_servers: Optional[Sequence[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dnsServers")
-    def dns_servers(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def dns_servers(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class VirtualMachineNetworkInterfaceIPConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, application_gateway_backend_address_pools: Optional[Sequence[outputs.SubResourceResponse]] = ..., application_security_groups: Optional[Sequence[outputs.SubResourceResponse]] = ..., load_balancer_backend_address_pools: Optional[Sequence[outputs.SubResourceResponse]] = ..., primary: Optional[_builtins.bool] = ..., private_ip_address_version: Optional[_builtins.str] = ..., public_ip_address_configuration: Optional[outputs.VirtualMachinePublicIPAddressConfigurationResponse] = ..., subnet: Optional[outputs.SubResourceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        application_gateway_backend_address_pools: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        application_security_groups: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        load_balancer_backend_address_pools: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        primary: Optional[_builtins.bool] = ...,
+        private_ip_address_version: Optional[_builtins.str] = ...,
+        public_ip_address_configuration: Optional[
+            outputs.VirtualMachinePublicIPAddressConfigurationResponse
+        ] = ...,
+        subnet: Optional[outputs.SubResourceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="applicationGatewayBackendAddressPools")
-    def application_gateway_backend_address_pools(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def application_gateway_backend_address_pools(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="applicationSecurityGroups")
-    def application_security_groups(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def application_security_groups(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerBackendAddressPools")
-    def load_balancer_backend_address_pools(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def load_balancer_backend_address_pools(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def primary(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def primary(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="privateIPAddressVersion")
-    def private_ip_address_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def private_ip_address_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressConfiguration")
-    def public_ip_address_configuration(self) -> Optional[outputs.VirtualMachinePublicIPAddressConfigurationResponse]:
-        
-        ...
-    
+    def public_ip_address_configuration(
+        self,
+    ) -> Optional[outputs.VirtualMachinePublicIPAddressConfigurationResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def subnet(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
-
+    def subnet(self) -> Optional[outputs.SubResourceResponse]: ...
 
 @pulumi.output_type
 class VirtualMachinePatchStatusResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, configuration_statuses: Sequence[outputs.InstanceViewStatusResponse], available_patch_summary: Optional[outputs.AvailablePatchSummaryResponse] = ..., last_patch_installation_summary: Optional[outputs.LastPatchInstallationSummaryResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        configuration_statuses: Sequence[outputs.InstanceViewStatusResponse],
+        available_patch_summary: Optional[outputs.AvailablePatchSummaryResponse] = ...,
+        last_patch_installation_summary: Optional[
+            outputs.LastPatchInstallationSummaryResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configurationStatuses")
-    def configuration_statuses(self) -> Sequence[outputs.InstanceViewStatusResponse]:
-        
-        ...
-    
+    def configuration_statuses(
+        self,
+    ) -> Sequence[outputs.InstanceViewStatusResponse]: ...
     @_builtins.property
     @pulumi.getter(name="availablePatchSummary")
-    def available_patch_summary(self) -> Optional[outputs.AvailablePatchSummaryResponse]:
-        
-        ...
-    
+    def available_patch_summary(
+        self,
+    ) -> Optional[outputs.AvailablePatchSummaryResponse]: ...
     @_builtins.property
     @pulumi.getter(name="lastPatchInstallationSummary")
-    def last_patch_installation_summary(self) -> Optional[outputs.LastPatchInstallationSummaryResponse]:
-        
-        ...
-    
-
+    def last_patch_installation_summary(
+        self,
+    ) -> Optional[outputs.LastPatchInstallationSummaryResponse]: ...
 
 @pulumi.output_type
 class VirtualMachinePublicIPAddressConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, delete_option: Optional[_builtins.str] = ..., dns_settings: Optional[outputs.VirtualMachinePublicIPAddressDnsSettingsConfigurationResponse] = ..., idle_timeout_in_minutes: Optional[_builtins.int] = ..., ip_tags: Optional[Sequence[outputs.VirtualMachineIpTagResponse]] = ..., public_ip_address_version: Optional[_builtins.str] = ..., public_ip_allocation_method: Optional[_builtins.str] = ..., public_ip_prefix: Optional[outputs.SubResourceResponse] = ..., sku: Optional[outputs.PublicIPAddressSkuResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        delete_option: Optional[_builtins.str] = ...,
+        dns_settings: Optional[
+            outputs.VirtualMachinePublicIPAddressDnsSettingsConfigurationResponse
+        ] = ...,
+        idle_timeout_in_minutes: Optional[_builtins.int] = ...,
+        ip_tags: Optional[Sequence[outputs.VirtualMachineIpTagResponse]] = ...,
+        public_ip_address_version: Optional[_builtins.str] = ...,
+        public_ip_allocation_method: Optional[_builtins.str] = ...,
+        public_ip_prefix: Optional[outputs.SubResourceResponse] = ...,
+        sku: Optional[outputs.PublicIPAddressSkuResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
-    def dns_settings(self) -> Optional[outputs.VirtualMachinePublicIPAddressDnsSettingsConfigurationResponse]:
-        
-        ...
-    
+    def dns_settings(
+        self,
+    ) -> Optional[
+        outputs.VirtualMachinePublicIPAddressDnsSettingsConfigurationResponse
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutInMinutes")
-    def idle_timeout_in_minutes(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def idle_timeout_in_minutes(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="ipTags")
-    def ip_tags(self) -> Optional[Sequence[outputs.VirtualMachineIpTagResponse]]:
-        
-        ...
-    
+    def ip_tags(self) -> Optional[Sequence[outputs.VirtualMachineIpTagResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressVersion")
-    def public_ip_address_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def public_ip_address_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAllocationMethod")
-    def public_ip_allocation_method(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def public_ip_allocation_method(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPPrefix")
-    def public_ip_prefix(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def public_ip_prefix(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def sku(self) -> Optional[outputs.PublicIPAddressSkuResponse]:
-        
-        ...
-    
-
+    def sku(self) -> Optional[outputs.PublicIPAddressSkuResponse]: ...
 
 @pulumi.output_type
 class VirtualMachinePublicIPAddressDnsSettingsConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, domain_name_label: _builtins.str, domain_name_label_scope: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        domain_name_label: _builtins.str,
+        domain_name_label_scope: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabel")
-    def domain_name_label(self) -> _builtins.str:
-        
-        ...
-    
+    def domain_name_label(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabelScope")
-    def domain_name_label_scope(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def domain_name_label_scope(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineRunCommandInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, end_time: Optional[_builtins.str] = ..., error: Optional[_builtins.str] = ..., execution_message: Optional[_builtins.str] = ..., execution_state: Optional[_builtins.str] = ..., exit_code: Optional[_builtins.int] = ..., output: Optional[_builtins.str] = ..., start_time: Optional[_builtins.str] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        end_time: Optional[_builtins.str] = ...,
+        error: Optional[_builtins.str] = ...,
+        execution_message: Optional[_builtins.str] = ...,
+        execution_state: Optional[_builtins.str] = ...,
+        exit_code: Optional[_builtins.int] = ...,
+        output: Optional[_builtins.str] = ...,
+        start_time: Optional[_builtins.str] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="endTime")
-    def end_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def end_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def error(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def error(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="executionMessage")
-    def execution_message(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def execution_message(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="executionState")
-    def execution_state(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def execution_state(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="exitCode")
-    def exit_code(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def exit_code(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def output(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def output(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="startTime")
-    def start_time(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def start_time(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
-
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
 
 @pulumi.output_type
 class VirtualMachineRunCommandScriptSourceResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, command_id: Optional[_builtins.str] = ..., script: Optional[_builtins.str] = ..., script_uri: Optional[_builtins.str] = ..., script_uri_managed_identity: Optional[outputs.RunCommandManagedIdentityResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        command_id: Optional[_builtins.str] = ...,
+        script: Optional[_builtins.str] = ...,
+        script_uri: Optional[_builtins.str] = ...,
+        script_uri_managed_identity: Optional[
+            outputs.RunCommandManagedIdentityResponse
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="commandId")
-    def command_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def command_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def script(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def script(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="scriptUri")
-    def script_uri(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def script_uri(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="scriptUriManagedIdentity")
-    def script_uri_managed_identity(self) -> Optional[outputs.RunCommandManagedIdentityResponse]:
-        
-        ...
-    
-
+    def script_uri_managed_identity(
+        self,
+    ) -> Optional[outputs.RunCommandManagedIdentityResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetDataDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, create_option: _builtins.str, lun: _builtins.int, caching: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., disk_iops_read_write: Optional[_builtins.float] = ..., disk_m_bps_read_write: Optional[_builtins.float] = ..., disk_size_gb: Optional[_builtins.int] = ..., managed_disk: Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse] = ..., name: Optional[_builtins.str] = ..., write_accelerator_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        create_option: _builtins.str,
+        lun: _builtins.int,
+        caching: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        disk_iops_read_write: Optional[_builtins.float] = ...,
+        disk_m_bps_read_write: Optional[_builtins.float] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        managed_disk: Optional[
+            outputs.VirtualMachineScaleSetManagedDiskParametersResponse
+        ] = ...,
+        name: Optional[_builtins.str] = ...,
+        write_accelerator_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createOption")
-    def create_option(self) -> _builtins.str:
-        
-        ...
-    
+    def create_option(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def lun(self) -> _builtins.int:
-        
-        ...
-    
+    def lun(self) -> _builtins.int: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diskIOPSReadWrite")
-    def disk_iops_read_write(self) -> Optional[_builtins.float]:
-        
-        ...
-    
+    def disk_iops_read_write(self) -> Optional[_builtins.float]: ...
     @_builtins.property
     @pulumi.getter(name="diskMBpsReadWrite")
-    def disk_m_bps_read_write(self) -> Optional[_builtins.float]:
-        
-        ...
-    
+    def disk_m_bps_read_write(self) -> Optional[_builtins.float]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse]:
-        
-        ...
-    
+    def managed_disk(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def write_accelerator_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetExtensionProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, extensions: Optional[Sequence[outputs.VirtualMachineScaleSetExtensionResponse]] = ..., extensions_time_budget: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        extensions: Optional[
+            Sequence[outputs.VirtualMachineScaleSetExtensionResponse]
+        ] = ...,
+        extensions_time_budget: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def extensions(self) -> Optional[Sequence[outputs.VirtualMachineScaleSetExtensionResponse]]:
-        
-        ...
-    
+    def extensions(
+        self,
+    ) -> Optional[Sequence[outputs.VirtualMachineScaleSetExtensionResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="extensionsTimeBudget")
-    def extensions_time_budget(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def extensions_time_budget(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetExtensionResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, id: _builtins.str, provisioning_state: _builtins.str, type: _builtins.str, auto_upgrade_minor_version: Optional[_builtins.bool] = ..., enable_automatic_upgrade: Optional[_builtins.bool] = ..., force_update_tag: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., protected_settings: Optional[Any] = ..., protected_settings_from_key_vault: Optional[outputs.KeyVaultSecretReferenceResponse] = ..., provision_after_extensions: Optional[Sequence[_builtins.str]] = ..., publisher: Optional[_builtins.str] = ..., settings: Optional[Any] = ..., suppress_failures: Optional[_builtins.bool] = ..., type_handler_version: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        id: _builtins.str,
+        provisioning_state: _builtins.str,
+        type: _builtins.str,
+        auto_upgrade_minor_version: Optional[_builtins.bool] = ...,
+        enable_automatic_upgrade: Optional[_builtins.bool] = ...,
+        force_update_tag: Optional[_builtins.str] = ...,
+        name: Optional[_builtins.str] = ...,
+        protected_settings: Optional[Any] = ...,
+        protected_settings_from_key_vault: Optional[
+            outputs.KeyVaultSecretReferenceResponse
+        ] = ...,
+        provision_after_extensions: Optional[Sequence[_builtins.str]] = ...,
+        publisher: Optional[_builtins.str] = ...,
+        settings: Optional[Any] = ...,
+        suppress_failures: Optional[_builtins.bool] = ...,
+        type_handler_version: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="provisioningState")
-    def provisioning_state(self) -> _builtins.str:
-        
-        ...
-    
+    def provisioning_state(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> _builtins.str:
-        
-        ...
-    
+    def type(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="autoUpgradeMinorVersion")
-    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpgrade")
-    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_automatic_upgrade(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="forceUpdateTag")
-    def force_update_tag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def force_update_tag(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettings")
-    def protected_settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def protected_settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter(name="protectedSettingsFromKeyVault")
-    def protected_settings_from_key_vault(self) -> Optional[outputs.KeyVaultSecretReferenceResponse]:
-        
-        ...
-    
+    def protected_settings_from_key_vault(
+        self,
+    ) -> Optional[outputs.KeyVaultSecretReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="provisionAfterExtensions")
-    def provision_after_extensions(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def provision_after_extensions(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def publisher(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def publisher(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def settings(self) -> Optional[Any]:
-        
-        ...
-    
+    def settings(self) -> Optional[Any]: ...
     @_builtins.property
     @pulumi.getter(name="suppressFailures")
-    def suppress_failures(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def suppress_failures(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="typeHandlerVersion")
-    def type_handler_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def type_handler_version(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetHardwareProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, vm_size_properties: Optional[outputs.VMSizePropertiesResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        vm_size_properties: Optional[outputs.VMSizePropertiesResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="vmSizeProperties")
-    def vm_size_properties(self) -> Optional[outputs.VMSizePropertiesResponse]:
-        
-        ...
-    
-
+    def vm_size_properties(self) -> Optional[outputs.VMSizePropertiesResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetIPConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, application_gateway_backend_address_pools: Optional[Sequence[outputs.SubResourceResponse]] = ..., application_security_groups: Optional[Sequence[outputs.SubResourceResponse]] = ..., load_balancer_backend_address_pools: Optional[Sequence[outputs.SubResourceResponse]] = ..., load_balancer_inbound_nat_pools: Optional[Sequence[outputs.SubResourceResponse]] = ..., primary: Optional[_builtins.bool] = ..., private_ip_address_version: Optional[_builtins.str] = ..., public_ip_address_configuration: Optional[outputs.VirtualMachineScaleSetPublicIPAddressConfigurationResponse] = ..., subnet: Optional[outputs.ApiEntityReferenceResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        application_gateway_backend_address_pools: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        application_security_groups: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        load_balancer_backend_address_pools: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        load_balancer_inbound_nat_pools: Optional[
+            Sequence[outputs.SubResourceResponse]
+        ] = ...,
+        primary: Optional[_builtins.bool] = ...,
+        private_ip_address_version: Optional[_builtins.str] = ...,
+        public_ip_address_configuration: Optional[
+            outputs.VirtualMachineScaleSetPublicIPAddressConfigurationResponse
+        ] = ...,
+        subnet: Optional[outputs.ApiEntityReferenceResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="applicationGatewayBackendAddressPools")
-    def application_gateway_backend_address_pools(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def application_gateway_backend_address_pools(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="applicationSecurityGroups")
-    def application_security_groups(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def application_security_groups(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerBackendAddressPools")
-    def load_balancer_backend_address_pools(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def load_balancer_backend_address_pools(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="loadBalancerInboundNatPools")
-    def load_balancer_inbound_nat_pools(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
-        
-        ...
-    
+    def load_balancer_inbound_nat_pools(
+        self,
+    ) -> Optional[Sequence[outputs.SubResourceResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def primary(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def primary(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="privateIPAddressVersion")
-    def private_ip_address_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def private_ip_address_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressConfiguration")
-    def public_ip_address_configuration(self) -> Optional[outputs.VirtualMachineScaleSetPublicIPAddressConfigurationResponse]:
-        
-        ...
-    
+    def public_ip_address_configuration(
+        self,
+    ) -> Optional[
+        outputs.VirtualMachineScaleSetPublicIPAddressConfigurationResponse
+    ]: ...
     @_builtins.property
     @pulumi.getter
-    def subnet(self) -> Optional[outputs.ApiEntityReferenceResponse]:
-        
-        ...
-    
-
+    def subnet(self) -> Optional[outputs.ApiEntityReferenceResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetIdentityResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: Optional[_builtins.str] = ..., user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        principal_id: _builtins.str,
+        tenant_id: _builtins.str,
+        type: Optional[_builtins.str] = ...,
+        user_assigned_identities: Optional[
+            Mapping[str, outputs.UserAssignedIdentitiesValueResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="principalId")
-    def principal_id(self) -> _builtins.str:
-        
-        ...
-    
+    def principal_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="tenantId")
-    def tenant_id(self) -> _builtins.str:
-        
-        ...
-    
+    def tenant_id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="userAssignedIdentities")
-    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]:
-        
-        ...
-    
-
+    def user_assigned_identities(
+        self,
+    ) -> Optional[Mapping[str, outputs.UserAssignedIdentitiesValueResponse]]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetIpTagResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, ip_tag_type: Optional[_builtins.str] = ..., tag: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        ip_tag_type: Optional[_builtins.str] = ...,
+        tag: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ipTagType")
-    def ip_tag_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def ip_tag_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def tag(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def tag(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetManagedDiskParametersResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, disk_encryption_set: Optional[outputs.DiskEncryptionSetParametersResponse] = ..., security_profile: Optional[outputs.VMDiskSecurityProfileResponse] = ..., storage_account_type: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        disk_encryption_set: Optional[
+            outputs.DiskEncryptionSetParametersResponse
+        ] = ...,
+        security_profile: Optional[outputs.VMDiskSecurityProfileResponse] = ...,
+        storage_account_type: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="diskEncryptionSet")
-    def disk_encryption_set(self) -> Optional[outputs.DiskEncryptionSetParametersResponse]:
-        
-        ...
-    
+    def disk_encryption_set(
+        self,
+    ) -> Optional[outputs.DiskEncryptionSetParametersResponse]: ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
-    def security_profile(self) -> Optional[outputs.VMDiskSecurityProfileResponse]:
-        
-        ...
-    
+    def security_profile(self) -> Optional[outputs.VMDiskSecurityProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageAccountType")
-    def storage_account_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def storage_account_type(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetMigrationInfoResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, default_virtual_machine_scale_set_info: outputs.DefaultVirtualMachineScaleSetInfoResponse, migrate_to_virtual_machine_scale_set: outputs.SubResourceResponse) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        default_virtual_machine_scale_set_info: outputs.DefaultVirtualMachineScaleSetInfoResponse,
+        migrate_to_virtual_machine_scale_set: outputs.SubResourceResponse,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="defaultVirtualMachineScaleSetInfo")
-    def default_virtual_machine_scale_set_info(self) -> outputs.DefaultVirtualMachineScaleSetInfoResponse:
-        
-        ...
-    
+    def default_virtual_machine_scale_set_info(
+        self,
+    ) -> outputs.DefaultVirtualMachineScaleSetInfoResponse: ...
     @_builtins.property
     @pulumi.getter(name="migrateToVirtualMachineScaleSet")
-    def migrate_to_virtual_machine_scale_set(self) -> outputs.SubResourceResponse:
-        
-        ...
-    
-
+    def migrate_to_virtual_machine_scale_set(self) -> outputs.SubResourceResponse: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetNetworkConfigurationDnsSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, dns_servers: Optional[Sequence[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__, *, dns_servers: Optional[Sequence[_builtins.str]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dnsServers")
-    def dns_servers(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
-
+    def dns_servers(self) -> Optional[Sequence[_builtins.str]]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetNetworkConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, ip_configurations: Sequence[outputs.VirtualMachineScaleSetIPConfigurationResponse], name: _builtins.str, auxiliary_mode: Optional[_builtins.str] = ..., auxiliary_sku: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., disable_tcp_state_tracking: Optional[_builtins.bool] = ..., dns_settings: Optional[outputs.VirtualMachineScaleSetNetworkConfigurationDnsSettingsResponse] = ..., enable_accelerated_networking: Optional[_builtins.bool] = ..., enable_fpga: Optional[_builtins.bool] = ..., enable_ip_forwarding: Optional[_builtins.bool] = ..., network_security_group: Optional[outputs.SubResourceResponse] = ..., primary: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        ip_configurations: Sequence[
+            outputs.VirtualMachineScaleSetIPConfigurationResponse
+        ],
+        name: _builtins.str,
+        auxiliary_mode: Optional[_builtins.str] = ...,
+        auxiliary_sku: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        disable_tcp_state_tracking: Optional[_builtins.bool] = ...,
+        dns_settings: Optional[
+            outputs.VirtualMachineScaleSetNetworkConfigurationDnsSettingsResponse
+        ] = ...,
+        enable_accelerated_networking: Optional[_builtins.bool] = ...,
+        enable_fpga: Optional[_builtins.bool] = ...,
+        enable_ip_forwarding: Optional[_builtins.bool] = ...,
+        network_security_group: Optional[outputs.SubResourceResponse] = ...,
+        primary: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="ipConfigurations")
-    def ip_configurations(self) -> Sequence[outputs.VirtualMachineScaleSetIPConfigurationResponse]:
-        
-        ...
-    
+    def ip_configurations(
+        self,
+    ) -> Sequence[outputs.VirtualMachineScaleSetIPConfigurationResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="auxiliaryMode")
-    def auxiliary_mode(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def auxiliary_mode(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="auxiliarySku")
-    def auxiliary_sku(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def auxiliary_sku(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="disableTcpStateTracking")
-    def disable_tcp_state_tracking(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def disable_tcp_state_tracking(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
-    def dns_settings(self) -> Optional[outputs.VirtualMachineScaleSetNetworkConfigurationDnsSettingsResponse]:
-        
-        ...
-    
+    def dns_settings(
+        self,
+    ) -> Optional[
+        outputs.VirtualMachineScaleSetNetworkConfigurationDnsSettingsResponse
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="enableAcceleratedNetworking")
-    def enable_accelerated_networking(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_accelerated_networking(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableFpga")
-    def enable_fpga(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_fpga(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="enableIPForwarding")
-    def enable_ip_forwarding(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_ip_forwarding(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="networkSecurityGroup")
-    def network_security_group(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def network_security_group(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def primary(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def primary(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetNetworkProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, health_probe: Optional[outputs.ApiEntityReferenceResponse] = ..., network_api_version: Optional[_builtins.str] = ..., network_interface_configurations: Optional[Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        health_probe: Optional[outputs.ApiEntityReferenceResponse] = ...,
+        network_api_version: Optional[_builtins.str] = ...,
+        network_interface_configurations: Optional[
+            Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="healthProbe")
-    def health_probe(self) -> Optional[outputs.ApiEntityReferenceResponse]:
-        
-        ...
-    
+    def health_probe(self) -> Optional[outputs.ApiEntityReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="networkApiVersion")
-    def network_api_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def network_api_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceConfigurations")
-    def network_interface_configurations(self) -> Optional[Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]]:
-        
-        ...
-    
-
+    def network_interface_configurations(
+        self,
+    ) -> Optional[
+        Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]
+    ]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetOSDiskResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, create_option: _builtins.str, caching: Optional[_builtins.str] = ..., delete_option: Optional[_builtins.str] = ..., diff_disk_settings: Optional[outputs.DiffDiskSettingsResponse] = ..., disk_size_gb: Optional[_builtins.int] = ..., image: Optional[outputs.VirtualHardDiskResponse] = ..., managed_disk: Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse] = ..., name: Optional[_builtins.str] = ..., os_type: Optional[_builtins.str] = ..., vhd_containers: Optional[Sequence[_builtins.str]] = ..., write_accelerator_enabled: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        create_option: _builtins.str,
+        caching: Optional[_builtins.str] = ...,
+        delete_option: Optional[_builtins.str] = ...,
+        diff_disk_settings: Optional[outputs.DiffDiskSettingsResponse] = ...,
+        disk_size_gb: Optional[_builtins.int] = ...,
+        image: Optional[outputs.VirtualHardDiskResponse] = ...,
+        managed_disk: Optional[
+            outputs.VirtualMachineScaleSetManagedDiskParametersResponse
+        ] = ...,
+        name: Optional[_builtins.str] = ...,
+        os_type: Optional[_builtins.str] = ...,
+        vhd_containers: Optional[Sequence[_builtins.str]] = ...,
+        write_accelerator_enabled: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="createOption")
-    def create_option(self) -> _builtins.str:
-        
-        ...
-    
+    def create_option(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def caching(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def caching(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="diffDiskSettings")
-    def diff_disk_settings(self) -> Optional[outputs.DiffDiskSettingsResponse]:
-        
-        ...
-    
+    def diff_disk_settings(self) -> Optional[outputs.DiffDiskSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="diskSizeGB")
-    def disk_size_gb(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def disk_size_gb(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter
-    def image(self) -> Optional[outputs.VirtualHardDiskResponse]:
-        
-        ...
-    
+    def image(self) -> Optional[outputs.VirtualHardDiskResponse]: ...
     @_builtins.property
     @pulumi.getter(name="managedDisk")
-    def managed_disk(self) -> Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse]:
-        
-        ...
-    
+    def managed_disk(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetManagedDiskParametersResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="osType")
-    def os_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="vhdContainers")
-    def vhd_containers(self) -> Optional[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def vhd_containers(self) -> Optional[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter(name="writeAcceleratorEnabled")
-    def write_accelerator_enabled(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def write_accelerator_enabled(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetOSProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, admin_password: Optional[_builtins.str] = ..., admin_username: Optional[_builtins.str] = ..., allow_extension_operations: Optional[_builtins.bool] = ..., computer_name_prefix: Optional[_builtins.str] = ..., custom_data: Optional[_builtins.str] = ..., linux_configuration: Optional[outputs.LinuxConfigurationResponse] = ..., require_guest_provision_signal: Optional[_builtins.bool] = ..., secrets: Optional[Sequence[outputs.VaultSecretGroupResponse]] = ..., windows_configuration: Optional[outputs.WindowsConfigurationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        admin_password: Optional[_builtins.str] = ...,
+        admin_username: Optional[_builtins.str] = ...,
+        allow_extension_operations: Optional[_builtins.bool] = ...,
+        computer_name_prefix: Optional[_builtins.str] = ...,
+        custom_data: Optional[_builtins.str] = ...,
+        linux_configuration: Optional[outputs.LinuxConfigurationResponse] = ...,
+        require_guest_provision_signal: Optional[_builtins.bool] = ...,
+        secrets: Optional[Sequence[outputs.VaultSecretGroupResponse]] = ...,
+        windows_configuration: Optional[outputs.WindowsConfigurationResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="adminPassword")
-    def admin_password(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def admin_password(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="adminUsername")
-    def admin_username(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def admin_username(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="allowExtensionOperations")
-    def allow_extension_operations(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def allow_extension_operations(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="computerNamePrefix")
-    def computer_name_prefix(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def computer_name_prefix(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="customData")
-    def custom_data(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def custom_data(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="linuxConfiguration")
-    def linux_configuration(self) -> Optional[outputs.LinuxConfigurationResponse]:
-        
-        ...
-    
+    def linux_configuration(self) -> Optional[outputs.LinuxConfigurationResponse]: ...
     @_builtins.property
     @pulumi.getter(name="requireGuestProvisionSignal")
-    def require_guest_provision_signal(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def require_guest_provision_signal(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter
-    def secrets(self) -> Optional[Sequence[outputs.VaultSecretGroupResponse]]:
-        
-        ...
-    
+    def secrets(self) -> Optional[Sequence[outputs.VaultSecretGroupResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="windowsConfiguration")
-    def windows_configuration(self) -> Optional[outputs.WindowsConfigurationResponse]:
-        
-        ...
-    
-
+    def windows_configuration(
+        self,
+    ) -> Optional[outputs.WindowsConfigurationResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, domain_name_label: _builtins.str, domain_name_label_scope: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        domain_name_label: _builtins.str,
+        domain_name_label_scope: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabel")
-    def domain_name_label(self) -> _builtins.str:
-        
-        ...
-    
+    def domain_name_label(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="domainNameLabelScope")
-    def domain_name_label_scope(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def domain_name_label_scope(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetPublicIPAddressConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, name: _builtins.str, delete_option: Optional[_builtins.str] = ..., dns_settings: Optional[outputs.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsResponse] = ..., idle_timeout_in_minutes: Optional[_builtins.int] = ..., ip_tags: Optional[Sequence[outputs.VirtualMachineScaleSetIpTagResponse]] = ..., public_ip_address_version: Optional[_builtins.str] = ..., public_ip_prefix: Optional[outputs.SubResourceResponse] = ..., sku: Optional[outputs.PublicIPAddressSkuResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        name: _builtins.str,
+        delete_option: Optional[_builtins.str] = ...,
+        dns_settings: Optional[
+            outputs.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsResponse
+        ] = ...,
+        idle_timeout_in_minutes: Optional[_builtins.int] = ...,
+        ip_tags: Optional[Sequence[outputs.VirtualMachineScaleSetIpTagResponse]] = ...,
+        public_ip_address_version: Optional[_builtins.str] = ...,
+        public_ip_prefix: Optional[outputs.SubResourceResponse] = ...,
+        sku: Optional[outputs.PublicIPAddressSkuResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> _builtins.str:
-        
-        ...
-    
+    def name(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="deleteOption")
-    def delete_option(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def delete_option(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="dnsSettings")
-    def dns_settings(self) -> Optional[outputs.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsResponse]:
-        
-        ...
-    
+    def dns_settings(
+        self,
+    ) -> Optional[
+        outputs.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettingsResponse
+    ]: ...
     @_builtins.property
     @pulumi.getter(name="idleTimeoutInMinutes")
-    def idle_timeout_in_minutes(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def idle_timeout_in_minutes(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="ipTags")
-    def ip_tags(self) -> Optional[Sequence[outputs.VirtualMachineScaleSetIpTagResponse]]:
-        
-        ...
-    
+    def ip_tags(
+        self,
+    ) -> Optional[Sequence[outputs.VirtualMachineScaleSetIpTagResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPAddressVersion")
-    def public_ip_address_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def public_ip_address_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="publicIPPrefix")
-    def public_ip_prefix(self) -> Optional[outputs.SubResourceResponse]:
-        
-        ...
-    
+    def public_ip_prefix(self) -> Optional[outputs.SubResourceResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def sku(self) -> Optional[outputs.PublicIPAddressSkuResponse]:
-        
-        ...
-    
-
+    def sku(self) -> Optional[outputs.PublicIPAddressSkuResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetStorageProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, data_disks: Optional[Sequence[outputs.VirtualMachineScaleSetDataDiskResponse]] = ..., disk_controller_type: Optional[_builtins.str] = ..., image_reference: Optional[outputs.ImageReferenceResponse] = ..., os_disk: Optional[outputs.VirtualMachineScaleSetOSDiskResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        data_disks: Optional[
+            Sequence[outputs.VirtualMachineScaleSetDataDiskResponse]
+        ] = ...,
+        disk_controller_type: Optional[_builtins.str] = ...,
+        image_reference: Optional[outputs.ImageReferenceResponse] = ...,
+        os_disk: Optional[outputs.VirtualMachineScaleSetOSDiskResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="dataDisks")
-    def data_disks(self) -> Optional[Sequence[outputs.VirtualMachineScaleSetDataDiskResponse]]:
-        
-        ...
-    
+    def data_disks(
+        self,
+    ) -> Optional[Sequence[outputs.VirtualMachineScaleSetDataDiskResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="diskControllerType")
-    def disk_controller_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def disk_controller_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="imageReference")
-    def image_reference(self) -> Optional[outputs.ImageReferenceResponse]:
-        
-        ...
-    
+    def image_reference(self) -> Optional[outputs.ImageReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osDisk")
-    def os_disk(self) -> Optional[outputs.VirtualMachineScaleSetOSDiskResponse]:
-        
-        ...
-    
-
+    def os_disk(self) -> Optional[outputs.VirtualMachineScaleSetOSDiskResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetVMInstanceViewResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, assigned_host: _builtins.str, vm_health: outputs.VirtualMachineHealthStatusResponse, boot_diagnostics: Optional[outputs.BootDiagnosticsInstanceViewResponse] = ..., computer_name: Optional[_builtins.str] = ..., disks: Optional[Sequence[outputs.DiskInstanceViewResponse]] = ..., extensions: Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]] = ..., hyper_v_generation: Optional[_builtins.str] = ..., maintenance_redeploy_status: Optional[outputs.MaintenanceRedeployStatusResponse] = ..., os_name: Optional[_builtins.str] = ..., os_version: Optional[_builtins.str] = ..., placement_group_id: Optional[_builtins.str] = ..., platform_fault_domain: Optional[_builtins.int] = ..., platform_update_domain: Optional[_builtins.int] = ..., rdp_thumb_print: Optional[_builtins.str] = ..., statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ..., vm_agent: Optional[outputs.VirtualMachineAgentInstanceViewResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        assigned_host: _builtins.str,
+        vm_health: outputs.VirtualMachineHealthStatusResponse,
+        boot_diagnostics: Optional[outputs.BootDiagnosticsInstanceViewResponse] = ...,
+        computer_name: Optional[_builtins.str] = ...,
+        disks: Optional[Sequence[outputs.DiskInstanceViewResponse]] = ...,
+        extensions: Optional[
+            Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]
+        ] = ...,
+        hyper_v_generation: Optional[_builtins.str] = ...,
+        maintenance_redeploy_status: Optional[
+            outputs.MaintenanceRedeployStatusResponse
+        ] = ...,
+        os_name: Optional[_builtins.str] = ...,
+        os_version: Optional[_builtins.str] = ...,
+        placement_group_id: Optional[_builtins.str] = ...,
+        platform_fault_domain: Optional[_builtins.int] = ...,
+        platform_update_domain: Optional[_builtins.int] = ...,
+        rdp_thumb_print: Optional[_builtins.str] = ...,
+        statuses: Optional[Sequence[outputs.InstanceViewStatusResponse]] = ...,
+        vm_agent: Optional[outputs.VirtualMachineAgentInstanceViewResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="assignedHost")
-    def assigned_host(self) -> _builtins.str:
-        
-        ...
-    
+    def assigned_host(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="vmHealth")
-    def vm_health(self) -> outputs.VirtualMachineHealthStatusResponse:
-        
-        ...
-    
+    def vm_health(self) -> outputs.VirtualMachineHealthStatusResponse: ...
     @_builtins.property
     @pulumi.getter(name="bootDiagnostics")
-    def boot_diagnostics(self) -> Optional[outputs.BootDiagnosticsInstanceViewResponse]:
-        
-        ...
-    
+    def boot_diagnostics(
+        self,
+    ) -> Optional[outputs.BootDiagnosticsInstanceViewResponse]: ...
     @_builtins.property
     @pulumi.getter(name="computerName")
-    def computer_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def computer_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def disks(self) -> Optional[Sequence[outputs.DiskInstanceViewResponse]]:
-        
-        ...
-    
+    def disks(self) -> Optional[Sequence[outputs.DiskInstanceViewResponse]]: ...
     @_builtins.property
     @pulumi.getter
-    def extensions(self) -> Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]]:
-        
-        ...
-    
+    def extensions(
+        self,
+    ) -> Optional[Sequence[outputs.VirtualMachineExtensionInstanceViewResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="hyperVGeneration")
-    def hyper_v_generation(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def hyper_v_generation(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="maintenanceRedeployStatus")
-    def maintenance_redeploy_status(self) -> Optional[outputs.MaintenanceRedeployStatusResponse]:
-        
-        ...
-    
+    def maintenance_redeploy_status(
+        self,
+    ) -> Optional[outputs.MaintenanceRedeployStatusResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osName")
-    def os_name(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_name(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="osVersion")
-    def os_version(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def os_version(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="placementGroupId")
-    def placement_group_id(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def placement_group_id(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="platformFaultDomain")
-    def platform_fault_domain(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def platform_fault_domain(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="platformUpdateDomain")
-    def platform_update_domain(self) -> Optional[_builtins.int]:
-        
-        ...
-    
+    def platform_update_domain(self) -> Optional[_builtins.int]: ...
     @_builtins.property
     @pulumi.getter(name="rdpThumbPrint")
-    def rdp_thumb_print(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def rdp_thumb_print(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]:
-        
-        ...
-    
+    def statuses(self) -> Optional[Sequence[outputs.InstanceViewStatusResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="vmAgent")
-    def vm_agent(self) -> Optional[outputs.VirtualMachineAgentInstanceViewResponse]:
-        
-        ...
-    
-
+    def vm_agent(self) -> Optional[outputs.VirtualMachineAgentInstanceViewResponse]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetVMNetworkProfileConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, network_interface_configurations: Optional[Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        network_interface_configurations: Optional[
+            Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="networkInterfaceConfigurations")
-    def network_interface_configurations(self) -> Optional[Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]]:
-        
-        ...
-    
-
+    def network_interface_configurations(
+        self,
+    ) -> Optional[
+        Sequence[outputs.VirtualMachineScaleSetNetworkConfigurationResponse]
+    ]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetVMProfileResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, time_created: _builtins.str, application_profile: Optional[outputs.ApplicationProfileResponse] = ..., billing_profile: Optional[outputs.BillingProfileResponse] = ..., capacity_reservation: Optional[outputs.CapacityReservationProfileResponse] = ..., diagnostics_profile: Optional[outputs.DiagnosticsProfileResponse] = ..., eviction_policy: Optional[_builtins.str] = ..., extension_profile: Optional[outputs.VirtualMachineScaleSetExtensionProfileResponse] = ..., hardware_profile: Optional[outputs.VirtualMachineScaleSetHardwareProfileResponse] = ..., license_type: Optional[_builtins.str] = ..., network_profile: Optional[outputs.VirtualMachineScaleSetNetworkProfileResponse] = ..., os_profile: Optional[outputs.VirtualMachineScaleSetOSProfileResponse] = ..., priority: Optional[_builtins.str] = ..., scheduled_events_profile: Optional[outputs.ScheduledEventsProfileResponse] = ..., security_posture_reference: Optional[outputs.SecurityPostureReferenceResponse] = ..., security_profile: Optional[outputs.SecurityProfileResponse] = ..., service_artifact_reference: Optional[outputs.ServiceArtifactReferenceResponse] = ..., storage_profile: Optional[outputs.VirtualMachineScaleSetStorageProfileResponse] = ..., user_data: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        time_created: _builtins.str,
+        application_profile: Optional[outputs.ApplicationProfileResponse] = ...,
+        billing_profile: Optional[outputs.BillingProfileResponse] = ...,
+        capacity_reservation: Optional[
+            outputs.CapacityReservationProfileResponse
+        ] = ...,
+        diagnostics_profile: Optional[outputs.DiagnosticsProfileResponse] = ...,
+        eviction_policy: Optional[_builtins.str] = ...,
+        extension_profile: Optional[
+            outputs.VirtualMachineScaleSetExtensionProfileResponse
+        ] = ...,
+        hardware_profile: Optional[
+            outputs.VirtualMachineScaleSetHardwareProfileResponse
+        ] = ...,
+        license_type: Optional[_builtins.str] = ...,
+        network_profile: Optional[
+            outputs.VirtualMachineScaleSetNetworkProfileResponse
+        ] = ...,
+        os_profile: Optional[outputs.VirtualMachineScaleSetOSProfileResponse] = ...,
+        priority: Optional[_builtins.str] = ...,
+        scheduled_events_profile: Optional[
+            outputs.ScheduledEventsProfileResponse
+        ] = ...,
+        security_posture_reference: Optional[
+            outputs.SecurityPostureReferenceResponse
+        ] = ...,
+        security_profile: Optional[outputs.SecurityProfileResponse] = ...,
+        service_artifact_reference: Optional[
+            outputs.ServiceArtifactReferenceResponse
+        ] = ...,
+        storage_profile: Optional[
+            outputs.VirtualMachineScaleSetStorageProfileResponse
+        ] = ...,
+        user_data: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="timeCreated")
-    def time_created(self) -> _builtins.str:
-        
-        ...
-    
+    def time_created(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="applicationProfile")
-    def application_profile(self) -> Optional[outputs.ApplicationProfileResponse]:
-        
-        ...
-    
+    def application_profile(self) -> Optional[outputs.ApplicationProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="billingProfile")
-    def billing_profile(self) -> Optional[outputs.BillingProfileResponse]:
-        
-        ...
-    
+    def billing_profile(self) -> Optional[outputs.BillingProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="capacityReservation")
-    def capacity_reservation(self) -> Optional[outputs.CapacityReservationProfileResponse]:
-        
-        ...
-    
+    def capacity_reservation(
+        self,
+    ) -> Optional[outputs.CapacityReservationProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="diagnosticsProfile")
-    def diagnostics_profile(self) -> Optional[outputs.DiagnosticsProfileResponse]:
-        
-        ...
-    
+    def diagnostics_profile(self) -> Optional[outputs.DiagnosticsProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="evictionPolicy")
-    def eviction_policy(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def eviction_policy(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="extensionProfile")
-    def extension_profile(self) -> Optional[outputs.VirtualMachineScaleSetExtensionProfileResponse]:
-        
-        ...
-    
+    def extension_profile(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetExtensionProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="hardwareProfile")
-    def hardware_profile(self) -> Optional[outputs.VirtualMachineScaleSetHardwareProfileResponse]:
-        
-        ...
-    
+    def hardware_profile(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetHardwareProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="licenseType")
-    def license_type(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def license_type(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="networkProfile")
-    def network_profile(self) -> Optional[outputs.VirtualMachineScaleSetNetworkProfileResponse]:
-        
-        ...
-    
+    def network_profile(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetNetworkProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="osProfile")
-    def os_profile(self) -> Optional[outputs.VirtualMachineScaleSetOSProfileResponse]:
-        
-        ...
-    
+    def os_profile(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetOSProfileResponse]: ...
     @_builtins.property
     @pulumi.getter
-    def priority(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def priority(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="scheduledEventsProfile")
-    def scheduled_events_profile(self) -> Optional[outputs.ScheduledEventsProfileResponse]:
-        
-        ...
-    
+    def scheduled_events_profile(
+        self,
+    ) -> Optional[outputs.ScheduledEventsProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="securityPostureReference")
-    def security_posture_reference(self) -> Optional[outputs.SecurityPostureReferenceResponse]:
-        
-        ...
-    
+    def security_posture_reference(
+        self,
+    ) -> Optional[outputs.SecurityPostureReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="securityProfile")
-    def security_profile(self) -> Optional[outputs.SecurityProfileResponse]:
-        
-        ...
-    
+    def security_profile(self) -> Optional[outputs.SecurityProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="serviceArtifactReference")
-    def service_artifact_reference(self) -> Optional[outputs.ServiceArtifactReferenceResponse]:
-        
-        ...
-    
+    def service_artifact_reference(
+        self,
+    ) -> Optional[outputs.ServiceArtifactReferenceResponse]: ...
     @_builtins.property
     @pulumi.getter(name="storageProfile")
-    def storage_profile(self) -> Optional[outputs.VirtualMachineScaleSetStorageProfileResponse]:
-        
-        ...
-    
+    def storage_profile(
+        self,
+    ) -> Optional[outputs.VirtualMachineScaleSetStorageProfileResponse]: ...
     @_builtins.property
     @pulumi.getter(name="userData")
-    def user_data(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def user_data(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class VirtualMachineScaleSetVMProtectionPolicyResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, protect_from_scale_in: Optional[_builtins.bool] = ..., protect_from_scale_set_actions: Optional[_builtins.bool] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        protect_from_scale_in: Optional[_builtins.bool] = ...,
+        protect_from_scale_set_actions: Optional[_builtins.bool] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="protectFromScaleIn")
-    def protect_from_scale_in(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def protect_from_scale_in(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="protectFromScaleSetActions")
-    def protect_from_scale_set_actions(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
-
+    def protect_from_scale_set_actions(self) -> Optional[_builtins.bool]: ...
 
 @pulumi.output_type
 class WinRMConfigurationResponse(dict):
-    
-    def __init__(__self__, *, listeners: Optional[Sequence[outputs.WinRMListenerResponse]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__, *, listeners: Optional[Sequence[outputs.WinRMListenerResponse]] = ...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def listeners(self) -> Optional[Sequence[outputs.WinRMListenerResponse]]:
-        
-        ...
-    
-
+    def listeners(self) -> Optional[Sequence[outputs.WinRMListenerResponse]]: ...
 
 @pulumi.output_type
 class WinRMListenerResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, certificate_url: Optional[_builtins.str] = ..., protocol: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        certificate_url: Optional[_builtins.str] = ...,
+        protocol: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="certificateUrl")
-    def certificate_url(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def certificate_url(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def protocol(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
+    def protocol(self) -> Optional[_builtins.str]: ...
 
 @pulumi.output_type
 class WindowsConfigurationResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, enable_vm_agent_platform_updates: _builtins.bool, additional_unattend_content: Optional[Sequence[outputs.AdditionalUnattendContentResponse]] = ..., enable_automatic_updates: Optional[_builtins.bool] = ..., patch_settings: Optional[outputs.PatchSettingsResponse] = ..., provision_vm_agent: Optional[_builtins.bool] = ..., time_zone: Optional[_builtins.str] = ..., win_rm: Optional[outputs.WinRMConfigurationResponse] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        enable_vm_agent_platform_updates: _builtins.bool,
+        additional_unattend_content: Optional[
+            Sequence[outputs.AdditionalUnattendContentResponse]
+        ] = ...,
+        enable_automatic_updates: Optional[_builtins.bool] = ...,
+        patch_settings: Optional[outputs.PatchSettingsResponse] = ...,
+        provision_vm_agent: Optional[_builtins.bool] = ...,
+        time_zone: Optional[_builtins.str] = ...,
+        win_rm: Optional[outputs.WinRMConfigurationResponse] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="enableVMAgentPlatformUpdates")
-    def enable_vm_agent_platform_updates(self) -> _builtins.bool:
-        
-        ...
-    
+    def enable_vm_agent_platform_updates(self) -> _builtins.bool: ...
     @_builtins.property
     @pulumi.getter(name="additionalUnattendContent")
-    def additional_unattend_content(self) -> Optional[Sequence[outputs.AdditionalUnattendContentResponse]]:
-        
-        ...
-    
+    def additional_unattend_content(
+        self,
+    ) -> Optional[Sequence[outputs.AdditionalUnattendContentResponse]]: ...
     @_builtins.property
     @pulumi.getter(name="enableAutomaticUpdates")
-    def enable_automatic_updates(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def enable_automatic_updates(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="patchSettings")
-    def patch_settings(self) -> Optional[outputs.PatchSettingsResponse]:
-        
-        ...
-    
+    def patch_settings(self) -> Optional[outputs.PatchSettingsResponse]: ...
     @_builtins.property
     @pulumi.getter(name="provisionVMAgent")
-    def provision_vm_agent(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def provision_vm_agent(self) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="timeZone")
-    def time_zone(self) -> Optional[_builtins.str]:
-        
-        ...
-    
+    def time_zone(self) -> Optional[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="winRM")
-    def win_rm(self) -> Optional[outputs.WinRMConfigurationResponse]:
-        
-        ...
-    
-
+    def win_rm(self) -> Optional[outputs.WinRMConfigurationResponse]: ...
 
 @pulumi.output_type
 class WindowsVMGuestPatchAutomaticByPlatformSettingsResponse(dict):
-    
-    def __getitem__(self, key: str) -> Any:
-        ...
-    
-    def get(self, key: str, default=...) -> Any:
-        ...
-    
-    def __init__(__self__, *, bypass_platform_safety_checks_on_user_schedule: Optional[_builtins.bool] = ..., reboot_setting: Optional[_builtins.str] = ...) -> None:
-        
-        ...
-    
+    def __getitem__(self, key: str) -> Any: ...
+    def get(self, key: str, default=...) -> Any: ...
+    def __init__(
+        __self__,
+        *,
+        bypass_platform_safety_checks_on_user_schedule: Optional[_builtins.bool] = ...,
+        reboot_setting: Optional[_builtins.str] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="bypassPlatformSafetyChecksOnUserSchedule")
-    def bypass_platform_safety_checks_on_user_schedule(self) -> Optional[_builtins.bool]:
-        
-        ...
-    
+    def bypass_platform_safety_checks_on_user_schedule(
+        self,
+    ) -> Optional[_builtins.bool]: ...
     @_builtins.property
     @pulumi.getter(name="rebootSetting")
-    def reboot_setting(self) -> Optional[_builtins.str]:
-        
-        ...
-    
-
-
+    def reboot_setting(self) -> Optional[_builtins.str]: ...

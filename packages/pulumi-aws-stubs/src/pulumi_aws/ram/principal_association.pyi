@@ -1,128 +1,97 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, overload
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['PrincipalAssociationArgs', 'PrincipalAssociation']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["PrincipalAssociationArgs", "PrincipalAssociation"]
+
 @pulumi.input_type
 class PrincipalAssociationArgs:
-    def __init__(__self__, *, principal: pulumi.Input[_builtins.str], resource_share_arn: pulumi.Input[_builtins.str], region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        principal: pulumi.Input[_builtins.str],
+        resource_share_arn: pulumi.Input[_builtins.str],
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def principal(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def principal(self) -> pulumi.Input[_builtins.str]: ...
     @principal.setter
-    def principal(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def principal(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="resourceShareArn")
-    def resource_share_arn(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def resource_share_arn(self) -> pulumi.Input[_builtins.str]: ...
     @resource_share_arn.setter
-    def resource_share_arn(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def resource_share_arn(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _PrincipalAssociationState:
-    def __init__(__self__, *, principal: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        principal: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def principal(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def principal(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @principal.setter
-    def principal(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def principal(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="resourceShareArn")
-    def resource_share_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def resource_share_arn(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @resource_share_arn.setter
-    def resource_share_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def resource_share_arn(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("aws:ram/principalAssociation:PrincipalAssociation")
 class PrincipalAssociation(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., principal: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        principal: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: PrincipalAssociationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: PrincipalAssociationArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., principal: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> PrincipalAssociation:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        principal: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        resource_share_arn: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> PrincipalAssociation: ...
     @_builtins.property
     @pulumi.getter
-    def principal(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def principal(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def region(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="resourceShareArn")
-    def resource_share_arn(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def resource_share_arn(self) -> pulumi.Output[_builtins.str]: ...

@@ -1,13 +1,11 @@
-
-
 import builtins as _builtins
 import pulumi
 from enum import Enum
 
-__all__ = ['CannedAcl']
+__all__ = ["CannedAcl"]
+
 @pulumi.type_token("aws:s3/CannedAcl:CannedAcl")
 class CannedAcl(_builtins.str, Enum):
-    
     PRIVATE = ...
     PUBLIC_READ = ...
     PUBLIC_READ_WRITE = ...
@@ -16,5 +14,3 @@ class CannedAcl(_builtins.str, Enum):
     BUCKET_OWNER_READ = ...
     BUCKET_OWNER_FULL_CONTROL = ...
     LOG_DELIVERY_WRITE = ...
-
-

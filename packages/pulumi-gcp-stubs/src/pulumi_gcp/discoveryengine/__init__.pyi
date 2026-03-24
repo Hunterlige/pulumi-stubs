@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -21,4 +19,3 @@ from .user_store import *
 from .widget_config import *
 from ._inputs import *
 from . import outputs
-

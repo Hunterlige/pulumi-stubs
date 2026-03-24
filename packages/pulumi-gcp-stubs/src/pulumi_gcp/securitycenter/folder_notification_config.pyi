@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,208 +5,175 @@ from typing import Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['FolderNotificationConfigArgs', 'FolderNotificationConfig']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["FolderNotificationConfigArgs", "FolderNotificationConfig"]
+
 @pulumi.input_type
 class FolderNotificationConfigArgs:
-    def __init__(__self__, *, config_id: pulumi.Input[_builtins.str], folder: pulumi.Input[_builtins.str], pubsub_topic: pulumi.Input[_builtins.str], streaming_config: pulumi.Input[FolderNotificationConfigStreamingConfigArgs], description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config_id: pulumi.Input[_builtins.str],
+        folder: pulumi.Input[_builtins.str],
+        pubsub_topic: pulumi.Input[_builtins.str],
+        streaming_config: pulumi.Input[FolderNotificationConfigStreamingConfigArgs],
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configId")
-    def config_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def config_id(self) -> pulumi.Input[_builtins.str]: ...
     @config_id.setter
-    def config_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def config_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def folder(self) -> pulumi.Input[_builtins.str]: ...
     @folder.setter
-    def folder(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def folder(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="pubsubTopic")
-    def pubsub_topic(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def pubsub_topic(self) -> pulumi.Input[_builtins.str]: ...
     @pubsub_topic.setter
-    def pubsub_topic(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def pubsub_topic(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="streamingConfig")
-    def streaming_config(self) -> pulumi.Input[FolderNotificationConfigStreamingConfigArgs]:
-        
-        ...
-    
+    def streaming_config(
+        self,
+    ) -> pulumi.Input[FolderNotificationConfigStreamingConfigArgs]: ...
     @streaming_config.setter
-    def streaming_config(self, value: pulumi.Input[FolderNotificationConfigStreamingConfigArgs]): # -> None:
-        ...
-    
+    def streaming_config(
+        self, value: pulumi.Input[FolderNotificationConfigStreamingConfigArgs]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _FolderNotificationConfigState:
-    def __init__(__self__, *, config_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ..., service_account: Optional[pulumi.Input[_builtins.str]] = ..., streaming_config: Optional[pulumi.Input[FolderNotificationConfigStreamingConfigArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        config_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ...,
+        service_account: Optional[pulumi.Input[_builtins.str]] = ...,
+        streaming_config: Optional[
+            pulumi.Input[FolderNotificationConfigStreamingConfigArgs]
+        ] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="configId")
-    def config_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def config_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @config_id.setter
-    def config_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def config_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @description.setter
-    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def folder(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @folder.setter
-    def folder(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def folder(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="pubsubTopic")
-    def pubsub_topic(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def pubsub_topic(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @pubsub_topic.setter
-    def pubsub_topic(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def pubsub_topic(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
-    def service_account(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def service_account(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @service_account.setter
-    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def service_account(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="streamingConfig")
-    def streaming_config(self) -> Optional[pulumi.Input[FolderNotificationConfigStreamingConfigArgs]]:
-        
-        ...
-    
+    def streaming_config(
+        self,
+    ) -> Optional[pulumi.Input[FolderNotificationConfigStreamingConfigArgs]]: ...
     @streaming_config.setter
-    def streaming_config(self, value: Optional[pulumi.Input[FolderNotificationConfigStreamingConfigArgs]]): # -> None:
-        ...
-    
-
+    def streaming_config(
+        self, value: Optional[pulumi.Input[FolderNotificationConfigStreamingConfigArgs]]
+    ): ...
 
 @pulumi.type_token(...)
 class FolderNotificationConfig(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., config_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ..., streaming_config: Optional[pulumi.Input[Union[FolderNotificationConfigStreamingConfigArgs, FolderNotificationConfigStreamingConfigArgsDict]]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        config_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ...,
+        streaming_config: Optional[
+            pulumi.Input[
+                Union[
+                    FolderNotificationConfigStreamingConfigArgs,
+                    FolderNotificationConfigStreamingConfigArgsDict,
+                ]
+            ]
+        ] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: FolderNotificationConfigArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: FolderNotificationConfigArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., config_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., folder: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ..., service_account: Optional[pulumi.Input[_builtins.str]] = ..., streaming_config: Optional[pulumi.Input[Union[FolderNotificationConfigStreamingConfigArgs, FolderNotificationConfigStreamingConfigArgsDict]]] = ...) -> FolderNotificationConfig:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        config_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        description: Optional[pulumi.Input[_builtins.str]] = ...,
+        folder: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        pubsub_topic: Optional[pulumi.Input[_builtins.str]] = ...,
+        service_account: Optional[pulumi.Input[_builtins.str]] = ...,
+        streaming_config: Optional[
+            pulumi.Input[
+                Union[
+                    FolderNotificationConfigStreamingConfigArgs,
+                    FolderNotificationConfigStreamingConfigArgsDict,
+                ]
+            ]
+        ] = ...,
+    ) -> FolderNotificationConfig: ...
     @_builtins.property
     @pulumi.getter(name="configId")
-    def config_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def config_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def folder(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def folder(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="pubsubTopic")
-    def pubsub_topic(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def pubsub_topic(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="serviceAccount")
-    def service_account(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def service_account(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="streamingConfig")
-    def streaming_config(self) -> pulumi.Output[outputs.FolderNotificationConfigStreamingConfig]:
-        
-        ...
-    
-
-
+    def streaming_config(
+        self,
+    ) -> pulumi.Output[outputs.FolderNotificationConfigStreamingConfig]: ...

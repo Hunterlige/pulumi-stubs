@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -10,4 +8,3 @@ from .get_domain import *
 from .vpc_endpoint import *
 from ._inputs import *
 from . import outputs
-

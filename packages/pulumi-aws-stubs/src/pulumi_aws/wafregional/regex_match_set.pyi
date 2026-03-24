@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,124 +5,141 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['RegexMatchSetArgs', 'RegexMatchSet']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["RegexMatchSetArgs", "RegexMatchSet"]
+
 @pulumi.input_type
 class RegexMatchSetArgs:
-    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ..., regex_match_tuples: Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        regex_match_tuples: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="regexMatchTuples")
-    def regex_match_tuples(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]]:
-        
-        ...
-    
+    def regex_match_tuples(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+    ]: ...
     @regex_match_tuples.setter
-    def regex_match_tuples(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]]): # -> None:
-        ...
-    
+    def regex_match_tuples(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _RegexMatchSetState:
-    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ..., regex_match_tuples: Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        regex_match_tuples: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="regexMatchTuples")
-    def regex_match_tuples(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]]:
-        
-        ...
-    
+    def regex_match_tuples(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+    ]: ...
     @regex_match_tuples.setter
-    def regex_match_tuples(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]]): # -> None:
-        ...
-    
+    def regex_match_tuples(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[RegexMatchSetRegexMatchTupleArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("aws:wafregional/regexMatchSet:RegexMatchSet")
 class RegexMatchSet(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., regex_match_tuples: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegexMatchSetRegexMatchTupleArgs, RegexMatchSetRegexMatchTupleArgsDict]]]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        regex_match_tuples: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            RegexMatchSetRegexMatchTupleArgs,
+                            RegexMatchSetRegexMatchTupleArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: Optional[RegexMatchSetArgs] = ..., opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: Optional[RegexMatchSetArgs] = ...,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., regex_match_tuples: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RegexMatchSetRegexMatchTupleArgs, RegexMatchSetRegexMatchTupleArgsDict]]]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> RegexMatchSet:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        regex_match_tuples: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            RegexMatchSetRegexMatchTupleArgs,
+                            RegexMatchSetRegexMatchTupleArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> RegexMatchSet: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="regexMatchTuples")
-    def regex_match_tuples(self) -> pulumi.Output[Optional[Sequence[outputs.RegexMatchSetRegexMatchTuple]]]:
-        
-        ...
-    
+    def regex_match_tuples(
+        self,
+    ) -> pulumi.Output[Optional[Sequence[outputs.RegexMatchSetRegexMatchTuple]]]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def region(self) -> pulumi.Output[_builtins.str]: ...

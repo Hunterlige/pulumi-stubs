@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,166 +5,144 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['TagValueIamBindingArgs', 'TagValueIamBinding']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["TagValueIamBindingArgs", "TagValueIamBinding"]
+
 @pulumi.input_type
 class TagValueIamBindingArgs:
-    def __init__(__self__, *, members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], role: pulumi.Input[_builtins.str], tag_value: pulumi.Input[_builtins.str], condition: Optional[pulumi.Input[TagValueIamBindingConditionArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        role: pulumi.Input[_builtins.str],
+        tag_value: pulumi.Input[_builtins.str],
+        condition: Optional[pulumi.Input[TagValueIamBindingConditionArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @members.setter
-    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def role(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="tagValue")
-    def tag_value(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def tag_value(self) -> pulumi.Input[_builtins.str]: ...
     @tag_value.setter
-    def tag_value(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def tag_value(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[TagValueIamBindingConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[TagValueIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[TagValueIamBindingConditionArgs]]): # -> None:
-        ...
-    
-
+    def condition(
+        self, value: Optional[pulumi.Input[TagValueIamBindingConditionArgs]]
+    ): ...
 
 @pulumi.input_type
 class _TagValueIamBindingState:
-    def __init__(__self__, *, condition: Optional[pulumi.Input[TagValueIamBindingConditionArgs]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., tag_value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        condition: Optional[pulumi.Input[TagValueIamBindingConditionArgs]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        tag_value: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[TagValueIamBindingConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[TagValueIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[TagValueIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[TagValueIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def members(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @members.setter
-    def members(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def members(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="tagValue")
-    def tag_value(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def tag_value(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @tag_value.setter
-    def tag_value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def tag_value(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("gcp:tags/tagValueIamBinding:TagValueIamBinding")
 class TagValueIamBinding(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[TagValueIamBindingConditionArgs, TagValueIamBindingConditionArgsDict]]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., tag_value: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[
+                    TagValueIamBindingConditionArgs, TagValueIamBindingConditionArgsDict
+                ]
+            ]
+        ] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        tag_value: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: TagValueIamBindingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: TagValueIamBindingArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[TagValueIamBindingConditionArgs, TagValueIamBindingConditionArgsDict]]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., tag_value: Optional[pulumi.Input[_builtins.str]] = ...) -> TagValueIamBinding:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[
+                    TagValueIamBindingConditionArgs, TagValueIamBindingConditionArgsDict
+                ]
+            ]
+        ] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        tag_value: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> TagValueIamBinding: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> pulumi.Output[Optional[outputs.TagValueIamBindingCondition]]:
-        
-        ...
-    
+    def condition(
+        self,
+    ) -> pulumi.Output[Optional[outputs.TagValueIamBindingCondition]]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def etag(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Output[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Output[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def role(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="tagValue")
-    def tag_value(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def tag_value(self) -> pulumi.Output[_builtins.str]: ...

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,166 +5,136 @@ from typing import Optional, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['KeyRingIAMMemberArgs', 'KeyRingIAMMember']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["KeyRingIAMMemberArgs", "KeyRingIAMMember"]
+
 @pulumi.input_type
 class KeyRingIAMMemberArgs:
-    def __init__(__self__, *, key_ring_id: pulumi.Input[_builtins.str], member: pulumi.Input[_builtins.str], role: pulumi.Input[_builtins.str], condition: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        key_ring_id: pulumi.Input[_builtins.str],
+        member: pulumi.Input[_builtins.str],
+        role: pulumi.Input[_builtins.str],
+        condition: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter(name="keyRingId")
-    def key_ring_id(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def key_ring_id(self) -> pulumi.Input[_builtins.str]: ...
     @key_ring_id.setter
-    def key_ring_id(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def key_ring_id(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def member(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def member(self) -> pulumi.Input[_builtins.str]: ...
     @member.setter
-    def member(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def member(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def role(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]): # -> None:
-        ...
-    
-
+    def condition(
+        self, value: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]
+    ): ...
 
 @pulumi.input_type
 class _KeyRingIAMMemberState:
-    def __init__(__self__, *, condition: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., key_ring_id: Optional[pulumi.Input[_builtins.str]] = ..., member: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        condition: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        key_ring_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        member: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[KeyRingIAMMemberConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="keyRingId")
-    def key_ring_id(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def key_ring_id(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @key_ring_id.setter
-    def key_ring_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def key_ring_id(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def member(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def member(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @member.setter
-    def member(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def member(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("gcp:kms/keyRingIAMMember:KeyRingIAMMember")
 class KeyRingIAMMember(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[KeyRingIAMMemberConditionArgs, KeyRingIAMMemberConditionArgsDict]]] = ..., key_ring_id: Optional[pulumi.Input[_builtins.str]] = ..., member: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[KeyRingIAMMemberConditionArgs, KeyRingIAMMemberConditionArgsDict]
+            ]
+        ] = ...,
+        key_ring_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        member: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: KeyRingIAMMemberArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: KeyRingIAMMemberArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., condition: Optional[pulumi.Input[Union[KeyRingIAMMemberConditionArgs, KeyRingIAMMemberConditionArgsDict]]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., key_ring_id: Optional[pulumi.Input[_builtins.str]] = ..., member: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> KeyRingIAMMember:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[KeyRingIAMMemberConditionArgs, KeyRingIAMMemberConditionArgsDict]
+            ]
+        ] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        key_ring_id: Optional[pulumi.Input[_builtins.str]] = ...,
+        member: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> KeyRingIAMMember: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> pulumi.Output[Optional[outputs.KeyRingIAMMemberCondition]]:
-        
-        ...
-    
+    def condition(
+        self,
+    ) -> pulumi.Output[Optional[outputs.KeyRingIAMMemberCondition]]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def etag(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="keyRingId")
-    def key_ring_id(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def key_ring_id(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def member(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def member(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def role(self) -> pulumi.Output[_builtins.str]: ...

@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -19,4 +17,3 @@ from .single_scram_secret_association import *
 from .vpc_connection import *
 from ._inputs import *
 from . import outputs
-

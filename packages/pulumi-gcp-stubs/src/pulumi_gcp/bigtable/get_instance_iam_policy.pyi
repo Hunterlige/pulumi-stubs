@@ -1,62 +1,48 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
 from typing import Optional, Union
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['GetInstanceIamPolicyResult', 'AwaitableGetInstanceIamPolicyResult', 'get_instance_iam_policy', 'get_instance_iam_policy_output']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = [
+    "GetInstanceIamPolicyResult",
+    "AwaitableGetInstanceIamPolicyResult",
+    "get_instance_iam_policy",
+    "get_instance_iam_policy_output",
+]
+
 @pulumi.output_type
 class GetInstanceIamPolicyResult:
-    
-    def __init__(__self__, etag=..., id=..., instance=..., policy_data=..., project=...) -> None:
-        ...
-    
+    def __init__(
+        __self__, etag=..., id=..., instance=..., policy_data=..., project=...
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> _builtins.str:
-        
-        ...
-    
+    def etag(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def id(self) -> _builtins.str:
-        
-        ...
-    
+    def id(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def instance(self) -> _builtins.str:
-        ...
-    
+    def instance(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter(name="policyData")
-    def policy_data(self) -> _builtins.str:
-        
-        ...
-    
+    def policy_data(self) -> _builtins.str: ...
     @_builtins.property
     @pulumi.getter
-    def project(self) -> _builtins.str:
-        ...
-    
-
+    def project(self) -> _builtins.str: ...
 
 class AwaitableGetInstanceIamPolicyResult(GetInstanceIamPolicyResult):
-    def __await__(self): # -> Generator[Never, Any, GetInstanceIamPolicyResult]:
-        ...
-    
+    def __await__(self): ...
 
-
-def get_instance_iam_policy(instance: Optional[_builtins.str] = ..., project: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetInstanceIamPolicyResult:
-    
-    ...
-
-def get_instance_iam_policy_output(instance: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetInstanceIamPolicyResult]:
-    
-    ...
-
+def get_instance_iam_policy(
+    instance: Optional[_builtins.str] = ...,
+    project: Optional[_builtins.str] = ...,
+    opts: Optional[pulumi.InvokeOptions] = ...,
+) -> AwaitableGetInstanceIamPolicyResult: ...
+def get_instance_iam_policy_output(
+    instance: Optional[pulumi.Input[_builtins.str]] = ...,
+    project: Optional[pulumi.Input[Optional[_builtins.str]]] = ...,
+    opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...,
+) -> pulumi.Output[GetInstanceIamPolicyResult]: ...

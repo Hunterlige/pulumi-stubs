@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -178,4 +176,3 @@ from .vpn_gateway_attachment import *
 from .vpn_gateway_route_propagation import *
 from ._inputs import *
 from . import outputs
-

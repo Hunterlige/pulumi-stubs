@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -7,244 +5,195 @@ from typing import Optional, Sequence, Union, overload
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['LogViewIamBindingArgs', 'LogViewIamBinding']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["LogViewIamBindingArgs", "LogViewIamBinding"]
+
 @pulumi.input_type
 class LogViewIamBindingArgs:
-    def __init__(__self__, *, bucket: pulumi.Input[_builtins.str], members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], parent: pulumi.Input[_builtins.str], role: pulumi.Input[_builtins.str], condition: Optional[pulumi.Input[LogViewIamBindingConditionArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: pulumi.Input[_builtins.str],
+        members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]],
+        parent: pulumi.Input[_builtins.str],
+        role: pulumi.Input[_builtins.str],
+        condition: Optional[pulumi.Input[LogViewIamBindingConditionArgs]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def bucket(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]: ...
     @members.setter
-    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
-        ...
-    
+    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): ...
     @_builtins.property
     @pulumi.getter
-    def parent(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def parent(self) -> pulumi.Input[_builtins.str]: ...
     @parent.setter
-    def parent(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def parent(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def role(self) -> pulumi.Input[_builtins.str]: ...
     @role.setter
-    def role(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def role(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[LogViewIamBindingConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[LogViewIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[LogViewIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[LogViewIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _LogViewIamBindingState:
-    def __init__(__self__, *, bucket: Optional[pulumi.Input[_builtins.str]] = ..., condition: Optional[pulumi.Input[LogViewIamBindingConditionArgs]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., parent: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        condition: Optional[pulumi.Input[LogViewIamBindingConditionArgs]] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        parent: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> Optional[pulumi.Input[LogViewIamBindingConditionArgs]]:
-        
-        ...
-    
+    def condition(self) -> Optional[pulumi.Input[LogViewIamBindingConditionArgs]]: ...
     @condition.setter
-    def condition(self, value: Optional[pulumi.Input[LogViewIamBindingConditionArgs]]): # -> None:
-        ...
-    
+    def condition(
+        self, value: Optional[pulumi.Input[LogViewIamBindingConditionArgs]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def etag(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @etag.setter
-    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def etag(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @location.setter
-    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
-        
-        ...
-    
+    def members(
+        self,
+    ) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]: ...
     @members.setter
-    def members(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
-        ...
-    
+    def members(
+        self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    ): ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @name.setter
-    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def parent(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def parent(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @parent.setter
-    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def parent(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def role(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @role.setter
-    def role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def role(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token("gcp:logging/logViewIamBinding:LogViewIamBinding")
 class LogViewIamBinding(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., condition: Optional[pulumi.Input[Union[LogViewIamBindingConditionArgs, LogViewIamBindingConditionArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., parent: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[
+                    LogViewIamBindingConditionArgs, LogViewIamBindingConditionArgsDict
+                ]
+            ]
+        ] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        parent: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: LogViewIamBindingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: LogViewIamBindingArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., condition: Optional[pulumi.Input[Union[LogViewIamBindingConditionArgs, LogViewIamBindingConditionArgsDict]]] = ..., etag: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., parent: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[_builtins.str]] = ...) -> LogViewIamBinding:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        condition: Optional[
+            pulumi.Input[
+                Union[
+                    LogViewIamBindingConditionArgs, LogViewIamBindingConditionArgsDict
+                ]
+            ]
+        ] = ...,
+        etag: Optional[pulumi.Input[_builtins.str]] = ...,
+        location: Optional[pulumi.Input[_builtins.str]] = ...,
+        members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...,
+        name: Optional[pulumi.Input[_builtins.str]] = ...,
+        parent: Optional[pulumi.Input[_builtins.str]] = ...,
+        role: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> LogViewIamBinding: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def condition(self) -> pulumi.Output[Optional[outputs.LogViewIamBindingCondition]]:
-        
-        ...
-    
+    def condition(
+        self,
+    ) -> pulumi.Output[Optional[outputs.LogViewIamBindingCondition]]: ...
     @_builtins.property
     @pulumi.getter
-    def etag(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def etag(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def location(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def location(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def members(self) -> pulumi.Output[Sequence[_builtins.str]]:
-        
-        ...
-    
+    def members(self) -> pulumi.Output[Sequence[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def name(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def name(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def parent(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def parent(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter
-    def role(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def role(self) -> pulumi.Output[_builtins.str]: ...

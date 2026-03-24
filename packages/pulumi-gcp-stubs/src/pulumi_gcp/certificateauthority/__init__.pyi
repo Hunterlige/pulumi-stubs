@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -18,4 +16,3 @@ from .get_ca_pool_iam_policy import *
 from .get_certificate_template_iam_policy import *
 from ._inputs import *
 from . import outputs
-

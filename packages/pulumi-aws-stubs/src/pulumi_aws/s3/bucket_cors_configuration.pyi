@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import sys
 import pulumi
@@ -8,153 +6,159 @@ from .. import _utilities
 from . import outputs
 from ._inputs import *
 
-if sys.version_info >= (3, 11):
-    ...
-else:
-    ...
-__all__ = ['BucketCorsConfigurationArgs', 'BucketCorsConfiguration']
+if sys.version_info >= (3, 11): ...
+else: ...
+__all__ = ["BucketCorsConfigurationArgs", "BucketCorsConfiguration"]
+
 @pulumi.input_type
 class BucketCorsConfigurationArgs:
-    def __init__(__self__, *, bucket: pulumi.Input[_builtins.str], cors_rules: pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]], expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: pulumi.Input[_builtins.str],
+        cors_rules: pulumi.Input[
+            Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]
+        ],
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Input[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Input[_builtins.str]: ...
     @bucket.setter
-    def bucket(self, value: pulumi.Input[_builtins.str]): # -> None:
-        ...
-    
+    def bucket(self, value: pulumi.Input[_builtins.str]): ...
     @_builtins.property
     @pulumi.getter(name="corsRules")
-    def cors_rules(self) -> pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]:
-        
-        ...
-    
+    def cors_rules(
+        self,
+    ) -> pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]: ...
     @cors_rules.setter
-    def cors_rules(self, value: pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]): # -> None:
-        ...
-    
+    def cors_rules(
+        self,
+        value: pulumi.Input[
+            Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.input_type
 class _BucketCorsConfigurationState:
-    def __init__(__self__, *, bucket: Optional[pulumi.Input[_builtins.str]] = ..., cors_rules: Optional[pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        *,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        cors_rules: Optional[
+            pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]
+        ] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> None: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def bucket(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @bucket.setter
-    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def bucket(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter(name="corsRules")
-    def cors_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]]:
-        
-        ...
-    
+    def cors_rules(
+        self,
+    ) -> Optional[
+        pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]
+    ]: ...
     @cors_rules.setter
-    def cors_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]]): # -> None:
-        ...
-    
+    def cors_rules(
+        self,
+        value: Optional[
+            pulumi.Input[Sequence[pulumi.Input[BucketCorsConfigurationCorsRuleArgs]]]
+        ],
+    ): ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @expected_bucket_owner.setter
-    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
+    def expected_bucket_owner(self, value: Optional[pulumi.Input[_builtins.str]]): ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
-        
-        ...
-    
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]: ...
     @region.setter
-    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
-        ...
-    
-
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): ...
 
 @pulumi.type_token(...)
 class BucketCorsConfiguration(pulumi.CustomResource):
     @overload
-    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., cors_rules: Optional[pulumi.Input[Sequence[pulumi.Input[Union[BucketCorsConfigurationCorsRuleArgs, BucketCorsConfigurationCorsRuleArgsDict]]]]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
-        
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        cors_rules: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            BucketCorsConfigurationCorsRuleArgs,
+                            BucketCorsConfigurationCorsRuleArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+        __props__=...,
+    ) -> None: ...
     @overload
-    def __init__(__self__, resource_name: str, args: BucketCorsConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
-        
-        ...
-    
-    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
-        ...
-    
+    def __init__(
+        __self__,
+        resource_name: str,
+        args: BucketCorsConfigurationArgs,
+        opts: Optional[pulumi.ResourceOptions] = ...,
+    ) -> None: ...
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None: ...
     @staticmethod
-    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., bucket: Optional[pulumi.Input[_builtins.str]] = ..., cors_rules: Optional[pulumi.Input[Sequence[pulumi.Input[Union[BucketCorsConfigurationCorsRuleArgs, BucketCorsConfigurationCorsRuleArgsDict]]]]] = ..., expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ...) -> BucketCorsConfiguration:
-        
-        ...
-    
+    def get(
+        resource_name: str,
+        id: pulumi.Input[str],
+        opts: Optional[pulumi.ResourceOptions] = ...,
+        bucket: Optional[pulumi.Input[_builtins.str]] = ...,
+        cors_rules: Optional[
+            pulumi.Input[
+                Sequence[
+                    pulumi.Input[
+                        Union[
+                            BucketCorsConfigurationCorsRuleArgs,
+                            BucketCorsConfigurationCorsRuleArgsDict,
+                        ]
+                    ]
+                ]
+            ]
+        ] = ...,
+        expected_bucket_owner: Optional[pulumi.Input[_builtins.str]] = ...,
+        region: Optional[pulumi.Input[_builtins.str]] = ...,
+    ) -> BucketCorsConfiguration: ...
     @_builtins.property
     @pulumi.getter
-    def bucket(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
+    def bucket(self) -> pulumi.Output[_builtins.str]: ...
     @_builtins.property
     @pulumi.getter(name="corsRules")
-    def cors_rules(self) -> pulumi.Output[Sequence[outputs.BucketCorsConfigurationCorsRule]]:
-        
-        ...
-    
+    def cors_rules(
+        self,
+    ) -> pulumi.Output[Sequence[outputs.BucketCorsConfigurationCorsRule]]: ...
     @_builtins.property
     @pulumi.getter(name="expectedBucketOwner")
     @_utilities.deprecated(...)
-    def expected_bucket_owner(self) -> pulumi.Output[Optional[_builtins.str]]:
-        
-        ...
-    
+    def expected_bucket_owner(self) -> pulumi.Output[Optional[_builtins.str]]: ...
     @_builtins.property
     @pulumi.getter
-    def region(self) -> pulumi.Output[_builtins.str]:
-        
-        ...
-    
-
-
+    def region(self) -> pulumi.Output[_builtins.str]: ...

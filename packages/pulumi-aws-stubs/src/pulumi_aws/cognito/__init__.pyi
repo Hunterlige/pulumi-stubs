@@ -1,5 +1,3 @@
-
-
 import builtins as _builtins
 import typing
 from .. import _utilities
@@ -29,4 +27,3 @@ from .user_pool_domain import *
 from .user_pool_ui_customization import *
 from ._inputs import *
 from . import outputs
-
