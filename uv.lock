@@ -8,14 +8,6 @@ resolution-markers = [
     "python_full_version < '3.10'",
 ]
 
-[manifest]
-members = [
-    "pulumi-aws-stubs",
-    "pulumi-azure-native-stubs",
-    "pulumi-gcp-stubs",
-    "pulumi-stubs",
-]
-
 [[package]]
 name = "arpeggio"
 version = "2.0.3"
@@ -430,7 +422,7 @@ wheels = [
 [[package]]
 name = "pulumi-aws-stubs"
 version = "0.1.0"
-source = { editable = "packages/pulumi-aws-stubs" }
+source = { directory = "packages/pulumi-aws-stubs" }
 
 [[package]]
 name = "pulumi-azure-native"
@@ -451,7 +443,7 @@ wheels = [
 [[package]]
 name = "pulumi-azure-native-stubs"
 version = "0.1.0"
-source = { editable = "packages/pulumi-azure-native-stubs" }
+source = { directory = "packages/pulumi-azure-native-stubs" }
 
 [[package]]
 name = "pulumi-gcp"
@@ -472,7 +464,7 @@ wheels = [
 [[package]]
 name = "pulumi-gcp-stubs"
 version = "0.1.0"
-source = { editable = "packages/pulumi-gcp-stubs" }
+source = { directory = "packages/pulumi-gcp-stubs" }
 
 [[package]]
 name = "pulumi-stubs"
@@ -495,9 +487,9 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pulumi-aws-stubs", editable = "packages/pulumi-aws-stubs" },
-    { name = "pulumi-azure-native-stubs", editable = "packages/pulumi-azure-native-stubs" },
-    { name = "pulumi-gcp-stubs", editable = "packages/pulumi-gcp-stubs" },
+    { name = "pulumi-aws-stubs", directory = "packages/pulumi-aws-stubs" },
+    { name = "pulumi-azure-native-stubs", directory = "packages/pulumi-azure-native-stubs" },
+    { name = "pulumi-gcp-stubs", directory = "packages/pulumi-gcp-stubs" },
 ]
 
 [package.metadata.requires-dev]

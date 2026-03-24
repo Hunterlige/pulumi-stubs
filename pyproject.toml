@@ -22,13 +22,10 @@ dependencies = [
     "pulumi-azure-native-stubs",
 ]
 
-[tool.uv.workspace]
-members = ["packages/*"]
-
 [tool.uv.sources]
-pulumi-aws-stubs = { workspace = true }
-pulumi-gcp-stubs = { workspace = true }
-pulumi-azure-native-stubs = { workspace = true }
+pulumi-aws-stubs = { path = "packages/pulumi-aws-stubs" }
+pulumi-gcp-stubs = { path = "packages/pulumi-gcp-stubs" }
+pulumi-azure-native-stubs = { path = "packages/pulumi-azure-native-stubs" }
 
 [dependency-groups]
 dev = [

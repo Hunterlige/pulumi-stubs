@@ -13,6 +13,7 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
+  "Typing :: Stubs Only",
 ]
 readme = "README.md"
 requires-python = ">=3.9,<4"
@@ -23,5 +24,5 @@ requires = ["uv_build>=0.10.9,<0.11.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = "src"
-module-root = ""
+module-name = "pulumi_aws"
+module-root = "src"
