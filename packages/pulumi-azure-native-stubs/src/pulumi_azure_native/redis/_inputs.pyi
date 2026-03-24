@@ -1,0 +1,370 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'RedisCommonPropertiesRedisConfigurationArgs', 'RedisCommonPropertiesRedisConfigurationArgsDict', 'ScheduleEntryArgs', 'ScheduleEntryArgsDict', 'SkuArgs', 'SkuArgsDict']
+class ManagedServiceIdentityArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedServiceIdentityArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class RedisCommonPropertiesRedisConfigurationArgsDict(TypedDict):
+    
+    aad_enabled: NotRequired[pulumi.Input[_builtins.str]]
+    aof_backup_enabled: NotRequired[pulumi.Input[_builtins.str]]
+    aof_storage_connection_string0: NotRequired[pulumi.Input[_builtins.str]]
+    aof_storage_connection_string1: NotRequired[pulumi.Input[_builtins.str]]
+    authnotrequired: NotRequired[pulumi.Input[_builtins.str]]
+    maxfragmentationmemory_reserved: NotRequired[pulumi.Input[_builtins.str]]
+    maxmemory_delta: NotRequired[pulumi.Input[_builtins.str]]
+    maxmemory_policy: NotRequired[pulumi.Input[_builtins.str]]
+    maxmemory_reserved: NotRequired[pulumi.Input[_builtins.str]]
+    notify_keyspace_events: NotRequired[pulumi.Input[_builtins.str]]
+    preferred_data_persistence_auth_method: NotRequired[pulumi.Input[_builtins.str]]
+    rdb_backup_enabled: NotRequired[pulumi.Input[_builtins.str]]
+    rdb_backup_frequency: NotRequired[pulumi.Input[_builtins.str]]
+    rdb_backup_max_snapshot_count: NotRequired[pulumi.Input[_builtins.str]]
+    rdb_storage_connection_string: NotRequired[pulumi.Input[_builtins.str]]
+    storage_subscription_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RedisCommonPropertiesRedisConfigurationArgs:
+    def __init__(__self__, *, aad_enabled: Optional[pulumi.Input[_builtins.str]] = ..., aof_backup_enabled: Optional[pulumi.Input[_builtins.str]] = ..., aof_storage_connection_string0: Optional[pulumi.Input[_builtins.str]] = ..., aof_storage_connection_string1: Optional[pulumi.Input[_builtins.str]] = ..., authnotrequired: Optional[pulumi.Input[_builtins.str]] = ..., maxfragmentationmemory_reserved: Optional[pulumi.Input[_builtins.str]] = ..., maxmemory_delta: Optional[pulumi.Input[_builtins.str]] = ..., maxmemory_policy: Optional[pulumi.Input[_builtins.str]] = ..., maxmemory_reserved: Optional[pulumi.Input[_builtins.str]] = ..., notify_keyspace_events: Optional[pulumi.Input[_builtins.str]] = ..., preferred_data_persistence_auth_method: Optional[pulumi.Input[_builtins.str]] = ..., rdb_backup_enabled: Optional[pulumi.Input[_builtins.str]] = ..., rdb_backup_frequency: Optional[pulumi.Input[_builtins.str]] = ..., rdb_backup_max_snapshot_count: Optional[pulumi.Input[_builtins.str]] = ..., rdb_storage_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., storage_subscription_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadEnabled")
+    def aad_enabled(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aad_enabled.setter
+    def aad_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aofBackupEnabled")
+    def aof_backup_enabled(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aof_backup_enabled.setter
+    def aof_backup_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aofStorageConnectionString0")
+    def aof_storage_connection_string0(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aof_storage_connection_string0.setter
+    def aof_storage_connection_string0(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aofStorageConnectionString1")
+    def aof_storage_connection_string1(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aof_storage_connection_string1.setter
+    def aof_storage_connection_string1(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authnotrequired(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authnotrequired.setter
+    def authnotrequired(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxfragmentationmemoryReserved")
+    def maxfragmentationmemory_reserved(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maxfragmentationmemory_reserved.setter
+    def maxfragmentationmemory_reserved(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxmemoryDelta")
+    def maxmemory_delta(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maxmemory_delta.setter
+    def maxmemory_delta(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxmemoryPolicy")
+    def maxmemory_policy(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maxmemory_policy.setter
+    def maxmemory_policy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxmemoryReserved")
+    def maxmemory_reserved(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maxmemory_reserved.setter
+    def maxmemory_reserved(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notifyKeyspaceEvents")
+    def notify_keyspace_events(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @notify_keyspace_events.setter
+    def notify_keyspace_events(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preferredDataPersistenceAuthMethod")
+    def preferred_data_persistence_auth_method(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @preferred_data_persistence_auth_method.setter
+    def preferred_data_persistence_auth_method(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rdbBackupEnabled")
+    def rdb_backup_enabled(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rdb_backup_enabled.setter
+    def rdb_backup_enabled(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rdbBackupFrequency")
+    def rdb_backup_frequency(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rdb_backup_frequency.setter
+    def rdb_backup_frequency(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rdbBackupMaxSnapshotCount")
+    def rdb_backup_max_snapshot_count(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rdb_backup_max_snapshot_count.setter
+    def rdb_backup_max_snapshot_count(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rdbStorageConnectionString")
+    def rdb_storage_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rdb_storage_connection_string.setter
+    def rdb_storage_connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageSubscriptionId")
+    def storage_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_subscription_id.setter
+    def storage_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScheduleEntryArgsDict(TypedDict):
+    
+    day_of_week: pulumi.Input[DayOfWeek]
+    start_hour_utc: pulumi.Input[_builtins.int]
+    maintenance_window: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ScheduleEntryArgs:
+    def __init__(__self__, *, day_of_week: pulumi.Input[DayOfWeek], start_hour_utc: pulumi.Input[_builtins.int], maintenance_window: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dayOfWeek")
+    def day_of_week(self) -> pulumi.Input[DayOfWeek]:
+        
+        ...
+    
+    @day_of_week.setter
+    def day_of_week(self, value: pulumi.Input[DayOfWeek]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startHourUtc")
+    def start_hour_utc(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @start_hour_utc.setter
+    def start_hour_utc(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceWindow")
+    def maintenance_window(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maintenance_window.setter
+    def maintenance_window(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    capacity: pulumi.Input[_builtins.int]
+    family: pulumi.Input[Union[_builtins.str, SkuFamily]]
+    name: pulumi.Input[Union[_builtins.str, SkuName]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, capacity: pulumi.Input[_builtins.int], family: pulumi.Input[Union[_builtins.str, SkuFamily]], name: pulumi.Input[Union[_builtins.str, SkuName]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> pulumi.Input[Union[_builtins.str, SkuFamily]]:
+        
+        ...
+    
+    @family.setter
+    def family(self, value: pulumi.Input[Union[_builtins.str, SkuFamily]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): # -> None:
+        ...
+    
+
+

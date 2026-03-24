@@ -1,0 +1,424 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetCapacityPoolVolumeResult', 'AwaitableGetCapacityPoolVolumeResult', 'get_capacity_pool_volume', 'get_capacity_pool_volume_output']
+@pulumi.output_type
+class GetCapacityPoolVolumeResult:
+    
+    def __init__(__self__, actual_throughput_mibps=..., avs_data_store=..., azure_api_version=..., backup_id=..., baremetal_tenant_id=..., capacity_pool_resource_id=..., clone_progress=..., cool_access=..., cool_access_retrieval_policy=..., cool_access_tiering_policy=..., coolness_period=..., creation_token=..., data_protection=..., data_store_resource_id=..., default_group_quota_in_ki_bs=..., default_user_quota_in_ki_bs=..., delete_base_snapshot=..., effective_network_features=..., enable_subvolumes=..., encrypted=..., encryption_key_source=..., etag=..., export_policy=..., file_access_logs=..., file_system_id=..., id=..., is_default_quota_enabled=..., is_large_volume=..., is_restoring=..., kerberos_enabled=..., key_vault_private_endpoint_resource_id=..., ldap_enabled=..., location=..., maximum_number_of_files=..., mount_targets=..., name=..., network_features=..., network_sibling_set_id=..., originating_resource_id=..., placement_rules=..., protocol_types=..., provisioned_availability_zone=..., provisioning_state=..., proximity_placement_group=..., security_style=..., service_level=..., smb_access_based_enumeration=..., smb_continuously_available=..., smb_encryption=..., smb_non_browsable=..., snapshot_directory_visible=..., snapshot_id=..., storage_to_network_proximity=..., subnet_id=..., system_data=..., t2_network=..., tags=..., throughput_mibps=..., type=..., unix_permissions=..., usage_threshold=..., volume_group_name=..., volume_spec_name=..., volume_type=..., zones=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actualThroughputMibps")
+    def actual_throughput_mibps(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="avsDataStore")
+    def avs_data_store(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backupId")
+    def backup_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baremetalTenantId")
+    def baremetal_tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="capacityPoolResourceId")
+    def capacity_pool_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloneProgress")
+    def clone_progress(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolAccess")
+    def cool_access(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolAccessRetrievalPolicy")
+    def cool_access_retrieval_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolAccessTieringPolicy")
+    def cool_access_tiering_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolnessPeriod")
+    def coolness_period(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationToken")
+    def creation_token(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataProtection")
+    def data_protection(self) -> Optional[outputs.VolumePropertiesResponseDataProtection]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataStoreResourceId")
+    def data_store_resource_id(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultGroupQuotaInKiBs")
+    def default_group_quota_in_ki_bs(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultUserQuotaInKiBs")
+    def default_user_quota_in_ki_bs(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteBaseSnapshot")
+    def delete_base_snapshot(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveNetworkFeatures")
+    def effective_network_features(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableSubvolumes")
+    def enable_subvolumes(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encrypted(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionKeySource")
+    def encryption_key_source(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exportPolicy")
+    def export_policy(self) -> Optional[outputs.VolumePropertiesResponseExportPolicy]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fileAccessLogs")
+    def file_access_logs(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fileSystemId")
+    def file_system_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isDefaultQuotaEnabled")
+    def is_default_quota_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isLargeVolume")
+    def is_large_volume(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isRestoring")
+    def is_restoring(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kerberosEnabled")
+    def kerberos_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultPrivateEndpointResourceId")
+    def key_vault_private_endpoint_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ldapEnabled")
+    def ldap_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumNumberOfFiles")
+    def maximum_number_of_files(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountTargets")
+    def mount_targets(self) -> Sequence[outputs.MountTargetPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFeatures")
+    def network_features(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkSiblingSetId")
+    def network_sibling_set_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originatingResourceId")
+    def originating_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="placementRules")
+    def placement_rules(self) -> Optional[Sequence[outputs.PlacementKeyValuePairsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="protocolTypes")
+    def protocol_types(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisionedAvailabilityZone")
+    def provisioned_availability_zone(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="proximityPlacementGroup")
+    def proximity_placement_group(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityStyle")
+    def security_style(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceLevel")
+    def service_level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smbAccessBasedEnumeration")
+    def smb_access_based_enumeration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smbContinuouslyAvailable")
+    def smb_continuously_available(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smbEncryption")
+    def smb_encryption(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smbNonBrowsable")
+    def smb_non_browsable(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotDirectoryVisible")
+    def snapshot_directory_visible(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotId")
+    def snapshot_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageToNetworkProximity")
+    def storage_to_network_proximity(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subnetId")
+    def subnet_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="t2Network")
+    def t2_network(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="throughputMibps")
+    def throughput_mibps(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="unixPermissions")
+    def unix_permissions(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usageThreshold")
+    def usage_threshold(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeGroupName")
+    def volume_group_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeSpecName")
+    def volume_spec_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeType")
+    def volume_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+class AwaitableGetCapacityPoolVolumeResult(GetCapacityPoolVolumeResult):
+    def __await__(self): # -> Generator[Never, Any, GetCapacityPoolVolumeResult]:
+        ...
+    
+
+
+def get_capacity_pool_volume(account_name: Optional[_builtins.str] = ..., pool_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., volume_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetCapacityPoolVolumeResult:
+    
+    ...
+
+def get_capacity_pool_volume_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., volume_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetCapacityPoolVolumeResult]:
+    
+    ...
+

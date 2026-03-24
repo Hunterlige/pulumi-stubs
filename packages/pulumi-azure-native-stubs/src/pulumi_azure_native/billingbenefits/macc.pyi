@@ -1,0 +1,485 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MaccArgs', 'Macc']
+@pulumi.input_type
+class MaccArgs:
+    def __init__(__self__, *, entity_type: pulumi.Input[Union[_builtins.str, MaccEntityType]], resource_group_name: pulumi.Input[_builtins.str], allow_contributors: Optional[pulumi.Input[_builtins.bool]] = ..., automatic_shortfall: Optional[pulumi.Input[Union[_builtins.str, EnablementMode]]] = ..., automatic_shortfall_suppress_reason: Optional[pulumi.Input[AutomaticShortfallSuppressReasonArgs]] = ..., billing_account_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., commitment: Optional[pulumi.Input[CommitmentArgs]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., end_at: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[ManagedServiceIdentityArgs]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., macc_name: Optional[pulumi.Input[_builtins.str]] = ..., managed_by: Optional[pulumi.Input[_builtins.str]] = ..., milestones: Optional[pulumi.Input[Sequence[pulumi.Input[MaccMilestoneArgs]]]] = ..., plan: Optional[pulumi.Input[PlanArgs]] = ..., primary_billing_account_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., primary_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., product_code: Optional[pulumi.Input[_builtins.str]] = ..., resource_id: Optional[pulumi.Input[_builtins.str]] = ..., shortfall: Optional[pulumi.Input[ShortfallArgs]] = ..., sku: Optional[pulumi.Input[SkuArgs]] = ..., start_at: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, MaccStatus]]] = ..., system_id: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityType")
+    def entity_type(self) -> pulumi.Input[Union[_builtins.str, MaccEntityType]]:
+        
+        ...
+    
+    @entity_type.setter
+    def entity_type(self, value: pulumi.Input[Union[_builtins.str, MaccEntityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowContributors")
+    def allow_contributors(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_contributors.setter
+    def allow_contributors(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticShortfall")
+    def automatic_shortfall(self) -> Optional[pulumi.Input[Union[_builtins.str, EnablementMode]]]:
+        
+        ...
+    
+    @automatic_shortfall.setter
+    def automatic_shortfall(self, value: Optional[pulumi.Input[Union[_builtins.str, EnablementMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticShortfallSuppressReason")
+    def automatic_shortfall_suppress_reason(self) -> Optional[pulumi.Input[AutomaticShortfallSuppressReasonArgs]]:
+        
+        ...
+    
+    @automatic_shortfall_suppress_reason.setter
+    def automatic_shortfall_suppress_reason(self, value: Optional[pulumi.Input[AutomaticShortfallSuppressReasonArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billingAccountResourceId")
+    def billing_account_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @billing_account_resource_id.setter
+    def billing_account_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def commitment(self) -> Optional[pulumi.Input[CommitmentArgs]]:
+        
+        ...
+    
+    @commitment.setter
+    def commitment(self, value: Optional[pulumi.Input[CommitmentArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endAt")
+    def end_at(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @end_at.setter
+    def end_at(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maccName")
+    def macc_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @macc_name.setter
+    def macc_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @managed_by.setter
+    def managed_by(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def milestones(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[MaccMilestoneArgs]]]]:
+        
+        ...
+    
+    @milestones.setter
+    def milestones(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MaccMilestoneArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> Optional[pulumi.Input[PlanArgs]]:
+        
+        ...
+    
+    @plan.setter
+    def plan(self, value: Optional[pulumi.Input[PlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryBillingAccountResourceId")
+    def primary_billing_account_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @primary_billing_account_resource_id.setter
+    def primary_billing_account_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryResourceId")
+    def primary_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @primary_resource_id.setter
+    def primary_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productCode")
+    def product_code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @product_code.setter
+    def product_code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_id.setter
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def shortfall(self) -> Optional[pulumi.Input[ShortfallArgs]]:
+        
+        ...
+    
+    @shortfall.setter
+    def shortfall(self, value: Optional[pulumi.Input[ShortfallArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[SkuArgs]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startAt")
+    def start_at(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @start_at.setter
+    def start_at(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, MaccStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, MaccStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemId")
+    def system_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @system_id.setter
+    def system_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:billingbenefits:Macc")
+class Macc(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., allow_contributors: Optional[pulumi.Input[_builtins.bool]] = ..., automatic_shortfall: Optional[pulumi.Input[Union[_builtins.str, EnablementMode]]] = ..., automatic_shortfall_suppress_reason: Optional[pulumi.Input[Union[AutomaticShortfallSuppressReasonArgs, AutomaticShortfallSuppressReasonArgsDict]]] = ..., billing_account_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., commitment: Optional[pulumi.Input[Union[CommitmentArgs, CommitmentArgsDict]]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., end_at: Optional[pulumi.Input[_builtins.str]] = ..., entity_type: Optional[pulumi.Input[Union[_builtins.str, MaccEntityType]]] = ..., identity: Optional[pulumi.Input[Union[ManagedServiceIdentityArgs, ManagedServiceIdentityArgsDict]]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., macc_name: Optional[pulumi.Input[_builtins.str]] = ..., managed_by: Optional[pulumi.Input[_builtins.str]] = ..., milestones: Optional[pulumi.Input[Sequence[pulumi.Input[Union[MaccMilestoneArgs, MaccMilestoneArgsDict]]]]] = ..., plan: Optional[pulumi.Input[Union[PlanArgs, PlanArgsDict]]] = ..., primary_billing_account_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., primary_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., product_code: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_id: Optional[pulumi.Input[_builtins.str]] = ..., shortfall: Optional[pulumi.Input[Union[ShortfallArgs, ShortfallArgsDict]]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., start_at: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, MaccStatus]]] = ..., system_id: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MaccArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Macc:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowContributors")
+    def allow_contributors(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticShortfall")
+    def automatic_shortfall(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticShortfallSuppressReason")
+    def automatic_shortfall_suppress_reason(self) -> pulumi.Output[Optional[outputs.AutomaticShortfallSuppressReasonResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billingAccountResourceId")
+    def billing_account_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def commitment(self) -> pulumi.Output[Optional[outputs.CommitmentResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endAt")
+    def end_at(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityType")
+    def entity_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.ManagedServiceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def milestones(self) -> pulumi.Output[Optional[Sequence[outputs.MaccMilestoneResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> pulumi.Output[Optional[outputs.PlanResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryBillingAccountResourceId")
+    def primary_billing_account_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryResourceId")
+    def primary_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productCode")
+    def product_code(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def shortfall(self) -> pulumi.Output[Optional[outputs.ShortfallResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[Optional[outputs.SkuResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startAt")
+    def start_at(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemId")
+    def system_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

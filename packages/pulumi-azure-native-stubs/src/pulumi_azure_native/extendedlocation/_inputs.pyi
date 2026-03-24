@@ -1,0 +1,93 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CustomLocationPropertiesAuthenticationArgs', 'CustomLocationPropertiesAuthenticationArgsDict', 'IdentityArgs', 'IdentityArgsDict', 'ResourceSyncRulePropertiesSelectorArgs', 'ResourceSyncRulePropertiesSelectorArgsDict']
+class CustomLocationPropertiesAuthenticationArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[_builtins.str]]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CustomLocationPropertiesAuthenticationArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class IdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]]
+
+
+@pulumi.input_type
+class IdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceIdentityType]]]): # -> None:
+        ...
+    
+
+
+class ResourceSyncRulePropertiesSelectorArgsDict(TypedDict):
+    
+    match_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ResourceSyncRulePropertiesSelectorArgs:
+    def __init__(__self__, *, match_labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="matchLabels")
+    def match_labels(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @match_labels.setter
+    def match_labels(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+

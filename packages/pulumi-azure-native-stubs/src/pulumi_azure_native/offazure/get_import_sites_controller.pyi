@@ -1,0 +1,101 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetImportSitesControllerResult', 'AwaitableGetImportSitesControllerResult', 'get_import_sites_controller', 'get_import_sites_controller_output']
+@pulumi.output_type
+class GetImportSitesControllerResult:
+    
+    def __init__(__self__, azure_api_version=..., discovery_solution_id=..., id=..., location=..., master_site_id=..., name=..., provisioning_state=..., service_endpoint=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoverySolutionId")
+    def discovery_solution_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="masterSiteId")
+    def master_site_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceEndpoint")
+    def service_endpoint(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetImportSitesControllerResult(GetImportSitesControllerResult):
+    def __await__(self): # -> Generator[Never, Any, GetImportSitesControllerResult]:
+        ...
+    
+
+
+def get_import_sites_controller(resource_group_name: Optional[_builtins.str] = ..., site_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetImportSitesControllerResult:
+    
+    ...
+
+def get_import_sites_controller_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetImportSitesControllerResult]:
+    
+    ...
+

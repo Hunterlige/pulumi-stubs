@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDiscoveredAssetResult', 'AwaitableGetDiscoveredAssetResult', 'get_discovered_asset', 'get_discovered_asset_output']
+@pulumi.output_type
+class GetDiscoveredAssetResult:
+    
+    def __init__(__self__, asset_endpoint_profile_ref=..., azure_api_version=..., datasets=..., default_datasets_configuration=..., default_events_configuration=..., default_topic=..., discovery_id=..., documentation_uri=..., events=..., extended_location=..., hardware_revision=..., id=..., location=..., manufacturer=..., manufacturer_uri=..., model=..., name=..., product_code=..., provisioning_state=..., serial_number=..., software_revision=..., system_data=..., tags=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assetEndpointProfileRef")
+    def asset_endpoint_profile_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def datasets(self) -> Optional[Sequence[outputs.DiscoveredDatasetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetsConfiguration")
+    def default_datasets_configuration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsConfiguration")
+    def default_events_configuration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultTopic")
+    def default_topic(self) -> Optional[outputs.TopicResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveryId")
+    def discovery_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="documentationUri")
+    def documentation_uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def events(self) -> Optional[Sequence[outputs.DiscoveredEventResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> outputs.ExtendedLocationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareRevision")
+    def hardware_revision(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def manufacturer(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="manufacturerUri")
+    def manufacturer_uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productCode")
+    def product_code(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serialNumber")
+    def serial_number(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="softwareRevision")
+    def software_revision(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.float:
+        
+        ...
+    
+
+
+class AwaitableGetDiscoveredAssetResult(GetDiscoveredAssetResult):
+    def __await__(self): # -> Generator[Never, Any, GetDiscoveredAssetResult]:
+        ...
+    
+
+
+def get_discovered_asset(discovered_asset_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDiscoveredAssetResult:
+    
+    ...
+
+def get_discovered_asset_output(discovered_asset_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDiscoveredAssetResult]:
+    
+    ...
+

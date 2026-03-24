@@ -1,0 +1,77 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPrivateEndpointResult', 'AwaitableGetPrivateEndpointResult', 'get_private_endpoint', 'get_private_endpoint_output']
+@pulumi.output_type
+class GetPrivateEndpointResult:
+    
+    def __init__(__self__, azure_api_version=..., created_date=..., etag=..., id=..., manual_private_link_service_connections=..., name=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdDate")
+    def created_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="manualPrivateLinkServiceConnections")
+    def manual_private_link_service_connections(self) -> Optional[Sequence[outputs.PrivateLinkServiceConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPrivateEndpointResult(GetPrivateEndpointResult):
+    def __await__(self): # -> Generator[Never, Any, GetPrivateEndpointResult]:
+        ...
+    
+
+
+def get_private_endpoint(cluster_name: Optional[_builtins.str] = ..., private_endpoint_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPrivateEndpointResult:
+    
+    ...
+
+def get_private_endpoint_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., private_endpoint_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPrivateEndpointResult]:
+    
+    ...
+

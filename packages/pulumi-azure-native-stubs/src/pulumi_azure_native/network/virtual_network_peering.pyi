@@ -1,0 +1,429 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['VirtualNetworkPeeringInitArgs', 'VirtualNetworkPeering']
+@pulumi.input_type
+class VirtualNetworkPeeringInitArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], virtual_network_name: pulumi.Input[_builtins.str], allow_forwarded_traffic: Optional[pulumi.Input[_builtins.bool]] = ..., allow_gateway_transit: Optional[pulumi.Input[_builtins.bool]] = ..., allow_virtual_network_access: Optional[pulumi.Input[_builtins.bool]] = ..., do_not_verify_remote_gateways: Optional[pulumi.Input[_builtins.bool]] = ..., enable_only_i_pv6_peering: Optional[pulumi.Input[_builtins.bool]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., local_address_space: Optional[pulumi.Input[AddressSpaceArgs]] = ..., local_subnet_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., local_virtual_network_address_space: Optional[pulumi.Input[AddressSpaceArgs]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., peer_complete_vnets: Optional[pulumi.Input[_builtins.bool]] = ..., peering_state: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringState]]] = ..., peering_sync_level: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringLevel]]] = ..., remote_address_space: Optional[pulumi.Input[AddressSpaceArgs]] = ..., remote_bgp_communities: Optional[pulumi.Input[VirtualNetworkBgpCommunitiesArgs]] = ..., remote_subnet_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., remote_virtual_network: Optional[pulumi.Input[SubResourceArgs]] = ..., remote_virtual_network_address_space: Optional[pulumi.Input[AddressSpaceArgs]] = ..., sync_remote_address_space: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ..., use_remote_gateways: Optional[pulumi.Input[_builtins.bool]] = ..., virtual_network_peering_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkName")
+    def virtual_network_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @virtual_network_name.setter
+    def virtual_network_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowForwardedTraffic")
+    def allow_forwarded_traffic(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_forwarded_traffic.setter
+    def allow_forwarded_traffic(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowGatewayTransit")
+    def allow_gateway_transit(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_gateway_transit.setter
+    def allow_gateway_transit(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowVirtualNetworkAccess")
+    def allow_virtual_network_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_virtual_network_access.setter
+    def allow_virtual_network_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="doNotVerifyRemoteGateways")
+    def do_not_verify_remote_gateways(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @do_not_verify_remote_gateways.setter
+    def do_not_verify_remote_gateways(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableOnlyIPv6Peering")
+    def enable_only_i_pv6_peering(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_only_i_pv6_peering.setter
+    def enable_only_i_pv6_peering(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAddressSpace")
+    def local_address_space(self) -> Optional[pulumi.Input[AddressSpaceArgs]]:
+        
+        ...
+    
+    @local_address_space.setter
+    def local_address_space(self, value: Optional[pulumi.Input[AddressSpaceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localSubnetNames")
+    def local_subnet_names(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @local_subnet_names.setter
+    def local_subnet_names(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localVirtualNetworkAddressSpace")
+    def local_virtual_network_address_space(self) -> Optional[pulumi.Input[AddressSpaceArgs]]:
+        
+        ...
+    
+    @local_virtual_network_address_space.setter
+    def local_virtual_network_address_space(self, value: Optional[pulumi.Input[AddressSpaceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerCompleteVnets")
+    def peer_complete_vnets(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @peer_complete_vnets.setter
+    def peer_complete_vnets(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringState")
+    def peering_state(self) -> Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringState]]]:
+        
+        ...
+    
+    @peering_state.setter
+    def peering_state(self, value: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringSyncLevel")
+    def peering_sync_level(self) -> Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringLevel]]]:
+        
+        ...
+    
+    @peering_sync_level.setter
+    def peering_sync_level(self, value: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringLevel]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteAddressSpace")
+    def remote_address_space(self) -> Optional[pulumi.Input[AddressSpaceArgs]]:
+        
+        ...
+    
+    @remote_address_space.setter
+    def remote_address_space(self, value: Optional[pulumi.Input[AddressSpaceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteBgpCommunities")
+    def remote_bgp_communities(self) -> Optional[pulumi.Input[VirtualNetworkBgpCommunitiesArgs]]:
+        
+        ...
+    
+    @remote_bgp_communities.setter
+    def remote_bgp_communities(self, value: Optional[pulumi.Input[VirtualNetworkBgpCommunitiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteSubnetNames")
+    def remote_subnet_names(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @remote_subnet_names.setter
+    def remote_subnet_names(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteVirtualNetwork")
+    def remote_virtual_network(self) -> Optional[pulumi.Input[SubResourceArgs]]:
+        
+        ...
+    
+    @remote_virtual_network.setter
+    def remote_virtual_network(self, value: Optional[pulumi.Input[SubResourceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteVirtualNetworkAddressSpace")
+    def remote_virtual_network_address_space(self) -> Optional[pulumi.Input[AddressSpaceArgs]]:
+        
+        ...
+    
+    @remote_virtual_network_address_space.setter
+    def remote_virtual_network_address_space(self, value: Optional[pulumi.Input[AddressSpaceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncRemoteAddressSpace")
+    def sync_remote_address_space(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sync_remote_address_space.setter
+    def sync_remote_address_space(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useRemoteGateways")
+    def use_remote_gateways(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_remote_gateways.setter
+    def use_remote_gateways(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkPeeringName")
+    def virtual_network_peering_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @virtual_network_peering_name.setter
+    def virtual_network_peering_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:network:VirtualNetworkPeering")
+class VirtualNetworkPeering(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., allow_forwarded_traffic: Optional[pulumi.Input[_builtins.bool]] = ..., allow_gateway_transit: Optional[pulumi.Input[_builtins.bool]] = ..., allow_virtual_network_access: Optional[pulumi.Input[_builtins.bool]] = ..., do_not_verify_remote_gateways: Optional[pulumi.Input[_builtins.bool]] = ..., enable_only_i_pv6_peering: Optional[pulumi.Input[_builtins.bool]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., local_address_space: Optional[pulumi.Input[Union[AddressSpaceArgs, AddressSpaceArgsDict]]] = ..., local_subnet_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., local_virtual_network_address_space: Optional[pulumi.Input[Union[AddressSpaceArgs, AddressSpaceArgsDict]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., peer_complete_vnets: Optional[pulumi.Input[_builtins.bool]] = ..., peering_state: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringState]]] = ..., peering_sync_level: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkPeeringLevel]]] = ..., remote_address_space: Optional[pulumi.Input[Union[AddressSpaceArgs, AddressSpaceArgsDict]]] = ..., remote_bgp_communities: Optional[pulumi.Input[Union[VirtualNetworkBgpCommunitiesArgs, VirtualNetworkBgpCommunitiesArgsDict]]] = ..., remote_subnet_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., remote_virtual_network: Optional[pulumi.Input[Union[SubResourceArgs, SubResourceArgsDict]]] = ..., remote_virtual_network_address_space: Optional[pulumi.Input[Union[AddressSpaceArgs, AddressSpaceArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_remote_address_space: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ..., use_remote_gateways: Optional[pulumi.Input[_builtins.bool]] = ..., virtual_network_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_peering_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: VirtualNetworkPeeringInitArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> VirtualNetworkPeering:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowForwardedTraffic")
+    def allow_forwarded_traffic(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowGatewayTransit")
+    def allow_gateway_transit(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowVirtualNetworkAccess")
+    def allow_virtual_network_access(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="doNotVerifyRemoteGateways")
+    def do_not_verify_remote_gateways(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableOnlyIPv6Peering")
+    def enable_only_i_pv6_peering(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAddressSpace")
+    def local_address_space(self) -> pulumi.Output[Optional[outputs.AddressSpaceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localSubnetNames")
+    def local_subnet_names(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localVirtualNetworkAddressSpace")
+    def local_virtual_network_address_space(self) -> pulumi.Output[Optional[outputs.AddressSpaceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerCompleteVnets")
+    def peer_complete_vnets(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringState")
+    def peering_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringSyncLevel")
+    def peering_sync_level(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteAddressSpace")
+    def remote_address_space(self) -> pulumi.Output[Optional[outputs.AddressSpaceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteBgpCommunities")
+    def remote_bgp_communities(self) -> pulumi.Output[Optional[outputs.VirtualNetworkBgpCommunitiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteSubnetNames")
+    def remote_subnet_names(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteVirtualNetwork")
+    def remote_virtual_network(self) -> pulumi.Output[Optional[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteVirtualNetworkAddressSpace")
+    def remote_virtual_network_address_space(self) -> pulumi.Output[Optional[outputs.AddressSpaceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remoteVirtualNetworkEncryption")
+    def remote_virtual_network_encryption(self) -> pulumi.Output[outputs.VirtualNetworkEncryptionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGuid")
+    def resource_guid(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useRemoteGateways")
+    def use_remote_gateways(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+
+

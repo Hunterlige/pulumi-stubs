@@ -1,0 +1,172 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ContainerGroupProfileArgs', 'ContainerGroupProfileArgsDict', 'ContainerGroupPropertiesArgs', 'ContainerGroupPropertiesArgsDict', 'StandbyContainerGroupPoolElasticityProfileArgs', 'StandbyContainerGroupPoolElasticityProfileArgsDict', 'StandbyVirtualMachinePoolElasticityProfileArgs', 'StandbyVirtualMachinePoolElasticityProfileArgsDict', 'SubnetArgs', 'SubnetArgsDict']
+class ContainerGroupProfileArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+    revision: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class ContainerGroupProfileArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], revision: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revision(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @revision.setter
+    def revision(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class ContainerGroupPropertiesArgsDict(TypedDict):
+    
+    container_group_profile: pulumi.Input[ContainerGroupProfileArgsDict]
+    subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[SubnetArgsDict]]]]
+
+
+@pulumi.input_type
+class ContainerGroupPropertiesArgs:
+    def __init__(__self__, *, container_group_profile: pulumi.Input[ContainerGroupProfileArgs], subnet_ids: Optional[pulumi.Input[Sequence[pulumi.Input[SubnetArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerGroupProfile")
+    def container_group_profile(self) -> pulumi.Input[ContainerGroupProfileArgs]:
+        
+        ...
+    
+    @container_group_profile.setter
+    def container_group_profile(self, value: pulumi.Input[ContainerGroupProfileArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subnetIds")
+    def subnet_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SubnetArgs]]]]:
+        
+        ...
+    
+    @subnet_ids.setter
+    def subnet_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubnetArgs]]]]): # -> None:
+        ...
+    
+
+
+class StandbyContainerGroupPoolElasticityProfileArgsDict(TypedDict):
+    
+    max_ready_capacity: pulumi.Input[_builtins.float]
+    refill_policy: NotRequired[pulumi.Input[Union[_builtins.str, RefillPolicy]]]
+
+
+@pulumi.input_type
+class StandbyContainerGroupPoolElasticityProfileArgs:
+    def __init__(__self__, *, max_ready_capacity: pulumi.Input[_builtins.float], refill_policy: Optional[pulumi.Input[Union[_builtins.str, RefillPolicy]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxReadyCapacity")
+    def max_ready_capacity(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @max_ready_capacity.setter
+    def max_ready_capacity(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="refillPolicy")
+    def refill_policy(self) -> Optional[pulumi.Input[Union[_builtins.str, RefillPolicy]]]:
+        
+        ...
+    
+    @refill_policy.setter
+    def refill_policy(self, value: Optional[pulumi.Input[Union[_builtins.str, RefillPolicy]]]): # -> None:
+        ...
+    
+
+
+class StandbyVirtualMachinePoolElasticityProfileArgsDict(TypedDict):
+    
+    max_ready_capacity: pulumi.Input[_builtins.float]
+    min_ready_capacity: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class StandbyVirtualMachinePoolElasticityProfileArgs:
+    def __init__(__self__, *, max_ready_capacity: pulumi.Input[_builtins.float], min_ready_capacity: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxReadyCapacity")
+    def max_ready_capacity(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @max_ready_capacity.setter
+    def max_ready_capacity(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minReadyCapacity")
+    def min_ready_capacity(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @min_ready_capacity.setter
+    def min_ready_capacity(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class SubnetArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class SubnetArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+

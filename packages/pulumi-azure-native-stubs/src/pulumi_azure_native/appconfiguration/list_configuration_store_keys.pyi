@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListConfigurationStoreKeysResult', 'AwaitableListConfigurationStoreKeysResult', 'list_configuration_store_keys', 'list_configuration_store_keys_output']
+@pulumi.output_type
+class ListConfigurationStoreKeysResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.ApiKeyResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListConfigurationStoreKeysResult(ListConfigurationStoreKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListConfigurationStoreKeysResult]:
+        ...
+    
+
+
+def list_configuration_store_keys(config_store_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., skip_token: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListConfigurationStoreKeysResult:
+    
+    ...
+
+def list_configuration_store_keys_output(config_store_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., skip_token: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListConfigurationStoreKeysResult]:
+    
+    ...
+

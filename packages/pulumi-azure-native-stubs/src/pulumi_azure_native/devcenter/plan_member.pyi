@@ -1,0 +1,174 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PlanMemberArgs', 'PlanMember']
+@pulumi.input_type
+class PlanMemberArgs:
+    def __init__(__self__, *, plan_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], member_id: Optional[pulumi.Input[_builtins.str]] = ..., member_name: Optional[pulumi.Input[_builtins.str]] = ..., member_type: Optional[pulumi.Input[Union[_builtins.str, PlanMemberType]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tier: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planName")
+    def plan_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_name.setter
+    def plan_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberId")
+    def member_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @member_id.setter
+    def member_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberName")
+    def member_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @member_name.setter
+    def member_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberType")
+    def member_type(self) -> Optional[pulumi.Input[Union[_builtins.str, PlanMemberType]]]:
+        
+        ...
+    
+    @member_type.setter
+    def member_type(self, value: Optional[pulumi.Input[Union[_builtins.str, PlanMemberType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:devcenter:PlanMember")
+class PlanMember(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., member_id: Optional[pulumi.Input[_builtins.str]] = ..., member_name: Optional[pulumi.Input[_builtins.str]] = ..., member_type: Optional[pulumi.Input[Union[_builtins.str, PlanMemberType]]] = ..., plan_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., tier: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: PlanMemberArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> PlanMember:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberId")
+    def member_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberType")
+    def member_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncStatus")
+    def sync_status(self) -> pulumi.Output[outputs.PlanMemberSyncStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

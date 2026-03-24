@@ -1,0 +1,194 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ElseConditionArgs', 'ElseConditionArgsDict', 'IfConditionArgs', 'IfConditionArgsDict', 'ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'StorageTaskActionArgs', 'StorageTaskActionArgsDict', 'StorageTaskOperationArgs', 'StorageTaskOperationArgsDict']
+class ElseConditionArgsDict(TypedDict):
+    
+    operations: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgsDict]]]
+
+
+@pulumi.input_type
+class ElseConditionArgs:
+    def __init__(__self__, *, operations: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def operations(self) -> pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]:
+        
+        ...
+    
+    @operations.setter
+    def operations(self, value: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]): # -> None:
+        ...
+    
+
+
+class IfConditionArgsDict(TypedDict):
+    
+    condition: pulumi.Input[_builtins.str]
+    operations: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgsDict]]]
+
+
+@pulumi.input_type
+class IfConditionArgs:
+    def __init__(__self__, *, condition: pulumi.Input[_builtins.str], operations: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def condition(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @condition.setter
+    def condition(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def operations(self) -> pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]:
+        
+        ...
+    
+    @operations.setter
+    def operations(self, value: pulumi.Input[Sequence[pulumi.Input[StorageTaskOperationArgs]]]): # -> None:
+        ...
+    
+
+
+class ManagedServiceIdentityArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedServiceIdentityArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class StorageTaskActionArgsDict(TypedDict):
+    
+    if_: pulumi.Input[IfConditionArgsDict]
+    else_: NotRequired[pulumi.Input[ElseConditionArgsDict]]
+
+
+@pulumi.input_type
+class StorageTaskActionArgs:
+    def __init__(__self__, *, if_: pulumi.Input[IfConditionArgs], else_: Optional[pulumi.Input[ElseConditionArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="if")
+    def if_(self) -> pulumi.Input[IfConditionArgs]:
+        
+        ...
+    
+    @if_.setter
+    def if_(self, value: pulumi.Input[IfConditionArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="else")
+    def else_(self) -> Optional[pulumi.Input[ElseConditionArgs]]:
+        
+        ...
+    
+    @else_.setter
+    def else_(self, value: Optional[pulumi.Input[ElseConditionArgs]]): # -> None:
+        ...
+    
+
+
+class StorageTaskOperationArgsDict(TypedDict):
+    
+    name: pulumi.Input[Union[_builtins.str, StorageTaskOperationName]]
+    on_failure: NotRequired[pulumi.Input[Union[_builtins.str, OnFailure]]]
+    on_success: NotRequired[pulumi.Input[Union[_builtins.str, OnSuccess]]]
+    parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class StorageTaskOperationArgs:
+    def __init__(__self__, *, name: pulumi.Input[Union[_builtins.str, StorageTaskOperationName]], on_failure: Optional[pulumi.Input[Union[_builtins.str, OnFailure]]] = ..., on_success: Optional[pulumi.Input[Union[_builtins.str, OnSuccess]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[Union[_builtins.str, StorageTaskOperationName]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[Union[_builtins.str, StorageTaskOperationName]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onFailure")
+    def on_failure(self) -> Optional[pulumi.Input[Union[_builtins.str, OnFailure]]]:
+        
+        ...
+    
+    @on_failure.setter
+    def on_failure(self, value: Optional[pulumi.Input[Union[_builtins.str, OnFailure]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onSuccess")
+    def on_success(self) -> Optional[pulumi.Input[Union[_builtins.str, OnSuccess]]]:
+        
+        ...
+    
+    @on_success.setter
+    def on_success(self, value: Optional[pulumi.Input[Union[_builtins.str, OnSuccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+

@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListRemediationDeploymentsAtSubscriptionResult', ..., 'list_remediation_deployments_at_subscription', ...]
+@pulumi.output_type
+class ListRemediationDeploymentsAtSubscriptionResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.RemediationDeploymentResponse]:
+        
+        ...
+    
+
+
+class AwaitableListRemediationDeploymentsAtSubscriptionResult(ListRemediationDeploymentsAtSubscriptionResult):
+    def __await__(self): # -> Generator[Never, Any, ListRemediationDeploymentsAtSubscriptionResult]:
+        ...
+    
+
+
+def list_remediation_deployments_at_subscription(remediation_name: Optional[_builtins.str] = ..., top: Optional[_builtins.int] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListRemediationDeploymentsAtSubscriptionResult:
+    
+    ...
+
+def list_remediation_deployments_at_subscription_output(remediation_name: Optional[pulumi.Input[_builtins.str]] = ..., top: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListRemediationDeploymentsAtSubscriptionResult]:
+    
+    ...
+

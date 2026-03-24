@@ -1,0 +1,109 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['CleanupOptions', 'DenySettingsMode', 'DeploymentMode', 'ExpressionEvaluationOptionsScopeType', 'ExtendedLocationType', 'ManagedServiceIdentityType', 'OnErrorDeploymentType', 'ResourceIdentityType', 'ResourcesWithoutDeleteSupportAction', 'ScriptType', 'UnmanageActionManagementGroupMode', 'UnmanageActionResourceGroupMode', 'UnmanageActionResourceMode', 'ValidationLevel']
+@pulumi.type_token("azure-native:resources:CleanupOptions")
+class CleanupOptions(_builtins.str, Enum):
+    
+    ALWAYS = ...
+    ON_SUCCESS = ...
+    ON_EXPIRATION = ...
+
+
+@pulumi.type_token("azure-native:resources:DenySettingsMode")
+class DenySettingsMode(_builtins.str, Enum):
+    
+    DENY_DELETE = ...
+    DENY_WRITE_AND_DELETE = ...
+    NONE = ...
+
+
+@pulumi.type_token("azure-native:resources:DeploymentMode")
+class DeploymentMode(_builtins.str, Enum):
+    
+    INCREMENTAL = ...
+    COMPLETE = ...
+
+
+@pulumi.type_token(...)
+class ExpressionEvaluationOptionsScopeType(_builtins.str, Enum):
+    
+    NOT_SPECIFIED = ...
+    OUTER = ...
+    INNER = ...
+
+
+@pulumi.type_token("azure-native:resources:ExtendedLocationType")
+class ExtendedLocationType(_builtins.str, Enum):
+    
+    EDGE_ZONE = ...
+
+
+@pulumi.type_token("azure-native:resources:ManagedServiceIdentityType")
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    USER_ASSIGNED = ...
+
+
+@pulumi.type_token("azure-native:resources:OnErrorDeploymentType")
+class OnErrorDeploymentType(_builtins.str, Enum):
+    
+    LAST_SUCCESSFUL = ...
+    SPECIFIC_DEPLOYMENT = ...
+
+
+@pulumi.type_token("azure-native:resources:ResourceIdentityType")
+class ResourceIdentityType(_builtins.str, Enum):
+    
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+    NONE = ...
+
+
+@pulumi.type_token(...)
+class ResourcesWithoutDeleteSupportAction(_builtins.str, Enum):
+    
+    DETACH = ...
+    FAIL = ...
+
+
+@pulumi.type_token("azure-native:resources:ScriptType")
+class ScriptType(_builtins.str, Enum):
+    
+    AZURE_POWER_SHELL = ...
+    AZURE_CLI = ...
+
+
+@pulumi.type_token(...)
+class UnmanageActionManagementGroupMode(_builtins.str, Enum):
+    
+    DELETE = ...
+    DETACH = ...
+
+
+@pulumi.type_token(...)
+class UnmanageActionResourceGroupMode(_builtins.str, Enum):
+    
+    DELETE = ...
+    DETACH = ...
+
+
+@pulumi.type_token("azure-native:resources:UnmanageActionResourceMode")
+class UnmanageActionResourceMode(_builtins.str, Enum):
+    
+    DELETE = ...
+    DETACH = ...
+
+
+@pulumi.type_token("azure-native:resources:ValidationLevel")
+class ValidationLevel(_builtins.str, Enum):
+    
+    TEMPLATE = ...
+    PROVIDER = ...
+    PROVIDER_NO_RBAC = ...
+
+

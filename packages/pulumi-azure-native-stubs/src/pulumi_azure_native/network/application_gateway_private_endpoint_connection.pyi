@@ -1,0 +1,152 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApplicationGatewayPrivateEndpointConnectionArgs', 'ApplicationGatewayPrivateEndpointConnection']
+@pulumi.input_type
+class ApplicationGatewayPrivateEndpointConnectionArgs:
+    def __init__(__self__, *, application_gateway_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], connection_name: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., private_link_service_connection_state: Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationGatewayName")
+    def application_gateway_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @application_gateway_name.setter
+    def application_gateway_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionName")
+    def connection_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connection_name.setter
+    def connection_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]]:
+        
+        ...
+    
+    @private_link_service_connection_state.setter
+    def private_link_service_connection_state(self, value: Optional[pulumi.Input[PrivateLinkServiceConnectionStateArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ApplicationGatewayPrivateEndpointConnection(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., application_gateway_name: Optional[pulumi.Input[_builtins.str]] = ..., connection_name: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., private_link_service_connection_state: Optional[pulumi.Input[Union[PrivateLinkServiceConnectionStateArgs, PrivateLinkServiceConnectionStateArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ApplicationGatewayPrivateEndpointConnectionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ApplicationGatewayPrivateEndpointConnection:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkIdentifier")
+    def link_identifier(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpoint")
+    def private_endpoint(self) -> pulumi.Output[outputs.PrivateEndpointResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> pulumi.Output[Optional[outputs.PrivateLinkServiceConnectionStateResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

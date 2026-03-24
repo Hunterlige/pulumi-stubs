@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., ..., ...]
+@pulumi.output_type
+class ListApplicationBusinessProcessDevelopmentArtifactsResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.SaveOrGetBusinessProcessDevelopmentArtifactResponseResponse]:
+        
+        ...
+    
+
+
+class AwaitableListApplicationBusinessProcessDevelopmentArtifactsResult(ListApplicationBusinessProcessDevelopmentArtifactsResult):
+    def __await__(self): # -> Generator[Never, Any, ListApplicationBusinessProcessDevelopmentArtifactsResult]:
+        ...
+    
+
+
+def list_application_business_process_development_artifacts(application_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., space_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListApplicationBusinessProcessDevelopmentArtifactsResult:
+    
+    ...
+
+def list_application_business_process_development_artifacts_output(application_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., space_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListApplicationBusinessProcessDevelopmentArtifactsResult]:
+    
+    ...
+

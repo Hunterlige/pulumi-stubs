@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListEffectiveVirtualNetworkByNetworkManagerResult', ..., 'list_effective_virtual_network_by_network_manager', ...]
+@pulumi.output_type
+class ListEffectiveVirtualNetworkByNetworkManagerResult:
+    
+    def __init__(__self__, skip_token=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skipToken")
+    def skip_token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.EffectiveVirtualNetworkResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListEffectiveVirtualNetworkByNetworkManagerResult(ListEffectiveVirtualNetworkByNetworkManagerResult):
+    def __await__(self): # -> Generator[Never, Any, ListEffectiveVirtualNetworkByNetworkManagerResult]:
+        ...
+    
+
+
+def list_effective_virtual_network_by_network_manager(conditional_members: Optional[_builtins.str] = ..., network_manager_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., skip_token: Optional[_builtins.str] = ..., top: Optional[_builtins.int] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListEffectiveVirtualNetworkByNetworkManagerResult:
+    
+    ...
+
+def list_effective_virtual_network_by_network_manager_output(conditional_members: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., network_manager_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., skip_token: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., top: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListEffectiveVirtualNetworkByNetworkManagerResult]:
+    
+    ...
+

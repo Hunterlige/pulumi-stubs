@@ -1,0 +1,175 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ClusterArgs', 'Cluster']
+@pulumi.input_type
+class ClusterArgs:
+    def __init__(__self__, *, private_cloud_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], sku: pulumi.Input[SkuArgs], cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., cluster_size: Optional[pulumi.Input[_builtins.int]] = ..., hosts: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vsan_datastore_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateCloudName")
+    def private_cloud_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @private_cloud_name.setter
+    def private_cloud_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Input[SkuArgs]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: pulumi.Input[SkuArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterName")
+    def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cluster_name.setter
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterSize")
+    def cluster_size(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @cluster_size.setter
+    def cluster_size(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hosts(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @hosts.setter
+    def hosts(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vsanDatastoreName")
+    def vsan_datastore_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @vsan_datastore_name.setter
+    def vsan_datastore_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:avs:Cluster")
+class Cluster(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., cluster_size: Optional[pulumi.Input[_builtins.int]] = ..., hosts: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., private_cloud_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., vsan_datastore_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ClusterArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Cluster:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterSize")
+    def cluster_size(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hosts(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vsanDatastoreName")
+    def vsan_datastore_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

@@ -1,0 +1,730 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApplicationArtifactResponse', 'ApplicationAuthorizationResponse', 'ApplicationBillingDetailsDefinitionResponse', 'ApplicationClientDetailsResponse', 'ApplicationDefinitionArtifactResponse', 'ApplicationDeploymentPolicyResponse', 'ApplicationJitAccessPolicyResponse', 'ApplicationManagementPolicyResponse', 'ApplicationNotificationEndpointResponse', 'ApplicationNotificationPolicyResponse', 'ApplicationPackageContactResponse', 'ApplicationPackageLockingPolicyDefinitionResponse', 'ApplicationPackageSupportUrlsResponse', 'ApplicationPolicyResponse', 'IdentityResponse', 'JitApproverDefinitionResponse', 'JitAuthorizationPoliciesResponse', 'JitSchedulingPolicyResponse', 'ManagedIdentityTokenResponse', 'PlanResponse', 'SkuResponse', 'SystemDataResponse', 'UserAssignedResourceIdentityResponse']
+@pulumi.output_type
+class ApplicationArtifactResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, type: _builtins.str, uri: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationAuthorizationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, role_definition_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationBillingDetailsDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, resource_usage_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceUsageId")
+    def resource_usage_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationClientDetailsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, application_id: Optional[_builtins.str] = ..., oid: Optional[_builtins.str] = ..., puid: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationId")
+    def application_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def oid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def puid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationDefinitionArtifactResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, type: _builtins.str, uri: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationDeploymentPolicyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, deployment_mode: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentMode")
+    def deployment_mode(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationJitAccessPolicyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, jit_access_enabled: _builtins.bool, jit_approval_mode: Optional[_builtins.str] = ..., jit_approvers: Optional[Sequence[outputs.JitApproverDefinitionResponse]] = ..., maximum_jit_access_duration: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitAccessEnabled")
+    def jit_access_enabled(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitApprovalMode")
+    def jit_approval_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitApprovers")
+    def jit_approvers(self) -> Optional[Sequence[outputs.JitApproverDefinitionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumJitAccessDuration")
+    def maximum_jit_access_duration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationManagementPolicyResponse(dict):
+    
+    def __init__(__self__, *, mode: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationNotificationEndpointResponse(dict):
+    
+    def __init__(__self__, *, uri: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationNotificationPolicyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, notification_endpoints: Sequence[outputs.ApplicationNotificationEndpointResponse]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notificationEndpoints")
+    def notification_endpoints(self) -> Sequence[outputs.ApplicationNotificationEndpointResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationPackageContactResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, email: _builtins.str, phone: _builtins.str, contact_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def email(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def phone(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contactName")
+    def contact_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationPackageLockingPolicyDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, allowed_actions: Optional[Sequence[_builtins.str]] = ..., allowed_data_actions: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedActions")
+    def allowed_actions(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedDataActions")
+    def allowed_data_actions(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationPackageSupportUrlsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, government_cloud: Optional[_builtins.str] = ..., public_azure: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="governmentCloud")
+    def government_cloud(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicAzure")
+    def public_azure(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApplicationPolicyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: Optional[_builtins.str] = ..., parameters: Optional[_builtins.str] = ..., policy_definition_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class IdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: Optional[_builtins.str] = ..., user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedResourceIdentityResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedResourceIdentityResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class JitApproverDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, id: _builtins.str, display_name: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class JitAuthorizationPoliciesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, role_definition_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class JitSchedulingPolicyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, duration: _builtins.str, start_time: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedIdentityTokenResponse(dict):
+    
+    def __init__(__self__, *, access_token: Optional[_builtins.str] = ..., authorization_audience: Optional[_builtins.str] = ..., expires_in: Optional[_builtins.str] = ..., expires_on: Optional[_builtins.str] = ..., not_before: Optional[_builtins.str] = ..., resource_id: Optional[_builtins.str] = ..., token_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessToken")
+    def access_token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationAudience")
+    def authorization_audience(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiresIn")
+    def expires_in(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiresOn")
+    def expires_on(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notBefore")
+    def not_before(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenType")
+    def token_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PlanResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: _builtins.str, product: _builtins.str, publisher: _builtins.str, version: _builtins.str, promotion_code: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="promotionCode")
+    def promotion_code(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SkuResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, capacity: Optional[_builtins.int] = ..., family: Optional[_builtins.str] = ..., model: Optional[_builtins.str] = ..., size: Optional[_builtins.str] = ..., tier: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAssignedResourceIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+
+

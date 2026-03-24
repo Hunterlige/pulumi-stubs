@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWorkspaceNamedValueResult', 'AwaitableGetWorkspaceNamedValueResult', 'get_workspace_named_value', 'get_workspace_named_value_output']
+@pulumi.output_type
+class GetWorkspaceNamedValueResult:
+    
+    def __init__(__self__, azure_api_version=..., display_name=..., id=..., key_vault=..., name=..., provisioning_state=..., secret=..., tags=..., type=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVault")
+    def key_vault(self) -> Optional[outputs.KeyVaultContractPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secret(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetWorkspaceNamedValueResult(GetWorkspaceNamedValueResult):
+    def __await__(self): # -> Generator[Never, Any, GetWorkspaceNamedValueResult]:
+        ...
+    
+
+
+def get_workspace_named_value(named_value_id: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., service_name: Optional[_builtins.str] = ..., workspace_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWorkspaceNamedValueResult:
+    
+    ...
+
+def get_workspace_named_value_output(named_value_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWorkspaceNamedValueResult]:
+    
+    ...
+

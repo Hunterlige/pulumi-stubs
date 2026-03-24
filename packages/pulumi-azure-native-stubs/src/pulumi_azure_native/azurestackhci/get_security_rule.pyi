@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSecurityRuleResult', 'AwaitableGetSecurityRuleResult', 'get_security_rule', 'get_security_rule_output']
+@pulumi.output_type
+class GetSecurityRuleResult:
+    
+    def __init__(__self__, access=..., azure_api_version=..., description=..., destination_address_prefixes=..., destination_port_ranges=..., direction=..., extended_location=..., id=..., name=..., priority=..., protocol=..., provisioning_state=..., source_address_prefixes=..., source_port_ranges=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def access(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationAddressPrefixes")
+    def destination_address_prefixes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationPortRanges")
+    def destination_port_ranges(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def direction(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceAddressPrefixes")
+    def source_address_prefixes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourcePortRanges")
+    def source_port_ranges(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetSecurityRuleResult(GetSecurityRuleResult):
+    def __await__(self): # -> Generator[Never, Any, GetSecurityRuleResult]:
+        ...
+    
+
+
+def get_security_rule(network_security_group_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., security_rule_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSecurityRuleResult:
+    
+    ...
+
+def get_security_rule_output(network_security_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., security_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSecurityRuleResult]:
+    
+    ...
+

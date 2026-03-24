@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSnapshotResult', 'AwaitableGetSnapshotResult', 'get_snapshot', 'get_snapshot_output']
+@pulumi.output_type
+class GetSnapshotResult:
+    
+    def __init__(__self__, azure_api_version=..., creation_data=..., enable_fips=..., id=..., kubernetes_version=..., location=..., name=..., node_image_version=..., os_sku=..., os_type=..., snapshot_type=..., system_data=..., tags=..., type=..., vm_size=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationData")
+    def creation_data(self) -> Optional[outputs.CreationDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableFIPS")
+    def enable_fips(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesVersion")
+    def kubernetes_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeImageVersion")
+    def node_image_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osSku")
+    def os_sku(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotType")
+    def snapshot_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmSize")
+    def vm_size(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetSnapshotResult(GetSnapshotResult):
+    def __await__(self): # -> Generator[Never, Any, GetSnapshotResult]:
+        ...
+    
+
+
+def get_snapshot(resource_group_name: Optional[_builtins.str] = ..., resource_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSnapshotResult:
+    
+    ...
+
+def get_snapshot_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSnapshotResult]:
+    
+    ...
+

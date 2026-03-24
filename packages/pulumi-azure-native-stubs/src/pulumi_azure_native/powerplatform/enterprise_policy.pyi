@@ -1,0 +1,223 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['EnterprisePolicyArgs', 'EnterprisePolicy']
+@pulumi.input_type
+class EnterprisePolicyArgs:
+    def __init__(__self__, *, kind: pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]], resource_group_name: pulumi.Input[_builtins.str], encryption: Optional[pulumi.Input[PropertiesEncryptionArgs]] = ..., enterprise_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., health_status: Optional[pulumi.Input[Union[_builtins.str, HealthStatus]]] = ..., identity: Optional[pulumi.Input[EnterprisePolicyIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., lockbox: Optional[pulumi.Input[PropertiesLockboxArgs]] = ..., network_injection: Optional[pulumi.Input[PropertiesNetworkInjectionArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> Optional[pulumi.Input[PropertiesEncryptionArgs]]:
+        
+        ...
+    
+    @encryption.setter
+    def encryption(self, value: Optional[pulumi.Input[PropertiesEncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enterprisePolicyName")
+    def enterprise_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @enterprise_policy_name.setter
+    def enterprise_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthStatus")
+    def health_status(self) -> Optional[pulumi.Input[Union[_builtins.str, HealthStatus]]]:
+        
+        ...
+    
+    @health_status.setter
+    def health_status(self, value: Optional[pulumi.Input[Union[_builtins.str, HealthStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[EnterprisePolicyIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[EnterprisePolicyIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def lockbox(self) -> Optional[pulumi.Input[PropertiesLockboxArgs]]:
+        
+        ...
+    
+    @lockbox.setter
+    def lockbox(self, value: Optional[pulumi.Input[PropertiesLockboxArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkInjection")
+    def network_injection(self) -> Optional[pulumi.Input[PropertiesNetworkInjectionArgs]]:
+        
+        ...
+    
+    @network_injection.setter
+    def network_injection(self, value: Optional[pulumi.Input[PropertiesNetworkInjectionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:powerplatform:EnterprisePolicy")
+class EnterprisePolicy(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., encryption: Optional[pulumi.Input[Union[PropertiesEncryptionArgs, PropertiesEncryptionArgsDict]]] = ..., enterprise_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., health_status: Optional[pulumi.Input[Union[_builtins.str, HealthStatus]]] = ..., identity: Optional[pulumi.Input[Union[EnterprisePolicyIdentityArgs, EnterprisePolicyIdentityArgsDict]]] = ..., kind: Optional[pulumi.Input[Union[_builtins.str, EnterprisePolicyKind]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., lockbox: Optional[pulumi.Input[Union[PropertiesLockboxArgs, PropertiesLockboxArgsDict]]] = ..., network_injection: Optional[pulumi.Input[Union[PropertiesNetworkInjectionArgs, PropertiesNetworkInjectionArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: EnterprisePolicyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> EnterprisePolicy:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> pulumi.Output[Optional[outputs.PropertiesResponseEncryption]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthStatus")
+    def health_status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.EnterprisePolicyIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def lockbox(self) -> pulumi.Output[Optional[outputs.PropertiesResponseLockbox]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkInjection")
+    def network_injection(self) -> pulumi.Output[Optional[outputs.PropertiesResponseNetworkInjection]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemId")
+    def system_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

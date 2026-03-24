@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAssessmentResult', 'AwaitableGetAssessmentResult', 'get_assessment', 'get_assessment_output']
+@pulumi.output_type
+class GetAssessmentResult:
+    
+    def __init__(__self__, assessment_id=..., azure_api_version=..., description=..., id=..., locale=..., name=..., score=..., state=..., system_data=..., type=..., type_id=..., type_version=..., workload_id=..., workload_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentId")
+    def assessment_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locale(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def score(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeId")
+    def type_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeVersion")
+    def type_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadId")
+    def workload_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadName")
+    def workload_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetAssessmentResult(GetAssessmentResult):
+    def __await__(self): # -> Generator[Never, Any, GetAssessmentResult]:
+        ...
+    
+
+
+def get_assessment(assessment_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAssessmentResult:
+    
+    ...
+
+def get_assessment_output(assessment_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAssessmentResult]:
+    
+    ...
+

@@ -1,0 +1,358 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AgentPoolArgs', 'AgentPool']
+@pulumi.input_type
+class AgentPoolArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], resource_name: pulumi.Input[_builtins.str], agent_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., availability_zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., cloud_provider_profile: Optional[pulumi.Input[CloudProviderProfileArgs]] = ..., count: Optional[pulumi.Input[_builtins.int]] = ..., extended_location: Optional[pulumi.Input[AgentPoolExtendedLocationArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., max_count: Optional[pulumi.Input[_builtins.int]] = ..., max_pods: Optional[pulumi.Input[_builtins.int]] = ..., min_count: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, Mode]]] = ..., node_image_version: Optional[pulumi.Input[_builtins.str]] = ..., node_labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., node_taints: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., os_type: Optional[pulumi.Input[Union[_builtins.str, OsType]]] = ..., status: Optional[pulumi.Input[AgentPoolProvisioningStatusStatusArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., vm_size: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentPoolName")
+    def agent_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_pool_name.setter
+    def agent_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @availability_zones.setter
+    def availability_zones(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudProviderProfile")
+    def cloud_provider_profile(self) -> Optional[pulumi.Input[CloudProviderProfileArgs]]:
+        
+        ...
+    
+    @cloud_provider_profile.setter
+    def cloud_provider_profile(self, value: Optional[pulumi.Input[CloudProviderProfileArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @count.setter
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[pulumi.Input[AgentPoolExtendedLocationArgs]]:
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: Optional[pulumi.Input[AgentPoolExtendedLocationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxCount")
+    def max_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @max_count.setter
+    def max_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxPods")
+    def max_pods(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @max_pods.setter
+    def max_pods(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minCount")
+    def min_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @min_count.setter
+    def min_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, Mode]]]:
+        
+        ...
+    
+    @mode.setter
+    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, Mode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeImageVersion")
+    def node_image_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @node_image_version.setter
+    def node_image_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeLabels")
+    def node_labels(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @node_labels.setter
+    def node_labels(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeTaints")
+    def node_taints(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @node_taints.setter
+    def node_taints(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> Optional[pulumi.Input[Union[_builtins.str, OsType]]]:
+        
+        ...
+    
+    @os_type.setter
+    def os_type(self, value: Optional[pulumi.Input[Union[_builtins.str, OsType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[AgentPoolProvisioningStatusStatusArgs]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[AgentPoolProvisioningStatusStatusArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmSize")
+    def vm_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @vm_size.setter
+    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:hybridcontainerservice:AgentPool")
+class AgentPool(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., agent_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., availability_zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., cloud_provider_profile: Optional[pulumi.Input[Union[CloudProviderProfileArgs, CloudProviderProfileArgsDict]]] = ..., count: Optional[pulumi.Input[_builtins.int]] = ..., extended_location: Optional[pulumi.Input[Union[AgentPoolExtendedLocationArgs, AgentPoolExtendedLocationArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., max_count: Optional[pulumi.Input[_builtins.int]] = ..., max_pods: Optional[pulumi.Input[_builtins.int]] = ..., min_count: Optional[pulumi.Input[_builtins.int]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, Mode]]] = ..., node_image_version: Optional[pulumi.Input[_builtins.str]] = ..., node_labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., node_taints: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., os_type: Optional[pulumi.Input[Union[_builtins.str, OsType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name_: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[AgentPoolProvisioningStatusStatusArgs, AgentPoolProvisioningStatusStatusArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., vm_size: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AgentPoolArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AgentPool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudProviderProfile")
+    def cloud_provider_profile(self) -> pulumi.Output[Optional[outputs.CloudProviderProfileResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def count(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[Optional[outputs.AgentPoolResponseExtendedLocation]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxCount")
+    def max_count(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxPods")
+    def max_pods(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minCount")
+    def min_count(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeImageVersion")
+    def node_image_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeLabels")
+    def node_labels(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeTaints")
+    def node_taints(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[Optional[outputs.AgentPoolProvisioningStatusResponseStatus]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmSize")
+    def vm_size(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

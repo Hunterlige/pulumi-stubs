@@ -1,0 +1,155 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetCommunityResult', 'AwaitableGetCommunityResult', 'get_community', 'get_community_output']
+@pulumi.output_type
+class GetCommunityResult:
+    
+    def __init__(__self__, address_space=..., approval_settings=..., azure_api_version=..., community_role_assignments=..., dns_servers=..., firewall_sku=..., governed_service_list=..., id=..., identity=..., location=..., maintenance_mode_configuration=..., managed_on_behalf_of_configuration=..., managed_resource_group_name=..., name=..., policy_override=..., provisioning_state=..., resource_collection=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="addressSpace")
+    def address_space(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="approvalSettings")
+    def approval_settings(self) -> Optional[outputs.ApprovalSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="communityRoleAssignments")
+    def community_role_assignments(self) -> Optional[Sequence[outputs.RoleAssignmentItemResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsServers")
+    def dns_servers(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallSku")
+    def firewall_sku(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="governedServiceList")
+    def governed_service_list(self) -> Optional[Sequence[outputs.GovernedServiceItemResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.ManagedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceModeConfiguration")
+    def maintenance_mode_configuration(self) -> Optional[outputs.MaintenanceModeConfigurationModelResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedOnBehalfOfConfiguration")
+    def managed_on_behalf_of_configuration(self) -> outputs.ManagedOnBehalfOfConfigurationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupName")
+    def managed_resource_group_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyOverride")
+    def policy_override(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceCollection")
+    def resource_collection(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetCommunityResult(GetCommunityResult):
+    def __await__(self): # -> Generator[Never, Any, GetCommunityResult]:
+        ...
+    
+
+
+def get_community(community_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetCommunityResult:
+    
+    ...
+
+def get_community_output(community_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetCommunityResult]:
+    
+    ...
+

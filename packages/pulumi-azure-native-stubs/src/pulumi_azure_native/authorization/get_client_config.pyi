@@ -1,0 +1,58 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetClientConfigResult', 'AwaitableGetClientConfigResult', 'get_client_config', 'get_client_config_output']
+@pulumi.output_type
+class GetClientConfigResult:
+    
+    def __init__(__self__, client_id=..., object_id=..., subscription_id=..., tenant_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="objectId")
+    def object_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionId")
+    def subscription_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetClientConfigResult(GetClientConfigResult):
+    def __await__(self): # -> Generator[Never, Any, GetClientConfigResult]:
+        ...
+    
+
+
+def get_client_config(opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetClientConfigResult:
+    
+    ...
+
+def get_client_config_output(opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetClientConfigResult]:
+    
+    ...
+

@@ -1,0 +1,227 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['StorageAccountCredentialArgs', 'StorageAccountCredential']
+@pulumi.input_type
+class StorageAccountCredentialArgs:
+    def __init__(__self__, *, account_type: pulumi.Input[Union[_builtins.str, AccountType]], alias: pulumi.Input[_builtins.str], device_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], ssl_status: pulumi.Input[Union[_builtins.str, SSLStatus]], account_key: Optional[pulumi.Input[AsymmetricEncryptedSecretArgs]] = ..., blob_domain_name: Optional[pulumi.Input[_builtins.str]] = ..., connection_string: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., storage_account_id: Optional[pulumi.Input[_builtins.str]] = ..., user_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountType")
+    def account_type(self) -> pulumi.Input[Union[_builtins.str, AccountType]]:
+        
+        ...
+    
+    @account_type.setter
+    def account_type(self, value: pulumi.Input[Union[_builtins.str, AccountType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def alias(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @alias.setter
+    def alias(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceName")
+    def device_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @device_name.setter
+    def device_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sslStatus")
+    def ssl_status(self) -> pulumi.Input[Union[_builtins.str, SSLStatus]]:
+        
+        ...
+    
+    @ssl_status.setter
+    def ssl_status(self, value: pulumi.Input[Union[_builtins.str, SSLStatus]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountKey")
+    def account_key(self) -> Optional[pulumi.Input[AsymmetricEncryptedSecretArgs]]:
+        
+        ...
+    
+    @account_key.setter
+    def account_key(self, value: Optional[pulumi.Input[AsymmetricEncryptedSecretArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobDomainName")
+    def blob_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @blob_domain_name.setter
+    def blob_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionString")
+    def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connection_string.setter
+    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountId")
+    def storage_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_id.setter
+    def storage_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_name.setter
+    def user_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:databoxedge:StorageAccountCredential")
+class StorageAccountCredential(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_key: Optional[pulumi.Input[Union[AsymmetricEncryptedSecretArgs, AsymmetricEncryptedSecretArgsDict]]] = ..., account_type: Optional[pulumi.Input[Union[_builtins.str, AccountType]]] = ..., alias: Optional[pulumi.Input[_builtins.str]] = ..., blob_domain_name: Optional[pulumi.Input[_builtins.str]] = ..., connection_string: Optional[pulumi.Input[_builtins.str]] = ..., device_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., ssl_status: Optional[pulumi.Input[Union[_builtins.str, SSLStatus]]] = ..., storage_account_id: Optional[pulumi.Input[_builtins.str]] = ..., user_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: StorageAccountCredentialArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> StorageAccountCredential:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountKey")
+    def account_key(self) -> pulumi.Output[Optional[outputs.AsymmetricEncryptedSecretResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountType")
+    def account_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def alias(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobDomainName")
+    def blob_domain_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionString")
+    def connection_string(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sslStatus")
+    def ssl_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountId")
+    def storage_account_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

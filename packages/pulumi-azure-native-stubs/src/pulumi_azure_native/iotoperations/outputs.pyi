@@ -1,0 +1,4604 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AdvancedSettingsResponse', 'AkriConnectorPropertiesResponse', 'AkriConnectorTemplateAioMetadataResponse', 'AkriConnectorTemplateBucketizedAllocationResponse', ..., ..., 'AkriConnectorTemplateDiagnosticsResponse', ..., 'AkriConnectorTemplateHelmAuthSecretRefResponse', 'AkriConnectorTemplateHelmConfigurationResponse', ..., 'AkriConnectorTemplateHelmContainerRegistryResponse', ..., ..., ..., ..., ..., 'AkriConnectorTemplateManagedConfigurationResponse', 'AkriConnectorTemplatePersistentVolumeClaimResponse', 'AkriConnectorTemplatePropertiesResponse', ..., ..., ..., 'AkriConnectorTemplateTrustListResponse', 'AkriConnectorsContainerRegistryResponse', 'AkriConnectorsContainerRegistrySettingsResponse', 'AkriConnectorsDiagnosticsLogsResponse', 'AkriConnectorsDigestResponse', 'AkriConnectorsImagePullSecretResponse', 'AkriConnectorsMqttConnectionConfigurationResponse', 'AkriConnectorsRegistryEndpointRefResponse', 'AkriConnectorsSecretResponse', 'AkriConnectorsServiceAccountAuthenticationResponse', 'AkriConnectorsServiceAccountTokenSettingsResponse', 'AkriConnectorsTagResponse', 'AkriServicePropertiesResponse', 'AkriServiceStatusResponse', 'AuthorizationConfigResponse', 'AuthorizationRuleResponse', 'BackendChainResponse', 'BatchingConfigurationResponse', 'BrokerAuthenticationPropertiesResponse', 'BrokerAuthenticatorCustomAuthResponse', 'BrokerAuthenticatorMethodCustomResponse', 'BrokerAuthenticatorMethodSatResponse', 'BrokerAuthenticatorMethodX509AttributesResponse', 'BrokerAuthenticatorMethodX509Response', 'BrokerAuthenticatorMethodsResponse', 'BrokerAuthorizationPropertiesResponse', 'BrokerDiagnosticsResponse', 'BrokerListenerPropertiesResponse', 'BrokerPropertiesResponse', 'BrokerResourceRuleResponse', 'CardinalityResponse', 'CertManagerCertOptionsResponse', 'CertManagerCertificateSpecResponse', 'CertManagerIssuerRefResponse', 'CertManagerPrivateKeyResponse', 'ClientConfigResponse', 'DataflowBuiltInTransformationDatasetResponse', 'DataflowBuiltInTransformationFilterResponse', 'DataflowBuiltInTransformationMapResponse', 'DataflowBuiltInTransformationSettingsResponse', 'DataflowDestinationOperationSettingsResponse', 'DataflowEndpointAuthenticationAccessTokenResponse', 'DataflowEndpointAuthenticationSaslResponse', ..., ..., ..., 'DataflowEndpointAuthenticationX509Response', 'DataflowEndpointDataExplorerAuthenticationResponse', 'DataflowEndpointDataExplorerResponse', ..., 'DataflowEndpointDataLakeStorageResponse', ..., 'DataflowEndpointFabricOneLakeNamesResponse', 'DataflowEndpointFabricOneLakeResponse', 'DataflowEndpointKafkaAuthenticationResponse', 'DataflowEndpointKafkaBatchingResponse', 'DataflowEndpointKafkaResponse', 'DataflowEndpointLocalStorageResponse', 'DataflowEndpointMqttAuthenticationResponse', 'DataflowEndpointMqttResponse', 'DataflowEndpointPropertiesResponse', 'DataflowGraphConnectionInputResponse', 'DataflowGraphConnectionOutputResponse', 'DataflowGraphConnectionSchemaSettingsResponse', 'DataflowGraphDestinationNodeResponse', 'DataflowGraphDestinationNodeSettingsResponse', 'DataflowGraphDestinationSchemaSettingsResponse', 'DataflowGraphGraphNodeConfigurationResponse', 'DataflowGraphGraphNodeResponse', 'DataflowGraphNodeConnectionResponse', 'DataflowGraphNodeGraphSettingsResponse', 'DataflowGraphPropertiesResponse', 'DataflowGraphSourceNodeResponse', 'DataflowGraphSourceSettingsResponse', 'DataflowOperationResponse', 'DataflowProfilePropertiesResponse', 'DataflowPropertiesResponse', 'DataflowSourceOperationSettingsResponse', 'DiagnosticsLogsResponse', 'DiskBackedMessageBufferResponse', 'ExtendedLocationResponse', 'FrontendResponse', 'GenerateResourceLimitsResponse', 'InstancePropertiesResponse', 'KubernetesReferenceResponse', 'ListenerPortResponse', 'LocalKubernetesReferenceResponse', 'ManagedServiceIdentityResponse', 'MetricsResponse', 'PrincipalDefinitionResponse', 'ProfileDiagnosticsResponse', 'RegistryEndpointAnonymousAuthenticationResponse', ..., 'RegistryEndpointArtifactPullSecretSettingsResponse', 'RegistryEndpointPropertiesResponse', ..., ..., 'RegistryEndpointTrustedSettingsResponse', 'RegistryEndpointTrustedSigningKeyConfigMapResponse', 'RegistryEndpointTrustedSigningKeySecretResponse', ..., ..., 'ResourceHealthStatusResponse', 'SanForCertResponse', 'SchemaRegistryRefResponse', 'SelfCheckResponse', 'SelfTracingResponse', 'StateStoreResourceRuleResponse', 'SubscriberQueueLimitResponse', 'SystemDataResponse', 'TlsCertMethodResponse', 'TlsPropertiesResponse', 'TracesResponse', 'UserAssignedIdentityResponse', 'VolumeClaimResourceRequirementsResponse', 'VolumeClaimSpecResponse', 'VolumeClaimSpecSelectorMatchExpressionsResponse', 'VolumeClaimSpecSelectorResponse', 'X509ManualCertificateResponse']
+@pulumi.output_type
+class AdvancedSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, clients: Optional[outputs.ClientConfigResponse] = ..., encrypt_internal_traffic: Optional[_builtins.str] = ..., internal_certs: Optional[outputs.CertManagerCertOptionsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def clients(self) -> Optional[outputs.ClientConfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptInternalTraffic")
+    def encrypt_internal_traffic(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="internalCerts")
+    def internal_certs(self) -> Optional[outputs.CertManagerCertOptionsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateAioMetadataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, aio_max_version: Optional[_builtins.str] = ..., aio_min_version: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aioMaxVersion")
+    def aio_max_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aioMinVersion")
+    def aio_min_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateBucketizedAllocationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, bucket_size: _builtins.int, policy: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bucketSize")
+    def bucket_size(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def policy(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, additional_config_schema_ref: Optional[_builtins.str] = ..., default_dataset_config_schema_ref: Optional[_builtins.str] = ..., default_events_config_schema_ref: Optional[_builtins.str] = ..., default_process_control_config_schema_ref: Optional[_builtins.str] = ..., default_streams_config_schema_ref: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalConfigSchemaRef")
+    def additional_config_schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetConfigSchemaRef")
+    def default_dataset_config_schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsConfigSchemaRef")
+    def default_events_config_schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultProcessControlConfigSchemaRef")
+    def default_process_control_config_schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStreamsConfigSchemaRef")
+    def default_streams_config_schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateDeviceInboundEndpointTypeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, endpoint_type: _builtins.str, configuration_schema_refs: Optional[outputs.AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsResponse] = ..., description: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointType")
+    def endpoint_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationSchemaRefs")
+    def configuration_schema_refs(self) -> Optional[outputs.AkriConnectorTemplateDeviceInboundEndpointConfigurationSchemaRefsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateDiagnosticsResponse(dict):
+    
+    def __init__(__self__, *, logs: outputs.AkriConnectorsDiagnosticsLogsResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def logs(self) -> outputs.AkriConnectorsDiagnosticsLogsResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmAdvancedConfigurationResponse(dict):
+    
+    def __init__(__self__, *, delete: Optional[outputs.AkriConnectorTemplateHelmDeleteConfigurationResponse] = ..., install: Optional[outputs.AkriConnectorTemplateHelmInstallConfigurationResponse] = ..., upgrade: Optional[outputs.AkriConnectorTemplateHelmUpgradeConfigurationResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def delete(self) -> Optional[outputs.AkriConnectorTemplateHelmDeleteConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def install(self) -> Optional[outputs.AkriConnectorTemplateHelmInstallConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def upgrade(self) -> Optional[outputs.AkriConnectorTemplateHelmUpgradeConfigurationResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmAuthSecretRefResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, password_key: _builtins.str, secret_ref: _builtins.str, username_key: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="passwordKey")
+    def password_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usernameKey")
+    def username_key(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, helm_configuration_settings: outputs.AkriConnectorTemplateHelmConfigurationSettingsResponse, runtime_configuration_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="helmConfigurationSettings")
+    def helm_configuration_settings(self) -> outputs.AkriConnectorTemplateHelmConfigurationSettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runtimeConfigurationType")
+    def runtime_configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmConfigurationSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, release_name: _builtins.str, repository_name: _builtins.str, version: _builtins.str, advanced_configuration: Optional[outputs.AkriConnectorTemplateHelmAdvancedConfigurationResponse] = ..., registry_settings: Optional[Any] = ..., values: Optional[Mapping[str, _builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseName")
+    def release_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="repositoryName")
+    def repository_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="advancedConfiguration")
+    def advanced_configuration(self) -> Optional[outputs.AkriConnectorTemplateHelmAdvancedConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettings")
+    def registry_settings(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def values(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmContainerRegistryResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, container_registry_settings: outputs.AkriConnectorTemplateHelmContainerRegistrySettingsResponse, registry_settings_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerRegistrySettings")
+    def container_registry_settings(self) -> outputs.AkriConnectorTemplateHelmContainerRegistrySettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettingsType")
+    def registry_settings_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmContainerRegistrySettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, registry: _builtins.str, auth_secret_ref: Optional[outputs.AkriConnectorTemplateHelmAuthSecretRefResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def registry(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authSecretRef")
+    def auth_secret_ref(self) -> Optional[outputs.AkriConnectorTemplateHelmAuthSecretRefResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmDeleteConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, atomic: Optional[_builtins.bool] = ..., disable_hooks: Optional[_builtins.bool] = ..., timeout: Optional[_builtins.int] = ..., wait: Optional[_builtins.bool] = ..., wait_for_jobs: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def atomic(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableHooks")
+    def disable_hooks(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeout(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def wait(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="waitForJobs")
+    def wait_for_jobs(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmInstallConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, atomic: Optional[_builtins.bool] = ..., disable_hooks: Optional[_builtins.bool] = ..., timeout: Optional[_builtins.int] = ..., wait: Optional[_builtins.bool] = ..., wait_for_jobs: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def atomic(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableHooks")
+    def disable_hooks(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeout(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def wait(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="waitForJobs")
+    def wait_for_jobs(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmRegistryEndpointRefResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, registry_endpoint_ref: _builtins.str, registry_settings_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registryEndpointRef")
+    def registry_endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettingsType")
+    def registry_settings_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateHelmUpgradeConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, atomic: Optional[_builtins.bool] = ..., disable_hooks: Optional[_builtins.bool] = ..., timeout: Optional[_builtins.int] = ..., wait: Optional[_builtins.bool] = ..., wait_for_jobs: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def atomic(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableHooks")
+    def disable_hooks(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeout(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def wait(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="waitForJobs")
+    def wait_for_jobs(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateManagedConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, managed_configuration_settings: Any, runtime_configuration_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedConfigurationSettings")
+    def managed_configuration_settings(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runtimeConfigurationType")
+    def runtime_configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplatePersistentVolumeClaimResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, claim_name: _builtins.str, mount_path: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="claimName")
+    def claim_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountPath")
+    def mount_path(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplatePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, device_inbound_endpoint_types: Sequence[outputs.AkriConnectorTemplateDeviceInboundEndpointTypeResponse], provisioning_state: _builtins.str, runtime_configuration: Any, aio_metadata: Optional[outputs.AkriConnectorTemplateAioMetadataResponse] = ..., diagnostics: Optional[outputs.AkriConnectorTemplateDiagnosticsResponse] = ..., mqtt_connection_configuration: Optional[outputs.AkriConnectorsMqttConnectionConfigurationResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceInboundEndpointTypes")
+    def device_inbound_endpoint_types(self) -> Sequence[outputs.AkriConnectorTemplateDeviceInboundEndpointTypeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runtimeConfiguration")
+    def runtime_configuration(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aioMetadata")
+    def aio_metadata(self) -> Optional[outputs.AkriConnectorTemplateAioMetadataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def diagnostics(self) -> Optional[outputs.AkriConnectorTemplateDiagnosticsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mqttConnectionConfiguration")
+    def mqtt_connection_configuration(self) -> Optional[outputs.AkriConnectorsMqttConnectionConfigurationResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateRuntimeImageConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, image_configuration_settings: outputs.AkriConnectorTemplateRuntimeImageConfigurationSettingsResponse, managed_configuration_type: _builtins.str, additional_configuration: Optional[Mapping[str, _builtins.str]] = ..., allocation: Optional[outputs.AkriConnectorTemplateBucketizedAllocationResponse] = ..., persistent_volume_claim_templates: Optional[Sequence[Any]] = ..., persistent_volume_claims: Optional[Sequence[outputs.AkriConnectorTemplatePersistentVolumeClaimResponse]] = ..., secrets: Optional[Sequence[outputs.AkriConnectorsSecretResponse]] = ..., trust_settings: Optional[outputs.AkriConnectorTemplateTrustListResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageConfigurationSettings")
+    def image_configuration_settings(self) -> outputs.AkriConnectorTemplateRuntimeImageConfigurationSettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedConfigurationType")
+    def managed_configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalConfiguration")
+    def additional_configuration(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def allocation(self) -> Optional[outputs.AkriConnectorTemplateBucketizedAllocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaimTemplates")
+    def persistent_volume_claim_templates(self) -> Optional[Sequence[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaims")
+    def persistent_volume_claims(self) -> Optional[Sequence[outputs.AkriConnectorTemplatePersistentVolumeClaimResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secrets(self) -> Optional[Sequence[outputs.AkriConnectorsSecretResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustSettings")
+    def trust_settings(self) -> Optional[outputs.AkriConnectorTemplateTrustListResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateRuntimeImageConfigurationSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, image_name: _builtins.str, image_pull_policy: Optional[_builtins.str] = ..., registry_settings: Optional[Any] = ..., replicas: Optional[_builtins.int] = ..., tag_digest_settings: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageName")
+    def image_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imagePullPolicy")
+    def image_pull_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettings")
+    def registry_settings(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def replicas(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tagDigestSettings")
+    def tag_digest_settings(self) -> Optional[Any]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateRuntimeStatefulSetConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, managed_configuration_type: _builtins.str, stateful_set_configuration_settings: Any, additional_configuration: Optional[Mapping[str, _builtins.str]] = ..., allocation: Optional[outputs.AkriConnectorTemplateBucketizedAllocationResponse] = ..., persistent_volume_claim_templates: Optional[Sequence[Any]] = ..., persistent_volume_claims: Optional[Sequence[outputs.AkriConnectorTemplatePersistentVolumeClaimResponse]] = ..., secrets: Optional[Sequence[outputs.AkriConnectorsSecretResponse]] = ..., trust_settings: Optional[outputs.AkriConnectorTemplateTrustListResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedConfigurationType")
+    def managed_configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statefulSetConfigurationSettings")
+    def stateful_set_configuration_settings(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalConfiguration")
+    def additional_configuration(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def allocation(self) -> Optional[outputs.AkriConnectorTemplateBucketizedAllocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaimTemplates")
+    def persistent_volume_claim_templates(self) -> Optional[Sequence[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaims")
+    def persistent_volume_claims(self) -> Optional[Sequence[outputs.AkriConnectorTemplatePersistentVolumeClaimResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secrets(self) -> Optional[Sequence[outputs.AkriConnectorsSecretResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustSettings")
+    def trust_settings(self) -> Optional[outputs.AkriConnectorTemplateTrustListResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorTemplateTrustListResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, trust_list_secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustListSecretRef")
+    def trust_list_secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsContainerRegistryResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, container_registry_settings: outputs.AkriConnectorsContainerRegistrySettingsResponse, registry_settings_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerRegistrySettings")
+    def container_registry_settings(self) -> outputs.AkriConnectorsContainerRegistrySettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettingsType")
+    def registry_settings_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsContainerRegistrySettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, registry: _builtins.str, image_pull_secrets: Optional[Sequence[outputs.AkriConnectorsImagePullSecretResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def registry(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imagePullSecrets")
+    def image_pull_secrets(self) -> Optional[Sequence[outputs.AkriConnectorsImagePullSecretResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsDiagnosticsLogsResponse(dict):
+    
+    def __init__(__self__, *, level: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsDigestResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, digest: _builtins.str, tag_digest_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def digest(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tagDigestType")
+    def tag_digest_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsImagePullSecretResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsMqttConnectionConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication: Optional[outputs.AkriConnectorsServiceAccountAuthenticationResponse] = ..., host: Optional[_builtins.str] = ..., keep_alive_seconds: Optional[_builtins.int] = ..., max_inflight_messages: Optional[_builtins.int] = ..., protocol: Optional[_builtins.str] = ..., session_expiry_seconds: Optional[_builtins.int] = ..., tls: Optional[outputs.TlsPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> Optional[outputs.AkriConnectorsServiceAccountAuthenticationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keepAliveSeconds")
+    def keep_alive_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxInflightMessages")
+    def max_inflight_messages(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionExpirySeconds")
+    def session_expiry_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tls(self) -> Optional[outputs.TlsPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsRegistryEndpointRefResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, registry_endpoint_ref: _builtins.str, registry_settings_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registryEndpointRef")
+    def registry_endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrySettingsType")
+    def registry_settings_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsSecretResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_alias: _builtins.str, secret_key: _builtins.str, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretAlias")
+    def secret_alias(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretKey")
+    def secret_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsServiceAccountAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, service_account_token_settings: outputs.AkriConnectorsServiceAccountTokenSettingsResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountTokenSettings")
+    def service_account_token_settings(self) -> outputs.AkriConnectorsServiceAccountTokenSettingsResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsServiceAccountTokenSettingsResponse(dict):
+    
+    def __init__(__self__, *, audience: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriConnectorsTagResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, tag: _builtins.str, tag_digest_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tagDigestType")
+    def tag_digest_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriServicePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, status: outputs.AkriServiceStatusResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.AkriServiceStatusResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AkriServiceStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, health_state: outputs.ResourceHealthStatusResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthState")
+    def health_state(self) -> outputs.ResourceHealthStatusResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AuthorizationConfigResponse(dict):
+    
+    def __init__(__self__, *, cache: Optional[_builtins.str] = ..., rules: Optional[Sequence[outputs.AuthorizationRuleResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cache(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[Sequence[outputs.AuthorizationRuleResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AuthorizationRuleResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, broker_resources: Sequence[outputs.BrokerResourceRuleResponse], principals: outputs.PrincipalDefinitionResponse, state_store_resources: Optional[Sequence[outputs.StateStoreResourceRuleResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="brokerResources")
+    def broker_resources(self) -> Sequence[outputs.BrokerResourceRuleResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def principals(self) -> outputs.PrincipalDefinitionResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stateStoreResources")
+    def state_store_resources(self) -> Optional[Sequence[outputs.StateStoreResourceRuleResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BackendChainResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, partitions: _builtins.int, redundancy_factor: _builtins.int, workers: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def partitions(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="redundancyFactor")
+    def redundancy_factor(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def workers(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BatchingConfigurationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, latency_seconds: Optional[_builtins.int] = ..., max_messages: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latencySeconds")
+    def latency_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxMessages")
+    def max_messages(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticationPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication_methods: Sequence[outputs.BrokerAuthenticatorMethodsResponse], provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationMethods")
+    def authentication_methods(self) -> Sequence[outputs.BrokerAuthenticatorMethodsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorCustomAuthResponse(dict):
+    
+    def __init__(__self__, *, x509: outputs.X509ManualCertificateResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def x509(self) -> outputs.X509ManualCertificateResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorMethodCustomResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, endpoint: _builtins.str, auth: Optional[outputs.BrokerAuthenticatorCustomAuthResponse] = ..., ca_cert_config_map: Optional[_builtins.str] = ..., headers: Optional[Mapping[str, _builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def auth(self) -> Optional[outputs.BrokerAuthenticatorCustomAuthResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="caCertConfigMap")
+    def ca_cert_config_map(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def headers(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorMethodSatResponse(dict):
+    
+    def __init__(__self__, *, audiences: Sequence[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audiences(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorMethodX509AttributesResponse(dict):
+    
+    def __init__(__self__, *, attributes: Mapping[str, _builtins.str], subject: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Mapping[str, _builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subject(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorMethodX509Response(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authorization_attributes: Optional[Mapping[str, outputs.BrokerAuthenticatorMethodX509AttributesResponse]] = ..., trusted_client_ca_cert: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationAttributes")
+    def authorization_attributes(self) -> Optional[Mapping[str, outputs.BrokerAuthenticatorMethodX509AttributesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustedClientCaCert")
+    def trusted_client_ca_cert(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthenticatorMethodsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, custom_settings: Optional[outputs.BrokerAuthenticatorMethodCustomResponse] = ..., service_account_token_settings: Optional[outputs.BrokerAuthenticatorMethodSatResponse] = ..., x509_settings: Optional[outputs.BrokerAuthenticatorMethodX509Response] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customSettings")
+    def custom_settings(self) -> Optional[outputs.BrokerAuthenticatorMethodCustomResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountTokenSettings")
+    def service_account_token_settings(self) -> Optional[outputs.BrokerAuthenticatorMethodSatResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="x509Settings")
+    def x509_settings(self) -> Optional[outputs.BrokerAuthenticatorMethodX509Response]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerAuthorizationPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authorization_policies: outputs.AuthorizationConfigResponse, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationPolicies")
+    def authorization_policies(self) -> outputs.AuthorizationConfigResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerDiagnosticsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, logs: Optional[outputs.DiagnosticsLogsResponse] = ..., metrics: Optional[outputs.MetricsResponse] = ..., self_check: Optional[outputs.SelfCheckResponse] = ..., traces: Optional[outputs.TracesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def logs(self) -> Optional[outputs.DiagnosticsLogsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metrics(self) -> Optional[outputs.MetricsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selfCheck")
+    def self_check(self) -> Optional[outputs.SelfCheckResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def traces(self) -> Optional[outputs.TracesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerListenerPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, ports: Sequence[outputs.ListenerPortResponse], provisioning_state: _builtins.str, service_name: Optional[_builtins.str] = ..., service_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ports(self) -> Sequence[outputs.ListenerPortResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceType")
+    def service_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, advanced: Optional[outputs.AdvancedSettingsResponse] = ..., cardinality: Optional[outputs.CardinalityResponse] = ..., diagnostics: Optional[outputs.BrokerDiagnosticsResponse] = ..., disk_backed_message_buffer: Optional[outputs.DiskBackedMessageBufferResponse] = ..., generate_resource_limits: Optional[outputs.GenerateResourceLimitsResponse] = ..., memory_profile: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def advanced(self) -> Optional[outputs.AdvancedSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cardinality(self) -> Optional[outputs.CardinalityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def diagnostics(self) -> Optional[outputs.BrokerDiagnosticsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskBackedMessageBuffer")
+    def disk_backed_message_buffer(self) -> Optional[outputs.DiskBackedMessageBufferResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="generateResourceLimits")
+    def generate_resource_limits(self) -> Optional[outputs.GenerateResourceLimitsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memoryProfile")
+    def memory_profile(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrokerResourceRuleResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, client_ids: Optional[Sequence[_builtins.str]] = ..., topics: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIds")
+    def client_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def topics(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CardinalityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, backend_chain: outputs.BackendChainResponse, frontend: outputs.FrontendResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backendChain")
+    def backend_chain(self) -> outputs.BackendChainResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def frontend(self) -> outputs.FrontendResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertManagerCertOptionsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, duration: _builtins.str, private_key: outputs.CertManagerPrivateKeyResponse, renew_before: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateKey")
+    def private_key(self) -> outputs.CertManagerPrivateKeyResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="renewBefore")
+    def renew_before(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertManagerCertificateSpecResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, issuer_ref: outputs.CertManagerIssuerRefResponse, duration: Optional[_builtins.str] = ..., private_key: Optional[outputs.CertManagerPrivateKeyResponse] = ..., renew_before: Optional[_builtins.str] = ..., san: Optional[outputs.SanForCertResponse] = ..., secret_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="issuerRef")
+    def issuer_ref(self) -> outputs.CertManagerIssuerRefResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateKey")
+    def private_key(self) -> Optional[outputs.CertManagerPrivateKeyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="renewBefore")
+    def renew_before(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def san(self) -> Optional[outputs.SanForCertResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretName")
+    def secret_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertManagerIssuerRefResponse(dict):
+    
+    def __init__(__self__, *, group: Optional[_builtins.str] = ..., kind: _builtins.str, name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def group(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertManagerPrivateKeyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, algorithm: _builtins.str, rotation_policy: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def algorithm(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rotationPolicy")
+    def rotation_policy(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ClientConfigResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, max_keep_alive_seconds: Optional[_builtins.int] = ..., max_message_expiry_seconds: Optional[_builtins.int] = ..., max_packet_size_bytes: Optional[_builtins.int] = ..., max_receive_maximum: Optional[_builtins.int] = ..., max_session_expiry_seconds: Optional[_builtins.int] = ..., subscriber_queue_limit: Optional[outputs.SubscriberQueueLimitResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxKeepAliveSeconds")
+    def max_keep_alive_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxMessageExpirySeconds")
+    def max_message_expiry_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxPacketSizeBytes")
+    def max_packet_size_bytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxReceiveMaximum")
+    def max_receive_maximum(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxSessionExpirySeconds")
+    def max_session_expiry_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriberQueueLimit")
+    def subscriber_queue_limit(self) -> Optional[outputs.SubscriberQueueLimitResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowBuiltInTransformationDatasetResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, inputs: Sequence[_builtins.str], key: _builtins.str, description: Optional[_builtins.str] = ..., expression: Optional[_builtins.str] = ..., schema_ref: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inputs(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expression(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRef")
+    def schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowBuiltInTransformationFilterResponse(dict):
+    
+    def __init__(__self__, *, expression: _builtins.str, inputs: Sequence[_builtins.str], description: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expression(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inputs(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowBuiltInTransformationMapResponse(dict):
+    
+    def __init__(__self__, *, inputs: Sequence[_builtins.str], output: _builtins.str, description: Optional[_builtins.str] = ..., expression: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inputs(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def output(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expression(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowBuiltInTransformationSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, datasets: Optional[Sequence[outputs.DataflowBuiltInTransformationDatasetResponse]] = ..., filter: Optional[Sequence[outputs.DataflowBuiltInTransformationFilterResponse]] = ..., map: Optional[Sequence[outputs.DataflowBuiltInTransformationMapResponse]] = ..., schema_ref: Optional[_builtins.str] = ..., serialization_format: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def datasets(self) -> Optional[Sequence[outputs.DataflowBuiltInTransformationDatasetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[Sequence[outputs.DataflowBuiltInTransformationFilterResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def map(self) -> Optional[Sequence[outputs.DataflowBuiltInTransformationMapResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRef")
+    def schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serializationFormat")
+    def serialization_format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowDestinationOperationSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, data_destination: _builtins.str, endpoint_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataDestination")
+    def data_destination(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointRef")
+    def endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationAccessTokenResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationSaslResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, sasl_type: _builtins.str, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saslType")
+    def sasl_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationServiceAccountTokenResponse(dict):
+    
+    def __init__(__self__, *, audience: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse(dict):
+    
+    def __init__(__self__, *, audience: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_id: _builtins.str, tenant_id: _builtins.str, scope: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointAuthenticationX509Response(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointDataExplorerAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: Any, system_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse] = ..., user_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointDataExplorerResponse(dict):
+    
+    def __init__(__self__, *, authentication: outputs.DataflowEndpointDataExplorerAuthenticationResponse, database: _builtins.str, host: _builtins.str, batching: Optional[outputs.BatchingConfigurationResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> outputs.DataflowEndpointDataExplorerAuthenticationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def database(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> Optional[outputs.BatchingConfigurationResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointDataLakeStorageAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, access_token_settings: Optional[outputs.DataflowEndpointAuthenticationAccessTokenResponse] = ..., system_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse] = ..., user_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessTokenSettings")
+    def access_token_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationAccessTokenResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointDataLakeStorageResponse(dict):
+    
+    def __init__(__self__, *, authentication: outputs.DataflowEndpointDataLakeStorageAuthenticationResponse, host: _builtins.str, batching: Optional[outputs.BatchingConfigurationResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> outputs.DataflowEndpointDataLakeStorageAuthenticationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> Optional[outputs.BatchingConfigurationResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointFabricOneLakeAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: Any, system_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse] = ..., user_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointFabricOneLakeNamesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, lakehouse_name: _builtins.str, workspace_name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lakehouseName")
+    def lakehouse_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointFabricOneLakeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication: outputs.DataflowEndpointFabricOneLakeAuthenticationResponse, host: _builtins.str, names: outputs.DataflowEndpointFabricOneLakeNamesResponse, one_lake_path_type: _builtins.str, batching: Optional[outputs.BatchingConfigurationResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> outputs.DataflowEndpointFabricOneLakeAuthenticationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def names(self) -> outputs.DataflowEndpointFabricOneLakeNamesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="oneLakePathType")
+    def one_lake_path_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> Optional[outputs.BatchingConfigurationResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointKafkaAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, sasl_settings: Optional[outputs.DataflowEndpointAuthenticationSaslResponse] = ..., system_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse] = ..., user_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse] = ..., x509_certificate_settings: Optional[outputs.DataflowEndpointAuthenticationX509Response] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saslSettings")
+    def sasl_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSaslResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="x509CertificateSettings")
+    def x509_certificate_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationX509Response]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointKafkaBatchingResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, latency_ms: Optional[_builtins.int] = ..., max_bytes: Optional[_builtins.int] = ..., max_messages: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latencyMs")
+    def latency_ms(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxBytes")
+    def max_bytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxMessages")
+    def max_messages(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointKafkaResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication: outputs.DataflowEndpointKafkaAuthenticationResponse, host: _builtins.str, batching: Optional[outputs.DataflowEndpointKafkaBatchingResponse] = ..., cloud_event_attributes: Optional[_builtins.str] = ..., compression: Optional[_builtins.str] = ..., consumer_group_id: Optional[_builtins.str] = ..., copy_mqtt_properties: Optional[_builtins.str] = ..., kafka_acks: Optional[_builtins.str] = ..., partition_strategy: Optional[_builtins.str] = ..., tls: Optional[outputs.TlsPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> outputs.DataflowEndpointKafkaAuthenticationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> Optional[outputs.DataflowEndpointKafkaBatchingResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudEventAttributes")
+    def cloud_event_attributes(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def compression(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumerGroupId")
+    def consumer_group_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="copyMqttProperties")
+    def copy_mqtt_properties(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaAcks")
+    def kafka_acks(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionStrategy")
+    def partition_strategy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tls(self) -> Optional[outputs.TlsPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointLocalStorageResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, persistent_volume_claim_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaimRef")
+    def persistent_volume_claim_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointMqttAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, service_account_token_settings: Optional[outputs.DataflowEndpointAuthenticationServiceAccountTokenResponse] = ..., system_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse] = ..., user_assigned_managed_identity_settings: Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse] = ..., x509_certificate_settings: Optional[outputs.DataflowEndpointAuthenticationX509Response] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountTokenSettings")
+    def service_account_token_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationServiceAccountTokenResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationSystemAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationUserAssignedManagedIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="x509CertificateSettings")
+    def x509_certificate_settings(self) -> Optional[outputs.DataflowEndpointAuthenticationX509Response]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointMqttResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication: outputs.DataflowEndpointMqttAuthenticationResponse, client_id_prefix: Optional[_builtins.str] = ..., cloud_event_attributes: Optional[_builtins.str] = ..., host: Optional[_builtins.str] = ..., keep_alive_seconds: Optional[_builtins.int] = ..., max_inflight_messages: Optional[_builtins.int] = ..., protocol: Optional[_builtins.str] = ..., qos: Optional[_builtins.int] = ..., retain: Optional[_builtins.str] = ..., session_expiry_seconds: Optional[_builtins.int] = ..., tls: Optional[outputs.TlsPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> outputs.DataflowEndpointMqttAuthenticationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIdPrefix")
+    def client_id_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudEventAttributes")
+    def cloud_event_attributes(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keepAliveSeconds")
+    def keep_alive_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxInflightMessages")
+    def max_inflight_messages(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def qos(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def retain(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionExpirySeconds")
+    def session_expiry_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tls(self) -> Optional[outputs.TlsPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowEndpointPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, endpoint_type: _builtins.str, provisioning_state: _builtins.str, data_explorer_settings: Optional[outputs.DataflowEndpointDataExplorerResponse] = ..., data_lake_storage_settings: Optional[outputs.DataflowEndpointDataLakeStorageResponse] = ..., fabric_one_lake_settings: Optional[outputs.DataflowEndpointFabricOneLakeResponse] = ..., kafka_settings: Optional[outputs.DataflowEndpointKafkaResponse] = ..., local_storage_settings: Optional[outputs.DataflowEndpointLocalStorageResponse] = ..., mqtt_settings: Optional[outputs.DataflowEndpointMqttResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointType")
+    def endpoint_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataExplorerSettings")
+    def data_explorer_settings(self) -> Optional[outputs.DataflowEndpointDataExplorerResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataLakeStorageSettings")
+    def data_lake_storage_settings(self) -> Optional[outputs.DataflowEndpointDataLakeStorageResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fabricOneLakeSettings")
+    def fabric_one_lake_settings(self) -> Optional[outputs.DataflowEndpointFabricOneLakeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaSettings")
+    def kafka_settings(self) -> Optional[outputs.DataflowEndpointKafkaResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localStorageSettings")
+    def local_storage_settings(self) -> Optional[outputs.DataflowEndpointLocalStorageResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mqttSettings")
+    def mqtt_settings(self) -> Optional[outputs.DataflowEndpointMqttResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphConnectionInputResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, schema: Optional[outputs.DataflowGraphConnectionSchemaSettingsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schema(self) -> Optional[outputs.DataflowGraphConnectionSchemaSettingsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphConnectionOutputResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphConnectionSchemaSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, schema_ref: Optional[_builtins.str] = ..., serialization_format: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRef")
+    def schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serializationFormat")
+    def serialization_format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphDestinationNodeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, destination_settings: outputs.DataflowGraphDestinationNodeSettingsResponse, name: _builtins.str, node_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationSettings")
+    def destination_settings(self) -> outputs.DataflowGraphDestinationNodeSettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeType")
+    def node_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphDestinationNodeSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, data_destination: _builtins.str, endpoint_ref: _builtins.str, output_schema_settings: Optional[outputs.DataflowGraphDestinationSchemaSettingsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataDestination")
+    def data_destination(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointRef")
+    def endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputSchemaSettings")
+    def output_schema_settings(self) -> Optional[outputs.DataflowGraphDestinationSchemaSettingsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphDestinationSchemaSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, serialization_format: _builtins.str, schema_ref: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serializationFormat")
+    def serialization_format(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRef")
+    def schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphGraphNodeConfigurationResponse(dict):
+    
+    def __init__(__self__, *, key: _builtins.str, value: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphGraphNodeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, graph_settings: outputs.DataflowGraphNodeGraphSettingsResponse, name: _builtins.str, node_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="graphSettings")
+    def graph_settings(self) -> outputs.DataflowGraphNodeGraphSettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeType")
+    def node_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphNodeConnectionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, from_: outputs.DataflowGraphConnectionInputResponse, to: outputs.DataflowGraphConnectionOutputResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="from")
+    def from_(self) -> outputs.DataflowGraphConnectionInputResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def to(self) -> outputs.DataflowGraphConnectionOutputResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphNodeGraphSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, artifact: _builtins.str, registry_endpoint_ref: _builtins.str, configuration: Optional[Sequence[outputs.DataflowGraphGraphNodeConfigurationResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def artifact(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registryEndpointRef")
+    def registry_endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[Sequence[outputs.DataflowGraphGraphNodeConfigurationResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, node_connections: Sequence[outputs.DataflowGraphNodeConnectionResponse], nodes: Sequence[Any], provisioning_state: _builtins.str, mode: Optional[_builtins.str] = ..., request_disk_persistence: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeConnections")
+    def node_connections(self) -> Sequence[outputs.DataflowGraphNodeConnectionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nodes(self) -> Sequence[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestDiskPersistence")
+    def request_disk_persistence(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphSourceNodeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: _builtins.str, node_type: _builtins.str, source_settings: outputs.DataflowGraphSourceSettingsResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeType")
+    def node_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceSettings")
+    def source_settings(self) -> outputs.DataflowGraphSourceSettingsResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowGraphSourceSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, data_sources: Sequence[_builtins.str], endpoint_ref: _builtins.str, asset_ref: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSources")
+    def data_sources(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointRef")
+    def endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assetRef")
+    def asset_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowOperationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, operation_type: _builtins.str, built_in_transformation_settings: Optional[outputs.DataflowBuiltInTransformationSettingsResponse] = ..., destination_settings: Optional[outputs.DataflowDestinationOperationSettingsResponse] = ..., name: Optional[_builtins.str] = ..., source_settings: Optional[outputs.DataflowSourceOperationSettingsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operationType")
+    def operation_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="builtInTransformationSettings")
+    def built_in_transformation_settings(self) -> Optional[outputs.DataflowBuiltInTransformationSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationSettings")
+    def destination_settings(self) -> Optional[outputs.DataflowDestinationOperationSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceSettings")
+    def source_settings(self) -> Optional[outputs.DataflowSourceOperationSettingsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowProfilePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, diagnostics: Optional[outputs.ProfileDiagnosticsResponse] = ..., instance_count: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def diagnostics(self) -> Optional[outputs.ProfileDiagnosticsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceCount")
+    def instance_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, operations: Sequence[outputs.DataflowOperationResponse], provisioning_state: _builtins.str, mode: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def operations(self) -> Sequence[outputs.DataflowOperationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DataflowSourceOperationSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, data_sources: Sequence[_builtins.str], endpoint_ref: _builtins.str, asset_ref: Optional[_builtins.str] = ..., schema_ref: Optional[_builtins.str] = ..., serialization_format: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSources")
+    def data_sources(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endpointRef")
+    def endpoint_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assetRef")
+    def asset_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRef")
+    def schema_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serializationFormat")
+    def serialization_format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DiagnosticsLogsResponse(dict):
+    
+    def __init__(__self__, *, level: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DiskBackedMessageBufferResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, max_size: _builtins.str, ephemeral_volume_claim_spec: Optional[outputs.VolumeClaimSpecResponse] = ..., persistent_volume_claim_spec: Optional[outputs.VolumeClaimSpecResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxSize")
+    def max_size(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ephemeralVolumeClaimSpec")
+    def ephemeral_volume_claim_spec(self) -> Optional[outputs.VolumeClaimSpecResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="persistentVolumeClaimSpec")
+    def persistent_volume_claim_spec(self) -> Optional[outputs.VolumeClaimSpecResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExtendedLocationResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class FrontendResponse(dict):
+    
+    def __init__(__self__, *, replicas: _builtins.int, workers: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def replicas(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def workers(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class GenerateResourceLimitsResponse(dict):
+    
+    def __init__(__self__, *, cpu: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cpu(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class InstancePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, schema_registry_ref: outputs.SchemaRegistryRefResponse, version: _builtins.str, description: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaRegistryRef")
+    def schema_registry_ref(self) -> outputs.SchemaRegistryRefResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class KubernetesReferenceResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, kind: _builtins.str, name: _builtins.str, api_group: Optional[_builtins.str] = ..., namespace: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiGroup")
+    def api_group(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def namespace(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ListenerPortResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, port: _builtins.int, authentication_ref: Optional[_builtins.str] = ..., authorization_ref: Optional[_builtins.str] = ..., node_port: Optional[_builtins.int] = ..., protocol: Optional[_builtins.str] = ..., tls: Optional[outputs.TlsCertMethodResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationRef")
+    def authentication_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationRef")
+    def authorization_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodePort")
+    def node_port(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tls(self) -> Optional[outputs.TlsCertMethodResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class LocalKubernetesReferenceResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, kind: _builtins.str, name: _builtins.str, api_group: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiGroup")
+    def api_group(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedServiceIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: _builtins.str, user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentityResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentityResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class MetricsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, prometheus_port: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="prometheusPort")
+    def prometheus_port(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrincipalDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, attributes: Optional[Sequence[Mapping[str, _builtins.str]]] = ..., client_ids: Optional[Sequence[_builtins.str]] = ..., usernames: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[Sequence[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIds")
+    def client_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def usernames(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ProfileDiagnosticsResponse(dict):
+    
+    def __init__(__self__, *, logs: Optional[outputs.DiagnosticsLogsResponse] = ..., metrics: Optional[outputs.MetricsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def logs(self) -> Optional[outputs.DiagnosticsLogsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metrics(self) -> Optional[outputs.MetricsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointAnonymousAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, anonymous_settings: Any, method: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="anonymousSettings")
+    def anonymous_settings(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointArtifactPullSecretAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, artifact_pull_secret_settings: outputs.RegistryEndpointArtifactPullSecretSettingsResponse, method: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactPullSecretSettings")
+    def artifact_pull_secret_settings(self) -> outputs.RegistryEndpointArtifactPullSecretSettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointArtifactPullSecretSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, authentication: Any, host: _builtins.str, provisioning_state: _builtins.str, trust_settings: Optional[outputs.RegistryEndpointTrustedSettingsResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustSettings")
+    def trust_settings(self) -> Optional[outputs.RegistryEndpointTrustedSettingsResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointSystemAssignedIdentityAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, system_assigned_managed_identity_settings: outputs.RegistryEndpointSystemAssignedManagedIdentitySettingsResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemAssignedManagedIdentitySettings")
+    def system_assigned_managed_identity_settings(self) -> outputs.RegistryEndpointSystemAssignedManagedIdentitySettingsResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointSystemAssignedManagedIdentitySettingsResponse(dict):
+    
+    def __init__(__self__, *, audience: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointTrustedSettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, trusted_signing_keys: Any) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustedSigningKeys")
+    def trusted_signing_keys(self) -> Any:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointTrustedSigningKeyConfigMapResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, config_map_ref: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configMapRef")
+    def config_map_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointTrustedSigningKeySecretResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointUserAssignedIdentityAuthenticationResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, method: _builtins.str, user_assigned_managed_identity_settings: outputs.RegistryEndpointUserAssignedManagedIdentitySettingsResponse) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedManagedIdentitySettings")
+    def user_assigned_managed_identity_settings(self) -> outputs.RegistryEndpointUserAssignedManagedIdentitySettingsResponse:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RegistryEndpointUserAssignedManagedIdentitySettingsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_id: _builtins.str, tenant_id: _builtins.str, scope: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ResourceHealthStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, last_transition_time: _builtins.str, last_update_time: _builtins.str, message: _builtins.str, reason_code: _builtins.str, status: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastTransitionTime")
+    def last_transition_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastUpdateTime")
+    def last_update_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reasonCode")
+    def reason_code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SanForCertResponse(dict):
+    
+    def __init__(__self__, *, dns: Sequence[_builtins.str], ip: Sequence[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def dns(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ip(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SchemaRegistryRefResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, resource_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SelfCheckResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, interval_seconds: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ..., timeout_seconds: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intervalSeconds")
+    def interval_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeoutSeconds")
+    def timeout_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SelfTracingResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, interval_seconds: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intervalSeconds")
+    def interval_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class StateStoreResourceRuleResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, key_type: _builtins.str, keys: Sequence[_builtins.str], method: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyType")
+    def key_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def keys(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def method(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SubscriberQueueLimitResponse(dict):
+    
+    def __init__(__self__, *, length: Optional[_builtins.float] = ..., strategy: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def length(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def strategy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TlsCertMethodResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, mode: _builtins.str, cert_manager_certificate_spec: Optional[outputs.CertManagerCertificateSpecResponse] = ..., manual: Optional[outputs.X509ManualCertificateResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certManagerCertificateSpec")
+    def cert_manager_certificate_spec(self) -> Optional[outputs.CertManagerCertificateSpecResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def manual(self) -> Optional[outputs.X509ManualCertificateResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TlsPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, mode: Optional[_builtins.str] = ..., trusted_ca_certificate_config_map_ref: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustedCaCertificateConfigMapRef")
+    def trusted_ca_certificate_config_map_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TracesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, cache_size_megabytes: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ..., self_tracing: Optional[outputs.SelfTracingResponse] = ..., span_channel_capacity: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cacheSizeMegabytes")
+    def cache_size_megabytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selfTracing")
+    def self_tracing(self) -> Optional[outputs.SelfTracingResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spanChannelCapacity")
+    def span_channel_capacity(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAssignedIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_id: _builtins.str, principal_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VolumeClaimResourceRequirementsResponse(dict):
+    
+    def __init__(__self__, *, limits: Optional[Mapping[str, _builtins.str]] = ..., requests: Optional[Mapping[str, _builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def limits(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def requests(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VolumeClaimSpecResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, access_modes: Optional[Sequence[_builtins.str]] = ..., data_source: Optional[outputs.LocalKubernetesReferenceResponse] = ..., data_source_ref: Optional[outputs.KubernetesReferenceResponse] = ..., resources: Optional[outputs.VolumeClaimResourceRequirementsResponse] = ..., selector: Optional[outputs.VolumeClaimSpecSelectorResponse] = ..., storage_class_name: Optional[_builtins.str] = ..., volume_mode: Optional[_builtins.str] = ..., volume_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessModes")
+    def access_modes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSource")
+    def data_source(self) -> Optional[outputs.LocalKubernetesReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSourceRef")
+    def data_source_ref(self) -> Optional[outputs.KubernetesReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def resources(self) -> Optional[outputs.VolumeClaimResourceRequirementsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def selector(self) -> Optional[outputs.VolumeClaimSpecSelectorResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageClassName")
+    def storage_class_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeMode")
+    def volume_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeName")
+    def volume_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VolumeClaimSpecSelectorMatchExpressionsResponse(dict):
+    
+    def __init__(__self__, *, key: _builtins.str, operator: _builtins.str, values: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def operator(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def values(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VolumeClaimSpecSelectorResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, match_expressions: Optional[Sequence[outputs.VolumeClaimSpecSelectorMatchExpressionsResponse]] = ..., match_labels: Optional[Mapping[str, _builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="matchExpressions")
+    def match_expressions(self) -> Optional[Sequence[outputs.VolumeClaimSpecSelectorMatchExpressionsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="matchLabels")
+    def match_labels(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class X509ManualCertificateResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_ref: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> _builtins.str:
+        
+        ...
+    
+
+

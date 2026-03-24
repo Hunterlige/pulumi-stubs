@@ -1,0 +1,182 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GroupsOperationArgs', 'GroupsOperation']
+@pulumi.input_type
+class GroupsOperationArgs:
+    def __init__(__self__, *, project_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], group_name: Optional[pulumi.Input[_builtins.str]] = ..., group_type: Optional[pulumi.Input[Union[_builtins.str, GroupType]]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., supported_assessment_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AssessmentType]]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectName")
+    def project_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @project_name.setter
+    def project_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupName")
+    def group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @group_name.setter
+    def group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupType")
+    def group_type(self) -> Optional[pulumi.Input[Union[_builtins.str, GroupType]]]:
+        
+        ...
+    
+    @group_type.setter
+    def group_type(self, value: Optional[pulumi.Input[Union[_builtins.str, GroupType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedAssessmentTypes")
+    def supported_assessment_types(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AssessmentType]]]]]:
+        
+        ...
+    
+    @supported_assessment_types.setter
+    def supported_assessment_types(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AssessmentType]]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:migrate:GroupsOperation")
+class GroupsOperation(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., group_name: Optional[pulumi.Input[_builtins.str]] = ..., group_type: Optional[pulumi.Input[Union[_builtins.str, GroupType]]] = ..., project_name: Optional[pulumi.Input[_builtins.str]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., supported_assessment_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AssessmentType]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: GroupsOperationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> GroupsOperation:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="areAssessmentsRunning")
+    def are_assessments_running(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def assessments(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimestamp")
+    def created_timestamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupStatus")
+    def group_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupType")
+    def group_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineCount")
+    def machine_count(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedAssessmentTypes")
+    def supported_assessment_types(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedTimestamp")
+    def updated_timestamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,475 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApiArgs', 'Api']
+@pulumi.input_type
+class ApiArgs:
+    def __init__(__self__, *, path: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], api_id: Optional[pulumi.Input[_builtins.str]] = ..., api_revision: Optional[pulumi.Input[_builtins.str]] = ..., api_revision_description: Optional[pulumi.Input[_builtins.str]] = ..., api_type: Optional[pulumi.Input[Union[_builtins.str, ApiType]]] = ..., api_version: Optional[pulumi.Input[_builtins.str]] = ..., api_version_description: Optional[pulumi.Input[_builtins.str]] = ..., api_version_set: Optional[pulumi.Input[ApiVersionSetContractDetailsArgs]] = ..., api_version_set_id: Optional[pulumi.Input[_builtins.str]] = ..., authentication_settings: Optional[pulumi.Input[AuthenticationSettingsContractArgs]] = ..., contact: Optional[pulumi.Input[ApiContactInformationArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[Union[_builtins.str, ContentFormat]]] = ..., is_current: Optional[pulumi.Input[_builtins.bool]] = ..., license: Optional[pulumi.Input[ApiLicenseInformationArgs]] = ..., protocols: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Protocol]]]]] = ..., service_url: Optional[pulumi.Input[_builtins.str]] = ..., soap_api_type: Optional[pulumi.Input[Union[_builtins.str, SoapApiType]]] = ..., source_api_id: Optional[pulumi.Input[_builtins.str]] = ..., subscription_key_parameter_names: Optional[pulumi.Input[SubscriptionKeyParameterNamesContractArgs]] = ..., subscription_required: Optional[pulumi.Input[_builtins.bool]] = ..., terms_of_service_url: Optional[pulumi.Input[_builtins.str]] = ..., translate_required_query_parameters_conduct: Optional[pulumi.Input[Union[_builtins.str, TranslateRequiredQueryParametersConduct]]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ..., wsdl_selector: Optional[pulumi.Input[ApiCreateOrUpdatePropertiesWsdlSelectorArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def path(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @path.setter
+    def path(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiId")
+    def api_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_id.setter
+    def api_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiRevision")
+    def api_revision(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_revision.setter
+    def api_revision(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiRevisionDescription")
+    def api_revision_description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_revision_description.setter
+    def api_revision_description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiType")
+    def api_type(self) -> Optional[pulumi.Input[Union[_builtins.str, ApiType]]]:
+        
+        ...
+    
+    @api_type.setter
+    def api_type(self, value: Optional[pulumi.Input[Union[_builtins.str, ApiType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersion")
+    def api_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_version.setter
+    def api_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionDescription")
+    def api_version_description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_version_description.setter
+    def api_version_description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionSet")
+    def api_version_set(self) -> Optional[pulumi.Input[ApiVersionSetContractDetailsArgs]]:
+        
+        ...
+    
+    @api_version_set.setter
+    def api_version_set(self, value: Optional[pulumi.Input[ApiVersionSetContractDetailsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionSetId")
+    def api_version_set_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_version_set_id.setter
+    def api_version_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationSettings")
+    def authentication_settings(self) -> Optional[pulumi.Input[AuthenticationSettingsContractArgs]]:
+        
+        ...
+    
+    @authentication_settings.setter
+    def authentication_settings(self, value: Optional[pulumi.Input[AuthenticationSettingsContractArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def contact(self) -> Optional[pulumi.Input[ApiContactInformationArgs]]:
+        
+        ...
+    
+    @contact.setter
+    def contact(self, value: Optional[pulumi.Input[ApiContactInformationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> Optional[pulumi.Input[Union[_builtins.str, ContentFormat]]]:
+        
+        ...
+    
+    @format.setter
+    def format(self, value: Optional[pulumi.Input[Union[_builtins.str, ContentFormat]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isCurrent")
+    def is_current(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_current.setter
+    def is_current(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def license(self) -> Optional[pulumi.Input[ApiLicenseInformationArgs]]:
+        
+        ...
+    
+    @license.setter
+    def license(self, value: Optional[pulumi.Input[ApiLicenseInformationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocols(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Protocol]]]]]:
+        
+        ...
+    
+    @protocols.setter
+    def protocols(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Protocol]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceUrl")
+    def service_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_url.setter
+    def service_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="soapApiType")
+    def soap_api_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SoapApiType]]]:
+        
+        ...
+    
+    @soap_api_type.setter
+    def soap_api_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SoapApiType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceApiId")
+    def source_api_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_api_id.setter
+    def source_api_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionKeyParameterNames")
+    def subscription_key_parameter_names(self) -> Optional[pulumi.Input[SubscriptionKeyParameterNamesContractArgs]]:
+        
+        ...
+    
+    @subscription_key_parameter_names.setter
+    def subscription_key_parameter_names(self, value: Optional[pulumi.Input[SubscriptionKeyParameterNamesContractArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionRequired")
+    def subscription_required(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @subscription_required.setter
+    def subscription_required(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termsOfServiceUrl")
+    def terms_of_service_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @terms_of_service_url.setter
+    def terms_of_service_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="translateRequiredQueryParametersConduct")
+    def translate_required_query_parameters_conduct(self) -> Optional[pulumi.Input[Union[_builtins.str, TranslateRequiredQueryParametersConduct]]]:
+        
+        ...
+    
+    @translate_required_query_parameters_conduct.setter
+    def translate_required_query_parameters_conduct(self, value: Optional[pulumi.Input[Union[_builtins.str, TranslateRequiredQueryParametersConduct]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="wsdlSelector")
+    def wsdl_selector(self) -> Optional[pulumi.Input[ApiCreateOrUpdatePropertiesWsdlSelectorArgs]]:
+        
+        ...
+    
+    @wsdl_selector.setter
+    def wsdl_selector(self, value: Optional[pulumi.Input[ApiCreateOrUpdatePropertiesWsdlSelectorArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apimanagement:Api")
+class Api(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., api_id: Optional[pulumi.Input[_builtins.str]] = ..., api_revision: Optional[pulumi.Input[_builtins.str]] = ..., api_revision_description: Optional[pulumi.Input[_builtins.str]] = ..., api_type: Optional[pulumi.Input[Union[_builtins.str, ApiType]]] = ..., api_version: Optional[pulumi.Input[_builtins.str]] = ..., api_version_description: Optional[pulumi.Input[_builtins.str]] = ..., api_version_set: Optional[pulumi.Input[Union[ApiVersionSetContractDetailsArgs, ApiVersionSetContractDetailsArgsDict]]] = ..., api_version_set_id: Optional[pulumi.Input[_builtins.str]] = ..., authentication_settings: Optional[pulumi.Input[Union[AuthenticationSettingsContractArgs, AuthenticationSettingsContractArgsDict]]] = ..., contact: Optional[pulumi.Input[Union[ApiContactInformationArgs, ApiContactInformationArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[Union[_builtins.str, ContentFormat]]] = ..., is_current: Optional[pulumi.Input[_builtins.bool]] = ..., license: Optional[pulumi.Input[Union[ApiLicenseInformationArgs, ApiLicenseInformationArgsDict]]] = ..., path: Optional[pulumi.Input[_builtins.str]] = ..., protocols: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Protocol]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., service_url: Optional[pulumi.Input[_builtins.str]] = ..., soap_api_type: Optional[pulumi.Input[Union[_builtins.str, SoapApiType]]] = ..., source_api_id: Optional[pulumi.Input[_builtins.str]] = ..., subscription_key_parameter_names: Optional[pulumi.Input[Union[SubscriptionKeyParameterNamesContractArgs, SubscriptionKeyParameterNamesContractArgsDict]]] = ..., subscription_required: Optional[pulumi.Input[_builtins.bool]] = ..., terms_of_service_url: Optional[pulumi.Input[_builtins.str]] = ..., translate_required_query_parameters_conduct: Optional[pulumi.Input[Union[_builtins.str, TranslateRequiredQueryParametersConduct]]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ..., wsdl_selector: Optional[pulumi.Input[Union[ApiCreateOrUpdatePropertiesWsdlSelectorArgs, ApiCreateOrUpdatePropertiesWsdlSelectorArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ApiArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Api:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiRevision")
+    def api_revision(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiRevisionDescription")
+    def api_revision_description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiType")
+    def api_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersion")
+    def api_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionDescription")
+    def api_version_description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionSet")
+    def api_version_set(self) -> pulumi.Output[Optional[outputs.ApiVersionSetContractDetailsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiVersionSetId")
+    def api_version_set_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationSettings")
+    def authentication_settings(self) -> pulumi.Output[Optional[outputs.AuthenticationSettingsContractResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def contact(self) -> pulumi.Output[Optional[outputs.ApiContactInformationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isCurrent")
+    def is_current(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isOnline")
+    def is_online(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def license(self) -> pulumi.Output[Optional[outputs.ApiLicenseInformationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def path(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocols(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceUrl")
+    def service_url(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceApiId")
+    def source_api_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionKeyParameterNames")
+    def subscription_key_parameter_names(self) -> pulumi.Output[Optional[outputs.SubscriptionKeyParameterNamesContractResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionRequired")
+    def subscription_required(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termsOfServiceUrl")
+    def terms_of_service_url(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

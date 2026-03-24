@@ -1,0 +1,30 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ChangeDetailsMode', 'ManagedIdentityTypes', 'NotificationsState']
+@pulumi.type_token("azure-native:changeanalysis:ChangeDetailsMode")
+class ChangeDetailsMode(_builtins.str, Enum):
+    
+    NONE = ...
+    INCLUDE = ...
+    EXCLUDE = ...
+
+
+@pulumi.type_token("azure-native:changeanalysis:ManagedIdentityTypes")
+class ManagedIdentityTypes(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+
+
+@pulumi.type_token("azure-native:changeanalysis:NotificationsState")
+class NotificationsState(_builtins.str, Enum):
+    
+    NONE = ...
+    ENABLED = ...
+    DISABLED = ...
+
+

@@ -1,0 +1,71 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetManagedEnvironmentsStorageResult', 'AwaitableGetManagedEnvironmentsStorageResult', 'get_managed_environments_storage', 'get_managed_environments_storage_output']
+@pulumi.output_type
+class GetManagedEnvironmentsStorageResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., properties=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.ManagedEnvironmentStorageResponseProperties:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetManagedEnvironmentsStorageResult(GetManagedEnvironmentsStorageResult):
+    def __await__(self): # -> Generator[Never, Any, GetManagedEnvironmentsStorageResult]:
+        ...
+    
+
+
+def get_managed_environments_storage(environment_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., storage_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetManagedEnvironmentsStorageResult:
+    
+    ...
+
+def get_managed_environments_storage_output(environment_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetManagedEnvironmentsStorageResult]:
+    
+    ...
+

@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListLinkerConfigurationsResult', 'AwaitableListLinkerConfigurationsResult', 'list_linker_configurations', 'list_linker_configurations_output']
+@pulumi.output_type
+class ListLinkerConfigurationsResult:
+    
+    def __init__(__self__, configurations=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configurations(self) -> Optional[Sequence[outputs.SourceConfigurationResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListLinkerConfigurationsResult(ListLinkerConfigurationsResult):
+    def __await__(self): # -> Generator[Never, Any, ListLinkerConfigurationsResult]:
+        ...
+    
+
+
+def list_linker_configurations(linker_name: Optional[_builtins.str] = ..., resource_uri: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListLinkerConfigurationsResult:
+    
+    ...
+
+def list_linker_configurations_output(linker_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListLinkerConfigurationsResult]:
+    
+    ...
+

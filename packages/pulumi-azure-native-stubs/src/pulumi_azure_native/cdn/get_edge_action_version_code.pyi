@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetEdgeActionVersionCodeResult', 'AwaitableGetEdgeActionVersionCodeResult', 'get_edge_action_version_code', 'get_edge_action_version_code_output']
+@pulumi.output_type
+class GetEdgeActionVersionCodeResult:
+    
+    def __init__(__self__, content=..., name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetEdgeActionVersionCodeResult(GetEdgeActionVersionCodeResult):
+    def __await__(self): # -> Generator[Never, Any, GetEdgeActionVersionCodeResult]:
+        ...
+    
+
+
+def get_edge_action_version_code(edge_action_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetEdgeActionVersionCodeResult:
+    
+    ...
+
+def get_edge_action_version_code_output(edge_action_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetEdgeActionVersionCodeResult]:
+    
+    ...
+

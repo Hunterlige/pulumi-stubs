@@ -1,0 +1,199 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AnalyticsItemArgs', 'AnalyticsItem']
+@pulumi.input_type
+class AnalyticsItemArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], resource_name: pulumi.Input[_builtins.str], scope_path: pulumi.Input[_builtins.str], content: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., override_item: Optional[pulumi.Input[_builtins.bool]] = ..., properties: Optional[pulumi.Input[ApplicationInsightsComponentAnalyticsItemPropertiesArgs]] = ..., scope: Optional[pulumi.Input[Union[_builtins.str, ItemScope]]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, ItemType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scopePath")
+    def scope_path(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scope_path.setter
+    def scope_path(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @content.setter
+    def content(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="overrideItem")
+    def override_item(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @override_item.setter
+    def override_item(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[pulumi.Input[ApplicationInsightsComponentAnalyticsItemPropertiesArgs]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: Optional[pulumi.Input[ApplicationInsightsComponentAnalyticsItemPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[pulumi.Input[Union[_builtins.str, ItemScope]]]:
+        
+        ...
+    
+    @scope.setter
+    def scope(self, value: Optional[pulumi.Input[Union[_builtins.str, ItemScope]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, ItemType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, ItemType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:applicationinsights:AnalyticsItem")
+class AnalyticsItem(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., content: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., override_item: Optional[pulumi.Input[_builtins.bool]] = ..., properties: Optional[pulumi.Input[Union[ApplicationInsightsComponentAnalyticsItemPropertiesArgs, ApplicationInsightsComponentAnalyticsItemPropertiesArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name_: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[Union[_builtins.str, ItemScope]]] = ..., scope_path: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, ItemType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AnalyticsItemArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AnalyticsItem:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.ApplicationInsightsComponentAnalyticsItemPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeCreated")
+    def time_created(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeModified")
+    def time_modified(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

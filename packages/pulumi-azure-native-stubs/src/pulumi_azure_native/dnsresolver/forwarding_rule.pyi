@@ -1,0 +1,175 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ForwardingRuleArgs', 'ForwardingRule']
+@pulumi.input_type
+class ForwardingRuleArgs:
+    def __init__(__self__, *, dns_forwarding_ruleset_name: pulumi.Input[_builtins.str], domain_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], target_dns_servers: pulumi.Input[Sequence[pulumi.Input[TargetDnsServerArgs]]], forwarding_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., forwarding_rule_state: Optional[pulumi.Input[Union[_builtins.str, ForwardingRuleState]]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsForwardingRulesetName")
+    def dns_forwarding_ruleset_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @dns_forwarding_ruleset_name.setter
+    def dns_forwarding_ruleset_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainName")
+    def domain_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @domain_name.setter
+    def domain_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetDnsServers")
+    def target_dns_servers(self) -> pulumi.Input[Sequence[pulumi.Input[TargetDnsServerArgs]]]:
+        
+        ...
+    
+    @target_dns_servers.setter
+    def target_dns_servers(self, value: pulumi.Input[Sequence[pulumi.Input[TargetDnsServerArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="forwardingRuleName")
+    def forwarding_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @forwarding_rule_name.setter
+    def forwarding_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="forwardingRuleState")
+    def forwarding_rule_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ForwardingRuleState]]]:
+        
+        ...
+    
+    @forwarding_rule_state.setter
+    def forwarding_rule_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ForwardingRuleState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:dnsresolver:ForwardingRule")
+class ForwardingRule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., dns_forwarding_ruleset_name: Optional[pulumi.Input[_builtins.str]] = ..., domain_name: Optional[pulumi.Input[_builtins.str]] = ..., forwarding_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., forwarding_rule_state: Optional[pulumi.Input[Union[_builtins.str, ForwardingRuleState]]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., target_dns_servers: Optional[pulumi.Input[Sequence[pulumi.Input[Union[TargetDnsServerArgs, TargetDnsServerArgsDict]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ForwardingRuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ForwardingRule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainName")
+    def domain_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="forwardingRuleState")
+    def forwarding_rule_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetDnsServers")
+    def target_dns_servers(self) -> pulumi.Output[Sequence[outputs.TargetDnsServerResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

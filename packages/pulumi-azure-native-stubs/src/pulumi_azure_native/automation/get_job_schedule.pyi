@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetJobScheduleResult', 'AwaitableGetJobScheduleResult', 'get_job_schedule', 'get_job_schedule_output']
+@pulumi.output_type
+class GetJobScheduleResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., job_schedule_id=..., name=..., parameters=..., run_on=..., runbook=..., schedule=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobScheduleId")
+    def job_schedule_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOn")
+    def run_on(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def runbook(self) -> Optional[outputs.RunbookAssociationPropertyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> Optional[outputs.ScheduleAssociationPropertyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetJobScheduleResult(GetJobScheduleResult):
+    def __await__(self): # -> Generator[Never, Any, GetJobScheduleResult]:
+        ...
+    
+
+
+def get_job_schedule(automation_account_name: Optional[_builtins.str] = ..., job_schedule_id: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetJobScheduleResult:
+    
+    ...
+
+def get_job_schedule_output(automation_account_name: Optional[pulumi.Input[_builtins.str]] = ..., job_schedule_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetJobScheduleResult]:
+    
+    ...
+

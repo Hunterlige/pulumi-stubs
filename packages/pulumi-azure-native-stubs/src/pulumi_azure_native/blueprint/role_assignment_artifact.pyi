@@ -1,0 +1,202 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['RoleAssignmentArtifactArgs', 'RoleAssignmentArtifact']
+@pulumi.input_type
+class RoleAssignmentArtifactArgs:
+    def __init__(__self__, *, blueprint_name: pulumi.Input[_builtins.str], kind: pulumi.Input[_builtins.str], principal_ids: Any, resource_scope: pulumi.Input[_builtins.str], role_definition_id: pulumi.Input[_builtins.str], artifact_name: Optional[pulumi.Input[_builtins.str]] = ..., depends_on: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blueprintName")
+    def blueprint_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @blueprint_name.setter
+    def blueprint_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalIds")
+    def principal_ids(self) -> Any:
+        
+        ...
+    
+    @principal_ids.setter
+    def principal_ids(self, value: Any): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceScope")
+    def resource_scope(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_scope.setter
+    def resource_scope(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_definition_id.setter
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactName")
+    def artifact_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @artifact_name.setter
+    def artifact_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dependsOn")
+    def depends_on(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @depends_on.setter
+    def depends_on(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroup")
+    def resource_group(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_group.setter
+    def resource_group(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:blueprint:RoleAssignmentArtifact")
+class RoleAssignmentArtifact(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., artifact_name: Optional[pulumi.Input[_builtins.str]] = ..., blueprint_name: Optional[pulumi.Input[_builtins.str]] = ..., depends_on: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., principal_ids: Optional[Any] = ..., resource_group: Optional[pulumi.Input[_builtins.str]] = ..., resource_scope: Optional[pulumi.Input[_builtins.str]] = ..., role_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: RoleAssignmentArtifactArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> RoleAssignmentArtifact:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dependsOn")
+    def depends_on(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalIds")
+    def principal_ids(self) -> pulumi.Output[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroup")
+    def resource_group(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

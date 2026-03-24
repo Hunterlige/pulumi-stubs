@@ -1,0 +1,160 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BuildArgs', 'Build']
+@pulumi.input_type
+class BuildArgs:
+    def __init__(__self__, *, builder_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], build_name: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[BuildConfigurationArgs]] = ..., destination_container_registry: Optional[pulumi.Input[ContainerRegistryWithCustomImageArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="builderName")
+    def builder_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @builder_name.setter
+    def builder_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="buildName")
+    def build_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @build_name.setter
+    def build_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[BuildConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[BuildConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationContainerRegistry")
+    def destination_container_registry(self) -> Optional[pulumi.Input[ContainerRegistryWithCustomImageArgs]]:
+        
+        ...
+    
+    @destination_container_registry.setter
+    def destination_container_registry(self, value: Optional[pulumi.Input[ContainerRegistryWithCustomImageArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:app:Build")
+class Build(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., build_name: Optional[pulumi.Input[_builtins.str]] = ..., builder_name: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[Union[BuildConfigurationArgs, BuildConfigurationArgsDict]]] = ..., destination_container_registry: Optional[pulumi.Input[Union[ContainerRegistryWithCustomImageArgs, ContainerRegistryWithCustomImageArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: BuildArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Build:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="buildStatus")
+    def build_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> pulumi.Output[Optional[outputs.BuildConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="destinationContainerRegistry")
+    def destination_container_registry(self) -> pulumi.Output[Optional[outputs.ContainerRegistryWithCustomImageResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logStreamEndpoint")
+    def log_stream_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenEndpoint")
+    def token_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uploadEndpoint")
+    def upload_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

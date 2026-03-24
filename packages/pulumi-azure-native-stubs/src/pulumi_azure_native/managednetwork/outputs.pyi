@@ -1,0 +1,260 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ConnectivityCollectionResponse', 'ManagedNetworkGroupResponse', 'ManagedNetworkPeeringPolicyPropertiesResponse', 'ManagedNetworkPeeringPolicyResponse', 'ResourceIdResponse', 'ScopeResponse']
+@pulumi.output_type
+class ConnectivityCollectionResponse(dict):
+    
+    def __init__(__self__, *, groups: Sequence[outputs.ManagedNetworkGroupResponse], peerings: Sequence[outputs.ManagedNetworkPeeringPolicyResponse]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def groups(self) -> Sequence[outputs.ManagedNetworkGroupResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def peerings(self) -> Sequence[outputs.ManagedNetworkPeeringPolicyResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedNetworkGroupResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, etag: _builtins.str, id: _builtins.str, name: _builtins.str, provisioning_state: _builtins.str, type: _builtins.str, kind: Optional[_builtins.str] = ..., location: Optional[_builtins.str] = ..., management_groups: Optional[Sequence[outputs.ResourceIdResponse]] = ..., subnets: Optional[Sequence[outputs.ResourceIdResponse]] = ..., subscriptions: Optional[Sequence[outputs.ResourceIdResponse]] = ..., virtual_networks: Optional[Sequence[outputs.ResourceIdResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementGroups")
+    def management_groups(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subnets(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subscriptions(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworks")
+    def virtual_networks(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedNetworkPeeringPolicyPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, etag: _builtins.str, provisioning_state: _builtins.str, type: _builtins.str, hub: Optional[outputs.ResourceIdResponse] = ..., mesh: Optional[Sequence[outputs.ResourceIdResponse]] = ..., spokes: Optional[Sequence[outputs.ResourceIdResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hub(self) -> Optional[outputs.ResourceIdResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mesh(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def spokes(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedNetworkPeeringPolicyResponse(dict):
+    
+    def __init__(__self__, *, id: _builtins.str, name: _builtins.str, type: _builtins.str, location: Optional[_builtins.str] = ..., properties: Optional[outputs.ManagedNetworkPeeringPolicyPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[outputs.ManagedNetworkPeeringPolicyPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ResourceIdResponse(dict):
+    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ScopeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, management_groups: Optional[Sequence[outputs.ResourceIdResponse]] = ..., subnets: Optional[Sequence[outputs.ResourceIdResponse]] = ..., subscriptions: Optional[Sequence[outputs.ResourceIdResponse]] = ..., virtual_networks: Optional[Sequence[outputs.ResourceIdResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementGroups")
+    def management_groups(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subnets(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subscriptions(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworks")
+    def virtual_networks(self) -> Optional[Sequence[outputs.ResourceIdResponse]]:
+        
+        ...
+    
+
+

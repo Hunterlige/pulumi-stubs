@@ -1,0 +1,30 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['EnablementStatus', 'ManagedServiceIdentityType', 'Type']
+@pulumi.type_token("azure-native:loadtestservice:EnablementStatus")
+class EnablementStatus(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token(...)
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token("azure-native:loadtestservice:Type")
+class Type(_builtins.str, Enum):
+    
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+
+

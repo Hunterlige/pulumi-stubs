@@ -1,0 +1,70 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CapacityAdministrationArgs', 'CapacityAdministrationArgsDict', 'RpSkuArgs', 'RpSkuArgsDict']
+class CapacityAdministrationArgsDict(TypedDict):
+    
+    members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+
+
+@pulumi.input_type
+class CapacityAdministrationArgs:
+    def __init__(__self__, *, members: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def members(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @members.setter
+    def members(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+
+
+class RpSkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    tier: pulumi.Input[Union[_builtins.str, RpSkuTier]]
+
+
+@pulumi.input_type
+class RpSkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], tier: pulumi.Input[Union[_builtins.str, RpSkuTier]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> pulumi.Input[Union[_builtins.str, RpSkuTier]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: pulumi.Input[Union[_builtins.str, RpSkuTier]]): # -> None:
+        ...
+    
+
+

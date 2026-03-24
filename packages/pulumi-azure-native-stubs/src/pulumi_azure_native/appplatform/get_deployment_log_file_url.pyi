@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDeploymentLogFileUrlResult', 'AwaitableGetDeploymentLogFileUrlResult', 'get_deployment_log_file_url', 'get_deployment_log_file_url_output']
+@pulumi.output_type
+class GetDeploymentLogFileUrlResult:
+    
+    def __init__(__self__, url=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDeploymentLogFileUrlResult(GetDeploymentLogFileUrlResult):
+    def __await__(self): # -> Generator[Never, Any, GetDeploymentLogFileUrlResult]:
+        ...
+    
+
+
+def get_deployment_log_file_url(app_name: Optional[_builtins.str] = ..., deployment_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., service_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDeploymentLogFileUrlResult:
+    
+    ...
+
+def get_deployment_log_file_url_output(app_name: Optional[pulumi.Input[_builtins.str]] = ..., deployment_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDeploymentLogFileUrlResult]:
+    
+    ...
+

@@ -1,0 +1,143 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetScopeAccessReviewHistoryDefinitionByIdResult', ..., 'get_scope_access_review_history_definition_by_id', ...]
+@pulumi.output_type
+class GetScopeAccessReviewHistoryDefinitionByIdResult:
+    
+    def __init__(__self__, azure_api_version=..., created_date_time=..., decisions=..., display_name=..., id=..., instances=..., interval=..., name=..., principal_id=..., principal_name=..., principal_type=..., range=..., review_history_period_end_date_time=..., review_history_period_start_date_time=..., scopes=..., status=..., type=..., user_principal_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdDateTime")
+    def created_date_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def decisions(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def instances(self) -> Optional[Sequence[outputs.AccessReviewHistoryInstanceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def interval(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalName")
+    def principal_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalType")
+    def principal_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def range(self) -> Optional[outputs.AccessReviewRecurrenceRangeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reviewHistoryPeriodEndDateTime")
+    def review_history_period_end_date_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reviewHistoryPeriodStartDateTime")
+    def review_history_period_start_date_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scopes(self) -> Optional[Sequence[outputs.AccessReviewScopeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userPrincipalName")
+    def user_principal_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetScopeAccessReviewHistoryDefinitionByIdResult(GetScopeAccessReviewHistoryDefinitionByIdResult):
+    def __await__(self): # -> Generator[Never, Any, GetScopeAccessReviewHistoryDefinitionByIdResult]:
+        ...
+    
+
+
+def get_scope_access_review_history_definition_by_id(history_definition_id: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetScopeAccessReviewHistoryDefinitionByIdResult:
+    
+    ...
+
+def get_scope_access_review_history_definition_by_id_output(history_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetScopeAccessReviewHistoryDefinitionByIdResult]:
+    
+    ...
+

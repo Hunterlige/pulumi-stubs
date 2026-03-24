@@ -1,0 +1,240 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CapacityPoolArgs', 'CapacityPool']
+@pulumi.input_type
+class CapacityPoolArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_level: pulumi.Input[Union[_builtins.str, ServiceLevel]], size: Optional[pulumi.Input[_builtins.float]] = ..., cool_access: Optional[pulumi.Input[_builtins.bool]] = ..., encryption_type: Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., qos_type: Optional[pulumi.Input[Union[_builtins.str, QosType]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceLevel")
+    def service_level(self) -> pulumi.Input[Union[_builtins.str, ServiceLevel]]:
+        
+        ...
+    
+    @service_level.setter
+    def service_level(self, value: pulumi.Input[Union[_builtins.str, ServiceLevel]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @size.setter
+    def size(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolAccess")
+    def cool_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @cool_access.setter
+    def cool_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionType")
+    def encryption_type(self) -> Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]]:
+        
+        ...
+    
+    @encryption_type.setter
+    def encryption_type(self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="poolName")
+    def pool_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pool_name.setter
+    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="qosType")
+    def qos_type(self) -> Optional[pulumi.Input[Union[_builtins.str, QosType]]]:
+        
+        ...
+    
+    @qos_type.setter
+    def qos_type(self, value: Optional[pulumi.Input[Union[_builtins.str, QosType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:netapp:CapacityPool")
+class CapacityPool(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., cool_access: Optional[pulumi.Input[_builtins.bool]] = ..., encryption_type: Optional[pulumi.Input[Union[_builtins.str, EncryptionType]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., qos_type: Optional[pulumi.Input[Union[_builtins.str, QosType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_level: Optional[pulumi.Input[Union[_builtins.str, ServiceLevel]]] = ..., size: Optional[pulumi.Input[_builtins.float]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: CapacityPoolArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> CapacityPool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="coolAccess")
+    def cool_access(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionType")
+    def encryption_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="poolId")
+    def pool_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="qosType")
+    def qos_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceLevel")
+    def service_level(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalThroughputMibps")
+    def total_throughput_mibps(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="utilizedThroughputMibps")
+    def utilized_throughput_mibps(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+
+

@@ -1,0 +1,182 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ImageInitArgs', 'Image']
+@pulumi.input_type
+class ImageInitArgs:
+    def __init__(__self__, *, catalog_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], image: Optional[pulumi.Input[_builtins.str]] = ..., image_id: Optional[pulumi.Input[_builtins.str]] = ..., image_name: Optional[pulumi.Input[_builtins.str]] = ..., regional_data_boundary: Optional[pulumi.Input[Union[_builtins.str, RegionalDataBoundary]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="catalogName")
+    def catalog_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @catalog_name.setter
+    def catalog_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def image(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @image.setter
+    def image(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageId")
+    def image_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @image_id.setter
+    def image_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageName")
+    def image_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @image_name.setter
+    def image_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="regionalDataBoundary")
+    def regional_data_boundary(self) -> Optional[pulumi.Input[Union[_builtins.str, RegionalDataBoundary]]]:
+        
+        ...
+    
+    @regional_data_boundary.setter
+    def regional_data_boundary(self, value: Optional[pulumi.Input[Union[_builtins.str, RegionalDataBoundary]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:azuresphere:Image")
+class Image(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., catalog_name: Optional[pulumi.Input[_builtins.str]] = ..., image: Optional[pulumi.Input[_builtins.str]] = ..., image_id: Optional[pulumi.Input[_builtins.str]] = ..., image_name: Optional[pulumi.Input[_builtins.str]] = ..., regional_data_boundary: Optional[pulumi.Input[Union[_builtins.str, RegionalDataBoundary]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ImageInitArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Image:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="componentId")
+    def component_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def image(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageId")
+    def image_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageName")
+    def image_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageType")
+    def image_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="regionalDataBoundary")
+    def regional_data_boundary(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

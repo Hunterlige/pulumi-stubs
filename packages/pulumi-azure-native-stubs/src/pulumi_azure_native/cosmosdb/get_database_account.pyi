@@ -1,0 +1,347 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDatabaseAccountResult', 'AwaitableGetDatabaseAccountResult', 'get_database_account', 'get_database_account_output']
+@pulumi.output_type
+class GetDatabaseAccountResult:
+    
+    def __init__(__self__, analytical_storage_configuration=..., api_properties=..., azure_api_version=..., backup_policy=..., capabilities=..., capacity=..., connector_offer=..., consistency_policy=..., cors=..., create_mode=..., customer_managed_key_status=..., database_account_offer_type=..., default_identity=..., default_priority_level=..., disable_key_based_metadata_write_access=..., disable_local_auth=..., document_endpoint=..., enable_analytical_storage=..., enable_automatic_failover=..., enable_burst_capacity=..., enable_cassandra_connector=..., enable_free_tier=..., enable_multiple_write_locations=..., enable_partition_merge=..., enable_per_region_per_partition_autoscale=..., enable_priority_based_execution=..., failover_policies=..., id=..., identity=..., instance_id=..., ip_rules=..., is_virtual_network_filter_enabled=..., key_vault_key_uri=..., key_vault_key_uri_version=..., keys_metadata=..., kind=..., location=..., locations=..., minimal_tls_version=..., name=..., network_acl_bypass=..., network_acl_bypass_resource_ids=..., private_endpoint_connections=..., provisioning_state=..., public_network_access=..., read_locations=..., restore_parameters=..., system_data=..., tags=..., type=..., virtual_network_rules=..., write_locations=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="analyticalStorageConfiguration")
+    def analytical_storage_configuration(self) -> Optional[outputs.AnalyticalStorageConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiProperties")
+    def api_properties(self) -> Optional[outputs.ApiPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backupPolicy")
+    def backup_policy(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capabilities(self) -> Optional[Sequence[outputs.CapabilityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[outputs.CapacityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorOffer")
+    def connector_offer(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consistencyPolicy")
+    def consistency_policy(self) -> Optional[outputs.ConsistencyPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cors(self) -> Optional[Sequence[outputs.CorsPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createMode")
+    def create_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerManagedKeyStatus")
+    def customer_managed_key_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseAccountOfferType")
+    def database_account_offer_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultIdentity")
+    def default_identity(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultPriorityLevel")
+    def default_priority_level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableKeyBasedMetadataWriteAccess")
+    def disable_key_based_metadata_write_access(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableLocalAuth")
+    def disable_local_auth(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="documentEndpoint")
+    def document_endpoint(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableAnalyticalStorage")
+    def enable_analytical_storage(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableAutomaticFailover")
+    def enable_automatic_failover(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableBurstCapacity")
+    def enable_burst_capacity(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableCassandraConnector")
+    def enable_cassandra_connector(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableFreeTier")
+    def enable_free_tier(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableMultipleWriteLocations")
+    def enable_multiple_write_locations(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePartitionMerge")
+    def enable_partition_merge(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePerRegionPerPartitionAutoscale")
+    def enable_per_region_per_partition_autoscale(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePriorityBasedExecution")
+    def enable_priority_based_execution(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverPolicies")
+    def failover_policies(self) -> Sequence[outputs.FailoverPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.ManagedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceId")
+    def instance_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipRules")
+    def ip_rules(self) -> Optional[Sequence[outputs.IpAddressOrRangeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isVirtualNetworkFilterEnabled")
+    def is_virtual_network_filter_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultKeyUri")
+    def key_vault_key_uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultKeyUriVersion")
+    def key_vault_key_uri_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keysMetadata")
+    def keys_metadata(self) -> outputs.DatabaseAccountKeysMetadataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locations(self) -> Sequence[outputs.LocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalTlsVersion")
+    def minimal_tls_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkAclBypass")
+    def network_acl_bypass(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkAclBypassResourceIds")
+    def network_acl_bypass_resource_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> Sequence[outputs.PrivateEndpointConnectionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readLocations")
+    def read_locations(self) -> Sequence[outputs.LocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restoreParameters")
+    def restore_parameters(self) -> Optional[outputs.RestoreParametersResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkRules")
+    def virtual_network_rules(self) -> Optional[Sequence[outputs.VirtualNetworkRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="writeLocations")
+    def write_locations(self) -> Sequence[outputs.LocationResponse]:
+        
+        ...
+    
+
+
+class AwaitableGetDatabaseAccountResult(GetDatabaseAccountResult):
+    def __await__(self): # -> Generator[Never, Any, GetDatabaseAccountResult]:
+        ...
+    
+
+
+def get_database_account(account_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDatabaseAccountResult:
+    
+    ...
+
+def get_database_account_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDatabaseAccountResult]:
+    
+    ...
+

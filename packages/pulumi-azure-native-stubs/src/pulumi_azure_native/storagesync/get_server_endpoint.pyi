@@ -1,0 +1,191 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetServerEndpointResult', 'AwaitableGetServerEndpointResult', 'get_server_endpoint', 'get_server_endpoint_output']
+@pulumi.output_type
+class GetServerEndpointResult:
+    
+    def __init__(__self__, azure_api_version=..., cloud_tiering=..., cloud_tiering_status=..., friendly_name=..., id=..., initial_download_policy=..., initial_upload_policy=..., last_operation_name=..., last_workflow_id=..., local_cache_mode=..., name=..., offline_data_transfer=..., offline_data_transfer_share_name=..., offline_data_transfer_storage_account_resource_id=..., offline_data_transfer_storage_account_tenant_id=..., provisioning_state=..., recall_status=..., server_endpoint_provisioning_status=..., server_local_path=..., server_name=..., server_resource_id=..., sync_status=..., system_data=..., tier_files_older_than_days=..., type=..., volume_free_space_percent=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudTiering")
+    def cloud_tiering(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudTieringStatus")
+    def cloud_tiering_status(self) -> outputs.ServerEndpointCloudTieringStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="friendlyName")
+    def friendly_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="initialDownloadPolicy")
+    def initial_download_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="initialUploadPolicy")
+    def initial_upload_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastOperationName")
+    def last_operation_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastWorkflowId")
+    def last_workflow_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localCacheMode")
+    def local_cache_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offlineDataTransfer")
+    def offline_data_transfer(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offlineDataTransferShareName")
+    def offline_data_transfer_share_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offlineDataTransferStorageAccountResourceId")
+    def offline_data_transfer_storage_account_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offlineDataTransferStorageAccountTenantId")
+    def offline_data_transfer_storage_account_tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recallStatus")
+    def recall_status(self) -> outputs.ServerEndpointRecallStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverEndpointProvisioningStatus")
+    def server_endpoint_provisioning_status(self) -> Optional[outputs.ServerEndpointProvisioningStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverLocalPath")
+    def server_local_path(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverResourceId")
+    def server_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncStatus")
+    def sync_status(self) -> outputs.ServerEndpointSyncStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tierFilesOlderThanDays")
+    def tier_files_older_than_days(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeFreeSpacePercent")
+    def volume_free_space_percent(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+class AwaitableGetServerEndpointResult(GetServerEndpointResult):
+    def __await__(self): # -> Generator[Never, Any, GetServerEndpointResult]:
+        ...
+    
+
+
+def get_server_endpoint(resource_group_name: Optional[_builtins.str] = ..., server_endpoint_name: Optional[_builtins.str] = ..., storage_sync_service_name: Optional[_builtins.str] = ..., sync_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetServerEndpointResult:
+    
+    ...
+
+def get_server_endpoint_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_endpoint_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_sync_service_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetServerEndpointResult]:
+    
+    ...
+

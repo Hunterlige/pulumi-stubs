@@ -1,0 +1,247 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SingleServerArgs', 'SingleServer']
+@pulumi.input_type
+class SingleServerArgs:
+    def __init__(__self__, *, properties: pulumi.Input[Union[ServerPropertiesForDefaultCreateArgs, ServerPropertiesForGeoRestoreArgs, ServerPropertiesForReplicaArgs, ServerPropertiesForRestoreArgs]], resource_group_name: pulumi.Input[_builtins.str], identity: Optional[pulumi.Input[ResourceIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[SingleServerSkuArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Input[Union[ServerPropertiesForDefaultCreateArgs, ServerPropertiesForGeoRestoreArgs, ServerPropertiesForReplicaArgs, ServerPropertiesForRestoreArgs]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: pulumi.Input[Union[ServerPropertiesForDefaultCreateArgs, ServerPropertiesForGeoRestoreArgs, ServerPropertiesForReplicaArgs, ServerPropertiesForRestoreArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[ResourceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[ResourceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[SingleServerSkuArgs]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[SingleServerSkuArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:dbforpostgresql:SingleServer")
+class SingleServer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., identity: Optional[pulumi.Input[Union[ResourceIdentityArgs, ResourceIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Union[Union[ServerPropertiesForDefaultCreateArgs, ServerPropertiesForDefaultCreateArgsDict], Union[ServerPropertiesForGeoRestoreArgs, ServerPropertiesForGeoRestoreArgsDict], Union[ServerPropertiesForReplicaArgs, ServerPropertiesForReplicaArgsDict], Union[ServerPropertiesForRestoreArgs, ServerPropertiesForRestoreArgsDict]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[SingleServerSkuArgs, SingleServerSkuArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SingleServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SingleServer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="byokEnforcement")
+    def byok_enforcement(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="earliestRestoreDate")
+    def earliest_restore_date(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fullyQualifiedDomainName")
+    def fully_qualified_domain_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.ResourceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureEncryption")
+    def infrastructure_encryption(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="masterServerId")
+    def master_server_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalTlsVersion")
+    def minimal_tls_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.ServerPrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicaCapacity")
+    def replica_capacity(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRole")
+    def replication_role(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[Optional[outputs.SingleServerSkuResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sslEnforcement")
+    def ssl_enforcement(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageProfile")
+    def storage_profile(self) -> pulumi.Output[Optional[outputs.StorageProfileResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userVisibleState")
+    def user_visible_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

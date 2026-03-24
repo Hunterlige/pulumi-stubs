@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListStorageAccountServiceSASResult', 'AwaitableListStorageAccountServiceSASResult', 'list_storage_account_service_sas', 'list_storage_account_service_sas_output']
+@pulumi.output_type
+class ListStorageAccountServiceSASResult:
+    
+    def __init__(__self__, service_sas_token=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceSasToken")
+    def service_sas_token(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableListStorageAccountServiceSASResult(ListStorageAccountServiceSASResult):
+    def __await__(self): # -> Generator[Never, Any, ListStorageAccountServiceSASResult]:
+        ...
+    
+
+
+def list_storage_account_service_sas(account_name: Optional[_builtins.str] = ..., cache_control: Optional[_builtins.str] = ..., canonicalized_resource: Optional[_builtins.str] = ..., content_disposition: Optional[_builtins.str] = ..., content_encoding: Optional[_builtins.str] = ..., content_language: Optional[_builtins.str] = ..., content_type: Optional[_builtins.str] = ..., i_p_address_or_range: Optional[_builtins.str] = ..., identifier: Optional[_builtins.str] = ..., key_to_sign: Optional[_builtins.str] = ..., partition_key_end: Optional[_builtins.str] = ..., partition_key_start: Optional[_builtins.str] = ..., permissions: Optional[Union[_builtins.str, Permissions]] = ..., protocols: Optional[HttpProtocol] = ..., resource: Optional[Union[_builtins.str, SignedResource]] = ..., resource_group_name: Optional[_builtins.str] = ..., row_key_end: Optional[_builtins.str] = ..., row_key_start: Optional[_builtins.str] = ..., shared_access_expiry_time: Optional[_builtins.str] = ..., shared_access_start_time: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListStorageAccountServiceSASResult:
+    
+    ...
+
+def list_storage_account_service_sas_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., cache_control: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., canonicalized_resource: Optional[pulumi.Input[_builtins.str]] = ..., content_disposition: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., content_encoding: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., content_language: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., content_type: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., i_p_address_or_range: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., identifier: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., key_to_sign: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., partition_key_end: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., partition_key_start: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., permissions: Optional[pulumi.Input[Optional[Union[_builtins.str, Permissions]]]] = ..., protocols: Optional[pulumi.Input[Optional[HttpProtocol]]] = ..., resource: Optional[pulumi.Input[Optional[Union[_builtins.str, SignedResource]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., row_key_end: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., row_key_start: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., shared_access_expiry_time: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., shared_access_start_time: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListStorageAccountServiceSASResult]:
+    
+    ...
+

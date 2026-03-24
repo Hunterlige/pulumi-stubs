@@ -1,0 +1,223 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MongoClusterArgs', 'MongoCluster']
+@pulumi.input_type
+class MongoClusterArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., create_mode: Optional[pulumi.Input[Union[_builtins.str, MongoClusterCreateMode]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., mongo_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., node_group_specs: Optional[pulumi.Input[Sequence[pulumi.Input[NodeGroupSpecArgs]]]] = ..., restore_parameters: Optional[pulumi.Input[MongoClusterRestoreParametersArgs]] = ..., server_version: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login.setter
+    def administrator_login(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLoginPassword")
+    def administrator_login_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login_password.setter
+    def administrator_login_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createMode")
+    def create_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, MongoClusterCreateMode]]]:
+        
+        ...
+    
+    @create_mode.setter
+    def create_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, MongoClusterCreateMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mongoClusterName")
+    def mongo_cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @mongo_cluster_name.setter
+    def mongo_cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeGroupSpecs")
+    def node_group_specs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NodeGroupSpecArgs]]]]:
+        
+        ...
+    
+    @node_group_specs.setter
+    def node_group_specs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NodeGroupSpecArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restoreParameters")
+    def restore_parameters(self) -> Optional[pulumi.Input[MongoClusterRestoreParametersArgs]]:
+        
+        ...
+    
+    @restore_parameters.setter
+    def restore_parameters(self, value: Optional[pulumi.Input[MongoClusterRestoreParametersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverVersion")
+    def server_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_version.setter
+    def server_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:cosmosdb:MongoCluster")
+class MongoCluster(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., create_mode: Optional[pulumi.Input[Union[_builtins.str, MongoClusterCreateMode]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., mongo_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., node_group_specs: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NodeGroupSpecArgs, NodeGroupSpecArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., restore_parameters: Optional[pulumi.Input[Union[MongoClusterRestoreParametersArgs, MongoClusterRestoreParametersArgsDict]]] = ..., server_version: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MongoClusterArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MongoCluster:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterStatus")
+    def cluster_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionString")
+    def connection_string(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="earliestRestoreTime")
+    def earliest_restore_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeGroupSpecs")
+    def node_group_specs(self) -> pulumi.Output[Optional[Sequence[outputs.NodeGroupSpecResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverVersion")
+    def server_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

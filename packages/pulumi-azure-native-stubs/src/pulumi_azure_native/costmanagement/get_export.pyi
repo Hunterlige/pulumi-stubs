@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetExportResult', 'AwaitableGetExportResult', 'get_export', 'get_export_output']
+@pulumi.output_type
+class GetExportResult:
+    
+    def __init__(__self__, azure_api_version=..., definition=..., delivery_info=..., e_tag=..., format=..., id=..., identity=..., location=..., name=..., next_run_time_estimate=..., partition_data=..., run_history=..., schedule=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def definition(self) -> outputs.ExportDefinitionResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryInfo")
+    def delivery_info(self) -> outputs.ExportDeliveryInfoResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.SystemAssignedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextRunTimeEstimate")
+    def next_run_time_estimate(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionData")
+    def partition_data(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runHistory")
+    def run_history(self) -> Optional[outputs.ExportExecutionListResultResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> Optional[outputs.ExportScheduleResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetExportResult(GetExportResult):
+    def __await__(self): # -> Generator[Never, Any, GetExportResult]:
+        ...
+    
+
+
+def get_export(expand: Optional[_builtins.str] = ..., export_name: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetExportResult:
+    
+    ...
+
+def get_export_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., export_name: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetExportResult]:
+    
+    ...
+

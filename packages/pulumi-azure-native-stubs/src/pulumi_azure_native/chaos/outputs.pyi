@@ -1,0 +1,848 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ActionStatusResponse', 'BranchResponse', 'BranchStatusResponse', 'CapabilityPropertiesResponse', 'ContinuousActionResponse', 'CustomerDataStoragePropertiesResponse', 'DelayActionResponse', 'DiscreteActionResponse', ..., ..., ..., 'ExperimentIdentityResponse', 'ExperimentPropertiesResponse', 'KeyValuePairResponse', 'ListSelectorResponse', 'PrivateEndpointConnectionResponse', 'PrivateEndpointResponse', 'PrivateLinkServiceConnectionStateResponse', 'QuerySelectorResponse', 'SimpleFilterParametersResponse', 'SimpleFilterResponse', 'StepResponse', 'StepStatusResponse', 'SystemDataResponse', 'TargetReferenceResponse', 'UserAssignedIdentityResponse']
+@pulumi.output_type
+class ActionStatusResponse(dict):
+    
+    def __init__(__self__, *, action_id: _builtins.str, action_name: _builtins.str, end_time: _builtins.str, start_time: _builtins.str, status: _builtins.str, targets: Sequence[outputs.ExperimentExecutionActionTargetDetailsPropertiesResponse]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionId")
+    def action_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionName")
+    def action_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTime")
+    def end_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def targets(self) -> Sequence[outputs.ExperimentExecutionActionTargetDetailsPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BranchResponse(dict):
+    
+    def __init__(__self__, *, actions: Sequence[Any], name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def actions(self) -> Sequence[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BranchStatusResponse(dict):
+    
+    def __init__(__self__, *, actions: Sequence[outputs.ActionStatusResponse], branch_id: _builtins.str, branch_name: _builtins.str, status: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def actions(self) -> Sequence[outputs.ActionStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="branchId")
+    def branch_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="branchName")
+    def branch_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CapabilityPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, description: _builtins.str, parameters_schema: _builtins.str, publisher: _builtins.str, target_type: _builtins.str, urn: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parametersSchema")
+    def parameters_schema(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetType")
+    def target_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def urn(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ContinuousActionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, duration: _builtins.str, name: _builtins.str, parameters: Sequence[outputs.KeyValuePairResponse], selector_id: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Sequence[outputs.KeyValuePairResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selectorId")
+    def selector_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CustomerDataStoragePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, blob_container_name: Optional[_builtins.str] = ..., storage_account_resource_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobContainerName")
+    def blob_container_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountResourceId")
+    def storage_account_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DelayActionResponse(dict):
+    
+    def __init__(__self__, *, duration: _builtins.str, name: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DiscreteActionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: _builtins.str, parameters: Sequence[outputs.KeyValuePairResponse], selector_id: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Sequence[outputs.KeyValuePairResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selectorId")
+    def selector_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExperimentExecutionActionTargetDetailsErrorResponse(dict):
+    
+    def __init__(__self__, *, code: _builtins.str, message: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExperimentExecutionActionTargetDetailsPropertiesResponse(dict):
+    
+    def __init__(__self__, *, error: outputs.ExperimentExecutionActionTargetDetailsErrorResponse, status: _builtins.str, target: _builtins.str, target_completed_time: _builtins.str, target_failed_time: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> outputs.ExperimentExecutionActionTargetDetailsErrorResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetCompletedTime")
+    def target_completed_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetFailedTime")
+    def target_failed_time(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExperimentExecutionDetailsPropertiesResponseRunInformation(dict):
+    
+    def __init__(__self__, *, steps: Sequence[outputs.StepStatusResponse]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def steps(self) -> Sequence[outputs.StepStatusResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExperimentIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: _builtins.str, user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentityResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentityResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExperimentPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, selectors: Sequence[Any], steps: Sequence[outputs.StepResponse], customer_data_storage: Optional[outputs.CustomerDataStoragePropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def selectors(self) -> Sequence[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def steps(self) -> Sequence[outputs.StepResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerDataStorage")
+    def customer_data_storage(self) -> Optional[outputs.CustomerDataStoragePropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class KeyValuePairResponse(dict):
+    
+    def __init__(__self__, *, key: _builtins.str, value: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ListSelectorResponse(dict):
+    
+    def __init__(__self__, *, id: _builtins.str, targets: Sequence[outputs.TargetReferenceResponse], type: _builtins.str, filter: Optional[outputs.SimpleFilterResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def targets(self) -> Sequence[outputs.TargetReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[outputs.SimpleFilterResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrivateEndpointConnectionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, group_ids: Sequence[_builtins.str], id: _builtins.str, name: _builtins.str, private_link_service_connection_state: outputs.PrivateLinkServiceConnectionStateResponse, provisioning_state: _builtins.str, system_data: outputs.SystemDataResponse, type: _builtins.str, private_endpoint: Optional[outputs.PrivateEndpointResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupIds")
+    def group_ids(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> outputs.PrivateLinkServiceConnectionStateResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpoint")
+    def private_endpoint(self) -> Optional[outputs.PrivateEndpointResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrivateEndpointResponse(dict):
+    
+    def __init__(__self__, *, id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrivateLinkServiceConnectionStateResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, actions_required: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class QuerySelectorResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, id: _builtins.str, query_string: _builtins.str, subscription_ids: Sequence[_builtins.str], type: _builtins.str, filter: Optional[outputs.SimpleFilterResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="queryString")
+    def query_string(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionIds")
+    def subscription_ids(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[outputs.SimpleFilterResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SimpleFilterParametersResponse(dict):
+    
+    def __init__(__self__, *, zones: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SimpleFilterResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str, parameters: Optional[outputs.SimpleFilterParametersResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[outputs.SimpleFilterParametersResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class StepResponse(dict):
+    
+    def __init__(__self__, *, branches: Sequence[outputs.BranchResponse], name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def branches(self) -> Sequence[outputs.BranchResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class StepStatusResponse(dict):
+    
+    def __init__(__self__, *, branches: Sequence[outputs.BranchStatusResponse], status: _builtins.str, step_id: _builtins.str, step_name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def branches(self) -> Sequence[outputs.BranchStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stepId")
+    def step_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stepName")
+    def step_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TargetReferenceResponse(dict):
+    
+    def __init__(__self__, *, id: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAssignedIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_id: _builtins.str, principal_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+
+

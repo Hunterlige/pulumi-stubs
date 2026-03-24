@@ -1,0 +1,115 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['FailoverGroupArgs', 'FailoverGroup']
+@pulumi.input_type
+class FailoverGroupArgs:
+    def __init__(__self__, *, properties: pulumi.Input[FailoverGroupPropertiesArgs], resource_group_name: pulumi.Input[_builtins.str], sql_managed_instance_name: pulumi.Input[_builtins.str], failover_group_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Input[FailoverGroupPropertiesArgs]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: pulumi.Input[FailoverGroupPropertiesArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlManagedInstanceName")
+    def sql_managed_instance_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @sql_managed_instance_name.setter
+    def sql_managed_instance_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverGroupName")
+    def failover_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @failover_group_name.setter
+    def failover_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:azurearcdata:FailoverGroup")
+class FailoverGroup(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., failover_group_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Union[FailoverGroupPropertiesArgs, FailoverGroupPropertiesArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sql_managed_instance_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: FailoverGroupArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> FailoverGroup:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.FailoverGroupPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

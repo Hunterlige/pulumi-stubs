@@ -1,0 +1,170 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SqlServerArgs', 'SqlServer']
+@pulumi.input_type
+class SqlServerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], sql_server_registration_name: pulumi.Input[_builtins.str], cores: Optional[pulumi.Input[_builtins.int]] = ..., edition: Optional[pulumi.Input[_builtins.str]] = ..., property_bag: Optional[pulumi.Input[_builtins.str]] = ..., registration_id: Optional[pulumi.Input[_builtins.str]] = ..., sql_server_name: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlServerRegistrationName")
+    def sql_server_registration_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @sql_server_registration_name.setter
+    def sql_server_registration_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cores(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @cores.setter
+    def cores(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def edition(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @edition.setter
+    def edition(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="propertyBag")
+    def property_bag(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @property_bag.setter
+    def property_bag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrationID")
+    def registration_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @registration_id.setter
+    def registration_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlServerName")
+    def sql_server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sql_server_name.setter
+    def sql_server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:azuredata:SqlServer")
+class SqlServer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., cores: Optional[pulumi.Input[_builtins.int]] = ..., edition: Optional[pulumi.Input[_builtins.str]] = ..., property_bag: Optional[pulumi.Input[_builtins.str]] = ..., registration_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sql_server_name: Optional[pulumi.Input[_builtins.str]] = ..., sql_server_registration_name: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SqlServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SqlServer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cores(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def edition(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="propertyBag")
+    def property_bag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrationID")
+    def registration_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

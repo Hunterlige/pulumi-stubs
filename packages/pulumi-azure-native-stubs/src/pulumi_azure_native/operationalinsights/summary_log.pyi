@@ -1,0 +1,181 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SummaryLogArgs', 'SummaryLog']
+@pulumi.input_type
+class SummaryLogArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_definition: Optional[pulumi.Input[RuleDefinitionArgs]] = ..., rule_type: Optional[pulumi.Input[Union[_builtins.str, RuleTypeEnum]]] = ..., summary_logs_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleDefinition")
+    def rule_definition(self) -> Optional[pulumi.Input[RuleDefinitionArgs]]:
+        
+        ...
+    
+    @rule_definition.setter
+    def rule_definition(self, value: Optional[pulumi.Input[RuleDefinitionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> Optional[pulumi.Input[Union[_builtins.str, RuleTypeEnum]]]:
+        
+        ...
+    
+    @rule_type.setter
+    def rule_type(self, value: Optional[pulumi.Input[Union[_builtins.str, RuleTypeEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="summaryLogsName")
+    def summary_logs_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @summary_logs_name.setter
+    def summary_logs_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:operationalinsights:SummaryLog")
+class SummaryLog(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_definition: Optional[pulumi.Input[Union[RuleDefinitionArgs, RuleDefinitionArgsDict]]] = ..., rule_type: Optional[pulumi.Input[Union[_builtins.str, RuleTypeEnum]]] = ..., summary_logs_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SummaryLogArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SummaryLog:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isActive")
+    def is_active(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleDefinition")
+    def rule_definition(self) -> pulumi.Output[Optional[outputs.RuleDefinitionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusCode")
+    def status_code(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

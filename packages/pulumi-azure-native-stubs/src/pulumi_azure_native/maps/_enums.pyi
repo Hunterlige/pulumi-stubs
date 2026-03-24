@@ -1,0 +1,51 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['InfrastructureEncryption', 'Kind', 'ManagedServiceIdentityType', 'Name', 'PrivateEndpointServiceConnectionStatus', 'SigningKey']
+@pulumi.type_token("azure-native:maps:InfrastructureEncryption")
+class InfrastructureEncryption(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:maps:Kind")
+class Kind(_builtins.str, Enum):
+    
+    GEN2 = ...
+
+
+@pulumi.type_token("azure-native:maps:ManagedServiceIdentityType")
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token("azure-native:maps:Name")
+class Name(_builtins.str, Enum):
+    
+    G2 = ...
+
+
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+
+@pulumi.type_token("azure-native:maps:SigningKey")
+class SigningKey(_builtins.str, Enum):
+    
+    PRIMARY_KEY = ...
+    SECONDARY_KEY = ...
+    MANAGED_IDENTITY = ...
+
+

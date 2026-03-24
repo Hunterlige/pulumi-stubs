@@ -1,0 +1,148 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ManagedNetworkPeeringPolicyPropertiesArgs', 'ManagedNetworkPeeringPolicyPropertiesArgsDict', 'ResourceIdArgs', 'ResourceIdArgsDict', 'ScopeArgs', 'ScopeArgsDict']
+class ManagedNetworkPeeringPolicyPropertiesArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, Type]]
+    hub: NotRequired[pulumi.Input[ResourceIdArgsDict]]
+    mesh: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+    spokes: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+
+
+@pulumi.input_type
+class ManagedNetworkPeeringPolicyPropertiesArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, Type]], hub: Optional[pulumi.Input[ResourceIdArgs]] = ..., mesh: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ..., spokes: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, Type]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, Type]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hub(self) -> Optional[pulumi.Input[ResourceIdArgs]]:
+        
+        ...
+    
+    @hub.setter
+    def hub(self, value: Optional[pulumi.Input[ResourceIdArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mesh(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @mesh.setter
+    def mesh(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def spokes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @spokes.setter
+    def spokes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+
+
+class ResourceIdArgsDict(TypedDict):
+    
+    id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ResourceIdArgs:
+    def __init__(__self__, *, id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScopeArgsDict(TypedDict):
+    
+    management_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+    subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+    subscriptions: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+    virtual_networks: NotRequired[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgsDict]]]]
+
+
+@pulumi.input_type
+class ScopeArgs:
+    def __init__(__self__, *, management_groups: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ..., subnets: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ..., subscriptions: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ..., virtual_networks: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementGroups")
+    def management_groups(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @management_groups.setter
+    def management_groups(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subnets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @subnets.setter
+    def subnets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subscriptions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @subscriptions.setter
+    def subscriptions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworks")
+    def virtual_networks(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]:
+        
+        ...
+    
+    @virtual_networks.setter
+    def virtual_networks(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceIdArgs]]]]): # -> None:
+        ...
+    
+
+

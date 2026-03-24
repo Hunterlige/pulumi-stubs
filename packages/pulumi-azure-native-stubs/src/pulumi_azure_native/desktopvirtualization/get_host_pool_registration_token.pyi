@@ -1,0 +1,52 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetHostPoolRegistrationTokenResult', 'AwaitableGetHostPoolRegistrationTokenResult', 'get_host_pool_registration_token', 'get_host_pool_registration_token_output']
+@pulumi.output_type
+class GetHostPoolRegistrationTokenResult:
+    
+    def __init__(__self__, expiration_time=..., registration_token_operation=..., token=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationTime")
+    def expiration_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrationTokenOperation")
+    def registration_token_operation(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetHostPoolRegistrationTokenResult(GetHostPoolRegistrationTokenResult):
+    def __await__(self): # -> Generator[Never, Any, GetHostPoolRegistrationTokenResult]:
+        ...
+    
+
+
+def get_host_pool_registration_token(host_pool_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetHostPoolRegistrationTokenResult:
+    
+    ...
+
+def get_host_pool_registration_token_output(host_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetHostPoolRegistrationTokenResult]:
+    
+    ...
+

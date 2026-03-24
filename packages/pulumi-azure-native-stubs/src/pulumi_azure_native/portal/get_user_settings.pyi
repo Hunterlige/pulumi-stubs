@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetUserSettingsResult', 'AwaitableGetUserSettingsResult', 'get_user_settings', 'get_user_settings_output']
+@pulumi.output_type
+class GetUserSettingsResult:
+    
+    def __init__(__self__, azure_api_version=..., properties=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.UserPropertiesResponse:
+        
+        ...
+    
+
+
+class AwaitableGetUserSettingsResult(GetUserSettingsResult):
+    def __await__(self): # -> Generator[Never, Any, GetUserSettingsResult]:
+        ...
+    
+
+
+def get_user_settings(user_settings_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetUserSettingsResult:
+    
+    ...
+
+def get_user_settings_output(user_settings_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetUserSettingsResult]:
+    
+    ...
+

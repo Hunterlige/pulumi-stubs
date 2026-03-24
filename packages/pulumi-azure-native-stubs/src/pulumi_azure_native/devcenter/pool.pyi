@@ -1,0 +1,299 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PoolArgs', 'Pool']
+@pulumi.input_type
+class PoolArgs:
+    def __init__(__self__, *, dev_box_definition_name: pulumi.Input[_builtins.str], license_type: pulumi.Input[Union[_builtins.str, LicenseType]], local_administrator: pulumi.Input[Union[_builtins.str, LocalAdminStatus]], network_connection_name: pulumi.Input[_builtins.str], project_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], display_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_virtual_network_regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., single_sign_on_status: Optional[pulumi.Input[Union[_builtins.str, SingleSignOnStatus]]] = ..., stop_on_disconnect: Optional[pulumi.Input[StopOnDisconnectConfigurationArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., virtual_network_type: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="devBoxDefinitionName")
+    def dev_box_definition_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @dev_box_definition_name.setter
+    def dev_box_definition_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="licenseType")
+    def license_type(self) -> pulumi.Input[Union[_builtins.str, LicenseType]]:
+        
+        ...
+    
+    @license_type.setter
+    def license_type(self, value: pulumi.Input[Union[_builtins.str, LicenseType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAdministrator")
+    def local_administrator(self) -> pulumi.Input[Union[_builtins.str, LocalAdminStatus]]:
+        
+        ...
+    
+    @local_administrator.setter
+    def local_administrator(self, value: pulumi.Input[Union[_builtins.str, LocalAdminStatus]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkConnectionName")
+    def network_connection_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @network_connection_name.setter
+    def network_connection_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectName")
+    def project_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @project_name.setter
+    def project_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedVirtualNetworkRegions")
+    def managed_virtual_network_regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @managed_virtual_network_regions.setter
+    def managed_virtual_network_regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="poolName")
+    def pool_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pool_name.setter
+    def pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="singleSignOnStatus")
+    def single_sign_on_status(self) -> Optional[pulumi.Input[Union[_builtins.str, SingleSignOnStatus]]]:
+        
+        ...
+    
+    @single_sign_on_status.setter
+    def single_sign_on_status(self, value: Optional[pulumi.Input[Union[_builtins.str, SingleSignOnStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stopOnDisconnect")
+    def stop_on_disconnect(self) -> Optional[pulumi.Input[StopOnDisconnectConfigurationArgs]]:
+        
+        ...
+    
+    @stop_on_disconnect.setter
+    def stop_on_disconnect(self, value: Optional[pulumi.Input[StopOnDisconnectConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkType")
+    def virtual_network_type(self) -> Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkType]]]:
+        
+        ...
+    
+    @virtual_network_type.setter
+    def virtual_network_type(self, value: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:devcenter:Pool")
+class Pool(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., dev_box_definition_name: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., license_type: Optional[pulumi.Input[Union[_builtins.str, LicenseType]]] = ..., local_administrator: Optional[pulumi.Input[Union[_builtins.str, LocalAdminStatus]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_virtual_network_regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., network_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., project_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., single_sign_on_status: Optional[pulumi.Input[Union[_builtins.str, SingleSignOnStatus]]] = ..., stop_on_disconnect: Optional[pulumi.Input[Union[StopOnDisconnectConfigurationArgs, StopOnDisconnectConfigurationArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., virtual_network_type: Optional[pulumi.Input[Union[_builtins.str, VirtualNetworkType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: PoolArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Pool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="devBoxCount")
+    def dev_box_count(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="devBoxDefinitionName")
+    def dev_box_definition_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthStatus")
+    def health_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthStatusDetails")
+    def health_status_details(self) -> pulumi.Output[Sequence[outputs.HealthStatusDetailResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="licenseType")
+    def license_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAdministrator")
+    def local_administrator(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedVirtualNetworkRegions")
+    def managed_virtual_network_regions(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkConnectionName")
+    def network_connection_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="singleSignOnStatus")
+    def single_sign_on_status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stopOnDisconnect")
+    def stop_on_disconnect(self) -> pulumi.Output[Optional[outputs.StopOnDisconnectConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkType")
+    def virtual_network_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

@@ -1,0 +1,27 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ControllerPurpose', 'OrchestratorKind', 'ResourceIdentityType']
+@pulumi.type_token("azure-native:delegatednetwork:ControllerPurpose")
+class ControllerPurpose(_builtins.str, Enum):
+    
+    TEST = ...
+    PROD = ...
+
+
+@pulumi.type_token("azure-native:delegatednetwork:OrchestratorKind")
+class OrchestratorKind(_builtins.str, Enum):
+    
+    KUBERNETES = ...
+
+
+@pulumi.type_token("azure-native:delegatednetwork:ResourceIdentityType")
+class ResourceIdentityType(_builtins.str, Enum):
+    
+    SYSTEM_ASSIGNED = ...
+    NONE = ...
+
+

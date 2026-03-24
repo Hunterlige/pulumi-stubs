@@ -1,0 +1,241 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BlobStorageClassTypePropertiesResponse', 'NativeStorageClassTypePropertiesResponse', 'NfsStorageClassTypePropertiesResponse', 'RwxStorageClassTypePropertiesResponse', 'SmbStorageClassTypePropertiesResponse', 'SystemDataResponse']
+@pulumi.output_type
+class BlobStorageClassTypePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, azure_storage_account_key: _builtins.str, azure_storage_account_name: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureStorageAccountKey")
+    def azure_storage_account_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureStorageAccountName")
+    def azure_storage_account_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class NativeStorageClassTypePropertiesResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class NfsStorageClassTypePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, server: _builtins.str, share: _builtins.str, type: _builtins.str, mount_permissions: Optional[_builtins.str] = ..., on_delete: Optional[_builtins.str] = ..., sub_dir: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def server(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def share(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountPermissions")
+    def mount_permissions(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onDelete")
+    def on_delete(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subDir")
+    def sub_dir(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RwxStorageClassTypePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, backing_storage_class_name: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backingStorageClassName")
+    def backing_storage_class_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SmbStorageClassTypePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, source: _builtins.str, type: _builtins.str, domain: Optional[_builtins.str] = ..., password: Optional[_builtins.str] = ..., sub_dir: Optional[_builtins.str] = ..., username: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domain(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subDir")
+    def sub_dir(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

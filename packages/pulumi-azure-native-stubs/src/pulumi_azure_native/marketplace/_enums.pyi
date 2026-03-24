@@ -1,0 +1,16 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['Accessibility']
+@pulumi.type_token("azure-native:marketplace:Accessibility")
+class Accessibility(_builtins.str, Enum):
+    
+    UNKNOWN = ...
+    PUBLIC = ...
+    PRIVATE_TENANT_ON_LEVEL = ...
+    PRIVATE_SUBSCRIPTION_ON_LEVEL = ...
+
+

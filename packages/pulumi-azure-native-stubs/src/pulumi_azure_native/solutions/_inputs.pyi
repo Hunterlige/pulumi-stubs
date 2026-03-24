@@ -1,0 +1,621 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApplicationAuthorizationArgs', 'ApplicationAuthorizationArgsDict', 'ApplicationDefinitionArtifactArgs', 'ApplicationDefinitionArtifactArgsDict', 'ApplicationDeploymentPolicyArgs', 'ApplicationDeploymentPolicyArgsDict', 'ApplicationJitAccessPolicyArgs', 'ApplicationJitAccessPolicyArgsDict', 'ApplicationManagementPolicyArgs', 'ApplicationManagementPolicyArgsDict', 'ApplicationNotificationEndpointArgs', 'ApplicationNotificationEndpointArgsDict', 'ApplicationNotificationPolicyArgs', 'ApplicationNotificationPolicyArgsDict', 'ApplicationPackageLockingPolicyDefinitionArgs', 'ApplicationPackageLockingPolicyDefinitionArgsDict', 'ApplicationPolicyArgs', 'ApplicationPolicyArgsDict', 'IdentityArgs', 'IdentityArgsDict', 'JitApproverDefinitionArgs', 'JitApproverDefinitionArgsDict', 'JitAuthorizationPoliciesArgs', 'JitAuthorizationPoliciesArgsDict', 'JitSchedulingPolicyArgs', 'JitSchedulingPolicyArgsDict', 'PlanArgs', 'PlanArgsDict', 'SkuArgs', 'SkuArgsDict']
+class ApplicationAuthorizationArgsDict(TypedDict):
+    
+    principal_id: pulumi.Input[_builtins.str]
+    role_definition_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ApplicationAuthorizationArgs:
+    def __init__(__self__, *, principal_id: pulumi.Input[_builtins.str], role_definition_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_definition_id.setter
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ApplicationDefinitionArtifactArgsDict(TypedDict):
+    
+    name: pulumi.Input[Union[_builtins.str, ApplicationDefinitionArtifactName]]
+    type: pulumi.Input[ApplicationArtifactType]
+    uri: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ApplicationDefinitionArtifactArgs:
+    def __init__(__self__, *, name: pulumi.Input[Union[_builtins.str, ApplicationDefinitionArtifactName]], type: pulumi.Input[ApplicationArtifactType], uri: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[Union[_builtins.str, ApplicationDefinitionArtifactName]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[Union[_builtins.str, ApplicationDefinitionArtifactName]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[ApplicationArtifactType]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[ApplicationArtifactType]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @uri.setter
+    def uri(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ApplicationDeploymentPolicyArgsDict(TypedDict):
+    
+    deployment_mode: pulumi.Input[Union[_builtins.str, DeploymentMode]]
+
+
+@pulumi.input_type
+class ApplicationDeploymentPolicyArgs:
+    def __init__(__self__, *, deployment_mode: pulumi.Input[Union[_builtins.str, DeploymentMode]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentMode")
+    def deployment_mode(self) -> pulumi.Input[Union[_builtins.str, DeploymentMode]]:
+        
+        ...
+    
+    @deployment_mode.setter
+    def deployment_mode(self, value: pulumi.Input[Union[_builtins.str, DeploymentMode]]): # -> None:
+        ...
+    
+
+
+class ApplicationJitAccessPolicyArgsDict(TypedDict):
+    
+    jit_access_enabled: pulumi.Input[_builtins.bool]
+    jit_approval_mode: NotRequired[pulumi.Input[Union[_builtins.str, JitApprovalMode]]]
+    jit_approvers: NotRequired[pulumi.Input[Sequence[pulumi.Input[JitApproverDefinitionArgsDict]]]]
+    maximum_jit_access_duration: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ApplicationJitAccessPolicyArgs:
+    def __init__(__self__, *, jit_access_enabled: pulumi.Input[_builtins.bool], jit_approval_mode: Optional[pulumi.Input[Union[_builtins.str, JitApprovalMode]]] = ..., jit_approvers: Optional[pulumi.Input[Sequence[pulumi.Input[JitApproverDefinitionArgs]]]] = ..., maximum_jit_access_duration: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitAccessEnabled")
+    def jit_access_enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @jit_access_enabled.setter
+    def jit_access_enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitApprovalMode")
+    def jit_approval_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, JitApprovalMode]]]:
+        
+        ...
+    
+    @jit_approval_mode.setter
+    def jit_approval_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, JitApprovalMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitApprovers")
+    def jit_approvers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[JitApproverDefinitionArgs]]]]:
+        
+        ...
+    
+    @jit_approvers.setter
+    def jit_approvers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[JitApproverDefinitionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumJitAccessDuration")
+    def maximum_jit_access_duration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maximum_jit_access_duration.setter
+    def maximum_jit_access_duration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ApplicationManagementPolicyArgsDict(TypedDict):
+    
+    mode: NotRequired[pulumi.Input[Union[_builtins.str, ApplicationManagementMode]]]
+
+
+@pulumi.input_type
+class ApplicationManagementPolicyArgs:
+    def __init__(__self__, *, mode: Optional[pulumi.Input[Union[_builtins.str, ApplicationManagementMode]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, ApplicationManagementMode]]]:
+        
+        ...
+    
+    @mode.setter
+    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, ApplicationManagementMode]]]): # -> None:
+        ...
+    
+
+
+class ApplicationNotificationEndpointArgsDict(TypedDict):
+    
+    uri: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ApplicationNotificationEndpointArgs:
+    def __init__(__self__, *, uri: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @uri.setter
+    def uri(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ApplicationNotificationPolicyArgsDict(TypedDict):
+    
+    notification_endpoints: pulumi.Input[Sequence[pulumi.Input[ApplicationNotificationEndpointArgsDict]]]
+
+
+@pulumi.input_type
+class ApplicationNotificationPolicyArgs:
+    def __init__(__self__, *, notification_endpoints: pulumi.Input[Sequence[pulumi.Input[ApplicationNotificationEndpointArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notificationEndpoints")
+    def notification_endpoints(self) -> pulumi.Input[Sequence[pulumi.Input[ApplicationNotificationEndpointArgs]]]:
+        
+        ...
+    
+    @notification_endpoints.setter
+    def notification_endpoints(self, value: pulumi.Input[Sequence[pulumi.Input[ApplicationNotificationEndpointArgs]]]): # -> None:
+        ...
+    
+
+
+class ApplicationPackageLockingPolicyDefinitionArgsDict(TypedDict):
+    
+    allowed_actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    allowed_data_actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ApplicationPackageLockingPolicyDefinitionArgs:
+    def __init__(__self__, *, allowed_actions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., allowed_data_actions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedActions")
+    def allowed_actions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @allowed_actions.setter
+    def allowed_actions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedDataActions")
+    def allowed_data_actions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @allowed_data_actions.setter
+    def allowed_data_actions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ApplicationPolicyArgsDict(TypedDict):
+    
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    parameters: NotRequired[pulumi.Input[_builtins.str]]
+    policy_definition_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ApplicationPolicyArgs:
+    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ..., parameters: Optional[pulumi.Input[_builtins.str]] = ..., policy_definition_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @policy_definition_id.setter
+    def policy_definition_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class IdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[ResourceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class IdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[ResourceIdentityType]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class JitApproverDefinitionArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+    display_name: NotRequired[pulumi.Input[_builtins.str]]
+    type: NotRequired[pulumi.Input[Union[_builtins.str, JitApproverType]]]
+
+
+@pulumi.input_type
+class JitApproverDefinitionArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], display_name: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, JitApproverType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, JitApproverType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, JitApproverType]]]): # -> None:
+        ...
+    
+
+
+class JitAuthorizationPoliciesArgsDict(TypedDict):
+    
+    principal_id: pulumi.Input[_builtins.str]
+    role_definition_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class JitAuthorizationPoliciesArgs:
+    def __init__(__self__, *, principal_id: pulumi.Input[_builtins.str], role_definition_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_definition_id.setter
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class JitSchedulingPolicyArgsDict(TypedDict):
+    
+    duration: pulumi.Input[_builtins.str]
+    start_time: pulumi.Input[_builtins.str]
+    type: pulumi.Input[Union[_builtins.str, JitSchedulingType]]
+
+
+@pulumi.input_type
+class JitSchedulingPolicyArgs:
+    def __init__(__self__, *, duration: pulumi.Input[_builtins.str], start_time: pulumi.Input[_builtins.str], type: pulumi.Input[Union[_builtins.str, JitSchedulingType]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> pulumi.Input[_builtins.str]:
+        ...
+    
+    @duration.setter
+    def duration(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @start_time.setter
+    def start_time(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, JitSchedulingType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, JitSchedulingType]]): # -> None:
+        ...
+    
+
+
+class PlanArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    product: pulumi.Input[_builtins.str]
+    publisher: pulumi.Input[_builtins.str]
+    version: pulumi.Input[_builtins.str]
+    promotion_code: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class PlanArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], product: pulumi.Input[_builtins.str], publisher: pulumi.Input[_builtins.str], version: pulumi.Input[_builtins.str], promotion_code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @product.setter
+    def product(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @publisher.setter
+    def publisher(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="promotionCode")
+    def promotion_code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @promotion_code.setter
+    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    capacity: NotRequired[pulumi.Input[_builtins.int]]
+    family: NotRequired[pulumi.Input[_builtins.str]]
+    model: NotRequired[pulumi.Input[_builtins.str]]
+    size: NotRequired[pulumi.Input[_builtins.str]]
+    tier: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], capacity: Optional[pulumi.Input[_builtins.int]] = ..., family: Optional[pulumi.Input[_builtins.str]] = ..., model: Optional[pulumi.Input[_builtins.str]] = ..., size: Optional[pulumi.Input[_builtins.str]] = ..., tier: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @family.setter
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @model.setter
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @size.setter
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

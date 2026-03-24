@@ -1,0 +1,88 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetApplicationSecurityGroupResult', 'AwaitableGetApplicationSecurityGroupResult', 'get_application_security_group', 'get_application_security_group_output']
+@pulumi.output_type
+class GetApplicationSecurityGroupResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., id=..., location=..., name=..., provisioning_state=..., resource_guid=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGuid")
+    def resource_guid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetApplicationSecurityGroupResult(GetApplicationSecurityGroupResult):
+    def __await__(self): # -> Generator[Never, Any, GetApplicationSecurityGroupResult]:
+        ...
+    
+
+
+def get_application_security_group(application_security_group_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetApplicationSecurityGroupResult:
+    
+    ...
+
+def get_application_security_group_output(application_security_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetApplicationSecurityGroupResult]:
+    
+    ...
+

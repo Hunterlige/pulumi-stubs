@@ -1,0 +1,201 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SpacecraftArgs', 'Spacecraft']
+@pulumi.input_type
+class SpacecraftArgs:
+    def __init__(__self__, *, links: pulumi.Input[Sequence[pulumi.Input[SpacecraftLinkArgs]]], resource_group_name: pulumi.Input[_builtins.str], title_line: pulumi.Input[_builtins.str], tle_line1: pulumi.Input[_builtins.str], tle_line2: pulumi.Input[_builtins.str], location: Optional[pulumi.Input[_builtins.str]] = ..., norad_id: Optional[pulumi.Input[_builtins.str]] = ..., spacecraft_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def links(self) -> pulumi.Input[Sequence[pulumi.Input[SpacecraftLinkArgs]]]:
+        
+        ...
+    
+    @links.setter
+    def links(self, value: pulumi.Input[Sequence[pulumi.Input[SpacecraftLinkArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="titleLine")
+    def title_line(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @title_line.setter
+    def title_line(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tleLine1")
+    def tle_line1(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @tle_line1.setter
+    def tle_line1(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tleLine2")
+    def tle_line2(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @tle_line2.setter
+    def tle_line2(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="noradId")
+    def norad_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @norad_id.setter
+    def norad_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spacecraftName")
+    def spacecraft_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @spacecraft_name.setter
+    def spacecraft_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:orbital:Spacecraft")
+class Spacecraft(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., links: Optional[pulumi.Input[Sequence[pulumi.Input[Union[SpacecraftLinkArgs, SpacecraftLinkArgsDict]]]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., norad_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., spacecraft_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., title_line: Optional[pulumi.Input[_builtins.str]] = ..., tle_line1: Optional[pulumi.Input[_builtins.str]] = ..., tle_line2: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SpacecraftArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Spacecraft:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def links(self) -> pulumi.Output[Sequence[outputs.SpacecraftLinkResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="noradId")
+    def norad_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="titleLine")
+    def title_line(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tleLine1")
+    def tle_line1(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tleLine2")
+    def tle_line2(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

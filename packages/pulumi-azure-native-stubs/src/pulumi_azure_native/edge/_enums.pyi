@@ -1,0 +1,43 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ActiveState', 'ErrorActionMode', 'ExtendedLocationType', 'ReconciliationState', 'ResourceState']
+@pulumi.type_token("azure-native:edge:ActiveState")
+class ActiveState(_builtins.str, Enum):
+    
+    ACTIVE = ...
+    INACTIVE = ...
+
+
+@pulumi.type_token("azure-native:edge:ErrorActionMode")
+class ErrorActionMode(_builtins.str, Enum):
+    
+    STOP_ON_ANY_FAILURE = ...
+    STOP_ON_N_FAILURES = ...
+    SILENTLY_CONTINUE = ...
+
+
+@pulumi.type_token("azure-native:edge:ExtendedLocationType")
+class ExtendedLocationType(_builtins.str, Enum):
+    
+    EDGE_ZONE = ...
+    CUSTOM_LOCATION = ...
+
+
+@pulumi.type_token("azure-native:edge:ReconciliationState")
+class ReconciliationState(_builtins.str, Enum):
+    
+    INACTIVE = ...
+    ACTIVE = ...
+
+
+@pulumi.type_token("azure-native:edge:ResourceState")
+class ResourceState(_builtins.str, Enum):
+    
+    ACTIVE = ...
+    INACTIVE = ...
+
+

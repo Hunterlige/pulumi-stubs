@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSyncGroupResult', 'AwaitableGetSyncGroupResult', 'get_sync_group', 'get_sync_group_output']
+@pulumi.output_type
+class GetSyncGroupResult:
+    
+    def __init__(__self__, azure_api_version=..., conflict_logging_retention_in_days=..., conflict_resolution_policy=..., enable_conflict_logging=..., hub_database_user_name=..., id=..., interval=..., last_sync_time=..., name=..., private_endpoint_name=..., schema=..., sku=..., sync_database_id=..., sync_state=..., type=..., use_private_link_connection=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflictLoggingRetentionInDays")
+    def conflict_logging_retention_in_days(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflictResolutionPolicy")
+    def conflict_resolution_policy(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableConflictLogging")
+    def enable_conflict_logging(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hubDatabaseUserName")
+    def hub_database_user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def interval(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastSyncTime")
+    def last_sync_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointName")
+    def private_endpoint_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schema(self) -> Optional[outputs.SyncGroupSchemaResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncDatabaseId")
+    def sync_database_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncState")
+    def sync_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usePrivateLinkConnection")
+    def use_private_link_connection(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+class AwaitableGetSyncGroupResult(GetSyncGroupResult):
+    def __await__(self): # -> Generator[Never, Any, GetSyncGroupResult]:
+        ...
+    
+
+
+def get_sync_group(database_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., sync_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSyncGroupResult:
+    
+    ...
+
+def get_sync_group_output(database_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSyncGroupResult]:
+    
+    ...
+

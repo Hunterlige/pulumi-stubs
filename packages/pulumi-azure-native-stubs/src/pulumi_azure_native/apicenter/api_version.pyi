@@ -1,0 +1,150 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApiVersionArgs', 'ApiVersion']
+@pulumi.input_type
+class ApiVersionArgs:
+    def __init__(__self__, *, api_name: pulumi.Input[_builtins.str], lifecycle_stage: pulumi.Input[Union[_builtins.str, LifecycleStage]], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], version_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiName")
+    def api_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @api_name.setter
+    def api_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lifecycleStage")
+    def lifecycle_stage(self) -> pulumi.Input[Union[_builtins.str, LifecycleStage]]:
+        
+        ...
+    
+    @lifecycle_stage.setter
+    def lifecycle_stage(self, value: pulumi.Input[Union[_builtins.str, LifecycleStage]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @title.setter
+    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionName")
+    def version_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version_name.setter
+    def version_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apicenter:ApiVersion")
+class ApiVersion(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., api_name: Optional[pulumi.Input[_builtins.str]] = ..., lifecycle_stage: Optional[pulumi.Input[Union[_builtins.str, LifecycleStage]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., title: Optional[pulumi.Input[_builtins.str]] = ..., version_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ApiVersionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ApiVersion:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lifecycleStage")
+    def lifecycle_stage(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

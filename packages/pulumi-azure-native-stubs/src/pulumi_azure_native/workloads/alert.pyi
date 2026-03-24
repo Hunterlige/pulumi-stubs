@@ -1,0 +1,181 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AlertArgs', 'Alert']
+@pulumi.input_type
+class AlertArgs:
+    def __init__(__self__, *, monitor_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], alert_name: Optional[pulumi.Input[_builtins.str]] = ..., alert_rule_properties: Optional[pulumi.Input[AlertRulePropertiesArgs]] = ..., provider_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., provider_type: Optional[pulumi.Input[_builtins.str]] = ..., template_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monitorName")
+    def monitor_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @monitor_name.setter
+    def monitor_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertName")
+    def alert_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @alert_name.setter
+    def alert_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertRuleProperties")
+    def alert_rule_properties(self) -> Optional[pulumi.Input[AlertRulePropertiesArgs]]:
+        
+        ...
+    
+    @alert_rule_properties.setter
+    def alert_rule_properties(self, value: Optional[pulumi.Input[AlertRulePropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerNames")
+    def provider_names(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @provider_names.setter
+    def provider_names(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerType")
+    def provider_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provider_type.setter
+    def provider_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateName")
+    def template_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @template_name.setter
+    def template_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:workloads:Alert")
+class Alert(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., alert_name: Optional[pulumi.Input[_builtins.str]] = ..., alert_rule_properties: Optional[pulumi.Input[Union[AlertRulePropertiesArgs, AlertRulePropertiesArgsDict]]] = ..., monitor_name: Optional[pulumi.Input[_builtins.str]] = ..., provider_names: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., provider_type: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., template_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AlertArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Alert:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertRuleProperties")
+    def alert_rule_properties(self) -> pulumi.Output[Optional[outputs.AlertRulePropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertRuleResourceId")
+    def alert_rule_resource_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> pulumi.Output[outputs.ErrorDetailResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerNames")
+    def provider_names(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerType")
+    def provider_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateName")
+    def template_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

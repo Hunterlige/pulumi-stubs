@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetIncidentCommentResult', 'AwaitableGetIncidentCommentResult', 'get_incident_comment', 'get_incident_comment_output']
+@pulumi.output_type
+class GetIncidentCommentResult:
+    
+    def __init__(__self__, author=..., azure_api_version=..., created_time_utc=..., etag=..., id=..., last_modified_time_utc=..., message=..., name=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def author(self) -> outputs.ClientInfoResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimeUtc")
+    def created_time_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTimeUtc")
+    def last_modified_time_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetIncidentCommentResult(GetIncidentCommentResult):
+    def __await__(self): # -> Generator[Never, Any, GetIncidentCommentResult]:
+        ...
+    
+
+
+def get_incident_comment(incident_comment_id: Optional[_builtins.str] = ..., incident_id: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetIncidentCommentResult:
+    
+    ...
+
+def get_incident_comment_output(incident_comment_id: Optional[pulumi.Input[_builtins.str]] = ..., incident_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetIncidentCommentResult]:
+    
+    ...
+

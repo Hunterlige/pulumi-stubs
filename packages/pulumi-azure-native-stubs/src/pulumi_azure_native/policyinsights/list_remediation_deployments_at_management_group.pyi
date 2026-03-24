@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListRemediationDeploymentsAtManagementGroupResult', ..., 'list_remediation_deployments_at_management_group', ...]
+@pulumi.output_type
+class ListRemediationDeploymentsAtManagementGroupResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.RemediationDeploymentResponse]:
+        
+        ...
+    
+
+
+class AwaitableListRemediationDeploymentsAtManagementGroupResult(ListRemediationDeploymentsAtManagementGroupResult):
+    def __await__(self): # -> Generator[Never, Any, ListRemediationDeploymentsAtManagementGroupResult]:
+        ...
+    
+
+
+def list_remediation_deployments_at_management_group(management_group_id: Optional[_builtins.str] = ..., management_groups_namespace: Optional[_builtins.str] = ..., remediation_name: Optional[_builtins.str] = ..., top: Optional[_builtins.int] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListRemediationDeploymentsAtManagementGroupResult:
+    
+    ...
+
+def list_remediation_deployments_at_management_group_output(management_group_id: Optional[pulumi.Input[_builtins.str]] = ..., management_groups_namespace: Optional[pulumi.Input[_builtins.str]] = ..., remediation_name: Optional[pulumi.Input[_builtins.str]] = ..., top: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListRemediationDeploymentsAtManagementGroupResult]:
+    
+    ...
+

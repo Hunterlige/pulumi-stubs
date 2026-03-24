@@ -1,0 +1,315 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['KubernetesClusterArgs', 'KubernetesCluster']
+@pulumi.input_type
+class KubernetesClusterArgs:
+    def __init__(__self__, *, control_plane_node_configuration: pulumi.Input[ControlPlaneNodeConfigurationArgs], extended_location: pulumi.Input[ExtendedLocationArgs], initial_agent_pool_configurations: pulumi.Input[Sequence[pulumi.Input[InitialAgentPoolConfigurationArgs]]], kubernetes_version: pulumi.Input[_builtins.str], network_configuration: pulumi.Input[NetworkConfigurationArgs], resource_group_name: pulumi.Input[_builtins.str], aad_configuration: Optional[pulumi.Input[AadConfigurationArgs]] = ..., administrator_configuration: Optional[pulumi.Input[AdministratorConfigurationArgs]] = ..., kubernetes_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_resource_group_configuration: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="controlPlaneNodeConfiguration")
+    def control_plane_node_configuration(self) -> pulumi.Input[ControlPlaneNodeConfigurationArgs]:
+        
+        ...
+    
+    @control_plane_node_configuration.setter
+    def control_plane_node_configuration(self, value: pulumi.Input[ControlPlaneNodeConfigurationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="initialAgentPoolConfigurations")
+    def initial_agent_pool_configurations(self) -> pulumi.Input[Sequence[pulumi.Input[InitialAgentPoolConfigurationArgs]]]:
+        
+        ...
+    
+    @initial_agent_pool_configurations.setter
+    def initial_agent_pool_configurations(self, value: pulumi.Input[Sequence[pulumi.Input[InitialAgentPoolConfigurationArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesVersion")
+    def kubernetes_version(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kubernetes_version.setter
+    def kubernetes_version(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkConfiguration")
+    def network_configuration(self) -> pulumi.Input[NetworkConfigurationArgs]:
+        
+        ...
+    
+    @network_configuration.setter
+    def network_configuration(self, value: pulumi.Input[NetworkConfigurationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadConfiguration")
+    def aad_configuration(self) -> Optional[pulumi.Input[AadConfigurationArgs]]:
+        
+        ...
+    
+    @aad_configuration.setter
+    def aad_configuration(self, value: Optional[pulumi.Input[AadConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorConfiguration")
+    def administrator_configuration(self) -> Optional[pulumi.Input[AdministratorConfigurationArgs]]:
+        
+        ...
+    
+    @administrator_configuration.setter
+    def administrator_configuration(self, value: Optional[pulumi.Input[AdministratorConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesClusterName")
+    def kubernetes_cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kubernetes_cluster_name.setter
+    def kubernetes_cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupConfiguration")
+    def managed_resource_group_configuration(self) -> Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]:
+        
+        ...
+    
+    @managed_resource_group_configuration.setter
+    def managed_resource_group_configuration(self, value: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:networkcloud:KubernetesCluster")
+class KubernetesCluster(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., aad_configuration: Optional[pulumi.Input[Union[AadConfigurationArgs, AadConfigurationArgsDict]]] = ..., administrator_configuration: Optional[pulumi.Input[Union[AdministratorConfigurationArgs, AdministratorConfigurationArgsDict]]] = ..., control_plane_node_configuration: Optional[pulumi.Input[Union[ControlPlaneNodeConfigurationArgs, ControlPlaneNodeConfigurationArgsDict]]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., initial_agent_pool_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[InitialAgentPoolConfigurationArgs, InitialAgentPoolConfigurationArgsDict]]]]] = ..., kubernetes_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., kubernetes_version: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_resource_group_configuration: Optional[pulumi.Input[Union[ManagedResourceGroupConfigurationArgs, ManagedResourceGroupConfigurationArgsDict]]] = ..., network_configuration: Optional[pulumi.Input[Union[NetworkConfigurationArgs, NetworkConfigurationArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: KubernetesClusterArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> KubernetesCluster:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadConfiguration")
+    def aad_configuration(self) -> pulumi.Output[Optional[outputs.AadConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorConfiguration")
+    def administrator_configuration(self) -> pulumi.Output[Optional[outputs.AdministratorConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="attachedNetworkIds")
+    def attached_network_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availableUpgrades")
+    def available_upgrades(self) -> pulumi.Output[Sequence[outputs.AvailableUpgradeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectedClusterId")
+    def connected_cluster_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="controlPlaneKubernetesVersion")
+    def control_plane_kubernetes_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="controlPlaneNodeConfiguration")
+    def control_plane_node_configuration(self) -> pulumi.Output[outputs.ControlPlaneNodeConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatus")
+    def detailed_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatusMessage")
+    def detailed_status_message(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="featureStatuses")
+    def feature_statuses(self) -> pulumi.Output[Sequence[outputs.FeatureStatusResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="initialAgentPoolConfigurations")
+    def initial_agent_pool_configurations(self) -> pulumi.Output[Sequence[outputs.InitialAgentPoolConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesVersion")
+    def kubernetes_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupConfiguration")
+    def managed_resource_group_configuration(self) -> pulumi.Output[Optional[outputs.ManagedResourceGroupConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkConfiguration")
+    def network_configuration(self) -> pulumi.Output[outputs.NetworkConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nodes(self) -> pulumi.Output[Sequence[outputs.KubernetesClusterNodeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,27 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['HostType', 'ServiceName', 'Type']
+@pulumi.type_token("azure-native:hybridconnectivity:HostType")
+class HostType(_builtins.str, Enum):
+    
+    AWS = ...
+
+
+@pulumi.type_token("azure-native:hybridconnectivity:ServiceName")
+class ServiceName(_builtins.str, Enum):
+    
+    SSH = ...
+    WAC = ...
+
+
+@pulumi.type_token("azure-native:hybridconnectivity:Type")
+class Type(_builtins.str, Enum):
+    
+    DEFAULT = ...
+    CUSTOM = ...
+
+

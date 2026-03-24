@@ -1,0 +1,71 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWorkloadImpactResult', 'AwaitableGetWorkloadImpactResult', 'get_workload_impact', 'get_workload_impact_output']
+@pulumi.output_type
+class GetWorkloadImpactResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., properties=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.WorkloadImpactPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetWorkloadImpactResult(GetWorkloadImpactResult):
+    def __await__(self): # -> Generator[Never, Any, GetWorkloadImpactResult]:
+        ...
+    
+
+
+def get_workload_impact(workload_impact_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWorkloadImpactResult:
+    
+    ...
+
+def get_workload_impact_output(workload_impact_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWorkloadImpactResult]:
+    
+    ...
+

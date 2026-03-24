@@ -1,0 +1,178 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ControlOrganizationIntelligenceConfigArgs', 'ControlOrganizationIntelligenceConfig']
+@pulumi.input_type
+class ControlOrganizationIntelligenceConfigArgs:
+    def __init__(__self__, *, edition_config: Optional[pulumi.Input[_builtins.str]] = ..., filter: Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="editionConfig")
+    def edition_config(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @edition_config.setter
+    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]]:
+        
+        ...
+    
+    @filter.setter
+    def filter(self, value: Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.input_type
+class _ControlOrganizationIntelligenceConfigState:
+    def __init__(__self__, *, edition_config: Optional[pulumi.Input[_builtins.str]] = ..., effective_intelligence_configs: Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs]]]] = ..., filter: Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., trial_configs: Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigTrialConfigArgs]]]] = ..., update_time: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="editionConfig")
+    def edition_config(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @edition_config.setter
+    def edition_config(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveIntelligenceConfigs")
+    def effective_intelligence_configs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs]]]]:
+        
+        ...
+    
+    @effective_intelligence_configs.setter
+    def effective_intelligence_configs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]]:
+        
+        ...
+    
+    @filter.setter
+    def filter(self, value: Optional[pulumi.Input[ControlOrganizationIntelligenceConfigFilterArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trialConfigs")
+    def trial_configs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigTrialConfigArgs]]]]:
+        
+        ...
+    
+    @trial_configs.setter
+    def trial_configs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ControlOrganizationIntelligenceConfigTrialConfigArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateTime")
+    def update_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @update_time.setter
+    def update_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ControlOrganizationIntelligenceConfig(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., edition_config: Optional[pulumi.Input[_builtins.str]] = ..., filter: Optional[pulumi.Input[Union[ControlOrganizationIntelligenceConfigFilterArgs, ControlOrganizationIntelligenceConfigFilterArgsDict]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: Optional[ControlOrganizationIntelligenceConfigArgs] = ..., opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., edition_config: Optional[pulumi.Input[_builtins.str]] = ..., effective_intelligence_configs: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs, ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgsDict]]]]] = ..., filter: Optional[pulumi.Input[Union[ControlOrganizationIntelligenceConfigFilterArgs, ControlOrganizationIntelligenceConfigFilterArgsDict]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., trial_configs: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ControlOrganizationIntelligenceConfigTrialConfigArgs, ControlOrganizationIntelligenceConfigTrialConfigArgsDict]]]]] = ..., update_time: Optional[pulumi.Input[_builtins.str]] = ...) -> ControlOrganizationIntelligenceConfig:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="editionConfig")
+    def edition_config(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveIntelligenceConfigs")
+    def effective_intelligence_configs(self) -> pulumi.Output[Sequence[outputs.ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> pulumi.Output[Optional[outputs.ControlOrganizationIntelligenceConfigFilter]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trialConfigs")
+    def trial_configs(self) -> pulumi.Output[Sequence[outputs.ControlOrganizationIntelligenceConfigTrialConfig]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateTime")
+    def update_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

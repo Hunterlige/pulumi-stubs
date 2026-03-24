@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetEncryptionScopeResult', 'AwaitableGetEncryptionScopeResult', 'get_encryption_scope', 'get_encryption_scope_output']
+@pulumi.output_type
+class GetEncryptionScopeResult:
+    
+    def __init__(__self__, azure_api_version=..., creation_time=..., id=..., key_vault_properties=..., last_modified_time=..., name=..., require_infrastructure_encryption=..., source=..., state=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTime")
+    def creation_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultProperties")
+    def key_vault_properties(self) -> Optional[outputs.EncryptionScopeKeyVaultPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTime")
+    def last_modified_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requireInfrastructureEncryption")
+    def require_infrastructure_encryption(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetEncryptionScopeResult(GetEncryptionScopeResult):
+    def __await__(self): # -> Generator[Never, Any, GetEncryptionScopeResult]:
+        ...
+    
+
+
+def get_encryption_scope(account_name: Optional[_builtins.str] = ..., encryption_scope_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetEncryptionScopeResult:
+    
+    ...
+
+def get_encryption_scope_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., encryption_scope_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetEncryptionScopeResult]:
+    
+    ...
+

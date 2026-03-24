@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetBgpPeerResult', 'AwaitableGetBgpPeerResult', 'get_bgp_peer', 'get_bgp_peer_output']
+@pulumi.output_type
+class GetBgpPeerResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., my_asn=..., name=..., peer_address=..., peer_asn=..., provisioning_state=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="myAsn")
+    def my_asn(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAddress")
+    def peer_address(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsn")
+    def peer_asn(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetBgpPeerResult(GetBgpPeerResult):
+    def __await__(self): # -> Generator[Never, Any, GetBgpPeerResult]:
+        ...
+    
+
+
+def get_bgp_peer(bgp_peer_name: Optional[_builtins.str] = ..., resource_uri: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetBgpPeerResult:
+    
+    ...
+
+def get_bgp_peer_output(bgp_peer_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetBgpPeerResult]:
+    
+    ...
+

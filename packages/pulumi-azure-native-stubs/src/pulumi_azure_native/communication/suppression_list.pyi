@@ -1,0 +1,141 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SuppressionListArgs', 'SuppressionList']
+@pulumi.input_type
+class SuppressionListArgs:
+    def __init__(__self__, *, domain_name: pulumi.Input[_builtins.str], email_service_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], list_name: Optional[pulumi.Input[_builtins.str]] = ..., suppression_list_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainName")
+    def domain_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @domain_name.setter
+    def domain_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="emailServiceName")
+    def email_service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @email_service_name.setter
+    def email_service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="listName")
+    def list_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @list_name.setter
+    def list_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="suppressionListName")
+    def suppression_list_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @suppression_list_name.setter
+    def suppression_list_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:communication:SuppressionList")
+class SuppressionList(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., domain_name: Optional[pulumi.Input[_builtins.str]] = ..., email_service_name: Optional[pulumi.Input[_builtins.str]] = ..., list_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., suppression_list_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SuppressionListArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SuppressionList:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimeStamp")
+    def created_time_stamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataLocation")
+    def data_location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastUpdatedTimeStamp")
+    def last_updated_time_stamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="listName")
+    def list_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

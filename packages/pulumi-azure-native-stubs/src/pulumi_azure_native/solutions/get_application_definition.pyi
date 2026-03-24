@@ -1,0 +1,179 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetApplicationDefinitionResult', 'AwaitableGetApplicationDefinitionResult', 'get_application_definition', 'get_application_definition_output']
+@pulumi.output_type
+class GetApplicationDefinitionResult:
+    
+    def __init__(__self__, artifacts=..., authorizations=..., azure_api_version=..., create_ui_definition=..., deployment_policy=..., description=..., display_name=..., id=..., is_enabled=..., location=..., lock_level=..., locking_policy=..., main_template=..., managed_by=..., management_policy=..., name=..., notification_policy=..., package_file_uri=..., policies=..., sku=..., storage_account_id=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def artifacts(self) -> Optional[Sequence[outputs.ApplicationDefinitionArtifactResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authorizations(self) -> Optional[Sequence[outputs.ApplicationAuthorizationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createUiDefinition")
+    def create_ui_definition(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentPolicy")
+    def deployment_policy(self) -> Optional[outputs.ApplicationDeploymentPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lockLevel")
+    def lock_level(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lockingPolicy")
+    def locking_policy(self) -> Optional[outputs.ApplicationPackageLockingPolicyDefinitionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mainTemplate")
+    def main_template(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementPolicy")
+    def management_policy(self) -> Optional[outputs.ApplicationManagementPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notificationPolicy")
+    def notification_policy(self) -> Optional[outputs.ApplicationNotificationPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageFileUri")
+    def package_file_uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def policies(self) -> Optional[Sequence[outputs.ApplicationPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountId")
+    def storage_account_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetApplicationDefinitionResult(GetApplicationDefinitionResult):
+    def __await__(self): # -> Generator[Never, Any, GetApplicationDefinitionResult]:
+        ...
+    
+
+
+def get_application_definition(application_definition_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetApplicationDefinitionResult:
+    
+    ...
+
+def get_application_definition_output(application_definition_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetApplicationDefinitionResult]:
+    
+    ...
+

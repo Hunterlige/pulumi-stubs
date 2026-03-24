@@ -1,0 +1,115 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GlobalParameterArgs', 'GlobalParameter']
+@pulumi.input_type
+class GlobalParameterArgs:
+    def __init__(__self__, *, factory_name: pulumi.Input[_builtins.str], properties: pulumi.Input[Mapping[str, pulumi.Input[GlobalParameterSpecificationArgs]]], resource_group_name: pulumi.Input[_builtins.str], global_parameter_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="factoryName")
+    def factory_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @factory_name.setter
+    def factory_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Input[Mapping[str, pulumi.Input[GlobalParameterSpecificationArgs]]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: pulumi.Input[Mapping[str, pulumi.Input[GlobalParameterSpecificationArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="globalParameterName")
+    def global_parameter_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @global_parameter_name.setter
+    def global_parameter_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:datafactory:GlobalParameter")
+class GlobalParameter(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., factory_name: Optional[pulumi.Input[_builtins.str]] = ..., global_parameter_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[GlobalParameterSpecificationArgs, GlobalParameterSpecificationArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: GlobalParameterArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> GlobalParameter:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[Mapping[str, outputs.GlobalParameterSpecificationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

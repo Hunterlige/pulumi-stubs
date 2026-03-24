@@ -1,0 +1,52 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetTiersResult', 'AwaitableGetTiersResult', 'get_tiers', 'get_tiers_output']
+@pulumi.output_type
+class GetTiersResult:
+    
+    def __init__(__self__, id=..., project=..., tiers=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def project(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tiers(self) -> Sequence[outputs.GetTiersTierResult]:
+        
+        ...
+    
+
+
+class AwaitableGetTiersResult(GetTiersResult):
+    def __await__(self): # -> Generator[Never, Any, GetTiersResult]:
+        ...
+    
+
+
+def get_tiers(project: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTiersResult:
+    
+    ...
+
+def get_tiers_output(project: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTiersResult]:
+    
+    ...
+

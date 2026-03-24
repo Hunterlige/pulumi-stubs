@@ -1,0 +1,86 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AddressClassification', 'AddressType', 'AutoProvisioningStatus', 'ChildConfigurationType', 'DoubleEncryptionStatus', 'NotificationStageName', 'OrderItemType', 'OrderMode', 'SupportedFilterTypes', 'TermCommitmentType', 'TransportShipmentTypes']
+@pulumi.type_token("azure-native:edgeorder:AddressClassification")
+class AddressClassification(_builtins.str, Enum):
+    
+    SHIPPING = ...
+    SITE = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:AddressType")
+class AddressType(_builtins.str, Enum):
+    
+    NONE = ...
+    RESIDENTIAL = ...
+    COMMERCIAL = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:AutoProvisioningStatus")
+class AutoProvisioningStatus(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:ChildConfigurationType")
+class ChildConfigurationType(_builtins.str, Enum):
+    DEVICE_CONFIGURATION = ...
+    ADDITIONAL_CONFIGURATION = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:DoubleEncryptionStatus")
+class DoubleEncryptionStatus(_builtins.str, Enum):
+    
+    DISABLED = ...
+    ENABLED = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:NotificationStageName")
+class NotificationStageName(_builtins.str, Enum):
+    
+    SHIPPED = ...
+    DELIVERED = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:OrderItemType")
+class OrderItemType(_builtins.str, Enum):
+    
+    PURCHASE = ...
+    RENTAL = ...
+    EXTERNAL = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:OrderMode")
+class OrderMode(_builtins.str, Enum):
+    
+    DEFAULT = ...
+    DO_NOT_FULFILL = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:SupportedFilterTypes")
+class SupportedFilterTypes(_builtins.str, Enum):
+    
+    SHIP_TO_COUNTRIES = ...
+    DOUBLE_ENCRYPTION_STATUS = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:TermCommitmentType")
+class TermCommitmentType(_builtins.str, Enum):
+    
+    NONE = ...
+    TRIAL = ...
+    TIMED = ...
+
+
+@pulumi.type_token("azure-native:edgeorder:TransportShipmentTypes")
+class TransportShipmentTypes(_builtins.str, Enum):
+    
+    CUSTOMER_MANAGED = ...
+    MICROSOFT_MANAGED = ...
+
+

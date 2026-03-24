@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListNamespaceTopicSharedAccessKeysResult', 'AwaitableListNamespaceTopicSharedAccessKeysResult', 'list_namespace_topic_shared_access_keys', 'list_namespace_topic_shared_access_keys_output']
+@pulumi.output_type
+class ListNamespaceTopicSharedAccessKeysResult:
+    
+    def __init__(__self__, key1=..., key2=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key1(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key2(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableListNamespaceTopicSharedAccessKeysResult(ListNamespaceTopicSharedAccessKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListNamespaceTopicSharedAccessKeysResult]:
+        ...
+    
+
+
+def list_namespace_topic_shared_access_keys(namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., topic_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListNamespaceTopicSharedAccessKeysResult:
+    
+    ...
+
+def list_namespace_topic_shared_access_keys_output(namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListNamespaceTopicSharedAccessKeysResult]:
+    
+    ...
+

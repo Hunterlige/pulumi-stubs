@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetBackupsAutomaticAndOnDemandResult', 'AwaitableGetBackupsAutomaticAndOnDemandResult', 'get_backups_automatic_and_on_demand', 'get_backups_automatic_and_on_demand_output']
+@pulumi.output_type
+class GetBackupsAutomaticAndOnDemandResult:
+    
+    def __init__(__self__, azure_api_version=..., backup_type=..., completed_time=..., id=..., name=..., source=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backupType")
+    def backup_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="completedTime")
+    def completed_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetBackupsAutomaticAndOnDemandResult(GetBackupsAutomaticAndOnDemandResult):
+    def __await__(self): # -> Generator[Never, Any, GetBackupsAutomaticAndOnDemandResult]:
+        ...
+    
+
+
+def get_backups_automatic_and_on_demand(backup_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetBackupsAutomaticAndOnDemandResult:
+    
+    ...
+
+def get_backups_automatic_and_on_demand_output(backup_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetBackupsAutomaticAndOnDemandResult]:
+    
+    ...
+

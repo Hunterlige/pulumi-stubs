@@ -1,0 +1,1190 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AccessKeyInfoBaseResponse', 'AzureKeyVaultPropertiesResponse', 'AzureResourceResponse', 'BasicErrorDryrunPrerequisiteResultResponse', 'ConfigurationInfoResponse', 'ConfigurationStoreResponse', 'ConfluentBootstrapServerResponse', 'ConfluentSchemaRegistryResponse', 'CreateOrUpdateDryrunParametersResponse', 'DaprMetadataResponse', 'DaprPropertiesResponse', 'DryrunOperationPreviewResponse', 'EasyAuthMicrosoftEntraIDAuthInfoResponse', 'FirewallRulesResponse', 'KeyVaultSecretReferenceSecretInfoResponse', 'KeyVaultSecretUriSecretInfoResponse', 'PermissionsMissingDryrunPrerequisiteResultResponse', 'PublicNetworkSolutionResponse', 'SecretAuthInfoResponse', 'SecretStoreResponse', 'SelfHostedServerResponse', 'ServicePrincipalCertificateAuthInfoResponse', 'ServicePrincipalSecretAuthInfoResponse', 'SourceConfigurationResponse', 'SystemAssignedIdentityAuthInfoResponse', 'SystemDataResponse', 'UserAccountAuthInfoResponse', 'UserAssignedIdentityAuthInfoResponse', 'VNetSolutionResponse', 'ValueSecretInfoResponse']
+@pulumi.output_type
+class AccessKeyInfoBaseResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., permissions: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def permissions(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AzureKeyVaultPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, type: _builtins.str, connect_as_kubernetes_csi_driver: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectAsKubernetesCsiDriver")
+    def connect_as_kubernetes_csi_driver(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AzureResourceResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, type: _builtins.str, id: Optional[_builtins.str] = ..., resource_properties: Optional[outputs.AzureKeyVaultPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceProperties")
+    def resource_properties(self) -> Optional[outputs.AzureKeyVaultPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BasicErrorDryrunPrerequisiteResultResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str, code: Optional[_builtins.str] = ..., message: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfigurationInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action: Optional[_builtins.str] = ..., additional_configurations: Optional[Mapping[str, _builtins.str]] = ..., additional_connection_string_properties: Optional[Mapping[str, _builtins.str]] = ..., configuration_store: Optional[outputs.ConfigurationStoreResponse] = ..., customized_keys: Optional[Mapping[str, _builtins.str]] = ..., dapr_properties: Optional[outputs.DaprPropertiesResponse] = ..., delete_or_update_behavior: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalConfigurations")
+    def additional_configurations(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalConnectionStringProperties")
+    def additional_connection_string_properties(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationStore")
+    def configuration_store(self) -> Optional[outputs.ConfigurationStoreResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customizedKeys")
+    def customized_keys(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="daprProperties")
+    def dapr_properties(self) -> Optional[outputs.DaprPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfigurationStoreResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_configuration_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appConfigurationId")
+    def app_configuration_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfluentBootstrapServerResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str, endpoint: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfluentSchemaRegistryResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str, endpoint: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CreateOrUpdateDryrunParametersResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action_name: _builtins.str, provisioning_state: _builtins.str, auth_info: Optional[Any] = ..., client_type: Optional[_builtins.str] = ..., configuration_info: Optional[outputs.ConfigurationInfoResponse] = ..., public_network_solution: Optional[outputs.PublicNetworkSolutionResponse] = ..., scope: Optional[_builtins.str] = ..., secret_store: Optional[outputs.SecretStoreResponse] = ..., target_service: Optional[Any] = ..., v_net_solution: Optional[outputs.VNetSolutionResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionName")
+    def action_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authInfo")
+    def auth_info(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientType")
+    def client_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationInfo")
+    def configuration_info(self) -> Optional[outputs.ConfigurationInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkSolution")
+    def public_network_solution(self) -> Optional[outputs.PublicNetworkSolutionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretStore")
+    def secret_store(self) -> Optional[outputs.SecretStoreResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetService")
+    def target_service(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vNetSolution")
+    def v_net_solution(self) -> Optional[outputs.VNetSolutionResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DaprMetadataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, description: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., required: Optional[_builtins.str] = ..., secret_ref: Optional[_builtins.str] = ..., value: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def required(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretRef")
+    def secret_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DaprPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, binding_component_direction: _builtins.str, runtime_version: _builtins.str, component_type: Optional[_builtins.str] = ..., metadata: Optional[Sequence[outputs.DaprMetadataResponse]] = ..., scopes: Optional[Sequence[_builtins.str]] = ..., secret_store_component: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bindingComponentDirection")
+    def binding_component_direction(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runtimeVersion")
+    def runtime_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="componentType")
+    def component_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Sequence[outputs.DaprMetadataResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scopes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretStoreComponent")
+    def secret_store_component(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DryrunOperationPreviewResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., operation_type: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operationType")
+    def operation_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class EasyAuthMicrosoftEntraIDAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., client_id: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., secret: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secret(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class FirewallRulesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, azure_services: Optional[_builtins.str] = ..., caller_client_ip: Optional[_builtins.str] = ..., ip_ranges: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureServices")
+    def azure_services(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="callerClientIP")
+    def caller_client_ip(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipRanges")
+    def ip_ranges(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class KeyVaultSecretReferenceSecretInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_type: _builtins.str, name: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretType")
+    def secret_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class KeyVaultSecretUriSecretInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_type: _builtins.str, value: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretType")
+    def secret_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PermissionsMissingDryrunPrerequisiteResultResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, type: _builtins.str, permissions: Optional[Sequence[_builtins.str]] = ..., recommended_role: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def permissions(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recommendedRole")
+    def recommended_role(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PublicNetworkSolutionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., firewall_rules: Optional[outputs.FirewallRulesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallRules")
+    def firewall_rules(self) -> Optional[outputs.FirewallRulesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SecretAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., secret_info: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretInfo")
+    def secret_info(self) -> Optional[Any]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SecretStoreResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, key_vault_id: Optional[_builtins.str] = ..., key_vault_secret_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultId")
+    def key_vault_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultSecretName")
+    def key_vault_secret_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SelfHostedServerResponse(dict):
+    
+    def __init__(__self__, *, type: _builtins.str, endpoint: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ServicePrincipalCertificateAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, certificate: _builtins.str, client_id: _builtins.str, principal_id: _builtins.str, auth_mode: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., roles: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def certificate(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ServicePrincipalSecretAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, client_id: _builtins.str, principal_id: _builtins.str, secret: _builtins.str, auth_mode: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., roles: Optional[Sequence[_builtins.str]] = ..., user_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secret(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SourceConfigurationResponse(dict):
+    
+    def __init__(__self__, *, config_type: _builtins.str, description: Optional[_builtins.str] = ..., key_vault_reference_identity: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., value: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configType")
+    def config_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultReferenceIdentity")
+    def key_vault_reference_identity(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemAssignedIdentityAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., roles: Optional[Sequence[_builtins.str]] = ..., user_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAccountAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., principal_id: Optional[_builtins.str] = ..., roles: Optional[Sequence[_builtins.str]] = ..., user_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAssignedIdentityAuthInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_type: _builtins.str, auth_mode: Optional[_builtins.str] = ..., client_id: Optional[_builtins.str] = ..., delete_or_update_behavior: Optional[_builtins.str] = ..., roles: Optional[Sequence[_builtins.str]] = ..., subscription_id: Optional[_builtins.str] = ..., user_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authMode")
+    def auth_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionId")
+    def subscription_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VNetSolutionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, delete_or_update_behavior: Optional[_builtins.str] = ..., type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteOrUpdateBehavior")
+    def delete_or_update_behavior(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ValueSecretInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, secret_type: _builtins.str, value: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretType")
+    def secret_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

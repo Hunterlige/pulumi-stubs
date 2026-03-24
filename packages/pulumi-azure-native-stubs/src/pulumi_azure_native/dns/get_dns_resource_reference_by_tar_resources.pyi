@@ -1,0 +1,42 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDnsResourceReferenceByTarResourcesResult', ..., 'get_dns_resource_reference_by_tar_resources', 'get_dns_resource_reference_by_tar_resources_output']
+@pulumi.output_type
+class GetDnsResourceReferenceByTarResourcesResult:
+    
+    def __init__(__self__, dns_resource_references=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsResourceReferences")
+    def dns_resource_references(self) -> Optional[Sequence[outputs.DnsResourceReferenceResponse]]:
+        
+        ...
+    
+
+
+class AwaitableGetDnsResourceReferenceByTarResourcesResult(GetDnsResourceReferenceByTarResourcesResult):
+    def __await__(self): # -> Generator[Never, Any, GetDnsResourceReferenceByTarResourcesResult]:
+        ...
+    
+
+
+def get_dns_resource_reference_by_tar_resources(target_resources: Optional[Sequence[Union[SubResource, SubResourceDict]]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDnsResourceReferenceByTarResourcesResult:
+    
+    ...
+
+def get_dns_resource_reference_by_tar_resources_output(target_resources: Optional[pulumi.Input[Optional[Sequence[Union[SubResource, SubResourceDict]]]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDnsResourceReferenceByTarResourcesResult]:
+    
+    ...
+

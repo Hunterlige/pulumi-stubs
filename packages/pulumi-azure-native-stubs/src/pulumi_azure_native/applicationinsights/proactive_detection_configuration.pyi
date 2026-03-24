@@ -1,0 +1,164 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ProactiveDetectionConfigurationArgs', 'ProactiveDetectionConfiguration']
+@pulumi.input_type
+class ProactiveDetectionConfigurationArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], resource_name: pulumi.Input[_builtins.str], configuration_id: Optional[pulumi.Input[_builtins.str]] = ..., custom_emails: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., rule_definitions: Optional[pulumi.Input[ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesRuleDefinitionsArgs]] = ..., send_emails_to_subscription_owners: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationId")
+    def configuration_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @configuration_id.setter
+    def configuration_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customEmails")
+    def custom_emails(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @custom_emails.setter
+    def custom_emails(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleDefinitions")
+    def rule_definitions(self) -> Optional[pulumi.Input[ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesRuleDefinitionsArgs]]:
+        
+        ...
+    
+    @rule_definitions.setter
+    def rule_definitions(self, value: Optional[pulumi.Input[ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesRuleDefinitionsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendEmailsToSubscriptionOwners")
+    def send_emails_to_subscription_owners(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @send_emails_to_subscription_owners.setter
+    def send_emails_to_subscription_owners(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ProactiveDetectionConfiguration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., configuration_id: Optional[pulumi.Input[_builtins.str]] = ..., custom_emails: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name_: Optional[pulumi.Input[_builtins.str]] = ..., rule_definitions: Optional[pulumi.Input[Union[ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesRuleDefinitionsArgs, ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesRuleDefinitionsArgsDict]]] = ..., send_emails_to_subscription_owners: Optional[pulumi.Input[_builtins.bool]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ProactiveDetectionConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ProactiveDetectionConfiguration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.ApplicationInsightsComponentProactiveDetectionConfigurationPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

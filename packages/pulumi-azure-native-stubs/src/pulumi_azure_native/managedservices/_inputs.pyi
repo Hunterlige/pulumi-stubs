@@ -1,0 +1,350 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AuthorizationArgs', 'AuthorizationArgsDict', 'EligibleApproverArgs', 'EligibleApproverArgsDict', 'EligibleAuthorizationArgs', 'EligibleAuthorizationArgsDict', 'JustInTimeAccessPolicyArgs', 'JustInTimeAccessPolicyArgsDict', 'PlanArgs', 'PlanArgsDict', 'RegistrationAssignmentPropertiesArgs', 'RegistrationAssignmentPropertiesArgsDict', 'RegistrationDefinitionPropertiesArgs', 'RegistrationDefinitionPropertiesArgsDict']
+class AuthorizationArgsDict(TypedDict):
+    
+    principal_id: pulumi.Input[_builtins.str]
+    role_definition_id: pulumi.Input[_builtins.str]
+    delegated_role_definition_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    principal_id_display_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AuthorizationArgs:
+    def __init__(__self__, *, principal_id: pulumi.Input[_builtins.str], role_definition_id: pulumi.Input[_builtins.str], delegated_role_definition_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., principal_id_display_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_definition_id.setter
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="delegatedRoleDefinitionIds")
+    def delegated_role_definition_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @delegated_role_definition_ids.setter
+    def delegated_role_definition_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalIdDisplayName")
+    def principal_id_display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @principal_id_display_name.setter
+    def principal_id_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class EligibleApproverArgsDict(TypedDict):
+    
+    principal_id: pulumi.Input[_builtins.str]
+    principal_id_display_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EligibleApproverArgs:
+    def __init__(__self__, *, principal_id: pulumi.Input[_builtins.str], principal_id_display_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalIdDisplayName")
+    def principal_id_display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @principal_id_display_name.setter
+    def principal_id_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class EligibleAuthorizationArgsDict(TypedDict):
+    
+    principal_id: pulumi.Input[_builtins.str]
+    role_definition_id: pulumi.Input[_builtins.str]
+    just_in_time_access_policy: NotRequired[pulumi.Input[JustInTimeAccessPolicyArgsDict]]
+    principal_id_display_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EligibleAuthorizationArgs:
+    def __init__(__self__, *, principal_id: pulumi.Input[_builtins.str], role_definition_id: pulumi.Input[_builtins.str], just_in_time_access_policy: Optional[pulumi.Input[JustInTimeAccessPolicyArgs]] = ..., principal_id_display_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_definition_id.setter
+    def role_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="justInTimeAccessPolicy")
+    def just_in_time_access_policy(self) -> Optional[pulumi.Input[JustInTimeAccessPolicyArgs]]:
+        
+        ...
+    
+    @just_in_time_access_policy.setter
+    def just_in_time_access_policy(self, value: Optional[pulumi.Input[JustInTimeAccessPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalIdDisplayName")
+    def principal_id_display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @principal_id_display_name.setter
+    def principal_id_display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class JustInTimeAccessPolicyArgsDict(TypedDict):
+    
+    multi_factor_auth_provider: pulumi.Input[Union[_builtins.str, MultiFactorAuthProvider]]
+    managed_by_tenant_approvers: NotRequired[pulumi.Input[Sequence[pulumi.Input[EligibleApproverArgsDict]]]]
+    maximum_activation_duration: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class JustInTimeAccessPolicyArgs:
+    def __init__(__self__, *, multi_factor_auth_provider: Optional[pulumi.Input[Union[_builtins.str, MultiFactorAuthProvider]]] = ..., managed_by_tenant_approvers: Optional[pulumi.Input[Sequence[pulumi.Input[EligibleApproverArgs]]]] = ..., maximum_activation_duration: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multiFactorAuthProvider")
+    def multi_factor_auth_provider(self) -> pulumi.Input[Union[_builtins.str, MultiFactorAuthProvider]]:
+        
+        ...
+    
+    @multi_factor_auth_provider.setter
+    def multi_factor_auth_provider(self, value: pulumi.Input[Union[_builtins.str, MultiFactorAuthProvider]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedByTenantApprovers")
+    def managed_by_tenant_approvers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[EligibleApproverArgs]]]]:
+        
+        ...
+    
+    @managed_by_tenant_approvers.setter
+    def managed_by_tenant_approvers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[EligibleApproverArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumActivationDuration")
+    def maximum_activation_duration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @maximum_activation_duration.setter
+    def maximum_activation_duration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class PlanArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    product: pulumi.Input[_builtins.str]
+    publisher: pulumi.Input[_builtins.str]
+    version: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class PlanArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], product: pulumi.Input[_builtins.str], publisher: pulumi.Input[_builtins.str], version: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @product.setter
+    def product(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @publisher.setter
+    def publisher(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class RegistrationAssignmentPropertiesArgsDict(TypedDict):
+    
+    registration_definition_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class RegistrationAssignmentPropertiesArgs:
+    def __init__(__self__, *, registration_definition_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrationDefinitionId")
+    def registration_definition_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @registration_definition_id.setter
+    def registration_definition_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class RegistrationDefinitionPropertiesArgsDict(TypedDict):
+    
+    authorizations: pulumi.Input[Sequence[pulumi.Input[AuthorizationArgsDict]]]
+    managed_by_tenant_id: pulumi.Input[_builtins.str]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    eligible_authorizations: NotRequired[pulumi.Input[Sequence[pulumi.Input[EligibleAuthorizationArgsDict]]]]
+    registration_definition_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RegistrationDefinitionPropertiesArgs:
+    def __init__(__self__, *, authorizations: pulumi.Input[Sequence[pulumi.Input[AuthorizationArgs]]], managed_by_tenant_id: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., eligible_authorizations: Optional[pulumi.Input[Sequence[pulumi.Input[EligibleAuthorizationArgs]]]] = ..., registration_definition_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authorizations(self) -> pulumi.Input[Sequence[pulumi.Input[AuthorizationArgs]]]:
+        
+        ...
+    
+    @authorizations.setter
+    def authorizations(self, value: pulumi.Input[Sequence[pulumi.Input[AuthorizationArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedByTenantId")
+    def managed_by_tenant_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @managed_by_tenant_id.setter
+    def managed_by_tenant_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eligibleAuthorizations")
+    def eligible_authorizations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[EligibleAuthorizationArgs]]]]:
+        
+        ...
+    
+    @eligible_authorizations.setter
+    def eligible_authorizations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[EligibleAuthorizationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registrationDefinitionName")
+    def registration_definition_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @registration_definition_name.setter
+    def registration_definition_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

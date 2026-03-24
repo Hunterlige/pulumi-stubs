@@ -1,0 +1,281 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DnsRecordResponse', 'DomainPropertiesResponseVerificationRecords', 'DomainPropertiesResponseVerificationStates', 'ManagedServiceIdentityResponse', 'SystemDataResponse', 'UserAssignedIdentityResponse', 'VerificationStatusRecordResponse']
+@pulumi.output_type
+class DnsRecordResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, ttl: _builtins.int, type: _builtins.str, value: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ttl(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DomainPropertiesResponseVerificationRecords(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, d_kim: Optional[outputs.DnsRecordResponse] = ..., d_kim2: Optional[outputs.DnsRecordResponse] = ..., d_marc: Optional[outputs.DnsRecordResponse] = ..., domain: Optional[outputs.DnsRecordResponse] = ..., s_pf: Optional[outputs.DnsRecordResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dKIM")
+    def d_kim(self) -> Optional[outputs.DnsRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dKIM2")
+    def d_kim2(self) -> Optional[outputs.DnsRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dMARC")
+    def d_marc(self) -> Optional[outputs.DnsRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domain(self) -> Optional[outputs.DnsRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sPF")
+    def s_pf(self) -> Optional[outputs.DnsRecordResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DomainPropertiesResponseVerificationStates(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, d_kim: Optional[outputs.VerificationStatusRecordResponse] = ..., d_kim2: Optional[outputs.VerificationStatusRecordResponse] = ..., d_marc: Optional[outputs.VerificationStatusRecordResponse] = ..., domain: Optional[outputs.VerificationStatusRecordResponse] = ..., s_pf: Optional[outputs.VerificationStatusRecordResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dKIM")
+    def d_kim(self) -> Optional[outputs.VerificationStatusRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dKIM2")
+    def d_kim2(self) -> Optional[outputs.VerificationStatusRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dMARC")
+    def d_marc(self) -> Optional[outputs.VerificationStatusRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domain(self) -> Optional[outputs.VerificationStatusRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sPF")
+    def s_pf(self) -> Optional[outputs.VerificationStatusRecordResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedServiceIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: _builtins.str, user_assigned_identities: Optional[Mapping[str, outputs.UserAssignedIdentityResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[Mapping[str, outputs.UserAssignedIdentityResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserAssignedIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_id: _builtins.str, principal_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VerificationStatusRecordResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, error_code: _builtins.str, status: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorCode")
+    def error_code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+
+

@@ -1,0 +1,253 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['KustoPoolArgs', 'KustoPool']
+@pulumi.input_type
+class KustoPoolArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], sku: pulumi.Input[AzureSkuArgs], workspace_name: pulumi.Input[_builtins.str], enable_purge: Optional[pulumi.Input[_builtins.bool]] = ..., enable_streaming_ingest: Optional[pulumi.Input[_builtins.bool]] = ..., kusto_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., optimized_autoscale: Optional[pulumi.Input[OptimizedAutoscaleArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., workspace_uid: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Input[AzureSkuArgs]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: pulumi.Input[AzureSkuArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePurge")
+    def enable_purge(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_purge.setter
+    def enable_purge(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableStreamingIngest")
+    def enable_streaming_ingest(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_streaming_ingest.setter
+    def enable_streaming_ingest(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kustoPoolName")
+    def kusto_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kusto_pool_name.setter
+    def kusto_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="optimizedAutoscale")
+    def optimized_autoscale(self) -> Optional[pulumi.Input[OptimizedAutoscaleArgs]]:
+        
+        ...
+    
+    @optimized_autoscale.setter
+    def optimized_autoscale(self, value: Optional[pulumi.Input[OptimizedAutoscaleArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceUID")
+    def workspace_uid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workspace_uid.setter
+    def workspace_uid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:synapse:KustoPool")
+class KustoPool(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., enable_purge: Optional[pulumi.Input[_builtins.bool]] = ..., enable_streaming_ingest: Optional[pulumi.Input[_builtins.bool]] = ..., kusto_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., optimized_autoscale: Optional[pulumi.Input[Union[OptimizedAutoscaleArgs, OptimizedAutoscaleArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[AzureSkuArgs, AzureSkuArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_uid: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: KustoPoolArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> KustoPool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataIngestionUri")
+    def data_ingestion_uri(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePurge")
+    def enable_purge(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableStreamingIngest")
+    def enable_streaming_ingest(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="languageExtensions")
+    def language_extensions(self) -> pulumi.Output[outputs.LanguageExtensionsListResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="optimizedAutoscale")
+    def optimized_autoscale(self) -> pulumi.Output[Optional[outputs.OptimizedAutoscaleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[outputs.AzureSkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stateReason")
+    def state_reason(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceUID")
+    def workspace_uid(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

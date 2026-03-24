@@ -1,0 +1,71 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetTableResult', 'AwaitableGetTableResult', 'get_table', 'get_table_output']
+@pulumi.output_type
+class GetTableResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., signed_identifiers=..., table_name=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signedIdentifiers")
+    def signed_identifiers(self) -> Optional[Sequence[outputs.TableSignedIdentifierResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tableName")
+    def table_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetTableResult(GetTableResult):
+    def __await__(self): # -> Generator[Never, Any, GetTableResult]:
+        ...
+    
+
+
+def get_table(account_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., table_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTableResult:
+    
+    ...
+
+def get_table_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., table_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTableResult]:
+    
+    ...
+

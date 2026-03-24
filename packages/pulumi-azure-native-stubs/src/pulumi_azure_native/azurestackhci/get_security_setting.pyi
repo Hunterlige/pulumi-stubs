@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSecuritySettingResult', 'AwaitableGetSecuritySettingResult', 'get_security_setting', 'get_security_setting_output']
+@pulumi.output_type
+class GetSecuritySettingResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., provisioning_state=..., secured_core_compliance_assignment=..., security_compliance_status=..., smb_encryption_for_intra_cluster_traffic_compliance_assignment=..., system_data=..., type=..., wdac_compliance_assignment=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securedCoreComplianceAssignment")
+    def secured_core_compliance_assignment(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityComplianceStatus")
+    def security_compliance_status(self) -> outputs.SecurityComplianceStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name=...)
+    def smb_encryption_for_intra_cluster_traffic_compliance_assignment(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="wdacComplianceAssignment")
+    def wdac_compliance_assignment(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetSecuritySettingResult(GetSecuritySettingResult):
+    def __await__(self): # -> Generator[Never, Any, GetSecuritySettingResult]:
+        ...
+    
+
+
+def get_security_setting(cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., security_settings_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSecuritySettingResult:
+    
+    ...
+
+def get_security_setting_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., security_settings_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSecuritySettingResult]:
+    
+    ...
+

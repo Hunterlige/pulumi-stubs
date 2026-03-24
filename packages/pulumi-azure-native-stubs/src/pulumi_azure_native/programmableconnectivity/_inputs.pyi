@@ -1,0 +1,136 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, TypedDict
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApplicationPropertiesArgs', 'ApplicationPropertiesArgsDict', 'SaasPropertiesArgs', 'SaasPropertiesArgsDict']
+class ApplicationPropertiesArgsDict(TypedDict):
+    
+    application_description: NotRequired[pulumi.Input[_builtins.str]]
+    application_type: NotRequired[pulumi.Input[_builtins.str]]
+    legal_name: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    organization_description: NotRequired[pulumi.Input[_builtins.str]]
+    privacy_contact_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    tax_number: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ApplicationPropertiesArgs:
+    def __init__(__self__, *, application_description: Optional[pulumi.Input[_builtins.str]] = ..., application_type: Optional[pulumi.Input[_builtins.str]] = ..., legal_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., organization_description: Optional[pulumi.Input[_builtins.str]] = ..., privacy_contact_email_address: Optional[pulumi.Input[_builtins.str]] = ..., tax_number: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationDescription")
+    def application_description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @application_description.setter
+    def application_description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationType")
+    def application_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @application_type.setter
+    def application_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="legalName")
+    def legal_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @legal_name.setter
+    def legal_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationDescription")
+    def organization_description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @organization_description.setter
+    def organization_description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privacyContactEmailAddress")
+    def privacy_contact_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @privacy_contact_email_address.setter
+    def privacy_contact_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="taxNumber")
+    def tax_number(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tax_number.setter
+    def tax_number(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SaasPropertiesArgsDict(TypedDict):
+    
+    saas_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+    saas_subscription_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SaasPropertiesArgs:
+    def __init__(__self__, *, saas_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., saas_subscription_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasResourceId")
+    def saas_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @saas_resource_id.setter
+    def saas_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasSubscriptionId")
+    def saas_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @saas_subscription_id.setter
+    def saas_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

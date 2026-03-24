@@ -1,0 +1,243 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ElasticSanArgs', 'ElasticSan']
+@pulumi.input_type
+class ElasticSanArgs:
+    def __init__(__self__, *, base_size_ti_b: pulumi.Input[_builtins.float], extended_capacity_size_ti_b: pulumi.Input[_builtins.float], resource_group_name: pulumi.Input[_builtins.str], sku: pulumi.Input[SkuArgs], availability_zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., elastic_san_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baseSizeTiB")
+    def base_size_ti_b(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @base_size_ti_b.setter
+    def base_size_ti_b(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedCapacitySizeTiB")
+    def extended_capacity_size_ti_b(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @extended_capacity_size_ti_b.setter
+    def extended_capacity_size_ti_b(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Input[SkuArgs]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: pulumi.Input[SkuArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @availability_zones.setter
+    def availability_zones(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="elasticSanName")
+    def elastic_san_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @elastic_san_name.setter
+    def elastic_san_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:elasticsan:ElasticSan")
+class ElasticSan(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., availability_zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., base_size_ti_b: Optional[pulumi.Input[_builtins.float]] = ..., elastic_san_name: Optional[pulumi.Input[_builtins.str]] = ..., extended_capacity_size_ti_b: Optional[pulumi.Input[_builtins.float]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ElasticSanArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ElasticSan:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baseSizeTiB")
+    def base_size_ti_b(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedCapacitySizeTiB")
+    def extended_capacity_size_ti_b(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.PrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalIops")
+    def total_iops(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalMBps")
+    def total_m_bps(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalSizeTiB")
+    def total_size_ti_b(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalVolumeSizeGiB")
+    def total_volume_size_gi_b(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeGroupCount")
+    def volume_group_count(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+
+

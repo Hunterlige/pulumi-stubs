@@ -1,0 +1,5433 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AccessTokenAuthenticationArgs', 'AccessTokenAuthenticationArgsDict', 'AdditionalWorkspacesPropertiesArgs', 'AdditionalWorkspacesPropertiesArgsDict', 'AllowlistCustomAlertRuleArgs', 'AllowlistCustomAlertRuleArgsDict', 'ArcAutoProvisioningConfigurationArgs', 'ArcAutoProvisioningConfigurationArgsDict', 'AssessmentStatusArgs', 'AssessmentStatusArgsDict', 'AssignedAssessmentItemArgs', 'AssignedAssessmentItemArgsDict', 'AssignedComponentItemArgs', 'AssignedComponentItemArgsDict', 'AssignedStandardItemArgs', 'AssignedStandardItemArgsDict', 'AssignmentPropertiesAdditionalDataArgs', 'AssignmentPropertiesAdditionalDataArgsDict', 'AttestationEvidenceArgs', 'AttestationEvidenceArgsDict', 'AuthorizationArgs', 'AuthorizationArgsDict', 'AutomationActionEventHubArgs', 'AutomationActionEventHubArgsDict', 'AutomationActionLogicAppArgs', 'AutomationActionLogicAppArgsDict', 'AutomationActionWorkspaceArgs', 'AutomationActionWorkspaceArgsDict', 'AutomationRuleSetArgs', 'AutomationRuleSetArgsDict', 'AutomationScopeArgs', 'AutomationScopeArgsDict', 'AutomationSourceArgs', 'AutomationSourceArgsDict', 'AutomationTriggeringRuleArgs', 'AutomationTriggeringRuleArgsDict', 'AwsEnvironmentDataArgs', 'AwsEnvironmentDataArgsDict', 'AwsOrganizationalDataMasterArgs', 'AwsOrganizationalDataMasterArgsDict', 'AwsOrganizationalDataMemberArgs', 'AwsOrganizationalDataMemberArgsDict', 'AzureDevOpsScopeEnvironmentDataArgs', 'AzureDevOpsScopeEnvironmentDataArgsDict', 'AzureResourceDetailsArgs', 'AzureResourceDetailsArgsDict', 'CspmMonitorAwsOfferingNativeCloudConnectionArgs', ..., 'CspmMonitorAwsOfferingArgs', 'CspmMonitorAwsOfferingArgsDict', 'CspmMonitorAzureDevOpsOfferingArgs', 'CspmMonitorAzureDevOpsOfferingArgsDict', 'CspmMonitorDockerHubOfferingArgs', 'CspmMonitorDockerHubOfferingArgsDict', 'CspmMonitorGcpOfferingNativeCloudConnectionArgs', ..., 'CspmMonitorGcpOfferingArgs', 'CspmMonitorGcpOfferingArgsDict', 'CspmMonitorGitLabOfferingArgs', 'CspmMonitorGitLabOfferingArgsDict', 'CspmMonitorGithubOfferingArgs', 'CspmMonitorGithubOfferingArgsDict', 'CspmMonitorJFrogOfferingArgs', 'CspmMonitorJFrogOfferingArgsDict', 'DefenderCspmAwsOfferingCiemDiscoveryArgs', 'DefenderCspmAwsOfferingCiemDiscoveryArgsDict', 'DefenderCspmAwsOfferingCiemOidcArgs', 'DefenderCspmAwsOfferingCiemOidcArgsDict', 'DefenderCspmAwsOfferingCiemArgs', 'DefenderCspmAwsOfferingCiemArgsDict', ..., ..., 'DefenderCspmAwsOfferingDatabasesDspmArgs', 'DefenderCspmAwsOfferingDatabasesDspmArgsDict', ..., ..., ..., ..., 'DefenderCspmAwsOfferingVmScannersArgs', 'DefenderCspmAwsOfferingVmScannersArgsDict', 'DefenderCspmAwsOfferingArgs', 'DefenderCspmAwsOfferingArgsDict', 'DefenderCspmDockerHubOfferingArgs', 'DefenderCspmDockerHubOfferingArgsDict', 'DefenderCspmGcpOfferingCiemDiscoveryArgs', 'DefenderCspmGcpOfferingCiemDiscoveryArgsDict', ..., ..., ..., ..., ..., ..., 'DefenderCspmGcpOfferingVmScannersArgs', 'DefenderCspmGcpOfferingVmScannersArgsDict', 'DefenderCspmGcpOfferingArgs', 'DefenderCspmGcpOfferingArgsDict', ..., ..., 'DefenderCspmJFrogOfferingArgs', 'DefenderCspmJFrogOfferingArgsDict', ..., ..., 'DefenderFoDatabasesAwsOfferingDatabasesDspmArgs', ..., 'DefenderFoDatabasesAwsOfferingRdsArgs', 'DefenderFoDatabasesAwsOfferingRdsArgsDict', 'DefenderFoDatabasesAwsOfferingArgs', 'DefenderFoDatabasesAwsOfferingArgsDict', ..., ..., 'DefenderForContainersAwsOfferingKinesisToS3Args', ..., ..., ..., ..., ..., ..., ..., ..., ..., 'DefenderForContainersAwsOfferingVmScannersArgs', 'DefenderForContainersAwsOfferingVmScannersArgsDict', 'DefenderForContainersAwsOfferingArgs', 'DefenderForContainersAwsOfferingArgsDict', 'DefenderForContainersDockerHubOfferingArgs', 'DefenderForContainersDockerHubOfferingArgsDict', ..., ..., ..., ..., ..., ..., ..., ..., 'DefenderForContainersGcpOfferingVmScannersArgs', 'DefenderForContainersGcpOfferingVmScannersArgsDict', 'DefenderForContainersGcpOfferingArgs', 'DefenderForContainersGcpOfferingArgsDict', 'DefenderForContainersJFrogOfferingArgs', 'DefenderForContainersJFrogOfferingArgsDict', ..., ..., ..., ..., 'DefenderForDatabasesGcpOfferingArgs', 'DefenderForDatabasesGcpOfferingArgsDict', ..., ..., 'DefenderForServersAwsOfferingConfigurationArgs', 'DefenderForServersAwsOfferingConfigurationArgsDict', ..., ..., ..., ..., 'DefenderForServersAwsOfferingSubPlanArgs', 'DefenderForServersAwsOfferingSubPlanArgsDict', ..., ..., 'DefenderForServersAwsOfferingVmScannersArgs', 'DefenderForServersAwsOfferingVmScannersArgsDict', 'DefenderForServersAwsOfferingArgs', 'DefenderForServersAwsOfferingArgsDict', ..., ..., 'DefenderForServersGcpOfferingConfigurationArgs', 'DefenderForServersGcpOfferingConfigurationArgsDict', ..., ..., ..., ..., 'DefenderForServersGcpOfferingSubPlanArgs', 'DefenderForServersGcpOfferingSubPlanArgsDict', ..., ..., 'DefenderForServersGcpOfferingVmScannersArgs', 'DefenderForServersGcpOfferingVmScannersArgsDict', 'DefenderForServersGcpOfferingArgs', 'DefenderForServersGcpOfferingArgsDict', 'DefenderForStorageSettingPropertiesArgs', 'DefenderForStorageSettingPropertiesArgsDict', 'DenylistCustomAlertRuleArgs', 'DenylistCustomAlertRuleArgsDict', 'DevOpsConfigurationPropertiesArgs', 'DevOpsConfigurationPropertiesArgsDict', 'DockerHubEnvironmentDataArgs', 'DockerHubEnvironmentDataArgsDict', 'ExtensionArgs', 'ExtensionArgsDict', 'GcpOrganizationalDataMemberArgs', 'GcpOrganizationalDataMemberArgsDict', 'GcpOrganizationalDataOrganizationArgs', 'GcpOrganizationalDataOrganizationArgsDict', 'GcpProjectDetailsArgs', 'GcpProjectDetailsArgsDict', 'GcpProjectEnvironmentDataArgs', 'GcpProjectEnvironmentDataArgsDict', 'GithubScopeEnvironmentDataArgs', 'GithubScopeEnvironmentDataArgsDict', 'GitlabScopeEnvironmentDataArgs', 'GitlabScopeEnvironmentDataArgsDict', 'GovernanceAssignmentAdditionalDataArgs', 'GovernanceAssignmentAdditionalDataArgsDict', 'GovernanceEmailNotificationArgs', 'GovernanceEmailNotificationArgsDict', 'GovernanceRuleEmailNotificationArgs', 'GovernanceRuleEmailNotificationArgsDict', 'GovernanceRuleOwnerSourceArgs', 'GovernanceRuleOwnerSourceArgsDict', 'JFrogEnvironmentDataArgs', 'JFrogEnvironmentDataArgsDict', 'JitNetworkAccessPolicyVirtualMachineArgs', 'JitNetworkAccessPolicyVirtualMachineArgsDict', 'JitNetworkAccessPortRuleArgs', 'JitNetworkAccessPortRuleArgsDict', 'JitNetworkAccessRequestPortArgs', 'JitNetworkAccessRequestPortArgsDict', 'JitNetworkAccessRequestVirtualMachineArgs', 'JitNetworkAccessRequestVirtualMachineArgsDict', 'JitNetworkAccessRequestArgs', 'JitNetworkAccessRequestArgsDict', 'MalwareScanningPropertiesArgs', 'MalwareScanningPropertiesArgsDict', 'NotificationsSourceAlertArgs', 'NotificationsSourceAlertArgsDict', 'NotificationsSourceAttackPathArgs', 'NotificationsSourceAttackPathArgsDict', 'OnPremiseResourceDetailsArgs', 'OnPremiseResourceDetailsArgsDict', 'OnPremiseSqlResourceDetailsArgs', 'OnPremiseSqlResourceDetailsArgsDict', 'OnUploadPropertiesArgs', 'OnUploadPropertiesArgsDict', 'PartialAssessmentPropertiesArgs', 'PartialAssessmentPropertiesArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'RecommendationConfigurationPropertiesArgs', 'RecommendationConfigurationPropertiesArgsDict', 'RemediationEtaArgs', 'RemediationEtaArgsDict', 'ScopeElementArgs', 'ScopeElementArgsDict', 'SecurityAssessmentMetadataPartnerDataArgs', 'SecurityAssessmentMetadataPartnerDataArgsDict', ..., ..., 'SecurityAssessmentMetadataPropertiesArgs', 'SecurityAssessmentMetadataPropertiesArgsDict', 'SecurityAssessmentPartnerDataArgs', 'SecurityAssessmentPartnerDataArgsDict', 'SecurityContactPropertiesNotificationsByRoleArgs', ..., 'SensitiveDataDiscoveryPropertiesArgs', 'SensitiveDataDiscoveryPropertiesArgsDict', 'StandardAssignmentPropertiesAttestationDataArgs', ..., 'StandardAssignmentPropertiesExemptionDataArgs', 'StandardAssignmentPropertiesExemptionDataArgsDict', 'StandardComponentPropertiesArgs', 'StandardComponentPropertiesArgsDict', 'SuppressionAlertsScopeArgs', 'SuppressionAlertsScopeArgsDict', 'ThresholdCustomAlertRuleArgs', 'ThresholdCustomAlertRuleArgsDict', 'TimeWindowCustomAlertRuleArgs', 'TimeWindowCustomAlertRuleArgsDict', 'UserDefinedResourcesPropertiesArgs', 'UserDefinedResourcesPropertiesArgsDict', 'VmScannersBaseConfigurationArgs', 'VmScannersBaseConfigurationArgsDict']
+class AccessTokenAuthenticationArgsDict(TypedDict):
+    
+    authentication_type: pulumi.Input[_builtins.str]
+    access_token: NotRequired[pulumi.Input[_builtins.str]]
+    username: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AccessTokenAuthenticationArgs:
+    def __init__(__self__, *, authentication_type: pulumi.Input[_builtins.str], access_token: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationType")
+    def authentication_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @authentication_type.setter
+    def authentication_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessToken")
+    def access_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @access_token.setter
+    def access_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @username.setter
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AdditionalWorkspacesPropertiesArgsDict(TypedDict):
+    
+    data_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceDataType]]]]]
+    type: NotRequired[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceType]]]
+    workspace: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AdditionalWorkspacesPropertiesArgs:
+    def __init__(__self__, *, data_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceDataType]]]]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceType]]] = ..., workspace: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataTypes")
+    def data_types(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceDataType]]]]]:
+        
+        ...
+    
+    @data_types.setter
+    def data_types(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceDataType]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, AdditionalWorkspaceType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def workspace(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workspace.setter
+    def workspace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AllowlistCustomAlertRuleArgsDict(TypedDict):
+    
+    allowlist_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    is_enabled: pulumi.Input[_builtins.bool]
+    rule_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class AllowlistCustomAlertRuleArgs:
+    def __init__(__self__, *, allowlist_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], is_enabled: pulumi.Input[_builtins.bool], rule_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowlistValues")
+    def allowlist_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @allowlist_values.setter
+    def allowlist_values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @rule_type.setter
+    def rule_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ArcAutoProvisioningConfigurationArgsDict(TypedDict):
+    
+    private_link_scope: NotRequired[pulumi.Input[_builtins.str]]
+    proxy: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ArcAutoProvisioningConfigurationArgs:
+    def __init__(__self__, *, private_link_scope: Optional[pulumi.Input[_builtins.str]] = ..., proxy: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkScope")
+    def private_link_scope(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @private_link_scope.setter
+    def private_link_scope(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def proxy(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @proxy.setter
+    def proxy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AssessmentStatusArgsDict(TypedDict):
+    
+    code: pulumi.Input[Union[_builtins.str, AssessmentStatusCode]]
+    cause: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssessmentStatusArgs:
+    def __init__(__self__, *, code: pulumi.Input[Union[_builtins.str, AssessmentStatusCode]], cause: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> pulumi.Input[Union[_builtins.str, AssessmentStatusCode]]:
+        
+        ...
+    
+    @code.setter
+    def code(self, value: pulumi.Input[Union[_builtins.str, AssessmentStatusCode]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cause(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cause.setter
+    def cause(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AssignedAssessmentItemArgsDict(TypedDict):
+    
+    assessment_key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssignedAssessmentItemArgs:
+    def __init__(__self__, *, assessment_key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentKey")
+    def assessment_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assessment_key.setter
+    def assessment_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AssignedComponentItemArgsDict(TypedDict):
+    
+    key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssignedComponentItemArgs:
+    def __init__(__self__, *, key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key.setter
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AssignedStandardItemArgsDict(TypedDict):
+    
+    id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssignedStandardItemArgs:
+    def __init__(__self__, *, id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AssignmentPropertiesAdditionalDataArgsDict(TypedDict):
+    
+    exemption_category: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssignmentPropertiesAdditionalDataArgs:
+    def __init__(__self__, *, exemption_category: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exemptionCategory")
+    def exemption_category(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @exemption_category.setter
+    def exemption_category(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AttestationEvidenceArgsDict(TypedDict):
+    
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    source_url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AttestationEvidenceArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ..., source_url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceUrl")
+    def source_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_url.setter
+    def source_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AuthorizationArgsDict(TypedDict):
+    
+    code: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AuthorizationArgs:
+    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @code.setter
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AutomationActionEventHubArgsDict(TypedDict):
+    
+    action_type: pulumi.Input[_builtins.str]
+    connection_string: NotRequired[pulumi.Input[_builtins.str]]
+    event_hub_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+    is_trusted_service_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class AutomationActionEventHubArgs:
+    def __init__(__self__, *, action_type: pulumi.Input[_builtins.str], connection_string: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., is_trusted_service_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @action_type.setter
+    def action_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionString")
+    def connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connection_string.setter
+    def connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubResourceId")
+    def event_hub_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @event_hub_resource_id.setter
+    def event_hub_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isTrustedServiceEnabled")
+    def is_trusted_service_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_trusted_service_enabled.setter
+    def is_trusted_service_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class AutomationActionLogicAppArgsDict(TypedDict):
+    
+    action_type: pulumi.Input[_builtins.str]
+    logic_app_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+    uri: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AutomationActionLogicAppArgs:
+    def __init__(__self__, *, action_type: pulumi.Input[_builtins.str], logic_app_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., uri: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @action_type.setter
+    def action_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logicAppResourceId")
+    def logic_app_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @logic_app_resource_id.setter
+    def logic_app_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @uri.setter
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AutomationActionWorkspaceArgsDict(TypedDict):
+    
+    action_type: pulumi.Input[_builtins.str]
+    workspace_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AutomationActionWorkspaceArgs:
+    def __init__(__self__, *, action_type: pulumi.Input[_builtins.str], workspace_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @action_type.setter
+    def action_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceResourceId")
+    def workspace_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workspace_resource_id.setter
+    def workspace_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AutomationRuleSetArgsDict(TypedDict):
+    
+    rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[AutomationTriggeringRuleArgsDict]]]]
+
+
+@pulumi.input_type
+class AutomationRuleSetArgs:
+    def __init__(__self__, *, rules: Optional[pulumi.Input[Sequence[pulumi.Input[AutomationTriggeringRuleArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AutomationTriggeringRuleArgs]]]]:
+        ...
+    
+    @rules.setter
+    def rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AutomationTriggeringRuleArgs]]]]): # -> None:
+        ...
+    
+
+
+class AutomationScopeArgsDict(TypedDict):
+    
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    scope_path: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AutomationScopeArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ..., scope_path: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scopePath")
+    def scope_path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @scope_path.setter
+    def scope_path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AutomationSourceArgsDict(TypedDict):
+    
+    event_source: NotRequired[pulumi.Input[Union[_builtins.str, EventSource]]]
+    rule_sets: NotRequired[pulumi.Input[Sequence[pulumi.Input[AutomationRuleSetArgsDict]]]]
+
+
+@pulumi.input_type
+class AutomationSourceArgs:
+    def __init__(__self__, *, event_source: Optional[pulumi.Input[Union[_builtins.str, EventSource]]] = ..., rule_sets: Optional[pulumi.Input[Sequence[pulumi.Input[AutomationRuleSetArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventSource")
+    def event_source(self) -> Optional[pulumi.Input[Union[_builtins.str, EventSource]]]:
+        
+        ...
+    
+    @event_source.setter
+    def event_source(self, value: Optional[pulumi.Input[Union[_builtins.str, EventSource]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleSets")
+    def rule_sets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AutomationRuleSetArgs]]]]:
+        
+        ...
+    
+    @rule_sets.setter
+    def rule_sets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AutomationRuleSetArgs]]]]): # -> None:
+        ...
+    
+
+
+class AutomationTriggeringRuleArgsDict(TypedDict):
+    
+    expected_value: NotRequired[pulumi.Input[_builtins.str]]
+    operator: NotRequired[pulumi.Input[Union[_builtins.str, Operator]]]
+    property_j_path: NotRequired[pulumi.Input[_builtins.str]]
+    property_type: NotRequired[pulumi.Input[Union[_builtins.str, PropertyType]]]
+
+
+@pulumi.input_type
+class AutomationTriggeringRuleArgs:
+    def __init__(__self__, *, expected_value: Optional[pulumi.Input[_builtins.str]] = ..., operator: Optional[pulumi.Input[Union[_builtins.str, Operator]]] = ..., property_j_path: Optional[pulumi.Input[_builtins.str]] = ..., property_type: Optional[pulumi.Input[Union[_builtins.str, PropertyType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedValue")
+    def expected_value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @expected_value.setter
+    def expected_value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def operator(self) -> Optional[pulumi.Input[Union[_builtins.str, Operator]]]:
+        
+        ...
+    
+    @operator.setter
+    def operator(self, value: Optional[pulumi.Input[Union[_builtins.str, Operator]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="propertyJPath")
+    def property_j_path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @property_j_path.setter
+    def property_j_path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="propertyType")
+    def property_type(self) -> Optional[pulumi.Input[Union[_builtins.str, PropertyType]]]:
+        
+        ...
+    
+    @property_type.setter
+    def property_type(self, value: Optional[pulumi.Input[Union[_builtins.str, PropertyType]]]): # -> None:
+        ...
+    
+
+
+class AwsEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+    organizational_data: NotRequired[pulumi.Input[Union[AwsOrganizationalDataMasterArgsDict, AwsOrganizationalDataMemberArgsDict]]]
+    regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    scan_interval: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class AwsEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str], organizational_data: Optional[pulumi.Input[Union[AwsOrganizationalDataMasterArgs, AwsOrganizationalDataMemberArgs]]] = ..., regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., scan_interval: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationalData")
+    def organizational_data(self) -> Optional[pulumi.Input[Union[AwsOrganizationalDataMasterArgs, AwsOrganizationalDataMemberArgs]]]:
+        
+        ...
+    
+    @organizational_data.setter
+    def organizational_data(self, value: Optional[pulumi.Input[Union[AwsOrganizationalDataMasterArgs, AwsOrganizationalDataMemberArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @regions.setter
+    def regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanInterval")
+    def scan_interval(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @scan_interval.setter
+    def scan_interval(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class AwsOrganizationalDataMasterArgsDict(TypedDict):
+    
+    organization_membership_type: pulumi.Input[_builtins.str]
+    excluded_account_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    stackset_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AwsOrganizationalDataMasterArgs:
+    def __init__(__self__, *, organization_membership_type: pulumi.Input[_builtins.str], excluded_account_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., stackset_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationMembershipType")
+    def organization_membership_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @organization_membership_type.setter
+    def organization_membership_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="excludedAccountIds")
+    def excluded_account_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @excluded_account_ids.setter
+    def excluded_account_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stacksetName")
+    def stackset_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @stackset_name.setter
+    def stackset_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AwsOrganizationalDataMemberArgsDict(TypedDict):
+    
+    organization_membership_type: pulumi.Input[_builtins.str]
+    parent_hierarchy_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AwsOrganizationalDataMemberArgs:
+    def __init__(__self__, *, organization_membership_type: pulumi.Input[_builtins.str], parent_hierarchy_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationMembershipType")
+    def organization_membership_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @organization_membership_type.setter
+    def organization_membership_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parentHierarchyId")
+    def parent_hierarchy_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @parent_hierarchy_id.setter
+    def parent_hierarchy_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AzureDevOpsScopeEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class AzureDevOpsScopeEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class AzureResourceDetailsArgsDict(TypedDict):
+    
+    source: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class AzureResourceDetailsArgs:
+    def __init__(__self__, *, source: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CspmMonitorAwsOfferingNativeCloudConnectionArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CspmMonitorAwsOfferingNativeCloudConnectionArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CspmMonitorAwsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    native_cloud_connection: NotRequired[pulumi.Input[CspmMonitorAwsOfferingNativeCloudConnectionArgsDict]]
+
+
+@pulumi.input_type
+class CspmMonitorAwsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], native_cloud_connection: Optional[pulumi.Input[CspmMonitorAwsOfferingNativeCloudConnectionArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nativeCloudConnection")
+    def native_cloud_connection(self) -> Optional[pulumi.Input[CspmMonitorAwsOfferingNativeCloudConnectionArgs]]:
+        
+        ...
+    
+    @native_cloud_connection.setter
+    def native_cloud_connection(self, value: Optional[pulumi.Input[CspmMonitorAwsOfferingNativeCloudConnectionArgs]]): # -> None:
+        ...
+    
+
+
+class CspmMonitorAzureDevOpsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class CspmMonitorAzureDevOpsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CspmMonitorDockerHubOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class CspmMonitorDockerHubOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CspmMonitorGcpOfferingNativeCloudConnectionArgsDict(TypedDict):
+    
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CspmMonitorGcpOfferingNativeCloudConnectionArgs:
+    def __init__(__self__, *, service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CspmMonitorGcpOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    native_cloud_connection: NotRequired[pulumi.Input[CspmMonitorGcpOfferingNativeCloudConnectionArgsDict]]
+
+
+@pulumi.input_type
+class CspmMonitorGcpOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], native_cloud_connection: Optional[pulumi.Input[CspmMonitorGcpOfferingNativeCloudConnectionArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nativeCloudConnection")
+    def native_cloud_connection(self) -> Optional[pulumi.Input[CspmMonitorGcpOfferingNativeCloudConnectionArgs]]:
+        
+        ...
+    
+    @native_cloud_connection.setter
+    def native_cloud_connection(self, value: Optional[pulumi.Input[CspmMonitorGcpOfferingNativeCloudConnectionArgs]]): # -> None:
+        ...
+    
+
+
+class CspmMonitorGitLabOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class CspmMonitorGitLabOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CspmMonitorGithubOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class CspmMonitorGithubOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CspmMonitorJFrogOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class CspmMonitorJFrogOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingCiemDiscoveryArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingCiemDiscoveryArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingCiemOidcArgsDict(TypedDict):
+    
+    azure_active_directory_app_name: NotRequired[pulumi.Input[_builtins.str]]
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingCiemOidcArgs:
+    def __init__(__self__, *, azure_active_directory_app_name: Optional[pulumi.Input[_builtins.str]] = ..., cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureActiveDirectoryAppName")
+    def azure_active_directory_app_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @azure_active_directory_app_name.setter
+    def azure_active_directory_app_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingCiemArgsDict(TypedDict):
+    
+    ciem_discovery: NotRequired[pulumi.Input[DefenderCspmAwsOfferingCiemDiscoveryArgsDict]]
+    ciem_oidc: NotRequired[pulumi.Input[DefenderCspmAwsOfferingCiemOidcArgsDict]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingCiemArgs:
+    def __init__(__self__, *, ciem_discovery: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemDiscoveryArgs]] = ..., ciem_oidc: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemOidcArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ciemDiscovery")
+    def ciem_discovery(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingCiemDiscoveryArgs]]:
+        
+        ...
+    
+    @ciem_discovery.setter
+    def ciem_discovery(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemDiscoveryArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ciemOidc")
+    def ciem_oidc(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingCiemOidcArgs]]:
+        
+        ...
+    
+    @ciem_oidc.setter
+    def ciem_oidc(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemOidcArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingDataSensitivityDiscoveryArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingDataSensitivityDiscoveryArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingDatabasesDspmArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingDatabasesDspmArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingMdcContainersImageAssessmentArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingMdcContainersImageAssessmentArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingVmScannersArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingVmScannersArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmAwsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    ciem: NotRequired[pulumi.Input[DefenderCspmAwsOfferingCiemArgsDict]]
+    data_sensitivity_discovery: NotRequired[pulumi.Input[DefenderCspmAwsOfferingDataSensitivityDiscoveryArgsDict]]
+    databases_dspm: NotRequired[pulumi.Input[DefenderCspmAwsOfferingDatabasesDspmArgsDict]]
+    mdc_containers_agentless_discovery_k8s: NotRequired[pulumi.Input[DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgsDict]]
+    mdc_containers_image_assessment: NotRequired[pulumi.Input[DefenderCspmAwsOfferingMdcContainersImageAssessmentArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderCspmAwsOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderCspmAwsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], ciem: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemArgs]] = ..., data_sensitivity_discovery: Optional[pulumi.Input[DefenderCspmAwsOfferingDataSensitivityDiscoveryArgs]] = ..., databases_dspm: Optional[pulumi.Input[DefenderCspmAwsOfferingDatabasesDspmArgs]] = ..., mdc_containers_agentless_discovery_k8s: Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]] = ..., mdc_containers_image_assessment: Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersImageAssessmentArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderCspmAwsOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ciem(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingCiemArgs]]:
+        
+        ...
+    
+    @ciem.setter
+    def ciem(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingCiemArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSensitivityDiscovery")
+    def data_sensitivity_discovery(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingDataSensitivityDiscoveryArgs]]:
+        
+        ...
+    
+    @data_sensitivity_discovery.setter
+    def data_sensitivity_discovery(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingDataSensitivityDiscoveryArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databasesDspm")
+    def databases_dspm(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingDatabasesDspmArgs]]:
+        
+        ...
+    
+    @databases_dspm.setter
+    def databases_dspm(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingDatabasesDspmArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersAgentlessDiscoveryK8s")
+    def mdc_containers_agentless_discovery_k8s(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]]:
+        
+        ...
+    
+    @mdc_containers_agentless_discovery_k8s.setter
+    def mdc_containers_agentless_discovery_k8s(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersImageAssessment")
+    def mdc_containers_image_assessment(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersImageAssessmentArgs]]:
+        
+        ...
+    
+    @mdc_containers_image_assessment.setter
+    def mdc_containers_image_assessment(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingMdcContainersImageAssessmentArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderCspmAwsOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderCspmAwsOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmDockerHubOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DefenderCspmDockerHubOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingCiemDiscoveryArgsDict(TypedDict):
+    
+    azure_active_directory_app_name: NotRequired[pulumi.Input[_builtins.str]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingCiemDiscoveryArgs:
+    def __init__(__self__, *, azure_active_directory_app_name: Optional[pulumi.Input[_builtins.str]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureActiveDirectoryAppName")
+    def azure_active_directory_app_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @azure_active_directory_app_name.setter
+    def azure_active_directory_app_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingDataSensitivityDiscoveryArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingDataSensitivityDiscoveryArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingMdcContainersImageAssessmentArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingMdcContainersImageAssessmentArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingVmScannersArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingVmScannersArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmGcpOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    ciem_discovery: NotRequired[pulumi.Input[DefenderCspmGcpOfferingCiemDiscoveryArgsDict]]
+    data_sensitivity_discovery: NotRequired[pulumi.Input[DefenderCspmGcpOfferingDataSensitivityDiscoveryArgsDict]]
+    mdc_containers_agentless_discovery_k8s: NotRequired[pulumi.Input[DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgsDict]]
+    mdc_containers_image_assessment: NotRequired[pulumi.Input[DefenderCspmGcpOfferingMdcContainersImageAssessmentArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderCspmGcpOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderCspmGcpOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], ciem_discovery: Optional[pulumi.Input[DefenderCspmGcpOfferingCiemDiscoveryArgs]] = ..., data_sensitivity_discovery: Optional[pulumi.Input[DefenderCspmGcpOfferingDataSensitivityDiscoveryArgs]] = ..., mdc_containers_agentless_discovery_k8s: Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]] = ..., mdc_containers_image_assessment: Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersImageAssessmentArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderCspmGcpOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ciemDiscovery")
+    def ciem_discovery(self) -> Optional[pulumi.Input[DefenderCspmGcpOfferingCiemDiscoveryArgs]]:
+        
+        ...
+    
+    @ciem_discovery.setter
+    def ciem_discovery(self, value: Optional[pulumi.Input[DefenderCspmGcpOfferingCiemDiscoveryArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSensitivityDiscovery")
+    def data_sensitivity_discovery(self) -> Optional[pulumi.Input[DefenderCspmGcpOfferingDataSensitivityDiscoveryArgs]]:
+        
+        ...
+    
+    @data_sensitivity_discovery.setter
+    def data_sensitivity_discovery(self, value: Optional[pulumi.Input[DefenderCspmGcpOfferingDataSensitivityDiscoveryArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersAgentlessDiscoveryK8s")
+    def mdc_containers_agentless_discovery_k8s(self) -> Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]]:
+        
+        ...
+    
+    @mdc_containers_agentless_discovery_k8s.setter
+    def mdc_containers_agentless_discovery_k8s(self, value: Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersImageAssessment")
+    def mdc_containers_image_assessment(self) -> Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersImageAssessmentArgs]]:
+        
+        ...
+    
+    @mdc_containers_image_assessment.setter
+    def mdc_containers_image_assessment(self, value: Optional[pulumi.Input[DefenderCspmGcpOfferingMdcContainersImageAssessmentArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderCspmGcpOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderCspmGcpOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderCspmJFrogOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    mdc_containers_image_assessment: NotRequired[pulumi.Input[DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgsDict]]
+
+
+@pulumi.input_type
+class DefenderCspmJFrogOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], mdc_containers_image_assessment: Optional[pulumi.Input[DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersImageAssessment")
+    def mdc_containers_image_assessment(self) -> Optional[pulumi.Input[DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgs]]:
+        
+        ...
+    
+    @mdc_containers_image_assessment.setter
+    def mdc_containers_image_assessment(self, value: Optional[pulumi.Input[DefenderCspmJFrogOfferingMdcContainersImageAssessmentArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    configuration: NotRequired[pulumi.Input[ArcAutoProvisioningConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderFoDatabasesAwsOfferingDatabasesDspmArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderFoDatabasesAwsOfferingDatabasesDspmArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderFoDatabasesAwsOfferingRdsArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderFoDatabasesAwsOfferingRdsArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderFoDatabasesAwsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    arc_auto_provisioning: NotRequired[pulumi.Input[DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgsDict]]
+    databases_dspm: NotRequired[pulumi.Input[DefenderFoDatabasesAwsOfferingDatabasesDspmArgsDict]]
+    rds: NotRequired[pulumi.Input[DefenderFoDatabasesAwsOfferingRdsArgsDict]]
+
+
+@pulumi.input_type
+class DefenderFoDatabasesAwsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], arc_auto_provisioning: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgs]] = ..., databases_dspm: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingDatabasesDspmArgs]] = ..., rds: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingRdsArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="arcAutoProvisioning")
+    def arc_auto_provisioning(self) -> Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgs]]:
+        
+        ...
+    
+    @arc_auto_provisioning.setter
+    def arc_auto_provisioning(self, value: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingArcAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databasesDspm")
+    def databases_dspm(self) -> Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingDatabasesDspmArgs]]:
+        
+        ...
+    
+    @databases_dspm.setter
+    def databases_dspm(self, value: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingDatabasesDspmArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rds(self) -> Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingRdsArgs]]:
+        
+        ...
+    
+    @rds.setter
+    def rds(self, value: Optional[pulumi.Input[DefenderFoDatabasesAwsOfferingRdsArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingCloudWatchToKinesisArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingCloudWatchToKinesisArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingKinesisToS3ArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingKinesisToS3Args:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingKubernetesDataCollectionArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingKubernetesDataCollectionArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingKubernetesServiceArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingKubernetesServiceArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingVmScannersArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingVmScannersArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersAwsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    cloud_watch_to_kinesis: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingCloudWatchToKinesisArgsDict]]
+    data_collection_external_id: NotRequired[pulumi.Input[_builtins.str]]
+    enable_audit_logs_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    enable_defender_agent_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    enable_policy_agent_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    kinesis_to_s3: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingKinesisToS3ArgsDict]]
+    kube_audit_retention_time: NotRequired[pulumi.Input[_builtins.float]]
+    kubernetes_data_collection: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingKubernetesDataCollectionArgsDict]]
+    kubernetes_service: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingKubernetesServiceArgsDict]]
+    mdc_containers_agentless_discovery_k8s: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgsDict]]
+    mdc_containers_image_assessment: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderForContainersAwsOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForContainersAwsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], cloud_watch_to_kinesis: Optional[pulumi.Input[DefenderForContainersAwsOfferingCloudWatchToKinesisArgs]] = ..., data_collection_external_id: Optional[pulumi.Input[_builtins.str]] = ..., enable_audit_logs_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., enable_defender_agent_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., enable_policy_agent_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., kinesis_to_s3: Optional[pulumi.Input[DefenderForContainersAwsOfferingKinesisToS3Args]] = ..., kube_audit_retention_time: Optional[pulumi.Input[_builtins.float]] = ..., kubernetes_data_collection: Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesDataCollectionArgs]] = ..., kubernetes_service: Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesServiceArgs]] = ..., mdc_containers_agentless_discovery_k8s: Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]] = ..., mdc_containers_image_assessment: Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderForContainersAwsOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudWatchToKinesis")
+    def cloud_watch_to_kinesis(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingCloudWatchToKinesisArgs]]:
+        
+        ...
+    
+    @cloud_watch_to_kinesis.setter
+    def cloud_watch_to_kinesis(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingCloudWatchToKinesisArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataCollectionExternalId")
+    def data_collection_external_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @data_collection_external_id.setter
+    def data_collection_external_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableAuditLogsAutoProvisioning")
+    def enable_audit_logs_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_audit_logs_auto_provisioning.setter
+    def enable_audit_logs_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableDefenderAgentAutoProvisioning")
+    def enable_defender_agent_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_defender_agent_auto_provisioning.setter
+    def enable_defender_agent_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePolicyAgentAutoProvisioning")
+    def enable_policy_agent_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_policy_agent_auto_provisioning.setter
+    def enable_policy_agent_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kinesisToS3")
+    def kinesis_to_s3(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingKinesisToS3Args]]:
+        
+        ...
+    
+    @kinesis_to_s3.setter
+    def kinesis_to_s3(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingKinesisToS3Args]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubeAuditRetentionTime")
+    def kube_audit_retention_time(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @kube_audit_retention_time.setter
+    def kube_audit_retention_time(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesDataCollection")
+    def kubernetes_data_collection(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesDataCollectionArgs]]:
+        
+        ...
+    
+    @kubernetes_data_collection.setter
+    def kubernetes_data_collection(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesDataCollectionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesService")
+    def kubernetes_service(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesServiceArgs]]:
+        
+        ...
+    
+    @kubernetes_service.setter
+    def kubernetes_service(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingKubernetesServiceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersAgentlessDiscoveryK8s")
+    def mdc_containers_agentless_discovery_k8s(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]]:
+        
+        ...
+    
+    @mdc_containers_agentless_discovery_k8s.setter
+    def mdc_containers_agentless_discovery_k8s(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersAgentlessDiscoveryK8sArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersImageAssessment")
+    def mdc_containers_image_assessment(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgs]]:
+        
+        ...
+    
+    @mdc_containers_image_assessment.setter
+    def mdc_containers_image_assessment(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingMdcContainersImageAssessmentArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderForContainersAwsOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderForContainersAwsOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersDockerHubOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DefenderForContainersDockerHubOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgsDict(TypedDict):
+    
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgs:
+    def __init__(__self__, *, service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingNativeCloudConnectionArgsDict(TypedDict):
+    
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingNativeCloudConnectionArgs:
+    def __init__(__self__, *, service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingVmScannersArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingVmScannersArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersGcpOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    data_pipeline_native_cloud_connection: NotRequired[pulumi.Input[DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgsDict]]
+    enable_audit_logs_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    enable_defender_agent_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    enable_policy_agent_auto_provisioning: NotRequired[pulumi.Input[_builtins.bool]]
+    mdc_containers_agentless_discovery_k8s: NotRequired[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgsDict]]
+    mdc_containers_image_assessment: NotRequired[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgsDict]]
+    native_cloud_connection: NotRequired[pulumi.Input[DefenderForContainersGcpOfferingNativeCloudConnectionArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderForContainersGcpOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForContainersGcpOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], data_pipeline_native_cloud_connection: Optional[pulumi.Input[DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgs]] = ..., enable_audit_logs_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., enable_defender_agent_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., enable_policy_agent_auto_provisioning: Optional[pulumi.Input[_builtins.bool]] = ..., mdc_containers_agentless_discovery_k8s: Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]] = ..., mdc_containers_image_assessment: Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgs]] = ..., native_cloud_connection: Optional[pulumi.Input[DefenderForContainersGcpOfferingNativeCloudConnectionArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderForContainersGcpOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataPipelineNativeCloudConnection")
+    def data_pipeline_native_cloud_connection(self) -> Optional[pulumi.Input[DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgs]]:
+        
+        ...
+    
+    @data_pipeline_native_cloud_connection.setter
+    def data_pipeline_native_cloud_connection(self, value: Optional[pulumi.Input[DefenderForContainersGcpOfferingDataPipelineNativeCloudConnectionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableAuditLogsAutoProvisioning")
+    def enable_audit_logs_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_audit_logs_auto_provisioning.setter
+    def enable_audit_logs_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableDefenderAgentAutoProvisioning")
+    def enable_defender_agent_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_defender_agent_auto_provisioning.setter
+    def enable_defender_agent_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePolicyAgentAutoProvisioning")
+    def enable_policy_agent_auto_provisioning(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_policy_agent_auto_provisioning.setter
+    def enable_policy_agent_auto_provisioning(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersAgentlessDiscoveryK8s")
+    def mdc_containers_agentless_discovery_k8s(self) -> Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]]:
+        
+        ...
+    
+    @mdc_containers_agentless_discovery_k8s.setter
+    def mdc_containers_agentless_discovery_k8s(self, value: Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersAgentlessDiscoveryK8sArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdcContainersImageAssessment")
+    def mdc_containers_image_assessment(self) -> Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgs]]:
+        
+        ...
+    
+    @mdc_containers_image_assessment.setter
+    def mdc_containers_image_assessment(self, value: Optional[pulumi.Input[DefenderForContainersGcpOfferingMdcContainersImageAssessmentArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nativeCloudConnection")
+    def native_cloud_connection(self) -> Optional[pulumi.Input[DefenderForContainersGcpOfferingNativeCloudConnectionArgs]]:
+        
+        ...
+    
+    @native_cloud_connection.setter
+    def native_cloud_connection(self, value: Optional[pulumi.Input[DefenderForContainersGcpOfferingNativeCloudConnectionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderForContainersGcpOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderForContainersGcpOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForContainersJFrogOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DefenderForContainersJFrogOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class DefenderForDatabasesGcpOfferingArcAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[ArcAutoProvisioningConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForDatabasesGcpOfferingArcAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgsDict(TypedDict):
+    
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgs:
+    def __init__(__self__, *, service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForDatabasesGcpOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    arc_auto_provisioning: NotRequired[pulumi.Input[DefenderForDatabasesGcpOfferingArcAutoProvisioningArgsDict]]
+    defender_for_databases_arc_auto_provisioning: NotRequired[pulumi.Input[DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForDatabasesGcpOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], arc_auto_provisioning: Optional[pulumi.Input[DefenderForDatabasesGcpOfferingArcAutoProvisioningArgs]] = ..., defender_for_databases_arc_auto_provisioning: Optional[pulumi.Input[DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="arcAutoProvisioning")
+    def arc_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForDatabasesGcpOfferingArcAutoProvisioningArgs]]:
+        
+        ...
+    
+    @arc_auto_provisioning.setter
+    def arc_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForDatabasesGcpOfferingArcAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defenderForDatabasesArcAutoProvisioning")
+    def defender_for_databases_arc_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgs]]:
+        
+        ...
+    
+    @defender_for_databases_arc_auto_provisioning.setter
+    def defender_for_databases_arc_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForDatabasesGcpOfferingDefenderForDatabasesArcAutoProvisioningArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingArcAutoProvisioningArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    configuration: NotRequired[pulumi.Input[ArcAutoProvisioningConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingArcAutoProvisioningArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingConfigurationArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, Type]]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingConfigurationArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, Type]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, Type]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingDefenderForServersArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingDefenderForServersArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingMdeAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[Any]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingMdeAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[Any] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[Any]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingSubPlanArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, SubPlan]]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingSubPlanArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, SubPlan]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, SubPlan]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, SubPlan]]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingVaAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[DefenderForServersAwsOfferingConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingVaAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[DefenderForServersAwsOfferingConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingVmScannersArgsDict(TypedDict):
+    
+    cloud_role_arn: NotRequired[pulumi.Input[_builtins.str]]
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingVmScannersArgs:
+    def __init__(__self__, *, cloud_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudRoleArn")
+    def cloud_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud_role_arn.setter
+    def cloud_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersAwsOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    arc_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersAwsOfferingArcAutoProvisioningArgsDict]]
+    defender_for_servers: NotRequired[pulumi.Input[DefenderForServersAwsOfferingDefenderForServersArgsDict]]
+    mde_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersAwsOfferingMdeAutoProvisioningArgsDict]]
+    sub_plan: NotRequired[pulumi.Input[DefenderForServersAwsOfferingSubPlanArgsDict]]
+    va_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersAwsOfferingVaAutoProvisioningArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderForServersAwsOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForServersAwsOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], arc_auto_provisioning: Optional[pulumi.Input[DefenderForServersAwsOfferingArcAutoProvisioningArgs]] = ..., defender_for_servers: Optional[pulumi.Input[DefenderForServersAwsOfferingDefenderForServersArgs]] = ..., mde_auto_provisioning: Optional[pulumi.Input[DefenderForServersAwsOfferingMdeAutoProvisioningArgs]] = ..., sub_plan: Optional[pulumi.Input[DefenderForServersAwsOfferingSubPlanArgs]] = ..., va_auto_provisioning: Optional[pulumi.Input[DefenderForServersAwsOfferingVaAutoProvisioningArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderForServersAwsOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="arcAutoProvisioning")
+    def arc_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingArcAutoProvisioningArgs]]:
+        
+        ...
+    
+    @arc_auto_provisioning.setter
+    def arc_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingArcAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defenderForServers")
+    def defender_for_servers(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingDefenderForServersArgs]]:
+        
+        ...
+    
+    @defender_for_servers.setter
+    def defender_for_servers(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingDefenderForServersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdeAutoProvisioning")
+    def mde_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingMdeAutoProvisioningArgs]]:
+        
+        ...
+    
+    @mde_auto_provisioning.setter
+    def mde_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingMdeAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subPlan")
+    def sub_plan(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingSubPlanArgs]]:
+        
+        ...
+    
+    @sub_plan.setter
+    def sub_plan(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingSubPlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vaAutoProvisioning")
+    def va_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingVaAutoProvisioningArgs]]:
+        
+        ...
+    
+    @va_auto_provisioning.setter
+    def va_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingVaAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderForServersAwsOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderForServersAwsOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingArcAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[ArcAutoProvisioningConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingArcAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[ArcAutoProvisioningConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingConfigurationArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, Type]]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingConfigurationArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, Type]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, Type]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, Type]]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingDefenderForServersArgsDict(TypedDict):
+    
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingDefenderForServersArgs:
+    def __init__(__self__, *, service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingMdeAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[Any]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingMdeAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[Any] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[Any]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingSubPlanArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, SubPlan]]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingSubPlanArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, SubPlan]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, SubPlan]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, SubPlan]]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingVaAutoProvisioningArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[DefenderForServersGcpOfferingConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingVaAutoProvisioningArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[DefenderForServersGcpOfferingConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingVmScannersArgsDict(TypedDict):
+    
+    configuration: NotRequired[pulumi.Input[VmScannersBaseConfigurationArgsDict]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingVmScannersArgs:
+    def __init__(__self__, *, configuration: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]:
+        
+        ...
+    
+    @configuration.setter
+    def configuration(self, value: Optional[pulumi.Input[VmScannersBaseConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class DefenderForServersGcpOfferingArgsDict(TypedDict):
+    
+    offering_type: pulumi.Input[_builtins.str]
+    arc_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersGcpOfferingArcAutoProvisioningArgsDict]]
+    defender_for_servers: NotRequired[pulumi.Input[DefenderForServersGcpOfferingDefenderForServersArgsDict]]
+    mde_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersGcpOfferingMdeAutoProvisioningArgsDict]]
+    sub_plan: NotRequired[pulumi.Input[DefenderForServersGcpOfferingSubPlanArgsDict]]
+    va_auto_provisioning: NotRequired[pulumi.Input[DefenderForServersGcpOfferingVaAutoProvisioningArgsDict]]
+    vm_scanners: NotRequired[pulumi.Input[DefenderForServersGcpOfferingVmScannersArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForServersGcpOfferingArgs:
+    def __init__(__self__, *, offering_type: pulumi.Input[_builtins.str], arc_auto_provisioning: Optional[pulumi.Input[DefenderForServersGcpOfferingArcAutoProvisioningArgs]] = ..., defender_for_servers: Optional[pulumi.Input[DefenderForServersGcpOfferingDefenderForServersArgs]] = ..., mde_auto_provisioning: Optional[pulumi.Input[DefenderForServersGcpOfferingMdeAutoProvisioningArgs]] = ..., sub_plan: Optional[pulumi.Input[DefenderForServersGcpOfferingSubPlanArgs]] = ..., va_auto_provisioning: Optional[pulumi.Input[DefenderForServersGcpOfferingVaAutoProvisioningArgs]] = ..., vm_scanners: Optional[pulumi.Input[DefenderForServersGcpOfferingVmScannersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offeringType")
+    def offering_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @offering_type.setter
+    def offering_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="arcAutoProvisioning")
+    def arc_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingArcAutoProvisioningArgs]]:
+        
+        ...
+    
+    @arc_auto_provisioning.setter
+    def arc_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingArcAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defenderForServers")
+    def defender_for_servers(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingDefenderForServersArgs]]:
+        
+        ...
+    
+    @defender_for_servers.setter
+    def defender_for_servers(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingDefenderForServersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mdeAutoProvisioning")
+    def mde_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingMdeAutoProvisioningArgs]]:
+        
+        ...
+    
+    @mde_auto_provisioning.setter
+    def mde_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingMdeAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subPlan")
+    def sub_plan(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingSubPlanArgs]]:
+        
+        ...
+    
+    @sub_plan.setter
+    def sub_plan(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingSubPlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vaAutoProvisioning")
+    def va_auto_provisioning(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingVaAutoProvisioningArgs]]:
+        
+        ...
+    
+    @va_auto_provisioning.setter
+    def va_auto_provisioning(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingVaAutoProvisioningArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScanners")
+    def vm_scanners(self) -> Optional[pulumi.Input[DefenderForServersGcpOfferingVmScannersArgs]]:
+        
+        ...
+    
+    @vm_scanners.setter
+    def vm_scanners(self, value: Optional[pulumi.Input[DefenderForServersGcpOfferingVmScannersArgs]]): # -> None:
+        ...
+    
+
+
+class DefenderForStorageSettingPropertiesArgsDict(TypedDict):
+    
+    is_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    malware_scanning: NotRequired[pulumi.Input[MalwareScanningPropertiesArgsDict]]
+    override_subscription_level_settings: NotRequired[pulumi.Input[_builtins.bool]]
+    sensitive_data_discovery: NotRequired[pulumi.Input[SensitiveDataDiscoveryPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class DefenderForStorageSettingPropertiesArgs:
+    def __init__(__self__, *, is_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., malware_scanning: Optional[pulumi.Input[MalwareScanningPropertiesArgs]] = ..., override_subscription_level_settings: Optional[pulumi.Input[_builtins.bool]] = ..., sensitive_data_discovery: Optional[pulumi.Input[SensitiveDataDiscoveryPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="malwareScanning")
+    def malware_scanning(self) -> Optional[pulumi.Input[MalwareScanningPropertiesArgs]]:
+        
+        ...
+    
+    @malware_scanning.setter
+    def malware_scanning(self, value: Optional[pulumi.Input[MalwareScanningPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="overrideSubscriptionLevelSettings")
+    def override_subscription_level_settings(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @override_subscription_level_settings.setter
+    def override_subscription_level_settings(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sensitiveDataDiscovery")
+    def sensitive_data_discovery(self) -> Optional[pulumi.Input[SensitiveDataDiscoveryPropertiesArgs]]:
+        
+        ...
+    
+    @sensitive_data_discovery.setter
+    def sensitive_data_discovery(self, value: Optional[pulumi.Input[SensitiveDataDiscoveryPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class DenylistCustomAlertRuleArgsDict(TypedDict):
+    
+    denylist_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+    is_enabled: pulumi.Input[_builtins.bool]
+    rule_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DenylistCustomAlertRuleArgs:
+    def __init__(__self__, *, denylist_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], is_enabled: pulumi.Input[_builtins.bool], rule_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="denylistValues")
+    def denylist_values(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @denylist_values.setter
+    def denylist_values(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @rule_type.setter
+    def rule_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class DevOpsConfigurationPropertiesArgsDict(TypedDict):
+    
+    authorization: NotRequired[pulumi.Input[AuthorizationArgsDict]]
+    auto_discovery: NotRequired[pulumi.Input[Union[_builtins.str, AutoDiscovery]]]
+    provisioning_state: NotRequired[pulumi.Input[Union[_builtins.str, DevOpsProvisioningState]]]
+    top_level_inventory_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class DevOpsConfigurationPropertiesArgs:
+    def __init__(__self__, *, authorization: Optional[pulumi.Input[AuthorizationArgs]] = ..., auto_discovery: Optional[pulumi.Input[Union[_builtins.str, AutoDiscovery]]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, DevOpsProvisioningState]]] = ..., top_level_inventory_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authorization(self) -> Optional[pulumi.Input[AuthorizationArgs]]:
+        
+        ...
+    
+    @authorization.setter
+    def authorization(self, value: Optional[pulumi.Input[AuthorizationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoDiscovery")
+    def auto_discovery(self) -> Optional[pulumi.Input[Union[_builtins.str, AutoDiscovery]]]:
+        
+        ...
+    
+    @auto_discovery.setter
+    def auto_discovery(self, value: Optional[pulumi.Input[Union[_builtins.str, AutoDiscovery]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, DevOpsProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, DevOpsProvisioningState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topLevelInventoryList")
+    def top_level_inventory_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @top_level_inventory_list.setter
+    def top_level_inventory_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class DockerHubEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+    authentication: NotRequired[pulumi.Input[AccessTokenAuthenticationArgsDict]]
+    scan_interval: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class DockerHubEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str], authentication: Optional[pulumi.Input[AccessTokenAuthenticationArgs]] = ..., scan_interval: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authentication(self) -> Optional[pulumi.Input[AccessTokenAuthenticationArgs]]:
+        
+        ...
+    
+    @authentication.setter
+    def authentication(self, value: Optional[pulumi.Input[AccessTokenAuthenticationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanInterval")
+    def scan_interval(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @scan_interval.setter
+    def scan_interval(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class ExtensionArgsDict(TypedDict):
+    
+    is_enabled: pulumi.Input[Union[_builtins.str, IsEnabled]]
+    name: pulumi.Input[_builtins.str]
+    additional_extension_properties: NotRequired[Any]
+
+
+@pulumi.input_type
+class ExtensionArgs:
+    def __init__(__self__, *, is_enabled: pulumi.Input[Union[_builtins.str, IsEnabled]], name: pulumi.Input[_builtins.str], additional_extension_properties: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> pulumi.Input[Union[_builtins.str, IsEnabled]]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: pulumi.Input[Union[_builtins.str, IsEnabled]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalExtensionProperties")
+    def additional_extension_properties(self) -> Optional[Any]:
+        
+        ...
+    
+    @additional_extension_properties.setter
+    def additional_extension_properties(self, value: Optional[Any]): # -> None:
+        ...
+    
+
+
+class GcpOrganizationalDataMemberArgsDict(TypedDict):
+    
+    organization_membership_type: pulumi.Input[_builtins.str]
+    management_project_number: NotRequired[pulumi.Input[_builtins.str]]
+    parent_hierarchy_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GcpOrganizationalDataMemberArgs:
+    def __init__(__self__, *, organization_membership_type: pulumi.Input[_builtins.str], management_project_number: Optional[pulumi.Input[_builtins.str]] = ..., parent_hierarchy_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationMembershipType")
+    def organization_membership_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @organization_membership_type.setter
+    def organization_membership_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementProjectNumber")
+    def management_project_number(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @management_project_number.setter
+    def management_project_number(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parentHierarchyId")
+    def parent_hierarchy_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @parent_hierarchy_id.setter
+    def parent_hierarchy_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GcpOrganizationalDataOrganizationArgsDict(TypedDict):
+    
+    organization_membership_type: pulumi.Input[_builtins.str]
+    excluded_project_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    service_account_email_address: NotRequired[pulumi.Input[_builtins.str]]
+    workload_identity_provider_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GcpOrganizationalDataOrganizationArgs:
+    def __init__(__self__, *, organization_membership_type: pulumi.Input[_builtins.str], excluded_project_numbers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., service_account_email_address: Optional[pulumi.Input[_builtins.str]] = ..., workload_identity_provider_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationMembershipType")
+    def organization_membership_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @organization_membership_type.setter
+    def organization_membership_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="excludedProjectNumbers")
+    def excluded_project_numbers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @excluded_project_numbers.setter
+    def excluded_project_numbers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountEmailAddress")
+    def service_account_email_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_email_address.setter
+    def service_account_email_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadIdentityProviderId")
+    def workload_identity_provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workload_identity_provider_id.setter
+    def workload_identity_provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GcpProjectDetailsArgsDict(TypedDict):
+    
+    project_id: NotRequired[pulumi.Input[_builtins.str]]
+    project_number: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GcpProjectDetailsArgs:
+    def __init__(__self__, *, project_id: Optional[pulumi.Input[_builtins.str]] = ..., project_number: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectId")
+    def project_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @project_id.setter
+    def project_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectNumber")
+    def project_number(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @project_number.setter
+    def project_number(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GcpProjectEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+    organizational_data: NotRequired[pulumi.Input[Union[GcpOrganizationalDataMemberArgsDict, GcpOrganizationalDataOrganizationArgsDict]]]
+    project_details: NotRequired[pulumi.Input[GcpProjectDetailsArgsDict]]
+    scan_interval: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class GcpProjectEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str], organizational_data: Optional[pulumi.Input[Union[GcpOrganizationalDataMemberArgs, GcpOrganizationalDataOrganizationArgs]]] = ..., project_details: Optional[pulumi.Input[GcpProjectDetailsArgs]] = ..., scan_interval: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationalData")
+    def organizational_data(self) -> Optional[pulumi.Input[Union[GcpOrganizationalDataMemberArgs, GcpOrganizationalDataOrganizationArgs]]]:
+        
+        ...
+    
+    @organizational_data.setter
+    def organizational_data(self, value: Optional[pulumi.Input[Union[GcpOrganizationalDataMemberArgs, GcpOrganizationalDataOrganizationArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectDetails")
+    def project_details(self) -> Optional[pulumi.Input[GcpProjectDetailsArgs]]:
+        
+        ...
+    
+    @project_details.setter
+    def project_details(self, value: Optional[pulumi.Input[GcpProjectDetailsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanInterval")
+    def scan_interval(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @scan_interval.setter
+    def scan_interval(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class GithubScopeEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class GithubScopeEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class GitlabScopeEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class GitlabScopeEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class GovernanceAssignmentAdditionalDataArgsDict(TypedDict):
+    
+    ticket_link: NotRequired[pulumi.Input[_builtins.str]]
+    ticket_number: NotRequired[pulumi.Input[_builtins.int]]
+    ticket_status: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GovernanceAssignmentAdditionalDataArgs:
+    def __init__(__self__, *, ticket_link: Optional[pulumi.Input[_builtins.str]] = ..., ticket_number: Optional[pulumi.Input[_builtins.int]] = ..., ticket_status: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ticketLink")
+    def ticket_link(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ticket_link.setter
+    def ticket_link(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ticketNumber")
+    def ticket_number(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @ticket_number.setter
+    def ticket_number(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ticketStatus")
+    def ticket_status(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ticket_status.setter
+    def ticket_status(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GovernanceEmailNotificationArgsDict(TypedDict):
+    
+    disable_manager_email_notification: NotRequired[pulumi.Input[_builtins.bool]]
+    disable_owner_email_notification: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class GovernanceEmailNotificationArgs:
+    def __init__(__self__, *, disable_manager_email_notification: Optional[pulumi.Input[_builtins.bool]] = ..., disable_owner_email_notification: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableManagerEmailNotification")
+    def disable_manager_email_notification(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disable_manager_email_notification.setter
+    def disable_manager_email_notification(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableOwnerEmailNotification")
+    def disable_owner_email_notification(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disable_owner_email_notification.setter
+    def disable_owner_email_notification(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class GovernanceRuleEmailNotificationArgsDict(TypedDict):
+    
+    disable_manager_email_notification: NotRequired[pulumi.Input[_builtins.bool]]
+    disable_owner_email_notification: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class GovernanceRuleEmailNotificationArgs:
+    def __init__(__self__, *, disable_manager_email_notification: Optional[pulumi.Input[_builtins.bool]] = ..., disable_owner_email_notification: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableManagerEmailNotification")
+    def disable_manager_email_notification(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disable_manager_email_notification.setter
+    def disable_manager_email_notification(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableOwnerEmailNotification")
+    def disable_owner_email_notification(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disable_owner_email_notification.setter
+    def disable_owner_email_notification(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class GovernanceRuleOwnerSourceArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, GovernanceRuleOwnerSourceType]]]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GovernanceRuleOwnerSourceArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, GovernanceRuleOwnerSourceType]]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, GovernanceRuleOwnerSourceType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, GovernanceRuleOwnerSourceType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class JFrogEnvironmentDataArgsDict(TypedDict):
+    
+    environment_type: pulumi.Input[_builtins.str]
+    scan_interval: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class JFrogEnvironmentDataArgs:
+    def __init__(__self__, *, environment_type: pulumi.Input[_builtins.str], scan_interval: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_type.setter
+    def environment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanInterval")
+    def scan_interval(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @scan_interval.setter
+    def scan_interval(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class JitNetworkAccessPolicyVirtualMachineArgsDict(TypedDict):
+    id: pulumi.Input[_builtins.str]
+    ports: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPortRuleArgsDict]]]
+    public_ip_address: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class JitNetworkAccessPolicyVirtualMachineArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], ports: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPortRuleArgs]]], public_ip_address: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ports(self) -> pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPortRuleArgs]]]:
+        
+        ...
+    
+    @ports.setter
+    def ports(self, value: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPortRuleArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicIpAddress")
+    def public_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @public_ip_address.setter
+    def public_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class JitNetworkAccessPortRuleArgsDict(TypedDict):
+    max_request_access_duration: pulumi.Input[_builtins.str]
+    number: pulumi.Input[_builtins.int]
+    protocol: pulumi.Input[Union[_builtins.str, Protocol]]
+    allowed_source_address_prefix: NotRequired[pulumi.Input[_builtins.str]]
+    allowed_source_address_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class JitNetworkAccessPortRuleArgs:
+    def __init__(__self__, *, max_request_access_duration: pulumi.Input[_builtins.str], number: pulumi.Input[_builtins.int], protocol: pulumi.Input[Union[_builtins.str, Protocol]], allowed_source_address_prefix: Optional[pulumi.Input[_builtins.str]] = ..., allowed_source_address_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxRequestAccessDuration")
+    def max_request_access_duration(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @max_request_access_duration.setter
+    def max_request_access_duration(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def number(self) -> pulumi.Input[_builtins.int]:
+        ...
+    
+    @number.setter
+    def number(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> pulumi.Input[Union[_builtins.str, Protocol]]:
+        ...
+    
+    @protocol.setter
+    def protocol(self, value: pulumi.Input[Union[_builtins.str, Protocol]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedSourceAddressPrefix")
+    def allowed_source_address_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @allowed_source_address_prefix.setter
+    def allowed_source_address_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedSourceAddressPrefixes")
+    def allowed_source_address_prefixes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @allowed_source_address_prefixes.setter
+    def allowed_source_address_prefixes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class JitNetworkAccessRequestPortArgsDict(TypedDict):
+    end_time_utc: pulumi.Input[_builtins.str]
+    number: pulumi.Input[_builtins.int]
+    status: pulumi.Input[Union[_builtins.str, Status]]
+    status_reason: pulumi.Input[Union[_builtins.str, StatusReason]]
+    allowed_source_address_prefix: NotRequired[pulumi.Input[_builtins.str]]
+    allowed_source_address_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    mapped_port: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class JitNetworkAccessRequestPortArgs:
+    def __init__(__self__, *, end_time_utc: pulumi.Input[_builtins.str], number: pulumi.Input[_builtins.int], status: pulumi.Input[Union[_builtins.str, Status]], status_reason: pulumi.Input[Union[_builtins.str, StatusReason]], allowed_source_address_prefix: Optional[pulumi.Input[_builtins.str]] = ..., allowed_source_address_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mapped_port: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTimeUtc")
+    def end_time_utc(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @end_time_utc.setter
+    def end_time_utc(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def number(self) -> pulumi.Input[_builtins.int]:
+        ...
+    
+    @number.setter
+    def number(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Input[Union[_builtins.str, Status]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: pulumi.Input[Union[_builtins.str, Status]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusReason")
+    def status_reason(self) -> pulumi.Input[Union[_builtins.str, StatusReason]]:
+        
+        ...
+    
+    @status_reason.setter
+    def status_reason(self, value: pulumi.Input[Union[_builtins.str, StatusReason]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedSourceAddressPrefix")
+    def allowed_source_address_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @allowed_source_address_prefix.setter
+    def allowed_source_address_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedSourceAddressPrefixes")
+    def allowed_source_address_prefixes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @allowed_source_address_prefixes.setter
+    def allowed_source_address_prefixes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mappedPort")
+    def mapped_port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @mapped_port.setter
+    def mapped_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class JitNetworkAccessRequestVirtualMachineArgsDict(TypedDict):
+    id: pulumi.Input[_builtins.str]
+    ports: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestPortArgsDict]]]
+
+
+@pulumi.input_type
+class JitNetworkAccessRequestVirtualMachineArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], ports: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestPortArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ports(self) -> pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestPortArgs]]]:
+        
+        ...
+    
+    @ports.setter
+    def ports(self, value: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestPortArgs]]]): # -> None:
+        ...
+    
+
+
+class JitNetworkAccessRequestArgsDict(TypedDict):
+    requestor: pulumi.Input[_builtins.str]
+    start_time_utc: pulumi.Input[_builtins.str]
+    virtual_machines: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestVirtualMachineArgsDict]]]
+    justification: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class JitNetworkAccessRequestArgs:
+    def __init__(__self__, *, requestor: pulumi.Input[_builtins.str], start_time_utc: pulumi.Input[_builtins.str], virtual_machines: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestVirtualMachineArgs]]], justification: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def requestor(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @requestor.setter
+    def requestor(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTimeUtc")
+    def start_time_utc(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @start_time_utc.setter
+    def start_time_utc(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachines")
+    def virtual_machines(self) -> pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestVirtualMachineArgs]]]:
+        ...
+    
+    @virtual_machines.setter
+    def virtual_machines(self, value: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestVirtualMachineArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def justification(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @justification.setter
+    def justification(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class MalwareScanningPropertiesArgsDict(TypedDict):
+    
+    on_upload: NotRequired[pulumi.Input[OnUploadPropertiesArgsDict]]
+    scan_results_event_grid_topic_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class MalwareScanningPropertiesArgs:
+    def __init__(__self__, *, on_upload: Optional[pulumi.Input[OnUploadPropertiesArgs]] = ..., scan_results_event_grid_topic_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onUpload")
+    def on_upload(self) -> Optional[pulumi.Input[OnUploadPropertiesArgs]]:
+        
+        ...
+    
+    @on_upload.setter
+    def on_upload(self, value: Optional[pulumi.Input[OnUploadPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanResultsEventGridTopicResourceId")
+    def scan_results_event_grid_topic_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @scan_results_event_grid_topic_resource_id.setter
+    def scan_results_event_grid_topic_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class NotificationsSourceAlertArgsDict(TypedDict):
+    
+    source_type: pulumi.Input[_builtins.str]
+    minimal_severity: NotRequired[pulumi.Input[Union[_builtins.str, MinimalSeverity]]]
+
+
+@pulumi.input_type
+class NotificationsSourceAlertArgs:
+    def __init__(__self__, *, source_type: pulumi.Input[_builtins.str], minimal_severity: Optional[pulumi.Input[Union[_builtins.str, MinimalSeverity]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source_type.setter
+    def source_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalSeverity")
+    def minimal_severity(self) -> Optional[pulumi.Input[Union[_builtins.str, MinimalSeverity]]]:
+        
+        ...
+    
+    @minimal_severity.setter
+    def minimal_severity(self, value: Optional[pulumi.Input[Union[_builtins.str, MinimalSeverity]]]): # -> None:
+        ...
+    
+
+
+class NotificationsSourceAttackPathArgsDict(TypedDict):
+    
+    source_type: pulumi.Input[_builtins.str]
+    minimal_risk_level: NotRequired[pulumi.Input[Union[_builtins.str, MinimalRiskLevel]]]
+
+
+@pulumi.input_type
+class NotificationsSourceAttackPathArgs:
+    def __init__(__self__, *, source_type: pulumi.Input[_builtins.str], minimal_risk_level: Optional[pulumi.Input[Union[_builtins.str, MinimalRiskLevel]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source_type.setter
+    def source_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalRiskLevel")
+    def minimal_risk_level(self) -> Optional[pulumi.Input[Union[_builtins.str, MinimalRiskLevel]]]:
+        
+        ...
+    
+    @minimal_risk_level.setter
+    def minimal_risk_level(self, value: Optional[pulumi.Input[Union[_builtins.str, MinimalRiskLevel]]]): # -> None:
+        ...
+    
+
+
+class OnPremiseResourceDetailsArgsDict(TypedDict):
+    
+    machine_name: pulumi.Input[_builtins.str]
+    source: pulumi.Input[_builtins.str]
+    source_computer_id: pulumi.Input[_builtins.str]
+    vmuuid: pulumi.Input[_builtins.str]
+    workspace_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class OnPremiseResourceDetailsArgs:
+    def __init__(__self__, *, machine_name: pulumi.Input[_builtins.str], source: pulumi.Input[_builtins.str], source_computer_id: pulumi.Input[_builtins.str], vmuuid: pulumi.Input[_builtins.str], workspace_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineName")
+    def machine_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @machine_name.setter
+    def machine_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceComputerId")
+    def source_computer_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source_computer_id.setter
+    def source_computer_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vmuuid(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @vmuuid.setter
+    def vmuuid(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceId")
+    def workspace_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_id.setter
+    def workspace_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class OnPremiseSqlResourceDetailsArgsDict(TypedDict):
+    
+    database_name: pulumi.Input[_builtins.str]
+    machine_name: pulumi.Input[_builtins.str]
+    server_name: pulumi.Input[_builtins.str]
+    source: pulumi.Input[_builtins.str]
+    source_computer_id: pulumi.Input[_builtins.str]
+    vmuuid: pulumi.Input[_builtins.str]
+    workspace_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class OnPremiseSqlResourceDetailsArgs:
+    def __init__(__self__, *, database_name: pulumi.Input[_builtins.str], machine_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], source: pulumi.Input[_builtins.str], source_computer_id: pulumi.Input[_builtins.str], vmuuid: pulumi.Input[_builtins.str], workspace_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @database_name.setter
+    def database_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineName")
+    def machine_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @machine_name.setter
+    def machine_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceComputerId")
+    def source_computer_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source_computer_id.setter
+    def source_computer_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vmuuid(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @vmuuid.setter
+    def vmuuid(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceId")
+    def workspace_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_id.setter
+    def workspace_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class OnUploadPropertiesArgsDict(TypedDict):
+    
+    cap_gb_per_month: NotRequired[pulumi.Input[_builtins.int]]
+    is_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class OnUploadPropertiesArgs:
+    def __init__(__self__, *, cap_gb_per_month: Optional[pulumi.Input[_builtins.int]] = ..., is_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="capGBPerMonth")
+    def cap_gb_per_month(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @cap_gb_per_month.setter
+    def cap_gb_per_month(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class PartialAssessmentPropertiesArgsDict(TypedDict):
+    
+    assessment_key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class PartialAssessmentPropertiesArgs:
+    def __init__(__self__, *, assessment_key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentKey")
+    def assessment_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assessment_key.setter
+    def assessment_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class RecommendationConfigurationPropertiesArgsDict(TypedDict):
+    
+    recommendation_type: pulumi.Input[Union[_builtins.str, RecommendationType]]
+    status: pulumi.Input[Union[_builtins.str, RecommendationConfigStatus]]
+
+
+@pulumi.input_type
+class RecommendationConfigurationPropertiesArgs:
+    def __init__(__self__, *, recommendation_type: pulumi.Input[Union[_builtins.str, RecommendationType]], status: Optional[pulumi.Input[Union[_builtins.str, RecommendationConfigStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recommendationType")
+    def recommendation_type(self) -> pulumi.Input[Union[_builtins.str, RecommendationType]]:
+        
+        ...
+    
+    @recommendation_type.setter
+    def recommendation_type(self, value: pulumi.Input[Union[_builtins.str, RecommendationType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Input[Union[_builtins.str, RecommendationConfigStatus]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: pulumi.Input[Union[_builtins.str, RecommendationConfigStatus]]): # -> None:
+        ...
+    
+
+
+class RemediationEtaArgsDict(TypedDict):
+    
+    eta: pulumi.Input[_builtins.str]
+    justification: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class RemediationEtaArgs:
+    def __init__(__self__, *, eta: pulumi.Input[_builtins.str], justification: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def eta(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @eta.setter
+    def eta(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def justification(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @justification.setter
+    def justification(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ScopeElementArgsDict(TypedDict):
+    
+    field: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ScopeElementArgs:
+    def __init__(__self__, *, field: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def field(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @field.setter
+    def field(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SecurityAssessmentMetadataPartnerDataArgsDict(TypedDict):
+    
+    partner_name: pulumi.Input[_builtins.str]
+    secret: pulumi.Input[_builtins.str]
+    product_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SecurityAssessmentMetadataPartnerDataArgs:
+    def __init__(__self__, *, partner_name: pulumi.Input[_builtins.str], secret: pulumi.Input[_builtins.str], product_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerName")
+    def partner_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_name.setter
+    def partner_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secret(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @secret.setter
+    def secret(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productName")
+    def product_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @product_name.setter
+    def product_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SecurityAssessmentMetadataPropertiesResponsePublishDatesArgsDict(TypedDict):
+    public: pulumi.Input[_builtins.str]
+    g_a: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SecurityAssessmentMetadataPropertiesResponsePublishDatesArgs:
+    def __init__(__self__, *, public: pulumi.Input[_builtins.str], g_a: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def public(self) -> pulumi.Input[_builtins.str]:
+        ...
+    
+    @public.setter
+    def public(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gA")
+    def g_a(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @g_a.setter
+    def g_a(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SecurityAssessmentMetadataPropertiesArgsDict(TypedDict):
+    
+    assessment_type: pulumi.Input[Union[_builtins.str, AssessmentType]]
+    display_name: pulumi.Input[_builtins.str]
+    severity: pulumi.Input[Union[_builtins.str, Severity]]
+    categories: NotRequired[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Categories]]]]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    implementation_effort: NotRequired[pulumi.Input[Union[_builtins.str, ImplementationEffort]]]
+    partner_data: NotRequired[pulumi.Input[SecurityAssessmentMetadataPartnerDataArgsDict]]
+    preview: NotRequired[pulumi.Input[_builtins.bool]]
+    remediation_description: NotRequired[pulumi.Input[_builtins.str]]
+    threats: NotRequired[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Threats]]]]]
+    user_impact: NotRequired[pulumi.Input[Union[_builtins.str, UserImpact]]]
+
+
+@pulumi.input_type
+class SecurityAssessmentMetadataPropertiesArgs:
+    def __init__(__self__, *, assessment_type: pulumi.Input[Union[_builtins.str, AssessmentType]], display_name: pulumi.Input[_builtins.str], severity: pulumi.Input[Union[_builtins.str, Severity]], categories: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Categories]]]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., implementation_effort: Optional[pulumi.Input[Union[_builtins.str, ImplementationEffort]]] = ..., partner_data: Optional[pulumi.Input[SecurityAssessmentMetadataPartnerDataArgs]] = ..., preview: Optional[pulumi.Input[_builtins.bool]] = ..., remediation_description: Optional[pulumi.Input[_builtins.str]] = ..., threats: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Threats]]]]] = ..., user_impact: Optional[pulumi.Input[Union[_builtins.str, UserImpact]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentType")
+    def assessment_type(self) -> pulumi.Input[Union[_builtins.str, AssessmentType]]:
+        
+        ...
+    
+    @assessment_type.setter
+    def assessment_type(self, value: pulumi.Input[Union[_builtins.str, AssessmentType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def severity(self) -> pulumi.Input[Union[_builtins.str, Severity]]:
+        
+        ...
+    
+    @severity.setter
+    def severity(self, value: pulumi.Input[Union[_builtins.str, Severity]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def categories(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Categories]]]]]:
+        ...
+    
+    @categories.setter
+    def categories(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Categories]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="implementationEffort")
+    def implementation_effort(self) -> Optional[pulumi.Input[Union[_builtins.str, ImplementationEffort]]]:
+        
+        ...
+    
+    @implementation_effort.setter
+    def implementation_effort(self, value: Optional[pulumi.Input[Union[_builtins.str, ImplementationEffort]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerData")
+    def partner_data(self) -> Optional[pulumi.Input[SecurityAssessmentMetadataPartnerDataArgs]]:
+        
+        ...
+    
+    @partner_data.setter
+    def partner_data(self, value: Optional[pulumi.Input[SecurityAssessmentMetadataPartnerDataArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def preview(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @preview.setter
+    def preview(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remediationDescription")
+    def remediation_description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @remediation_description.setter
+    def remediation_description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def threats(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Threats]]]]]:
+        ...
+    
+    @threats.setter
+    def threats(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Threats]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userImpact")
+    def user_impact(self) -> Optional[pulumi.Input[Union[_builtins.str, UserImpact]]]:
+        
+        ...
+    
+    @user_impact.setter
+    def user_impact(self, value: Optional[pulumi.Input[Union[_builtins.str, UserImpact]]]): # -> None:
+        ...
+    
+
+
+class SecurityAssessmentPartnerDataArgsDict(TypedDict):
+    
+    partner_name: pulumi.Input[_builtins.str]
+    secret: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class SecurityAssessmentPartnerDataArgs:
+    def __init__(__self__, *, partner_name: pulumi.Input[_builtins.str], secret: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerName")
+    def partner_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_name.setter
+    def partner_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def secret(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @secret.setter
+    def secret(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SecurityContactPropertiesNotificationsByRoleArgsDict(TypedDict):
+    
+    roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, SecurityContactRole]]]]]
+    state: NotRequired[pulumi.Input[Union[_builtins.str, State]]]
+
+
+@pulumi.input_type
+class SecurityContactPropertiesNotificationsByRoleArgs:
+    def __init__(__self__, *, roles: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, SecurityContactRole]]]]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, State]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, SecurityContactRole]]]]]:
+        
+        ...
+    
+    @roles.setter
+    def roles(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, SecurityContactRole]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, State]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, State]]]): # -> None:
+        ...
+    
+
+
+class SensitiveDataDiscoveryPropertiesArgsDict(TypedDict):
+    
+    is_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class SensitiveDataDiscoveryPropertiesArgs:
+    def __init__(__self__, *, is_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class StandardAssignmentPropertiesAttestationDataArgsDict(TypedDict):
+    
+    assigned_assessment: NotRequired[pulumi.Input[AssignedAssessmentItemArgsDict]]
+    compliance_state: NotRequired[pulumi.Input[Union[_builtins.str, AttestationComplianceState]]]
+    evidence: NotRequired[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgsDict]]]]
+
+
+@pulumi.input_type
+class StandardAssignmentPropertiesAttestationDataArgs:
+    def __init__(__self__, *, assigned_assessment: Optional[pulumi.Input[AssignedAssessmentItemArgs]] = ..., compliance_state: Optional[pulumi.Input[Union[_builtins.str, AttestationComplianceState]]] = ..., evidence: Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignedAssessment")
+    def assigned_assessment(self) -> Optional[pulumi.Input[AssignedAssessmentItemArgs]]:
+        
+        ...
+    
+    @assigned_assessment.setter
+    def assigned_assessment(self, value: Optional[pulumi.Input[AssignedAssessmentItemArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="complianceState")
+    def compliance_state(self) -> Optional[pulumi.Input[Union[_builtins.str, AttestationComplianceState]]]:
+        
+        ...
+    
+    @compliance_state.setter
+    def compliance_state(self, value: Optional[pulumi.Input[Union[_builtins.str, AttestationComplianceState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def evidence(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]]:
+        
+        ...
+    
+    @evidence.setter
+    def evidence(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]]): # -> None:
+        ...
+    
+
+
+class StandardAssignmentPropertiesExemptionDataArgsDict(TypedDict):
+    
+    assigned_assessment: NotRequired[pulumi.Input[AssignedAssessmentItemArgsDict]]
+    exemption_category: NotRequired[pulumi.Input[Union[_builtins.str, ExemptionCategory]]]
+
+
+@pulumi.input_type
+class StandardAssignmentPropertiesExemptionDataArgs:
+    def __init__(__self__, *, assigned_assessment: Optional[pulumi.Input[AssignedAssessmentItemArgs]] = ..., exemption_category: Optional[pulumi.Input[Union[_builtins.str, ExemptionCategory]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignedAssessment")
+    def assigned_assessment(self) -> Optional[pulumi.Input[AssignedAssessmentItemArgs]]:
+        
+        ...
+    
+    @assigned_assessment.setter
+    def assigned_assessment(self, value: Optional[pulumi.Input[AssignedAssessmentItemArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exemptionCategory")
+    def exemption_category(self) -> Optional[pulumi.Input[Union[_builtins.str, ExemptionCategory]]]:
+        
+        ...
+    
+    @exemption_category.setter
+    def exemption_category(self, value: Optional[pulumi.Input[Union[_builtins.str, ExemptionCategory]]]): # -> None:
+        ...
+    
+
+
+class StandardComponentPropertiesArgsDict(TypedDict):
+    
+    key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class StandardComponentPropertiesArgs:
+    def __init__(__self__, *, key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key.setter
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SuppressionAlertsScopeArgsDict(TypedDict):
+    all_of: pulumi.Input[Sequence[pulumi.Input[ScopeElementArgsDict]]]
+
+
+@pulumi.input_type
+class SuppressionAlertsScopeArgs:
+    def __init__(__self__, *, all_of: pulumi.Input[Sequence[pulumi.Input[ScopeElementArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allOf")
+    def all_of(self) -> pulumi.Input[Sequence[pulumi.Input[ScopeElementArgs]]]:
+        
+        ...
+    
+    @all_of.setter
+    def all_of(self, value: pulumi.Input[Sequence[pulumi.Input[ScopeElementArgs]]]): # -> None:
+        ...
+    
+
+
+class ThresholdCustomAlertRuleArgsDict(TypedDict):
+    
+    is_enabled: pulumi.Input[_builtins.bool]
+    max_threshold: pulumi.Input[_builtins.int]
+    min_threshold: pulumi.Input[_builtins.int]
+    rule_type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ThresholdCustomAlertRuleArgs:
+    def __init__(__self__, *, is_enabled: pulumi.Input[_builtins.bool], max_threshold: pulumi.Input[_builtins.int], min_threshold: pulumi.Input[_builtins.int], rule_type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxThreshold")
+    def max_threshold(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @max_threshold.setter
+    def max_threshold(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minThreshold")
+    def min_threshold(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @min_threshold.setter
+    def min_threshold(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @rule_type.setter
+    def rule_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class TimeWindowCustomAlertRuleArgsDict(TypedDict):
+    
+    is_enabled: pulumi.Input[_builtins.bool]
+    max_threshold: pulumi.Input[_builtins.int]
+    min_threshold: pulumi.Input[_builtins.int]
+    rule_type: pulumi.Input[_builtins.str]
+    time_window_size: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class TimeWindowCustomAlertRuleArgs:
+    def __init__(__self__, *, is_enabled: pulumi.Input[_builtins.bool], max_threshold: pulumi.Input[_builtins.int], min_threshold: pulumi.Input[_builtins.int], rule_type: pulumi.Input[_builtins.str], time_window_size: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEnabled")
+    def is_enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @is_enabled.setter
+    def is_enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxThreshold")
+    def max_threshold(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @max_threshold.setter
+    def max_threshold(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minThreshold")
+    def min_threshold(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @min_threshold.setter
+    def min_threshold(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleType")
+    def rule_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @rule_type.setter
+    def rule_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeWindowSize")
+    def time_window_size(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @time_window_size.setter
+    def time_window_size(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class UserDefinedResourcesPropertiesArgsDict(TypedDict):
+    
+    query: pulumi.Input[_builtins.str]
+    query_subscriptions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+
+
+@pulumi.input_type
+class UserDefinedResourcesPropertiesArgs:
+    def __init__(__self__, *, query: pulumi.Input[_builtins.str], query_subscriptions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def query(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @query.setter
+    def query(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="querySubscriptions")
+    def query_subscriptions(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @query_subscriptions.setter
+    def query_subscriptions(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+
+
+class VmScannersBaseConfigurationArgsDict(TypedDict):
+    
+    exclusion_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    scanning_mode: NotRequired[pulumi.Input[Union[_builtins.str, ScanningMode]]]
+
+
+@pulumi.input_type
+class VmScannersBaseConfigurationArgs:
+    def __init__(__self__, *, exclusion_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., scanning_mode: Optional[pulumi.Input[Union[_builtins.str, ScanningMode]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exclusionTags")
+    def exclusion_tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @exclusion_tags.setter
+    def exclusion_tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanningMode")
+    def scanning_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, ScanningMode]]]:
+        
+        ...
+    
+    @scanning_mode.setter
+    def scanning_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, ScanningMode]]]): # -> None:
+        ...
+    
+
+

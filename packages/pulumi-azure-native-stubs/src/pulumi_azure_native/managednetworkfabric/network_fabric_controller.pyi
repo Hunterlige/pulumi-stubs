@@ -1,0 +1,285 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['NetworkFabricControllerArgs', 'NetworkFabricController']
+@pulumi.input_type
+class NetworkFabricControllerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], annotation: Optional[pulumi.Input[_builtins.str]] = ..., infrastructure_express_route_connections: Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]] = ..., ipv4_address_space: Optional[pulumi.Input[_builtins.str]] = ..., ipv6_address_space: Optional[pulumi.Input[_builtins.str]] = ..., is_workload_management_network_enabled: Optional[pulumi.Input[Union[_builtins.str, IsWorkloadManagementNetworkEnabled]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_resource_group_configuration: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]] = ..., network_fabric_controller_name: Optional[pulumi.Input[_builtins.str]] = ..., nfc_sku: Optional[pulumi.Input[Union[_builtins.str, NfcSku]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., workload_express_route_connections: Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @annotation.setter
+    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureExpressRouteConnections")
+    def infrastructure_express_route_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]]:
+        
+        ...
+    
+    @infrastructure_express_route_connections.setter
+    def infrastructure_express_route_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv4AddressSpace")
+    def ipv4_address_space(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ipv4_address_space.setter
+    def ipv4_address_space(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6AddressSpace")
+    def ipv6_address_space(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ipv6_address_space.setter
+    def ipv6_address_space(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isWorkloadManagementNetworkEnabled")
+    def is_workload_management_network_enabled(self) -> Optional[pulumi.Input[Union[_builtins.str, IsWorkloadManagementNetworkEnabled]]]:
+        
+        ...
+    
+    @is_workload_management_network_enabled.setter
+    def is_workload_management_network_enabled(self, value: Optional[pulumi.Input[Union[_builtins.str, IsWorkloadManagementNetworkEnabled]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupConfiguration")
+    def managed_resource_group_configuration(self) -> Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]:
+        
+        ...
+    
+    @managed_resource_group_configuration.setter
+    def managed_resource_group_configuration(self, value: Optional[pulumi.Input[ManagedResourceGroupConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricControllerName")
+    def network_fabric_controller_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @network_fabric_controller_name.setter
+    def network_fabric_controller_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nfcSku")
+    def nfc_sku(self) -> Optional[pulumi.Input[Union[_builtins.str, NfcSku]]]:
+        
+        ...
+    
+    @nfc_sku.setter
+    def nfc_sku(self, value: Optional[pulumi.Input[Union[_builtins.str, NfcSku]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadExpressRouteConnections")
+    def workload_express_route_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]]:
+        
+        ...
+    
+    @workload_express_route_connections.setter
+    def workload_express_route_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ExpressRouteConnectionInformationArgs]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class NetworkFabricController(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., annotation: Optional[pulumi.Input[_builtins.str]] = ..., infrastructure_express_route_connections: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ExpressRouteConnectionInformationArgs, ExpressRouteConnectionInformationArgsDict]]]]] = ..., ipv4_address_space: Optional[pulumi.Input[_builtins.str]] = ..., ipv6_address_space: Optional[pulumi.Input[_builtins.str]] = ..., is_workload_management_network_enabled: Optional[pulumi.Input[Union[_builtins.str, IsWorkloadManagementNetworkEnabled]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_resource_group_configuration: Optional[pulumi.Input[Union[ManagedResourceGroupConfigurationArgs, ManagedResourceGroupConfigurationArgsDict]]] = ..., network_fabric_controller_name: Optional[pulumi.Input[_builtins.str]] = ..., nfc_sku: Optional[pulumi.Input[Union[_builtins.str, NfcSku]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., workload_express_route_connections: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ExpressRouteConnectionInformationArgs, ExpressRouteConnectionInformationArgsDict]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: NetworkFabricControllerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> NetworkFabricController:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureExpressRouteConnections")
+    def infrastructure_express_route_connections(self) -> pulumi.Output[Optional[Sequence[outputs.ExpressRouteConnectionInformationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureServices")
+    def infrastructure_services(self) -> pulumi.Output[outputs.ControllerServicesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv4AddressSpace")
+    def ipv4_address_space(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6AddressSpace")
+    def ipv6_address_space(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isWorkloadManagementNetworkEnabled")
+    def is_workload_management_network_enabled(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupConfiguration")
+    def managed_resource_group_configuration(self) -> pulumi.Output[Optional[outputs.ManagedResourceGroupConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricIds")
+    def network_fabric_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nfcSku")
+    def nfc_sku(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantInternetGatewayIds")
+    def tenant_internet_gateway_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadExpressRouteConnections")
+    def workload_express_route_connections(self) -> pulumi.Output[Optional[Sequence[outputs.ExpressRouteConnectionInformationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadManagementNetwork")
+    def workload_management_network(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workloadServices")
+    def workload_services(self) -> pulumi.Output[outputs.ControllerServicesResponse]:
+        
+        ...
+    
+
+

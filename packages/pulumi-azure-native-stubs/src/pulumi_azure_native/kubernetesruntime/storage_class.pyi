@@ -1,0 +1,271 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['StorageClassArgs', 'StorageClass']
+@pulumi.input_type
+class StorageClassArgs:
+    def __init__(__self__, *, resource_uri: pulumi.Input[_builtins.str], type_properties: pulumi.Input[Union[BlobStorageClassTypePropertiesArgs, NativeStorageClassTypePropertiesArgs, NfsStorageClassTypePropertiesArgs, RwxStorageClassTypePropertiesArgs, SmbStorageClassTypePropertiesArgs]], access_modes: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AccessMode]]]]] = ..., allow_volume_expansion: Optional[pulumi.Input[Union[_builtins.str, VolumeExpansion]]] = ..., data_resilience: Optional[pulumi.Input[Union[_builtins.str, DataResilienceTier]]] = ..., failover_speed: Optional[pulumi.Input[Union[_builtins.str, FailoverTier]]] = ..., limitations: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mount_options: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., performance: Optional[pulumi.Input[Union[_builtins.str, PerformanceTier]]] = ..., priority: Optional[pulumi.Input[_builtins.float]] = ..., provisioner: Optional[pulumi.Input[_builtins.str]] = ..., storage_class_name: Optional[pulumi.Input[_builtins.str]] = ..., volume_binding_mode: Optional[pulumi.Input[Union[_builtins.str, VolumeBindingMode]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceUri")
+    def resource_uri(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_uri.setter
+    def resource_uri(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeProperties")
+    def type_properties(self) -> pulumi.Input[Union[BlobStorageClassTypePropertiesArgs, NativeStorageClassTypePropertiesArgs, NfsStorageClassTypePropertiesArgs, RwxStorageClassTypePropertiesArgs, SmbStorageClassTypePropertiesArgs]]:
+        
+        ...
+    
+    @type_properties.setter
+    def type_properties(self, value: pulumi.Input[Union[BlobStorageClassTypePropertiesArgs, NativeStorageClassTypePropertiesArgs, NfsStorageClassTypePropertiesArgs, RwxStorageClassTypePropertiesArgs, SmbStorageClassTypePropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessModes")
+    def access_modes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AccessMode]]]]]:
+        
+        ...
+    
+    @access_modes.setter
+    def access_modes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AccessMode]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowVolumeExpansion")
+    def allow_volume_expansion(self) -> Optional[pulumi.Input[Union[_builtins.str, VolumeExpansion]]]:
+        
+        ...
+    
+    @allow_volume_expansion.setter
+    def allow_volume_expansion(self, value: Optional[pulumi.Input[Union[_builtins.str, VolumeExpansion]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataResilience")
+    def data_resilience(self) -> Optional[pulumi.Input[Union[_builtins.str, DataResilienceTier]]]:
+        
+        ...
+    
+    @data_resilience.setter
+    def data_resilience(self, value: Optional[pulumi.Input[Union[_builtins.str, DataResilienceTier]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverSpeed")
+    def failover_speed(self) -> Optional[pulumi.Input[Union[_builtins.str, FailoverTier]]]:
+        
+        ...
+    
+    @failover_speed.setter
+    def failover_speed(self, value: Optional[pulumi.Input[Union[_builtins.str, FailoverTier]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def limitations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @limitations.setter
+    def limitations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountOptions")
+    def mount_options(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @mount_options.setter
+    def mount_options(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def performance(self) -> Optional[pulumi.Input[Union[_builtins.str, PerformanceTier]]]:
+        
+        ...
+    
+    @performance.setter
+    def performance(self, value: Optional[pulumi.Input[Union[_builtins.str, PerformanceTier]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @priority.setter
+    def priority(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def provisioner(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provisioner.setter
+    def provisioner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageClassName")
+    def storage_class_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_class_name.setter
+    def storage_class_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeBindingMode")
+    def volume_binding_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, VolumeBindingMode]]]:
+        
+        ...
+    
+    @volume_binding_mode.setter
+    def volume_binding_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, VolumeBindingMode]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:kubernetesruntime:StorageClass")
+class StorageClass(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., access_modes: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, AccessMode]]]]] = ..., allow_volume_expansion: Optional[pulumi.Input[Union[_builtins.str, VolumeExpansion]]] = ..., data_resilience: Optional[pulumi.Input[Union[_builtins.str, DataResilienceTier]]] = ..., failover_speed: Optional[pulumi.Input[Union[_builtins.str, FailoverTier]]] = ..., limitations: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mount_options: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., performance: Optional[pulumi.Input[Union[_builtins.str, PerformanceTier]]] = ..., priority: Optional[pulumi.Input[_builtins.float]] = ..., provisioner: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., storage_class_name: Optional[pulumi.Input[_builtins.str]] = ..., type_properties: Optional[pulumi.Input[Union[Union[BlobStorageClassTypePropertiesArgs, BlobStorageClassTypePropertiesArgsDict], Union[NativeStorageClassTypePropertiesArgs, NativeStorageClassTypePropertiesArgsDict], Union[NfsStorageClassTypePropertiesArgs, NfsStorageClassTypePropertiesArgsDict], Union[RwxStorageClassTypePropertiesArgs, RwxStorageClassTypePropertiesArgsDict], Union[SmbStorageClassTypePropertiesArgs, SmbStorageClassTypePropertiesArgsDict]]]] = ..., volume_binding_mode: Optional[pulumi.Input[Union[_builtins.str, VolumeBindingMode]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: StorageClassArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> StorageClass:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessModes")
+    def access_modes(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowVolumeExpansion")
+    def allow_volume_expansion(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataResilience")
+    def data_resilience(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverSpeed")
+    def failover_speed(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def limitations(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountOptions")
+    def mount_options(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def performance(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> pulumi.Output[Optional[_builtins.float]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def provisioner(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeProperties")
+    def type_properties(self) -> pulumi.Output[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeBindingMode")
+    def volume_binding_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

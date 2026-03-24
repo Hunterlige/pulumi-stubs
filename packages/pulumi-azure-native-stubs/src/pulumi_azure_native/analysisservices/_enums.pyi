@@ -1,0 +1,22 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ConnectionMode', 'SkuTier']
+@pulumi.type_token("azure-native:analysisservices:ConnectionMode")
+class ConnectionMode(_builtins.str, Enum):
+    
+    ALL = ...
+    READ_ONLY = ...
+
+
+@pulumi.type_token("azure-native:analysisservices:SkuTier")
+class SkuTier(_builtins.str, Enum):
+    
+    DEVELOPMENT = ...
+    BASIC = ...
+    STANDARD = ...
+
+

@@ -1,0 +1,24 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ProfileType', 'SkuName']
+@pulumi.type_token("azure-native:codesigning:ProfileType")
+class ProfileType(_builtins.str, Enum):
+    
+    PUBLIC_TRUST = ...
+    PRIVATE_TRUST = ...
+    PRIVATE_TRUST_CI_POLICY = ...
+    VBS_ENCLAVE = ...
+    PUBLIC_TRUST_TEST = ...
+
+
+@pulumi.type_token("azure-native:codesigning:SkuName")
+class SkuName(_builtins.str, Enum):
+    
+    BASIC = ...
+    PREMIUM = ...
+
+

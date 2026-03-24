@@ -1,0 +1,225 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DiskEncryptionSetArgs', 'DiskEncryptionSet']
+@pulumi.input_type
+class DiskEncryptionSetArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], active_key: Optional[pulumi.Input[KeyForDiskEncryptionSetArgs]] = ..., disk_encryption_set_name: Optional[pulumi.Input[_builtins.str]] = ..., encryption_type: Optional[pulumi.Input[Union[_builtins.str, DiskEncryptionSetType]]] = ..., federated_client_id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[EncryptionSetIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., rotation_to_latest_key_version_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activeKey")
+    def active_key(self) -> Optional[pulumi.Input[KeyForDiskEncryptionSetArgs]]:
+        
+        ...
+    
+    @active_key.setter
+    def active_key(self, value: Optional[pulumi.Input[KeyForDiskEncryptionSetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskEncryptionSetName")
+    def disk_encryption_set_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @disk_encryption_set_name.setter
+    def disk_encryption_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionType")
+    def encryption_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DiskEncryptionSetType]]]:
+        
+        ...
+    
+    @encryption_type.setter
+    def encryption_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DiskEncryptionSetType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="federatedClientId")
+    def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @federated_client_id.setter
+    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[EncryptionSetIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[EncryptionSetIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rotationToLatestKeyVersionEnabled")
+    def rotation_to_latest_key_version_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @rotation_to_latest_key_version_enabled.setter
+    def rotation_to_latest_key_version_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:compute:DiskEncryptionSet")
+class DiskEncryptionSet(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., active_key: Optional[pulumi.Input[Union[KeyForDiskEncryptionSetArgs, KeyForDiskEncryptionSetArgsDict]]] = ..., disk_encryption_set_name: Optional[pulumi.Input[_builtins.str]] = ..., encryption_type: Optional[pulumi.Input[Union[_builtins.str, DiskEncryptionSetType]]] = ..., federated_client_id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[Union[EncryptionSetIdentityArgs, EncryptionSetIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., rotation_to_latest_key_version_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DiskEncryptionSetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> DiskEncryptionSet:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activeKey")
+    def active_key(self) -> pulumi.Output[Optional[outputs.KeyForDiskEncryptionSetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoKeyRotationError")
+    def auto_key_rotation_error(self) -> pulumi.Output[outputs.ApiErrorResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionType")
+    def encryption_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="federatedClientId")
+    def federated_client_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.EncryptionSetIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastKeyRotationTimestamp")
+    def last_key_rotation_timestamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="previousKeys")
+    def previous_keys(self) -> pulumi.Output[Sequence[outputs.KeyForDiskEncryptionSetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rotationToLatestKeyVersionEnabled")
+    def rotation_to_latest_key_version_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,169 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DatastoreArgs', 'Datastore']
+@pulumi.input_type
+class DatastoreArgs:
+    def __init__(__self__, *, cluster_name: pulumi.Input[_builtins.str], private_cloud_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], datastore_name: Optional[pulumi.Input[_builtins.str]] = ..., disk_pool_volume: Optional[pulumi.Input[DiskPoolVolumeArgs]] = ..., elastic_san_volume: Optional[pulumi.Input[ElasticSanVolumeArgs]] = ..., net_app_volume: Optional[pulumi.Input[NetAppVolumeArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterName")
+    def cluster_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cluster_name.setter
+    def cluster_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateCloudName")
+    def private_cloud_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @private_cloud_name.setter
+    def private_cloud_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="datastoreName")
+    def datastore_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @datastore_name.setter
+    def datastore_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskPoolVolume")
+    def disk_pool_volume(self) -> Optional[pulumi.Input[DiskPoolVolumeArgs]]:
+        
+        ...
+    
+    @disk_pool_volume.setter
+    def disk_pool_volume(self, value: Optional[pulumi.Input[DiskPoolVolumeArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="elasticSanVolume")
+    def elastic_san_volume(self) -> Optional[pulumi.Input[ElasticSanVolumeArgs]]:
+        
+        ...
+    
+    @elastic_san_volume.setter
+    def elastic_san_volume(self, value: Optional[pulumi.Input[ElasticSanVolumeArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="netAppVolume")
+    def net_app_volume(self) -> Optional[pulumi.Input[NetAppVolumeArgs]]:
+        
+        ...
+    
+    @net_app_volume.setter
+    def net_app_volume(self, value: Optional[pulumi.Input[NetAppVolumeArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:avs:Datastore")
+class Datastore(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., datastore_name: Optional[pulumi.Input[_builtins.str]] = ..., disk_pool_volume: Optional[pulumi.Input[Union[DiskPoolVolumeArgs, DiskPoolVolumeArgsDict]]] = ..., elastic_san_volume: Optional[pulumi.Input[Union[ElasticSanVolumeArgs, ElasticSanVolumeArgsDict]]] = ..., net_app_volume: Optional[pulumi.Input[Union[NetAppVolumeArgs, NetAppVolumeArgsDict]]] = ..., private_cloud_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DatastoreArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Datastore:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskPoolVolume")
+    def disk_pool_volume(self) -> pulumi.Output[Optional[outputs.DiskPoolVolumeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="elasticSanVolume")
+    def elastic_san_volume(self) -> pulumi.Output[Optional[outputs.ElasticSanVolumeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="netAppVolume")
+    def net_app_volume(self) -> pulumi.Output[Optional[outputs.NetAppVolumeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

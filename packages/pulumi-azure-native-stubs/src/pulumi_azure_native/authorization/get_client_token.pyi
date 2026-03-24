@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetClientTokenResult', 'AwaitableGetClientTokenResult', 'get_client_token', 'get_client_token_output']
+@pulumi.output_type
+class GetClientTokenResult:
+    
+    def __init__(__self__, token=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetClientTokenResult(GetClientTokenResult):
+    def __await__(self): # -> Generator[Never, Any, GetClientTokenResult]:
+        ...
+    
+
+
+def get_client_token(endpoint: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetClientTokenResult:
+    
+    ...
+
+def get_client_token_output(endpoint: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetClientTokenResult]:
+    
+    ...
+

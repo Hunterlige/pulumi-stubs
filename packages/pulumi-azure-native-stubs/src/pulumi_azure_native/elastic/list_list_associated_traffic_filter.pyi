@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListListAssociatedTrafficFilterResult', 'AwaitableListListAssociatedTrafficFilterResult', 'list_list_associated_traffic_filter', 'list_list_associated_traffic_filter_output']
+@pulumi.output_type
+class ListListAssociatedTrafficFilterResult:
+    
+    def __init__(__self__, rulesets=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rulesets(self) -> Optional[Sequence[outputs.ElasticTrafficFilterResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListListAssociatedTrafficFilterResult(ListListAssociatedTrafficFilterResult):
+    def __await__(self): # -> Generator[Never, Any, ListListAssociatedTrafficFilterResult]:
+        ...
+    
+
+
+def list_list_associated_traffic_filter(monitor_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListListAssociatedTrafficFilterResult:
+    
+    ...
+
+def list_list_associated_traffic_filter_output(monitor_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListListAssociatedTrafficFilterResult]:
+    
+    ...
+

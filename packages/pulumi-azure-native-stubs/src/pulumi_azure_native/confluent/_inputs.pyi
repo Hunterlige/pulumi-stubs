@@ -1,0 +1,1797 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AzureBlobStorageSinkConnectorServiceInfoArgs', 'AzureBlobStorageSinkConnectorServiceInfoArgsDict', 'AzureBlobStorageSourceConnectorServiceInfoArgs', 'AzureBlobStorageSourceConnectorServiceInfoArgsDict', 'AzureCosmosDBSinkConnectorServiceInfoArgs', 'AzureCosmosDBSinkConnectorServiceInfoArgsDict', 'AzureCosmosDBSourceConnectorServiceInfoArgs', 'AzureCosmosDBSourceConnectorServiceInfoArgsDict', 'AzureSynapseAnalyticsSinkConnectorServiceInfoArgs', ..., 'ClusterConfigEntityArgs', 'ClusterConfigEntityArgsDict', 'ClusterStatusEntityArgs', 'ClusterStatusEntityArgsDict', 'ConnectorInfoBaseArgs', 'ConnectorInfoBaseArgsDict', 'KafkaAzureBlobStorageSinkConnectorInfoArgs', 'KafkaAzureBlobStorageSinkConnectorInfoArgsDict', 'KafkaAzureBlobStorageSourceConnectorInfoArgs', 'KafkaAzureBlobStorageSourceConnectorInfoArgsDict', 'KafkaAzureCosmosDBSinkConnectorInfoArgs', 'KafkaAzureCosmosDBSinkConnectorInfoArgsDict', 'KafkaAzureCosmosDBSourceConnectorInfoArgs', 'KafkaAzureCosmosDBSourceConnectorInfoArgsDict', 'KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs', ..., 'LinkOrganizationArgs', 'LinkOrganizationArgsDict', 'OfferDetailArgs', 'OfferDetailArgsDict', 'SCClusterByokEntityArgs', 'SCClusterByokEntityArgsDict', 'SCClusterNetworkEnvironmentEntityArgs', 'SCClusterNetworkEnvironmentEntityArgsDict', 'SCClusterSpecEntityArgs', 'SCClusterSpecEntityArgsDict', 'SCMetadataEntityArgs', 'SCMetadataEntityArgsDict', 'StreamGovernanceConfigArgs', 'StreamGovernanceConfigArgsDict', 'TopicMetadataEntityArgs', 'TopicMetadataEntityArgsDict', 'TopicsInputConfigArgs', 'TopicsInputConfigArgsDict', 'TopicsRelatedLinkArgs', 'TopicsRelatedLinkArgsDict', 'UserDetailArgs', 'UserDetailArgsDict']
+class AzureBlobStorageSinkConnectorServiceInfoArgsDict(TypedDict):
+    
+    connector_service_type: pulumi.Input[_builtins.str]
+    storage_account_key: NotRequired[pulumi.Input[_builtins.str]]
+    storage_account_name: NotRequired[pulumi.Input[_builtins.str]]
+    storage_container_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureBlobStorageSinkConnectorServiceInfoArgs:
+    def __init__(__self__, *, connector_service_type: pulumi.Input[_builtins.str], storage_account_key: Optional[pulumi.Input[_builtins.str]] = ..., storage_account_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_container_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceType")
+    def connector_service_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @connector_service_type.setter
+    def connector_service_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountKey")
+    def storage_account_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_key.setter
+    def storage_account_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountName")
+    def storage_account_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_name.setter
+    def storage_account_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageContainerName")
+    def storage_container_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_container_name.setter
+    def storage_container_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AzureBlobStorageSourceConnectorServiceInfoArgsDict(TypedDict):
+    
+    connector_service_type: pulumi.Input[_builtins.str]
+    storage_account_key: NotRequired[pulumi.Input[_builtins.str]]
+    storage_account_name: NotRequired[pulumi.Input[_builtins.str]]
+    storage_container_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureBlobStorageSourceConnectorServiceInfoArgs:
+    def __init__(__self__, *, connector_service_type: pulumi.Input[_builtins.str], storage_account_key: Optional[pulumi.Input[_builtins.str]] = ..., storage_account_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_container_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceType")
+    def connector_service_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @connector_service_type.setter
+    def connector_service_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountKey")
+    def storage_account_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_key.setter
+    def storage_account_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountName")
+    def storage_account_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_name.setter
+    def storage_account_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageContainerName")
+    def storage_container_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_container_name.setter
+    def storage_container_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AzureCosmosDBSinkConnectorServiceInfoArgsDict(TypedDict):
+    
+    connector_service_type: pulumi.Input[_builtins.str]
+    cosmos_connection_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_containers_topic_mapping: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_database_name: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_id_strategy: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_master_key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureCosmosDBSinkConnectorServiceInfoArgs:
+    def __init__(__self__, *, connector_service_type: pulumi.Input[_builtins.str], cosmos_connection_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_containers_topic_mapping: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_database_name: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_id_strategy: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_master_key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceType")
+    def connector_service_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @connector_service_type.setter
+    def connector_service_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosConnectionEndpoint")
+    def cosmos_connection_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_connection_endpoint.setter
+    def cosmos_connection_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosContainersTopicMapping")
+    def cosmos_containers_topic_mapping(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_containers_topic_mapping.setter
+    def cosmos_containers_topic_mapping(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosDatabaseName")
+    def cosmos_database_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_database_name.setter
+    def cosmos_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosIdStrategy")
+    def cosmos_id_strategy(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_id_strategy.setter
+    def cosmos_id_strategy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosMasterKey")
+    def cosmos_master_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_master_key.setter
+    def cosmos_master_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AzureCosmosDBSourceConnectorServiceInfoArgsDict(TypedDict):
+    
+    connector_service_type: pulumi.Input[_builtins.str]
+    cosmos_connection_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_containers_topic_mapping: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_database_name: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_master_key: NotRequired[pulumi.Input[_builtins.str]]
+    cosmos_message_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    cosmos_message_key_field: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureCosmosDBSourceConnectorServiceInfoArgs:
+    def __init__(__self__, *, connector_service_type: pulumi.Input[_builtins.str], cosmos_connection_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_containers_topic_mapping: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_database_name: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_master_key: Optional[pulumi.Input[_builtins.str]] = ..., cosmos_message_key_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., cosmos_message_key_field: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceType")
+    def connector_service_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @connector_service_type.setter
+    def connector_service_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosConnectionEndpoint")
+    def cosmos_connection_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_connection_endpoint.setter
+    def cosmos_connection_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosContainersTopicMapping")
+    def cosmos_containers_topic_mapping(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_containers_topic_mapping.setter
+    def cosmos_containers_topic_mapping(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosDatabaseName")
+    def cosmos_database_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_database_name.setter
+    def cosmos_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosMasterKey")
+    def cosmos_master_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_master_key.setter
+    def cosmos_master_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosMessageKeyEnabled")
+    def cosmos_message_key_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @cosmos_message_key_enabled.setter
+    def cosmos_message_key_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosMessageKeyField")
+    def cosmos_message_key_field(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cosmos_message_key_field.setter
+    def cosmos_message_key_field(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AzureSynapseAnalyticsSinkConnectorServiceInfoArgsDict(TypedDict):
+    
+    connector_service_type: pulumi.Input[_builtins.str]
+    synapse_sql_database_name: NotRequired[pulumi.Input[_builtins.str]]
+    synapse_sql_password: NotRequired[pulumi.Input[_builtins.str]]
+    synapse_sql_server_name: NotRequired[pulumi.Input[_builtins.str]]
+    synapse_sql_user: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureSynapseAnalyticsSinkConnectorServiceInfoArgs:
+    def __init__(__self__, *, connector_service_type: pulumi.Input[_builtins.str], synapse_sql_database_name: Optional[pulumi.Input[_builtins.str]] = ..., synapse_sql_password: Optional[pulumi.Input[_builtins.str]] = ..., synapse_sql_server_name: Optional[pulumi.Input[_builtins.str]] = ..., synapse_sql_user: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceType")
+    def connector_service_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @connector_service_type.setter
+    def connector_service_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="synapseSqlDatabaseName")
+    def synapse_sql_database_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @synapse_sql_database_name.setter
+    def synapse_sql_database_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="synapseSqlPassword")
+    def synapse_sql_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @synapse_sql_password.setter
+    def synapse_sql_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="synapseSqlServerName")
+    def synapse_sql_server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @synapse_sql_server_name.setter
+    def synapse_sql_server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="synapseSqlUser")
+    def synapse_sql_user(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @synapse_sql_user.setter
+    def synapse_sql_user(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ClusterConfigEntityArgsDict(TypedDict):
+    
+    kind: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ClusterConfigEntityArgs:
+    def __init__(__self__, *, kind: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ClusterStatusEntityArgsDict(TypedDict):
+    
+    cku: NotRequired[pulumi.Input[_builtins.int]]
+    phase: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ClusterStatusEntityArgs:
+    def __init__(__self__, *, cku: Optional[pulumi.Input[_builtins.int]] = ..., phase: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cku(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @cku.setter
+    def cku(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def phase(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @phase.setter
+    def phase(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectorInfoBaseArgsDict(TypedDict):
+    
+    connector_class: NotRequired[pulumi.Input[Union[_builtins.str, ConnectorClass]]]
+    connector_id: NotRequired[pulumi.Input[_builtins.str]]
+    connector_name: NotRequired[pulumi.Input[_builtins.str]]
+    connector_state: NotRequired[pulumi.Input[Union[_builtins.str, ConnectorStatus]]]
+    connector_type: NotRequired[pulumi.Input[Union[_builtins.str, ConnectorType]]]
+
+
+@pulumi.input_type
+class ConnectorInfoBaseArgs:
+    def __init__(__self__, *, connector_class: Optional[pulumi.Input[Union[_builtins.str, ConnectorClass]]] = ..., connector_id: Optional[pulumi.Input[_builtins.str]] = ..., connector_name: Optional[pulumi.Input[_builtins.str]] = ..., connector_state: Optional[pulumi.Input[Union[_builtins.str, ConnectorStatus]]] = ..., connector_type: Optional[pulumi.Input[Union[_builtins.str, ConnectorType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorClass")
+    def connector_class(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectorClass]]]:
+        
+        ...
+    
+    @connector_class.setter
+    def connector_class(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectorClass]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorId")
+    def connector_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connector_id.setter
+    def connector_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorName")
+    def connector_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connector_name.setter
+    def connector_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorState")
+    def connector_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectorStatus]]]:
+        
+        ...
+    
+    @connector_state.setter
+    def connector_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectorStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorType")
+    def connector_type(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectorType]]]:
+        
+        ...
+    
+    @connector_type.setter
+    def connector_type(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectorType]]]): # -> None:
+        ...
+    
+
+
+class KafkaAzureBlobStorageSinkConnectorInfoArgsDict(TypedDict):
+    
+    partner_connector_type: pulumi.Input[_builtins.str]
+    api_key: NotRequired[pulumi.Input[_builtins.str]]
+    api_secret: NotRequired[pulumi.Input[_builtins.str]]
+    auth_type: NotRequired[pulumi.Input[Union[_builtins.str, AuthType]]]
+    flush_size: NotRequired[pulumi.Input[_builtins.str]]
+    input_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    max_tasks: NotRequired[pulumi.Input[_builtins.str]]
+    output_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    service_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    time_interval: NotRequired[pulumi.Input[_builtins.str]]
+    topics: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    topics_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KafkaAzureBlobStorageSinkConnectorInfoArgs:
+    def __init__(__self__, *, partner_connector_type: pulumi.Input[_builtins.str], api_key: Optional[pulumi.Input[_builtins.str]] = ..., api_secret: Optional[pulumi.Input[_builtins.str]] = ..., auth_type: Optional[pulumi.Input[Union[_builtins.str, AuthType]]] = ..., flush_size: Optional[pulumi.Input[_builtins.str]] = ..., input_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., max_tasks: Optional[pulumi.Input[_builtins.str]] = ..., output_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., service_account_id: Optional[pulumi.Input[_builtins.str]] = ..., time_interval: Optional[pulumi.Input[_builtins.str]] = ..., topics: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., topics_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorType")
+    def partner_connector_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_connector_type.setter
+    def partner_connector_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiSecret")
+    def api_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_secret.setter
+    def api_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthType]]]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flushSize")
+    def flush_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @flush_size.setter
+    def flush_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputFormat")
+    def input_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @input_format.setter
+    def input_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxTasks")
+    def max_tasks(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @max_tasks.setter
+    def max_tasks(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputFormat")
+    def output_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @output_format.setter
+    def output_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountId")
+    def service_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_id.setter
+    def service_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeInterval")
+    def time_interval(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @time_interval.setter
+    def time_interval(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def topics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @topics.setter
+    def topics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsDir")
+    def topics_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topics_dir.setter
+    def topics_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KafkaAzureBlobStorageSourceConnectorInfoArgsDict(TypedDict):
+    
+    partner_connector_type: pulumi.Input[_builtins.str]
+    api_key: NotRequired[pulumi.Input[_builtins.str]]
+    api_secret: NotRequired[pulumi.Input[_builtins.str]]
+    auth_type: NotRequired[pulumi.Input[Union[_builtins.str, AuthType]]]
+    input_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    max_tasks: NotRequired[pulumi.Input[_builtins.str]]
+    output_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    service_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    topic_regex: NotRequired[pulumi.Input[_builtins.str]]
+    topics_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KafkaAzureBlobStorageSourceConnectorInfoArgs:
+    def __init__(__self__, *, partner_connector_type: pulumi.Input[_builtins.str], api_key: Optional[pulumi.Input[_builtins.str]] = ..., api_secret: Optional[pulumi.Input[_builtins.str]] = ..., auth_type: Optional[pulumi.Input[Union[_builtins.str, AuthType]]] = ..., input_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., max_tasks: Optional[pulumi.Input[_builtins.str]] = ..., output_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., service_account_id: Optional[pulumi.Input[_builtins.str]] = ..., topic_regex: Optional[pulumi.Input[_builtins.str]] = ..., topics_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorType")
+    def partner_connector_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_connector_type.setter
+    def partner_connector_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiSecret")
+    def api_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_secret.setter
+    def api_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthType]]]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputFormat")
+    def input_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @input_format.setter
+    def input_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxTasks")
+    def max_tasks(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @max_tasks.setter
+    def max_tasks(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputFormat")
+    def output_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @output_format.setter
+    def output_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountId")
+    def service_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_id.setter
+    def service_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicRegex")
+    def topic_regex(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_regex.setter
+    def topic_regex(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsDir")
+    def topics_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topics_dir.setter
+    def topics_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KafkaAzureCosmosDBSinkConnectorInfoArgsDict(TypedDict):
+    
+    partner_connector_type: pulumi.Input[_builtins.str]
+    api_key: NotRequired[pulumi.Input[_builtins.str]]
+    api_secret: NotRequired[pulumi.Input[_builtins.str]]
+    auth_type: NotRequired[pulumi.Input[Union[_builtins.str, AuthType]]]
+    flush_size: NotRequired[pulumi.Input[_builtins.str]]
+    input_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    max_tasks: NotRequired[pulumi.Input[_builtins.str]]
+    output_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    service_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    time_interval: NotRequired[pulumi.Input[_builtins.str]]
+    topics: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    topics_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KafkaAzureCosmosDBSinkConnectorInfoArgs:
+    def __init__(__self__, *, partner_connector_type: pulumi.Input[_builtins.str], api_key: Optional[pulumi.Input[_builtins.str]] = ..., api_secret: Optional[pulumi.Input[_builtins.str]] = ..., auth_type: Optional[pulumi.Input[Union[_builtins.str, AuthType]]] = ..., flush_size: Optional[pulumi.Input[_builtins.str]] = ..., input_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., max_tasks: Optional[pulumi.Input[_builtins.str]] = ..., output_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., service_account_id: Optional[pulumi.Input[_builtins.str]] = ..., time_interval: Optional[pulumi.Input[_builtins.str]] = ..., topics: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., topics_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorType")
+    def partner_connector_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_connector_type.setter
+    def partner_connector_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiSecret")
+    def api_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_secret.setter
+    def api_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthType]]]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flushSize")
+    def flush_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @flush_size.setter
+    def flush_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputFormat")
+    def input_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @input_format.setter
+    def input_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxTasks")
+    def max_tasks(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @max_tasks.setter
+    def max_tasks(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputFormat")
+    def output_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @output_format.setter
+    def output_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountId")
+    def service_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_id.setter
+    def service_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeInterval")
+    def time_interval(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @time_interval.setter
+    def time_interval(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def topics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @topics.setter
+    def topics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsDir")
+    def topics_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topics_dir.setter
+    def topics_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KafkaAzureCosmosDBSourceConnectorInfoArgsDict(TypedDict):
+    
+    partner_connector_type: pulumi.Input[_builtins.str]
+    api_key: NotRequired[pulumi.Input[_builtins.str]]
+    api_secret: NotRequired[pulumi.Input[_builtins.str]]
+    auth_type: NotRequired[pulumi.Input[Union[_builtins.str, AuthType]]]
+    input_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    max_tasks: NotRequired[pulumi.Input[_builtins.str]]
+    output_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    service_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    topic_regex: NotRequired[pulumi.Input[_builtins.str]]
+    topics_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KafkaAzureCosmosDBSourceConnectorInfoArgs:
+    def __init__(__self__, *, partner_connector_type: pulumi.Input[_builtins.str], api_key: Optional[pulumi.Input[_builtins.str]] = ..., api_secret: Optional[pulumi.Input[_builtins.str]] = ..., auth_type: Optional[pulumi.Input[Union[_builtins.str, AuthType]]] = ..., input_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., max_tasks: Optional[pulumi.Input[_builtins.str]] = ..., output_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., service_account_id: Optional[pulumi.Input[_builtins.str]] = ..., topic_regex: Optional[pulumi.Input[_builtins.str]] = ..., topics_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorType")
+    def partner_connector_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_connector_type.setter
+    def partner_connector_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiSecret")
+    def api_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_secret.setter
+    def api_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthType]]]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputFormat")
+    def input_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @input_format.setter
+    def input_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxTasks")
+    def max_tasks(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @max_tasks.setter
+    def max_tasks(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputFormat")
+    def output_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @output_format.setter
+    def output_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountId")
+    def service_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_id.setter
+    def service_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicRegex")
+    def topic_regex(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_regex.setter
+    def topic_regex(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsDir")
+    def topics_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topics_dir.setter
+    def topics_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KafkaAzureSynapseAnalyticsSinkConnectorInfoArgsDict(TypedDict):
+    
+    partner_connector_type: pulumi.Input[_builtins.str]
+    api_key: NotRequired[pulumi.Input[_builtins.str]]
+    api_secret: NotRequired[pulumi.Input[_builtins.str]]
+    auth_type: NotRequired[pulumi.Input[Union[_builtins.str, AuthType]]]
+    flush_size: NotRequired[pulumi.Input[_builtins.str]]
+    input_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    max_tasks: NotRequired[pulumi.Input[_builtins.str]]
+    output_format: NotRequired[pulumi.Input[Union[_builtins.str, DataFormatType]]]
+    service_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    time_interval: NotRequired[pulumi.Input[_builtins.str]]
+    topics: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    topics_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs:
+    def __init__(__self__, *, partner_connector_type: pulumi.Input[_builtins.str], api_key: Optional[pulumi.Input[_builtins.str]] = ..., api_secret: Optional[pulumi.Input[_builtins.str]] = ..., auth_type: Optional[pulumi.Input[Union[_builtins.str, AuthType]]] = ..., flush_size: Optional[pulumi.Input[_builtins.str]] = ..., input_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., max_tasks: Optional[pulumi.Input[_builtins.str]] = ..., output_format: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]] = ..., service_account_id: Optional[pulumi.Input[_builtins.str]] = ..., time_interval: Optional[pulumi.Input[_builtins.str]] = ..., topics: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., topics_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorType")
+    def partner_connector_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @partner_connector_type.setter
+    def partner_connector_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiSecret")
+    def api_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_secret.setter
+    def api_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthType]]]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flushSize")
+    def flush_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @flush_size.setter
+    def flush_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputFormat")
+    def input_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @input_format.setter
+    def input_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxTasks")
+    def max_tasks(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @max_tasks.setter
+    def max_tasks(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outputFormat")
+    def output_format(self) -> Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]:
+        
+        ...
+    
+    @output_format.setter
+    def output_format(self, value: Optional[pulumi.Input[Union[_builtins.str, DataFormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAccountId")
+    def service_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_account_id.setter
+    def service_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeInterval")
+    def time_interval(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @time_interval.setter
+    def time_interval(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def topics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @topics.setter
+    def topics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsDir")
+    def topics_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topics_dir.setter
+    def topics_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class LinkOrganizationArgsDict(TypedDict):
+    
+    token: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class LinkOrganizationArgs:
+    def __init__(__self__, *, token: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @token.setter
+    def token(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class OfferDetailArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+    plan_id: pulumi.Input[_builtins.str]
+    plan_name: pulumi.Input[_builtins.str]
+    publisher_id: pulumi.Input[_builtins.str]
+    term_unit: pulumi.Input[_builtins.str]
+    private_offer_id: NotRequired[pulumi.Input[_builtins.str]]
+    private_offer_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, SaaSOfferStatus]]]
+    term_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class OfferDetailArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], plan_id: pulumi.Input[_builtins.str], plan_name: pulumi.Input[_builtins.str], publisher_id: pulumi.Input[_builtins.str], term_unit: pulumi.Input[_builtins.str], private_offer_id: Optional[pulumi.Input[_builtins.str]] = ..., private_offer_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, SaaSOfferStatus]]] = ..., term_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planId")
+    def plan_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_id.setter
+    def plan_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planName")
+    def plan_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_name.setter
+    def plan_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publisherId")
+    def publisher_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @publisher_id.setter
+    def publisher_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termUnit")
+    def term_unit(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @term_unit.setter
+    def term_unit(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateOfferId")
+    def private_offer_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @private_offer_id.setter
+    def private_offer_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateOfferIds")
+    def private_offer_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @private_offer_ids.setter
+    def private_offer_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, SaaSOfferStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, SaaSOfferStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termId")
+    def term_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @term_id.setter
+    def term_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SCClusterByokEntityArgsDict(TypedDict):
+    
+    id: NotRequired[pulumi.Input[_builtins.str]]
+    related: NotRequired[pulumi.Input[_builtins.str]]
+    resource_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SCClusterByokEntityArgs:
+    def __init__(__self__, *, id: Optional[pulumi.Input[_builtins.str]] = ..., related: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def related(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @related.setter
+    def related(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SCClusterNetworkEnvironmentEntityArgsDict(TypedDict):
+    
+    environment: NotRequired[pulumi.Input[_builtins.str]]
+    id: NotRequired[pulumi.Input[_builtins.str]]
+    related: NotRequired[pulumi.Input[_builtins.str]]
+    resource_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SCClusterNetworkEnvironmentEntityArgs:
+    def __init__(__self__, *, environment: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., related: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def environment(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @environment.setter
+    def environment(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def related(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @related.setter
+    def related(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SCClusterSpecEntityArgsDict(TypedDict):
+    
+    api_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    availability: NotRequired[pulumi.Input[_builtins.str]]
+    byok: NotRequired[pulumi.Input[SCClusterByokEntityArgsDict]]
+    cloud: NotRequired[pulumi.Input[_builtins.str]]
+    config: NotRequired[pulumi.Input[ClusterConfigEntityArgsDict]]
+    environment: NotRequired[pulumi.Input[SCClusterNetworkEnvironmentEntityArgsDict]]
+    http_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    kafka_bootstrap_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    network: NotRequired[pulumi.Input[SCClusterNetworkEnvironmentEntityArgsDict]]
+    package: NotRequired[pulumi.Input[Union[_builtins.str, Package]]]
+    region: NotRequired[pulumi.Input[_builtins.str]]
+    zone: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SCClusterSpecEntityArgs:
+    def __init__(__self__, *, api_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., availability: Optional[pulumi.Input[_builtins.str]] = ..., byok: Optional[pulumi.Input[SCClusterByokEntityArgs]] = ..., cloud: Optional[pulumi.Input[_builtins.str]] = ..., config: Optional[pulumi.Input[ClusterConfigEntityArgs]] = ..., environment: Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]] = ..., http_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., kafka_bootstrap_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., network: Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]] = ..., package: Optional[pulumi.Input[Union[_builtins.str, Package]]] = ..., region: Optional[pulumi.Input[_builtins.str]] = ..., zone: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiEndpoint")
+    def api_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_endpoint.setter
+    def api_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def availability(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @availability.setter
+    def availability(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def byok(self) -> Optional[pulumi.Input[SCClusterByokEntityArgs]]:
+        
+        ...
+    
+    @byok.setter
+    def byok(self, value: Optional[pulumi.Input[SCClusterByokEntityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cloud(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cloud.setter
+    def cloud(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def config(self) -> Optional[pulumi.Input[ClusterConfigEntityArgs]]:
+        
+        ...
+    
+    @config.setter
+    def config(self, value: Optional[pulumi.Input[ClusterConfigEntityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def environment(self) -> Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]]:
+        
+        ...
+    
+    @environment.setter
+    def environment(self, value: Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpEndpoint")
+    def http_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @http_endpoint.setter
+    def http_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaBootstrapEndpoint")
+    def kafka_bootstrap_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kafka_bootstrap_endpoint.setter
+    def kafka_bootstrap_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def network(self) -> Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]]:
+        
+        ...
+    
+    @network.setter
+    def network(self, value: Optional[pulumi.Input[SCClusterNetworkEnvironmentEntityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def package(self) -> Optional[pulumi.Input[Union[_builtins.str, Package]]]:
+        
+        ...
+    
+    @package.setter
+    def package(self, value: Optional[pulumi.Input[Union[_builtins.str, Package]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def region(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @region.setter
+    def region(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zone(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @zone.setter
+    def zone(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SCMetadataEntityArgsDict(TypedDict):
+    
+    created_timestamp: NotRequired[pulumi.Input[_builtins.str]]
+    deleted_timestamp: NotRequired[pulumi.Input[_builtins.str]]
+    resource_name: NotRequired[pulumi.Input[_builtins.str]]
+    self: NotRequired[pulumi.Input[_builtins.str]]
+    updated_timestamp: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SCMetadataEntityArgs:
+    def __init__(__self__, *, created_timestamp: Optional[pulumi.Input[_builtins.str]] = ..., deleted_timestamp: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ..., self: Optional[pulumi.Input[_builtins.str]] = ..., updated_timestamp: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimestamp")
+    def created_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @created_timestamp.setter
+    def created_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deletedTimestamp")
+    def deleted_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @deleted_timestamp.setter
+    def deleted_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def self(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @self.setter
+    def self(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedTimestamp")
+    def updated_timestamp(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @updated_timestamp.setter
+    def updated_timestamp(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class StreamGovernanceConfigArgsDict(TypedDict):
+    
+    package: NotRequired[pulumi.Input[Union[_builtins.str, Package]]]
+
+
+@pulumi.input_type
+class StreamGovernanceConfigArgs:
+    def __init__(__self__, *, package: Optional[pulumi.Input[Union[_builtins.str, Package]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def package(self) -> Optional[pulumi.Input[Union[_builtins.str, Package]]]:
+        
+        ...
+    
+    @package.setter
+    def package(self, value: Optional[pulumi.Input[Union[_builtins.str, Package]]]): # -> None:
+        ...
+    
+
+
+class TopicMetadataEntityArgsDict(TypedDict):
+    
+    resource_name: NotRequired[pulumi.Input[_builtins.str]]
+    self: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class TopicMetadataEntityArgs:
+    def __init__(__self__, *, resource_name: Optional[pulumi.Input[_builtins.str]] = ..., self: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def self(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @self.setter
+    def self(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class TopicsInputConfigArgsDict(TypedDict):
+    
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class TopicsInputConfigArgs:
+    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class TopicsRelatedLinkArgsDict(TypedDict):
+    
+    related: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class TopicsRelatedLinkArgs:
+    def __init__(__self__, *, related: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def related(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @related.setter
+    def related(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class UserDetailArgsDict(TypedDict):
+    
+    email_address: pulumi.Input[_builtins.str]
+    aad_email: NotRequired[pulumi.Input[_builtins.str]]
+    first_name: NotRequired[pulumi.Input[_builtins.str]]
+    last_name: NotRequired[pulumi.Input[_builtins.str]]
+    user_principal_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class UserDetailArgs:
+    def __init__(__self__, *, email_address: pulumi.Input[_builtins.str], aad_email: Optional[pulumi.Input[_builtins.str]] = ..., first_name: Optional[pulumi.Input[_builtins.str]] = ..., last_name: Optional[pulumi.Input[_builtins.str]] = ..., user_principal_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="emailAddress")
+    def email_address(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @email_address.setter
+    def email_address(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadEmail")
+    def aad_email(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aad_email.setter
+    def aad_email(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firstName")
+    def first_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @first_name.setter
+    def first_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastName")
+    def last_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_name.setter
+    def last_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userPrincipalName")
+    def user_principal_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_principal_name.setter
+    def user_principal_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPricingResult', 'AwaitableGetPricingResult', 'get_pricing', 'get_pricing_output']
+@pulumi.output_type
+class GetPricingResult:
+    
+    def __init__(__self__, azure_api_version=..., deprecated=..., enablement_time=..., enforce=..., extensions=..., free_trial_remaining_time=..., id=..., inherited=..., inherited_from=..., name=..., pricing_tier=..., replaced_by=..., resources_coverage_status=..., sub_plan=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def deprecated(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablementTime")
+    def enablement_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enforce(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def extensions(self) -> Optional[Sequence[outputs.ExtensionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="freeTrialRemainingTime")
+    def free_trial_remaining_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inherited(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inheritedFrom")
+    def inherited_from(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="pricingTier")
+    def pricing_tier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replacedBy")
+    def replaced_by(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourcesCoverageStatus")
+    def resources_coverage_status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subPlan")
+    def sub_plan(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPricingResult(GetPricingResult):
+    def __await__(self): # -> Generator[Never, Any, GetPricingResult]:
+        ...
+    
+
+
+def get_pricing(pricing_name: Optional[_builtins.str] = ..., scope_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPricingResult:
+    
+    ...
+
+def get_pricing_output(pricing_name: Optional[pulumi.Input[_builtins.str]] = ..., scope_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPricingResult]:
+    
+    ...
+

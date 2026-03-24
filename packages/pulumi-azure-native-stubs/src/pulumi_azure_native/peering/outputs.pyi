@@ -1,0 +1,449 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BgpSessionResponse', 'ContactDetailResponse', 'DirectConnectionResponse', 'ExchangeConnectionResponse', 'LogAnalyticsWorkspacePropertiesResponse', 'PeeringPropertiesDirectResponse', 'PeeringPropertiesExchangeResponse', 'PeeringServicePrefixEventResponse', 'PeeringServiceSkuResponse', 'PeeringSkuResponse', 'SubResourceResponse']
+@pulumi.output_type
+class BgpSessionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, session_state_v4: _builtins.str, session_state_v6: _builtins.str, max_prefixes_advertised_v4: Optional[_builtins.int] = ..., max_prefixes_advertised_v6: Optional[_builtins.int] = ..., md5_authentication_key: Optional[_builtins.str] = ..., microsoft_session_i_pv4_address: Optional[_builtins.str] = ..., microsoft_session_i_pv6_address: Optional[_builtins.str] = ..., peer_session_i_pv4_address: Optional[_builtins.str] = ..., peer_session_i_pv6_address: Optional[_builtins.str] = ..., session_prefix_v4: Optional[_builtins.str] = ..., session_prefix_v6: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionStateV4")
+    def session_state_v4(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionStateV6")
+    def session_state_v6(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxPrefixesAdvertisedV4")
+    def max_prefixes_advertised_v4(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxPrefixesAdvertisedV6")
+    def max_prefixes_advertised_v6(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="md5AuthenticationKey")
+    def md5_authentication_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="microsoftSessionIPv4Address")
+    def microsoft_session_i_pv4_address(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="microsoftSessionIPv6Address")
+    def microsoft_session_i_pv6_address(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerSessionIPv4Address")
+    def peer_session_i_pv4_address(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerSessionIPv6Address")
+    def peer_session_i_pv6_address(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionPrefixV4")
+    def session_prefix_v4(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionPrefixV6")
+    def session_prefix_v6(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ContactDetailResponse(dict):
+    
+    def __init__(__self__, *, email: Optional[_builtins.str] = ..., phone: Optional[_builtins.str] = ..., role: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def email(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def phone(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DirectConnectionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, connection_state: _builtins.str, error_message: _builtins.str, microsoft_tracking_id: _builtins.str, provisioned_bandwidth_in_mbps: _builtins.int, bandwidth_in_mbps: Optional[_builtins.int] = ..., bgp_session: Optional[outputs.BgpSessionResponse] = ..., connection_identifier: Optional[_builtins.str] = ..., peering_db_facility_id: Optional[_builtins.int] = ..., session_address_provider: Optional[_builtins.str] = ..., use_for_peering_service: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionState")
+    def connection_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorMessage")
+    def error_message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="microsoftTrackingId")
+    def microsoft_tracking_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisionedBandwidthInMbps")
+    def provisioned_bandwidth_in_mbps(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bandwidthInMbps")
+    def bandwidth_in_mbps(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bgpSession")
+    def bgp_session(self) -> Optional[outputs.BgpSessionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionIdentifier")
+    def connection_identifier(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringDBFacilityId")
+    def peering_db_facility_id(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sessionAddressProvider")
+    def session_address_provider(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useForPeeringService")
+    def use_for_peering_service(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExchangeConnectionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, connection_state: _builtins.str, error_message: _builtins.str, bgp_session: Optional[outputs.BgpSessionResponse] = ..., connection_identifier: Optional[_builtins.str] = ..., peering_db_facility_id: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionState")
+    def connection_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorMessage")
+    def error_message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bgpSession")
+    def bgp_session(self) -> Optional[outputs.BgpSessionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionIdentifier")
+    def connection_identifier(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringDBFacilityId")
+    def peering_db_facility_id(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class LogAnalyticsWorkspacePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, connected_agents: Sequence[_builtins.str], key: _builtins.str, workspace_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectedAgents")
+    def connected_agents(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceID")
+    def workspace_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PeeringPropertiesDirectResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, use_for_peering_service: _builtins.bool, connections: Optional[Sequence[outputs.DirectConnectionResponse]] = ..., direct_peering_type: Optional[_builtins.str] = ..., peer_asn: Optional[outputs.SubResourceResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useForPeeringService")
+    def use_for_peering_service(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connections(self) -> Optional[Sequence[outputs.DirectConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="directPeeringType")
+    def direct_peering_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsn")
+    def peer_asn(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PeeringPropertiesExchangeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, connections: Optional[Sequence[outputs.ExchangeConnectionResponse]] = ..., peer_asn: Optional[outputs.SubResourceResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connections(self) -> Optional[Sequence[outputs.ExchangeConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsn")
+    def peer_asn(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PeeringServicePrefixEventResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, event_description: _builtins.str, event_level: _builtins.str, event_summary: _builtins.str, event_timestamp: _builtins.str, event_type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventDescription")
+    def event_description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventLevel")
+    def event_level(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventSummary")
+    def event_summary(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventTimestamp")
+    def event_timestamp(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventType")
+    def event_type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PeeringServiceSkuResponse(dict):
+    
+    def __init__(__self__, *, name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PeeringSkuResponse(dict):
+    
+    def __init__(__self__, *, family: _builtins.str, size: _builtins.str, tier: _builtins.str, name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SubResourceResponse(dict):
+    
+    def __init__(__self__, *, id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

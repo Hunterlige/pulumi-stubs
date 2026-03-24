@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetProfileResult', 'AwaitableGetProfileResult', 'get_profile', 'get_profile_output']
+@pulumi.output_type
+class GetProfileResult:
+    
+    def __init__(__self__, allowed_endpoint_record_types=..., azure_api_version=..., dns_config=..., endpoints=..., id=..., location=..., max_return=..., monitor_config=..., name=..., profile_status=..., tags=..., traffic_routing_method=..., traffic_view_enrollment_status=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedEndpointRecordTypes")
+    def allowed_endpoint_record_types(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsConfig")
+    def dns_config(self) -> Optional[outputs.DnsConfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoints(self) -> Optional[Sequence[outputs.EndpointResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxReturn")
+    def max_return(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monitorConfig")
+    def monitor_config(self) -> Optional[outputs.MonitorConfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileStatus")
+    def profile_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficRoutingMethod")
+    def traffic_routing_method(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficViewEnrollmentStatus")
+    def traffic_view_enrollment_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetProfileResult(GetProfileResult):
+    def __await__(self): # -> Generator[Never, Any, GetProfileResult]:
+        ...
+    
+
+
+def get_profile(profile_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetProfileResult:
+    
+    ...
+
+def get_profile_output(profile_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetProfileResult]:
+    
+    ...
+

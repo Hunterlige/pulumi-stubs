@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetManagedClusterSnapshotResult', 'AwaitableGetManagedClusterSnapshotResult', 'get_managed_cluster_snapshot', 'get_managed_cluster_snapshot_output']
+@pulumi.output_type
+class GetManagedClusterSnapshotResult:
+    
+    def __init__(__self__, azure_api_version=..., creation_data=..., id=..., location=..., managed_cluster_properties_read_only=..., name=..., snapshot_type=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationData")
+    def creation_data(self) -> Optional[outputs.CreationDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedClusterPropertiesReadOnly")
+    def managed_cluster_properties_read_only(self) -> outputs.ManagedClusterPropertiesForSnapshotResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotType")
+    def snapshot_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetManagedClusterSnapshotResult(GetManagedClusterSnapshotResult):
+    def __await__(self): # -> Generator[Never, Any, GetManagedClusterSnapshotResult]:
+        ...
+    
+
+
+def get_managed_cluster_snapshot(resource_group_name: Optional[_builtins.str] = ..., resource_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetManagedClusterSnapshotResult:
+    
+    ...
+
+def get_managed_cluster_snapshot_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetManagedClusterSnapshotResult]:
+    
+    ...
+

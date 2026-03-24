@@ -1,0 +1,45 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetResourcesTagFilterArgs', 'GetResourcesTagFilterArgsDict']
+class GetResourcesTagFilterArgsDict(TypedDict):
+    key: _builtins.str
+    values: NotRequired[Sequence[_builtins.str]]
+
+
+@pulumi.input_type
+class GetResourcesTagFilterArgs:
+    def __init__(__self__, *, key: _builtins.str, values: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> _builtins.str:
+        
+        ...
+    
+    @key.setter
+    def key(self, value: _builtins.str): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def values(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @values.setter
+    def values(self, value: Optional[Sequence[_builtins.str]]): # -> None:
+        ...
+    
+
+

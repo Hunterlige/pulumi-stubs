@@ -1,0 +1,213 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['HypervSitesControllerArgs', 'HypervSitesController']
+@pulumi.input_type
+class HypervSitesControllerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], agent_details: Optional[pulumi.Input[SiteAgentPropertiesArgs]] = ..., appliance_name: Optional[pulumi.Input[_builtins.str]] = ..., discovery_solution_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., service_principal_identity_details: Optional[pulumi.Input[SiteSpnPropertiesArgs]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentDetails")
+    def agent_details(self) -> Optional[pulumi.Input[SiteAgentPropertiesArgs]]:
+        
+        ...
+    
+    @agent_details.setter
+    def agent_details(self, value: Optional[pulumi.Input[SiteAgentPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applianceName")
+    def appliance_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @appliance_name.setter
+    def appliance_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoverySolutionId")
+    def discovery_solution_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @discovery_solution_id.setter
+    def discovery_solution_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="servicePrincipalIdentityDetails")
+    def service_principal_identity_details(self) -> Optional[pulumi.Input[SiteSpnPropertiesArgs]]:
+        
+        ...
+    
+    @service_principal_identity_details.setter
+    def service_principal_identity_details(self, value: Optional[pulumi.Input[SiteSpnPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="siteName")
+    def site_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @site_name.setter
+    def site_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:offazure:HypervSitesController")
+class HypervSitesController(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., agent_details: Optional[pulumi.Input[Union[SiteAgentPropertiesArgs, SiteAgentPropertiesArgsDict]]] = ..., appliance_name: Optional[pulumi.Input[_builtins.str]] = ..., discovery_solution_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_principal_identity_details: Optional[pulumi.Input[Union[SiteSpnPropertiesArgs, SiteSpnPropertiesArgsDict]]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: HypervSitesControllerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> HypervSitesController:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentDetails")
+    def agent_details(self) -> pulumi.Output[Optional[outputs.SiteAgentPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applianceName")
+    def appliance_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoverySolutionId")
+    def discovery_solution_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="masterSiteId")
+    def master_site_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceEndpoint")
+    def service_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="servicePrincipalIdentityDetails")
+    def service_principal_identity_details(self) -> pulumi.Output[Optional[outputs.SiteSpnPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListGlobalRulestackAdvancedSecurityObjectsResult', ..., 'list_global_rulestack_advanced_security_objects', ...]
+@pulumi.output_type
+class ListGlobalRulestackAdvancedSecurityObjectsResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> outputs.AdvSecurityObjectModelResponse:
+        
+        ...
+    
+
+
+class AwaitableListGlobalRulestackAdvancedSecurityObjectsResult(ListGlobalRulestackAdvancedSecurityObjectsResult):
+    def __await__(self): # -> Generator[Never, Any, ListGlobalRulestackAdvancedSecurityObjectsResult]:
+        ...
+    
+
+
+def list_global_rulestack_advanced_security_objects(global_rulestack_name: Optional[_builtins.str] = ..., skip: Optional[_builtins.str] = ..., top: Optional[_builtins.int] = ..., type: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListGlobalRulestackAdvancedSecurityObjectsResult:
+    
+    ...
+
+def list_global_rulestack_advanced_security_objects_output(global_rulestack_name: Optional[pulumi.Input[_builtins.str]] = ..., skip: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., top: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListGlobalRulestackAdvancedSecurityObjectsResult]:
+    
+    ...
+

@@ -1,0 +1,383 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['RoleAssignmentArgs', 'RoleAssignment']
+@pulumi.input_type
+class RoleAssignmentArgs:
+    def __init__(__self__, *, hub_name: pulumi.Input[_builtins.str], principals: pulumi.Input[Sequence[pulumi.Input[AssignmentPrincipalArgs]]], resource_group_name: pulumi.Input[_builtins.str], role: pulumi.Input[RoleTypes], assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., conflation_policies: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., connectors: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., description: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., display_name: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., interactions: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., kpis: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., links: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., profiles: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., relationship_links: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., relationships: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., role_assignments: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., sas_policies: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., segments: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., views: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ..., widget_types: Optional[pulumi.Input[ResourceSetDescriptionArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hubName")
+    def hub_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @hub_name.setter
+    def hub_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def principals(self) -> pulumi.Input[Sequence[pulumi.Input[AssignmentPrincipalArgs]]]:
+        
+        ...
+    
+    @principals.setter
+    def principals(self, value: pulumi.Input[Sequence[pulumi.Input[AssignmentPrincipalArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> pulumi.Input[RoleTypes]:
+        
+        ...
+    
+    @role.setter
+    def role(self, value: pulumi.Input[RoleTypes]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentName")
+    def assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assignment_name.setter
+    def assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflationPolicies")
+    def conflation_policies(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @conflation_policies.setter
+    def conflation_policies(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connectors(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @connectors.setter
+    def connectors(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def interactions(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @interactions.setter
+    def interactions(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kpis(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @kpis.setter
+    def kpis(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def links(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @links.setter
+    def links(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def profiles(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @profiles.setter
+    def profiles(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relationshipLinks")
+    def relationship_links(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @relationship_links.setter
+    def relationship_links(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def relationships(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @relationships.setter
+    def relationships(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleAssignments")
+    def role_assignments(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @role_assignments.setter
+    def role_assignments(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sasPolicies")
+    def sas_policies(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @sas_policies.setter
+    def sas_policies(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def segments(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @segments.setter
+    def segments(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def views(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @views.setter
+    def views(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="widgetTypes")
+    def widget_types(self) -> Optional[pulumi.Input[ResourceSetDescriptionArgs]]:
+        
+        ...
+    
+    @widget_types.setter
+    def widget_types(self, value: Optional[pulumi.Input[ResourceSetDescriptionArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:customerinsights:RoleAssignment")
+class RoleAssignment(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., conflation_policies: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., connectors: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., description: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., display_name: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., hub_name: Optional[pulumi.Input[_builtins.str]] = ..., interactions: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., kpis: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., links: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., principals: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AssignmentPrincipalArgs, AssignmentPrincipalArgsDict]]]]] = ..., profiles: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., relationship_links: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., relationships: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[RoleTypes]] = ..., role_assignments: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., sas_policies: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., segments: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., views: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., widget_types: Optional[pulumi.Input[Union[ResourceSetDescriptionArgs, ResourceSetDescriptionArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: RoleAssignmentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> RoleAssignment:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentName")
+    def assignment_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflationPolicies")
+    def conflation_policies(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connectors(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def interactions(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kpis(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def links(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def principals(self) -> pulumi.Output[Sequence[outputs.AssignmentPrincipalResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def profiles(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relationshipLinks")
+    def relationship_links(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def relationships(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleAssignments")
+    def role_assignments(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sasPolicies")
+    def sas_policies(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def segments(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def views(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="widgetTypes")
+    def widget_types(self) -> pulumi.Output[Optional[outputs.ResourceSetDescriptionResponse]]:
+        
+        ...
+    
+
+

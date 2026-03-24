@@ -1,0 +1,149 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDeviceExtendedInformationResult', 'AwaitableGetDeviceExtendedInformationResult', 'get_device_extended_information', 'get_device_extended_information_output']
+@pulumi.output_type
+class GetDeviceExtendedInformationResult:
+    
+    def __init__(__self__, channel_integrity_key_name=..., channel_integrity_key_version=..., client_secret_store_id=..., client_secret_store_url=..., cloud_witness_container_name=..., cloud_witness_storage_account_name=..., cloud_witness_storage_endpoint=..., cluster_witness_type=..., device_secrets=..., encryption_key=..., encryption_key_thumbprint=..., file_share_witness_location=..., file_share_witness_username=..., id=..., key_vault_sync_status=..., name=..., resource_key=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="channelIntegrityKeyName")
+    def channel_integrity_key_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="channelIntegrityKeyVersion")
+    def channel_integrity_key_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecretStoreId")
+    def client_secret_store_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecretStoreUrl")
+    def client_secret_store_url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudWitnessContainerName")
+    def cloud_witness_container_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudWitnessStorageAccountName")
+    def cloud_witness_storage_account_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudWitnessStorageEndpoint")
+    def cloud_witness_storage_endpoint(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterWitnessType")
+    def cluster_witness_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceSecrets")
+    def device_secrets(self) -> Mapping[str, outputs.SecretResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionKey")
+    def encryption_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionKeyThumbprint")
+    def encryption_key_thumbprint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fileShareWitnessLocation")
+    def file_share_witness_location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fileShareWitnessUsername")
+    def file_share_witness_username(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultSyncStatus")
+    def key_vault_sync_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceKey")
+    def resource_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDeviceExtendedInformationResult(GetDeviceExtendedInformationResult):
+    def __await__(self): # -> Generator[Never, Any, GetDeviceExtendedInformationResult]:
+        ...
+    
+
+
+def get_device_extended_information(device_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDeviceExtendedInformationResult:
+    
+    ...
+
+def get_device_extended_information_output(device_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDeviceExtendedInformationResult]:
+    
+    ...
+

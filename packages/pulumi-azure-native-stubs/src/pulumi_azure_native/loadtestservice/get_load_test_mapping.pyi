@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetLoadTestMappingResult', 'AwaitableGetLoadTestMappingResult', 'get_load_test_mapping', 'get_load_test_mapping_output']
+@pulumi.output_type
+class GetLoadTestMappingResult:
+    
+    def __init__(__self__, azure_api_version=..., azure_load_testing_resource_id=..., id=..., name=..., source_resource_id=..., system_data=..., test_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureLoadTestingResourceId")
+    def azure_load_testing_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceResourceId")
+    def source_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testId")
+    def test_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetLoadTestMappingResult(GetLoadTestMappingResult):
+    def __await__(self): # -> Generator[Never, Any, GetLoadTestMappingResult]:
+        ...
+    
+
+
+def get_load_test_mapping(load_test_mapping_name: Optional[_builtins.str] = ..., resource_uri: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetLoadTestMappingResult:
+    
+    ...
+
+def get_load_test_mapping_output(load_test_mapping_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetLoadTestMappingResult]:
+    
+    ...
+

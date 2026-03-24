@@ -1,0 +1,81 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['EnterpriseKnowledgeGraphPropertiesArgs', 'EnterpriseKnowledgeGraphPropertiesArgsDict', 'SkuArgs', 'SkuArgsDict']
+class EnterpriseKnowledgeGraphPropertiesArgsDict(TypedDict):
+    
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    metadata: NotRequired[Any]
+    provisioning_state: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EnterpriseKnowledgeGraphPropertiesArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., provisioning_state: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Any]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[Union[_builtins.str, SkuName]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[Union[_builtins.str, SkuName]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[Union[_builtins.str, SkuName]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[Union[_builtins.str, SkuName]]): # -> None:
+        ...
+    
+
+

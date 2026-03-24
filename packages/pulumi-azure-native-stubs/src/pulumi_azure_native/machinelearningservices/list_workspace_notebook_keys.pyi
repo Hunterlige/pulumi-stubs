@@ -1,0 +1,45 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListWorkspaceNotebookKeysResult', 'AwaitableListWorkspaceNotebookKeysResult', 'list_workspace_notebook_keys', 'list_workspace_notebook_keys_output']
+@pulumi.output_type
+class ListWorkspaceNotebookKeysResult:
+    def __init__(__self__, primary_access_key=..., secondary_access_key=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryAccessKey")
+    def primary_access_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryAccessKey")
+    def secondary_access_key(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableListWorkspaceNotebookKeysResult(ListWorkspaceNotebookKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListWorkspaceNotebookKeysResult]:
+        ...
+    
+
+
+def list_workspace_notebook_keys(resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListWorkspaceNotebookKeysResult:
+    
+    ...
+
+def list_workspace_notebook_keys_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListWorkspaceNotebookKeysResult]:
+    
+    ...
+

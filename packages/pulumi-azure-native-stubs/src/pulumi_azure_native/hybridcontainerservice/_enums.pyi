@@ -1,0 +1,65 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AutoUpgradeOptions', 'ExtendedLocationTypes', 'LicenseType', 'LoadBalancerSku', 'Mode', 'NetworkPolicy', 'OsType', 'ResourceIdentityType']
+@pulumi.type_token(...)
+class AutoUpgradeOptions(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token(...)
+class ExtendedLocationTypes(_builtins.str, Enum):
+    
+    CUSTOM_LOCATION = ...
+
+
+@pulumi.type_token("azure-native:hybridcontainerservice:LicenseType")
+class LicenseType(_builtins.str, Enum):
+    
+    WINDOWS_SERVER = ...
+    NONE = ...
+
+
+@pulumi.type_token(...)
+class LoadBalancerSku(_builtins.str, Enum):
+    
+    UNSTACKED_HAPROXY = ...
+    STACKED_KUBE_VIP = ...
+    STACKED_METALLB = ...
+    UNMANAGED = ...
+
+
+@pulumi.type_token("azure-native:hybridcontainerservice:Mode")
+class Mode(_builtins.str, Enum):
+    
+    SYSTEM = ...
+    LB = ...
+    USER = ...
+
+
+@pulumi.type_token("azure-native:hybridcontainerservice:NetworkPolicy")
+class NetworkPolicy(_builtins.str, Enum):
+    
+    CALICO = ...
+    FLANNEL = ...
+
+
+@pulumi.type_token("azure-native:hybridcontainerservice:OsType")
+class OsType(_builtins.str, Enum):
+    
+    LINUX = ...
+    WINDOWS = ...
+
+
+@pulumi.type_token(...)
+class ResourceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+
+

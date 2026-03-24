@@ -1,0 +1,20 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['Kind', 'Type']
+@pulumi.type_token("azure-native:managednetwork:Kind")
+class Kind(_builtins.str, Enum):
+    
+    CONNECTIVITY = ...
+
+
+@pulumi.type_token("azure-native:managednetwork:Type")
+class Type(_builtins.str, Enum):
+    
+    HUB_AND_SPOKE_TOPOLOGY = ...
+    MESH_TOPOLOGY = ...
+
+

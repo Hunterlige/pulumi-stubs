@@ -1,0 +1,239 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualNetworkGatewayConnectionResult', 'AwaitableGetVirtualNetworkGatewayConnectionResult', 'get_virtual_network_gateway_connection', 'get_virtual_network_gateway_connection_output']
+@pulumi.output_type
+class GetVirtualNetworkGatewayConnectionResult:
+    
+    def __init__(__self__, authorization_key=..., azure_api_version=..., connection_mode=..., connection_protocol=..., connection_status=..., connection_type=..., dpd_timeout_seconds=..., egress_bytes_transferred=..., egress_nat_rules=..., enable_bgp=..., enable_private_link_fast_path=..., etag=..., express_route_gateway_bypass=..., gateway_custom_bgp_ip_addresses=..., id=..., ingress_bytes_transferred=..., ingress_nat_rules=..., ipsec_policies=..., local_network_gateway2=..., location=..., name=..., peer=..., provisioning_state=..., resource_guid=..., routing_weight=..., shared_key=..., tags=..., traffic_selector_policies=..., tunnel_connection_status=..., type=..., use_local_azure_ip_address=..., use_policy_based_traffic_selectors=..., virtual_network_gateway1=..., virtual_network_gateway2=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationKey")
+    def authorization_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionMode")
+    def connection_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionProtocol")
+    def connection_protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionStatus")
+    def connection_status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionType")
+    def connection_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dpdTimeoutSeconds")
+    def dpd_timeout_seconds(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="egressBytesTransferred")
+    def egress_bytes_transferred(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="egressNatRules")
+    def egress_nat_rules(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableBgp")
+    def enable_bgp(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enablePrivateLinkFastPath")
+    def enable_private_link_fast_path(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expressRouteGatewayBypass")
+    def express_route_gateway_bypass(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewayCustomBgpIpAddresses")
+    def gateway_custom_bgp_ip_addresses(self) -> Optional[Sequence[outputs.GatewayCustomBgpIpAddressIpConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ingressBytesTransferred")
+    def ingress_bytes_transferred(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ingressNatRules")
+    def ingress_nat_rules(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipsecPolicies")
+    def ipsec_policies(self) -> Optional[Sequence[outputs.IpsecPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localNetworkGateway2")
+    def local_network_gateway2(self) -> Optional[outputs.LocalNetworkGatewayResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def peer(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGuid")
+    def resource_guid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingWeight")
+    def routing_weight(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedKey")
+    def shared_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficSelectorPolicies")
+    def traffic_selector_policies(self) -> Optional[Sequence[outputs.TrafficSelectorPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tunnelConnectionStatus")
+    def tunnel_connection_status(self) -> Sequence[outputs.TunnelConnectionHealthResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useLocalAzureIpAddress")
+    def use_local_azure_ip_address(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usePolicyBasedTrafficSelectors")
+    def use_policy_based_traffic_selectors(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkGateway1")
+    def virtual_network_gateway1(self) -> outputs.VirtualNetworkGatewayResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkGateway2")
+    def virtual_network_gateway2(self) -> Optional[outputs.VirtualNetworkGatewayResponse]:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualNetworkGatewayConnectionResult(GetVirtualNetworkGatewayConnectionResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualNetworkGatewayConnectionResult]:
+        ...
+    
+
+
+def get_virtual_network_gateway_connection(resource_group_name: Optional[_builtins.str] = ..., virtual_network_gateway_connection_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualNetworkGatewayConnectionResult:
+    
+    ...
+
+def get_virtual_network_gateway_connection_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_gateway_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualNetworkGatewayConnectionResult]:
+    
+    ...
+

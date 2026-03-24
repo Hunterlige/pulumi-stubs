@@ -1,0 +1,114 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MonitoringConfigArgs', 'MonitoringConfig']
+@pulumi.input_type
+class MonitoringConfigArgs:
+    def __init__(__self__, *, device_name: pulumi.Input[_builtins.str], metric_configurations: pulumi.Input[Sequence[pulumi.Input[MetricConfigurationArgs]]], resource_group_name: pulumi.Input[_builtins.str], role_name: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceName")
+    def device_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @device_name.setter
+    def device_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="metricConfigurations")
+    def metric_configurations(self) -> pulumi.Input[Sequence[pulumi.Input[MetricConfigurationArgs]]]:
+        
+        ...
+    
+    @metric_configurations.setter
+    def metric_configurations(self, value: pulumi.Input[Sequence[pulumi.Input[MetricConfigurationArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleName")
+    def role_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @role_name.setter
+    def role_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:databoxedge:MonitoringConfig")
+class MonitoringConfig(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., device_name: Optional[pulumi.Input[_builtins.str]] = ..., metric_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[MetricConfigurationArgs, MetricConfigurationArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MonitoringConfigArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MonitoringConfig:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="metricConfigurations")
+    def metric_configurations(self) -> pulumi.Output[Sequence[outputs.MetricConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

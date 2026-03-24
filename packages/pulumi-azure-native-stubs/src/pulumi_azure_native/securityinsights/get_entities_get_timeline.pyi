@@ -1,0 +1,48 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetEntitiesGetTimelineResult', 'AwaitableGetEntitiesGetTimelineResult', 'get_entities_get_timeline', 'get_entities_get_timeline_output']
+@pulumi.output_type
+class GetEntitiesGetTimelineResult:
+    
+    def __init__(__self__, meta_data=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="metaData")
+    def meta_data(self) -> Optional[outputs.TimelineResultsMetadataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[Any]]:
+        
+        ...
+    
+
+
+class AwaitableGetEntitiesGetTimelineResult(GetEntitiesGetTimelineResult):
+    def __await__(self): # -> Generator[Never, Any, GetEntitiesGetTimelineResult]:
+        ...
+    
+
+
+def get_entities_get_timeline(end_time: Optional[_builtins.str] = ..., entity_id: Optional[_builtins.str] = ..., kinds: Optional[Sequence[Union[_builtins.str, EntityTimelineKind]]] = ..., number_of_bucket: Optional[_builtins.int] = ..., resource_group_name: Optional[_builtins.str] = ..., start_time: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetEntitiesGetTimelineResult:
+    
+    ...
+
+def get_entities_get_timeline_output(end_time: Optional[pulumi.Input[_builtins.str]] = ..., entity_id: Optional[pulumi.Input[_builtins.str]] = ..., kinds: Optional[pulumi.Input[Optional[Sequence[Union[_builtins.str, EntityTimelineKind]]]]] = ..., number_of_bucket: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., start_time: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetEntitiesGetTimelineResult]:
+    
+    ...
+

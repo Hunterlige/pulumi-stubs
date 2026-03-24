@@ -1,0 +1,44 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AppSku', 'NetworkAction', 'PrivateEndpointServiceConnectionStatus', 'PublicNetworkAccess', 'SystemAssignedServiceIdentityType']
+@pulumi.type_token("azure-native:iotcentral:AppSku")
+class AppSku(_builtins.str, Enum):
+    
+    ST0 = ...
+    ST1 = ...
+    ST2 = ...
+
+
+@pulumi.type_token("azure-native:iotcentral:NetworkAction")
+class NetworkAction(_builtins.str, Enum):
+    
+    ALLOW = ...
+    DENY = ...
+
+
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+
+@pulumi.type_token("azure-native:iotcentral:PublicNetworkAccess")
+class PublicNetworkAccess(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token(...)
+class SystemAssignedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+
+

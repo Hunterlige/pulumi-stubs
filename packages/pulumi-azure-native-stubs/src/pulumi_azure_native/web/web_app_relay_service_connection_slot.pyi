@@ -1,0 +1,204 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WebAppRelayServiceConnectionSlotArgs', 'WebAppRelayServiceConnectionSlot']
+@pulumi.input_type
+class WebAppRelayServiceConnectionSlotArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], slot: pulumi.Input[_builtins.str], biztalk_uri: Optional[pulumi.Input[_builtins.str]] = ..., entity_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., entity_name: Optional[pulumi.Input[_builtins.str]] = ..., hostname: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., resource_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., resource_type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def slot(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @slot.setter
+    def slot(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="biztalkUri")
+    def biztalk_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @biztalk_uri.setter
+    def biztalk_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityConnectionString")
+    def entity_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @entity_connection_string.setter
+    def entity_connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityName")
+    def entity_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @entity_name.setter
+    def entity_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @hostname.setter
+    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        ...
+    
+    @port.setter
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceConnectionString")
+    def resource_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @resource_connection_string.setter
+    def resource_connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @resource_type.setter
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:web:WebAppRelayServiceConnectionSlot")
+class WebAppRelayServiceConnectionSlot(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., biztalk_uri: Optional[pulumi.Input[_builtins.str]] = ..., entity_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., entity_name: Optional[pulumi.Input[_builtins.str]] = ..., hostname: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., resource_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_type: Optional[pulumi.Input[_builtins.str]] = ..., slot: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WebAppRelayServiceConnectionSlotArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WebAppRelayServiceConnectionSlot:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="biztalkUri")
+    def biztalk_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityConnectionString")
+    def entity_connection_string(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityName")
+    def entity_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceConnectionString")
+    def resource_connection_string(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

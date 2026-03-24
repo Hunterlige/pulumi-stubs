@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPartnerTopicResult', 'AwaitableGetPartnerTopicResult', 'get_partner_topic', 'get_partner_topic_output']
+@pulumi.output_type
+class GetPartnerTopicResult:
+    
+    def __init__(__self__, activation_state=..., azure_api_version=..., event_type_info=..., expiration_time_if_not_activated_utc=..., id=..., identity=..., location=..., message_for_activation=..., name=..., partner_registration_immutable_id=..., partner_topic_friendly_description=..., provisioning_state=..., source=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activationState")
+    def activation_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventTypeInfo")
+    def event_type_info(self) -> Optional[outputs.EventTypeInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationTimeIfNotActivatedUtc")
+    def expiration_time_if_not_activated_utc(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="messageForActivation")
+    def message_for_activation(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerRegistrationImmutableId")
+    def partner_registration_immutable_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerTopicFriendlyDescription")
+    def partner_topic_friendly_description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPartnerTopicResult(GetPartnerTopicResult):
+    def __await__(self): # -> Generator[Never, Any, GetPartnerTopicResult]:
+        ...
+    
+
+
+def get_partner_topic(partner_topic_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPartnerTopicResult:
+    
+    ...
+
+def get_partner_topic_output(partner_topic_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPartnerTopicResult]:
+    
+    ...
+

@@ -1,0 +1,256 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AssessmentProjectsOperationArgs', 'AssessmentProjectsOperation']
+@pulumi.input_type
+class AssessmentProjectsOperationArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], assessment_solution_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_storage_account_arm_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_workspace_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_workspace_location: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., project_name: Optional[pulumi.Input[_builtins.str]] = ..., project_status: Optional[pulumi.Input[Union[_builtins.str, ProjectStatus]]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., public_network_access: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentSolutionId")
+    def assessment_solution_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assessment_solution_id.setter
+    def assessment_solution_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerStorageAccountArmId")
+    def customer_storage_account_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @customer_storage_account_arm_id.setter
+    def customer_storage_account_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerWorkspaceId")
+    def customer_workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @customer_workspace_id.setter
+    def customer_workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerWorkspaceLocation")
+    def customer_workspace_location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @customer_workspace_location.setter
+    def customer_workspace_location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectName")
+    def project_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @project_name.setter
+    def project_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectStatus")
+    def project_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ProjectStatus]]]:
+        
+        ...
+    
+    @project_status.setter
+    def project_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ProjectStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:migrate:AssessmentProjectsOperation")
+class AssessmentProjectsOperation(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assessment_solution_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_storage_account_arm_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_workspace_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_workspace_location: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., project_name: Optional[pulumi.Input[_builtins.str]] = ..., project_status: Optional[pulumi.Input[Union[_builtins.str, ProjectStatus]]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., public_network_access: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AssessmentProjectsOperationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AssessmentProjectsOperation:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentSolutionId")
+    def assessment_solution_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimestamp")
+    def created_timestamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerStorageAccountArmId")
+    def customer_storage_account_arm_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerWorkspaceId")
+    def customer_workspace_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerWorkspaceLocation")
+    def customer_workspace_location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.PrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectStatus")
+    def project_status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceEndpoint")
+    def service_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedTimestamp")
+    def updated_timestamp(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

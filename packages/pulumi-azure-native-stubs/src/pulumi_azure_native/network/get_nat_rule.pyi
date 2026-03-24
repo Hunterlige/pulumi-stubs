@@ -1,0 +1,107 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNatRuleResult', 'AwaitableGetNatRuleResult', 'get_nat_rule', 'get_nat_rule_output']
+@pulumi.output_type
+class GetNatRuleResult:
+    
+    def __init__(__self__, azure_api_version=..., egress_vpn_site_link_connections=..., etag=..., external_mappings=..., id=..., ingress_vpn_site_link_connections=..., internal_mappings=..., ip_configuration_id=..., mode=..., name=..., provisioning_state=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="egressVpnSiteLinkConnections")
+    def egress_vpn_site_link_connections(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalMappings")
+    def external_mappings(self) -> Optional[Sequence[outputs.VpnNatRuleMappingResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ingressVpnSiteLinkConnections")
+    def ingress_vpn_site_link_connections(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="internalMappings")
+    def internal_mappings(self) -> Optional[Sequence[outputs.VpnNatRuleMappingResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurationId")
+    def ip_configuration_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetNatRuleResult(GetNatRuleResult):
+    def __await__(self): # -> Generator[Never, Any, GetNatRuleResult]:
+        ...
+    
+
+
+def get_nat_rule(gateway_name: Optional[_builtins.str] = ..., nat_rule_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNatRuleResult:
+    
+    ...
+
+def get_nat_rule_output(gateway_name: Optional[pulumi.Input[_builtins.str]] = ..., nat_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNatRuleResult]:
+    
+    ...
+

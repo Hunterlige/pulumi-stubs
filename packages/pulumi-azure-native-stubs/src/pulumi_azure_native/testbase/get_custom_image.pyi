@@ -1,0 +1,143 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetCustomImageResult', 'AwaitableGetCustomImageResult', 'get_custom_image', 'get_custom_image_output']
+@pulumi.output_type
+class GetCustomImageResult:
+    
+    def __init__(__self__, azure_api_version=..., creation_time=..., definition_name=..., id=..., name=..., os_disk_image_size_in_gb=..., product=..., provisioning_state=..., release=..., release_version_date=..., source=..., status=..., system_data=..., type=..., validation_results=..., version_name=..., vhd_file_name=..., vhd_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTime")
+    def creation_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="definitionName")
+    def definition_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osDiskImageSizeInGB")
+    def os_disk_image_size_in_gb(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def release(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseVersionDate")
+    def release_version_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validationResults")
+    def validation_results(self) -> outputs.ImageValidationResultsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionName")
+    def version_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vhdFileName")
+    def vhd_file_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vhdId")
+    def vhd_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetCustomImageResult(GetCustomImageResult):
+    def __await__(self): # -> Generator[Never, Any, GetCustomImageResult]:
+        ...
+    
+
+
+def get_custom_image(custom_image_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., test_base_account_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetCustomImageResult:
+    
+    ...
+
+def get_custom_image_output(custom_image_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., test_base_account_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetCustomImageResult]:
+    
+    ...
+

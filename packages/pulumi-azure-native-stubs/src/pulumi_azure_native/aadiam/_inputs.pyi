@@ -1,0 +1,92 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['LogSettingsArgs', 'LogSettingsArgsDict', 'RetentionPolicyArgs', 'RetentionPolicyArgsDict']
+class LogSettingsArgsDict(TypedDict):
+    
+    enabled: pulumi.Input[_builtins.bool]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, Category]]]
+    retention_policy: NotRequired[pulumi.Input[RetentionPolicyArgsDict]]
+
+
+@pulumi.input_type
+class LogSettingsArgs:
+    def __init__(__self__, *, enabled: pulumi.Input[_builtins.bool], category: Optional[pulumi.Input[Union[_builtins.str, Category]]] = ..., retention_policy: Optional[pulumi.Input[RetentionPolicyArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, Category]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, Category]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retentionPolicy")
+    def retention_policy(self) -> Optional[pulumi.Input[RetentionPolicyArgs]]:
+        
+        ...
+    
+    @retention_policy.setter
+    def retention_policy(self, value: Optional[pulumi.Input[RetentionPolicyArgs]]): # -> None:
+        ...
+    
+
+
+class RetentionPolicyArgsDict(TypedDict):
+    
+    days: pulumi.Input[_builtins.int]
+    enabled: pulumi.Input[_builtins.bool]
+
+
+@pulumi.input_type
+class RetentionPolicyArgs:
+    def __init__(__self__, *, days: pulumi.Input[_builtins.int], enabled: pulumi.Input[_builtins.bool]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def days(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @days.setter
+    def days(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+
+

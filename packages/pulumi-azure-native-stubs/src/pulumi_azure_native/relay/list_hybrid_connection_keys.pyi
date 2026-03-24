@@ -1,0 +1,64 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListHybridConnectionKeysResult', 'AwaitableListHybridConnectionKeysResult', 'list_hybrid_connection_keys', 'list_hybrid_connection_keys_output']
+@pulumi.output_type
+class ListHybridConnectionKeysResult:
+    
+    def __init__(__self__, key_name=..., primary_connection_string=..., primary_key=..., secondary_connection_string=..., secondary_key=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyName")
+    def key_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryConnectionString")
+    def primary_connection_string(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryKey")
+    def primary_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryConnectionString")
+    def secondary_connection_string(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryKey")
+    def secondary_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableListHybridConnectionKeysResult(ListHybridConnectionKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListHybridConnectionKeysResult]:
+        ...
+    
+
+
+def list_hybrid_connection_keys(authorization_rule_name: Optional[_builtins.str] = ..., hybrid_connection_name: Optional[_builtins.str] = ..., namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListHybridConnectionKeysResult:
+    
+    ...
+
+def list_hybrid_connection_keys_output(authorization_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., hybrid_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListHybridConnectionKeysResult]:
+    
+    ...
+

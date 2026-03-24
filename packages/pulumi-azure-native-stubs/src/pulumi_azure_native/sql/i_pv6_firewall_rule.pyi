@@ -1,0 +1,132 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IPv6FirewallRuleArgs', 'IPv6FirewallRule']
+@pulumi.input_type
+class IPv6FirewallRuleArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], end_i_pv6_address: Optional[pulumi.Input[_builtins.str]] = ..., firewall_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., start_i_pv6_address: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endIPv6Address")
+    def end_i_pv6_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @end_i_pv6_address.setter
+    def end_i_pv6_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallRuleName")
+    def firewall_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @firewall_rule_name.setter
+    def firewall_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startIPv6Address")
+    def start_i_pv6_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @start_i_pv6_address.setter
+    def start_i_pv6_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:IPv6FirewallRule")
+class IPv6FirewallRule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., end_i_pv6_address: Optional[pulumi.Input[_builtins.str]] = ..., firewall_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., start_i_pv6_address: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IPv6FirewallRuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> IPv6FirewallRule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endIPv6Address")
+    def end_i_pv6_address(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startIPv6Address")
+    def start_i_pv6_address(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

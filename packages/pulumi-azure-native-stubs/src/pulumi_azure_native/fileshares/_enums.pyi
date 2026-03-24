@@ -1,0 +1,49 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['MediaTier', 'PrivateEndpointServiceConnectionStatus', 'Protocol', 'PublicNetworkAccess', 'Redundancy', 'ShareRootSquash']
+@pulumi.type_token("azure-native:fileshares:MediaTier")
+class MediaTier(_builtins.str, Enum):
+    
+    SSD = ...
+
+
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+
+@pulumi.type_token("azure-native:fileshares:Protocol")
+class Protocol(_builtins.str, Enum):
+    
+    NFS = ...
+
+
+@pulumi.type_token("azure-native:fileshares:PublicNetworkAccess")
+class PublicNetworkAccess(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:fileshares:Redundancy")
+class Redundancy(_builtins.str, Enum):
+    
+    LOCAL = ...
+    ZONE = ...
+
+
+@pulumi.type_token("azure-native:fileshares:ShareRootSquash")
+class ShareRootSquash(_builtins.str, Enum):
+    
+    NO_ROOT_SQUASH = ...
+    ROOT_SQUASH = ...
+    ALL_SQUASH = ...
+
+

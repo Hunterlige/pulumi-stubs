@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['InstanceFailoverGroupArgs', 'InstanceFailoverGroup']
+@pulumi.input_type
+class InstanceFailoverGroupArgs:
+    def __init__(__self__, *, location_name: pulumi.Input[_builtins.str], managed_instance_pairs: pulumi.Input[Sequence[pulumi.Input[ManagedInstancePairInfoArgs]]], partner_regions: pulumi.Input[Sequence[pulumi.Input[PartnerRegionInfoArgs]]], read_write_endpoint: pulumi.Input[InstanceFailoverGroupReadWriteEndpointArgs], resource_group_name: pulumi.Input[_builtins.str], failover_group_name: Optional[pulumi.Input[_builtins.str]] = ..., read_only_endpoint: Optional[pulumi.Input[InstanceFailoverGroupReadOnlyEndpointArgs]] = ..., secondary_type: Optional[pulumi.Input[Union[_builtins.str, SecondaryInstanceType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="locationName")
+    def location_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @location_name.setter
+    def location_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedInstancePairs")
+    def managed_instance_pairs(self) -> pulumi.Input[Sequence[pulumi.Input[ManagedInstancePairInfoArgs]]]:
+        
+        ...
+    
+    @managed_instance_pairs.setter
+    def managed_instance_pairs(self, value: pulumi.Input[Sequence[pulumi.Input[ManagedInstancePairInfoArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerRegions")
+    def partner_regions(self) -> pulumi.Input[Sequence[pulumi.Input[PartnerRegionInfoArgs]]]:
+        
+        ...
+    
+    @partner_regions.setter
+    def partner_regions(self, value: pulumi.Input[Sequence[pulumi.Input[PartnerRegionInfoArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readWriteEndpoint")
+    def read_write_endpoint(self) -> pulumi.Input[InstanceFailoverGroupReadWriteEndpointArgs]:
+        
+        ...
+    
+    @read_write_endpoint.setter
+    def read_write_endpoint(self, value: pulumi.Input[InstanceFailoverGroupReadWriteEndpointArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverGroupName")
+    def failover_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @failover_group_name.setter
+    def failover_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readOnlyEndpoint")
+    def read_only_endpoint(self) -> Optional[pulumi.Input[InstanceFailoverGroupReadOnlyEndpointArgs]]:
+        
+        ...
+    
+    @read_only_endpoint.setter
+    def read_only_endpoint(self, value: Optional[pulumi.Input[InstanceFailoverGroupReadOnlyEndpointArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryType")
+    def secondary_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SecondaryInstanceType]]]:
+        
+        ...
+    
+    @secondary_type.setter
+    def secondary_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SecondaryInstanceType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:InstanceFailoverGroup")
+class InstanceFailoverGroup(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., failover_group_name: Optional[pulumi.Input[_builtins.str]] = ..., location_name: Optional[pulumi.Input[_builtins.str]] = ..., managed_instance_pairs: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ManagedInstancePairInfoArgs, ManagedInstancePairInfoArgsDict]]]]] = ..., partner_regions: Optional[pulumi.Input[Sequence[pulumi.Input[Union[PartnerRegionInfoArgs, PartnerRegionInfoArgsDict]]]]] = ..., read_only_endpoint: Optional[pulumi.Input[Union[InstanceFailoverGroupReadOnlyEndpointArgs, InstanceFailoverGroupReadOnlyEndpointArgsDict]]] = ..., read_write_endpoint: Optional[pulumi.Input[Union[InstanceFailoverGroupReadWriteEndpointArgs, InstanceFailoverGroupReadWriteEndpointArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., secondary_type: Optional[pulumi.Input[Union[_builtins.str, SecondaryInstanceType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: InstanceFailoverGroupArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> InstanceFailoverGroup:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedInstancePairs")
+    def managed_instance_pairs(self) -> pulumi.Output[Sequence[outputs.ManagedInstancePairInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerRegions")
+    def partner_regions(self) -> pulumi.Output[Sequence[outputs.PartnerRegionInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readOnlyEndpoint")
+    def read_only_endpoint(self) -> pulumi.Output[Optional[outputs.InstanceFailoverGroupReadOnlyEndpointResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readWriteEndpoint")
+    def read_write_endpoint(self) -> pulumi.Output[outputs.InstanceFailoverGroupReadWriteEndpointResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRole")
+    def replication_role(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationState")
+    def replication_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryType")
+    def secondary_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

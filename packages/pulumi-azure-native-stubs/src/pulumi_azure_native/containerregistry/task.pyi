@@ -1,0 +1,319 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['TaskArgs', 'Task']
+@pulumi.input_type
+class TaskArgs:
+    def __init__(__self__, *, registry_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], agent_configuration: Optional[pulumi.Input[AgentPropertiesArgs]] = ..., agent_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., credentials: Optional[pulumi.Input[CredentialsArgs]] = ..., identity: Optional[pulumi.Input[IdentityPropertiesArgs]] = ..., is_system_task: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., log_template: Optional[pulumi.Input[_builtins.str]] = ..., platform: Optional[pulumi.Input[PlatformPropertiesArgs]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, TaskStatus]]] = ..., step: Optional[pulumi.Input[Union[DockerBuildStepArgs, EncodedTaskStepArgs, FileTaskStepArgs]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., task_name: Optional[pulumi.Input[_builtins.str]] = ..., timeout: Optional[pulumi.Input[_builtins.int]] = ..., trigger: Optional[pulumi.Input[TriggerPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registryName")
+    def registry_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @registry_name.setter
+    def registry_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentConfiguration")
+    def agent_configuration(self) -> Optional[pulumi.Input[AgentPropertiesArgs]]:
+        
+        ...
+    
+    @agent_configuration.setter
+    def agent_configuration(self, value: Optional[pulumi.Input[AgentPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentPoolName")
+    def agent_pool_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_pool_name.setter
+    def agent_pool_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[CredentialsArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[CredentialsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[IdentityPropertiesArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[IdentityPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSystemTask")
+    def is_system_task(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_system_task.setter
+    def is_system_task(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logTemplate")
+    def log_template(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @log_template.setter
+    def log_template(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def platform(self) -> Optional[pulumi.Input[PlatformPropertiesArgs]]:
+        
+        ...
+    
+    @platform.setter
+    def platform(self, value: Optional[pulumi.Input[PlatformPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, TaskStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, TaskStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def step(self) -> Optional[pulumi.Input[Union[DockerBuildStepArgs, EncodedTaskStepArgs, FileTaskStepArgs]]]:
+        
+        ...
+    
+    @step.setter
+    def step(self, value: Optional[pulumi.Input[Union[DockerBuildStepArgs, EncodedTaskStepArgs, FileTaskStepArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="taskName")
+    def task_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @task_name.setter
+    def task_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeout(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @timeout.setter
+    def timeout(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def trigger(self) -> Optional[pulumi.Input[TriggerPropertiesArgs]]:
+        
+        ...
+    
+    @trigger.setter
+    def trigger(self, value: Optional[pulumi.Input[TriggerPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:containerregistry:Task")
+class Task(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., agent_configuration: Optional[pulumi.Input[Union[AgentPropertiesArgs, AgentPropertiesArgsDict]]] = ..., agent_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., credentials: Optional[pulumi.Input[Union[CredentialsArgs, CredentialsArgsDict]]] = ..., identity: Optional[pulumi.Input[Union[IdentityPropertiesArgs, IdentityPropertiesArgsDict]]] = ..., is_system_task: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., log_template: Optional[pulumi.Input[_builtins.str]] = ..., platform: Optional[pulumi.Input[Union[PlatformPropertiesArgs, PlatformPropertiesArgsDict]]] = ..., registry_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, TaskStatus]]] = ..., step: Optional[pulumi.Input[Union[Union[DockerBuildStepArgs, DockerBuildStepArgsDict], Union[EncodedTaskStepArgs, EncodedTaskStepArgsDict], Union[FileTaskStepArgs, FileTaskStepArgsDict]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., task_name: Optional[pulumi.Input[_builtins.str]] = ..., timeout: Optional[pulumi.Input[_builtins.int]] = ..., trigger: Optional[pulumi.Input[Union[TriggerPropertiesArgs, TriggerPropertiesArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: TaskArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Task:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentConfiguration")
+    def agent_configuration(self) -> pulumi.Output[Optional[outputs.AgentPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentPoolName")
+    def agent_pool_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationDate")
+    def creation_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> pulumi.Output[Optional[outputs.CredentialsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.IdentityPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSystemTask")
+    def is_system_task(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logTemplate")
+    def log_template(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def platform(self) -> pulumi.Output[Optional[outputs.PlatformPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def step(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeout(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def trigger(self) -> pulumi.Output[Optional[outputs.TriggerPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

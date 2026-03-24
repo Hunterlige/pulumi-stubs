@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWorkloadNetworkDnsServiceResult', 'AwaitableGetWorkloadNetworkDnsServiceResult', 'get_workload_network_dns_service', 'get_workload_network_dns_service_output']
+@pulumi.output_type
+class GetWorkloadNetworkDnsServiceResult:
+    
+    def __init__(__self__, azure_api_version=..., default_dns_zone=..., display_name=..., dns_service_ip=..., fqdn_zones=..., id=..., log_level=..., name=..., provisioning_state=..., revision=..., status=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDnsZone")
+    def default_dns_zone(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsServiceIp")
+    def dns_service_ip(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fqdnZones")
+    def fqdn_zones(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logLevel")
+    def log_level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revision(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetWorkloadNetworkDnsServiceResult(GetWorkloadNetworkDnsServiceResult):
+    def __await__(self): # -> Generator[Never, Any, GetWorkloadNetworkDnsServiceResult]:
+        ...
+    
+
+
+def get_workload_network_dns_service(dns_service_id: Optional[_builtins.str] = ..., private_cloud_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWorkloadNetworkDnsServiceResult:
+    
+    ...
+
+def get_workload_network_dns_service_output(dns_service_id: Optional[pulumi.Input[_builtins.str]] = ..., private_cloud_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWorkloadNetworkDnsServiceResult]:
+    
+    ...
+

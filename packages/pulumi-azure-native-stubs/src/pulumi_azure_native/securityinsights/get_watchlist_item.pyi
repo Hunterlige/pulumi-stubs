@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWatchlistItemResult', 'AwaitableGetWatchlistItemResult', 'get_watchlist_item', 'get_watchlist_item_output']
+@pulumi.output_type
+class GetWatchlistItemResult:
+    
+    def __init__(__self__, azure_api_version=..., created=..., created_by=..., entity_mapping=..., etag=..., id=..., is_deleted=..., items_key_value=..., name=..., system_data=..., tenant_id=..., type=..., updated=..., updated_by=..., watchlist_item_id=..., watchlist_item_type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def created(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[outputs.WatchlistUserInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityMapping")
+    def entity_mapping(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isDeleted")
+    def is_deleted(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="itemsKeyValue")
+    def items_key_value(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def updated(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedBy")
+    def updated_by(self) -> Optional[outputs.WatchlistUserInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="watchlistItemId")
+    def watchlist_item_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="watchlistItemType")
+    def watchlist_item_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetWatchlistItemResult(GetWatchlistItemResult):
+    def __await__(self): # -> Generator[Never, Any, GetWatchlistItemResult]:
+        ...
+    
+
+
+def get_watchlist_item(resource_group_name: Optional[_builtins.str] = ..., watchlist_alias: Optional[_builtins.str] = ..., watchlist_item_id: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWatchlistItemResult:
+    
+    ...
+
+def get_watchlist_item_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., watchlist_alias: Optional[pulumi.Input[_builtins.str]] = ..., watchlist_item_id: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWatchlistItemResult]:
+    
+    ...
+

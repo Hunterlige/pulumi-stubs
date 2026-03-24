@@ -1,0 +1,181 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WorkspaceApiVersionSetArgs', 'WorkspaceApiVersionSet']
+@pulumi.input_type
+class WorkspaceApiVersionSetArgs:
+    def __init__(__self__, *, display_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], versioning_scheme: pulumi.Input[Union[_builtins.str, VersioningScheme]], workspace_id: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., version_header_name: Optional[pulumi.Input[_builtins.str]] = ..., version_query_name: Optional[pulumi.Input[_builtins.str]] = ..., version_set_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versioningScheme")
+    def versioning_scheme(self) -> pulumi.Input[Union[_builtins.str, VersioningScheme]]:
+        
+        ...
+    
+    @versioning_scheme.setter
+    def versioning_scheme(self, value: pulumi.Input[Union[_builtins.str, VersioningScheme]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceId")
+    def workspace_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_id.setter
+    def workspace_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionHeaderName")
+    def version_header_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version_header_name.setter
+    def version_header_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionQueryName")
+    def version_query_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version_query_name.setter
+    def version_query_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionSetId")
+    def version_set_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version_set_id.setter
+    def version_set_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apimanagement:WorkspaceApiVersionSet")
+class WorkspaceApiVersionSet(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., version_header_name: Optional[pulumi.Input[_builtins.str]] = ..., version_query_name: Optional[pulumi.Input[_builtins.str]] = ..., version_set_id: Optional[pulumi.Input[_builtins.str]] = ..., versioning_scheme: Optional[pulumi.Input[Union[_builtins.str, VersioningScheme]]] = ..., workspace_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WorkspaceApiVersionSetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WorkspaceApiVersionSet:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionHeaderName")
+    def version_header_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionQueryName")
+    def version_query_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versioningScheme")
+    def versioning_scheme(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

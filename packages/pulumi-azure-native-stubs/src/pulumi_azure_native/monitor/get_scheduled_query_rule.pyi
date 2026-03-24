@@ -1,0 +1,209 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetScheduledQueryRuleResult', 'AwaitableGetScheduledQueryRuleResult', 'get_scheduled_query_rule', 'get_scheduled_query_rule_output']
+@pulumi.output_type
+class GetScheduledQueryRuleResult:
+    
+    def __init__(__self__, actions=..., auto_mitigate=..., azure_api_version=..., check_workspace_alerts_storage_configured=..., created_with_api_version=..., criteria=..., description=..., display_name=..., enabled=..., etag=..., evaluation_frequency=..., id=..., identity=..., is_legacy_log_analytics_rule=..., is_workspace_alerts_storage_configured=..., kind=..., location=..., mute_actions_duration=..., name=..., override_query_time_range=..., resolve_configuration=..., scopes=..., severity=..., skip_query_validation=..., system_data=..., tags=..., target_resource_types=..., type=..., window_size=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def actions(self) -> Optional[outputs.ActionsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoMitigate")
+    def auto_mitigate(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="checkWorkspaceAlertsStorageConfigured")
+    def check_workspace_alerts_storage_configured(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdWithApiVersion")
+    def created_with_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def criteria(self) -> outputs.ScheduledQueryRuleCriteriaResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="evaluationFrequency")
+    def evaluation_frequency(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isLegacyLogAnalyticsRule")
+    def is_legacy_log_analytics_rule(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isWorkspaceAlertsStorageConfigured")
+    def is_workspace_alerts_storage_configured(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="muteActionsDuration")
+    def mute_actions_duration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="overrideQueryTimeRange")
+    def override_query_time_range(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resolveConfiguration")
+    def resolve_configuration(self) -> Optional[outputs.RuleResolveConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scopes(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def severity(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skipQueryValidation")
+    def skip_query_validation(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceTypes")
+    def target_resource_types(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="windowSize")
+    def window_size(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetScheduledQueryRuleResult(GetScheduledQueryRuleResult):
+    def __await__(self): # -> Generator[Never, Any, GetScheduledQueryRuleResult]:
+        ...
+    
+
+
+def get_scheduled_query_rule(resource_group_name: Optional[_builtins.str] = ..., rule_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetScheduledQueryRuleResult:
+    
+    ...
+
+def get_scheduled_query_rule_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetScheduledQueryRuleResult]:
+    
+    ...
+

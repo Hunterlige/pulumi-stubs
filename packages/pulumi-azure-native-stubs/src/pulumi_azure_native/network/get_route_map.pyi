@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRouteMapResult', 'AwaitableGetRouteMapResult', 'get_route_map', 'get_route_map_output']
+@pulumi.output_type
+class GetRouteMapResult:
+    
+    def __init__(__self__, associated_inbound_connections=..., associated_outbound_connections=..., azure_api_version=..., etag=..., id=..., name=..., provisioning_state=..., rules=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="associatedInboundConnections")
+    def associated_inbound_connections(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="associatedOutboundConnections")
+    def associated_outbound_connections(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[Sequence[outputs.RouteMapRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRouteMapResult(GetRouteMapResult):
+    def __await__(self): # -> Generator[Never, Any, GetRouteMapResult]:
+        ...
+    
+
+
+def get_route_map(resource_group_name: Optional[_builtins.str] = ..., route_map_name: Optional[_builtins.str] = ..., virtual_hub_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRouteMapResult:
+    
+    ...
+
+def get_route_map_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., route_map_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_hub_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRouteMapResult]:
+    
+    ...
+

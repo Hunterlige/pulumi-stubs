@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetLicenseResult', 'AwaitableGetLicenseResult', 'get_license', 'get_license_output']
+@pulumi.output_type
+class GetLicenseResult:
+    
+    def __init__(__self__, kind=..., provisioning_state=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetLicenseResult(GetLicenseResult):
+    def __await__(self): # -> Generator[Never, Any, GetLicenseResult]:
+        ...
+    
+
+
+def get_license(license_name: Optional[_builtins.str] = ..., private_cloud_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetLicenseResult:
+    
+    ...
+
+def get_license_output(license_name: Optional[pulumi.Input[_builtins.str]] = ..., private_cloud_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetLicenseResult]:
+    
+    ...
+

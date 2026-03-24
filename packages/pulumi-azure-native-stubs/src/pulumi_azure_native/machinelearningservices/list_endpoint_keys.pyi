@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListEndpointKeysResult', 'AwaitableListEndpointKeysResult', 'list_endpoint_keys', 'list_endpoint_keys_output']
+@pulumi.output_type
+class ListEndpointKeysResult:
+    def __init__(__self__, keys=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def keys(self) -> Optional[outputs.AccountApiKeysResponse]:
+        
+        ...
+    
+
+
+class AwaitableListEndpointKeysResult(ListEndpointKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListEndpointKeysResult]:
+        ...
+    
+
+
+def list_endpoint_keys(endpoint_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListEndpointKeysResult:
+    
+    ...
+
+def list_endpoint_keys_output(endpoint_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListEndpointKeysResult]:
+    
+    ...
+

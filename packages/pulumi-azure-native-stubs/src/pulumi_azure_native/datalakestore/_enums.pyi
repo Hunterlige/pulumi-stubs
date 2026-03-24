@@ -1,0 +1,60 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['EncryptionConfigType', 'EncryptionIdentityType', 'EncryptionState', 'FirewallAllowAzureIpsState', 'FirewallState', 'TierType', 'TrustedIdProviderState']
+@pulumi.type_token("azure-native:datalakestore:EncryptionConfigType")
+class EncryptionConfigType(_builtins.str, Enum):
+    
+    USER_MANAGED = ...
+    SERVICE_MANAGED = ...
+
+
+@pulumi.type_token("azure-native:datalakestore:EncryptionIdentityType")
+class EncryptionIdentityType(_builtins.str, Enum):
+    
+    SYSTEM_ASSIGNED = ...
+
+
+@pulumi.type_token("azure-native:datalakestore:EncryptionState")
+class EncryptionState(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token(...)
+class FirewallAllowAzureIpsState(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:datalakestore:FirewallState")
+class FirewallState(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:datalakestore:TierType")
+class TierType(_builtins.str, Enum):
+    
+    CONSUMPTION = ...
+    COMMITMENT_1_TB = ...
+    COMMITMENT_10_TB = ...
+    COMMITMENT_100_TB = ...
+    COMMITMENT_500_TB = ...
+    COMMITMENT_1_PB = ...
+    COMMITMENT_5_PB = ...
+
+
+@pulumi.type_token("azure-native:datalakestore:TrustedIdProviderState")
+class TrustedIdProviderState(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+

@@ -1,0 +1,545 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['VirtualMachineScaleSetArgs', 'VirtualMachineScaleSet']
+@pulumi.input_type
+class VirtualMachineScaleSetArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], additional_capabilities: Optional[pulumi.Input[AdditionalCapabilitiesArgs]] = ..., automatic_repairs_policy: Optional[pulumi.Input[AutomaticRepairsPolicyArgs]] = ..., constrained_maximum_capacity: Optional[pulumi.Input[_builtins.bool]] = ..., do_not_run_extensions_on_overprovisioned_vms: Optional[pulumi.Input[_builtins.bool]] = ..., extended_location: Optional[pulumi.Input[ExtendedLocationArgs]] = ..., host_group: Optional[pulumi.Input[SubResourceArgs]] = ..., identity: Optional[pulumi.Input[VirtualMachineScaleSetIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., orchestration_mode: Optional[pulumi.Input[Union[_builtins.str, OrchestrationMode]]] = ..., overprovision: Optional[pulumi.Input[_builtins.bool]] = ..., plan: Optional[pulumi.Input[PlanArgs]] = ..., platform_fault_domain_count: Optional[pulumi.Input[_builtins.int]] = ..., priority_mix_policy: Optional[pulumi.Input[PriorityMixPolicyArgs]] = ..., proximity_placement_group: Optional[pulumi.Input[SubResourceArgs]] = ..., resiliency_policy: Optional[pulumi.Input[ResiliencyPolicyArgs]] = ..., scale_in_policy: Optional[pulumi.Input[ScaleInPolicyArgs]] = ..., scheduled_events_policy: Optional[pulumi.Input[ScheduledEventsPolicyArgs]] = ..., single_placement_group: Optional[pulumi.Input[_builtins.bool]] = ..., sku: Optional[pulumi.Input[SkuArgs]] = ..., sku_profile: Optional[pulumi.Input[SkuProfileArgs]] = ..., spot_restore_policy: Optional[pulumi.Input[SpotRestorePolicyArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., upgrade_policy: Optional[pulumi.Input[UpgradePolicyArgs]] = ..., virtual_machine_profile: Optional[pulumi.Input[VirtualMachineScaleSetVMProfileArgs]] = ..., vm_scale_set_name: Optional[pulumi.Input[_builtins.str]] = ..., zonal_platform_fault_domain_align_mode: Optional[pulumi.Input[Union[_builtins.str, ZonalPlatformFaultDomainAlignMode]]] = ..., zone_balance: Optional[pulumi.Input[_builtins.bool]] = ..., zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalCapabilities")
+    def additional_capabilities(self) -> Optional[pulumi.Input[AdditionalCapabilitiesArgs]]:
+        
+        ...
+    
+    @additional_capabilities.setter
+    def additional_capabilities(self, value: Optional[pulumi.Input[AdditionalCapabilitiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticRepairsPolicy")
+    def automatic_repairs_policy(self) -> Optional[pulumi.Input[AutomaticRepairsPolicyArgs]]:
+        
+        ...
+    
+    @automatic_repairs_policy.setter
+    def automatic_repairs_policy(self, value: Optional[pulumi.Input[AutomaticRepairsPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="constrainedMaximumCapacity")
+    def constrained_maximum_capacity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @constrained_maximum_capacity.setter
+    def constrained_maximum_capacity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="doNotRunExtensionsOnOverprovisionedVMs")
+    def do_not_run_extensions_on_overprovisioned_vms(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @do_not_run_extensions_on_overprovisioned_vms.setter
+    def do_not_run_extensions_on_overprovisioned_vms(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: Optional[pulumi.Input[ExtendedLocationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostGroup")
+    def host_group(self) -> Optional[pulumi.Input[SubResourceArgs]]:
+        
+        ...
+    
+    @host_group.setter
+    def host_group(self, value: Optional[pulumi.Input[SubResourceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[VirtualMachineScaleSetIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[VirtualMachineScaleSetIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="orchestrationMode")
+    def orchestration_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, OrchestrationMode]]]:
+        
+        ...
+    
+    @orchestration_mode.setter
+    def orchestration_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, OrchestrationMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def overprovision(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @overprovision.setter
+    def overprovision(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> Optional[pulumi.Input[PlanArgs]]:
+        
+        ...
+    
+    @plan.setter
+    def plan(self, value: Optional[pulumi.Input[PlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformFaultDomainCount")
+    def platform_fault_domain_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @platform_fault_domain_count.setter
+    def platform_fault_domain_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="priorityMixPolicy")
+    def priority_mix_policy(self) -> Optional[pulumi.Input[PriorityMixPolicyArgs]]:
+        
+        ...
+    
+    @priority_mix_policy.setter
+    def priority_mix_policy(self, value: Optional[pulumi.Input[PriorityMixPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="proximityPlacementGroup")
+    def proximity_placement_group(self) -> Optional[pulumi.Input[SubResourceArgs]]:
+        
+        ...
+    
+    @proximity_placement_group.setter
+    def proximity_placement_group(self, value: Optional[pulumi.Input[SubResourceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resiliencyPolicy")
+    def resiliency_policy(self) -> Optional[pulumi.Input[ResiliencyPolicyArgs]]:
+        
+        ...
+    
+    @resiliency_policy.setter
+    def resiliency_policy(self, value: Optional[pulumi.Input[ResiliencyPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scaleInPolicy")
+    def scale_in_policy(self) -> Optional[pulumi.Input[ScaleInPolicyArgs]]:
+        
+        ...
+    
+    @scale_in_policy.setter
+    def scale_in_policy(self, value: Optional[pulumi.Input[ScaleInPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduledEventsPolicy")
+    def scheduled_events_policy(self) -> Optional[pulumi.Input[ScheduledEventsPolicyArgs]]:
+        
+        ...
+    
+    @scheduled_events_policy.setter
+    def scheduled_events_policy(self, value: Optional[pulumi.Input[ScheduledEventsPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="singlePlacementGroup")
+    def single_placement_group(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @single_placement_group.setter
+    def single_placement_group(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[SkuArgs]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuProfile")
+    def sku_profile(self) -> Optional[pulumi.Input[SkuProfileArgs]]:
+        
+        ...
+    
+    @sku_profile.setter
+    def sku_profile(self, value: Optional[pulumi.Input[SkuProfileArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spotRestorePolicy")
+    def spot_restore_policy(self) -> Optional[pulumi.Input[SpotRestorePolicyArgs]]:
+        
+        ...
+    
+    @spot_restore_policy.setter
+    def spot_restore_policy(self, value: Optional[pulumi.Input[SpotRestorePolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="upgradePolicy")
+    def upgrade_policy(self) -> Optional[pulumi.Input[UpgradePolicyArgs]]:
+        
+        ...
+    
+    @upgrade_policy.setter
+    def upgrade_policy(self, value: Optional[pulumi.Input[UpgradePolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachineProfile")
+    def virtual_machine_profile(self) -> Optional[pulumi.Input[VirtualMachineScaleSetVMProfileArgs]]:
+        
+        ...
+    
+    @virtual_machine_profile.setter
+    def virtual_machine_profile(self, value: Optional[pulumi.Input[VirtualMachineScaleSetVMProfileArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmScaleSetName")
+    def vm_scale_set_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @vm_scale_set_name.setter
+    def vm_scale_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zonalPlatformFaultDomainAlignMode")
+    def zonal_platform_fault_domain_align_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, ZonalPlatformFaultDomainAlignMode]]]:
+        
+        ...
+    
+    @zonal_platform_fault_domain_align_mode.setter
+    def zonal_platform_fault_domain_align_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, ZonalPlatformFaultDomainAlignMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zoneBalance")
+    def zone_balance(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @zone_balance.setter
+    def zone_balance(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @zones.setter
+    def zones(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:compute:VirtualMachineScaleSet")
+class VirtualMachineScaleSet(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., additional_capabilities: Optional[pulumi.Input[Union[AdditionalCapabilitiesArgs, AdditionalCapabilitiesArgsDict]]] = ..., automatic_repairs_policy: Optional[pulumi.Input[Union[AutomaticRepairsPolicyArgs, AutomaticRepairsPolicyArgsDict]]] = ..., constrained_maximum_capacity: Optional[pulumi.Input[_builtins.bool]] = ..., do_not_run_extensions_on_overprovisioned_vms: Optional[pulumi.Input[_builtins.bool]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., host_group: Optional[pulumi.Input[Union[SubResourceArgs, SubResourceArgsDict]]] = ..., identity: Optional[pulumi.Input[Union[VirtualMachineScaleSetIdentityArgs, VirtualMachineScaleSetIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., orchestration_mode: Optional[pulumi.Input[Union[_builtins.str, OrchestrationMode]]] = ..., overprovision: Optional[pulumi.Input[_builtins.bool]] = ..., plan: Optional[pulumi.Input[Union[PlanArgs, PlanArgsDict]]] = ..., platform_fault_domain_count: Optional[pulumi.Input[_builtins.int]] = ..., priority_mix_policy: Optional[pulumi.Input[Union[PriorityMixPolicyArgs, PriorityMixPolicyArgsDict]]] = ..., proximity_placement_group: Optional[pulumi.Input[Union[SubResourceArgs, SubResourceArgsDict]]] = ..., resiliency_policy: Optional[pulumi.Input[Union[ResiliencyPolicyArgs, ResiliencyPolicyArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., scale_in_policy: Optional[pulumi.Input[Union[ScaleInPolicyArgs, ScaleInPolicyArgsDict]]] = ..., scheduled_events_policy: Optional[pulumi.Input[Union[ScheduledEventsPolicyArgs, ScheduledEventsPolicyArgsDict]]] = ..., single_placement_group: Optional[pulumi.Input[_builtins.bool]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., sku_profile: Optional[pulumi.Input[Union[SkuProfileArgs, SkuProfileArgsDict]]] = ..., spot_restore_policy: Optional[pulumi.Input[Union[SpotRestorePolicyArgs, SpotRestorePolicyArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., upgrade_policy: Optional[pulumi.Input[Union[UpgradePolicyArgs, UpgradePolicyArgsDict]]] = ..., virtual_machine_profile: Optional[pulumi.Input[Union[VirtualMachineScaleSetVMProfileArgs, VirtualMachineScaleSetVMProfileArgsDict]]] = ..., vm_scale_set_name: Optional[pulumi.Input[_builtins.str]] = ..., zonal_platform_fault_domain_align_mode: Optional[pulumi.Input[Union[_builtins.str, ZonalPlatformFaultDomainAlignMode]]] = ..., zone_balance: Optional[pulumi.Input[_builtins.bool]] = ..., zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: VirtualMachineScaleSetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> VirtualMachineScaleSet:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalCapabilities")
+    def additional_capabilities(self) -> pulumi.Output[Optional[outputs.AdditionalCapabilitiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automaticRepairsPolicy")
+    def automatic_repairs_policy(self) -> pulumi.Output[Optional[outputs.AutomaticRepairsPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="constrainedMaximumCapacity")
+    def constrained_maximum_capacity(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="doNotRunExtensionsOnOverprovisionedVMs")
+    def do_not_run_extensions_on_overprovisioned_vms(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[Optional[outputs.ExtendedLocationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostGroup")
+    def host_group(self) -> pulumi.Output[Optional[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.VirtualMachineScaleSetIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="orchestrationMode")
+    def orchestration_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def overprovision(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> pulumi.Output[Optional[outputs.PlanResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformFaultDomainCount")
+    def platform_fault_domain_count(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="priorityMixPolicy")
+    def priority_mix_policy(self) -> pulumi.Output[Optional[outputs.PriorityMixPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="proximityPlacementGroup")
+    def proximity_placement_group(self) -> pulumi.Output[Optional[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resiliencyPolicy")
+    def resiliency_policy(self) -> pulumi.Output[Optional[outputs.ResiliencyPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scaleInPolicy")
+    def scale_in_policy(self) -> pulumi.Output[Optional[outputs.ScaleInPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduledEventsPolicy")
+    def scheduled_events_policy(self) -> pulumi.Output[Optional[outputs.ScheduledEventsPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="singlePlacementGroup")
+    def single_placement_group(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[Optional[outputs.SkuResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuProfile")
+    def sku_profile(self) -> pulumi.Output[Optional[outputs.SkuProfileResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spotRestorePolicy")
+    def spot_restore_policy(self) -> pulumi.Output[Optional[outputs.SpotRestorePolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeCreated")
+    def time_created(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueId")
+    def unique_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="upgradePolicy")
+    def upgrade_policy(self) -> pulumi.Output[Optional[outputs.UpgradePolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachineProfile")
+    def virtual_machine_profile(self) -> pulumi.Output[Optional[outputs.VirtualMachineScaleSetVMProfileResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zonalPlatformFaultDomainAlignMode")
+    def zonal_platform_fault_domain_align_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zoneBalance")
+    def zone_balance(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+
+

@@ -1,0 +1,183 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AuthorizationArgs', 'Authorization']
+@pulumi.input_type
+class AuthorizationArgs:
+    def __init__(__self__, *, authorization_provider_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], authorization_id: Optional[pulumi.Input[_builtins.str]] = ..., authorization_type: Optional[pulumi.Input[Union[_builtins.str, AuthorizationType]]] = ..., error: Optional[pulumi.Input[AuthorizationErrorArgs]] = ..., o_auth2_grant_type: Optional[pulumi.Input[Union[_builtins.str, OAuth2GrantType]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., status: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationProviderId")
+    def authorization_provider_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @authorization_provider_id.setter
+    def authorization_provider_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationId")
+    def authorization_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authorization_id.setter
+    def authorization_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationType")
+    def authorization_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AuthorizationType]]]:
+        
+        ...
+    
+    @authorization_type.setter
+    def authorization_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AuthorizationType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[AuthorizationErrorArgs]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[AuthorizationErrorArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="oAuth2GrantType")
+    def o_auth2_grant_type(self) -> Optional[pulumi.Input[Union[_builtins.str, OAuth2GrantType]]]:
+        
+        ...
+    
+    @o_auth2_grant_type.setter
+    def o_auth2_grant_type(self, value: Optional[pulumi.Input[Union[_builtins.str, OAuth2GrantType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apimanagement:Authorization")
+class Authorization(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., authorization_id: Optional[pulumi.Input[_builtins.str]] = ..., authorization_provider_id: Optional[pulumi.Input[_builtins.str]] = ..., authorization_type: Optional[pulumi.Input[Union[_builtins.str, AuthorizationType]]] = ..., error: Optional[pulumi.Input[Union[AuthorizationErrorArgs, AuthorizationErrorArgsDict]]] = ..., o_auth2_grant_type: Optional[pulumi.Input[Union[_builtins.str, OAuth2GrantType]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AuthorizationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Authorization:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationType")
+    def authorization_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> pulumi.Output[Optional[outputs.AuthorizationErrorResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="oAuth2GrantType")
+    def o_auth2_grant_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

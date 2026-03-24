@@ -1,0 +1,251 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['OperatorApiConnectionArgs', 'OperatorApiConnection']
+@pulumi.input_type
+class OperatorApiConnectionArgs:
+    def __init__(__self__, *, account_type: pulumi.Input[Union[_builtins.str, AccountType]], gateway_id: pulumi.Input[_builtins.str], operator_api_plan_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], app_id: Optional[pulumi.Input[_builtins.str]] = ..., app_secret: Optional[pulumi.Input[_builtins.str]] = ..., configured_application: Optional[pulumi.Input[ApplicationPropertiesArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., operator_api_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., saas_properties: Optional[pulumi.Input[SaasPropertiesArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountType")
+    def account_type(self) -> pulumi.Input[Union[_builtins.str, AccountType]]:
+        
+        ...
+    
+    @account_type.setter
+    def account_type(self, value: pulumi.Input[Union[_builtins.str, AccountType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewayId")
+    def gateway_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @gateway_id.setter
+    def gateway_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatorApiPlanId")
+    def operator_api_plan_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @operator_api_plan_id.setter
+    def operator_api_plan_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appId")
+    def app_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @app_id.setter
+    def app_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appSecret")
+    def app_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @app_secret.setter
+    def app_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configuredApplication")
+    def configured_application(self) -> Optional[pulumi.Input[ApplicationPropertiesArgs]]:
+        
+        ...
+    
+    @configured_application.setter
+    def configured_application(self, value: Optional[pulumi.Input[ApplicationPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatorApiConnectionName")
+    def operator_api_connection_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @operator_api_connection_name.setter
+    def operator_api_connection_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasProperties")
+    def saas_properties(self) -> Optional[pulumi.Input[SaasPropertiesArgs]]:
+        
+        ...
+    
+    @saas_properties.setter
+    def saas_properties(self, value: Optional[pulumi.Input[SaasPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class OperatorApiConnection(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_type: Optional[pulumi.Input[Union[_builtins.str, AccountType]]] = ..., app_id: Optional[pulumi.Input[_builtins.str]] = ..., app_secret: Optional[pulumi.Input[_builtins.str]] = ..., configured_application: Optional[pulumi.Input[Union[ApplicationPropertiesArgs, ApplicationPropertiesArgsDict]]] = ..., gateway_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., operator_api_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., operator_api_plan_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., saas_properties: Optional[pulumi.Input[Union[SaasPropertiesArgs, SaasPropertiesArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: OperatorApiConnectionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> OperatorApiConnection:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountType")
+    def account_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appId")
+    def app_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="camaraApiName")
+    def camara_api_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configuredApplication")
+    def configured_application(self) -> pulumi.Output[Optional[outputs.ApplicationPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewayId")
+    def gateway_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatorApiPlanId")
+    def operator_api_plan_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatorName")
+    def operator_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasProperties")
+    def saas_properties(self) -> pulumi.Output[Optional[outputs.SaasPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[outputs.StatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

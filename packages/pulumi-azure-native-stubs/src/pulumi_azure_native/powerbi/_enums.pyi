@@ -1,0 +1,39 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AzureSkuName', 'AzureSkuTier', 'PersistedConnectionStatus', 'ResourceProvisioningState']
+@pulumi.type_token("azure-native:powerbi:AzureSkuName")
+class AzureSkuName(_builtins.str, Enum):
+    
+    S1 = ...
+
+
+@pulumi.type_token("azure-native:powerbi:AzureSkuTier")
+class AzureSkuTier(_builtins.str, Enum):
+    
+    STANDARD = ...
+
+
+@pulumi.type_token("azure-native:powerbi:PersistedConnectionStatus")
+class PersistedConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+    DISCONNECTED = ...
+
+
+@pulumi.type_token("azure-native:powerbi:ResourceProvisioningState")
+class ResourceProvisioningState(_builtins.str, Enum):
+    
+    CREATING = ...
+    UPDATING = ...
+    DELETING = ...
+    SUCCEEDED = ...
+    CANCELED = ...
+    FAILED = ...
+
+

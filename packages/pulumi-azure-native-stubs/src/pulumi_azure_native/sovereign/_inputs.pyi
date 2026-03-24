@@ -1,0 +1,708 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CustomNamingConventionArgs', 'CustomNamingConventionArgsDict', 'DecommissionedManagementGroupPropertiesArgs', 'DecommissionedManagementGroupPropertiesArgsDict', 'LandingZoneAccountResourcePropertiesArgs', 'LandingZoneAccountResourcePropertiesArgsDict', 'LandingZoneConfigurationResourcePropertiesArgs', 'LandingZoneConfigurationResourcePropertiesArgsDict', 'LandingZoneManagementGroupPropertiesArgs', 'LandingZoneManagementGroupPropertiesArgsDict', 'LandingZoneRegistrationResourcePropertiesArgs', 'LandingZoneRegistrationResourcePropertiesArgsDict', 'ManagedIdentityPropertiesArgs', 'ManagedIdentityPropertiesArgsDict', 'ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'ManagementGroupPropertiesArgs', 'ManagementGroupPropertiesArgsDict', 'PlatformManagementGroupPropertiesArgs', 'PlatformManagementGroupPropertiesArgsDict', 'PolicyInitiativeAssignmentPropertiesArgs', 'PolicyInitiativeAssignmentPropertiesArgsDict', 'SandboxManagementGroupPropertiesArgs', 'SandboxManagementGroupPropertiesArgsDict', 'TagsArgs', 'TagsArgsDict']
+class CustomNamingConventionArgsDict(TypedDict):
+    
+    formula: pulumi.Input[_builtins.str]
+    resource_type: pulumi.Input[Union[_builtins.str, ResourceType]]
+
+
+@pulumi.input_type
+class CustomNamingConventionArgs:
+    def __init__(__self__, *, formula: pulumi.Input[_builtins.str], resource_type: pulumi.Input[Union[_builtins.str, ResourceType]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def formula(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @formula.setter
+    def formula(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> pulumi.Input[Union[_builtins.str, ResourceType]]:
+        
+        ...
+    
+    @resource_type.setter
+    def resource_type(self, value: pulumi.Input[Union[_builtins.str, ResourceType]]): # -> None:
+        ...
+    
+
+
+class DecommissionedManagementGroupPropertiesArgsDict(TypedDict):
+    
+    create: pulumi.Input[_builtins.bool]
+    policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgsDict]]]
+
+
+@pulumi.input_type
+class DecommissionedManagementGroupPropertiesArgs:
+    def __init__(__self__, *, create: pulumi.Input[_builtins.bool], policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def create(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @create.setter
+    def create(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativesAssignmentProperties")
+    def policy_initiatives_assignment_properties(self) -> pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]:
+        
+        ...
+    
+    @policy_initiatives_assignment_properties.setter
+    def policy_initiatives_assignment_properties(self, value: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]): # -> None:
+        ...
+    
+
+
+class LandingZoneAccountResourcePropertiesArgsDict(TypedDict):
+    
+    storage_account: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class LandingZoneAccountResourcePropertiesArgs:
+    def __init__(__self__, *, storage_account: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccount")
+    def storage_account(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @storage_account.setter
+    def storage_account(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class LandingZoneConfigurationResourcePropertiesArgsDict(TypedDict):
+    
+    azure_bastion_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
+    ddos_protection_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
+    firewall_creation_option: pulumi.Input[Union[_builtins.str, FirewallCreationOptions]]
+    gateway_subnet_cidr_block: pulumi.Input[_builtins.str]
+    hub_network_cidr_block: pulumi.Input[_builtins.str]
+    log_analytics_workspace_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]
+    log_retention_in_days: pulumi.Input[_builtins.float]
+    managed_identity: pulumi.Input[ManagedIdentityPropertiesArgsDict]
+    azure_bastion_subnet_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
+    custom_naming_convention: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomNamingConventionArgsDict]]]]
+    decommissioned_mg_metadata: NotRequired[pulumi.Input[DecommissionedManagementGroupPropertiesArgsDict]]
+    existing_azure_bastion_id: NotRequired[pulumi.Input[_builtins.str]]
+    existing_ddos_protection_id: NotRequired[pulumi.Input[_builtins.str]]
+    existing_log_analytics_workspace_id: NotRequired[pulumi.Input[_builtins.str]]
+    firewall_subnet_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
+    landing_zones_mg_children: NotRequired[pulumi.Input[Sequence[pulumi.Input[LandingZoneManagementGroupPropertiesArgsDict]]]]
+    landing_zones_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+    naming_convention_formula: NotRequired[pulumi.Input[_builtins.str]]
+    platform_connectivity_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+    platform_identity_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+    platform_management_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+    platform_mg_children: NotRequired[pulumi.Input[Sequence[pulumi.Input[PlatformManagementGroupPropertiesArgsDict]]]]
+    platform_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+    sandbox_mg_metadata: NotRequired[pulumi.Input[SandboxManagementGroupPropertiesArgsDict]]
+    tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[TagsArgsDict]]]]
+    top_level_mg_metadata: NotRequired[pulumi.Input[ManagementGroupPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class LandingZoneConfigurationResourcePropertiesArgs:
+    def __init__(__self__, *, azure_bastion_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]], ddos_protection_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]], firewall_creation_option: pulumi.Input[Union[_builtins.str, FirewallCreationOptions]], gateway_subnet_cidr_block: pulumi.Input[_builtins.str], hub_network_cidr_block: pulumi.Input[_builtins.str], log_analytics_workspace_creation_option: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]], log_retention_in_days: pulumi.Input[_builtins.float], managed_identity: pulumi.Input[ManagedIdentityPropertiesArgs], azure_bastion_subnet_cidr_block: Optional[pulumi.Input[_builtins.str]] = ..., custom_naming_convention: Optional[pulumi.Input[Sequence[pulumi.Input[CustomNamingConventionArgs]]]] = ..., decommissioned_mg_metadata: Optional[pulumi.Input[DecommissionedManagementGroupPropertiesArgs]] = ..., existing_azure_bastion_id: Optional[pulumi.Input[_builtins.str]] = ..., existing_ddos_protection_id: Optional[pulumi.Input[_builtins.str]] = ..., existing_log_analytics_workspace_id: Optional[pulumi.Input[_builtins.str]] = ..., firewall_subnet_cidr_block: Optional[pulumi.Input[_builtins.str]] = ..., landing_zones_mg_children: Optional[pulumi.Input[Sequence[pulumi.Input[LandingZoneManagementGroupPropertiesArgs]]]] = ..., landing_zones_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ..., naming_convention_formula: Optional[pulumi.Input[_builtins.str]] = ..., platform_connectivity_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ..., platform_identity_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ..., platform_management_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ..., platform_mg_children: Optional[pulumi.Input[Sequence[pulumi.Input[PlatformManagementGroupPropertiesArgs]]]] = ..., platform_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ..., sandbox_mg_metadata: Optional[pulumi.Input[SandboxManagementGroupPropertiesArgs]] = ..., tags: Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]] = ..., top_level_mg_metadata: Optional[pulumi.Input[ManagementGroupPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureBastionCreationOption")
+    def azure_bastion_creation_option(self) -> pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]:
+        
+        ...
+    
+    @azure_bastion_creation_option.setter
+    def azure_bastion_creation_option(self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ddosProtectionCreationOption")
+    def ddos_protection_creation_option(self) -> pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]:
+        
+        ...
+    
+    @ddos_protection_creation_option.setter
+    def ddos_protection_creation_option(self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallCreationOption")
+    def firewall_creation_option(self) -> pulumi.Input[Union[_builtins.str, FirewallCreationOptions]]:
+        
+        ...
+    
+    @firewall_creation_option.setter
+    def firewall_creation_option(self, value: pulumi.Input[Union[_builtins.str, FirewallCreationOptions]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewaySubnetCidrBlock")
+    def gateway_subnet_cidr_block(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @gateway_subnet_cidr_block.setter
+    def gateway_subnet_cidr_block(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hubNetworkCidrBlock")
+    def hub_network_cidr_block(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @hub_network_cidr_block.setter
+    def hub_network_cidr_block(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logAnalyticsWorkspaceCreationOption")
+    def log_analytics_workspace_creation_option(self) -> pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]:
+        
+        ...
+    
+    @log_analytics_workspace_creation_option.setter
+    def log_analytics_workspace_creation_option(self, value: pulumi.Input[Union[_builtins.str, ResourceCreationOptions]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logRetentionInDays")
+    def log_retention_in_days(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @log_retention_in_days.setter
+    def log_retention_in_days(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentity")
+    def managed_identity(self) -> pulumi.Input[ManagedIdentityPropertiesArgs]:
+        
+        ...
+    
+    @managed_identity.setter
+    def managed_identity(self, value: pulumi.Input[ManagedIdentityPropertiesArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureBastionSubnetCidrBlock")
+    def azure_bastion_subnet_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @azure_bastion_subnet_cidr_block.setter
+    def azure_bastion_subnet_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customNamingConvention")
+    def custom_naming_convention(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CustomNamingConventionArgs]]]]:
+        
+        ...
+    
+    @custom_naming_convention.setter
+    def custom_naming_convention(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomNamingConventionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="decommissionedMgMetadata")
+    def decommissioned_mg_metadata(self) -> Optional[pulumi.Input[DecommissionedManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @decommissioned_mg_metadata.setter
+    def decommissioned_mg_metadata(self, value: Optional[pulumi.Input[DecommissionedManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="existingAzureBastionId")
+    def existing_azure_bastion_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @existing_azure_bastion_id.setter
+    def existing_azure_bastion_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="existingDdosProtectionId")
+    def existing_ddos_protection_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @existing_ddos_protection_id.setter
+    def existing_ddos_protection_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="existingLogAnalyticsWorkspaceId")
+    def existing_log_analytics_workspace_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @existing_log_analytics_workspace_id.setter
+    def existing_log_analytics_workspace_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallSubnetCidrBlock")
+    def firewall_subnet_cidr_block(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @firewall_subnet_cidr_block.setter
+    def firewall_subnet_cidr_block(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="landingZonesMgChildren")
+    def landing_zones_mg_children(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[LandingZoneManagementGroupPropertiesArgs]]]]:
+        
+        ...
+    
+    @landing_zones_mg_children.setter
+    def landing_zones_mg_children(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LandingZoneManagementGroupPropertiesArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="landingZonesMgMetadata")
+    def landing_zones_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @landing_zones_mg_metadata.setter
+    def landing_zones_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namingConventionFormula")
+    def naming_convention_formula(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @naming_convention_formula.setter
+    def naming_convention_formula(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformConnectivityMgMetadata")
+    def platform_connectivity_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @platform_connectivity_mg_metadata.setter
+    def platform_connectivity_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformIdentityMgMetadata")
+    def platform_identity_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @platform_identity_mg_metadata.setter
+    def platform_identity_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformManagementMgMetadata")
+    def platform_management_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @platform_management_mg_metadata.setter
+    def platform_management_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformMgChildren")
+    def platform_mg_children(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[PlatformManagementGroupPropertiesArgs]]]]:
+        
+        ...
+    
+    @platform_mg_children.setter
+    def platform_mg_children(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PlatformManagementGroupPropertiesArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformMgMetadata")
+    def platform_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @platform_mg_metadata.setter
+    def platform_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sandboxMgMetadata")
+    def sandbox_mg_metadata(self) -> Optional[pulumi.Input[SandboxManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @sandbox_mg_metadata.setter
+    def sandbox_mg_metadata(self, value: Optional[pulumi.Input[SandboxManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TagsArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topLevelMgMetadata")
+    def top_level_mg_metadata(self) -> Optional[pulumi.Input[ManagementGroupPropertiesArgs]]:
+        
+        ...
+    
+    @top_level_mg_metadata.setter
+    def top_level_mg_metadata(self, value: Optional[pulumi.Input[ManagementGroupPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class LandingZoneManagementGroupPropertiesArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgsDict]]]
+
+
+@pulumi.input_type
+class LandingZoneManagementGroupPropertiesArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativesAssignmentProperties")
+    def policy_initiatives_assignment_properties(self) -> pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]:
+        
+        ...
+    
+    @policy_initiatives_assignment_properties.setter
+    def policy_initiatives_assignment_properties(self, value: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]): # -> None:
+        ...
+    
+
+
+class LandingZoneRegistrationResourcePropertiesArgsDict(TypedDict):
+    
+    existing_landing_zone_configuration_id: pulumi.Input[_builtins.str]
+    existing_top_level_mg_id: pulumi.Input[_builtins.str]
+    managed_identity: NotRequired[pulumi.Input[ManagedIdentityPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class LandingZoneRegistrationResourcePropertiesArgs:
+    def __init__(__self__, *, existing_landing_zone_configuration_id: pulumi.Input[_builtins.str], existing_top_level_mg_id: pulumi.Input[_builtins.str], managed_identity: Optional[pulumi.Input[ManagedIdentityPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="existingLandingZoneConfigurationId")
+    def existing_landing_zone_configuration_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @existing_landing_zone_configuration_id.setter
+    def existing_landing_zone_configuration_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="existingTopLevelMgId")
+    def existing_top_level_mg_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @existing_top_level_mg_id.setter
+    def existing_top_level_mg_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentity")
+    def managed_identity(self) -> Optional[pulumi.Input[ManagedIdentityPropertiesArgs]]:
+        
+        ...
+    
+    @managed_identity.setter
+    def managed_identity(self, value: Optional[pulumi.Input[ManagedIdentityPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class ManagedIdentityPropertiesArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]]
+    user_assigned_identity_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ManagedIdentityPropertiesArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]], user_assigned_identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedIdentityResourceType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentityResourceId")
+    def user_assigned_identity_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_assigned_identity_resource_id.setter
+    def user_assigned_identity_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ManagedServiceIdentityArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedServiceIdentityArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ManagementGroupPropertiesArgsDict(TypedDict):
+    
+    policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgsDict]]]
+
+
+@pulumi.input_type
+class ManagementGroupPropertiesArgs:
+    def __init__(__self__, *, policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativesAssignmentProperties")
+    def policy_initiatives_assignment_properties(self) -> pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]:
+        
+        ...
+    
+    @policy_initiatives_assignment_properties.setter
+    def policy_initiatives_assignment_properties(self, value: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]): # -> None:
+        ...
+    
+
+
+class PlatformManagementGroupPropertiesArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgsDict]]]
+
+
+@pulumi.input_type
+class PlatformManagementGroupPropertiesArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativesAssignmentProperties")
+    def policy_initiatives_assignment_properties(self) -> pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]:
+        
+        ...
+    
+    @policy_initiatives_assignment_properties.setter
+    def policy_initiatives_assignment_properties(self, value: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]): # -> None:
+        ...
+    
+
+
+class PolicyInitiativeAssignmentPropertiesArgsDict(TypedDict):
+    
+    assignment_parameters: Any
+    policy_initiative_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class PolicyInitiativeAssignmentPropertiesArgs:
+    def __init__(__self__, *, assignment_parameters: Any, policy_initiative_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentParameters")
+    def assignment_parameters(self) -> Any:
+        
+        ...
+    
+    @assignment_parameters.setter
+    def assignment_parameters(self, value: Any): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativeId")
+    def policy_initiative_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @policy_initiative_id.setter
+    def policy_initiative_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SandboxManagementGroupPropertiesArgsDict(TypedDict):
+    
+    create: pulumi.Input[_builtins.bool]
+    policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgsDict]]]
+
+
+@pulumi.input_type
+class SandboxManagementGroupPropertiesArgs:
+    def __init__(__self__, *, create: pulumi.Input[_builtins.bool], policy_initiatives_assignment_properties: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def create(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @create.setter
+    def create(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyInitiativesAssignmentProperties")
+    def policy_initiatives_assignment_properties(self) -> pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]:
+        
+        ...
+    
+    @policy_initiatives_assignment_properties.setter
+    def policy_initiatives_assignment_properties(self, value: pulumi.Input[Sequence[pulumi.Input[PolicyInitiativeAssignmentPropertiesArgs]]]): # -> None:
+        ...
+    
+
+
+class TagsArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class TagsArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

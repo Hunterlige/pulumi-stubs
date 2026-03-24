@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetBudgetResult', 'AwaitableGetBudgetResult', 'get_budget', 'get_budget_output']
+@pulumi.output_type
+class GetBudgetResult:
+    
+    def __init__(__self__, amount=..., azure_api_version=..., category=..., current_spend=..., e_tag=..., filter=..., forecast_spend=..., id=..., name=..., notifications=..., system_data=..., time_grain=..., time_period=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def amount(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentSpend")
+    def current_spend(self) -> outputs.CurrentSpendResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[outputs.BudgetFilterResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="forecastSpend")
+    def forecast_spend(self) -> outputs.ForecastSpendResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def notifications(self) -> Optional[Mapping[str, outputs.NotificationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeGrain")
+    def time_grain(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timePeriod")
+    def time_period(self) -> outputs.BudgetTimePeriodResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetBudgetResult(GetBudgetResult):
+    def __await__(self): # -> Generator[Never, Any, GetBudgetResult]:
+        ...
+    
+
+
+def get_budget(budget_name: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetBudgetResult:
+    
+    ...
+
+def get_budget_output(budget_name: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetBudgetResult]:
+    
+    ...
+

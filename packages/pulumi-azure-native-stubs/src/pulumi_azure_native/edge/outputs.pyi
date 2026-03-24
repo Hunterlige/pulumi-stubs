@@ -1,0 +1,1589 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AvailableSolutionTemplateVersionResponse', ..., 'CapabilityResponse', 'ComponentStatusResponse', 'ConfigTemplatePropertiesResponse', 'ConfigurationPropertiesResponse', 'ConfigurationReferencePropertiesResponse', 'ContextPropertiesResponse', 'DeploymentStatusResponse', 'DiagnosticPropertiesResponse', 'DynamicConfigurationPropertiesResponse', 'DynamicConfigurationVersionPropertiesResponse', 'DynamicSchemaPropertiesResponse', 'ErrorActionResponse', 'ErrorAdditionalInfoResponse', 'ErrorDetailResponse', 'ExecutionPropertiesResponse', 'ExecutionStatusResponse', 'HierarchyResponse', 'InstancePropertiesResponse', 'ReconciliationPolicyPropertiesResponse', 'SchemaPropertiesResponse', 'SchemaReferencePropertiesResponse', 'SchemaVersionPropertiesResponse', 'SiteAddressPropertiesResponse', 'SitePropertiesResponse', 'SitePropertiesResponseV1', 'SiteReferencePropertiesResponse', 'SolutionDependencyResponse', 'SolutionPropertiesResponse', 'SolutionTemplatePropertiesResponse', 'SolutionVersionPropertiesResponse', 'StageSpecResponse', 'StageStatusResponse', 'SystemDataResponse', 'TargetPropertiesResponse', 'TargetStatusResponse', 'TaskOptionResponse', 'TaskSpecResponse', 'WorkflowPropertiesResponse', 'WorkflowVersionPropertiesResponse']
+@pulumi.output_type
+class AvailableSolutionTemplateVersionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, is_configured: _builtins.bool, latest_config_revision: _builtins.str, solution_template_version: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isConfigured")
+    def is_configured(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestConfigRevision")
+    def latest_config_revision(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionTemplateVersion")
+    def solution_template_version(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class AzureResourceManagerCommonTypesExtendedLocationResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CapabilityResponse(dict):
+    
+    def __init__(__self__, *, description: _builtins.str, name: _builtins.str, state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ComponentStatusResponse(dict):
+    
+    def __init__(__self__, *, name: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfigTemplatePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, description: _builtins.str, latest_version: _builtins.str, provisioning_state: _builtins.str, unique_identifier: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestVersion")
+    def latest_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueIdentifier")
+    def unique_identifier(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfigurationPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConfigurationReferencePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, configuration_resource_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationResourceId")
+    def configuration_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ContextPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, capabilities: Sequence[outputs.CapabilityResponse], hierarchies: Sequence[outputs.HierarchyResponse], provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capabilities(self) -> Sequence[outputs.CapabilityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hierarchies(self) -> Sequence[outputs.HierarchyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DeploymentStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, deployed: Optional[_builtins.int] = ..., expected_running_job_id: Optional[_builtins.int] = ..., generation: Optional[_builtins.int] = ..., last_modified: Optional[_builtins.str] = ..., running_job_id: Optional[_builtins.int] = ..., status: Optional[_builtins.str] = ..., status_details: Optional[_builtins.str] = ..., target_statuses: Optional[Sequence[outputs.TargetStatusResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def deployed(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedRunningJobId")
+    def expected_running_job_id(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def generation(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModified")
+    def last_modified(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runningJobId")
+    def running_job_id(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusDetails")
+    def status_details(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetStatuses")
+    def target_statuses(self) -> Optional[Sequence[outputs.TargetStatusResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DiagnosticPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DynamicConfigurationPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, current_version: _builtins.str, dynamic_configuration_model: _builtins.str, dynamic_configuration_type: _builtins.str, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentVersion")
+    def current_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dynamicConfigurationModel")
+    def dynamic_configuration_model(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dynamicConfigurationType")
+    def dynamic_configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DynamicConfigurationVersionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, schema_id: _builtins.str, values: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaId")
+    def schema_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def values(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DynamicSchemaPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, configuration_model: _builtins.str, configuration_type: _builtins.str, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationModel")
+    def configuration_model(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationType")
+    def configuration_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ErrorActionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, max_tolerated_failures: Optional[_builtins.int] = ..., mode: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxToleratedFailures")
+    def max_tolerated_failures(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ErrorAdditionalInfoResponse(dict):
+    
+    def __init__(__self__, *, info: Any, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def info(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ErrorDetailResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, additional_info: Sequence[outputs.ErrorAdditionalInfoResponse], code: _builtins.str, details: Sequence[outputs.ErrorDetailResponse], message: _builtins.str, target: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalInfo")
+    def additional_info(self) -> Sequence[outputs.ErrorAdditionalInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def details(self) -> Sequence[outputs.ErrorDetailResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExecutionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, status: outputs.ExecutionStatusResponse, workflow_version_id: _builtins.str, specification: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.ExecutionStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workflowVersionId")
+    def workflow_version_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def specification(self) -> Optional[Any]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExecutionStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, stage_history: Optional[Sequence[outputs.StageStatusResponse]] = ..., status: Optional[_builtins.int] = ..., status_message: Optional[_builtins.str] = ..., update_time: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stageHistory")
+    def stage_history(self) -> Optional[Sequence[outputs.StageStatusResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusMessage")
+    def status_message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateTime")
+    def update_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class HierarchyResponse(dict):
+    
+    def __init__(__self__, *, description: _builtins.str, name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class InstancePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, deployment_timestamp_epoch: _builtins.float, provisioning_state: _builtins.str, solution_version_id: _builtins.str, status: outputs.DeploymentStatusResponse, target_id: _builtins.str, active_state: Optional[_builtins.str] = ..., reconciliation_policy: Optional[outputs.ReconciliationPolicyPropertiesResponse] = ..., solution_scope: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentTimestampEpoch")
+    def deployment_timestamp_epoch(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionVersionId")
+    def solution_version_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.DeploymentStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetId")
+    def target_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activeState")
+    def active_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reconciliationPolicy")
+    def reconciliation_policy(self) -> Optional[outputs.ReconciliationPolicyPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionScope")
+    def solution_scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ReconciliationPolicyPropertiesResponse(dict):
+    
+    def __init__(__self__, *, interval: _builtins.str, state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def interval(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SchemaPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, current_version: _builtins.str, provisioning_state: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentVersion")
+    def current_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SchemaReferencePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, schema_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaId")
+    def schema_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SchemaVersionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, value: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SiteAddressPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, city: Optional[_builtins.str] = ..., country: Optional[_builtins.str] = ..., postal_code: Optional[_builtins.str] = ..., state_or_province: Optional[_builtins.str] = ..., street_address1: Optional[_builtins.str] = ..., street_address2: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def city(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def country(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="postalCode")
+    def postal_code(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stateOrProvince")
+    def state_or_province(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="streetAddress1")
+    def street_address1(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="streetAddress2")
+    def street_address2(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SitePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, address_resource_id: Optional[_builtins.str] = ..., description: Optional[_builtins.str] = ..., display_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="addressResourceId")
+    def address_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SitePropertiesResponseV1(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, description: Optional[_builtins.str] = ..., display_name: Optional[_builtins.str] = ..., labels: Optional[Mapping[str, _builtins.str]] = ..., site_address: Optional[outputs.SiteAddressPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="siteAddress")
+    def site_address(self) -> Optional[outputs.SiteAddressPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SiteReferencePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, site_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="siteId")
+    def site_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SolutionDependencyResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, solution_template_version_id: _builtins.str, solution_version_id: _builtins.str, target_id: _builtins.str, dependencies: Optional[Sequence[outputs.SolutionDependencyResponse]] = ..., solution_instance_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionTemplateVersionId")
+    def solution_template_version_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionVersionId")
+    def solution_version_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetId")
+    def target_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def dependencies(self) -> Optional[Sequence[outputs.SolutionDependencyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionInstanceName")
+    def solution_instance_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SolutionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, available_solution_template_versions: Sequence[outputs.AvailableSolutionTemplateVersionResponse], provisioning_state: _builtins.str, solution_template_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availableSolutionTemplateVersions")
+    def available_solution_template_versions(self) -> Sequence[outputs.AvailableSolutionTemplateVersionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionTemplateId")
+    def solution_template_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SolutionTemplatePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, capabilities: Sequence[_builtins.str], description: _builtins.str, latest_version: _builtins.str, provisioning_state: _builtins.str, unique_identifier: _builtins.str, enable_external_validation: Optional[_builtins.bool] = ..., state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capabilities(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestVersion")
+    def latest_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueIdentifier")
+    def unique_identifier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableExternalValidation")
+    def enable_external_validation(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SolutionVersionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action_type: _builtins.str, configuration: _builtins.str, error_details: outputs.ErrorDetailResponse, external_validation_id: _builtins.str, latest_action_tracking_uri: _builtins.str, provisioning_state: _builtins.str, review_id: _builtins.str, revision: _builtins.int, solution_dependencies: Sequence[outputs.SolutionDependencyResponse], solution_instance_name: _builtins.str, solution_template_version_id: _builtins.str, specification: Any, state: _builtins.str, target_display_name: _builtins.str, target_level_configuration: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorDetails")
+    def error_details(self) -> outputs.ErrorDetailResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalValidationId")
+    def external_validation_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestActionTrackingUri")
+    def latest_action_tracking_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reviewId")
+    def review_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revision(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionDependencies")
+    def solution_dependencies(self) -> Sequence[outputs.SolutionDependencyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionInstanceName")
+    def solution_instance_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionTemplateVersionId")
+    def solution_template_version_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def specification(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetDisplayName")
+    def target_display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetLevelConfiguration")
+    def target_level_configuration(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class StageSpecResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: _builtins.str, specification: Optional[Any] = ..., task_option: Optional[outputs.TaskOptionResponse] = ..., tasks: Optional[Sequence[outputs.TaskSpecResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def specification(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="taskOption")
+    def task_option(self) -> Optional[outputs.TaskOptionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tasks(self) -> Optional[Sequence[outputs.TaskSpecResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class StageStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, error_message: Optional[_builtins.str] = ..., inputs: Optional[Any] = ..., is_active: Optional[_builtins.str] = ..., nextstage: Optional[_builtins.str] = ..., outputs: Optional[Any] = ..., stage: Optional[_builtins.str] = ..., status: Optional[_builtins.int] = ..., status_message: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorMessage")
+    def error_message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inputs(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isActive")
+    def is_active(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nextstage(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def outputs(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def stage(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusMessage")
+    def status_message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TargetPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, capabilities: Sequence[_builtins.str], context_id: _builtins.str, description: _builtins.str, display_name: _builtins.str, hierarchy_level: _builtins.str, provisioning_state: _builtins.str, status: outputs.DeploymentStatusResponse, target_specification: Any, solution_scope: Optional[_builtins.str] = ..., state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capabilities(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contextId")
+    def context_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hierarchyLevel")
+    def hierarchy_level(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.DeploymentStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetSpecification")
+    def target_specification(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="solutionScope")
+    def solution_scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TargetStatusResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, component_statuses: Optional[Sequence[outputs.ComponentStatusResponse]] = ..., name: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="componentStatuses")
+    def component_statuses(self) -> Optional[Sequence[outputs.ComponentStatusResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TaskOptionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, concurrency: Optional[_builtins.int] = ..., error_action: Optional[outputs.ErrorActionResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def concurrency(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorAction")
+    def error_action(self) -> Optional[outputs.ErrorActionResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TaskSpecResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, name: _builtins.str, specification: Any, target_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def specification(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetId")
+    def target_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class WorkflowPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, provisioning_state: _builtins.str, workflow_template_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workflowTemplateId")
+    def workflow_template_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class WorkflowVersionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, configuration: _builtins.str, provisioning_state: _builtins.str, review_id: _builtins.str, revision: _builtins.int, stage_spec: Sequence[outputs.StageSpecResponse], state: _builtins.str, specification: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configuration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reviewId")
+    def review_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revision(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stageSpec")
+    def stage_spec(self) -> Sequence[outputs.StageSpecResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def specification(self) -> Optional[Any]:
+        
+        ...
+    
+
+

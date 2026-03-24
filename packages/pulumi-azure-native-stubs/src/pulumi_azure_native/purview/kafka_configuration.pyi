@@ -1,0 +1,211 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['KafkaConfigurationArgs', 'KafkaConfiguration']
+@pulumi.input_type
+class KafkaConfigurationArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], consumer_group: Optional[pulumi.Input[_builtins.str]] = ..., credentials: Optional[pulumi.Input[CredentialsArgs]] = ..., event_hub_partition_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_type: Optional[pulumi.Input[Union[_builtins.str, EventHubType]]] = ..., event_streaming_state: Optional[pulumi.Input[Union[_builtins.str, EventStreamingState]]] = ..., event_streaming_type: Optional[pulumi.Input[Union[_builtins.str, EventStreamingType]]] = ..., kafka_configuration_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumerGroup")
+    def consumer_group(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @consumer_group.setter
+    def consumer_group(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[CredentialsArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[CredentialsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubPartitionId")
+    def event_hub_partition_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @event_hub_partition_id.setter
+    def event_hub_partition_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubResourceId")
+    def event_hub_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @event_hub_resource_id.setter
+    def event_hub_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubType")
+    def event_hub_type(self) -> Optional[pulumi.Input[Union[_builtins.str, EventHubType]]]:
+        
+        ...
+    
+    @event_hub_type.setter
+    def event_hub_type(self, value: Optional[pulumi.Input[Union[_builtins.str, EventHubType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventStreamingState")
+    def event_streaming_state(self) -> Optional[pulumi.Input[Union[_builtins.str, EventStreamingState]]]:
+        
+        ...
+    
+    @event_streaming_state.setter
+    def event_streaming_state(self, value: Optional[pulumi.Input[Union[_builtins.str, EventStreamingState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventStreamingType")
+    def event_streaming_type(self) -> Optional[pulumi.Input[Union[_builtins.str, EventStreamingType]]]:
+        
+        ...
+    
+    @event_streaming_type.setter
+    def event_streaming_type(self, value: Optional[pulumi.Input[Union[_builtins.str, EventStreamingType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaConfigurationName")
+    def kafka_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kafka_configuration_name.setter
+    def kafka_configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:purview:KafkaConfiguration")
+class KafkaConfiguration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., consumer_group: Optional[pulumi.Input[_builtins.str]] = ..., credentials: Optional[pulumi.Input[Union[CredentialsArgs, CredentialsArgsDict]]] = ..., event_hub_partition_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_type: Optional[pulumi.Input[Union[_builtins.str, EventHubType]]] = ..., event_streaming_state: Optional[pulumi.Input[Union[_builtins.str, EventStreamingState]]] = ..., event_streaming_type: Optional[pulumi.Input[Union[_builtins.str, EventStreamingType]]] = ..., kafka_configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: KafkaConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> KafkaConfiguration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumerGroup")
+    def consumer_group(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> pulumi.Output[Optional[outputs.CredentialsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubPartitionId")
+    def event_hub_partition_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubResourceId")
+    def event_hub_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubType")
+    def event_hub_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventStreamingState")
+    def event_streaming_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventStreamingType")
+    def event_streaming_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetLabResult', 'AwaitableGetLabResult', 'get_lab', 'get_lab_output']
+@pulumi.output_type
+class GetLabResult:
+    
+    def __init__(__self__, azure_api_version=..., budget_per_student=..., currency=..., description=..., display_name=..., effective_date=..., expiration_date=..., id=..., invitation_code=..., max_student_count=..., name=..., status=..., system_data=..., total_budget=..., type=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="budgetPerStudent")
+    def budget_per_student(self) -> outputs.AmountResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def currency(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveDate")
+    def effective_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationDate")
+    def expiration_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="invitationCode")
+    def invitation_code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxStudentCount")
+    def max_student_count(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalBudget")
+    def total_budget(self) -> outputs.AmountResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+
+
+class AwaitableGetLabResult(GetLabResult):
+    def __await__(self): # -> Generator[Never, Any, GetLabResult]:
+        ...
+    
+
+
+def get_lab(billing_account_name: Optional[_builtins.str] = ..., billing_profile_name: Optional[_builtins.str] = ..., include_budget: Optional[_builtins.bool] = ..., invoice_section_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetLabResult:
+    
+    ...
+
+def get_lab_output(billing_account_name: Optional[pulumi.Input[_builtins.str]] = ..., billing_profile_name: Optional[pulumi.Input[_builtins.str]] = ..., include_budget: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., invoice_section_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetLabResult]:
+    
+    ...
+

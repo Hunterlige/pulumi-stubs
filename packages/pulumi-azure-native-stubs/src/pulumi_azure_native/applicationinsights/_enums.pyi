@@ -1,0 +1,94 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ApplicationType', 'FavoriteType', 'FlowType', 'IngestionMode', 'ItemScope', 'ItemType', 'Kind', 'ManagedServiceIdentityType', 'PublicNetworkAccessType', 'RequestSource', 'WebTestKind', 'WorkbookSharedTypeKind']
+@pulumi.type_token("azure-native:applicationinsights:ApplicationType")
+class ApplicationType(_builtins.str, Enum):
+    
+    WEB = ...
+    OTHER = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:FavoriteType")
+class FavoriteType(_builtins.str, Enum):
+    
+    SHARED = ...
+    USER = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:FlowType")
+class FlowType(_builtins.str, Enum):
+    
+    BLUEFIELD = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:IngestionMode")
+class IngestionMode(_builtins.str, Enum):
+    
+    APPLICATION_INSIGHTS = ...
+    APPLICATION_INSIGHTS_WITH_DIAGNOSTIC_SETTINGS = ...
+    LOG_ANALYTICS = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:ItemScope")
+class ItemScope(_builtins.str, Enum):
+    
+    SHARED = ...
+    USER = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:ItemType")
+class ItemType(_builtins.str, Enum):
+    
+    NONE = ...
+    QUERY = ...
+    RECENT = ...
+    FUNCTION = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:Kind")
+class Kind(_builtins.str, Enum):
+    
+    USER = ...
+    SHARED = ...
+
+
+@pulumi.type_token(...)
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token(...)
+class PublicNetworkAccessType(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:RequestSource")
+class RequestSource(_builtins.str, Enum):
+    
+    REST = ...
+
+
+@pulumi.type_token("azure-native:applicationinsights:WebTestKind")
+class WebTestKind(_builtins.str, Enum):
+    
+    PING = ...
+    MULTISTEP = ...
+    STANDARD = ...
+
+
+@pulumi.type_token(...)
+class WorkbookSharedTypeKind(_builtins.str, Enum):
+    
+    SHARED = ...
+
+

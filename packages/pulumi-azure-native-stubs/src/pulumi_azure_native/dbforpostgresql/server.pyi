@@ -1,0 +1,437 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ServerArgs', 'Server']
+@pulumi.input_type
+class ServerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., auth_config: Optional[pulumi.Input[AuthConfigArgs]] = ..., availability_zone: Optional[pulumi.Input[_builtins.str]] = ..., backup: Optional[pulumi.Input[BackupArgs]] = ..., cluster: Optional[pulumi.Input[ClusterArgs]] = ..., create_mode: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]] = ..., data_encryption: Optional[pulumi.Input[DataEncryptionArgs]] = ..., high_availability: Optional[pulumi.Input[HighAvailabilityArgs]] = ..., identity: Optional[pulumi.Input[UserAssignedIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., maintenance_window: Optional[pulumi.Input[MaintenanceWindowArgs]] = ..., network: Optional[pulumi.Input[NetworkArgs]] = ..., point_in_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., replica: Optional[pulumi.Input[ReplicaArgs]] = ..., replication_role: Optional[pulumi.Input[Union[_builtins.str, ReplicationRole]]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[SkuArgs]] = ..., source_server_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., storage: Optional[pulumi.Input[StorageArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., version: Optional[pulumi.Input[Union[_builtins.str, PostgresMajorVersion]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login.setter
+    def administrator_login(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLoginPassword")
+    def administrator_login_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login_password.setter
+    def administrator_login_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authConfig")
+    def auth_config(self) -> Optional[pulumi.Input[AuthConfigArgs]]:
+        
+        ...
+    
+    @auth_config.setter
+    def auth_config(self, value: Optional[pulumi.Input[AuthConfigArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZone")
+    def availability_zone(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @availability_zone.setter
+    def availability_zone(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def backup(self) -> Optional[pulumi.Input[BackupArgs]]:
+        
+        ...
+    
+    @backup.setter
+    def backup(self, value: Optional[pulumi.Input[BackupArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cluster(self) -> Optional[pulumi.Input[ClusterArgs]]:
+        
+        ...
+    
+    @cluster.setter
+    def cluster(self, value: Optional[pulumi.Input[ClusterArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createMode")
+    def create_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]:
+        
+        ...
+    
+    @create_mode.setter
+    def create_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataEncryption")
+    def data_encryption(self) -> Optional[pulumi.Input[DataEncryptionArgs]]:
+        
+        ...
+    
+    @data_encryption.setter
+    def data_encryption(self, value: Optional[pulumi.Input[DataEncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="highAvailability")
+    def high_availability(self) -> Optional[pulumi.Input[HighAvailabilityArgs]]:
+        
+        ...
+    
+    @high_availability.setter
+    def high_availability(self, value: Optional[pulumi.Input[HighAvailabilityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[UserAssignedIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[UserAssignedIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceWindow")
+    def maintenance_window(self) -> Optional[pulumi.Input[MaintenanceWindowArgs]]:
+        
+        ...
+    
+    @maintenance_window.setter
+    def maintenance_window(self, value: Optional[pulumi.Input[MaintenanceWindowArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def network(self) -> Optional[pulumi.Input[NetworkArgs]]:
+        
+        ...
+    
+    @network.setter
+    def network(self, value: Optional[pulumi.Input[NetworkArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="pointInTimeUTC")
+    def point_in_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @point_in_time_utc.setter
+    def point_in_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def replica(self) -> Optional[pulumi.Input[ReplicaArgs]]:
+        
+        ...
+    
+    @replica.setter
+    def replica(self, value: Optional[pulumi.Input[ReplicaArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRole")
+    def replication_role(self) -> Optional[pulumi.Input[Union[_builtins.str, ReplicationRole]]]:
+        
+        ...
+    
+    @replication_role.setter
+    def replication_role(self, value: Optional[pulumi.Input[Union[_builtins.str, ReplicationRole]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[SkuArgs]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[SkuArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceServerResourceId")
+    def source_server_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_server_resource_id.setter
+    def source_server_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def storage(self) -> Optional[pulumi.Input[StorageArgs]]:
+        
+        ...
+    
+    @storage.setter
+    def storage(self, value: Optional[pulumi.Input[StorageArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[Union[_builtins.str, PostgresMajorVersion]]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[Union[_builtins.str, PostgresMajorVersion]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:dbforpostgresql:Server")
+class Server(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., auth_config: Optional[pulumi.Input[Union[AuthConfigArgs, AuthConfigArgsDict]]] = ..., availability_zone: Optional[pulumi.Input[_builtins.str]] = ..., backup: Optional[pulumi.Input[Union[BackupArgs, BackupArgsDict]]] = ..., cluster: Optional[pulumi.Input[Union[ClusterArgs, ClusterArgsDict]]] = ..., create_mode: Optional[pulumi.Input[Union[_builtins.str, CreateMode]]] = ..., data_encryption: Optional[pulumi.Input[Union[DataEncryptionArgs, DataEncryptionArgsDict]]] = ..., high_availability: Optional[pulumi.Input[Union[HighAvailabilityArgs, HighAvailabilityArgsDict]]] = ..., identity: Optional[pulumi.Input[Union[UserAssignedIdentityArgs, UserAssignedIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., maintenance_window: Optional[pulumi.Input[Union[MaintenanceWindowArgs, MaintenanceWindowArgsDict]]] = ..., network: Optional[pulumi.Input[Union[NetworkArgs, NetworkArgsDict]]] = ..., point_in_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., replica: Optional[pulumi.Input[Union[ReplicaArgs, ReplicaArgsDict]]] = ..., replication_role: Optional[pulumi.Input[Union[_builtins.str, ReplicationRole]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., source_server_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., storage: Optional[pulumi.Input[Union[StorageArgs, StorageArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., version: Optional[pulumi.Input[Union[_builtins.str, PostgresMajorVersion]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Server:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authConfig")
+    def auth_config(self) -> pulumi.Output[Optional[outputs.AuthConfigResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZone")
+    def availability_zone(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def backup(self) -> pulumi.Output[Optional[outputs.BackupResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cluster(self) -> pulumi.Output[Optional[outputs.ClusterResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataEncryption")
+    def data_encryption(self) -> pulumi.Output[Optional[outputs.DataEncryptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fullyQualifiedDomainName")
+    def fully_qualified_domain_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="highAvailability")
+    def high_availability(self) -> pulumi.Output[Optional[outputs.HighAvailabilityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.UserAssignedIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceWindow")
+    def maintenance_window(self) -> pulumi.Output[Optional[outputs.MaintenanceWindowResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minorVersion")
+    def minor_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def network(self) -> pulumi.Output[Optional[outputs.NetworkResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.PrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def replica(self) -> pulumi.Output[Optional[outputs.ReplicaResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicaCapacity")
+    def replica_capacity(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRole")
+    def replication_role(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[Optional[outputs.SkuResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceServerResourceId")
+    def source_server_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def storage(self) -> pulumi.Output[Optional[outputs.StorageResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

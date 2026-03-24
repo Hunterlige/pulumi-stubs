@@ -1,0 +1,110 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AzureServersSettingArgs', 'AzureServersSetting']
+@pulumi.input_type
+class AzureServersSettingArgs:
+    def __init__(__self__, *, kind: pulumi.Input[_builtins.str], selected_provider: pulumi.Input[Union[_builtins.str, ServerVulnerabilityAssessmentsAzureSettingSelectedProvider]], setting_kind: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selectedProvider")
+    def selected_provider(self) -> pulumi.Input[Union[_builtins.str, ServerVulnerabilityAssessmentsAzureSettingSelectedProvider]]:
+        
+        ...
+    
+    @selected_provider.setter
+    def selected_provider(self, value: pulumi.Input[Union[_builtins.str, ServerVulnerabilityAssessmentsAzureSettingSelectedProvider]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="settingKind")
+    def setting_kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @setting_kind.setter
+    def setting_kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:security:AzureServersSetting")
+class AzureServersSetting(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., selected_provider: Optional[pulumi.Input[Union[_builtins.str, ServerVulnerabilityAssessmentsAzureSettingSelectedProvider]]] = ..., setting_kind: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AzureServersSettingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AzureServersSetting:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="selectedProvider")
+    def selected_provider(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,235 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['L3IsolationDomainArgs', 'L3IsolationDomain']
+@pulumi.input_type
+class L3IsolationDomainArgs:
+    def __init__(__self__, *, network_fabric_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], aggregate_route_configuration: Optional[pulumi.Input[AggregateRouteConfigurationArgs]] = ..., annotation: Optional[pulumi.Input[_builtins.str]] = ..., connected_subnet_route_policy: Optional[pulumi.Input[ConnectedSubnetRoutePolicyArgs]] = ..., l3_isolation_domain_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., redistribute_connected_subnets: Optional[pulumi.Input[Union[_builtins.str, RedistributeConnectedSubnets]]] = ..., redistribute_static_routes: Optional[pulumi.Input[Union[_builtins.str, RedistributeStaticRoutes]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricId")
+    def network_fabric_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @network_fabric_id.setter
+    def network_fabric_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aggregateRouteConfiguration")
+    def aggregate_route_configuration(self) -> Optional[pulumi.Input[AggregateRouteConfigurationArgs]]:
+        
+        ...
+    
+    @aggregate_route_configuration.setter
+    def aggregate_route_configuration(self, value: Optional[pulumi.Input[AggregateRouteConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @annotation.setter
+    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectedSubnetRoutePolicy")
+    def connected_subnet_route_policy(self) -> Optional[pulumi.Input[ConnectedSubnetRoutePolicyArgs]]:
+        
+        ...
+    
+    @connected_subnet_route_policy.setter
+    def connected_subnet_route_policy(self, value: Optional[pulumi.Input[ConnectedSubnetRoutePolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l3IsolationDomainName")
+    def l3_isolation_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @l3_isolation_domain_name.setter
+    def l3_isolation_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="redistributeConnectedSubnets")
+    def redistribute_connected_subnets(self) -> Optional[pulumi.Input[Union[_builtins.str, RedistributeConnectedSubnets]]]:
+        
+        ...
+    
+    @redistribute_connected_subnets.setter
+    def redistribute_connected_subnets(self, value: Optional[pulumi.Input[Union[_builtins.str, RedistributeConnectedSubnets]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="redistributeStaticRoutes")
+    def redistribute_static_routes(self) -> Optional[pulumi.Input[Union[_builtins.str, RedistributeStaticRoutes]]]:
+        
+        ...
+    
+    @redistribute_static_routes.setter
+    def redistribute_static_routes(self, value: Optional[pulumi.Input[Union[_builtins.str, RedistributeStaticRoutes]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class L3IsolationDomain(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., aggregate_route_configuration: Optional[pulumi.Input[Union[AggregateRouteConfigurationArgs, AggregateRouteConfigurationArgsDict]]] = ..., annotation: Optional[pulumi.Input[_builtins.str]] = ..., connected_subnet_route_policy: Optional[pulumi.Input[Union[ConnectedSubnetRoutePolicyArgs, ConnectedSubnetRoutePolicyArgsDict]]] = ..., l3_isolation_domain_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., network_fabric_id: Optional[pulumi.Input[_builtins.str]] = ..., redistribute_connected_subnets: Optional[pulumi.Input[Union[_builtins.str, RedistributeConnectedSubnets]]] = ..., redistribute_static_routes: Optional[pulumi.Input[Union[_builtins.str, RedistributeStaticRoutes]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: L3IsolationDomainArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> L3IsolationDomain:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administrativeState")
+    def administrative_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aggregateRouteConfiguration")
+    def aggregate_route_configuration(self) -> pulumi.Output[Optional[outputs.AggregateRouteConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationState")
+    def configuration_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectedSubnetRoutePolicy")
+    def connected_subnet_route_policy(self) -> pulumi.Output[Optional[outputs.ConnectedSubnetRoutePolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricId")
+    def network_fabric_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="redistributeConnectedSubnets")
+    def redistribute_connected_subnets(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="redistributeStaticRoutes")
+    def redistribute_static_routes(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

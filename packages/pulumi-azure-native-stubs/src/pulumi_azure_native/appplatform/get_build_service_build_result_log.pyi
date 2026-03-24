@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetBuildServiceBuildResultLogResult', 'AwaitableGetBuildServiceBuildResultLogResult', 'get_build_service_build_result_log', 'get_build_service_build_result_log_output']
+@pulumi.output_type
+class GetBuildServiceBuildResultLogResult:
+    
+    def __init__(__self__, blob_url=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobUrl")
+    def blob_url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetBuildServiceBuildResultLogResult(GetBuildServiceBuildResultLogResult):
+    def __await__(self): # -> Generator[Never, Any, GetBuildServiceBuildResultLogResult]:
+        ...
+    
+
+
+def get_build_service_build_result_log(build_name: Optional[_builtins.str] = ..., build_result_name: Optional[_builtins.str] = ..., build_service_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., service_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetBuildServiceBuildResultLogResult:
+    
+    ...
+
+def get_build_service_build_result_log_output(build_name: Optional[pulumi.Input[_builtins.str]] = ..., build_result_name: Optional[pulumi.Input[_builtins.str]] = ..., build_service_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetBuildServiceBuildResultLogResult]:
+    
+    ...
+

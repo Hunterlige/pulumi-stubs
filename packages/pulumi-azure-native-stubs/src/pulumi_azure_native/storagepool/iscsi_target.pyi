@@ -1,0 +1,225 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IscsiTargetArgs', 'IscsiTarget']
+@pulumi.input_type
+class IscsiTargetArgs:
+    def __init__(__self__, *, acl_mode: pulumi.Input[Union[_builtins.str, IscsiTargetAclMode]], disk_pool_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], iscsi_target_name: Optional[pulumi.Input[_builtins.str]] = ..., luns: Optional[pulumi.Input[Sequence[pulumi.Input[IscsiLunArgs]]]] = ..., managed_by: Optional[pulumi.Input[_builtins.str]] = ..., managed_by_extended: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., static_acls: Optional[pulumi.Input[Sequence[pulumi.Input[AclArgs]]]] = ..., target_iqn: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aclMode")
+    def acl_mode(self) -> pulumi.Input[Union[_builtins.str, IscsiTargetAclMode]]:
+        
+        ...
+    
+    @acl_mode.setter
+    def acl_mode(self, value: pulumi.Input[Union[_builtins.str, IscsiTargetAclMode]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskPoolName")
+    def disk_pool_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @disk_pool_name.setter
+    def disk_pool_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="iscsiTargetName")
+    def iscsi_target_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @iscsi_target_name.setter
+    def iscsi_target_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def luns(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[IscsiLunArgs]]]]:
+        
+        ...
+    
+    @luns.setter
+    def luns(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IscsiLunArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @managed_by.setter
+    def managed_by(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedByExtended")
+    def managed_by_extended(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @managed_by_extended.setter
+    def managed_by_extended(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="staticAcls")
+    def static_acls(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AclArgs]]]]:
+        
+        ...
+    
+    @static_acls.setter
+    def static_acls(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AclArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetIqn")
+    def target_iqn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target_iqn.setter
+    def target_iqn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:storagepool:IscsiTarget")
+class IscsiTarget(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., acl_mode: Optional[pulumi.Input[Union[_builtins.str, IscsiTargetAclMode]]] = ..., disk_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., iscsi_target_name: Optional[pulumi.Input[_builtins.str]] = ..., luns: Optional[pulumi.Input[Sequence[pulumi.Input[Union[IscsiLunArgs, IscsiLunArgsDict]]]]] = ..., managed_by: Optional[pulumi.Input[_builtins.str]] = ..., managed_by_extended: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., static_acls: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AclArgs, AclArgsDict]]]]] = ..., target_iqn: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IscsiTargetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> IscsiTarget:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aclMode")
+    def acl_mode(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoints(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def luns(self) -> pulumi.Output[Optional[Sequence[outputs.IscsiLunResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedByExtended")
+    def managed_by_extended(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sessions(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="staticAcls")
+    def static_acls(self) -> pulumi.Output[Optional[Sequence[outputs.AclResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemMetadataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetIqn")
+    def target_iqn(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

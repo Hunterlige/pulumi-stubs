@@ -1,0 +1,336 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AutoImportJobArgs', 'AutoImportJob']
+@pulumi.input_type
+class AutoImportJobArgs:
+    def __init__(__self__, *, aml_filesystem_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], admin_status: Optional[pulumi.Input[Union[_builtins.str, AdminStatus]]] = ..., auto_import_job_name: Optional[pulumi.Input[_builtins.str]] = ..., auto_import_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., conflict_resolution_mode: Optional[pulumi.Input[Union[_builtins.str, ConflictResolutionMode]]] = ..., enable_deletions: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., maximum_errors: Optional[pulumi.Input[_builtins.float]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="amlFilesystemName")
+    def aml_filesystem_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @aml_filesystem_name.setter
+    def aml_filesystem_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="adminStatus")
+    def admin_status(self) -> Optional[pulumi.Input[Union[_builtins.str, AdminStatus]]]:
+        
+        ...
+    
+    @admin_status.setter
+    def admin_status(self, value: Optional[pulumi.Input[Union[_builtins.str, AdminStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoImportJobName")
+    def auto_import_job_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @auto_import_job_name.setter
+    def auto_import_job_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoImportPrefixes")
+    def auto_import_prefixes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @auto_import_prefixes.setter
+    def auto_import_prefixes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflictResolutionMode")
+    def conflict_resolution_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, ConflictResolutionMode]]]:
+        
+        ...
+    
+    @conflict_resolution_mode.setter
+    def conflict_resolution_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, ConflictResolutionMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableDeletions")
+    def enable_deletions(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_deletions.setter
+    def enable_deletions(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumErrors")
+    def maximum_errors(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @maximum_errors.setter
+    def maximum_errors(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:storagecache:AutoImportJob")
+class AutoImportJob(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., admin_status: Optional[pulumi.Input[Union[_builtins.str, AdminStatus]]] = ..., aml_filesystem_name: Optional[pulumi.Input[_builtins.str]] = ..., auto_import_job_name: Optional[pulumi.Input[_builtins.str]] = ..., auto_import_prefixes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., conflict_resolution_mode: Optional[pulumi.Input[Union[_builtins.str, ConflictResolutionMode]]] = ..., enable_deletions: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., maximum_errors: Optional[pulumi.Input[_builtins.float]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AutoImportJobArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AutoImportJob:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="adminStatus")
+    def admin_status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoImportPrefixes")
+    def auto_import_prefixes(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobSyncEvents")
+    def blob_sync_events(self) -> pulumi.Output[outputs.AutoImportJobResponseBlobSyncEvents]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflictResolutionMode")
+    def conflict_resolution_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableDeletions")
+    def enable_deletions(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedDirectories")
+    def imported_directories(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedFiles")
+    def imported_files(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedSymlinks")
+    def imported_symlinks(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastCompletionTimeUTC")
+    def last_completion_time_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastStartedTimeUTC")
+    def last_started_time_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumErrors")
+    def maximum_errors(self) -> pulumi.Output[Optional[_builtins.float]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingDirectories")
+    def preexisting_directories(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingFiles")
+    def preexisting_files(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingSymlinks")
+    def preexisting_symlinks(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rateOfBlobImport")
+    def rate_of_blob_import(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rateOfBlobWalk")
+    def rate_of_blob_walk(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanEndTime")
+    def scan_end_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanStartTime")
+    def scan_start_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusCode")
+    def status_code(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusMessage")
+    def status_message(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalBlobsImported")
+    def total_blobs_imported(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalBlobsWalked")
+    def total_blobs_walked(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalConflicts")
+    def total_conflicts(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalErrors")
+    def total_errors(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

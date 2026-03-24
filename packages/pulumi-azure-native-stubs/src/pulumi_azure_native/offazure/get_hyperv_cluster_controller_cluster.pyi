@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetHypervClusterControllerClusterResult', 'AwaitableGetHypervClusterControllerClusterResult', 'get_hyperv_cluster_controller_cluster', 'get_hyperv_cluster_controller_cluster_output']
+@pulumi.output_type
+class GetHypervClusterControllerClusterResult:
+    
+    def __init__(__self__, azure_api_version=..., created_timestamp=..., errors=..., fqdn=..., functional_level=..., host_fqdn_list=..., id=..., name=..., provisioning_state=..., run_as_account_id=..., status=..., system_data=..., type=..., updated_timestamp=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimestamp")
+    def created_timestamp(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> Sequence[outputs.HealthErrorDetailsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def fqdn(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="functionalLevel")
+    def functional_level(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostFqdnList")
+    def host_fqdn_list(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runAsAccountId")
+    def run_as_account_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedTimestamp")
+    def updated_timestamp(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetHypervClusterControllerClusterResult(GetHypervClusterControllerClusterResult):
+    def __await__(self): # -> Generator[Never, Any, GetHypervClusterControllerClusterResult]:
+        ...
+    
+
+
+def get_hyperv_cluster_controller_cluster(cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., site_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetHypervClusterControllerClusterResult:
+    
+    ...
+
+def get_hyperv_cluster_controller_cluster_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetHypervClusterControllerClusterResult]:
+    
+    ...
+

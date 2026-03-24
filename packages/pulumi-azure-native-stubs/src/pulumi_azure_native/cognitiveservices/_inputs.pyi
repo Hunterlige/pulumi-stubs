@@ -1,0 +1,4925 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AADAuthTypeConnectionPropertiesArgs', 'AADAuthTypeConnectionPropertiesArgsDict', 'AccessKeyAuthTypeConnectionPropertiesArgs', 'AccessKeyAuthTypeConnectionPropertiesArgsDict', 'AccountKeyAuthTypeConnectionPropertiesArgs', 'AccountKeyAuthTypeConnectionPropertiesArgsDict', 'AccountPropertiesArgs', 'AccountPropertiesArgsDict', 'AgentProtocolVersionArgs', 'AgentProtocolVersionArgsDict', 'AgentReferencePropertiesArgs', 'AgentReferencePropertiesArgsDict', 'AgenticApplicationPropertiesArgs', 'AgenticApplicationPropertiesArgsDict', 'ApiKeyAuthConnectionPropertiesArgs', 'ApiKeyAuthConnectionPropertiesArgsDict', 'ApiPropertiesArgs', 'ApiPropertiesArgsDict', 'ApplicationTrafficRoutingPolicyArgs', 'ApplicationTrafficRoutingPolicyArgsDict', 'AssignedIdentityArgs', 'AssignedIdentityArgsDict', 'CapabilityHostArgs', 'CapabilityHostArgsDict', 'ChannelsBuiltInAuthorizationPolicyArgs', 'ChannelsBuiltInAuthorizationPolicyArgsDict', 'CommitmentPeriodArgs', 'CommitmentPeriodArgsDict', 'CommitmentPlanPropertiesArgs', 'CommitmentPlanPropertiesArgsDict', 'ConnectionAccessKeyArgs', 'ConnectionAccessKeyArgsDict', 'ConnectionAccountKeyArgs', 'ConnectionAccountKeyArgsDict', 'ConnectionApiKeyArgs', 'ConnectionApiKeyArgsDict', 'ConnectionManagedIdentityArgs', 'ConnectionManagedIdentityArgsDict', 'ConnectionOAuth2Args', 'ConnectionOAuth2ArgsDict', 'ConnectionPersonalAccessTokenArgs', 'ConnectionPersonalAccessTokenArgsDict', 'ConnectionServicePrincipalArgs', 'ConnectionServicePrincipalArgsDict', 'ConnectionSharedAccessSignatureArgs', 'ConnectionSharedAccessSignatureArgsDict', 'ConnectionUsernamePasswordArgs', 'ConnectionUsernamePasswordArgsDict', 'CustomBlocklistConfigArgs', 'CustomBlocklistConfigArgsDict', 'CustomKeysConnectionPropertiesArgs', 'CustomKeysConnectionPropertiesArgsDict', 'CustomKeysArgs', 'CustomKeysArgsDict', 'CustomTopicConfigArgs', 'CustomTopicConfigArgsDict', 'DeploymentCapacitySettingsArgs', 'DeploymentCapacitySettingsArgsDict', 'DeploymentModelArgs', 'DeploymentModelArgsDict', 'DeploymentPropertiesArgs', 'DeploymentPropertiesArgsDict', 'DeploymentScaleSettingsArgs', 'DeploymentScaleSettingsArgsDict', 'EncryptionScopePropertiesArgs', 'EncryptionScopePropertiesArgsDict', 'EncryptionArgs', 'EncryptionArgsDict', 'FqdnOutboundRuleArgs', 'FqdnOutboundRuleArgsDict', 'HostedAgentDeploymentArgs', 'HostedAgentDeploymentArgsDict', 'IdentityArgs', 'IdentityArgsDict', 'IpRuleArgs', 'IpRuleArgsDict', 'KeyVaultPropertiesArgs', 'KeyVaultPropertiesArgsDict', 'ManagedAgentDeploymentArgs', 'ManagedAgentDeploymentArgsDict', 'ManagedIdentityAuthTypeConnectionPropertiesArgs', ..., 'MultiRegionSettingsArgs', 'MultiRegionSettingsArgsDict', 'NetworkInjectionArgs', 'NetworkInjectionArgsDict', 'NetworkRuleSetArgs', 'NetworkRuleSetArgsDict', 'NoneAuthTypeConnectionPropertiesArgs', 'NoneAuthTypeConnectionPropertiesArgsDict', 'OAuth2AuthTypeConnectionPropertiesArgs', 'OAuth2AuthTypeConnectionPropertiesArgsDict', 'OrganizationSharedBuiltInAuthorizationPolicyArgs', ..., 'PATAuthTypeConnectionPropertiesArgs', 'PATAuthTypeConnectionPropertiesArgsDict', 'PrivateEndpointConnectionPropertiesArgs', 'PrivateEndpointConnectionPropertiesArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'ProjectCapabilityHostArgs', 'ProjectCapabilityHostArgsDict', 'ProjectPropertiesArgs', 'ProjectPropertiesArgsDict', 'RaiBlocklistItemPropertiesArgs', 'RaiBlocklistItemPropertiesArgsDict', 'RaiBlocklistPropertiesArgs', 'RaiBlocklistPropertiesArgsDict', 'RaiExternalSafetyProviderSchemaPropertiesArgs', 'RaiExternalSafetyProviderSchemaPropertiesArgsDict', 'RaiMonitorConfigArgs', 'RaiMonitorConfigArgsDict', 'RaiPolicyContentFilterArgs', 'RaiPolicyContentFilterArgsDict', 'RaiPolicyPropertiesArgs', 'RaiPolicyPropertiesArgsDict', 'RaiToolLabelPropertiesAccountScopeArgs', 'RaiToolLabelPropertiesAccountScopeArgsDict', 'RaiToolLabelPropertiesProjectScopesArgs', 'RaiToolLabelPropertiesProjectScopesArgsDict', 'RaiToolLabelPropertiesArgs', 'RaiToolLabelPropertiesArgsDict', 'RaiTopicPropertiesArgs', 'RaiTopicPropertiesArgsDict', 'RegionSettingArgs', 'RegionSettingArgsDict', 'RoleBasedBuiltInAuthorizationPolicyArgs', 'RoleBasedBuiltInAuthorizationPolicyArgsDict', 'SASAuthTypeConnectionPropertiesArgs', 'SASAuthTypeConnectionPropertiesArgsDict', 'SafetyProviderConfigArgs', 'SafetyProviderConfigArgsDict', 'ServicePrincipalAuthTypeConnectionPropertiesArgs', ..., 'SkuArgs', 'SkuArgsDict', 'TrafficRoutingRuleArgs', 'TrafficRoutingRuleArgsDict', 'UserOwnedAmlWorkspaceArgs', 'UserOwnedAmlWorkspaceArgsDict', 'UserOwnedStorageArgs', 'UserOwnedStorageArgsDict', 'UsernamePasswordAuthTypeConnectionPropertiesArgs', ..., 'VersionedAgentReferenceArgs', 'VersionedAgentReferenceArgsDict', 'VirtualNetworkRuleArgs', 'VirtualNetworkRuleArgsDict']
+class AADAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class AADAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class AccessKeyAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionAccessKeyArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class AccessKeyAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionAccessKeyArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionAccessKeyArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionAccessKeyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class AccountKeyAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionAccountKeyArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class AccountKeyAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionAccountKeyArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionAccountKeyArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionAccountKeyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class AccountPropertiesArgsDict(TypedDict):
+    
+    allow_project_management: NotRequired[pulumi.Input[_builtins.bool]]
+    allowed_fqdn_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    aml_workspace: NotRequired[pulumi.Input[UserOwnedAmlWorkspaceArgsDict]]
+    api_properties: NotRequired[pulumi.Input[ApiPropertiesArgsDict]]
+    associated_projects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    custom_sub_domain_name: NotRequired[pulumi.Input[_builtins.str]]
+    default_project: NotRequired[pulumi.Input[_builtins.str]]
+    disable_local_auth: NotRequired[pulumi.Input[_builtins.bool]]
+    dynamic_throttling_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    encryption: NotRequired[pulumi.Input[EncryptionArgsDict]]
+    locations: NotRequired[pulumi.Input[MultiRegionSettingsArgsDict]]
+    migration_token: NotRequired[pulumi.Input[_builtins.str]]
+    network_acls: NotRequired[pulumi.Input[NetworkRuleSetArgsDict]]
+    network_injections: NotRequired[pulumi.Input[Sequence[pulumi.Input[NetworkInjectionArgsDict]]]]
+    public_network_access: NotRequired[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
+    rai_monitor_config: NotRequired[pulumi.Input[RaiMonitorConfigArgsDict]]
+    restore: NotRequired[pulumi.Input[_builtins.bool]]
+    restrict_outbound_network_access: NotRequired[pulumi.Input[_builtins.bool]]
+    user_owned_storage: NotRequired[pulumi.Input[Sequence[pulumi.Input[UserOwnedStorageArgsDict]]]]
+
+
+@pulumi.input_type
+class AccountPropertiesArgs:
+    def __init__(__self__, *, allow_project_management: Optional[pulumi.Input[_builtins.bool]] = ..., allowed_fqdn_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., aml_workspace: Optional[pulumi.Input[UserOwnedAmlWorkspaceArgs]] = ..., api_properties: Optional[pulumi.Input[ApiPropertiesArgs]] = ..., associated_projects: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., custom_sub_domain_name: Optional[pulumi.Input[_builtins.str]] = ..., default_project: Optional[pulumi.Input[_builtins.str]] = ..., disable_local_auth: Optional[pulumi.Input[_builtins.bool]] = ..., dynamic_throttling_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., encryption: Optional[pulumi.Input[EncryptionArgs]] = ..., locations: Optional[pulumi.Input[MultiRegionSettingsArgs]] = ..., migration_token: Optional[pulumi.Input[_builtins.str]] = ..., network_acls: Optional[pulumi.Input[NetworkRuleSetArgs]] = ..., network_injections: Optional[pulumi.Input[Sequence[pulumi.Input[NetworkInjectionArgs]]]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., rai_monitor_config: Optional[pulumi.Input[RaiMonitorConfigArgs]] = ..., restore: Optional[pulumi.Input[_builtins.bool]] = ..., restrict_outbound_network_access: Optional[pulumi.Input[_builtins.bool]] = ..., user_owned_storage: Optional[pulumi.Input[Sequence[pulumi.Input[UserOwnedStorageArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowProjectManagement")
+    def allow_project_management(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_project_management.setter
+    def allow_project_management(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedFqdnList")
+    def allowed_fqdn_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @allowed_fqdn_list.setter
+    def allowed_fqdn_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="amlWorkspace")
+    def aml_workspace(self) -> Optional[pulumi.Input[UserOwnedAmlWorkspaceArgs]]:
+        
+        ...
+    
+    @aml_workspace.setter
+    def aml_workspace(self, value: Optional[pulumi.Input[UserOwnedAmlWorkspaceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiProperties")
+    def api_properties(self) -> Optional[pulumi.Input[ApiPropertiesArgs]]:
+        
+        ...
+    
+    @api_properties.setter
+    def api_properties(self, value: Optional[pulumi.Input[ApiPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="associatedProjects")
+    def associated_projects(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @associated_projects.setter
+    def associated_projects(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customSubDomainName")
+    def custom_sub_domain_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @custom_sub_domain_name.setter
+    def custom_sub_domain_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultProject")
+    def default_project(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_project.setter
+    def default_project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableLocalAuth")
+    def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @disable_local_auth.setter
+    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dynamicThrottlingEnabled")
+    def dynamic_throttling_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @dynamic_throttling_enabled.setter
+    def dynamic_throttling_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]:
+        
+        ...
+    
+    @encryption.setter
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locations(self) -> Optional[pulumi.Input[MultiRegionSettingsArgs]]:
+        
+        ...
+    
+    @locations.setter
+    def locations(self, value: Optional[pulumi.Input[MultiRegionSettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="migrationToken")
+    def migration_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @migration_token.setter
+    def migration_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkAcls")
+    def network_acls(self) -> Optional[pulumi.Input[NetworkRuleSetArgs]]:
+        
+        ...
+    
+    @network_acls.setter
+    def network_acls(self, value: Optional[pulumi.Input[NetworkRuleSetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkInjections")
+    def network_injections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NetworkInjectionArgs]]]]:
+        ...
+    
+    @network_injections.setter
+    def network_injections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NetworkInjectionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="raiMonitorConfig")
+    def rai_monitor_config(self) -> Optional[pulumi.Input[RaiMonitorConfigArgs]]:
+        
+        ...
+    
+    @rai_monitor_config.setter
+    def rai_monitor_config(self, value: Optional[pulumi.Input[RaiMonitorConfigArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def restore(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @restore.setter
+    def restore(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restrictOutboundNetworkAccess")
+    def restrict_outbound_network_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @restrict_outbound_network_access.setter
+    def restrict_outbound_network_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userOwnedStorage")
+    def user_owned_storage(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[UserOwnedStorageArgs]]]]:
+        
+        ...
+    
+    @user_owned_storage.setter
+    def user_owned_storage(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[UserOwnedStorageArgs]]]]): # -> None:
+        ...
+    
+
+
+class AgentProtocolVersionArgsDict(TypedDict):
+    
+    protocol: NotRequired[pulumi.Input[Union[_builtins.str, AgentProtocol]]]
+    version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AgentProtocolVersionArgs:
+    def __init__(__self__, *, protocol: Optional[pulumi.Input[Union[_builtins.str, AgentProtocol]]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, AgentProtocol]]]:
+        
+        ...
+    
+    @protocol.setter
+    def protocol(self, value: Optional[pulumi.Input[Union[_builtins.str, AgentProtocol]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AgentReferencePropertiesArgsDict(TypedDict):
+    
+    agent_id: NotRequired[pulumi.Input[_builtins.str]]
+    agent_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AgentReferencePropertiesArgs:
+    def __init__(__self__, *, agent_id: Optional[pulumi.Input[_builtins.str]] = ..., agent_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentId")
+    def agent_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_id.setter
+    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentName")
+    def agent_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_name.setter
+    def agent_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AgenticApplicationPropertiesArgsDict(TypedDict):
+    
+    agent_identity_blueprint: NotRequired[pulumi.Input[AssignedIdentityArgsDict]]
+    agents: NotRequired[pulumi.Input[Sequence[pulumi.Input[AgentReferencePropertiesArgsDict]]]]
+    authorization_policy: NotRequired[pulumi.Input[Union[ChannelsBuiltInAuthorizationPolicyArgsDict, OrganizationSharedBuiltInAuthorizationPolicyArgsDict, RoleBasedBuiltInAuthorizationPolicyArgsDict]]]
+    base_url: NotRequired[pulumi.Input[_builtins.str]]
+    default_instance_identity: NotRequired[pulumi.Input[AssignedIdentityArgsDict]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    display_name: NotRequired[pulumi.Input[_builtins.str]]
+    tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    traffic_routing_policy: NotRequired[pulumi.Input[ApplicationTrafficRoutingPolicyArgsDict]]
+
+
+@pulumi.input_type
+class AgenticApplicationPropertiesArgs:
+    def __init__(__self__, *, agent_identity_blueprint: Optional[pulumi.Input[AssignedIdentityArgs]] = ..., agents: Optional[pulumi.Input[Sequence[pulumi.Input[AgentReferencePropertiesArgs]]]] = ..., authorization_policy: Optional[pulumi.Input[Union[ChannelsBuiltInAuthorizationPolicyArgs, OrganizationSharedBuiltInAuthorizationPolicyArgs, RoleBasedBuiltInAuthorizationPolicyArgs]]] = ..., base_url: Optional[pulumi.Input[_builtins.str]] = ..., default_instance_identity: Optional[pulumi.Input[AssignedIdentityArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., traffic_routing_policy: Optional[pulumi.Input[ApplicationTrafficRoutingPolicyArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentIdentityBlueprint")
+    def agent_identity_blueprint(self) -> Optional[pulumi.Input[AssignedIdentityArgs]]:
+        
+        ...
+    
+    @agent_identity_blueprint.setter
+    def agent_identity_blueprint(self, value: Optional[pulumi.Input[AssignedIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def agents(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AgentReferencePropertiesArgs]]]]:
+        
+        ...
+    
+    @agents.setter
+    def agents(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AgentReferencePropertiesArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationPolicy")
+    def authorization_policy(self) -> Optional[pulumi.Input[Union[ChannelsBuiltInAuthorizationPolicyArgs, OrganizationSharedBuiltInAuthorizationPolicyArgs, RoleBasedBuiltInAuthorizationPolicyArgs]]]:
+        
+        ...
+    
+    @authorization_policy.setter
+    def authorization_policy(self, value: Optional[pulumi.Input[Union[ChannelsBuiltInAuthorizationPolicyArgs, OrganizationSharedBuiltInAuthorizationPolicyArgs, RoleBasedBuiltInAuthorizationPolicyArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baseUrl")
+    def base_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @base_url.setter
+    def base_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultInstanceIdentity")
+    def default_instance_identity(self) -> Optional[pulumi.Input[AssignedIdentityArgs]]:
+        
+        ...
+    
+    @default_instance_identity.setter
+    def default_instance_identity(self, value: Optional[pulumi.Input[AssignedIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficRoutingPolicy")
+    def traffic_routing_policy(self) -> Optional[pulumi.Input[ApplicationTrafficRoutingPolicyArgs]]:
+        
+        ...
+    
+    @traffic_routing_policy.setter
+    def traffic_routing_policy(self, value: Optional[pulumi.Input[ApplicationTrafficRoutingPolicyArgs]]): # -> None:
+        ...
+    
+
+
+class ApiKeyAuthConnectionPropertiesArgsDict(TypedDict):
+    
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionApiKeyArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class ApiKeyAuthConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionApiKeyArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionApiKeyArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionApiKeyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class ApiPropertiesArgsDict(TypedDict):
+    
+    aad_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    aad_tenant_id: NotRequired[pulumi.Input[_builtins.str]]
+    event_hub_connection_string: NotRequired[pulumi.Input[_builtins.str]]
+    qna_azure_search_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
+    qna_azure_search_endpoint_key: NotRequired[pulumi.Input[_builtins.str]]
+    qna_runtime_endpoint: NotRequired[pulumi.Input[_builtins.str]]
+    statistics_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    storage_account_connection_string: NotRequired[pulumi.Input[_builtins.str]]
+    super_user: NotRequired[pulumi.Input[_builtins.str]]
+    website_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ApiPropertiesArgs:
+    def __init__(__self__, *, aad_client_id: Optional[pulumi.Input[_builtins.str]] = ..., aad_tenant_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., qna_azure_search_endpoint_id: Optional[pulumi.Input[_builtins.str]] = ..., qna_azure_search_endpoint_key: Optional[pulumi.Input[_builtins.str]] = ..., qna_runtime_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., statistics_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., storage_account_connection_string: Optional[pulumi.Input[_builtins.str]] = ..., super_user: Optional[pulumi.Input[_builtins.str]] = ..., website_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadClientId")
+    def aad_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aad_client_id.setter
+    def aad_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadTenantId")
+    def aad_tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aad_tenant_id.setter
+    def aad_tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubConnectionString")
+    def event_hub_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @event_hub_connection_string.setter
+    def event_hub_connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="qnaAzureSearchEndpointId")
+    def qna_azure_search_endpoint_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @qna_azure_search_endpoint_id.setter
+    def qna_azure_search_endpoint_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="qnaAzureSearchEndpointKey")
+    def qna_azure_search_endpoint_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @qna_azure_search_endpoint_key.setter
+    def qna_azure_search_endpoint_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="qnaRuntimeEndpoint")
+    def qna_runtime_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @qna_runtime_endpoint.setter
+    def qna_runtime_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statisticsEnabled")
+    def statistics_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @statistics_enabled.setter
+    def statistics_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountConnectionString")
+    def storage_account_connection_string(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_connection_string.setter
+    def storage_account_connection_string(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="superUser")
+    def super_user(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @super_user.setter
+    def super_user(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="websiteName")
+    def website_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @website_name.setter
+    def website_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ApplicationTrafficRoutingPolicyArgsDict(TypedDict):
+    
+    protocol: NotRequired[pulumi.Input[Union[_builtins.str, TrafficRoutingProtocol]]]
+    rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[TrafficRoutingRuleArgsDict]]]]
+
+
+@pulumi.input_type
+class ApplicationTrafficRoutingPolicyArgs:
+    def __init__(__self__, *, protocol: Optional[pulumi.Input[Union[_builtins.str, TrafficRoutingProtocol]]] = ..., rules: Optional[pulumi.Input[Sequence[pulumi.Input[TrafficRoutingRuleArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[pulumi.Input[Union[_builtins.str, TrafficRoutingProtocol]]]:
+        
+        ...
+    
+    @protocol.setter
+    def protocol(self, value: Optional[pulumi.Input[Union[_builtins.str, TrafficRoutingProtocol]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TrafficRoutingRuleArgs]]]]:
+        
+        ...
+    
+    @rules.setter
+    def rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TrafficRoutingRuleArgs]]]]): # -> None:
+        ...
+    
+
+
+class AssignedIdentityArgsDict(TypedDict):
+    
+    client_id: pulumi.Input[_builtins.str]
+    kind: pulumi.Input[Union[_builtins.str, IdentityKind]]
+    principal_id: pulumi.Input[_builtins.str]
+    tenant_id: pulumi.Input[_builtins.str]
+    type: pulumi.Input[Union[_builtins.str, IdentityManagementType]]
+    subject: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AssignedIdentityArgs:
+    def __init__(__self__, *, client_id: pulumi.Input[_builtins.str], kind: pulumi.Input[Union[_builtins.str, IdentityKind]], principal_id: pulumi.Input[_builtins.str], tenant_id: pulumi.Input[_builtins.str], type: pulumi.Input[Union[_builtins.str, IdentityManagementType]], subject: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[Union[_builtins.str, IdentityKind]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[Union[_builtins.str, IdentityKind]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, IdentityManagementType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, IdentityManagementType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subject(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @subject.setter
+    def subject(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CapabilityHostArgsDict(TypedDict):
+    ai_services_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    capability_host_kind: NotRequired[pulumi.Input[Union[_builtins.str, CapabilityHostKind]]]
+    customer_subnet: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    storage_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    thread_storage_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    vector_store_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class CapabilityHostArgs:
+    def __init__(__self__, *, ai_services_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., capability_host_kind: Optional[pulumi.Input[Union[_builtins.str, CapabilityHostKind]]] = ..., customer_subnet: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., storage_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., thread_storage_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vector_store_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aiServicesConnections")
+    def ai_services_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @ai_services_connections.setter
+    def ai_services_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="capabilityHostKind")
+    def capability_host_kind(self) -> Optional[pulumi.Input[Union[_builtins.str, CapabilityHostKind]]]:
+        
+        ...
+    
+    @capability_host_kind.setter
+    def capability_host_kind(self, value: Optional[pulumi.Input[Union[_builtins.str, CapabilityHostKind]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerSubnet")
+    def customer_subnet(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @customer_subnet.setter
+    def customer_subnet(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageConnections")
+    def storage_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @storage_connections.setter
+    def storage_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="threadStorageConnections")
+    def thread_storage_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @thread_storage_connections.setter
+    def thread_storage_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vectorStoreConnections")
+    def vector_store_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @vector_store_connections.setter
+    def vector_store_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ChannelsBuiltInAuthorizationPolicyArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ChannelsBuiltInAuthorizationPolicyArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class CommitmentPeriodArgsDict(TypedDict):
+    
+    count: NotRequired[pulumi.Input[_builtins.int]]
+    tier: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CommitmentPeriodArgs:
+    def __init__(__self__, *, count: Optional[pulumi.Input[_builtins.int]] = ..., tier: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @count.setter
+    def count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CommitmentPlanPropertiesArgsDict(TypedDict):
+    
+    auto_renew: NotRequired[pulumi.Input[_builtins.bool]]
+    commitment_plan_guid: NotRequired[pulumi.Input[_builtins.str]]
+    current: NotRequired[pulumi.Input[CommitmentPeriodArgsDict]]
+    hosting_model: NotRequired[pulumi.Input[Union[_builtins.str, HostingModel]]]
+    next: NotRequired[pulumi.Input[CommitmentPeriodArgsDict]]
+    plan_type: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CommitmentPlanPropertiesArgs:
+    def __init__(__self__, *, auto_renew: Optional[pulumi.Input[_builtins.bool]] = ..., commitment_plan_guid: Optional[pulumi.Input[_builtins.str]] = ..., current: Optional[pulumi.Input[CommitmentPeriodArgs]] = ..., hosting_model: Optional[pulumi.Input[Union[_builtins.str, HostingModel]]] = ..., next: Optional[pulumi.Input[CommitmentPeriodArgs]] = ..., plan_type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoRenew")
+    def auto_renew(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @auto_renew.setter
+    def auto_renew(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="commitmentPlanGuid")
+    def commitment_plan_guid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @commitment_plan_guid.setter
+    def commitment_plan_guid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def current(self) -> Optional[pulumi.Input[CommitmentPeriodArgs]]:
+        
+        ...
+    
+    @current.setter
+    def current(self, value: Optional[pulumi.Input[CommitmentPeriodArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostingModel")
+    def hosting_model(self) -> Optional[pulumi.Input[Union[_builtins.str, HostingModel]]]:
+        
+        ...
+    
+    @hosting_model.setter
+    def hosting_model(self, value: Optional[pulumi.Input[Union[_builtins.str, HostingModel]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def next(self) -> Optional[pulumi.Input[CommitmentPeriodArgs]]:
+        
+        ...
+    
+    @next.setter
+    def next(self, value: Optional[pulumi.Input[CommitmentPeriodArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planType")
+    def plan_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @plan_type.setter
+    def plan_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionAccessKeyArgsDict(TypedDict):
+    access_key_id: NotRequired[pulumi.Input[_builtins.str]]
+    secret_access_key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionAccessKeyArgs:
+    def __init__(__self__, *, access_key_id: Optional[pulumi.Input[_builtins.str]] = ..., secret_access_key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessKeyId")
+    def access_key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @access_key_id.setter
+    def access_key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretAccessKey")
+    def secret_access_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @secret_access_key.setter
+    def secret_access_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionAccountKeyArgsDict(TypedDict):
+    
+    key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionAccountKeyArgs:
+    def __init__(__self__, *, key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @key.setter
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionApiKeyArgsDict(TypedDict):
+    
+    key: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionApiKeyArgs:
+    def __init__(__self__, *, key: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @key.setter
+    def key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionManagedIdentityArgsDict(TypedDict):
+    client_id: NotRequired[pulumi.Input[_builtins.str]]
+    resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionManagedIdentityArgs:
+    def __init__(__self__, *, client_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @resource_id.setter
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionOAuth2ArgsDict(TypedDict):
+    
+    auth_url: NotRequired[pulumi.Input[_builtins.str]]
+    client_id: NotRequired[pulumi.Input[_builtins.str]]
+    client_secret: NotRequired[pulumi.Input[_builtins.str]]
+    developer_token: NotRequired[pulumi.Input[_builtins.str]]
+    password: NotRequired[pulumi.Input[_builtins.str]]
+    refresh_token: NotRequired[pulumi.Input[_builtins.str]]
+    tenant_id: NotRequired[pulumi.Input[_builtins.str]]
+    username: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionOAuth2Args:
+    def __init__(__self__, *, auth_url: Optional[pulumi.Input[_builtins.str]] = ..., client_id: Optional[pulumi.Input[_builtins.str]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., developer_token: Optional[pulumi.Input[_builtins.str]] = ..., password: Optional[pulumi.Input[_builtins.str]] = ..., refresh_token: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authUrl")
+    def auth_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @auth_url.setter
+    def auth_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @client_secret.setter
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="developerToken")
+    def developer_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @developer_token.setter
+    def developer_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="refreshToken")
+    def refresh_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @refresh_token.setter
+    def refresh_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @username.setter
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionPersonalAccessTokenArgsDict(TypedDict):
+    pat: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionPersonalAccessTokenArgs:
+    def __init__(__self__, *, pat: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def pat(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @pat.setter
+    def pat(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionServicePrincipalArgsDict(TypedDict):
+    client_id: NotRequired[pulumi.Input[_builtins.str]]
+    client_secret: NotRequired[pulumi.Input[_builtins.str]]
+    tenant_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionServicePrincipalArgs:
+    def __init__(__self__, *, client_id: Optional[pulumi.Input[_builtins.str]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @client_secret.setter
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionSharedAccessSignatureArgsDict(TypedDict):
+    sas: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionSharedAccessSignatureArgs:
+    def __init__(__self__, *, sas: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sas(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @sas.setter
+    def sas(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ConnectionUsernamePasswordArgsDict(TypedDict):
+    password: NotRequired[pulumi.Input[_builtins.str]]
+    security_token: NotRequired[pulumi.Input[_builtins.str]]
+    username: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ConnectionUsernamePasswordArgs:
+    def __init__(__self__, *, password: Optional[pulumi.Input[_builtins.str]] = ..., security_token: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityToken")
+    def security_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @security_token.setter
+    def security_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @username.setter
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CustomBlocklistConfigArgsDict(TypedDict):
+    
+    blocking: NotRequired[pulumi.Input[_builtins.bool]]
+    blocklist_name: NotRequired[pulumi.Input[_builtins.str]]
+    source: NotRequired[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]
+
+
+@pulumi.input_type
+class CustomBlocklistConfigArgs:
+    def __init__(__self__, *, blocking: Optional[pulumi.Input[_builtins.bool]] = ..., blocklist_name: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def blocking(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @blocking.setter
+    def blocking(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blocklistName")
+    def blocklist_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @blocklist_name.setter
+    def blocklist_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]): # -> None:
+        ...
+    
+
+
+class CustomKeysConnectionPropertiesArgsDict(TypedDict):
+    
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[CustomKeysArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class CustomKeysConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[CustomKeysArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[CustomKeysArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[CustomKeysArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class CustomKeysArgsDict(TypedDict):
+    
+    keys: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class CustomKeysArgs:
+    def __init__(__self__, *, keys: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def keys(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @keys.setter
+    def keys(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class CustomTopicConfigArgsDict(TypedDict):
+    
+    blocking: NotRequired[pulumi.Input[_builtins.bool]]
+    source: NotRequired[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]
+    topic_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CustomTopicConfigArgs:
+    def __init__(__self__, *, blocking: Optional[pulumi.Input[_builtins.bool]] = ..., source: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def blocking(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @blocking.setter
+    def blocking(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicName")
+    def topic_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_name.setter
+    def topic_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DeploymentCapacitySettingsArgsDict(TypedDict):
+    
+    designated_capacity: NotRequired[pulumi.Input[_builtins.int]]
+    priority: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class DeploymentCapacitySettingsArgs:
+    def __init__(__self__, *, designated_capacity: Optional[pulumi.Input[_builtins.int]] = ..., priority: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="designatedCapacity")
+    def designated_capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @designated_capacity.setter
+    def designated_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @priority.setter
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class DeploymentModelArgsDict(TypedDict):
+    
+    format: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    publisher: NotRequired[pulumi.Input[_builtins.str]]
+    source: NotRequired[pulumi.Input[_builtins.str]]
+    source_account: NotRequired[pulumi.Input[_builtins.str]]
+    version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DeploymentModelArgs:
+    def __init__(__self__, *, format: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., publisher: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ..., source_account: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @format.setter
+    def format(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @publisher.setter
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceAccount")
+    def source_account(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_account.setter
+    def source_account(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DeploymentPropertiesArgsDict(TypedDict):
+    
+    capacity_settings: NotRequired[pulumi.Input[DeploymentCapacitySettingsArgsDict]]
+    current_capacity: NotRequired[pulumi.Input[_builtins.int]]
+    model: NotRequired[pulumi.Input[DeploymentModelArgsDict]]
+    parent_deployment_name: NotRequired[pulumi.Input[_builtins.str]]
+    rai_policy_name: NotRequired[pulumi.Input[_builtins.str]]
+    scale_settings: NotRequired[pulumi.Input[DeploymentScaleSettingsArgsDict]]
+    spillover_deployment_name: NotRequired[pulumi.Input[_builtins.str]]
+    version_upgrade_option: NotRequired[pulumi.Input[Union[_builtins.str, DeploymentModelVersionUpgradeOption]]]
+
+
+@pulumi.input_type
+class DeploymentPropertiesArgs:
+    def __init__(__self__, *, capacity_settings: Optional[pulumi.Input[DeploymentCapacitySettingsArgs]] = ..., current_capacity: Optional[pulumi.Input[_builtins.int]] = ..., model: Optional[pulumi.Input[DeploymentModelArgs]] = ..., parent_deployment_name: Optional[pulumi.Input[_builtins.str]] = ..., rai_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., scale_settings: Optional[pulumi.Input[DeploymentScaleSettingsArgs]] = ..., spillover_deployment_name: Optional[pulumi.Input[_builtins.str]] = ..., version_upgrade_option: Optional[pulumi.Input[Union[_builtins.str, DeploymentModelVersionUpgradeOption]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="capacitySettings")
+    def capacity_settings(self) -> Optional[pulumi.Input[DeploymentCapacitySettingsArgs]]:
+        
+        ...
+    
+    @capacity_settings.setter
+    def capacity_settings(self, value: Optional[pulumi.Input[DeploymentCapacitySettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentCapacity")
+    def current_capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @current_capacity.setter
+    def current_capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[pulumi.Input[DeploymentModelArgs]]:
+        
+        ...
+    
+    @model.setter
+    def model(self, value: Optional[pulumi.Input[DeploymentModelArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parentDeploymentName")
+    def parent_deployment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @parent_deployment_name.setter
+    def parent_deployment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="raiPolicyName")
+    def rai_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rai_policy_name.setter
+    def rai_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scaleSettings")
+    def scale_settings(self) -> Optional[pulumi.Input[DeploymentScaleSettingsArgs]]:
+        
+        ...
+    
+    @scale_settings.setter
+    def scale_settings(self, value: Optional[pulumi.Input[DeploymentScaleSettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spilloverDeploymentName")
+    def spillover_deployment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @spillover_deployment_name.setter
+    def spillover_deployment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="versionUpgradeOption")
+    def version_upgrade_option(self) -> Optional[pulumi.Input[Union[_builtins.str, DeploymentModelVersionUpgradeOption]]]:
+        
+        ...
+    
+    @version_upgrade_option.setter
+    def version_upgrade_option(self, value: Optional[pulumi.Input[Union[_builtins.str, DeploymentModelVersionUpgradeOption]]]): # -> None:
+        ...
+    
+
+
+class DeploymentScaleSettingsArgsDict(TypedDict):
+    
+    capacity: NotRequired[pulumi.Input[_builtins.int]]
+    scale_type: NotRequired[pulumi.Input[Union[_builtins.str, DeploymentScaleType]]]
+
+
+@pulumi.input_type
+class DeploymentScaleSettingsArgs:
+    def __init__(__self__, *, capacity: Optional[pulumi.Input[_builtins.int]] = ..., scale_type: Optional[pulumi.Input[Union[_builtins.str, DeploymentScaleType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scaleType")
+    def scale_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DeploymentScaleType]]]:
+        
+        ...
+    
+    @scale_type.setter
+    def scale_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DeploymentScaleType]]]): # -> None:
+        ...
+    
+
+
+class EncryptionScopePropertiesArgsDict(TypedDict):
+    
+    key_source: NotRequired[pulumi.Input[Union[_builtins.str, KeySource]]]
+    key_vault_properties: NotRequired[pulumi.Input[KeyVaultPropertiesArgsDict]]
+    state: NotRequired[pulumi.Input[Union[_builtins.str, EncryptionScopeState]]]
+
+
+@pulumi.input_type
+class EncryptionScopePropertiesArgs:
+    def __init__(__self__, *, key_source: Optional[pulumi.Input[Union[_builtins.str, KeySource]]] = ..., key_vault_properties: Optional[pulumi.Input[KeyVaultPropertiesArgs]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, EncryptionScopeState]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keySource")
+    def key_source(self) -> Optional[pulumi.Input[Union[_builtins.str, KeySource]]]:
+        
+        ...
+    
+    @key_source.setter
+    def key_source(self, value: Optional[pulumi.Input[Union[_builtins.str, KeySource]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultProperties")
+    def key_vault_properties(self) -> Optional[pulumi.Input[KeyVaultPropertiesArgs]]:
+        
+        ...
+    
+    @key_vault_properties.setter
+    def key_vault_properties(self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, EncryptionScopeState]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, EncryptionScopeState]]]): # -> None:
+        ...
+    
+
+
+class EncryptionArgsDict(TypedDict):
+    
+    key_source: NotRequired[pulumi.Input[Union[_builtins.str, KeySource]]]
+    key_vault_properties: NotRequired[pulumi.Input[KeyVaultPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class EncryptionArgs:
+    def __init__(__self__, *, key_source: Optional[pulumi.Input[Union[_builtins.str, KeySource]]] = ..., key_vault_properties: Optional[pulumi.Input[KeyVaultPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keySource")
+    def key_source(self) -> Optional[pulumi.Input[Union[_builtins.str, KeySource]]]:
+        
+        ...
+    
+    @key_source.setter
+    def key_source(self, value: Optional[pulumi.Input[Union[_builtins.str, KeySource]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultProperties")
+    def key_vault_properties(self) -> Optional[pulumi.Input[KeyVaultPropertiesArgs]]:
+        
+        ...
+    
+    @key_vault_properties.setter
+    def key_vault_properties(self, value: Optional[pulumi.Input[KeyVaultPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class FqdnOutboundRuleArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, RuleCategory]]]
+    destination: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, RuleStatus]]]
+
+
+@pulumi.input_type
+class FqdnOutboundRuleArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, RuleCategory]]] = ..., destination: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, RuleStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, RuleCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, RuleCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @destination.setter
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, RuleStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, RuleStatus]]]): # -> None:
+        ...
+    
+
+
+class HostedAgentDeploymentArgsDict(TypedDict):
+    
+    deployment_type: pulumi.Input[_builtins.str]
+    agents: NotRequired[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgsDict]]]]
+    deployment_id: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    display_name: NotRequired[pulumi.Input[_builtins.str]]
+    max_replicas: NotRequired[pulumi.Input[_builtins.int]]
+    min_replicas: NotRequired[pulumi.Input[_builtins.int]]
+    protocols: NotRequired[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgsDict]]]]
+    state: NotRequired[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]
+    tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class HostedAgentDeploymentArgs:
+    def __init__(__self__, *, deployment_type: pulumi.Input[_builtins.str], agents: Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]] = ..., deployment_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., max_replicas: Optional[pulumi.Input[_builtins.int]] = ..., min_replicas: Optional[pulumi.Input[_builtins.int]] = ..., protocols: Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentType")
+    def deployment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @deployment_type.setter
+    def deployment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def agents(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]]:
+        
+        ...
+    
+    @agents.setter
+    def agents(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentId")
+    def deployment_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @deployment_id.setter
+    def deployment_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxReplicas")
+    def max_replicas(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @max_replicas.setter
+    def max_replicas(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minReplicas")
+    def min_replicas(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @min_replicas.setter
+    def min_replicas(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocols(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]]:
+        
+        ...
+    
+    @protocols.setter
+    def protocols(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class IdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[ResourceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class IdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[ResourceIdentityType]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class IpRuleArgsDict(TypedDict):
+    
+    value: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class IpRuleArgs:
+    def __init__(__self__, *, value: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class KeyVaultPropertiesArgsDict(TypedDict):
+    
+    identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    key_name: NotRequired[pulumi.Input[_builtins.str]]
+    key_vault_uri: NotRequired[pulumi.Input[_builtins.str]]
+    key_version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KeyVaultPropertiesArgs:
+    def __init__(__self__, *, identity_client_id: Optional[pulumi.Input[_builtins.str]] = ..., key_name: Optional[pulumi.Input[_builtins.str]] = ..., key_vault_uri: Optional[pulumi.Input[_builtins.str]] = ..., key_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityClientId")
+    def identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @identity_client_id.setter
+    def identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyName")
+    def key_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_name.setter
+    def key_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultUri")
+    def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_vault_uri.setter
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVersion")
+    def key_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_version.setter
+    def key_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ManagedAgentDeploymentArgsDict(TypedDict):
+    
+    deployment_type: pulumi.Input[_builtins.str]
+    agents: NotRequired[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgsDict]]]]
+    deployment_id: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    display_name: NotRequired[pulumi.Input[_builtins.str]]
+    protocols: NotRequired[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgsDict]]]]
+    state: NotRequired[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]
+    tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedAgentDeploymentArgs:
+    def __init__(__self__, *, deployment_type: pulumi.Input[_builtins.str], agents: Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]] = ..., deployment_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., protocols: Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentType")
+    def deployment_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @deployment_type.setter
+    def deployment_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def agents(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]]:
+        
+        ...
+    
+    @agents.setter
+    def agents(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VersionedAgentReferenceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentId")
+    def deployment_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @deployment_id.setter
+    def deployment_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocols(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]]:
+        
+        ...
+    
+    @protocols.setter
+    def protocols(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AgentProtocolVersionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, AgentDeploymentState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ManagedIdentityAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionManagedIdentityArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class ManagedIdentityAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionManagedIdentityArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionManagedIdentityArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionManagedIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class MultiRegionSettingsArgsDict(TypedDict):
+    
+    regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[RegionSettingArgsDict]]]]
+    routing_method: NotRequired[pulumi.Input[Union[_builtins.str, RoutingMethods]]]
+
+
+@pulumi.input_type
+class MultiRegionSettingsArgs:
+    def __init__(__self__, *, regions: Optional[pulumi.Input[Sequence[pulumi.Input[RegionSettingArgs]]]] = ..., routing_method: Optional[pulumi.Input[Union[_builtins.str, RoutingMethods]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RegionSettingArgs]]]]:
+        ...
+    
+    @regions.setter
+    def regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RegionSettingArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingMethod")
+    def routing_method(self) -> Optional[pulumi.Input[Union[_builtins.str, RoutingMethods]]]:
+        
+        ...
+    
+    @routing_method.setter
+    def routing_method(self, value: Optional[pulumi.Input[Union[_builtins.str, RoutingMethods]]]): # -> None:
+        ...
+    
+
+
+class NetworkInjectionArgsDict(TypedDict):
+    
+    scenario: NotRequired[pulumi.Input[Union[_builtins.str, ScenarioType]]]
+    subnet_arm_id: NotRequired[pulumi.Input[_builtins.str]]
+    use_microsoft_managed_network: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class NetworkInjectionArgs:
+    def __init__(__self__, *, scenario: Optional[pulumi.Input[Union[_builtins.str, ScenarioType]]] = ..., subnet_arm_id: Optional[pulumi.Input[_builtins.str]] = ..., use_microsoft_managed_network: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scenario(self) -> Optional[pulumi.Input[Union[_builtins.str, ScenarioType]]]:
+        
+        ...
+    
+    @scenario.setter
+    def scenario(self, value: Optional[pulumi.Input[Union[_builtins.str, ScenarioType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subnetArmId")
+    def subnet_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @subnet_arm_id.setter
+    def subnet_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useMicrosoftManagedNetwork")
+    def use_microsoft_managed_network(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_microsoft_managed_network.setter
+    def use_microsoft_managed_network(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class NetworkRuleSetArgsDict(TypedDict):
+    
+    bypass: NotRequired[pulumi.Input[Union[_builtins.str, ByPassSelection]]]
+    default_action: NotRequired[pulumi.Input[Union[_builtins.str, NetworkRuleAction]]]
+    ip_rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[IpRuleArgsDict]]]]
+    virtual_network_rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgsDict]]]]
+
+
+@pulumi.input_type
+class NetworkRuleSetArgs:
+    def __init__(__self__, *, bypass: Optional[pulumi.Input[Union[_builtins.str, ByPassSelection]]] = ..., default_action: Optional[pulumi.Input[Union[_builtins.str, NetworkRuleAction]]] = ..., ip_rules: Optional[pulumi.Input[Sequence[pulumi.Input[IpRuleArgs]]]] = ..., virtual_network_rules: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def bypass(self) -> Optional[pulumi.Input[Union[_builtins.str, ByPassSelection]]]:
+        
+        ...
+    
+    @bypass.setter
+    def bypass(self, value: Optional[pulumi.Input[Union[_builtins.str, ByPassSelection]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultAction")
+    def default_action(self) -> Optional[pulumi.Input[Union[_builtins.str, NetworkRuleAction]]]:
+        
+        ...
+    
+    @default_action.setter
+    def default_action(self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkRuleAction]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipRules")
+    def ip_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[IpRuleArgs]]]]:
+        
+        ...
+    
+    @ip_rules.setter
+    def ip_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[IpRuleArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkRules")
+    def virtual_network_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgs]]]]:
+        
+        ...
+    
+    @virtual_network_rules.setter
+    def virtual_network_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNetworkRuleArgs]]]]): # -> None:
+        ...
+    
+
+
+class NoneAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class NoneAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class OAuth2AuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionOAuth2ArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class OAuth2AuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionOAuth2Args]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionOAuth2Args]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionOAuth2Args]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class OrganizationSharedBuiltInAuthorizationPolicyArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class OrganizationSharedBuiltInAuthorizationPolicyArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class PATAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionPersonalAccessTokenArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class PATAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionPersonalAccessTokenArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionPersonalAccessTokenArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionPersonalAccessTokenArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class PrivateEndpointConnectionPropertiesArgsDict(TypedDict):
+    
+    private_link_service_connection_state: pulumi.Input[PrivateLinkServiceConnectionStateArgsDict]
+    group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class PrivateEndpointConnectionPropertiesArgs:
+    def __init__(__self__, *, private_link_service_connection_state: pulumi.Input[PrivateLinkServiceConnectionStateArgs], group_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> pulumi.Input[PrivateLinkServiceConnectionStateArgs]:
+        
+        ...
+    
+    @private_link_service_connection_state.setter
+    def private_link_service_connection_state(self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupIds")
+    def group_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @group_ids.setter
+    def group_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class ProjectCapabilityHostArgsDict(TypedDict):
+    ai_services_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    storage_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    thread_storage_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    vector_store_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ProjectCapabilityHostArgs:
+    def __init__(__self__, *, ai_services_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., storage_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., thread_storage_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vector_store_connections: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aiServicesConnections")
+    def ai_services_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @ai_services_connections.setter
+    def ai_services_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageConnections")
+    def storage_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @storage_connections.setter
+    def storage_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="threadStorageConnections")
+    def thread_storage_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @thread_storage_connections.setter
+    def thread_storage_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vectorStoreConnections")
+    def vector_store_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @vector_store_connections.setter
+    def vector_store_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ProjectPropertiesArgsDict(TypedDict):
+    
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    display_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ProjectPropertiesArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RaiBlocklistItemPropertiesArgsDict(TypedDict):
+    
+    is_regex: NotRequired[pulumi.Input[_builtins.bool]]
+    pattern: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RaiBlocklistItemPropertiesArgs:
+    def __init__(__self__, *, is_regex: Optional[pulumi.Input[_builtins.bool]] = ..., pattern: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isRegex")
+    def is_regex(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_regex.setter
+    def is_regex(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def pattern(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pattern.setter
+    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RaiBlocklistPropertiesArgsDict(TypedDict):
+    
+    description: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RaiBlocklistPropertiesArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RaiExternalSafetyProviderSchemaPropertiesArgsDict(TypedDict):
+    
+    key_vault_uri: NotRequired[pulumi.Input[_builtins.str]]
+    managed_identity: NotRequired[pulumi.Input[_builtins.str]]
+    mode: NotRequired[pulumi.Input[_builtins.str]]
+    provider_id: NotRequired[pulumi.Input[_builtins.str]]
+    provider_name: NotRequired[pulumi.Input[_builtins.str]]
+    secret_name: NotRequired[pulumi.Input[_builtins.str]]
+    url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RaiExternalSafetyProviderSchemaPropertiesArgs:
+    def __init__(__self__, *, key_vault_uri: Optional[pulumi.Input[_builtins.str]] = ..., managed_identity: Optional[pulumi.Input[_builtins.str]] = ..., mode: Optional[pulumi.Input[_builtins.str]] = ..., provider_id: Optional[pulumi.Input[_builtins.str]] = ..., provider_name: Optional[pulumi.Input[_builtins.str]] = ..., secret_name: Optional[pulumi.Input[_builtins.str]] = ..., url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultUri")
+    def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_vault_uri.setter
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentity")
+    def managed_identity(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @managed_identity.setter
+    def managed_identity(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @mode.setter
+    def mode(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerId")
+    def provider_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provider_id.setter
+    def provider_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerName")
+    def provider_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provider_name.setter
+    def provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretName")
+    def secret_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @secret_name.setter
+    def secret_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @url.setter
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RaiMonitorConfigArgsDict(TypedDict):
+    
+    adx_storage_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+    identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RaiMonitorConfigArgs:
+    def __init__(__self__, *, adx_storage_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., identity_client_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="adxStorageResourceId")
+    def adx_storage_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @adx_storage_resource_id.setter
+    def adx_storage_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityClientId")
+    def identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @identity_client_id.setter
+    def identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RaiPolicyContentFilterArgsDict(TypedDict):
+    
+    action: NotRequired[pulumi.Input[Union[_builtins.str, RaiActionType]]]
+    blocking: NotRequired[pulumi.Input[_builtins.bool]]
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    severity_threshold: NotRequired[pulumi.Input[Union[_builtins.str, ContentLevel]]]
+    source: NotRequired[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]
+
+
+@pulumi.input_type
+class RaiPolicyContentFilterArgs:
+    def __init__(__self__, *, action: Optional[pulumi.Input[Union[_builtins.str, RaiActionType]]] = ..., blocking: Optional[pulumi.Input[_builtins.bool]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., severity_threshold: Optional[pulumi.Input[Union[_builtins.str, ContentLevel]]] = ..., source: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiActionType]]]:
+        
+        ...
+    
+    @action.setter
+    def action(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiActionType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def blocking(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @blocking.setter
+    def blocking(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="severityThreshold")
+    def severity_threshold(self) -> Optional[pulumi.Input[Union[_builtins.str, ContentLevel]]]:
+        
+        ...
+    
+    @severity_threshold.setter
+    def severity_threshold(self, value: Optional[pulumi.Input[Union[_builtins.str, ContentLevel]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]): # -> None:
+        ...
+    
+
+
+class RaiPolicyPropertiesArgsDict(TypedDict):
+    
+    base_policy_name: NotRequired[pulumi.Input[_builtins.str]]
+    content_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[RaiPolicyContentFilterArgsDict]]]]
+    custom_blocklists: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomBlocklistConfigArgsDict]]]]
+    custom_topics: NotRequired[pulumi.Input[Sequence[pulumi.Input[CustomTopicConfigArgsDict]]]]
+    mode: NotRequired[pulumi.Input[Union[_builtins.str, RaiPolicyMode]]]
+    safety_providers: NotRequired[pulumi.Input[Sequence[pulumi.Input[SafetyProviderConfigArgsDict]]]]
+
+
+@pulumi.input_type
+class RaiPolicyPropertiesArgs:
+    def __init__(__self__, *, base_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., content_filters: Optional[pulumi.Input[Sequence[pulumi.Input[RaiPolicyContentFilterArgs]]]] = ..., custom_blocklists: Optional[pulumi.Input[Sequence[pulumi.Input[CustomBlocklistConfigArgs]]]] = ..., custom_topics: Optional[pulumi.Input[Sequence[pulumi.Input[CustomTopicConfigArgs]]]] = ..., mode: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyMode]]] = ..., safety_providers: Optional[pulumi.Input[Sequence[pulumi.Input[SafetyProviderConfigArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="basePolicyName")
+    def base_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @base_policy_name.setter
+    def base_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contentFilters")
+    def content_filters(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RaiPolicyContentFilterArgs]]]]:
+        
+        ...
+    
+    @content_filters.setter
+    def content_filters(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RaiPolicyContentFilterArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customBlocklists")
+    def custom_blocklists(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CustomBlocklistConfigArgs]]]]:
+        
+        ...
+    
+    @custom_blocklists.setter
+    def custom_blocklists(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomBlocklistConfigArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customTopics")
+    def custom_topics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CustomTopicConfigArgs]]]]:
+        
+        ...
+    
+    @custom_topics.setter
+    def custom_topics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CustomTopicConfigArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiPolicyMode]]]:
+        
+        ...
+    
+    @mode.setter
+    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="safetyProviders")
+    def safety_providers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SafetyProviderConfigArgs]]]]:
+        
+        ...
+    
+    @safety_providers.setter
+    def safety_providers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SafetyProviderConfigArgs]]]]): # -> None:
+        ...
+    
+
+
+class RaiToolLabelPropertiesAccountScopeArgsDict(TypedDict):
+    
+    label_values: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class RaiToolLabelPropertiesAccountScopeArgs:
+    def __init__(__self__, *, label_values: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="labelValues")
+    def label_values(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @label_values.setter
+    def label_values(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class RaiToolLabelPropertiesProjectScopesArgsDict(TypedDict):
+    label_values: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
+    project: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class RaiToolLabelPropertiesProjectScopesArgs:
+    def __init__(__self__, *, label_values: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]], project: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="labelValues")
+    def label_values(self) -> pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @label_values.setter
+    def label_values(self, value: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def project(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @project.setter
+    def project(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class RaiToolLabelPropertiesArgsDict(TypedDict):
+    
+    tool_connection_name: pulumi.Input[_builtins.str]
+    account_scope: NotRequired[pulumi.Input[RaiToolLabelPropertiesAccountScopeArgsDict]]
+    project_scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[RaiToolLabelPropertiesProjectScopesArgsDict]]]]
+
+
+@pulumi.input_type
+class RaiToolLabelPropertiesArgs:
+    def __init__(__self__, *, tool_connection_name: pulumi.Input[_builtins.str], account_scope: Optional[pulumi.Input[RaiToolLabelPropertiesAccountScopeArgs]] = ..., project_scopes: Optional[pulumi.Input[Sequence[pulumi.Input[RaiToolLabelPropertiesProjectScopesArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="toolConnectionName")
+    def tool_connection_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @tool_connection_name.setter
+    def tool_connection_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountScope")
+    def account_scope(self) -> Optional[pulumi.Input[RaiToolLabelPropertiesAccountScopeArgs]]:
+        
+        ...
+    
+    @account_scope.setter
+    def account_scope(self, value: Optional[pulumi.Input[RaiToolLabelPropertiesAccountScopeArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectScopes")
+    def project_scopes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RaiToolLabelPropertiesProjectScopesArgs]]]]:
+        
+        ...
+    
+    @project_scopes.setter
+    def project_scopes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RaiToolLabelPropertiesProjectScopesArgs]]]]): # -> None:
+        ...
+    
+
+
+class RaiTopicPropertiesArgsDict(TypedDict):
+    
+    created_at: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    failed_reason: NotRequired[pulumi.Input[_builtins.str]]
+    last_modified_at: NotRequired[pulumi.Input[_builtins.str]]
+    sample_blob_url: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[_builtins.str]]
+    topic_id: NotRequired[pulumi.Input[_builtins.str]]
+    topic_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RaiTopicPropertiesArgs:
+    def __init__(__self__, *, created_at: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., failed_reason: Optional[pulumi.Input[_builtins.str]] = ..., last_modified_at: Optional[pulumi.Input[_builtins.str]] = ..., sample_blob_url: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[_builtins.str]] = ..., topic_id: Optional[pulumi.Input[_builtins.str]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @created_at.setter
+    def created_at(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failedReason")
+    def failed_reason(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @failed_reason.setter
+    def failed_reason(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_modified_at.setter
+    def last_modified_at(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sampleBlobUrl")
+    def sample_blob_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sample_blob_url.setter
+    def sample_blob_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicId")
+    def topic_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_id.setter
+    def topic_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicName")
+    def topic_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_name.setter
+    def topic_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RegionSettingArgsDict(TypedDict):
+    
+    customsubdomain: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    value: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class RegionSettingArgs:
+    def __init__(__self__, *, customsubdomain: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def customsubdomain(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @customsubdomain.setter
+    def customsubdomain(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class RoleBasedBuiltInAuthorizationPolicyArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class RoleBasedBuiltInAuthorizationPolicyArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SASAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionSharedAccessSignatureArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class SASAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionSharedAccessSignatureArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionSharedAccessSignatureArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionSharedAccessSignatureArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class SafetyProviderConfigArgsDict(TypedDict):
+    
+    blocking: NotRequired[pulumi.Input[_builtins.bool]]
+    safety_provider_name: NotRequired[pulumi.Input[_builtins.str]]
+    source: NotRequired[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]
+
+
+@pulumi.input_type
+class SafetyProviderConfigArgs:
+    def __init__(__self__, *, blocking: Optional[pulumi.Input[_builtins.bool]] = ..., safety_provider_name: Optional[pulumi.Input[_builtins.str]] = ..., source: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def blocking(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @blocking.setter
+    def blocking(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="safetyProviderName")
+    def safety_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @safety_provider_name.setter
+    def safety_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[Union[_builtins.str, RaiPolicyContentSource]]]): # -> None:
+        ...
+    
+
+
+class ServicePrincipalAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionServicePrincipalArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class ServicePrincipalAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionServicePrincipalArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionServicePrincipalArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionServicePrincipalArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    capacity: NotRequired[pulumi.Input[_builtins.int]]
+    family: NotRequired[pulumi.Input[_builtins.str]]
+    size: NotRequired[pulumi.Input[_builtins.str]]
+    tier: NotRequired[pulumi.Input[Union[_builtins.str, SkuTier]]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], capacity: Optional[pulumi.Input[_builtins.int]] = ..., family: Optional[pulumi.Input[_builtins.str]] = ..., size: Optional[pulumi.Input[_builtins.str]] = ..., tier: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @family.setter
+    def family(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @size.setter
+    def size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuTier]]]): # -> None:
+        ...
+    
+
+
+class TrafficRoutingRuleArgsDict(TypedDict):
+    
+    deployment_id: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    rule_id: NotRequired[pulumi.Input[_builtins.str]]
+    traffic_percentage: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class TrafficRoutingRuleArgs:
+    def __init__(__self__, *, deployment_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., rule_id: Optional[pulumi.Input[_builtins.str]] = ..., traffic_percentage: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentId")
+    def deployment_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @deployment_id.setter
+    def deployment_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleId")
+    def rule_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @rule_id.setter
+    def rule_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficPercentage")
+    def traffic_percentage(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @traffic_percentage.setter
+    def traffic_percentage(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class UserOwnedAmlWorkspaceArgsDict(TypedDict):
+    
+    identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class UserOwnedAmlWorkspaceArgs:
+    def __init__(__self__, *, identity_client_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityClientId")
+    def identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @identity_client_id.setter
+    def identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_id.setter
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class UserOwnedStorageArgsDict(TypedDict):
+    
+    identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class UserOwnedStorageArgs:
+    def __init__(__self__, *, identity_client_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityClientId")
+    def identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @identity_client_id.setter
+    def identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceId")
+    def resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_id.setter
+    def resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class UsernamePasswordAuthTypeConnectionPropertiesArgsDict(TypedDict):
+    auth_type: pulumi.Input[_builtins.str]
+    category: NotRequired[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]
+    credentials: NotRequired[pulumi.Input[ConnectionUsernamePasswordArgsDict]]
+    error: NotRequired[pulumi.Input[_builtins.str]]
+    expiry_time: NotRequired[pulumi.Input[_builtins.str]]
+    is_shared_to_all: NotRequired[pulumi.Input[_builtins.bool]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    pe_requirement: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]
+    pe_status: NotRequired[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]
+    shared_user_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    use_workspace_managed_identity: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class UsernamePasswordAuthTypeConnectionPropertiesArgs:
+    def __init__(__self__, *, auth_type: pulumi.Input[_builtins.str], category: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]] = ..., credentials: Optional[pulumi.Input[ConnectionUsernamePasswordArgs]] = ..., error: Optional[pulumi.Input[_builtins.str]] = ..., expiry_time: Optional[pulumi.Input[_builtins.str]] = ..., is_shared_to_all: Optional[pulumi.Input[_builtins.bool]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., pe_requirement: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]] = ..., pe_status: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]] = ..., shared_user_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target: Optional[pulumi.Input[_builtins.str]] = ..., use_workspace_managed_identity: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authType")
+    def auth_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @auth_type.setter
+    def auth_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[Union[_builtins.str, ConnectionCategory]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[ConnectionUsernamePasswordArgs]]:
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[ConnectionUsernamePasswordArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @error.setter
+    def error(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        ...
+    
+    @expiry_time.setter
+    def expiry_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSharedToAll")
+    def is_shared_to_all(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @is_shared_to_all.setter
+    def is_shared_to_all(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peRequirement")
+    def pe_requirement(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]:
+        
+        ...
+    
+    @pe_requirement.setter
+    def pe_requirement(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPERequirement]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peStatus")
+    def pe_status(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]:
+        
+        ...
+    
+    @pe_status.setter
+    def pe_status(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedPEStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedUserList")
+    def shared_user_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        ...
+    
+    @shared_user_list.setter
+    def shared_user_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useWorkspaceManagedIdentity")
+    def use_workspace_managed_identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        ...
+    
+    @use_workspace_managed_identity.setter
+    def use_workspace_managed_identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class VersionedAgentReferenceArgsDict(TypedDict):
+    
+    agent_id: NotRequired[pulumi.Input[_builtins.str]]
+    agent_name: NotRequired[pulumi.Input[_builtins.str]]
+    agent_version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class VersionedAgentReferenceArgs:
+    def __init__(__self__, *, agent_id: Optional[pulumi.Input[_builtins.str]] = ..., agent_name: Optional[pulumi.Input[_builtins.str]] = ..., agent_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentId")
+    def agent_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_id.setter
+    def agent_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentName")
+    def agent_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_name.setter
+    def agent_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentVersion")
+    def agent_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_version.setter
+    def agent_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class VirtualNetworkRuleArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+    ignore_missing_vnet_service_endpoint: NotRequired[pulumi.Input[_builtins.bool]]
+    state: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class VirtualNetworkRuleArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], ignore_missing_vnet_service_endpoint: Optional[pulumi.Input[_builtins.bool]] = ..., state: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ignoreMissingVnetServiceEndpoint")
+    def ignore_missing_vnet_service_endpoint(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @ignore_missing_vnet_service_endpoint.setter
+    def ignore_missing_vnet_service_endpoint(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

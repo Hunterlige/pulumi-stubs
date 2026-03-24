@@ -1,0 +1,228 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CertificateProfileArgs', 'CertificateProfile']
+@pulumi.input_type
+class CertificateProfileArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], identity_validation_id: pulumi.Input[_builtins.str], profile_type: pulumi.Input[Union[_builtins.str, ProfileType]], resource_group_name: pulumi.Input[_builtins.str], include_city: Optional[pulumi.Input[_builtins.bool]] = ..., include_country: Optional[pulumi.Input[_builtins.bool]] = ..., include_postal_code: Optional[pulumi.Input[_builtins.bool]] = ..., include_state: Optional[pulumi.Input[_builtins.bool]] = ..., include_street_address: Optional[pulumi.Input[_builtins.bool]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityValidationId")
+    def identity_validation_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @identity_validation_id.setter
+    def identity_validation_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileType")
+    def profile_type(self) -> pulumi.Input[Union[_builtins.str, ProfileType]]:
+        
+        ...
+    
+    @profile_type.setter
+    def profile_type(self, value: pulumi.Input[Union[_builtins.str, ProfileType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeCity")
+    def include_city(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @include_city.setter
+    def include_city(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeCountry")
+    def include_country(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @include_country.setter
+    def include_country(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includePostalCode")
+    def include_postal_code(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @include_postal_code.setter
+    def include_postal_code(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeState")
+    def include_state(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @include_state.setter
+    def include_state(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeStreetAddress")
+    def include_street_address(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @include_street_address.setter
+    def include_street_address(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileName")
+    def profile_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @profile_name.setter
+    def profile_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:codesigning:CertificateProfile")
+class CertificateProfile(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., identity_validation_id: Optional[pulumi.Input[_builtins.str]] = ..., include_city: Optional[pulumi.Input[_builtins.bool]] = ..., include_country: Optional[pulumi.Input[_builtins.bool]] = ..., include_postal_code: Optional[pulumi.Input[_builtins.bool]] = ..., include_state: Optional[pulumi.Input[_builtins.bool]] = ..., include_street_address: Optional[pulumi.Input[_builtins.bool]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ..., profile_type: Optional[pulumi.Input[Union[_builtins.str, ProfileType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: CertificateProfileArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> CertificateProfile:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def certificates(self) -> pulumi.Output[Sequence[outputs.CertificateResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityValidationId")
+    def identity_validation_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeCity")
+    def include_city(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeCountry")
+    def include_country(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includePostalCode")
+    def include_postal_code(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeState")
+    def include_state(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeStreetAddress")
+    def include_street_address(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileType")
+    def profile_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,167 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MongoDBResourceMongoRoleDefinitionArgs', 'MongoDBResourceMongoRoleDefinition']
+@pulumi.input_type
+class MongoDBResourceMongoRoleDefinitionArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], database_name: Optional[pulumi.Input[_builtins.str]] = ..., mongo_role_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., privileges: Optional[pulumi.Input[Sequence[pulumi.Input[PrivilegeArgs]]]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., roles: Optional[pulumi.Input[Sequence[pulumi.Input[RoleArgs]]]] = ..., type: Optional[pulumi.Input[MongoRoleDefinitionType]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @database_name.setter
+    def database_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mongoRoleDefinitionId")
+    def mongo_role_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @mongo_role_definition_id.setter
+    def mongo_role_definition_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def privileges(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[PrivilegeArgs]]]]:
+        
+        ...
+    
+    @privileges.setter
+    def privileges(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrivilegeArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleName")
+    def role_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @role_name.setter
+    def role_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RoleArgs]]]]:
+        
+        ...
+    
+    @roles.setter
+    def roles(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RoleArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[MongoRoleDefinitionType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[MongoRoleDefinitionType]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class MongoDBResourceMongoRoleDefinition(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., database_name: Optional[pulumi.Input[_builtins.str]] = ..., mongo_role_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., privileges: Optional[pulumi.Input[Sequence[pulumi.Input[Union[PrivilegeArgs, PrivilegeArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., role_name: Optional[pulumi.Input[_builtins.str]] = ..., roles: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RoleArgs, RoleArgsDict]]]]] = ..., type: Optional[pulumi.Input[MongoRoleDefinitionType]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MongoDBResourceMongoRoleDefinitionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MongoDBResourceMongoRoleDefinition:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def privileges(self) -> pulumi.Output[Optional[Sequence[outputs.PrivilegeResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleName")
+    def role_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def roles(self) -> pulumi.Output[Optional[Sequence[outputs.RoleResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

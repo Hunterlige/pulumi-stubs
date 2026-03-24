@@ -1,0 +1,157 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DataMaskingPolicyArgs', 'DataMaskingPolicy']
+@pulumi.input_type
+class DataMaskingPolicyArgs:
+    def __init__(__self__, *, data_masking_state: pulumi.Input[DataMaskingState], database_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], data_masking_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., exempt_principals: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataMaskingState")
+    def data_masking_state(self) -> pulumi.Input[DataMaskingState]:
+        
+        ...
+    
+    @data_masking_state.setter
+    def data_masking_state(self, value: pulumi.Input[DataMaskingState]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @database_name.setter
+    def database_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataMaskingPolicyName")
+    def data_masking_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @data_masking_policy_name.setter
+    def data_masking_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exemptPrincipals")
+    def exempt_principals(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @exempt_principals.setter
+    def exempt_principals(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:DataMaskingPolicy")
+class DataMaskingPolicy(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., data_masking_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., data_masking_state: Optional[pulumi.Input[DataMaskingState]] = ..., database_name: Optional[pulumi.Input[_builtins.str]] = ..., exempt_principals: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DataMaskingPolicyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> DataMaskingPolicy:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationPrincipals")
+    def application_principals(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataMaskingState")
+    def data_masking_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exemptPrincipals")
+    def exempt_principals(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maskingLevel")
+    def masking_level(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

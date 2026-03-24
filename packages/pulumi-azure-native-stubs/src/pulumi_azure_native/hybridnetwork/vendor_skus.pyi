@@ -1,0 +1,207 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['VendorSkusArgs', 'VendorSkus']
+@pulumi.input_type
+class VendorSkusArgs:
+    def __init__(__self__, *, vendor_name: pulumi.Input[_builtins.str], deployment_mode: Optional[pulumi.Input[Union[_builtins.str, SkuDeploymentMode]]] = ..., managed_application_parameters: Optional[Any] = ..., managed_application_template: Optional[Any] = ..., network_function_template: Optional[pulumi.Input[NetworkFunctionTemplateArgs]] = ..., network_function_type: Optional[pulumi.Input[Union[_builtins.str, NetworkFunctionType]]] = ..., preview: Optional[pulumi.Input[_builtins.bool]] = ..., sku_name: Optional[pulumi.Input[_builtins.str]] = ..., sku_type: Optional[pulumi.Input[Union[_builtins.str, SkuType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vendorName")
+    def vendor_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @vendor_name.setter
+    def vendor_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentMode")
+    def deployment_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuDeploymentMode]]]:
+        
+        ...
+    
+    @deployment_mode.setter
+    def deployment_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuDeploymentMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedApplicationParameters")
+    def managed_application_parameters(self) -> Optional[Any]:
+        
+        ...
+    
+    @managed_application_parameters.setter
+    def managed_application_parameters(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedApplicationTemplate")
+    def managed_application_template(self) -> Optional[Any]:
+        
+        ...
+    
+    @managed_application_template.setter
+    def managed_application_template(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFunctionTemplate")
+    def network_function_template(self) -> Optional[pulumi.Input[NetworkFunctionTemplateArgs]]:
+        
+        ...
+    
+    @network_function_template.setter
+    def network_function_template(self, value: Optional[pulumi.Input[NetworkFunctionTemplateArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFunctionType")
+    def network_function_type(self) -> Optional[pulumi.Input[Union[_builtins.str, NetworkFunctionType]]]:
+        
+        ...
+    
+    @network_function_type.setter
+    def network_function_type(self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkFunctionType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def preview(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @preview.setter
+    def preview(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuName")
+    def sku_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sku_name.setter
+    def sku_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuType")
+    def sku_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SkuType]]]:
+        
+        ...
+    
+    @sku_type.setter
+    def sku_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SkuType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:hybridnetwork:VendorSkus")
+class VendorSkus(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., deployment_mode: Optional[pulumi.Input[Union[_builtins.str, SkuDeploymentMode]]] = ..., managed_application_parameters: Optional[Any] = ..., managed_application_template: Optional[Any] = ..., network_function_template: Optional[pulumi.Input[Union[NetworkFunctionTemplateArgs, NetworkFunctionTemplateArgsDict]]] = ..., network_function_type: Optional[pulumi.Input[Union[_builtins.str, NetworkFunctionType]]] = ..., preview: Optional[pulumi.Input[_builtins.bool]] = ..., sku_name: Optional[pulumi.Input[_builtins.str]] = ..., sku_type: Optional[pulumi.Input[Union[_builtins.str, SkuType]]] = ..., vendor_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: VendorSkusArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> VendorSkus:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentMode")
+    def deployment_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedApplicationParameters")
+    def managed_application_parameters(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedApplicationTemplate")
+    def managed_application_template(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFunctionTemplate")
+    def network_function_template(self) -> pulumi.Output[Optional[outputs.NetworkFunctionTemplateResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFunctionType")
+    def network_function_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def preview(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuType")
+    def sku_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

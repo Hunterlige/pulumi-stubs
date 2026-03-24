@@ -1,0 +1,1033 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AzureBlobDefinitionArgs', 'AzureBlobDefinitionArgsDict', 'BucketDefinitionArgs', 'BucketDefinitionArgsDict', 'ExtensionAksAssignedIdentityArgs', 'ExtensionAksAssignedIdentityArgsDict', 'ExtensionStatusArgs', 'ExtensionStatusArgsDict', 'GitRepositoryDefinitionArgs', 'GitRepositoryDefinitionArgsDict', 'HelmOperatorPropertiesArgs', 'HelmOperatorPropertiesArgsDict', 'IdentityArgs', 'IdentityArgsDict', ..., ..., 'KustomizationDefinitionArgs', 'KustomizationDefinitionArgsDict', 'ManagedIdentityDefinitionArgs', 'ManagedIdentityDefinitionArgsDict', 'PlanArgs', 'PlanArgsDict', 'PostBuildDefinitionArgs', 'PostBuildDefinitionArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'RepositoryRefDefinitionArgs', 'RepositoryRefDefinitionArgsDict', 'ScopeClusterArgs', 'ScopeClusterArgsDict', 'ScopeNamespaceArgs', 'ScopeNamespaceArgsDict', 'ScopeArgs', 'ScopeArgsDict', 'ServicePrincipalDefinitionArgs', 'ServicePrincipalDefinitionArgsDict', 'SubstituteFromDefinitionArgs', 'SubstituteFromDefinitionArgsDict']
+class AzureBlobDefinitionArgsDict(TypedDict):
+    
+    account_key: NotRequired[pulumi.Input[_builtins.str]]
+    container_name: NotRequired[pulumi.Input[_builtins.str]]
+    local_auth_ref: NotRequired[pulumi.Input[_builtins.str]]
+    managed_identity: NotRequired[pulumi.Input[ManagedIdentityDefinitionArgsDict]]
+    sas_token: NotRequired[pulumi.Input[_builtins.str]]
+    service_principal: NotRequired[pulumi.Input[ServicePrincipalDefinitionArgsDict]]
+    sync_interval_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    timeout_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureBlobDefinitionArgs:
+    def __init__(__self__, *, account_key: Optional[pulumi.Input[_builtins.str]] = ..., container_name: Optional[pulumi.Input[_builtins.str]] = ..., local_auth_ref: Optional[pulumi.Input[_builtins.str]] = ..., managed_identity: Optional[pulumi.Input[ManagedIdentityDefinitionArgs]] = ..., sas_token: Optional[pulumi.Input[_builtins.str]] = ..., service_principal: Optional[pulumi.Input[ServicePrincipalDefinitionArgs]] = ..., sync_interval_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., timeout_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountKey")
+    def account_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @account_key.setter
+    def account_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerName")
+    def container_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @container_name.setter
+    def container_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAuthRef")
+    def local_auth_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @local_auth_ref.setter
+    def local_auth_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentity")
+    def managed_identity(self) -> Optional[pulumi.Input[ManagedIdentityDefinitionArgs]]:
+        
+        ...
+    
+    @managed_identity.setter
+    def managed_identity(self, value: Optional[pulumi.Input[ManagedIdentityDefinitionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sasToken")
+    def sas_token(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sas_token.setter
+    def sas_token(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="servicePrincipal")
+    def service_principal(self) -> Optional[pulumi.Input[ServicePrincipalDefinitionArgs]]:
+        
+        ...
+    
+    @service_principal.setter
+    def service_principal(self, value: Optional[pulumi.Input[ServicePrincipalDefinitionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncIntervalInSeconds")
+    def sync_interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @sync_interval_in_seconds.setter
+    def sync_interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeoutInSeconds")
+    def timeout_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @timeout_in_seconds.setter
+    def timeout_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @url.setter
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class BucketDefinitionArgsDict(TypedDict):
+    
+    access_key: NotRequired[pulumi.Input[_builtins.str]]
+    bucket_name: NotRequired[pulumi.Input[_builtins.str]]
+    insecure: NotRequired[pulumi.Input[_builtins.bool]]
+    local_auth_ref: NotRequired[pulumi.Input[_builtins.str]]
+    sync_interval_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    timeout_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class BucketDefinitionArgs:
+    def __init__(__self__, *, access_key: Optional[pulumi.Input[_builtins.str]] = ..., bucket_name: Optional[pulumi.Input[_builtins.str]] = ..., insecure: Optional[pulumi.Input[_builtins.bool]] = ..., local_auth_ref: Optional[pulumi.Input[_builtins.str]] = ..., sync_interval_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., timeout_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessKey")
+    def access_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @access_key.setter
+    def access_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bucketName")
+    def bucket_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @bucket_name.setter
+    def bucket_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def insecure(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @insecure.setter
+    def insecure(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAuthRef")
+    def local_auth_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @local_auth_ref.setter
+    def local_auth_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncIntervalInSeconds")
+    def sync_interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @sync_interval_in_seconds.setter
+    def sync_interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeoutInSeconds")
+    def timeout_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @timeout_in_seconds.setter
+    def timeout_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @url.setter
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ExtensionAksAssignedIdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[AKSIdentityType]]
+
+
+@pulumi.input_type
+class ExtensionAksAssignedIdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[AKSIdentityType]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[AKSIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[AKSIdentityType]]): # -> None:
+        ...
+    
+
+
+class ExtensionStatusArgsDict(TypedDict):
+    
+    code: NotRequired[pulumi.Input[_builtins.str]]
+    display_status: NotRequired[pulumi.Input[_builtins.str]]
+    level: NotRequired[pulumi.Input[Union[_builtins.str, LevelType]]]
+    message: NotRequired[pulumi.Input[_builtins.str]]
+    time: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ExtensionStatusArgs:
+    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ..., display_status: Optional[pulumi.Input[_builtins.str]] = ..., level: Optional[pulumi.Input[Union[_builtins.str, LevelType]]] = ..., message: Optional[pulumi.Input[_builtins.str]] = ..., time: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @code.setter
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayStatus")
+    def display_status(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_status.setter
+    def display_status(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def level(self) -> Optional[pulumi.Input[Union[_builtins.str, LevelType]]]:
+        
+        ...
+    
+    @level.setter
+    def level(self, value: Optional[pulumi.Input[Union[_builtins.str, LevelType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @message.setter
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @time.setter
+    def time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GitRepositoryDefinitionArgsDict(TypedDict):
+    
+    https_ca_cert: NotRequired[pulumi.Input[_builtins.str]]
+    https_user: NotRequired[pulumi.Input[_builtins.str]]
+    local_auth_ref: NotRequired[pulumi.Input[_builtins.str]]
+    repository_ref: NotRequired[pulumi.Input[RepositoryRefDefinitionArgsDict]]
+    ssh_known_hosts: NotRequired[pulumi.Input[_builtins.str]]
+    sync_interval_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    timeout_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class GitRepositoryDefinitionArgs:
+    def __init__(__self__, *, https_ca_cert: Optional[pulumi.Input[_builtins.str]] = ..., https_user: Optional[pulumi.Input[_builtins.str]] = ..., local_auth_ref: Optional[pulumi.Input[_builtins.str]] = ..., repository_ref: Optional[pulumi.Input[RepositoryRefDefinitionArgs]] = ..., ssh_known_hosts: Optional[pulumi.Input[_builtins.str]] = ..., sync_interval_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., timeout_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpsCACert")
+    def https_ca_cert(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @https_ca_cert.setter
+    def https_ca_cert(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpsUser")
+    def https_user(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @https_user.setter
+    def https_user(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localAuthRef")
+    def local_auth_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @local_auth_ref.setter
+    def local_auth_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="repositoryRef")
+    def repository_ref(self) -> Optional[pulumi.Input[RepositoryRefDefinitionArgs]]:
+        
+        ...
+    
+    @repository_ref.setter
+    def repository_ref(self, value: Optional[pulumi.Input[RepositoryRefDefinitionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sshKnownHosts")
+    def ssh_known_hosts(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ssh_known_hosts.setter
+    def ssh_known_hosts(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncIntervalInSeconds")
+    def sync_interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @sync_interval_in_seconds.setter
+    def sync_interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeoutInSeconds")
+    def timeout_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @timeout_in_seconds.setter
+    def timeout_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @url.setter
+    def url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class HelmOperatorPropertiesArgsDict(TypedDict):
+    
+    chart_values: NotRequired[pulumi.Input[_builtins.str]]
+    chart_version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class HelmOperatorPropertiesArgs:
+    def __init__(__self__, *, chart_values: Optional[pulumi.Input[_builtins.str]] = ..., chart_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="chartValues")
+    def chart_values(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @chart_values.setter
+    def chart_values(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="chartVersion")
+    def chart_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @chart_version.setter
+    def chart_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class IdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[ResourceIdentityType]]
+
+
+@pulumi.input_type
+class IdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[ResourceIdentityType]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): # -> None:
+        ...
+    
+
+
+class KubernetesConfigurationPrivateLinkScopePropertiesArgsDict(TypedDict):
+    
+    cluster_resource_id: pulumi.Input[_builtins.str]
+    public_network_access: NotRequired[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]]
+
+
+@pulumi.input_type
+class KubernetesConfigurationPrivateLinkScopePropertiesArgs:
+    def __init__(__self__, *, cluster_resource_id: pulumi.Input[_builtins.str], public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterResourceId")
+    def cluster_resource_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cluster_resource_id.setter
+    def cluster_resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccessType]]]): # -> None:
+        ...
+    
+
+
+class KustomizationDefinitionArgsDict(TypedDict):
+    
+    depends_on: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    force: NotRequired[pulumi.Input[_builtins.bool]]
+    path: NotRequired[pulumi.Input[_builtins.str]]
+    post_build: NotRequired[pulumi.Input[PostBuildDefinitionArgsDict]]
+    prune: NotRequired[pulumi.Input[_builtins.bool]]
+    retry_interval_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    sync_interval_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    timeout_in_seconds: NotRequired[pulumi.Input[_builtins.float]]
+    wait: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class KustomizationDefinitionArgs:
+    def __init__(__self__, *, depends_on: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., force: Optional[pulumi.Input[_builtins.bool]] = ..., path: Optional[pulumi.Input[_builtins.str]] = ..., post_build: Optional[pulumi.Input[PostBuildDefinitionArgs]] = ..., prune: Optional[pulumi.Input[_builtins.bool]] = ..., retry_interval_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., sync_interval_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., timeout_in_seconds: Optional[pulumi.Input[_builtins.float]] = ..., wait: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dependsOn")
+    def depends_on(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @depends_on.setter
+    def depends_on(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def force(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @force.setter
+    def force(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @path.setter
+    def path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="postBuild")
+    def post_build(self) -> Optional[pulumi.Input[PostBuildDefinitionArgs]]:
+        
+        ...
+    
+    @post_build.setter
+    def post_build(self, value: Optional[pulumi.Input[PostBuildDefinitionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def prune(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @prune.setter
+    def prune(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retryIntervalInSeconds")
+    def retry_interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @retry_interval_in_seconds.setter
+    def retry_interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncIntervalInSeconds")
+    def sync_interval_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @sync_interval_in_seconds.setter
+    def sync_interval_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeoutInSeconds")
+    def timeout_in_seconds(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @timeout_in_seconds.setter
+    def timeout_in_seconds(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def wait(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @wait.setter
+    def wait(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class ManagedIdentityDefinitionArgsDict(TypedDict):
+    
+    client_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ManagedIdentityDefinitionArgs:
+    def __init__(__self__, *, client_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class PlanArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    product: pulumi.Input[_builtins.str]
+    publisher: pulumi.Input[_builtins.str]
+    promotion_code: NotRequired[pulumi.Input[_builtins.str]]
+    version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class PlanArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], product: pulumi.Input[_builtins.str], publisher: pulumi.Input[_builtins.str], promotion_code: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @product.setter
+    def product(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @publisher.setter
+    def publisher(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="promotionCode")
+    def promotion_code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @promotion_code.setter
+    def promotion_code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class PostBuildDefinitionArgsDict(TypedDict):
+    
+    substitute: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    substitute_from: NotRequired[pulumi.Input[Sequence[pulumi.Input[SubstituteFromDefinitionArgsDict]]]]
+
+
+@pulumi.input_type
+class PostBuildDefinitionArgs:
+    def __init__(__self__, *, substitute: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., substitute_from: Optional[pulumi.Input[Sequence[pulumi.Input[SubstituteFromDefinitionArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def substitute(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @substitute.setter
+    def substitute(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="substituteFrom")
+    def substitute_from(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SubstituteFromDefinitionArgs]]]]:
+        
+        ...
+    
+    @substitute_from.setter
+    def substitute_from(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SubstituteFromDefinitionArgs]]]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class RepositoryRefDefinitionArgsDict(TypedDict):
+    
+    branch: NotRequired[pulumi.Input[_builtins.str]]
+    commit: NotRequired[pulumi.Input[_builtins.str]]
+    semver: NotRequired[pulumi.Input[_builtins.str]]
+    tag: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class RepositoryRefDefinitionArgs:
+    def __init__(__self__, *, branch: Optional[pulumi.Input[_builtins.str]] = ..., commit: Optional[pulumi.Input[_builtins.str]] = ..., semver: Optional[pulumi.Input[_builtins.str]] = ..., tag: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def branch(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @branch.setter
+    def branch(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def commit(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @commit.setter
+    def commit(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def semver(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @semver.setter
+    def semver(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tag(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tag.setter
+    def tag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScopeClusterArgsDict(TypedDict):
+    
+    release_namespace: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ScopeClusterArgs:
+    def __init__(__self__, *, release_namespace: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseNamespace")
+    def release_namespace(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @release_namespace.setter
+    def release_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScopeNamespaceArgsDict(TypedDict):
+    
+    target_namespace: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ScopeNamespaceArgs:
+    def __init__(__self__, *, target_namespace: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetNamespace")
+    def target_namespace(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target_namespace.setter
+    def target_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScopeArgsDict(TypedDict):
+    
+    cluster: NotRequired[pulumi.Input[ScopeClusterArgsDict]]
+    namespace: NotRequired[pulumi.Input[ScopeNamespaceArgsDict]]
+
+
+@pulumi.input_type
+class ScopeArgs:
+    def __init__(__self__, *, cluster: Optional[pulumi.Input[ScopeClusterArgs]] = ..., namespace: Optional[pulumi.Input[ScopeNamespaceArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cluster(self) -> Optional[pulumi.Input[ScopeClusterArgs]]:
+        
+        ...
+    
+    @cluster.setter
+    def cluster(self, value: Optional[pulumi.Input[ScopeClusterArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def namespace(self) -> Optional[pulumi.Input[ScopeNamespaceArgs]]:
+        
+        ...
+    
+    @namespace.setter
+    def namespace(self, value: Optional[pulumi.Input[ScopeNamespaceArgs]]): # -> None:
+        ...
+    
+
+
+class ServicePrincipalDefinitionArgsDict(TypedDict):
+    
+    client_certificate: NotRequired[pulumi.Input[_builtins.str]]
+    client_certificate_password: NotRequired[pulumi.Input[_builtins.str]]
+    client_certificate_send_chain: NotRequired[pulumi.Input[_builtins.bool]]
+    client_id: NotRequired[pulumi.Input[_builtins.str]]
+    client_secret: NotRequired[pulumi.Input[_builtins.str]]
+    tenant_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ServicePrincipalDefinitionArgs:
+    def __init__(__self__, *, client_certificate: Optional[pulumi.Input[_builtins.str]] = ..., client_certificate_password: Optional[pulumi.Input[_builtins.str]] = ..., client_certificate_send_chain: Optional[pulumi.Input[_builtins.bool]] = ..., client_id: Optional[pulumi.Input[_builtins.str]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientCertificate")
+    def client_certificate(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_certificate.setter
+    def client_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientCertificatePassword")
+    def client_certificate_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_certificate_password.setter
+    def client_certificate_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientCertificateSendChain")
+    def client_certificate_send_chain(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @client_certificate_send_chain.setter
+    def client_certificate_send_chain(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_secret.setter
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SubstituteFromDefinitionArgsDict(TypedDict):
+    
+    kind: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    optional: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class SubstituteFromDefinitionArgs:
+    def __init__(__self__, *, kind: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., optional: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def optional(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @optional.setter
+    def optional(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+

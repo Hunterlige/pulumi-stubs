@@ -1,0 +1,64 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetTrafficManagerUserMetricsKeyResult', 'AwaitableGetTrafficManagerUserMetricsKeyResult', 'get_traffic_manager_user_metrics_key', 'get_traffic_manager_user_metrics_key_output']
+@pulumi.output_type
+class GetTrafficManagerUserMetricsKeyResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., key=..., name=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetTrafficManagerUserMetricsKeyResult(GetTrafficManagerUserMetricsKeyResult):
+    def __await__(self): # -> Generator[Never, Any, GetTrafficManagerUserMetricsKeyResult]:
+        ...
+    
+
+
+def get_traffic_manager_user_metrics_key(opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTrafficManagerUserMetricsKeyResult:
+    
+    ...
+
+def get_traffic_manager_user_metrics_key_output(opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTrafficManagerUserMetricsKeyResult]:
+    
+    ...
+

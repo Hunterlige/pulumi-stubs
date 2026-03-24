@@ -1,0 +1,286 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AFDOriginArgs', 'AFDOrigin']
+@pulumi.input_type
+class AFDOriginArgs:
+    def __init__(__self__, *, origin_group_name: pulumi.Input[_builtins.str], profile_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], azure_origin: Optional[pulumi.Input[ResourceReferenceArgs]] = ..., enabled_state: Optional[pulumi.Input[Union[_builtins.str, EnabledState]]] = ..., enforce_certificate_name_check: Optional[pulumi.Input[_builtins.bool]] = ..., host_name: Optional[pulumi.Input[_builtins.str]] = ..., http_port: Optional[pulumi.Input[_builtins.int]] = ..., https_port: Optional[pulumi.Input[_builtins.int]] = ..., origin_host_header: Optional[pulumi.Input[_builtins.str]] = ..., origin_name: Optional[pulumi.Input[_builtins.str]] = ..., priority: Optional[pulumi.Input[_builtins.int]] = ..., shared_private_link_resource: Optional[pulumi.Input[SharedPrivateLinkResourcePropertiesArgs]] = ..., weight: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originGroupName")
+    def origin_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @origin_group_name.setter
+    def origin_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileName")
+    def profile_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @profile_name.setter
+    def profile_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureOrigin")
+    def azure_origin(self) -> Optional[pulumi.Input[ResourceReferenceArgs]]:
+        
+        ...
+    
+    @azure_origin.setter
+    def azure_origin(self, value: Optional[pulumi.Input[ResourceReferenceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enabledState")
+    def enabled_state(self) -> Optional[pulumi.Input[Union[_builtins.str, EnabledState]]]:
+        
+        ...
+    
+    @enabled_state.setter
+    def enabled_state(self, value: Optional[pulumi.Input[Union[_builtins.str, EnabledState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforceCertificateNameCheck")
+    def enforce_certificate_name_check(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enforce_certificate_name_check.setter
+    def enforce_certificate_name_check(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostName")
+    def host_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @host_name.setter
+    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpPort")
+    def http_port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @http_port.setter
+    def http_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpsPort")
+    def https_port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @https_port.setter
+    def https_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originHostHeader")
+    def origin_host_header(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @origin_host_header.setter
+    def origin_host_header(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originName")
+    def origin_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @origin_name.setter
+    def origin_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @priority.setter
+    def priority(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedPrivateLinkResource")
+    def shared_private_link_resource(self) -> Optional[pulumi.Input[SharedPrivateLinkResourcePropertiesArgs]]:
+        
+        ...
+    
+    @shared_private_link_resource.setter
+    def shared_private_link_resource(self, value: Optional[pulumi.Input[SharedPrivateLinkResourcePropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def weight(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @weight.setter
+    def weight(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:cdn:AFDOrigin")
+class AFDOrigin(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., azure_origin: Optional[pulumi.Input[Union[ResourceReferenceArgs, ResourceReferenceArgsDict]]] = ..., enabled_state: Optional[pulumi.Input[Union[_builtins.str, EnabledState]]] = ..., enforce_certificate_name_check: Optional[pulumi.Input[_builtins.bool]] = ..., host_name: Optional[pulumi.Input[_builtins.str]] = ..., http_port: Optional[pulumi.Input[_builtins.int]] = ..., https_port: Optional[pulumi.Input[_builtins.int]] = ..., origin_group_name: Optional[pulumi.Input[_builtins.str]] = ..., origin_host_header: Optional[pulumi.Input[_builtins.str]] = ..., origin_name: Optional[pulumi.Input[_builtins.str]] = ..., priority: Optional[pulumi.Input[_builtins.int]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., shared_private_link_resource: Optional[pulumi.Input[Union[SharedPrivateLinkResourcePropertiesArgs, SharedPrivateLinkResourcePropertiesArgsDict]]] = ..., weight: Optional[pulumi.Input[_builtins.int]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AFDOriginArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AFDOrigin:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureOrigin")
+    def azure_origin(self) -> pulumi.Output[Optional[outputs.ResourceReferenceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentStatus")
+    def deployment_status(self) -> pulumi.Output[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enabledState")
+    def enabled_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforceCertificateNameCheck")
+    def enforce_certificate_name_check(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostName")
+    def host_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpPort")
+    def http_port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpsPort")
+    def https_port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originGroupName")
+    def origin_group_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originHostHeader")
+    def origin_host_header(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedPrivateLinkResource")
+    def shared_private_link_resource(self) -> pulumi.Output[Optional[outputs.SharedPrivateLinkResourcePropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def weight(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+
+

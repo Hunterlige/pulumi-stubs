@@ -1,0 +1,53 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AuthenticationMode', 'ConnectionStatus', 'CreateMode', 'IdentityType', 'PrivateLinkDelegation', 'PublicNetworkAccess']
+@pulumi.type_token("azure-native:appconfiguration:AuthenticationMode")
+class AuthenticationMode(_builtins.str, Enum):
+    
+    LOCAL = ...
+    PASS_THROUGH = ...
+
+
+@pulumi.type_token("azure-native:appconfiguration:ConnectionStatus")
+class ConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+    DISCONNECTED = ...
+
+
+@pulumi.type_token("azure-native:appconfiguration:CreateMode")
+class CreateMode(_builtins.str, Enum):
+    
+    RECOVER = ...
+    DEFAULT = ...
+
+
+@pulumi.type_token("azure-native:appconfiguration:IdentityType")
+class IdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token(...)
+class PrivateLinkDelegation(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:appconfiguration:PublicNetworkAccess")
+class PublicNetworkAccess(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+

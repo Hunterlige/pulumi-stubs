@@ -1,0 +1,140 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['RoutingIntentArgs', 'RoutingIntent']
+@pulumi.input_type
+class RoutingIntentArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], virtual_hub_name: pulumi.Input[_builtins.str], id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., routing_intent_name: Optional[pulumi.Input[_builtins.str]] = ..., routing_policies: Optional[pulumi.Input[Sequence[pulumi.Input[RoutingPolicyArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHubName")
+    def virtual_hub_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @virtual_hub_name.setter
+    def virtual_hub_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingIntentName")
+    def routing_intent_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @routing_intent_name.setter
+    def routing_intent_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingPolicies")
+    def routing_policies(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[RoutingPolicyArgs]]]]:
+        
+        ...
+    
+    @routing_policies.setter
+    def routing_policies(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[RoutingPolicyArgs]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:network:RoutingIntent")
+class RoutingIntent(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., routing_intent_name: Optional[pulumi.Input[_builtins.str]] = ..., routing_policies: Optional[pulumi.Input[Sequence[pulumi.Input[Union[RoutingPolicyArgs, RoutingPolicyArgsDict]]]]] = ..., virtual_hub_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: RoutingIntentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> RoutingIntent:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingPolicies")
+    def routing_policies(self) -> pulumi.Output[Optional[Sequence[outputs.RoutingPolicyResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

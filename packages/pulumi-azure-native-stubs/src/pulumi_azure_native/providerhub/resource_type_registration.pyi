@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ResourceTypeRegistrationInitArgs', 'ResourceTypeRegistration']
+@pulumi.input_type
+class ResourceTypeRegistrationInitArgs:
+    def __init__(__self__, *, provider_namespace: pulumi.Input[_builtins.str], kind: Optional[pulumi.Input[Union[_builtins.str, ResourceTypeRegistrationKind]]] = ..., properties: Optional[pulumi.Input[ResourceTypeRegistrationPropertiesArgs]] = ..., resource_type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerNamespace")
+    def provider_namespace(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @provider_namespace.setter
+    def provider_namespace(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[Union[_builtins.str, ResourceTypeRegistrationKind]]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[Union[_builtins.str, ResourceTypeRegistrationKind]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[pulumi.Input[ResourceTypeRegistrationPropertiesArgs]]:
+        ...
+    
+    @properties.setter
+    def properties(self, value: Optional[pulumi.Input[ResourceTypeRegistrationPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_type.setter
+    def resource_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:providerhub:ResourceTypeRegistration")
+class ResourceTypeRegistration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., kind: Optional[pulumi.Input[Union[_builtins.str, ResourceTypeRegistrationKind]]] = ..., properties: Optional[pulumi.Input[Union[ResourceTypeRegistrationPropertiesArgs, ResourceTypeRegistrationPropertiesArgsDict]]] = ..., provider_namespace: Optional[pulumi.Input[_builtins.str]] = ..., resource_type: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ResourceTypeRegistrationInitArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ResourceTypeRegistration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.ResourceTypeRegistrationPropertiesResponse]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

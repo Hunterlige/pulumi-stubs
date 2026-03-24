@@ -1,0 +1,178 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AzureADAdministratorArgs', 'AzureADAdministrator']
+@pulumi.input_type
+class AzureADAdministratorArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], administrator_name: Optional[pulumi.Input[_builtins.str]] = ..., administrator_type: Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]] = ..., identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., login: Optional[pulumi.Input[_builtins.str]] = ..., sid: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorName")
+    def administrator_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_name.setter
+    def administrator_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorType")
+    def administrator_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]]:
+        
+        ...
+    
+    @administrator_type.setter
+    def administrator_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityResourceId")
+    def identity_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @identity_resource_id.setter
+    def identity_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def login(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @login.setter
+    def login(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sid.setter
+    def sid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:dbformysql:AzureADAdministrator")
+class AzureADAdministrator(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., administrator_name: Optional[pulumi.Input[_builtins.str]] = ..., administrator_type: Optional[pulumi.Input[Union[_builtins.str, AdministratorType]]] = ..., identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., login: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sid: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AzureADAdministratorArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AzureADAdministrator:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorType")
+    def administrator_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityResourceId")
+    def identity_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def login(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sid(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

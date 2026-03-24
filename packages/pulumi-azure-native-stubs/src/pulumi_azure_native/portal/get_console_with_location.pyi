@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetConsoleWithLocationResult', 'AwaitableGetConsoleWithLocationResult', 'get_console_with_location', 'get_console_with_location_output']
+@pulumi.output_type
+class GetConsoleWithLocationResult:
+    
+    def __init__(__self__, azure_api_version=..., properties=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.ConsolePropertiesResponse:
+        
+        ...
+    
+
+
+class AwaitableGetConsoleWithLocationResult(GetConsoleWithLocationResult):
+    def __await__(self): # -> Generator[Never, Any, GetConsoleWithLocationResult]:
+        ...
+    
+
+
+def get_console_with_location(console_name: Optional[_builtins.str] = ..., location: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetConsoleWithLocationResult:
+    
+    ...
+
+def get_console_with_location_output(console_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetConsoleWithLocationResult]:
+    
+    ...
+

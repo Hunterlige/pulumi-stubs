@@ -1,0 +1,20 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['HostType', 'ResourceIdentityType']
+@pulumi.type_token("azure-native:extendedlocation:HostType")
+class HostType(_builtins.str, Enum):
+    
+    KUBERNETES = ...
+
+
+@pulumi.type_token("azure-native:extendedlocation:ResourceIdentityType")
+class ResourceIdentityType(_builtins.str, Enum):
+    
+    SYSTEM_ASSIGNED = ...
+    NONE = ...
+
+

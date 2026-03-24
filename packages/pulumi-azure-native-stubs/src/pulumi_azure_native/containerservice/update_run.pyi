@@ -1,0 +1,165 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['UpdateRunArgs', 'UpdateRun']
+@pulumi.input_type
+class UpdateRunArgs:
+    def __init__(__self__, *, fleet_name: pulumi.Input[_builtins.str], managed_cluster_update: pulumi.Input[ManagedClusterUpdateArgs], resource_group_name: pulumi.Input[_builtins.str], strategy: Optional[pulumi.Input[UpdateRunStrategyArgs]] = ..., update_run_name: Optional[pulumi.Input[_builtins.str]] = ..., update_strategy_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fleetName")
+    def fleet_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @fleet_name.setter
+    def fleet_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedClusterUpdate")
+    def managed_cluster_update(self) -> pulumi.Input[ManagedClusterUpdateArgs]:
+        
+        ...
+    
+    @managed_cluster_update.setter
+    def managed_cluster_update(self, value: pulumi.Input[ManagedClusterUpdateArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def strategy(self) -> Optional[pulumi.Input[UpdateRunStrategyArgs]]:
+        
+        ...
+    
+    @strategy.setter
+    def strategy(self, value: Optional[pulumi.Input[UpdateRunStrategyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateRunName")
+    def update_run_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @update_run_name.setter
+    def update_run_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateStrategyId")
+    def update_strategy_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @update_strategy_id.setter
+    def update_strategy_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:containerservice:UpdateRun")
+class UpdateRun(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., fleet_name: Optional[pulumi.Input[_builtins.str]] = ..., managed_cluster_update: Optional[pulumi.Input[Union[ManagedClusterUpdateArgs, ManagedClusterUpdateArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., strategy: Optional[pulumi.Input[Union[UpdateRunStrategyArgs, UpdateRunStrategyArgsDict]]] = ..., update_run_name: Optional[pulumi.Input[_builtins.str]] = ..., update_strategy_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: UpdateRunArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> UpdateRun:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedClusterUpdate")
+    def managed_cluster_update(self) -> pulumi.Output[outputs.ManagedClusterUpdateResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[outputs.UpdateRunStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def strategy(self) -> pulumi.Output[Optional[outputs.UpdateRunStrategyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateStrategyId")
+    def update_strategy_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

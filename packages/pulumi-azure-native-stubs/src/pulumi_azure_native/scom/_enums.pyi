@@ -1,0 +1,23 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['HybridLicenseType', 'ManagedIdentityType']
+@pulumi.type_token("azure-native:scom:HybridLicenseType")
+class HybridLicenseType(_builtins.str, Enum):
+    
+    NONE = ...
+    AZURE_HYBRID_BENEFIT = ...
+
+
+@pulumi.type_token("azure-native:scom:ManagedIdentityType")
+class ManagedIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+

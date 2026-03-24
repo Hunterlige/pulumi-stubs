@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDiagnosticResult', 'AwaitableGetDiagnosticResult', 'get_diagnostic', 'get_diagnostic_output']
+@pulumi.output_type
+class GetDiagnosticResult:
+    
+    def __init__(__self__, always_log=..., azure_api_version=..., backend=..., frontend=..., http_correlation_protocol=..., id=..., log_client_ip=..., logger_id=..., metrics=..., name=..., operation_name_format=..., sampling=..., type=..., verbosity=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alwaysLog")
+    def always_log(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def backend(self) -> Optional[outputs.PipelineDiagnosticSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def frontend(self) -> Optional[outputs.PipelineDiagnosticSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpCorrelationProtocol")
+    def http_correlation_protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logClientIp")
+    def log_client_ip(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loggerId")
+    def logger_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metrics(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operationNameFormat")
+    def operation_name_format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sampling(self) -> Optional[outputs.SamplingSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def verbosity(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetDiagnosticResult(GetDiagnosticResult):
+    def __await__(self): # -> Generator[Never, Any, GetDiagnosticResult]:
+        ...
+    
+
+
+def get_diagnostic(diagnostic_id: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., service_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDiagnosticResult:
+    
+    ...
+
+def get_diagnostic_output(diagnostic_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDiagnosticResult]:
+    
+    ...
+

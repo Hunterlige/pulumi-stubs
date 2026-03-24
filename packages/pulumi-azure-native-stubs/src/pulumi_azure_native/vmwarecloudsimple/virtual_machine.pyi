@@ -1,0 +1,367 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['VirtualMachineArgs', 'VirtualMachine']
+@pulumi.input_type
+class VirtualMachineArgs:
+    def __init__(__self__, *, amount_of_ram: pulumi.Input[_builtins.int], number_of_cores: pulumi.Input[_builtins.int], private_cloud_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], customization: Optional[pulumi.Input[GuestOSCustomizationArgs]] = ..., disks: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualDiskArgs]]]] = ..., expose_to_guest_vm: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., nics: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNicArgs]]]] = ..., password: Optional[pulumi.Input[_builtins.str]] = ..., resource_pool: Optional[pulumi.Input[ResourcePoolArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., template_id: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ..., v_sphere_networks: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., virtual_machine_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="amountOfRam")
+    def amount_of_ram(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @amount_of_ram.setter
+    def amount_of_ram(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="numberOfCores")
+    def number_of_cores(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @number_of_cores.setter
+    def number_of_cores(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateCloudId")
+    def private_cloud_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @private_cloud_id.setter
+    def private_cloud_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def customization(self) -> Optional[pulumi.Input[GuestOSCustomizationArgs]]:
+        
+        ...
+    
+    @customization.setter
+    def customization(self, value: Optional[pulumi.Input[GuestOSCustomizationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def disks(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VirtualDiskArgs]]]]:
+        
+        ...
+    
+    @disks.setter
+    def disks(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualDiskArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exposeToGuestVM")
+    def expose_to_guest_vm(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @expose_to_guest_vm.setter
+    def expose_to_guest_vm(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nics(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNicArgs]]]]:
+        
+        ...
+    
+    @nics.setter
+    def nics(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[VirtualNicArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourcePool")
+    def resource_pool(self) -> Optional[pulumi.Input[ResourcePoolArgs]]:
+        
+        ...
+    
+    @resource_pool.setter
+    def resource_pool(self, value: Optional[pulumi.Input[ResourcePoolArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateId")
+    def template_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @template_id.setter
+    def template_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @username.setter
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vSphereNetworks")
+    def v_sphere_networks(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @v_sphere_networks.setter
+    def v_sphere_networks(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachineName")
+    def virtual_machine_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @virtual_machine_name.setter
+    def virtual_machine_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:vmwarecloudsimple:VirtualMachine")
+class VirtualMachine(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., amount_of_ram: Optional[pulumi.Input[_builtins.int]] = ..., customization: Optional[pulumi.Input[Union[GuestOSCustomizationArgs, GuestOSCustomizationArgsDict]]] = ..., disks: Optional[pulumi.Input[Sequence[pulumi.Input[Union[VirtualDiskArgs, VirtualDiskArgsDict]]]]] = ..., expose_to_guest_vm: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., nics: Optional[pulumi.Input[Sequence[pulumi.Input[Union[VirtualNicArgs, VirtualNicArgsDict]]]]] = ..., number_of_cores: Optional[pulumi.Input[_builtins.int]] = ..., password: Optional[pulumi.Input[_builtins.str]] = ..., private_cloud_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_pool: Optional[pulumi.Input[Union[ResourcePoolArgs, ResourcePoolArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., template_id: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ..., v_sphere_networks: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., virtual_machine_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: VirtualMachineArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> VirtualMachine:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="amountOfRam")
+    def amount_of_ram(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def controllers(self) -> pulumi.Output[Sequence[outputs.VirtualDiskControllerResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def customization(self) -> pulumi.Output[Optional[outputs.GuestOSCustomizationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def disks(self) -> pulumi.Output[Optional[Sequence[outputs.VirtualDiskResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def dnsname(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exposeToGuestVM")
+    def expose_to_guest_vm(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def folder(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="guestOS")
+    def guest_os(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="guestOSType")
+    def guest_os_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nics(self) -> pulumi.Output[Optional[Sequence[outputs.VirtualNicResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="numberOfCores")
+    def number_of_cores(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateCloudId")
+    def private_cloud_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicIP")
+    def public_ip(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourcePool")
+    def resource_pool(self) -> pulumi.Output[Optional[outputs.ResourcePoolResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateId")
+    def template_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vSphereNetworks")
+    def v_sphere_networks(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmId")
+    def vm_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vmwaretools(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

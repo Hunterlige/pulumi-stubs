@@ -1,0 +1,15 @@
+
+
+import builtins as _builtins
+import typing
+from .. import _utilities
+from ._enums import *
+from .get_private_record_set import *
+from .get_private_zone import *
+from .get_virtual_network_link import *
+from .private_record_set import *
+from .private_zone import *
+from .virtual_network_link import *
+from ._inputs import *
+from . import outputs
+

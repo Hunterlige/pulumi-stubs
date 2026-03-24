@@ -1,0 +1,101 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetHuntRelationResult', 'AwaitableGetHuntRelationResult', 'get_hunt_relation', 'get_hunt_relation_output']
+@pulumi.output_type
+class GetHuntRelationResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., id=..., labels=..., name=..., related_resource_id=..., related_resource_kind=..., related_resource_name=..., relation_type=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relatedResourceId")
+    def related_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relatedResourceKind")
+    def related_resource_kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relatedResourceName")
+    def related_resource_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relationType")
+    def relation_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetHuntRelationResult(GetHuntRelationResult):
+    def __await__(self): # -> Generator[Never, Any, GetHuntRelationResult]:
+        ...
+    
+
+
+def get_hunt_relation(hunt_id: Optional[_builtins.str] = ..., hunt_relation_id: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetHuntRelationResult:
+    
+    ...
+
+def get_hunt_relation_output(hunt_id: Optional[pulumi.Input[_builtins.str]] = ..., hunt_relation_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetHuntRelationResult]:
+    
+    ...
+

@@ -1,0 +1,197 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNetworkVirtualApplianceResult', 'AwaitableGetNetworkVirtualApplianceResult', 'get_network_virtual_appliance', 'get_network_virtual_appliance_output']
+@pulumi.output_type
+class GetNetworkVirtualApplianceResult:
+    
+    def __init__(__self__, additional_nics=..., address_prefix=..., azure_api_version=..., boot_strap_configuration_blobs=..., cloud_init_configuration=..., cloud_init_configuration_blobs=..., delegation=..., deployment_type=..., etag=..., id=..., identity=..., inbound_security_rules=..., internet_ingress_public_ips=..., location=..., name=..., network_profile=..., nva_sku=..., partner_managed_resource=..., provisioning_state=..., ssh_public_key=..., tags=..., type=..., virtual_appliance_asn=..., virtual_appliance_connections=..., virtual_appliance_nics=..., virtual_appliance_sites=..., virtual_hub=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalNics")
+    def additional_nics(self) -> Optional[Sequence[outputs.VirtualApplianceAdditionalNicPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="addressPrefix")
+    def address_prefix(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bootStrapConfigurationBlobs")
+    def boot_strap_configuration_blobs(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudInitConfiguration")
+    def cloud_init_configuration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudInitConfigurationBlobs")
+    def cloud_init_configuration_blobs(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def delegation(self) -> Optional[outputs.DelegationPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentType")
+    def deployment_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.ManagedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inboundSecurityRules")
+    def inbound_security_rules(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="internetIngressPublicIps")
+    def internet_ingress_public_ips(self) -> Optional[Sequence[outputs.InternetIngressPublicIpsPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkProfile")
+    def network_profile(self) -> Optional[outputs.NetworkVirtualAppliancePropertiesFormatResponseNetworkProfile]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nvaSku")
+    def nva_sku(self) -> Optional[outputs.VirtualApplianceSkuPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerManagedResource")
+    def partner_managed_resource(self) -> Optional[outputs.PartnerManagedResourcePropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sshPublicKey")
+    def ssh_public_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualApplianceAsn")
+    def virtual_appliance_asn(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualApplianceConnections")
+    def virtual_appliance_connections(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualApplianceNics")
+    def virtual_appliance_nics(self) -> Sequence[outputs.VirtualApplianceNicPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualApplianceSites")
+    def virtual_appliance_sites(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHub")
+    def virtual_hub(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+
+
+class AwaitableGetNetworkVirtualApplianceResult(GetNetworkVirtualApplianceResult):
+    def __await__(self): # -> Generator[Never, Any, GetNetworkVirtualApplianceResult]:
+        ...
+    
+
+
+def get_network_virtual_appliance(expand: Optional[_builtins.str] = ..., network_virtual_appliance_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNetworkVirtualApplianceResult:
+    
+    ...
+
+def get_network_virtual_appliance_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., network_virtual_appliance_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNetworkVirtualApplianceResult]:
+    
+    ...
+

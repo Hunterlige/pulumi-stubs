@@ -1,0 +1,337 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ServerArgs', 'Server']
+@pulumi.input_type
+class ServerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., administrators: Optional[pulumi.Input[ServerExternalAdministratorArgs]] = ..., federated_client_id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[ResourceIdentityArgs]] = ..., is_i_pv6_enabled: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]] = ..., key_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., minimal_tls_version: Optional[pulumi.Input[Union[_builtins.str, MinimalTlsVersion]]] = ..., primary_user_assigned_identity_id: Optional[pulumi.Input[_builtins.str]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, ServerPublicNetworkAccessFlag]]] = ..., restrict_outbound_network_access: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login.setter
+    def administrator_login(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLoginPassword")
+    def administrator_login_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @administrator_login_password.setter
+    def administrator_login_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def administrators(self) -> Optional[pulumi.Input[ServerExternalAdministratorArgs]]:
+        
+        ...
+    
+    @administrators.setter
+    def administrators(self, value: Optional[pulumi.Input[ServerExternalAdministratorArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="federatedClientId")
+    def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @federated_client_id.setter
+    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[ResourceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[ResourceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isIPv6Enabled")
+    def is_i_pv6_enabled(self) -> Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]]:
+        
+        ...
+    
+    @is_i_pv6_enabled.setter
+    def is_i_pv6_enabled(self, value: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyId")
+    def key_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_id.setter
+    def key_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalTlsVersion")
+    def minimal_tls_version(self) -> Optional[pulumi.Input[Union[_builtins.str, MinimalTlsVersion]]]:
+        
+        ...
+    
+    @minimal_tls_version.setter
+    def minimal_tls_version(self, value: Optional[pulumi.Input[Union[_builtins.str, MinimalTlsVersion]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryUserAssignedIdentityId")
+    def primary_user_assigned_identity_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @primary_user_assigned_identity_id.setter
+    def primary_user_assigned_identity_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, ServerPublicNetworkAccessFlag]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, ServerPublicNetworkAccessFlag]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restrictOutboundNetworkAccess")
+    def restrict_outbound_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]]:
+        
+        ...
+    
+    @restrict_outbound_network_access.setter
+    def restrict_outbound_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:Server")
+class Server(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., administrator_login: Optional[pulumi.Input[_builtins.str]] = ..., administrator_login_password: Optional[pulumi.Input[_builtins.str]] = ..., administrators: Optional[pulumi.Input[Union[ServerExternalAdministratorArgs, ServerExternalAdministratorArgsDict]]] = ..., federated_client_id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[Union[ResourceIdentityArgs, ResourceIdentityArgsDict]]] = ..., is_i_pv6_enabled: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]] = ..., key_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., minimal_tls_version: Optional[pulumi.Input[Union[_builtins.str, MinimalTlsVersion]]] = ..., primary_user_assigned_identity_id: Optional[pulumi.Input[_builtins.str]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, ServerPublicNetworkAccessFlag]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., restrict_outbound_network_access: Optional[pulumi.Input[Union[_builtins.str, ServerNetworkAccessFlag]]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Server:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorLogin")
+    def administrator_login(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def administrators(self) -> pulumi.Output[Optional[outputs.ServerExternalAdministratorResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalGovernanceStatus")
+    def external_governance_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="federatedClientId")
+    def federated_client_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fullyQualifiedDomainName")
+    def fully_qualified_domain_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.ResourceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isIPv6Enabled")
+    def is_i_pv6_enabled(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyId")
+    def key_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimalTlsVersion")
+    def minimal_tls_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryUserAssignedIdentityId")
+    def primary_user_assigned_identity_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.ServerPrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restrictOutboundNetworkAccess")
+    def restrict_outbound_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceFeature")
+    def workspace_feature(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

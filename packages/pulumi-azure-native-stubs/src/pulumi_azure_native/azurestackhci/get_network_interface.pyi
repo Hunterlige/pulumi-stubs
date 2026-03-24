@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNetworkInterfaceResult', 'AwaitableGetNetworkInterfaceResult', 'get_network_interface', 'get_network_interface_output']
+@pulumi.output_type
+class GetNetworkInterfaceResult:
+    
+    def __init__(__self__, azure_api_version=..., create_from_local=..., dns_settings=..., extended_location=..., id=..., ip_configurations=..., location=..., mac_address=..., name=..., network_security_group=..., provisioning_state=..., status=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createFromLocal")
+    def create_from_local(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsSettings")
+    def dns_settings(self) -> Optional[outputs.InterfaceDNSSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurations")
+    def ip_configurations(self) -> Optional[Sequence[outputs.IPConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="macAddress")
+    def mac_address(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkSecurityGroup")
+    def network_security_group(self) -> Optional[outputs.NetworkSecurityGroupArmReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.NetworkInterfaceStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetNetworkInterfaceResult(GetNetworkInterfaceResult):
+    def __await__(self): # -> Generator[Never, Any, GetNetworkInterfaceResult]:
+        ...
+    
+
+
+def get_network_interface(network_interface_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNetworkInterfaceResult:
+    
+    ...
+
+def get_network_interface_output(network_interface_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNetworkInterfaceResult]:
+    
+    ...
+

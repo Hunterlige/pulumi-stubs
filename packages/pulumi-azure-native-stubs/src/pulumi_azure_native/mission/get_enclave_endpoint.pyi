@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetEnclaveEndpointResult', 'AwaitableGetEnclaveEndpointResult', 'get_enclave_endpoint', 'get_enclave_endpoint_output']
+@pulumi.output_type
+class GetEnclaveEndpointResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., location=..., name=..., provisioning_state=..., resource_collection=..., rule_collection=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceCollection")
+    def resource_collection(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleCollection")
+    def rule_collection(self) -> Sequence[outputs.EnclaveEndpointDestinationRuleResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetEnclaveEndpointResult(GetEnclaveEndpointResult):
+    def __await__(self): # -> Generator[Never, Any, GetEnclaveEndpointResult]:
+        ...
+    
+
+
+def get_enclave_endpoint(enclave_endpoint_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., virtual_enclave_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetEnclaveEndpointResult:
+    
+    ...
+
+def get_enclave_endpoint_output(enclave_endpoint_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_enclave_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetEnclaveEndpointResult]:
+    
+    ...
+

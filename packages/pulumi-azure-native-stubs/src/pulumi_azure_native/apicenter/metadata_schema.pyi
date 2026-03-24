@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MetadataSchemaArgs', 'MetadataSchema']
+@pulumi.input_type
+class MetadataSchemaArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], schema: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], assigned_to: Optional[pulumi.Input[Sequence[pulumi.Input[MetadataAssignmentArgs]]]] = ..., metadata_schema_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schema(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @schema.setter
+    def schema(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignedTo")
+    def assigned_to(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[MetadataAssignmentArgs]]]]:
+        
+        ...
+    
+    @assigned_to.setter
+    def assigned_to(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MetadataAssignmentArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="metadataSchemaName")
+    def metadata_schema_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @metadata_schema_name.setter
+    def metadata_schema_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apicenter:MetadataSchema")
+class MetadataSchema(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assigned_to: Optional[pulumi.Input[Sequence[pulumi.Input[Union[MetadataAssignmentArgs, MetadataAssignmentArgsDict]]]]] = ..., metadata_schema_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., schema: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MetadataSchemaArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MetadataSchema:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignedTo")
+    def assigned_to(self) -> pulumi.Output[Optional[Sequence[outputs.MetadataAssignmentResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schema(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

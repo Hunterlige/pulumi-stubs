@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSapLandscapeMonitorResult', 'AwaitableGetSapLandscapeMonitorResult', 'get_sap_landscape_monitor', 'get_sap_landscape_monitor_output']
+@pulumi.output_type
+class GetSapLandscapeMonitorResult:
+    
+    def __init__(__self__, azure_api_version=..., grouping=..., id=..., name=..., provisioning_state=..., system_data=..., top_metrics_thresholds=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def grouping(self) -> Optional[outputs.SapLandscapeMonitorPropertiesGroupingResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topMetricsThresholds")
+    def top_metrics_thresholds(self) -> Optional[Sequence[outputs.SapLandscapeMonitorMetricThresholdsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetSapLandscapeMonitorResult(GetSapLandscapeMonitorResult):
+    def __await__(self): # -> Generator[Never, Any, GetSapLandscapeMonitorResult]:
+        ...
+    
+
+
+def get_sap_landscape_monitor(monitor_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSapLandscapeMonitorResult:
+    
+    ...
+
+def get_sap_landscape_monitor_output(monitor_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSapLandscapeMonitorResult]:
+    
+    ...
+

@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetP2sVpnGatewayP2sVpnConnectionHealthResult', ..., 'get_p2s_vpn_gateway_p2s_vpn_connection_health', ...]
+@pulumi.output_type
+class GetP2sVpnGatewayP2sVpnConnectionHealthResult:
+    
+    def __init__(__self__, custom_dns_servers=..., etag=..., id=..., is_routing_preference_internet=..., location=..., name=..., p2_s_connection_configurations=..., provisioning_state=..., tags=..., type=..., virtual_hub=..., vpn_client_connection_health=..., vpn_gateway_scale_unit=..., vpn_server_configuration=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customDnsServers")
+    def custom_dns_servers(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isRoutingPreferenceInternet")
+    def is_routing_preference_internet(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="p2SConnectionConfigurations")
+    def p2_s_connection_configurations(self) -> Optional[Sequence[outputs.P2SConnectionConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHub")
+    def virtual_hub(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vpnClientConnectionHealth")
+    def vpn_client_connection_health(self) -> outputs.VpnClientConnectionHealthResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vpnGatewayScaleUnit")
+    def vpn_gateway_scale_unit(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vpnServerConfiguration")
+    def vpn_server_configuration(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+
+
+class AwaitableGetP2sVpnGatewayP2sVpnConnectionHealthResult(GetP2sVpnGatewayP2sVpnConnectionHealthResult):
+    def __await__(self): # -> Generator[Never, Any, GetP2sVpnGatewayP2sVpnConnectionHealthResult]:
+        ...
+    
+
+
+def get_p2s_vpn_gateway_p2s_vpn_connection_health(gateway_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetP2sVpnGatewayP2sVpnConnectionHealthResult:
+    
+    ...
+
+def get_p2s_vpn_gateway_p2s_vpn_connection_health_output(gateway_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetP2sVpnGatewayP2sVpnConnectionHealthResult]:
+    
+    ...
+

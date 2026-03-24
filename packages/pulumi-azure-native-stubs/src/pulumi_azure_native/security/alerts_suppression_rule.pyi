@@ -1,0 +1,175 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AlertsSuppressionRuleArgs', 'AlertsSuppressionRule']
+@pulumi.input_type
+class AlertsSuppressionRuleArgs:
+    def __init__(__self__, *, alert_type: pulumi.Input[_builtins.str], reason: pulumi.Input[_builtins.str], state: pulumi.Input[Union[_builtins.str, RuleState]], alerts_suppression_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., comment: Optional[pulumi.Input[_builtins.str]] = ..., expiration_date_utc: Optional[pulumi.Input[_builtins.str]] = ..., suppression_alerts_scope: Optional[pulumi.Input[SuppressionAlertsScopeArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertType")
+    def alert_type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @alert_type.setter
+    def alert_type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def reason(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @reason.setter
+    def reason(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Input[Union[_builtins.str, RuleState]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: pulumi.Input[Union[_builtins.str, RuleState]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertsSuppressionRuleName")
+    def alerts_suppression_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @alerts_suppression_rule_name.setter
+    def alerts_suppression_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comment(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @comment.setter
+    def comment(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationDateUtc")
+    def expiration_date_utc(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @expiration_date_utc.setter
+    def expiration_date_utc(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="suppressionAlertsScope")
+    def suppression_alerts_scope(self) -> Optional[pulumi.Input[SuppressionAlertsScopeArgs]]:
+        
+        ...
+    
+    @suppression_alerts_scope.setter
+    def suppression_alerts_scope(self, value: Optional[pulumi.Input[SuppressionAlertsScopeArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:security:AlertsSuppressionRule")
+class AlertsSuppressionRule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., alert_type: Optional[pulumi.Input[_builtins.str]] = ..., alerts_suppression_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., comment: Optional[pulumi.Input[_builtins.str]] = ..., expiration_date_utc: Optional[pulumi.Input[_builtins.str]] = ..., reason: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, RuleState]]] = ..., suppression_alerts_scope: Optional[pulumi.Input[Union[SuppressionAlertsScopeArgs, SuppressionAlertsScopeArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AlertsSuppressionRuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AlertsSuppressionRule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alertType")
+    def alert_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comment(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationDateUtc")
+    def expiration_date_utc(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedUtc")
+    def last_modified_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def reason(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="suppressionAlertsScope")
+    def suppression_alerts_scope(self) -> pulumi.Output[Optional[outputs.SuppressionAlertsScopeResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

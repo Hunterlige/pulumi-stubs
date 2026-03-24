@@ -1,0 +1,321 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['EventGridDataConnectionArgs', 'EventGridDataConnection']
+@pulumi.input_type
+class EventGridDataConnectionArgs:
+    def __init__(__self__, *, cluster_name: pulumi.Input[_builtins.str], consumer_group: pulumi.Input[_builtins.str], database_name: pulumi.Input[_builtins.str], event_hub_resource_id: pulumi.Input[_builtins.str], kind: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], storage_account_resource_id: pulumi.Input[_builtins.str], blob_storage_event_type: Optional[pulumi.Input[Union[_builtins.str, BlobStorageEventType]]] = ..., data_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., data_format: Optional[pulumi.Input[Union[_builtins.str, EventGridDataFormat]]] = ..., database_routing: Optional[pulumi.Input[Union[_builtins.str, DatabaseRouting]]] = ..., event_grid_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., ignore_first_record: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., mapping_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., table_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterName")
+    def cluster_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cluster_name.setter
+    def cluster_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumerGroup")
+    def consumer_group(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @consumer_group.setter
+    def consumer_group(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @database_name.setter
+    def database_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubResourceId")
+    def event_hub_resource_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @event_hub_resource_id.setter
+    def event_hub_resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountResourceId")
+    def storage_account_resource_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @storage_account_resource_id.setter
+    def storage_account_resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobStorageEventType")
+    def blob_storage_event_type(self) -> Optional[pulumi.Input[Union[_builtins.str, BlobStorageEventType]]]:
+        
+        ...
+    
+    @blob_storage_event_type.setter
+    def blob_storage_event_type(self, value: Optional[pulumi.Input[Union[_builtins.str, BlobStorageEventType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataConnectionName")
+    def data_connection_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @data_connection_name.setter
+    def data_connection_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataFormat")
+    def data_format(self) -> Optional[pulumi.Input[Union[_builtins.str, EventGridDataFormat]]]:
+        
+        ...
+    
+    @data_format.setter
+    def data_format(self, value: Optional[pulumi.Input[Union[_builtins.str, EventGridDataFormat]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseRouting")
+    def database_routing(self) -> Optional[pulumi.Input[Union[_builtins.str, DatabaseRouting]]]:
+        
+        ...
+    
+    @database_routing.setter
+    def database_routing(self, value: Optional[pulumi.Input[Union[_builtins.str, DatabaseRouting]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventGridResourceId")
+    def event_grid_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @event_grid_resource_id.setter
+    def event_grid_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ignoreFirstRecord")
+    def ignore_first_record(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @ignore_first_record.setter
+    def ignore_first_record(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentityResourceId")
+    def managed_identity_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @managed_identity_resource_id.setter
+    def managed_identity_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mappingRuleName")
+    def mapping_rule_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @mapping_rule_name.setter
+    def mapping_rule_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tableName")
+    def table_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @table_name.setter
+    def table_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:kusto:EventGridDataConnection")
+class EventGridDataConnection(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., blob_storage_event_type: Optional[pulumi.Input[Union[_builtins.str, BlobStorageEventType]]] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., consumer_group: Optional[pulumi.Input[_builtins.str]] = ..., data_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., data_format: Optional[pulumi.Input[Union[_builtins.str, EventGridDataFormat]]] = ..., database_name: Optional[pulumi.Input[_builtins.str]] = ..., database_routing: Optional[pulumi.Input[Union[_builtins.str, DatabaseRouting]]] = ..., event_grid_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., ignore_first_record: Optional[pulumi.Input[_builtins.bool]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., managed_identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., mapping_rule_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_account_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., table_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: EventGridDataConnectionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> EventGridDataConnection:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobStorageEventType")
+    def blob_storage_event_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumerGroup")
+    def consumer_group(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataFormat")
+    def data_format(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseRouting")
+    def database_routing(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventGridResourceId")
+    def event_grid_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventHubResourceId")
+    def event_hub_resource_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ignoreFirstRecord")
+    def ignore_first_record(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentityObjectId")
+    def managed_identity_object_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedIdentityResourceId")
+    def managed_identity_resource_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mappingRuleName")
+    def mapping_rule_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountResourceId")
+    def storage_account_resource_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tableName")
+    def table_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

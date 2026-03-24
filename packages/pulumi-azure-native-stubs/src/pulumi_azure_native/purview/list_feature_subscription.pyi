@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListFeatureSubscriptionResult', 'AwaitableListFeatureSubscriptionResult', 'list_feature_subscription', 'list_feature_subscription_output']
+@pulumi.output_type
+class ListFeatureSubscriptionResult:
+    
+    def __init__(__self__, features=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def features(self) -> Mapping[str, _builtins.bool]:
+        
+        ...
+    
+
+
+class AwaitableListFeatureSubscriptionResult(ListFeatureSubscriptionResult):
+    def __await__(self): # -> Generator[Never, Any, ListFeatureSubscriptionResult]:
+        ...
+    
+
+
+def list_feature_subscription(features: Optional[Sequence[_builtins.str]] = ..., locations: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListFeatureSubscriptionResult:
+    
+    ...
+
+def list_feature_subscription_output(features: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., locations: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListFeatureSubscriptionResult]:
+    
+    ...
+

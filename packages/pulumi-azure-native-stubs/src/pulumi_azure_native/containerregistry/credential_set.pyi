@@ -1,0 +1,159 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CredentialSetArgs', 'CredentialSet']
+@pulumi.input_type
+class CredentialSetArgs:
+    def __init__(__self__, *, registry_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], auth_credentials: Optional[pulumi.Input[Sequence[pulumi.Input[AuthCredentialArgs]]]] = ..., credential_set_name: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[IdentityPropertiesArgs]] = ..., login_server: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="registryName")
+    def registry_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @registry_name.setter
+    def registry_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authCredentials")
+    def auth_credentials(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AuthCredentialArgs]]]]:
+        
+        ...
+    
+    @auth_credentials.setter
+    def auth_credentials(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AuthCredentialArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="credentialSetName")
+    def credential_set_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @credential_set_name.setter
+    def credential_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[IdentityPropertiesArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[IdentityPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loginServer")
+    def login_server(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @login_server.setter
+    def login_server(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:containerregistry:CredentialSet")
+class CredentialSet(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., auth_credentials: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AuthCredentialArgs, AuthCredentialArgsDict]]]]] = ..., credential_set_name: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[Union[IdentityPropertiesArgs, IdentityPropertiesArgsDict]]] = ..., login_server: Optional[pulumi.Input[_builtins.str]] = ..., registry_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: CredentialSetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> CredentialSet:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authCredentials")
+    def auth_credentials(self) -> pulumi.Output[Optional[Sequence[outputs.AuthCredentialResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationDate")
+    def creation_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.IdentityPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loginServer")
+    def login_server(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,24 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ManagedServiceIdentityType', 'PrivateEndpointServiceConnectionStatus']
+@pulumi.type_token(...)
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+

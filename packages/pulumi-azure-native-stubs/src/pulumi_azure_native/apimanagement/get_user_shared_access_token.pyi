@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetUserSharedAccessTokenResult', 'AwaitableGetUserSharedAccessTokenResult', 'get_user_shared_access_token', 'get_user_shared_access_token_output']
+@pulumi.output_type
+class GetUserSharedAccessTokenResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetUserSharedAccessTokenResult(GetUserSharedAccessTokenResult):
+    def __await__(self): # -> Generator[Never, Any, GetUserSharedAccessTokenResult]:
+        ...
+    
+
+
+def get_user_shared_access_token(expiry: Optional[_builtins.str] = ..., key_type: Optional[KeyType] = ..., resource_group_name: Optional[_builtins.str] = ..., service_name: Optional[_builtins.str] = ..., user_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetUserSharedAccessTokenResult:
+    
+    ...
+
+def get_user_shared_access_token_output(expiry: Optional[pulumi.Input[_builtins.str]] = ..., key_type: Optional[pulumi.Input[KeyType]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., user_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetUserSharedAccessTokenResult]:
+    
+    ...
+

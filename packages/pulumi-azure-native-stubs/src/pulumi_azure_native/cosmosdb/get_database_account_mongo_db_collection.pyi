@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDatabaseAccountMongoDBCollectionResult', 'AwaitableGetDatabaseAccountMongoDBCollectionResult', 'get_database_account_mongo_db_collection', 'get_database_account_mongo_db_collection_output']
+@pulumi.output_type
+class GetDatabaseAccountMongoDBCollectionResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., indexes=..., location=..., name=..., shard_key=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def indexes(self) -> Optional[Sequence[outputs.MongoIndexResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="shardKey")
+    def shard_key(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDatabaseAccountMongoDBCollectionResult(GetDatabaseAccountMongoDBCollectionResult):
+    def __await__(self): # -> Generator[Never, Any, GetDatabaseAccountMongoDBCollectionResult]:
+        ...
+    
+
+
+def get_database_account_mongo_db_collection(account_name: Optional[_builtins.str] = ..., collection_name: Optional[_builtins.str] = ..., database_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDatabaseAccountMongoDBCollectionResult:
+    
+    ...
+
+def get_database_account_mongo_db_collection_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., collection_name: Optional[pulumi.Input[_builtins.str]] = ..., database_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDatabaseAccountMongoDBCollectionResult]:
+    
+    ...
+

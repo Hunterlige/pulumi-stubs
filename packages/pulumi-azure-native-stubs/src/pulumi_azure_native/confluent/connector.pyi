@@ -1,0 +1,167 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ConnectorArgs', 'Connector']
+@pulumi.input_type
+class ConnectorArgs:
+    def __init__(__self__, *, cluster_id: pulumi.Input[_builtins.str], environment_id: pulumi.Input[_builtins.str], organization_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], connector_basic_info: Optional[pulumi.Input[ConnectorInfoBaseArgs]] = ..., connector_name: Optional[pulumi.Input[_builtins.str]] = ..., connector_service_type_info: Optional[pulumi.Input[Union[AzureBlobStorageSinkConnectorServiceInfoArgs, AzureBlobStorageSourceConnectorServiceInfoArgs, AzureCosmosDBSinkConnectorServiceInfoArgs, AzureCosmosDBSourceConnectorServiceInfoArgs, AzureSynapseAnalyticsSinkConnectorServiceInfoArgs]]] = ..., partner_connector_info: Optional[pulumi.Input[Union[KafkaAzureBlobStorageSinkConnectorInfoArgs, KafkaAzureBlobStorageSourceConnectorInfoArgs, KafkaAzureCosmosDBSinkConnectorInfoArgs, KafkaAzureCosmosDBSourceConnectorInfoArgs, KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cluster_id.setter
+    def cluster_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentId")
+    def environment_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_id.setter
+    def environment_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationName")
+    def organization_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @organization_name.setter
+    def organization_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorBasicInfo")
+    def connector_basic_info(self) -> Optional[pulumi.Input[ConnectorInfoBaseArgs]]:
+        
+        ...
+    
+    @connector_basic_info.setter
+    def connector_basic_info(self, value: Optional[pulumi.Input[ConnectorInfoBaseArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorName")
+    def connector_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @connector_name.setter
+    def connector_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceTypeInfo")
+    def connector_service_type_info(self) -> Optional[pulumi.Input[Union[AzureBlobStorageSinkConnectorServiceInfoArgs, AzureBlobStorageSourceConnectorServiceInfoArgs, AzureCosmosDBSinkConnectorServiceInfoArgs, AzureCosmosDBSourceConnectorServiceInfoArgs, AzureSynapseAnalyticsSinkConnectorServiceInfoArgs]]]:
+        
+        ...
+    
+    @connector_service_type_info.setter
+    def connector_service_type_info(self, value: Optional[pulumi.Input[Union[AzureBlobStorageSinkConnectorServiceInfoArgs, AzureBlobStorageSourceConnectorServiceInfoArgs, AzureCosmosDBSinkConnectorServiceInfoArgs, AzureCosmosDBSourceConnectorServiceInfoArgs, AzureSynapseAnalyticsSinkConnectorServiceInfoArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorInfo")
+    def partner_connector_info(self) -> Optional[pulumi.Input[Union[KafkaAzureBlobStorageSinkConnectorInfoArgs, KafkaAzureBlobStorageSourceConnectorInfoArgs, KafkaAzureCosmosDBSinkConnectorInfoArgs, KafkaAzureCosmosDBSourceConnectorInfoArgs, KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs]]]:
+        
+        ...
+    
+    @partner_connector_info.setter
+    def partner_connector_info(self, value: Optional[pulumi.Input[Union[KafkaAzureBlobStorageSinkConnectorInfoArgs, KafkaAzureBlobStorageSourceConnectorInfoArgs, KafkaAzureCosmosDBSinkConnectorInfoArgs, KafkaAzureCosmosDBSourceConnectorInfoArgs, KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:confluent:Connector")
+class Connector(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., cluster_id: Optional[pulumi.Input[_builtins.str]] = ..., connector_basic_info: Optional[pulumi.Input[Union[ConnectorInfoBaseArgs, ConnectorInfoBaseArgsDict]]] = ..., connector_name: Optional[pulumi.Input[_builtins.str]] = ..., connector_service_type_info: Optional[pulumi.Input[Union[Union[AzureBlobStorageSinkConnectorServiceInfoArgs, AzureBlobStorageSinkConnectorServiceInfoArgsDict], Union[AzureBlobStorageSourceConnectorServiceInfoArgs, AzureBlobStorageSourceConnectorServiceInfoArgsDict], Union[AzureCosmosDBSinkConnectorServiceInfoArgs, AzureCosmosDBSinkConnectorServiceInfoArgsDict], Union[AzureCosmosDBSourceConnectorServiceInfoArgs, AzureCosmosDBSourceConnectorServiceInfoArgsDict], Union[AzureSynapseAnalyticsSinkConnectorServiceInfoArgs, AzureSynapseAnalyticsSinkConnectorServiceInfoArgsDict]]]] = ..., environment_id: Optional[pulumi.Input[_builtins.str]] = ..., organization_name: Optional[pulumi.Input[_builtins.str]] = ..., partner_connector_info: Optional[pulumi.Input[Union[Union[KafkaAzureBlobStorageSinkConnectorInfoArgs, KafkaAzureBlobStorageSinkConnectorInfoArgsDict], Union[KafkaAzureBlobStorageSourceConnectorInfoArgs, KafkaAzureBlobStorageSourceConnectorInfoArgsDict], Union[KafkaAzureCosmosDBSinkConnectorInfoArgs, KafkaAzureCosmosDBSinkConnectorInfoArgsDict], Union[KafkaAzureCosmosDBSourceConnectorInfoArgs, KafkaAzureCosmosDBSourceConnectorInfoArgsDict], Union[KafkaAzureSynapseAnalyticsSinkConnectorInfoArgs, KafkaAzureSynapseAnalyticsSinkConnectorInfoArgsDict]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ConnectorArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Connector:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorBasicInfo")
+    def connector_basic_info(self) -> pulumi.Output[Optional[outputs.ConnectorInfoBaseResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorServiceTypeInfo")
+    def connector_service_type_info(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerConnectorInfo")
+    def partner_connector_info(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAttachedDatabaseConfigurationResult', 'AwaitableGetAttachedDatabaseConfigurationResult', 'get_attached_database_configuration', 'get_attached_database_configuration_output']
+@pulumi.output_type
+class GetAttachedDatabaseConfigurationResult:
+    
+    def __init__(__self__, attached_database_names=..., azure_api_version=..., cluster_resource_id=..., database_name=..., database_name_override=..., database_name_prefix=..., default_principals_modification_kind=..., id=..., location=..., name=..., provisioning_state=..., table_level_sharing_properties=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="attachedDatabaseNames")
+    def attached_database_names(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterResourceId")
+    def cluster_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseNameOverride")
+    def database_name_override(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseNamePrefix")
+    def database_name_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultPrincipalsModificationKind")
+    def default_principals_modification_kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tableLevelSharingProperties")
+    def table_level_sharing_properties(self) -> Optional[outputs.TableLevelSharingPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetAttachedDatabaseConfigurationResult(GetAttachedDatabaseConfigurationResult):
+    def __await__(self): # -> Generator[Never, Any, GetAttachedDatabaseConfigurationResult]:
+        ...
+    
+
+
+def get_attached_database_configuration(attached_database_configuration_name: Optional[_builtins.str] = ..., cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAttachedDatabaseConfigurationResult:
+    
+    ...
+
+def get_attached_database_configuration_output(attached_database_configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAttachedDatabaseConfigurationResult]:
+    
+    ...
+

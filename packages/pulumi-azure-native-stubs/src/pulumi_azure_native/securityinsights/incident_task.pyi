@@ -1,0 +1,207 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IncidentTaskArgs', 'IncidentTask']
+@pulumi.input_type
+class IncidentTaskArgs:
+    def __init__(__self__, *, incident_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], status: pulumi.Input[Union[_builtins.str, IncidentTaskStatus]], title: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], created_by: Optional[pulumi.Input[ClientInfoArgs]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., incident_task_id: Optional[pulumi.Input[_builtins.str]] = ..., last_modified_by: Optional[pulumi.Input[ClientInfoArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="incidentId")
+    def incident_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @incident_id.setter
+    def incident_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Input[Union[_builtins.str, IncidentTaskStatus]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: pulumi.Input[Union[_builtins.str, IncidentTaskStatus]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @title.setter
+    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[pulumi.Input[ClientInfoArgs]]:
+        
+        ...
+    
+    @created_by.setter
+    def created_by(self, value: Optional[pulumi.Input[ClientInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="incidentTaskId")
+    def incident_task_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @incident_task_id.setter
+    def incident_task_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[pulumi.Input[ClientInfoArgs]]:
+        
+        ...
+    
+    @last_modified_by.setter
+    def last_modified_by(self, value: Optional[pulumi.Input[ClientInfoArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:securityinsights:IncidentTask")
+class IncidentTask(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., created_by: Optional[pulumi.Input[Union[ClientInfoArgs, ClientInfoArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., incident_id: Optional[pulumi.Input[_builtins.str]] = ..., incident_task_id: Optional[pulumi.Input[_builtins.str]] = ..., last_modified_by: Optional[pulumi.Input[Union[ClientInfoArgs, ClientInfoArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, IncidentTaskStatus]]] = ..., title: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IncidentTaskArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> IncidentTask:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> pulumi.Output[Optional[outputs.ClientInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTimeUtc")
+    def created_time_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> pulumi.Output[Optional[outputs.ClientInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTimeUtc")
+    def last_modified_time_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

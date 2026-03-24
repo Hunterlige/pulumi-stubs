@@ -1,0 +1,295 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['JobArgs', 'Job']
+@pulumi.input_type
+class JobArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], sku: pulumi.Input[SkuArgs], transfer_type: pulumi.Input[Union[_builtins.str, TransferType]], delivery_info: Optional[pulumi.Input[JobDeliveryInfoArgs]] = ..., delivery_type: Optional[pulumi.Input[Union[_builtins.str, JobDeliveryType]]] = ..., details: Optional[pulumi.Input[Union[DataBoxCustomerDiskJobDetailsArgs, DataBoxDiskJobDetailsArgs, DataBoxHeavyJobDetailsArgs, DataBoxJobDetailsArgs]]] = ..., identity: Optional[pulumi.Input[ResourceIdentityArgs]] = ..., job_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Input[SkuArgs]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: pulumi.Input[SkuArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="transferType")
+    def transfer_type(self) -> pulumi.Input[Union[_builtins.str, TransferType]]:
+        
+        ...
+    
+    @transfer_type.setter
+    def transfer_type(self, value: pulumi.Input[Union[_builtins.str, TransferType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryInfo")
+    def delivery_info(self) -> Optional[pulumi.Input[JobDeliveryInfoArgs]]:
+        
+        ...
+    
+    @delivery_info.setter
+    def delivery_info(self, value: Optional[pulumi.Input[JobDeliveryInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryType")
+    def delivery_type(self) -> Optional[pulumi.Input[Union[_builtins.str, JobDeliveryType]]]:
+        
+        ...
+    
+    @delivery_type.setter
+    def delivery_type(self, value: Optional[pulumi.Input[Union[_builtins.str, JobDeliveryType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def details(self) -> Optional[pulumi.Input[Union[DataBoxCustomerDiskJobDetailsArgs, DataBoxDiskJobDetailsArgs, DataBoxHeavyJobDetailsArgs, DataBoxJobDetailsArgs]]]:
+        
+        ...
+    
+    @details.setter
+    def details(self, value: Optional[pulumi.Input[Union[DataBoxCustomerDiskJobDetailsArgs, DataBoxDiskJobDetailsArgs, DataBoxHeavyJobDetailsArgs, DataBoxJobDetailsArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[ResourceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[ResourceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobName")
+    def job_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @job_name.setter
+    def job_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:databox:Job")
+class Job(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., delivery_info: Optional[pulumi.Input[Union[JobDeliveryInfoArgs, JobDeliveryInfoArgsDict]]] = ..., delivery_type: Optional[pulumi.Input[Union[_builtins.str, JobDeliveryType]]] = ..., details: Optional[pulumi.Input[Union[Union[DataBoxCustomerDiskJobDetailsArgs, DataBoxCustomerDiskJobDetailsArgsDict], Union[DataBoxDiskJobDetailsArgs, DataBoxDiskJobDetailsArgsDict], Union[DataBoxHeavyJobDetailsArgs, DataBoxHeavyJobDetailsArgsDict], Union[DataBoxJobDetailsArgs, DataBoxJobDetailsArgsDict]]]] = ..., identity: Optional[pulumi.Input[Union[ResourceIdentityArgs, ResourceIdentityArgsDict]]] = ..., job_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., transfer_type: Optional[pulumi.Input[Union[_builtins.str, TransferType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: JobArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Job:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allDevicesLost")
+    def all_devices_lost(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cancellationReason")
+    def cancellation_reason(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="delayedStage")
+    def delayed_stage(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryInfo")
+    def delivery_info(self) -> pulumi.Output[Optional[outputs.JobDeliveryInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryType")
+    def delivery_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def details(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> pulumi.Output[outputs.CloudErrorResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.ResourceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isCancellable")
+    def is_cancellable(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isCancellableWithoutFee")
+    def is_cancellable_without_fee(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isDeletable")
+    def is_deletable(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isPrepareToShipEnabled")
+    def is_prepare_to_ship_enabled(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isShippingAddressEditable")
+    def is_shipping_address_editable(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reverseShippingDetailsUpdate")
+    def reverse_shipping_details_update(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reverseTransportPreferenceUpdate")
+    def reverse_transport_preference_update(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="transferType")
+    def transfer_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

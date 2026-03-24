@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualRouterResult', 'AwaitableGetVirtualRouterResult', 'get_virtual_router', 'get_virtual_router_output']
+@pulumi.output_type
+class GetVirtualRouterResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., hosted_gateway=..., hosted_subnet=..., id=..., location=..., name=..., peerings=..., provisioning_state=..., tags=..., type=..., virtual_router_asn=..., virtual_router_ips=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostedGateway")
+    def hosted_gateway(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostedSubnet")
+    def hosted_subnet(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def peerings(self) -> Sequence[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualRouterAsn")
+    def virtual_router_asn(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualRouterIps")
+    def virtual_router_ips(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualRouterResult(GetVirtualRouterResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualRouterResult]:
+        ...
+    
+
+
+def get_virtual_router(expand: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., virtual_router_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualRouterResult:
+    
+    ...
+
+def get_virtual_router_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_router_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualRouterResult]:
+    
+    ...
+

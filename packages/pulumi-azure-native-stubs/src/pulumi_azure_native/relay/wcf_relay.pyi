@@ -1,0 +1,192 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WCFRelayArgs', 'WCFRelay']
+@pulumi.input_type
+class WCFRelayArgs:
+    def __init__(__self__, *, namespace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], relay_name: Optional[pulumi.Input[_builtins.str]] = ..., relay_type: Optional[pulumi.Input[Relaytype]] = ..., requires_client_authorization: Optional[pulumi.Input[_builtins.bool]] = ..., requires_transport_security: Optional[pulumi.Input[_builtins.bool]] = ..., user_metadata: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @namespace_name.setter
+    def namespace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayName")
+    def relay_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @relay_name.setter
+    def relay_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayType")
+    def relay_type(self) -> Optional[pulumi.Input[Relaytype]]:
+        
+        ...
+    
+    @relay_type.setter
+    def relay_type(self, value: Optional[pulumi.Input[Relaytype]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requiresClientAuthorization")
+    def requires_client_authorization(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @requires_client_authorization.setter
+    def requires_client_authorization(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requiresTransportSecurity")
+    def requires_transport_security(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @requires_transport_security.setter
+    def requires_transport_security(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userMetadata")
+    def user_metadata(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_metadata.setter
+    def user_metadata(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:relay:WCFRelay")
+class WCFRelay(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., relay_name: Optional[pulumi.Input[_builtins.str]] = ..., relay_type: Optional[pulumi.Input[Relaytype]] = ..., requires_client_authorization: Optional[pulumi.Input[_builtins.bool]] = ..., requires_transport_security: Optional[pulumi.Input[_builtins.bool]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., user_metadata: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WCFRelayArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WCFRelay:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isDynamic")
+    def is_dynamic(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="listenerCount")
+    def listener_count(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayType")
+    def relay_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requiresClientAuthorization")
+    def requires_client_authorization(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requiresTransportSecurity")
+    def requires_transport_security(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedAt")
+    def updated_at(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userMetadata")
+    def user_metadata(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+
+

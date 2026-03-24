@@ -1,0 +1,241 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WebAppHostNameBindingArgs', 'WebAppHostNameBinding']
+@pulumi.input_type
+class WebAppHostNameBindingArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], azure_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., azure_resource_type: Optional[pulumi.Input[AzureResourceType]] = ..., custom_host_name_dns_record_type: Optional[pulumi.Input[CustomHostNameDnsRecordType]] = ..., domain_id: Optional[pulumi.Input[_builtins.str]] = ..., host_name: Optional[pulumi.Input[_builtins.str]] = ..., host_name_type: Optional[pulumi.Input[HostNameType]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., ssl_state: Optional[pulumi.Input[SslState]] = ..., thumbprint: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceName")
+    def azure_resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @azure_resource_name.setter
+    def azure_resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceType")
+    def azure_resource_type(self) -> Optional[pulumi.Input[AzureResourceType]]:
+        
+        ...
+    
+    @azure_resource_type.setter
+    def azure_resource_type(self, value: Optional[pulumi.Input[AzureResourceType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customHostNameDnsRecordType")
+    def custom_host_name_dns_record_type(self) -> Optional[pulumi.Input[CustomHostNameDnsRecordType]]:
+        
+        ...
+    
+    @custom_host_name_dns_record_type.setter
+    def custom_host_name_dns_record_type(self, value: Optional[pulumi.Input[CustomHostNameDnsRecordType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainId")
+    def domain_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @domain_id.setter
+    def domain_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostName")
+    def host_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @host_name.setter
+    def host_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostNameType")
+    def host_name_type(self) -> Optional[pulumi.Input[HostNameType]]:
+        
+        ...
+    
+    @host_name_type.setter
+    def host_name_type(self, value: Optional[pulumi.Input[HostNameType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="siteName")
+    def site_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @site_name.setter
+    def site_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sslState")
+    def ssl_state(self) -> Optional[pulumi.Input[SslState]]:
+        
+        ...
+    
+    @ssl_state.setter
+    def ssl_state(self, value: Optional[pulumi.Input[SslState]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def thumbprint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @thumbprint.setter
+    def thumbprint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:web:WebAppHostNameBinding")
+class WebAppHostNameBinding(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., azure_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., azure_resource_type: Optional[pulumi.Input[AzureResourceType]] = ..., custom_host_name_dns_record_type: Optional[pulumi.Input[CustomHostNameDnsRecordType]] = ..., domain_id: Optional[pulumi.Input[_builtins.str]] = ..., host_name: Optional[pulumi.Input[_builtins.str]] = ..., host_name_type: Optional[pulumi.Input[HostNameType]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., ssl_state: Optional[pulumi.Input[SslState]] = ..., thumbprint: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WebAppHostNameBindingArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WebAppHostNameBinding:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceName")
+    def azure_resource_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceType")
+    def azure_resource_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customHostNameDnsRecordType")
+    def custom_host_name_dns_record_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainId")
+    def domain_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostNameType")
+    def host_name_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="siteName")
+    def site_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sslState")
+    def ssl_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def thumbprint(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualIP")
+    def virtual_ip(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

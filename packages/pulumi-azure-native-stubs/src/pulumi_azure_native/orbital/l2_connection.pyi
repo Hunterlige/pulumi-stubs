@@ -1,0 +1,200 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['L2ConnectionArgs', 'L2Connection']
+@pulumi.input_type
+class L2ConnectionArgs:
+    def __init__(__self__, *, edge_site: pulumi.Input[L2ConnectionsPropertiesEdgeSiteArgs], ground_station: pulumi.Input[L2ConnectionsPropertiesGroundStationArgs], ground_station_partner_router: pulumi.Input[L2ConnectionsPropertiesGroundStationPartnerRouterArgs], name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], vlan_id: pulumi.Input[_builtins.int], l2_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="edgeSite")
+    def edge_site(self) -> pulumi.Input[L2ConnectionsPropertiesEdgeSiteArgs]:
+        
+        ...
+    
+    @edge_site.setter
+    def edge_site(self, value: pulumi.Input[L2ConnectionsPropertiesEdgeSiteArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groundStation")
+    def ground_station(self) -> pulumi.Input[L2ConnectionsPropertiesGroundStationArgs]:
+        
+        ...
+    
+    @ground_station.setter
+    def ground_station(self, value: pulumi.Input[L2ConnectionsPropertiesGroundStationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groundStationPartnerRouter")
+    def ground_station_partner_router(self) -> pulumi.Input[L2ConnectionsPropertiesGroundStationPartnerRouterArgs]:
+        
+        ...
+    
+    @ground_station_partner_router.setter
+    def ground_station_partner_router(self, value: pulumi.Input[L2ConnectionsPropertiesGroundStationPartnerRouterArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vlanId")
+    def vlan_id(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @vlan_id.setter
+    def vlan_id(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l2ConnectionName")
+    def l2_connection_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @l2_connection_name.setter
+    def l2_connection_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:orbital:L2Connection")
+class L2Connection(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., edge_site: Optional[pulumi.Input[Union[L2ConnectionsPropertiesEdgeSiteArgs, L2ConnectionsPropertiesEdgeSiteArgsDict]]] = ..., ground_station: Optional[pulumi.Input[Union[L2ConnectionsPropertiesGroundStationArgs, L2ConnectionsPropertiesGroundStationArgsDict]]] = ..., ground_station_partner_router: Optional[pulumi.Input[Union[L2ConnectionsPropertiesGroundStationPartnerRouterArgs, L2ConnectionsPropertiesGroundStationPartnerRouterArgsDict]]] = ..., l2_connection_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., vlan_id: Optional[pulumi.Input[_builtins.int]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: L2ConnectionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> L2Connection:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="circuitId")
+    def circuit_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="edgeSite")
+    def edge_site(self) -> pulumi.Output[outputs.L2ConnectionsPropertiesResponseEdgeSite]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groundStation")
+    def ground_station(self) -> pulumi.Output[outputs.L2ConnectionsPropertiesResponseGroundStation]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groundStationPartnerRouter")
+    def ground_station_partner_router(self) -> pulumi.Output[outputs.L2ConnectionsPropertiesResponseGroundStationPartnerRouter]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vlanId")
+    def vlan_id(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+
+

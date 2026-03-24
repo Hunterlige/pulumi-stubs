@@ -1,0 +1,733 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ErrorArgs', 'ErrorArgsDict', ..., ..., 'SpringbootappsPropertiesInstancesArgs', 'SpringbootappsPropertiesInstancesArgsDict', 'SpringbootappsPropertiesMiscsArgs', 'SpringbootappsPropertiesMiscsArgsDict', 'SpringbootappsPropertiesArgs', 'SpringbootappsPropertiesArgsDict', 'SpringbootserversPropertiesArgs', 'SpringbootserversPropertiesArgsDict', 'SpringbootsitesModelExtendedLocationArgs', 'SpringbootsitesModelExtendedLocationArgsDict', 'SpringbootsitesPropertiesArgs', 'SpringbootsitesPropertiesArgsDict']
+class ErrorArgsDict(TypedDict):
+    
+    code: NotRequired[pulumi.Input[_builtins.str]]
+    id: NotRequired[pulumi.Input[_builtins.float]]
+    message: NotRequired[pulumi.Input[_builtins.str]]
+    possible_causes: NotRequired[pulumi.Input[_builtins.str]]
+    recommended_action: NotRequired[pulumi.Input[_builtins.str]]
+    run_as_account_id: NotRequired[pulumi.Input[_builtins.str]]
+    severity: NotRequired[pulumi.Input[_builtins.str]]
+    summary_message: NotRequired[pulumi.Input[_builtins.str]]
+    updated_time_stamp: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ErrorArgs:
+    def __init__(__self__, *, code: Optional[pulumi.Input[_builtins.str]] = ..., id: Optional[pulumi.Input[_builtins.float]] = ..., message: Optional[pulumi.Input[_builtins.str]] = ..., possible_causes: Optional[pulumi.Input[_builtins.str]] = ..., recommended_action: Optional[pulumi.Input[_builtins.str]] = ..., run_as_account_id: Optional[pulumi.Input[_builtins.str]] = ..., severity: Optional[pulumi.Input[_builtins.str]] = ..., summary_message: Optional[pulumi.Input[_builtins.str]] = ..., updated_time_stamp: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @code.setter
+    def code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @message.setter
+    def message(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="possibleCauses")
+    def possible_causes(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @possible_causes.setter
+    def possible_causes(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recommendedAction")
+    def recommended_action(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @recommended_action.setter
+    def recommended_action(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runAsAccountId")
+    def run_as_account_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @run_as_account_id.setter
+    def run_as_account_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def severity(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @severity.setter
+    def severity(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="summaryMessage")
+    def summary_message(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @summary_message.setter
+    def summary_message(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedTimeStamp")
+    def updated_time_stamp(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @updated_time_stamp.setter
+    def updated_time_stamp(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SpringbootappsPropertiesApplicationConfigurationsArgsDict(TypedDict):
+    key: pulumi.Input[_builtins.str]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SpringbootappsPropertiesApplicationConfigurationsArgs:
+    def __init__(__self__, *, key: pulumi.Input[_builtins.str], value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @key.setter
+    def key(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SpringbootappsPropertiesInstancesArgsDict(TypedDict):
+    machine_arm_id: pulumi.Input[_builtins.str]
+    instance_count: NotRequired[pulumi.Input[_builtins.int]]
+    jvm_memory_in_mb: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class SpringbootappsPropertiesInstancesArgs:
+    def __init__(__self__, *, machine_arm_id: pulumi.Input[_builtins.str], instance_count: Optional[pulumi.Input[_builtins.int]] = ..., jvm_memory_in_mb: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineArmId")
+    def machine_arm_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @machine_arm_id.setter
+    def machine_arm_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceCount")
+    def instance_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @instance_count.setter
+    def instance_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jvmMemoryInMB")
+    def jvm_memory_in_mb(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @jvm_memory_in_mb.setter
+    def jvm_memory_in_mb(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class SpringbootappsPropertiesMiscsArgsDict(TypedDict):
+    key: pulumi.Input[_builtins.str]
+    value: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SpringbootappsPropertiesMiscsArgs:
+    def __init__(__self__, *, key: pulumi.Input[_builtins.str], value: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def key(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @key.setter
+    def key(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SpringbootappsPropertiesArgsDict(TypedDict):
+    
+    app_name: NotRequired[pulumi.Input[_builtins.str]]
+    app_port: NotRequired[pulumi.Input[_builtins.int]]
+    app_type: NotRequired[pulumi.Input[_builtins.str]]
+    application_configurations: NotRequired[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesApplicationConfigurationsArgsDict]]]]
+    artifact_name: NotRequired[pulumi.Input[_builtins.str]]
+    binding_ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
+    build_jdk_version: NotRequired[pulumi.Input[_builtins.str]]
+    certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    checksum: NotRequired[pulumi.Input[_builtins.str]]
+    connection_strings: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    dependencies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    environments: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    errors: NotRequired[pulumi.Input[Sequence[pulumi.Input[ErrorArgsDict]]]]
+    instance_count: NotRequired[pulumi.Input[_builtins.int]]
+    instances: NotRequired[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesInstancesArgsDict]]]]
+    jar_file_location: NotRequired[pulumi.Input[_builtins.str]]
+    jvm_memory_in_mb: NotRequired[pulumi.Input[_builtins.int]]
+    jvm_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    last_modified_time: NotRequired[pulumi.Input[_builtins.str]]
+    last_updated_time: NotRequired[pulumi.Input[_builtins.str]]
+    machine_arm_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    miscs: NotRequired[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesMiscsArgsDict]]]]
+    runtime_jdk_version: NotRequired[pulumi.Input[_builtins.str]]
+    servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    spring_boot_version: NotRequired[pulumi.Input[_builtins.str]]
+    static_content_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class SpringbootappsPropertiesArgs:
+    def __init__(__self__, *, app_name: Optional[pulumi.Input[_builtins.str]] = ..., app_port: Optional[pulumi.Input[_builtins.int]] = ..., app_type: Optional[pulumi.Input[_builtins.str]] = ..., application_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesApplicationConfigurationsArgs]]]] = ..., artifact_name: Optional[pulumi.Input[_builtins.str]] = ..., binding_ports: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]] = ..., build_jdk_version: Optional[pulumi.Input[_builtins.str]] = ..., certificates: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., checksum: Optional[pulumi.Input[_builtins.str]] = ..., connection_strings: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., dependencies: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., environments: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., errors: Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]] = ..., instance_count: Optional[pulumi.Input[_builtins.int]] = ..., instances: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesInstancesArgs]]]] = ..., jar_file_location: Optional[pulumi.Input[_builtins.str]] = ..., jvm_memory_in_mb: Optional[pulumi.Input[_builtins.int]] = ..., jvm_options: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., last_modified_time: Optional[pulumi.Input[_builtins.str]] = ..., last_updated_time: Optional[pulumi.Input[_builtins.str]] = ..., machine_arm_ids: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., miscs: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesMiscsArgs]]]] = ..., runtime_jdk_version: Optional[pulumi.Input[_builtins.str]] = ..., servers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., spring_boot_version: Optional[pulumi.Input[_builtins.str]] = ..., static_content_locations: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appName")
+    def app_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @app_name.setter
+    def app_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appPort")
+    def app_port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @app_port.setter
+    def app_port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appType")
+    def app_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @app_type.setter
+    def app_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationConfigurations")
+    def application_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesApplicationConfigurationsArgs]]]]:
+        
+        ...
+    
+    @application_configurations.setter
+    def application_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesApplicationConfigurationsArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactName")
+    def artifact_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @artifact_name.setter
+    def artifact_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bindingPorts")
+    def binding_ports(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]:
+        
+        ...
+    
+    @binding_ports.setter
+    def binding_ports(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="buildJdkVersion")
+    def build_jdk_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @build_jdk_version.setter
+    def build_jdk_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def certificates(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @certificates.setter
+    def certificates(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @checksum.setter
+    def checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionStrings")
+    def connection_strings(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @connection_strings.setter
+    def connection_strings(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def dependencies(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @dependencies.setter
+    def dependencies(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def environments(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @environments.setter
+    def environments(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]]:
+        
+        ...
+    
+    @errors.setter
+    def errors(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceCount")
+    def instance_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @instance_count.setter
+    def instance_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def instances(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesInstancesArgs]]]]:
+        
+        ...
+    
+    @instances.setter
+    def instances(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesInstancesArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jarFileLocation")
+    def jar_file_location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @jar_file_location.setter
+    def jar_file_location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jvmMemoryInMB")
+    def jvm_memory_in_mb(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @jvm_memory_in_mb.setter
+    def jvm_memory_in_mb(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jvmOptions")
+    def jvm_options(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @jvm_options.setter
+    def jvm_options(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @labels.setter
+    def labels(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTime")
+    def last_modified_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_modified_time.setter
+    def last_modified_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastUpdatedTime")
+    def last_updated_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_updated_time.setter
+    def last_updated_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineArmIds")
+    def machine_arm_ids(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @machine_arm_ids.setter
+    def machine_arm_ids(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def miscs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesMiscsArgs]]]]:
+        
+        ...
+    
+    @miscs.setter
+    def miscs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[SpringbootappsPropertiesMiscsArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runtimeJdkVersion")
+    def runtime_jdk_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @runtime_jdk_version.setter
+    def runtime_jdk_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def servers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @servers.setter
+    def servers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="springBootVersion")
+    def spring_boot_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @spring_boot_version.setter
+    def spring_boot_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="staticContentLocations")
+    def static_content_locations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @static_content_locations.setter
+    def static_content_locations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class SpringbootserversPropertiesArgsDict(TypedDict):
+    
+    server: pulumi.Input[_builtins.str]
+    errors: NotRequired[pulumi.Input[Sequence[pulumi.Input[ErrorArgsDict]]]]
+    fqdn_and_ip_address_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    machine_arm_id: NotRequired[pulumi.Input[_builtins.str]]
+    port: NotRequired[pulumi.Input[_builtins.int]]
+    provisioning_state: NotRequired[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
+    spring_boot_apps: NotRequired[pulumi.Input[_builtins.int]]
+    total_apps: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class SpringbootserversPropertiesArgs:
+    def __init__(__self__, *, server: pulumi.Input[_builtins.str], errors: Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]] = ..., fqdn_and_ip_address_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., labels: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., machine_arm_id: Optional[pulumi.Input[_builtins.str]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ..., spring_boot_apps: Optional[pulumi.Input[_builtins.int]] = ..., total_apps: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def server(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server.setter
+    def server(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]]:
+        
+        ...
+    
+    @errors.setter
+    def errors(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ErrorArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fqdnAndIpAddressList")
+    def fqdn_and_ip_address_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @fqdn_and_ip_address_list.setter
+    def fqdn_and_ip_address_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @labels.setter
+    def labels(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="machineArmId")
+    def machine_arm_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @machine_arm_id.setter
+    def machine_arm_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @port.setter
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="springBootApps")
+    def spring_boot_apps(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @spring_boot_apps.setter
+    def spring_boot_apps(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalApps")
+    def total_apps(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @total_apps.setter
+    def total_apps(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class SpringbootsitesModelExtendedLocationArgsDict(TypedDict):
+    
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    type: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SpringbootsitesModelExtendedLocationArgs:
+    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SpringbootsitesPropertiesArgsDict(TypedDict):
+    
+    master_site_id: NotRequired[pulumi.Input[_builtins.str]]
+    migrate_project_id: NotRequired[pulumi.Input[_builtins.str]]
+    provisioning_state: NotRequired[pulumi.Input[Union[_builtins.str, ProvisioningState]]]
+
+
+@pulumi.input_type
+class SpringbootsitesPropertiesArgs:
+    def __init__(__self__, *, master_site_id: Optional[pulumi.Input[_builtins.str]] = ..., migrate_project_id: Optional[pulumi.Input[_builtins.str]] = ..., provisioning_state: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="masterSiteId")
+    def master_site_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @master_site_id.setter
+    def master_site_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="migrateProjectId")
+    def migrate_project_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @migrate_project_id.setter
+    def migrate_project_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]:
+        
+        ...
+    
+    @provisioning_state.setter
+    def provisioning_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ProvisioningState]]]): # -> None:
+        ...
+    
+
+

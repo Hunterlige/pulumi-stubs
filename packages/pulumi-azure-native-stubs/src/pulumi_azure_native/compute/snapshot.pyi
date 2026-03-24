@@ -1,0 +1,467 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SnapshotArgs', 'Snapshot']
+@pulumi.input_type
+class SnapshotArgs:
+    def __init__(__self__, *, creation_data: pulumi.Input[CreationDataArgs], resource_group_name: pulumi.Input[_builtins.str], completion_percent: Optional[pulumi.Input[_builtins.float]] = ..., copy_completion_error: Optional[pulumi.Input[CopyCompletionErrorArgs]] = ..., data_access_auth_mode: Optional[pulumi.Input[Union[_builtins.str, DataAccessAuthMode]]] = ..., disk_access_id: Optional[pulumi.Input[_builtins.str]] = ..., disk_size_gb: Optional[pulumi.Input[_builtins.int]] = ..., encryption: Optional[pulumi.Input[EncryptionArgs]] = ..., encryption_settings_collection: Optional[pulumi.Input[EncryptionSettingsCollectionArgs]] = ..., extended_location: Optional[pulumi.Input[ExtendedLocationArgs]] = ..., hyper_v_generation: Optional[pulumi.Input[Union[_builtins.str, HyperVGeneration]]] = ..., incremental: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., network_access_policy: Optional[pulumi.Input[Union[_builtins.str, NetworkAccessPolicy]]] = ..., os_type: Optional[pulumi.Input[OperatingSystemTypes]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., purchase_plan: Optional[pulumi.Input[DiskPurchasePlanArgs]] = ..., security_profile: Optional[pulumi.Input[DiskSecurityProfileArgs]] = ..., sku: Optional[pulumi.Input[SnapshotSkuArgs]] = ..., snapshot_name: Optional[pulumi.Input[_builtins.str]] = ..., supported_capabilities: Optional[pulumi.Input[SupportedCapabilitiesArgs]] = ..., supports_hibernation: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationData")
+    def creation_data(self) -> pulumi.Input[CreationDataArgs]:
+        
+        ...
+    
+    @creation_data.setter
+    def creation_data(self, value: pulumi.Input[CreationDataArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="completionPercent")
+    def completion_percent(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @completion_percent.setter
+    def completion_percent(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="copyCompletionError")
+    def copy_completion_error(self) -> Optional[pulumi.Input[CopyCompletionErrorArgs]]:
+        
+        ...
+    
+    @copy_completion_error.setter
+    def copy_completion_error(self, value: Optional[pulumi.Input[CopyCompletionErrorArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataAccessAuthMode")
+    def data_access_auth_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, DataAccessAuthMode]]]:
+        
+        ...
+    
+    @data_access_auth_mode.setter
+    def data_access_auth_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, DataAccessAuthMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskAccessId")
+    def disk_access_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @disk_access_id.setter
+    def disk_access_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskSizeGB")
+    def disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @disk_size_gb.setter
+    def disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]:
+        
+        ...
+    
+    @encryption.setter
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionSettingsCollection")
+    def encryption_settings_collection(self) -> Optional[pulumi.Input[EncryptionSettingsCollectionArgs]]:
+        
+        ...
+    
+    @encryption_settings_collection.setter
+    def encryption_settings_collection(self, value: Optional[pulumi.Input[EncryptionSettingsCollectionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: Optional[pulumi.Input[ExtendedLocationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hyperVGeneration")
+    def hyper_v_generation(self) -> Optional[pulumi.Input[Union[_builtins.str, HyperVGeneration]]]:
+        
+        ...
+    
+    @hyper_v_generation.setter
+    def hyper_v_generation(self, value: Optional[pulumi.Input[Union[_builtins.str, HyperVGeneration]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def incremental(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @incremental.setter
+    def incremental(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkAccessPolicy")
+    def network_access_policy(self) -> Optional[pulumi.Input[Union[_builtins.str, NetworkAccessPolicy]]]:
+        
+        ...
+    
+    @network_access_policy.setter
+    def network_access_policy(self, value: Optional[pulumi.Input[Union[_builtins.str, NetworkAccessPolicy]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> Optional[pulumi.Input[OperatingSystemTypes]]:
+        
+        ...
+    
+    @os_type.setter
+    def os_type(self, value: Optional[pulumi.Input[OperatingSystemTypes]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="purchasePlan")
+    def purchase_plan(self) -> Optional[pulumi.Input[DiskPurchasePlanArgs]]:
+        
+        ...
+    
+    @purchase_plan.setter
+    def purchase_plan(self, value: Optional[pulumi.Input[DiskPurchasePlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityProfile")
+    def security_profile(self) -> Optional[pulumi.Input[DiskSecurityProfileArgs]]:
+        
+        ...
+    
+    @security_profile.setter
+    def security_profile(self, value: Optional[pulumi.Input[DiskSecurityProfileArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[SnapshotSkuArgs]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[SnapshotSkuArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotName")
+    def snapshot_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @snapshot_name.setter
+    def snapshot_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedCapabilities")
+    def supported_capabilities(self) -> Optional[pulumi.Input[SupportedCapabilitiesArgs]]:
+        
+        ...
+    
+    @supported_capabilities.setter
+    def supported_capabilities(self, value: Optional[pulumi.Input[SupportedCapabilitiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsHibernation")
+    def supports_hibernation(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @supports_hibernation.setter
+    def supports_hibernation(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:compute:Snapshot")
+class Snapshot(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., completion_percent: Optional[pulumi.Input[_builtins.float]] = ..., copy_completion_error: Optional[pulumi.Input[Union[CopyCompletionErrorArgs, CopyCompletionErrorArgsDict]]] = ..., creation_data: Optional[pulumi.Input[Union[CreationDataArgs, CreationDataArgsDict]]] = ..., data_access_auth_mode: Optional[pulumi.Input[Union[_builtins.str, DataAccessAuthMode]]] = ..., disk_access_id: Optional[pulumi.Input[_builtins.str]] = ..., disk_size_gb: Optional[pulumi.Input[_builtins.int]] = ..., encryption: Optional[pulumi.Input[Union[EncryptionArgs, EncryptionArgsDict]]] = ..., encryption_settings_collection: Optional[pulumi.Input[Union[EncryptionSettingsCollectionArgs, EncryptionSettingsCollectionArgsDict]]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., hyper_v_generation: Optional[pulumi.Input[Union[_builtins.str, HyperVGeneration]]] = ..., incremental: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., network_access_policy: Optional[pulumi.Input[Union[_builtins.str, NetworkAccessPolicy]]] = ..., os_type: Optional[pulumi.Input[OperatingSystemTypes]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., purchase_plan: Optional[pulumi.Input[Union[DiskPurchasePlanArgs, DiskPurchasePlanArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., security_profile: Optional[pulumi.Input[Union[DiskSecurityProfileArgs, DiskSecurityProfileArgsDict]]] = ..., sku: Optional[pulumi.Input[Union[SnapshotSkuArgs, SnapshotSkuArgsDict]]] = ..., snapshot_name: Optional[pulumi.Input[_builtins.str]] = ..., supported_capabilities: Optional[pulumi.Input[Union[SupportedCapabilitiesArgs, SupportedCapabilitiesArgsDict]]] = ..., supports_hibernation: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SnapshotArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Snapshot:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="completionPercent")
+    def completion_percent(self) -> pulumi.Output[Optional[_builtins.float]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="copyCompletionError")
+    def copy_completion_error(self) -> pulumi.Output[Optional[outputs.CopyCompletionErrorResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationData")
+    def creation_data(self) -> pulumi.Output[outputs.CreationDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataAccessAuthMode")
+    def data_access_auth_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskAccessId")
+    def disk_access_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskSizeBytes")
+    def disk_size_bytes(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskSizeGB")
+    def disk_size_gb(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskState")
+    def disk_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> pulumi.Output[Optional[outputs.EncryptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionSettingsCollection")
+    def encryption_settings_collection(self) -> pulumi.Output[Optional[outputs.EncryptionSettingsCollectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[Optional[outputs.ExtendedLocationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hyperVGeneration")
+    def hyper_v_generation(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def incremental(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="incrementalSnapshotFamilyId")
+    def incremental_snapshot_family_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkAccessPolicy")
+    def network_access_policy(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="purchasePlan")
+    def purchase_plan(self) -> pulumi.Output[Optional[outputs.DiskPurchasePlanResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityProfile")
+    def security_profile(self) -> pulumi.Output[Optional[outputs.DiskSecurityProfileResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[Optional[outputs.SnapshotSkuResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedCapabilities")
+    def supported_capabilities(self) -> pulumi.Output[Optional[outputs.SupportedCapabilitiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsHibernation")
+    def supports_hibernation(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeCreated")
+    def time_created(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueId")
+    def unique_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

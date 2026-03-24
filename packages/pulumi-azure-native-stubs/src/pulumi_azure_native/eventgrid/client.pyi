@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ClientArgs', 'Client']
+@pulumi.input_type
+class ClientArgs:
+    def __init__(__self__, *, namespace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], attributes: Optional[Any] = ..., authentication_name: Optional[pulumi.Input[_builtins.str]] = ..., client_certificate_authentication: Optional[pulumi.Input[ClientCertificateAuthenticationArgs]] = ..., client_name: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, ClientState]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @namespace_name.setter
+    def namespace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[Any]:
+        
+        ...
+    
+    @attributes.setter
+    def attributes(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationName")
+    def authentication_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authentication_name.setter
+    def authentication_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientCertificateAuthentication")
+    def client_certificate_authentication(self) -> Optional[pulumi.Input[ClientCertificateAuthenticationArgs]]:
+        
+        ...
+    
+    @client_certificate_authentication.setter
+    def client_certificate_authentication(self, value: Optional[pulumi.Input[ClientCertificateAuthenticationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientName")
+    def client_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_name.setter
+    def client_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, ClientState]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, ClientState]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:eventgrid:Client")
+class Client(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., attributes: Optional[Any] = ..., authentication_name: Optional[pulumi.Input[_builtins.str]] = ..., client_certificate_authentication: Optional[pulumi.Input[Union[ClientCertificateAuthenticationArgs, ClientCertificateAuthenticationArgsDict]]] = ..., client_name: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, ClientState]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ClientArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Client:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationName")
+    def authentication_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientCertificateAuthentication")
+    def client_certificate_authentication(self) -> pulumi.Output[Optional[outputs.ClientCertificateAuthenticationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

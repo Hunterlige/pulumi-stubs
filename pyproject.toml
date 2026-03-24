@@ -1,0 +1,21 @@
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.408",
+    "ruff>=0.15.7",
+    "pulumi-aws==7.23.0",
+    "pulumi-gcp==9.16.0",
+    "pulumi-azure-native==3.16.0",
+]
+
+[tool.ruff]
+force-exclude = true
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+  "PYI021",
+]

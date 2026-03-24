@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetMSIXPackageResult', 'AwaitableGetMSIXPackageResult', 'get_msix_package', 'get_msix_package_output']
+@pulumi.output_type
+class GetMSIXPackageResult:
+    
+    def __init__(__self__, azure_api_version=..., display_name=..., id=..., image_path=..., is_active=..., is_regular_registration=..., last_updated=..., name=..., package_applications=..., package_dependencies=..., package_family_name=..., package_name=..., package_relative_path=..., system_data=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imagePath")
+    def image_path(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isActive")
+    def is_active(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isRegularRegistration")
+    def is_regular_registration(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastUpdated")
+    def last_updated(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageApplications")
+    def package_applications(self) -> Optional[Sequence[outputs.MsixPackageApplicationsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageDependencies")
+    def package_dependencies(self) -> Optional[Sequence[outputs.MsixPackageDependenciesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageFamilyName")
+    def package_family_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageName")
+    def package_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageRelativePath")
+    def package_relative_path(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetMSIXPackageResult(GetMSIXPackageResult):
+    def __await__(self): # -> Generator[Never, Any, GetMSIXPackageResult]:
+        ...
+    
+
+
+def get_msix_package(host_pool_name: Optional[_builtins.str] = ..., msix_package_full_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetMSIXPackageResult:
+    
+    ...
+
+def get_msix_package_output(host_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., msix_package_full_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetMSIXPackageResult]:
+    
+    ...
+

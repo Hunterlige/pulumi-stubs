@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetCapacityPoolVolumeGroupIdForLdapUserResult', ..., 'get_capacity_pool_volume_group_id_for_ldap_user', ...]
+@pulumi.output_type
+class GetCapacityPoolVolumeGroupIdForLdapUserResult:
+    
+    def __init__(__self__, group_ids_for_ldap_user=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupIdsForLdapUser")
+    def group_ids_for_ldap_user(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+class AwaitableGetCapacityPoolVolumeGroupIdForLdapUserResult(GetCapacityPoolVolumeGroupIdForLdapUserResult):
+    def __await__(self): # -> Generator[Never, Any, GetCapacityPoolVolumeGroupIdForLdapUserResult]:
+        ...
+    
+
+
+def get_capacity_pool_volume_group_id_for_ldap_user(account_name: Optional[_builtins.str] = ..., pool_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., username: Optional[_builtins.str] = ..., volume_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetCapacityPoolVolumeGroupIdForLdapUserResult:
+    
+    ...
+
+def get_capacity_pool_volume_group_id_for_ldap_user_output(account_name: Optional[pulumi.Input[_builtins.str]] = ..., pool_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ..., volume_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetCapacityPoolVolumeGroupIdForLdapUserResult]:
+    
+    ...
+

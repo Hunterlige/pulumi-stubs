@@ -1,0 +1,491 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DraftPackageArgs', 'DraftPackage']
+@pulumi.input_type
+class DraftPackageArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], test_base_account_name: pulumi.Input[_builtins.str], app_file_name: Optional[pulumi.Input[_builtins.str]] = ..., application_name: Optional[pulumi.Input[_builtins.str]] = ..., comments: Optional[pulumi.Input[_builtins.str]] = ..., draft_package_name: Optional[pulumi.Input[_builtins.str]] = ..., edit_package: Optional[pulumi.Input[_builtins.bool]] = ..., executable_launch_command: Optional[pulumi.Input[_builtins.str]] = ..., first_party_apps: Optional[pulumi.Input[Sequence[pulumi.Input[FirstPartyAppDefinitionArgs]]]] = ..., flighting_ring: Optional[pulumi.Input[_builtins.str]] = ..., gallery_apps: Optional[pulumi.Input[Sequence[pulumi.Input[GalleryAppDefinitionArgs]]]] = ..., highlighted_files: Optional[pulumi.Input[Sequence[pulumi.Input[HighlightedFileArgs]]]] = ..., inplace_upgrade_os_pair: Optional[pulumi.Input[InplaceUpgradeOSInfoArgs]] = ..., intune_enrollment_metadata: Optional[pulumi.Input[IntuneEnrollmentMetadataArgs]] = ..., intune_metadata: Optional[pulumi.Input[DraftPackageIntuneAppMetadataArgs]] = ..., package_id: Optional[pulumi.Input[_builtins.str]] = ..., package_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., process_name: Optional[pulumi.Input[_builtins.str]] = ..., source_type: Optional[pulumi.Input[Union[_builtins.str, DraftPackageSourceType]]] = ..., tab_state: Optional[pulumi.Input[TabStateArgs]] = ..., target_os_list: Optional[pulumi.Input[Sequence[pulumi.Input[TargetOSInfoArgs]]]] = ..., test_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TestType]]]]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[TestArgs]]]] = ..., use_autofill: Optional[pulumi.Input[_builtins.bool]] = ..., use_sample: Optional[pulumi.Input[_builtins.bool]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testBaseAccountName")
+    def test_base_account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @test_base_account_name.setter
+    def test_base_account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appFileName")
+    def app_file_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @app_file_name.setter
+    def app_file_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationName")
+    def application_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @application_name.setter
+    def application_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comments(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @comments.setter
+    def comments(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="draftPackageName")
+    def draft_package_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @draft_package_name.setter
+    def draft_package_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="editPackage")
+    def edit_package(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @edit_package.setter
+    def edit_package(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executableLaunchCommand")
+    def executable_launch_command(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @executable_launch_command.setter
+    def executable_launch_command(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firstPartyApps")
+    def first_party_apps(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[FirstPartyAppDefinitionArgs]]]]:
+        
+        ...
+    
+    @first_party_apps.setter
+    def first_party_apps(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[FirstPartyAppDefinitionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flightingRing")
+    def flighting_ring(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @flighting_ring.setter
+    def flighting_ring(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="galleryApps")
+    def gallery_apps(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[GalleryAppDefinitionArgs]]]]:
+        
+        ...
+    
+    @gallery_apps.setter
+    def gallery_apps(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[GalleryAppDefinitionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="highlightedFiles")
+    def highlighted_files(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[HighlightedFileArgs]]]]:
+        
+        ...
+    
+    @highlighted_files.setter
+    def highlighted_files(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HighlightedFileArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inplaceUpgradeOSPair")
+    def inplace_upgrade_os_pair(self) -> Optional[pulumi.Input[InplaceUpgradeOSInfoArgs]]:
+        
+        ...
+    
+    @inplace_upgrade_os_pair.setter
+    def inplace_upgrade_os_pair(self, value: Optional[pulumi.Input[InplaceUpgradeOSInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneEnrollmentMetadata")
+    def intune_enrollment_metadata(self) -> Optional[pulumi.Input[IntuneEnrollmentMetadataArgs]]:
+        
+        ...
+    
+    @intune_enrollment_metadata.setter
+    def intune_enrollment_metadata(self, value: Optional[pulumi.Input[IntuneEnrollmentMetadataArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneMetadata")
+    def intune_metadata(self) -> Optional[pulumi.Input[DraftPackageIntuneAppMetadataArgs]]:
+        
+        ...
+    
+    @intune_metadata.setter
+    def intune_metadata(self, value: Optional[pulumi.Input[DraftPackageIntuneAppMetadataArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageId")
+    def package_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @package_id.setter
+    def package_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageTags")
+    def package_tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @package_tags.setter
+    def package_tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="processName")
+    def process_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @process_name.setter
+    def process_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DraftPackageSourceType]]]:
+        
+        ...
+    
+    @source_type.setter
+    def source_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DraftPackageSourceType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tabState")
+    def tab_state(self) -> Optional[pulumi.Input[TabStateArgs]]:
+        
+        ...
+    
+    @tab_state.setter
+    def tab_state(self, value: Optional[pulumi.Input[TabStateArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetOSList")
+    def target_os_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TargetOSInfoArgs]]]]:
+        
+        ...
+    
+    @target_os_list.setter
+    def target_os_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetOSInfoArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testTypes")
+    def test_types(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TestType]]]]]:
+        
+        ...
+    
+    @test_types.setter
+    def test_types(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TestType]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tests(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TestArgs]]]]:
+        
+        ...
+    
+    @tests.setter
+    def tests(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TestArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useAutofill")
+    def use_autofill(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_autofill.setter
+    def use_autofill(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useSample")
+    def use_sample(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_sample.setter
+    def use_sample(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:testbase:DraftPackage")
+class DraftPackage(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., app_file_name: Optional[pulumi.Input[_builtins.str]] = ..., application_name: Optional[pulumi.Input[_builtins.str]] = ..., comments: Optional[pulumi.Input[_builtins.str]] = ..., draft_package_name: Optional[pulumi.Input[_builtins.str]] = ..., edit_package: Optional[pulumi.Input[_builtins.bool]] = ..., executable_launch_command: Optional[pulumi.Input[_builtins.str]] = ..., first_party_apps: Optional[pulumi.Input[Sequence[pulumi.Input[Union[FirstPartyAppDefinitionArgs, FirstPartyAppDefinitionArgsDict]]]]] = ..., flighting_ring: Optional[pulumi.Input[_builtins.str]] = ..., gallery_apps: Optional[pulumi.Input[Sequence[pulumi.Input[Union[GalleryAppDefinitionArgs, GalleryAppDefinitionArgsDict]]]]] = ..., highlighted_files: Optional[pulumi.Input[Sequence[pulumi.Input[Union[HighlightedFileArgs, HighlightedFileArgsDict]]]]] = ..., inplace_upgrade_os_pair: Optional[pulumi.Input[Union[InplaceUpgradeOSInfoArgs, InplaceUpgradeOSInfoArgsDict]]] = ..., intune_enrollment_metadata: Optional[pulumi.Input[Union[IntuneEnrollmentMetadataArgs, IntuneEnrollmentMetadataArgsDict]]] = ..., intune_metadata: Optional[pulumi.Input[Union[DraftPackageIntuneAppMetadataArgs, DraftPackageIntuneAppMetadataArgsDict]]] = ..., package_id: Optional[pulumi.Input[_builtins.str]] = ..., package_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., process_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., source_type: Optional[pulumi.Input[Union[_builtins.str, DraftPackageSourceType]]] = ..., tab_state: Optional[pulumi.Input[Union[TabStateArgs, TabStateArgsDict]]] = ..., target_os_list: Optional[pulumi.Input[Sequence[pulumi.Input[Union[TargetOSInfoArgs, TargetOSInfoArgsDict]]]]] = ..., test_base_account_name: Optional[pulumi.Input[_builtins.str]] = ..., test_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TestType]]]]] = ..., tests: Optional[pulumi.Input[Sequence[pulumi.Input[Union[TestArgs, TestArgsDict]]]]] = ..., use_autofill: Optional[pulumi.Input[_builtins.bool]] = ..., use_sample: Optional[pulumi.Input[_builtins.bool]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DraftPackageArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> DraftPackage:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appFileName")
+    def app_file_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationName")
+    def application_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comments(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="draftPackagePath")
+    def draft_package_path(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="editPackage")
+    def edit_package(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executableLaunchCommand")
+    def executable_launch_command(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firstPartyApps")
+    def first_party_apps(self) -> pulumi.Output[Optional[Sequence[outputs.FirstPartyAppDefinitionResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flightingRing")
+    def flighting_ring(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="galleryApps")
+    def gallery_apps(self) -> pulumi.Output[Optional[Sequence[outputs.GalleryAppDefinitionResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="highlightedFiles")
+    def highlighted_files(self) -> pulumi.Output[Optional[Sequence[outputs.HighlightedFileResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inplaceUpgradeOSPair")
+    def inplace_upgrade_os_pair(self) -> pulumi.Output[Optional[outputs.InplaceUpgradeOSInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneEnrollmentMetadata")
+    def intune_enrollment_metadata(self) -> pulumi.Output[Optional[outputs.IntuneEnrollmentMetadataResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneMetadata")
+    def intune_metadata(self) -> pulumi.Output[Optional[outputs.DraftPackageIntuneAppMetadataResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTime")
+    def last_modified_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageId")
+    def package_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageTags")
+    def package_tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="processName")
+    def process_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tabState")
+    def tab_state(self) -> pulumi.Output[Optional[outputs.TabStateResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetOSList")
+    def target_os_list(self) -> pulumi.Output[Optional[Sequence[outputs.TargetOSInfoResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testTypes")
+    def test_types(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tests(self) -> pulumi.Output[Optional[Sequence[outputs.TestResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useAutofill")
+    def use_autofill(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useSample")
+    def use_sample(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workingPath")
+    def working_path(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,197 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetApplicationResult', 'AwaitableGetApplicationResult', 'get_application', 'get_application_output']
+@pulumi.output_type
+class GetApplicationResult:
+    
+    def __init__(__self__, application_definition_id=..., artifacts=..., authorizations=..., azure_api_version=..., billing_details=..., created_by=..., customer_support=..., id=..., identity=..., jit_access_policy=..., kind=..., location=..., managed_by=..., managed_resource_group_id=..., management_mode=..., name=..., outputs=..., parameters=..., plan=..., provisioning_state=..., publisher_tenant_id=..., sku=..., support_urls=..., system_data=..., tags=..., type=..., updated_by=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationDefinitionId")
+    def application_definition_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def artifacts(self) -> Sequence[outputs.ApplicationArtifactResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authorizations(self) -> Sequence[outputs.ApplicationAuthorizationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billingDetails")
+    def billing_details(self) -> outputs.ApplicationBillingDetailsDefinitionResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> outputs.ApplicationClientDetailsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerSupport")
+    def customer_support(self) -> outputs.ApplicationPackageContactResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitAccessPolicy")
+    def jit_access_policy(self) -> Optional[outputs.ApplicationJitAccessPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedBy")
+    def managed_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupId")
+    def managed_resource_group_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementMode")
+    def management_mode(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def outputs(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> Optional[outputs.PlanResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publisherTenantId")
+    def publisher_tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportUrls")
+    def support_urls(self) -> outputs.ApplicationPackageSupportUrlsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedBy")
+    def updated_by(self) -> outputs.ApplicationClientDetailsResponse:
+        
+        ...
+    
+
+
+class AwaitableGetApplicationResult(GetApplicationResult):
+    def __await__(self): # -> Generator[Never, Any, GetApplicationResult]:
+        ...
+    
+
+
+def get_application(application_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetApplicationResult:
+    
+    ...
+
+def get_application_output(application_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetApplicationResult]:
+    
+    ...
+

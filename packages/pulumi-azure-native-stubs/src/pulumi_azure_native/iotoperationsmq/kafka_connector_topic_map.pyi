@@ -1,0 +1,275 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['KafkaConnectorTopicMapArgs', 'KafkaConnectorTopicMap']
+@pulumi.input_type
+class KafkaConnectorTopicMapArgs:
+    def __init__(__self__, *, extended_location: pulumi.Input[ExtendedLocationPropertyArgs], kafka_connector_name: pulumi.Input[_builtins.str], kafka_connector_ref: pulumi.Input[_builtins.str], mq_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], routes: pulumi.Input[Sequence[pulumi.Input[KafkaRoutesArgs]]], batching: Optional[pulumi.Input[KafkaTopicMapBatchingArgs]] = ..., compression: Optional[pulumi.Input[Union[_builtins.str, KafkaMessageCompressionType]]] = ..., copy_mqtt_properties: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., partition_key_property: Optional[pulumi.Input[_builtins.str]] = ..., partition_strategy: Optional[pulumi.Input[Union[_builtins.str, KafkaPartitionStrategy]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., topic_map_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Input[ExtendedLocationPropertyArgs]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: pulumi.Input[ExtendedLocationPropertyArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaConnectorName")
+    def kafka_connector_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kafka_connector_name.setter
+    def kafka_connector_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaConnectorRef")
+    def kafka_connector_ref(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kafka_connector_ref.setter
+    def kafka_connector_ref(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mqName")
+    def mq_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @mq_name.setter
+    def mq_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def routes(self) -> pulumi.Input[Sequence[pulumi.Input[KafkaRoutesArgs]]]:
+        
+        ...
+    
+    @routes.setter
+    def routes(self, value: pulumi.Input[Sequence[pulumi.Input[KafkaRoutesArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> Optional[pulumi.Input[KafkaTopicMapBatchingArgs]]:
+        
+        ...
+    
+    @batching.setter
+    def batching(self, value: Optional[pulumi.Input[KafkaTopicMapBatchingArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def compression(self) -> Optional[pulumi.Input[Union[_builtins.str, KafkaMessageCompressionType]]]:
+        
+        ...
+    
+    @compression.setter
+    def compression(self, value: Optional[pulumi.Input[Union[_builtins.str, KafkaMessageCompressionType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="copyMqttProperties")
+    def copy_mqtt_properties(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @copy_mqtt_properties.setter
+    def copy_mqtt_properties(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionKeyProperty")
+    def partition_key_property(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @partition_key_property.setter
+    def partition_key_property(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionStrategy")
+    def partition_strategy(self) -> Optional[pulumi.Input[Union[_builtins.str, KafkaPartitionStrategy]]]:
+        
+        ...
+    
+    @partition_strategy.setter
+    def partition_strategy(self, value: Optional[pulumi.Input[Union[_builtins.str, KafkaPartitionStrategy]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicMapName")
+    def topic_map_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @topic_map_name.setter
+    def topic_map_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class KafkaConnectorTopicMap(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., batching: Optional[pulumi.Input[Union[KafkaTopicMapBatchingArgs, KafkaTopicMapBatchingArgsDict]]] = ..., compression: Optional[pulumi.Input[Union[_builtins.str, KafkaMessageCompressionType]]] = ..., copy_mqtt_properties: Optional[pulumi.Input[_builtins.str]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationPropertyArgs, ExtendedLocationPropertyArgsDict]]] = ..., kafka_connector_name: Optional[pulumi.Input[_builtins.str]] = ..., kafka_connector_ref: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., mq_name: Optional[pulumi.Input[_builtins.str]] = ..., partition_key_property: Optional[pulumi.Input[_builtins.str]] = ..., partition_strategy: Optional[pulumi.Input[Union[_builtins.str, KafkaPartitionStrategy]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., routes: Optional[pulumi.Input[Sequence[pulumi.Input[Union[KafkaRoutesArgs, KafkaRoutesArgsDict]]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., topic_map_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: KafkaConnectorTopicMapArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> KafkaConnectorTopicMap:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def batching(self) -> pulumi.Output[Optional[outputs.KafkaTopicMapBatchingResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def compression(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="copyMqttProperties")
+    def copy_mqtt_properties(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[outputs.ExtendedLocationPropertyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kafkaConnectorRef")
+    def kafka_connector_ref(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionKeyProperty")
+    def partition_key_property(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionStrategy")
+    def partition_strategy(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def routes(self) -> pulumi.Output[Sequence[outputs.KafkaRoutesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

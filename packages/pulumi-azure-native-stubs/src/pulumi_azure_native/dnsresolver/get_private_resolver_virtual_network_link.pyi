@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPrivateResolverVirtualNetworkLinkResult', ..., 'get_private_resolver_virtual_network_link', 'get_private_resolver_virtual_network_link_output']
+@pulumi.output_type
+class GetPrivateResolverVirtualNetworkLinkResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., id=..., metadata=..., name=..., provisioning_state=..., system_data=..., type=..., virtual_network=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetwork")
+    def virtual_network(self) -> outputs.SubResourceResponse:
+        
+        ...
+    
+
+
+class AwaitableGetPrivateResolverVirtualNetworkLinkResult(GetPrivateResolverVirtualNetworkLinkResult):
+    def __await__(self): # -> Generator[Never, Any, GetPrivateResolverVirtualNetworkLinkResult]:
+        ...
+    
+
+
+def get_private_resolver_virtual_network_link(dns_forwarding_ruleset_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., virtual_network_link_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPrivateResolverVirtualNetworkLinkResult:
+    
+    ...
+
+def get_private_resolver_virtual_network_link_output(dns_forwarding_ruleset_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_link_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPrivateResolverVirtualNetworkLinkResult]:
+    
+    ...
+

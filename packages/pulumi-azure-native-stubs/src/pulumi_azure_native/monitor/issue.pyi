@@ -1,0 +1,135 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IssueArgs', 'Issue']
+@pulumi.input_type
+class IssueArgs:
+    def __init__(__self__, *, azure_monitor_workspace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], issue_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[IssuePropertiesArgs]] = ..., related: Optional[pulumi.Input[_builtins.str]] = ..., start_investigation: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureMonitorWorkspaceName")
+    def azure_monitor_workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @azure_monitor_workspace_name.setter
+    def azure_monitor_workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="issueName")
+    def issue_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @issue_name.setter
+    def issue_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[pulumi.Input[IssuePropertiesArgs]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: Optional[pulumi.Input[IssuePropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def related(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @related.setter
+    def related(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startInvestigation")
+    def start_investigation(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @start_investigation.setter
+    def start_investigation(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:monitor:Issue")
+class Issue(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., azure_monitor_workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., issue_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Union[IssuePropertiesArgs, IssuePropertiesArgsDict]]] = ..., related: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., start_investigation: Optional[pulumi.Input[_builtins.bool]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IssueArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Issue:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.IssuePropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

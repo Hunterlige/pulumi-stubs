@@ -1,0 +1,201 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AvailabilityGroupListenerArgs', 'AvailabilityGroupListener']
+@pulumi.input_type
+class AvailabilityGroupListenerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], sql_virtual_machine_group_name: pulumi.Input[_builtins.str], availability_group_configuration: Optional[pulumi.Input[AgConfigurationArgs]] = ..., availability_group_listener_name: Optional[pulumi.Input[_builtins.str]] = ..., availability_group_name: Optional[pulumi.Input[_builtins.str]] = ..., create_default_availability_group_if_not_exist: Optional[pulumi.Input[_builtins.bool]] = ..., load_balancer_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[LoadBalancerConfigurationArgs]]]] = ..., multi_subnet_ip_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[MultiSubnetIpConfigurationArgs]]]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlVirtualMachineGroupName")
+    def sql_virtual_machine_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @sql_virtual_machine_group_name.setter
+    def sql_virtual_machine_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityGroupConfiguration")
+    def availability_group_configuration(self) -> Optional[pulumi.Input[AgConfigurationArgs]]:
+        
+        ...
+    
+    @availability_group_configuration.setter
+    def availability_group_configuration(self, value: Optional[pulumi.Input[AgConfigurationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityGroupListenerName")
+    def availability_group_listener_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @availability_group_listener_name.setter
+    def availability_group_listener_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityGroupName")
+    def availability_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @availability_group_name.setter
+    def availability_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createDefaultAvailabilityGroupIfNotExist")
+    def create_default_availability_group_if_not_exist(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @create_default_availability_group_if_not_exist.setter
+    def create_default_availability_group_if_not_exist(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loadBalancerConfigurations")
+    def load_balancer_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[LoadBalancerConfigurationArgs]]]]:
+        
+        ...
+    
+    @load_balancer_configurations.setter
+    def load_balancer_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LoadBalancerConfigurationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multiSubnetIpConfigurations")
+    def multi_subnet_ip_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[MultiSubnetIpConfigurationArgs]]]]:
+        
+        ...
+    
+    @multi_subnet_ip_configurations.setter
+    def multi_subnet_ip_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MultiSubnetIpConfigurationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @port.setter
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class AvailabilityGroupListener(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., availability_group_configuration: Optional[pulumi.Input[Union[AgConfigurationArgs, AgConfigurationArgsDict]]] = ..., availability_group_listener_name: Optional[pulumi.Input[_builtins.str]] = ..., availability_group_name: Optional[pulumi.Input[_builtins.str]] = ..., create_default_availability_group_if_not_exist: Optional[pulumi.Input[_builtins.bool]] = ..., load_balancer_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[LoadBalancerConfigurationArgs, LoadBalancerConfigurationArgsDict]]]]] = ..., multi_subnet_ip_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[MultiSubnetIpConfigurationArgs, MultiSubnetIpConfigurationArgsDict]]]]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sql_virtual_machine_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AvailabilityGroupListenerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AvailabilityGroupListener:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityGroupConfiguration")
+    def availability_group_configuration(self) -> pulumi.Output[Optional[outputs.AgConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityGroupName")
+    def availability_group_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createDefaultAvailabilityGroupIfNotExist")
+    def create_default_availability_group_if_not_exist(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loadBalancerConfigurations")
+    def load_balancer_configurations(self) -> pulumi.Output[Optional[Sequence[outputs.LoadBalancerConfigurationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multiSubnetIpConfigurations")
+    def multi_subnet_ip_configurations(self) -> pulumi.Output[Optional[Sequence[outputs.MultiSubnetIpConfigurationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

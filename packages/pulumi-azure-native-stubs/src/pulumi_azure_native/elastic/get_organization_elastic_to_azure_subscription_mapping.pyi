@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., ..., ...]
+@pulumi.output_type
+class GetOrganizationElasticToAzureSubscriptionMappingResult:
+    
+    def __init__(__self__, properties=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.ElasticOrganizationToAzureSubscriptionMappingResponsePropertiesResponse:
+        
+        ...
+    
+
+
+class AwaitableGetOrganizationElasticToAzureSubscriptionMappingResult(GetOrganizationElasticToAzureSubscriptionMappingResult):
+    def __await__(self): # -> Generator[Never, Any, GetOrganizationElasticToAzureSubscriptionMappingResult]:
+        ...
+    
+
+
+def get_organization_elastic_to_azure_subscription_mapping(opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetOrganizationElasticToAzureSubscriptionMappingResult:
+    
+    ...
+
+def get_organization_elastic_to_azure_subscription_mapping_output(opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetOrganizationElasticToAzureSubscriptionMappingResult]:
+    
+    ...
+

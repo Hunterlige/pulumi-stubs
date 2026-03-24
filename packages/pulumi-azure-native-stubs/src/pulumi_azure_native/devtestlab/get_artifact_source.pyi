@@ -1,0 +1,143 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetArtifactSourceResult', 'AwaitableGetArtifactSourceResult', 'get_artifact_source', 'get_artifact_source_output']
+@pulumi.output_type
+class GetArtifactSourceResult:
+    
+    def __init__(__self__, arm_template_folder_path=..., azure_api_version=..., branch_ref=..., created_date=..., display_name=..., folder_path=..., id=..., location=..., name=..., provisioning_state=..., security_token=..., source_type=..., status=..., system_data=..., tags=..., type=..., unique_identifier=..., uri=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="armTemplateFolderPath")
+    def arm_template_folder_path(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="branchRef")
+    def branch_ref(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdDate")
+    def created_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="folderPath")
+    def folder_path(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityToken")
+    def security_token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueIdentifier")
+    def unique_identifier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetArtifactSourceResult(GetArtifactSourceResult):
+    def __await__(self): # -> Generator[Never, Any, GetArtifactSourceResult]:
+        ...
+    
+
+
+def get_artifact_source(expand: Optional[_builtins.str] = ..., lab_name: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetArtifactSourceResult:
+    
+    ...
+
+def get_artifact_source_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., lab_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetArtifactSourceResult]:
+    
+    ...
+

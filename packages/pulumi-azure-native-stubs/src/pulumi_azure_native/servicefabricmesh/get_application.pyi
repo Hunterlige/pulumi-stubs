@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetApplicationResult', 'AwaitableGetApplicationResult', 'get_application', 'get_application_output']
+@pulumi.output_type
+class GetApplicationResult:
+    
+    def __init__(__self__, azure_api_version=..., debug_params=..., description=..., diagnostics=..., health_state=..., id=..., location=..., name=..., provisioning_state=..., service_names=..., services=..., status=..., status_details=..., tags=..., type=..., unhealthy_evaluation=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="debugParams")
+    def debug_params(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def diagnostics(self) -> Optional[outputs.DiagnosticsDescriptionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="healthState")
+    def health_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceNames")
+    def service_names(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def services(self) -> Optional[Sequence[outputs.ServiceResourceDescriptionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusDetails")
+    def status_details(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="unhealthyEvaluation")
+    def unhealthy_evaluation(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetApplicationResult(GetApplicationResult):
+    def __await__(self): # -> Generator[Never, Any, GetApplicationResult]:
+        ...
+    
+
+
+def get_application(application_resource_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetApplicationResult:
+    
+    ...
+
+def get_application_output(application_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetApplicationResult]:
+    
+    ...
+

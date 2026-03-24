@@ -1,0 +1,22 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['OsType', 'SupportType']
+@pulumi.type_token("azure-native:windowsesu:OsType")
+class OsType(_builtins.str, Enum):
+    
+    WINDOWS7 = ...
+    WINDOWS_SERVER2008 = ...
+    WINDOWS_SERVER2008_R2 = ...
+
+
+@pulumi.type_token("azure-native:windowsesu:SupportType")
+class SupportType(_builtins.str, Enum):
+    
+    SUPPLEMENTAL_SERVICING = ...
+    PREMIUM_ASSURANCE = ...
+
+

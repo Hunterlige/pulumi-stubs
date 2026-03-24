@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetExpressRouteCircuitPeeringResult', 'AwaitableGetExpressRouteCircuitPeeringResult', 'get_express_route_circuit_peering', 'get_express_route_circuit_peering_output']
+@pulumi.output_type
+class GetExpressRouteCircuitPeeringResult:
+    
+    def __init__(__self__, azure_asn=..., azure_api_version=..., connections=..., etag=..., express_route_connection=..., gateway_manager_etag=..., id=..., ipv6_peering_config=..., last_modified_by=..., microsoft_peering_config=..., name=..., peer_asn=..., peered_connections=..., peering_type=..., primary_azure_port=..., primary_peer_address_prefix=..., provisioning_state=..., route_filter=..., secondary_azure_port=..., secondary_peer_address_prefix=..., shared_key=..., state=..., stats=..., type=..., vlan_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureASN")
+    def azure_asn(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connections(self) -> Optional[Sequence[outputs.ExpressRouteCircuitConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expressRouteConnection")
+    def express_route_connection(self) -> Optional[outputs.ExpressRouteConnectionIdResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewayManagerEtag")
+    def gateway_manager_etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6PeeringConfig")
+    def ipv6_peering_config(self) -> Optional[outputs.Ipv6ExpressRouteCircuitPeeringConfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="microsoftPeeringConfig")
+    def microsoft_peering_config(self) -> Optional[outputs.ExpressRouteCircuitPeeringConfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerASN")
+    def peer_asn(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeredConnections")
+    def peered_connections(self) -> Sequence[outputs.PeerExpressRouteCircuitConnectionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringType")
+    def peering_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryAzurePort")
+    def primary_azure_port(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryPeerAddressPrefix")
+    def primary_peer_address_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routeFilter")
+    def route_filter(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryAzurePort")
+    def secondary_azure_port(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryPeerAddressPrefix")
+    def secondary_peer_address_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedKey")
+    def shared_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def stats(self) -> Optional[outputs.ExpressRouteCircuitStatsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vlanId")
+    def vlan_id(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+class AwaitableGetExpressRouteCircuitPeeringResult(GetExpressRouteCircuitPeeringResult):
+    def __await__(self): # -> Generator[Never, Any, GetExpressRouteCircuitPeeringResult]:
+        ...
+    
+
+
+def get_express_route_circuit_peering(circuit_name: Optional[_builtins.str] = ..., peering_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetExpressRouteCircuitPeeringResult:
+    
+    ...
+
+def get_express_route_circuit_peering_output(circuit_name: Optional[pulumi.Input[_builtins.str]] = ..., peering_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetExpressRouteCircuitPeeringResult]:
+    
+    ...
+

@@ -1,0 +1,79 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetMapDependencyViewForAllMachinesResult', 'AwaitableGetMapDependencyViewForAllMachinesResult', 'get_map_dependency_view_for_all_machines', 'get_map_dependency_view_for_all_machines_output']
+@pulumi.output_type
+class GetMapDependencyViewForAllMachinesResult:
+    
+    def __init__(__self__, end_time=..., error=..., id=..., name=..., properties=..., start_time=..., status=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTime")
+    def end_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[outputs.ErrorDetailResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.GetDependencyViewForAllMachinesResultPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetMapDependencyViewForAllMachinesResult(GetMapDependencyViewForAllMachinesResult):
+    def __await__(self): # -> Generator[Never, Any, GetMapDependencyViewForAllMachinesResult]:
+        ...
+    
+
+
+def get_map_dependency_view_for_all_machines(filters: Optional[Union[DependencyProcessFilter, DependencyProcessFilterDict]] = ..., map_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetMapDependencyViewForAllMachinesResult:
+    
+    ...
+
+def get_map_dependency_view_for_all_machines_output(filters: Optional[pulumi.Input[Optional[Union[DependencyProcessFilter, DependencyProcessFilterDict]]]] = ..., map_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetMapDependencyViewForAllMachinesResult]:
+    
+    ...
+

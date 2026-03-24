@@ -1,0 +1,44 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AuthenticationType', 'ManagedServiceIdentityType', 'PrivateEndpointServiceConnectionStatus', 'PublicNetworkAccess', 'SKU']
+@pulumi.type_token("azure-native:deviceupdate:AuthenticationType")
+class AuthenticationType(_builtins.str, Enum):
+    
+    KEY_BASED = ...
+
+
+@pulumi.type_token(...)
+class ManagedServiceIdentityType(_builtins.str, Enum):
+    
+    NONE = ...
+    SYSTEM_ASSIGNED = ...
+    USER_ASSIGNED = ...
+    SYSTEM_ASSIGNED_USER_ASSIGNED = ...
+
+
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+
+@pulumi.type_token("azure-native:deviceupdate:PublicNetworkAccess")
+class PublicNetworkAccess(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token("azure-native:deviceupdate:SKU")
+class SKU(_builtins.str, Enum):
+    
+    FREE = ...
+    STANDARD = ...
+
+

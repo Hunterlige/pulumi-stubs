@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetADOOAuthInfoResult', 'AwaitableGetADOOAuthInfoResult', 'get_adoo_auth_info', 'get_adoo_auth_info_output']
+@pulumi.output_type
+class GetADOOAuthInfoResult:
+    
+    def __init__(__self__, auth_url=..., token=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authURL")
+    def auth_url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetADOOAuthInfoResult(GetADOOAuthInfoResult):
+    def __await__(self): # -> Generator[Never, Any, GetADOOAuthInfoResult]:
+        ...
+    
+
+
+def get_adoo_auth_info(location: Optional[_builtins.str] = ..., redirect_url: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetADOOAuthInfoResult:
+    
+    ...
+
+def get_adoo_auth_info_output(location: Optional[pulumi.Input[_builtins.str]] = ..., redirect_url: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetADOOAuthInfoResult]:
+    
+    ...
+

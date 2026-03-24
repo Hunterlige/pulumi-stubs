@@ -1,0 +1,400 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ThreatIntelligenceIndicatorArgs', 'ThreatIntelligenceIndicator']
+@pulumi.input_type
+class ThreatIntelligenceIndicatorArgs:
+    def __init__(__self__, *, kind: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], confidence: Optional[pulumi.Input[_builtins.int]] = ..., created: Optional[pulumi.Input[_builtins.str]] = ..., created_by_ref: Optional[pulumi.Input[_builtins.str]] = ..., defanged: Optional[pulumi.Input[_builtins.bool]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., extensions: Optional[Any] = ..., external_id: Optional[pulumi.Input[_builtins.str]] = ..., external_last_updated_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., external_references: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceExternalReferenceArgs]]]] = ..., granular_markings: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceGranularMarkingModelArgs]]]] = ..., indicator_types: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., kill_chain_phases: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceKillChainPhaseArgs]]]] = ..., labels: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., language: Optional[pulumi.Input[_builtins.str]] = ..., last_updated_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., modified: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., object_marking_refs: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., parsed_pattern: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceParsedPatternArgs]]]] = ..., pattern: Optional[pulumi.Input[_builtins.str]] = ..., pattern_type: Optional[pulumi.Input[_builtins.str]] = ..., pattern_version: Optional[pulumi.Input[_builtins.str]] = ..., revoked: Optional[pulumi.Input[_builtins.bool]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ..., threat_intelligence_tags: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., threat_types: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., valid_from: Optional[pulumi.Input[_builtins.str]] = ..., valid_until: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def confidence(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @confidence.setter
+    def confidence(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def created(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @created.setter
+    def created(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByRef")
+    def created_by_ref(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @created_by_ref.setter
+    def created_by_ref(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def defanged(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @defanged.setter
+    def defanged(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def extensions(self) -> Optional[Any]:
+        
+        ...
+    
+    @extensions.setter
+    def extensions(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalId")
+    def external_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @external_id.setter
+    def external_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalLastUpdatedTimeUtc")
+    def external_last_updated_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @external_last_updated_time_utc.setter
+    def external_last_updated_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalReferences")
+    def external_references(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceExternalReferenceArgs]]]]:
+        
+        ...
+    
+    @external_references.setter
+    def external_references(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceExternalReferenceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="granularMarkings")
+    def granular_markings(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceGranularMarkingModelArgs]]]]:
+        
+        ...
+    
+    @granular_markings.setter
+    def granular_markings(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceGranularMarkingModelArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="indicatorTypes")
+    def indicator_types(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @indicator_types.setter
+    def indicator_types(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="killChainPhases")
+    def kill_chain_phases(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceKillChainPhaseArgs]]]]:
+        
+        ...
+    
+    @kill_chain_phases.setter
+    def kill_chain_phases(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceKillChainPhaseArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @labels.setter
+    def labels(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def language(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @language.setter
+    def language(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastUpdatedTimeUtc")
+    def last_updated_time_utc(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_updated_time_utc.setter
+    def last_updated_time_utc(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def modified(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @modified.setter
+    def modified(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="objectMarkingRefs")
+    def object_marking_refs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @object_marking_refs.setter
+    def object_marking_refs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parsedPattern")
+    def parsed_pattern(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceParsedPatternArgs]]]]:
+        
+        ...
+    
+    @parsed_pattern.setter
+    def parsed_pattern(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ThreatIntelligenceParsedPatternArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def pattern(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pattern.setter
+    def pattern(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="patternType")
+    def pattern_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pattern_type.setter
+    def pattern_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="patternVersion")
+    def pattern_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @pattern_version.setter
+    def pattern_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revoked(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @revoked.setter
+    def revoked(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="threatIntelligenceTags")
+    def threat_intelligence_tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @threat_intelligence_tags.setter
+    def threat_intelligence_tags(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="threatTypes")
+    def threat_types(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @threat_types.setter
+    def threat_types(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validFrom")
+    def valid_from(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @valid_from.setter
+    def valid_from(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validUntil")
+    def valid_until(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @valid_until.setter
+    def valid_until(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ThreatIntelligenceIndicator(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., confidence: Optional[pulumi.Input[_builtins.int]] = ..., created: Optional[pulumi.Input[_builtins.str]] = ..., created_by_ref: Optional[pulumi.Input[_builtins.str]] = ..., defanged: Optional[pulumi.Input[_builtins.bool]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., extensions: Optional[Any] = ..., external_id: Optional[pulumi.Input[_builtins.str]] = ..., external_last_updated_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., external_references: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ThreatIntelligenceExternalReferenceArgs, ThreatIntelligenceExternalReferenceArgsDict]]]]] = ..., granular_markings: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ThreatIntelligenceGranularMarkingModelArgs, ThreatIntelligenceGranularMarkingModelArgsDict]]]]] = ..., indicator_types: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., kill_chain_phases: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ThreatIntelligenceKillChainPhaseArgs, ThreatIntelligenceKillChainPhaseArgsDict]]]]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., labels: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., language: Optional[pulumi.Input[_builtins.str]] = ..., last_updated_time_utc: Optional[pulumi.Input[_builtins.str]] = ..., modified: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., object_marking_refs: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., parsed_pattern: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ThreatIntelligenceParsedPatternArgs, ThreatIntelligenceParsedPatternArgsDict]]]]] = ..., pattern: Optional[pulumi.Input[_builtins.str]] = ..., pattern_type: Optional[pulumi.Input[_builtins.str]] = ..., pattern_version: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., revoked: Optional[pulumi.Input[_builtins.bool]] = ..., source: Optional[pulumi.Input[_builtins.str]] = ..., threat_intelligence_tags: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., threat_types: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., valid_from: Optional[pulumi.Input[_builtins.str]] = ..., valid_until: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ThreatIntelligenceIndicatorArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ThreatIntelligenceIndicator:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

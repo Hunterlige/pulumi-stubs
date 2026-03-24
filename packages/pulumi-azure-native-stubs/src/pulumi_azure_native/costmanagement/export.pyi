@@ -1,0 +1,223 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ExportArgs', 'Export']
+@pulumi.input_type
+class ExportArgs:
+    def __init__(__self__, *, definition: pulumi.Input[ExportDefinitionArgs], delivery_info: pulumi.Input[ExportDeliveryInfoArgs], scope: pulumi.Input[_builtins.str], e_tag: Optional[pulumi.Input[_builtins.str]] = ..., export_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[Union[_builtins.str, FormatType]]] = ..., identity: Optional[pulumi.Input[SystemAssignedServiceIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., partition_data: Optional[pulumi.Input[_builtins.bool]] = ..., schedule: Optional[pulumi.Input[ExportScheduleArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def definition(self) -> pulumi.Input[ExportDefinitionArgs]:
+        
+        ...
+    
+    @definition.setter
+    def definition(self, value: pulumi.Input[ExportDefinitionArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryInfo")
+    def delivery_info(self) -> pulumi.Input[ExportDeliveryInfoArgs]:
+        
+        ...
+    
+    @delivery_info.setter
+    def delivery_info(self, value: pulumi.Input[ExportDeliveryInfoArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scope.setter
+    def scope(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @e_tag.setter
+    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exportName")
+    def export_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @export_name.setter
+    def export_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> Optional[pulumi.Input[Union[_builtins.str, FormatType]]]:
+        
+        ...
+    
+    @format.setter
+    def format(self, value: Optional[pulumi.Input[Union[_builtins.str, FormatType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[SystemAssignedServiceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[SystemAssignedServiceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionData")
+    def partition_data(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @partition_data.setter
+    def partition_data(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> Optional[pulumi.Input[ExportScheduleArgs]]:
+        
+        ...
+    
+    @schedule.setter
+    def schedule(self, value: Optional[pulumi.Input[ExportScheduleArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:costmanagement:Export")
+class Export(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., definition: Optional[pulumi.Input[Union[ExportDefinitionArgs, ExportDefinitionArgsDict]]] = ..., delivery_info: Optional[pulumi.Input[Union[ExportDeliveryInfoArgs, ExportDeliveryInfoArgsDict]]] = ..., e_tag: Optional[pulumi.Input[_builtins.str]] = ..., export_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[Union[_builtins.str, FormatType]]] = ..., identity: Optional[pulumi.Input[Union[SystemAssignedServiceIdentityArgs, SystemAssignedServiceIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., partition_data: Optional[pulumi.Input[_builtins.bool]] = ..., schedule: Optional[pulumi.Input[Union[ExportScheduleArgs, ExportScheduleArgsDict]]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ExportArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Export:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def definition(self) -> pulumi.Output[outputs.ExportDefinitionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryInfo")
+    def delivery_info(self) -> pulumi.Output[outputs.ExportDeliveryInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.SystemAssignedServiceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextRunTimeEstimate")
+    def next_run_time_estimate(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionData")
+    def partition_data(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runHistory")
+    def run_history(self) -> pulumi.Output[Optional[outputs.ExportExecutionListResultResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> pulumi.Output[Optional[outputs.ExportScheduleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,71 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListWhoisByDomainResult', 'AwaitableListWhoisByDomainResult', 'list_whois_by_domain', 'list_whois_by_domain_output']
+@pulumi.output_type
+class ListWhoisByDomainResult:
+    
+    def __init__(__self__, created=..., domain=..., expires=..., parsed_whois=..., server=..., updated=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def created(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domain(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expires(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parsedWhois")
+    def parsed_whois(self) -> Optional[outputs.EnrichmentDomainWhoisDetailsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def server(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def updated(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableListWhoisByDomainResult(ListWhoisByDomainResult):
+    def __await__(self): # -> Generator[Never, Any, ListWhoisByDomainResult]:
+        ...
+    
+
+
+def list_whois_by_domain(domain: Optional[_builtins.str] = ..., enrichment_type: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListWhoisByDomainResult:
+    
+    ...
+
+def list_whois_by_domain_output(domain: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., enrichment_type: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListWhoisByDomainResult]:
+    
+    ...
+

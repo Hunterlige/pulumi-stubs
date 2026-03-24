@@ -1,0 +1,131 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVpnGatewayResult', 'AwaitableGetVpnGatewayResult', 'get_vpn_gateway', 'get_vpn_gateway_output']
+@pulumi.output_type
+class GetVpnGatewayResult:
+    
+    def __init__(__self__, azure_api_version=..., bgp_settings=..., connections=..., enable_bgp_route_translation_for_nat=..., etag=..., id=..., ip_configurations=..., is_routing_preference_internet=..., location=..., name=..., nat_rules=..., provisioning_state=..., tags=..., type=..., virtual_hub=..., vpn_gateway_scale_unit=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bgpSettings")
+    def bgp_settings(self) -> Optional[outputs.BgpSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connections(self) -> Optional[Sequence[outputs.VpnConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableBgpRouteTranslationForNat")
+    def enable_bgp_route_translation_for_nat(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurations")
+    def ip_configurations(self) -> Sequence[outputs.VpnGatewayIpConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isRoutingPreferenceInternet")
+    def is_routing_preference_internet(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="natRules")
+    def nat_rules(self) -> Optional[Sequence[outputs.VpnGatewayNatRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHub")
+    def virtual_hub(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vpnGatewayScaleUnit")
+    def vpn_gateway_scale_unit(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+class AwaitableGetVpnGatewayResult(GetVpnGatewayResult):
+    def __await__(self): # -> Generator[Never, Any, GetVpnGatewayResult]:
+        ...
+    
+
+
+def get_vpn_gateway(gateway_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVpnGatewayResult:
+    
+    ...
+
+def get_vpn_gateway_output(gateway_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVpnGatewayResult]:
+    
+    ...
+

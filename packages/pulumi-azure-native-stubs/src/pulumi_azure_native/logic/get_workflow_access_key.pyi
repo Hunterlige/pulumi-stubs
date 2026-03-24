@@ -1,0 +1,69 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWorkflowAccessKeyResult', 'AwaitableGetWorkflowAccessKeyResult', 'get_workflow_access_key', 'get_workflow_access_key_output']
+@pulumi.output_type
+class GetWorkflowAccessKeyResult:
+    def __init__(__self__, azure_api_version=..., id=..., name=..., not_after=..., not_before=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notAfter")
+    def not_after(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notBefore")
+    def not_before(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetWorkflowAccessKeyResult(GetWorkflowAccessKeyResult):
+    def __await__(self): # -> Generator[Never, Any, GetWorkflowAccessKeyResult]:
+        ...
+    
+
+
+def get_workflow_access_key(access_key_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workflow_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWorkflowAccessKeyResult:
+    
+    ...
+
+def get_workflow_access_key_output(access_key_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workflow_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWorkflowAccessKeyResult]:
+    
+    ...
+

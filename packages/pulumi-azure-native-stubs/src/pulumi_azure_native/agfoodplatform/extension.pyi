@@ -1,0 +1,160 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ExtensionArgs', 'Extension']
+@pulumi.input_type
+class ExtensionArgs:
+    def __init__(__self__, *, data_manager_for_agriculture_resource_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], additional_api_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[ApiPropertiesArgs]]]] = ..., extension_id: Optional[pulumi.Input[_builtins.str]] = ..., extension_version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataManagerForAgricultureResourceName")
+    def data_manager_for_agriculture_resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @data_manager_for_agriculture_resource_name.setter
+    def data_manager_for_agriculture_resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalApiProperties")
+    def additional_api_properties(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[ApiPropertiesArgs]]]]:
+        
+        ...
+    
+    @additional_api_properties.setter
+    def additional_api_properties(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[ApiPropertiesArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionId")
+    def extension_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @extension_id.setter
+    def extension_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionVersion")
+    def extension_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @extension_version.setter
+    def extension_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:agfoodplatform:Extension")
+class Extension(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., additional_api_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ApiPropertiesArgs, ApiPropertiesArgsDict]]]]] = ..., data_manager_for_agriculture_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., extension_id: Optional[pulumi.Input[_builtins.str]] = ..., extension_version: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ExtensionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Extension:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalApiProperties")
+    def additional_api_properties(self) -> pulumi.Output[Mapping[str, outputs.ApiPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionApiDocsLink")
+    def extension_api_docs_link(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionAuthLink")
+    def extension_auth_link(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionCategory")
+    def extension_category(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionId")
+    def extension_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="installedExtensionVersion")
+    def installed_extension_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

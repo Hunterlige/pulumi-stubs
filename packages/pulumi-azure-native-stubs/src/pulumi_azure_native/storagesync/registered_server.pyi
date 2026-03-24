@@ -1,0 +1,359 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['RegisteredServerArgs', 'RegisteredServer']
+@pulumi.input_type
+class RegisteredServerArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], storage_sync_service_name: pulumi.Input[_builtins.str], agent_version: Optional[pulumi.Input[_builtins.str]] = ..., application_id: Optional[pulumi.Input[_builtins.str]] = ..., cluster_id: Optional[pulumi.Input[_builtins.str]] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., friendly_name: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[_builtins.bool]] = ..., last_heart_beat: Optional[pulumi.Input[_builtins.str]] = ..., server_certificate: Optional[pulumi.Input[_builtins.str]] = ..., server_id: Optional[pulumi.Input[_builtins.str]] = ..., server_os_version: Optional[pulumi.Input[_builtins.str]] = ..., server_role: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageSyncServiceName")
+    def storage_sync_service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @storage_sync_service_name.setter
+    def storage_sync_service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentVersion")
+    def agent_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agent_version.setter
+    def agent_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationId")
+    def application_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @application_id.setter
+    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cluster_id.setter
+    def cluster_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterName")
+    def cluster_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @cluster_name.setter
+    def cluster_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="friendlyName")
+    def friendly_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @friendly_name.setter
+    def friendly_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastHeartBeat")
+    def last_heart_beat(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @last_heart_beat.setter
+    def last_heart_beat(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverCertificate")
+    def server_certificate(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_certificate.setter
+    def server_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverId")
+    def server_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_id.setter
+    def server_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverOSVersion")
+    def server_os_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_os_version.setter
+    def server_os_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverRole")
+    def server_role(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_role.setter
+    def server_role(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:storagesync:RegisteredServer")
+class RegisteredServer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., agent_version: Optional[pulumi.Input[_builtins.str]] = ..., application_id: Optional[pulumi.Input[_builtins.str]] = ..., cluster_id: Optional[pulumi.Input[_builtins.str]] = ..., cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., friendly_name: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[_builtins.bool]] = ..., last_heart_beat: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_certificate: Optional[pulumi.Input[_builtins.str]] = ..., server_id: Optional[pulumi.Input[_builtins.str]] = ..., server_os_version: Optional[pulumi.Input[_builtins.str]] = ..., server_role: Optional[pulumi.Input[_builtins.str]] = ..., storage_sync_service_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: RegisteredServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> RegisteredServer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activeAuthType")
+    def active_auth_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentVersion")
+    def agent_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentVersionExpirationDate")
+    def agent_version_expiration_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentVersionStatus")
+    def agent_version_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationId")
+    def application_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterName")
+    def cluster_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveryEndpointUri")
+    def discovery_endpoint_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="friendlyName")
+    def friendly_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastHeartBeat")
+    def last_heart_beat(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastOperationName")
+    def last_operation_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastWorkflowId")
+    def last_workflow_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestApplicationId")
+    def latest_application_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementEndpointUri")
+    def management_endpoint_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monitoringConfiguration")
+    def monitoring_configuration(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monitoringEndpointUri")
+    def monitoring_endpoint_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceLocation")
+    def resource_location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverCertificate")
+    def server_certificate(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverId")
+    def server_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverManagementErrorCode")
+    def server_management_error_code(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverOSVersion")
+    def server_os_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverRole")
+    def server_role(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceLocation")
+    def service_location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageSyncServiceUid")
+    def storage_sync_service_uid(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,153 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AwsCloudTrailDataConnectorArgs', 'AwsCloudTrailDataConnector']
+@pulumi.input_type
+class AwsCloudTrailDataConnectorArgs:
+    def __init__(__self__, *, data_types: pulumi.Input[AwsCloudTrailDataConnectorDataTypesArgs], kind: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], aws_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., data_connector_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataTypes")
+    def data_types(self) -> pulumi.Input[AwsCloudTrailDataConnectorDataTypesArgs]:
+        
+        ...
+    
+    @data_types.setter
+    def data_types(self, value: pulumi.Input[AwsCloudTrailDataConnectorDataTypesArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="awsRoleArn")
+    def aws_role_arn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aws_role_arn.setter
+    def aws_role_arn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataConnectorId")
+    def data_connector_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @data_connector_id.setter
+    def data_connector_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class AwsCloudTrailDataConnector(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., aws_role_arn: Optional[pulumi.Input[_builtins.str]] = ..., data_connector_id: Optional[pulumi.Input[_builtins.str]] = ..., data_types: Optional[pulumi.Input[Union[AwsCloudTrailDataConnectorDataTypesArgs, AwsCloudTrailDataConnectorDataTypesArgsDict]]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AwsCloudTrailDataConnectorArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AwsCloudTrailDataConnector:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="awsRoleArn")
+    def aws_role_arn(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataTypes")
+    def data_types(self) -> pulumi.Output[outputs.AwsCloudTrailDataConnectorDataTypesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

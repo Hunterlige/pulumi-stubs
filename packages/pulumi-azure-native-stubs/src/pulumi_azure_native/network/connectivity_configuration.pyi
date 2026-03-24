@@ -1,0 +1,213 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ConnectivityConfigurationArgs', 'ConnectivityConfiguration']
+@pulumi.input_type
+class ConnectivityConfigurationArgs:
+    def __init__(__self__, *, applies_to_groups: pulumi.Input[Sequence[pulumi.Input[ConnectivityGroupItemArgs]]], connectivity_topology: pulumi.Input[Union[_builtins.str, ConnectivityTopology]], network_manager_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., delete_existing_peering: Optional[pulumi.Input[Union[_builtins.str, DeleteExistingPeering]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., hubs: Optional[pulumi.Input[Sequence[pulumi.Input[HubArgs]]]] = ..., is_global: Optional[pulumi.Input[Union[_builtins.str, IsGlobal]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appliesToGroups")
+    def applies_to_groups(self) -> pulumi.Input[Sequence[pulumi.Input[ConnectivityGroupItemArgs]]]:
+        
+        ...
+    
+    @applies_to_groups.setter
+    def applies_to_groups(self, value: pulumi.Input[Sequence[pulumi.Input[ConnectivityGroupItemArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectivityTopology")
+    def connectivity_topology(self) -> pulumi.Input[Union[_builtins.str, ConnectivityTopology]]:
+        
+        ...
+    
+    @connectivity_topology.setter
+    def connectivity_topology(self, value: pulumi.Input[Union[_builtins.str, ConnectivityTopology]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkManagerName")
+    def network_manager_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @network_manager_name.setter
+    def network_manager_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationName")
+    def configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @configuration_name.setter
+    def configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteExistingPeering")
+    def delete_existing_peering(self) -> Optional[pulumi.Input[Union[_builtins.str, DeleteExistingPeering]]]:
+        
+        ...
+    
+    @delete_existing_peering.setter
+    def delete_existing_peering(self, value: Optional[pulumi.Input[Union[_builtins.str, DeleteExistingPeering]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hubs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[HubArgs]]]]:
+        
+        ...
+    
+    @hubs.setter
+    def hubs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[HubArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isGlobal")
+    def is_global(self) -> Optional[pulumi.Input[Union[_builtins.str, IsGlobal]]]:
+        
+        ...
+    
+    @is_global.setter
+    def is_global(self, value: Optional[pulumi.Input[Union[_builtins.str, IsGlobal]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:network:ConnectivityConfiguration")
+class ConnectivityConfiguration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., applies_to_groups: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ConnectivityGroupItemArgs, ConnectivityGroupItemArgsDict]]]]] = ..., configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., connectivity_topology: Optional[pulumi.Input[Union[_builtins.str, ConnectivityTopology]]] = ..., delete_existing_peering: Optional[pulumi.Input[Union[_builtins.str, DeleteExistingPeering]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., hubs: Optional[pulumi.Input[Sequence[pulumi.Input[Union[HubArgs, HubArgsDict]]]]] = ..., is_global: Optional[pulumi.Input[Union[_builtins.str, IsGlobal]]] = ..., network_manager_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ConnectivityConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ConnectivityConfiguration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appliesToGroups")
+    def applies_to_groups(self) -> pulumi.Output[Sequence[outputs.ConnectivityGroupItemResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectivityTopology")
+    def connectivity_topology(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deleteExistingPeering")
+    def delete_existing_peering(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hubs(self) -> pulumi.Output[Optional[Sequence[outputs.HubResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isGlobal")
+    def is_global(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGuid")
+    def resource_guid(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

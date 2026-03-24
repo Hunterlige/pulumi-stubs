@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import TypedDict
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DocumentProcessorPropertiesArgs', 'DocumentProcessorPropertiesArgsDict']
+class DocumentProcessorPropertiesArgsDict(TypedDict):
+    
+    spo_tenant_id: pulumi.Input[_builtins.str]
+    spo_tenant_url: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DocumentProcessorPropertiesArgs:
+    def __init__(__self__, *, spo_tenant_id: pulumi.Input[_builtins.str], spo_tenant_url: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spoTenantId")
+    def spo_tenant_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @spo_tenant_id.setter
+    def spo_tenant_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="spoTenantUrl")
+    def spo_tenant_url(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @spo_tenant_url.setter
+    def spo_tenant_url(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+

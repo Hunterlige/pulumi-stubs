@@ -1,0 +1,233 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAutoImportJobResult', 'AwaitableGetAutoImportJobResult', 'get_auto_import_job', 'get_auto_import_job_output']
+@pulumi.output_type
+class GetAutoImportJobResult:
+    
+    def __init__(__self__, admin_status=..., auto_import_prefixes=..., azure_api_version=..., blob_sync_events=..., conflict_resolution_mode=..., enable_deletions=..., id=..., imported_directories=..., imported_files=..., imported_symlinks=..., last_completion_time_utc=..., last_started_time_utc=..., location=..., maximum_errors=..., name=..., preexisting_directories=..., preexisting_files=..., preexisting_symlinks=..., provisioning_state=..., rate_of_blob_import=..., rate_of_blob_walk=..., scan_end_time=..., scan_start_time=..., state=..., status_code=..., status_message=..., system_data=..., tags=..., total_blobs_imported=..., total_blobs_walked=..., total_conflicts=..., total_errors=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="adminStatus")
+    def admin_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoImportPrefixes")
+    def auto_import_prefixes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobSyncEvents")
+    def blob_sync_events(self) -> outputs.AutoImportJobResponseBlobSyncEvents:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conflictResolutionMode")
+    def conflict_resolution_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableDeletions")
+    def enable_deletions(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedDirectories")
+    def imported_directories(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedFiles")
+    def imported_files(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importedSymlinks")
+    def imported_symlinks(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastCompletionTimeUTC")
+    def last_completion_time_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastStartedTimeUTC")
+    def last_started_time_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maximumErrors")
+    def maximum_errors(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingDirectories")
+    def preexisting_directories(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingFiles")
+    def preexisting_files(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preexistingSymlinks")
+    def preexisting_symlinks(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rateOfBlobImport")
+    def rate_of_blob_import(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rateOfBlobWalk")
+    def rate_of_blob_walk(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanEndTime")
+    def scan_end_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scanStartTime")
+    def scan_start_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusCode")
+    def status_code(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusMessage")
+    def status_message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalBlobsImported")
+    def total_blobs_imported(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalBlobsWalked")
+    def total_blobs_walked(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalConflicts")
+    def total_conflicts(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalErrors")
+    def total_errors(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetAutoImportJobResult(GetAutoImportJobResult):
+    def __await__(self): # -> Generator[Never, Any, GetAutoImportJobResult]:
+        ...
+    
+
+
+def get_auto_import_job(aml_filesystem_name: Optional[_builtins.str] = ..., auto_import_job_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAutoImportJobResult:
+    
+    ...
+
+def get_auto_import_job_output(aml_filesystem_name: Optional[pulumi.Input[_builtins.str]] = ..., auto_import_job_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAutoImportJobResult]:
+    
+    ...
+

@@ -1,0 +1,106 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetWebAppPremierAddOnResult', 'AwaitableGetWebAppPremierAddOnResult', 'get_web_app_premier_add_on', 'get_web_app_premier_add_on_output']
+@pulumi.output_type
+class GetWebAppPremierAddOnResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., kind=..., location=..., marketplace_offer=..., marketplace_publisher=..., name=..., product=..., sku=..., tags=..., type=..., vendor=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="marketplaceOffer")
+    def marketplace_offer(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="marketplacePublisher")
+    def marketplace_publisher(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def product(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vendor(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetWebAppPremierAddOnResult(GetWebAppPremierAddOnResult):
+    def __await__(self): # -> Generator[Never, Any, GetWebAppPremierAddOnResult]:
+        ...
+    
+
+
+def get_web_app_premier_add_on(name: Optional[_builtins.str] = ..., premier_add_on_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetWebAppPremierAddOnResult:
+    
+    ...
+
+def get_web_app_premier_add_on_output(name: Optional[pulumi.Input[_builtins.str]] = ..., premier_add_on_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetWebAppPremierAddOnResult]:
+    
+    ...
+

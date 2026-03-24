@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IntegrationAccountPartnerArgs', 'IntegrationAccountPartner']
+@pulumi.input_type
+class IntegrationAccountPartnerArgs:
+    def __init__(__self__, *, content: pulumi.Input[PartnerContentArgs], integration_account_name: pulumi.Input[_builtins.str], partner_type: pulumi.Input[Union[_builtins.str, PartnerType]], resource_group_name: pulumi.Input[_builtins.str], location: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., partner_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> pulumi.Input[PartnerContentArgs]:
+        
+        ...
+    
+    @content.setter
+    def content(self, value: pulumi.Input[PartnerContentArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="integrationAccountName")
+    def integration_account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @integration_account_name.setter
+    def integration_account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerType")
+    def partner_type(self) -> pulumi.Input[Union[_builtins.str, PartnerType]]:
+        
+        ...
+    
+    @partner_type.setter
+    def partner_type(self, value: pulumi.Input[Union[_builtins.str, PartnerType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Any]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerName")
+    def partner_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @partner_name.setter
+    def partner_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:logic:IntegrationAccountPartner")
+class IntegrationAccountPartner(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., content: Optional[pulumi.Input[Union[PartnerContentArgs, PartnerContentArgsDict]]] = ..., integration_account_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., partner_name: Optional[pulumi.Input[_builtins.str]] = ..., partner_type: Optional[pulumi.Input[Union[_builtins.str, PartnerType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IntegrationAccountPartnerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> IntegrationAccountPartner:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="changedTime")
+    def changed_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> pulumi.Output[outputs.PartnerContentResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTime")
+    def created_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerType")
+    def partner_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

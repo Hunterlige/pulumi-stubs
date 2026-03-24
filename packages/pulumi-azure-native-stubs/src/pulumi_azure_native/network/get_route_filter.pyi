@@ -1,0 +1,101 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRouteFilterResult', 'AwaitableGetRouteFilterResult', 'get_route_filter', 'get_route_filter_output']
+@pulumi.output_type
+class GetRouteFilterResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., id=..., ipv6_peerings=..., location=..., name=..., peerings=..., provisioning_state=..., rules=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6Peerings")
+    def ipv6_peerings(self) -> Sequence[outputs.ExpressRouteCircuitPeeringResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def peerings(self) -> Sequence[outputs.ExpressRouteCircuitPeeringResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[Sequence[outputs.RouteFilterRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRouteFilterResult(GetRouteFilterResult):
+    def __await__(self): # -> Generator[Never, Any, GetRouteFilterResult]:
+        ...
+    
+
+
+def get_route_filter(expand: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., route_filter_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRouteFilterResult:
+    
+    ...
+
+def get_route_filter_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., route_filter_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRouteFilterResult]:
+    
+    ...
+

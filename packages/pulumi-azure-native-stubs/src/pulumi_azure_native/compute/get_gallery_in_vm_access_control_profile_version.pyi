@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetGalleryInVMAccessControlProfileVersionResult', ..., 'get_gallery_in_vm_access_control_profile_version', ...]
+@pulumi.output_type
+class GetGalleryInVMAccessControlProfileVersionResult:
+    
+    def __init__(__self__, azure_api_version=..., default_access=..., exclude_from_latest=..., id=..., location=..., mode=..., name=..., provisioning_state=..., published_date=..., replication_status=..., rules=..., system_data=..., tags=..., target_locations=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultAccess")
+    def default_access(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="excludeFromLatest")
+    def exclude_from_latest(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publishedDate")
+    def published_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationStatus")
+    def replication_status(self) -> outputs.ReplicationStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rules(self) -> Optional[outputs.AccessControlRulesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetLocations")
+    def target_locations(self) -> Optional[Sequence[outputs.TargetRegionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetGalleryInVMAccessControlProfileVersionResult(GetGalleryInVMAccessControlProfileVersionResult):
+    def __await__(self): # -> Generator[Never, Any, GetGalleryInVMAccessControlProfileVersionResult]:
+        ...
+    
+
+
+def get_gallery_in_vm_access_control_profile_version(gallery_name: Optional[_builtins.str] = ..., in_vm_access_control_profile_name: Optional[_builtins.str] = ..., in_vm_access_control_profile_version_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetGalleryInVMAccessControlProfileVersionResult:
+    
+    ...
+
+def get_gallery_in_vm_access_control_profile_version_output(gallery_name: Optional[pulumi.Input[_builtins.str]] = ..., in_vm_access_control_profile_name: Optional[pulumi.Input[_builtins.str]] = ..., in_vm_access_control_profile_version_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetGalleryInVMAccessControlProfileVersionResult]:
+    
+    ...
+

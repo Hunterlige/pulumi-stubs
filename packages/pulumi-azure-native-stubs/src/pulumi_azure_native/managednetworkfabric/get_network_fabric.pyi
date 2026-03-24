@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNetworkFabricResult', 'AwaitableGetNetworkFabricResult', 'get_network_fabric', 'get_network_fabric_output']
+@pulumi.output_type
+class GetNetworkFabricResult:
+    
+    def __init__(__self__, administrative_state=..., annotation=..., azure_api_version=..., configuration_state=..., fabric_asn=..., fabric_version=..., id=..., ipv4_prefix=..., ipv6_prefix=..., l2_isolation_domains=..., l3_isolation_domains=..., location=..., management_network_configuration=..., name=..., network_fabric_controller_id=..., network_fabric_sku=..., provisioning_state=..., rack_count=..., racks=..., router_ids=..., server_count_per_rack=..., system_data=..., tags=..., terminal_server_configuration=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administrativeState")
+    def administrative_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationState")
+    def configuration_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fabricASN")
+    def fabric_asn(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fabricVersion")
+    def fabric_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv4Prefix")
+    def ipv4_prefix(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6Prefix")
+    def ipv6_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l2IsolationDomains")
+    def l2_isolation_domains(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l3IsolationDomains")
+    def l3_isolation_domains(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementNetworkConfiguration")
+    def management_network_configuration(self) -> outputs.ManagementNetworkConfigurationPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricControllerId")
+    def network_fabric_controller_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkFabricSku")
+    def network_fabric_sku(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rackCount")
+    def rack_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def racks(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routerIds")
+    def router_ids(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverCountPerRack")
+    def server_count_per_rack(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="terminalServerConfiguration")
+    def terminal_server_configuration(self) -> outputs.TerminalServerConfigurationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetNetworkFabricResult(GetNetworkFabricResult):
+    def __await__(self): # -> Generator[Never, Any, GetNetworkFabricResult]:
+        ...
+    
+
+
+def get_network_fabric(network_fabric_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNetworkFabricResult:
+    
+    ...
+
+def get_network_fabric_output(network_fabric_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNetworkFabricResult]:
+    
+    ...
+

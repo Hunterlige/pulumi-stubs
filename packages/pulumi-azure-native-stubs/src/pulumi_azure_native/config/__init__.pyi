@@ -1,0 +1,35 @@
+
+
+import builtins as _builtins
+import warnings
+import sys
+import pulumi
+import pulumi.runtime
+from typing import Any, Mapping, NotRequired, Optional, Sequence, TypeAlias, TypedDict, Union, overload
+from .. import _utilities
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+auxiliaryTenantIds: Optional[str]
+clientCertificatePassword: Optional[str]
+clientCertificatePath: Optional[str]
+clientId: Optional[str]
+clientSecret: Optional[str]
+disableInstanceDiscovery: Optional[bool]
+disablePulumiPartnerId: Optional[bool]
+environment: Optional[str]
+location: Optional[str]
+metadataHost: Optional[str]
+msiEndpoint: Optional[str]
+oidcRequestToken: Optional[str]
+oidcRequestUrl: Optional[str]
+oidcToken: Optional[str]
+oidcTokenFilePath: Optional[str]
+partnerId: Optional[str]
+subscriptionId: Optional[str]
+tenantId: Optional[str]
+useDefaultAzureCredential: Optional[bool]
+useMsi: Optional[bool]
+useOidc: Optional[bool]

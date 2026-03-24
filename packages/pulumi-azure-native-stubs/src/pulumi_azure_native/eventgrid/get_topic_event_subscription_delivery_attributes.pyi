@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetTopicEventSubscriptionDeliveryAttributesResult', ..., 'get_topic_event_subscription_delivery_attributes', ...]
+@pulumi.output_type
+class GetTopicEventSubscriptionDeliveryAttributesResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[Any]]:
+        
+        ...
+    
+
+
+class AwaitableGetTopicEventSubscriptionDeliveryAttributesResult(GetTopicEventSubscriptionDeliveryAttributesResult):
+    def __await__(self): # -> Generator[Never, Any, GetTopicEventSubscriptionDeliveryAttributesResult]:
+        ...
+    
+
+
+def get_topic_event_subscription_delivery_attributes(event_subscription_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., topic_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTopicEventSubscriptionDeliveryAttributesResult:
+    
+    ...
+
+def get_topic_event_subscription_delivery_attributes_output(event_subscription_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTopicEventSubscriptionDeliveryAttributesResult]:
+    
+    ...
+

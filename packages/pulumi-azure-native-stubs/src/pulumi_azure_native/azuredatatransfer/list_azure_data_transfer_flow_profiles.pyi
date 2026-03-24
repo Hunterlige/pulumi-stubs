@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListAzureDataTransferFlowProfilesResult', 'AwaitableListAzureDataTransferFlowProfilesResult', 'list_azure_data_transfer_flow_profiles', 'list_azure_data_transfer_flow_profiles_output']
+@pulumi.output_type
+class ListAzureDataTransferFlowProfilesResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.FlowProfileMetadataResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListAzureDataTransferFlowProfilesResult(ListAzureDataTransferFlowProfilesResult):
+    def __await__(self): # -> Generator[Never, Any, ListAzureDataTransferFlowProfilesResult]:
+        ...
+    
+
+
+def list_azure_data_transfer_flow_profiles(pipeline: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListAzureDataTransferFlowProfilesResult:
+    
+    ...
+
+def list_azure_data_transfer_flow_profiles_output(pipeline: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListAzureDataTransferFlowProfilesResult]:
+    
+    ...
+

@@ -1,0 +1,197 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualMachineResult', 'AwaitableGetVirtualMachineResult', 'get_virtual_machine', 'get_virtual_machine_output']
+@pulumi.output_type
+class GetVirtualMachineResult:
+    
+    def __init__(__self__, availability_sets=..., azure_api_version=..., checkpoint_type=..., checkpoints=..., cloud_id=..., extended_location=..., generation=..., guest_agent_profile=..., hardware_profile=..., id=..., identity=..., inventory_item_id=..., last_restored_vm_checkpoint=..., location=..., name=..., network_profile=..., os_profile=..., power_state=..., provisioning_state=..., storage_profile=..., system_data=..., tags=..., template_id=..., type=..., uuid=..., vm_name=..., vmm_server_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilitySets")
+    def availability_sets(self) -> Optional[Sequence[outputs.VirtualMachinePropertiesResponseAvailabilitySets]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="checkpointType")
+    def checkpoint_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def checkpoints(self) -> Optional[Sequence[outputs.CheckpointResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cloudId")
+    def cloud_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> outputs.ExtendedLocationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def generation(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="guestAgentProfile")
+    def guest_agent_profile(self) -> Optional[outputs.GuestAgentProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareProfile")
+    def hardware_profile(self) -> Optional[outputs.HardwareProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inventoryItemId")
+    def inventory_item_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastRestoredVMCheckpoint")
+    def last_restored_vm_checkpoint(self) -> outputs.CheckpointResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkProfile")
+    def network_profile(self) -> Optional[outputs.NetworkProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osProfile")
+    def os_profile(self) -> Optional[outputs.OsProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="powerState")
+    def power_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageProfile")
+    def storage_profile(self) -> Optional[outputs.StorageProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateId")
+    def template_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uuid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmName")
+    def vm_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmmServerId")
+    def vmm_server_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualMachineResult(GetVirtualMachineResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualMachineResult]:
+        ...
+    
+
+
+def get_virtual_machine(resource_group_name: Optional[_builtins.str] = ..., virtual_machine_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualMachineResult:
+    
+    ...
+
+def get_virtual_machine_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_machine_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualMachineResult]:
+    
+    ...
+

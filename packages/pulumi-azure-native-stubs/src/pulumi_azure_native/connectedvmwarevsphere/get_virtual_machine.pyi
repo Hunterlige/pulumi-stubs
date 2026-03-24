@@ -1,0 +1,233 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualMachineResult', 'AwaitableGetVirtualMachineResult', 'get_virtual_machine', 'get_virtual_machine_output']
+@pulumi.output_type
+class GetVirtualMachineResult:
+    
+    def __init__(__self__, azure_api_version=..., custom_resource_name=..., extended_location=..., firmware_type=..., folder_path=..., guest_agent_profile=..., hardware_profile=..., id=..., identity=..., instance_uuid=..., inventory_item_id=..., kind=..., location=..., mo_name=..., mo_ref_id=..., name=..., network_profile=..., os_profile=..., placement_profile=..., power_state=..., provisioning_state=..., resource_pool_id=..., security_profile=..., smbios_uuid=..., statuses=..., storage_profile=..., system_data=..., tags=..., template_id=..., type=..., uuid=..., v_center_id=..., vm_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customResourceName")
+    def custom_resource_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firmwareType")
+    def firmware_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="folderPath")
+    def folder_path(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="guestAgentProfile")
+    def guest_agent_profile(self) -> Optional[outputs.GuestAgentProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareProfile")
+    def hardware_profile(self) -> Optional[outputs.HardwareProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceUuid")
+    def instance_uuid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inventoryItemId")
+    def inventory_item_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="moName")
+    def mo_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="moRefId")
+    def mo_ref_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkProfile")
+    def network_profile(self) -> Optional[outputs.NetworkProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osProfile")
+    def os_profile(self) -> Optional[outputs.OsProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="placementProfile")
+    def placement_profile(self) -> Optional[outputs.PlacementProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="powerState")
+    def power_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourcePoolId")
+    def resource_pool_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityProfile")
+    def security_profile(self) -> Optional[outputs.SecurityProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smbiosUuid")
+    def smbios_uuid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def statuses(self) -> Sequence[outputs.ResourceStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageProfile")
+    def storage_profile(self) -> Optional[outputs.StorageProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="templateId")
+    def template_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uuid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vCenterId")
+    def v_center_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmId")
+    def vm_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualMachineResult(GetVirtualMachineResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualMachineResult]:
+        ...
+    
+
+
+def get_virtual_machine(resource_group_name: Optional[_builtins.str] = ..., virtual_machine_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualMachineResult:
+    
+    ...
+
+def get_virtual_machine_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_machine_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualMachineResult]:
+    
+    ...
+

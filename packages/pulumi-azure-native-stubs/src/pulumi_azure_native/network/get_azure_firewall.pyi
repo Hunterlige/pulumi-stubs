@@ -1,0 +1,167 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAzureFirewallResult', 'AwaitableGetAzureFirewallResult', 'get_azure_firewall', 'get_azure_firewall_output']
+@pulumi.output_type
+class GetAzureFirewallResult:
+    
+    def __init__(__self__, additional_properties=..., application_rule_collections=..., autoscale_configuration=..., azure_api_version=..., etag=..., firewall_policy=..., hub_ip_addresses=..., id=..., ip_configurations=..., ip_groups=..., location=..., management_ip_configuration=..., name=..., nat_rule_collections=..., network_rule_collections=..., provisioning_state=..., sku=..., tags=..., threat_intel_mode=..., type=..., virtual_hub=..., zones=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalProperties")
+    def additional_properties(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationRuleCollections")
+    def application_rule_collections(self) -> Optional[Sequence[outputs.AzureFirewallApplicationRuleCollectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoscaleConfiguration")
+    def autoscale_configuration(self) -> Optional[outputs.AzureFirewallAutoscaleConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="firewallPolicy")
+    def firewall_policy(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hubIPAddresses")
+    def hub_ip_addresses(self) -> Optional[outputs.HubIPAddressesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurations")
+    def ip_configurations(self) -> Optional[Sequence[outputs.AzureFirewallIPConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipGroups")
+    def ip_groups(self) -> Sequence[outputs.AzureFirewallIpGroupsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementIpConfiguration")
+    def management_ip_configuration(self) -> Optional[outputs.AzureFirewallIPConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="natRuleCollections")
+    def nat_rule_collections(self) -> Optional[Sequence[outputs.AzureFirewallNatRuleCollectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkRuleCollections")
+    def network_rule_collections(self) -> Optional[Sequence[outputs.AzureFirewallNetworkRuleCollectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.AzureFirewallSkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="threatIntelMode")
+    def threat_intel_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHub")
+    def virtual_hub(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+class AwaitableGetAzureFirewallResult(GetAzureFirewallResult):
+    def __await__(self): # -> Generator[Never, Any, GetAzureFirewallResult]:
+        ...
+    
+
+
+def get_azure_firewall(azure_firewall_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAzureFirewallResult:
+    
+    ...
+
+def get_azure_firewall_output(azure_firewall_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAzureFirewallResult]:
+    
+    ...
+

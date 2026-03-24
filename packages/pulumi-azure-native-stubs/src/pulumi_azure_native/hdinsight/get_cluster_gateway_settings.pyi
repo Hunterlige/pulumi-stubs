@@ -1,0 +1,52 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetClusterGatewaySettingsResult', 'AwaitableGetClusterGatewaySettingsResult', 'get_cluster_gateway_settings', 'get_cluster_gateway_settings_output']
+@pulumi.output_type
+class GetClusterGatewaySettingsResult:
+    
+    def __init__(__self__, is_credential_enabled=..., password=..., user_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isCredentialEnabled")
+    def is_credential_enabled(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetClusterGatewaySettingsResult(GetClusterGatewaySettingsResult):
+    def __await__(self): # -> Generator[Never, Any, GetClusterGatewaySettingsResult]:
+        ...
+    
+
+
+def get_cluster_gateway_settings(cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetClusterGatewaySettingsResult:
+    
+    ...
+
+def get_cluster_gateway_settings_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetClusterGatewaySettingsResult]:
+    
+    ...
+

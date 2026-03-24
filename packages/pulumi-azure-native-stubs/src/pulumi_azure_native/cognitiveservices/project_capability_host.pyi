@@ -1,0 +1,118 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ProjectCapabilityHostInitArgs', 'ProjectCapabilityHost']
+@pulumi.input_type
+class ProjectCapabilityHostInitArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], project_capability_host_properties: pulumi.Input[ProjectCapabilityHostArgs], project_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], capability_host_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectCapabilityHostProperties")
+    def project_capability_host_properties(self) -> pulumi.Input[ProjectCapabilityHostArgs]:
+        
+        ...
+    
+    @project_capability_host_properties.setter
+    def project_capability_host_properties(self, value: pulumi.Input[ProjectCapabilityHostArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectName")
+    def project_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @project_name.setter
+    def project_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="capabilityHostName")
+    def capability_host_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @capability_host_name.setter
+    def capability_host_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ProjectCapabilityHost(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., capability_host_name: Optional[pulumi.Input[_builtins.str]] = ..., project_capability_host_properties: Optional[pulumi.Input[Union[ProjectCapabilityHostArgs, ProjectCapabilityHostArgsDict]]] = ..., project_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ProjectCapabilityHostInitArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ProjectCapabilityHost:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectCapabilityHostProperties")
+    def project_capability_host_properties(self) -> pulumi.Output[outputs.ProjectCapabilityHostResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,155 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetViewResult', 'AwaitableGetViewResult', 'get_view', 'get_view_output']
+@pulumi.output_type
+class GetViewResult:
+    
+    def __init__(__self__, accumulated=..., azure_api_version=..., chart=..., created_on=..., currency=..., data_set=..., date_range=..., display_name=..., e_tag=..., id=..., include_monetary_commitment=..., kpis=..., metric=..., modified_on=..., name=..., pivots=..., scope=..., time_period=..., timeframe=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def accumulated(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def chart(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdOn")
+    def created_on(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def currency(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSet")
+    def data_set(self) -> Optional[outputs.ReportConfigDatasetResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dateRange")
+    def date_range(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="includeMonetaryCommitment")
+    def include_monetary_commitment(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kpis(self) -> Optional[Sequence[outputs.KpiPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metric(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="modifiedOn")
+    def modified_on(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def pivots(self) -> Optional[Sequence[outputs.PivotPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timePeriod")
+    def time_period(self) -> Optional[outputs.ReportConfigTimePeriodResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def timeframe(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetViewResult(GetViewResult):
+    def __await__(self): # -> Generator[Never, Any, GetViewResult]:
+        ...
+    
+
+
+def get_view(view_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetViewResult:
+    
+    ...
+
+def get_view_output(view_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetViewResult]:
+    
+    ...
+

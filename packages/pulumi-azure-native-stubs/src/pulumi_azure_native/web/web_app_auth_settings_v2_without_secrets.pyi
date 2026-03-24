@@ -1,0 +1,179 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WebAppAuthSettingsV2WithoutSecretsArgs', 'WebAppAuthSettingsV2WithoutSecrets']
+@pulumi.input_type
+class WebAppAuthSettingsV2WithoutSecretsArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], global_validation: Optional[pulumi.Input[GlobalValidationArgs]] = ..., http_settings: Optional[pulumi.Input[HttpSettingsArgs]] = ..., identity_providers: Optional[pulumi.Input[IdentityProvidersArgs]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., login: Optional[pulumi.Input[LoginArgs]] = ..., platform: Optional[pulumi.Input[AuthPlatformArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="globalValidation")
+    def global_validation(self) -> Optional[pulumi.Input[GlobalValidationArgs]]:
+        
+        ...
+    
+    @global_validation.setter
+    def global_validation(self, value: Optional[pulumi.Input[GlobalValidationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpSettings")
+    def http_settings(self) -> Optional[pulumi.Input[HttpSettingsArgs]]:
+        
+        ...
+    
+    @http_settings.setter
+    def http_settings(self, value: Optional[pulumi.Input[HttpSettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityProviders")
+    def identity_providers(self) -> Optional[pulumi.Input[IdentityProvidersArgs]]:
+        
+        ...
+    
+    @identity_providers.setter
+    def identity_providers(self, value: Optional[pulumi.Input[IdentityProvidersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def login(self) -> Optional[pulumi.Input[LoginArgs]]:
+        
+        ...
+    
+    @login.setter
+    def login(self, value: Optional[pulumi.Input[LoginArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def platform(self) -> Optional[pulumi.Input[AuthPlatformArgs]]:
+        
+        ...
+    
+    @platform.setter
+    def platform(self, value: Optional[pulumi.Input[AuthPlatformArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class WebAppAuthSettingsV2WithoutSecrets(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., global_validation: Optional[pulumi.Input[Union[GlobalValidationArgs, GlobalValidationArgsDict]]] = ..., http_settings: Optional[pulumi.Input[Union[HttpSettingsArgs, HttpSettingsArgsDict]]] = ..., identity_providers: Optional[pulumi.Input[Union[IdentityProvidersArgs, IdentityProvidersArgsDict]]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., login: Optional[pulumi.Input[Union[LoginArgs, LoginArgsDict]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., platform: Optional[pulumi.Input[Union[AuthPlatformArgs, AuthPlatformArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WebAppAuthSettingsV2WithoutSecretsArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WebAppAuthSettingsV2WithoutSecrets:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="globalValidation")
+    def global_validation(self) -> pulumi.Output[Optional[outputs.GlobalValidationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpSettings")
+    def http_settings(self) -> pulumi.Output[Optional[outputs.HttpSettingsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityProviders")
+    def identity_providers(self) -> pulumi.Output[Optional[outputs.IdentityProvidersResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def login(self) -> pulumi.Output[Optional[outputs.LoginResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def platform(self) -> pulumi.Output[Optional[outputs.AuthPlatformResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

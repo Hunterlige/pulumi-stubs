@@ -1,0 +1,169 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['EncryptionProtectorArgs', 'EncryptionProtector']
+@pulumi.input_type
+class EncryptionProtectorArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], server_key_type: pulumi.Input[Union[_builtins.str, ServerKeyType]], server_name: pulumi.Input[_builtins.str], auto_rotation_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., encryption_protector_name: Optional[pulumi.Input[_builtins.str]] = ..., server_key_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverKeyType")
+    def server_key_type(self) -> pulumi.Input[Union[_builtins.str, ServerKeyType]]:
+        
+        ...
+    
+    @server_key_type.setter
+    def server_key_type(self, value: pulumi.Input[Union[_builtins.str, ServerKeyType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoRotationEnabled")
+    def auto_rotation_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @auto_rotation_enabled.setter
+    def auto_rotation_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptionProtectorName")
+    def encryption_protector_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @encryption_protector_name.setter
+    def encryption_protector_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverKeyName")
+    def server_key_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_key_name.setter
+    def server_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:EncryptionProtector")
+class EncryptionProtector(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., auto_rotation_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., encryption_protector_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_key_name: Optional[pulumi.Input[_builtins.str]] = ..., server_key_type: Optional[pulumi.Input[Union[_builtins.str, ServerKeyType]]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: EncryptionProtectorArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> EncryptionProtector:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoRotationEnabled")
+    def auto_rotation_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverKeyName")
+    def server_key_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverKeyType")
+    def server_key_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subregion(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def thumbprint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,88 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SubscriptionTarDirectoryArgs', 'SubscriptionTarDirectory']
+@pulumi.input_type
+class SubscriptionTarDirectoryArgs:
+    def __init__(__self__, *, properties: Optional[pulumi.Input[TargetDirectoryRequestPropertiesArgs]] = ..., subscription_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[pulumi.Input[TargetDirectoryRequestPropertiesArgs]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: Optional[pulumi.Input[TargetDirectoryRequestPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionId")
+    def subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @subscription_id.setter
+    def subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:subscription:SubscriptionTarDirectory")
+class SubscriptionTarDirectory(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., properties: Optional[pulumi.Input[Union[TargetDirectoryRequestPropertiesArgs, TargetDirectoryRequestPropertiesArgsDict]]] = ..., subscription_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: Optional[SubscriptionTarDirectoryArgs] = ..., opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SubscriptionTarDirectory:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.TargetDirectoryResultPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

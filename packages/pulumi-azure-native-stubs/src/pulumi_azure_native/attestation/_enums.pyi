@@ -1,0 +1,29 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['PrivateEndpointServiceConnectionStatus', 'PublicNetworkAccessType', 'TpmAttestationAuthenticationType']
+@pulumi.type_token(...)
+class PrivateEndpointServiceConnectionStatus(_builtins.str, Enum):
+    
+    PENDING = ...
+    APPROVED = ...
+    REJECTED = ...
+
+
+@pulumi.type_token("azure-native:attestation:PublicNetworkAccessType")
+class PublicNetworkAccessType(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+
+@pulumi.type_token(...)
+class TpmAttestationAuthenticationType(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+

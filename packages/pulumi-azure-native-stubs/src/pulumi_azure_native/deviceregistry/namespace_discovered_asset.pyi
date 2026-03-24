@@ -1,0 +1,537 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['NamespaceDiscoveredAssetArgs', 'NamespaceDiscoveredAsset']
+@pulumi.input_type
+class NamespaceDiscoveredAssetArgs:
+    def __init__(__self__, *, device_ref: pulumi.Input[DeviceRefArgs], discovery_id: pulumi.Input[_builtins.str], extended_location: pulumi.Input[ExtendedLocationArgs], namespace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], version: pulumi.Input[_builtins.float], asset_type_refs: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., attributes: Optional[Any] = ..., datasets: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredDatasetArgs]]]] = ..., default_datasets_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_datasets_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[DatasetBrokerStateStoreDestinationArgs, DatasetMqttDestinationArgs, DatasetStorageDestinationArgs]]]]] = ..., default_events_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_events_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[EventMqttDestinationArgs, EventStorageDestinationArgs]]]]] = ..., default_management_groups_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_streams_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_streams_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[StreamMqttDestinationArgs, StreamStorageDestinationArgs]]]]] = ..., discovered_asset_name: Optional[pulumi.Input[_builtins.str]] = ..., documentation_uri: Optional[pulumi.Input[_builtins.str]] = ..., events: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredEventArgs]]]] = ..., hardware_revision: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., management_groups: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredManagementGroupArgs]]]] = ..., manufacturer: Optional[pulumi.Input[_builtins.str]] = ..., manufacturer_uri: Optional[pulumi.Input[_builtins.str]] = ..., model: Optional[pulumi.Input[_builtins.str]] = ..., product_code: Optional[pulumi.Input[_builtins.str]] = ..., serial_number: Optional[pulumi.Input[_builtins.str]] = ..., software_revision: Optional[pulumi.Input[_builtins.str]] = ..., streams: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredStreamArgs]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceRef")
+    def device_ref(self) -> pulumi.Input[DeviceRefArgs]:
+        
+        ...
+    
+    @device_ref.setter
+    def device_ref(self, value: pulumi.Input[DeviceRefArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveryId")
+    def discovery_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @discovery_id.setter
+    def discovery_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @namespace_name.setter
+    def namespace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assetTypeRefs")
+    def asset_type_refs(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @asset_type_refs.setter
+    def asset_type_refs(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[Any]:
+        
+        ...
+    
+    @attributes.setter
+    def attributes(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def datasets(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredDatasetArgs]]]]:
+        
+        ...
+    
+    @datasets.setter
+    def datasets(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredDatasetArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetsConfiguration")
+    def default_datasets_configuration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_datasets_configuration.setter
+    def default_datasets_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetsDestinations")
+    def default_datasets_destinations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[DatasetBrokerStateStoreDestinationArgs, DatasetMqttDestinationArgs, DatasetStorageDestinationArgs]]]]]:
+        
+        ...
+    
+    @default_datasets_destinations.setter
+    def default_datasets_destinations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[DatasetBrokerStateStoreDestinationArgs, DatasetMqttDestinationArgs, DatasetStorageDestinationArgs]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsConfiguration")
+    def default_events_configuration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_events_configuration.setter
+    def default_events_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsDestinations")
+    def default_events_destinations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[EventMqttDestinationArgs, EventStorageDestinationArgs]]]]]:
+        
+        ...
+    
+    @default_events_destinations.setter
+    def default_events_destinations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[EventMqttDestinationArgs, EventStorageDestinationArgs]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultManagementGroupsConfiguration")
+    def default_management_groups_configuration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_management_groups_configuration.setter
+    def default_management_groups_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStreamsConfiguration")
+    def default_streams_configuration(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_streams_configuration.setter
+    def default_streams_configuration(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStreamsDestinations")
+    def default_streams_destinations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[StreamMqttDestinationArgs, StreamStorageDestinationArgs]]]]]:
+        
+        ...
+    
+    @default_streams_destinations.setter
+    def default_streams_destinations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[StreamMqttDestinationArgs, StreamStorageDestinationArgs]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveredAssetName")
+    def discovered_asset_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @discovered_asset_name.setter
+    def discovered_asset_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="documentationUri")
+    def documentation_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @documentation_uri.setter
+    def documentation_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def events(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredEventArgs]]]]:
+        
+        ...
+    
+    @events.setter
+    def events(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredEventArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareRevision")
+    def hardware_revision(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @hardware_revision.setter
+    def hardware_revision(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementGroups")
+    def management_groups(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredManagementGroupArgs]]]]:
+        
+        ...
+    
+    @management_groups.setter
+    def management_groups(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredManagementGroupArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def manufacturer(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @manufacturer.setter
+    def manufacturer(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="manufacturerUri")
+    def manufacturer_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @manufacturer_uri.setter
+    def manufacturer_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @model.setter
+    def model(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productCode")
+    def product_code(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @product_code.setter
+    def product_code(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serialNumber")
+    def serial_number(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @serial_number.setter
+    def serial_number(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="softwareRevision")
+    def software_revision(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @software_revision.setter
+    def software_revision(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def streams(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredStreamArgs]]]]:
+        
+        ...
+    
+    @streams.setter
+    def streams(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceDiscoveredStreamArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class NamespaceDiscoveredAsset(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., asset_type_refs: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., attributes: Optional[Any] = ..., datasets: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NamespaceDiscoveredDatasetArgs, NamespaceDiscoveredDatasetArgsDict]]]]] = ..., default_datasets_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_datasets_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[Union[DatasetBrokerStateStoreDestinationArgs, DatasetBrokerStateStoreDestinationArgsDict], Union[DatasetMqttDestinationArgs, DatasetMqttDestinationArgsDict], Union[DatasetStorageDestinationArgs, DatasetStorageDestinationArgsDict]]]]]] = ..., default_events_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_events_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[Union[EventMqttDestinationArgs, EventMqttDestinationArgsDict], Union[EventStorageDestinationArgs, EventStorageDestinationArgsDict]]]]]] = ..., default_management_groups_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_streams_configuration: Optional[pulumi.Input[_builtins.str]] = ..., default_streams_destinations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[Union[StreamMqttDestinationArgs, StreamMqttDestinationArgsDict], Union[StreamStorageDestinationArgs, StreamStorageDestinationArgsDict]]]]]] = ..., device_ref: Optional[pulumi.Input[Union[DeviceRefArgs, DeviceRefArgsDict]]] = ..., discovered_asset_name: Optional[pulumi.Input[_builtins.str]] = ..., discovery_id: Optional[pulumi.Input[_builtins.str]] = ..., documentation_uri: Optional[pulumi.Input[_builtins.str]] = ..., events: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NamespaceDiscoveredEventArgs, NamespaceDiscoveredEventArgsDict]]]]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., hardware_revision: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., management_groups: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NamespaceDiscoveredManagementGroupArgs, NamespaceDiscoveredManagementGroupArgsDict]]]]] = ..., manufacturer: Optional[pulumi.Input[_builtins.str]] = ..., manufacturer_uri: Optional[pulumi.Input[_builtins.str]] = ..., model: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., product_code: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., serial_number: Optional[pulumi.Input[_builtins.str]] = ..., software_revision: Optional[pulumi.Input[_builtins.str]] = ..., streams: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NamespaceDiscoveredStreamArgs, NamespaceDiscoveredStreamArgsDict]]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., version: Optional[pulumi.Input[_builtins.float]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: NamespaceDiscoveredAssetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> NamespaceDiscoveredAsset:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assetTypeRefs")
+    def asset_type_refs(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def datasets(self) -> pulumi.Output[Optional[Sequence[outputs.NamespaceDiscoveredDatasetResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetsConfiguration")
+    def default_datasets_configuration(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDatasetsDestinations")
+    def default_datasets_destinations(self) -> pulumi.Output[Optional[Sequence[Any]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsConfiguration")
+    def default_events_configuration(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultEventsDestinations")
+    def default_events_destinations(self) -> pulumi.Output[Optional[Sequence[Any]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultManagementGroupsConfiguration")
+    def default_management_groups_configuration(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStreamsConfiguration")
+    def default_streams_configuration(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStreamsDestinations")
+    def default_streams_destinations(self) -> pulumi.Output[Optional[Sequence[Any]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deviceRef")
+    def device_ref(self) -> pulumi.Output[outputs.DeviceRefResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveryId")
+    def discovery_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="documentationUri")
+    def documentation_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def events(self) -> pulumi.Output[Optional[Sequence[outputs.NamespaceDiscoveredEventResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareRevision")
+    def hardware_revision(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managementGroups")
+    def management_groups(self) -> pulumi.Output[Optional[Sequence[outputs.NamespaceDiscoveredManagementGroupResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def manufacturer(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="manufacturerUri")
+    def manufacturer_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productCode")
+    def product_code(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serialNumber")
+    def serial_number(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="softwareRevision")
+    def software_revision(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def streams(self) -> pulumi.Output[Optional[Sequence[outputs.NamespaceDiscoveredStreamResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+
+

@@ -1,0 +1,88 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetExpressRouteCircuitAuthorizationResult', 'AwaitableGetExpressRouteCircuitAuthorizationResult', 'get_express_route_circuit_authorization', 'get_express_route_circuit_authorization_output']
+@pulumi.output_type
+class GetExpressRouteCircuitAuthorizationResult:
+    
+    def __init__(__self__, authorization_key=..., authorization_use_status=..., azure_api_version=..., connection_resource_uri=..., etag=..., id=..., name=..., provisioning_state=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationKey")
+    def authorization_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationUseStatus")
+    def authorization_use_status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionResourceUri")
+    def connection_resource_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetExpressRouteCircuitAuthorizationResult(GetExpressRouteCircuitAuthorizationResult):
+    def __await__(self): # -> Generator[Never, Any, GetExpressRouteCircuitAuthorizationResult]:
+        ...
+    
+
+
+def get_express_route_circuit_authorization(authorization_name: Optional[_builtins.str] = ..., circuit_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetExpressRouteCircuitAuthorizationResult:
+    
+    ...
+
+def get_express_route_circuit_authorization_output(authorization_name: Optional[pulumi.Input[_builtins.str]] = ..., circuit_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetExpressRouteCircuitAuthorizationResult]:
+    
+    ...
+

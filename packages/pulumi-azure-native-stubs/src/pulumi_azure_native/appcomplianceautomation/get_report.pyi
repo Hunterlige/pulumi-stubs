@@ -1,0 +1,149 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetReportResult', 'AwaitableGetReportResult', 'get_report', 'get_report_output']
+@pulumi.output_type
+class GetReportResult:
+    
+    def __init__(__self__, azure_api_version=..., cert_records=..., compliance_status=..., errors=..., id=..., last_trigger_time=..., name=..., next_trigger_time=..., offer_guid=..., provisioning_state=..., resources=..., status=..., storage_info=..., subscriptions=..., system_data=..., tenant_id=..., time_zone=..., trigger_time=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certRecords")
+    def cert_records(self) -> Sequence[outputs.CertSyncRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="complianceStatus")
+    def compliance_status(self) -> outputs.ReportComplianceStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastTriggerTime")
+    def last_trigger_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextTriggerTime")
+    def next_trigger_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offerGuid")
+    def offer_guid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def resources(self) -> Sequence[outputs.ResourceMetadataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageInfo")
+    def storage_info(self) -> Optional[outputs.StorageInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subscriptions(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeZone")
+    def time_zone(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="triggerTime")
+    def trigger_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetReportResult(GetReportResult):
+    def __await__(self): # -> Generator[Never, Any, GetReportResult]:
+        ...
+    
+
+
+def get_report(report_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetReportResult:
+    
+    ...
+
+def get_report_output(report_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetReportResult]:
+    
+    ...
+

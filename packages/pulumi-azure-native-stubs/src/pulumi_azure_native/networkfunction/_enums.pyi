@@ -1,0 +1,31 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['DestinationType', 'EmissionType', 'IngestionType', 'SourceType']
+@pulumi.type_token("azure-native:networkfunction:DestinationType")
+class DestinationType(_builtins.str, Enum):
+    
+    AZURE_MONITOR = ...
+
+
+@pulumi.type_token("azure-native:networkfunction:EmissionType")
+class EmissionType(_builtins.str, Enum):
+    
+    IPFIX = ...
+
+
+@pulumi.type_token("azure-native:networkfunction:IngestionType")
+class IngestionType(_builtins.str, Enum):
+    
+    IPFIX = ...
+
+
+@pulumi.type_token("azure-native:networkfunction:SourceType")
+class SourceType(_builtins.str, Enum):
+    
+    RESOURCE = ...
+
+

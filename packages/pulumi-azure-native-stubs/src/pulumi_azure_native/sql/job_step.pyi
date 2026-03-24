@@ -1,0 +1,209 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['JobStepArgs', 'JobStep']
+@pulumi.input_type
+class JobStepArgs:
+    def __init__(__self__, *, action: pulumi.Input[JobStepActionArgs], job_agent_name: pulumi.Input[_builtins.str], job_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], target_group: pulumi.Input[_builtins.str], credential: Optional[pulumi.Input[_builtins.str]] = ..., execution_options: Optional[pulumi.Input[JobStepExecutionOptionsArgs]] = ..., output: Optional[pulumi.Input[JobStepOutputArgs]] = ..., step_id: Optional[pulumi.Input[_builtins.int]] = ..., step_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> pulumi.Input[JobStepActionArgs]:
+        
+        ...
+    
+    @action.setter
+    def action(self, value: pulumi.Input[JobStepActionArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobAgentName")
+    def job_agent_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @job_agent_name.setter
+    def job_agent_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobName")
+    def job_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @job_name.setter
+    def job_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetGroup")
+    def target_group(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @target_group.setter
+    def target_group(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credential(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @credential.setter
+    def credential(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executionOptions")
+    def execution_options(self) -> Optional[pulumi.Input[JobStepExecutionOptionsArgs]]:
+        
+        ...
+    
+    @execution_options.setter
+    def execution_options(self, value: Optional[pulumi.Input[JobStepExecutionOptionsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def output(self) -> Optional[pulumi.Input[JobStepOutputArgs]]:
+        
+        ...
+    
+    @output.setter
+    def output(self, value: Optional[pulumi.Input[JobStepOutputArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stepId")
+    def step_id(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @step_id.setter
+    def step_id(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stepName")
+    def step_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @step_name.setter
+    def step_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:JobStep")
+class JobStep(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., action: Optional[pulumi.Input[Union[JobStepActionArgs, JobStepActionArgsDict]]] = ..., credential: Optional[pulumi.Input[_builtins.str]] = ..., execution_options: Optional[pulumi.Input[Union[JobStepExecutionOptionsArgs, JobStepExecutionOptionsArgsDict]]] = ..., job_agent_name: Optional[pulumi.Input[_builtins.str]] = ..., job_name: Optional[pulumi.Input[_builtins.str]] = ..., output: Optional[pulumi.Input[Union[JobStepOutputArgs, JobStepOutputArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., step_id: Optional[pulumi.Input[_builtins.int]] = ..., step_name: Optional[pulumi.Input[_builtins.str]] = ..., target_group: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: JobStepArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> JobStep:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> pulumi.Output[outputs.JobStepActionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credential(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executionOptions")
+    def execution_options(self) -> pulumi.Output[Optional[outputs.JobStepExecutionOptionsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def output(self) -> pulumi.Output[Optional[outputs.JobStepOutputResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stepId")
+    def step_id(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetGroup")
+    def target_group(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

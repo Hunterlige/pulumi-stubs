@@ -1,0 +1,337 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PolicyAssignmentArgs', 'PolicyAssignment']
+@pulumi.input_type
+class PolicyAssignmentArgs:
+    def __init__(__self__, *, scope: pulumi.Input[_builtins.str], assignment_type: Optional[pulumi.Input[Union[_builtins.str, AssignmentType]]] = ..., definition_version: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enforcement_mode: Optional[pulumi.Input[Union[_builtins.str, EnforcementMode]]] = ..., identity: Optional[pulumi.Input[IdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., non_compliance_messages: Optional[pulumi.Input[Sequence[pulumi.Input[NonComplianceMessageArgs]]]] = ..., not_scopes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., overrides: Optional[pulumi.Input[Sequence[pulumi.Input[OverrideArgs]]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterValuesValueArgs]]]] = ..., policy_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., policy_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_selectors: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceSelectorArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scope.setter
+    def scope(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentType")
+    def assignment_type(self) -> Optional[pulumi.Input[Union[_builtins.str, AssignmentType]]]:
+        
+        ...
+    
+    @assignment_type.setter
+    def assignment_type(self, value: Optional[pulumi.Input[Union[_builtins.str, AssignmentType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="definitionVersion")
+    def definition_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @definition_version.setter
+    def definition_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforcementMode")
+    def enforcement_mode(self) -> Optional[pulumi.Input[Union[_builtins.str, EnforcementMode]]]:
+        
+        ...
+    
+    @enforcement_mode.setter
+    def enforcement_mode(self, value: Optional[pulumi.Input[Union[_builtins.str, EnforcementMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[IdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Any]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nonComplianceMessages")
+    def non_compliance_messages(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NonComplianceMessageArgs]]]]:
+        
+        ...
+    
+    @non_compliance_messages.setter
+    def non_compliance_messages(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NonComplianceMessageArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notScopes")
+    def not_scopes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @not_scopes.setter
+    def not_scopes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def overrides(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[OverrideArgs]]]]:
+        
+        ...
+    
+    @overrides.setter
+    def overrides(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[OverrideArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterValuesValueArgs]]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterValuesValueArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyAssignmentName")
+    def policy_assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @policy_assignment_name.setter
+    def policy_assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @policy_definition_id.setter
+    def policy_definition_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceSelectors")
+    def resource_selectors(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceSelectorArgs]]]]:
+        
+        ...
+    
+    @resource_selectors.setter
+    def resource_selectors(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceSelectorArgs]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:authorization:PolicyAssignment")
+class PolicyAssignment(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assignment_type: Optional[pulumi.Input[Union[_builtins.str, AssignmentType]]] = ..., definition_version: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., enforcement_mode: Optional[pulumi.Input[Union[_builtins.str, EnforcementMode]]] = ..., identity: Optional[pulumi.Input[Union[IdentityArgs, IdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., non_compliance_messages: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NonComplianceMessageArgs, NonComplianceMessageArgsDict]]]]] = ..., not_scopes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., overrides: Optional[pulumi.Input[Sequence[pulumi.Input[Union[OverrideArgs, OverrideArgsDict]]]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ParameterValuesValueArgs, ParameterValuesValueArgsDict]]]]] = ..., policy_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., policy_definition_id: Optional[pulumi.Input[_builtins.str]] = ..., resource_selectors: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ResourceSelectorArgs, ResourceSelectorArgsDict]]]]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: PolicyAssignmentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> PolicyAssignment:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentType")
+    def assignment_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="definitionVersion")
+    def definition_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveDefinitionVersion")
+    def effective_definition_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforcementMode")
+    def enforcement_mode(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.IdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceId")
+    def instance_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestDefinitionVersion")
+    def latest_definition_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nonComplianceMessages")
+    def non_compliance_messages(self) -> pulumi.Output[Optional[Sequence[outputs.NonComplianceMessageResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notScopes")
+    def not_scopes(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def overrides(self) -> pulumi.Output[Optional[Sequence[outputs.OverrideResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Output[Optional[Mapping[str, outputs.ParameterValuesValueResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceSelectors")
+    def resource_selectors(self) -> pulumi.Output[Optional[Sequence[outputs.ResourceSelectorResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

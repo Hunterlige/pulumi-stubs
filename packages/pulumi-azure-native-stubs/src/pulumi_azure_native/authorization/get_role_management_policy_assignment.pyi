@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRoleManagementPolicyAssignmentResult', 'AwaitableGetRoleManagementPolicyAssignmentResult', 'get_role_management_policy_assignment', 'get_role_management_policy_assignment_output']
+@pulumi.output_type
+class GetRoleManagementPolicyAssignmentResult:
+    
+    def __init__(__self__, azure_api_version=..., effective_rules=..., id=..., name=..., policy_assignment_properties=..., policy_id=..., role_definition_id=..., scope=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveRules")
+    def effective_rules(self) -> Sequence[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyAssignmentProperties")
+    def policy_assignment_properties(self) -> outputs.PolicyAssignmentPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyId")
+    def policy_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRoleManagementPolicyAssignmentResult(GetRoleManagementPolicyAssignmentResult):
+    def __await__(self): # -> Generator[Never, Any, GetRoleManagementPolicyAssignmentResult]:
+        ...
+    
+
+
+def get_role_management_policy_assignment(role_management_policy_assignment_name: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRoleManagementPolicyAssignmentResult:
+    
+    ...
+
+def get_role_management_policy_assignment_output(role_management_policy_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRoleManagementPolicyAssignmentResult]:
+    
+    ...
+

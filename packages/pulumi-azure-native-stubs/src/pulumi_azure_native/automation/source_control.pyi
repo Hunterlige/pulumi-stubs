@@ -1,0 +1,233 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SourceControlArgs', 'SourceControl']
+@pulumi.input_type
+class SourceControlArgs:
+    def __init__(__self__, *, automation_account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], auto_sync: Optional[pulumi.Input[_builtins.bool]] = ..., branch: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., folder_path: Optional[pulumi.Input[_builtins.str]] = ..., publish_runbook: Optional[pulumi.Input[_builtins.bool]] = ..., repo_url: Optional[pulumi.Input[_builtins.str]] = ..., security_token: Optional[pulumi.Input[SourceControlSecurityTokenPropertiesArgs]] = ..., source_control_name: Optional[pulumi.Input[_builtins.str]] = ..., source_type: Optional[pulumi.Input[Union[_builtins.str, SourceType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automationAccountName")
+    def automation_account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @automation_account_name.setter
+    def automation_account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoSync")
+    def auto_sync(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @auto_sync.setter
+    def auto_sync(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def branch(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @branch.setter
+    def branch(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="folderPath")
+    def folder_path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @folder_path.setter
+    def folder_path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publishRunbook")
+    def publish_runbook(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @publish_runbook.setter
+    def publish_runbook(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="repoUrl")
+    def repo_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @repo_url.setter
+    def repo_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityToken")
+    def security_token(self) -> Optional[pulumi.Input[SourceControlSecurityTokenPropertiesArgs]]:
+        
+        ...
+    
+    @security_token.setter
+    def security_token(self, value: Optional[pulumi.Input[SourceControlSecurityTokenPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceControlName")
+    def source_control_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_control_name.setter
+    def source_control_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SourceType]]]:
+        
+        ...
+    
+    @source_type.setter
+    def source_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SourceType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:automation:SourceControl")
+class SourceControl(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., auto_sync: Optional[pulumi.Input[_builtins.bool]] = ..., automation_account_name: Optional[pulumi.Input[_builtins.str]] = ..., branch: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., folder_path: Optional[pulumi.Input[_builtins.str]] = ..., publish_runbook: Optional[pulumi.Input[_builtins.bool]] = ..., repo_url: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., security_token: Optional[pulumi.Input[Union[SourceControlSecurityTokenPropertiesArgs, SourceControlSecurityTokenPropertiesArgsDict]]] = ..., source_control_name: Optional[pulumi.Input[_builtins.str]] = ..., source_type: Optional[pulumi.Input[Union[_builtins.str, SourceType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SourceControlArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SourceControl:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoSync")
+    def auto_sync(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def branch(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTime")
+    def creation_time(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="folderPath")
+    def folder_path(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedTime")
+    def last_modified_time(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publishRunbook")
+    def publish_runbook(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="repoUrl")
+    def repo_url(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceType")
+    def source_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

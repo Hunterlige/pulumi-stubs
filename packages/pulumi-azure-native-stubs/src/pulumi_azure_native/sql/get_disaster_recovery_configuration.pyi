@@ -1,0 +1,106 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDisasterRecoveryConfigurationResult', 'AwaitableGetDisasterRecoveryConfigurationResult', 'get_disaster_recovery_configuration', 'get_disaster_recovery_configuration_output']
+@pulumi.output_type
+class GetDisasterRecoveryConfigurationResult:
+    
+    def __init__(__self__, auto_failover=..., azure_api_version=..., failover_policy=..., id=..., location=..., logical_server_name=..., name=..., partner_logical_server_name=..., partner_server_id=..., role=..., status=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoFailover")
+    def auto_failover(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverPolicy")
+    def failover_policy(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logicalServerName")
+    def logical_server_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerLogicalServerName")
+    def partner_logical_server_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerServerId")
+    def partner_server_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDisasterRecoveryConfigurationResult(GetDisasterRecoveryConfigurationResult):
+    def __await__(self): # -> Generator[Never, Any, GetDisasterRecoveryConfigurationResult]:
+        ...
+    
+
+
+def get_disaster_recovery_configuration(disaster_recovery_configuration_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDisasterRecoveryConfigurationResult:
+    
+    ...
+
+def get_disaster_recovery_configuration_output(disaster_recovery_configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDisasterRecoveryConfigurationResult]:
+    
+    ...
+

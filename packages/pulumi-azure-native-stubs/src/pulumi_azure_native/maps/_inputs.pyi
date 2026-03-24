@@ -1,0 +1,454 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['CorsRulesArgs', 'CorsRulesArgsDict', 'CorsRuleArgs', 'CorsRuleArgsDict', 'CreatorPropertiesArgs', 'CreatorPropertiesArgsDict', 'EncryptionCustomerManagedKeyEncryptionArgs', 'EncryptionCustomerManagedKeyEncryptionArgsDict', 'EncryptionKeyEncryptionKeyIdentityArgs', 'EncryptionKeyEncryptionKeyIdentityArgsDict', 'EncryptionArgs', 'EncryptionArgsDict', 'LinkedResourceArgs', 'LinkedResourceArgsDict', 'ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'MapsAccountPropertiesLocationsArgs', 'MapsAccountPropertiesLocationsArgsDict', 'MapsAccountPropertiesArgs', 'MapsAccountPropertiesArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'SkuArgs', 'SkuArgsDict']
+class CorsRulesArgsDict(TypedDict):
+    
+    cors_rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgsDict]]]]
+
+
+@pulumi.input_type
+class CorsRulesArgs:
+    def __init__(__self__, *, cors_rules: Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="corsRules")
+    def cors_rules(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]]:
+        
+        ...
+    
+    @cors_rules.setter
+    def cors_rules(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CorsRuleArgs]]]]): # -> None:
+        ...
+    
+
+
+class CorsRuleArgsDict(TypedDict):
+    
+    allowed_origins: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+
+
+@pulumi.input_type
+class CorsRuleArgs:
+    def __init__(__self__, *, allowed_origins: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedOrigins")
+    def allowed_origins(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @allowed_origins.setter
+    def allowed_origins(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+
+
+class CreatorPropertiesArgsDict(TypedDict):
+    
+    storage_units: pulumi.Input[_builtins.int]
+    consumed_storage_unit_size_in_bytes: NotRequired[pulumi.Input[_builtins.int]]
+    total_storage_unit_size_in_bytes: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class CreatorPropertiesArgs:
+    def __init__(__self__, *, storage_units: pulumi.Input[_builtins.int], consumed_storage_unit_size_in_bytes: Optional[pulumi.Input[_builtins.int]] = ..., total_storage_unit_size_in_bytes: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageUnits")
+    def storage_units(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @storage_units.setter
+    def storage_units(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="consumedStorageUnitSizeInBytes")
+    def consumed_storage_unit_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @consumed_storage_unit_size_in_bytes.setter
+    def consumed_storage_unit_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalStorageUnitSizeInBytes")
+    def total_storage_unit_size_in_bytes(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @total_storage_unit_size_in_bytes.setter
+    def total_storage_unit_size_in_bytes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class EncryptionCustomerManagedKeyEncryptionArgsDict(TypedDict):
+    
+    key_encryption_key_identity: NotRequired[pulumi.Input[EncryptionKeyEncryptionKeyIdentityArgsDict]]
+    key_encryption_key_url: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EncryptionCustomerManagedKeyEncryptionArgs:
+    def __init__(__self__, *, key_encryption_key_identity: Optional[pulumi.Input[EncryptionKeyEncryptionKeyIdentityArgs]] = ..., key_encryption_key_url: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyEncryptionKeyIdentity")
+    def key_encryption_key_identity(self) -> Optional[pulumi.Input[EncryptionKeyEncryptionKeyIdentityArgs]]:
+        
+        ...
+    
+    @key_encryption_key_identity.setter
+    def key_encryption_key_identity(self, value: Optional[pulumi.Input[EncryptionKeyEncryptionKeyIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyEncryptionKeyUrl")
+    def key_encryption_key_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_encryption_key_url.setter
+    def key_encryption_key_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class EncryptionKeyEncryptionKeyIdentityArgsDict(TypedDict):
+    
+    delegated_identity_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    federated_client_id: NotRequired[pulumi.Input[_builtins.str]]
+    identity_type: NotRequired[pulumi.Input[_builtins.str]]
+    user_assigned_identity_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EncryptionKeyEncryptionKeyIdentityArgs:
+    def __init__(__self__, *, delegated_identity_client_id: Optional[pulumi.Input[_builtins.str]] = ..., federated_client_id: Optional[pulumi.Input[_builtins.str]] = ..., identity_type: Optional[pulumi.Input[_builtins.str]] = ..., user_assigned_identity_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="delegatedIdentityClientId")
+    def delegated_identity_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @delegated_identity_client_id.setter
+    def delegated_identity_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="federatedClientId")
+    def federated_client_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @federated_client_id.setter
+    def federated_client_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityType")
+    def identity_type(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @identity_type.setter
+    def identity_type(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentityResourceId")
+    def user_assigned_identity_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_assigned_identity_resource_id.setter
+    def user_assigned_identity_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class EncryptionArgsDict(TypedDict):
+    
+    customer_managed_key_encryption: NotRequired[pulumi.Input[EncryptionCustomerManagedKeyEncryptionArgsDict]]
+    infrastructure_encryption: NotRequired[pulumi.Input[Union[_builtins.str, InfrastructureEncryption]]]
+
+
+@pulumi.input_type
+class EncryptionArgs:
+    def __init__(__self__, *, customer_managed_key_encryption: Optional[pulumi.Input[EncryptionCustomerManagedKeyEncryptionArgs]] = ..., infrastructure_encryption: Optional[pulumi.Input[Union[_builtins.str, InfrastructureEncryption]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerManagedKeyEncryption")
+    def customer_managed_key_encryption(self) -> Optional[pulumi.Input[EncryptionCustomerManagedKeyEncryptionArgs]]:
+        
+        ...
+    
+    @customer_managed_key_encryption.setter
+    def customer_managed_key_encryption(self, value: Optional[pulumi.Input[EncryptionCustomerManagedKeyEncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureEncryption")
+    def infrastructure_encryption(self) -> Optional[pulumi.Input[Union[_builtins.str, InfrastructureEncryption]]]:
+        
+        ...
+    
+    @infrastructure_encryption.setter
+    def infrastructure_encryption(self, value: Optional[pulumi.Input[Union[_builtins.str, InfrastructureEncryption]]]): # -> None:
+        ...
+    
+
+
+class LinkedResourceArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+    unique_name: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class LinkedResourceArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str], unique_name: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueName")
+    def unique_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @unique_name.setter
+    def unique_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ManagedServiceIdentityArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedServiceIdentityArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class MapsAccountPropertiesLocationsArgsDict(TypedDict):
+    
+    location_name: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class MapsAccountPropertiesLocationsArgs:
+    def __init__(__self__, *, location_name: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="locationName")
+    def location_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @location_name.setter
+    def location_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class MapsAccountPropertiesArgsDict(TypedDict):
+    
+    cors: NotRequired[pulumi.Input[CorsRulesArgsDict]]
+    disable_local_auth: NotRequired[pulumi.Input[_builtins.bool]]
+    encryption: NotRequired[pulumi.Input[EncryptionArgsDict]]
+    linked_resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[LinkedResourceArgsDict]]]]
+    locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[MapsAccountPropertiesLocationsArgsDict]]]]
+
+
+@pulumi.input_type
+class MapsAccountPropertiesArgs:
+    def __init__(__self__, *, cors: Optional[pulumi.Input[CorsRulesArgs]] = ..., disable_local_auth: Optional[pulumi.Input[_builtins.bool]] = ..., encryption: Optional[pulumi.Input[EncryptionArgs]] = ..., linked_resources: Optional[pulumi.Input[Sequence[pulumi.Input[LinkedResourceArgs]]]] = ..., locations: Optional[pulumi.Input[Sequence[pulumi.Input[MapsAccountPropertiesLocationsArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cors(self) -> Optional[pulumi.Input[CorsRulesArgs]]:
+        
+        ...
+    
+    @cors.setter
+    def cors(self, value: Optional[pulumi.Input[CorsRulesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableLocalAuth")
+    def disable_local_auth(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disable_local_auth.setter
+    def disable_local_auth(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]:
+        
+        ...
+    
+    @encryption.setter
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedResources")
+    def linked_resources(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[LinkedResourceArgs]]]]:
+        
+        ...
+    
+    @linked_resources.setter
+    def linked_resources(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[LinkedResourceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[MapsAccountPropertiesLocationsArgs]]]]:
+        
+        ...
+    
+    @locations.setter
+    def locations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[MapsAccountPropertiesLocationsArgs]]]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[Union[_builtins.str, Name]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[Union[_builtins.str, Name]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[Union[_builtins.str, Name]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[Union[_builtins.str, Name]]): # -> None:
+        ...
+    
+
+

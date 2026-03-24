@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListEndpointIngressGatewayCredentialsResult', ..., 'list_endpoint_ingress_gateway_credentials', 'list_endpoint_ingress_gateway_credentials_output']
+@pulumi.output_type
+class ListEndpointIngressGatewayCredentialsResult:
+    
+    def __init__(__self__, access_key=..., expires_on=..., hostname=..., hybrid_connection_name=..., namespace_name=..., namespace_name_suffix=..., server_id=..., service_configuration_token=..., tenant_id=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessKey")
+    def access_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiresOn")
+    def expires_on(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridConnectionName")
+    def hybrid_connection_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceNameSuffix")
+    def namespace_name_suffix(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverId")
+    def server_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceConfigurationToken")
+    def service_configuration_token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableListEndpointIngressGatewayCredentialsResult(ListEndpointIngressGatewayCredentialsResult):
+    def __await__(self): # -> Generator[Never, Any, ListEndpointIngressGatewayCredentialsResult]:
+        ...
+    
+
+
+def list_endpoint_ingress_gateway_credentials(endpoint_name: Optional[_builtins.str] = ..., expiresin: Optional[_builtins.int] = ..., resource_uri: Optional[_builtins.str] = ..., service_name: Optional[Union[_builtins.str, ServiceName]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListEndpointIngressGatewayCredentialsResult:
+    
+    ...
+
+def list_endpoint_ingress_gateway_credentials_output(endpoint_name: Optional[pulumi.Input[_builtins.str]] = ..., expiresin: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[Optional[Union[_builtins.str, ServiceName]]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListEndpointIngressGatewayCredentialsResult]:
+    
+    ...
+

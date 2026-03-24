@@ -1,0 +1,169 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ReferenceDataSetArgs', 'ReferenceDataSet']
+@pulumi.input_type
+class ReferenceDataSetArgs:
+    def __init__(__self__, *, environment_name: pulumi.Input[_builtins.str], key_properties: pulumi.Input[Sequence[pulumi.Input[ReferenceDataSetKeyPropertyArgs]]], resource_group_name: pulumi.Input[_builtins.str], data_string_comparison_behavior: Optional[pulumi.Input[Union[_builtins.str, DataStringComparisonBehavior]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., reference_data_set_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentName")
+    def environment_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @environment_name.setter
+    def environment_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyProperties")
+    def key_properties(self) -> pulumi.Input[Sequence[pulumi.Input[ReferenceDataSetKeyPropertyArgs]]]:
+        
+        ...
+    
+    @key_properties.setter
+    def key_properties(self, value: pulumi.Input[Sequence[pulumi.Input[ReferenceDataSetKeyPropertyArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataStringComparisonBehavior")
+    def data_string_comparison_behavior(self) -> Optional[pulumi.Input[Union[_builtins.str, DataStringComparisonBehavior]]]:
+        
+        ...
+    
+    @data_string_comparison_behavior.setter
+    def data_string_comparison_behavior(self, value: Optional[pulumi.Input[Union[_builtins.str, DataStringComparisonBehavior]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="referenceDataSetName")
+    def reference_data_set_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @reference_data_set_name.setter
+    def reference_data_set_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:timeseriesinsights:ReferenceDataSet")
+class ReferenceDataSet(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., data_string_comparison_behavior: Optional[pulumi.Input[Union[_builtins.str, DataStringComparisonBehavior]]] = ..., environment_name: Optional[pulumi.Input[_builtins.str]] = ..., key_properties: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ReferenceDataSetKeyPropertyArgs, ReferenceDataSetKeyPropertyArgsDict]]]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., reference_data_set_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ReferenceDataSetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ReferenceDataSet:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTime")
+    def creation_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataStringComparisonBehavior")
+    def data_string_comparison_behavior(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyProperties")
+    def key_properties(self) -> pulumi.Output[Sequence[outputs.ReferenceDataSetKeyPropertyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

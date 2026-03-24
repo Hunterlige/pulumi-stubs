@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAvailabilitySetResult', 'AwaitableGetAvailabilitySetResult', 'get_availability_set', 'get_availability_set_output']
+@pulumi.output_type
+class GetAvailabilitySetResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., location=..., name=..., platform_fault_domain_count=..., platform_update_domain_count=..., proximity_placement_group=..., scheduled_events_policy=..., sku=..., statuses=..., system_data=..., tags=..., type=..., virtual_machine_scale_set_migration_info=..., virtual_machines=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformFaultDomainCount")
+    def platform_fault_domain_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformUpdateDomainCount")
+    def platform_update_domain_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="proximityPlacementGroup")
+    def proximity_placement_group(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduledEventsPolicy")
+    def scheduled_events_policy(self) -> Optional[outputs.ScheduledEventsPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def statuses(self) -> Sequence[outputs.InstanceViewStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachineScaleSetMigrationInfo")
+    def virtual_machine_scale_set_migration_info(self) -> outputs.VirtualMachineScaleSetMigrationInfoResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachines")
+    def virtual_machines(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
+        
+        ...
+    
+
+
+class AwaitableGetAvailabilitySetResult(GetAvailabilitySetResult):
+    def __await__(self): # -> Generator[Never, Any, GetAvailabilitySetResult]:
+        ...
+    
+
+
+def get_availability_set(availability_set_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAvailabilitySetResult:
+    
+    ...
+
+def get_availability_set_output(availability_set_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAvailabilitySetResult]:
+    
+    ...
+

@@ -1,0 +1,124 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ReplicationRecoveryServicesProviderArgs', 'ReplicationRecoveryServicesProvider']
+@pulumi.input_type
+class ReplicationRecoveryServicesProviderArgs:
+    def __init__(__self__, *, fabric_name: pulumi.Input[_builtins.str], properties: pulumi.Input[AddRecoveryServicesProviderInputPropertiesArgs], resource_group_name: pulumi.Input[_builtins.str], resource_name: pulumi.Input[_builtins.str], provider_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fabricName")
+    def fabric_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @fabric_name.setter
+    def fabric_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Input[AddRecoveryServicesProviderInputPropertiesArgs]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: pulumi.Input[AddRecoveryServicesProviderInputPropertiesArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceName")
+    def resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_name.setter
+    def resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerName")
+    def provider_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @provider_name.setter
+    def provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class ReplicationRecoveryServicesProvider(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., fabric_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Union[AddRecoveryServicesProviderInputPropertiesArgs, AddRecoveryServicesProviderInputPropertiesArgsDict]]] = ..., provider_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name_: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ReplicationRecoveryServicesProviderArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ReplicationRecoveryServicesProvider:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[outputs.RecoveryServicesProviderPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

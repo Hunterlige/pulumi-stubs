@@ -1,0 +1,13 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['CloudType']
+@pulumi.type_token("azure-native:hybridcloud:CloudType")
+class CloudType(_builtins.str, Enum):
+    
+    AWS = ...
+
+

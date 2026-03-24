@@ -1,0 +1,137 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNamespaceResult', 'AwaitableGetNamespaceResult', 'get_namespace', 'get_namespace_output']
+@pulumi.output_type
+class GetNamespaceResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., identity=..., inbound_ip_rules=..., is_zone_redundant=..., location=..., minimum_tls_version_allowed=..., name=..., private_endpoint_connections=..., provisioning_state=..., public_network_access=..., sku=..., system_data=..., tags=..., topic_spaces_configuration=..., topics_configuration=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inboundIpRules")
+    def inbound_ip_rules(self) -> Optional[Sequence[outputs.InboundIpRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isZoneRedundant")
+    def is_zone_redundant(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimumTlsVersionAllowed")
+    def minimum_tls_version_allowed(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> Optional[Sequence[outputs.PrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.NamespaceSkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicSpacesConfiguration")
+    def topic_spaces_configuration(self) -> Optional[outputs.TopicSpacesConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicsConfiguration")
+    def topics_configuration(self) -> Optional[outputs.TopicsConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetNamespaceResult(GetNamespaceResult):
+    def __await__(self): # -> Generator[Never, Any, GetNamespaceResult]:
+        ...
+    
+
+
+def get_namespace(namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNamespaceResult:
+    
+    ...
+
+def get_namespace_output(namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNamespaceResult]:
+    
+    ...
+

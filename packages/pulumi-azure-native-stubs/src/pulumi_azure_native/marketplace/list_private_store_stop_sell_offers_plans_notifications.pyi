@@ -1,0 +1,40 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., ..., ...]
+@pulumi.output_type
+class ListPrivateStoreStopSellOffersPlansNotificationsResult:
+    
+    def __init__(__self__, stop_sell_notifications=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stopSellNotifications")
+    def stop_sell_notifications(self) -> Optional[Sequence[outputs.StopSellOffersPlansNotificationsListPropertiesResponse]]:
+        ...
+    
+
+
+class AwaitableListPrivateStoreStopSellOffersPlansNotificationsResult(ListPrivateStoreStopSellOffersPlansNotificationsResult):
+    def __await__(self): # -> Generator[Never, Any, ListPrivateStoreStopSellOffersPlansNotificationsResult]:
+        ...
+    
+
+
+def list_private_store_stop_sell_offers_plans_notifications(private_store_id: Optional[_builtins.str] = ..., subscriptions: Optional[Sequence[_builtins.str]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListPrivateStoreStopSellOffersPlansNotificationsResult:
+    
+    ...
+
+def list_private_store_stop_sell_offers_plans_notifications_output(private_store_id: Optional[pulumi.Input[_builtins.str]] = ..., subscriptions: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListPrivateStoreStopSellOffersPlansNotificationsResult]:
+    
+    ...
+

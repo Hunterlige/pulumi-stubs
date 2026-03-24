@@ -1,0 +1,388 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['LocalRuleArgs', 'LocalRule']
+@pulumi.input_type
+class LocalRuleArgs:
+    def __init__(__self__, *, local_rulestack_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], rule_name: pulumi.Input[_builtins.str], action_type: Optional[pulumi.Input[Union[_builtins.str, ActionEnum]]] = ..., applications: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., audit_comment: Optional[pulumi.Input[_builtins.str]] = ..., category: Optional[pulumi.Input[CategoryArgs]] = ..., decryption_rule_type: Optional[pulumi.Input[Union[_builtins.str, DecryptionRuleTypeEnum]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination: Optional[pulumi.Input[DestinationAddrArgs]] = ..., enable_logging: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]] = ..., inbound_inspection_certificate: Optional[pulumi.Input[_builtins.str]] = ..., negate_destination: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]] = ..., negate_source: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]] = ..., priority: Optional[pulumi.Input[_builtins.str]] = ..., protocol: Optional[pulumi.Input[_builtins.str]] = ..., protocol_port_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., rule_state: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]] = ..., source: Optional[pulumi.Input[SourceAddrArgs]] = ..., tags: Optional[pulumi.Input[Sequence[pulumi.Input[TagInfoArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localRulestackName")
+    def local_rulestack_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @local_rulestack_name.setter
+    def local_rulestack_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleName")
+    def rule_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @rule_name.setter
+    def rule_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> Optional[pulumi.Input[Union[_builtins.str, ActionEnum]]]:
+        
+        ...
+    
+    @action_type.setter
+    def action_type(self, value: Optional[pulumi.Input[Union[_builtins.str, ActionEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def applications(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @applications.setter
+    def applications(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="auditComment")
+    def audit_comment(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @audit_comment.setter
+    def audit_comment(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> Optional[pulumi.Input[CategoryArgs]]:
+        
+        ...
+    
+    @category.setter
+    def category(self, value: Optional[pulumi.Input[CategoryArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="decryptionRuleType")
+    def decryption_rule_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DecryptionRuleTypeEnum]]]:
+        
+        ...
+    
+    @decryption_rule_type.setter
+    def decryption_rule_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DecryptionRuleTypeEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> Optional[pulumi.Input[DestinationAddrArgs]]:
+        
+        ...
+    
+    @destination.setter
+    def destination(self, value: Optional[pulumi.Input[DestinationAddrArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableLogging")
+    def enable_logging(self) -> Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]:
+        
+        ...
+    
+    @enable_logging.setter
+    def enable_logging(self, value: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inboundInspectionCertificate")
+    def inbound_inspection_certificate(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @inbound_inspection_certificate.setter
+    def inbound_inspection_certificate(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negateDestination")
+    def negate_destination(self) -> Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]:
+        
+        ...
+    
+    @negate_destination.setter
+    def negate_destination(self, value: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negateSource")
+    def negate_source(self) -> Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]:
+        
+        ...
+    
+    @negate_source.setter
+    def negate_source(self, value: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @priority.setter
+    def priority(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @protocol.setter
+    def protocol(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="protocolPortList")
+    def protocol_port_list(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @protocol_port_list.setter
+    def protocol_port_list(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleState")
+    def rule_state(self) -> Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]:
+        
+        ...
+    
+    @rule_state.setter
+    def rule_state(self, value: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[pulumi.Input[SourceAddrArgs]]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: Optional[pulumi.Input[SourceAddrArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TagInfoArgs]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TagInfoArgs]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:cloudngfw:LocalRule")
+class LocalRule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., action_type: Optional[pulumi.Input[Union[_builtins.str, ActionEnum]]] = ..., applications: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., audit_comment: Optional[pulumi.Input[_builtins.str]] = ..., category: Optional[pulumi.Input[Union[CategoryArgs, CategoryArgsDict]]] = ..., decryption_rule_type: Optional[pulumi.Input[Union[_builtins.str, DecryptionRuleTypeEnum]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., destination: Optional[pulumi.Input[Union[DestinationAddrArgs, DestinationAddrArgsDict]]] = ..., enable_logging: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]] = ..., inbound_inspection_certificate: Optional[pulumi.Input[_builtins.str]] = ..., local_rulestack_name: Optional[pulumi.Input[_builtins.str]] = ..., negate_destination: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]] = ..., negate_source: Optional[pulumi.Input[Union[_builtins.str, BooleanEnum]]] = ..., priority: Optional[pulumi.Input[_builtins.str]] = ..., protocol: Optional[pulumi.Input[_builtins.str]] = ..., protocol_port_list: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_state: Optional[pulumi.Input[Union[_builtins.str, StateEnum]]] = ..., source: Optional[pulumi.Input[Union[SourceAddrArgs, SourceAddrArgsDict]]] = ..., tags: Optional[pulumi.Input[Sequence[pulumi.Input[Union[TagInfoArgs, TagInfoArgsDict]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: LocalRuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> LocalRule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def applications(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="auditComment")
+    def audit_comment(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> pulumi.Output[Optional[outputs.CategoryResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="decryptionRuleType")
+    def decryption_rule_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> pulumi.Output[Optional[outputs.DestinationAddrResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableLogging")
+    def enable_logging(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inboundInspectionCertificate")
+    def inbound_inspection_certificate(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negateDestination")
+    def negate_destination(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negateSource")
+    def negate_source(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> pulumi.Output[_builtins.int]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="protocolPortList")
+    def protocol_port_list(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleName")
+    def rule_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ruleState")
+    def rule_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> pulumi.Output[Optional[outputs.SourceAddrResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Sequence[outputs.TagInfoResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,14 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['CertificateProductType']
+@pulumi.type_token(...)
+class CertificateProductType(_builtins.str, Enum):
+    
+    STANDARD_DOMAIN_VALIDATED_SSL = ...
+    STANDARD_DOMAIN_VALIDATED_WILD_CARD_SSL = ...
+
+

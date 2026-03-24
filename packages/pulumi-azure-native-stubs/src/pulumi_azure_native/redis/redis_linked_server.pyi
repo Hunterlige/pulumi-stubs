@@ -1,0 +1,145 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['RedisLinkedServerArgs', 'RedisLinkedServer']
+@pulumi.input_type
+class RedisLinkedServerArgs:
+    def __init__(__self__, *, linked_redis_cache_id: pulumi.Input[_builtins.str], linked_redis_cache_location: pulumi.Input[_builtins.str], name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], server_role: pulumi.Input[ReplicationRole], linked_server_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedRedisCacheId")
+    def linked_redis_cache_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @linked_redis_cache_id.setter
+    def linked_redis_cache_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedRedisCacheLocation")
+    def linked_redis_cache_location(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @linked_redis_cache_location.setter
+    def linked_redis_cache_location(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverRole")
+    def server_role(self) -> pulumi.Input[ReplicationRole]:
+        
+        ...
+    
+    @server_role.setter
+    def server_role(self, value: pulumi.Input[ReplicationRole]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedServerName")
+    def linked_server_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @linked_server_name.setter
+    def linked_server_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:redis:RedisLinkedServer")
+class RedisLinkedServer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., linked_redis_cache_id: Optional[pulumi.Input[_builtins.str]] = ..., linked_redis_cache_location: Optional[pulumi.Input[_builtins.str]] = ..., linked_server_name: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_role: Optional[pulumi.Input[ReplicationRole]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: RedisLinkedServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> RedisLinkedServer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedRedisCacheId")
+    def linked_redis_cache_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkedRedisCacheLocation")
+    def linked_redis_cache_location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverRole")
+    def server_role(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

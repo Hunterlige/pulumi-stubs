@@ -1,0 +1,188 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MarkupRuleArgs', 'MarkupRule']
+@pulumi.input_type
+class MarkupRuleArgs:
+    def __init__(__self__, *, billing_account_id: pulumi.Input[_builtins.str], billing_profile_id: pulumi.Input[_builtins.str], customer_details: pulumi.Input[CustomerMetadataArgs], percentage: pulumi.Input[_builtins.float], start_date: pulumi.Input[_builtins.str], description: Optional[pulumi.Input[_builtins.str]] = ..., e_tag: Optional[pulumi.Input[_builtins.str]] = ..., end_date: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billingAccountId")
+    def billing_account_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @billing_account_id.setter
+    def billing_account_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billingProfileId")
+    def billing_profile_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @billing_profile_id.setter
+    def billing_profile_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerDetails")
+    def customer_details(self) -> pulumi.Input[CustomerMetadataArgs]:
+        
+        ...
+    
+    @customer_details.setter
+    def customer_details(self, value: pulumi.Input[CustomerMetadataArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def percentage(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @percentage.setter
+    def percentage(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startDate")
+    def start_date(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @start_date.setter
+    def start_date(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @e_tag.setter
+    def e_tag(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endDate")
+    def end_date(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @end_date.setter
+    def end_date(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:costmanagement:MarkupRule")
+class MarkupRule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., billing_account_id: Optional[pulumi.Input[_builtins.str]] = ..., billing_profile_id: Optional[pulumi.Input[_builtins.str]] = ..., customer_details: Optional[pulumi.Input[Union[CustomerMetadataArgs, CustomerMetadataArgsDict]]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., e_tag: Optional[pulumi.Input[_builtins.str]] = ..., end_date: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., percentage: Optional[pulumi.Input[_builtins.float]] = ..., start_date: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MarkupRuleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MarkupRule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customerDetails")
+    def customer_details(self) -> pulumi.Output[outputs.CustomerMetadataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endDate")
+    def end_date(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def percentage(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startDate")
+    def start_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

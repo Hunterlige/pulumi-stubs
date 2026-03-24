@@ -1,0 +1,155 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualHardDiskResult', 'AwaitableGetVirtualHardDiskResult', 'get_virtual_hard_disk', 'get_virtual_hard_disk_output']
+@pulumi.output_type
+class GetVirtualHardDiskResult:
+    
+    def __init__(__self__, azure_api_version=..., block_size_bytes=..., container_id=..., create_from_local=..., disk_file_format=..., disk_size_gb=..., download_url=..., dynamic=..., extended_location=..., hyper_v_generation=..., id=..., location=..., logical_sector_bytes=..., name=..., physical_sector_bytes=..., provisioning_state=..., status=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blockSizeBytes")
+    def block_size_bytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerId")
+    def container_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createFromLocal")
+    def create_from_local(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskFileFormat")
+    def disk_file_format(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="diskSizeGB")
+    def disk_size_gb(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="downloadUrl")
+    def download_url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def dynamic(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hyperVGeneration")
+    def hyper_v_generation(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logicalSectorBytes")
+    def logical_sector_bytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="physicalSectorBytes")
+    def physical_sector_bytes(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> outputs.VirtualHardDiskStatusResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualHardDiskResult(GetVirtualHardDiskResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualHardDiskResult]:
+        ...
+    
+
+
+def get_virtual_hard_disk(resource_group_name: Optional[_builtins.str] = ..., virtual_hard_disk_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualHardDiskResult:
+    
+    ...
+
+def get_virtual_hard_disk_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_hard_disk_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualHardDiskResult]:
+    
+    ...
+

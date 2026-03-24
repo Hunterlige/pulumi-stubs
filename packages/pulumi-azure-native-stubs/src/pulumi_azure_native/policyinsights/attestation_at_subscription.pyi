@@ -1,0 +1,235 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AttestationAtSubscriptionArgs', 'AttestationAtSubscription']
+@pulumi.input_type
+class AttestationAtSubscriptionArgs:
+    def __init__(__self__, *, policy_assignment_id: pulumi.Input[_builtins.str], assessment_date: Optional[pulumi.Input[_builtins.str]] = ..., attestation_name: Optional[pulumi.Input[_builtins.str]] = ..., comments: Optional[pulumi.Input[_builtins.str]] = ..., compliance_state: Optional[pulumi.Input[Union[_builtins.str, ComplianceState]]] = ..., evidence: Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]] = ..., expires_on: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., owner: Optional[pulumi.Input[_builtins.str]] = ..., policy_definition_reference_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyAssignmentId")
+    def policy_assignment_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @policy_assignment_id.setter
+    def policy_assignment_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentDate")
+    def assessment_date(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assessment_date.setter
+    def assessment_date(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="attestationName")
+    def attestation_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @attestation_name.setter
+    def attestation_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comments(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @comments.setter
+    def comments(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="complianceState")
+    def compliance_state(self) -> Optional[pulumi.Input[Union[_builtins.str, ComplianceState]]]:
+        
+        ...
+    
+    @compliance_state.setter
+    def compliance_state(self, value: Optional[pulumi.Input[Union[_builtins.str, ComplianceState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def evidence(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]]:
+        
+        ...
+    
+    @evidence.setter
+    def evidence(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AttestationEvidenceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiresOn")
+    def expires_on(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @expires_on.setter
+    def expires_on(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Any]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def owner(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @owner.setter
+    def owner(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionReferenceId")
+    def policy_definition_reference_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @policy_definition_reference_id.setter
+    def policy_definition_reference_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class AttestationAtSubscription(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assessment_date: Optional[pulumi.Input[_builtins.str]] = ..., attestation_name: Optional[pulumi.Input[_builtins.str]] = ..., comments: Optional[pulumi.Input[_builtins.str]] = ..., compliance_state: Optional[pulumi.Input[Union[_builtins.str, ComplianceState]]] = ..., evidence: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AttestationEvidenceArgs, AttestationEvidenceArgsDict]]]]] = ..., expires_on: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[Any] = ..., owner: Optional[pulumi.Input[_builtins.str]] = ..., policy_assignment_id: Optional[pulumi.Input[_builtins.str]] = ..., policy_definition_reference_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AttestationAtSubscriptionArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AttestationAtSubscription:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentDate")
+    def assessment_date(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def comments(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="complianceState")
+    def compliance_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def evidence(self) -> pulumi.Output[Optional[Sequence[outputs.AttestationEvidenceResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiresOn")
+    def expires_on(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastComplianceStateChangeAt")
+    def last_compliance_state_change_at(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def owner(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyAssignmentId")
+    def policy_assignment_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionReferenceId")
+    def policy_definition_reference_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

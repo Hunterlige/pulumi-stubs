@@ -1,0 +1,17 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['Status']
+@pulumi.type_token("azure-native:iotfirmwaredefense:Status")
+class Status(_builtins.str, Enum):
+    
+    PENDING = ...
+    EXTRACTING = ...
+    ANALYZING = ...
+    READY = ...
+    ERROR = ...
+
+

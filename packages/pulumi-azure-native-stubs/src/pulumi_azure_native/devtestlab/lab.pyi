@@ -1,0 +1,321 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['LabArgs', 'Lab']
+@pulumi.input_type
+class LabArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], announcement: Optional[pulumi.Input[LabAnnouncementPropertiesArgs]] = ..., environment_permission: Optional[pulumi.Input[Union[_builtins.str, EnvironmentPermission]]] = ..., extended_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., lab_storage_type: Optional[pulumi.Input[Union[_builtins.str, StorageType]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., mandatory_artifacts_resource_ids_linux: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mandatory_artifacts_resource_ids_windows: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., premium_data_disks: Optional[pulumi.Input[Union[_builtins.str, PremiumDataDisk]]] = ..., support: Optional[pulumi.Input[LabSupportPropertiesArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def announcement(self) -> Optional[pulumi.Input[LabAnnouncementPropertiesArgs]]:
+        
+        ...
+    
+    @announcement.setter
+    def announcement(self, value: Optional[pulumi.Input[LabAnnouncementPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentPermission")
+    def environment_permission(self) -> Optional[pulumi.Input[Union[_builtins.str, EnvironmentPermission]]]:
+        
+        ...
+    
+    @environment_permission.setter
+    def environment_permission(self, value: Optional[pulumi.Input[Union[_builtins.str, EnvironmentPermission]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedProperties")
+    def extended_properties(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @extended_properties.setter
+    def extended_properties(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="labStorageType")
+    def lab_storage_type(self) -> Optional[pulumi.Input[Union[_builtins.str, StorageType]]]:
+        
+        ...
+    
+    @lab_storage_type.setter
+    def lab_storage_type(self, value: Optional[pulumi.Input[Union[_builtins.str, StorageType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mandatoryArtifactsResourceIdsLinux")
+    def mandatory_artifacts_resource_ids_linux(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @mandatory_artifacts_resource_ids_linux.setter
+    def mandatory_artifacts_resource_ids_linux(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mandatoryArtifactsResourceIdsWindows")
+    def mandatory_artifacts_resource_ids_windows(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @mandatory_artifacts_resource_ids_windows.setter
+    def mandatory_artifacts_resource_ids_windows(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="premiumDataDisks")
+    def premium_data_disks(self) -> Optional[pulumi.Input[Union[_builtins.str, PremiumDataDisk]]]:
+        
+        ...
+    
+    @premium_data_disks.setter
+    def premium_data_disks(self, value: Optional[pulumi.Input[Union[_builtins.str, PremiumDataDisk]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def support(self) -> Optional[pulumi.Input[LabSupportPropertiesArgs]]:
+        
+        ...
+    
+    @support.setter
+    def support(self, value: Optional[pulumi.Input[LabSupportPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:devtestlab:Lab")
+class Lab(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., announcement: Optional[pulumi.Input[Union[LabAnnouncementPropertiesArgs, LabAnnouncementPropertiesArgsDict]]] = ..., environment_permission: Optional[pulumi.Input[Union[_builtins.str, EnvironmentPermission]]] = ..., extended_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., lab_storage_type: Optional[pulumi.Input[Union[_builtins.str, StorageType]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., mandatory_artifacts_resource_ids_linux: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mandatory_artifacts_resource_ids_windows: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., premium_data_disks: Optional[pulumi.Input[Union[_builtins.str, PremiumDataDisk]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., support: Optional[pulumi.Input[Union[LabSupportPropertiesArgs, LabSupportPropertiesArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: LabArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Lab:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def announcement(self) -> pulumi.Output[Optional[outputs.LabAnnouncementPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactsStorageAccount")
+    def artifacts_storage_account(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdDate")
+    def created_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultPremiumStorageAccount")
+    def default_premium_storage_account(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultStorageAccount")
+    def default_storage_account(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentPermission")
+    def environment_permission(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedProperties")
+    def extended_properties(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="labStorageType")
+    def lab_storage_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loadBalancerId")
+    def load_balancer_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mandatoryArtifactsResourceIdsLinux")
+    def mandatory_artifacts_resource_ids_linux(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mandatoryArtifactsResourceIdsWindows")
+    def mandatory_artifacts_resource_ids_windows(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkSecurityGroupId")
+    def network_security_group_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="premiumDataDiskStorageAccount")
+    def premium_data_disk_storage_account(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="premiumDataDisks")
+    def premium_data_disks(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicIpId")
+    def public_ip_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def support(self) -> pulumi.Output[Optional[outputs.LabSupportPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uniqueIdentifier")
+    def unique_identifier(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vaultName")
+    def vault_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmCreationResourceGroup")
+    def vm_creation_resource_group(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

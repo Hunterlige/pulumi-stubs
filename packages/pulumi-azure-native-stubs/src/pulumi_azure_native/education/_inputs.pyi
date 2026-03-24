@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, TypedDict
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AmountArgs', 'AmountArgsDict']
+class AmountArgsDict(TypedDict):
+    
+    currency: NotRequired[pulumi.Input[_builtins.str]]
+    value: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class AmountArgs:
+    def __init__(__self__, *, currency: Optional[pulumi.Input[_builtins.str]] = ..., value: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def currency(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @currency.setter
+    def currency(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @value.setter
+    def value(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+

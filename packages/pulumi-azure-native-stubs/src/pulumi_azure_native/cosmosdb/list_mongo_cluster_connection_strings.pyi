@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListMongoClusterConnectionStringsResult', 'AwaitableListMongoClusterConnectionStringsResult', 'list_mongo_cluster_connection_strings', 'list_mongo_cluster_connection_strings_output']
+@pulumi.output_type
+class ListMongoClusterConnectionStringsResult:
+    
+    def __init__(__self__, connection_strings=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionStrings")
+    def connection_strings(self) -> Sequence[outputs.ConnectionStringResponse]:
+        
+        ...
+    
+
+
+class AwaitableListMongoClusterConnectionStringsResult(ListMongoClusterConnectionStringsResult):
+    def __await__(self): # -> Generator[Never, Any, ListMongoClusterConnectionStringsResult]:
+        ...
+    
+
+
+def list_mongo_cluster_connection_strings(mongo_cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListMongoClusterConnectionStringsResult:
+    
+    ...
+
+def list_mongo_cluster_connection_strings_output(mongo_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListMongoClusterConnectionStringsResult]:
+    
+    ...
+

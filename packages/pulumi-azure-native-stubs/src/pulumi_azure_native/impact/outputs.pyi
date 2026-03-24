@@ -1,0 +1,557 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ClientIncidentDetailsResponse', 'ConnectivityResponse', 'ConnectorPropertiesResponse', 'ContentResponse', 'ErrorDetailPropertiesResponse', 'ExpectedValueRangeResponse', 'ImpactDetailsResponse', 'InsightPropertiesResponse', 'PerformanceResponse', 'SourceOrTargetResponse', 'SystemDataResponse', 'WorkloadImpactPropertiesResponse', 'WorkloadResponse']
+@pulumi.output_type
+class ClientIncidentDetailsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_incident_id: Optional[_builtins.str] = ..., client_incident_source: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIncidentId")
+    def client_incident_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIncidentSource")
+    def client_incident_source(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConnectivityResponse(dict):
+    
+    def __init__(__self__, *, port: Optional[_builtins.int] = ..., protocol: Optional[_builtins.str] = ..., source: Optional[outputs.SourceOrTargetResponse] = ..., target: Optional[outputs.SourceOrTargetResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def protocol(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> Optional[outputs.SourceOrTargetResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[outputs.SourceOrTargetResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ConnectorPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, connector_id: _builtins.str, connector_type: _builtins.str, last_run_time_stamp: _builtins.str, provisioning_state: _builtins.str, tenant_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorId")
+    def connector_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorType")
+    def connector_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastRunTimeStamp")
+    def last_run_time_stamp(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ContentResponse(dict):
+    
+    def __init__(__self__, *, description: _builtins.str, title: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ErrorDetailPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, error_code: Optional[_builtins.str] = ..., error_message: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorCode")
+    def error_code(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorMessage")
+    def error_message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ExpectedValueRangeResponse(dict):
+    
+    def __init__(__self__, *, max: _builtins.float, min: _builtins.float) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def max(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def min(self) -> _builtins.float:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ImpactDetailsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, impact_id: _builtins.str, impacted_resource_id: _builtins.str, start_time: _builtins.str, end_time: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactId")
+    def impact_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactedResourceId")
+    def impacted_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTime")
+    def end_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class InsightPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, category: _builtins.str, content: outputs.ContentResponse, impact: outputs.ImpactDetailsResponse, insight_unique_id: _builtins.str, provisioning_state: _builtins.str, additional_details: Optional[Any] = ..., event_id: Optional[_builtins.str] = ..., event_time: Optional[_builtins.str] = ..., group_id: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> outputs.ContentResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def impact(self) -> outputs.ImpactDetailsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="insightUniqueId")
+    def insight_unique_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalDetails")
+    def additional_details(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventId")
+    def event_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eventTime")
+    def event_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupId")
+    def group_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PerformanceResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, actual: Optional[_builtins.float] = ..., expected: Optional[_builtins.float] = ..., expected_value_range: Optional[outputs.ExpectedValueRangeResponse] = ..., metric_name: Optional[_builtins.str] = ..., unit: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def actual(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expected(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedValueRange")
+    def expected_value_range(self) -> Optional[outputs.ExpectedValueRangeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="metricName")
+    def metric_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def unit(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SourceOrTargetResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, azure_resource_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceId")
+    def azure_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class WorkloadImpactPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, impact_category: _builtins.str, impact_unique_id: _builtins.str, impacted_resource_id: _builtins.str, provisioning_state: _builtins.str, reported_time_utc: _builtins.str, start_date_time: _builtins.str, additional_properties: Optional[Any] = ..., arm_correlation_ids: Optional[Sequence[_builtins.str]] = ..., client_incident_details: Optional[outputs.ClientIncidentDetailsResponse] = ..., confidence_level: Optional[_builtins.str] = ..., connectivity: Optional[outputs.ConnectivityResponse] = ..., end_date_time: Optional[_builtins.str] = ..., error_details: Optional[outputs.ErrorDetailPropertiesResponse] = ..., impact_description: Optional[_builtins.str] = ..., impact_group_id: Optional[_builtins.str] = ..., performance: Optional[Sequence[outputs.PerformanceResponse]] = ..., workload: Optional[outputs.WorkloadResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactCategory")
+    def impact_category(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactUniqueId")
+    def impact_unique_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactedResourceId")
+    def impacted_resource_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reportedTimeUtc")
+    def reported_time_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startDateTime")
+    def start_date_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalProperties")
+    def additional_properties(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="armCorrelationIds")
+    def arm_correlation_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientIncidentDetails")
+    def client_incident_details(self) -> Optional[outputs.ClientIncidentDetailsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="confidenceLevel")
+    def confidence_level(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def connectivity(self) -> Optional[outputs.ConnectivityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endDateTime")
+    def end_date_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorDetails")
+    def error_details(self) -> Optional[outputs.ErrorDetailPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactDescription")
+    def impact_description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="impactGroupId")
+    def impact_group_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def performance(self) -> Optional[Sequence[outputs.PerformanceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def workload(self) -> Optional[outputs.WorkloadResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class WorkloadResponse(dict):
+    
+    def __init__(__self__, *, context: Optional[_builtins.str] = ..., toolset: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def context(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def toolset(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

@@ -1,0 +1,14 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['Workload']
+@pulumi.type_token("azure-native:subscription:Workload")
+class Workload(_builtins.str, Enum):
+    
+    PRODUCTION = ...
+    DEV_TEST = ...
+
+

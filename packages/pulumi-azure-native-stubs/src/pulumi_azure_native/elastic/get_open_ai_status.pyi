@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetOpenAIStatusResult', 'AwaitableGetOpenAIStatusResult', 'get_open_ai_status', 'get_open_ai_status_output']
+@pulumi.output_type
+class GetOpenAIStatusResult:
+    
+    def __init__(__self__, properties=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.OpenAIIntegrationStatusResponsePropertiesResponse:
+        
+        ...
+    
+
+
+class AwaitableGetOpenAIStatusResult(GetOpenAIStatusResult):
+    def __await__(self): # -> Generator[Never, Any, GetOpenAIStatusResult]:
+        ...
+    
+
+
+def get_open_ai_status(integration_name: Optional[_builtins.str] = ..., monitor_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetOpenAIStatusResult:
+    
+    ...
+
+def get_open_ai_status_output(integration_name: Optional[pulumi.Input[_builtins.str]] = ..., monitor_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetOpenAIStatusResult]:
+    
+    ...
+

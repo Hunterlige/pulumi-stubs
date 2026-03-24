@@ -1,0 +1,244 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WebAppHybridConnectionSlotArgs', 'WebAppHybridConnectionSlot']
+@pulumi.input_type
+class WebAppHybridConnectionSlotArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], namespace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], slot: pulumi.Input[_builtins.str], hostname: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., relay_arm_uri: Optional[pulumi.Input[_builtins.str]] = ..., relay_name: Optional[pulumi.Input[_builtins.str]] = ..., send_key_name: Optional[pulumi.Input[_builtins.str]] = ..., send_key_value: Optional[pulumi.Input[_builtins.str]] = ..., service_bus_namespace: Optional[pulumi.Input[_builtins.str]] = ..., service_bus_suffix: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @namespace_name.setter
+    def namespace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def slot(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @slot.setter
+    def slot(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @hostname.setter
+    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @port.setter
+    def port(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayArmUri")
+    def relay_arm_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @relay_arm_uri.setter
+    def relay_arm_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayName")
+    def relay_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @relay_name.setter
+    def relay_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendKeyName")
+    def send_key_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @send_key_name.setter
+    def send_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendKeyValue")
+    def send_key_value(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @send_key_value.setter
+    def send_key_value(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceBusNamespace")
+    def service_bus_namespace(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_bus_namespace.setter
+    def service_bus_namespace(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceBusSuffix")
+    def service_bus_suffix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @service_bus_suffix.setter
+    def service_bus_suffix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:web:WebAppHybridConnectionSlot")
+class WebAppHybridConnectionSlot(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., hostname: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., port: Optional[pulumi.Input[_builtins.int]] = ..., relay_arm_uri: Optional[pulumi.Input[_builtins.str]] = ..., relay_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., send_key_name: Optional[pulumi.Input[_builtins.str]] = ..., send_key_value: Optional[pulumi.Input[_builtins.str]] = ..., service_bus_namespace: Optional[pulumi.Input[_builtins.str]] = ..., service_bus_suffix: Optional[pulumi.Input[_builtins.str]] = ..., slot: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WebAppHybridConnectionSlotArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WebAppHybridConnectionSlot:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def port(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayArmUri")
+    def relay_arm_uri(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relayName")
+    def relay_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendKeyName")
+    def send_key_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendKeyValue")
+    def send_key_value(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceBusNamespace")
+    def service_bus_namespace(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceBusSuffix")
+    def service_bus_suffix(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

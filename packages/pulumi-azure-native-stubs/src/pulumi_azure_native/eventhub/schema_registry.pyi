@@ -1,0 +1,166 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SchemaRegistryArgs', 'SchemaRegistry']
+@pulumi.input_type
+class SchemaRegistryArgs:
+    def __init__(__self__, *, namespace_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], group_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., schema_compatibility: Optional[pulumi.Input[Union[_builtins.str, SchemaCompatibility]]] = ..., schema_group_name: Optional[pulumi.Input[_builtins.str]] = ..., schema_type: Optional[pulumi.Input[Union[_builtins.str, SchemaType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespaceName")
+    def namespace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @namespace_name.setter
+    def namespace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupProperties")
+    def group_properties(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @group_properties.setter
+    def group_properties(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaCompatibility")
+    def schema_compatibility(self) -> Optional[pulumi.Input[Union[_builtins.str, SchemaCompatibility]]]:
+        ...
+    
+    @schema_compatibility.setter
+    def schema_compatibility(self, value: Optional[pulumi.Input[Union[_builtins.str, SchemaCompatibility]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaGroupName")
+    def schema_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @schema_group_name.setter
+    def schema_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaType")
+    def schema_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SchemaType]]]:
+        ...
+    
+    @schema_type.setter
+    def schema_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SchemaType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:eventhub:SchemaRegistry")
+class SchemaRegistry(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., group_properties: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., schema_compatibility: Optional[pulumi.Input[Union[_builtins.str, SchemaCompatibility]]] = ..., schema_group_name: Optional[pulumi.Input[_builtins.str]] = ..., schema_type: Optional[pulumi.Input[Union[_builtins.str, SchemaType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SchemaRegistryArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SchemaRegistry:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAtUtc")
+    def created_at_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="eTag")
+    def e_tag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupProperties")
+    def group_properties(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaCompatibility")
+    def schema_compatibility(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaType")
+    def schema_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedAtUtc")
+    def updated_at_utc(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

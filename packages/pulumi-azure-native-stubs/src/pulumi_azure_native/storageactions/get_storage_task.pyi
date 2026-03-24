@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetStorageTaskResult', 'AwaitableGetStorageTaskResult', 'get_storage_task', 'get_storage_task_output']
+@pulumi.output_type
+class GetStorageTaskResult:
+    
+    def __init__(__self__, action=..., azure_api_version=..., creation_time_in_utc=..., description=..., enabled=..., id=..., identity=..., location=..., name=..., provisioning_state=..., system_data=..., tags=..., task_version=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> outputs.StorageTaskActionResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTimeInUtc")
+    def creation_time_in_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> outputs.ManagedServiceIdentityResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="taskVersion")
+    def task_version(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetStorageTaskResult(GetStorageTaskResult):
+    def __await__(self): # -> Generator[Never, Any, GetStorageTaskResult]:
+        ...
+    
+
+
+def get_storage_task(resource_group_name: Optional[_builtins.str] = ..., storage_task_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetStorageTaskResult:
+    
+    ...
+
+def get_storage_task_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., storage_task_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetStorageTaskResult]:
+    
+    ...
+

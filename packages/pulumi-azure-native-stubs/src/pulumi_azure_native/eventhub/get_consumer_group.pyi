@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetConsumerGroupResult', 'AwaitableGetConsumerGroupResult', 'get_consumer_group', 'get_consumer_group_output']
+@pulumi.output_type
+class GetConsumerGroupResult:
+    
+    def __init__(__self__, azure_api_version=..., created_at=..., id=..., location=..., name=..., system_data=..., type=..., updated_at=..., user_metadata=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updatedAt")
+    def updated_at(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userMetadata")
+    def user_metadata(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetConsumerGroupResult(GetConsumerGroupResult):
+    def __await__(self): # -> Generator[Never, Any, GetConsumerGroupResult]:
+        ...
+    
+
+
+def get_consumer_group(consumer_group_name: Optional[_builtins.str] = ..., event_hub_name: Optional[_builtins.str] = ..., namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetConsumerGroupResult:
+    
+    ...
+
+def get_consumer_group_output(consumer_group_name: Optional[pulumi.Input[_builtins.str]] = ..., event_hub_name: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetConsumerGroupResult]:
+    
+    ...
+

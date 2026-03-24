@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListDatabasePrincipalsResult', 'AwaitableListDatabasePrincipalsResult', 'list_database_principals', 'list_database_principals_output']
+@pulumi.output_type
+class ListDatabasePrincipalsResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.DatabasePrincipalResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListDatabasePrincipalsResult(ListDatabasePrincipalsResult):
+    def __await__(self): # -> Generator[Never, Any, ListDatabasePrincipalsResult]:
+        ...
+    
+
+
+def list_database_principals(cluster_name: Optional[_builtins.str] = ..., database_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListDatabasePrincipalsResult:
+    
+    ...
+
+def list_database_principals_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., database_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListDatabasePrincipalsResult]:
+    
+    ...
+

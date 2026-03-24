@@ -1,0 +1,1425 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DistributeVersionerLatestArgs', 'DistributeVersionerLatestArgsDict', 'DistributeVersionerSourceArgs', 'DistributeVersionerSourceArgsDict', 'ImageTemplateAutoRunArgs', 'ImageTemplateAutoRunArgsDict', 'ImageTemplateFileCustomizerArgs', 'ImageTemplateFileCustomizerArgsDict', 'ImageTemplateFileValidatorArgs', 'ImageTemplateFileValidatorArgsDict', 'ImageTemplateIdentityArgs', 'ImageTemplateIdentityArgsDict', 'ImageTemplateManagedImageDistributorArgs', 'ImageTemplateManagedImageDistributorArgsDict', 'ImageTemplateManagedImageSourceArgs', 'ImageTemplateManagedImageSourceArgsDict', 'ImageTemplatePlatformImageSourceArgs', 'ImageTemplatePlatformImageSourceArgsDict', 'ImageTemplatePowerShellCustomizerArgs', 'ImageTemplatePowerShellCustomizerArgsDict', 'ImageTemplatePowerShellValidatorArgs', 'ImageTemplatePowerShellValidatorArgsDict', 'ImageTemplatePropertiesErrorHandlingArgs', 'ImageTemplatePropertiesErrorHandlingArgsDict', 'ImageTemplatePropertiesOptimizeArgs', 'ImageTemplatePropertiesOptimizeArgsDict', 'ImageTemplatePropertiesValidateArgs', 'ImageTemplatePropertiesValidateArgsDict', 'ImageTemplatePropertiesVmBootArgs', 'ImageTemplatePropertiesVmBootArgsDict', 'ImageTemplateRestartCustomizerArgs', 'ImageTemplateRestartCustomizerArgsDict', 'ImageTemplateSharedImageDistributorArgs', 'ImageTemplateSharedImageDistributorArgsDict', 'ImageTemplateSharedImageVersionSourceArgs', 'ImageTemplateSharedImageVersionSourceArgsDict', 'ImageTemplateShellCustomizerArgs', 'ImageTemplateShellCustomizerArgsDict', 'ImageTemplateShellValidatorArgs', 'ImageTemplateShellValidatorArgsDict', 'ImageTemplateVhdDistributorArgs', 'ImageTemplateVhdDistributorArgsDict', 'ImageTemplateVmProfileArgs', 'ImageTemplateVmProfileArgsDict', 'ImageTemplateWindowsUpdateCustomizerArgs', 'ImageTemplateWindowsUpdateCustomizerArgsDict', 'PlatformImagePurchasePlanArgs', 'PlatformImagePurchasePlanArgsDict', 'TargetRegionArgs', 'TargetRegionArgsDict', 'VirtualNetworkConfigArgs', 'VirtualNetworkConfigArgsDict']
+class DistributeVersionerLatestArgsDict(TypedDict):
+    
+    scheme: pulumi.Input[_builtins.str]
+    major: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class DistributeVersionerLatestArgs:
+    def __init__(__self__, *, scheme: pulumi.Input[_builtins.str], major: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scheme(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scheme.setter
+    def scheme(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def major(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @major.setter
+    def major(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class DistributeVersionerSourceArgsDict(TypedDict):
+    
+    scheme: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DistributeVersionerSourceArgs:
+    def __init__(__self__, *, scheme: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scheme(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scheme.setter
+    def scheme(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ImageTemplateAutoRunArgsDict(TypedDict):
+    
+    state: NotRequired[pulumi.Input[AutoRunState]]
+
+
+@pulumi.input_type
+class ImageTemplateAutoRunArgs:
+    def __init__(__self__, *, state: Optional[pulumi.Input[AutoRunState]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[AutoRunState]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[AutoRunState]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateFileCustomizerArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    destination: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+    source_uri: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateFileCustomizerArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], destination: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ..., source_uri: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @destination.setter
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceUri")
+    def source_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_uri.setter
+    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateFileValidatorArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    destination: NotRequired[pulumi.Input[_builtins.str]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+    source_uri: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateFileValidatorArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], destination: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ..., source_uri: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @destination.setter
+    def destination(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceUri")
+    def source_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @source_uri.setter
+    def source_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateIdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[ResourceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ImageTemplateIdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[ResourceIdentityType]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[ResourceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[ResourceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateManagedImageDistributorArgsDict(TypedDict):
+    
+    image_id: pulumi.Input[_builtins.str]
+    location: pulumi.Input[_builtins.str]
+    run_output_name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+    artifact_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ImageTemplateManagedImageDistributorArgs:
+    def __init__(__self__, *, image_id: pulumi.Input[_builtins.str], location: pulumi.Input[_builtins.str], run_output_name: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str], artifact_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageId")
+    def image_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @image_id.setter
+    def image_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOutputName")
+    def run_output_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @run_output_name.setter
+    def run_output_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactTags")
+    def artifact_tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @artifact_tags.setter
+    def artifact_tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateManagedImageSourceArgsDict(TypedDict):
+    
+    image_id: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ImageTemplateManagedImageSourceArgs:
+    def __init__(__self__, *, image_id: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageId")
+    def image_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @image_id.setter
+    def image_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePlatformImageSourceArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    offer: NotRequired[pulumi.Input[_builtins.str]]
+    plan_info: NotRequired[pulumi.Input[PlatformImagePurchasePlanArgsDict]]
+    publisher: NotRequired[pulumi.Input[_builtins.str]]
+    sku: NotRequired[pulumi.Input[_builtins.str]]
+    version: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplatePlatformImageSourceArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], offer: Optional[pulumi.Input[_builtins.str]] = ..., plan_info: Optional[pulumi.Input[PlatformImagePurchasePlanArgs]] = ..., publisher: Optional[pulumi.Input[_builtins.str]] = ..., sku: Optional[pulumi.Input[_builtins.str]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def offer(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @offer.setter
+    def offer(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planInfo")
+    def plan_info(self) -> Optional[pulumi.Input[PlatformImagePurchasePlanArgs]]:
+        
+        ...
+    
+    @plan_info.setter
+    def plan_info(self, value: Optional[pulumi.Input[PlatformImagePurchasePlanArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @publisher.setter
+    def publisher(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @version.setter
+    def version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePowerShellCustomizerArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    inline: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    run_as_system: NotRequired[pulumi.Input[_builtins.bool]]
+    run_elevated: NotRequired[pulumi.Input[_builtins.bool]]
+    script_uri: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+    valid_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
+
+
+@pulumi.input_type
+class ImageTemplatePowerShellCustomizerArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], inline: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., run_as_system: Optional[pulumi.Input[_builtins.bool]] = ..., run_elevated: Optional[pulumi.Input[_builtins.bool]] = ..., script_uri: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ..., valid_exit_codes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inline(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @inline.setter
+    def inline(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runAsSystem")
+    def run_as_system(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @run_as_system.setter
+    def run_as_system(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runElevated")
+    def run_elevated(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @run_elevated.setter
+    def run_elevated(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scriptUri")
+    def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @script_uri.setter
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validExitCodes")
+    def valid_exit_codes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]:
+        
+        ...
+    
+    @valid_exit_codes.setter
+    def valid_exit_codes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePowerShellValidatorArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    inline: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    run_as_system: NotRequired[pulumi.Input[_builtins.bool]]
+    run_elevated: NotRequired[pulumi.Input[_builtins.bool]]
+    script_uri: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+    valid_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
+
+
+@pulumi.input_type
+class ImageTemplatePowerShellValidatorArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], inline: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., run_as_system: Optional[pulumi.Input[_builtins.bool]] = ..., run_elevated: Optional[pulumi.Input[_builtins.bool]] = ..., script_uri: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ..., valid_exit_codes: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inline(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @inline.setter
+    def inline(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runAsSystem")
+    def run_as_system(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @run_as_system.setter
+    def run_as_system(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runElevated")
+    def run_elevated(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @run_elevated.setter
+    def run_elevated(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scriptUri")
+    def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @script_uri.setter
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validExitCodes")
+    def valid_exit_codes(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]:
+        
+        ...
+    
+    @valid_exit_codes.setter
+    def valid_exit_codes(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePropertiesErrorHandlingArgsDict(TypedDict):
+    
+    on_customizer_error: NotRequired[pulumi.Input[Union[_builtins.str, OnBuildError]]]
+    on_validation_error: NotRequired[pulumi.Input[Union[_builtins.str, OnBuildError]]]
+
+
+@pulumi.input_type
+class ImageTemplatePropertiesErrorHandlingArgs:
+    def __init__(__self__, *, on_customizer_error: Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]] = ..., on_validation_error: Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onCustomizerError")
+    def on_customizer_error(self) -> Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]]:
+        
+        ...
+    
+    @on_customizer_error.setter
+    def on_customizer_error(self, value: Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onValidationError")
+    def on_validation_error(self) -> Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]]:
+        
+        ...
+    
+    @on_validation_error.setter
+    def on_validation_error(self, value: Optional[pulumi.Input[Union[_builtins.str, OnBuildError]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePropertiesOptimizeArgsDict(TypedDict):
+    
+    vm_boot: NotRequired[pulumi.Input[ImageTemplatePropertiesVmBootArgsDict]]
+
+
+@pulumi.input_type
+class ImageTemplatePropertiesOptimizeArgs:
+    def __init__(__self__, *, vm_boot: Optional[pulumi.Input[ImageTemplatePropertiesVmBootArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmBoot")
+    def vm_boot(self) -> Optional[pulumi.Input[ImageTemplatePropertiesVmBootArgs]]:
+        
+        ...
+    
+    @vm_boot.setter
+    def vm_boot(self, value: Optional[pulumi.Input[ImageTemplatePropertiesVmBootArgs]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePropertiesValidateArgsDict(TypedDict):
+    
+    continue_distribute_on_failure: NotRequired[pulumi.Input[_builtins.bool]]
+    in_vm_validations: NotRequired[pulumi.Input[Sequence[pulumi.Input[Union[ImageTemplateFileValidatorArgsDict, ImageTemplatePowerShellValidatorArgsDict, ImageTemplateShellValidatorArgsDict]]]]]
+    source_validation_only: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class ImageTemplatePropertiesValidateArgs:
+    def __init__(__self__, *, continue_distribute_on_failure: Optional[pulumi.Input[_builtins.bool]] = ..., in_vm_validations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ImageTemplateFileValidatorArgs, ImageTemplatePowerShellValidatorArgs, ImageTemplateShellValidatorArgs]]]]] = ..., source_validation_only: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="continueDistributeOnFailure")
+    def continue_distribute_on_failure(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @continue_distribute_on_failure.setter
+    def continue_distribute_on_failure(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inVMValidations")
+    def in_vm_validations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[ImageTemplateFileValidatorArgs, ImageTemplatePowerShellValidatorArgs, ImageTemplateShellValidatorArgs]]]]]:
+        
+        ...
+    
+    @in_vm_validations.setter
+    def in_vm_validations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ImageTemplateFileValidatorArgs, ImageTemplatePowerShellValidatorArgs, ImageTemplateShellValidatorArgs]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceValidationOnly")
+    def source_validation_only(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @source_validation_only.setter
+    def source_validation_only(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class ImageTemplatePropertiesVmBootArgsDict(TypedDict):
+    
+    state: NotRequired[pulumi.Input[VMBootOptimizationState]]
+
+
+@pulumi.input_type
+class ImageTemplatePropertiesVmBootArgs:
+    def __init__(__self__, *, state: Optional[pulumi.Input[VMBootOptimizationState]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[VMBootOptimizationState]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[VMBootOptimizationState]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateRestartCustomizerArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    restart_check_command: NotRequired[pulumi.Input[_builtins.str]]
+    restart_command: NotRequired[pulumi.Input[_builtins.str]]
+    restart_timeout: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateRestartCustomizerArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], name: Optional[pulumi.Input[_builtins.str]] = ..., restart_check_command: Optional[pulumi.Input[_builtins.str]] = ..., restart_command: Optional[pulumi.Input[_builtins.str]] = ..., restart_timeout: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restartCheckCommand")
+    def restart_check_command(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @restart_check_command.setter
+    def restart_check_command(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restartCommand")
+    def restart_command(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @restart_command.setter
+    def restart_command(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restartTimeout")
+    def restart_timeout(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @restart_timeout.setter
+    def restart_timeout(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateSharedImageDistributorArgsDict(TypedDict):
+    
+    gallery_image_id: pulumi.Input[_builtins.str]
+    run_output_name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+    artifact_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    exclude_from_latest: NotRequired[pulumi.Input[_builtins.bool]]
+    replication_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    storage_account_type: NotRequired[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]
+    target_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgsDict]]]]
+    versioning: NotRequired[pulumi.Input[Union[DistributeVersionerLatestArgsDict, DistributeVersionerSourceArgsDict]]]
+
+
+@pulumi.input_type
+class ImageTemplateSharedImageDistributorArgs:
+    def __init__(__self__, *, gallery_image_id: pulumi.Input[_builtins.str], run_output_name: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str], artifact_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., exclude_from_latest: Optional[pulumi.Input[_builtins.bool]] = ..., replication_regions: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., storage_account_type: Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]] = ..., target_regions: Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]] = ..., versioning: Optional[pulumi.Input[Union[DistributeVersionerLatestArgs, DistributeVersionerSourceArgs]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="galleryImageId")
+    def gallery_image_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @gallery_image_id.setter
+    def gallery_image_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOutputName")
+    def run_output_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @run_output_name.setter
+    def run_output_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactTags")
+    def artifact_tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @artifact_tags.setter
+    def artifact_tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="excludeFromLatest")
+    def exclude_from_latest(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @exclude_from_latest.setter
+    def exclude_from_latest(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRegions")
+    def replication_regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @replication_regions.setter
+    def replication_regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountType")
+    def storage_account_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]:
+        
+        ...
+    
+    @storage_account_type.setter
+    def storage_account_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetRegions")
+    def target_regions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]]:
+        
+        ...
+    
+    @target_regions.setter
+    def target_regions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TargetRegionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def versioning(self) -> Optional[pulumi.Input[Union[DistributeVersionerLatestArgs, DistributeVersionerSourceArgs]]]:
+        
+        ...
+    
+    @versioning.setter
+    def versioning(self, value: Optional[pulumi.Input[Union[DistributeVersionerLatestArgs, DistributeVersionerSourceArgs]]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateSharedImageVersionSourceArgsDict(TypedDict):
+    
+    image_version_id: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ImageTemplateSharedImageVersionSourceArgs:
+    def __init__(__self__, *, image_version_id: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="imageVersionId")
+    def image_version_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @image_version_id.setter
+    def image_version_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ImageTemplateShellCustomizerArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    inline: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    script_uri: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateShellCustomizerArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], inline: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., script_uri: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inline(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @inline.setter
+    def inline(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scriptUri")
+    def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @script_uri.setter
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateShellValidatorArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    inline: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    script_uri: NotRequired[pulumi.Input[_builtins.str]]
+    sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateShellValidatorArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], inline: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., script_uri: Optional[pulumi.Input[_builtins.str]] = ..., sha256_checksum: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def inline(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @inline.setter
+    def inline(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scriptUri")
+    def script_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @script_uri.setter
+    def script_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sha256Checksum")
+    def sha256_checksum(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sha256_checksum.setter
+    def sha256_checksum(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateVhdDistributorArgsDict(TypedDict):
+    
+    run_output_name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+    artifact_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    uri: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ImageTemplateVhdDistributorArgs:
+    def __init__(__self__, *, run_output_name: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str], artifact_tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., uri: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOutputName")
+    def run_output_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @run_output_name.setter
+    def run_output_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactTags")
+    def artifact_tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @artifact_tags.setter
+    def artifact_tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @uri.setter
+    def uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateVmProfileArgsDict(TypedDict):
+    
+    os_disk_size_gb: NotRequired[pulumi.Input[_builtins.int]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    vm_size: NotRequired[pulumi.Input[_builtins.str]]
+    vnet_config: NotRequired[pulumi.Input[VirtualNetworkConfigArgsDict]]
+
+
+@pulumi.input_type
+class ImageTemplateVmProfileArgs:
+    def __init__(__self__, *, os_disk_size_gb: Optional[pulumi.Input[_builtins.int]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., vm_size: Optional[pulumi.Input[_builtins.str]] = ..., vnet_config: Optional[pulumi.Input[VirtualNetworkConfigArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osDiskSizeGB")
+    def os_disk_size_gb(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @os_disk_size_gb.setter
+    def os_disk_size_gb(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmSize")
+    def vm_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @vm_size.setter
+    def vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vnetConfig")
+    def vnet_config(self) -> Optional[pulumi.Input[VirtualNetworkConfigArgs]]:
+        
+        ...
+    
+    @vnet_config.setter
+    def vnet_config(self, value: Optional[pulumi.Input[VirtualNetworkConfigArgs]]): # -> None:
+        ...
+    
+
+
+class ImageTemplateWindowsUpdateCustomizerArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+    filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    name: NotRequired[pulumi.Input[_builtins.str]]
+    search_criteria: NotRequired[pulumi.Input[_builtins.str]]
+    update_limit: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class ImageTemplateWindowsUpdateCustomizerArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str], filters: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., search_criteria: Optional[pulumi.Input[_builtins.str]] = ..., update_limit: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filters(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @filters.setter
+    def filters(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="searchCriteria")
+    def search_criteria(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @search_criteria.setter
+    def search_criteria(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateLimit")
+    def update_limit(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @update_limit.setter
+    def update_limit(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class PlatformImagePurchasePlanArgsDict(TypedDict):
+    
+    plan_name: pulumi.Input[_builtins.str]
+    plan_product: pulumi.Input[_builtins.str]
+    plan_publisher: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class PlatformImagePurchasePlanArgs:
+    def __init__(__self__, *, plan_name: pulumi.Input[_builtins.str], plan_product: pulumi.Input[_builtins.str], plan_publisher: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planName")
+    def plan_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_name.setter
+    def plan_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planProduct")
+    def plan_product(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_product.setter
+    def plan_product(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="planPublisher")
+    def plan_publisher(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @plan_publisher.setter
+    def plan_publisher(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class TargetRegionArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    replica_count: NotRequired[pulumi.Input[_builtins.int]]
+    storage_account_type: NotRequired[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]
+
+
+@pulumi.input_type
+class TargetRegionArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], replica_count: Optional[pulumi.Input[_builtins.int]] = ..., storage_account_type: Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicaCount")
+    def replica_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @replica_count.setter
+    def replica_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountType")
+    def storage_account_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]:
+        
+        ...
+    
+    @storage_account_type.setter
+    def storage_account_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SharedImageStorageAccountType]]]): # -> None:
+        ...
+    
+
+
+class VirtualNetworkConfigArgsDict(TypedDict):
+    
+    container_instance_subnet_id: NotRequired[pulumi.Input[_builtins.str]]
+    proxy_vm_size: NotRequired[pulumi.Input[_builtins.str]]
+    subnet_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class VirtualNetworkConfigArgs:
+    def __init__(__self__, *, container_instance_subnet_id: Optional[pulumi.Input[_builtins.str]] = ..., proxy_vm_size: Optional[pulumi.Input[_builtins.str]] = ..., subnet_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerInstanceSubnetId")
+    def container_instance_subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @container_instance_subnet_id.setter
+    def container_instance_subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="proxyVmSize")
+    def proxy_vm_size(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @proxy_vm_size.setter
+    def proxy_vm_size(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subnetId")
+    def subnet_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @subnet_id.setter
+    def subnet_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

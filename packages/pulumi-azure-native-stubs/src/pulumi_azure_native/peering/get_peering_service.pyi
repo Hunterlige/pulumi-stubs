@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPeeringServiceResult', 'AwaitableGetPeeringServiceResult', 'get_peering_service', 'get_peering_service_output']
+@pulumi.output_type
+class GetPeeringServiceResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., location=..., log_analytics_workspace_properties=..., name=..., peering_service_location=..., peering_service_provider=..., provider_backup_peering_location=..., provider_primary_peering_location=..., provisioning_state=..., sku=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logAnalyticsWorkspaceProperties")
+    def log_analytics_workspace_properties(self) -> Optional[outputs.LogAnalyticsWorkspacePropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringServiceLocation")
+    def peering_service_location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringServiceProvider")
+    def peering_service_provider(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerBackupPeeringLocation")
+    def provider_backup_peering_location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="providerPrimaryPeeringLocation")
+    def provider_primary_peering_location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.PeeringServiceSkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPeeringServiceResult(GetPeeringServiceResult):
+    def __await__(self): # -> Generator[Never, Any, GetPeeringServiceResult]:
+        ...
+    
+
+
+def get_peering_service(peering_service_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPeeringServiceResult:
+    
+    ...
+
+def get_peering_service_output(peering_service_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPeeringServiceResult]:
+    
+    ...
+

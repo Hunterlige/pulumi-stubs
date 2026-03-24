@@ -1,0 +1,107 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetScheduleResult', 'AwaitableGetScheduleResult', 'get_schedule', 'get_schedule_output']
+@pulumi.output_type
+class GetScheduleResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., notes=..., provisioning_state=..., recurrence_pattern=..., resource_operation_error=..., start_at=..., stop_at=..., system_data=..., time_zone_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def notes(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recurrencePattern")
+    def recurrence_pattern(self) -> Optional[outputs.RecurrencePatternResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceOperationError")
+    def resource_operation_error(self) -> outputs.ResourceOperationErrorResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startAt")
+    def start_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stopAt")
+    def stop_at(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeZoneId")
+    def time_zone_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetScheduleResult(GetScheduleResult):
+    def __await__(self): # -> Generator[Never, Any, GetScheduleResult]:
+        ...
+    
+
+
+def get_schedule(lab_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., schedule_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetScheduleResult:
+    
+    ...
+
+def get_schedule_output(lab_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., schedule_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetScheduleResult]:
+    
+    ...
+

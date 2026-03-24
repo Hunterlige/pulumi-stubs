@@ -1,0 +1,107 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRouteTableResult', 'AwaitableGetRouteTableResult', 'get_route_table', 'get_route_table_output']
+@pulumi.output_type
+class GetRouteTableResult:
+    
+    def __init__(__self__, azure_api_version=..., disable_bgp_route_propagation=..., etag=..., id=..., location=..., name=..., provisioning_state=..., resource_guid=..., routes=..., subnets=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="disableBgpRoutePropagation")
+    def disable_bgp_route_propagation(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGuid")
+    def resource_guid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def routes(self) -> Optional[Sequence[outputs.RouteResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subnets(self) -> Sequence[outputs.SubnetResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRouteTableResult(GetRouteTableResult):
+    def __await__(self): # -> Generator[Never, Any, GetRouteTableResult]:
+        ...
+    
+
+
+def get_route_table(expand: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., route_table_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRouteTableResult:
+    
+    ...
+
+def get_route_table_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., route_table_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRouteTableResult]:
+    
+    ...
+

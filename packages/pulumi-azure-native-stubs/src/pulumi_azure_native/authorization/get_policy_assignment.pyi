@@ -1,0 +1,173 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPolicyAssignmentResult', 'AwaitableGetPolicyAssignmentResult', 'get_policy_assignment', 'get_policy_assignment_output']
+@pulumi.output_type
+class GetPolicyAssignmentResult:
+    
+    def __init__(__self__, assignment_type=..., azure_api_version=..., definition_version=..., description=..., display_name=..., effective_definition_version=..., enforcement_mode=..., id=..., identity=..., instance_id=..., latest_definition_version=..., location=..., metadata=..., name=..., non_compliance_messages=..., not_scopes=..., overrides=..., parameters=..., policy_definition_id=..., resource_selectors=..., scope=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentType")
+    def assignment_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="definitionVersion")
+    def definition_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="effectiveDefinitionVersion")
+    def effective_definition_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforcementMode")
+    def enforcement_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceId")
+    def instance_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="latestDefinitionVersion")
+    def latest_definition_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nonComplianceMessages")
+    def non_compliance_messages(self) -> Optional[Sequence[outputs.NonComplianceMessageResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notScopes")
+    def not_scopes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def overrides(self) -> Optional[Sequence[outputs.OverrideResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[Mapping[str, outputs.ParameterValuesValueResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceSelectors")
+    def resource_selectors(self) -> Optional[Sequence[outputs.ResourceSelectorResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPolicyAssignmentResult(GetPolicyAssignmentResult):
+    def __await__(self): # -> Generator[Never, Any, GetPolicyAssignmentResult]:
+        ...
+    
+
+
+def get_policy_assignment(expand: Optional[_builtins.str] = ..., policy_assignment_name: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPolicyAssignmentResult:
+    
+    ...
+
+def get_policy_assignment_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., policy_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPolicyAssignmentResult]:
+    
+    ...
+

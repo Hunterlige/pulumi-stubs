@@ -1,0 +1,222 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SnapshotPolicyArgs', 'SnapshotPolicy']
+@pulumi.input_type
+class SnapshotPolicyArgs:
+    def __init__(__self__, *, account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], daily_schedule: Optional[pulumi.Input[DailyScheduleArgs]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., hourly_schedule: Optional[pulumi.Input[HourlyScheduleArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., monthly_schedule: Optional[pulumi.Input[MonthlyScheduleArgs]] = ..., snapshot_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., weekly_schedule: Optional[pulumi.Input[WeeklyScheduleArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dailySchedule")
+    def daily_schedule(self) -> Optional[pulumi.Input[DailyScheduleArgs]]:
+        
+        ...
+    
+    @daily_schedule.setter
+    def daily_schedule(self, value: Optional[pulumi.Input[DailyScheduleArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hourlySchedule")
+    def hourly_schedule(self) -> Optional[pulumi.Input[HourlyScheduleArgs]]:
+        
+        ...
+    
+    @hourly_schedule.setter
+    def hourly_schedule(self, value: Optional[pulumi.Input[HourlyScheduleArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monthlySchedule")
+    def monthly_schedule(self) -> Optional[pulumi.Input[MonthlyScheduleArgs]]:
+        
+        ...
+    
+    @monthly_schedule.setter
+    def monthly_schedule(self, value: Optional[pulumi.Input[MonthlyScheduleArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="snapshotPolicyName")
+    def snapshot_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @snapshot_policy_name.setter
+    def snapshot_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="weeklySchedule")
+    def weekly_schedule(self) -> Optional[pulumi.Input[WeeklyScheduleArgs]]:
+        
+        ...
+    
+    @weekly_schedule.setter
+    def weekly_schedule(self, value: Optional[pulumi.Input[WeeklyScheduleArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:netapp:SnapshotPolicy")
+class SnapshotPolicy(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., daily_schedule: Optional[pulumi.Input[Union[DailyScheduleArgs, DailyScheduleArgsDict]]] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., hourly_schedule: Optional[pulumi.Input[Union[HourlyScheduleArgs, HourlyScheduleArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., monthly_schedule: Optional[pulumi.Input[Union[MonthlyScheduleArgs, MonthlyScheduleArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., snapshot_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., weekly_schedule: Optional[pulumi.Input[Union[WeeklyScheduleArgs, WeeklyScheduleArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: SnapshotPolicyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> SnapshotPolicy:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dailySchedule")
+    def daily_schedule(self) -> pulumi.Output[Optional[outputs.DailyScheduleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hourlySchedule")
+    def hourly_schedule(self) -> pulumi.Output[Optional[outputs.HourlyScheduleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monthlySchedule")
+    def monthly_schedule(self) -> pulumi.Output[Optional[outputs.MonthlyScheduleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="weeklySchedule")
+    def weekly_schedule(self) -> pulumi.Output[Optional[outputs.WeeklyScheduleResponse]]:
+        
+        ...
+    
+
+

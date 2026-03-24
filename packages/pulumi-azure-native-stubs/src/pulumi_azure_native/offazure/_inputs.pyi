@@ -1,0 +1,271 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'SiteAgentPropertiesArgs', 'SiteAgentPropertiesArgsDict', 'SiteAppliancePropertiesArgs', 'SiteAppliancePropertiesArgsDict', 'SitePropertiesArgs', 'SitePropertiesArgsDict', 'SiteSpnPropertiesArgs', 'SiteSpnPropertiesArgsDict']
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStateStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStateStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStateStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateLinkServiceConnectionStateStatus]]]): # -> None:
+        ...
+    
+
+
+class SiteAgentPropertiesArgsDict(TypedDict):
+    
+    key_vault_id: NotRequired[pulumi.Input[_builtins.str]]
+    key_vault_uri: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SiteAgentPropertiesArgs:
+    def __init__(__self__, *, key_vault_id: Optional[pulumi.Input[_builtins.str]] = ..., key_vault_uri: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultId")
+    def key_vault_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_vault_id.setter
+    def key_vault_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultUri")
+    def key_vault_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_vault_uri.setter
+    def key_vault_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SiteAppliancePropertiesArgsDict(TypedDict):
+    
+    agent_details: NotRequired[pulumi.Input[SiteAgentPropertiesArgsDict]]
+    appliance_name: NotRequired[pulumi.Input[_builtins.str]]
+    service_principal_identity_details: NotRequired[pulumi.Input[SiteSpnPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class SiteAppliancePropertiesArgs:
+    def __init__(__self__, *, agent_details: Optional[pulumi.Input[SiteAgentPropertiesArgs]] = ..., appliance_name: Optional[pulumi.Input[_builtins.str]] = ..., service_principal_identity_details: Optional[pulumi.Input[SiteSpnPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentDetails")
+    def agent_details(self) -> Optional[pulumi.Input[SiteAgentPropertiesArgs]]:
+        
+        ...
+    
+    @agent_details.setter
+    def agent_details(self, value: Optional[pulumi.Input[SiteAgentPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applianceName")
+    def appliance_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @appliance_name.setter
+    def appliance_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="servicePrincipalIdentityDetails")
+    def service_principal_identity_details(self) -> Optional[pulumi.Input[SiteSpnPropertiesArgs]]:
+        
+        ...
+    
+    @service_principal_identity_details.setter
+    def service_principal_identity_details(self, value: Optional[pulumi.Input[SiteSpnPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class SitePropertiesArgsDict(TypedDict):
+    
+    agent_details: NotRequired[pulumi.Input[SiteAgentPropertiesArgsDict]]
+    appliance_name: NotRequired[pulumi.Input[_builtins.str]]
+    discovery_solution_id: NotRequired[pulumi.Input[_builtins.str]]
+    service_principal_identity_details: NotRequired[pulumi.Input[SiteSpnPropertiesArgsDict]]
+
+
+@pulumi.input_type
+class SitePropertiesArgs:
+    def __init__(__self__, *, agent_details: Optional[pulumi.Input[SiteAgentPropertiesArgs]] = ..., appliance_name: Optional[pulumi.Input[_builtins.str]] = ..., discovery_solution_id: Optional[pulumi.Input[_builtins.str]] = ..., service_principal_identity_details: Optional[pulumi.Input[SiteSpnPropertiesArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentDetails")
+    def agent_details(self) -> Optional[pulumi.Input[SiteAgentPropertiesArgs]]:
+        
+        ...
+    
+    @agent_details.setter
+    def agent_details(self, value: Optional[pulumi.Input[SiteAgentPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applianceName")
+    def appliance_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @appliance_name.setter
+    def appliance_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoverySolutionId")
+    def discovery_solution_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @discovery_solution_id.setter
+    def discovery_solution_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="servicePrincipalIdentityDetails")
+    def service_principal_identity_details(self) -> Optional[pulumi.Input[SiteSpnPropertiesArgs]]:
+        
+        ...
+    
+    @service_principal_identity_details.setter
+    def service_principal_identity_details(self, value: Optional[pulumi.Input[SiteSpnPropertiesArgs]]): # -> None:
+        ...
+    
+
+
+class SiteSpnPropertiesArgsDict(TypedDict):
+    
+    aad_authority: NotRequired[pulumi.Input[_builtins.str]]
+    application_id: NotRequired[pulumi.Input[_builtins.str]]
+    audience: NotRequired[pulumi.Input[_builtins.str]]
+    object_id: NotRequired[pulumi.Input[_builtins.str]]
+    raw_cert_data: NotRequired[pulumi.Input[_builtins.str]]
+    tenant_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SiteSpnPropertiesArgs:
+    def __init__(__self__, *, aad_authority: Optional[pulumi.Input[_builtins.str]] = ..., application_id: Optional[pulumi.Input[_builtins.str]] = ..., audience: Optional[pulumi.Input[_builtins.str]] = ..., object_id: Optional[pulumi.Input[_builtins.str]] = ..., raw_cert_data: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadAuthority")
+    def aad_authority(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @aad_authority.setter
+    def aad_authority(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationId")
+    def application_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @application_id.setter
+    def application_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @audience.setter
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="objectId")
+    def object_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @object_id.setter
+    def object_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rawCertData")
+    def raw_cert_data(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @raw_cert_data.setter
+    def raw_cert_data(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

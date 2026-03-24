@@ -1,0 +1,158 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['TunnelPolicyArgs', 'TunnelPolicy']
+@pulumi.input_type
+class TunnelPolicyArgs:
+    def __init__(__self__, *, domains: pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]], profile_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], target_groups: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]] = ..., tunnel_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., tunnel_type: Optional[pulumi.Input[Union[_builtins.str, TunnelType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domains(self) -> pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]]:
+        
+        ...
+    
+    @domains.setter
+    def domains(self, value: pulumi.Input[Sequence[pulumi.Input[ActivatedResourceReferenceArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileName")
+    def profile_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @profile_name.setter
+    def profile_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetGroups")
+    def target_groups(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]]:
+        
+        ...
+    
+    @target_groups.setter
+    def target_groups(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ResourceReferenceArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tunnelPolicyName")
+    def tunnel_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tunnel_policy_name.setter
+    def tunnel_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tunnelType")
+    def tunnel_type(self) -> Optional[pulumi.Input[Union[_builtins.str, TunnelType]]]:
+        
+        ...
+    
+    @tunnel_type.setter
+    def tunnel_type(self, value: Optional[pulumi.Input[Union[_builtins.str, TunnelType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:cdn:TunnelPolicy")
+class TunnelPolicy(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., domains: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ActivatedResourceReferenceArgs, ActivatedResourceReferenceArgsDict]]]]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., target_groups: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ResourceReferenceArgs, ResourceReferenceArgsDict]]]]] = ..., tunnel_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., tunnel_type: Optional[pulumi.Input[Union[_builtins.str, TunnelType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: TunnelPolicyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> TunnelPolicy:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentStatus")
+    def deployment_status(self) -> pulumi.Output[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domains(self) -> pulumi.Output[Sequence[outputs.ActivatedResourceReferenceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetGroups")
+    def target_groups(self) -> pulumi.Output[Optional[Sequence[outputs.ResourceReferenceResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tunnelType")
+    def tunnel_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

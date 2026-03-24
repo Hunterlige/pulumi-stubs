@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListServerSitesControllerHealthSummaryResult', ..., 'list_server_sites_controller_health_summary', 'list_server_sites_controller_health_summary_output']
+@pulumi.output_type
+class ListServerSitesControllerHealthSummaryResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.SiteHealthSummaryResponse]:
+        
+        ...
+    
+
+
+class AwaitableListServerSitesControllerHealthSummaryResult(ListServerSitesControllerHealthSummaryResult):
+    def __await__(self): # -> Generator[Never, Any, ListServerSitesControllerHealthSummaryResult]:
+        ...
+    
+
+
+def list_server_sites_controller_health_summary(resource_group_name: Optional[_builtins.str] = ..., site_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListServerSitesControllerHealthSummaryResult:
+    
+    ...
+
+def list_server_sites_controller_health_summary_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., site_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListServerSitesControllerHealthSummaryResult]:
+    
+    ...
+

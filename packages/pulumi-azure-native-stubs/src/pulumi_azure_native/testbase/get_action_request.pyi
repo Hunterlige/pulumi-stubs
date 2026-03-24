@@ -1,0 +1,90 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetActionRequestResult', 'AwaitableGetActionRequestResult', 'get_action_request', 'get_action_request_output']
+@pulumi.output_type
+class GetActionRequestResult:
+    def __init__(__self__, azure_api_version=..., creation_date=..., id=..., name=..., pre_release_access_request_spec=..., provisioning_state=..., request_type=..., status=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationDate")
+    def creation_date(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preReleaseAccessRequestSpec")
+    def pre_release_access_request_spec(self) -> Optional[outputs.PreReleaseAccessRequestSpecResponse]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestType")
+    def request_type(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetActionRequestResult(GetActionRequestResult):
+    def __await__(self): # -> Generator[Never, Any, GetActionRequestResult]:
+        ...
+    
+
+
+def get_action_request(action_request_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., test_base_account_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetActionRequestResult:
+    
+    ...
+
+def get_action_request_output(action_request_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., test_base_account_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetActionRequestResult]:
+    
+    ...
+

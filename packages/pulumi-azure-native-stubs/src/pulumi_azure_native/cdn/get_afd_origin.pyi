@@ -1,0 +1,142 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAFDOriginResult', 'AwaitableGetAFDOriginResult', 'get_afd_origin', 'get_afd_origin_output']
+@pulumi.output_type
+class GetAFDOriginResult:
+    
+    def __init__(__self__, azure_api_version=..., azure_origin=..., deployment_status=..., enabled_state=..., enforce_certificate_name_check=..., host_name=..., http_port=..., https_port=..., id=..., name=..., origin_group_name=..., origin_host_header=..., priority=..., provisioning_state=..., shared_private_link_resource=..., system_data=..., type=..., weight=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureOrigin")
+    def azure_origin(self) -> Optional[outputs.ResourceReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentStatus")
+    def deployment_status(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enabledState")
+    def enabled_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enforceCertificateNameCheck")
+    def enforce_certificate_name_check(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostName")
+    def host_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpPort")
+    def http_port(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="httpsPort")
+    def https_port(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originGroupName")
+    def origin_group_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="originHostHeader")
+    def origin_host_header(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharedPrivateLinkResource")
+    def shared_private_link_resource(self) -> Optional[outputs.SharedPrivateLinkResourcePropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def weight(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+class AwaitableGetAFDOriginResult(GetAFDOriginResult):
+    def __await__(self): # -> Generator[Never, Any, GetAFDOriginResult]:
+        ...
+    
+
+
+def get_afd_origin(origin_group_name: Optional[_builtins.str] = ..., origin_name: Optional[_builtins.str] = ..., profile_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAFDOriginResult:
+    
+    ...
+
+def get_afd_origin_output(origin_group_name: Optional[pulumi.Input[_builtins.str]] = ..., origin_name: Optional[pulumi.Input[_builtins.str]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAFDOriginResult]:
+    
+    ...
+

@@ -1,0 +1,162 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['JobScheduleArgs', 'JobSchedule']
+@pulumi.input_type
+class JobScheduleArgs:
+    def __init__(__self__, *, automation_account_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], runbook: pulumi.Input[RunbookAssociationPropertyArgs], schedule: pulumi.Input[ScheduleAssociationPropertyArgs], job_schedule_id: Optional[pulumi.Input[_builtins.str]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., run_on: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="automationAccountName")
+    def automation_account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @automation_account_name.setter
+    def automation_account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def runbook(self) -> pulumi.Input[RunbookAssociationPropertyArgs]:
+        
+        ...
+    
+    @runbook.setter
+    def runbook(self, value: pulumi.Input[RunbookAssociationPropertyArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> pulumi.Input[ScheduleAssociationPropertyArgs]:
+        
+        ...
+    
+    @schedule.setter
+    def schedule(self, value: pulumi.Input[ScheduleAssociationPropertyArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobScheduleId")
+    def job_schedule_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @job_schedule_id.setter
+    def job_schedule_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOn")
+    def run_on(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @run_on.setter
+    def run_on(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:automation:JobSchedule")
+class JobSchedule(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., automation_account_name: Optional[pulumi.Input[_builtins.str]] = ..., job_schedule_id: Optional[pulumi.Input[_builtins.str]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., run_on: Optional[pulumi.Input[_builtins.str]] = ..., runbook: Optional[pulumi.Input[Union[RunbookAssociationPropertyArgs, RunbookAssociationPropertyArgsDict]]] = ..., schedule: Optional[pulumi.Input[Union[ScheduleAssociationPropertyArgs, ScheduleAssociationPropertyArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: JobScheduleArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> JobSchedule:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jobScheduleId")
+    def job_schedule_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runOn")
+    def run_on(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def runbook(self) -> pulumi.Output[Optional[outputs.RunbookAssociationPropertyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> pulumi.Output[Optional[outputs.ScheduleAssociationPropertyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

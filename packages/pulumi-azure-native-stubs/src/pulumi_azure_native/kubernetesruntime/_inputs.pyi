@@ -1,0 +1,271 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BlobStorageClassTypePropertiesArgs', 'BlobStorageClassTypePropertiesArgsDict', 'NativeStorageClassTypePropertiesArgs', 'NativeStorageClassTypePropertiesArgsDict', 'NfsStorageClassTypePropertiesArgs', 'NfsStorageClassTypePropertiesArgsDict', 'RwxStorageClassTypePropertiesArgs', 'RwxStorageClassTypePropertiesArgsDict', 'SmbStorageClassTypePropertiesArgs', 'SmbStorageClassTypePropertiesArgsDict']
+class BlobStorageClassTypePropertiesArgsDict(TypedDict):
+    
+    azure_storage_account_key: pulumi.Input[_builtins.str]
+    azure_storage_account_name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class BlobStorageClassTypePropertiesArgs:
+    def __init__(__self__, *, azure_storage_account_key: pulumi.Input[_builtins.str], azure_storage_account_name: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureStorageAccountKey")
+    def azure_storage_account_key(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @azure_storage_account_key.setter
+    def azure_storage_account_key(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureStorageAccountName")
+    def azure_storage_account_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @azure_storage_account_name.setter
+    def azure_storage_account_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class NativeStorageClassTypePropertiesArgsDict(TypedDict):
+    
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class NativeStorageClassTypePropertiesArgs:
+    def __init__(__self__, *, type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class NfsStorageClassTypePropertiesArgsDict(TypedDict):
+    
+    server: pulumi.Input[_builtins.str]
+    share: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+    mount_permissions: NotRequired[pulumi.Input[_builtins.str]]
+    on_delete: NotRequired[pulumi.Input[Union[_builtins.str, NfsDirectoryActionOnVolumeDeletion]]]
+    sub_dir: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class NfsStorageClassTypePropertiesArgs:
+    def __init__(__self__, *, server: pulumi.Input[_builtins.str], share: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str], mount_permissions: Optional[pulumi.Input[_builtins.str]] = ..., on_delete: Optional[pulumi.Input[Union[_builtins.str, NfsDirectoryActionOnVolumeDeletion]]] = ..., sub_dir: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def server(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server.setter
+    def server(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def share(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @share.setter
+    def share(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountPermissions")
+    def mount_permissions(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @mount_permissions.setter
+    def mount_permissions(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="onDelete")
+    def on_delete(self) -> Optional[pulumi.Input[Union[_builtins.str, NfsDirectoryActionOnVolumeDeletion]]]:
+        
+        ...
+    
+    @on_delete.setter
+    def on_delete(self, value: Optional[pulumi.Input[Union[_builtins.str, NfsDirectoryActionOnVolumeDeletion]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subDir")
+    def sub_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sub_dir.setter
+    def sub_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class RwxStorageClassTypePropertiesArgsDict(TypedDict):
+    
+    backing_storage_class_name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class RwxStorageClassTypePropertiesArgs:
+    def __init__(__self__, *, backing_storage_class_name: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="backingStorageClassName")
+    def backing_storage_class_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @backing_storage_class_name.setter
+    def backing_storage_class_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SmbStorageClassTypePropertiesArgsDict(TypedDict):
+    
+    source: pulumi.Input[_builtins.str]
+    type: pulumi.Input[_builtins.str]
+    domain: NotRequired[pulumi.Input[_builtins.str]]
+    password: NotRequired[pulumi.Input[_builtins.str]]
+    sub_dir: NotRequired[pulumi.Input[_builtins.str]]
+    username: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SmbStorageClassTypePropertiesArgs:
+    def __init__(__self__, *, source: pulumi.Input[_builtins.str], type: pulumi.Input[_builtins.str], domain: Optional[pulumi.Input[_builtins.str]] = ..., password: Optional[pulumi.Input[_builtins.str]] = ..., sub_dir: Optional[pulumi.Input[_builtins.str]] = ..., username: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def source(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source.setter
+    def source(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def domain(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @domain.setter
+    def domain(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subDir")
+    def sub_dir(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sub_dir.setter
+    def sub_dir(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @username.setter
+    def username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

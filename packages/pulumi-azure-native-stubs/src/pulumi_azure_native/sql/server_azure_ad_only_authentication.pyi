@@ -1,0 +1,106 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ServerAzureADOnlyAuthenticationArgs', 'ServerAzureADOnlyAuthentication']
+@pulumi.input_type
+class ServerAzureADOnlyAuthenticationArgs:
+    def __init__(__self__, *, azure_ad_only_authentication: pulumi.Input[_builtins.bool], resource_group_name: pulumi.Input[_builtins.str], server_name: pulumi.Input[_builtins.str], authentication_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureADOnlyAuthentication")
+    def azure_ad_only_authentication(self) -> pulumi.Input[_builtins.bool]:
+        
+        ...
+    
+    @azure_ad_only_authentication.setter
+    def azure_ad_only_authentication(self, value: pulumi.Input[_builtins.bool]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @server_name.setter
+    def server_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationName")
+    def authentication_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authentication_name.setter
+    def authentication_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:ServerAzureADOnlyAuthentication")
+class ServerAzureADOnlyAuthentication(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., authentication_name: Optional[pulumi.Input[_builtins.str]] = ..., azure_ad_only_authentication: Optional[pulumi.Input[_builtins.bool]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ServerAzureADOnlyAuthenticationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ServerAzureADOnlyAuthentication:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureADOnlyAuthentication")
+    def azure_ad_only_authentication(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

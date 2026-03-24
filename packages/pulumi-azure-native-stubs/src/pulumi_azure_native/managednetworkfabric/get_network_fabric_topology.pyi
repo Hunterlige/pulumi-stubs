@@ -1,0 +1,53 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNetworkFabricTopologyResult', 'AwaitableGetNetworkFabricTopologyResult', 'get_network_fabric_topology', 'get_network_fabric_topology_output']
+@pulumi.output_type
+class GetNetworkFabricTopologyResult:
+    
+    def __init__(__self__, configuration_state=..., error=..., url=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationState")
+    def configuration_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> Optional[outputs.ErrorDetailResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetNetworkFabricTopologyResult(GetNetworkFabricTopologyResult):
+    def __await__(self): # -> Generator[Never, Any, GetNetworkFabricTopologyResult]:
+        ...
+    
+
+
+def get_network_fabric_topology(network_fabric_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNetworkFabricTopologyResult:
+    
+    ...
+
+def get_network_fabric_topology_output(network_fabric_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNetworkFabricTopologyResult]:
+    
+    ...
+

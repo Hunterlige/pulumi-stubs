@@ -1,0 +1,133 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PeerAsnArgs', 'PeerAsn']
+@pulumi.input_type
+class PeerAsnArgs:
+    def __init__(__self__, *, peer_asn: Optional[pulumi.Input[_builtins.int]] = ..., peer_asn_name: Optional[pulumi.Input[_builtins.str]] = ..., peer_contact_detail: Optional[pulumi.Input[Sequence[pulumi.Input[ContactDetailArgs]]]] = ..., peer_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsn")
+    def peer_asn(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @peer_asn.setter
+    def peer_asn(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsnName")
+    def peer_asn_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @peer_asn_name.setter
+    def peer_asn_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerContactDetail")
+    def peer_contact_detail(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ContactDetailArgs]]]]:
+        
+        ...
+    
+    @peer_contact_detail.setter
+    def peer_contact_detail(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ContactDetailArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerName")
+    def peer_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @peer_name.setter
+    def peer_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:peering:PeerAsn")
+class PeerAsn(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., peer_asn: Optional[pulumi.Input[_builtins.int]] = ..., peer_asn_name: Optional[pulumi.Input[_builtins.str]] = ..., peer_contact_detail: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ContactDetailArgs, ContactDetailArgsDict]]]]] = ..., peer_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: Optional[PeerAsnArgs] = ..., opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> PeerAsn:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorMessage")
+    def error_message(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerAsn")
+    def peer_asn(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerContactDetail")
+    def peer_contact_detail(self) -> pulumi.Output[Optional[Sequence[outputs.ContactDetailResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peerName")
+    def peer_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validationState")
+    def validation_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

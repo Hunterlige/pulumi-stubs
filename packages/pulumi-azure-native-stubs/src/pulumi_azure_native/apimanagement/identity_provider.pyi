@@ -1,0 +1,261 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['IdentityProviderArgs', 'IdentityProvider']
+@pulumi.input_type
+class IdentityProviderArgs:
+    def __init__(__self__, *, client_id: pulumi.Input[_builtins.str], client_secret: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], allowed_tenants: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., authority: Optional[pulumi.Input[_builtins.str]] = ..., client_library: Optional[pulumi.Input[_builtins.str]] = ..., identity_provider_name: Optional[pulumi.Input[_builtins.str]] = ..., password_reset_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., profile_editing_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., signin_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., signin_tenant: Optional[pulumi.Input[_builtins.str]] = ..., signup_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, IdentityProviderType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @client_secret.setter
+    def client_secret(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedTenants")
+    def allowed_tenants(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @allowed_tenants.setter
+    def allowed_tenants(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authority(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authority.setter
+    def authority(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientLibrary")
+    def client_library(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_library.setter
+    def client_library(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityProviderName")
+    def identity_provider_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @identity_provider_name.setter
+    def identity_provider_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="passwordResetPolicyName")
+    def password_reset_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @password_reset_policy_name.setter
+    def password_reset_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileEditingPolicyName")
+    def profile_editing_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @profile_editing_policy_name.setter
+    def profile_editing_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signinPolicyName")
+    def signin_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @signin_policy_name.setter
+    def signin_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signinTenant")
+    def signin_tenant(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @signin_tenant.setter
+    def signin_tenant(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signupPolicyName")
+    def signup_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @signup_policy_name.setter
+    def signup_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, IdentityProviderType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, IdentityProviderType]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apimanagement:IdentityProvider")
+class IdentityProvider(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., allowed_tenants: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., authority: Optional[pulumi.Input[_builtins.str]] = ..., client_id: Optional[pulumi.Input[_builtins.str]] = ..., client_library: Optional[pulumi.Input[_builtins.str]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., identity_provider_name: Optional[pulumi.Input[_builtins.str]] = ..., password_reset_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., profile_editing_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., signin_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., signin_tenant: Optional[pulumi.Input[_builtins.str]] = ..., signup_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., type: Optional[pulumi.Input[Union[_builtins.str, IdentityProviderType]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: IdentityProviderArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> IdentityProvider:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedTenants")
+    def allowed_tenants(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authority(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientLibrary")
+    def client_library(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="passwordResetPolicyName")
+    def password_reset_policy_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profileEditingPolicyName")
+    def profile_editing_policy_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signinPolicyName")
+    def signin_policy_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signinTenant")
+    def signin_tenant(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="signupPolicyName")
+    def signup_policy_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

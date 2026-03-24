@@ -1,0 +1,185 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRecordSetResult', 'AwaitableGetRecordSetResult', 'get_record_set', 'get_record_set_output']
+@pulumi.output_type
+class GetRecordSetResult:
+    
+    def __init__(__self__, a_records=..., aaaa_records=..., azure_api_version=..., caa_records=..., cname_record=..., ds_records=..., etag=..., fqdn=..., id=..., metadata=..., mx_records=..., name=..., naptr_records=..., ns_records=..., provisioning_state=..., ptr_records=..., soa_record=..., srv_records=..., system_data=..., target_resource=..., tlsa_records=..., traffic_management_profile=..., ttl=..., txt_records=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aRecords")
+    def a_records(self) -> Optional[Sequence[outputs.ARecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aaaaRecords")
+    def aaaa_records(self) -> Optional[Sequence[outputs.AaaaRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="caaRecords")
+    def caa_records(self) -> Optional[Sequence[outputs.CaaRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cnameRecord")
+    def cname_record(self) -> Optional[outputs.CnameRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dsRecords")
+    def ds_records(self) -> Optional[Sequence[outputs.DsRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def fqdn(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mxRecords")
+    def mx_records(self) -> Optional[Sequence[outputs.MxRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="naptrRecords")
+    def naptr_records(self) -> Optional[Sequence[outputs.NaptrRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nsRecords")
+    def ns_records(self) -> Optional[Sequence[outputs.NsRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ptrRecords")
+    def ptr_records(self) -> Optional[Sequence[outputs.PtrRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="soaRecord")
+    def soa_record(self) -> Optional[outputs.SoaRecordResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="srvRecords")
+    def srv_records(self) -> Optional[Sequence[outputs.SrvRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResource")
+    def target_resource(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tlsaRecords")
+    def tlsa_records(self) -> Optional[Sequence[outputs.TlsaRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trafficManagementProfile")
+    def traffic_management_profile(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ttl(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="txtRecords")
+    def txt_records(self) -> Optional[Sequence[outputs.TxtRecordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRecordSetResult(GetRecordSetResult):
+    def __await__(self): # -> Generator[Never, Any, GetRecordSetResult]:
+        ...
+    
+
+
+def get_record_set(record_type: Optional[_builtins.str] = ..., relative_record_set_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., zone_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRecordSetResult:
+    
+    ...
+
+def get_record_set_output(record_type: Optional[pulumi.Input[_builtins.str]] = ..., relative_record_set_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., zone_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRecordSetResult]:
+    
+    ...
+

@@ -1,0 +1,68 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SubscriptionFeatureRegistrationPropertiesArgs', 'SubscriptionFeatureRegistrationPropertiesArgsDict']
+class SubscriptionFeatureRegistrationPropertiesArgsDict(TypedDict):
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    should_feature_display_in_portal: NotRequired[pulumi.Input[_builtins.bool]]
+    state: NotRequired[pulumi.Input[Union[_builtins.str, SubscriptionFeatureRegistrationState]]]
+
+
+@pulumi.input_type
+class SubscriptionFeatureRegistrationPropertiesArgs:
+    def __init__(__self__, *, description: Optional[pulumi.Input[_builtins.str]] = ..., metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., should_feature_display_in_portal: Optional[pulumi.Input[_builtins.bool]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, SubscriptionFeatureRegistrationState]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @metadata.setter
+    def metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="shouldFeatureDisplayInPortal")
+    def should_feature_display_in_portal(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @should_feature_display_in_portal.setter
+    def should_feature_display_in_portal(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, SubscriptionFeatureRegistrationState]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, SubscriptionFeatureRegistrationState]]]): # -> None:
+        ...
+    
+
+

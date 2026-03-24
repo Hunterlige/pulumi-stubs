@@ -1,0 +1,94 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSyncAgentResult', 'AwaitableGetSyncAgentResult', 'get_sync_agent', 'get_sync_agent_output']
+@pulumi.output_type
+class GetSyncAgentResult:
+    
+    def __init__(__self__, azure_api_version=..., expiry_time=..., id=..., is_up_to_date=..., last_alive_time=..., name=..., state=..., sync_database_id=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expiryTime")
+    def expiry_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isUpToDate")
+    def is_up_to_date(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastAliveTime")
+    def last_alive_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncDatabaseId")
+    def sync_database_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetSyncAgentResult(GetSyncAgentResult):
+    def __await__(self): # -> Generator[Never, Any, GetSyncAgentResult]:
+        ...
+    
+
+
+def get_sync_agent(resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., sync_agent_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSyncAgentResult:
+    
+    ...
+
+def get_sync_agent_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_agent_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSyncAgentResult]:
+    
+    ...
+

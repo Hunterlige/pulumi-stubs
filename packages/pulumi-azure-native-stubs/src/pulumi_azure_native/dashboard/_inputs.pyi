@@ -1,0 +1,605 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AzureMonitorWorkspaceIntegrationArgs', 'AzureMonitorWorkspaceIntegrationArgsDict', 'DashboardDefinitionPropertiesArgs', 'DashboardDefinitionPropertiesArgsDict', 'EnterpriseConfigurationsArgs', 'EnterpriseConfigurationsArgsDict', 'GrafanaConfigurationsArgs', 'GrafanaConfigurationsArgsDict', 'GrafanaIntegrationsArgs', 'GrafanaIntegrationsArgsDict', 'IntegrationFabricPropertiesArgs', 'IntegrationFabricPropertiesArgsDict', 'ManagedGrafanaPropertiesArgs', 'ManagedGrafanaPropertiesArgsDict', 'ManagedServiceIdentityArgs', 'ManagedServiceIdentityArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'ResourceSkuArgs', 'ResourceSkuArgsDict', 'SecurityArgs', 'SecurityArgsDict', 'SmtpArgs', 'SmtpArgsDict', 'SnapshotsArgs', 'SnapshotsArgsDict', 'UsersArgs', 'UsersArgsDict']
+class AzureMonitorWorkspaceIntegrationArgsDict(TypedDict):
+    
+    azure_monitor_workspace_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AzureMonitorWorkspaceIntegrationArgs:
+    def __init__(__self__, *, azure_monitor_workspace_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureMonitorWorkspaceResourceId")
+    def azure_monitor_workspace_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @azure_monitor_workspace_resource_id.setter
+    def azure_monitor_workspace_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class DashboardDefinitionPropertiesArgsDict(TypedDict):
+    
+    serialized_data: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class DashboardDefinitionPropertiesArgs:
+    def __init__(__self__, *, serialized_data: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serializedData")
+    def serialized_data(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @serialized_data.setter
+    def serialized_data(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class EnterpriseConfigurationsArgsDict(TypedDict):
+    
+    marketplace_auto_renew: NotRequired[pulumi.Input[Union[_builtins.str, MarketplaceAutoRenew]]]
+    marketplace_plan_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class EnterpriseConfigurationsArgs:
+    def __init__(__self__, *, marketplace_auto_renew: Optional[pulumi.Input[Union[_builtins.str, MarketplaceAutoRenew]]] = ..., marketplace_plan_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="marketplaceAutoRenew")
+    def marketplace_auto_renew(self) -> Optional[pulumi.Input[Union[_builtins.str, MarketplaceAutoRenew]]]:
+        
+        ...
+    
+    @marketplace_auto_renew.setter
+    def marketplace_auto_renew(self, value: Optional[pulumi.Input[Union[_builtins.str, MarketplaceAutoRenew]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="marketplacePlanId")
+    def marketplace_plan_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @marketplace_plan_id.setter
+    def marketplace_plan_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class GrafanaConfigurationsArgsDict(TypedDict):
+    
+    security: NotRequired[pulumi.Input[SecurityArgsDict]]
+    smtp: NotRequired[pulumi.Input[SmtpArgsDict]]
+    snapshots: NotRequired[pulumi.Input[SnapshotsArgsDict]]
+    users: NotRequired[pulumi.Input[UsersArgsDict]]
+
+
+@pulumi.input_type
+class GrafanaConfigurationsArgs:
+    def __init__(__self__, *, security: Optional[pulumi.Input[SecurityArgs]] = ..., smtp: Optional[pulumi.Input[SmtpArgs]] = ..., snapshots: Optional[pulumi.Input[SnapshotsArgs]] = ..., users: Optional[pulumi.Input[UsersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def security(self) -> Optional[pulumi.Input[SecurityArgs]]:
+        
+        ...
+    
+    @security.setter
+    def security(self, value: Optional[pulumi.Input[SecurityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def smtp(self) -> Optional[pulumi.Input[SmtpArgs]]:
+        
+        ...
+    
+    @smtp.setter
+    def smtp(self, value: Optional[pulumi.Input[SmtpArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def snapshots(self) -> Optional[pulumi.Input[SnapshotsArgs]]:
+        
+        ...
+    
+    @snapshots.setter
+    def snapshots(self, value: Optional[pulumi.Input[SnapshotsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def users(self) -> Optional[pulumi.Input[UsersArgs]]:
+        
+        ...
+    
+    @users.setter
+    def users(self, value: Optional[pulumi.Input[UsersArgs]]): # -> None:
+        ...
+    
+
+
+class GrafanaIntegrationsArgsDict(TypedDict):
+    
+    azure_monitor_workspace_integrations: NotRequired[pulumi.Input[Sequence[pulumi.Input[AzureMonitorWorkspaceIntegrationArgsDict]]]]
+
+
+@pulumi.input_type
+class GrafanaIntegrationsArgs:
+    def __init__(__self__, *, azure_monitor_workspace_integrations: Optional[pulumi.Input[Sequence[pulumi.Input[AzureMonitorWorkspaceIntegrationArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureMonitorWorkspaceIntegrations")
+    def azure_monitor_workspace_integrations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AzureMonitorWorkspaceIntegrationArgs]]]]:
+        ...
+    
+    @azure_monitor_workspace_integrations.setter
+    def azure_monitor_workspace_integrations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AzureMonitorWorkspaceIntegrationArgs]]]]): # -> None:
+        ...
+    
+
+
+class IntegrationFabricPropertiesArgsDict(TypedDict):
+    data_source_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+    scenarios: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    target_resource_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class IntegrationFabricPropertiesArgs:
+    def __init__(__self__, *, data_source_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., scenarios: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., target_resource_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataSourceResourceId")
+    def data_source_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @data_source_resource_id.setter
+    def data_source_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scenarios(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @scenarios.setter
+    def scenarios(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceId")
+    def target_resource_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target_resource_id.setter
+    def target_resource_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ManagedGrafanaPropertiesArgsDict(TypedDict):
+    
+    api_key: NotRequired[pulumi.Input[Union[_builtins.str, ApiKey]]]
+    auto_generated_domain_name_label_scope: NotRequired[pulumi.Input[Union[_builtins.str, AutoGeneratedDomainNameLabelScope]]]
+    deterministic_outbound_ip: NotRequired[pulumi.Input[Union[_builtins.str, DeterministicOutboundIP]]]
+    enterprise_configurations: NotRequired[pulumi.Input[EnterpriseConfigurationsArgsDict]]
+    grafana_configurations: NotRequired[pulumi.Input[GrafanaConfigurationsArgsDict]]
+    grafana_integrations: NotRequired[pulumi.Input[GrafanaIntegrationsArgsDict]]
+    grafana_major_version: NotRequired[pulumi.Input[_builtins.str]]
+    grafana_plugins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    public_network_access: NotRequired[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
+    zone_redundancy: NotRequired[pulumi.Input[Union[_builtins.str, ZoneRedundancy]]]
+
+
+@pulumi.input_type
+class ManagedGrafanaPropertiesArgs:
+    def __init__(__self__, *, api_key: Optional[pulumi.Input[Union[_builtins.str, ApiKey]]] = ..., auto_generated_domain_name_label_scope: Optional[pulumi.Input[Union[_builtins.str, AutoGeneratedDomainNameLabelScope]]] = ..., deterministic_outbound_ip: Optional[pulumi.Input[Union[_builtins.str, DeterministicOutboundIP]]] = ..., enterprise_configurations: Optional[pulumi.Input[EnterpriseConfigurationsArgs]] = ..., grafana_configurations: Optional[pulumi.Input[GrafanaConfigurationsArgs]] = ..., grafana_integrations: Optional[pulumi.Input[GrafanaIntegrationsArgs]] = ..., grafana_major_version: Optional[pulumi.Input[_builtins.str]] = ..., grafana_plugins: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., zone_redundancy: Optional[pulumi.Input[Union[_builtins.str, ZoneRedundancy]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiKey")
+    def api_key(self) -> Optional[pulumi.Input[Union[_builtins.str, ApiKey]]]:
+        
+        ...
+    
+    @api_key.setter
+    def api_key(self, value: Optional[pulumi.Input[Union[_builtins.str, ApiKey]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoGeneratedDomainNameLabelScope")
+    def auto_generated_domain_name_label_scope(self) -> Optional[pulumi.Input[Union[_builtins.str, AutoGeneratedDomainNameLabelScope]]]:
+        
+        ...
+    
+    @auto_generated_domain_name_label_scope.setter
+    def auto_generated_domain_name_label_scope(self, value: Optional[pulumi.Input[Union[_builtins.str, AutoGeneratedDomainNameLabelScope]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deterministicOutboundIP")
+    def deterministic_outbound_ip(self) -> Optional[pulumi.Input[Union[_builtins.str, DeterministicOutboundIP]]]:
+        
+        ...
+    
+    @deterministic_outbound_ip.setter
+    def deterministic_outbound_ip(self, value: Optional[pulumi.Input[Union[_builtins.str, DeterministicOutboundIP]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enterpriseConfigurations")
+    def enterprise_configurations(self) -> Optional[pulumi.Input[EnterpriseConfigurationsArgs]]:
+        
+        ...
+    
+    @enterprise_configurations.setter
+    def enterprise_configurations(self, value: Optional[pulumi.Input[EnterpriseConfigurationsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grafanaConfigurations")
+    def grafana_configurations(self) -> Optional[pulumi.Input[GrafanaConfigurationsArgs]]:
+        
+        ...
+    
+    @grafana_configurations.setter
+    def grafana_configurations(self, value: Optional[pulumi.Input[GrafanaConfigurationsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grafanaIntegrations")
+    def grafana_integrations(self) -> Optional[pulumi.Input[GrafanaIntegrationsArgs]]:
+        
+        ...
+    
+    @grafana_integrations.setter
+    def grafana_integrations(self, value: Optional[pulumi.Input[GrafanaIntegrationsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grafanaMajorVersion")
+    def grafana_major_version(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @grafana_major_version.setter
+    def grafana_major_version(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grafanaPlugins")
+    def grafana_plugins(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @grafana_plugins.setter
+    def grafana_plugins(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zoneRedundancy")
+    def zone_redundancy(self) -> Optional[pulumi.Input[Union[_builtins.str, ZoneRedundancy]]]:
+        
+        ...
+    
+    @zone_redundancy.setter
+    def zone_redundancy(self, value: Optional[pulumi.Input[Union[_builtins.str, ZoneRedundancy]]]): # -> None:
+        ...
+    
+
+
+class ManagedServiceIdentityArgsDict(TypedDict):
+    
+    type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ManagedServiceIdentityArgs:
+    def __init__(__self__, *, type: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]], user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class ResourceSkuArgsDict(TypedDict):
+    name: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ResourceSkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str]) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SecurityArgsDict(TypedDict):
+    
+    csrf_always_check: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class SecurityArgs:
+    def __init__(__self__, *, csrf_always_check: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="csrfAlwaysCheck")
+    def csrf_always_check(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @csrf_always_check.setter
+    def csrf_always_check(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class SmtpArgsDict(TypedDict):
+    
+    enabled: NotRequired[pulumi.Input[_builtins.bool]]
+    from_address: NotRequired[pulumi.Input[_builtins.str]]
+    from_name: NotRequired[pulumi.Input[_builtins.str]]
+    host: NotRequired[pulumi.Input[_builtins.str]]
+    password: NotRequired[pulumi.Input[_builtins.str]]
+    skip_verify: NotRequired[pulumi.Input[_builtins.bool]]
+    start_tls_policy: NotRequired[pulumi.Input[Union[_builtins.str, StartTLSPolicy]]]
+    user: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SmtpArgs:
+    def __init__(__self__, *, enabled: Optional[pulumi.Input[_builtins.bool]] = ..., from_address: Optional[pulumi.Input[_builtins.str]] = ..., from_name: Optional[pulumi.Input[_builtins.str]] = ..., host: Optional[pulumi.Input[_builtins.str]] = ..., password: Optional[pulumi.Input[_builtins.str]] = ..., skip_verify: Optional[pulumi.Input[_builtins.bool]] = ..., start_tls_policy: Optional[pulumi.Input[Union[_builtins.str, StartTLSPolicy]]] = ..., user: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fromAddress")
+    def from_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @from_address.setter
+    def from_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fromName")
+    def from_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @from_name.setter
+    def from_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def host(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @host.setter
+    def host(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skipVerify")
+    def skip_verify(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @skip_verify.setter
+    def skip_verify(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTLSPolicy")
+    def start_tls_policy(self) -> Optional[pulumi.Input[Union[_builtins.str, StartTLSPolicy]]]:
+        
+        ...
+    
+    @start_tls_policy.setter
+    def start_tls_policy(self, value: Optional[pulumi.Input[Union[_builtins.str, StartTLSPolicy]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def user(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user.setter
+    def user(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class SnapshotsArgsDict(TypedDict):
+    
+    external_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class SnapshotsArgs:
+    def __init__(__self__, *, external_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalEnabled")
+    def external_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @external_enabled.setter
+    def external_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class UsersArgsDict(TypedDict):
+    
+    viewers_can_edit: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class UsersArgs:
+    def __init__(__self__, *, viewers_can_edit: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="viewersCanEdit")
+    def viewers_can_edit(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @viewers_can_edit.setter
+    def viewers_can_edit(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+

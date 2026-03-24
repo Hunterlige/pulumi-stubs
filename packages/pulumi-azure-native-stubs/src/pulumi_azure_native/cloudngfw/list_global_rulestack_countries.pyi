@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListGlobalRulestackCountriesResult', 'AwaitableListGlobalRulestackCountriesResult', 'list_global_rulestack_countries', 'list_global_rulestack_countries_output']
+@pulumi.output_type
+class ListGlobalRulestackCountriesResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.CountryResponse]:
+        
+        ...
+    
+
+
+class AwaitableListGlobalRulestackCountriesResult(ListGlobalRulestackCountriesResult):
+    def __await__(self): # -> Generator[Never, Any, ListGlobalRulestackCountriesResult]:
+        ...
+    
+
+
+def list_global_rulestack_countries(global_rulestack_name: Optional[_builtins.str] = ..., skip: Optional[_builtins.str] = ..., top: Optional[_builtins.int] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListGlobalRulestackCountriesResult:
+    
+    ...
+
+def list_global_rulestack_countries_output(global_rulestack_name: Optional[pulumi.Input[_builtins.str]] = ..., skip: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., top: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListGlobalRulestackCountriesResult]:
+    
+    ...
+

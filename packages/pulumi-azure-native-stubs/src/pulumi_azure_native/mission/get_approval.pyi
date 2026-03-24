@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetApprovalResult', 'AwaitableGetApprovalResult', 'get_approval', 'get_approval_output']
+@pulumi.output_type
+class GetApprovalResult:
+    
+    def __init__(__self__, approvers=..., azure_api_version=..., created_at=..., grandparent_resource_id=..., id=..., name=..., parent_resource_id=..., provisioning_state=..., request_metadata=..., state_changed_at=..., system_data=..., ticket_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def approvers(self) -> Optional[Sequence[outputs.ApproverResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grandparentResourceId")
+    def grandparent_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parentResourceId")
+    def parent_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestMetadata")
+    def request_metadata(self) -> outputs.RequestMetadataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stateChangedAt")
+    def state_changed_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ticketId")
+    def ticket_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetApprovalResult(GetApprovalResult):
+    def __await__(self): # -> Generator[Never, Any, GetApprovalResult]:
+        ...
+    
+
+
+def get_approval(approval_name: Optional[_builtins.str] = ..., resource_uri: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetApprovalResult:
+    
+    ...
+
+def get_approval_output(approval_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetApprovalResult]:
+    
+    ...
+

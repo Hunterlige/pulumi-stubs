@@ -1,0 +1,179 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDeploymentStackAtResourceGroupResult', 'AwaitableGetDeploymentStackAtResourceGroupResult', 'get_deployment_stack_at_resource_group', 'get_deployment_stack_at_resource_group_output']
+@pulumi.output_type
+class GetDeploymentStackAtResourceGroupResult:
+    
+    def __init__(__self__, action_on_unmanage=..., azure_api_version=..., correlation_id=..., debug_setting=..., deleted_resources=..., deny_settings=..., deployment_id=..., deployment_scope=..., description=..., detached_resources=..., duration=..., error=..., failed_resources=..., id=..., location=..., name=..., outputs=..., parameters=..., parameters_link=..., provisioning_state=..., resources=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionOnUnmanage")
+    def action_on_unmanage(self) -> outputs.ActionOnUnmanageResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="correlationId")
+    def correlation_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="debugSetting")
+    def debug_setting(self) -> Optional[outputs.DeploymentStacksDebugSettingResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deletedResources")
+    def deleted_resources(self) -> Sequence[outputs.ResourceReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="denySettings")
+    def deny_settings(self) -> outputs.DenySettingsResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentId")
+    def deployment_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentScope")
+    def deployment_scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detachedResources")
+    def detached_resources(self) -> Sequence[outputs.ResourceReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def error(self) -> outputs.ErrorDetailResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failedResources")
+    def failed_resources(self) -> Sequence[outputs.ResourceReferenceExtendedResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def outputs(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[Mapping[str, outputs.DeploymentParameterResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="parametersLink")
+    def parameters_link(self) -> Optional[outputs.DeploymentStacksParametersLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def resources(self) -> Sequence[outputs.ManagedResourceReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDeploymentStackAtResourceGroupResult(GetDeploymentStackAtResourceGroupResult):
+    def __await__(self): # -> Generator[Never, Any, GetDeploymentStackAtResourceGroupResult]:
+        ...
+    
+
+
+def get_deployment_stack_at_resource_group(deployment_stack_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDeploymentStackAtResourceGroupResult:
+    
+    ...
+
+def get_deployment_stack_at_resource_group_output(deployment_stack_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDeploymentStackAtResourceGroupResult]:
+    
+    ...
+

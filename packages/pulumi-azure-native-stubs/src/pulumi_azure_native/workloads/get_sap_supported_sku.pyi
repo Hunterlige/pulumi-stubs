@@ -1,0 +1,42 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSAPSupportedSkuResult', 'AwaitableGetSAPSupportedSkuResult', 'get_sap_supported_sku', 'get_sap_supported_sku_output']
+@pulumi.output_type
+class GetSAPSupportedSkuResult:
+    
+    def __init__(__self__, supported_skus=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedSkus")
+    def supported_skus(self) -> Optional[Sequence[outputs.SAPSupportedSkuResponse]]:
+        
+        ...
+    
+
+
+class AwaitableGetSAPSupportedSkuResult(GetSAPSupportedSkuResult):
+    def __await__(self): # -> Generator[Never, Any, GetSAPSupportedSkuResult]:
+        ...
+    
+
+
+def get_sap_supported_sku(app_location: Optional[_builtins.str] = ..., database_type: Optional[Union[_builtins.str, SAPDatabaseType]] = ..., deployment_type: Optional[Union[_builtins.str, SAPDeploymentType]] = ..., environment: Optional[Union[_builtins.str, SAPEnvironmentType]] = ..., high_availability_type: Optional[Union[_builtins.str, SAPHighAvailabilityType]] = ..., location: Optional[_builtins.str] = ..., sap_product: Optional[Union[_builtins.str, SAPProductType]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSAPSupportedSkuResult:
+    
+    ...
+
+def get_sap_supported_sku_output(app_location: Optional[pulumi.Input[_builtins.str]] = ..., database_type: Optional[pulumi.Input[Union[_builtins.str, SAPDatabaseType]]] = ..., deployment_type: Optional[pulumi.Input[Union[_builtins.str, SAPDeploymentType]]] = ..., environment: Optional[pulumi.Input[Union[_builtins.str, SAPEnvironmentType]]] = ..., high_availability_type: Optional[pulumi.Input[Optional[Union[_builtins.str, SAPHighAvailabilityType]]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., sap_product: Optional[pulumi.Input[Union[_builtins.str, SAPProductType]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSAPSupportedSkuResult]:
+    
+    ...
+

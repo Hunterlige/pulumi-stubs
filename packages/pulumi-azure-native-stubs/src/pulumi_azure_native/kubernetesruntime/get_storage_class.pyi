@@ -1,0 +1,137 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetStorageClassResult', 'AwaitableGetStorageClassResult', 'get_storage_class', 'get_storage_class_output']
+@pulumi.output_type
+class GetStorageClassResult:
+    
+    def __init__(__self__, access_modes=..., allow_volume_expansion=..., azure_api_version=..., data_resilience=..., failover_speed=..., id=..., limitations=..., mount_options=..., name=..., performance=..., priority=..., provisioner=..., provisioning_state=..., system_data=..., type=..., type_properties=..., volume_binding_mode=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessModes")
+    def access_modes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowVolumeExpansion")
+    def allow_volume_expansion(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dataResilience")
+    def data_resilience(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverSpeed")
+    def failover_speed(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def limitations(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mountOptions")
+    def mount_options(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def performance(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def priority(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def provisioner(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeProperties")
+    def type_properties(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="volumeBindingMode")
+    def volume_binding_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetStorageClassResult(GetStorageClassResult):
+    def __await__(self): # -> Generator[Never, Any, GetStorageClassResult]:
+        ...
+    
+
+
+def get_storage_class(resource_uri: Optional[_builtins.str] = ..., storage_class_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetStorageClassResult:
+    
+    ...
+
+def get_storage_class_output(resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., storage_class_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetStorageClassResult]:
+    
+    ...
+

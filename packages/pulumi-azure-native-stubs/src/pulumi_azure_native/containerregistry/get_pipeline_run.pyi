@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPipelineRunResult', 'AwaitableGetPipelineRunResult', 'get_pipeline_run', 'get_pipeline_run_output']
+@pulumi.output_type
+class GetPipelineRunResult:
+    
+    def __init__(__self__, azure_api_version=..., force_update_tag=..., id=..., name=..., provisioning_state=..., request=..., response=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="forceUpdateTag")
+    def force_update_tag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def request(self) -> Optional[outputs.PipelineRunRequestResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def response(self) -> outputs.PipelineRunResponseResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPipelineRunResult(GetPipelineRunResult):
+    def __await__(self): # -> Generator[Never, Any, GetPipelineRunResult]:
+        ...
+    
+
+
+def get_pipeline_run(pipeline_run_name: Optional[_builtins.str] = ..., registry_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPipelineRunResult:
+    
+    ...
+
+def get_pipeline_run_output(pipeline_run_name: Optional[pulumi.Input[_builtins.str]] = ..., registry_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPipelineRunResult]:
+    
+    ...
+

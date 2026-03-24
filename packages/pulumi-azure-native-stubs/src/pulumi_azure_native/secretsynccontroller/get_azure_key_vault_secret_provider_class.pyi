@@ -1,0 +1,113 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAzureKeyVaultSecretProviderClassResult', 'AwaitableGetAzureKeyVaultSecretProviderClassResult', 'get_azure_key_vault_secret_provider_class', 'get_azure_key_vault_secret_provider_class_output']
+@pulumi.output_type
+class GetAzureKeyVaultSecretProviderClassResult:
+    
+    def __init__(__self__, azure_api_version=..., client_id=..., extended_location=..., id=..., keyvault_name=..., location=..., name=..., objects=..., provisioning_state=..., system_data=..., tags=..., tenant_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.AzureResourceManagerCommonTypesExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyvaultName")
+    def keyvault_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def objects(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetAzureKeyVaultSecretProviderClassResult(GetAzureKeyVaultSecretProviderClassResult):
+    def __await__(self): # -> Generator[Never, Any, GetAzureKeyVaultSecretProviderClassResult]:
+        ...
+    
+
+
+def get_azure_key_vault_secret_provider_class(azure_key_vault_secret_provider_class_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAzureKeyVaultSecretProviderClassResult:
+    
+    ...
+
+def get_azure_key_vault_secret_provider_class_output(azure_key_vault_secret_provider_class_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAzureKeyVaultSecretProviderClassResult]:
+    
+    ...
+

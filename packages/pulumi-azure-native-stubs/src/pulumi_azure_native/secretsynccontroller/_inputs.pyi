@@ -1,0 +1,81 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., 'KubernetesSecretObjectMappingArgs', 'KubernetesSecretObjectMappingArgsDict']
+class AzureResourceManagerCommonTypesExtendedLocationArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    type: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]
+
+
+@pulumi.input_type
+class AzureResourceManagerCommonTypesExtendedLocationArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], type: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, ExtendedLocationType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, ExtendedLocationType]]): # -> None:
+        ...
+    
+
+
+class KubernetesSecretObjectMappingArgsDict(TypedDict):
+    
+    source_path: pulumi.Input[_builtins.str]
+    target_key: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class KubernetesSecretObjectMappingArgs:
+    def __init__(__self__, *, source_path: pulumi.Input[_builtins.str], target_key: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourcePath")
+    def source_path(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @source_path.setter
+    def source_path(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetKey")
+    def target_key(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @target_key.setter
+    def target_key(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+

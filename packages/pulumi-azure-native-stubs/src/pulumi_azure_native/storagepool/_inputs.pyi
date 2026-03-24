@@ -1,0 +1,138 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AclArgs', 'AclArgsDict', 'DiskArgs', 'DiskArgsDict', 'IscsiLunArgs', 'IscsiLunArgsDict', 'SkuArgs', 'SkuArgsDict']
+class AclArgsDict(TypedDict):
+    
+    initiator_iqn: pulumi.Input[_builtins.str]
+    mapped_luns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
+
+
+@pulumi.input_type
+class AclArgs:
+    def __init__(__self__, *, initiator_iqn: pulumi.Input[_builtins.str], mapped_luns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="initiatorIqn")
+    def initiator_iqn(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @initiator_iqn.setter
+    def initiator_iqn(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mappedLuns")
+    def mapped_luns(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @mapped_luns.setter
+    def mapped_luns(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+
+
+class DiskArgsDict(TypedDict):
+    
+    id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class DiskArgs:
+    def __init__(__self__, *, id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class IscsiLunArgsDict(TypedDict):
+    
+    managed_disk_azure_resource_id: pulumi.Input[_builtins.str]
+    name: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class IscsiLunArgs:
+    def __init__(__self__, *, managed_disk_azure_resource_id: pulumi.Input[_builtins.str], name: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedDiskAzureResourceId")
+    def managed_disk_azure_resource_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @managed_disk_azure_resource_id.setter
+    def managed_disk_azure_resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    tier: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], tier: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

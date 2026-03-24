@@ -1,0 +1,70 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetGroupQuotaResult', 'AwaitableGetGroupQuotaResult', 'get_group_quota', 'get_group_quota_output']
+@pulumi.output_type
+class GetGroupQuotaResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., name=..., properties=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.GroupQuotasEntityResponseProperties:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetGroupQuotaResult(GetGroupQuotaResult):
+    def __await__(self): # -> Generator[Never, Any, GetGroupQuotaResult]:
+        ...
+    
+
+
+def get_group_quota(group_quota_name: Optional[_builtins.str] = ..., management_group_id: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetGroupQuotaResult:
+    
+    ...
+
+def get_group_quota_output(group_quota_name: Optional[pulumi.Input[_builtins.str]] = ..., management_group_id: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetGroupQuotaResult]:
+    
+    ...
+

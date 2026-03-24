@@ -1,0 +1,161 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPimRoleEligibilityScheduleResult', 'AwaitableGetPimRoleEligibilityScheduleResult', 'get_pim_role_eligibility_schedule', 'get_pim_role_eligibility_schedule_output']
+@pulumi.output_type
+class GetPimRoleEligibilityScheduleResult:
+    
+    def __init__(__self__, approval_id=..., azure_api_version=..., condition=..., condition_version=..., created_on=..., expanded_properties=..., id=..., justification=..., name=..., principal_id=..., principal_type=..., request_type=..., requestor_id=..., role_definition_id=..., schedule_info=..., scope=..., status=..., target_role_eligibility_schedule_id=..., target_role_eligibility_schedule_instance_id=..., ticket_info=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="approvalId")
+    def approval_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def condition(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="conditionVersion")
+    def condition_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdOn")
+    def created_on(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expandedProperties")
+    def expanded_properties(self) -> outputs.ExpandedPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def justification(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalType")
+    def principal_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestType")
+    def request_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestorId")
+    def requestor_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="roleDefinitionId")
+    def role_definition_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduleInfo")
+    def schedule_info(self) -> Optional[outputs.RoleEligibilityScheduleRequestPropertiesResponseScheduleInfo]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetRoleEligibilityScheduleId")
+    def target_role_eligibility_schedule_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetRoleEligibilityScheduleInstanceId")
+    def target_role_eligibility_schedule_instance_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ticketInfo")
+    def ticket_info(self) -> Optional[outputs.RoleEligibilityScheduleRequestPropertiesResponseTicketInfo]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPimRoleEligibilityScheduleResult(GetPimRoleEligibilityScheduleResult):
+    def __await__(self): # -> Generator[Never, Any, GetPimRoleEligibilityScheduleResult]:
+        ...
+    
+
+
+def get_pim_role_eligibility_schedule(role_eligibility_schedule_request_name: Optional[_builtins.str] = ..., scope: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPimRoleEligibilityScheduleResult:
+    
+    ...
+
+def get_pim_role_eligibility_schedule_output(role_eligibility_schedule_request_name: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPimRoleEligibilityScheduleResult]:
+    
+    ...
+

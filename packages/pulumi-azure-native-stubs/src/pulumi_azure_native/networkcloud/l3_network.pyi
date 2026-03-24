@@ -1,0 +1,313 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['L3NetworkArgs', 'L3Network']
+@pulumi.input_type
+class L3NetworkArgs:
+    def __init__(__self__, *, extended_location: pulumi.Input[ExtendedLocationArgs], l3_isolation_domain_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], vlan: pulumi.Input[_builtins.float], hybrid_aks_ipam_enabled: Optional[pulumi.Input[Union[_builtins.str, HybridAksIpamEnabled]]] = ..., hybrid_aks_plugin_type: Optional[pulumi.Input[Union[_builtins.str, HybridAksPluginType]]] = ..., interface_name: Optional[pulumi.Input[_builtins.str]] = ..., ip_allocation_type: Optional[pulumi.Input[Union[_builtins.str, IpAllocationType]]] = ..., ipv4_connected_prefix: Optional[pulumi.Input[_builtins.str]] = ..., ipv6_connected_prefix: Optional[pulumi.Input[_builtins.str]] = ..., l3_network_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Input[ExtendedLocationArgs]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: pulumi.Input[ExtendedLocationArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l3IsolationDomainId")
+    def l3_isolation_domain_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @l3_isolation_domain_id.setter
+    def l3_isolation_domain_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vlan(self) -> pulumi.Input[_builtins.float]:
+        
+        ...
+    
+    @vlan.setter
+    def vlan(self, value: pulumi.Input[_builtins.float]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridAksIpamEnabled")
+    def hybrid_aks_ipam_enabled(self) -> Optional[pulumi.Input[Union[_builtins.str, HybridAksIpamEnabled]]]:
+        
+        ...
+    
+    @hybrid_aks_ipam_enabled.setter
+    def hybrid_aks_ipam_enabled(self, value: Optional[pulumi.Input[Union[_builtins.str, HybridAksIpamEnabled]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridAksPluginType")
+    def hybrid_aks_plugin_type(self) -> Optional[pulumi.Input[Union[_builtins.str, HybridAksPluginType]]]:
+        
+        ...
+    
+    @hybrid_aks_plugin_type.setter
+    def hybrid_aks_plugin_type(self, value: Optional[pulumi.Input[Union[_builtins.str, HybridAksPluginType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="interfaceName")
+    def interface_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @interface_name.setter
+    def interface_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipAllocationType")
+    def ip_allocation_type(self) -> Optional[pulumi.Input[Union[_builtins.str, IpAllocationType]]]:
+        
+        ...
+    
+    @ip_allocation_type.setter
+    def ip_allocation_type(self, value: Optional[pulumi.Input[Union[_builtins.str, IpAllocationType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv4ConnectedPrefix")
+    def ipv4_connected_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ipv4_connected_prefix.setter
+    def ipv4_connected_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6ConnectedPrefix")
+    def ipv6_connected_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ipv6_connected_prefix.setter
+    def ipv6_connected_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l3NetworkName")
+    def l3_network_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @l3_network_name.setter
+    def l3_network_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:networkcloud:L3Network")
+class L3Network(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., hybrid_aks_ipam_enabled: Optional[pulumi.Input[Union[_builtins.str, HybridAksIpamEnabled]]] = ..., hybrid_aks_plugin_type: Optional[pulumi.Input[Union[_builtins.str, HybridAksPluginType]]] = ..., interface_name: Optional[pulumi.Input[_builtins.str]] = ..., ip_allocation_type: Optional[pulumi.Input[Union[_builtins.str, IpAllocationType]]] = ..., ipv4_connected_prefix: Optional[pulumi.Input[_builtins.str]] = ..., ipv6_connected_prefix: Optional[pulumi.Input[_builtins.str]] = ..., l3_isolation_domain_id: Optional[pulumi.Input[_builtins.str]] = ..., l3_network_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., vlan: Optional[pulumi.Input[_builtins.float]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: L3NetworkArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> L3Network:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="associatedResourceIds")
+    def associated_resource_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clusterId")
+    def cluster_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatus")
+    def detailed_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatusMessage")
+    def detailed_status_message(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridAksClustersAssociatedIds")
+    def hybrid_aks_clusters_associated_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridAksIpamEnabled")
+    def hybrid_aks_ipam_enabled(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hybridAksPluginType")
+    def hybrid_aks_plugin_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="interfaceName")
+    def interface_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipAllocationType")
+    def ip_allocation_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv4ConnectedPrefix")
+    def ipv4_connected_prefix(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipv6ConnectedPrefix")
+    def ipv6_connected_prefix(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="l3IsolationDomainId")
+    def l3_isolation_domain_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachinesAssociatedIds")
+    def virtual_machines_associated_ids(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vlan(self) -> pulumi.Output[_builtins.float]:
+        
+        ...
+    
+
+

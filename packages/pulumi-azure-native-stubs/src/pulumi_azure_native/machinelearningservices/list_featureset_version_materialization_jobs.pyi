@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListFeaturesetVersionMaterializationJobsResult', ..., 'list_featureset_version_materialization_jobs', ...]
+@pulumi.output_type
+class ListFeaturesetVersionMaterializationJobsResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.FeaturesetJobResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListFeaturesetVersionMaterializationJobsResult(ListFeaturesetVersionMaterializationJobsResult):
+    def __await__(self): # -> Generator[Never, Any, ListFeaturesetVersionMaterializationJobsResult]:
+        ...
+    
+
+
+def list_featureset_version_materialization_jobs(feature_window_end: Optional[_builtins.str] = ..., feature_window_start: Optional[_builtins.str] = ..., filters: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., skip: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListFeaturesetVersionMaterializationJobsResult:
+    
+    ...
+
+def list_featureset_version_materialization_jobs_output(feature_window_end: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., feature_window_start: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., filters: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., skip: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., version: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListFeaturesetVersionMaterializationJobsResult]:
+    
+    ...
+

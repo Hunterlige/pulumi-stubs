@@ -1,0 +1,76 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRegisteredAsnResult', 'AwaitableGetRegisteredAsnResult', 'get_registered_asn', 'get_registered_asn_output']
+@pulumi.output_type
+class GetRegisteredAsnResult:
+    
+    def __init__(__self__, asn=..., azure_api_version=..., id=..., name=..., peering_service_prefix_key=..., provisioning_state=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def asn(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="peeringServicePrefixKey")
+    def peering_service_prefix_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRegisteredAsnResult(GetRegisteredAsnResult):
+    def __await__(self): # -> Generator[Never, Any, GetRegisteredAsnResult]:
+        ...
+    
+
+
+def get_registered_asn(peering_name: Optional[_builtins.str] = ..., registered_asn_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRegisteredAsnResult:
+    
+    ...
+
+def get_registered_asn_output(peering_name: Optional[pulumi.Input[_builtins.str]] = ..., registered_asn_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRegisteredAsnResult]:
+    
+    ...
+

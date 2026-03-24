@@ -1,0 +1,32 @@
+
+
+import builtins as _builtins
+import typing
+from .. import _utilities
+from ._enums import *
+from .dns_forwarding_ruleset import *
+from .dns_resolver import *
+from .dns_resolver_domain_list import *
+from .dns_resolver_policy import *
+from .dns_resolver_policy_virtual_network_link import *
+from .dns_security_rule import *
+from .forwarding_rule import *
+from .get_dns_forwarding_ruleset import *
+from .get_dns_resolver import *
+from .get_dns_resolver_domain_list import *
+from .get_dns_resolver_policy import *
+from .get_dns_resolver_policy_virtual_network_link import *
+from .get_dns_security_rule import *
+from .get_forwarding_rule import *
+from .get_inbound_endpoint import *
+from .get_outbound_endpoint import *
+from .get_private_resolver_virtual_network_link import *
+from .inbound_endpoint import *
+from .list_dns_forwarding_ruleset_by_virtual_network import *
+from .list_dns_resolver_by_virtual_network import *
+from .list_dns_resolver_policy_by_virtual_network import *
+from .outbound_endpoint import *
+from .private_resolver_virtual_network_link import *
+from ._inputs import *
+from . import outputs
+

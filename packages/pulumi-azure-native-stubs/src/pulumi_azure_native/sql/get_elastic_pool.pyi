@@ -1,0 +1,155 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetElasticPoolResult', 'AwaitableGetElasticPoolResult', 'get_elastic_pool', 'get_elastic_pool_output']
+@pulumi.output_type
+class GetElasticPoolResult:
+    
+    def __init__(__self__, auto_pause_delay=..., availability_zone=..., azure_api_version=..., creation_date=..., high_availability_replica_count=..., id=..., kind=..., license_type=..., location=..., maintenance_configuration_id=..., max_size_bytes=..., min_capacity=..., name=..., per_database_settings=..., preferred_enclave_type=..., sku=..., state=..., tags=..., type=..., zone_redundant=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoPauseDelay")
+    def auto_pause_delay(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZone")
+    def availability_zone(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationDate")
+    def creation_date(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="highAvailabilityReplicaCount")
+    def high_availability_replica_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="licenseType")
+    def license_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceConfigurationId")
+    def maintenance_configuration_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxSizeBytes")
+    def max_size_bytes(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minCapacity")
+    def min_capacity(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="perDatabaseSettings")
+    def per_database_settings(self) -> Optional[outputs.ElasticPoolPerDatabaseSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preferredEnclaveType")
+    def preferred_enclave_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zoneRedundant")
+    def zone_redundant(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+class AwaitableGetElasticPoolResult(GetElasticPoolResult):
+    def __await__(self): # -> Generator[Never, Any, GetElasticPoolResult]:
+        ...
+    
+
+
+def get_elastic_pool(elastic_pool_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetElasticPoolResult:
+    
+    ...
+
+def get_elastic_pool_output(elastic_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetElasticPoolResult]:
+    
+    ...
+

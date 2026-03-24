@@ -1,0 +1,770 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AdmCredentialResponse', 'ApnsCredentialResponse', 'BaiduCredentialResponse', 'BrowserCredentialResponse', 'FcmV1CredentialResponse', 'GcmCredentialResponse', 'IpRuleResponse', 'MpnsCredentialResponse', 'NetworkAclsResponse', 'PnsCredentialsResponse', 'PrivateEndpointConnectionPropertiesResponse', 'PrivateEndpointConnectionResourceResponse', 'PublicInternetAuthorizationRuleResponse', 'RemotePrivateEndpointConnectionResponse', 'RemotePrivateLinkServiceConnectionStateResponse', 'SharedAccessAuthorizationRulePropertiesResponse', 'SkuResponse', 'SystemDataResponse', 'WnsCredentialResponse', 'XiaomiCredentialResponse']
+@pulumi.output_type
+class AdmCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, auth_token_url: _builtins.str, client_id: _builtins.str, client_secret: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authTokenUrl")
+    def auth_token_url(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ApnsCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, endpoint: _builtins.str, apns_certificate: Optional[_builtins.str] = ..., app_id: Optional[_builtins.str] = ..., app_name: Optional[_builtins.str] = ..., certificate_key: Optional[_builtins.str] = ..., key_id: Optional[_builtins.str] = ..., thumbprint: Optional[_builtins.str] = ..., token: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apnsCertificate")
+    def apns_certificate(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appId")
+    def app_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appName")
+    def app_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certificateKey")
+    def certificate_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyId")
+    def key_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def thumbprint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BaiduCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, baidu_api_key: _builtins.str, baidu_end_point: _builtins.str, baidu_secret_key: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baiduApiKey")
+    def baidu_api_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baiduEndPoint")
+    def baidu_end_point(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baiduSecretKey")
+    def baidu_secret_key(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class BrowserCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, subject: _builtins.str, vapid_private_key: _builtins.str, vapid_public_key: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def subject(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vapidPrivateKey")
+    def vapid_private_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vapidPublicKey")
+    def vapid_public_key(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class FcmV1CredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, client_email: _builtins.str, private_key: _builtins.str, project_id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientEmail")
+    def client_email(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateKey")
+    def private_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="projectId")
+    def project_id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class GcmCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, google_api_key: _builtins.str, gcm_endpoint: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="googleApiKey")
+    def google_api_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gcmEndpoint")
+    def gcm_endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class IpRuleResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, ip_mask: _builtins.str, rights: Sequence[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipMask")
+    def ip_mask(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rights(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class MpnsCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, certificate_key: _builtins.str, mpns_certificate: _builtins.str, thumbprint: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certificateKey")
+    def certificate_key(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mpnsCertificate")
+    def mpns_certificate(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def thumbprint(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class NetworkAclsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, ip_rules: Optional[Sequence[outputs.IpRuleResponse]] = ..., public_network_rule: Optional[outputs.PublicInternetAuthorizationRuleResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipRules")
+    def ip_rules(self) -> Optional[Sequence[outputs.IpRuleResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkRule")
+    def public_network_rule(self) -> Optional[outputs.PublicInternetAuthorizationRuleResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PnsCredentialsResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, adm_credential: Optional[outputs.AdmCredentialResponse] = ..., apns_credential: Optional[outputs.ApnsCredentialResponse] = ..., baidu_credential: Optional[outputs.BaiduCredentialResponse] = ..., browser_credential: Optional[outputs.BrowserCredentialResponse] = ..., fcm_v1_credential: Optional[outputs.FcmV1CredentialResponse] = ..., gcm_credential: Optional[outputs.GcmCredentialResponse] = ..., mpns_credential: Optional[outputs.MpnsCredentialResponse] = ..., wns_credential: Optional[outputs.WnsCredentialResponse] = ..., xiaomi_credential: Optional[outputs.XiaomiCredentialResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="admCredential")
+    def adm_credential(self) -> Optional[outputs.AdmCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apnsCredential")
+    def apns_credential(self) -> Optional[outputs.ApnsCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baiduCredential")
+    def baidu_credential(self) -> Optional[outputs.BaiduCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="browserCredential")
+    def browser_credential(self) -> Optional[outputs.BrowserCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="fcmV1Credential")
+    def fcm_v1_credential(self) -> Optional[outputs.FcmV1CredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gcmCredential")
+    def gcm_credential(self) -> Optional[outputs.GcmCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mpnsCredential")
+    def mpns_credential(self) -> Optional[outputs.MpnsCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="wnsCredential")
+    def wns_credential(self) -> Optional[outputs.WnsCredentialResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="xiaomiCredential")
+    def xiaomi_credential(self) -> Optional[outputs.XiaomiCredentialResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrivateEndpointConnectionPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, group_ids: Sequence[_builtins.str], private_endpoint: Optional[outputs.RemotePrivateEndpointConnectionResponse] = ..., private_link_service_connection_state: Optional[outputs.RemotePrivateLinkServiceConnectionStateResponse] = ..., provisioning_state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupIds")
+    def group_ids(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpoint")
+    def private_endpoint(self) -> Optional[outputs.RemotePrivateEndpointConnectionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> Optional[outputs.RemotePrivateLinkServiceConnectionStateResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PrivateEndpointConnectionResourceResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, id: _builtins.str, name: _builtins.str, system_data: outputs.SystemDataResponse, type: _builtins.str, properties: Optional[outputs.PrivateEndpointConnectionPropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Optional[outputs.PrivateEndpointConnectionPropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PublicInternetAuthorizationRuleResponse(dict):
+    
+    def __init__(__self__, *, rights: Sequence[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rights(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RemotePrivateEndpointConnectionResponse(dict):
+    
+    def __init__(__self__, *, id: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class RemotePrivateLinkServiceConnectionStateResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, actions_required: _builtins.str, description: _builtins.str, status: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SharedAccessAuthorizationRulePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, claim_type: _builtins.str, claim_value: _builtins.str, created_time: _builtins.str, key_name: _builtins.str, modified_time: _builtins.str, revision: _builtins.int, rights: Sequence[_builtins.str], primary_key: Optional[_builtins.str] = ..., secondary_key: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="claimType")
+    def claim_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="claimValue")
+    def claim_value(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdTime")
+    def created_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyName")
+    def key_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="modifiedTime")
+    def modified_time(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def revision(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def rights(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryKey")
+    def primary_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryKey")
+    def secondary_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SkuResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, capacity: Optional[_builtins.int] = ..., family: Optional[_builtins.str] = ..., size: Optional[_builtins.str] = ..., tier: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def family(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def size(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class WnsCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, certificate_key: Optional[_builtins.str] = ..., package_sid: Optional[_builtins.str] = ..., secret_key: Optional[_builtins.str] = ..., windows_live_endpoint: Optional[_builtins.str] = ..., wns_certificate: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certificateKey")
+    def certificate_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageSid")
+    def package_sid(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secretKey")
+    def secret_key(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="windowsLiveEndpoint")
+    def windows_live_endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="wnsCertificate")
+    def wns_certificate(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class XiaomiCredentialResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_secret: Optional[_builtins.str] = ..., endpoint: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appSecret")
+    def app_secret(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoint(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

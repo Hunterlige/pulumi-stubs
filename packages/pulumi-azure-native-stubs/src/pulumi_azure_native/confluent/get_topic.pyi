@@ -1,0 +1,119 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetTopicResult', 'AwaitableGetTopicResult', 'get_topic', 'get_topic_output']
+@pulumi.output_type
+class GetTopicResult:
+    
+    def __init__(__self__, azure_api_version=..., configs=..., id=..., input_configs=..., kind=..., metadata=..., name=..., partitions=..., partitions_count=..., partitions_reassignments=..., replication_factor=..., system_data=..., topic_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def configs(self) -> Optional[outputs.TopicsRelatedLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="inputConfigs")
+    def input_configs(self) -> Optional[Sequence[outputs.TopicsInputConfigResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def metadata(self) -> Optional[outputs.TopicMetadataEntityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def partitions(self) -> Optional[outputs.TopicsRelatedLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionsCount")
+    def partitions_count(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partitionsReassignments")
+    def partitions_reassignments(self) -> Optional[outputs.TopicsRelatedLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationFactor")
+    def replication_factor(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="topicId")
+    def topic_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetTopicResult(GetTopicResult):
+    def __await__(self): # -> Generator[Never, Any, GetTopicResult]:
+        ...
+    
+
+
+def get_topic(cluster_id: Optional[_builtins.str] = ..., environment_id: Optional[_builtins.str] = ..., organization_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., topic_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetTopicResult:
+    
+    ...
+
+def get_topic_output(cluster_id: Optional[pulumi.Input[_builtins.str]] = ..., environment_id: Optional[pulumi.Input[_builtins.str]] = ..., organization_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetTopicResult]:
+    
+    ...
+

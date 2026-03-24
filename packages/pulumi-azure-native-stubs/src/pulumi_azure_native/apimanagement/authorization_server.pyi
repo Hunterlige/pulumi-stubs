@@ -1,0 +1,381 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AuthorizationServerArgs', 'AuthorizationServer']
+@pulumi.input_type
+class AuthorizationServerArgs:
+    def __init__(__self__, *, authorization_endpoint: pulumi.Input[_builtins.str], client_id: pulumi.Input[_builtins.str], client_registration_endpoint: pulumi.Input[_builtins.str], display_name: pulumi.Input[_builtins.str], grant_types: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, GrantType]]]], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], authorization_methods: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationMethod]]]] = ..., authsid: Optional[pulumi.Input[_builtins.str]] = ..., bearer_token_sending_methods: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, BearerTokenSendingMethod]]]]] = ..., client_authentication_method: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, ClientAuthenticationMethod]]]]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., default_scope: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner_password: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner_username: Optional[pulumi.Input[_builtins.str]] = ..., support_state: Optional[pulumi.Input[_builtins.bool]] = ..., token_body_parameters: Optional[pulumi.Input[Sequence[pulumi.Input[TokenBodyParameterContractArgs]]]] = ..., token_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., use_in_api_documentation: Optional[pulumi.Input[_builtins.bool]] = ..., use_in_test_console: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationEndpoint")
+    def authorization_endpoint(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @authorization_endpoint.setter
+    def authorization_endpoint(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @client_id.setter
+    def client_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientRegistrationEndpoint")
+    def client_registration_endpoint(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @client_registration_endpoint.setter
+    def client_registration_endpoint(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grantTypes")
+    def grant_types(self) -> pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, GrantType]]]]:
+        
+        ...
+    
+    @grant_types.setter
+    def grant_types(self, value: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, GrantType]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationMethods")
+    def authorization_methods(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationMethod]]]]:
+        
+        ...
+    
+    @authorization_methods.setter
+    def authorization_methods(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationMethod]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authsid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authsid.setter
+    def authsid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bearerTokenSendingMethods")
+    def bearer_token_sending_methods(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, BearerTokenSendingMethod]]]]]:
+        
+        ...
+    
+    @bearer_token_sending_methods.setter
+    def bearer_token_sending_methods(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, BearerTokenSendingMethod]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientAuthenticationMethod")
+    def client_authentication_method(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, ClientAuthenticationMethod]]]]]:
+        
+        ...
+    
+    @client_authentication_method.setter
+    def client_authentication_method(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, ClientAuthenticationMethod]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @client_secret.setter
+    def client_secret(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultScope")
+    def default_scope(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @default_scope.setter
+    def default_scope(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceOwnerPassword")
+    def resource_owner_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_owner_password.setter
+    def resource_owner_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceOwnerUsername")
+    def resource_owner_username(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @resource_owner_username.setter
+    def resource_owner_username(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportState")
+    def support_state(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @support_state.setter
+    def support_state(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenBodyParameters")
+    def token_body_parameters(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[TokenBodyParameterContractArgs]]]]:
+        
+        ...
+    
+    @token_body_parameters.setter
+    def token_body_parameters(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[TokenBodyParameterContractArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenEndpoint")
+    def token_endpoint(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @token_endpoint.setter
+    def token_endpoint(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useInApiDocumentation")
+    def use_in_api_documentation(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_in_api_documentation.setter
+    def use_in_api_documentation(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useInTestConsole")
+    def use_in_test_console(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @use_in_test_console.setter
+    def use_in_test_console(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apimanagement:AuthorizationServer")
+class AuthorizationServer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., authorization_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., authorization_methods: Optional[pulumi.Input[Sequence[pulumi.Input[AuthorizationMethod]]]] = ..., authsid: Optional[pulumi.Input[_builtins.str]] = ..., bearer_token_sending_methods: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, BearerTokenSendingMethod]]]]] = ..., client_authentication_method: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, ClientAuthenticationMethod]]]]] = ..., client_id: Optional[pulumi.Input[_builtins.str]] = ..., client_registration_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., client_secret: Optional[pulumi.Input[_builtins.str]] = ..., default_scope: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., grant_types: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, GrantType]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner_password: Optional[pulumi.Input[_builtins.str]] = ..., resource_owner_username: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., support_state: Optional[pulumi.Input[_builtins.bool]] = ..., token_body_parameters: Optional[pulumi.Input[Sequence[pulumi.Input[Union[TokenBodyParameterContractArgs, TokenBodyParameterContractArgsDict]]]]] = ..., token_endpoint: Optional[pulumi.Input[_builtins.str]] = ..., use_in_api_documentation: Optional[pulumi.Input[_builtins.bool]] = ..., use_in_test_console: Optional[pulumi.Input[_builtins.bool]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AuthorizationServerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AuthorizationServer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationEndpoint")
+    def authorization_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authorizationMethods")
+    def authorization_methods(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bearerTokenSendingMethods")
+    def bearer_token_sending_methods(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientAuthenticationMethod")
+    def client_authentication_method(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientId")
+    def client_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientRegistrationEndpoint")
+    def client_registration_endpoint(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="clientSecret")
+    def client_secret(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultScope")
+    def default_scope(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="grantTypes")
+    def grant_types(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceOwnerPassword")
+    def resource_owner_password(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceOwnerUsername")
+    def resource_owner_username(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportState")
+    def support_state(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenBodyParameters")
+    def token_body_parameters(self) -> pulumi.Output[Optional[Sequence[outputs.TokenBodyParameterContractResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tokenEndpoint")
+    def token_endpoint(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useInApiDocumentation")
+    def use_in_api_documentation(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="useInTestConsole")
+    def use_in_test_console(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+
+

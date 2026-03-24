@@ -1,0 +1,148 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WorkspaceManagerAssignmentArgs', 'WorkspaceManagerAssignment']
+@pulumi.input_type
+class WorkspaceManagerAssignmentArgs:
+    def __init__(__self__, *, items: pulumi.Input[Sequence[pulumi.Input[AssignmentItemArgs]]], resource_group_name: pulumi.Input[_builtins.str], target_resource_name: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], workspace_manager_assignment_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def items(self) -> pulumi.Input[Sequence[pulumi.Input[AssignmentItemArgs]]]:
+        
+        ...
+    
+    @items.setter
+    def items(self, value: pulumi.Input[Sequence[pulumi.Input[AssignmentItemArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceName")
+    def target_resource_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @target_resource_name.setter
+    def target_resource_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceManagerAssignmentName")
+    def workspace_manager_assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @workspace_manager_assignment_name.setter
+    def workspace_manager_assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class WorkspaceManagerAssignment(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., items: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AssignmentItemArgs, AssignmentItemArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., target_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_manager_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WorkspaceManagerAssignmentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> WorkspaceManagerAssignment:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def items(self) -> pulumi.Output[Sequence[outputs.AssignmentItemResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastJobEndTime")
+    def last_job_end_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastJobProvisioningState")
+    def last_job_provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceName")
+    def target_resource_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

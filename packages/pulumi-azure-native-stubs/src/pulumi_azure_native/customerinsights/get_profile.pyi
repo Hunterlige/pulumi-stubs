@@ -1,0 +1,167 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetProfileResult', 'AwaitableGetProfileResult', 'get_profile', 'get_profile_output']
+@pulumi.output_type
+class GetProfileResult:
+    
+    def __init__(__self__, api_entity_set_name=..., attributes=..., azure_api_version=..., description=..., display_name=..., entity_type=..., fields=..., id=..., instances_count=..., large_image=..., last_changed_utc=..., localized_attributes=..., medium_image=..., name=..., provisioning_state=..., schema_item_type_link=..., small_image=..., strong_ids=..., tenant_id=..., timestamp_field_name=..., type=..., type_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiEntitySetName")
+    def api_entity_set_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[Mapping[str, Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="entityType")
+    def entity_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def fields(self) -> Optional[Sequence[outputs.PropertyDefinitionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instancesCount")
+    def instances_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="largeImage")
+    def large_image(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastChangedUtc")
+    def last_changed_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="localizedAttributes")
+    def localized_attributes(self) -> Optional[Mapping[str, Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="mediumImage")
+    def medium_image(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="schemaItemTypeLink")
+    def schema_item_type_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smallImage")
+    def small_image(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="strongIds")
+    def strong_ids(self) -> Optional[Sequence[outputs.StrongIdResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timestampFieldName")
+    def timestamp_field_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="typeName")
+    def type_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetProfileResult(GetProfileResult):
+    def __await__(self): # -> Generator[Never, Any, GetProfileResult]:
+        ...
+    
+
+
+def get_profile(hub_name: Optional[_builtins.str] = ..., locale_code: Optional[_builtins.str] = ..., profile_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetProfileResult:
+    
+    ...
+
+def get_profile_output(hub_name: Optional[pulumi.Input[_builtins.str]] = ..., locale_code: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., profile_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetProfileResult]:
+    
+    ...
+

@@ -1,0 +1,210 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['MultipleActivationKeyArgs', 'MultipleActivationKey']
+@pulumi.input_type
+class MultipleActivationKeyArgs:
+    def __init__(__self__, *, resource_group_name: pulumi.Input[_builtins.str], agreement_number: Optional[pulumi.Input[_builtins.str]] = ..., installed_server_number: Optional[pulumi.Input[_builtins.int]] = ..., is_eligible: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., multiple_activation_key_name: Optional[pulumi.Input[_builtins.str]] = ..., os_type: Optional[pulumi.Input[Union[_builtins.str, OsType]]] = ..., support_type: Optional[pulumi.Input[Union[_builtins.str, SupportType]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agreementNumber")
+    def agreement_number(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @agreement_number.setter
+    def agreement_number(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="installedServerNumber")
+    def installed_server_number(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @installed_server_number.setter
+    def installed_server_number(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEligible")
+    def is_eligible(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_eligible.setter
+    def is_eligible(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multipleActivationKeyName")
+    def multiple_activation_key_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @multiple_activation_key_name.setter
+    def multiple_activation_key_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> Optional[pulumi.Input[Union[_builtins.str, OsType]]]:
+        
+        ...
+    
+    @os_type.setter
+    def os_type(self, value: Optional[pulumi.Input[Union[_builtins.str, OsType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportType")
+    def support_type(self) -> Optional[pulumi.Input[Union[_builtins.str, SupportType]]]:
+        
+        ...
+    
+    @support_type.setter
+    def support_type(self, value: Optional[pulumi.Input[Union[_builtins.str, SupportType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:windowsesu:MultipleActivationKey")
+class MultipleActivationKey(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., agreement_number: Optional[pulumi.Input[_builtins.str]] = ..., installed_server_number: Optional[pulumi.Input[_builtins.int]] = ..., is_eligible: Optional[pulumi.Input[_builtins.bool]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., multiple_activation_key_name: Optional[pulumi.Input[_builtins.str]] = ..., os_type: Optional[pulumi.Input[Union[_builtins.str, OsType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., support_type: Optional[pulumi.Input[Union[_builtins.str, SupportType]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: MultipleActivationKeyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> MultipleActivationKey:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agreementNumber")
+    def agreement_number(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationDate")
+    def expiration_date(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="installedServerNumber")
+    def installed_server_number(self) -> pulumi.Output[Optional[_builtins.int]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isEligible")
+    def is_eligible(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multipleActivationKey")
+    def multiple_activation_key(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osType")
+    def os_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportType")
+    def support_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

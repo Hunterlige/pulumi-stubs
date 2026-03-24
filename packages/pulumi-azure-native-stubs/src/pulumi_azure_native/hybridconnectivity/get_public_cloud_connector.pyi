@@ -1,0 +1,101 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPublicCloudConnectorResult', 'AwaitableGetPublicCloudConnectorResult', 'get_public_cloud_connector', 'get_public_cloud_connector_output']
+@pulumi.output_type
+class GetPublicCloudConnectorResult:
+    
+    def __init__(__self__, aws_cloud_profile=..., azure_api_version=..., connector_primary_identifier=..., host_type=..., id=..., location=..., name=..., provisioning_state=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="awsCloudProfile")
+    def aws_cloud_profile(self) -> outputs.AwsCloudProfileResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectorPrimaryIdentifier")
+    def connector_primary_identifier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostType")
+    def host_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetPublicCloudConnectorResult(GetPublicCloudConnectorResult):
+    def __await__(self): # -> Generator[Never, Any, GetPublicCloudConnectorResult]:
+        ...
+    
+
+
+def get_public_cloud_connector(public_cloud_connector: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPublicCloudConnectorResult:
+    
+    ...
+
+def get_public_cloud_connector_output(public_cloud_connector: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPublicCloudConnectorResult]:
+    
+    ...
+

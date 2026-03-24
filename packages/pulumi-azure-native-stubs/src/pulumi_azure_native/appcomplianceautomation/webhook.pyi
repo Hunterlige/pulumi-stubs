@@ -1,0 +1,246 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['WebhookArgs', 'Webhook']
+@pulumi.input_type
+class WebhookArgs:
+    def __init__(__self__, *, report_name: pulumi.Input[_builtins.str], content_type: Optional[pulumi.Input[Union[_builtins.str, ContentType]]] = ..., enable_ssl_verification: Optional[pulumi.Input[Union[_builtins.str, EnableSslVerification]]] = ..., events: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, NotificationEvent]]]]] = ..., payload_url: Optional[pulumi.Input[_builtins.str]] = ..., send_all_events: Optional[pulumi.Input[Union[_builtins.str, SendAllEvents]]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, WebhookStatus]]] = ..., update_webhook_key: Optional[pulumi.Input[Union[_builtins.str, UpdateWebhookKey]]] = ..., webhook_key: Optional[pulumi.Input[_builtins.str]] = ..., webhook_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="reportName")
+    def report_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @report_name.setter
+    def report_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contentType")
+    def content_type(self) -> Optional[pulumi.Input[Union[_builtins.str, ContentType]]]:
+        
+        ...
+    
+    @content_type.setter
+    def content_type(self, value: Optional[pulumi.Input[Union[_builtins.str, ContentType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableSslVerification")
+    def enable_ssl_verification(self) -> Optional[pulumi.Input[Union[_builtins.str, EnableSslVerification]]]:
+        
+        ...
+    
+    @enable_ssl_verification.setter
+    def enable_ssl_verification(self, value: Optional[pulumi.Input[Union[_builtins.str, EnableSslVerification]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def events(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, NotificationEvent]]]]]:
+        
+        ...
+    
+    @events.setter
+    def events(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, NotificationEvent]]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="payloadUrl")
+    def payload_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @payload_url.setter
+    def payload_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendAllEvents")
+    def send_all_events(self) -> Optional[pulumi.Input[Union[_builtins.str, SendAllEvents]]]:
+        
+        ...
+    
+    @send_all_events.setter
+    def send_all_events(self, value: Optional[pulumi.Input[Union[_builtins.str, SendAllEvents]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, WebhookStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, WebhookStatus]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateWebhookKey")
+    def update_webhook_key(self) -> Optional[pulumi.Input[Union[_builtins.str, UpdateWebhookKey]]]:
+        
+        ...
+    
+    @update_webhook_key.setter
+    def update_webhook_key(self, value: Optional[pulumi.Input[Union[_builtins.str, UpdateWebhookKey]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="webhookKey")
+    def webhook_key(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @webhook_key.setter
+    def webhook_key(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="webhookName")
+    def webhook_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @webhook_name.setter
+    def webhook_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:appcomplianceautomation:Webhook")
+class Webhook(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., content_type: Optional[pulumi.Input[Union[_builtins.str, ContentType]]] = ..., enable_ssl_verification: Optional[pulumi.Input[Union[_builtins.str, EnableSslVerification]]] = ..., events: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, NotificationEvent]]]]] = ..., payload_url: Optional[pulumi.Input[_builtins.str]] = ..., report_name: Optional[pulumi.Input[_builtins.str]] = ..., send_all_events: Optional[pulumi.Input[Union[_builtins.str, SendAllEvents]]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, WebhookStatus]]] = ..., update_webhook_key: Optional[pulumi.Input[Union[_builtins.str, UpdateWebhookKey]]] = ..., webhook_key: Optional[pulumi.Input[_builtins.str]] = ..., webhook_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: WebhookArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Webhook:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contentType")
+    def content_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deliveryStatus")
+    def delivery_status(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableSslVerification")
+    def enable_ssl_verification(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def events(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="payloadUrl")
+    def payload_url(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sendAllEvents")
+    def send_all_events(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateWebhookKey")
+    def update_webhook_key(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="webhookId")
+    def webhook_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="webhookKey")
+    def webhook_key(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="webhookKeyEnabled")
+    def webhook_key_enabled(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

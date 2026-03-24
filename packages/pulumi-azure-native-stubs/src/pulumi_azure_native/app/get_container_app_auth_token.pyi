@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetContainerAppAuthTokenResult', 'AwaitableGetContainerAppAuthTokenResult', 'get_container_app_auth_token', 'get_container_app_auth_token_output']
+@pulumi.output_type
+class GetContainerAppAuthTokenResult:
+    
+    def __init__(__self__, expires=..., id=..., location=..., name=..., system_data=..., tags=..., token=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expires(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def token(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetContainerAppAuthTokenResult(GetContainerAppAuthTokenResult):
+    def __await__(self): # -> Generator[Never, Any, GetContainerAppAuthTokenResult]:
+        ...
+    
+
+
+def get_container_app_auth_token(container_app_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetContainerAppAuthTokenResult:
+    
+    ...
+
+def get_container_app_auth_token_output(container_app_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetContainerAppAuthTokenResult]:
+    
+    ...
+

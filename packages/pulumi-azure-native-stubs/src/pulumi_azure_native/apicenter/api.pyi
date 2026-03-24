@@ -1,0 +1,259 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ApiArgs', 'Api']
+@pulumi.input_type
+class ApiArgs:
+    def __init__(__self__, *, kind: pulumi.Input[Union[_builtins.str, ApiKind]], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], title: pulumi.Input[_builtins.str], workspace_name: pulumi.Input[_builtins.str], api_name: Optional[pulumi.Input[_builtins.str]] = ..., contacts: Optional[pulumi.Input[Sequence[pulumi.Input[ContactArgs]]]] = ..., custom_properties: Optional[Any] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., external_documentation: Optional[pulumi.Input[Sequence[pulumi.Input[ExternalDocumentationArgs]]]] = ..., license: Optional[pulumi.Input[LicenseArgs]] = ..., summary: Optional[pulumi.Input[_builtins.str]] = ..., terms_of_service: Optional[pulumi.Input[TermsOfServiceArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[Union[_builtins.str, ApiKind]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[Union[_builtins.str, ApiKind]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @title.setter
+    def title(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="apiName")
+    def api_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @api_name.setter
+    def api_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def contacts(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ContactArgs]]]]:
+        
+        ...
+    
+    @contacts.setter
+    def contacts(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ContactArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customProperties")
+    def custom_properties(self) -> Optional[Any]:
+        
+        ...
+    
+    @custom_properties.setter
+    def custom_properties(self, value: Optional[Any]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalDocumentation")
+    def external_documentation(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ExternalDocumentationArgs]]]]:
+        
+        ...
+    
+    @external_documentation.setter
+    def external_documentation(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ExternalDocumentationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def license(self) -> Optional[pulumi.Input[LicenseArgs]]:
+        
+        ...
+    
+    @license.setter
+    def license(self, value: Optional[pulumi.Input[LicenseArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def summary(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @summary.setter
+    def summary(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termsOfService")
+    def terms_of_service(self) -> Optional[pulumi.Input[TermsOfServiceArgs]]:
+        
+        ...
+    
+    @terms_of_service.setter
+    def terms_of_service(self, value: Optional[pulumi.Input[TermsOfServiceArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:apicenter:Api")
+class Api(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., api_name: Optional[pulumi.Input[_builtins.str]] = ..., contacts: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ContactArgs, ContactArgsDict]]]]] = ..., custom_properties: Optional[Any] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., external_documentation: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ExternalDocumentationArgs, ExternalDocumentationArgsDict]]]]] = ..., kind: Optional[pulumi.Input[Union[_builtins.str, ApiKind]]] = ..., license: Optional[pulumi.Input[Union[LicenseArgs, LicenseArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., summary: Optional[pulumi.Input[_builtins.str]] = ..., terms_of_service: Optional[pulumi.Input[Union[TermsOfServiceArgs, TermsOfServiceArgsDict]]] = ..., title: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ApiArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Api:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def contacts(self) -> pulumi.Output[Optional[Sequence[outputs.ContactResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customProperties")
+    def custom_properties(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalDocumentation")
+    def external_documentation(self) -> pulumi.Output[Optional[Sequence[outputs.ExternalDocumentationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def license(self) -> pulumi.Output[Optional[outputs.LicenseResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lifecycleStage")
+    def lifecycle_stage(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def summary(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termsOfService")
+    def terms_of_service(self) -> pulumi.Output[Optional[outputs.TermsOfServiceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def title(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

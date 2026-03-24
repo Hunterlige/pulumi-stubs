@@ -1,0 +1,1339 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BillingHubExecutionUsageDetailResponse', 'BillingHubFreeHourIncrementEntryResponse', 'BillingHubGetUsageRequestResponse', 'BillingHubPackageUsageResponse', 'BillingHubUsageGroupResponse', 'BillingHubUsageGroupedByUpdateTypeResponse', 'CommandResponse', 'DistributionGroupListReceiverValueResponse', 'DraftPackageIntuneAppMetadataItemResponse', 'DraftPackageIntuneAppMetadataResponse', 'EnrolledIntuneAppResponse', 'FirstPartyAppDefinitionResponse', 'GalleryAppDefinitionResponse', 'HighlightedFileResponse', 'ImageValidationResultsResponse', 'InplaceUpgradeOSInfoResponse', 'IntuneEnrollmentMetadataResponse', 'NotificationEventReceiverResponse', 'NotificationReceiverValueResponse', 'OsPropertiesResponse', 'PackageValidationResultResponse', 'PreReleaseAccessRequestSpecResponse', 'ReleasePropertiesResponse', 'SubscriptionReceiverValueResponse', 'SystemAssignedServiceIdentityResponse', 'SystemDataResponse', 'TabStateResponse', 'TargetOSInfoResponse', 'TestBaseAccountSKUCapabilityResponse', 'TestBaseAccountSKUResponse', 'TestResponse', 'UserObjectReceiverValueResponse', 'VerificationResultResponse']
+@pulumi.output_type
+class BillingHubExecutionUsageDetailResponse(dict):
+    def __init__(__self__, *, application_name: Optional[_builtins.str] = ..., application_version: Optional[_builtins.str] = ..., billed_charges: Optional[_builtins.float] = ..., end_time_stamp: Optional[_builtins.str] = ..., execution_request_id: Optional[_builtins.str] = ..., meter_id: Optional[_builtins.str] = ..., os_build: Optional[_builtins.str] = ..., release: Optional[_builtins.str] = ..., sku: Optional[_builtins.str] = ..., start_time_stamp: Optional[_builtins.str] = ..., test_type: Optional[_builtins.str] = ..., update_type: Optional[_builtins.str] = ..., used_billable_hours: Optional[_builtins.float] = ..., used_free_hours: Optional[_builtins.float] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationName")
+    def application_name(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationVersion")
+    def application_version(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="billedCharges")
+    def billed_charges(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTimeStamp")
+    def end_time_stamp(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executionRequestId")
+    def execution_request_id(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="meterId")
+    def meter_id(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osBuild")
+    def os_build(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def release(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTimeStamp")
+    def start_time_stamp(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testType")
+    def test_type(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateType")
+    def update_type(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usedBillableHours")
+    def used_billable_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usedFreeHours")
+    def used_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+
+
+@pulumi.output_type
+class BillingHubFreeHourIncrementEntryResponse(dict):
+    def __init__(__self__, *, create_time_stamp: Optional[_builtins.str] = ..., expiration_time_stamp: Optional[_builtins.str] = ..., free_hour_status: Optional[_builtins.str] = ..., free_hour_type: Optional[_builtins.str] = ..., incremental_free_hours: Optional[_builtins.float] = ..., remaining_free_hours: Optional[_builtins.float] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createTimeStamp")
+    def create_time_stamp(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationTimeStamp")
+    def expiration_time_stamp(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="freeHourStatus")
+    def free_hour_status(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="freeHourType")
+    def free_hour_type(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="incrementalFreeHours")
+    def incremental_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remainingFreeHours")
+    def remaining_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+
+
+@pulumi.output_type
+class BillingHubGetUsageRequestResponse(dict):
+    def __init__(__self__, *, end_time_stamp: _builtins.str, start_time_stamp: _builtins.str, page_index: Optional[_builtins.int] = ..., page_size: Optional[_builtins.int] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTimeStamp")
+    def end_time_stamp(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTimeStamp")
+    def start_time_stamp(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="pageIndex")
+    def page_index(self) -> Optional[_builtins.int]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="pageSize")
+    def page_size(self) -> Optional[_builtins.int]:
+        ...
+    
+
+
+@pulumi.output_type
+class BillingHubPackageUsageResponse(dict):
+    def __init__(__self__, *, application_name: Optional[_builtins.str] = ..., application_version: Optional[_builtins.str] = ..., azure_resource_uri: Optional[_builtins.str] = ..., total_charges: Optional[_builtins.float] = ..., total_used_billable_hours: Optional[_builtins.float] = ..., total_used_free_hours: Optional[_builtins.float] = ..., usage_entries_grouped_by_update_type: Optional[Sequence[outputs.BillingHubUsageGroupedByUpdateTypeResponse]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationName")
+    def application_name(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationVersion")
+    def application_version(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureResourceUri")
+    def azure_resource_uri(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalCharges")
+    def total_charges(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedBillableHours")
+    def total_used_billable_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedFreeHours")
+    def total_used_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usageEntriesGroupedByUpdateType")
+    def usage_entries_grouped_by_update_type(self) -> Optional[Sequence[outputs.BillingHubUsageGroupedByUpdateTypeResponse]]:
+        ...
+    
+
+
+@pulumi.output_type
+class BillingHubUsageGroupResponse(dict):
+    def __init__(__self__, *, execution_usage_details: Optional[Sequence[outputs.BillingHubExecutionUsageDetailResponse]] = ..., os_build: Optional[_builtins.str] = ..., product_family: Optional[_builtins.str] = ..., release: Optional[_builtins.str] = ..., release_build_date: Optional[_builtins.str] = ..., release_build_number: Optional[_builtins.float] = ..., release_build_revision: Optional[_builtins.float] = ..., test_type: Optional[_builtins.str] = ..., total_charges: Optional[_builtins.float] = ..., total_used_billable_hours: Optional[_builtins.float] = ..., total_used_free_hours: Optional[_builtins.float] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executionUsageDetails")
+    def execution_usage_details(self) -> Optional[Sequence[outputs.BillingHubExecutionUsageDetailResponse]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osBuild")
+    def os_build(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="productFamily")
+    def product_family(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def release(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseBuildDate")
+    def release_build_date(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseBuildNumber")
+    def release_build_number(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseBuildRevision")
+    def release_build_revision(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testType")
+    def test_type(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalCharges")
+    def total_charges(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedBillableHours")
+    def total_used_billable_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedFreeHours")
+    def total_used_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+
+
+@pulumi.output_type
+class BillingHubUsageGroupedByUpdateTypeResponse(dict):
+    def __init__(__self__, *, total_charges: Optional[_builtins.float] = ..., total_used_billable_hours: Optional[_builtins.float] = ..., total_used_free_hours: Optional[_builtins.float] = ..., update_type: Optional[_builtins.str] = ..., usage_groups: Optional[Sequence[outputs.BillingHubUsageGroupResponse]] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalCharges")
+    def total_charges(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedBillableHours")
+    def total_used_billable_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="totalUsedFreeHours")
+    def total_used_free_hours(self) -> Optional[_builtins.float]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="updateType")
+    def update_type(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usageGroups")
+    def usage_groups(self) -> Optional[Sequence[outputs.BillingHubUsageGroupResponse]]:
+        ...
+    
+
+
+@pulumi.output_type
+class CommandResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, action: _builtins.str, content: _builtins.str, content_type: _builtins.str, name: _builtins.str, always_run: Optional[_builtins.bool] = ..., apply_update_before: Optional[_builtins.bool] = ..., enroll_intune_before: Optional[_builtins.bool] = ..., install1_p_app_before: Optional[_builtins.bool] = ..., max_run_time: Optional[_builtins.int] = ..., post_upgrade: Optional[_builtins.bool] = ..., pre_upgrade: Optional[_builtins.bool] = ..., restart_after: Optional[_builtins.bool] = ..., run_as_interactive: Optional[_builtins.bool] = ..., run_elevated: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def content(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="contentType")
+    def content_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="alwaysRun")
+    def always_run(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applyUpdateBefore")
+    def apply_update_before(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enrollIntuneBefore")
+    def enroll_intune_before(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="install1PAppBefore")
+    def install1_p_app_before(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxRunTime")
+    def max_run_time(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="postUpgrade")
+    def post_upgrade(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preUpgrade")
+    def pre_upgrade(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="restartAfter")
+    def restart_after(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runAsInteractive")
+    def run_as_interactive(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runElevated")
+    def run_elevated(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DistributionGroupListReceiverValueResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, distribution_groups: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="distributionGroups")
+    def distribution_groups(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DraftPackageIntuneAppMetadataItemResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_id: Optional[_builtins.str] = ..., app_name: Optional[_builtins.str] = ..., create_date: Optional[_builtins.str] = ..., dependency_ids: Optional[Sequence[_builtins.str]] = ..., dependent_app_count: Optional[_builtins.int] = ..., description: Optional[_builtins.str] = ..., expected_exit_codes: Optional[Sequence[_builtins.str]] = ..., install_command: Optional[_builtins.str] = ..., last_processed: Optional[_builtins.float] = ..., minimum_supported_os: Optional[_builtins.str] = ..., owner: Optional[_builtins.str] = ..., publisher: Optional[_builtins.str] = ..., setup_file: Optional[_builtins.str] = ..., status: Optional[_builtins.str] = ..., uninstall_command: Optional[_builtins.str] = ..., version: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appId")
+    def app_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appName")
+    def app_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createDate")
+    def create_date(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dependencyIds")
+    def dependency_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dependentAppCount")
+    def dependent_app_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedExitCodes")
+    def expected_exit_codes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="installCommand")
+    def install_command(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastProcessed")
+    def last_processed(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimumSupportedOS")
+    def minimum_supported_os(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def owner(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def publisher(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="setupFile")
+    def setup_file(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="uninstallCommand")
+    def uninstall_command(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DraftPackageIntuneAppMetadataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, intune_app: Optional[outputs.DraftPackageIntuneAppMetadataItemResponse] = ..., intune_app_dependencies: Optional[Sequence[outputs.DraftPackageIntuneAppMetadataItemResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneApp")
+    def intune_app(self) -> Optional[outputs.DraftPackageIntuneAppMetadataItemResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="intuneAppDependencies")
+    def intune_app_dependencies(self) -> Optional[Sequence[outputs.DraftPackageIntuneAppMetadataItemResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class EnrolledIntuneAppResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_id: _builtins.str, app_name: _builtins.str, expected_installation_path: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appId")
+    def app_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appName")
+    def app_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedInstallationPath")
+    def expected_installation_path(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class FirstPartyAppDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, architecture: Optional[_builtins.str] = ..., channel: Optional[_builtins.str] = ..., interop_execution_mode: Optional[_builtins.str] = ..., name: Optional[_builtins.str] = ..., ring: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def architecture(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def channel(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="interopExecutionMode")
+    def interop_execution_mode(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def ring(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class GalleryAppDefinitionResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, sku_id: _builtins.str, is_consented: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuId")
+    def sku_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isConsented")
+    def is_consented(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class HighlightedFileResponse(dict):
+    
+    def __init__(__self__, *, path: _builtins.str, sections: Optional[Sequence[_builtins.str]] = ..., visited: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def path(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sections(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def visited(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ImageValidationResultsResponse(dict):
+    
+    def __init__(__self__, *, results: Optional[Sequence[outputs.VerificationResultResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def results(self) -> Optional[Sequence[outputs.VerificationResultResponse]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class InplaceUpgradeOSInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, baseline_os: Optional[outputs.OsPropertiesResponse] = ..., target_os: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baselineOS")
+    def baseline_os(self) -> Optional[outputs.OsPropertiesResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetOS")
+    def target_os(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class IntuneEnrollmentMetadataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_list: Optional[Sequence[outputs.EnrolledIntuneAppResponse]] = ..., credential_id: Optional[_builtins.str] = ..., expected_deployment_duration_in_minute: Optional[_builtins.int] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appList")
+    def app_list(self) -> Optional[Sequence[outputs.EnrolledIntuneAppResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="credentialId")
+    def credential_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expectedDeploymentDurationInMinute")
+    def expected_deployment_duration_in_minute(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class NotificationEventReceiverResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, receiver_type: Optional[_builtins.str] = ..., receiver_value: Optional[outputs.NotificationReceiverValueResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="receiverType")
+    def receiver_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="receiverValue")
+    def receiver_value(self) -> Optional[outputs.NotificationReceiverValueResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class NotificationReceiverValueResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, distribution_group_list_receiver_value: Optional[outputs.DistributionGroupListReceiverValueResponse] = ..., subscription_receiver_value: Optional[outputs.SubscriptionReceiverValueResponse] = ..., user_object_receiver_value: Optional[outputs.UserObjectReceiverValueResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="distributionGroupListReceiverValue")
+    def distribution_group_list_receiver_value(self) -> Optional[outputs.DistributionGroupListReceiverValueResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionReceiverValue")
+    def subscription_receiver_value(self) -> Optional[outputs.SubscriptionReceiverValueResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userObjectReceiverValue")
+    def user_object_receiver_value(self) -> Optional[outputs.UserObjectReceiverValueResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class OsPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, custom_image_display_name: _builtins.str, custom_image_id: Optional[_builtins.str] = ..., os_name: Optional[_builtins.str] = ..., release_properties: Optional[outputs.ReleasePropertiesResponse] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customImageDisplayName")
+    def custom_image_display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customImageId")
+    def custom_image_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osName")
+    def os_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseProperties")
+    def release_properties(self) -> Optional[outputs.ReleasePropertiesResponse]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PackageValidationResultResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, errors: Sequence[_builtins.str], is_valid: _builtins.bool, validation_name: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isValid")
+    def is_valid(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validationName")
+    def validation_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class PreReleaseAccessRequestSpecResponse(dict):
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, city: Optional[_builtins.str] = ..., company_website: Optional[_builtins.str] = ..., country_and_region: Optional[_builtins.str] = ..., email: Optional[_builtins.str] = ..., engagements: Optional[Sequence[_builtins.str]] = ..., organization_name: Optional[_builtins.str] = ..., state_or_province: Optional[_builtins.str] = ..., street_address: Optional[_builtins.str] = ..., zip_code: Optional[_builtins.str] = ...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def city(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="companyWebsite")
+    def company_website(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="countryAndRegion")
+    def country_and_region(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def email(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def engagements(self) -> Optional[Sequence[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="organizationName")
+    def organization_name(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="stateOrProvince")
+    def state_or_province(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="streetAddress")
+    def street_address(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zipCode")
+    def zip_code(self) -> Optional[_builtins.str]:
+        ...
+    
+
+
+@pulumi.output_type
+class ReleasePropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, build_number: Optional[_builtins.str] = ..., build_revision: Optional[_builtins.str] = ..., release_name: Optional[_builtins.str] = ..., release_version_date: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="buildNumber")
+    def build_number(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="buildRevision")
+    def build_revision(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseName")
+    def release_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseVersionDate")
+    def release_version_date(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SubscriptionReceiverValueResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, role: Optional[_builtins.str] = ..., subscription_id: Optional[_builtins.str] = ..., subscription_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionId")
+    def subscription_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="subscriptionName")
+    def subscription_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemAssignedServiceIdentityResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, principal_id: _builtins.str, tenant_id: _builtins.str, type: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TabStateResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, current_tab: Optional[_builtins.str] = ..., visited_tabs: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentTab")
+    def current_tab(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="visitedTabs")
+    def visited_tabs(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TargetOSInfoResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, os_update_type: _builtins.str, baseline_oss: Optional[Sequence[_builtins.str]] = ..., insider_channel_ids: Optional[Sequence[_builtins.str]] = ..., target_os_image_ids: Optional[Sequence[_builtins.str]] = ..., target_oss: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osUpdateType")
+    def os_update_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="baselineOSs")
+    def baseline_oss(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="insiderChannelIds")
+    def insider_channel_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetOSImageIds")
+    def target_os_image_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetOSs")
+    def target_oss(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TestBaseAccountSKUCapabilityResponse(dict):
+    
+    def __init__(__self__, *, name: _builtins.str, value: _builtins.str) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> _builtins.str:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TestBaseAccountSKUResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, capabilities: Sequence[outputs.TestBaseAccountSKUCapabilityResponse], name: _builtins.str, tier: _builtins.str, locations: Optional[Sequence[_builtins.str]] = ..., resource_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capabilities(self) -> Sequence[outputs.TestBaseAccountSKUCapabilityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locations(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class TestResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, commands: Sequence[outputs.CommandResponse], test_type: _builtins.str, validation_result_id: _builtins.str, validation_run_status: _builtins.str, is_active: Optional[_builtins.bool] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def commands(self) -> Sequence[outputs.CommandResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="testType")
+    def test_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validationResultId")
+    def validation_result_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="validationRunStatus")
+    def validation_run_status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isActive")
+    def is_active(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class UserObjectReceiverValueResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, user_object_ids: Optional[Sequence[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userObjectIds")
+    def user_object_ids(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class VerificationResultResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, result: _builtins.str, message: Optional[_builtins.str] = ..., verification_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def result(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def message(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="verificationName")
+    def verification_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

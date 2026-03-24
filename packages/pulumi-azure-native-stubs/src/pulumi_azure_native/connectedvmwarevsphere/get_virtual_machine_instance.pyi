@@ -1,0 +1,137 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetVirtualMachineInstanceResult', 'AwaitableGetVirtualMachineInstanceResult', 'get_virtual_machine_instance', 'get_virtual_machine_instance_output']
+@pulumi.output_type
+class GetVirtualMachineInstanceResult:
+    
+    def __init__(__self__, azure_api_version=..., extended_location=..., hardware_profile=..., id=..., infrastructure_profile=..., name=..., network_profile=..., os_profile=..., placement_profile=..., power_state=..., provisioning_state=..., resource_uid=..., security_profile=..., statuses=..., storage_profile=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hardwareProfile")
+    def hardware_profile(self) -> Optional[outputs.HardwareProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="infrastructureProfile")
+    def infrastructure_profile(self) -> Optional[outputs.InfrastructureProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkProfile")
+    def network_profile(self) -> Optional[outputs.NetworkProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="osProfile")
+    def os_profile(self) -> Optional[outputs.OsProfileForVMInstanceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="placementProfile")
+    def placement_profile(self) -> Optional[outputs.PlacementProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="powerState")
+    def power_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceUid")
+    def resource_uid(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityProfile")
+    def security_profile(self) -> Optional[outputs.SecurityProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def statuses(self) -> Sequence[outputs.ResourceStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageProfile")
+    def storage_profile(self) -> Optional[outputs.StorageProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetVirtualMachineInstanceResult(GetVirtualMachineInstanceResult):
+    def __await__(self): # -> Generator[Never, Any, GetVirtualMachineInstanceResult]:
+        ...
+    
+
+
+def get_virtual_machine_instance(resource_uri: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetVirtualMachineInstanceResult:
+    
+    ...
+
+def get_virtual_machine_instance_output(resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetVirtualMachineInstanceResult]:
+    
+    ...
+

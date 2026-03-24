@@ -1,0 +1,41 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListKustoPoolFollowerDatabasesResult', 'AwaitableListKustoPoolFollowerDatabasesResult', 'list_kusto_pool_follower_databases', 'list_kusto_pool_follower_databases_output']
+@pulumi.output_type
+class ListKustoPoolFollowerDatabasesResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.FollowerDatabaseDefinitionResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListKustoPoolFollowerDatabasesResult(ListKustoPoolFollowerDatabasesResult):
+    def __await__(self): # -> Generator[Never, Any, ListKustoPoolFollowerDatabasesResult]:
+        ...
+    
+
+
+def list_kusto_pool_follower_databases(kusto_pool_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListKustoPoolFollowerDatabasesResult:
+    
+    ...
+
+def list_kusto_pool_follower_databases_output(kusto_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListKustoPoolFollowerDatabasesResult]:
+    
+    ...
+

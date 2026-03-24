@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRelationshipLinkResult', 'AwaitableGetRelationshipLinkResult', 'get_relationship_link', 'get_relationship_link_output']
+@pulumi.output_type
+class GetRelationshipLinkResult:
+    
+    def __init__(__self__, azure_api_version=..., description=..., display_name=..., id=..., interaction_type=..., link_name=..., mappings=..., name=..., profile_property_references=..., provisioning_state=..., related_profile_property_references=..., relationship_guid_id=..., relationship_name=..., tenant_id=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="interactionType")
+    def interaction_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="linkName")
+    def link_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mappings(self) -> Optional[Sequence[outputs.RelationshipLinkFieldMappingResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="profilePropertyReferences")
+    def profile_property_references(self) -> Sequence[outputs.ParticipantProfilePropertyReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relatedProfilePropertyReferences")
+    def related_profile_property_references(self) -> Sequence[outputs.ParticipantProfilePropertyReferenceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relationshipGuidId")
+    def relationship_guid_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="relationshipName")
+    def relationship_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRelationshipLinkResult(GetRelationshipLinkResult):
+    def __await__(self): # -> Generator[Never, Any, GetRelationshipLinkResult]:
+        ...
+    
+
+
+def get_relationship_link(hub_name: Optional[_builtins.str] = ..., relationship_link_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRelationshipLinkResult:
+    
+    ...
+
+def get_relationship_link_output(hub_name: Optional[pulumi.Input[_builtins.str]] = ..., relationship_link_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRelationshipLinkResult]:
+    
+    ...
+

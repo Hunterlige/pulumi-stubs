@@ -1,0 +1,125 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ServerTrustGroupArgs', 'ServerTrustGroup']
+@pulumi.input_type
+class ServerTrustGroupArgs:
+    def __init__(__self__, *, group_members: pulumi.Input[Sequence[pulumi.Input[ServerInfoArgs]]], location_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], trust_scopes: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TrustScope]]]], server_trust_group_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupMembers")
+    def group_members(self) -> pulumi.Input[Sequence[pulumi.Input[ServerInfoArgs]]]:
+        
+        ...
+    
+    @group_members.setter
+    def group_members(self, value: pulumi.Input[Sequence[pulumi.Input[ServerInfoArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="locationName")
+    def location_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @location_name.setter
+    def location_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustScopes")
+    def trust_scopes(self) -> pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TrustScope]]]]:
+        
+        ...
+    
+    @trust_scopes.setter
+    def trust_scopes(self, value: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TrustScope]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverTrustGroupName")
+    def server_trust_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @server_trust_group_name.setter
+    def server_trust_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:sql:ServerTrustGroup")
+class ServerTrustGroup(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., group_members: Optional[pulumi.Input[Sequence[pulumi.Input[Union[ServerInfoArgs, ServerInfoArgsDict]]]]] = ..., location_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_trust_group_name: Optional[pulumi.Input[_builtins.str]] = ..., trust_scopes: Optional[pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, TrustScope]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: ServerTrustGroupArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> ServerTrustGroup:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupMembers")
+    def group_members(self) -> pulumi.Output[Sequence[outputs.ServerInfoResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="trustScopes")
+    def trust_scopes(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

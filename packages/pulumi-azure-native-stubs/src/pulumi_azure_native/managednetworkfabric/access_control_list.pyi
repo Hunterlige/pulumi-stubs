@@ -1,0 +1,241 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AccessControlListArgs', 'AccessControlList']
+@pulumi.input_type
+class AccessControlListArgs:
+    def __init__(__self__, *, configuration_type: pulumi.Input[Union[_builtins.str, ConfigurationType]], resource_group_name: pulumi.Input[_builtins.str], access_control_list_name: Optional[pulumi.Input[_builtins.str]] = ..., acls_url: Optional[pulumi.Input[_builtins.str]] = ..., annotation: Optional[pulumi.Input[_builtins.str]] = ..., default_action: Optional[pulumi.Input[Union[_builtins.str, CommunityActionTypes]]] = ..., dynamic_match_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[CommonDynamicMatchConfigurationArgs]]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., match_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[AccessControlListMatchConfigurationArgs]]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationType")
+    def configuration_type(self) -> pulumi.Input[Union[_builtins.str, ConfigurationType]]:
+        
+        ...
+    
+    @configuration_type.setter
+    def configuration_type(self, value: pulumi.Input[Union[_builtins.str, ConfigurationType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessControlListName")
+    def access_control_list_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @access_control_list_name.setter
+    def access_control_list_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aclsUrl")
+    def acls_url(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @acls_url.setter
+    def acls_url(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @annotation.setter
+    def annotation(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultAction")
+    def default_action(self) -> Optional[pulumi.Input[Union[_builtins.str, CommunityActionTypes]]]:
+        
+        ...
+    
+    @default_action.setter
+    def default_action(self, value: Optional[pulumi.Input[Union[_builtins.str, CommunityActionTypes]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dynamicMatchConfigurations")
+    def dynamic_match_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[CommonDynamicMatchConfigurationArgs]]]]:
+        
+        ...
+    
+    @dynamic_match_configurations.setter
+    def dynamic_match_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[CommonDynamicMatchConfigurationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="matchConfigurations")
+    def match_configurations(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[AccessControlListMatchConfigurationArgs]]]]:
+        
+        ...
+    
+    @match_configurations.setter
+    def match_configurations(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[AccessControlListMatchConfigurationArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class AccessControlList(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., access_control_list_name: Optional[pulumi.Input[_builtins.str]] = ..., acls_url: Optional[pulumi.Input[_builtins.str]] = ..., annotation: Optional[pulumi.Input[_builtins.str]] = ..., configuration_type: Optional[pulumi.Input[Union[_builtins.str, ConfigurationType]]] = ..., default_action: Optional[pulumi.Input[Union[_builtins.str, CommunityActionTypes]]] = ..., dynamic_match_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[CommonDynamicMatchConfigurationArgs, CommonDynamicMatchConfigurationArgsDict]]]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., match_configurations: Optional[pulumi.Input[Sequence[pulumi.Input[Union[AccessControlListMatchConfigurationArgs, AccessControlListMatchConfigurationArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AccessControlListArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> AccessControlList:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aclsUrl")
+    def acls_url(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administrativeState")
+    def administrative_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def annotation(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationState")
+    def configuration_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationType")
+    def configuration_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultAction")
+    def default_action(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dynamicMatchConfigurations")
+    def dynamic_match_configurations(self) -> pulumi.Output[Optional[Sequence[outputs.CommonDynamicMatchConfigurationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastSyncedTime")
+    def last_synced_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="matchConfigurations")
+    def match_configurations(self) -> pulumi.Output[Optional[Sequence[outputs.AccessControlListMatchConfigurationResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

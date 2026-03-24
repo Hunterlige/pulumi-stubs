@@ -1,0 +1,151 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['JitNetworkAccessPolicyArgs', 'JitNetworkAccessPolicy']
+@pulumi.input_type
+class JitNetworkAccessPolicyArgs:
+    def __init__(__self__, *, asc_location: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], virtual_machines: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPolicyVirtualMachineArgs]]], jit_network_access_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., requests: Optional[pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ascLocation")
+    def asc_location(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @asc_location.setter
+    def asc_location(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachines")
+    def virtual_machines(self) -> pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPolicyVirtualMachineArgs]]]:
+        
+        ...
+    
+    @virtual_machines.setter
+    def virtual_machines(self, value: pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessPolicyVirtualMachineArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="jitNetworkAccessPolicyName")
+    def jit_network_access_policy_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @jit_network_access_policy_name.setter
+    def jit_network_access_policy_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def requests(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestArgs]]]]:
+        ...
+    
+    @requests.setter
+    def requests(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[JitNetworkAccessRequestArgs]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:security:JitNetworkAccessPolicy")
+class JitNetworkAccessPolicy(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., asc_location: Optional[pulumi.Input[_builtins.str]] = ..., jit_network_access_policy_name: Optional[pulumi.Input[_builtins.str]] = ..., kind: Optional[pulumi.Input[_builtins.str]] = ..., requests: Optional[pulumi.Input[Sequence[pulumi.Input[Union[JitNetworkAccessRequestArgs, JitNetworkAccessRequestArgsDict]]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_machines: Optional[pulumi.Input[Sequence[pulumi.Input[Union[JitNetworkAccessPolicyVirtualMachineArgs, JitNetworkAccessPolicyVirtualMachineArgsDict]]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: JitNetworkAccessPolicyArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> JitNetworkAccessPolicy:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def requests(self) -> pulumi.Output[Optional[Sequence[outputs.JitNetworkAccessRequestResponse]]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualMachines")
+    def virtual_machines(self) -> pulumi.Output[Sequence[outputs.JitNetworkAccessPolicyVirtualMachineResponse]]:
+        
+        ...
+    
+
+

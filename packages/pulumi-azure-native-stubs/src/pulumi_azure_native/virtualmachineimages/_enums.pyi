@@ -1,0 +1,43 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AutoRunState', 'OnBuildError', 'ResourceIdentityType', 'SharedImageStorageAccountType', 'VMBootOptimizationState']
+@pulumi.type_token("azure-native:virtualmachineimages:AutoRunState")
+class AutoRunState(_builtins.str, Enum):
+    
+    AUTO_RUN_ENABLED = ...
+    AUTO_RUN_DISABLED = ...
+
+
+@pulumi.type_token("azure-native:virtualmachineimages:OnBuildError")
+class OnBuildError(_builtins.str, Enum):
+    
+    CLEANUP = ...
+    ABORT = ...
+
+
+@pulumi.type_token(...)
+class ResourceIdentityType(_builtins.str, Enum):
+    
+    USER_ASSIGNED = ...
+    NONE = ...
+
+
+@pulumi.type_token(...)
+class SharedImageStorageAccountType(_builtins.str, Enum):
+    
+    STANDARD_LRS = ...
+    STANDARD_ZRS = ...
+    PREMIUM_LRS = ...
+
+
+@pulumi.type_token(...)
+class VMBootOptimizationState(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+

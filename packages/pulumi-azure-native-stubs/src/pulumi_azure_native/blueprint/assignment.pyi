@@ -1,0 +1,239 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AssignmentArgs', 'Assignment']
+@pulumi.input_type
+class AssignmentArgs:
+    def __init__(__self__, *, identity: pulumi.Input[ManagedServiceIdentityArgs], parameters: pulumi.Input[Mapping[str, pulumi.Input[ParameterValueArgs]]], resource_groups: pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupValueArgs]]], resource_scope: pulumi.Input[_builtins.str], assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., blueprint_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., locks: Optional[pulumi.Input[AssignmentLockSettingsArgs]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Input[ManagedServiceIdentityArgs]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: pulumi.Input[ManagedServiceIdentityArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Input[Mapping[str, pulumi.Input[ParameterValueArgs]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: pulumi.Input[Mapping[str, pulumi.Input[ParameterValueArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroups")
+    def resource_groups(self) -> pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupValueArgs]]]:
+        
+        ...
+    
+    @resource_groups.setter
+    def resource_groups(self, value: pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupValueArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceScope")
+    def resource_scope(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_scope.setter
+    def resource_scope(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assignmentName")
+    def assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @assignment_name.setter
+    def assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blueprintId")
+    def blueprint_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @blueprint_id.setter
+    def blueprint_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locks(self) -> Optional[pulumi.Input[AssignmentLockSettingsArgs]]:
+        
+        ...
+    
+    @locks.setter
+    def locks(self, value: Optional[pulumi.Input[AssignmentLockSettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @scope.setter
+    def scope(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:blueprint:Assignment")
+class Assignment(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., blueprint_id: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[Union[ManagedServiceIdentityArgs, ManagedServiceIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., locks: Optional[pulumi.Input[Union[AssignmentLockSettingsArgs, AssignmentLockSettingsArgsDict]]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ParameterValueArgs, ParameterValueArgsDict]]]]] = ..., resource_groups: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ResourceGroupValueArgs, ResourceGroupValueArgsDict]]]]] = ..., resource_scope: Optional[pulumi.Input[_builtins.str]] = ..., scope: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: AssignmentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Assignment:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blueprintId")
+    def blueprint_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[outputs.ManagedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def locks(self) -> pulumi.Output[Optional[outputs.AssignmentLockSettingsResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Output[Mapping[str, outputs.ParameterValueResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroups")
+    def resource_groups(self) -> pulumi.Output[Mapping[str, outputs.ResourceGroupValueResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[outputs.AssignmentStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

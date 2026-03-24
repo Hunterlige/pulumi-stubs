@@ -1,0 +1,143 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetNamespaceDiscoveredDeviceResult', 'AwaitableGetNamespaceDiscoveredDeviceResult', 'get_namespace_discovered_device', 'get_namespace_discovered_device_output']
+@pulumi.output_type
+class GetNamespaceDiscoveredDeviceResult:
+    
+    def __init__(__self__, attributes=..., azure_api_version=..., discovery_id=..., endpoints=..., extended_location=..., external_device_id=..., id=..., location=..., manufacturer=..., model=..., name=..., operating_system=..., operating_system_version=..., provisioning_state=..., system_data=..., tags=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="discoveryId")
+    def discovery_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def endpoints(self) -> Optional[outputs.DiscoveredMessagingEndpointsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> outputs.ExtendedLocationResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="externalDeviceId")
+    def external_device_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def manufacturer(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def model(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatingSystem")
+    def operating_system(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="operatingSystemVersion")
+    def operating_system_version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> _builtins.float:
+        
+        ...
+    
+
+
+class AwaitableGetNamespaceDiscoveredDeviceResult(GetNamespaceDiscoveredDeviceResult):
+    def __await__(self): # -> Generator[Never, Any, GetNamespaceDiscoveredDeviceResult]:
+        ...
+    
+
+
+def get_namespace_discovered_device(discovered_device_name: Optional[_builtins.str] = ..., namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetNamespaceDiscoveredDeviceResult:
+    
+    ...
+
+def get_namespace_discovered_device_output(discovered_device_name: Optional[pulumi.Input[_builtins.str]] = ..., namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetNamespaceDiscoveredDeviceResult]:
+    
+    ...
+

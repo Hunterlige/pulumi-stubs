@@ -1,0 +1,108 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AuthenticationMode', 'ClusterSkuName', 'CompatibilityLevel', 'CompressionType', 'ContentStoragePolicy', 'Encoding', 'EventSerializationType', 'EventsOutOfOrderPolicy', 'JobType', 'JsonOutputSerializationFormat', 'OutputErrorPolicy', 'OutputStartMode', 'RefreshType', 'SkuName']
+@pulumi.type_token("azure-native:streamanalytics:AuthenticationMode")
+class AuthenticationMode(_builtins.str, Enum):
+    
+    MSI = ...
+    USER_TOKEN = ...
+    CONNECTION_STRING = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:ClusterSkuName")
+class ClusterSkuName(_builtins.str, Enum):
+    
+    DEFAULT = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:CompatibilityLevel")
+class CompatibilityLevel(_builtins.str, Enum):
+    
+    COMPATIBILITY_LEVEL_1_0 = ...
+    COMPATIBILITY_LEVEL_1_2 = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:CompressionType")
+class CompressionType(_builtins.str, Enum):
+    
+    NONE = ...
+    G_ZIP = ...
+    DEFLATE = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:ContentStoragePolicy")
+class ContentStoragePolicy(_builtins.str, Enum):
+    
+    SYSTEM_ACCOUNT = ...
+    JOB_STORAGE_ACCOUNT = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:Encoding")
+class Encoding(_builtins.str, Enum):
+    
+    UTF8 = ...
+
+
+@pulumi.type_token(...)
+class EventSerializationType(_builtins.str, Enum):
+    
+    CSV = ...
+    AVRO = ...
+    JSON = ...
+    PARQUET = ...
+
+
+@pulumi.type_token(...)
+class EventsOutOfOrderPolicy(_builtins.str, Enum):
+    
+    ADJUST = ...
+    DROP = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:JobType")
+class JobType(_builtins.str, Enum):
+    
+    CLOUD = ...
+    EDGE = ...
+
+
+@pulumi.type_token(...)
+class JsonOutputSerializationFormat(_builtins.str, Enum):
+    
+    LINE_SEPARATED = ...
+    ARRAY = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:OutputErrorPolicy")
+class OutputErrorPolicy(_builtins.str, Enum):
+    
+    STOP = ...
+    DROP = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:OutputStartMode")
+class OutputStartMode(_builtins.str, Enum):
+    
+    JOB_START_TIME = ...
+    CUSTOM_TIME = ...
+    LAST_OUTPUT_EVENT_TIME = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:RefreshType")
+class RefreshType(_builtins.str, Enum):
+    
+    STATIC = ...
+    REFRESH_PERIODICALLY_WITH_FULL = ...
+    REFRESH_PERIODICALLY_WITH_DELTA = ...
+
+
+@pulumi.type_token("azure-native:streamanalytics:SkuName")
+class SkuName(_builtins.str, Enum):
+    
+    STANDARD = ...
+
+

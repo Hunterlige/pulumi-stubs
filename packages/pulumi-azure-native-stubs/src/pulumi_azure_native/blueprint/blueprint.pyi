@@ -1,0 +1,191 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['BlueprintArgs', 'Blueprint']
+@pulumi.input_type
+class BlueprintArgs:
+    def __init__(__self__, *, resource_scope: pulumi.Input[_builtins.str], target_scope: pulumi.Input[Union[_builtins.str, BlueprintTargetScope]], blueprint_name: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterDefinitionArgs]]]] = ..., resource_groups: Optional[pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupDefinitionArgs]]]] = ..., versions: Optional[Any] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceScope")
+    def resource_scope(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_scope.setter
+    def resource_scope(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetScope")
+    def target_scope(self) -> pulumi.Input[Union[_builtins.str, BlueprintTargetScope]]:
+        
+        ...
+    
+    @target_scope.setter
+    def target_scope(self, value: pulumi.Input[Union[_builtins.str, BlueprintTargetScope]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blueprintName")
+    def blueprint_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @blueprint_name.setter
+    def blueprint_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @display_name.setter
+    def display_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterDefinitionArgs]]]]:
+        
+        ...
+    
+    @parameters.setter
+    def parameters(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[ParameterDefinitionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroups")
+    def resource_groups(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupDefinitionArgs]]]]:
+        
+        ...
+    
+    @resource_groups.setter
+    def resource_groups(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[ResourceGroupDefinitionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def versions(self) -> Optional[Any]:
+        
+        ...
+    
+    @versions.setter
+    def versions(self, value: Optional[Any]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:blueprint:Blueprint")
+class Blueprint(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., blueprint_name: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., display_name: Optional[pulumi.Input[_builtins.str]] = ..., parameters: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ParameterDefinitionArgs, ParameterDefinitionArgsDict]]]]] = ..., resource_groups: Optional[pulumi.Input[Mapping[str, pulumi.Input[Union[ResourceGroupDefinitionArgs, ResourceGroupDefinitionArgsDict]]]]] = ..., resource_scope: Optional[pulumi.Input[_builtins.str]] = ..., target_scope: Optional[pulumi.Input[Union[_builtins.str, BlueprintTargetScope]]] = ..., versions: Optional[Any] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: BlueprintArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Blueprint:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def layout(self) -> pulumi.Output[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def parameters(self) -> pulumi.Output[Optional[Mapping[str, outputs.ParameterDefinitionResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroups")
+    def resource_groups(self) -> pulumi.Output[Optional[Mapping[str, outputs.ResourceGroupDefinitionResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> pulumi.Output[outputs.BlueprintStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetScope")
+    def target_scope(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def versions(self) -> pulumi.Output[Optional[Any]]:
+        
+        ...
+    
+
+

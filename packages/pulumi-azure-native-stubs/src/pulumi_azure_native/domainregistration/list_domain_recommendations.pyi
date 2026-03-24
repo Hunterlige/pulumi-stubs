@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListDomainRecommendationsResult', 'AwaitableListDomainRecommendationsResult', 'list_domain_recommendations', 'list_domain_recommendations_output']
+@pulumi.output_type
+class ListDomainRecommendationsResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Sequence[outputs.NameIdentifierResponse]:
+        
+        ...
+    
+
+
+class AwaitableListDomainRecommendationsResult(ListDomainRecommendationsResult):
+    def __await__(self): # -> Generator[Never, Any, ListDomainRecommendationsResult]:
+        ...
+    
+
+
+def list_domain_recommendations(keywords: Optional[_builtins.str] = ..., max_domain_recommendations: Optional[_builtins.int] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListDomainRecommendationsResult:
+    
+    ...
+
+def list_domain_recommendations_output(keywords: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., max_domain_recommendations: Optional[pulumi.Input[Optional[_builtins.int]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListDomainRecommendationsResult]:
+    
+    ...
+

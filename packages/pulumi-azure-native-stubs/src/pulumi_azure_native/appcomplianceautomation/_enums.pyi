@@ -1,0 +1,67 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['ContentType', 'EnableSslVerification', 'EvidenceType', 'NotificationEvent', 'ResourceOrigin', 'SendAllEvents', 'UpdateWebhookKey', 'WebhookStatus']
+@pulumi.type_token("azure-native:appcomplianceautomation:ContentType")
+class ContentType(_builtins.str, Enum):
+    
+    APPLICATION_JSON = ...
+
+
+@pulumi.type_token(...)
+class EnableSslVerification(_builtins.str, Enum):
+    
+    TRUE = ...
+    FALSE = ...
+
+
+@pulumi.type_token("azure-native:appcomplianceautomation:EvidenceType")
+class EvidenceType(_builtins.str, Enum):
+    
+    FILE = ...
+    AUTO_COLLECTED_EVIDENCE = ...
+    DATA = ...
+
+
+@pulumi.type_token(...)
+class NotificationEvent(_builtins.str, Enum):
+    
+    GENERATE_SNAPSHOT_SUCCESS = ...
+    GENERATE_SNAPSHOT_FAILED = ...
+    ASSESSMENT_FAILURE = ...
+    REPORT_CONFIGURATION_CHANGES = ...
+    REPORT_DELETION = ...
+
+
+@pulumi.type_token(...)
+class ResourceOrigin(_builtins.str, Enum):
+    
+    AZURE = ...
+    AWS = ...
+    GCP = ...
+
+
+@pulumi.type_token("azure-native:appcomplianceautomation:SendAllEvents")
+class SendAllEvents(_builtins.str, Enum):
+    
+    TRUE = ...
+    FALSE = ...
+
+
+@pulumi.type_token(...)
+class UpdateWebhookKey(_builtins.str, Enum):
+    
+    TRUE = ...
+    FALSE = ...
+
+
+@pulumi.type_token("azure-native:appcomplianceautomation:WebhookStatus")
+class WebhookStatus(_builtins.str, Enum):
+    
+    ENABLED = ...
+    DISABLED = ...
+
+

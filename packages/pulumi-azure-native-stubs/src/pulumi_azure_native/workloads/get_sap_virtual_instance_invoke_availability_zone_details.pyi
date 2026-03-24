@@ -1,0 +1,42 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., ..., ...]
+@pulumi.output_type
+class GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult:
+    
+    def __init__(__self__, availability_zone_pairs=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZonePairs")
+    def availability_zone_pairs(self) -> Optional[Sequence[outputs.SAPAvailabilityZonePairResponse]]:
+        
+        ...
+    
+
+
+class AwaitableGetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult(GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult):
+    def __await__(self): # -> Generator[Never, Any, GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult]:
+        ...
+    
+
+
+def get_sap_virtual_instance_invoke_availability_zone_details(app_location: Optional[_builtins.str] = ..., database_type: Optional[Union[_builtins.str, SAPDatabaseType]] = ..., location: Optional[_builtins.str] = ..., sap_product: Optional[Union[_builtins.str, SAPProductType]] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult:
+    
+    ...
+
+def get_sap_virtual_instance_invoke_availability_zone_details_output(app_location: Optional[pulumi.Input[_builtins.str]] = ..., database_type: Optional[pulumi.Input[Union[_builtins.str, SAPDatabaseType]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., sap_product: Optional[pulumi.Input[Union[_builtins.str, SAPProductType]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSapVirtualInstanceInvokeAvailabilityZoneDetailsResult]:
+    
+    ...
+

@@ -1,0 +1,186 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['HostProjectRegistrationArgs', 'HostProjectRegistration']
+@pulumi.input_type
+class HostProjectRegistrationArgs:
+    def __init__(__self__, *, gcp_project: pulumi.Input[_builtins.str], host_project_registration_id: pulumi.Input[_builtins.str], location: pulumi.Input[_builtins.str], project: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gcpProject")
+    def gcp_project(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @gcp_project.setter
+    def gcp_project(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostProjectRegistrationId")
+    def host_project_registration_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @host_project_registration_id.setter
+    def host_project_registration_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @project.setter
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.input_type
+class _HostProjectRegistrationState:
+    def __init__(__self__, *, create_time: Optional[pulumi.Input[_builtins.str]] = ..., gcp_project: Optional[pulumi.Input[_builtins.str]] = ..., host_project_registration_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createTime")
+    def create_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @create_time.setter
+    def create_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gcpProject")
+    def gcp_project(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @gcp_project.setter
+    def gcp_project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostProjectRegistrationId")
+    def host_project_registration_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @host_project_registration_id.setter
+    def host_project_registration_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def project(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @project.setter
+    def project(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class HostProjectRegistration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., gcp_project: Optional[pulumi.Input[_builtins.str]] = ..., host_project_registration_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: HostProjectRegistrationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ..., create_time: Optional[pulumi.Input[_builtins.str]] = ..., gcp_project: Optional[pulumi.Input[_builtins.str]] = ..., host_project_registration_id: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., project: Optional[pulumi.Input[_builtins.str]] = ...) -> HostProjectRegistration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createTime")
+    def create_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gcpProject")
+    def gcp_project(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostProjectRegistrationId")
+    def host_project_registration_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def project(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

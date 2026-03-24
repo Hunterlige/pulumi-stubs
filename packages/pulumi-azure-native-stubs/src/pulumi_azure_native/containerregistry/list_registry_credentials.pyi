@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListRegistryCredentialsResult', 'AwaitableListRegistryCredentialsResult', 'list_registry_credentials', 'list_registry_credentials_output']
+@pulumi.output_type
+class ListRegistryCredentialsResult:
+    
+    def __init__(__self__, passwords=..., username=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def passwords(self) -> Optional[Sequence[outputs.RegistryPasswordResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableListRegistryCredentialsResult(ListRegistryCredentialsResult):
+    def __await__(self): # -> Generator[Never, Any, ListRegistryCredentialsResult]:
+        ...
+    
+
+
+def list_registry_credentials(registry_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListRegistryCredentialsResult:
+    
+    ...
+
+def list_registry_credentials_output(registry_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListRegistryCredentialsResult]:
+    
+    ...
+

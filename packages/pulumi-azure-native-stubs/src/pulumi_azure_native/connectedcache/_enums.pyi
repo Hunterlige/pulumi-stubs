@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import pulumi
+from enum import Enum
+
+__all__ = ['AutoUpdateRingType', 'CustomerTransitState', 'CycleType', 'OsType', 'ProxyRequired']
+@pulumi.type_token("azure-native:connectedcache:AutoUpdateRingType")
+class AutoUpdateRingType(_builtins.str, Enum):
+    
+    PREVIEW = ...
+    SLOW = ...
+    FAST = ...
+
+
+@pulumi.type_token("azure-native:connectedcache:CustomerTransitState")
+class CustomerTransitState(_builtins.str, Enum):
+    
+    NO_TRANSIT = ...
+    COMBINED_TRANSIT = ...
+    TRANSIT_ONLY = ...
+
+
+@pulumi.type_token("azure-native:connectedcache:CycleType")
+class CycleType(_builtins.str, Enum):
+    
+    PREVIEW = ...
+    SLOW = ...
+    FAST = ...
+
+
+@pulumi.type_token("azure-native:connectedcache:OsType")
+class OsType(_builtins.str, Enum):
+    
+    WINDOWS = ...
+    LINUX = ...
+    EFLOW = ...
+
+
+@pulumi.type_token("azure-native:connectedcache:ProxyRequired")
+class ProxyRequired(_builtins.str, Enum):
+    
+    NONE = ...
+    REQUIRED = ...
+
+

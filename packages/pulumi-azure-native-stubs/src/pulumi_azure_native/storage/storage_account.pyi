@@ -1,0 +1,665 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['StorageAccountArgs', 'StorageAccount']
+@pulumi.input_type
+class StorageAccountArgs:
+    def __init__(__self__, *, kind: pulumi.Input[Union[_builtins.str, Kind]], resource_group_name: pulumi.Input[_builtins.str], sku: pulumi.Input[SkuArgs], access_tier: Optional[pulumi.Input[AccessTier]] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., allow_blob_public_access: Optional[pulumi.Input[_builtins.bool]] = ..., allow_cross_tenant_replication: Optional[pulumi.Input[_builtins.bool]] = ..., allow_shared_key_access: Optional[pulumi.Input[_builtins.bool]] = ..., allowed_copy_scope: Optional[pulumi.Input[Union[_builtins.str, AllowedCopyScope]]] = ..., azure_files_identity_based_authentication: Optional[pulumi.Input[AzureFilesIdentityBasedAuthenticationArgs]] = ..., custom_domain: Optional[pulumi.Input[CustomDomainArgs]] = ..., default_to_o_auth_authentication: Optional[pulumi.Input[_builtins.bool]] = ..., dns_endpoint_type: Optional[pulumi.Input[Union[_builtins.str, DnsEndpointType]]] = ..., enable_extended_groups: Optional[pulumi.Input[_builtins.bool]] = ..., enable_https_traffic_only: Optional[pulumi.Input[_builtins.bool]] = ..., enable_nfs_v3: Optional[pulumi.Input[_builtins.bool]] = ..., encryption: Optional[pulumi.Input[EncryptionArgs]] = ..., extended_location: Optional[pulumi.Input[ExtendedLocationArgs]] = ..., identity: Optional[pulumi.Input[IdentityArgs]] = ..., immutable_storage_with_versioning: Optional[pulumi.Input[ImmutableStorageAccountArgs]] = ..., is_hns_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., is_local_user_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., is_sftp_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., key_policy: Optional[pulumi.Input[KeyPolicyArgs]] = ..., large_file_shares_state: Optional[pulumi.Input[Union[_builtins.str, LargeFileSharesState]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., minimum_tls_version: Optional[pulumi.Input[Union[_builtins.str, MinimumTlsVersion]]] = ..., network_rule_set: Optional[pulumi.Input[NetworkRuleSetArgs]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., routing_preference: Optional[pulumi.Input[RoutingPreferenceArgs]] = ..., sas_policy: Optional[pulumi.Input[SasPolicyArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Input[Union[_builtins.str, Kind]]:
+        
+        ...
+    
+    @kind.setter
+    def kind(self, value: pulumi.Input[Union[_builtins.str, Kind]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Input[SkuArgs]:
+        
+        ...
+    
+    @sku.setter
+    def sku(self, value: pulumi.Input[SkuArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessTier")
+    def access_tier(self) -> Optional[pulumi.Input[AccessTier]]:
+        
+        ...
+    
+    @access_tier.setter
+    def access_tier(self, value: Optional[pulumi.Input[AccessTier]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountName")
+    def account_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @account_name.setter
+    def account_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowBlobPublicAccess")
+    def allow_blob_public_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_blob_public_access.setter
+    def allow_blob_public_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowCrossTenantReplication")
+    def allow_cross_tenant_replication(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_cross_tenant_replication.setter
+    def allow_cross_tenant_replication(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowSharedKeyAccess")
+    def allow_shared_key_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_shared_key_access.setter
+    def allow_shared_key_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedCopyScope")
+    def allowed_copy_scope(self) -> Optional[pulumi.Input[Union[_builtins.str, AllowedCopyScope]]]:
+        
+        ...
+    
+    @allowed_copy_scope.setter
+    def allowed_copy_scope(self, value: Optional[pulumi.Input[Union[_builtins.str, AllowedCopyScope]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureFilesIdentityBasedAuthentication")
+    def azure_files_identity_based_authentication(self) -> Optional[pulumi.Input[AzureFilesIdentityBasedAuthenticationArgs]]:
+        
+        ...
+    
+    @azure_files_identity_based_authentication.setter
+    def azure_files_identity_based_authentication(self, value: Optional[pulumi.Input[AzureFilesIdentityBasedAuthenticationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customDomain")
+    def custom_domain(self) -> Optional[pulumi.Input[CustomDomainArgs]]:
+        
+        ...
+    
+    @custom_domain.setter
+    def custom_domain(self, value: Optional[pulumi.Input[CustomDomainArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultToOAuthAuthentication")
+    def default_to_o_auth_authentication(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @default_to_o_auth_authentication.setter
+    def default_to_o_auth_authentication(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsEndpointType")
+    def dns_endpoint_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DnsEndpointType]]]:
+        
+        ...
+    
+    @dns_endpoint_type.setter
+    def dns_endpoint_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DnsEndpointType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableExtendedGroups")
+    def enable_extended_groups(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_extended_groups.setter
+    def enable_extended_groups(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableHttpsTrafficOnly")
+    def enable_https_traffic_only(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_https_traffic_only.setter
+    def enable_https_traffic_only(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableNfsV3")
+    def enable_nfs_v3(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enable_nfs_v3.setter
+    def enable_nfs_v3(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> Optional[pulumi.Input[EncryptionArgs]]:
+        
+        ...
+    
+    @encryption.setter
+    def encryption(self, value: Optional[pulumi.Input[EncryptionArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[pulumi.Input[ExtendedLocationArgs]]:
+        
+        ...
+    
+    @extended_location.setter
+    def extended_location(self, value: Optional[pulumi.Input[ExtendedLocationArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[IdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[IdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="immutableStorageWithVersioning")
+    def immutable_storage_with_versioning(self) -> Optional[pulumi.Input[ImmutableStorageAccountArgs]]:
+        
+        ...
+    
+    @immutable_storage_with_versioning.setter
+    def immutable_storage_with_versioning(self, value: Optional[pulumi.Input[ImmutableStorageAccountArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isHnsEnabled")
+    def is_hns_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_hns_enabled.setter
+    def is_hns_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isLocalUserEnabled")
+    def is_local_user_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_local_user_enabled.setter
+    def is_local_user_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSftpEnabled")
+    def is_sftp_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @is_sftp_enabled.setter
+    def is_sftp_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyPolicy")
+    def key_policy(self) -> Optional[pulumi.Input[KeyPolicyArgs]]:
+        
+        ...
+    
+    @key_policy.setter
+    def key_policy(self, value: Optional[pulumi.Input[KeyPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="largeFileSharesState")
+    def large_file_shares_state(self) -> Optional[pulumi.Input[Union[_builtins.str, LargeFileSharesState]]]:
+        
+        ...
+    
+    @large_file_shares_state.setter
+    def large_file_shares_state(self, value: Optional[pulumi.Input[Union[_builtins.str, LargeFileSharesState]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimumTlsVersion")
+    def minimum_tls_version(self) -> Optional[pulumi.Input[Union[_builtins.str, MinimumTlsVersion]]]:
+        
+        ...
+    
+    @minimum_tls_version.setter
+    def minimum_tls_version(self, value: Optional[pulumi.Input[Union[_builtins.str, MinimumTlsVersion]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkRuleSet")
+    def network_rule_set(self) -> Optional[pulumi.Input[NetworkRuleSetArgs]]:
+        
+        ...
+    
+    @network_rule_set.setter
+    def network_rule_set(self, value: Optional[pulumi.Input[NetworkRuleSetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingPreference")
+    def routing_preference(self) -> Optional[pulumi.Input[RoutingPreferenceArgs]]:
+        
+        ...
+    
+    @routing_preference.setter
+    def routing_preference(self, value: Optional[pulumi.Input[RoutingPreferenceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sasPolicy")
+    def sas_policy(self) -> Optional[pulumi.Input[SasPolicyArgs]]:
+        
+        ...
+    
+    @sas_policy.setter
+    def sas_policy(self, value: Optional[pulumi.Input[SasPolicyArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:storage:StorageAccount")
+class StorageAccount(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., access_tier: Optional[pulumi.Input[AccessTier]] = ..., account_name: Optional[pulumi.Input[_builtins.str]] = ..., allow_blob_public_access: Optional[pulumi.Input[_builtins.bool]] = ..., allow_cross_tenant_replication: Optional[pulumi.Input[_builtins.bool]] = ..., allow_shared_key_access: Optional[pulumi.Input[_builtins.bool]] = ..., allowed_copy_scope: Optional[pulumi.Input[Union[_builtins.str, AllowedCopyScope]]] = ..., azure_files_identity_based_authentication: Optional[pulumi.Input[Union[AzureFilesIdentityBasedAuthenticationArgs, AzureFilesIdentityBasedAuthenticationArgsDict]]] = ..., custom_domain: Optional[pulumi.Input[Union[CustomDomainArgs, CustomDomainArgsDict]]] = ..., default_to_o_auth_authentication: Optional[pulumi.Input[_builtins.bool]] = ..., dns_endpoint_type: Optional[pulumi.Input[Union[_builtins.str, DnsEndpointType]]] = ..., enable_extended_groups: Optional[pulumi.Input[_builtins.bool]] = ..., enable_https_traffic_only: Optional[pulumi.Input[_builtins.bool]] = ..., enable_nfs_v3: Optional[pulumi.Input[_builtins.bool]] = ..., encryption: Optional[pulumi.Input[Union[EncryptionArgs, EncryptionArgsDict]]] = ..., extended_location: Optional[pulumi.Input[Union[ExtendedLocationArgs, ExtendedLocationArgsDict]]] = ..., identity: Optional[pulumi.Input[Union[IdentityArgs, IdentityArgsDict]]] = ..., immutable_storage_with_versioning: Optional[pulumi.Input[Union[ImmutableStorageAccountArgs, ImmutableStorageAccountArgsDict]]] = ..., is_hns_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., is_local_user_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., is_sftp_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., key_policy: Optional[pulumi.Input[Union[KeyPolicyArgs, KeyPolicyArgsDict]]] = ..., kind: Optional[pulumi.Input[Union[_builtins.str, Kind]]] = ..., large_file_shares_state: Optional[pulumi.Input[Union[_builtins.str, LargeFileSharesState]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., minimum_tls_version: Optional[pulumi.Input[Union[_builtins.str, MinimumTlsVersion]]] = ..., network_rule_set: Optional[pulumi.Input[Union[NetworkRuleSetArgs, NetworkRuleSetArgsDict]]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., routing_preference: Optional[pulumi.Input[Union[RoutingPreferenceArgs, RoutingPreferenceArgsDict]]] = ..., sas_policy: Optional[pulumi.Input[Union[SasPolicyArgs, SasPolicyArgsDict]]] = ..., sku: Optional[pulumi.Input[Union[SkuArgs, SkuArgsDict]]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: StorageAccountArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> StorageAccount:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessTier")
+    def access_tier(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accountMigrationInProgress")
+    def account_migration_in_progress(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowBlobPublicAccess")
+    def allow_blob_public_access(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowCrossTenantReplication")
+    def allow_cross_tenant_replication(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowSharedKeyAccess")
+    def allow_shared_key_access(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowedCopyScope")
+    def allowed_copy_scope(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureFilesIdentityBasedAuthentication")
+    def azure_files_identity_based_authentication(self) -> pulumi.Output[Optional[outputs.AzureFilesIdentityBasedAuthenticationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobRestoreStatus")
+    def blob_restore_status(self) -> pulumi.Output[outputs.BlobRestoreStatusResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="creationTime")
+    def creation_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customDomain")
+    def custom_domain(self) -> pulumi.Output[outputs.CustomDomainResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultToOAuthAuthentication")
+    def default_to_o_auth_authentication(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsEndpointType")
+    def dns_endpoint_type(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableExtendedGroups")
+    def enable_extended_groups(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableHttpsTrafficOnly")
+    def enable_https_traffic_only(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enableNfsV3")
+    def enable_nfs_v3(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryption(self) -> pulumi.Output[outputs.EncryptionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> pulumi.Output[Optional[outputs.ExtendedLocationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="failoverInProgress")
+    def failover_in_progress(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="geoReplicationStats")
+    def geo_replication_stats(self) -> pulumi.Output[outputs.GeoReplicationStatsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.IdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="immutableStorageWithVersioning")
+    def immutable_storage_with_versioning(self) -> pulumi.Output[Optional[outputs.ImmutableStorageAccountResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isHnsEnabled")
+    def is_hns_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isLocalUserEnabled")
+    def is_local_user_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSftpEnabled")
+    def is_sftp_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSkuConversionBlocked")
+    def is_sku_conversion_blocked(self) -> pulumi.Output[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyCreationTime")
+    def key_creation_time(self) -> pulumi.Output[outputs.KeyCreationTimeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyPolicy")
+    def key_policy(self) -> pulumi.Output[outputs.KeyPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="largeFileSharesState")
+    def large_file_shares_state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastGeoFailoverTime")
+    def last_geo_failover_time(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minimumTlsVersion")
+    def minimum_tls_version(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkRuleSet")
+    def network_rule_set(self) -> pulumi.Output[outputs.NetworkRuleSetResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryEndpoints")
+    def primary_endpoints(self) -> pulumi.Output[outputs.EndpointsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryLocation")
+    def primary_location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> pulumi.Output[Sequence[outputs.PrivateEndpointConnectionResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingPreference")
+    def routing_preference(self) -> pulumi.Output[Optional[outputs.RoutingPreferenceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sasPolicy")
+    def sas_policy(self) -> pulumi.Output[outputs.SasPolicyResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryEndpoints")
+    def secondary_endpoints(self) -> pulumi.Output[outputs.EndpointsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryLocation")
+    def secondary_location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def sku(self) -> pulumi.Output[outputs.SkuResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusOfPrimary")
+    def status_of_primary(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="statusOfSecondary")
+    def status_of_secondary(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountSkuConversionStatus")
+    def storage_account_sku_conversion_status(self) -> pulumi.Output[Optional[outputs.StorageAccountSkuConversionStatusResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

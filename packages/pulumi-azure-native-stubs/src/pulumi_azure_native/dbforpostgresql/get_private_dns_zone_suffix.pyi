@@ -1,0 +1,39 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetPrivateDnsZoneSuffixResult', 'AwaitableGetPrivateDnsZoneSuffixResult', 'get_private_dns_zone_suffix', 'get_private_dns_zone_suffix_output']
+@pulumi.output_type
+class GetPrivateDnsZoneSuffixResult:
+    
+    def __init__(__self__, value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[_builtins.str]:
+        ...
+    
+
+
+class AwaitableGetPrivateDnsZoneSuffixResult(GetPrivateDnsZoneSuffixResult):
+    def __await__(self): # -> Generator[Never, Any, GetPrivateDnsZoneSuffixResult]:
+        ...
+    
+
+
+def get_private_dns_zone_suffix(opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetPrivateDnsZoneSuffixResult:
+    
+    ...
+
+def get_private_dns_zone_suffix_output(opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetPrivateDnsZoneSuffixResult]:
+    
+    ...
+

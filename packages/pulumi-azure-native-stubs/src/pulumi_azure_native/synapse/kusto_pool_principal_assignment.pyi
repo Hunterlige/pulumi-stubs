@@ -1,0 +1,196 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['KustoPoolPrincipalAssignmentArgs', 'KustoPoolPrincipalAssignment']
+@pulumi.input_type
+class KustoPoolPrincipalAssignmentArgs:
+    def __init__(__self__, *, kusto_pool_name: pulumi.Input[_builtins.str], principal_id: pulumi.Input[_builtins.str], principal_type: pulumi.Input[Union[_builtins.str, PrincipalType]], resource_group_name: pulumi.Input[_builtins.str], role: pulumi.Input[Union[_builtins.str, ClusterPrincipalRole]], workspace_name: pulumi.Input[_builtins.str], principal_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kustoPoolName")
+    def kusto_pool_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @kusto_pool_name.setter
+    def kusto_pool_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @principal_id.setter
+    def principal_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalType")
+    def principal_type(self) -> pulumi.Input[Union[_builtins.str, PrincipalType]]:
+        
+        ...
+    
+    @principal_type.setter
+    def principal_type(self, value: pulumi.Input[Union[_builtins.str, PrincipalType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> pulumi.Input[Union[_builtins.str, ClusterPrincipalRole]]:
+        
+        ...
+    
+    @role.setter
+    def role(self, value: pulumi.Input[Union[_builtins.str, ClusterPrincipalRole]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="workspaceName")
+    def workspace_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @workspace_name.setter
+    def workspace_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalAssignmentName")
+    def principal_assignment_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @principal_assignment_name.setter
+    def principal_assignment_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tenant_id.setter
+    def tenant_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:synapse:KustoPoolPrincipalAssignment")
+class KustoPoolPrincipalAssignment(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., kusto_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., principal_assignment_name: Optional[pulumi.Input[_builtins.str]] = ..., principal_id: Optional[pulumi.Input[_builtins.str]] = ..., principal_type: Optional[pulumi.Input[Union[_builtins.str, PrincipalType]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., role: Optional[pulumi.Input[Union[_builtins.str, ClusterPrincipalRole]]] = ..., tenant_id: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: KustoPoolPrincipalAssignmentArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> KustoPoolPrincipalAssignment:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadObjectId")
+    def aad_object_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalName")
+    def principal_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalType")
+    def principal_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def role(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantName")
+    def tenant_name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

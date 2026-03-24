@@ -1,0 +1,137 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetMaintenanceConfigurationResult', 'AwaitableGetMaintenanceConfigurationResult', 'get_maintenance_configuration', 'get_maintenance_configuration_output']
+@pulumi.output_type
+class GetMaintenanceConfigurationResult:
+    
+    def __init__(__self__, azure_api_version=..., duration=..., expiration_date_time=..., extension_properties=..., id=..., install_patches=..., location=..., maintenance_scope=..., name=..., namespace=..., recur_every=..., start_date_time=..., system_data=..., tags=..., time_zone=..., type=..., visibility=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def duration(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="expirationDateTime")
+    def expiration_date_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionProperties")
+    def extension_properties(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="installPatches")
+    def install_patches(self) -> Optional[outputs.InputPatchConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maintenanceScope")
+    def maintenance_scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def namespace(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="recurEvery")
+    def recur_every(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startDateTime")
+    def start_date_time(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeZone")
+    def time_zone(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def visibility(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetMaintenanceConfigurationResult(GetMaintenanceConfigurationResult):
+    def __await__(self): # -> Generator[Never, Any, GetMaintenanceConfigurationResult]:
+        ...
+    
+
+
+def get_maintenance_configuration(resource_group_name: Optional[_builtins.str] = ..., resource_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetMaintenanceConfigurationResult:
+    
+    ...
+
+def get_maintenance_configuration_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetMaintenanceConfigurationResult]:
+    
+    ...
+

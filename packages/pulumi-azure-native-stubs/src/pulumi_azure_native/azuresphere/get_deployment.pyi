@@ -1,0 +1,89 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetDeploymentResult', 'AwaitableGetDeploymentResult', 'get_deployment', 'get_deployment_output']
+@pulumi.output_type
+class GetDeploymentResult:
+    
+    def __init__(__self__, azure_api_version=..., deployed_images=..., deployment_date_utc=..., deployment_id=..., id=..., name=..., provisioning_state=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deployedImages")
+    def deployed_images(self) -> Optional[Sequence[outputs.ImageResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentDateUtc")
+    def deployment_date_utc(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentId")
+    def deployment_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetDeploymentResult(GetDeploymentResult):
+    def __await__(self): # -> Generator[Never, Any, GetDeploymentResult]:
+        ...
+    
+
+
+def get_deployment(catalog_name: Optional[_builtins.str] = ..., deployment_name: Optional[_builtins.str] = ..., device_group_name: Optional[_builtins.str] = ..., product_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetDeploymentResult:
+    
+    ...
+
+def get_deployment_output(catalog_name: Optional[pulumi.Input[_builtins.str]] = ..., deployment_name: Optional[pulumi.Input[_builtins.str]] = ..., device_group_name: Optional[pulumi.Input[_builtins.str]] = ..., product_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetDeploymentResult]:
+    
+    ...
+

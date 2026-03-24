@@ -1,0 +1,53 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListApplianceKeysResult', 'AwaitableListApplianceKeysResult', 'list_appliance_keys', 'list_appliance_keys_output']
+@pulumi.output_type
+class ListApplianceKeysResult:
+    
+    def __init__(__self__, artifact_profiles=..., kubeconfigs=..., ssh_keys=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="artifactProfiles")
+    def artifact_profiles(self) -> Mapping[str, outputs.ArtifactProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kubeconfigs(self) -> Sequence[outputs.ApplianceCredentialKubeconfigResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sshKeys")
+    def ssh_keys(self) -> Mapping[str, outputs.SSHKeyResponseV1]:
+        
+        ...
+    
+
+
+class AwaitableListApplianceKeysResult(ListApplianceKeysResult):
+    def __await__(self): # -> Generator[Never, Any, ListApplianceKeysResult]:
+        ...
+    
+
+
+def list_appliance_keys(artifact_type: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., resource_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListApplianceKeysResult:
+    
+    ...
+
+def list_appliance_keys_output(artifact_type: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListApplianceKeysResult]:
+    
+    ...
+

@@ -1,0 +1,107 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSavedSearchResult', 'AwaitableGetSavedSearchResult', 'get_saved_search', 'get_saved_search_output']
+@pulumi.output_type
+class GetSavedSearchResult:
+    
+    def __init__(__self__, azure_api_version=..., category=..., display_name=..., etag=..., function_alias=..., function_parameters=..., id=..., name=..., query=..., tags=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def category(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="functionAlias")
+    def function_alias(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="functionParameters")
+    def function_parameters(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def query(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Sequence[outputs.TagResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.float]:
+        
+        ...
+    
+
+
+class AwaitableGetSavedSearchResult(GetSavedSearchResult):
+    def __await__(self): # -> Generator[Never, Any, GetSavedSearchResult]:
+        ...
+    
+
+
+def get_saved_search(resource_group_name: Optional[_builtins.str] = ..., saved_search_id: Optional[_builtins.str] = ..., workspace_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSavedSearchResult:
+    
+    ...
+
+def get_saved_search_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., saved_search_id: Optional[pulumi.Input[_builtins.str]] = ..., workspace_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSavedSearchResult]:
+    
+    ...
+

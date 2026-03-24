@@ -1,0 +1,158 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['LoadBalancerArgs', 'LoadBalancer']
+@pulumi.input_type
+class LoadBalancerArgs:
+    def __init__(__self__, *, addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]], advertise_mode: pulumi.Input[Union[_builtins.str, AdvertiseMode]], resource_uri: pulumi.Input[_builtins.str], bgp_peers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., load_balancer_name: Optional[pulumi.Input[_builtins.str]] = ..., service_selector: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def addresses(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]:
+        
+        ...
+    
+    @addresses.setter
+    def addresses(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="advertiseMode")
+    def advertise_mode(self) -> pulumi.Input[Union[_builtins.str, AdvertiseMode]]:
+        
+        ...
+    
+    @advertise_mode.setter
+    def advertise_mode(self, value: pulumi.Input[Union[_builtins.str, AdvertiseMode]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceUri")
+    def resource_uri(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_uri.setter
+    def resource_uri(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bgpPeers")
+    def bgp_peers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @bgp_peers.setter
+    def bgp_peers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loadBalancerName")
+    def load_balancer_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @load_balancer_name.setter
+    def load_balancer_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceSelector")
+    def service_selector(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @service_selector.setter
+    def service_selector(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:kubernetesruntime:LoadBalancer")
+class LoadBalancer(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., addresses: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., advertise_mode: Optional[pulumi.Input[Union[_builtins.str, AdvertiseMode]]] = ..., bgp_peers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., load_balancer_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_uri: Optional[pulumi.Input[_builtins.str]] = ..., service_selector: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: LoadBalancerArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> LoadBalancer:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def addresses(self) -> pulumi.Output[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="advertiseMode")
+    def advertise_mode(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bgpPeers")
+    def bgp_peers(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceSelector")
+    def service_selector(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

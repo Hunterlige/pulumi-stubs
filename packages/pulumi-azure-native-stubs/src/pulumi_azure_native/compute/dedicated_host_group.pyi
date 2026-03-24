@@ -1,0 +1,196 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union, overload
+from . import outputs
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DedicatedHostGroupArgs', 'DedicatedHostGroup']
+@pulumi.input_type
+class DedicatedHostGroupArgs:
+    def __init__(__self__, *, platform_fault_domain_count: pulumi.Input[_builtins.int], resource_group_name: pulumi.Input[_builtins.str], additional_capabilities: Optional[pulumi.Input[DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs]] = ..., host_group_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., support_automatic_placement: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformFaultDomainCount")
+    def platform_fault_domain_count(self) -> pulumi.Input[_builtins.int]:
+        
+        ...
+    
+    @platform_fault_domain_count.setter
+    def platform_fault_domain_count(self, value: pulumi.Input[_builtins.int]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalCapabilities")
+    def additional_capabilities(self) -> Optional[pulumi.Input[DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs]]:
+        
+        ...
+    
+    @additional_capabilities.setter
+    def additional_capabilities(self, value: Optional[pulumi.Input[DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hostGroupName")
+    def host_group_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @host_group_name.setter
+    def host_group_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportAutomaticPlacement")
+    def support_automatic_placement(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @support_automatic_placement.setter
+    def support_automatic_placement(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @zones.setter
+    def zones(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:compute:DedicatedHostGroup")
+class DedicatedHostGroup(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., additional_capabilities: Optional[pulumi.Input[Union[DedicatedHostGroupPropertiesAdditionalCapabilitiesArgs, DedicatedHostGroupPropertiesAdditionalCapabilitiesArgsDict]]] = ..., host_group_name: Optional[pulumi.Input[_builtins.str]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., platform_fault_domain_count: Optional[pulumi.Input[_builtins.int]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., support_automatic_placement: Optional[pulumi.Input[_builtins.bool]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., zones: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DedicatedHostGroupArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> DedicatedHostGroup:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="additionalCapabilities")
+    def additional_capabilities(self) -> pulumi.Output[Optional[outputs.DedicatedHostGroupPropertiesAdditionalCapabilitiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hosts(self) -> pulumi.Output[Sequence[outputs.SubResourceReadOnlyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceView")
+    def instance_view(self) -> pulumi.Output[outputs.DedicatedHostGroupInstanceViewResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="platformFaultDomainCount")
+    def platform_fault_domain_count(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportAutomaticPlacement")
+    def support_automatic_placement(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def zones(self) -> pulumi.Output[Optional[Sequence[_builtins.str]]]:
+        
+        ...
+    
+
+

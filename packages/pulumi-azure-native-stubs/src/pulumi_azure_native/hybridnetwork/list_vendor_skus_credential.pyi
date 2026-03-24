@@ -1,0 +1,64 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ListVendorSkusCredentialResult', 'AwaitableListVendorSkusCredentialResult', 'list_vendor_skus_credential', 'list_vendor_skus_credential_output']
+@pulumi.output_type
+class ListVendorSkusCredentialResult:
+    
+    def __init__(__self__, acr_server_url=..., acr_token=..., expiry=..., repositories=..., username=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="acrServerUrl")
+    def acr_server_url(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="acrToken")
+    def acr_token(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def expiry(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def repositories(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableListVendorSkusCredentialResult(ListVendorSkusCredentialResult):
+    def __await__(self): # -> Generator[Never, Any, ListVendorSkusCredentialResult]:
+        ...
+    
+
+
+def list_vendor_skus_credential(sku_name: Optional[_builtins.str] = ..., vendor_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListVendorSkusCredentialResult:
+    
+    ...
+
+def list_vendor_skus_credential_output(sku_name: Optional[pulumi.Input[_builtins.str]] = ..., vendor_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListVendorSkusCredentialResult]:
+    
+    ...
+

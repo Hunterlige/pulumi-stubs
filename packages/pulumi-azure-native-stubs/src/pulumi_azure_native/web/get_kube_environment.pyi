@@ -1,0 +1,142 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetKubeEnvironmentResult', 'AwaitableGetKubeEnvironmentResult', 'get_kube_environment', 'get_kube_environment_output']
+@pulumi.output_type
+class GetKubeEnvironmentResult:
+    
+    def __init__(__self__, aks_resource_id=..., app_logs_configuration=..., arc_configuration=..., azure_api_version=..., container_apps_configuration=..., default_domain=..., deployment_errors=..., environment_type=..., extended_location=..., id=..., internal_load_balancer_enabled=..., kind=..., location=..., name=..., provisioning_state=..., static_ip=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aksResourceID")
+    def aks_resource_id(self) -> Optional[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appLogsConfiguration")
+    def app_logs_configuration(self) -> Optional[outputs.AppLogsConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="arcConfiguration")
+    def arc_configuration(self) -> Optional[outputs.ArcConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="containerAppsConfiguration")
+    def container_apps_configuration(self) -> Optional[outputs.ContainerAppsConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultDomain")
+    def default_domain(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentErrors")
+    def deployment_errors(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="environmentType")
+    def environment_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="internalLoadBalancerEnabled")
+    def internal_load_balancer_enabled(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def kind(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="staticIp")
+    def static_ip(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetKubeEnvironmentResult(GetKubeEnvironmentResult):
+    def __await__(self): # -> Generator[Never, Any, GetKubeEnvironmentResult]:
+        ...
+    
+
+
+def get_kube_environment(name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetKubeEnvironmentResult:
+    
+    ...
+
+def get_kube_environment_output(name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetKubeEnvironmentResult]:
+    
+    ...
+

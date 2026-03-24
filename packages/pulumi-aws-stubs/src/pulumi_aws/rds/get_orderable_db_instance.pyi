@@ -1,0 +1,214 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetOrderableDbInstanceResult', 'AwaitableGetOrderableDbInstanceResult', 'get_orderable_db_instance', 'get_orderable_db_instance_output']
+@pulumi.output_type
+class GetOrderableDbInstanceResult:
+    
+    def __init__(__self__, availability_zone_group=..., availability_zones=..., engine=..., engine_latest_version=..., engine_version=..., id=..., instance_class=..., license_model=..., max_iops_per_db_instance=..., max_iops_per_gib=..., max_storage_size=..., min_iops_per_db_instance=..., min_iops_per_gib=..., min_storage_size=..., multi_az_capable=..., outpost_capable=..., preferred_engine_versions=..., preferred_instance_classes=..., read_replica_capable=..., region=..., storage_type=..., supported_engine_modes=..., supported_network_types=..., supports_clusters=..., supports_enhanced_monitoring=..., supports_global_databases=..., supports_iam_database_authentication=..., supports_iops=..., supports_kerberos_authentication=..., supports_multi_az=..., supports_performance_insights=..., supports_storage_autoscaling=..., supports_storage_encryption=..., vpc=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZoneGroup")
+    def availability_zone_group(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> Sequence[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def engine(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="engineLatestVersion")
+    def engine_latest_version(self) -> Optional[_builtins.bool]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="engineVersion")
+    def engine_version(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="instanceClass")
+    def instance_class(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="licenseModel")
+    def license_model(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxIopsPerDbInstance")
+    def max_iops_per_db_instance(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxIopsPerGib")
+    def max_iops_per_gib(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxStorageSize")
+    def max_storage_size(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minIopsPerDbInstance")
+    def min_iops_per_db_instance(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minIopsPerGib")
+    def min_iops_per_gib(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="minStorageSize")
+    def min_storage_size(self) -> _builtins.int:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="multiAzCapable")
+    def multi_az_capable(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="outpostCapable")
+    def outpost_capable(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preferredEngineVersions")
+    def preferred_engine_versions(self) -> Optional[Sequence[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="preferredInstanceClasses")
+    def preferred_instance_classes(self) -> Optional[Sequence[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readReplicaCapable")
+    def read_replica_capable(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def region(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageType")
+    def storage_type(self) -> _builtins.str:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedEngineModes")
+    def supported_engine_modes(self) -> Sequence[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportedNetworkTypes")
+    def supported_network_types(self) -> Sequence[_builtins.str]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsClusters")
+    def supports_clusters(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsEnhancedMonitoring")
+    def supports_enhanced_monitoring(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsGlobalDatabases")
+    def supports_global_databases(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsIamDatabaseAuthentication")
+    def supports_iam_database_authentication(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsIops")
+    def supports_iops(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsKerberosAuthentication")
+    def supports_kerberos_authentication(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsMultiAz")
+    def supports_multi_az(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsPerformanceInsights")
+    def supports_performance_insights(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsStorageAutoscaling")
+    def supports_storage_autoscaling(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="supportsStorageEncryption")
+    def supports_storage_encryption(self) -> _builtins.bool:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def vpc(self) -> _builtins.bool:
+        ...
+    
+
+
+class AwaitableGetOrderableDbInstanceResult(GetOrderableDbInstanceResult):
+    def __await__(self): # -> Generator[Never, Any, GetOrderableDbInstanceResult]:
+        ...
+    
+
+
+def get_orderable_db_instance(availability_zone_group: Optional[_builtins.str] = ..., engine: Optional[_builtins.str] = ..., engine_latest_version: Optional[_builtins.bool] = ..., engine_version: Optional[_builtins.str] = ..., instance_class: Optional[_builtins.str] = ..., license_model: Optional[_builtins.str] = ..., preferred_engine_versions: Optional[Sequence[_builtins.str]] = ..., preferred_instance_classes: Optional[Sequence[_builtins.str]] = ..., read_replica_capable: Optional[_builtins.bool] = ..., region: Optional[_builtins.str] = ..., storage_type: Optional[_builtins.str] = ..., supported_engine_modes: Optional[Sequence[_builtins.str]] = ..., supported_network_types: Optional[Sequence[_builtins.str]] = ..., supports_clusters: Optional[_builtins.bool] = ..., supports_enhanced_monitoring: Optional[_builtins.bool] = ..., supports_global_databases: Optional[_builtins.bool] = ..., supports_iam_database_authentication: Optional[_builtins.bool] = ..., supports_iops: Optional[_builtins.bool] = ..., supports_kerberos_authentication: Optional[_builtins.bool] = ..., supports_multi_az: Optional[_builtins.bool] = ..., supports_performance_insights: Optional[_builtins.bool] = ..., supports_storage_autoscaling: Optional[_builtins.bool] = ..., supports_storage_encryption: Optional[_builtins.bool] = ..., vpc: Optional[_builtins.bool] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetOrderableDbInstanceResult:
+    
+    ...
+
+def get_orderable_db_instance_output(availability_zone_group: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., engine: Optional[pulumi.Input[_builtins.str]] = ..., engine_latest_version: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., engine_version: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., instance_class: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., license_model: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., preferred_engine_versions: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., preferred_instance_classes: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., read_replica_capable: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., region: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., storage_type: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., supported_engine_modes: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., supported_network_types: Optional[pulumi.Input[Optional[Sequence[_builtins.str]]]] = ..., supports_clusters: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_enhanced_monitoring: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_global_databases: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_iam_database_authentication: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_iops: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_kerberos_authentication: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_multi_az: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_performance_insights: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_storage_autoscaling: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., supports_storage_encryption: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., vpc: Optional[pulumi.Input[Optional[_builtins.bool]]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetOrderableDbInstanceResult]:
+    
+    ...
+

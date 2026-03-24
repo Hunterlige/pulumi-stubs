@@ -1,0 +1,385 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['PrivateEndpointConnectionArgs', 'PrivateEndpointConnectionArgsDict', 'PrivateLinkServiceConnectionStateArgs', 'PrivateLinkServiceConnectionStateArgsDict', 'ServiceAccessPolicyEntryArgs', 'ServiceAccessPolicyEntryArgsDict', 'ServiceAuthenticationConfigurationInfoArgs', 'ServiceAuthenticationConfigurationInfoArgsDict', 'ServiceCorsConfigurationInfoArgs', 'ServiceCorsConfigurationInfoArgsDict', 'ServiceCosmosDbConfigurationInfoArgs', 'ServiceCosmosDbConfigurationInfoArgsDict', 'ServiceExportConfigurationInfoArgs', 'ServiceExportConfigurationInfoArgsDict', 'ServicesPropertiesArgs', 'ServicesPropertiesArgsDict', 'ServicesResourceIdentityArgs', 'ServicesResourceIdentityArgsDict']
+class PrivateEndpointConnectionArgsDict(TypedDict):
+    
+    private_link_service_connection_state: pulumi.Input[PrivateLinkServiceConnectionStateArgsDict]
+
+
+@pulumi.input_type
+class PrivateEndpointConnectionArgs:
+    def __init__(__self__, *, private_link_service_connection_state: pulumi.Input[PrivateLinkServiceConnectionStateArgs]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceConnectionState")
+    def private_link_service_connection_state(self) -> pulumi.Input[PrivateLinkServiceConnectionStateArgs]:
+        
+        ...
+    
+    @private_link_service_connection_state.setter
+    def private_link_service_connection_state(self, value: pulumi.Input[PrivateLinkServiceConnectionStateArgs]): # -> None:
+        ...
+    
+
+
+class PrivateLinkServiceConnectionStateArgsDict(TypedDict):
+    
+    actions_required: NotRequired[pulumi.Input[_builtins.str]]
+    description: NotRequired[pulumi.Input[_builtins.str]]
+    status: NotRequired[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]
+
+
+@pulumi.input_type
+class PrivateLinkServiceConnectionStateArgs:
+    def __init__(__self__, *, actions_required: Optional[pulumi.Input[_builtins.str]] = ..., description: Optional[pulumi.Input[_builtins.str]] = ..., status: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionsRequired")
+    def actions_required(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @actions_required.setter
+    def actions_required(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @description.setter
+    def description(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def status(self) -> Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]:
+        
+        ...
+    
+    @status.setter
+    def status(self, value: Optional[pulumi.Input[Union[_builtins.str, PrivateEndpointServiceConnectionStatus]]]): # -> None:
+        ...
+    
+
+
+class ServiceAccessPolicyEntryArgsDict(TypedDict):
+    
+    object_id: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class ServiceAccessPolicyEntryArgs:
+    def __init__(__self__, *, object_id: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="objectId")
+    def object_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @object_id.setter
+    def object_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class ServiceAuthenticationConfigurationInfoArgsDict(TypedDict):
+    
+    audience: NotRequired[pulumi.Input[_builtins.str]]
+    authority: NotRequired[pulumi.Input[_builtins.str]]
+    smart_proxy_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class ServiceAuthenticationConfigurationInfoArgs:
+    def __init__(__self__, *, audience: Optional[pulumi.Input[_builtins.str]] = ..., authority: Optional[pulumi.Input[_builtins.str]] = ..., smart_proxy_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def audience(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @audience.setter
+    def audience(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def authority(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @authority.setter
+    def authority(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="smartProxyEnabled")
+    def smart_proxy_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @smart_proxy_enabled.setter
+    def smart_proxy_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class ServiceCorsConfigurationInfoArgsDict(TypedDict):
+    
+    allow_credentials: NotRequired[pulumi.Input[_builtins.bool]]
+    headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    max_age: NotRequired[pulumi.Input[_builtins.float]]
+    methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class ServiceCorsConfigurationInfoArgs:
+    def __init__(__self__, *, allow_credentials: Optional[pulumi.Input[_builtins.bool]] = ..., headers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., max_age: Optional[pulumi.Input[_builtins.float]] = ..., methods: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., origins: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allowCredentials")
+    def allow_credentials(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @allow_credentials.setter
+    def allow_credentials(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def headers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @headers.setter
+    def headers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="maxAge")
+    def max_age(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @max_age.setter
+    def max_age(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def methods(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @methods.setter
+    def methods(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def origins(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @origins.setter
+    def origins(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class ServiceCosmosDbConfigurationInfoArgsDict(TypedDict):
+    
+    key_vault_key_uri: NotRequired[pulumi.Input[_builtins.str]]
+    offer_throughput: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class ServiceCosmosDbConfigurationInfoArgs:
+    def __init__(__self__, *, key_vault_key_uri: Optional[pulumi.Input[_builtins.str]] = ..., offer_throughput: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyVaultKeyUri")
+    def key_vault_key_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @key_vault_key_uri.setter
+    def key_vault_key_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offerThroughput")
+    def offer_throughput(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @offer_throughput.setter
+    def offer_throughput(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class ServiceExportConfigurationInfoArgsDict(TypedDict):
+    
+    storage_account_name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ServiceExportConfigurationInfoArgs:
+    def __init__(__self__, *, storage_account_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountName")
+    def storage_account_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_account_name.setter
+    def storage_account_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ServicesPropertiesArgsDict(TypedDict):
+    
+    access_policies: NotRequired[pulumi.Input[Sequence[pulumi.Input[ServiceAccessPolicyEntryArgsDict]]]]
+    authentication_configuration: NotRequired[pulumi.Input[ServiceAuthenticationConfigurationInfoArgsDict]]
+    cors_configuration: NotRequired[pulumi.Input[ServiceCorsConfigurationInfoArgsDict]]
+    cosmos_db_configuration: NotRequired[pulumi.Input[ServiceCosmosDbConfigurationInfoArgsDict]]
+    export_configuration: NotRequired[pulumi.Input[ServiceExportConfigurationInfoArgsDict]]
+    private_endpoint_connections: NotRequired[pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgsDict]]]]
+    public_network_access: NotRequired[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]
+
+
+@pulumi.input_type
+class ServicesPropertiesArgs:
+    def __init__(__self__, *, access_policies: Optional[pulumi.Input[Sequence[pulumi.Input[ServiceAccessPolicyEntryArgs]]]] = ..., authentication_configuration: Optional[pulumi.Input[ServiceAuthenticationConfigurationInfoArgs]] = ..., cors_configuration: Optional[pulumi.Input[ServiceCorsConfigurationInfoArgs]] = ..., cosmos_db_configuration: Optional[pulumi.Input[ServiceCosmosDbConfigurationInfoArgs]] = ..., export_configuration: Optional[pulumi.Input[ServiceExportConfigurationInfoArgs]] = ..., private_endpoint_connections: Optional[pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]] = ..., public_network_access: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessPolicies")
+    def access_policies(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[ServiceAccessPolicyEntryArgs]]]]:
+        
+        ...
+    
+    @access_policies.setter
+    def access_policies(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[ServiceAccessPolicyEntryArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="authenticationConfiguration")
+    def authentication_configuration(self) -> Optional[pulumi.Input[ServiceAuthenticationConfigurationInfoArgs]]:
+        
+        ...
+    
+    @authentication_configuration.setter
+    def authentication_configuration(self, value: Optional[pulumi.Input[ServiceAuthenticationConfigurationInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="corsConfiguration")
+    def cors_configuration(self) -> Optional[pulumi.Input[ServiceCorsConfigurationInfoArgs]]:
+        
+        ...
+    
+    @cors_configuration.setter
+    def cors_configuration(self, value: Optional[pulumi.Input[ServiceCorsConfigurationInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cosmosDbConfiguration")
+    def cosmos_db_configuration(self) -> Optional[pulumi.Input[ServiceCosmosDbConfigurationInfoArgs]]:
+        
+        ...
+    
+    @cosmos_db_configuration.setter
+    def cosmos_db_configuration(self, value: Optional[pulumi.Input[ServiceCosmosDbConfigurationInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="exportConfiguration")
+    def export_configuration(self) -> Optional[pulumi.Input[ServiceExportConfigurationInfoArgs]]:
+        
+        ...
+    
+    @export_configuration.setter
+    def export_configuration(self, value: Optional[pulumi.Input[ServiceExportConfigurationInfoArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointConnections")
+    def private_endpoint_connections(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]]:
+        
+        ...
+    
+    @private_endpoint_connections.setter
+    def private_endpoint_connections(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[PrivateEndpointConnectionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publicNetworkAccess")
+    def public_network_access(self) -> Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]:
+        
+        ...
+    
+    @public_network_access.setter
+    def public_network_access(self, value: Optional[pulumi.Input[Union[_builtins.str, PublicNetworkAccess]]]): # -> None:
+        ...
+    
+
+
+class ServicesResourceIdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]]
+
+
+@pulumi.input_type
+class ServicesResourceIdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[Union[_builtins.str, ManagedServiceIdentityType]]]): # -> None:
+        ...
+    
+
+

@@ -1,0 +1,141 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['NetworkInterfaceTapConfigurationArgs', 'NetworkInterfaceTapConfiguration']
+@pulumi.input_type
+class NetworkInterfaceTapConfigurationArgs:
+    def __init__(__self__, *, network_interface_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., tap_configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_tap: Optional[pulumi.Input[VirtualNetworkTapArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkInterfaceName")
+    def network_interface_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @network_interface_name.setter
+    def network_interface_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tapConfigurationName")
+    def tap_configuration_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @tap_configuration_name.setter
+    def tap_configuration_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkTap")
+    def virtual_network_tap(self) -> Optional[pulumi.Input[VirtualNetworkTapArgs]]:
+        
+        ...
+    
+    @virtual_network_tap.setter
+    def virtual_network_tap(self, value: Optional[pulumi.Input[VirtualNetworkTapArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class NetworkInterfaceTapConfiguration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., name: Optional[pulumi.Input[_builtins.str]] = ..., network_interface_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., tap_configuration_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_tap: Optional[pulumi.Input[Union[VirtualNetworkTapArgs, VirtualNetworkTapArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: NetworkInterfaceTapConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> NetworkInterfaceTapConfiguration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualNetworkTap")
+    def virtual_network_tap(self) -> pulumi.Output[Optional[outputs.VirtualNetworkTapResponse]]:
+        
+        ...
+    
+
+

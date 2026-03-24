@@ -1,0 +1,197 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSubnetResult', 'AwaitableGetSubnetResult', 'get_subnet', 'get_subnet_output']
+@pulumi.output_type
+class GetSubnetResult:
+    
+    def __init__(__self__, address_prefix=..., address_prefixes=..., application_gateway_ip_configurations=..., azure_api_version=..., default_outbound_access=..., delegations=..., etag=..., id=..., ip_allocations=..., ip_configuration_profiles=..., ip_configurations=..., ipam_pool_prefix_allocations=..., name=..., nat_gateway=..., network_security_group=..., private_endpoint_network_policies=..., private_endpoints=..., private_link_service_network_policies=..., provisioning_state=..., purpose=..., resource_navigation_links=..., route_table=..., service_association_links=..., service_endpoint_policies=..., service_endpoints=..., sharing_scope=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="addressPrefix")
+    def address_prefix(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="addressPrefixes")
+    def address_prefixes(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="applicationGatewayIPConfigurations")
+    def application_gateway_ip_configurations(self) -> Optional[Sequence[outputs.ApplicationGatewayIPConfigurationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="defaultOutboundAccess")
+    def default_outbound_access(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def delegations(self) -> Optional[Sequence[outputs.DelegationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipAllocations")
+    def ip_allocations(self) -> Optional[Sequence[outputs.SubResourceResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurationProfiles")
+    def ip_configuration_profiles(self) -> Sequence[outputs.IPConfigurationProfileResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipConfigurations")
+    def ip_configurations(self) -> Sequence[outputs.IPConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ipamPoolPrefixAllocations")
+    def ipam_pool_prefix_allocations(self) -> Optional[Sequence[outputs.IpamPoolPrefixAllocationResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="natGateway")
+    def nat_gateway(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkSecurityGroup")
+    def network_security_group(self) -> Optional[outputs.NetworkSecurityGroupResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointNetworkPolicies")
+    def private_endpoint_network_policies(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpoints")
+    def private_endpoints(self) -> Sequence[outputs.PrivateEndpointResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateLinkServiceNetworkPolicies")
+    def private_link_service_network_policies(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def purpose(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceNavigationLinks")
+    def resource_navigation_links(self) -> Sequence[outputs.ResourceNavigationLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routeTable")
+    def route_table(self) -> Optional[outputs.RouteTableResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceAssociationLinks")
+    def service_association_links(self) -> Sequence[outputs.ServiceAssociationLinkResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceEndpointPolicies")
+    def service_endpoint_policies(self) -> Optional[Sequence[outputs.ServiceEndpointPolicyResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceEndpoints")
+    def service_endpoints(self) -> Optional[Sequence[outputs.ServiceEndpointPropertiesFormatResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sharingScope")
+    def sharing_scope(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetSubnetResult(GetSubnetResult):
+    def __await__(self): # -> Generator[Never, Any, GetSubnetResult]:
+        ...
+    
+
+
+def get_subnet(expand: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., subnet_name: Optional[_builtins.str] = ..., virtual_network_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSubnetResult:
+    
+    ...
+
+def get_subnet_output(expand: Optional[pulumi.Input[Optional[_builtins.str]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., subnet_name: Optional[pulumi.Input[_builtins.str]] = ..., virtual_network_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSubnetResult]:
+    
+    ...
+

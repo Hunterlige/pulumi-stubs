@@ -1,0 +1,167 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetExtensionResult', 'AwaitableGetExtensionResult', 'get_extension', 'get_extension_output']
+@pulumi.output_type
+class GetExtensionResult:
+    
+    def __init__(__self__, aks_assigned_identity=..., auto_upgrade_minor_version=..., azure_api_version=..., configuration_protected_settings=..., configuration_settings=..., current_version=..., custom_location_settings=..., error_info=..., extension_type=..., id=..., identity=..., is_system_extension=..., name=..., package_uri=..., plan=..., provisioning_state=..., release_train=..., scope=..., statuses=..., system_data=..., type=..., version=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aksAssignedIdentity")
+    def aks_assigned_identity(self) -> Optional[outputs.ExtensionResponseAksAssignedIdentity]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoUpgradeMinorVersion")
+    def auto_upgrade_minor_version(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationProtectedSettings")
+    def configuration_protected_settings(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="configurationSettings")
+    def configuration_settings(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="currentVersion")
+    def current_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="customLocationSettings")
+    def custom_location_settings(self) -> Mapping[str, _builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="errorInfo")
+    def error_info(self) -> outputs.ErrorDetailResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extensionType")
+    def extension_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.IdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="isSystemExtension")
+    def is_system_extension(self) -> _builtins.bool:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="packageUri")
+    def package_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def plan(self) -> Optional[outputs.PlanResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="releaseTrain")
+    def release_train(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> Optional[outputs.ScopeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def statuses(self) -> Optional[Sequence[outputs.ExtensionStatusResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def version(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetExtensionResult(GetExtensionResult):
+    def __await__(self): # -> Generator[Never, Any, GetExtensionResult]:
+        ...
+    
+
+
+def get_extension(cluster_name: Optional[_builtins.str] = ..., cluster_resource_name: Optional[_builtins.str] = ..., cluster_rp: Optional[_builtins.str] = ..., extension_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetExtensionResult:
+    
+    ...
+
+def get_extension_output(cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., cluster_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., cluster_rp: Optional[pulumi.Input[_builtins.str]] = ..., extension_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetExtensionResult]:
+    
+    ...
+

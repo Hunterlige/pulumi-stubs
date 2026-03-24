@@ -1,0 +1,95 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetRuleResult', 'AwaitableGetRuleResult', 'get_rule', 'get_rule_output']
+@pulumi.output_type
+class GetRuleResult:
+    
+    def __init__(__self__, action=..., azure_api_version=..., correlation_filter=..., filter_type=..., id=..., location=..., name=..., sql_filter=..., system_data=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def action(self) -> Optional[outputs.ActionResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="correlationFilter")
+    def correlation_filter(self) -> Optional[outputs.CorrelationFilterResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="filterType")
+    def filter_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlFilter")
+    def sql_filter(self) -> Optional[outputs.SqlFilterResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetRuleResult(GetRuleResult):
+    def __await__(self): # -> Generator[Never, Any, GetRuleResult]:
+        ...
+    
+
+
+def get_rule(namespace_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., rule_name: Optional[_builtins.str] = ..., subscription_name: Optional[_builtins.str] = ..., topic_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetRuleResult:
+    
+    ...
+
+def get_rule_output(namespace_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., rule_name: Optional[pulumi.Input[_builtins.str]] = ..., subscription_name: Optional[pulumi.Input[_builtins.str]] = ..., topic_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetRuleResult]:
+    
+    ...
+

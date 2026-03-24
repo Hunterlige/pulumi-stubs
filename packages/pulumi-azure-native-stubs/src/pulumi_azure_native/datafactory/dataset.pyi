@@ -1,0 +1,114 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union, overload
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['DatasetArgs', 'Dataset']
+@pulumi.input_type
+class DatasetArgs:
+    def __init__(__self__, *, factory_name: pulumi.Input[_builtins.str], properties: pulumi.Input[Union[AmazonMWSObjectDatasetArgs, AmazonRdsForOracleTableDatasetArgs, AmazonRdsForSqlServerTableDatasetArgs, AmazonRedshiftTableDatasetArgs, AmazonS3DatasetArgs, AvroDatasetArgs, AzureBlobDatasetArgs, AzureBlobFSDatasetArgs, AzureDataExplorerTableDatasetArgs, AzureDataLakeStoreDatasetArgs, AzureDatabricksDeltaLakeDatasetArgs, AzureMariaDBTableDatasetArgs, AzureMySqlTableDatasetArgs, AzurePostgreSqlTableDatasetArgs, AzureSearchIndexDatasetArgs, AzureSqlDWTableDatasetArgs, AzureSqlMITableDatasetArgs, AzureSqlTableDatasetArgs, AzureTableDatasetArgs, BinaryDatasetArgs, CassandraTableDatasetArgs, CommonDataServiceForAppsEntityDatasetArgs, ConcurObjectDatasetArgs, CosmosDbMongoDbApiCollectionDatasetArgs, CosmosDbSqlApiCollectionDatasetArgs, CouchbaseTableDatasetArgs, CustomDatasetArgs, Db2TableDatasetArgs, DelimitedTextDatasetArgs, DocumentDbCollectionDatasetArgs, DrillTableDatasetArgs, DynamicsAXResourceDatasetArgs, DynamicsCrmEntityDatasetArgs, DynamicsEntityDatasetArgs, EloquaObjectDatasetArgs, ExcelDatasetArgs, FileShareDatasetArgs, GoogleAdWordsObjectDatasetArgs, GoogleBigQueryObjectDatasetArgs, GoogleBigQueryV2ObjectDatasetArgs, GreenplumTableDatasetArgs, HBaseObjectDatasetArgs, HiveObjectDatasetArgs, HttpDatasetArgs, HubspotObjectDatasetArgs, IcebergDatasetArgs, ImpalaObjectDatasetArgs, InformixTableDatasetArgs, JiraObjectDatasetArgs, JsonDatasetArgs, LakeHouseTableDatasetArgs, MagentoObjectDatasetArgs, MariaDBTableDatasetArgs, MarketoObjectDatasetArgs, MicrosoftAccessTableDatasetArgs, MongoDbAtlasCollectionDatasetArgs, MongoDbCollectionDatasetArgs, MongoDbV2CollectionDatasetArgs, MySqlTableDatasetArgs, NetezzaTableDatasetArgs, ODataResourceDatasetArgs, OdbcTableDatasetArgs, Office365DatasetArgs, OracleServiceCloudObjectDatasetArgs, OracleTableDatasetArgs, OrcDatasetArgs, ParquetDatasetArgs, PaypalObjectDatasetArgs, PhoenixObjectDatasetArgs, PostgreSqlTableDatasetArgs, PostgreSqlV2TableDatasetArgs, PrestoObjectDatasetArgs, QuickBooksObjectDatasetArgs, RelationalTableDatasetArgs, ResponsysObjectDatasetArgs, RestResourceDatasetArgs, SalesforceMarketingCloudObjectDatasetArgs, SalesforceObjectDatasetArgs, SalesforceServiceCloudObjectDatasetArgs, SalesforceServiceCloudV2ObjectDatasetArgs, SalesforceV2ObjectDatasetArgs, SapBwCubeDatasetArgs, SapCloudForCustomerResourceDatasetArgs, SapEccResourceDatasetArgs, SapHanaTableDatasetArgs, SapOdpResourceDatasetArgs, SapOpenHubTableDatasetArgs, SapTableResourceDatasetArgs, ServiceNowObjectDatasetArgs, ServiceNowV2ObjectDatasetArgs, SharePointOnlineListResourceDatasetArgs, ShopifyObjectDatasetArgs, SnowflakeDatasetArgs, SnowflakeV2DatasetArgs, SparkObjectDatasetArgs, SqlServerTableDatasetArgs, SquareObjectDatasetArgs, SybaseTableDatasetArgs, TeradataTableDatasetArgs, VerticaTableDatasetArgs, WarehouseTableDatasetArgs, WebTableDatasetArgs, XeroObjectDatasetArgs, XmlDatasetArgs, ZohoObjectDatasetArgs]], resource_group_name: pulumi.Input[_builtins.str], dataset_name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="factoryName")
+    def factory_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @factory_name.setter
+    def factory_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Input[Union[AmazonMWSObjectDatasetArgs, AmazonRdsForOracleTableDatasetArgs, AmazonRdsForSqlServerTableDatasetArgs, AmazonRedshiftTableDatasetArgs, AmazonS3DatasetArgs, AvroDatasetArgs, AzureBlobDatasetArgs, AzureBlobFSDatasetArgs, AzureDataExplorerTableDatasetArgs, AzureDataLakeStoreDatasetArgs, AzureDatabricksDeltaLakeDatasetArgs, AzureMariaDBTableDatasetArgs, AzureMySqlTableDatasetArgs, AzurePostgreSqlTableDatasetArgs, AzureSearchIndexDatasetArgs, AzureSqlDWTableDatasetArgs, AzureSqlMITableDatasetArgs, AzureSqlTableDatasetArgs, AzureTableDatasetArgs, BinaryDatasetArgs, CassandraTableDatasetArgs, CommonDataServiceForAppsEntityDatasetArgs, ConcurObjectDatasetArgs, CosmosDbMongoDbApiCollectionDatasetArgs, CosmosDbSqlApiCollectionDatasetArgs, CouchbaseTableDatasetArgs, CustomDatasetArgs, Db2TableDatasetArgs, DelimitedTextDatasetArgs, DocumentDbCollectionDatasetArgs, DrillTableDatasetArgs, DynamicsAXResourceDatasetArgs, DynamicsCrmEntityDatasetArgs, DynamicsEntityDatasetArgs, EloquaObjectDatasetArgs, ExcelDatasetArgs, FileShareDatasetArgs, GoogleAdWordsObjectDatasetArgs, GoogleBigQueryObjectDatasetArgs, GoogleBigQueryV2ObjectDatasetArgs, GreenplumTableDatasetArgs, HBaseObjectDatasetArgs, HiveObjectDatasetArgs, HttpDatasetArgs, HubspotObjectDatasetArgs, IcebergDatasetArgs, ImpalaObjectDatasetArgs, InformixTableDatasetArgs, JiraObjectDatasetArgs, JsonDatasetArgs, LakeHouseTableDatasetArgs, MagentoObjectDatasetArgs, MariaDBTableDatasetArgs, MarketoObjectDatasetArgs, MicrosoftAccessTableDatasetArgs, MongoDbAtlasCollectionDatasetArgs, MongoDbCollectionDatasetArgs, MongoDbV2CollectionDatasetArgs, MySqlTableDatasetArgs, NetezzaTableDatasetArgs, ODataResourceDatasetArgs, OdbcTableDatasetArgs, Office365DatasetArgs, OracleServiceCloudObjectDatasetArgs, OracleTableDatasetArgs, OrcDatasetArgs, ParquetDatasetArgs, PaypalObjectDatasetArgs, PhoenixObjectDatasetArgs, PostgreSqlTableDatasetArgs, PostgreSqlV2TableDatasetArgs, PrestoObjectDatasetArgs, QuickBooksObjectDatasetArgs, RelationalTableDatasetArgs, ResponsysObjectDatasetArgs, RestResourceDatasetArgs, SalesforceMarketingCloudObjectDatasetArgs, SalesforceObjectDatasetArgs, SalesforceServiceCloudObjectDatasetArgs, SalesforceServiceCloudV2ObjectDatasetArgs, SalesforceV2ObjectDatasetArgs, SapBwCubeDatasetArgs, SapCloudForCustomerResourceDatasetArgs, SapEccResourceDatasetArgs, SapHanaTableDatasetArgs, SapOdpResourceDatasetArgs, SapOpenHubTableDatasetArgs, SapTableResourceDatasetArgs, ServiceNowObjectDatasetArgs, ServiceNowV2ObjectDatasetArgs, SharePointOnlineListResourceDatasetArgs, ShopifyObjectDatasetArgs, SnowflakeDatasetArgs, SnowflakeV2DatasetArgs, SparkObjectDatasetArgs, SqlServerTableDatasetArgs, SquareObjectDatasetArgs, SybaseTableDatasetArgs, TeradataTableDatasetArgs, VerticaTableDatasetArgs, WarehouseTableDatasetArgs, WebTableDatasetArgs, XeroObjectDatasetArgs, XmlDatasetArgs, ZohoObjectDatasetArgs]]:
+        
+        ...
+    
+    @properties.setter
+    def properties(self, value: pulumi.Input[Union[AmazonMWSObjectDatasetArgs, AmazonRdsForOracleTableDatasetArgs, AmazonRdsForSqlServerTableDatasetArgs, AmazonRedshiftTableDatasetArgs, AmazonS3DatasetArgs, AvroDatasetArgs, AzureBlobDatasetArgs, AzureBlobFSDatasetArgs, AzureDataExplorerTableDatasetArgs, AzureDataLakeStoreDatasetArgs, AzureDatabricksDeltaLakeDatasetArgs, AzureMariaDBTableDatasetArgs, AzureMySqlTableDatasetArgs, AzurePostgreSqlTableDatasetArgs, AzureSearchIndexDatasetArgs, AzureSqlDWTableDatasetArgs, AzureSqlMITableDatasetArgs, AzureSqlTableDatasetArgs, AzureTableDatasetArgs, BinaryDatasetArgs, CassandraTableDatasetArgs, CommonDataServiceForAppsEntityDatasetArgs, ConcurObjectDatasetArgs, CosmosDbMongoDbApiCollectionDatasetArgs, CosmosDbSqlApiCollectionDatasetArgs, CouchbaseTableDatasetArgs, CustomDatasetArgs, Db2TableDatasetArgs, DelimitedTextDatasetArgs, DocumentDbCollectionDatasetArgs, DrillTableDatasetArgs, DynamicsAXResourceDatasetArgs, DynamicsCrmEntityDatasetArgs, DynamicsEntityDatasetArgs, EloquaObjectDatasetArgs, ExcelDatasetArgs, FileShareDatasetArgs, GoogleAdWordsObjectDatasetArgs, GoogleBigQueryObjectDatasetArgs, GoogleBigQueryV2ObjectDatasetArgs, GreenplumTableDatasetArgs, HBaseObjectDatasetArgs, HiveObjectDatasetArgs, HttpDatasetArgs, HubspotObjectDatasetArgs, IcebergDatasetArgs, ImpalaObjectDatasetArgs, InformixTableDatasetArgs, JiraObjectDatasetArgs, JsonDatasetArgs, LakeHouseTableDatasetArgs, MagentoObjectDatasetArgs, MariaDBTableDatasetArgs, MarketoObjectDatasetArgs, MicrosoftAccessTableDatasetArgs, MongoDbAtlasCollectionDatasetArgs, MongoDbCollectionDatasetArgs, MongoDbV2CollectionDatasetArgs, MySqlTableDatasetArgs, NetezzaTableDatasetArgs, ODataResourceDatasetArgs, OdbcTableDatasetArgs, Office365DatasetArgs, OracleServiceCloudObjectDatasetArgs, OracleTableDatasetArgs, OrcDatasetArgs, ParquetDatasetArgs, PaypalObjectDatasetArgs, PhoenixObjectDatasetArgs, PostgreSqlTableDatasetArgs, PostgreSqlV2TableDatasetArgs, PrestoObjectDatasetArgs, QuickBooksObjectDatasetArgs, RelationalTableDatasetArgs, ResponsysObjectDatasetArgs, RestResourceDatasetArgs, SalesforceMarketingCloudObjectDatasetArgs, SalesforceObjectDatasetArgs, SalesforceServiceCloudObjectDatasetArgs, SalesforceServiceCloudV2ObjectDatasetArgs, SalesforceV2ObjectDatasetArgs, SapBwCubeDatasetArgs, SapCloudForCustomerResourceDatasetArgs, SapEccResourceDatasetArgs, SapHanaTableDatasetArgs, SapOdpResourceDatasetArgs, SapOpenHubTableDatasetArgs, SapTableResourceDatasetArgs, ServiceNowObjectDatasetArgs, ServiceNowV2ObjectDatasetArgs, SharePointOnlineListResourceDatasetArgs, ShopifyObjectDatasetArgs, SnowflakeDatasetArgs, SnowflakeV2DatasetArgs, SparkObjectDatasetArgs, SqlServerTableDatasetArgs, SquareObjectDatasetArgs, SybaseTableDatasetArgs, TeradataTableDatasetArgs, VerticaTableDatasetArgs, WarehouseTableDatasetArgs, WebTableDatasetArgs, XeroObjectDatasetArgs, XmlDatasetArgs, ZohoObjectDatasetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="datasetName")
+    def dataset_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @dataset_name.setter
+    def dataset_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:datafactory:Dataset")
+class Dataset(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., dataset_name: Optional[pulumi.Input[_builtins.str]] = ..., factory_name: Optional[pulumi.Input[_builtins.str]] = ..., properties: Optional[pulumi.Input[Union[Union[AmazonMWSObjectDatasetArgs, AmazonMWSObjectDatasetArgsDict], Union[AmazonRdsForOracleTableDatasetArgs, AmazonRdsForOracleTableDatasetArgsDict], Union[AmazonRdsForSqlServerTableDatasetArgs, AmazonRdsForSqlServerTableDatasetArgsDict], Union[AmazonRedshiftTableDatasetArgs, AmazonRedshiftTableDatasetArgsDict], Union[AmazonS3DatasetArgs, AmazonS3DatasetArgsDict], Union[AvroDatasetArgs, AvroDatasetArgsDict], Union[AzureBlobDatasetArgs, AzureBlobDatasetArgsDict], Union[AzureBlobFSDatasetArgs, AzureBlobFSDatasetArgsDict], Union[AzureDataExplorerTableDatasetArgs, AzureDataExplorerTableDatasetArgsDict], Union[AzureDataLakeStoreDatasetArgs, AzureDataLakeStoreDatasetArgsDict], Union[AzureDatabricksDeltaLakeDatasetArgs, AzureDatabricksDeltaLakeDatasetArgsDict], Union[AzureMariaDBTableDatasetArgs, AzureMariaDBTableDatasetArgsDict], Union[AzureMySqlTableDatasetArgs, AzureMySqlTableDatasetArgsDict], Union[AzurePostgreSqlTableDatasetArgs, AzurePostgreSqlTableDatasetArgsDict], Union[AzureSearchIndexDatasetArgs, AzureSearchIndexDatasetArgsDict], Union[AzureSqlDWTableDatasetArgs, AzureSqlDWTableDatasetArgsDict], Union[AzureSqlMITableDatasetArgs, AzureSqlMITableDatasetArgsDict], Union[AzureSqlTableDatasetArgs, AzureSqlTableDatasetArgsDict], Union[AzureTableDatasetArgs, AzureTableDatasetArgsDict], Union[BinaryDatasetArgs, BinaryDatasetArgsDict], Union[CassandraTableDatasetArgs, CassandraTableDatasetArgsDict], Union[CommonDataServiceForAppsEntityDatasetArgs, CommonDataServiceForAppsEntityDatasetArgsDict], Union[ConcurObjectDatasetArgs, ConcurObjectDatasetArgsDict], Union[CosmosDbMongoDbApiCollectionDatasetArgs, CosmosDbMongoDbApiCollectionDatasetArgsDict], Union[CosmosDbSqlApiCollectionDatasetArgs, CosmosDbSqlApiCollectionDatasetArgsDict], Union[CouchbaseTableDatasetArgs, CouchbaseTableDatasetArgsDict], Union[CustomDatasetArgs, CustomDatasetArgsDict], Union[Db2TableDatasetArgs, Db2TableDatasetArgsDict], Union[DelimitedTextDatasetArgs, DelimitedTextDatasetArgsDict], Union[DocumentDbCollectionDatasetArgs, DocumentDbCollectionDatasetArgsDict], Union[DrillTableDatasetArgs, DrillTableDatasetArgsDict], Union[DynamicsAXResourceDatasetArgs, DynamicsAXResourceDatasetArgsDict], Union[DynamicsCrmEntityDatasetArgs, DynamicsCrmEntityDatasetArgsDict], Union[DynamicsEntityDatasetArgs, DynamicsEntityDatasetArgsDict], Union[EloquaObjectDatasetArgs, EloquaObjectDatasetArgsDict], Union[ExcelDatasetArgs, ExcelDatasetArgsDict], Union[FileShareDatasetArgs, FileShareDatasetArgsDict], Union[GoogleAdWordsObjectDatasetArgs, GoogleAdWordsObjectDatasetArgsDict], Union[GoogleBigQueryObjectDatasetArgs, GoogleBigQueryObjectDatasetArgsDict], Union[GoogleBigQueryV2ObjectDatasetArgs, GoogleBigQueryV2ObjectDatasetArgsDict], Union[GreenplumTableDatasetArgs, GreenplumTableDatasetArgsDict], Union[HBaseObjectDatasetArgs, HBaseObjectDatasetArgsDict], Union[HiveObjectDatasetArgs, HiveObjectDatasetArgsDict], Union[HttpDatasetArgs, HttpDatasetArgsDict], Union[HubspotObjectDatasetArgs, HubspotObjectDatasetArgsDict], Union[IcebergDatasetArgs, IcebergDatasetArgsDict], Union[ImpalaObjectDatasetArgs, ImpalaObjectDatasetArgsDict], Union[InformixTableDatasetArgs, InformixTableDatasetArgsDict], Union[JiraObjectDatasetArgs, JiraObjectDatasetArgsDict], Union[JsonDatasetArgs, JsonDatasetArgsDict], Union[LakeHouseTableDatasetArgs, LakeHouseTableDatasetArgsDict], Union[MagentoObjectDatasetArgs, MagentoObjectDatasetArgsDict], Union[MariaDBTableDatasetArgs, MariaDBTableDatasetArgsDict], Union[MarketoObjectDatasetArgs, MarketoObjectDatasetArgsDict], Union[MicrosoftAccessTableDatasetArgs, MicrosoftAccessTableDatasetArgsDict], Union[MongoDbAtlasCollectionDatasetArgs, MongoDbAtlasCollectionDatasetArgsDict], Union[MongoDbCollectionDatasetArgs, MongoDbCollectionDatasetArgsDict], Union[MongoDbV2CollectionDatasetArgs, MongoDbV2CollectionDatasetArgsDict], Union[MySqlTableDatasetArgs, MySqlTableDatasetArgsDict], Union[NetezzaTableDatasetArgs, NetezzaTableDatasetArgsDict], Union[ODataResourceDatasetArgs, ODataResourceDatasetArgsDict], Union[OdbcTableDatasetArgs, OdbcTableDatasetArgsDict], Union[Office365DatasetArgs, Office365DatasetArgsDict], Union[OracleServiceCloudObjectDatasetArgs, OracleServiceCloudObjectDatasetArgsDict], Union[OracleTableDatasetArgs, OracleTableDatasetArgsDict], Union[OrcDatasetArgs, OrcDatasetArgsDict], Union[ParquetDatasetArgs, ParquetDatasetArgsDict], Union[PaypalObjectDatasetArgs, PaypalObjectDatasetArgsDict], Union[PhoenixObjectDatasetArgs, PhoenixObjectDatasetArgsDict], Union[PostgreSqlTableDatasetArgs, PostgreSqlTableDatasetArgsDict], Union[PostgreSqlV2TableDatasetArgs, PostgreSqlV2TableDatasetArgsDict], Union[PrestoObjectDatasetArgs, PrestoObjectDatasetArgsDict], Union[QuickBooksObjectDatasetArgs, QuickBooksObjectDatasetArgsDict], Union[RelationalTableDatasetArgs, RelationalTableDatasetArgsDict], Union[ResponsysObjectDatasetArgs, ResponsysObjectDatasetArgsDict], Union[RestResourceDatasetArgs, RestResourceDatasetArgsDict], Union[SalesforceMarketingCloudObjectDatasetArgs, SalesforceMarketingCloudObjectDatasetArgsDict], Union[SalesforceObjectDatasetArgs, SalesforceObjectDatasetArgsDict], Union[SalesforceServiceCloudObjectDatasetArgs, SalesforceServiceCloudObjectDatasetArgsDict], Union[SalesforceServiceCloudV2ObjectDatasetArgs, SalesforceServiceCloudV2ObjectDatasetArgsDict], Union[SalesforceV2ObjectDatasetArgs, SalesforceV2ObjectDatasetArgsDict], Union[SapBwCubeDatasetArgs, SapBwCubeDatasetArgsDict], Union[SapCloudForCustomerResourceDatasetArgs, SapCloudForCustomerResourceDatasetArgsDict], Union[SapEccResourceDatasetArgs, SapEccResourceDatasetArgsDict], Union[SapHanaTableDatasetArgs, SapHanaTableDatasetArgsDict], Union[SapOdpResourceDatasetArgs, SapOdpResourceDatasetArgsDict], Union[SapOpenHubTableDatasetArgs, SapOpenHubTableDatasetArgsDict], Union[SapTableResourceDatasetArgs, SapTableResourceDatasetArgsDict], Union[ServiceNowObjectDatasetArgs, ServiceNowObjectDatasetArgsDict], Union[ServiceNowV2ObjectDatasetArgs, ServiceNowV2ObjectDatasetArgsDict], Union[SharePointOnlineListResourceDatasetArgs, SharePointOnlineListResourceDatasetArgsDict], Union[ShopifyObjectDatasetArgs, ShopifyObjectDatasetArgsDict], Union[SnowflakeDatasetArgs, SnowflakeDatasetArgsDict], Union[SnowflakeV2DatasetArgs, SnowflakeV2DatasetArgsDict], Union[SparkObjectDatasetArgs, SparkObjectDatasetArgsDict], Union[SqlServerTableDatasetArgs, SqlServerTableDatasetArgsDict], Union[SquareObjectDatasetArgs, SquareObjectDatasetArgsDict], Union[SybaseTableDatasetArgs, SybaseTableDatasetArgsDict], Union[TeradataTableDatasetArgs, TeradataTableDatasetArgsDict], Union[VerticaTableDatasetArgs, VerticaTableDatasetArgsDict], Union[WarehouseTableDatasetArgs, WarehouseTableDatasetArgsDict], Union[WebTableDatasetArgs, WebTableDatasetArgsDict], Union[XeroObjectDatasetArgs, XeroObjectDatasetArgsDict], Union[XmlDatasetArgs, XmlDatasetArgsDict], Union[ZohoObjectDatasetArgs, ZohoObjectDatasetArgsDict]]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: DatasetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> Dataset:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> pulumi.Output[Any]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

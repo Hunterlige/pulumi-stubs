@@ -1,0 +1,1207 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AmlFilesystemEncryptionSettingsArgs', 'AmlFilesystemEncryptionSettingsArgsDict', 'AmlFilesystemHsmSettingsArgs', 'AmlFilesystemHsmSettingsArgsDict', 'AmlFilesystemHsmArgs', 'AmlFilesystemHsmArgsDict', 'AmlFilesystemIdentityArgs', 'AmlFilesystemIdentityArgsDict', 'AmlFilesystemMaintenanceWindowArgs', 'AmlFilesystemMaintenanceWindowArgsDict', 'AmlFilesystemRootSquashSettingsArgs', 'AmlFilesystemRootSquashSettingsArgsDict', 'BlobNfsTargetArgs', 'BlobNfsTargetArgsDict', 'CacheActiveDirectorySettingsCredentialsArgs', 'CacheActiveDirectorySettingsCredentialsArgsDict', 'CacheActiveDirectorySettingsArgs', 'CacheActiveDirectorySettingsArgsDict', 'CacheDirectorySettingsArgs', 'CacheDirectorySettingsArgsDict', 'CacheEncryptionSettingsArgs', 'CacheEncryptionSettingsArgsDict', 'CacheIdentityArgs', 'CacheIdentityArgsDict', 'CacheNetworkSettingsArgs', 'CacheNetworkSettingsArgsDict', 'CacheSecuritySettingsArgs', 'CacheSecuritySettingsArgsDict', 'CacheSkuArgs', 'CacheSkuArgsDict', 'CacheUpgradeSettingsArgs', 'CacheUpgradeSettingsArgsDict', 'CacheUsernameDownloadSettingsCredentialsArgs', 'CacheUsernameDownloadSettingsCredentialsArgsDict', 'CacheUsernameDownloadSettingsArgs', 'CacheUsernameDownloadSettingsArgsDict', 'ClfsTargetArgs', 'ClfsTargetArgsDict', 'KeyVaultKeyReferenceSourceVaultArgs', 'KeyVaultKeyReferenceSourceVaultArgsDict', 'KeyVaultKeyReferenceArgs', 'KeyVaultKeyReferenceArgsDict', 'NamespaceJunctionArgs', 'NamespaceJunctionArgsDict', 'Nfs3TargetArgs', 'Nfs3TargetArgsDict', 'NfsAccessPolicyArgs', 'NfsAccessPolicyArgsDict', 'NfsAccessRuleArgs', 'NfsAccessRuleArgsDict', 'SkuName', 'SkuNameDict', 'SkuNameArgs', 'SkuNameArgsDict', 'UnknownTargetArgs', 'UnknownTargetArgsDict']
+class AmlFilesystemEncryptionSettingsArgsDict(TypedDict):
+    
+    key_encryption_key: NotRequired[pulumi.Input[KeyVaultKeyReferenceArgsDict]]
+
+
+@pulumi.input_type
+class AmlFilesystemEncryptionSettingsArgs:
+    def __init__(__self__, *, key_encryption_key: Optional[pulumi.Input[KeyVaultKeyReferenceArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyEncryptionKey")
+    def key_encryption_key(self) -> Optional[pulumi.Input[KeyVaultKeyReferenceArgs]]:
+        
+        ...
+    
+    @key_encryption_key.setter
+    def key_encryption_key(self, value: Optional[pulumi.Input[KeyVaultKeyReferenceArgs]]): # -> None:
+        ...
+    
+
+
+class AmlFilesystemHsmSettingsArgsDict(TypedDict):
+    
+    container: pulumi.Input[_builtins.str]
+    logging_container: pulumi.Input[_builtins.str]
+    import_prefix: NotRequired[pulumi.Input[_builtins.str]]
+    import_prefixes_initial: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class AmlFilesystemHsmSettingsArgs:
+    def __init__(__self__, *, container: pulumi.Input[_builtins.str], logging_container: pulumi.Input[_builtins.str], import_prefix: Optional[pulumi.Input[_builtins.str]] = ..., import_prefixes_initial: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def container(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @container.setter
+    def container(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="loggingContainer")
+    def logging_container(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @logging_container.setter
+    def logging_container(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importPrefix")
+    def import_prefix(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @import_prefix.setter
+    def import_prefix(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="importPrefixesInitial")
+    def import_prefixes_initial(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @import_prefixes_initial.setter
+    def import_prefixes_initial(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class AmlFilesystemHsmArgsDict(TypedDict):
+    
+    settings: NotRequired[pulumi.Input[AmlFilesystemHsmSettingsArgsDict]]
+
+
+@pulumi.input_type
+class AmlFilesystemHsmArgs:
+    def __init__(__self__, *, settings: Optional[pulumi.Input[AmlFilesystemHsmSettingsArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def settings(self) -> Optional[pulumi.Input[AmlFilesystemHsmSettingsArgs]]:
+        
+        ...
+    
+    @settings.setter
+    def settings(self, value: Optional[pulumi.Input[AmlFilesystemHsmSettingsArgs]]): # -> None:
+        ...
+    
+
+
+class AmlFilesystemIdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[AmlFilesystemIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class AmlFilesystemIdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[AmlFilesystemIdentityType]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[AmlFilesystemIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[AmlFilesystemIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class AmlFilesystemMaintenanceWindowArgsDict(TypedDict):
+    
+    day_of_week: NotRequired[pulumi.Input[MaintenanceDayOfWeekType]]
+    time_of_day_utc: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class AmlFilesystemMaintenanceWindowArgs:
+    def __init__(__self__, *, day_of_week: Optional[pulumi.Input[MaintenanceDayOfWeekType]] = ..., time_of_day_utc: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dayOfWeek")
+    def day_of_week(self) -> Optional[pulumi.Input[MaintenanceDayOfWeekType]]:
+        
+        ...
+    
+    @day_of_week.setter
+    def day_of_week(self, value: Optional[pulumi.Input[MaintenanceDayOfWeekType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeOfDayUTC")
+    def time_of_day_utc(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @time_of_day_utc.setter
+    def time_of_day_utc(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class AmlFilesystemRootSquashSettingsArgsDict(TypedDict):
+    
+    mode: NotRequired[pulumi.Input[Union[_builtins.str, AmlFilesystemSquashMode]]]
+    no_squash_nid_lists: NotRequired[pulumi.Input[_builtins.str]]
+    squash_gid: NotRequired[pulumi.Input[_builtins.float]]
+    squash_uid: NotRequired[pulumi.Input[_builtins.float]]
+
+
+@pulumi.input_type
+class AmlFilesystemRootSquashSettingsArgs:
+    def __init__(__self__, *, mode: Optional[pulumi.Input[Union[_builtins.str, AmlFilesystemSquashMode]]] = ..., no_squash_nid_lists: Optional[pulumi.Input[_builtins.str]] = ..., squash_gid: Optional[pulumi.Input[_builtins.float]] = ..., squash_uid: Optional[pulumi.Input[_builtins.float]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> Optional[pulumi.Input[Union[_builtins.str, AmlFilesystemSquashMode]]]:
+        
+        ...
+    
+    @mode.setter
+    def mode(self, value: Optional[pulumi.Input[Union[_builtins.str, AmlFilesystemSquashMode]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="noSquashNidLists")
+    def no_squash_nid_lists(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @no_squash_nid_lists.setter
+    def no_squash_nid_lists(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="squashGID")
+    def squash_gid(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @squash_gid.setter
+    def squash_gid(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="squashUID")
+    def squash_uid(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @squash_uid.setter
+    def squash_uid(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+
+
+class BlobNfsTargetArgsDict(TypedDict):
+    
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    usage_model: NotRequired[pulumi.Input[_builtins.str]]
+    verification_timer: NotRequired[pulumi.Input[_builtins.int]]
+    write_back_timer: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class BlobNfsTargetArgs:
+    def __init__(__self__, *, target: Optional[pulumi.Input[_builtins.str]] = ..., usage_model: Optional[pulumi.Input[_builtins.str]] = ..., verification_timer: Optional[pulumi.Input[_builtins.int]] = ..., write_back_timer: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usageModel")
+    def usage_model(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @usage_model.setter
+    def usage_model(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="verificationTimer")
+    def verification_timer(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @verification_timer.setter
+    def verification_timer(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="writeBackTimer")
+    def write_back_timer(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @write_back_timer.setter
+    def write_back_timer(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class CacheActiveDirectorySettingsCredentialsArgsDict(TypedDict):
+    
+    username: pulumi.Input[_builtins.str]
+    password: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CacheActiveDirectorySettingsCredentialsArgs:
+    def __init__(__self__, *, username: pulumi.Input[_builtins.str], password: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def username(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @username.setter
+    def username(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @password.setter
+    def password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CacheActiveDirectorySettingsArgsDict(TypedDict):
+    
+    cache_net_bios_name: pulumi.Input[_builtins.str]
+    domain_name: pulumi.Input[_builtins.str]
+    domain_net_bios_name: pulumi.Input[_builtins.str]
+    primary_dns_ip_address: pulumi.Input[_builtins.str]
+    credentials: NotRequired[pulumi.Input[CacheActiveDirectorySettingsCredentialsArgsDict]]
+    secondary_dns_ip_address: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CacheActiveDirectorySettingsArgs:
+    def __init__(__self__, *, cache_net_bios_name: pulumi.Input[_builtins.str], domain_name: pulumi.Input[_builtins.str], domain_net_bios_name: pulumi.Input[_builtins.str], primary_dns_ip_address: pulumi.Input[_builtins.str], credentials: Optional[pulumi.Input[CacheActiveDirectorySettingsCredentialsArgs]] = ..., secondary_dns_ip_address: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cacheNetBiosName")
+    def cache_net_bios_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cache_net_bios_name.setter
+    def cache_net_bios_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainName")
+    def domain_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @domain_name.setter
+    def domain_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="domainNetBiosName")
+    def domain_net_bios_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @domain_net_bios_name.setter
+    def domain_net_bios_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="primaryDnsIpAddress")
+    def primary_dns_ip_address(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @primary_dns_ip_address.setter
+    def primary_dns_ip_address(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[CacheActiveDirectorySettingsCredentialsArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[CacheActiveDirectorySettingsCredentialsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="secondaryDnsIpAddress")
+    def secondary_dns_ip_address(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @secondary_dns_ip_address.setter
+    def secondary_dns_ip_address(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CacheDirectorySettingsArgsDict(TypedDict):
+    
+    active_directory: NotRequired[pulumi.Input[CacheActiveDirectorySettingsArgsDict]]
+    username_download: NotRequired[pulumi.Input[CacheUsernameDownloadSettingsArgsDict]]
+
+
+@pulumi.input_type
+class CacheDirectorySettingsArgs:
+    def __init__(__self__, *, active_directory: Optional[pulumi.Input[CacheActiveDirectorySettingsArgs]] = ..., username_download: Optional[pulumi.Input[CacheUsernameDownloadSettingsArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="activeDirectory")
+    def active_directory(self) -> Optional[pulumi.Input[CacheActiveDirectorySettingsArgs]]:
+        
+        ...
+    
+    @active_directory.setter
+    def active_directory(self, value: Optional[pulumi.Input[CacheActiveDirectorySettingsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usernameDownload")
+    def username_download(self) -> Optional[pulumi.Input[CacheUsernameDownloadSettingsArgs]]:
+        
+        ...
+    
+    @username_download.setter
+    def username_download(self, value: Optional[pulumi.Input[CacheUsernameDownloadSettingsArgs]]): # -> None:
+        ...
+    
+
+
+class CacheEncryptionSettingsArgsDict(TypedDict):
+    
+    key_encryption_key: NotRequired[pulumi.Input[KeyVaultKeyReferenceArgsDict]]
+    rotation_to_latest_key_version_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class CacheEncryptionSettingsArgs:
+    def __init__(__self__, *, key_encryption_key: Optional[pulumi.Input[KeyVaultKeyReferenceArgs]] = ..., rotation_to_latest_key_version_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyEncryptionKey")
+    def key_encryption_key(self) -> Optional[pulumi.Input[KeyVaultKeyReferenceArgs]]:
+        
+        ...
+    
+    @key_encryption_key.setter
+    def key_encryption_key(self, value: Optional[pulumi.Input[KeyVaultKeyReferenceArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rotationToLatestKeyVersionEnabled")
+    def rotation_to_latest_key_version_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @rotation_to_latest_key_version_enabled.setter
+    def rotation_to_latest_key_version_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class CacheIdentityArgsDict(TypedDict):
+    
+    type: NotRequired[pulumi.Input[CacheIdentityType]]
+    user_assigned_identities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class CacheIdentityArgs:
+    def __init__(__self__, *, type: Optional[pulumi.Input[CacheIdentityType]] = ..., user_assigned_identities: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> Optional[pulumi.Input[CacheIdentityType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: Optional[pulumi.Input[CacheIdentityType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userAssignedIdentities")
+    def user_assigned_identities(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @user_assigned_identities.setter
+    def user_assigned_identities(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+class CacheNetworkSettingsArgsDict(TypedDict):
+    
+    dns_search_domain: NotRequired[pulumi.Input[_builtins.str]]
+    dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+    mtu: NotRequired[pulumi.Input[_builtins.int]]
+    ntp_server: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CacheNetworkSettingsArgs:
+    def __init__(__self__, *, dns_search_domain: Optional[pulumi.Input[_builtins.str]] = ..., dns_servers: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ..., mtu: Optional[pulumi.Input[_builtins.int]] = ..., ntp_server: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsSearchDomain")
+    def dns_search_domain(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @dns_search_domain.setter
+    def dns_search_domain(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="dnsServers")
+    def dns_servers(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @dns_servers.setter
+    def dns_servers(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mtu(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @mtu.setter
+    def mtu(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ntpServer")
+    def ntp_server(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ntp_server.setter
+    def ntp_server(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CacheSecuritySettingsArgsDict(TypedDict):
+    
+    access_policies: NotRequired[pulumi.Input[Sequence[pulumi.Input[NfsAccessPolicyArgsDict]]]]
+
+
+@pulumi.input_type
+class CacheSecuritySettingsArgs:
+    def __init__(__self__, *, access_policies: Optional[pulumi.Input[Sequence[pulumi.Input[NfsAccessPolicyArgs]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessPolicies")
+    def access_policies(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NfsAccessPolicyArgs]]]]:
+        
+        ...
+    
+    @access_policies.setter
+    def access_policies(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NfsAccessPolicyArgs]]]]): # -> None:
+        ...
+    
+
+
+class CacheSkuArgsDict(TypedDict):
+    
+    name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CacheSkuArgs:
+    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CacheUpgradeSettingsArgsDict(TypedDict):
+    
+    scheduled_time: NotRequired[pulumi.Input[_builtins.str]]
+    upgrade_schedule_enabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class CacheUpgradeSettingsArgs:
+    def __init__(__self__, *, scheduled_time: Optional[pulumi.Input[_builtins.str]] = ..., upgrade_schedule_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduledTime")
+    def scheduled_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @scheduled_time.setter
+    def scheduled_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="upgradeScheduleEnabled")
+    def upgrade_schedule_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @upgrade_schedule_enabled.setter
+    def upgrade_schedule_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class CacheUsernameDownloadSettingsCredentialsArgsDict(TypedDict):
+    
+    bind_dn: NotRequired[pulumi.Input[_builtins.str]]
+    bind_password: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class CacheUsernameDownloadSettingsCredentialsArgs:
+    def __init__(__self__, *, bind_dn: Optional[pulumi.Input[_builtins.str]] = ..., bind_password: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bindDn")
+    def bind_dn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @bind_dn.setter
+    def bind_dn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="bindPassword")
+    def bind_password(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @bind_password.setter
+    def bind_password(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class CacheUsernameDownloadSettingsArgsDict(TypedDict):
+    
+    auto_download_certificate: NotRequired[pulumi.Input[_builtins.bool]]
+    ca_certificate_uri: NotRequired[pulumi.Input[_builtins.str]]
+    credentials: NotRequired[pulumi.Input[CacheUsernameDownloadSettingsCredentialsArgsDict]]
+    encrypt_ldap_connection: NotRequired[pulumi.Input[_builtins.bool]]
+    extended_groups: NotRequired[pulumi.Input[_builtins.bool]]
+    group_file_uri: NotRequired[pulumi.Input[_builtins.str]]
+    ldap_base_dn: NotRequired[pulumi.Input[_builtins.str]]
+    ldap_server: NotRequired[pulumi.Input[_builtins.str]]
+    require_valid_certificate: NotRequired[pulumi.Input[_builtins.bool]]
+    user_file_uri: NotRequired[pulumi.Input[_builtins.str]]
+    username_source: NotRequired[pulumi.Input[Union[_builtins.str, UsernameSource]]]
+
+
+@pulumi.input_type
+class CacheUsernameDownloadSettingsArgs:
+    def __init__(__self__, *, auto_download_certificate: Optional[pulumi.Input[_builtins.bool]] = ..., ca_certificate_uri: Optional[pulumi.Input[_builtins.str]] = ..., credentials: Optional[pulumi.Input[CacheUsernameDownloadSettingsCredentialsArgs]] = ..., encrypt_ldap_connection: Optional[pulumi.Input[_builtins.bool]] = ..., extended_groups: Optional[pulumi.Input[_builtins.bool]] = ..., group_file_uri: Optional[pulumi.Input[_builtins.str]] = ..., ldap_base_dn: Optional[pulumi.Input[_builtins.str]] = ..., ldap_server: Optional[pulumi.Input[_builtins.str]] = ..., require_valid_certificate: Optional[pulumi.Input[_builtins.bool]] = ..., user_file_uri: Optional[pulumi.Input[_builtins.str]] = ..., username_source: Optional[pulumi.Input[Union[_builtins.str, UsernameSource]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoDownloadCertificate")
+    def auto_download_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @auto_download_certificate.setter
+    def auto_download_certificate(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="caCertificateURI")
+    def ca_certificate_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ca_certificate_uri.setter
+    def ca_certificate_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def credentials(self) -> Optional[pulumi.Input[CacheUsernameDownloadSettingsCredentialsArgs]]:
+        
+        ...
+    
+    @credentials.setter
+    def credentials(self, value: Optional[pulumi.Input[CacheUsernameDownloadSettingsCredentialsArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="encryptLdapConnection")
+    def encrypt_ldap_connection(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @encrypt_ldap_connection.setter
+    def encrypt_ldap_connection(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedGroups")
+    def extended_groups(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @extended_groups.setter
+    def extended_groups(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="groupFileURI")
+    def group_file_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @group_file_uri.setter
+    def group_file_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ldapBaseDN")
+    def ldap_base_dn(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ldap_base_dn.setter
+    def ldap_base_dn(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ldapServer")
+    def ldap_server(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @ldap_server.setter
+    def ldap_server(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requireValidCertificate")
+    def require_valid_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @require_valid_certificate.setter
+    def require_valid_certificate(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userFileURI")
+    def user_file_uri(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @user_file_uri.setter
+    def user_file_uri(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usernameSource")
+    def username_source(self) -> Optional[pulumi.Input[Union[_builtins.str, UsernameSource]]]:
+        
+        ...
+    
+    @username_source.setter
+    def username_source(self, value: Optional[pulumi.Input[Union[_builtins.str, UsernameSource]]]): # -> None:
+        ...
+    
+
+
+class ClfsTargetArgsDict(TypedDict):
+    
+    target: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ClfsTargetArgs:
+    def __init__(__self__, *, target: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KeyVaultKeyReferenceSourceVaultArgsDict(TypedDict):
+    
+    id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class KeyVaultKeyReferenceSourceVaultArgs:
+    def __init__(__self__, *, id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class KeyVaultKeyReferenceArgsDict(TypedDict):
+    
+    key_url: pulumi.Input[_builtins.str]
+    source_vault: pulumi.Input[KeyVaultKeyReferenceSourceVaultArgsDict]
+
+
+@pulumi.input_type
+class KeyVaultKeyReferenceArgs:
+    def __init__(__self__, *, key_url: pulumi.Input[_builtins.str], source_vault: pulumi.Input[KeyVaultKeyReferenceSourceVaultArgs]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="keyUrl")
+    def key_url(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @key_url.setter
+    def key_url(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sourceVault")
+    def source_vault(self) -> pulumi.Input[KeyVaultKeyReferenceSourceVaultArgs]:
+        
+        ...
+    
+    @source_vault.setter
+    def source_vault(self, value: pulumi.Input[KeyVaultKeyReferenceSourceVaultArgs]): # -> None:
+        ...
+    
+
+
+class NamespaceJunctionArgsDict(TypedDict):
+    
+    namespace_path: NotRequired[pulumi.Input[_builtins.str]]
+    nfs_access_policy: NotRequired[pulumi.Input[_builtins.str]]
+    nfs_export: NotRequired[pulumi.Input[_builtins.str]]
+    target_path: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class NamespaceJunctionArgs:
+    def __init__(__self__, *, namespace_path: Optional[pulumi.Input[_builtins.str]] = ..., nfs_access_policy: Optional[pulumi.Input[_builtins.str]] = ..., nfs_export: Optional[pulumi.Input[_builtins.str]] = ..., target_path: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="namespacePath")
+    def namespace_path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @namespace_path.setter
+    def namespace_path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nfsAccessPolicy")
+    def nfs_access_policy(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @nfs_access_policy.setter
+    def nfs_access_policy(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nfsExport")
+    def nfs_export(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @nfs_export.setter
+    def nfs_export(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetPath")
+    def target_path(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target_path.setter
+    def target_path(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class Nfs3TargetArgsDict(TypedDict):
+    
+    target: NotRequired[pulumi.Input[_builtins.str]]
+    usage_model: NotRequired[pulumi.Input[_builtins.str]]
+    verification_timer: NotRequired[pulumi.Input[_builtins.int]]
+    write_back_timer: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class Nfs3TargetArgs:
+    def __init__(__self__, *, target: Optional[pulumi.Input[_builtins.str]] = ..., usage_model: Optional[pulumi.Input[_builtins.str]] = ..., verification_timer: Optional[pulumi.Input[_builtins.int]] = ..., write_back_timer: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def target(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @target.setter
+    def target(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usageModel")
+    def usage_model(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @usage_model.setter
+    def usage_model(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="verificationTimer")
+    def verification_timer(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @verification_timer.setter
+    def verification_timer(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="writeBackTimer")
+    def write_back_timer(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @write_back_timer.setter
+    def write_back_timer(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class NfsAccessPolicyArgsDict(TypedDict):
+    
+    access_rules: pulumi.Input[Sequence[pulumi.Input[NfsAccessRuleArgsDict]]]
+    name: pulumi.Input[_builtins.str]
+
+
+@pulumi.input_type
+class NfsAccessPolicyArgs:
+    def __init__(__self__, *, access_rules: pulumi.Input[Sequence[pulumi.Input[NfsAccessRuleArgs]]], name: pulumi.Input[_builtins.str]) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="accessRules")
+    def access_rules(self) -> pulumi.Input[Sequence[pulumi.Input[NfsAccessRuleArgs]]]:
+        
+        ...
+    
+    @access_rules.setter
+    def access_rules(self, value: pulumi.Input[Sequence[pulumi.Input[NfsAccessRuleArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+
+
+class NfsAccessRuleArgsDict(TypedDict):
+    
+    access: pulumi.Input[Union[_builtins.str, NfsAccessRuleAccess]]
+    scope: pulumi.Input[Union[_builtins.str, NfsAccessRuleScope]]
+    anonymous_gid: NotRequired[pulumi.Input[_builtins.str]]
+    anonymous_uid: NotRequired[pulumi.Input[_builtins.str]]
+    filter: NotRequired[pulumi.Input[_builtins.str]]
+    root_squash: NotRequired[pulumi.Input[_builtins.bool]]
+    submount_access: NotRequired[pulumi.Input[_builtins.bool]]
+    suid: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class NfsAccessRuleArgs:
+    def __init__(__self__, *, access: pulumi.Input[Union[_builtins.str, NfsAccessRuleAccess]], scope: pulumi.Input[Union[_builtins.str, NfsAccessRuleScope]], anonymous_gid: Optional[pulumi.Input[_builtins.str]] = ..., anonymous_uid: Optional[pulumi.Input[_builtins.str]] = ..., filter: Optional[pulumi.Input[_builtins.str]] = ..., root_squash: Optional[pulumi.Input[_builtins.bool]] = ..., submount_access: Optional[pulumi.Input[_builtins.bool]] = ..., suid: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def access(self) -> pulumi.Input[Union[_builtins.str, NfsAccessRuleAccess]]:
+        
+        ...
+    
+    @access.setter
+    def access(self, value: pulumi.Input[Union[_builtins.str, NfsAccessRuleAccess]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def scope(self) -> pulumi.Input[Union[_builtins.str, NfsAccessRuleScope]]:
+        
+        ...
+    
+    @scope.setter
+    def scope(self, value: pulumi.Input[Union[_builtins.str, NfsAccessRuleScope]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="anonymousGID")
+    def anonymous_gid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @anonymous_gid.setter
+    def anonymous_gid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="anonymousUID")
+    def anonymous_uid(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @anonymous_uid.setter
+    def anonymous_uid(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def filter(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @filter.setter
+    def filter(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="rootSquash")
+    def root_squash(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @root_squash.setter
+    def root_squash(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="submountAccess")
+    def submount_access(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @submount_access.setter
+    def submount_access(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def suid(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @suid.setter
+    def suid(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class SkuNameDict(TypedDict):
+    
+    name: NotRequired[_builtins.str]
+
+
+@pulumi.input_type
+class SkuName:
+    def __init__(__self__, *, name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[_builtins.str]): # -> None:
+        ...
+    
+
+
+class SkuNameArgsDict(TypedDict):
+    
+    name: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SkuNameArgs:
+    def __init__(__self__, *, name: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class UnknownTargetArgsDict(TypedDict):
+    
+    attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class UnknownTargetArgs:
+    def __init__(__self__, *, attributes: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def attributes(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @attributes.setter
+    def attributes(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+

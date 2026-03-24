@@ -1,0 +1,315 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['ExecutionParametersArgs', 'ExecutionParametersArgsDict', 'NotificationPropertiesArgs', 'NotificationPropertiesArgsDict', 'RetryPolicyArgs', 'RetryPolicyArgsDict', 'ScheduledActionPropertiesArgs', 'ScheduledActionPropertiesArgsDict', 'ScheduledActionsScheduleArgs', 'ScheduledActionsScheduleArgsDict']
+class ExecutionParametersArgsDict(TypedDict):
+    
+    optimization_preference: NotRequired[pulumi.Input[Union[_builtins.str, OptimizationPreference]]]
+    retry_policy: NotRequired[pulumi.Input[RetryPolicyArgsDict]]
+
+
+@pulumi.input_type
+class ExecutionParametersArgs:
+    def __init__(__self__, *, optimization_preference: Optional[pulumi.Input[Union[_builtins.str, OptimizationPreference]]] = ..., retry_policy: Optional[pulumi.Input[RetryPolicyArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="optimizationPreference")
+    def optimization_preference(self) -> Optional[pulumi.Input[Union[_builtins.str, OptimizationPreference]]]:
+        
+        ...
+    
+    @optimization_preference.setter
+    def optimization_preference(self, value: Optional[pulumi.Input[Union[_builtins.str, OptimizationPreference]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retryPolicy")
+    def retry_policy(self) -> Optional[pulumi.Input[RetryPolicyArgs]]:
+        
+        ...
+    
+    @retry_policy.setter
+    def retry_policy(self, value: Optional[pulumi.Input[RetryPolicyArgs]]): # -> None:
+        ...
+    
+
+
+class NotificationPropertiesArgsDict(TypedDict):
+    
+    destination: pulumi.Input[_builtins.str]
+    language: pulumi.Input[Union[_builtins.str, Language]]
+    type: pulumi.Input[Union[_builtins.str, NotificationType]]
+    disabled: NotRequired[pulumi.Input[_builtins.bool]]
+
+
+@pulumi.input_type
+class NotificationPropertiesArgs:
+    def __init__(__self__, *, destination: pulumi.Input[_builtins.str], language: pulumi.Input[Union[_builtins.str, Language]], type: pulumi.Input[Union[_builtins.str, NotificationType]], disabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def destination(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @destination.setter
+    def destination(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def language(self) -> pulumi.Input[Union[_builtins.str, Language]]:
+        
+        ...
+    
+    @language.setter
+    def language(self, value: pulumi.Input[Union[_builtins.str, Language]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Input[Union[_builtins.str, NotificationType]]:
+        
+        ...
+    
+    @type.setter
+    def type(self, value: pulumi.Input[Union[_builtins.str, NotificationType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def disabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disabled.setter
+    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+class RetryPolicyArgsDict(TypedDict):
+    
+    retry_count: NotRequired[pulumi.Input[_builtins.int]]
+    retry_window_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
+
+
+@pulumi.input_type
+class RetryPolicyArgs:
+    def __init__(__self__, *, retry_count: Optional[pulumi.Input[_builtins.int]] = ..., retry_window_in_minutes: Optional[pulumi.Input[_builtins.int]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retryCount")
+    def retry_count(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @retry_count.setter
+    def retry_count(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retryWindowInMinutes")
+    def retry_window_in_minutes(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @retry_window_in_minutes.setter
+    def retry_window_in_minutes(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+
+
+class ScheduledActionPropertiesArgsDict(TypedDict):
+    
+    action_type: pulumi.Input[Union[_builtins.str, ActionType]]
+    notification_settings: pulumi.Input[Sequence[pulumi.Input[NotificationPropertiesArgsDict]]]
+    resource_type: pulumi.Input[Union[_builtins.str, ResourceType]]
+    schedule: pulumi.Input[ScheduledActionsScheduleArgsDict]
+    start_time: pulumi.Input[_builtins.str]
+    disabled: NotRequired[pulumi.Input[_builtins.bool]]
+    end_time: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class ScheduledActionPropertiesArgs:
+    def __init__(__self__, *, action_type: pulumi.Input[Union[_builtins.str, ActionType]], notification_settings: pulumi.Input[Sequence[pulumi.Input[NotificationPropertiesArgs]]], resource_type: pulumi.Input[Union[_builtins.str, ResourceType]], schedule: pulumi.Input[ScheduledActionsScheduleArgs], start_time: pulumi.Input[_builtins.str], disabled: Optional[pulumi.Input[_builtins.bool]] = ..., end_time: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="actionType")
+    def action_type(self) -> pulumi.Input[Union[_builtins.str, ActionType]]:
+        
+        ...
+    
+    @action_type.setter
+    def action_type(self, value: pulumi.Input[Union[_builtins.str, ActionType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="notificationSettings")
+    def notification_settings(self) -> pulumi.Input[Sequence[pulumi.Input[NotificationPropertiesArgs]]]:
+        
+        ...
+    
+    @notification_settings.setter
+    def notification_settings(self, value: pulumi.Input[Sequence[pulumi.Input[NotificationPropertiesArgs]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceType")
+    def resource_type(self) -> pulumi.Input[Union[_builtins.str, ResourceType]]:
+        
+        ...
+    
+    @resource_type.setter
+    def resource_type(self, value: pulumi.Input[Union[_builtins.str, ResourceType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def schedule(self) -> pulumi.Input[ScheduledActionsScheduleArgs]:
+        
+        ...
+    
+    @schedule.setter
+    def schedule(self, value: pulumi.Input[ScheduledActionsScheduleArgs]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="startTime")
+    def start_time(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @start_time.setter
+    def start_time(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def disabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @disabled.setter
+    def disabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="endTime")
+    def end_time(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @end_time.setter
+    def end_time(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+
+class ScheduledActionsScheduleArgsDict(TypedDict):
+    
+    requested_days_of_the_month: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
+    requested_months: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Month]]]]
+    requested_week_days: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeekDay]]]]
+    scheduled_time: pulumi.Input[_builtins.str]
+    time_zone: pulumi.Input[_builtins.str]
+    deadline_type: NotRequired[pulumi.Input[Union[_builtins.str, DeadlineType]]]
+    execution_parameters: NotRequired[pulumi.Input[ExecutionParametersArgsDict]]
+
+
+@pulumi.input_type
+class ScheduledActionsScheduleArgs:
+    def __init__(__self__, *, requested_days_of_the_month: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]], requested_months: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Month]]]], requested_week_days: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeekDay]]]], scheduled_time: pulumi.Input[_builtins.str], time_zone: pulumi.Input[_builtins.str], deadline_type: Optional[pulumi.Input[Union[_builtins.str, DeadlineType]]] = ..., execution_parameters: Optional[pulumi.Input[ExecutionParametersArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestedDaysOfTheMonth")
+    def requested_days_of_the_month(self) -> pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]:
+        
+        ...
+    
+    @requested_days_of_the_month.setter
+    def requested_days_of_the_month(self, value: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestedMonths")
+    def requested_months(self) -> pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Month]]]]:
+        
+        ...
+    
+    @requested_months.setter
+    def requested_months(self, value: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, Month]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="requestedWeekDays")
+    def requested_week_days(self) -> pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeekDay]]]]:
+        
+        ...
+    
+    @requested_week_days.setter
+    def requested_week_days(self, value: pulumi.Input[Sequence[pulumi.Input[Union[_builtins.str, WeekDay]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="scheduledTime")
+    def scheduled_time(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @scheduled_time.setter
+    def scheduled_time(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="timeZone")
+    def time_zone(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @time_zone.setter
+    def time_zone(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deadlineType")
+    def deadline_type(self) -> Optional[pulumi.Input[Union[_builtins.str, DeadlineType]]]:
+        
+        ...
+    
+    @deadline_type.setter
+    def deadline_type(self, value: Optional[pulumi.Input[Union[_builtins.str, DeadlineType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="executionParameters")
+    def execution_parameters(self) -> Optional[pulumi.Input[ExecutionParametersArgs]]:
+        
+        ...
+    
+    @execution_parameters.setter
+    def execution_parameters(self, value: Optional[pulumi.Input[ExecutionParametersArgs]]): # -> None:
+        ...
+    
+
+

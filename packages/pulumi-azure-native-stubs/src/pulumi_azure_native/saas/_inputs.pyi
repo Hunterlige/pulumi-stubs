@@ -1,0 +1,157 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, NotRequired, Optional, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['SaasCreationPropertiesArgs', 'SaasCreationPropertiesArgsDict']
+class SaasCreationPropertiesArgsDict(TypedDict):
+    
+    auto_renew: NotRequired[pulumi.Input[_builtins.bool]]
+    offer_id: NotRequired[pulumi.Input[_builtins.str]]
+    payment_channel_metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
+    payment_channel_type: NotRequired[pulumi.Input[Union[_builtins.str, PaymentChannelType]]]
+    publisher_id: NotRequired[pulumi.Input[_builtins.str]]
+    publisher_test_environment: NotRequired[pulumi.Input[_builtins.str]]
+    quantity: NotRequired[pulumi.Input[_builtins.float]]
+    saas_resource_name: NotRequired[pulumi.Input[_builtins.str]]
+    saas_session_id: NotRequired[pulumi.Input[_builtins.str]]
+    saas_subscription_id: NotRequired[pulumi.Input[_builtins.str]]
+    sku_id: NotRequired[pulumi.Input[_builtins.str]]
+    term_id: NotRequired[pulumi.Input[_builtins.str]]
+
+
+@pulumi.input_type
+class SaasCreationPropertiesArgs:
+    def __init__(__self__, *, auto_renew: Optional[pulumi.Input[_builtins.bool]] = ..., offer_id: Optional[pulumi.Input[_builtins.str]] = ..., payment_channel_metadata: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., payment_channel_type: Optional[pulumi.Input[Union[_builtins.str, PaymentChannelType]]] = ..., publisher_id: Optional[pulumi.Input[_builtins.str]] = ..., publisher_test_environment: Optional[pulumi.Input[_builtins.str]] = ..., quantity: Optional[pulumi.Input[_builtins.float]] = ..., saas_resource_name: Optional[pulumi.Input[_builtins.str]] = ..., saas_session_id: Optional[pulumi.Input[_builtins.str]] = ..., saas_subscription_id: Optional[pulumi.Input[_builtins.str]] = ..., sku_id: Optional[pulumi.Input[_builtins.str]] = ..., term_id: Optional[pulumi.Input[_builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="autoRenew")
+    def auto_renew(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @auto_renew.setter
+    def auto_renew(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="offerId")
+    def offer_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @offer_id.setter
+    def offer_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="paymentChannelMetadata")
+    def payment_channel_metadata(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @payment_channel_metadata.setter
+    def payment_channel_metadata(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="paymentChannelType")
+    def payment_channel_type(self) -> Optional[pulumi.Input[Union[_builtins.str, PaymentChannelType]]]:
+        
+        ...
+    
+    @payment_channel_type.setter
+    def payment_channel_type(self, value: Optional[pulumi.Input[Union[_builtins.str, PaymentChannelType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publisherId")
+    def publisher_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @publisher_id.setter
+    def publisher_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="publisherTestEnvironment")
+    def publisher_test_environment(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @publisher_test_environment.setter
+    def publisher_test_environment(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def quantity(self) -> Optional[pulumi.Input[_builtins.float]]:
+        
+        ...
+    
+    @quantity.setter
+    def quantity(self, value: Optional[pulumi.Input[_builtins.float]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasResourceName")
+    def saas_resource_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @saas_resource_name.setter
+    def saas_resource_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasSessionId")
+    def saas_session_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @saas_session_id.setter
+    def saas_session_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="saasSubscriptionId")
+    def saas_subscription_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @saas_subscription_id.setter
+    def saas_subscription_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="skuId")
+    def sku_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @sku_id.setter
+    def sku_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="termId")
+    def term_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @term_id.setter
+    def term_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+
+

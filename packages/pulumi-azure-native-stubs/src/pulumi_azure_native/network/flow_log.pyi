@@ -1,0 +1,281 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['FlowLogArgs', 'FlowLog']
+@pulumi.input_type
+class FlowLogArgs:
+    def __init__(__self__, *, network_watcher_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], storage_id: pulumi.Input[_builtins.str], target_resource_id: pulumi.Input[_builtins.str], enabled: Optional[pulumi.Input[_builtins.bool]] = ..., enabled_filtering_criteria: Optional[pulumi.Input[_builtins.str]] = ..., flow_analytics_configuration: Optional[pulumi.Input[TrafficAnalyticsPropertiesArgs]] = ..., flow_log_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[FlowLogFormatParametersArgs]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[ManagedServiceIdentityArgs]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., retention_policy: Optional[pulumi.Input[RetentionPolicyParametersArgs]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="networkWatcherName")
+    def network_watcher_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @network_watcher_name.setter
+    def network_watcher_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageId")
+    def storage_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @storage_id.setter
+    def storage_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceId")
+    def target_resource_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @target_resource_id.setter
+    def target_resource_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @enabled.setter
+    def enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enabledFilteringCriteria")
+    def enabled_filtering_criteria(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @enabled_filtering_criteria.setter
+    def enabled_filtering_criteria(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flowAnalyticsConfiguration")
+    def flow_analytics_configuration(self) -> Optional[pulumi.Input[TrafficAnalyticsPropertiesArgs]]:
+        
+        ...
+    
+    @flow_analytics_configuration.setter
+    def flow_analytics_configuration(self, value: Optional[pulumi.Input[TrafficAnalyticsPropertiesArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flowLogName")
+    def flow_log_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @flow_log_name.setter
+    def flow_log_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> Optional[pulumi.Input[FlowLogFormatParametersArgs]]:
+        
+        ...
+    
+    @format.setter
+    def format(self, value: Optional[pulumi.Input[FlowLogFormatParametersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @id.setter
+    def id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[pulumi.Input[ManagedServiceIdentityArgs]]:
+        
+        ...
+    
+    @identity.setter
+    def identity(self, value: Optional[pulumi.Input[ManagedServiceIdentityArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @location.setter
+    def location(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retentionPolicy")
+    def retention_policy(self) -> Optional[pulumi.Input[RetentionPolicyParametersArgs]]:
+        
+        ...
+    
+    @retention_policy.setter
+    def retention_policy(self, value: Optional[pulumi.Input[RetentionPolicyParametersArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @tags.setter
+    def tags(self, value: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:network:FlowLog")
+class FlowLog(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., enabled: Optional[pulumi.Input[_builtins.bool]] = ..., enabled_filtering_criteria: Optional[pulumi.Input[_builtins.str]] = ..., flow_analytics_configuration: Optional[pulumi.Input[Union[TrafficAnalyticsPropertiesArgs, TrafficAnalyticsPropertiesArgsDict]]] = ..., flow_log_name: Optional[pulumi.Input[_builtins.str]] = ..., format: Optional[pulumi.Input[Union[FlowLogFormatParametersArgs, FlowLogFormatParametersArgsDict]]] = ..., id: Optional[pulumi.Input[_builtins.str]] = ..., identity: Optional[pulumi.Input[Union[ManagedServiceIdentityArgs, ManagedServiceIdentityArgsDict]]] = ..., location: Optional[pulumi.Input[_builtins.str]] = ..., network_watcher_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., retention_policy: Optional[pulumi.Input[Union[RetentionPolicyParametersArgs, RetentionPolicyParametersArgsDict]]] = ..., storage_id: Optional[pulumi.Input[_builtins.str]] = ..., tags: Optional[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]] = ..., target_resource_id: Optional[pulumi.Input[_builtins.str]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: FlowLogArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> FlowLog:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="enabledFilteringCriteria")
+    def enabled_filtering_criteria(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="flowAnalyticsConfiguration")
+    def flow_analytics_configuration(self) -> pulumi.Output[Optional[outputs.TrafficAnalyticsPropertiesResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def format(self) -> pulumi.Output[Optional[outputs.FlowLogFormatParametersResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> pulumi.Output[Optional[outputs.ManagedServiceIdentityResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="retentionPolicy")
+    def retention_policy(self) -> pulumi.Output[Optional[outputs.RetentionPolicyParametersResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageId")
+    def storage_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> pulumi.Output[Optional[Mapping[str, _builtins.str]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceGuid")
+    def target_resource_guid(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetResourceId")
+    def target_resource_id(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

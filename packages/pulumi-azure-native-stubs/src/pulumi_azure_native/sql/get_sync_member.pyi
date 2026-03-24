@@ -1,0 +1,124 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSyncMemberResult', 'AwaitableGetSyncMemberResult', 'get_sync_member', 'get_sync_member_output']
+@pulumi.output_type
+class GetSyncMemberResult:
+    
+    def __init__(__self__, azure_api_version=..., database_name=..., database_type=..., id=..., name=..., private_endpoint_name=..., server_name=..., sql_server_database_id=..., sync_agent_id=..., sync_direction=..., sync_member_azure_database_resource_id=..., sync_state=..., type=..., use_private_link_connection=..., user_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseName")
+    def database_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="databaseType")
+    def database_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="privateEndpointName")
+    def private_endpoint_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serverName")
+    def server_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="sqlServerDatabaseId")
+    def sql_server_database_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncAgentId")
+    def sync_agent_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncDirection")
+    def sync_direction(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncMemberAzureDatabaseResourceId")
+    def sync_member_azure_database_resource_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="syncState")
+    def sync_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="usePrivateLinkConnection")
+    def use_private_link_connection(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userName")
+    def user_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetSyncMemberResult(GetSyncMemberResult):
+    def __await__(self): # -> Generator[Never, Any, GetSyncMemberResult]:
+        ...
+    
+
+
+def get_sync_member(database_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., sync_group_name: Optional[_builtins.str] = ..., sync_member_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSyncMemberResult:
+    
+    ...
+
+def get_sync_member_output(database_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_group_name: Optional[pulumi.Input[_builtins.str]] = ..., sync_member_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSyncMemberResult]:
+    
+    ...
+

@@ -1,0 +1,70 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetLinkedServiceResult', 'AwaitableGetLinkedServiceResult', 'get_linked_service', 'get_linked_service_output']
+@pulumi.output_type
+class GetLinkedServiceResult:
+    
+    def __init__(__self__, azure_api_version=..., etag=..., id=..., name=..., properties=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Any:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetLinkedServiceResult(GetLinkedServiceResult):
+    def __await__(self): # -> Generator[Never, Any, GetLinkedServiceResult]:
+        ...
+    
+
+
+def get_linked_service(factory_name: Optional[_builtins.str] = ..., linked_service_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetLinkedServiceResult:
+    
+    ...
+
+def get_linked_service_output(factory_name: Optional[pulumi.Input[_builtins.str]] = ..., linked_service_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetLinkedServiceResult]:
+    
+    ...
+

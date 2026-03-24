@@ -1,0 +1,126 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import NotRequired, Optional, Sequence, TypedDict, Union
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AutoScaleVCoreSkuArgs', 'AutoScaleVCoreSkuArgsDict', 'CapacitySkuArgs', 'CapacitySkuArgsDict', 'DedicatedCapacityAdministratorsArgs', 'DedicatedCapacityAdministratorsArgsDict']
+class AutoScaleVCoreSkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    capacity: NotRequired[pulumi.Input[_builtins.int]]
+    tier: NotRequired[pulumi.Input[Union[_builtins.str, VCoreSkuTier]]]
+
+
+@pulumi.input_type
+class AutoScaleVCoreSkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], capacity: Optional[pulumi.Input[_builtins.int]] = ..., tier: Optional[pulumi.Input[Union[_builtins.str, VCoreSkuTier]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, VCoreSkuTier]]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, VCoreSkuTier]]]): # -> None:
+        ...
+    
+
+
+class CapacitySkuArgsDict(TypedDict):
+    
+    name: pulumi.Input[_builtins.str]
+    capacity: NotRequired[pulumi.Input[_builtins.int]]
+    tier: NotRequired[pulumi.Input[Union[_builtins.str, CapacitySkuTier]]]
+
+
+@pulumi.input_type
+class CapacitySkuArgs:
+    def __init__(__self__, *, name: pulumi.Input[_builtins.str], capacity: Optional[pulumi.Input[_builtins.int]] = ..., tier: Optional[pulumi.Input[Union[_builtins.str, CapacitySkuTier]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @name.setter
+    def name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def capacity(self) -> Optional[pulumi.Input[_builtins.int]]:
+        
+        ...
+    
+    @capacity.setter
+    def capacity(self, value: Optional[pulumi.Input[_builtins.int]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tier(self) -> Optional[pulumi.Input[Union[_builtins.str, CapacitySkuTier]]]:
+        
+        ...
+    
+    @tier.setter
+    def tier(self, value: Optional[pulumi.Input[Union[_builtins.str, CapacitySkuTier]]]): # -> None:
+        ...
+    
+
+
+class DedicatedCapacityAdministratorsArgsDict(TypedDict):
+    
+    members: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
+
+
+@pulumi.input_type
+class DedicatedCapacityAdministratorsArgs:
+    def __init__(__self__, *, members: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def members(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]:
+        
+        ...
+    
+    @members.setter
+    def members(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]): # -> None:
+        ...
+    
+
+

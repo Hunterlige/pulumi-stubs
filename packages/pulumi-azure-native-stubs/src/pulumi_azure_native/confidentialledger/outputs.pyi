@@ -1,0 +1,331 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Mapping, Optional, Sequence
+from . import outputs
+from ._enums import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['AADBasedSecurityPrincipalResponse', 'CertBasedSecurityPrincipalResponse', 'CertificateTagsResponse', 'DeploymentTypeResponse', 'LedgerPropertiesResponse', 'ManagedCCFPropertiesResponse', 'MemberIdentityCertificateResponse', 'SystemDataResponse']
+@pulumi.output_type
+class AADBasedSecurityPrincipalResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, ledger_role_name: Optional[_builtins.str] = ..., principal_id: Optional[_builtins.str] = ..., tenant_id: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerRoleName")
+    def ledger_role_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="principalId")
+    def principal_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tenantId")
+    def tenant_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertBasedSecurityPrincipalResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, cert: Optional[_builtins.str] = ..., ledger_role_name: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def cert(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerRoleName")
+    def ledger_role_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class CertificateTagsResponse(dict):
+    
+    def __init__(__self__, *, tags: Optional[Mapping[str, _builtins.str]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class DeploymentTypeResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_source_uri: Optional[_builtins.str] = ..., language_runtime: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appSourceUri")
+    def app_source_uri(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="languageRuntime")
+    def language_runtime(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class LedgerPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, identity_service_uri: _builtins.str, ledger_internal_namespace: _builtins.str, ledger_name: _builtins.str, ledger_uri: _builtins.str, provisioning_state: _builtins.str, aad_based_security_principals: Optional[Sequence[outputs.AADBasedSecurityPrincipalResponse]] = ..., cert_based_security_principals: Optional[Sequence[outputs.CertBasedSecurityPrincipalResponse]] = ..., ledger_sku: Optional[_builtins.str] = ..., ledger_type: Optional[_builtins.str] = ..., running_state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityServiceUri")
+    def identity_service_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerInternalNamespace")
+    def ledger_internal_namespace(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerName")
+    def ledger_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerUri")
+    def ledger_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="aadBasedSecurityPrincipals")
+    def aad_based_security_principals(self) -> Optional[Sequence[outputs.AADBasedSecurityPrincipalResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certBasedSecurityPrincipals")
+    def cert_based_security_principals(self) -> Optional[Sequence[outputs.CertBasedSecurityPrincipalResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerSku")
+    def ledger_sku(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="ledgerType")
+    def ledger_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runningState")
+    def running_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class ManagedCCFPropertiesResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, app_name: _builtins.str, app_uri: _builtins.str, identity_service_uri: _builtins.str, provisioning_state: _builtins.str, deployment_type: Optional[outputs.DeploymentTypeResponse] = ..., member_identity_certificates: Optional[Sequence[outputs.MemberIdentityCertificateResponse]] = ..., node_count: Optional[_builtins.int] = ..., running_state: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appName")
+    def app_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appUri")
+    def app_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="identityServiceUri")
+    def identity_service_uri(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="deploymentType")
+    def deployment_type(self) -> Optional[outputs.DeploymentTypeResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="memberIdentityCertificates")
+    def member_identity_certificates(self) -> Optional[Sequence[outputs.MemberIdentityCertificateResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nodeCount")
+    def node_count(self) -> Optional[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="runningState")
+    def running_state(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+@pulumi.output_type
+class MemberIdentityCertificateResponse(dict):
+    
+    def __init__(__self__, *, certificate: Optional[_builtins.str] = ..., encryptionkey: Optional[_builtins.str] = ..., tags: Optional[Sequence[outputs.CertificateTagsResponse]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def certificate(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def encryptionkey(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Sequence[outputs.CertificateTagsResponse]]:
+        ...
+    
+
+
+@pulumi.output_type
+class SystemDataResponse(dict):
+    
+    def __getitem__(self, key: str) -> Any:
+        ...
+    
+    def get(self, key: str, default=...) -> Any:
+        ...
+    
+    def __init__(__self__, *, created_at: Optional[_builtins.str] = ..., created_by: Optional[_builtins.str] = ..., created_by_type: Optional[_builtins.str] = ..., last_modified_at: Optional[_builtins.str] = ..., last_modified_by: Optional[_builtins.str] = ..., last_modified_by_type: Optional[_builtins.str] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdAt")
+    def created_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdBy")
+    def created_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="createdByType")
+    def created_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedAt")
+    def last_modified_at(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedBy")
+    def last_modified_by(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="lastModifiedByType")
+    def last_modified_by_type(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+

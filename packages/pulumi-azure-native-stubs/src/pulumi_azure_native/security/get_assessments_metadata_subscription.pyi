@@ -1,0 +1,122 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAssessmentsMetadataSubscriptionResult', 'AwaitableGetAssessmentsMetadataSubscriptionResult', 'get_assessments_metadata_subscription', 'get_assessments_metadata_subscription_output']
+@pulumi.output_type
+class GetAssessmentsMetadataSubscriptionResult:
+    
+    def __init__(__self__, assessment_type=..., azure_api_version=..., categories=..., description=..., display_name=..., id=..., implementation_effort=..., name=..., policy_definition_id=..., preview=..., remediation_description=..., severity=..., threats=..., type=..., user_impact=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="assessmentType")
+    def assessment_type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def categories(self) -> Optional[Sequence[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="displayName")
+    def display_name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="implementationEffort")
+    def implementation_effort(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="policyDefinitionId")
+    def policy_definition_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def preview(self) -> Optional[_builtins.bool]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="remediationDescription")
+    def remediation_description(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def severity(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def threats(self) -> Optional[Sequence[_builtins.str]]:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="userImpact")
+    def user_impact(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetAssessmentsMetadataSubscriptionResult(GetAssessmentsMetadataSubscriptionResult):
+    def __await__(self): # -> Generator[Never, Any, GetAssessmentsMetadataSubscriptionResult]:
+        ...
+    
+
+
+def get_assessments_metadata_subscription(assessment_metadata_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAssessmentsMetadataSubscriptionResult:
+    
+    ...
+
+def get_assessments_metadata_subscription_output(assessment_metadata_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAssessmentsMetadataSubscriptionResult]:
+    
+    ...
+

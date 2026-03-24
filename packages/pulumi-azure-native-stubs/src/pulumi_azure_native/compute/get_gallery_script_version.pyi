@@ -1,0 +1,83 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetGalleryScriptVersionResult', 'AwaitableGetGalleryScriptVersionResult', 'get_gallery_script_version', 'get_gallery_script_version_output']
+@pulumi.output_type
+class GetGalleryScriptVersionResult:
+    
+    def __init__(__self__, azure_api_version=..., id=..., location=..., name=..., properties=..., system_data=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> outputs.GalleryScriptVersionPropertiesResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetGalleryScriptVersionResult(GetGalleryScriptVersionResult):
+    def __await__(self): # -> Generator[Never, Any, GetGalleryScriptVersionResult]:
+        ...
+    
+
+
+def get_gallery_script_version(gallery_name: Optional[_builtins.str] = ..., gallery_script_name: Optional[_builtins.str] = ..., gallery_script_version_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetGalleryScriptVersionResult:
+    
+    ...
+
+def get_gallery_script_version_output(gallery_name: Optional[pulumi.Input[_builtins.str]] = ..., gallery_script_name: Optional[pulumi.Input[_builtins.str]] = ..., gallery_script_version_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetGalleryScriptVersionResult]:
+    
+    ...
+

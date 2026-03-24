@@ -1,0 +1,229 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union, overload
+from . import outputs
+from ._enums import *
+from ._inputs import *
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['StorageTargetArgs', 'StorageTarget']
+@pulumi.input_type
+class StorageTargetArgs:
+    def __init__(__self__, *, cache_name: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], target_type: pulumi.Input[Union[_builtins.str, StorageTargetType]], blob_nfs: Optional[pulumi.Input[BlobNfsTargetArgs]] = ..., clfs: Optional[pulumi.Input[ClfsTargetArgs]] = ..., junctions: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceJunctionArgs]]]] = ..., nfs3: Optional[pulumi.Input[Nfs3TargetArgs]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, OperationalStateType]]] = ..., storage_target_name: Optional[pulumi.Input[_builtins.str]] = ..., unknown: Optional[pulumi.Input[UnknownTargetArgs]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="cacheName")
+    def cache_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @cache_name.setter
+    def cache_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetType")
+    def target_type(self) -> pulumi.Input[Union[_builtins.str, StorageTargetType]]:
+        
+        ...
+    
+    @target_type.setter
+    def target_type(self, value: pulumi.Input[Union[_builtins.str, StorageTargetType]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobNfs")
+    def blob_nfs(self) -> Optional[pulumi.Input[BlobNfsTargetArgs]]:
+        
+        ...
+    
+    @blob_nfs.setter
+    def blob_nfs(self, value: Optional[pulumi.Input[BlobNfsTargetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def clfs(self) -> Optional[pulumi.Input[ClfsTargetArgs]]:
+        
+        ...
+    
+    @clfs.setter
+    def clfs(self, value: Optional[pulumi.Input[ClfsTargetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def junctions(self) -> Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceJunctionArgs]]]]:
+        
+        ...
+    
+    @junctions.setter
+    def junctions(self, value: Optional[pulumi.Input[Sequence[pulumi.Input[NamespaceJunctionArgs]]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nfs3(self) -> Optional[pulumi.Input[Nfs3TargetArgs]]:
+        
+        ...
+    
+    @nfs3.setter
+    def nfs3(self, value: Optional[pulumi.Input[Nfs3TargetArgs]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> Optional[pulumi.Input[Union[_builtins.str, OperationalStateType]]]:
+        
+        ...
+    
+    @state.setter
+    def state(self, value: Optional[pulumi.Input[Union[_builtins.str, OperationalStateType]]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageTargetName")
+    def storage_target_name(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @storage_target_name.setter
+    def storage_target_name(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def unknown(self) -> Optional[pulumi.Input[UnknownTargetArgs]]:
+        
+        ...
+    
+    @unknown.setter
+    def unknown(self, value: Optional[pulumi.Input[UnknownTargetArgs]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token("azure-native:storagecache:StorageTarget")
+class StorageTarget(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., blob_nfs: Optional[pulumi.Input[Union[BlobNfsTargetArgs, BlobNfsTargetArgsDict]]] = ..., cache_name: Optional[pulumi.Input[_builtins.str]] = ..., clfs: Optional[pulumi.Input[Union[ClfsTargetArgs, ClfsTargetArgsDict]]] = ..., junctions: Optional[pulumi.Input[Sequence[pulumi.Input[Union[NamespaceJunctionArgs, NamespaceJunctionArgsDict]]]]] = ..., nfs3: Optional[pulumi.Input[Union[Nfs3TargetArgs, Nfs3TargetArgsDict]]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., state: Optional[pulumi.Input[Union[_builtins.str, OperationalStateType]]] = ..., storage_target_name: Optional[pulumi.Input[_builtins.str]] = ..., target_type: Optional[pulumi.Input[Union[_builtins.str, StorageTargetType]]] = ..., unknown: Optional[pulumi.Input[Union[UnknownTargetArgs, UnknownTargetArgsDict]]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: StorageTargetArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> StorageTarget:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="allocationPercentage")
+    def allocation_percentage(self) -> pulumi.Output[_builtins.int]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="blobNfs")
+    def blob_nfs(self) -> pulumi.Output[Optional[outputs.BlobNfsTargetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def clfs(self) -> pulumi.Output[Optional[outputs.ClfsTargetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def junctions(self) -> pulumi.Output[Optional[Sequence[outputs.NamespaceJunctionResponse]]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def nfs3(self) -> pulumi.Output[Optional[outputs.Nfs3TargetResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def state(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> pulumi.Output[outputs.SystemDataResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="targetType")
+    def target_type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def unknown(self) -> pulumi.Output[Optional[outputs.UnknownTargetResponse]]:
+        
+        ...
+    
+
+

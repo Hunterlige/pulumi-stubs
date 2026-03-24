@@ -1,0 +1,47 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = [..., ..., ..., ...]
+@pulumi.output_type
+class ListPolicyDefinitionVersionAllAtManagementGroupResult:
+    
+    def __init__(__self__, next_link=..., value=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="nextLink")
+    def next_link(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def value(self) -> Optional[Sequence[outputs.PolicyDefinitionVersionResponse]]:
+        
+        ...
+    
+
+
+class AwaitableListPolicyDefinitionVersionAllAtManagementGroupResult(ListPolicyDefinitionVersionAllAtManagementGroupResult):
+    def __await__(self): # -> Generator[Never, Any, ListPolicyDefinitionVersionAllAtManagementGroupResult]:
+        ...
+    
+
+
+def list_policy_definition_version_all_at_management_group(management_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableListPolicyDefinitionVersionAllAtManagementGroupResult:
+    
+    ...
+
+def list_policy_definition_version_all_at_management_group_output(management_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[ListPolicyDefinitionVersionAllAtManagementGroupResult]:
+    
+    ...
+

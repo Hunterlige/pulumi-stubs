@@ -1,0 +1,172 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetAgentPoolResult', 'AwaitableGetAgentPoolResult', 'get_agent_pool', 'get_agent_pool_output']
+@pulumi.output_type
+class GetAgentPoolResult:
+    def __init__(__self__, administrator_configuration=..., agent_options=..., attached_network_configuration=..., availability_zones=..., azure_api_version=..., count=..., detailed_status=..., detailed_status_message=..., etag=..., extended_location=..., id=..., kubernetes_version=..., labels=..., location=..., mode=..., name=..., provisioning_state=..., system_data=..., tags=..., taints=..., type=..., upgrade_settings=..., vm_sku_name=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="administratorConfiguration")
+    def administrator_configuration(self) -> Optional[outputs.AdministratorConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="agentOptions")
+    def agent_options(self) -> Optional[outputs.AgentOptionsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="attachedNetworkConfiguration")
+    def attached_network_configuration(self) -> Optional[outputs.AttachedNetworkConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="availabilityZones")
+    def availability_zones(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def count(self) -> _builtins.float:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatus")
+    def detailed_status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="detailedStatusMessage")
+    def detailed_status_message(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="extendedLocation")
+    def extended_location(self) -> Optional[outputs.ExtendedLocationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="kubernetesVersion")
+    def kubernetes_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def labels(self) -> Optional[Sequence[outputs.KubernetesLabelResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def mode(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def taints(self) -> Optional[Sequence[outputs.KubernetesLabelResponse]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="upgradeSettings")
+    def upgrade_settings(self) -> Optional[outputs.AgentPoolUpgradeSettingsResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="vmSkuName")
+    def vm_sku_name(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetAgentPoolResult(GetAgentPoolResult):
+    def __await__(self): # -> Generator[Never, Any, GetAgentPoolResult]:
+        ...
+    
+
+
+def get_agent_pool(agent_pool_name: Optional[_builtins.str] = ..., kubernetes_cluster_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetAgentPoolResult:
+    
+    ...
+
+def get_agent_pool_output(agent_pool_name: Optional[pulumi.Input[_builtins.str]] = ..., kubernetes_cluster_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetAgentPoolResult]:
+    
+    ...
+

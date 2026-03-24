@@ -1,0 +1,101 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetSecurityPartnerProviderResult', 'AwaitableGetSecurityPartnerProviderResult', 'get_security_partner_provider', 'get_security_partner_provider_output']
+@pulumi.output_type
+class GetSecurityPartnerProviderResult:
+    
+    def __init__(__self__, azure_api_version=..., connection_status=..., etag=..., id=..., location=..., name=..., provisioning_state=..., security_provider_name=..., tags=..., type=..., virtual_hub=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="connectionStatus")
+    def connection_status(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def etag(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="securityProviderName")
+    def security_provider_name(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="virtualHub")
+    def virtual_hub(self) -> Optional[outputs.SubResourceResponse]:
+        
+        ...
+    
+
+
+class AwaitableGetSecurityPartnerProviderResult(GetSecurityPartnerProviderResult):
+    def __await__(self): # -> Generator[Never, Any, GetSecurityPartnerProviderResult]:
+        ...
+    
+
+
+def get_security_partner_provider(resource_group_name: Optional[_builtins.str] = ..., security_partner_provider_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetSecurityPartnerProviderResult:
+    
+    ...
+
+def get_security_partner_provider_output(resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., security_partner_provider_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetSecurityPartnerProviderResult]:
+    
+    ...
+

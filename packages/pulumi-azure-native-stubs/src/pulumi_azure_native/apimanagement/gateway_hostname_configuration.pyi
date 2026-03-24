@@ -1,0 +1,196 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Optional, overload
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GatewayHostnameConfigurationArgs', 'GatewayHostnameConfiguration']
+@pulumi.input_type
+class GatewayHostnameConfigurationArgs:
+    def __init__(__self__, *, gateway_id: pulumi.Input[_builtins.str], resource_group_name: pulumi.Input[_builtins.str], service_name: pulumi.Input[_builtins.str], certificate_id: Optional[pulumi.Input[_builtins.str]] = ..., hc_id: Optional[pulumi.Input[_builtins.str]] = ..., hostname: Optional[pulumi.Input[_builtins.str]] = ..., http2_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., negotiate_client_certificate: Optional[pulumi.Input[_builtins.bool]] = ..., tls10_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., tls11_enabled: Optional[pulumi.Input[_builtins.bool]] = ...) -> None:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="gatewayId")
+    def gateway_id(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @gateway_id.setter
+    def gateway_id(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="resourceGroupName")
+    def resource_group_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @resource_group_name.setter
+    def resource_group_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="serviceName")
+    def service_name(self) -> pulumi.Input[_builtins.str]:
+        
+        ...
+    
+    @service_name.setter
+    def service_name(self, value: pulumi.Input[_builtins.str]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certificateId")
+    def certificate_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @certificate_id.setter
+    def certificate_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="hcId")
+    def hc_id(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @hc_id.setter
+    def hc_id(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> Optional[pulumi.Input[_builtins.str]]:
+        
+        ...
+    
+    @hostname.setter
+    def hostname(self, value: Optional[pulumi.Input[_builtins.str]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="http2Enabled")
+    def http2_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @http2_enabled.setter
+    def http2_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negotiateClientCertificate")
+    def negotiate_client_certificate(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @negotiate_client_certificate.setter
+    def negotiate_client_certificate(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tls10Enabled")
+    def tls10_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @tls10_enabled.setter
+    def tls10_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tls11Enabled")
+    def tls11_enabled(self) -> Optional[pulumi.Input[_builtins.bool]]:
+        
+        ...
+    
+    @tls11_enabled.setter
+    def tls11_enabled(self, value: Optional[pulumi.Input[_builtins.bool]]): # -> None:
+        ...
+    
+
+
+@pulumi.type_token(...)
+class GatewayHostnameConfiguration(pulumi.CustomResource):
+    @overload
+    def __init__(__self__, resource_name: str, opts: Optional[pulumi.ResourceOptions] = ..., certificate_id: Optional[pulumi.Input[_builtins.str]] = ..., gateway_id: Optional[pulumi.Input[_builtins.str]] = ..., hc_id: Optional[pulumi.Input[_builtins.str]] = ..., hostname: Optional[pulumi.Input[_builtins.str]] = ..., http2_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., negotiate_client_certificate: Optional[pulumi.Input[_builtins.bool]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., service_name: Optional[pulumi.Input[_builtins.str]] = ..., tls10_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., tls11_enabled: Optional[pulumi.Input[_builtins.bool]] = ..., __props__=...) -> None:
+        
+        ...
+    
+    @overload
+    def __init__(__self__, resource_name: str, args: GatewayHostnameConfigurationArgs, opts: Optional[pulumi.ResourceOptions] = ...) -> None:
+        
+        ...
+    
+    def __init__(__self__, resource_name: str, *args, **kwargs) -> None:
+        ...
+    
+    @staticmethod
+    def get(resource_name: str, id: pulumi.Input[str], opts: Optional[pulumi.ResourceOptions] = ...) -> GatewayHostnameConfiguration:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="certificateId")
+    def certificate_id(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def hostname(self) -> pulumi.Output[Optional[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="http2Enabled")
+    def http2_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="negotiateClientCertificate")
+    def negotiate_client_certificate(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tls10Enabled")
+    def tls10_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="tls11Enabled")
+    def tls11_enabled(self) -> pulumi.Output[Optional[_builtins.bool]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> pulumi.Output[_builtins.str]:
+        
+        ...
+    
+
+

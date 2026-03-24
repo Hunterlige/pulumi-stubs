@@ -1,0 +1,107 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Sequence, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetFailoverGroupResult', 'AwaitableGetFailoverGroupResult', 'get_failover_group', 'get_failover_group_output']
+@pulumi.output_type
+class GetFailoverGroupResult:
+    
+    def __init__(__self__, azure_api_version=..., databases=..., id=..., location=..., name=..., partner_servers=..., read_only_endpoint=..., read_write_endpoint=..., replication_role=..., replication_state=..., tags=..., type=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def databases(self) -> Optional[Sequence[_builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="partnerServers")
+    def partner_servers(self) -> Sequence[outputs.PartnerInfoResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readOnlyEndpoint")
+    def read_only_endpoint(self) -> Optional[outputs.FailoverGroupReadOnlyEndpointResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="readWriteEndpoint")
+    def read_write_endpoint(self) -> outputs.FailoverGroupReadWriteEndpointResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationRole")
+    def replication_role(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="replicationState")
+    def replication_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+
+
+class AwaitableGetFailoverGroupResult(GetFailoverGroupResult):
+    def __await__(self): # -> Generator[Never, Any, GetFailoverGroupResult]:
+        ...
+    
+
+
+def get_failover_group(failover_group_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., server_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetFailoverGroupResult:
+    
+    ...
+
+def get_failover_group_output(failover_group_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., server_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetFailoverGroupResult]:
+    
+    ...
+

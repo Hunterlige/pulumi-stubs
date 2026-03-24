@@ -1,0 +1,46 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Any, Optional, Union
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetIntegrationRuntimeStatusResult', 'AwaitableGetIntegrationRuntimeStatusResult', 'get_integration_runtime_status', 'get_integration_runtime_status_output']
+@pulumi.output_type
+class GetIntegrationRuntimeStatusResult:
+    
+    def __init__(__self__, name=..., properties=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def properties(self) -> Any:
+        
+        ...
+    
+
+
+class AwaitableGetIntegrationRuntimeStatusResult(GetIntegrationRuntimeStatusResult):
+    def __await__(self): # -> Generator[Never, Any, GetIntegrationRuntimeStatusResult]:
+        ...
+    
+
+
+def get_integration_runtime_status(factory_name: Optional[_builtins.str] = ..., integration_runtime_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetIntegrationRuntimeStatusResult:
+    
+    ...
+
+def get_integration_runtime_status_output(factory_name: Optional[pulumi.Input[_builtins.str]] = ..., integration_runtime_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetIntegrationRuntimeStatusResult]:
+    
+    ...
+

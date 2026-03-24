@@ -1,0 +1,149 @@
+
+
+import builtins as _builtins
+import sys
+import pulumi
+from typing import Mapping, Optional, Union
+from . import outputs
+
+if sys.version_info >= (3, 11):
+    ...
+else:
+    ...
+__all__ = ['GetMonitorResult', 'AwaitableGetMonitorResult', 'get_monitor', 'get_monitor_output']
+@pulumi.output_type
+class GetMonitorResult:
+    
+    def __init__(__self__, app_location=..., app_service_plan_configuration=..., azure_api_version=..., errors=..., id=..., identity=..., location=..., log_analytics_workspace_arm_id=..., managed_resource_group_configuration=..., monitor_subnet=..., msi_arm_id=..., name=..., provisioning_state=..., routing_preference=..., storage_account_arm_id=..., system_data=..., tags=..., type=..., zone_redundancy_preference=...) -> None:
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appLocation")
+    def app_location(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="appServicePlanConfiguration")
+    def app_service_plan_configuration(self) -> Optional[outputs.AppServicePlanConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="azureApiVersion")
+    def azure_api_version(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def errors(self) -> outputs.ErrorDetailResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def identity(self) -> Optional[outputs.ManagedServiceIdentityResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def location(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="logAnalyticsWorkspaceArmId")
+    def log_analytics_workspace_arm_id(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="managedResourceGroupConfiguration")
+    def managed_resource_group_configuration(self) -> Optional[outputs.ManagedResourceGroupConfigurationResponse]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="monitorSubnet")
+    def monitor_subnet(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="msiArmId")
+    def msi_arm_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def name(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="provisioningState")
+    def provisioning_state(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="routingPreference")
+    def routing_preference(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="storageAccountArmId")
+    def storage_account_arm_id(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="systemData")
+    def system_data(self) -> outputs.SystemDataResponse:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def tags(self) -> Optional[Mapping[str, _builtins.str]]:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter
+    def type(self) -> _builtins.str:
+        
+        ...
+    
+    @_builtins.property
+    @pulumi.getter(name="zoneRedundancyPreference")
+    def zone_redundancy_preference(self) -> Optional[_builtins.str]:
+        
+        ...
+    
+
+
+class AwaitableGetMonitorResult(GetMonitorResult):
+    def __await__(self): # -> Generator[Never, Any, GetMonitorResult]:
+        ...
+    
+
+
+def get_monitor(monitor_name: Optional[_builtins.str] = ..., resource_group_name: Optional[_builtins.str] = ..., opts: Optional[pulumi.InvokeOptions] = ...) -> AwaitableGetMonitorResult:
+    
+    ...
+
+def get_monitor_output(monitor_name: Optional[pulumi.Input[_builtins.str]] = ..., resource_group_name: Optional[pulumi.Input[_builtins.str]] = ..., opts: Optional[Union[pulumi.InvokeOptions, pulumi.InvokeOutputOptions]] = ...) -> pulumi.Output[GetMonitorResult]:
+    
+    ...
+
