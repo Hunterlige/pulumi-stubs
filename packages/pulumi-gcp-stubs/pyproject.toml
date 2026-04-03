@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-gcp-stubs"
-version = "0.1.0"
+version = "9.16.0.20260403"
 description = "Type stubs for pulumi-gcp Python SDK"
 license = "MIT"
 classifiers = [
@@ -17,7 +17,9 @@ classifiers = [
 ]
 readme = "README.md"
 requires-python = ">=3.9,<4"
-dependencies = []
+dependencies = [
+  "pulumi-gcp==9.16.0",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.9,<0.11.0"]
@@ -26,3 +28,9 @@ build-backend = "uv_build"
 [tool.uv.build-backend]
 module-name = "pulumi_gcp"
 module-root = "src"
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
