@@ -1,0 +1,36 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: "Package to publish"
+        required: true
+        type: choice
+        options:
+          - pulumi-aws-stubs
+          - pulumi-gcp-stubs
+          - pulumi-azure-native-stubs
+        
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          activate-environment: true
+          python-version: '3.14'
+          enable-cache: true
+      
+      - name: Build package
+        run: cd packages/${{ inputs.package }} && uv build
+
+      - name: Publish package
+        run: cd packages/${{ inputs.package }} && uv publish --repository testpypi

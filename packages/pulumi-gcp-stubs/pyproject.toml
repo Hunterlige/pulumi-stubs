@@ -18,7 +18,7 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.9,<4"
 dependencies = [
-  "pulumi-gcp==9.16.0",
+  "pulumi-gcp==9",
 ]
 
 [build-system]
