@@ -31,7 +31,6 @@ class FolderFeedConditionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FolderFeedConditionArgs:
@@ -68,7 +67,6 @@ class FolderFeedFeedOutputConfigArgsDict(TypedDict):
     pubsub_destination: pulumi.Input[
         FolderFeedFeedOutputConfigPubsubDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FolderFeedFeedOutputConfigArgs:
@@ -91,7 +89,6 @@ class FolderFeedFeedOutputConfigArgs:
 
 class FolderFeedFeedOutputConfigPubsubDestinationArgsDict(TypedDict):
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FolderFeedFeedOutputConfigPubsubDestinationArgs:
@@ -107,7 +104,6 @@ class OrganizationFeedConditionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationFeedConditionArgs:
@@ -144,7 +140,6 @@ class OrganizationFeedFeedOutputConfigArgsDict(TypedDict):
     pubsub_destination: pulumi.Input[
         OrganizationFeedFeedOutputConfigPubsubDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationFeedFeedOutputConfigArgs:
@@ -167,7 +162,6 @@ class OrganizationFeedFeedOutputConfigArgs:
 
 class OrganizationFeedFeedOutputConfigPubsubDestinationArgsDict(TypedDict):
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OrganizationFeedFeedOutputConfigPubsubDestinationArgs:
@@ -183,7 +177,6 @@ class ProjectFeedConditionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectFeedConditionArgs:
@@ -220,7 +213,6 @@ class ProjectFeedFeedOutputConfigArgsDict(TypedDict):
     pubsub_destination: pulumi.Input[
         ProjectFeedFeedOutputConfigPubsubDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ProjectFeedFeedOutputConfigArgs:
@@ -243,7 +235,6 @@ class ProjectFeedFeedOutputConfigArgs:
 
 class ProjectFeedFeedOutputConfigPubsubDestinationArgsDict(TypedDict):
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectFeedFeedOutputConfigPubsubDestinationArgs:

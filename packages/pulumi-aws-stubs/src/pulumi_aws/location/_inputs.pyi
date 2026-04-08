@@ -14,7 +14,6 @@ __all__ = [
 
 class MapConfigurationArgsDict(TypedDict):
     style: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MapConfigurationArgs:
@@ -27,7 +26,6 @@ class MapConfigurationArgs:
 
 class PlaceIndexDataSourceConfigurationArgsDict(TypedDict):
     intended_use: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlaceIndexDataSourceConfigurationArgs:

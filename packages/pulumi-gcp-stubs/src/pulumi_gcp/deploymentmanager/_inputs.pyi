@@ -19,7 +19,6 @@ __all__ = [
 class DeploymentLabelArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentLabelArgs:
@@ -45,7 +44,6 @@ class DeploymentTargetArgsDict(TypedDict):
     imports: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DeploymentTargetImportArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentTargetArgs:
@@ -77,7 +75,6 @@ class DeploymentTargetArgs:
 
 class DeploymentTargetConfigArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DeploymentTargetConfigArgs:
@@ -91,7 +88,6 @@ class DeploymentTargetConfigArgs:
 class DeploymentTargetImportArgsDict(TypedDict):
     content: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentTargetImportArgs:

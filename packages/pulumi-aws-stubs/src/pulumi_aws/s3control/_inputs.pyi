@@ -86,7 +86,6 @@ __all__ = [
 
 class AccessGrantAccessGrantsLocationConfigurationArgsDict(TypedDict):
     s3_sub_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessGrantAccessGrantsLocationConfigurationArgs:
@@ -102,7 +101,6 @@ class AccessGrantAccessGrantsLocationConfigurationArgs:
 class AccessGrantGranteeArgsDict(TypedDict):
     grantee_identifier: pulumi.Input[_builtins.str]
     grantee_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AccessGrantGranteeArgs:
@@ -135,7 +133,6 @@ class BucketLifecycleConfigurationRuleArgsDict(TypedDict):
     ]
     filter: NotRequired[pulumi.Input[BucketLifecycleConfigurationRuleFilterArgsDict]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleArgs:
@@ -204,7 +201,6 @@ class BucketLifecycleConfigurationRuleArgs:
 
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgsDict(TypedDict):
     days_after_initiation: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs:
@@ -221,7 +217,6 @@ class BucketLifecycleConfigurationRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
     expired_object_delete_marker: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleExpirationArgs:
@@ -255,7 +250,6 @@ class BucketLifecycleConfigurationRuleExpirationArgs:
 class BucketLifecycleConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleFilterArgs:
@@ -283,7 +277,6 @@ class BucketLifecycleConfigurationRuleFilterArgs:
 class DirectoryBucketAccessPointScopeScopeArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DirectoryBucketAccessPointScopeScopeArgs:
@@ -322,7 +315,6 @@ class MultiRegionAccessPointDetailsArgsDict(TypedDict):
     public_access_block: NotRequired[
         pulumi.Input[MultiRegionAccessPointDetailsPublicAccessBlockArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class MultiRegionAccessPointDetailsArgs:
@@ -374,7 +366,6 @@ class MultiRegionAccessPointDetailsPublicAccessBlockArgsDict(TypedDict):
     block_public_policy: NotRequired[pulumi.Input[_builtins.bool]]
     ignore_public_acls: NotRequired[pulumi.Input[_builtins.bool]]
     restrict_public_buckets: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MultiRegionAccessPointDetailsPublicAccessBlockArgs:
@@ -413,7 +404,6 @@ class MultiRegionAccessPointDetailsRegionArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     bucket_account_id: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultiRegionAccessPointDetailsRegionArgs:
@@ -443,7 +433,6 @@ class MultiRegionAccessPointDetailsRegionArgs:
 class MultiRegionAccessPointPolicyDetailsArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     policy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MultiRegionAccessPointPolicyDetailsArgs:
@@ -475,7 +464,6 @@ class ObjectLambdaAccessPointConfigurationArgsDict(TypedDict):
     ]
     allowed_features: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     cloud_watch_metrics_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ObjectLambdaAccessPointConfigurationArgs:
@@ -546,7 +534,6 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationArgsDict(
     content_transformation: pulumi.Input[
         ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationArgs:
@@ -584,7 +571,6 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTran
     aws_lambda: pulumi.Input[
         ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationArgs:
@@ -615,7 +601,6 @@ class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTran
 ):
     function_arn: pulumi.Input[_builtins.str]
     function_payload: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaArgs:
@@ -653,7 +638,6 @@ class StorageLensConfigurationStorageLensConfigurationArgsDict(TypedDict):
     include: NotRequired[
         pulumi.Input[StorageLensConfigurationStorageLensConfigurationIncludeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationArgs:
@@ -777,7 +761,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelArgsDict(Typed
             StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelArgs:
@@ -899,7 +882,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetric
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsArgs:
@@ -916,7 +898,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOp
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsArgs:
@@ -933,7 +914,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataPr
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsArgs:
@@ -974,7 +954,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArg
             StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelArgs:
@@ -1102,7 +1081,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAct
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsArgs:
@@ -1119,7 +1097,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdv
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsArgs:
@@ -1136,7 +1113,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdv
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsArgs:
@@ -1153,7 +1129,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDet
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsArgs:
@@ -1172,7 +1147,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
     storage_metrics: pulumi.Input[
         StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelArgs:
@@ -1207,7 +1181,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
             StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsArgs:
@@ -1251,7 +1224,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPre
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
     max_depth: NotRequired[pulumi.Input[_builtins.int]]
     min_storage_bytes_percentage: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaArgs:
@@ -1286,7 +1258,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatus
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsArgs:
@@ -1301,7 +1272,6 @@ class StorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatus
 
 class StorageLensConfigurationStorageLensConfigurationAwsOrgArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationAwsOrgArgs:
@@ -1323,7 +1293,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportArgsDict(TypedDi
             StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationDataExportArgs:
@@ -1382,7 +1351,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetric
     TypedDict
 ):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsArgs:
@@ -1406,7 +1374,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
         ]
     ]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationArgs:
@@ -1485,7 +1452,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionArgs:
@@ -1556,7 +1522,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
     TypedDict
 ):
     key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsArgs:
@@ -1578,7 +1543,6 @@ class StorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinat
 class StorageLensConfigurationStorageLensConfigurationExcludeArgsDict(TypedDict):
     buckets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationExcludeArgs:
@@ -1610,7 +1574,6 @@ class StorageLensConfigurationStorageLensConfigurationExcludeArgs:
 class StorageLensConfigurationStorageLensConfigurationIncludeArgsDict(TypedDict):
     buckets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class StorageLensConfigurationStorageLensConfigurationIncludeArgs:

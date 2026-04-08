@@ -29,7 +29,6 @@ class InstanceMaintenancePolicyArgsDict(TypedDict):
     create_time: NotRequired[pulumi.Input[_builtins.str]]
     description: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyArgs:
@@ -79,7 +78,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgsDict(TypedDict):
     start_time: pulumi.Input[
         InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgs:
@@ -122,7 +120,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict(TypedDic
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgs:
@@ -159,7 +156,6 @@ class InstanceMaintenanceScheduleArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     schedule_deadline_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceScheduleArgs:
@@ -192,7 +188,6 @@ class InstanceMemcacheNodeArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMemcacheNodeArgs:
@@ -234,7 +229,6 @@ class InstanceMemcacheNodeArgs:
 class InstanceMemcacheParametersArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     params: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceMemcacheParametersArgs:
@@ -262,7 +256,6 @@ class InstanceMemcacheParametersArgs:
 class InstanceNodeConfigArgsDict(TypedDict):
     cpu_count: pulumi.Input[_builtins.int]
     memory_size_mb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InstanceNodeConfigArgs:

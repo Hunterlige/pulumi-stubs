@@ -43,7 +43,6 @@ class QueryLoggingConfigurationDestinationArgsDict(TypedDict):
         QueryLoggingConfigurationDestinationCloudwatchLogsArgsDict
     ]
     filters: pulumi.Input[QueryLoggingConfigurationDestinationFiltersArgsDict]
-    ...
 
 @pulumi.input_type
 class QueryLoggingConfigurationDestinationArgs:
@@ -77,7 +76,6 @@ class QueryLoggingConfigurationDestinationArgs:
 
 class QueryLoggingConfigurationDestinationCloudwatchLogsArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QueryLoggingConfigurationDestinationCloudwatchLogsArgs:
@@ -90,7 +88,6 @@ class QueryLoggingConfigurationDestinationCloudwatchLogsArgs:
 
 class QueryLoggingConfigurationDestinationFiltersArgsDict(TypedDict):
     qsp_threshold: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class QueryLoggingConfigurationDestinationFiltersArgs:
@@ -105,7 +102,6 @@ class QueryLoggingConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueryLoggingConfigurationTimeoutsArgs:
@@ -136,7 +132,6 @@ class ResourcePolicyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourcePolicyTimeoutsArgs:
@@ -165,7 +160,6 @@ class ResourcePolicyTimeoutsArgs:
 
 class ScraperDestinationArgsDict(TypedDict):
     amp: NotRequired[pulumi.Input[ScraperDestinationAmpArgsDict]]
-    ...
 
 @pulumi.input_type
 class ScraperDestinationArgs:
@@ -180,7 +174,6 @@ class ScraperDestinationArgs:
 
 class ScraperDestinationAmpArgsDict(TypedDict):
     workspace_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScraperDestinationAmpArgs:
@@ -194,7 +187,6 @@ class ScraperDestinationAmpArgs:
 class ScraperRoleConfigurationArgsDict(TypedDict):
     source_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     target_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScraperRoleConfigurationArgs:
@@ -217,7 +209,6 @@ class ScraperRoleConfigurationArgs:
 
 class ScraperSourceArgsDict(TypedDict):
     eks: pulumi.Input[ScraperSourceEksArgsDict]
-    ...
 
 @pulumi.input_type
 class ScraperSourceArgs:
@@ -232,7 +223,6 @@ class ScraperSourceEksArgsDict(TypedDict):
     cluster_arn: pulumi.Input[_builtins.str]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ScraperSourceEksArgs:
@@ -271,7 +261,6 @@ class ScraperTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScraperTimeoutsArgs:
@@ -301,7 +290,6 @@ class ScraperTimeoutsArgs:
 class WorkspaceConfigurationLimitsPerLabelSetArgsDict(TypedDict):
     label_set: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     limits: pulumi.Input[WorkspaceConfigurationLimitsPerLabelSetLimitsArgsDict]
-    ...
 
 @pulumi.input_type
 class WorkspaceConfigurationLimitsPerLabelSetArgs:
@@ -330,7 +318,6 @@ class WorkspaceConfigurationLimitsPerLabelSetArgs:
 
 class WorkspaceConfigurationLimitsPerLabelSetLimitsArgsDict(TypedDict):
     max_series: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class WorkspaceConfigurationLimitsPerLabelSetLimitsArgs:
@@ -344,7 +331,6 @@ class WorkspaceConfigurationLimitsPerLabelSetLimitsArgs:
 class WorkspaceConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkspaceConfigurationTimeoutsArgs:
@@ -367,7 +353,6 @@ class WorkspaceConfigurationTimeoutsArgs:
 
 class WorkspaceLoggingConfigurationArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkspaceLoggingConfigurationArgs:

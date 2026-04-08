@@ -114,7 +114,6 @@ class IdentityPoolCognitoIdentityProviderArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     provider_name: NotRequired[pulumi.Input[_builtins.str]]
     server_side_token_check: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class IdentityPoolCognitoIdentityProviderArgs:
@@ -154,7 +153,6 @@ class IdentityPoolRoleAttachmentRoleMappingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdentityPoolRoleAttachmentRoleMappingArgs:
@@ -215,7 +213,6 @@ class IdentityPoolRoleAttachmentRoleMappingMappingRuleArgsDict(TypedDict):
     match_type: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdentityPoolRoleAttachmentRoleMappingMappingRuleArgs:
@@ -264,7 +261,6 @@ class LogDeliveryConfigurationLogConfigurationArgsDict(TypedDict):
     s3_configuration: NotRequired[
         pulumi.Input[LogDeliveryConfigurationLogConfigurationS3ConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LogDeliveryConfigurationLogConfigurationArgs:
@@ -350,7 +346,6 @@ class LogDeliveryConfigurationLogConfigurationCloudWatchLogsConfigurationArgsDic
     TypedDict
 ):
     log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogDeliveryConfigurationLogConfigurationCloudWatchLogsConfigurationArgs:
@@ -365,7 +360,6 @@ class LogDeliveryConfigurationLogConfigurationCloudWatchLogsConfigurationArgs:
 
 class LogDeliveryConfigurationLogConfigurationFirehoseConfigurationArgsDict(TypedDict):
     stream_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogDeliveryConfigurationLogConfigurationFirehoseConfigurationArgs:
@@ -380,7 +374,6 @@ class LogDeliveryConfigurationLogConfigurationFirehoseConfigurationArgs:
 
 class LogDeliveryConfigurationLogConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogDeliveryConfigurationLogConfigurationS3ConfigurationArgs:
@@ -399,7 +392,6 @@ class ManagedLoginBrandingAssetArgsDict(TypedDict):
     extension: pulumi.Input[_builtins.str]
     bytes: NotRequired[pulumi.Input[_builtins.str]]
     resource_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedLoginBrandingAssetArgs:
@@ -444,7 +436,6 @@ class ManagedUserPoolClientAnalyticsConfigurationArgsDict(TypedDict):
     external_id: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     user_data_shared: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ManagedUserPoolClientAnalyticsConfigurationArgs:
@@ -486,7 +477,6 @@ class ManagedUserPoolClientAnalyticsConfigurationArgs:
 class ManagedUserPoolClientRefreshTokenRotationArgsDict(TypedDict):
     feature: pulumi.Input[_builtins.str]
     retry_grace_period_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ManagedUserPoolClientRefreshTokenRotationArgs:
@@ -513,7 +503,6 @@ class ManagedUserPoolClientTokenValidityUnitsArgsDict(TypedDict):
     access_token: NotRequired[pulumi.Input[_builtins.str]]
     id_token: NotRequired[pulumi.Input[_builtins.str]]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedUserPoolClientTokenValidityUnitsArgs:
@@ -543,7 +532,6 @@ class ManagedUserPoolClientTokenValidityUnitsArgs:
 class ResourceServerScopeArgsDict(TypedDict):
     scope_description: pulumi.Input[_builtins.str]
     scope_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResourceServerScopeArgs:
@@ -573,7 +561,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationArgsDict(TypedDict):
             RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationArgs:
@@ -636,7 +623,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationActionsArgsDict(TypedDict
             RiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationActionsArgs:
@@ -719,7 +705,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionArgsDict
 ):
     event_action: pulumi.Input[_builtins.str]
     notify: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionArgs:
@@ -745,7 +730,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionArgsDict(
 ):
     event_action: pulumi.Input[_builtins.str]
     notify: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionArgs:
@@ -771,7 +755,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionArgsDi
 ):
     event_action: pulumi.Input[_builtins.str]
     notify: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionArgs:
@@ -813,7 +796,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationArgsDi
         ]
     ]
     reply_to: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationArgs:
@@ -915,7 +897,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockE
     html_body: pulumi.Input[_builtins.str]
     subject: pulumi.Input[_builtins.str]
     text_body: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailArgs:
@@ -948,7 +929,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEma
     html_body: pulumi.Input[_builtins.str]
     subject: pulumi.Input[_builtins.str]
     text_body: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailArgs:
@@ -981,7 +961,6 @@ class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActi
     html_body: pulumi.Input[_builtins.str]
     subject: pulumi.Input[_builtins.str]
     text_body: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailArgs:
@@ -1013,7 +992,6 @@ class RiskConfigurationCompromisedCredentialsRiskConfigurationArgsDict(TypedDict
         RiskConfigurationCompromisedCredentialsRiskConfigurationActionsArgsDict
     ]
     event_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationCompromisedCredentialsRiskConfigurationArgs:
@@ -1055,7 +1033,6 @@ class RiskConfigurationCompromisedCredentialsRiskConfigurationActionsArgsDict(
     TypedDict
 ):
     event_action: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationCompromisedCredentialsRiskConfigurationActionsArgs:
@@ -1073,7 +1050,6 @@ class RiskConfigurationRiskExceptionConfigurationArgsDict(TypedDict):
     skipped_ip_range_lists: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class RiskConfigurationRiskExceptionConfigurationArgs:
@@ -1114,7 +1090,6 @@ class UserPoolAccountRecoverySettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolAccountRecoverySettingArgs:
@@ -1153,7 +1128,6 @@ class UserPoolAccountRecoverySettingArgs:
 class UserPoolAccountRecoverySettingRecoveryMechanismArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     priority: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class UserPoolAccountRecoverySettingRecoveryMechanismArgs:
@@ -1179,7 +1153,6 @@ class UserPoolAdminCreateUserConfigArgsDict(TypedDict):
     invite_message_template: NotRequired[
         pulumi.Input[UserPoolAdminCreateUserConfigInviteMessageTemplateArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolAdminCreateUserConfigArgs:
@@ -1219,7 +1192,6 @@ class UserPoolAdminCreateUserConfigInviteMessageTemplateArgsDict(TypedDict):
     email_message: NotRequired[pulumi.Input[_builtins.str]]
     email_subject: NotRequired[pulumi.Input[_builtins.str]]
     sms_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolAdminCreateUserConfigInviteMessageTemplateArgs:
@@ -1252,7 +1224,6 @@ class UserPoolClientAnalyticsConfigurationArgsDict(TypedDict):
     external_id: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     user_data_shared: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UserPoolClientAnalyticsConfigurationArgs:
@@ -1294,7 +1265,6 @@ class UserPoolClientAnalyticsConfigurationArgs:
 class UserPoolClientRefreshTokenRotationArgsDict(TypedDict):
     feature: pulumi.Input[_builtins.str]
     retry_grace_period_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserPoolClientRefreshTokenRotationArgs:
@@ -1321,7 +1291,6 @@ class UserPoolClientTokenValidityUnitsArgsDict(TypedDict):
     access_token: NotRequired[pulumi.Input[_builtins.str]]
     id_token: NotRequired[pulumi.Input[_builtins.str]]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolClientTokenValidityUnitsArgs:
@@ -1351,7 +1320,6 @@ class UserPoolClientTokenValidityUnitsArgs:
 class UserPoolDeviceConfigurationArgsDict(TypedDict):
     challenge_required_on_new_device: NotRequired[pulumi.Input[_builtins.bool]]
     device_only_remembered_on_user_prompt: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UserPoolDeviceConfigurationArgs:
@@ -1388,7 +1356,6 @@ class UserPoolEmailConfigurationArgsDict(TypedDict):
     from_email_address: NotRequired[pulumi.Input[_builtins.str]]
     reply_to_email_address: NotRequired[pulumi.Input[_builtins.str]]
     source_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolEmailConfigurationArgs:
@@ -1430,7 +1397,6 @@ class UserPoolEmailConfigurationArgs:
 class UserPoolEmailMfaConfigurationArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     subject: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolEmailMfaConfigurationArgs:
@@ -1472,7 +1438,6 @@ class UserPoolLambdaConfigArgsDict(TypedDict):
     ]
     user_migration: NotRequired[pulumi.Input[_builtins.str]]
     verify_auth_challenge_response: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolLambdaConfigArgs:
@@ -1591,7 +1556,6 @@ class UserPoolLambdaConfigArgs:
 class UserPoolLambdaConfigCustomEmailSenderArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
     lambda_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserPoolLambdaConfigCustomEmailSenderArgs:
@@ -1615,7 +1579,6 @@ class UserPoolLambdaConfigCustomEmailSenderArgs:
 class UserPoolLambdaConfigCustomSmsSenderArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
     lambda_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserPoolLambdaConfigCustomSmsSenderArgs:
@@ -1639,7 +1602,6 @@ class UserPoolLambdaConfigCustomSmsSenderArgs:
 class UserPoolLambdaConfigPreTokenGenerationConfigArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
     lambda_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserPoolLambdaConfigPreTokenGenerationConfigArgs:
@@ -1668,7 +1630,6 @@ class UserPoolPasswordPolicyArgsDict(TypedDict):
     require_symbols: NotRequired[pulumi.Input[_builtins.bool]]
     require_uppercase: NotRequired[pulumi.Input[_builtins.bool]]
     temporary_password_validity_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserPoolPasswordPolicyArgs:
@@ -1735,7 +1696,6 @@ class UserPoolSchemaArgsDict(TypedDict):
     string_attribute_constraints: NotRequired[
         pulumi.Input[UserPoolSchemaStringAttributeConstraintsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolSchemaArgs:
@@ -1805,7 +1765,6 @@ class UserPoolSchemaArgs:
 class UserPoolSchemaNumberAttributeConstraintsArgsDict(TypedDict):
     max_value: NotRequired[pulumi.Input[_builtins.str]]
     min_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolSchemaNumberAttributeConstraintsArgs:
@@ -1829,7 +1788,6 @@ class UserPoolSchemaNumberAttributeConstraintsArgs:
 class UserPoolSchemaStringAttributeConstraintsArgsDict(TypedDict):
     max_length: NotRequired[pulumi.Input[_builtins.str]]
     min_length: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolSchemaStringAttributeConstraintsArgs:
@@ -1854,7 +1812,6 @@ class UserPoolSignInPolicyArgsDict(TypedDict):
     allowed_first_auth_factors: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolSignInPolicyArgs:
@@ -1879,7 +1836,6 @@ class UserPoolSmsConfigurationArgsDict(TypedDict):
     external_id: pulumi.Input[_builtins.str]
     sns_caller_arn: pulumi.Input[_builtins.str]
     sns_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolSmsConfigurationArgs:
@@ -1908,7 +1864,6 @@ class UserPoolSmsConfigurationArgs:
 
 class UserPoolSoftwareTokenMfaConfigurationArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class UserPoolSoftwareTokenMfaConfigurationArgs:
@@ -1923,7 +1878,6 @@ class UserPoolUserAttributeUpdateSettingsArgsDict(TypedDict):
     attributes_require_verification_before_updates: pulumi.Input[
         Sequence[pulumi.Input[_builtins.str]]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolUserAttributeUpdateSettingsArgs:
@@ -1949,7 +1903,6 @@ class UserPoolUserPoolAddOnsArgsDict(TypedDict):
     advanced_security_additional_flows: NotRequired[
         pulumi.Input[UserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserPoolUserPoolAddOnsArgs:
@@ -1983,7 +1936,6 @@ class UserPoolUserPoolAddOnsArgs:
 
 class UserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsArgsDict(TypedDict):
     custom_auth_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsArgs:
@@ -1998,7 +1950,6 @@ class UserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsArgs:
 
 class UserPoolUsernameConfigurationArgsDict(TypedDict):
     case_sensitive: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UserPoolUsernameConfigurationArgs:
@@ -2018,7 +1969,6 @@ class UserPoolVerificationMessageTemplateArgsDict(TypedDict):
     email_subject: NotRequired[pulumi.Input[_builtins.str]]
     email_subject_by_link: NotRequired[pulumi.Input[_builtins.str]]
     sms_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolVerificationMessageTemplateArgs:
@@ -2066,7 +2016,6 @@ class UserPoolVerificationMessageTemplateArgs:
 class UserPoolWebAuthnConfigurationArgsDict(TypedDict):
     relying_party_id: NotRequired[pulumi.Input[_builtins.str]]
     user_verification: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPoolWebAuthnConfigurationArgs:

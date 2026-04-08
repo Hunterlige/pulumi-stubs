@@ -27,7 +27,6 @@ __all__ = [
 class FastSnapshotRestoreTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FastSnapshotRestoreTimeoutsArgs:
@@ -53,7 +52,6 @@ class SnapshotImportClientDataArgsDict(TypedDict):
     upload_end: NotRequired[pulumi.Input[_builtins.str]]
     upload_size: NotRequired[pulumi.Input[_builtins.float]]
     upload_start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SnapshotImportClientDataArgs:
@@ -93,7 +91,6 @@ class SnapshotImportDiskContainerArgsDict(TypedDict):
     user_bucket: NotRequired[
         pulumi.Input[SnapshotImportDiskContainerUserBucketArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SnapshotImportDiskContainerArgs:
@@ -135,7 +132,6 @@ class SnapshotImportDiskContainerArgs:
 class SnapshotImportDiskContainerUserBucketArgsDict(TypedDict):
     s3_bucket: pulumi.Input[_builtins.str]
     s3_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SnapshotImportDiskContainerUserBucketArgs:
@@ -159,7 +155,6 @@ class SnapshotImportDiskContainerUserBucketArgs:
 class GetEbsVolumesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetEbsVolumesFilterArgs:
@@ -180,7 +175,6 @@ class GetEbsVolumesFilterArgs:
 class GetSnapshotFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSnapshotFilterArgs:
@@ -201,7 +195,6 @@ class GetSnapshotFilterArgs:
 class GetSnapshotIdsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSnapshotIdsFilterArgs:
@@ -222,7 +215,6 @@ class GetSnapshotIdsFilterArgs:
 class GetVolumeFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVolumeFilterArgs:

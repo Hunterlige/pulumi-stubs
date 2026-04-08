@@ -127,7 +127,6 @@ class ContainerRecipeComponentArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ContainerRecipeComponentParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeComponentArgs:
@@ -162,7 +161,6 @@ class ContainerRecipeComponentArgs:
 class ContainerRecipeComponentParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeComponentParameterArgs:
@@ -194,7 +192,6 @@ class ContainerRecipeInstanceConfigurationArgsDict(TypedDict):
         ]
     ]
     image: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeInstanceConfigurationArgs:
@@ -249,7 +246,6 @@ class ContainerRecipeInstanceConfigurationBlockDeviceMappingArgsDict(TypedDict):
     ]
     no_device: NotRequired[pulumi.Input[_builtins.bool]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeInstanceConfigurationBlockDeviceMappingArgs:
@@ -302,7 +298,6 @@ class ContainerRecipeInstanceConfigurationBlockDeviceMappingEbsArgsDict(TypedDic
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeInstanceConfigurationBlockDeviceMappingEbsArgs:
@@ -362,7 +357,6 @@ class ContainerRecipeInstanceConfigurationBlockDeviceMappingEbsArgs:
 class ContainerRecipeTargetRepositoryArgsDict(TypedDict):
     repository_name: pulumi.Input[_builtins.str]
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ContainerRecipeTargetRepositoryArgs:
@@ -428,7 +422,6 @@ class DistributionConfigurationDistributionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionArgs:
@@ -636,7 +629,6 @@ class DistributionConfigurationDistributionAmiDistributionConfigurationArgsDict(
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
     target_account_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionAmiDistributionConfigurationArgs:
@@ -719,7 +711,6 @@ class DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPer
     ]
     user_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     user_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionArgs:
@@ -782,7 +773,6 @@ class DistributionConfigurationDistributionContainerDistributionConfigurationArg
     ]
     container_tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionContainerDistributionConfigurationArgs:
@@ -831,7 +821,6 @@ class DistributionConfigurationDistributionContainerDistributionConfigurationTar
 ):
     repository_name: pulumi.Input[_builtins.str]
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryArgs:
@@ -866,7 +855,6 @@ class DistributionConfigurationDistributionFastLaunchConfigurationArgsDict(Typed
             DistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionFastLaunchConfigurationArgs:
@@ -945,7 +933,6 @@ class DistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate
     launch_template_id: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_name: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateArgs:
@@ -976,7 +963,6 @@ class DistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfig
     TypedDict
 ):
     target_resource_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationArgs:
@@ -995,7 +981,6 @@ class DistributionConfigurationDistributionLaunchTemplateConfigurationArgsDict(
     launch_template_id: pulumi.Input[_builtins.str]
     account_id: NotRequired[pulumi.Input[_builtins.str]]
     default: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionLaunchTemplateConfigurationArgs:
@@ -1027,7 +1012,6 @@ class DistributionConfigurationDistributionS3ExportConfigurationArgsDict(TypedDi
     role_name: pulumi.Input[_builtins.str]
     s3_bucket: pulumi.Input[_builtins.str]
     s3_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionS3ExportConfigurationArgs:
@@ -1064,7 +1048,6 @@ class DistributionConfigurationDistributionSsmParameterConfigurationArgsDict(Typ
     parameter_name: pulumi.Input[_builtins.str]
     ami_account_id: NotRequired[pulumi.Input[_builtins.str]]
     data_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionConfigurationDistributionSsmParameterConfigurationArgs:
@@ -1096,7 +1079,6 @@ class ImageImageScanningConfigurationArgsDict(TypedDict):
         pulumi.Input[ImageImageScanningConfigurationEcrConfigurationArgsDict]
     ]
     image_scanning_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ImageImageScanningConfigurationArgs:
@@ -1131,7 +1113,6 @@ class ImageImageScanningConfigurationArgs:
 class ImageImageScanningConfigurationEcrConfigurationArgsDict(TypedDict):
     container_tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     repository_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageImageScanningConfigurationEcrConfigurationArgs:
@@ -1161,7 +1142,6 @@ class ImageImageScanningConfigurationEcrConfigurationArgs:
 class ImageImageTestsConfigurationArgsDict(TypedDict):
     image_tests_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ImageImageTestsConfigurationArgs:
@@ -1184,7 +1164,6 @@ class ImageImageTestsConfigurationArgs:
 
 class ImageLoggingConfigurationArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ImageLoggingConfigurationArgs:
@@ -1202,7 +1181,6 @@ class ImageOutputResourceArgsDict(TypedDict):
     containers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ImageOutputResourceContainerArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ImageOutputResourceArgs:
@@ -1249,7 +1227,6 @@ class ImageOutputResourceAmiArgsDict(TypedDict):
     image: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageOutputResourceAmiArgs:
@@ -1291,7 +1268,6 @@ class ImageOutputResourceAmiArgs:
 class ImageOutputResourceContainerArgsDict(TypedDict):
     image_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageOutputResourceContainerArgs:
@@ -1321,7 +1297,6 @@ class ImagePipelineImageScanningConfigurationArgsDict(TypedDict):
         pulumi.Input[ImagePipelineImageScanningConfigurationEcrConfigurationArgsDict]
     ]
     image_scanning_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ImagePipelineImageScanningConfigurationArgs:
@@ -1356,7 +1331,6 @@ class ImagePipelineImageScanningConfigurationArgs:
 class ImagePipelineImageScanningConfigurationEcrConfigurationArgsDict(TypedDict):
     container_tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     repository_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImagePipelineImageScanningConfigurationEcrConfigurationArgs:
@@ -1386,7 +1360,6 @@ class ImagePipelineImageScanningConfigurationEcrConfigurationArgs:
 class ImagePipelineImageTestsConfigurationArgsDict(TypedDict):
     image_tests_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ImagePipelineImageTestsConfigurationArgs:
@@ -1410,7 +1383,6 @@ class ImagePipelineImageTestsConfigurationArgs:
 class ImagePipelineLoggingConfigurationArgsDict(TypedDict):
     image_log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     pipeline_log_group_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImagePipelineLoggingConfigurationArgs:
@@ -1435,7 +1407,6 @@ class ImagePipelineScheduleArgsDict(TypedDict):
     schedule_expression: pulumi.Input[_builtins.str]
     pipeline_execution_start_condition: NotRequired[pulumi.Input[_builtins.str]]
     timezone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImagePipelineScheduleArgs:
@@ -1473,7 +1444,6 @@ class ImagePipelineWorkflowArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ImagePipelineWorkflowParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ImagePipelineWorkflowArgs:
@@ -1520,7 +1490,6 @@ class ImagePipelineWorkflowArgs:
 class ImagePipelineWorkflowParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ImagePipelineWorkflowParameterArgs:
@@ -1546,7 +1515,6 @@ class ImageRecipeBlockDeviceMappingArgsDict(TypedDict):
     ebs: NotRequired[pulumi.Input[ImageRecipeBlockDeviceMappingEbsArgsDict]]
     no_device: NotRequired[pulumi.Input[_builtins.bool]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageRecipeBlockDeviceMappingArgs:
@@ -1590,7 +1558,6 @@ class ImageRecipeBlockDeviceMappingEbsArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageRecipeBlockDeviceMappingEbsArgs:
@@ -1652,7 +1619,6 @@ class ImageRecipeComponentArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ImageRecipeComponentParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ImageRecipeComponentArgs:
@@ -1687,7 +1653,6 @@ class ImageRecipeComponentArgs:
 class ImageRecipeComponentParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ImageRecipeComponentParameterArgs:
@@ -1710,7 +1675,6 @@ class ImageRecipeComponentParameterArgs:
 
 class ImageRecipeSystemsManagerAgentArgsDict(TypedDict):
     uninstall_after_build: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ImageRecipeSystemsManagerAgentArgs:
@@ -1730,7 +1694,6 @@ class ImageWorkflowArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ImageWorkflowParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ImageWorkflowArgs:
@@ -1775,7 +1738,6 @@ class ImageWorkflowArgs:
 class ImageWorkflowParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ImageWorkflowParameterArgs:
@@ -1799,7 +1761,6 @@ class ImageWorkflowParameterArgs:
 class InfrastructureConfigurationInstanceMetadataOptionsArgsDict(TypedDict):
     http_put_response_hop_limit: NotRequired[pulumi.Input[_builtins.int]]
     http_tokens: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InfrastructureConfigurationInstanceMetadataOptionsArgs:
@@ -1824,7 +1785,6 @@ class InfrastructureConfigurationInstanceMetadataOptionsArgs:
 
 class InfrastructureConfigurationLoggingArgsDict(TypedDict):
     s3_logs: pulumi.Input[InfrastructureConfigurationLoggingS3LogsArgsDict]
-    ...
 
 @pulumi.input_type
 class InfrastructureConfigurationLoggingArgs:
@@ -1842,7 +1802,6 @@ class InfrastructureConfigurationLoggingArgs:
 class InfrastructureConfigurationLoggingS3LogsArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InfrastructureConfigurationLoggingS3LogsArgs:
@@ -1868,7 +1827,6 @@ class InfrastructureConfigurationPlacementArgsDict(TypedDict):
     host_id: NotRequired[pulumi.Input[_builtins.str]]
     host_resource_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     tenancy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InfrastructureConfigurationPlacementArgs:
@@ -1907,7 +1865,6 @@ class LifecyclePolicyPolicyDetailArgsDict(TypedDict):
     exclusion_rules: NotRequired[
         pulumi.Input[LifecyclePolicyPolicyDetailExclusionRulesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailArgs:
@@ -1946,7 +1903,6 @@ class LifecyclePolicyPolicyDetailActionArgsDict(TypedDict):
     include_resources: NotRequired[
         pulumi.Input[LifecyclePolicyPolicyDetailActionIncludeResourcesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailActionArgs:
@@ -1982,7 +1938,6 @@ class LifecyclePolicyPolicyDetailActionIncludeResourcesArgsDict(TypedDict):
     amis: NotRequired[pulumi.Input[_builtins.bool]]
     containers: NotRequired[pulumi.Input[_builtins.bool]]
     snapshots: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailActionIncludeResourcesArgs:
@@ -2014,7 +1969,6 @@ class LifecyclePolicyPolicyDetailExclusionRulesArgsDict(TypedDict):
         pulumi.Input[LifecyclePolicyPolicyDetailExclusionRulesAmisArgsDict]
     ]
     tag_map: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailExclusionRulesArgs:
@@ -2058,7 +2012,6 @@ class LifecyclePolicyPolicyDetailExclusionRulesAmisArgsDict(TypedDict):
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     shared_accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     tag_map: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailExclusionRulesAmisArgs:
@@ -2127,7 +2080,6 @@ class LifecyclePolicyPolicyDetailExclusionRulesAmisArgs:
 class LifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedArgs:
@@ -2153,7 +2105,6 @@ class LifecyclePolicyPolicyDetailFilterArgsDict(TypedDict):
     value: pulumi.Input[_builtins.int]
     retain_at_least: NotRequired[pulumi.Input[_builtins.int]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailFilterArgs:
@@ -2193,7 +2144,6 @@ class LifecyclePolicyResourceSelectionArgsDict(TypedDict):
         ]
     ]
     tag_map: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyResourceSelectionArgs:
@@ -2238,7 +2188,6 @@ class LifecyclePolicyResourceSelectionArgs:
 class LifecyclePolicyResourceSelectionRecipeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     semantic_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyResourceSelectionRecipeArgs:
@@ -2262,7 +2211,6 @@ class LifecyclePolicyResourceSelectionRecipeArgs:
 class GetComponentsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetComponentsFilterArgs:
@@ -2283,7 +2231,6 @@ class GetComponentsFilterArgs:
 class GetContainerRecipesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetContainerRecipesFilterArgs:
@@ -2304,7 +2251,6 @@ class GetContainerRecipesFilterArgs:
 class GetDistributionConfigurationsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetDistributionConfigurationsFilterArgs:
@@ -2325,7 +2271,6 @@ class GetDistributionConfigurationsFilterArgs:
 class GetImagePipelinesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetImagePipelinesFilterArgs:
@@ -2346,7 +2291,6 @@ class GetImagePipelinesFilterArgs:
 class GetImageRecipesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetImageRecipesFilterArgs:
@@ -2367,7 +2311,6 @@ class GetImageRecipesFilterArgs:
 class GetInfrastructureConfigurationsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInfrastructureConfigurationsFilterArgs:

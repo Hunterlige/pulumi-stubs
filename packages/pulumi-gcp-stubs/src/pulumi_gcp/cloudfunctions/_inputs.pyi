@@ -38,7 +38,6 @@ class FunctionEventTriggerArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     resource: pulumi.Input[_builtins.str]
     failure_policy: NotRequired[pulumi.Input[FunctionEventTriggerFailurePolicyArgsDict]]
-    ...
 
 @pulumi.input_type
 class FunctionEventTriggerArgs:
@@ -73,7 +72,6 @@ class FunctionEventTriggerArgs:
 
 class FunctionEventTriggerFailurePolicyArgsDict(TypedDict):
     retry: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class FunctionEventTriggerFailurePolicyArgs:
@@ -88,7 +86,6 @@ class FunctionIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionIamBindingConditionArgs:
@@ -119,7 +116,6 @@ class FunctionIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionIamMemberConditionArgs:
@@ -148,7 +144,6 @@ class FunctionIamMemberConditionArgs:
 
 class FunctionOnDeployUpdatePolicyArgsDict(TypedDict):
     runtime_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionOnDeployUpdatePolicyArgs:
@@ -166,7 +161,6 @@ class FunctionSecretEnvironmentVariableArgsDict(TypedDict):
     secret: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionSecretEnvironmentVariableArgs:
@@ -206,7 +200,6 @@ class FunctionSecretVolumeArgsDict(TypedDict):
     versions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[FunctionSecretVolumeVersionArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class FunctionSecretVolumeArgs:
@@ -253,7 +246,6 @@ class FunctionSecretVolumeArgs:
 class FunctionSecretVolumeVersionArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionSecretVolumeVersionArgs:
@@ -277,7 +269,6 @@ class FunctionSecretVolumeVersionArgs:
 class FunctionSourceRepositoryArgsDict(TypedDict):
     url: pulumi.Input[_builtins.str]
     deployed_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionSourceRepositoryArgs:

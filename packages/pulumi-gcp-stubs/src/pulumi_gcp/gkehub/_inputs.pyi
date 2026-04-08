@@ -171,7 +171,6 @@ class FeatureFleetDefaultMemberConfigArgsDict(TypedDict):
     policycontroller: NotRequired[
         pulumi.Input[FeatureFleetDefaultMemberConfigPolicycontrollerArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigArgs:
@@ -230,7 +229,6 @@ class FeatureFleetDefaultMemberConfigConfigmanagementArgsDict(TypedDict):
     ]
     management: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementArgs:
@@ -283,7 +281,6 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgsDict(TypedDic
     ]
     prevent_drift: NotRequired[pulumi.Input[_builtins.bool]]
     source_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncArgs:
@@ -371,7 +368,6 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgsDict(Typed
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_rev: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitArgs:
@@ -437,7 +433,6 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgsDict(Typed
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs:
@@ -487,7 +482,6 @@ class FeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciArgs:
 
 class FeatureFleetDefaultMemberConfigMeshArgsDict(TypedDict):
     management: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigMeshArgs:
@@ -503,7 +497,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerArgsDict(TypedDict):
         FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgsDict
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerArgs:
@@ -566,7 +559,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigAr
         ]
     ]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigArgs:
@@ -728,7 +720,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDe
         ]
     ]
     replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs:
@@ -826,7 +817,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDe
             FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs:
@@ -886,7 +876,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDe
 ):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs:
@@ -912,7 +901,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDe
 ):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs:
@@ -940,7 +928,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDe
     key: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs:
@@ -977,7 +964,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMo
     TypedDict
 ):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringArgs:
@@ -1013,7 +999,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPo
             FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentArgs:
@@ -1087,7 +1072,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPo
     exempted_namespaces: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs:
@@ -1118,7 +1102,6 @@ class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPo
     TypedDict
 ):
     installation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs:
@@ -1135,7 +1118,6 @@ class FeatureIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureIamBindingConditionArgs:
@@ -1166,7 +1148,6 @@ class FeatureIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureIamMemberConditionArgs:
@@ -1205,7 +1186,6 @@ class FeatureMembershipConfigmanagementArgsDict(TypedDict):
         pulumi.Input[FeatureMembershipConfigmanagementPolicyControllerArgsDict]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementArgs:
@@ -1294,7 +1274,6 @@ class FeatureMembershipConfigmanagementConfigSyncArgsDict(TypedDict):
     prevent_drift: NotRequired[pulumi.Input[_builtins.bool]]
     source_format: NotRequired[pulumi.Input[_builtins.str]]
     stop_syncing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncArgs:
@@ -1414,7 +1393,6 @@ class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgsDict(Type
     ]
     deployment_name: NotRequired[pulumi.Input[_builtins.str]]
     deployment_namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideArgs:
@@ -1478,7 +1456,6 @@ class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs
     cpu_request: NotRequired[pulumi.Input[_builtins.str]]
     memory_limit: NotRequired[pulumi.Input[_builtins.str]]
     memory_request: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncDeploymentOverrideContainerArgs:
@@ -1526,7 +1503,6 @@ class FeatureMembershipConfigmanagementConfigSyncGitArgsDict(TypedDict):
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_rev: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncGitArgs:
@@ -1591,7 +1567,6 @@ class FeatureMembershipConfigmanagementConfigSyncOciArgsDict(TypedDict):
     secret_type: NotRequired[pulumi.Input[_builtins.str]]
     sync_repo: NotRequired[pulumi.Input[_builtins.str]]
     sync_wait_secs: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementConfigSyncOciArgs:
@@ -1636,7 +1611,6 @@ class FeatureMembershipConfigmanagementHierarchyControllerArgsDict(TypedDict):
     enable_hierarchical_resource_quota: NotRequired[pulumi.Input[_builtins.bool]]
     enable_pod_tree_labels: NotRequired[pulumi.Input[_builtins.bool]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementHierarchyControllerArgs:
@@ -1684,7 +1658,6 @@ class FeatureMembershipConfigmanagementPolicyControllerArgsDict(TypedDict):
     mutation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     template_library_installed: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementPolicyControllerArgs:
@@ -1768,7 +1741,6 @@ class FeatureMembershipConfigmanagementPolicyControllerArgs:
 
 class FeatureMembershipConfigmanagementPolicyControllerMonitoringArgsDict(TypedDict):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs:
@@ -1790,7 +1762,6 @@ class FeatureMembershipConfigmanagementPolicyControllerMonitoringArgs:
 class FeatureMembershipMeshArgsDict(TypedDict):
     control_plane: NotRequired[pulumi.Input[_builtins.str]]
     management: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipMeshArgs:
@@ -1817,7 +1788,6 @@ class FeatureMembershipPolicycontrollerArgsDict(TypedDict):
         FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgsDict
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerArgs:
@@ -1878,7 +1848,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgsDict(TypedDi
         ]
     ]
     referential_rules_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigArgs:
@@ -2040,7 +2009,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfig
         ]
     ]
     replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigArgs:
@@ -2138,7 +2106,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfig
             FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesArgs:
@@ -2198,7 +2165,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfig
 ):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesLimitsArgs:
@@ -2224,7 +2190,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfig
 ):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigContainerResourcesRequestsArgs:
@@ -2252,7 +2217,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfig
     key: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigPodTolerationArgs:
@@ -2289,7 +2253,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgsDi
     TypedDict
 ):
     backends: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringArgs:
@@ -2325,7 +2288,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArg
             FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentArgs:
@@ -2399,7 +2361,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBun
     exempted_namespaces: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundleArgs:
@@ -2430,7 +2391,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTem
     TypedDict
 ):
     installation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryArgs:
@@ -2446,7 +2406,6 @@ class FeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTem
 class FeatureResourceStateArgsDict(TypedDict):
     has_resources: NotRequired[pulumi.Input[_builtins.bool]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureResourceStateArgs:
@@ -2477,7 +2436,6 @@ class FeatureSpecArgsDict(TypedDict):
         pulumi.Input[FeatureSpecRbacrolebindingactuationArgsDict]
     ]
     workloadidentity: NotRequired[pulumi.Input[FeatureSpecWorkloadidentityArgsDict]]
-    ...
 
 @pulumi.input_type
 class FeatureSpecArgs:
@@ -2552,7 +2510,6 @@ class FeatureSpecClusterupgradeArgsDict(TypedDict):
     post_conditions: NotRequired[
         pulumi.Input[FeatureSpecClusterupgradePostConditionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeArgs:
@@ -2611,7 +2568,6 @@ class FeatureSpecClusterupgradeGkeUpgradeOverrideArgsDict(TypedDict):
         FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgsDict
     ]
     upgrade: pulumi.Input[FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgsDict]
-    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverrideArgs:
@@ -2650,7 +2606,6 @@ class FeatureSpecClusterupgradeGkeUpgradeOverrideArgs:
 
 class FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgsDict(TypedDict):
     soaking: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs:
@@ -2664,7 +2619,6 @@ class FeatureSpecClusterupgradeGkeUpgradeOverridePostConditionsArgs:
 class FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs:
@@ -2687,7 +2641,6 @@ class FeatureSpecClusterupgradeGkeUpgradeOverrideUpgradeArgs:
 
 class FeatureSpecClusterupgradePostConditionsArgsDict(TypedDict):
     soaking: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureSpecClusterupgradePostConditionsArgs:
@@ -2702,7 +2655,6 @@ class FeatureSpecFleetobservabilityArgsDict(TypedDict):
     logging_config: NotRequired[
         pulumi.Input[FeatureSpecFleetobservabilityLoggingConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityArgs:
@@ -2733,7 +2685,6 @@ class FeatureSpecFleetobservabilityLoggingConfigArgsDict(TypedDict):
             FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigArgs:
@@ -2782,7 +2733,6 @@ class FeatureSpecFleetobservabilityLoggingConfigArgs:
 
 class FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs:
@@ -2797,7 +2747,6 @@ class FeatureSpecFleetobservabilityLoggingConfigDefaultConfigArgs:
 
 class FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs:
@@ -2812,7 +2761,6 @@ class FeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigArgs:
 
 class FeatureSpecMulticlusteringressArgsDict(TypedDict):
     config_membership: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureSpecMulticlusteringressArgs:
@@ -2829,7 +2777,6 @@ class FeatureSpecRbacrolebindingactuationArgsDict(TypedDict):
     allowed_custom_roles: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureSpecRbacrolebindingactuationArgs:
@@ -2852,7 +2799,6 @@ class FeatureSpecRbacrolebindingactuationArgs:
 
 class FeatureSpecWorkloadidentityArgsDict(TypedDict):
     scope_tenancy_pool: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FeatureSpecWorkloadidentityArgs:
@@ -2867,7 +2813,6 @@ class FeatureSpecWorkloadidentityArgs:
 
 class FeatureStateArgsDict(TypedDict):
     states: NotRequired[pulumi.Input[Sequence[pulumi.Input[FeatureStateStateArgsDict]]]]
-    ...
 
 @pulumi.input_type
 class FeatureStateArgs:
@@ -2893,7 +2838,6 @@ class FeatureStateStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
     description: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureStateStateArgs:
@@ -2927,7 +2871,6 @@ class FleetDefaultClusterConfigArgsDict(TypedDict):
     security_posture_config: NotRequired[
         pulumi.Input[FleetDefaultClusterConfigSecurityPostureConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigArgs:
@@ -2979,7 +2922,6 @@ class FleetDefaultClusterConfigBinaryAuthorizationConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigBinaryAuthorizationConfigArgs:
@@ -3033,7 +2975,6 @@ class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgsDict(
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs:
@@ -3049,7 +2990,6 @@ class FleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingArgs:
 class FleetDefaultClusterConfigSecurityPostureConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     vulnerability_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetDefaultClusterConfigSecurityPostureConfigArgs:
@@ -3072,7 +3012,6 @@ class FleetDefaultClusterConfigSecurityPostureConfigArgs:
 
 class FleetStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetStateArgs:
@@ -3087,7 +3026,6 @@ class FleetStateArgs:
 
 class MembershipAuthorityArgsDict(TypedDict):
     issuer: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MembershipAuthorityArgs:
@@ -3100,7 +3038,6 @@ class MembershipAuthorityArgs:
 
 class MembershipBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipBindingStateArgs:
@@ -3115,7 +3052,6 @@ class MembershipBindingStateArgs:
 
 class MembershipEndpointArgsDict(TypedDict):
     gke_cluster: NotRequired[pulumi.Input[MembershipEndpointGkeClusterArgsDict]]
-    ...
 
 @pulumi.input_type
 class MembershipEndpointArgs:
@@ -3136,7 +3072,6 @@ class MembershipEndpointArgs:
 
 class MembershipEndpointGkeClusterArgsDict(TypedDict):
     resource_link: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MembershipEndpointGkeClusterArgs:
@@ -3151,7 +3086,6 @@ class MembershipIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipIamBindingConditionArgs:
@@ -3182,7 +3116,6 @@ class MembershipIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipIamMemberConditionArgs:
@@ -3211,7 +3144,6 @@ class MembershipIamMemberConditionArgs:
 
 class MembershipRbacRoleBindingRoleArgsDict(TypedDict):
     predefined_role: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MembershipRbacRoleBindingRoleArgs:
@@ -3224,7 +3156,6 @@ class MembershipRbacRoleBindingRoleArgs:
 
 class MembershipRbacRoleBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipRbacRoleBindingStateArgs:
@@ -3239,7 +3170,6 @@ class MembershipRbacRoleBindingStateArgs:
 
 class NamespaceStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NamespaceStateArgs:
@@ -3258,7 +3188,6 @@ class RolloutSequenceStageArgsDict(TypedDict):
         pulumi.Input[RolloutSequenceStageClusterSelectorArgsDict]
     ]
     soak_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RolloutSequenceStageArgs:
@@ -3295,7 +3224,6 @@ class RolloutSequenceStageArgs:
 
 class RolloutSequenceStageClusterSelectorArgsDict(TypedDict):
     label_selector: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RolloutSequenceStageClusterSelectorArgs:
@@ -3310,7 +3238,6 @@ class ScopeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeIamBindingConditionArgs:
@@ -3341,7 +3268,6 @@ class ScopeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeIamMemberConditionArgs:
@@ -3371,7 +3297,6 @@ class ScopeIamMemberConditionArgs:
 class ScopeRbacRoleBindingRoleArgsDict(TypedDict):
     custom_role: NotRequired[pulumi.Input[_builtins.str]]
     predefined_role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeRbacRoleBindingRoleArgs:
@@ -3394,7 +3319,6 @@ class ScopeRbacRoleBindingRoleArgs:
 
 class ScopeRbacRoleBindingStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeRbacRoleBindingStateArgs:
@@ -3409,7 +3333,6 @@ class ScopeRbacRoleBindingStateArgs:
 
 class ScopeStateArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeStateArgs:

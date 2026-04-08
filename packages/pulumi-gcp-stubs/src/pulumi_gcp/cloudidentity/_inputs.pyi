@@ -29,7 +29,6 @@ __all__ = [
 class GroupAdditionalGroupKeyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupAdditionalGroupKeyArgs:
@@ -53,7 +52,6 @@ class GroupAdditionalGroupKeyArgs:
 class GroupGroupKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupGroupKeyArgs:
@@ -77,7 +75,6 @@ class GroupGroupKeyArgs:
 class GroupMembershipMemberKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMembershipMemberKeyArgs:
@@ -101,7 +98,6 @@ class GroupMembershipMemberKeyArgs:
 class GroupMembershipPreferredMemberKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMembershipPreferredMemberKeyArgs:
@@ -125,7 +121,6 @@ class GroupMembershipPreferredMemberKeyArgs:
 class GroupMembershipRoleArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     expiry_detail: NotRequired[pulumi.Input[GroupMembershipRoleExpiryDetailArgsDict]]
-    ...
 
 @pulumi.input_type
 class GroupMembershipRoleArgs:
@@ -154,7 +149,6 @@ class GroupMembershipRoleArgs:
 
 class GroupMembershipRoleExpiryDetailArgsDict(TypedDict):
     expire_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GroupMembershipRoleExpiryDetailArgs:
@@ -170,7 +164,6 @@ class PolicyPolicyQueryArgsDict(TypedDict):
     group: NotRequired[pulumi.Input[_builtins.str]]
     query: NotRequired[pulumi.Input[_builtins.str]]
     sort_order: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicyPolicyQueryArgs:
@@ -206,7 +199,6 @@ class PolicyPolicyQueryArgs:
 class PolicySettingArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value_json: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicySettingArgs:
@@ -230,7 +222,6 @@ class PolicySettingArgs:
 class GetGroupLookupGroupKeyArgsDict(TypedDict):
     id: _builtins.str
     namespace: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetGroupLookupGroupKeyArgs:

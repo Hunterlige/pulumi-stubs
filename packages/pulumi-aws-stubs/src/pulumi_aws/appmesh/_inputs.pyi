@@ -421,7 +421,6 @@ class GatewayRouteSpecArgsDict(TypedDict):
     http2_route: NotRequired[pulumi.Input[GatewayRouteSpecHttp2RouteArgsDict]]
     http_route: NotRequired[pulumi.Input[GatewayRouteSpecHttpRouteArgsDict]]
     priority: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecArgs:
@@ -463,7 +462,6 @@ class GatewayRouteSpecArgs:
 class GatewayRouteSpecGrpcRouteArgsDict(TypedDict):
     action: pulumi.Input[GatewayRouteSpecGrpcRouteActionArgsDict]
     match: pulumi.Input[GatewayRouteSpecGrpcRouteMatchArgsDict]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecGrpcRouteArgs:
@@ -486,7 +484,6 @@ class GatewayRouteSpecGrpcRouteArgs:
 
 class GatewayRouteSpecGrpcRouteActionArgsDict(TypedDict):
     target: pulumi.Input[GatewayRouteSpecGrpcRouteActionTargetArgsDict]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecGrpcRouteActionArgs:
@@ -506,7 +503,6 @@ class GatewayRouteSpecGrpcRouteActionTargetArgsDict(TypedDict):
         GatewayRouteSpecGrpcRouteActionTargetVirtualServiceArgsDict
     ]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecGrpcRouteActionTargetArgs:
@@ -536,7 +532,6 @@ class GatewayRouteSpecGrpcRouteActionTargetArgs:
 
 class GatewayRouteSpecGrpcRouteActionTargetVirtualServiceArgsDict(TypedDict):
     virtual_service_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecGrpcRouteActionTargetVirtualServiceArgs:
@@ -552,7 +547,6 @@ class GatewayRouteSpecGrpcRouteActionTargetVirtualServiceArgs:
 class GatewayRouteSpecGrpcRouteMatchArgsDict(TypedDict):
     service_name: pulumi.Input[_builtins.str]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecGrpcRouteMatchArgs:
@@ -576,7 +570,6 @@ class GatewayRouteSpecGrpcRouteMatchArgs:
 class GatewayRouteSpecHttp2RouteArgsDict(TypedDict):
     action: pulumi.Input[GatewayRouteSpecHttp2RouteActionArgsDict]
     match: pulumi.Input[GatewayRouteSpecHttp2RouteMatchArgsDict]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteArgs:
@@ -600,7 +593,6 @@ class GatewayRouteSpecHttp2RouteArgs:
 class GatewayRouteSpecHttp2RouteActionArgsDict(TypedDict):
     target: pulumi.Input[GatewayRouteSpecHttp2RouteActionTargetArgsDict]
     rewrite: NotRequired[pulumi.Input[GatewayRouteSpecHttp2RouteActionRewriteArgsDict]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionArgs:
@@ -637,7 +629,6 @@ class GatewayRouteSpecHttp2RouteActionRewriteArgsDict(TypedDict):
     prefix: NotRequired[
         pulumi.Input[GatewayRouteSpecHttp2RouteActionRewritePrefixArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionRewriteArgs:
@@ -693,7 +684,6 @@ class GatewayRouteSpecHttp2RouteActionRewriteArgs:
 
 class GatewayRouteSpecHttp2RouteActionRewriteHostnameArgsDict(TypedDict):
     default_target_hostname: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionRewriteHostnameArgs:
@@ -708,7 +698,6 @@ class GatewayRouteSpecHttp2RouteActionRewriteHostnameArgs:
 
 class GatewayRouteSpecHttp2RouteActionRewritePathArgsDict(TypedDict):
     exact: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionRewritePathArgs:
@@ -722,7 +711,6 @@ class GatewayRouteSpecHttp2RouteActionRewritePathArgs:
 class GatewayRouteSpecHttp2RouteActionRewritePrefixArgsDict(TypedDict):
     default_prefix: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionRewritePrefixArgs:
@@ -748,7 +736,6 @@ class GatewayRouteSpecHttp2RouteActionTargetArgsDict(TypedDict):
         GatewayRouteSpecHttp2RouteActionTargetVirtualServiceArgsDict
     ]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionTargetArgs:
@@ -778,7 +765,6 @@ class GatewayRouteSpecHttp2RouteActionTargetArgs:
 
 class GatewayRouteSpecHttp2RouteActionTargetVirtualServiceArgsDict(TypedDict):
     virtual_service_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteActionTargetVirtualServiceArgs:
@@ -808,7 +794,6 @@ class GatewayRouteSpecHttp2RouteMatchArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchArgs:
@@ -903,7 +888,6 @@ class GatewayRouteSpecHttp2RouteMatchHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     invert: NotRequired[pulumi.Input[_builtins.bool]]
     match: NotRequired[pulumi.Input[GatewayRouteSpecHttp2RouteMatchHeaderMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchHeaderArgs:
@@ -945,7 +929,6 @@ class GatewayRouteSpecHttp2RouteMatchHeaderMatchArgsDict(TypedDict):
     ]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchHeaderMatchArgs:
@@ -998,7 +981,6 @@ class GatewayRouteSpecHttp2RouteMatchHeaderMatchArgs:
 class GatewayRouteSpecHttp2RouteMatchHeaderMatchRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchHeaderMatchRangeArgs:
@@ -1022,7 +1004,6 @@ class GatewayRouteSpecHttp2RouteMatchHeaderMatchRangeArgs:
 class GatewayRouteSpecHttp2RouteMatchHostnameArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchHostnameArgs:
@@ -1046,7 +1027,6 @@ class GatewayRouteSpecHttp2RouteMatchHostnameArgs:
 class GatewayRouteSpecHttp2RouteMatchPathArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchPathArgs:
@@ -1072,7 +1052,6 @@ class GatewayRouteSpecHttp2RouteMatchQueryParameterArgsDict(TypedDict):
     match: NotRequired[
         pulumi.Input[GatewayRouteSpecHttp2RouteMatchQueryParameterMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchQueryParameterArgs:
@@ -1106,7 +1085,6 @@ class GatewayRouteSpecHttp2RouteMatchQueryParameterArgs:
 
 class GatewayRouteSpecHttp2RouteMatchQueryParameterMatchArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttp2RouteMatchQueryParameterMatchArgs:
@@ -1122,7 +1100,6 @@ class GatewayRouteSpecHttp2RouteMatchQueryParameterMatchArgs:
 class GatewayRouteSpecHttpRouteArgsDict(TypedDict):
     action: pulumi.Input[GatewayRouteSpecHttpRouteActionArgsDict]
     match: pulumi.Input[GatewayRouteSpecHttpRouteMatchArgsDict]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteArgs:
@@ -1146,7 +1123,6 @@ class GatewayRouteSpecHttpRouteArgs:
 class GatewayRouteSpecHttpRouteActionArgsDict(TypedDict):
     target: pulumi.Input[GatewayRouteSpecHttpRouteActionTargetArgsDict]
     rewrite: NotRequired[pulumi.Input[GatewayRouteSpecHttpRouteActionRewriteArgsDict]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionArgs:
@@ -1183,7 +1159,6 @@ class GatewayRouteSpecHttpRouteActionRewriteArgsDict(TypedDict):
     prefix: NotRequired[
         pulumi.Input[GatewayRouteSpecHttpRouteActionRewritePrefixArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionRewriteArgs:
@@ -1235,7 +1210,6 @@ class GatewayRouteSpecHttpRouteActionRewriteArgs:
 
 class GatewayRouteSpecHttpRouteActionRewriteHostnameArgsDict(TypedDict):
     default_target_hostname: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionRewriteHostnameArgs:
@@ -1250,7 +1224,6 @@ class GatewayRouteSpecHttpRouteActionRewriteHostnameArgs:
 
 class GatewayRouteSpecHttpRouteActionRewritePathArgsDict(TypedDict):
     exact: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionRewritePathArgs:
@@ -1264,7 +1237,6 @@ class GatewayRouteSpecHttpRouteActionRewritePathArgs:
 class GatewayRouteSpecHttpRouteActionRewritePrefixArgsDict(TypedDict):
     default_prefix: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionRewritePrefixArgs:
@@ -1290,7 +1262,6 @@ class GatewayRouteSpecHttpRouteActionTargetArgsDict(TypedDict):
         GatewayRouteSpecHttpRouteActionTargetVirtualServiceArgsDict
     ]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionTargetArgs:
@@ -1320,7 +1291,6 @@ class GatewayRouteSpecHttpRouteActionTargetArgs:
 
 class GatewayRouteSpecHttpRouteActionTargetVirtualServiceArgsDict(TypedDict):
     virtual_service_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteActionTargetVirtualServiceArgs:
@@ -1348,7 +1318,6 @@ class GatewayRouteSpecHttpRouteMatchArgsDict(TypedDict):
             Sequence[pulumi.Input[GatewayRouteSpecHttpRouteMatchQueryParameterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchArgs:
@@ -1439,7 +1408,6 @@ class GatewayRouteSpecHttpRouteMatchHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     invert: NotRequired[pulumi.Input[_builtins.bool]]
     match: NotRequired[pulumi.Input[GatewayRouteSpecHttpRouteMatchHeaderMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchHeaderArgs:
@@ -1481,7 +1449,6 @@ class GatewayRouteSpecHttpRouteMatchHeaderMatchArgsDict(TypedDict):
     ]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchHeaderMatchArgs:
@@ -1532,7 +1499,6 @@ class GatewayRouteSpecHttpRouteMatchHeaderMatchArgs:
 class GatewayRouteSpecHttpRouteMatchHeaderMatchRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchHeaderMatchRangeArgs:
@@ -1556,7 +1522,6 @@ class GatewayRouteSpecHttpRouteMatchHeaderMatchRangeArgs:
 class GatewayRouteSpecHttpRouteMatchHostnameArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchHostnameArgs:
@@ -1580,7 +1545,6 @@ class GatewayRouteSpecHttpRouteMatchHostnameArgs:
 class GatewayRouteSpecHttpRouteMatchPathArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchPathArgs:
@@ -1606,7 +1570,6 @@ class GatewayRouteSpecHttpRouteMatchQueryParameterArgsDict(TypedDict):
     match: NotRequired[
         pulumi.Input[GatewayRouteSpecHttpRouteMatchQueryParameterMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchQueryParameterArgs:
@@ -1640,7 +1603,6 @@ class GatewayRouteSpecHttpRouteMatchQueryParameterArgs:
 
 class GatewayRouteSpecHttpRouteMatchQueryParameterMatchArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayRouteSpecHttpRouteMatchQueryParameterMatchArgs:
@@ -1656,7 +1618,6 @@ class GatewayRouteSpecHttpRouteMatchQueryParameterMatchArgs:
 class MeshSpecArgsDict(TypedDict):
     egress_filter: NotRequired[pulumi.Input[MeshSpecEgressFilterArgsDict]]
     service_discovery: NotRequired[pulumi.Input[MeshSpecServiceDiscoveryArgsDict]]
-    ...
 
 @pulumi.input_type
 class MeshSpecArgs:
@@ -1685,7 +1646,6 @@ class MeshSpecArgs:
 
 class MeshSpecEgressFilterArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MeshSpecEgressFilterArgs:
@@ -1700,7 +1660,6 @@ class MeshSpecEgressFilterArgs:
 
 class MeshSpecServiceDiscoveryArgsDict(TypedDict):
     ip_preference: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MeshSpecServiceDiscoveryArgs:
@@ -1719,7 +1678,6 @@ class RouteSpecArgsDict(TypedDict):
     http_route: NotRequired[pulumi.Input[RouteSpecHttpRouteArgsDict]]
     priority: NotRequired[pulumi.Input[_builtins.int]]
     tcp_route: NotRequired[pulumi.Input[RouteSpecTcpRouteArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecArgs:
@@ -1763,7 +1721,6 @@ class RouteSpecGrpcRouteArgsDict(TypedDict):
     match: NotRequired[pulumi.Input[RouteSpecGrpcRouteMatchArgsDict]]
     retry_policy: NotRequired[pulumi.Input[RouteSpecGrpcRouteRetryPolicyArgsDict]]
     timeout: NotRequired[pulumi.Input[RouteSpecGrpcRouteTimeoutArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteArgs:
@@ -1804,7 +1761,6 @@ class RouteSpecGrpcRouteActionArgsDict(TypedDict):
     weighted_targets: pulumi.Input[
         Sequence[pulumi.Input[RouteSpecGrpcRouteActionWeightedTargetArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteActionArgs:
@@ -1834,7 +1790,6 @@ class RouteSpecGrpcRouteActionWeightedTargetArgsDict(TypedDict):
     virtual_node: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteActionWeightedTargetArgs:
@@ -1869,7 +1824,6 @@ class RouteSpecGrpcRouteMatchArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteMatchArgs:
@@ -1923,7 +1877,6 @@ class RouteSpecGrpcRouteMatchMetadataArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     invert: NotRequired[pulumi.Input[_builtins.bool]]
     match: NotRequired[pulumi.Input[RouteSpecGrpcRouteMatchMetadataMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteMatchMetadataArgs:
@@ -1960,7 +1913,6 @@ class RouteSpecGrpcRouteMatchMetadataMatchArgsDict(TypedDict):
     range: NotRequired[pulumi.Input[RouteSpecGrpcRouteMatchMetadataMatchRangeArgsDict]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteMatchMetadataMatchArgs:
@@ -2009,7 +1961,6 @@ class RouteSpecGrpcRouteMatchMetadataMatchArgs:
 class RouteSpecGrpcRouteMatchMetadataMatchRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteMatchMetadataMatchRangeArgs:
@@ -2038,7 +1989,6 @@ class RouteSpecGrpcRouteRetryPolicyArgsDict(TypedDict):
     grpc_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     http_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     tcp_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteRetryPolicyArgs:
@@ -2104,7 +2054,6 @@ class RouteSpecGrpcRouteRetryPolicyArgs:
 class RouteSpecGrpcRouteRetryPolicyPerRetryTimeoutArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteRetryPolicyPerRetryTimeoutArgs:
@@ -2128,7 +2077,6 @@ class RouteSpecGrpcRouteRetryPolicyPerRetryTimeoutArgs:
 class RouteSpecGrpcRouteTimeoutArgsDict(TypedDict):
     idle: NotRequired[pulumi.Input[RouteSpecGrpcRouteTimeoutIdleArgsDict]]
     per_request: NotRequired[pulumi.Input[RouteSpecGrpcRouteTimeoutPerRequestArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteTimeoutArgs:
@@ -2160,7 +2108,6 @@ class RouteSpecGrpcRouteTimeoutArgs:
 class RouteSpecGrpcRouteTimeoutIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteTimeoutIdleArgs:
@@ -2184,7 +2131,6 @@ class RouteSpecGrpcRouteTimeoutIdleArgs:
 class RouteSpecGrpcRouteTimeoutPerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecGrpcRouteTimeoutPerRequestArgs:
@@ -2210,7 +2156,6 @@ class RouteSpecHttp2RouteArgsDict(TypedDict):
     match: pulumi.Input[RouteSpecHttp2RouteMatchArgsDict]
     retry_policy: NotRequired[pulumi.Input[RouteSpecHttp2RouteRetryPolicyArgsDict]]
     timeout: NotRequired[pulumi.Input[RouteSpecHttp2RouteTimeoutArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteArgs:
@@ -2253,7 +2198,6 @@ class RouteSpecHttp2RouteActionArgsDict(TypedDict):
     weighted_targets: pulumi.Input[
         Sequence[pulumi.Input[RouteSpecHttp2RouteActionWeightedTargetArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteActionArgs:
@@ -2283,7 +2227,6 @@ class RouteSpecHttp2RouteActionWeightedTargetArgsDict(TypedDict):
     virtual_node: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteActionWeightedTargetArgs:
@@ -2324,7 +2267,6 @@ class RouteSpecHttp2RouteMatchArgsDict(TypedDict):
         ]
     ]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchArgs:
@@ -2405,7 +2347,6 @@ class RouteSpecHttp2RouteMatchHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     invert: NotRequired[pulumi.Input[_builtins.bool]]
     match: NotRequired[pulumi.Input[RouteSpecHttp2RouteMatchHeaderMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchHeaderArgs:
@@ -2442,7 +2383,6 @@ class RouteSpecHttp2RouteMatchHeaderMatchArgsDict(TypedDict):
     range: NotRequired[pulumi.Input[RouteSpecHttp2RouteMatchHeaderMatchRangeArgsDict]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchHeaderMatchArgs:
@@ -2491,7 +2431,6 @@ class RouteSpecHttp2RouteMatchHeaderMatchArgs:
 class RouteSpecHttp2RouteMatchHeaderMatchRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchHeaderMatchRangeArgs:
@@ -2515,7 +2454,6 @@ class RouteSpecHttp2RouteMatchHeaderMatchRangeArgs:
 class RouteSpecHttp2RouteMatchPathArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchPathArgs:
@@ -2541,7 +2479,6 @@ class RouteSpecHttp2RouteMatchQueryParameterArgsDict(TypedDict):
     match: NotRequired[
         pulumi.Input[RouteSpecHttp2RouteMatchQueryParameterMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchQueryParameterArgs:
@@ -2571,7 +2508,6 @@ class RouteSpecHttp2RouteMatchQueryParameterArgs:
 
 class RouteSpecHttp2RouteMatchQueryParameterMatchArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteMatchQueryParameterMatchArgs:
@@ -2591,7 +2527,6 @@ class RouteSpecHttp2RouteRetryPolicyArgsDict(TypedDict):
     ]
     http_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     tcp_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteRetryPolicyArgs:
@@ -2645,7 +2580,6 @@ class RouteSpecHttp2RouteRetryPolicyArgs:
 class RouteSpecHttp2RouteRetryPolicyPerRetryTimeoutArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteRetryPolicyPerRetryTimeoutArgs:
@@ -2669,7 +2603,6 @@ class RouteSpecHttp2RouteRetryPolicyPerRetryTimeoutArgs:
 class RouteSpecHttp2RouteTimeoutArgsDict(TypedDict):
     idle: NotRequired[pulumi.Input[RouteSpecHttp2RouteTimeoutIdleArgsDict]]
     per_request: NotRequired[pulumi.Input[RouteSpecHttp2RouteTimeoutPerRequestArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteTimeoutArgs:
@@ -2701,7 +2634,6 @@ class RouteSpecHttp2RouteTimeoutArgs:
 class RouteSpecHttp2RouteTimeoutIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteTimeoutIdleArgs:
@@ -2725,7 +2657,6 @@ class RouteSpecHttp2RouteTimeoutIdleArgs:
 class RouteSpecHttp2RouteTimeoutPerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttp2RouteTimeoutPerRequestArgs:
@@ -2751,7 +2682,6 @@ class RouteSpecHttpRouteArgsDict(TypedDict):
     match: pulumi.Input[RouteSpecHttpRouteMatchArgsDict]
     retry_policy: NotRequired[pulumi.Input[RouteSpecHttpRouteRetryPolicyArgsDict]]
     timeout: NotRequired[pulumi.Input[RouteSpecHttpRouteTimeoutArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteArgs:
@@ -2792,7 +2722,6 @@ class RouteSpecHttpRouteActionArgsDict(TypedDict):
     weighted_targets: pulumi.Input[
         Sequence[pulumi.Input[RouteSpecHttpRouteActionWeightedTargetArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteActionArgs:
@@ -2822,7 +2751,6 @@ class RouteSpecHttpRouteActionWeightedTargetArgsDict(TypedDict):
     virtual_node: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteActionWeightedTargetArgs:
@@ -2863,7 +2791,6 @@ class RouteSpecHttpRouteMatchArgsDict(TypedDict):
         ]
     ]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchArgs:
@@ -2944,7 +2871,6 @@ class RouteSpecHttpRouteMatchHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     invert: NotRequired[pulumi.Input[_builtins.bool]]
     match: NotRequired[pulumi.Input[RouteSpecHttpRouteMatchHeaderMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchHeaderArgs:
@@ -2981,7 +2907,6 @@ class RouteSpecHttpRouteMatchHeaderMatchArgsDict(TypedDict):
     range: NotRequired[pulumi.Input[RouteSpecHttpRouteMatchHeaderMatchRangeArgsDict]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchHeaderMatchArgs:
@@ -3029,7 +2954,6 @@ class RouteSpecHttpRouteMatchHeaderMatchArgs:
 class RouteSpecHttpRouteMatchHeaderMatchRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchHeaderMatchRangeArgs:
@@ -3053,7 +2977,6 @@ class RouteSpecHttpRouteMatchHeaderMatchRangeArgs:
 class RouteSpecHttpRouteMatchPathArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchPathArgs:
@@ -3077,7 +3000,6 @@ class RouteSpecHttpRouteMatchPathArgs:
 class RouteSpecHttpRouteMatchQueryParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     match: NotRequired[pulumi.Input[RouteSpecHttpRouteMatchQueryParameterMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchQueryParameterArgs:
@@ -3107,7 +3029,6 @@ class RouteSpecHttpRouteMatchQueryParameterArgs:
 
 class RouteSpecHttpRouteMatchQueryParameterMatchArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteMatchQueryParameterMatchArgs:
@@ -3127,7 +3048,6 @@ class RouteSpecHttpRouteRetryPolicyArgsDict(TypedDict):
     ]
     http_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     tcp_retry_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteRetryPolicyArgs:
@@ -3181,7 +3101,6 @@ class RouteSpecHttpRouteRetryPolicyArgs:
 class RouteSpecHttpRouteRetryPolicyPerRetryTimeoutArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteRetryPolicyPerRetryTimeoutArgs:
@@ -3205,7 +3124,6 @@ class RouteSpecHttpRouteRetryPolicyPerRetryTimeoutArgs:
 class RouteSpecHttpRouteTimeoutArgsDict(TypedDict):
     idle: NotRequired[pulumi.Input[RouteSpecHttpRouteTimeoutIdleArgsDict]]
     per_request: NotRequired[pulumi.Input[RouteSpecHttpRouteTimeoutPerRequestArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteTimeoutArgs:
@@ -3237,7 +3155,6 @@ class RouteSpecHttpRouteTimeoutArgs:
 class RouteSpecHttpRouteTimeoutIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteTimeoutIdleArgs:
@@ -3261,7 +3178,6 @@ class RouteSpecHttpRouteTimeoutIdleArgs:
 class RouteSpecHttpRouteTimeoutPerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecHttpRouteTimeoutPerRequestArgs:
@@ -3286,7 +3202,6 @@ class RouteSpecTcpRouteArgsDict(TypedDict):
     action: pulumi.Input[RouteSpecTcpRouteActionArgsDict]
     match: NotRequired[pulumi.Input[RouteSpecTcpRouteMatchArgsDict]]
     timeout: NotRequired[pulumi.Input[RouteSpecTcpRouteTimeoutArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteArgs:
@@ -3317,7 +3232,6 @@ class RouteSpecTcpRouteActionArgsDict(TypedDict):
     weighted_targets: pulumi.Input[
         Sequence[pulumi.Input[RouteSpecTcpRouteActionWeightedTargetArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteActionArgs:
@@ -3347,7 +3261,6 @@ class RouteSpecTcpRouteActionWeightedTargetArgsDict(TypedDict):
     virtual_node: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteActionWeightedTargetArgs:
@@ -3376,7 +3289,6 @@ class RouteSpecTcpRouteActionWeightedTargetArgs:
 
 class RouteSpecTcpRouteMatchArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteMatchArgs:
@@ -3391,7 +3303,6 @@ class RouteSpecTcpRouteMatchArgs:
 
 class RouteSpecTcpRouteTimeoutArgsDict(TypedDict):
     idle: NotRequired[pulumi.Input[RouteSpecTcpRouteTimeoutIdleArgsDict]]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteTimeoutArgs:
@@ -3409,7 +3320,6 @@ class RouteSpecTcpRouteTimeoutArgs:
 class RouteSpecTcpRouteTimeoutIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RouteSpecTcpRouteTimeoutIdleArgs:
@@ -3436,7 +3346,6 @@ class VirtualGatewaySpecArgsDict(TypedDict):
         pulumi.Input[VirtualGatewaySpecBackendDefaultsArgsDict]
     ]
     logging: NotRequired[pulumi.Input[VirtualGatewaySpecLoggingArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecArgs:
@@ -3478,7 +3387,6 @@ class VirtualGatewaySpecBackendDefaultsArgsDict(TypedDict):
     client_policy: NotRequired[
         pulumi.Input[VirtualGatewaySpecBackendDefaultsClientPolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsArgs:
@@ -3506,7 +3414,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyArgsDict(TypedDict):
     tls: NotRequired[
         pulumi.Input[VirtualGatewaySpecBackendDefaultsClientPolicyTlsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyArgs:
@@ -3543,7 +3450,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsArgsDict(TypedDict):
     ]
     enforce: NotRequired[pulumi.Input[_builtins.bool]]
     ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsArgs:
@@ -3617,7 +3523,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateArgsDict(TypedD
             VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateArgs:
@@ -3675,7 +3580,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileArgsDict(
 ):
     certificate_chain: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileArgs:
@@ -3698,7 +3602,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileArgs:
 
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsArgs:
@@ -3718,7 +3621,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationArgsDict(TypedDi
             VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationArgs:
@@ -3773,7 +3675,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternati
     match: pulumi.Input[
         VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesArgs:
@@ -3803,7 +3704,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternati
     TypedDict
 ):
     exacts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchArgs:
@@ -3834,7 +3734,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustArgsDict(
             VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustArgs:
@@ -3916,7 +3815,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmArgsDict
     TypedDict
 ):
     certificate_authority_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmArgs:
@@ -3939,7 +3837,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileArgsDic
     TypedDict
 ):
     certificate_chain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileArgs:
@@ -3956,7 +3853,6 @@ class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgsDict
     TypedDict
 ):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgs:
@@ -3976,7 +3872,6 @@ class VirtualGatewaySpecListenerArgsDict(TypedDict):
         pulumi.Input[VirtualGatewaySpecListenerHealthCheckArgsDict]
     ]
     tls: NotRequired[pulumi.Input[VirtualGatewaySpecListenerTlsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerArgs:
@@ -4036,7 +3931,6 @@ class VirtualGatewaySpecListenerConnectionPoolArgsDict(TypedDict):
     http2: NotRequired[
         pulumi.Input[VirtualGatewaySpecListenerConnectionPoolHttp2ArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerConnectionPoolArgs:
@@ -4088,7 +3982,6 @@ class VirtualGatewaySpecListenerConnectionPoolArgs:
 
 class VirtualGatewaySpecListenerConnectionPoolGrpcArgsDict(TypedDict):
     max_requests: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerConnectionPoolGrpcArgs:
@@ -4101,7 +3994,6 @@ class VirtualGatewaySpecListenerConnectionPoolGrpcArgs:
 
 class VirtualGatewaySpecListenerConnectionPoolHttp2ArgsDict(TypedDict):
     max_requests: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerConnectionPoolHttp2Args:
@@ -4115,7 +4007,6 @@ class VirtualGatewaySpecListenerConnectionPoolHttp2Args:
 class VirtualGatewaySpecListenerConnectionPoolHttpArgsDict(TypedDict):
     max_connections: pulumi.Input[_builtins.int]
     max_pending_requests: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerConnectionPoolHttpArgs:
@@ -4144,7 +4035,6 @@ class VirtualGatewaySpecListenerHealthCheckArgsDict(TypedDict):
     unhealthy_threshold: pulumi.Input[_builtins.int]
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerHealthCheckArgs:
@@ -4198,7 +4088,6 @@ class VirtualGatewaySpecListenerHealthCheckArgs:
 class VirtualGatewaySpecListenerPortMappingArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
     protocol: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerPortMappingArgs:
@@ -4225,7 +4114,6 @@ class VirtualGatewaySpecListenerTlsArgsDict(TypedDict):
     validation: NotRequired[
         pulumi.Input[VirtualGatewaySpecListenerTlsValidationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsArgs:
@@ -4268,7 +4156,6 @@ class VirtualGatewaySpecListenerTlsCertificateArgsDict(TypedDict):
         pulumi.Input[VirtualGatewaySpecListenerTlsCertificateFileArgsDict]
     ]
     sds: NotRequired[pulumi.Input[VirtualGatewaySpecListenerTlsCertificateSdsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsCertificateArgs:
@@ -4318,7 +4205,6 @@ class VirtualGatewaySpecListenerTlsCertificateArgs:
 
 class VirtualGatewaySpecListenerTlsCertificateAcmArgsDict(TypedDict):
     certificate_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsCertificateAcmArgs:
@@ -4332,7 +4218,6 @@ class VirtualGatewaySpecListenerTlsCertificateAcmArgs:
 class VirtualGatewaySpecListenerTlsCertificateFileArgsDict(TypedDict):
     certificate_chain: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsCertificateFileArgs:
@@ -4355,7 +4240,6 @@ class VirtualGatewaySpecListenerTlsCertificateFileArgs:
 
 class VirtualGatewaySpecListenerTlsCertificateSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsCertificateSdsArgs:
@@ -4373,7 +4257,6 @@ class VirtualGatewaySpecListenerTlsValidationArgsDict(TypedDict):
             VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationArgs:
@@ -4417,7 +4300,6 @@ class VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesArgsDict(Typ
     match: pulumi.Input[
         VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesArgs:
@@ -4447,7 +4329,6 @@ class VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchArgsDic
     TypedDict
 ):
     exacts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchArgs:
@@ -4467,7 +4348,6 @@ class VirtualGatewaySpecListenerTlsValidationTrustArgsDict(TypedDict):
     sds: NotRequired[
         pulumi.Input[VirtualGatewaySpecListenerTlsValidationTrustSdsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationTrustArgs:
@@ -4512,7 +4392,6 @@ class VirtualGatewaySpecListenerTlsValidationTrustArgs:
 
 class VirtualGatewaySpecListenerTlsValidationTrustFileArgsDict(TypedDict):
     certificate_chain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationTrustFileArgs:
@@ -4527,7 +4406,6 @@ class VirtualGatewaySpecListenerTlsValidationTrustFileArgs:
 
 class VirtualGatewaySpecListenerTlsValidationTrustSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecListenerTlsValidationTrustSdsArgs:
@@ -4540,7 +4418,6 @@ class VirtualGatewaySpecListenerTlsValidationTrustSdsArgs:
 
 class VirtualGatewaySpecLoggingArgsDict(TypedDict):
     access_log: NotRequired[pulumi.Input[VirtualGatewaySpecLoggingAccessLogArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecLoggingArgs:
@@ -4563,7 +4440,6 @@ class VirtualGatewaySpecLoggingArgs:
 
 class VirtualGatewaySpecLoggingAccessLogArgsDict(TypedDict):
     file: NotRequired[pulumi.Input[VirtualGatewaySpecLoggingAccessLogFileArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecLoggingAccessLogArgs:
@@ -4587,7 +4463,6 @@ class VirtualGatewaySpecLoggingAccessLogFileArgsDict(TypedDict):
     format: NotRequired[
         pulumi.Input[VirtualGatewaySpecLoggingAccessLogFileFormatArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecLoggingAccessLogFileArgs:
@@ -4624,7 +4499,6 @@ class VirtualGatewaySpecLoggingAccessLogFileFormatArgsDict(TypedDict):
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecLoggingAccessLogFileFormatArgs:
@@ -4669,7 +4543,6 @@ class VirtualGatewaySpecLoggingAccessLogFileFormatArgs:
 class VirtualGatewaySpecLoggingAccessLogFileFormatJsonArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualGatewaySpecLoggingAccessLogFileFormatJsonArgs:
@@ -4702,7 +4575,6 @@ class VirtualNodeSpecArgsDict(TypedDict):
     service_discovery: NotRequired[
         pulumi.Input[VirtualNodeSpecServiceDiscoveryArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecArgs:
@@ -4775,7 +4647,6 @@ class VirtualNodeSpecArgs:
 
 class VirtualNodeSpecBackendArgsDict(TypedDict):
     virtual_service: pulumi.Input[VirtualNodeSpecBackendVirtualServiceArgsDict]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendArgs:
@@ -4798,7 +4669,6 @@ class VirtualNodeSpecBackendDefaultsArgsDict(TypedDict):
     client_policy: NotRequired[
         pulumi.Input[VirtualNodeSpecBackendDefaultsClientPolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsArgs:
@@ -4824,7 +4694,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyArgsDict(TypedDict):
     tls: NotRequired[
         pulumi.Input[VirtualNodeSpecBackendDefaultsClientPolicyTlsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyArgs:
@@ -4857,7 +4726,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsArgsDict(TypedDict):
     ]
     enforce: NotRequired[pulumi.Input[_builtins.bool]]
     ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsArgs:
@@ -4925,7 +4793,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateArgsDict(TypedDict
             VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateArgs:
@@ -4979,7 +4846,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateArgs:
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileArgsDict(TypedDict):
     certificate_chain: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileArgs:
@@ -5002,7 +4868,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileArgs:
 
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsArgs:
@@ -5022,7 +4887,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationArgsDict(TypedDict)
             VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationArgs:
@@ -5077,7 +4941,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeN
     match: pulumi.Input[
         VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesArgs:
@@ -5107,7 +4970,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeN
     TypedDict
 ):
     exacts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchArgs:
@@ -5136,7 +4998,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustArgsDict(Typed
             VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustArgs:
@@ -5218,7 +5079,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmArgsDict(
     TypedDict
 ):
     certificate_authority_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmArgs:
@@ -5241,7 +5101,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileArgsDict(
     TypedDict
 ):
     certificate_chain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileArgs:
@@ -5258,7 +5117,6 @@ class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgsDict(
     TypedDict
 ):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsArgs:
@@ -5274,7 +5132,6 @@ class VirtualNodeSpecBackendVirtualServiceArgsDict(TypedDict):
     client_policy: NotRequired[
         pulumi.Input[VirtualNodeSpecBackendVirtualServiceClientPolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceArgs:
@@ -5310,7 +5167,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyArgsDict(TypedDict):
     tls: NotRequired[
         pulumi.Input[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyArgs:
@@ -5347,7 +5203,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsArgsDict(TypedDict):
     ]
     enforce: NotRequired[pulumi.Input[_builtins.bool]]
     ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsArgs:
@@ -5421,7 +5276,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateArgsDict(Typ
             VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateArgs:
@@ -5481,7 +5335,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileArgsDict
 ):
     certificate_chain: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileArgs:
@@ -5506,7 +5359,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsArgsDict(
     TypedDict
 ):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsArgs:
@@ -5526,7 +5378,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationArgsDict(Type
             VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationArgs:
@@ -5581,7 +5432,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAltern
     match: pulumi.Input[
         VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesArgs:
@@ -5611,7 +5461,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAltern
     TypedDict
 ):
     exacts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchArgs:
@@ -5642,7 +5491,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustArgsDict
             VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustArgs:
@@ -5724,7 +5572,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmArgsD
     TypedDict
 ):
     certificate_authority_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmArgs:
@@ -5747,7 +5594,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileArgs
     TypedDict
 ):
     certificate_chain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileArgs:
@@ -5764,7 +5610,6 @@ class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsArgsD
     TypedDict
 ):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsArgs:
@@ -5786,7 +5631,6 @@ class VirtualNodeSpecListenerArgsDict(TypedDict):
     ]
     timeout: NotRequired[pulumi.Input[VirtualNodeSpecListenerTimeoutArgsDict]]
     tls: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerArgs:
@@ -5870,7 +5714,6 @@ class VirtualNodeSpecListenerConnectionPoolArgsDict(TypedDict):
             Sequence[pulumi.Input[VirtualNodeSpecListenerConnectionPoolTcpArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerConnectionPoolArgs:
@@ -5963,7 +5806,6 @@ class VirtualNodeSpecListenerConnectionPoolArgs:
 
 class VirtualNodeSpecListenerConnectionPoolGrpcArgsDict(TypedDict):
     max_requests: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerConnectionPoolGrpcArgs:
@@ -5976,7 +5818,6 @@ class VirtualNodeSpecListenerConnectionPoolGrpcArgs:
 
 class VirtualNodeSpecListenerConnectionPoolHttp2ArgsDict(TypedDict):
     max_requests: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerConnectionPoolHttp2Args:
@@ -5990,7 +5831,6 @@ class VirtualNodeSpecListenerConnectionPoolHttp2Args:
 class VirtualNodeSpecListenerConnectionPoolHttpArgsDict(TypedDict):
     max_connections: pulumi.Input[_builtins.int]
     max_pending_requests: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerConnectionPoolHttpArgs:
@@ -6013,7 +5853,6 @@ class VirtualNodeSpecListenerConnectionPoolHttpArgs:
 
 class VirtualNodeSpecListenerConnectionPoolTcpArgsDict(TypedDict):
     max_connections: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerConnectionPoolTcpArgs:
@@ -6032,7 +5871,6 @@ class VirtualNodeSpecListenerHealthCheckArgsDict(TypedDict):
     unhealthy_threshold: pulumi.Input[_builtins.int]
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerHealthCheckArgs:
@@ -6090,7 +5928,6 @@ class VirtualNodeSpecListenerOutlierDetectionArgsDict(TypedDict):
     interval: pulumi.Input[VirtualNodeSpecListenerOutlierDetectionIntervalArgsDict]
     max_ejection_percent: pulumi.Input[_builtins.int]
     max_server_errors: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerOutlierDetectionArgs:
@@ -6141,7 +5978,6 @@ class VirtualNodeSpecListenerOutlierDetectionArgs:
 class VirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationArgs:
@@ -6165,7 +6001,6 @@ class VirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationArgs:
 class VirtualNodeSpecListenerOutlierDetectionIntervalArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerOutlierDetectionIntervalArgs:
@@ -6189,7 +6024,6 @@ class VirtualNodeSpecListenerOutlierDetectionIntervalArgs:
 class VirtualNodeSpecListenerPortMappingArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
     protocol: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerPortMappingArgs:
@@ -6215,7 +6049,6 @@ class VirtualNodeSpecListenerTimeoutArgsDict(TypedDict):
     http: NotRequired[pulumi.Input[VirtualNodeSpecListenerTimeoutHttpArgsDict]]
     http2: NotRequired[pulumi.Input[VirtualNodeSpecListenerTimeoutHttp2ArgsDict]]
     tcp: NotRequired[pulumi.Input[VirtualNodeSpecListenerTimeoutTcpArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutArgs:
@@ -6267,7 +6100,6 @@ class VirtualNodeSpecListenerTimeoutGrpcArgsDict(TypedDict):
     per_request: NotRequired[
         pulumi.Input[VirtualNodeSpecListenerTimeoutGrpcPerRequestArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutGrpcArgs:
@@ -6302,7 +6134,6 @@ class VirtualNodeSpecListenerTimeoutGrpcArgs:
 class VirtualNodeSpecListenerTimeoutGrpcIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutGrpcIdleArgs:
@@ -6326,7 +6157,6 @@ class VirtualNodeSpecListenerTimeoutGrpcIdleArgs:
 class VirtualNodeSpecListenerTimeoutGrpcPerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutGrpcPerRequestArgs:
@@ -6352,7 +6182,6 @@ class VirtualNodeSpecListenerTimeoutHttp2ArgsDict(TypedDict):
     per_request: NotRequired[
         pulumi.Input[VirtualNodeSpecListenerTimeoutHttp2PerRequestArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttp2Args:
@@ -6389,7 +6218,6 @@ class VirtualNodeSpecListenerTimeoutHttp2Args:
 class VirtualNodeSpecListenerTimeoutHttp2IdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttp2IdleArgs:
@@ -6413,7 +6241,6 @@ class VirtualNodeSpecListenerTimeoutHttp2IdleArgs:
 class VirtualNodeSpecListenerTimeoutHttp2PerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttp2PerRequestArgs:
@@ -6439,7 +6266,6 @@ class VirtualNodeSpecListenerTimeoutHttpArgsDict(TypedDict):
     per_request: NotRequired[
         pulumi.Input[VirtualNodeSpecListenerTimeoutHttpPerRequestArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttpArgs:
@@ -6474,7 +6300,6 @@ class VirtualNodeSpecListenerTimeoutHttpArgs:
 class VirtualNodeSpecListenerTimeoutHttpIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttpIdleArgs:
@@ -6498,7 +6323,6 @@ class VirtualNodeSpecListenerTimeoutHttpIdleArgs:
 class VirtualNodeSpecListenerTimeoutHttpPerRequestArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutHttpPerRequestArgs:
@@ -6521,7 +6345,6 @@ class VirtualNodeSpecListenerTimeoutHttpPerRequestArgs:
 
 class VirtualNodeSpecListenerTimeoutTcpArgsDict(TypedDict):
     idle: NotRequired[pulumi.Input[VirtualNodeSpecListenerTimeoutTcpIdleArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutTcpArgs:
@@ -6543,7 +6366,6 @@ class VirtualNodeSpecListenerTimeoutTcpArgs:
 class VirtualNodeSpecListenerTimeoutTcpIdleArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTimeoutTcpIdleArgs:
@@ -6568,7 +6390,6 @@ class VirtualNodeSpecListenerTlsArgsDict(TypedDict):
     certificate: pulumi.Input[VirtualNodeSpecListenerTlsCertificateArgsDict]
     mode: pulumi.Input[_builtins.str]
     validation: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsValidationArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsArgs:
@@ -6609,7 +6430,6 @@ class VirtualNodeSpecListenerTlsCertificateArgsDict(TypedDict):
     acm: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsCertificateAcmArgsDict]]
     file: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsCertificateFileArgsDict]]
     sds: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsCertificateSdsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsCertificateArgs:
@@ -6655,7 +6475,6 @@ class VirtualNodeSpecListenerTlsCertificateArgs:
 
 class VirtualNodeSpecListenerTlsCertificateAcmArgsDict(TypedDict):
     certificate_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsCertificateAcmArgs:
@@ -6669,7 +6488,6 @@ class VirtualNodeSpecListenerTlsCertificateAcmArgs:
 class VirtualNodeSpecListenerTlsCertificateFileArgsDict(TypedDict):
     certificate_chain: pulumi.Input[_builtins.str]
     private_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsCertificateFileArgs:
@@ -6692,7 +6510,6 @@ class VirtualNodeSpecListenerTlsCertificateFileArgs:
 
 class VirtualNodeSpecListenerTlsCertificateSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsCertificateSdsArgs:
@@ -6710,7 +6527,6 @@ class VirtualNodeSpecListenerTlsValidationArgsDict(TypedDict):
             VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationArgs:
@@ -6752,7 +6568,6 @@ class VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesArgsDict(TypedD
     match: pulumi.Input[
         VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesArgs:
@@ -6782,7 +6597,6 @@ class VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchArgsDict(
     TypedDict
 ):
     exacts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchArgs:
@@ -6800,7 +6614,6 @@ class VirtualNodeSpecListenerTlsValidationTrustArgsDict(TypedDict):
         pulumi.Input[VirtualNodeSpecListenerTlsValidationTrustFileArgsDict]
     ]
     sds: NotRequired[pulumi.Input[VirtualNodeSpecListenerTlsValidationTrustSdsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationTrustArgs:
@@ -6839,7 +6652,6 @@ class VirtualNodeSpecListenerTlsValidationTrustArgs:
 
 class VirtualNodeSpecListenerTlsValidationTrustFileArgsDict(TypedDict):
     certificate_chain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationTrustFileArgs:
@@ -6854,7 +6666,6 @@ class VirtualNodeSpecListenerTlsValidationTrustFileArgs:
 
 class VirtualNodeSpecListenerTlsValidationTrustSdsArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecListenerTlsValidationTrustSdsArgs:
@@ -6867,7 +6678,6 @@ class VirtualNodeSpecListenerTlsValidationTrustSdsArgs:
 
 class VirtualNodeSpecLoggingArgsDict(TypedDict):
     access_log: NotRequired[pulumi.Input[VirtualNodeSpecLoggingAccessLogArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecLoggingArgs:
@@ -6888,7 +6698,6 @@ class VirtualNodeSpecLoggingArgs:
 
 class VirtualNodeSpecLoggingAccessLogArgsDict(TypedDict):
     file: NotRequired[pulumi.Input[VirtualNodeSpecLoggingAccessLogFileArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecLoggingAccessLogArgs:
@@ -6910,7 +6719,6 @@ class VirtualNodeSpecLoggingAccessLogArgs:
 class VirtualNodeSpecLoggingAccessLogFileArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     format: NotRequired[pulumi.Input[VirtualNodeSpecLoggingAccessLogFileFormatArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecLoggingAccessLogFileArgs:
@@ -6947,7 +6755,6 @@ class VirtualNodeSpecLoggingAccessLogFileFormatArgsDict(TypedDict):
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecLoggingAccessLogFileFormatArgs:
@@ -6992,7 +6799,6 @@ class VirtualNodeSpecLoggingAccessLogFileFormatArgs:
 class VirtualNodeSpecLoggingAccessLogFileFormatJsonArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecLoggingAccessLogFileFormatJsonArgs:
@@ -7018,7 +6824,6 @@ class VirtualNodeSpecServiceDiscoveryArgsDict(TypedDict):
         pulumi.Input[VirtualNodeSpecServiceDiscoveryAwsCloudMapArgsDict]
     ]
     dns: NotRequired[pulumi.Input[VirtualNodeSpecServiceDiscoveryDnsArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecServiceDiscoveryArgs:
@@ -7052,7 +6857,6 @@ class VirtualNodeSpecServiceDiscoveryAwsCloudMapArgsDict(TypedDict):
     namespace_name: pulumi.Input[_builtins.str]
     service_name: pulumi.Input[_builtins.str]
     attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecServiceDiscoveryAwsCloudMapArgs:
@@ -7089,7 +6893,6 @@ class VirtualNodeSpecServiceDiscoveryDnsArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
     ip_preference: NotRequired[pulumi.Input[_builtins.str]]
     response_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VirtualNodeSpecServiceDiscoveryDnsArgs:
@@ -7120,7 +6923,6 @@ class VirtualRouterSpecArgsDict(TypedDict):
     listeners: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[VirtualRouterSpecListenerArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualRouterSpecArgs:
@@ -7148,7 +6950,6 @@ class VirtualRouterSpecArgs:
 
 class VirtualRouterSpecListenerArgsDict(TypedDict):
     port_mapping: pulumi.Input[VirtualRouterSpecListenerPortMappingArgsDict]
-    ...
 
 @pulumi.input_type
 class VirtualRouterSpecListenerArgs:
@@ -7170,7 +6971,6 @@ class VirtualRouterSpecListenerArgs:
 class VirtualRouterSpecListenerPortMappingArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
     protocol: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualRouterSpecListenerPortMappingArgs:
@@ -7193,7 +6993,6 @@ class VirtualRouterSpecListenerPortMappingArgs:
 
 class VirtualServiceSpecArgsDict(TypedDict):
     provider: NotRequired[pulumi.Input[VirtualServiceSpecProviderArgsDict]]
-    ...
 
 @pulumi.input_type
 class VirtualServiceSpecArgs:
@@ -7217,7 +7016,6 @@ class VirtualServiceSpecProviderArgsDict(TypedDict):
     virtual_router: NotRequired[
         pulumi.Input[VirtualServiceSpecProviderVirtualRouterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VirtualServiceSpecProviderArgs:
@@ -7252,7 +7050,6 @@ class VirtualServiceSpecProviderArgs:
 
 class VirtualServiceSpecProviderVirtualNodeArgsDict(TypedDict):
     virtual_node_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualServiceSpecProviderVirtualNodeArgs:
@@ -7267,7 +7064,6 @@ class VirtualServiceSpecProviderVirtualNodeArgs:
 
 class VirtualServiceSpecProviderVirtualRouterArgsDict(TypedDict):
     virtual_router_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualServiceSpecProviderVirtualRouterArgs:

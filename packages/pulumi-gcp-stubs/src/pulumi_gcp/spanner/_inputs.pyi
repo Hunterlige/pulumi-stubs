@@ -48,7 +48,6 @@ class BackupScheduleEncryptionConfigArgsDict(TypedDict):
     encryption_type: pulumi.Input[_builtins.str]
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BackupScheduleEncryptionConfigArgs:
@@ -95,7 +94,6 @@ class BackupScheduleIncrementalBackupSpecArgs:
 
 class BackupScheduleSpecArgsDict(TypedDict):
     cron_spec: NotRequired[pulumi.Input[BackupScheduleSpecCronSpecArgsDict]]
-    ...
 
 @pulumi.input_type
 class BackupScheduleSpecArgs:
@@ -114,7 +112,6 @@ class BackupScheduleSpecArgs:
 
 class BackupScheduleSpecCronSpecArgsDict(TypedDict):
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupScheduleSpecCronSpecArgs:
@@ -130,7 +127,6 @@ class BackupScheduleSpecCronSpecArgs:
 class DatabaseEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatabaseEncryptionConfigArgs:
@@ -161,7 +157,6 @@ class DatabaseIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseIAMBindingConditionArgs:
@@ -192,7 +187,6 @@ class DatabaseIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseIAMMemberConditionArgs:
@@ -235,7 +229,6 @@ class InstanceAutoscalingConfigArgsDict(TypedDict):
     autoscaling_targets: NotRequired[
         pulumi.Input[InstanceAutoscalingConfigAutoscalingTargetsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigArgs:
@@ -310,7 +303,6 @@ class InstanceAutoscalingConfigAsymmetricAutoscalingOptionArgsDict(TypedDict):
     replica_selection: pulumi.Input[
         InstanceAutoscalingConfigAsymmetricAutoscalingOptionReplicaSelectionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAsymmetricAutoscalingOptionArgs:
@@ -357,7 +349,6 @@ class InstanceAutoscalingConfigAsymmetricAutoscalingOptionOverridesArgsDict(Type
     autoscaling_limits: pulumi.Input[
         InstanceAutoscalingConfigAsymmetricAutoscalingOptionOverridesAutoscalingLimitsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAsymmetricAutoscalingOptionOverridesArgs:
@@ -388,7 +379,6 @@ class InstanceAutoscalingConfigAsymmetricAutoscalingOptionOverridesAutoscalingLi
 ):
     max_nodes: pulumi.Input[_builtins.int]
     min_nodes: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAsymmetricAutoscalingOptionOverridesAutoscalingLimitsArgs:
@@ -413,7 +403,6 @@ class InstanceAutoscalingConfigAsymmetricAutoscalingOptionReplicaSelectionArgsDi
     TypedDict
 ):
     location: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAsymmetricAutoscalingOptionReplicaSelectionArgs:
@@ -429,7 +418,6 @@ class InstanceAutoscalingConfigAutoscalingLimitsArgsDict(TypedDict):
     max_processing_units: NotRequired[pulumi.Input[_builtins.int]]
     min_nodes: NotRequired[pulumi.Input[_builtins.int]]
     min_processing_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAutoscalingLimitsArgs:
@@ -466,7 +454,6 @@ class InstanceAutoscalingConfigAutoscalingTargetsArgsDict(TypedDict):
     high_priority_cpu_utilization_percent: NotRequired[pulumi.Input[_builtins.int]]
     storage_utilization_percent: NotRequired[pulumi.Input[_builtins.int]]
     total_cpu_utilization_percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceAutoscalingConfigAutoscalingTargetsArgs:
@@ -509,7 +496,6 @@ class InstanceConfigReplicaArgsDict(TypedDict):
     default_leader_location: NotRequired[pulumi.Input[_builtins.bool]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceConfigReplicaArgs:
@@ -542,7 +528,6 @@ class InstanceIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIAMBindingConditionArgs:
@@ -573,7 +558,6 @@ class InstanceIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIAMMemberConditionArgs:

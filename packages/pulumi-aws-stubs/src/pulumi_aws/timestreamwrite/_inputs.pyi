@@ -27,7 +27,6 @@ class TableMagneticStoreWritePropertiesArgsDict(TypedDict):
             TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TableMagneticStoreWritePropertiesArgs:
@@ -77,7 +76,6 @@ class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgsDict
             TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationArgs:
@@ -116,7 +114,6 @@ class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Config
     encryption_option: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     object_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationArgs:
@@ -152,7 +149,6 @@ class TableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Config
 class TableRetentionPropertiesArgsDict(TypedDict):
     magnetic_store_retention_period_in_days: pulumi.Input[_builtins.int]
     memory_store_retention_period_in_hours: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TableRetentionPropertiesArgs:
@@ -183,7 +179,6 @@ class TableSchemaArgsDict(TypedDict):
     composite_partition_key: NotRequired[
         pulumi.Input[TableSchemaCompositePartitionKeyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TableSchemaArgs:
@@ -208,7 +203,6 @@ class TableSchemaCompositePartitionKeyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     enforcement_in_record: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableSchemaCompositePartitionKeyArgs:

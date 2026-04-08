@@ -23,7 +23,6 @@ class LoadBalancerAccessLogsArgsDict(TypedDict):
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     interval: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerAccessLogsArgs:
@@ -62,7 +61,6 @@ class LoadBalancerHealthCheckArgsDict(TypedDict):
     target: pulumi.Input[_builtins.str]
     timeout: pulumi.Input[_builtins.int]
     unhealthy_threshold: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LoadBalancerHealthCheckArgs:
@@ -107,7 +105,6 @@ class LoadBalancerListenerArgsDict(TypedDict):
     lb_port: pulumi.Input[_builtins.int]
     lb_protocol: pulumi.Input[_builtins.str]
     ssl_certificate_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerListenerArgs:
@@ -149,7 +146,6 @@ class LoadBalancerListenerArgs:
 class LoadBalancerPolicyPolicyAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerPolicyPolicyAttributeArgs:
@@ -173,7 +169,6 @@ class LoadBalancerPolicyPolicyAttributeArgs:
 class SslNegotiationPolicyAttributeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SslNegotiationPolicyAttributeArgs:

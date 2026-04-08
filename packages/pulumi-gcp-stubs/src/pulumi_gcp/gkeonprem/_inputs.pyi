@@ -340,7 +340,6 @@ __all__ = [
 
 class BareMetalAdminClusterClusterOperationsArgsDict(TypedDict):
     enable_application_logs: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterClusterOperationsArgs:
@@ -368,7 +367,6 @@ class BareMetalAdminClusterControlPlaneArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneArgs:
@@ -424,7 +422,6 @@ class BareMetalAdminClusterControlPlaneArgs:
 class BareMetalAdminClusterControlPlaneApiServerArgArgsDict(TypedDict):
     argument: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneApiServerArgArgs:
@@ -449,7 +446,6 @@ class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigArgsDict(TypedD
     node_pool_config: pulumi.Input[
         BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigArgs:
@@ -498,7 +494,6 @@ class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigArgs:
@@ -598,7 +593,6 @@ class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigN
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigArgs:
@@ -629,7 +623,6 @@ class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigT
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaintArgs:
@@ -658,7 +651,6 @@ class BareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigT
 
 class BareMetalAdminClusterFleetArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterFleetArgs:
@@ -680,7 +672,6 @@ class BareMetalAdminClusterLoadBalancerArgsDict(TypedDict):
     manual_lb_config: NotRequired[
         pulumi.Input[BareMetalAdminClusterLoadBalancerManualLbConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerArgs:
@@ -764,7 +755,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigArgsDict(TypedDict):
             BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigArgs:
@@ -877,7 +867,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigAddressPoolArgsDict(TypedDict)
     avoid_buggy_ips: NotRequired[pulumi.Input[_builtins.bool]]
     manual_assign: NotRequired[pulumi.Input[_builtins.bool]]
     pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigAddressPoolArgs:
@@ -920,7 +909,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigArgsDict(TypedDic
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigArgs:
@@ -961,7 +949,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgs
             BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgs:
@@ -1021,7 +1008,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNode
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgs:
@@ -1145,7 +1131,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNode
     registry_burst: NotRequired[pulumi.Input[_builtins.int]]
     registry_pull_qps: NotRequired[pulumi.Input[_builtins.int]]
     serialize_image_pulls_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigKubeletConfigArgs:
@@ -1181,7 +1166,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNode
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigNodeConfigArgs:
@@ -1212,7 +1196,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNode
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigTaintArgs:
@@ -1241,7 +1224,6 @@ class BareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNode
 
 class BareMetalAdminClusterLoadBalancerManualLbConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerManualLbConfigArgs:
@@ -1254,7 +1236,6 @@ class BareMetalAdminClusterLoadBalancerManualLbConfigArgs:
 
 class BareMetalAdminClusterLoadBalancerPortConfigArgsDict(TypedDict):
     control_plane_load_balancer_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerPortConfigArgs:
@@ -1269,7 +1250,6 @@ class BareMetalAdminClusterLoadBalancerPortConfigArgs:
 
 class BareMetalAdminClusterLoadBalancerVipConfigArgsDict(TypedDict):
     control_plane_vip: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterLoadBalancerVipConfigArgs:
@@ -1284,7 +1264,6 @@ class BareMetalAdminClusterLoadBalancerVipConfigArgs:
 
 class BareMetalAdminClusterMaintenanceConfigArgsDict(TypedDict):
     maintenance_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterMaintenanceConfigArgs:
@@ -1315,7 +1294,6 @@ class BareMetalAdminClusterNetworkConfigArgsDict(TypedDict):
             BareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterNetworkConfigArgs:
@@ -1373,7 +1351,6 @@ class BareMetalAdminClusterNetworkConfigArgs:
 class BareMetalAdminClusterNetworkConfigIslandModeCidrArgsDict(TypedDict):
     pod_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     service_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterNetworkConfigIslandModeCidrArgs:
@@ -1408,7 +1385,6 @@ class BareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigArgsDict(
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigArgs:
@@ -1423,7 +1399,6 @@ class BareMetalAdminClusterNetworkConfigMultipleNetworkInterfacesConfigArgs:
 
 class BareMetalAdminClusterNodeAccessConfigArgsDict(TypedDict):
     login_user: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterNodeAccessConfigArgs:
@@ -1438,7 +1413,6 @@ class BareMetalAdminClusterNodeAccessConfigArgs:
 
 class BareMetalAdminClusterNodeConfigArgsDict(TypedDict):
     max_pods_per_node: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterNodeConfigArgs:
@@ -1454,7 +1428,6 @@ class BareMetalAdminClusterNodeConfigArgs:
 class BareMetalAdminClusterProxyArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     no_proxies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterProxyArgs:
@@ -1483,7 +1456,6 @@ class BareMetalAdminClusterSecurityConfigArgsDict(TypedDict):
     authorization: NotRequired[
         pulumi.Input[BareMetalAdminClusterSecurityConfigAuthorizationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterSecurityConfigArgs:
@@ -1517,7 +1489,6 @@ class BareMetalAdminClusterSecurityConfigAuthorizationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterSecurityConfigAuthorizationArgs:
@@ -1555,7 +1526,6 @@ class BareMetalAdminClusterSecurityConfigAuthorizationArgs:
 
 class BareMetalAdminClusterSecurityConfigAuthorizationAdminUserArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterSecurityConfigAuthorizationAdminUserArgs:
@@ -1573,7 +1543,6 @@ class BareMetalAdminClusterStatusArgsDict(TypedDict):
         ]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStatusArgs:
@@ -1615,7 +1584,6 @@ class BareMetalAdminClusterStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStatusConditionArgs:
@@ -1659,7 +1627,6 @@ class BareMetalAdminClusterStorageArgsDict(TypedDict):
         BareMetalAdminClusterStorageLvpNodeMountsConfigArgsDict
     ]
     lvp_share_config: pulumi.Input[BareMetalAdminClusterStorageLvpShareConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStorageArgs:
@@ -1693,7 +1660,6 @@ class BareMetalAdminClusterStorageArgs:
 class BareMetalAdminClusterStorageLvpNodeMountsConfigArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     storage_class: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStorageLvpNodeMountsConfigArgs:
@@ -1719,7 +1685,6 @@ class BareMetalAdminClusterStorageLvpShareConfigArgsDict(TypedDict):
         BareMetalAdminClusterStorageLvpShareConfigLvpConfigArgsDict
     ]
     shared_path_pv_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStorageLvpShareConfigArgs:
@@ -1750,7 +1715,6 @@ class BareMetalAdminClusterStorageLvpShareConfigArgs:
 class BareMetalAdminClusterStorageLvpShareConfigLvpConfigArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     storage_class: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterStorageLvpShareConfigLvpConfigArgs:
@@ -1779,7 +1743,6 @@ class BareMetalAdminClusterValidationCheckArgsDict(TypedDict):
             Sequence[pulumi.Input[BareMetalAdminClusterValidationCheckStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterValidationCheckArgs:
@@ -1831,7 +1794,6 @@ class BareMetalAdminClusterValidationCheckStatusArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterValidationCheckStatusArgs:
@@ -1873,7 +1835,6 @@ class BareMetalAdminClusterValidationCheckStatusResultArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[_builtins.str]]
     options: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalAdminClusterValidationCheckStatusResultArgs:
@@ -1914,7 +1875,6 @@ class BareMetalAdminClusterValidationCheckStatusResultArgs:
 
 class BareMetalClusterBinaryAuthorizationArgsDict(TypedDict):
     evaluation_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterBinaryAuthorizationArgs:
@@ -1929,7 +1889,6 @@ class BareMetalClusterBinaryAuthorizationArgs:
 
 class BareMetalClusterClusterOperationsArgsDict(TypedDict):
     enable_application_logs: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterClusterOperationsArgs:
@@ -1955,7 +1914,6 @@ class BareMetalClusterControlPlaneArgsDict(TypedDict):
             Sequence[pulumi.Input[BareMetalClusterControlPlaneApiServerArgArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneArgs:
@@ -2003,7 +1961,6 @@ class BareMetalClusterControlPlaneArgs:
 class BareMetalClusterControlPlaneApiServerArgArgsDict(TypedDict):
     argument: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneApiServerArgArgs:
@@ -2028,7 +1985,6 @@ class BareMetalClusterControlPlaneControlPlaneNodePoolConfigArgsDict(TypedDict):
     node_pool_config: pulumi.Input[
         BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneControlPlaneNodePoolConfigArgs:
@@ -2077,7 +2033,6 @@ class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigArgsDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigArgs:
@@ -2177,7 +2132,6 @@ class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeCo
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigArgs:
@@ -2208,7 +2162,6 @@ class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaintA
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaintArgs:
@@ -2237,7 +2190,6 @@ class BareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaintA
 
 class BareMetalClusterFleetArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterFleetArgs:
@@ -2262,7 +2214,6 @@ class BareMetalClusterLoadBalancerArgsDict(TypedDict):
     metal_lb_config: NotRequired[
         pulumi.Input[BareMetalClusterLoadBalancerMetalLbConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerArgs:
@@ -2344,7 +2295,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigArgsDict(TypedDict):
             BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigArgs:
@@ -2429,7 +2379,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigAddressPoolArgsDict(TypedDict):
     pool: pulumi.Input[_builtins.str]
     avoid_buggy_ips: NotRequired[pulumi.Input[_builtins.bool]]
     manual_assign: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigAddressPoolArgs:
@@ -2468,7 +2417,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigBgpPeerConfigArgsDict(TypedDict):
     control_plane_nodes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigBgpPeerConfigArgs:
@@ -2509,7 +2457,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgsDict(
             BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigArgs:
@@ -2569,7 +2516,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgs:
@@ -2693,7 +2639,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolC
     registry_burst: NotRequired[pulumi.Input[_builtins.int]]
     registry_pull_qps: NotRequired[pulumi.Input[_builtins.int]]
     serialize_image_pulls_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigKubeletConfigArgs:
@@ -2729,7 +2674,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolC
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigNodeConfigArgs:
@@ -2760,7 +2704,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolC
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigTaintArgs:
@@ -2789,7 +2732,6 @@ class BareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolC
 
 class BareMetalClusterLoadBalancerManualLbConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerManualLbConfigArgs:
@@ -2811,7 +2753,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigArgsDict(TypedDict):
             BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigArgs:
@@ -2869,7 +2810,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigAddressPoolArgsDict(TypedDict):
     pool: pulumi.Input[_builtins.str]
     avoid_buggy_ips: NotRequired[pulumi.Input[_builtins.bool]]
     manual_assign: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigAddressPoolArgs:
@@ -2910,7 +2850,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigArgsDic
             BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigArgs:
@@ -2965,7 +2904,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfigArgs:
@@ -3065,7 +3003,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoo
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfigNodeConfigArgs:
@@ -3096,7 +3033,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoo
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfigTaintArgs:
@@ -3125,7 +3061,6 @@ class BareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoo
 
 class BareMetalClusterLoadBalancerPortConfigArgsDict(TypedDict):
     control_plane_load_balancer_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerPortConfigArgs:
@@ -3141,7 +3076,6 @@ class BareMetalClusterLoadBalancerPortConfigArgs:
 class BareMetalClusterLoadBalancerVipConfigArgsDict(TypedDict):
     control_plane_vip: pulumi.Input[_builtins.str]
     ingress_vip: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterLoadBalancerVipConfigArgs:
@@ -3164,7 +3098,6 @@ class BareMetalClusterLoadBalancerVipConfigArgs:
 
 class BareMetalClusterMaintenanceConfigArgsDict(TypedDict):
     maintenance_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterMaintenanceConfigArgs:
@@ -3198,7 +3131,6 @@ class BareMetalClusterNetworkConfigArgsDict(TypedDict):
     sr_iov_config: NotRequired[
         pulumi.Input[BareMetalClusterNetworkConfigSrIovConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNetworkConfigArgs:
@@ -3263,7 +3195,6 @@ class BareMetalClusterNetworkConfigArgs:
 class BareMetalClusterNetworkConfigIslandModeCidrArgsDict(TypedDict):
     pod_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     service_address_cidr_blocks: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNetworkConfigIslandModeCidrArgs:
@@ -3296,7 +3227,6 @@ class BareMetalClusterNetworkConfigIslandModeCidrArgs:
 
 class BareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigArgs:
@@ -3311,7 +3241,6 @@ class BareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigArgs:
 
 class BareMetalClusterNetworkConfigSrIovConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNetworkConfigSrIovConfigArgs:
@@ -3326,7 +3255,6 @@ class BareMetalClusterNetworkConfigSrIovConfigArgs:
 
 class BareMetalClusterNodeAccessConfigArgsDict(TypedDict):
     login_user: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNodeAccessConfigArgs:
@@ -3342,7 +3270,6 @@ class BareMetalClusterNodeAccessConfigArgs:
 class BareMetalClusterNodeConfigArgsDict(TypedDict):
     container_runtime: NotRequired[pulumi.Input[_builtins.str]]
     max_pods_per_node: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterNodeConfigArgs:
@@ -3365,7 +3292,6 @@ class BareMetalClusterNodeConfigArgs:
 
 class BareMetalClusterOsEnvironmentConfigArgsDict(TypedDict):
     package_repo_excluded: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterOsEnvironmentConfigArgs:
@@ -3381,7 +3307,6 @@ class BareMetalClusterOsEnvironmentConfigArgs:
 class BareMetalClusterProxyArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     no_proxies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterProxyArgs:
@@ -3410,7 +3335,6 @@ class BareMetalClusterSecurityConfigArgsDict(TypedDict):
     authorization: NotRequired[
         pulumi.Input[BareMetalClusterSecurityConfigAuthorizationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterSecurityConfigArgs:
@@ -3438,7 +3362,6 @@ class BareMetalClusterSecurityConfigAuthorizationArgsDict(TypedDict):
             pulumi.Input[BareMetalClusterSecurityConfigAuthorizationAdminUserArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterSecurityConfigAuthorizationArgs:
@@ -3470,7 +3393,6 @@ class BareMetalClusterSecurityConfigAuthorizationArgs:
 
 class BareMetalClusterSecurityConfigAuthorizationAdminUserArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterSecurityConfigAuthorizationAdminUserArgs:
@@ -3486,7 +3408,6 @@ class BareMetalClusterStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BareMetalClusterStatusConditionArgsDict]]]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStatusArgs:
@@ -3524,7 +3445,6 @@ class BareMetalClusterStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStatusConditionArgs:
@@ -3568,7 +3488,6 @@ class BareMetalClusterStorageArgsDict(TypedDict):
         BareMetalClusterStorageLvpNodeMountsConfigArgsDict
     ]
     lvp_share_config: pulumi.Input[BareMetalClusterStorageLvpShareConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStorageArgs:
@@ -3602,7 +3521,6 @@ class BareMetalClusterStorageArgs:
 class BareMetalClusterStorageLvpNodeMountsConfigArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     storage_class: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStorageLvpNodeMountsConfigArgs:
@@ -3626,7 +3544,6 @@ class BareMetalClusterStorageLvpNodeMountsConfigArgs:
 class BareMetalClusterStorageLvpShareConfigArgsDict(TypedDict):
     lvp_config: pulumi.Input[BareMetalClusterStorageLvpShareConfigLvpConfigArgsDict]
     shared_path_pv_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStorageLvpShareConfigArgs:
@@ -3654,7 +3571,6 @@ class BareMetalClusterStorageLvpShareConfigArgs:
 class BareMetalClusterStorageLvpShareConfigLvpConfigArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     storage_class: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterStorageLvpShareConfigLvpConfigArgs:
@@ -3677,7 +3593,6 @@ class BareMetalClusterStorageLvpShareConfigLvpConfigArgs:
 
 class BareMetalClusterUpgradePolicyArgsDict(TypedDict):
     policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterUpgradePolicyArgs:
@@ -3698,7 +3613,6 @@ class BareMetalClusterValidationCheckArgsDict(TypedDict):
             Sequence[pulumi.Input[BareMetalClusterValidationCheckStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterValidationCheckArgs:
@@ -3746,7 +3660,6 @@ class BareMetalClusterValidationCheckStatusArgsDict(TypedDict):
             Sequence[pulumi.Input[BareMetalClusterValidationCheckStatusResultArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterValidationCheckStatusArgs:
@@ -3784,7 +3697,6 @@ class BareMetalClusterValidationCheckStatusResultArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[_builtins.str]]
     options: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalClusterValidationCheckStatusResultArgs:
@@ -3834,7 +3746,6 @@ class BareMetalNodePoolNodePoolConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[BareMetalNodePoolNodePoolConfigTaintArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BareMetalNodePoolNodePoolConfigArgs:
@@ -3900,7 +3811,6 @@ class BareMetalNodePoolNodePoolConfigArgs:
 class BareMetalNodePoolNodePoolConfigNodeConfigArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     node_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalNodePoolNodePoolConfigNodeConfigArgs:
@@ -3929,7 +3839,6 @@ class BareMetalNodePoolNodePoolConfigTaintArgsDict(TypedDict):
     effect: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalNodePoolNodePoolConfigTaintArgs:
@@ -3961,7 +3870,6 @@ class BareMetalNodePoolStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BareMetalNodePoolStatusConditionArgsDict]]]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalNodePoolStatusArgs:
@@ -3999,7 +3907,6 @@ class BareMetalNodePoolStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BareMetalNodePoolStatusConditionArgs:
@@ -4040,7 +3947,6 @@ class BareMetalNodePoolStatusConditionArgs:
 
 class VMwareClusterAntiAffinityGroupsArgsDict(TypedDict):
     aag_config_disabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VMwareClusterAntiAffinityGroupsArgs:
@@ -4059,7 +3965,6 @@ class VMwareClusterAuthorizationArgsDict(TypedDict):
             Sequence[pulumi.Input[VMwareClusterAuthorizationAdminUserArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterAuthorizationArgs:
@@ -4091,7 +3996,6 @@ class VMwareClusterAuthorizationArgs:
 
 class VMwareClusterAuthorizationAdminUserArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VMwareClusterAuthorizationAdminUserArgs:
@@ -4104,7 +4008,6 @@ class VMwareClusterAuthorizationAdminUserArgs:
 
 class VMwareClusterAutoRepairConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VMwareClusterAutoRepairConfigArgs:
@@ -4127,7 +4030,6 @@ class VMwareClusterControlPlaneNodeArgsDict(TypedDict):
             Sequence[pulumi.Input[VMwareClusterControlPlaneNodeVsphereConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterControlPlaneNodeArgs:
@@ -4194,7 +4096,6 @@ class VMwareClusterControlPlaneNodeArgs:
 
 class VMwareClusterControlPlaneNodeAutoResizeConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VMwareClusterControlPlaneNodeAutoResizeConfigArgs:
@@ -4208,7 +4109,6 @@ class VMwareClusterControlPlaneNodeAutoResizeConfigArgs:
 class VMwareClusterControlPlaneNodeVsphereConfigArgsDict(TypedDict):
     datastore: NotRequired[pulumi.Input[_builtins.str]]
     storage_policy_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterControlPlaneNodeVsphereConfigArgs:
@@ -4233,7 +4133,6 @@ class VMwareClusterDataplaneV2ArgsDict(TypedDict):
     advanced_networking: NotRequired[pulumi.Input[_builtins.bool]]
     dataplane_v2_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     windows_dataplane_v2_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterDataplaneV2Args:
@@ -4266,7 +4165,6 @@ class VMwareClusterDataplaneV2Args:
 
 class VMwareClusterFleetArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterFleetArgs:
@@ -4288,7 +4186,6 @@ class VMwareClusterLoadBalancerArgsDict(TypedDict):
         pulumi.Input[VMwareClusterLoadBalancerMetalLbConfigArgsDict]
     ]
     vip_config: NotRequired[pulumi.Input[VMwareClusterLoadBalancerVipConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerArgs:
@@ -4347,7 +4244,6 @@ class VMwareClusterLoadBalancerF5ConfigArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     partition: NotRequired[pulumi.Input[_builtins.str]]
     snat_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerF5ConfigArgs:
@@ -4379,7 +4275,6 @@ class VMwareClusterLoadBalancerManualLbConfigArgsDict(TypedDict):
     ingress_http_node_port: NotRequired[pulumi.Input[_builtins.int]]
     ingress_https_node_port: NotRequired[pulumi.Input[_builtins.int]]
     konnectivity_server_node_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerManualLbConfigArgs:
@@ -4422,7 +4317,6 @@ class VMwareClusterLoadBalancerMetalLbConfigArgsDict(TypedDict):
             pulumi.Input[VMwareClusterLoadBalancerMetalLbConfigAddressPoolArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerMetalLbConfigArgs:
@@ -4457,7 +4351,6 @@ class VMwareClusterLoadBalancerMetalLbConfigAddressPoolArgsDict(TypedDict):
     pool: pulumi.Input[_builtins.str]
     avoid_buggy_ips: NotRequired[pulumi.Input[_builtins.bool]]
     manual_assign: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerMetalLbConfigAddressPoolArgs:
@@ -4493,7 +4386,6 @@ class VMwareClusterLoadBalancerMetalLbConfigAddressPoolArgs:
 class VMwareClusterLoadBalancerVipConfigArgsDict(TypedDict):
     control_plane_vip: NotRequired[pulumi.Input[_builtins.str]]
     ingress_vip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterLoadBalancerVipConfigArgs:
@@ -4528,7 +4420,6 @@ class VMwareClusterNetworkConfigArgsDict(TypedDict):
         pulumi.Input[VMwareClusterNetworkConfigStaticIpConfigArgsDict]
     ]
     vcenter_network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigArgs:
@@ -4623,7 +4514,6 @@ class VMwareClusterNetworkConfigControlPlaneV2ConfigArgsDict(TypedDict):
             VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigControlPlaneV2ConfigArgs:
@@ -4669,7 +4559,6 @@ class VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockArgsDict(
         ]
     ]
     netmask: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockArgs:
@@ -4730,7 +4619,6 @@ class VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockIpArgsDic
 ):
     hostname: NotRequired[pulumi.Input[_builtins.str]]
     ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockIpArgs:
@@ -4753,7 +4641,6 @@ class VMwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockIpArgs:
 
 class VMwareClusterNetworkConfigDhcpIpConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigDhcpIpConfigArgs:
@@ -4768,7 +4655,6 @@ class VMwareClusterNetworkConfigHostConfigArgsDict(TypedDict):
     dns_search_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ntp_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigHostConfigArgs:
@@ -4817,7 +4703,6 @@ class VMwareClusterNetworkConfigStaticIpConfigArgsDict(TypedDict):
     ip_blocks: pulumi.Input[
         Sequence[pulumi.Input[VMwareClusterNetworkConfigStaticIpConfigIpBlockArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigStaticIpConfigArgs:
@@ -4851,7 +4736,6 @@ class VMwareClusterNetworkConfigStaticIpConfigIpBlockArgsDict(TypedDict):
         ]
     ]
     netmask: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigStaticIpConfigIpBlockArgs:
@@ -4896,7 +4780,6 @@ class VMwareClusterNetworkConfigStaticIpConfigIpBlockArgs:
 class VMwareClusterNetworkConfigStaticIpConfigIpBlockIpArgsDict(TypedDict):
     ip: pulumi.Input[_builtins.str]
     hostname: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterNetworkConfigStaticIpConfigIpBlockIpArgs:
@@ -4922,7 +4805,6 @@ class VMwareClusterStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[VMwareClusterStatusConditionArgsDict]]]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterStatusArgs:
@@ -4960,7 +4842,6 @@ class VMwareClusterStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterStatusConditionArgs:
@@ -5001,7 +4882,6 @@ class VMwareClusterStatusConditionArgs:
 
 class VMwareClusterStorageArgsDict(TypedDict):
     vsphere_csi_disabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VMwareClusterStorageArgs:
@@ -5016,7 +4896,6 @@ class VMwareClusterStorageArgs:
 
 class VMwareClusterUpgradePolicyArgsDict(TypedDict):
     control_plane_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterUpgradePolicyArgs:
@@ -5035,7 +4914,6 @@ class VMwareClusterValidationCheckArgsDict(TypedDict):
     statuses: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[VMwareClusterValidationCheckStatusArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterValidationCheckArgs:
@@ -5079,7 +4957,6 @@ class VMwareClusterValidationCheckStatusArgsDict(TypedDict):
             Sequence[pulumi.Input[VMwareClusterValidationCheckStatusResultArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareClusterValidationCheckStatusArgs:
@@ -5117,7 +4994,6 @@ class VMwareClusterValidationCheckStatusResultArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[_builtins.str]]
     options: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterValidationCheckStatusResultArgs:
@@ -5165,7 +5041,6 @@ class VMwareClusterVcenterArgsDict(TypedDict):
     folder: NotRequired[pulumi.Input[_builtins.str]]
     resource_pool: NotRequired[pulumi.Input[_builtins.str]]
     storage_policy_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareClusterVcenterArgs:
@@ -5235,7 +5110,6 @@ class VMwareNodePoolConfigArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[VMwareNodePoolConfigTaintArgsDict]]]
     ]
     vsphere_config: NotRequired[pulumi.Input[VMwareNodePoolConfigVsphereConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolConfigArgs:
@@ -5329,7 +5203,6 @@ class VMwareNodePoolConfigTaintArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     effect: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolConfigTaintArgs:
@@ -5364,7 +5237,6 @@ class VMwareNodePoolConfigVsphereConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[VMwareNodePoolConfigVsphereConfigTagArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolConfigVsphereConfigArgs:
@@ -5415,7 +5287,6 @@ class VMwareNodePoolConfigVsphereConfigArgs:
 class VMwareNodePoolConfigVsphereConfigTagArgsDict(TypedDict):
     category: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolConfigVsphereConfigTagArgs:
@@ -5439,7 +5310,6 @@ class VMwareNodePoolConfigVsphereConfigTagArgs:
 class VMwareNodePoolNodePoolAutoscalingArgsDict(TypedDict):
     max_replicas: pulumi.Input[_builtins.int]
     min_replicas: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolNodePoolAutoscalingArgs:
@@ -5465,7 +5335,6 @@ class VMwareNodePoolStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[VMwareNodePoolStatusConditionArgsDict]]]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolStatusArgs:
@@ -5503,7 +5372,6 @@ class VMwareNodePoolStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VMwareNodePoolStatusConditionArgs:
@@ -5546,7 +5414,6 @@ class VmwareAdminClusterAddonNodeArgsDict(TypedDict):
     auto_resize_config: NotRequired[
         pulumi.Input[VmwareAdminClusterAddonNodeAutoResizeConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAddonNodeArgs:
@@ -5570,7 +5437,6 @@ class VmwareAdminClusterAddonNodeArgs:
 
 class VmwareAdminClusterAddonNodeAutoResizeConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAddonNodeAutoResizeConfigArgs:
@@ -5583,7 +5449,6 @@ class VmwareAdminClusterAddonNodeAutoResizeConfigArgs:
 
 class VmwareAdminClusterAntiAffinityGroupsArgsDict(TypedDict):
     aag_config_disabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAntiAffinityGroupsArgs:
@@ -5602,7 +5467,6 @@ class VmwareAdminClusterAuthorizationArgsDict(TypedDict):
             Sequence[pulumi.Input[VmwareAdminClusterAuthorizationViewerUserArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAuthorizationArgs:
@@ -5636,7 +5500,6 @@ class VmwareAdminClusterAuthorizationArgs:
 
 class VmwareAdminClusterAuthorizationViewerUserArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAuthorizationViewerUserArgs:
@@ -5649,7 +5512,6 @@ class VmwareAdminClusterAuthorizationViewerUserArgs:
 
 class VmwareAdminClusterAutoRepairConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterAutoRepairConfigArgs:
@@ -5664,7 +5526,6 @@ class VmwareAdminClusterControlPlaneNodeArgsDict(TypedDict):
     cpus: NotRequired[pulumi.Input[_builtins.int]]
     memory: NotRequired[pulumi.Input[_builtins.int]]
     replicas: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterControlPlaneNodeArgs:
@@ -5693,7 +5554,6 @@ class VmwareAdminClusterControlPlaneNodeArgs:
 
 class VmwareAdminClusterFleetArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterFleetArgs:
@@ -5715,7 +5575,6 @@ class VmwareAdminClusterLoadBalancerArgsDict(TypedDict):
     metal_lb_config: NotRequired[
         pulumi.Input[VmwareAdminClusterLoadBalancerMetalLbConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterLoadBalancerArgs:
@@ -5776,7 +5635,6 @@ class VmwareAdminClusterLoadBalancerF5ConfigArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     partition: NotRequired[pulumi.Input[_builtins.str]]
     snat_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterLoadBalancerF5ConfigArgs:
@@ -5809,7 +5667,6 @@ class VmwareAdminClusterLoadBalancerManualLbConfigArgsDict(TypedDict):
     ingress_http_node_port: NotRequired[pulumi.Input[_builtins.int]]
     ingress_https_node_port: NotRequired[pulumi.Input[_builtins.int]]
     konnectivity_server_node_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterLoadBalancerManualLbConfigArgs:
@@ -5854,7 +5711,6 @@ class VmwareAdminClusterLoadBalancerManualLbConfigArgs:
 
 class VmwareAdminClusterLoadBalancerMetalLbConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterLoadBalancerMetalLbConfigArgs:
@@ -5870,7 +5726,6 @@ class VmwareAdminClusterLoadBalancerMetalLbConfigArgs:
 class VmwareAdminClusterLoadBalancerVipConfigArgsDict(TypedDict):
     control_plane_vip: pulumi.Input[_builtins.str]
     addons_vip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterLoadBalancerVipConfigArgs:
@@ -5907,7 +5762,6 @@ class VmwareAdminClusterNetworkConfigArgsDict(TypedDict):
         pulumi.Input[VmwareAdminClusterNetworkConfigStaticIpConfigArgsDict]
     ]
     vcenter_network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigArgs:
@@ -6004,7 +5858,6 @@ class VmwareAdminClusterNetworkConfigArgs:
 
 class VmwareAdminClusterNetworkConfigDhcpIpConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigDhcpIpConfigArgs:
@@ -6021,7 +5874,6 @@ class VmwareAdminClusterNetworkConfigHaControlPlaneConfigArgsDict(TypedDict):
             VmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigHaControlPlaneConfigArgs:
@@ -6065,7 +5917,6 @@ class VmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockArgs
         ]
     ]
     netmask: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockArgs:
@@ -6120,7 +5971,6 @@ class VmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpAr
 ):
     ip: pulumi.Input[_builtins.str]
     hostname: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpArgs:
@@ -6145,7 +5995,6 @@ class VmwareAdminClusterNetworkConfigHostConfigArgsDict(TypedDict):
     dns_search_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     dns_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ntp_servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigHostConfigArgs:
@@ -6200,7 +6049,6 @@ class VmwareAdminClusterNetworkConfigStaticIpConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigStaticIpConfigArgs:
@@ -6250,7 +6098,6 @@ class VmwareAdminClusterNetworkConfigStaticIpConfigIpBlockArgsDict(TypedDict):
         ]
     ]
     netmask: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigStaticIpConfigIpBlockArgs:
@@ -6297,7 +6144,6 @@ class VmwareAdminClusterNetworkConfigStaticIpConfigIpBlockArgs:
 class VmwareAdminClusterNetworkConfigStaticIpConfigIpBlockIpArgsDict(TypedDict):
     ip: pulumi.Input[_builtins.str]
     hostname: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterNetworkConfigStaticIpConfigIpBlockIpArgs:
@@ -6331,7 +6177,6 @@ class VmwareAdminClusterPlatformConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[VmwareAdminClusterPlatformConfigStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigArgs:
@@ -6403,7 +6248,6 @@ class VmwareAdminClusterPlatformConfigBundleArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigBundleArgs:
@@ -6452,7 +6296,6 @@ class VmwareAdminClusterPlatformConfigBundleStatusArgsDict(TypedDict):
         ]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigBundleStatusArgs:
@@ -6506,7 +6349,6 @@ class VmwareAdminClusterPlatformConfigBundleStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigBundleStatusConditionArgs:
@@ -6554,7 +6396,6 @@ class VmwareAdminClusterPlatformConfigStatusArgsDict(TypedDict):
         ]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigStatusArgs:
@@ -6602,7 +6443,6 @@ class VmwareAdminClusterPlatformConfigStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPlatformConfigStatusConditionArgs:
@@ -6644,7 +6484,6 @@ class VmwareAdminClusterPlatformConfigStatusConditionArgs:
 class VmwareAdminClusterPrivateRegistryConfigArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     ca_cert: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterPrivateRegistryConfigArgs:
@@ -6668,7 +6507,6 @@ class VmwareAdminClusterPrivateRegistryConfigArgs:
 class VmwareAdminClusterProxyArgsDict(TypedDict):
     url: pulumi.Input[_builtins.str]
     no_proxy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterProxyArgs:
@@ -6694,7 +6532,6 @@ class VmwareAdminClusterStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[VmwareAdminClusterStatusConditionArgsDict]]]
     ]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterStatusArgs:
@@ -6732,7 +6569,6 @@ class VmwareAdminClusterStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterStatusConditionArgs:
@@ -6781,7 +6617,6 @@ class VmwareAdminClusterVcenterArgsDict(TypedDict):
     folder: NotRequired[pulumi.Input[_builtins.str]]
     resource_pool: NotRequired[pulumi.Input[_builtins.str]]
     storage_policy_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VmwareAdminClusterVcenterArgs:

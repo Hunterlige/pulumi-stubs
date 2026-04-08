@@ -679,7 +679,6 @@ class AllowedImagesSettingsImageCriterionArgsDict(TypedDict):
     marketplace_product_codes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AllowedImagesSettingsImageCriterionArgs:
@@ -764,7 +763,6 @@ class AllowedImagesSettingsImageCriterionArgs:
 
 class AllowedImagesSettingsImageCriterionCreationDateConditionArgsDict(TypedDict):
     maximum_days_since_created: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AllowedImagesSettingsImageCriterionCreationDateConditionArgs:
@@ -783,7 +781,6 @@ class AllowedImagesSettingsImageCriterionCreationDateConditionArgs:
 
 class AllowedImagesSettingsImageCriterionDeprecationTimeConditionArgsDict(TypedDict):
     maximum_days_since_deprecated: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AllowedImagesSettingsImageCriterionDeprecationTimeConditionArgs:
@@ -812,7 +809,6 @@ class AmiCopyEbsBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AmiCopyEbsBlockDeviceArgs:
@@ -878,7 +874,6 @@ class AmiCopyEbsBlockDeviceArgs:
 class AmiCopyEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: NotRequired[pulumi.Input[_builtins.str]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AmiCopyEphemeralBlockDeviceArgs:
@@ -909,7 +904,6 @@ class AmiEbsBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AmiEbsBlockDeviceArgs:
@@ -975,7 +969,6 @@ class AmiEbsBlockDeviceArgs:
 class AmiEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     virtual_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AmiEphemeralBlockDeviceArgs:
@@ -1006,7 +999,6 @@ class AmiFromInstanceEbsBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AmiFromInstanceEbsBlockDeviceArgs:
@@ -1072,7 +1064,6 @@ class AmiFromInstanceEbsBlockDeviceArgs:
 class AmiFromInstanceEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: NotRequired[pulumi.Input[_builtins.str]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AmiFromInstanceEphemeralBlockDeviceArgs:
@@ -1095,7 +1086,6 @@ class AmiFromInstanceEphemeralBlockDeviceArgs:
 
 class CapacityBlockReservationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapacityBlockReservationTimeoutsArgs:
@@ -1111,7 +1101,6 @@ class CapacityBlockReservationTimeoutsArgs:
 class DefaultCreditSpecificationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultCreditSpecificationTimeoutsArgs:
@@ -1142,7 +1131,6 @@ class DefaultNetworkAclEgressArgsDict(TypedDict):
     icmp_code: NotRequired[pulumi.Input[_builtins.int]]
     icmp_type: NotRequired[pulumi.Input[_builtins.int]]
     ipv6_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultNetworkAclEgressArgs:
@@ -1215,7 +1203,6 @@ class DefaultNetworkAclIngressArgsDict(TypedDict):
     icmp_code: NotRequired[pulumi.Input[_builtins.int]]
     icmp_type: NotRequired[pulumi.Input[_builtins.int]]
     ipv6_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultNetworkAclIngressArgs:
@@ -1291,7 +1278,6 @@ class DefaultRouteTableRouteArgsDict(TypedDict):
     transit_gateway_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_peering_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultRouteTableRouteArgs:
@@ -1386,7 +1372,6 @@ class DefaultSecurityGroupEgressArgsDict(TypedDict):
     prefix_list_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     self: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DefaultSecurityGroupEgressArgs:
@@ -1483,7 +1468,6 @@ class DefaultSecurityGroupIngressArgsDict(TypedDict):
     prefix_list_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     self: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DefaultSecurityGroupIngressArgs:
@@ -1574,7 +1558,6 @@ class EipDomainNameTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EipDomainNameTimeoutsArgs:
@@ -1618,7 +1601,6 @@ class EncryptionControlResourceExclusionsArgsDict(TypedDict):
     ]
     vpc_lattice: pulumi.Input[EncryptionControlResourceExclusionsVpcLatticeArgsDict]
     vpc_peering: pulumi.Input[EncryptionControlResourceExclusionsVpcPeeringArgsDict]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsArgs:
@@ -1728,7 +1710,6 @@ class EncryptionControlResourceExclusionsArgs:
 class EncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgs:
@@ -1752,7 +1733,6 @@ class EncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgs:
 class EncryptionControlResourceExclusionsElasticFileSystemArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsElasticFileSystemArgs:
@@ -1776,7 +1756,6 @@ class EncryptionControlResourceExclusionsElasticFileSystemArgs:
 class EncryptionControlResourceExclusionsInternetGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsInternetGatewayArgs:
@@ -1800,7 +1779,6 @@ class EncryptionControlResourceExclusionsInternetGatewayArgs:
 class EncryptionControlResourceExclusionsLambdaArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsLambdaArgs:
@@ -1824,7 +1802,6 @@ class EncryptionControlResourceExclusionsLambdaArgs:
 class EncryptionControlResourceExclusionsNatGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsNatGatewayArgs:
@@ -1848,7 +1825,6 @@ class EncryptionControlResourceExclusionsNatGatewayArgs:
 class EncryptionControlResourceExclusionsVirtualPrivateGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsVirtualPrivateGatewayArgs:
@@ -1872,7 +1848,6 @@ class EncryptionControlResourceExclusionsVirtualPrivateGatewayArgs:
 class EncryptionControlResourceExclusionsVpcLatticeArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsVpcLatticeArgs:
@@ -1896,7 +1871,6 @@ class EncryptionControlResourceExclusionsVpcLatticeArgs:
 class EncryptionControlResourceExclusionsVpcPeeringArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionControlResourceExclusionsVpcPeeringArgs:
@@ -1921,7 +1895,6 @@ class EncryptionControlTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EncryptionControlTimeoutsArgs:
@@ -1953,7 +1926,6 @@ class FleetFleetInstanceSetArgsDict(TypedDict):
     instance_type: NotRequired[pulumi.Input[_builtins.str]]
     lifecycle: NotRequired[pulumi.Input[_builtins.str]]
     platform: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetFleetInstanceSetArgs:
@@ -1999,7 +1971,6 @@ class FleetLaunchTemplateConfigArgsDict(TypedDict):
     overrides: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[FleetLaunchTemplateConfigOverrideArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigArgs:
@@ -2046,7 +2017,6 @@ class FleetLaunchTemplateConfigLaunchTemplateSpecificationArgsDict(TypedDict):
     version: pulumi.Input[_builtins.str]
     launch_template_id: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigLaunchTemplateSpecificationArgs:
@@ -2083,7 +2053,6 @@ class FleetLaunchTemplateConfigOverrideArgsDict(TypedDict):
     priority: NotRequired[pulumi.Input[_builtins.float]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideArgs:
@@ -2218,7 +2187,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsArgsDict(TypedDict):
             FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsArgs:
@@ -2585,7 +2553,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountArgsD
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountArgs:
@@ -2611,7 +2578,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemor
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMibArgs:
@@ -2637,7 +2603,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthM
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
@@ -2663,7 +2628,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuArgsD
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuArgs:
@@ -2687,7 +2651,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuArgs:
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibArgsDict(TypedDict):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibArgs:
@@ -2713,7 +2676,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsA
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsArgs:
@@ -2739,7 +2701,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountArgs:
@@ -2765,7 +2726,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbAr
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbArgs:
@@ -2789,7 +2749,6 @@ class FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbAr
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountArgsDict(TypedDict):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountArgs:
@@ -2819,7 +2778,6 @@ class FleetOnDemandOptionsArgsDict(TypedDict):
     min_target_capacity: NotRequired[pulumi.Input[_builtins.int]]
     single_availability_zone: NotRequired[pulumi.Input[_builtins.bool]]
     single_instance_type: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FleetOnDemandOptionsArgs:
@@ -2877,7 +2835,6 @@ class FleetOnDemandOptionsArgs:
 
 class FleetOnDemandOptionsCapacityReservationOptionsArgsDict(TypedDict):
     usage_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetOnDemandOptionsCapacityReservationOptionsArgs:
@@ -2901,7 +2858,6 @@ class FleetSpotOptionsArgsDict(TypedDict):
     min_target_capacity: NotRequired[pulumi.Input[_builtins.int]]
     single_availability_zone: NotRequired[pulumi.Input[_builtins.bool]]
     single_instance_type: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FleetSpotOptionsArgs:
@@ -2976,7 +2932,6 @@ class FleetSpotOptionsMaintenanceStrategiesArgsDict(TypedDict):
     capacity_rebalance: NotRequired[
         pulumi.Input[FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FleetSpotOptionsMaintenanceStrategiesArgs:
@@ -3005,7 +2960,6 @@ class FleetSpotOptionsMaintenanceStrategiesArgs:
 class FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceArgsDict(TypedDict):
     replacement_strategy: NotRequired[pulumi.Input[_builtins.str]]
     termination_delay: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceArgs:
@@ -3032,7 +2986,6 @@ class FleetTargetCapacitySpecificationArgsDict(TypedDict):
     on_demand_target_capacity: NotRequired[pulumi.Input[_builtins.int]]
     spot_target_capacity: NotRequired[pulumi.Input[_builtins.int]]
     target_capacity_unit_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetTargetCapacitySpecificationArgs:
@@ -3079,7 +3032,6 @@ class FlowLogDestinationOptionsArgsDict(TypedDict):
     file_format: NotRequired[pulumi.Input[_builtins.str]]
     hive_compatible_partitions: NotRequired[pulumi.Input[_builtins.bool]]
     per_hour_partition: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowLogDestinationOptionsArgs:
@@ -3115,7 +3067,6 @@ class InstanceCapacityReservationSpecificationArgsDict(TypedDict):
             InstanceCapacityReservationSpecificationCapacityReservationTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceCapacityReservationSpecificationArgs:
@@ -3162,7 +3113,6 @@ class InstanceCapacityReservationSpecificationCapacityReservationTargetArgsDict(
 ):
     capacity_reservation_id: NotRequired[pulumi.Input[_builtins.str]]
     capacity_reservation_resource_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCapacityReservationSpecificationCapacityReservationTargetArgs:
@@ -3194,7 +3144,6 @@ class InstanceCpuOptionsArgsDict(TypedDict):
     core_count: NotRequired[pulumi.Input[_builtins.int]]
     nested_virtualization: NotRequired[pulumi.Input[_builtins.str]]
     threads_per_core: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceCpuOptionsArgs:
@@ -3229,7 +3178,6 @@ class InstanceCpuOptionsArgs:
 
 class InstanceCreditSpecificationArgsDict(TypedDict):
     cpu_credits: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCreditSpecificationArgs:
@@ -3255,7 +3203,6 @@ class InstanceEbsBlockDeviceArgsDict(TypedDict):
     volume_id: NotRequired[pulumi.Input[_builtins.str]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceEbsBlockDeviceArgs:
@@ -3348,7 +3295,6 @@ class InstanceEbsBlockDeviceArgs:
 
 class InstanceEnclaveOptionsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceEnclaveOptionsArgs:
@@ -3365,7 +3311,6 @@ class InstanceEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     no_device: NotRequired[pulumi.Input[_builtins.bool]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceEphemeralBlockDeviceArgs:
@@ -3397,7 +3342,6 @@ class InstanceInstanceMarketOptionsArgsDict(TypedDict):
     spot_options: NotRequired[
         pulumi.Input[InstanceInstanceMarketOptionsSpotOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceInstanceMarketOptionsArgs:
@@ -3430,7 +3374,6 @@ class InstanceInstanceMarketOptionsSpotOptionsArgsDict(TypedDict):
     max_price: NotRequired[pulumi.Input[_builtins.str]]
     spot_instance_type: NotRequired[pulumi.Input[_builtins.str]]
     valid_until: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceInstanceMarketOptionsSpotOptionsArgs:
@@ -3471,7 +3414,6 @@ class InstanceLaunchTemplateArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceLaunchTemplateArgs:
@@ -3500,7 +3442,6 @@ class InstanceLaunchTemplateArgs:
 
 class InstanceMaintenanceOptionsArgsDict(TypedDict):
     auto_recovery: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceOptionsArgs:
@@ -3519,7 +3460,6 @@ class InstanceMetadataOptionsArgsDict(TypedDict):
     http_put_response_hop_limit: NotRequired[pulumi.Input[_builtins.int]]
     http_tokens: NotRequired[pulumi.Input[_builtins.str]]
     instance_metadata_tags: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMetadataOptionsArgs:
@@ -3565,7 +3505,6 @@ class InstanceNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: pulumi.Input[_builtins.str]
     delete_on_termination: NotRequired[pulumi.Input[_builtins.bool]]
     network_card_index: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkInterfaceArgs:
@@ -3601,7 +3540,6 @@ class InstanceNetworkInterfaceArgs:
 class InstancePrimaryNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: pulumi.Input[_builtins.str]
     delete_on_termination: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstancePrimaryNetworkInterfaceArgs:
@@ -3626,7 +3564,6 @@ class InstancePrivateDnsNameOptionsArgsDict(TypedDict):
     enable_resource_name_dns_a_record: NotRequired[pulumi.Input[_builtins.bool]]
     enable_resource_name_dns_aaaa_record: NotRequired[pulumi.Input[_builtins.bool]]
     hostname_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePrivateDnsNameOptionsArgs:
@@ -3675,7 +3612,6 @@ class InstanceRootBlockDeviceArgsDict(TypedDict):
     volume_id: NotRequired[pulumi.Input[_builtins.str]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceRootBlockDeviceArgs:
@@ -3775,7 +3711,6 @@ class InstanceSecondaryNetworkInterfaceArgsDict(TypedDict):
     secondary_network_id: NotRequired[pulumi.Input[_builtins.str]]
     source_dest_check: NotRequired[pulumi.Input[_builtins.bool]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceSecondaryNetworkInterfaceArgs:
@@ -3874,7 +3809,6 @@ class LaunchConfigurationEbsBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchConfigurationEbsBlockDeviceArgs:
@@ -3941,7 +3875,6 @@ class LaunchConfigurationEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     no_device: NotRequired[pulumi.Input[_builtins.bool]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchConfigurationEphemeralBlockDeviceArgs:
@@ -3972,7 +3905,6 @@ class LaunchConfigurationMetadataOptionsArgsDict(TypedDict):
     http_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     http_put_response_hop_limit: NotRequired[pulumi.Input[_builtins.int]]
     http_tokens: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchConfigurationMetadataOptionsArgs:
@@ -4008,7 +3940,6 @@ class LaunchConfigurationRootBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchConfigurationRootBlockDeviceArgs:
@@ -4058,7 +3989,6 @@ class LaunchTemplateBlockDeviceMappingArgsDict(TypedDict):
     ebs: NotRequired[pulumi.Input[LaunchTemplateBlockDeviceMappingEbsArgsDict]]
     no_device: NotRequired[pulumi.Input[_builtins.str]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateBlockDeviceMappingArgs:
@@ -4105,7 +4035,6 @@ class LaunchTemplateBlockDeviceMappingEbsArgsDict(TypedDict):
     volume_initialization_rate: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateBlockDeviceMappingEbsArgs:
@@ -4177,7 +4106,6 @@ class LaunchTemplateCapacityReservationSpecificationArgsDict(TypedDict):
             LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateCapacityReservationSpecificationArgs:
@@ -4224,7 +4152,6 @@ class LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetArg
 ):
     capacity_reservation_id: NotRequired[pulumi.Input[_builtins.str]]
     capacity_reservation_resource_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetArgs:
@@ -4256,7 +4183,6 @@ class LaunchTemplateCpuOptionsArgsDict(TypedDict):
     core_count: NotRequired[pulumi.Input[_builtins.int]]
     nested_virtualization: NotRequired[pulumi.Input[_builtins.str]]
     threads_per_core: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateCpuOptionsArgs:
@@ -4291,7 +4217,6 @@ class LaunchTemplateCpuOptionsArgs:
 
 class LaunchTemplateCreditSpecificationArgsDict(TypedDict):
     cpu_credits: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateCreditSpecificationArgs:
@@ -4306,7 +4231,6 @@ class LaunchTemplateCreditSpecificationArgs:
 
 class LaunchTemplateEnclaveOptionsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateEnclaveOptionsArgs:
@@ -4321,7 +4245,6 @@ class LaunchTemplateEnclaveOptionsArgs:
 
 class LaunchTemplateHibernationOptionsArgsDict(TypedDict):
     configured: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateHibernationOptionsArgs:
@@ -4335,7 +4258,6 @@ class LaunchTemplateHibernationOptionsArgs:
 class LaunchTemplateIamInstanceProfileArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateIamInstanceProfileArgs:
@@ -4361,7 +4283,6 @@ class LaunchTemplateInstanceMarketOptionsArgsDict(TypedDict):
     spot_options: NotRequired[
         pulumi.Input[LaunchTemplateInstanceMarketOptionsSpotOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceMarketOptionsArgs:
@@ -4397,7 +4318,6 @@ class LaunchTemplateInstanceMarketOptionsSpotOptionsArgsDict(TypedDict):
     max_price: NotRequired[pulumi.Input[_builtins.str]]
     spot_instance_type: NotRequired[pulumi.Input[_builtins.str]]
     valid_until: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceMarketOptionsSpotOptionsArgs:
@@ -4497,7 +4417,6 @@ class LaunchTemplateInstanceRequirementsArgsDict(TypedDict):
     total_local_storage_gb: NotRequired[
         pulumi.Input[LaunchTemplateInstanceRequirementsTotalLocalStorageGbArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsArgs:
@@ -4810,7 +4729,6 @@ class LaunchTemplateInstanceRequirementsArgs:
 class LaunchTemplateInstanceRequirementsAcceleratorCountArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsAcceleratorCountArgs:
@@ -4834,7 +4752,6 @@ class LaunchTemplateInstanceRequirementsAcceleratorCountArgs:
 class LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibArgs:
@@ -4858,7 +4775,6 @@ class LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibArgs:
 class LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
@@ -4882,7 +4798,6 @@ class LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
 class LaunchTemplateInstanceRequirementsMemoryGibPerVcpuArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsMemoryGibPerVcpuArgs:
@@ -4906,7 +4821,6 @@ class LaunchTemplateInstanceRequirementsMemoryGibPerVcpuArgs:
 class LaunchTemplateInstanceRequirementsMemoryMibArgsDict(TypedDict):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsMemoryMibArgs:
@@ -4930,7 +4844,6 @@ class LaunchTemplateInstanceRequirementsMemoryMibArgs:
 class LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsArgs:
@@ -4954,7 +4867,6 @@ class LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsArgs:
 class LaunchTemplateInstanceRequirementsNetworkInterfaceCountArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsNetworkInterfaceCountArgs:
@@ -4978,7 +4890,6 @@ class LaunchTemplateInstanceRequirementsNetworkInterfaceCountArgs:
 class LaunchTemplateInstanceRequirementsTotalLocalStorageGbArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsTotalLocalStorageGbArgs:
@@ -5002,7 +4913,6 @@ class LaunchTemplateInstanceRequirementsTotalLocalStorageGbArgs:
 class LaunchTemplateInstanceRequirementsVcpuCountArgsDict(TypedDict):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateInstanceRequirementsVcpuCountArgs:
@@ -5025,7 +4935,6 @@ class LaunchTemplateInstanceRequirementsVcpuCountArgs:
 
 class LaunchTemplateLicenseSpecificationArgsDict(TypedDict):
     license_configuration_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateLicenseSpecificationArgs:
@@ -5040,7 +4949,6 @@ class LaunchTemplateLicenseSpecificationArgs:
 
 class LaunchTemplateMaintenanceOptionsArgsDict(TypedDict):
     auto_recovery: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateMaintenanceOptionsArgs:
@@ -5059,7 +4967,6 @@ class LaunchTemplateMetadataOptionsArgsDict(TypedDict):
     http_put_response_hop_limit: NotRequired[pulumi.Input[_builtins.int]]
     http_tokens: NotRequired[pulumi.Input[_builtins.str]]
     instance_metadata_tags: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateMetadataOptionsArgs:
@@ -5102,7 +5009,6 @@ class LaunchTemplateMetadataOptionsArgs:
 
 class LaunchTemplateMonitoringArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateMonitoringArgs:
@@ -5144,7 +5050,6 @@ class LaunchTemplateNetworkInterfaceArgsDict(TypedDict):
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateNetworkInterfaceArgs:
@@ -5349,7 +5254,6 @@ class LaunchTemplateNetworkInterfaceConnectionTrackingSpecificationArgsDict(Type
     tcp_established_timeout: NotRequired[pulumi.Input[_builtins.int]]
     udp_stream_timeout: NotRequired[pulumi.Input[_builtins.int]]
     udp_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateNetworkInterfaceConnectionTrackingSpecificationArgs:
@@ -5383,7 +5287,6 @@ class LaunchTemplateNetworkInterfaceEnaSrdSpecificationArgsDict(TypedDict):
             LaunchTemplateNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateNetworkInterfaceEnaSrdSpecificationArgs:
@@ -5425,7 +5328,6 @@ class LaunchTemplateNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationArg
     TypedDict
 ):
     ena_srd_udp_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationArgs:
@@ -5440,7 +5342,6 @@ class LaunchTemplateNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationArg
 
 class LaunchTemplateNetworkPerformanceOptionsArgsDict(TypedDict):
     bandwidth_weighting: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateNetworkPerformanceOptionsArgs:
@@ -5463,7 +5364,6 @@ class LaunchTemplatePlacementArgsDict(TypedDict):
     partition_number: NotRequired[pulumi.Input[_builtins.int]]
     spread_domain: NotRequired[pulumi.Input[_builtins.str]]
     tenancy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplatePlacementArgs:
@@ -5530,7 +5430,6 @@ class LaunchTemplatePrivateDnsNameOptionsArgsDict(TypedDict):
     enable_resource_name_dns_a_record: NotRequired[pulumi.Input[_builtins.bool]]
     enable_resource_name_dns_aaaa_record: NotRequired[pulumi.Input[_builtins.bool]]
     hostname_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplatePrivateDnsNameOptionsArgs:
@@ -5577,7 +5476,6 @@ class LaunchTemplateSecondaryInterfaceArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     secondary_subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateSecondaryInterfaceArgs:
@@ -5639,7 +5537,6 @@ class LaunchTemplateSecondaryInterfaceArgs:
 class LaunchTemplateTagSpecificationArgsDict(TypedDict):
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LaunchTemplateTagSpecificationArgs:
@@ -5667,7 +5564,6 @@ class LaunchTemplateTagSpecificationArgs:
 class ManagedPrefixListEntryArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedPrefixListEntryArgs:
@@ -5692,7 +5588,6 @@ class NatGatewayAvailabilityZoneAddressArgsDict(TypedDict):
     allocation_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     availability_zone: NotRequired[pulumi.Input[_builtins.str]]
     availability_zone_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NatGatewayAvailabilityZoneAddressArgs:
@@ -5728,7 +5623,6 @@ class NatGatewayAvailabilityZoneAddressArgs:
 class NatGatewayEipAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NatGatewayEipAssociationTimeoutsArgs:
@@ -5757,7 +5651,6 @@ class NatGatewayRegionalNatGatewayAddressArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
     public_ip: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NatGatewayRegionalNatGatewayAddressArgs:
@@ -5818,7 +5711,6 @@ class NetworkAclEgressArgsDict(TypedDict):
     icmp_code: NotRequired[pulumi.Input[_builtins.int]]
     icmp_type: NotRequired[pulumi.Input[_builtins.int]]
     ipv6_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkAclEgressArgs:
@@ -5891,7 +5783,6 @@ class NetworkAclIngressArgsDict(TypedDict):
     icmp_code: NotRequired[pulumi.Input[_builtins.int]]
     icmp_type: NotRequired[pulumi.Input[_builtins.int]]
     ipv6_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkAclIngressArgs:
@@ -5957,7 +5848,6 @@ class NetworkAclIngressArgs:
 class NetworkInsightsAnalysisAlternatePathHintArgsDict(TypedDict):
     component_arn: NotRequired[pulumi.Input[_builtins.str]]
     component_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisAlternatePathHintArgs:
@@ -6227,7 +6117,6 @@ class NetworkInsightsAnalysisExplanationArgsDict(TypedDict):
             Sequence[pulumi.Input[NetworkInsightsAnalysisExplanationVpnGatewayArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationArgs:
@@ -7296,7 +7185,6 @@ class NetworkInsightsAnalysisExplanationAclArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationAclArgs:
@@ -7336,7 +7224,6 @@ class NetworkInsightsAnalysisExplanationAclRuleArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     rule_action: NotRequired[pulumi.Input[_builtins.str]]
     rule_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationAclRuleArgs:
@@ -7407,7 +7294,6 @@ class NetworkInsightsAnalysisExplanationAclRuleArgs:
 class NetworkInsightsAnalysisExplanationAclRulePortRangeArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationAclRulePortRangeArgs:
@@ -7432,7 +7318,6 @@ class NetworkInsightsAnalysisExplanationAttachedToArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationAttachedToArgs:
@@ -7462,7 +7347,6 @@ class NetworkInsightsAnalysisExplanationAttachedToArgs:
 class NetworkInsightsAnalysisExplanationClassicLoadBalancerListenerArgsDict(TypedDict):
     instance_port: NotRequired[pulumi.Input[_builtins.int]]
     load_balancer_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationClassicLoadBalancerListenerArgs:
@@ -7487,7 +7371,6 @@ class NetworkInsightsAnalysisExplanationComponentArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationComponentArgs:
@@ -7518,7 +7401,6 @@ class NetworkInsightsAnalysisExplanationCustomerGatewayArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationCustomerGatewayArgs:
@@ -7549,7 +7431,6 @@ class NetworkInsightsAnalysisExplanationDestinationArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationDestinationArgs:
@@ -7580,7 +7461,6 @@ class NetworkInsightsAnalysisExplanationDestinationVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationDestinationVpcArgs:
@@ -7611,7 +7491,6 @@ class NetworkInsightsAnalysisExplanationElasticLoadBalancerListenerArgsDict(Type
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationElasticLoadBalancerListenerArgs:
@@ -7642,7 +7521,6 @@ class NetworkInsightsAnalysisExplanationIngressRouteTableArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationIngressRouteTableArgs:
@@ -7673,7 +7551,6 @@ class NetworkInsightsAnalysisExplanationInternetGatewayArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationInternetGatewayArgs:
@@ -7704,7 +7581,6 @@ class NetworkInsightsAnalysisExplanationLoadBalancerTargetGroupArgsDict(TypedDic
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationLoadBalancerTargetGroupArgs:
@@ -7735,7 +7611,6 @@ class NetworkInsightsAnalysisExplanationNatGatewayArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationNatGatewayArgs:
@@ -7766,7 +7641,6 @@ class NetworkInsightsAnalysisExplanationNetworkInterfaceArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationNetworkInterfaceArgs:
@@ -7796,7 +7670,6 @@ class NetworkInsightsAnalysisExplanationNetworkInterfaceArgs:
 class NetworkInsightsAnalysisExplanationPortRangeArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationPortRangeArgs:
@@ -7821,7 +7694,6 @@ class NetworkInsightsAnalysisExplanationPrefixListArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationPrefixListArgs:
@@ -7852,7 +7724,6 @@ class NetworkInsightsAnalysisExplanationRouteTableArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationRouteTableArgs:
@@ -7890,7 +7761,6 @@ class NetworkInsightsAnalysisExplanationRouteTableRouteArgsDict(TypedDict):
     origin: NotRequired[pulumi.Input[_builtins.str]]
     transit_gateway_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_peering_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationRouteTableRouteArgs:
@@ -7971,7 +7841,6 @@ class NetworkInsightsAnalysisExplanationSecurityGroupArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSecurityGroupArgs:
@@ -8013,7 +7882,6 @@ class NetworkInsightsAnalysisExplanationSecurityGroupRuleArgsDict(TypedDict):
     prefix_list_id: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     security_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSecurityGroupRuleArgs:
@@ -8090,7 +7958,6 @@ class NetworkInsightsAnalysisExplanationSecurityGroupRuleArgs:
 class NetworkInsightsAnalysisExplanationSecurityGroupRulePortRangeArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSecurityGroupRulePortRangeArgs:
@@ -8115,7 +7982,6 @@ class NetworkInsightsAnalysisExplanationSourceVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSourceVpcArgs:
@@ -8146,7 +8012,6 @@ class NetworkInsightsAnalysisExplanationSubnetArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSubnetArgs:
@@ -8177,7 +8042,6 @@ class NetworkInsightsAnalysisExplanationSubnetRouteTableArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationSubnetRouteTableArgs:
@@ -8208,7 +8072,6 @@ class NetworkInsightsAnalysisExplanationTransitGatewayArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationTransitGatewayArgs:
@@ -8239,7 +8102,6 @@ class NetworkInsightsAnalysisExplanationTransitGatewayAttachmentArgsDict(TypedDi
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationTransitGatewayAttachmentArgs:
@@ -8270,7 +8132,6 @@ class NetworkInsightsAnalysisExplanationTransitGatewayRouteTableArgsDict(TypedDi
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationTransitGatewayRouteTableArgs:
@@ -8307,7 +8168,6 @@ class NetworkInsightsAnalysisExplanationTransitGatewayRouteTableRouteArgsDict(
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
     route_origin: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationTransitGatewayRouteTableRouteArgs:
@@ -8362,7 +8222,6 @@ class NetworkInsightsAnalysisExplanationVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationVpcArgs:
@@ -8393,7 +8252,6 @@ class NetworkInsightsAnalysisExplanationVpcEndpointArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationVpcEndpointArgs:
@@ -8424,7 +8282,6 @@ class NetworkInsightsAnalysisExplanationVpcPeeringConnectionArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationVpcPeeringConnectionArgs:
@@ -8455,7 +8312,6 @@ class NetworkInsightsAnalysisExplanationVpnConnectionArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationVpnConnectionArgs:
@@ -8486,7 +8342,6 @@ class NetworkInsightsAnalysisExplanationVpnGatewayArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisExplanationVpnGatewayArgs:
@@ -8635,7 +8490,6 @@ class NetworkInsightsAnalysisForwardPathComponentArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentArgs:
@@ -9129,7 +8983,6 @@ class NetworkInsightsAnalysisForwardPathComponentAclRuleArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     rule_action: NotRequired[pulumi.Input[_builtins.str]]
     rule_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentAclRuleArgs:
@@ -9206,7 +9059,6 @@ class NetworkInsightsAnalysisForwardPathComponentAclRuleArgs:
 class NetworkInsightsAnalysisForwardPathComponentAclRulePortRangeArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentAclRulePortRangeArgs:
@@ -9238,7 +9090,6 @@ class NetworkInsightsAnalysisForwardPathComponentAdditionalDetailArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentAdditionalDetailArgs:
@@ -9294,7 +9145,6 @@ class NetworkInsightsAnalysisForwardPathComponentAdditionalDetailComponentArgsDi
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentAdditionalDetailComponentArgs:
@@ -9325,7 +9175,6 @@ class NetworkInsightsAnalysisForwardPathComponentAttachedToArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentAttachedToArgs:
@@ -9356,7 +9205,6 @@ class NetworkInsightsAnalysisForwardPathComponentComponentArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentComponentArgs:
@@ -9387,7 +9235,6 @@ class NetworkInsightsAnalysisForwardPathComponentDestinationVpcArgsDict(TypedDic
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentDestinationVpcArgs:
@@ -9438,7 +9285,6 @@ class NetworkInsightsAnalysisForwardPathComponentInboundHeaderArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentInboundHeaderArgs:
@@ -9552,7 +9398,6 @@ class NetworkInsightsAnalysisForwardPathComponentInboundHeaderDestinationPortRan
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentInboundHeaderDestinationPortRangeArgs:
@@ -9578,7 +9423,6 @@ class NetworkInsightsAnalysisForwardPathComponentInboundHeaderSourcePortRangeArg
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentInboundHeaderSourcePortRangeArgs:
@@ -9623,7 +9467,6 @@ class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderArgs:
@@ -9737,7 +9580,6 @@ class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderDestinationPortRa
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderDestinationPortRangeArgs:
@@ -9763,7 +9605,6 @@ class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderSourcePortRangeAr
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentOutboundHeaderSourcePortRangeArgs:
@@ -9795,7 +9636,6 @@ class NetworkInsightsAnalysisForwardPathComponentRouteTableRouteArgsDict(TypedDi
     origin: NotRequired[pulumi.Input[_builtins.str]]
     transit_gateway_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_peering_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentRouteTableRouteArgs:
@@ -9887,7 +9727,6 @@ class NetworkInsightsAnalysisForwardPathComponentSecurityGroupRuleArgsDict(Typed
     prefix_list_id: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     security_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentSecurityGroupRuleArgs:
@@ -9966,7 +9805,6 @@ class NetworkInsightsAnalysisForwardPathComponentSecurityGroupRulePortRangeArgsD
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentSecurityGroupRulePortRangeArgs:
@@ -9991,7 +9829,6 @@ class NetworkInsightsAnalysisForwardPathComponentSourceVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentSourceVpcArgs:
@@ -10022,7 +9859,6 @@ class NetworkInsightsAnalysisForwardPathComponentSubnetArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentSubnetArgs:
@@ -10053,7 +9889,6 @@ class NetworkInsightsAnalysisForwardPathComponentTransitGatewayArgsDict(TypedDic
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentTransitGatewayArgs:
@@ -10090,7 +9925,6 @@ class NetworkInsightsAnalysisForwardPathComponentTransitGatewayRouteTableRouteAr
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
     route_origin: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentTransitGatewayRouteTableRouteArgs:
@@ -10145,7 +9979,6 @@ class NetworkInsightsAnalysisForwardPathComponentVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisForwardPathComponentVpcArgs:
@@ -10294,7 +10127,6 @@ class NetworkInsightsAnalysisReturnPathComponentArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentArgs:
@@ -10786,7 +10618,6 @@ class NetworkInsightsAnalysisReturnPathComponentAclRuleArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     rule_action: NotRequired[pulumi.Input[_builtins.str]]
     rule_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentAclRuleArgs:
@@ -10863,7 +10694,6 @@ class NetworkInsightsAnalysisReturnPathComponentAclRuleArgs:
 class NetworkInsightsAnalysisReturnPathComponentAclRulePortRangeArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentAclRulePortRangeArgs:
@@ -10895,7 +10725,6 @@ class NetworkInsightsAnalysisReturnPathComponentAdditionalDetailArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentAdditionalDetailArgs:
@@ -10951,7 +10780,6 @@ class NetworkInsightsAnalysisReturnPathComponentAdditionalDetailComponentArgsDic
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentAdditionalDetailComponentArgs:
@@ -10982,7 +10810,6 @@ class NetworkInsightsAnalysisReturnPathComponentAttachedToArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentAttachedToArgs:
@@ -11013,7 +10840,6 @@ class NetworkInsightsAnalysisReturnPathComponentComponentArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentComponentArgs:
@@ -11044,7 +10870,6 @@ class NetworkInsightsAnalysisReturnPathComponentDestinationVpcArgsDict(TypedDict
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentDestinationVpcArgs:
@@ -11095,7 +10920,6 @@ class NetworkInsightsAnalysisReturnPathComponentInboundHeaderArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentInboundHeaderArgs:
@@ -11209,7 +11033,6 @@ class NetworkInsightsAnalysisReturnPathComponentInboundHeaderDestinationPortRang
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentInboundHeaderDestinationPortRangeArgs:
@@ -11235,7 +11058,6 @@ class NetworkInsightsAnalysisReturnPathComponentInboundHeaderSourcePortRangeArgs
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentInboundHeaderSourcePortRangeArgs:
@@ -11280,7 +11102,6 @@ class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderArgs:
@@ -11394,7 +11215,6 @@ class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderDestinationPortRan
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderDestinationPortRangeArgs:
@@ -11420,7 +11240,6 @@ class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderSourcePortRangeArg
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentOutboundHeaderSourcePortRangeArgs:
@@ -11452,7 +11271,6 @@ class NetworkInsightsAnalysisReturnPathComponentRouteTableRouteArgsDict(TypedDic
     origin: NotRequired[pulumi.Input[_builtins.str]]
     transit_gateway_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_peering_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentRouteTableRouteArgs:
@@ -11544,7 +11362,6 @@ class NetworkInsightsAnalysisReturnPathComponentSecurityGroupRuleArgsDict(TypedD
     prefix_list_id: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     security_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentSecurityGroupRuleArgs:
@@ -11623,7 +11440,6 @@ class NetworkInsightsAnalysisReturnPathComponentSecurityGroupRulePortRangeArgsDi
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentSecurityGroupRulePortRangeArgs:
@@ -11648,7 +11464,6 @@ class NetworkInsightsAnalysisReturnPathComponentSourceVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentSourceVpcArgs:
@@ -11679,7 +11494,6 @@ class NetworkInsightsAnalysisReturnPathComponentSubnetArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentSubnetArgs:
@@ -11710,7 +11524,6 @@ class NetworkInsightsAnalysisReturnPathComponentTransitGatewayArgsDict(TypedDict
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentTransitGatewayArgs:
@@ -11747,7 +11560,6 @@ class NetworkInsightsAnalysisReturnPathComponentTransitGatewayRouteTableRouteArg
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
     route_origin: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentTransitGatewayRouteTableRouteArgs:
@@ -11802,7 +11614,6 @@ class NetworkInsightsAnalysisReturnPathComponentVpcArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsAnalysisReturnPathComponentVpcArgs:
@@ -11838,7 +11649,6 @@ class NetworkInsightsPathFilterAtDestinationArgsDict(TypedDict):
     source_port_range: NotRequired[
         pulumi.Input[NetworkInsightsPathFilterAtDestinationSourcePortRangeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtDestinationArgs:
@@ -11896,7 +11706,6 @@ class NetworkInsightsPathFilterAtDestinationArgs:
 class NetworkInsightsPathFilterAtDestinationDestinationPortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtDestinationDestinationPortRangeArgs:
@@ -11920,7 +11729,6 @@ class NetworkInsightsPathFilterAtDestinationDestinationPortRangeArgs:
 class NetworkInsightsPathFilterAtDestinationSourcePortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtDestinationSourcePortRangeArgs:
@@ -11950,7 +11758,6 @@ class NetworkInsightsPathFilterAtSourceArgsDict(TypedDict):
     source_port_range: NotRequired[
         pulumi.Input[NetworkInsightsPathFilterAtSourceSourcePortRangeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtSourceArgs:
@@ -12008,7 +11815,6 @@ class NetworkInsightsPathFilterAtSourceArgs:
 class NetworkInsightsPathFilterAtSourceDestinationPortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtSourceDestinationPortRangeArgs:
@@ -12032,7 +11838,6 @@ class NetworkInsightsPathFilterAtSourceDestinationPortRangeArgs:
 class NetworkInsightsPathFilterAtSourceSourcePortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInsightsPathFilterAtSourceSourcePortRangeArgs:
@@ -12058,7 +11863,6 @@ class NetworkInterfaceAttachmentArgsDict(TypedDict):
     instance: pulumi.Input[_builtins.str]
     attachment_id: NotRequired[pulumi.Input[_builtins.str]]
     network_card_index: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NetworkInterfaceAttachmentArgs:
@@ -12094,7 +11898,6 @@ class NetworkInterfaceAttachmentArgs:
 class NetworkInterfacePermissionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkInterfacePermissionTimeoutsArgs:
@@ -12117,7 +11920,6 @@ class NetworkInterfacePermissionTimeoutsArgs:
 
 class PeeringConnectionOptionsAccepterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PeeringConnectionOptionsAccepterArgs:
@@ -12138,7 +11940,6 @@ class PeeringConnectionOptionsAccepterArgs:
 
 class PeeringConnectionOptionsRequesterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PeeringConnectionOptionsRequesterArgs:
@@ -12171,7 +11972,6 @@ class RouteTableRouteArgsDict(TypedDict):
     transit_gateway_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_peering_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteTableRouteArgs:
@@ -12266,7 +12066,6 @@ class SecondaryNetworkIpv4CidrBlockAssociationArgsDict(TypedDict):
     association_id: pulumi.Input[_builtins.str]
     cidr_block: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecondaryNetworkIpv4CidrBlockAssociationArgs:
@@ -12297,7 +12096,6 @@ class SecondaryNetworkTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecondaryNetworkTimeoutsArgs:
@@ -12328,7 +12126,6 @@ class SecondarySubnetIpv4CidrBlockAssociationArgsDict(TypedDict):
     association_id: pulumi.Input[_builtins.str]
     cidr_block: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecondarySubnetIpv4CidrBlockAssociationArgs:
@@ -12359,7 +12156,6 @@ class SecondarySubnetTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecondarySubnetTimeoutsArgs:
@@ -12396,7 +12192,6 @@ class SecurityGroupEgressArgsDict(TypedDict):
     prefix_list_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     self: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SecurityGroupEgressArgs:
@@ -12493,7 +12288,6 @@ class SecurityGroupIngressArgsDict(TypedDict):
     prefix_list_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     self: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SecurityGroupIngressArgs:
@@ -12623,7 +12417,6 @@ class SpotFleetRequestLaunchSpecificationArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchSpecificationArgs:
@@ -12851,7 +12644,6 @@ class SpotFleetRequestLaunchSpecificationEbsBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchSpecificationEbsBlockDeviceArgs:
@@ -12917,7 +12709,6 @@ class SpotFleetRequestLaunchSpecificationEbsBlockDeviceArgs:
 class SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     virtual_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceArgs:
@@ -12946,7 +12737,6 @@ class SpotFleetRequestLaunchSpecificationRootBlockDeviceArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchSpecificationRootBlockDeviceArgs:
@@ -13006,7 +12796,6 @@ class SpotFleetRequestLaunchTemplateConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[SpotFleetRequestLaunchTemplateConfigOverrideArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigArgs:
@@ -13061,7 +12850,6 @@ class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationArgsDict(
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationArgs:
@@ -13100,7 +12888,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideArgsDict(TypedDict):
     spot_price: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideArgs:
@@ -13244,7 +13031,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsArgsDict(
             SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsArgs:
@@ -13611,7 +13397,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsAccelerato
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountArgs:
@@ -13637,7 +13422,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsAccelerato
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMibArgs:
@@ -13663,7 +13447,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsBaselineEb
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
@@ -13689,7 +13472,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibP
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuArgs:
@@ -13715,7 +13497,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibA
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibArgs:
@@ -13741,7 +13522,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsNetworkBan
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsArgs:
@@ -13767,7 +13547,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsNetworkInt
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountArgs:
@@ -13793,7 +13572,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsTotalLocal
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbArgs:
@@ -13819,7 +13597,6 @@ class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountA
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountArgs:
@@ -13844,7 +13621,6 @@ class SpotFleetRequestSpotMaintenanceStrategiesArgsDict(TypedDict):
     capacity_rebalance: NotRequired[
         pulumi.Input[SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestSpotMaintenanceStrategiesArgs:
@@ -13872,7 +13648,6 @@ class SpotFleetRequestSpotMaintenanceStrategiesArgs:
 
 class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceArgsDict(TypedDict):
     replacement_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceArgs:
@@ -13892,7 +13667,6 @@ class SpotInstanceRequestCapacityReservationSpecificationArgsDict(TypedDict):
             SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestCapacityReservationSpecificationArgs:
@@ -13939,7 +13713,6 @@ class SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarg
 ):
     capacity_reservation_id: NotRequired[pulumi.Input[_builtins.str]]
     capacity_reservation_resource_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetArgs:
@@ -13971,7 +13744,6 @@ class SpotInstanceRequestCpuOptionsArgsDict(TypedDict):
     core_count: NotRequired[pulumi.Input[_builtins.int]]
     nested_virtualization: NotRequired[pulumi.Input[_builtins.str]]
     threads_per_core: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestCpuOptionsArgs:
@@ -14006,7 +13778,6 @@ class SpotInstanceRequestCpuOptionsArgs:
 
 class SpotInstanceRequestCreditSpecificationArgsDict(TypedDict):
     cpu_credits: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestCreditSpecificationArgs:
@@ -14032,7 +13803,6 @@ class SpotInstanceRequestEbsBlockDeviceArgsDict(TypedDict):
     volume_id: NotRequired[pulumi.Input[_builtins.str]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestEbsBlockDeviceArgs:
@@ -14125,7 +13895,6 @@ class SpotInstanceRequestEbsBlockDeviceArgs:
 
 class SpotInstanceRequestEnclaveOptionsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestEnclaveOptionsArgs:
@@ -14142,7 +13911,6 @@ class SpotInstanceRequestEphemeralBlockDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     no_device: NotRequired[pulumi.Input[_builtins.bool]]
     virtual_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestEphemeralBlockDeviceArgs:
@@ -14173,7 +13941,6 @@ class SpotInstanceRequestLaunchTemplateArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestLaunchTemplateArgs:
@@ -14202,7 +13969,6 @@ class SpotInstanceRequestLaunchTemplateArgs:
 
 class SpotInstanceRequestMaintenanceOptionsArgsDict(TypedDict):
     auto_recovery: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestMaintenanceOptionsArgs:
@@ -14221,7 +13987,6 @@ class SpotInstanceRequestMetadataOptionsArgsDict(TypedDict):
     http_put_response_hop_limit: NotRequired[pulumi.Input[_builtins.int]]
     http_tokens: NotRequired[pulumi.Input[_builtins.str]]
     instance_metadata_tags: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestMetadataOptionsArgs:
@@ -14267,7 +14032,6 @@ class SpotInstanceRequestNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: pulumi.Input[_builtins.str]
     delete_on_termination: NotRequired[pulumi.Input[_builtins.bool]]
     network_card_index: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestNetworkInterfaceArgs:
@@ -14303,7 +14067,6 @@ class SpotInstanceRequestNetworkInterfaceArgs:
 class SpotInstanceRequestPrimaryNetworkInterfaceArgsDict(TypedDict):
     delete_on_termination: NotRequired[pulumi.Input[_builtins.bool]]
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestPrimaryNetworkInterfaceArgs:
@@ -14328,7 +14091,6 @@ class SpotInstanceRequestPrivateDnsNameOptionsArgsDict(TypedDict):
     enable_resource_name_dns_a_record: NotRequired[pulumi.Input[_builtins.bool]]
     enable_resource_name_dns_aaaa_record: NotRequired[pulumi.Input[_builtins.bool]]
     hostname_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestPrivateDnsNameOptionsArgs:
@@ -14377,7 +14139,6 @@ class SpotInstanceRequestRootBlockDeviceArgsDict(TypedDict):
     volume_id: NotRequired[pulumi.Input[_builtins.str]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestRootBlockDeviceArgs:
@@ -14477,7 +14238,6 @@ class SpotInstanceRequestSecondaryNetworkInterfaceArgsDict(TypedDict):
     secondary_network_id: NotRequired[pulumi.Input[_builtins.str]]
     source_dest_check: NotRequired[pulumi.Input[_builtins.bool]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpotInstanceRequestSecondaryNetworkInterfaceArgs:
@@ -14569,7 +14329,6 @@ class SpotInstanceRequestSecondaryNetworkInterfaceArgs:
 class TrafficMirrorFilterRuleDestinationPortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TrafficMirrorFilterRuleDestinationPortRangeArgs:
@@ -14593,7 +14352,6 @@ class TrafficMirrorFilterRuleDestinationPortRangeArgs:
 class TrafficMirrorFilterRuleSourcePortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TrafficMirrorFilterRuleSourcePortRangeArgs:
@@ -14618,7 +14376,6 @@ class VpcBlockPublicAccessExclusionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcBlockPublicAccessExclusionTimeoutsArgs:
@@ -14649,7 +14406,6 @@ class VpcBlockPublicAccessOptionsTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcBlockPublicAccessOptionsTimeoutsArgs:
@@ -14693,7 +14449,6 @@ class VpcEncryptionControlResourceExclusionsArgsDict(TypedDict):
     ]
     vpc_lattice: pulumi.Input[VpcEncryptionControlResourceExclusionsVpcLatticeArgsDict]
     vpc_peering: pulumi.Input[VpcEncryptionControlResourceExclusionsVpcPeeringArgsDict]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsArgs:
@@ -14809,7 +14564,6 @@ class VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgsDict(
 ):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgs:
@@ -14833,7 +14587,6 @@ class VpcEncryptionControlResourceExclusionsEgressOnlyInternetGatewayArgs:
 class VpcEncryptionControlResourceExclusionsElasticFileSystemArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsElasticFileSystemArgs:
@@ -14857,7 +14610,6 @@ class VpcEncryptionControlResourceExclusionsElasticFileSystemArgs:
 class VpcEncryptionControlResourceExclusionsInternetGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsInternetGatewayArgs:
@@ -14881,7 +14633,6 @@ class VpcEncryptionControlResourceExclusionsInternetGatewayArgs:
 class VpcEncryptionControlResourceExclusionsLambdaArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsLambdaArgs:
@@ -14905,7 +14656,6 @@ class VpcEncryptionControlResourceExclusionsLambdaArgs:
 class VpcEncryptionControlResourceExclusionsNatGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsNatGatewayArgs:
@@ -14929,7 +14679,6 @@ class VpcEncryptionControlResourceExclusionsNatGatewayArgs:
 class VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayArgs:
@@ -14953,7 +14702,6 @@ class VpcEncryptionControlResourceExclusionsVirtualPrivateGatewayArgs:
 class VpcEncryptionControlResourceExclusionsVpcLatticeArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsVpcLatticeArgs:
@@ -14977,7 +14725,6 @@ class VpcEncryptionControlResourceExclusionsVpcLatticeArgs:
 class VpcEncryptionControlResourceExclusionsVpcPeeringArgsDict(TypedDict):
     state: pulumi.Input[_builtins.str]
     state_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlResourceExclusionsVpcPeeringArgs:
@@ -15002,7 +14749,6 @@ class VpcEncryptionControlTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEncryptionControlTimeoutsArgs:
@@ -15032,7 +14778,6 @@ class VpcEncryptionControlTimeoutsArgs:
 class VpcEndpointDnsEntryArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     hosted_zone_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointDnsEntryArgs:
@@ -15062,7 +14807,6 @@ class VpcEndpointDnsOptionsArgsDict(TypedDict):
     private_dns_specified_domains: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class VpcEndpointDnsOptionsArgs:
@@ -15112,7 +14856,6 @@ class VpcEndpointServicePrivateDnsNameConfigurationArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointServicePrivateDnsNameConfigurationArgs:
@@ -15149,7 +14892,6 @@ class VpcEndpointSubnetConfigurationArgsDict(TypedDict):
     ipv4: NotRequired[pulumi.Input[_builtins.str]]
     ipv6: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointSubnetConfigurationArgs:
@@ -15178,7 +14920,6 @@ class VpcEndpointSubnetConfigurationArgs:
 
 class VpcIpamOperatingRegionArgsDict(TypedDict):
     region_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcIpamOperatingRegionArgs:
@@ -15192,7 +14933,6 @@ class VpcIpamOperatingRegionArgs:
 class VpcIpamPoolCidrCidrAuthorizationContextArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     signature: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcIpamPoolCidrCidrAuthorizationContextArgs:
@@ -15218,7 +14958,6 @@ class VpcIpamPoolSourceResourceArgsDict(TypedDict):
     resource_owner: pulumi.Input[_builtins.str]
     resource_region: pulumi.Input[_builtins.str]
     resource_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcIpamPoolSourceResourceArgs:
@@ -15253,7 +14992,6 @@ class VpcIpamPoolSourceResourceArgs:
 
 class VpcIpamResourceDiscoveryOperatingRegionArgsDict(TypedDict):
     region_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcIpamResourceDiscoveryOperatingRegionArgs:
@@ -15266,7 +15004,6 @@ class VpcIpamResourceDiscoveryOperatingRegionArgs:
 
 class VpcIpamResourceDiscoveryOrganizationalUnitExclusionArgsDict(TypedDict):
     organizations_entity_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcIpamResourceDiscoveryOrganizationalUnitExclusionArgs:
@@ -15281,7 +15018,6 @@ class VpcIpamResourceDiscoveryOrganizationalUnitExclusionArgs:
 
 class VpcPeeringConnectionAccepterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VpcPeeringConnectionAccepterArgs:
@@ -15302,7 +15038,6 @@ class VpcPeeringConnectionAccepterArgs:
 
 class VpcPeeringConnectionAccepterAccepterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VpcPeeringConnectionAccepterAccepterArgs:
@@ -15323,7 +15058,6 @@ class VpcPeeringConnectionAccepterAccepterArgs:
 
 class VpcPeeringConnectionAccepterRequesterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VpcPeeringConnectionAccepterRequesterArgs:
@@ -15344,7 +15078,6 @@ class VpcPeeringConnectionAccepterRequesterArgs:
 
 class VpcPeeringConnectionRequesterArgsDict(TypedDict):
     allow_remote_vpc_dns_resolution: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VpcPeeringConnectionRequesterArgs:
@@ -15367,7 +15100,6 @@ class VpnConnectionRouteArgsDict(TypedDict):
     destination_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionRouteArgs:
@@ -15398,7 +15130,6 @@ class VpnConnectionTunnel1LogOptionsArgsDict(TypedDict):
     cloudwatch_log_options: NotRequired[
         pulumi.Input[VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VpnConnectionTunnel1LogOptionsArgs:
@@ -15431,7 +15162,6 @@ class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsArgsDict(TypedDict):
     log_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     log_output_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsArgs:
@@ -15480,7 +15210,6 @@ class VpnConnectionTunnel2LogOptionsArgsDict(TypedDict):
     cloudwatch_log_options: NotRequired[
         pulumi.Input[VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VpnConnectionTunnel2LogOptionsArgs:
@@ -15513,7 +15242,6 @@ class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsArgsDict(TypedDict):
     log_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     log_output_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsArgs:
@@ -15565,7 +15293,6 @@ class VpnConnectionVgwTelemetryArgsDict(TypedDict):
     outside_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     status_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionVgwTelemetryArgs:
@@ -15613,7 +15340,6 @@ class VpnConnectionVgwTelemetryArgs:
 class GetAmiFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAmiFilterArgs:
@@ -15634,7 +15360,6 @@ class GetAmiFilterArgs:
 class GetAmiIdsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAmiIdsFilterArgs:
@@ -15655,7 +15380,6 @@ class GetAmiIdsFilterArgs:
 class GetCoipPoolFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoipPoolFilterArgs:
@@ -15676,7 +15400,6 @@ class GetCoipPoolFilterArgs:
 class GetCoipPoolsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoipPoolsFilterArgs:
@@ -15697,7 +15420,6 @@ class GetCoipPoolsFilterArgs:
 class GetCustomerGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCustomerGatewayFilterArgs:
@@ -15718,7 +15440,6 @@ class GetCustomerGatewayFilterArgs:
 class GetDedicatedHostFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetDedicatedHostFilterArgs:
@@ -15739,7 +15460,6 @@ class GetDedicatedHostFilterArgs:
 class GetEipsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetEipsFilterArgs:
@@ -15760,7 +15480,6 @@ class GetEipsFilterArgs:
 class GetElasticIpFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetElasticIpFilterArgs:
@@ -15781,7 +15500,6 @@ class GetElasticIpFilterArgs:
 class GetInstanceFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstanceFilterArgs:
@@ -15802,7 +15520,6 @@ class GetInstanceFilterArgs:
 class GetInstanceTypeOfferingFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstanceTypeOfferingFilterArgs:
@@ -15823,7 +15540,6 @@ class GetInstanceTypeOfferingFilterArgs:
 class GetInstanceTypeOfferingsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstanceTypeOfferingsFilterArgs:
@@ -15844,7 +15560,6 @@ class GetInstanceTypeOfferingsFilterArgs:
 class GetInstanceTypesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstanceTypesFilterArgs:
@@ -15865,7 +15580,6 @@ class GetInstanceTypesFilterArgs:
 class GetInstancesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstancesFilterArgs:
@@ -15886,7 +15600,6 @@ class GetInstancesFilterArgs:
 class GetInternetGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInternetGatewayFilterArgs:
@@ -15907,7 +15620,6 @@ class GetInternetGatewayFilterArgs:
 class GetKeyPairFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetKeyPairFilterArgs:
@@ -15928,7 +15640,6 @@ class GetKeyPairFilterArgs:
 class GetLaunchTemplateFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLaunchTemplateFilterArgs:
@@ -15949,7 +15660,6 @@ class GetLaunchTemplateFilterArgs:
 class GetLocalGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayFilterArgs:
@@ -15970,7 +15680,6 @@ class GetLocalGatewayFilterArgs:
 class GetLocalGatewayRouteTableFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayRouteTableFilterArgs:
@@ -15991,7 +15700,6 @@ class GetLocalGatewayRouteTableFilterArgs:
 class GetLocalGatewayRouteTablesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayRouteTablesFilterArgs:
@@ -16012,7 +15720,6 @@ class GetLocalGatewayRouteTablesFilterArgs:
 class GetLocalGatewayVirtualInterfaceFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayVirtualInterfaceFilterArgs:
@@ -16033,7 +15740,6 @@ class GetLocalGatewayVirtualInterfaceFilterArgs:
 class GetLocalGatewayVirtualInterfaceGroupFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayVirtualInterfaceGroupFilterArgs:
@@ -16054,7 +15760,6 @@ class GetLocalGatewayVirtualInterfaceGroupFilterArgs:
 class GetLocalGatewayVirtualInterfaceGroupsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewayVirtualInterfaceGroupsFilterArgs:
@@ -16075,7 +15780,6 @@ class GetLocalGatewayVirtualInterfaceGroupsFilterArgs:
 class GetLocalGatewaysFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLocalGatewaysFilterArgs:
@@ -16096,7 +15800,6 @@ class GetLocalGatewaysFilterArgs:
 class GetManagedPrefixListFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetManagedPrefixListFilterArgs:
@@ -16117,7 +15820,6 @@ class GetManagedPrefixListFilterArgs:
 class GetManagedPrefixListsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetManagedPrefixListsFilterArgs:
@@ -16138,7 +15840,6 @@ class GetManagedPrefixListsFilterArgs:
 class GetNatGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNatGatewayFilterArgs:
@@ -16159,7 +15860,6 @@ class GetNatGatewayFilterArgs:
 class GetNatGatewaysFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNatGatewaysFilterArgs:
@@ -16180,7 +15880,6 @@ class GetNatGatewaysFilterArgs:
 class GetNetworkAclsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNetworkAclsFilterArgs:
@@ -16201,7 +15900,6 @@ class GetNetworkAclsFilterArgs:
 class GetNetworkInsightsAnalysisFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNetworkInsightsAnalysisFilterArgs:
@@ -16222,7 +15920,6 @@ class GetNetworkInsightsAnalysisFilterArgs:
 class GetNetworkInsightsPathFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNetworkInsightsPathFilterArgs:
@@ -16243,7 +15940,6 @@ class GetNetworkInsightsPathFilterArgs:
 class GetNetworkInterfaceFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNetworkInterfaceFilterArgs:
@@ -16264,7 +15960,6 @@ class GetNetworkInterfaceFilterArgs:
 class GetNetworkInterfacesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNetworkInterfacesFilterArgs:
@@ -16285,7 +15980,6 @@ class GetNetworkInterfacesFilterArgs:
 class GetPrefixListFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPrefixListFilterArgs:
@@ -16306,7 +16000,6 @@ class GetPrefixListFilterArgs:
 class GetPublicIpv4PoolsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPublicIpv4PoolsFilterArgs:
@@ -16327,7 +16020,6 @@ class GetPublicIpv4PoolsFilterArgs:
 class GetRouteTableFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTableFilterArgs:
@@ -16348,7 +16040,6 @@ class GetRouteTableFilterArgs:
 class GetRouteTablesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTablesFilterArgs:
@@ -16369,7 +16060,6 @@ class GetRouteTablesFilterArgs:
 class GetSecurityGroupFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecurityGroupFilterArgs:
@@ -16390,7 +16080,6 @@ class GetSecurityGroupFilterArgs:
 class GetSecurityGroupsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecurityGroupsFilterArgs:
@@ -16411,7 +16100,6 @@ class GetSecurityGroupsFilterArgs:
 class GetSpotPriceFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSpotPriceFilterArgs:
@@ -16432,7 +16120,6 @@ class GetSpotPriceFilterArgs:
 class GetSubnetFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSubnetFilterArgs:
@@ -16453,7 +16140,6 @@ class GetSubnetFilterArgs:
 class GetSubnetsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSubnetsFilterArgs:
@@ -16474,7 +16160,6 @@ class GetSubnetsFilterArgs:
 class GetTransitGatewayRouteTablesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTransitGatewayRouteTablesFilterArgs:
@@ -16495,7 +16180,6 @@ class GetTransitGatewayRouteTablesFilterArgs:
 class GetVpcDhcpOptionsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcDhcpOptionsFilterArgs:
@@ -16516,7 +16200,6 @@ class GetVpcDhcpOptionsFilterArgs:
 class GetVpcEndpointFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcEndpointFilterArgs:
@@ -16537,7 +16220,6 @@ class GetVpcEndpointFilterArgs:
 class GetVpcEndpointServiceFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcEndpointServiceFilterArgs:
@@ -16558,7 +16240,6 @@ class GetVpcEndpointServiceFilterArgs:
 class GetVpcFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcFilterArgs:
@@ -16579,7 +16260,6 @@ class GetVpcFilterArgs:
 class GetVpcIpamPoolCidrsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcIpamPoolCidrsFilterArgs:
@@ -16600,7 +16280,6 @@ class GetVpcIpamPoolCidrsFilterArgs:
 class GetVpcIpamPoolFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcIpamPoolFilterArgs:
@@ -16621,7 +16300,6 @@ class GetVpcIpamPoolFilterArgs:
 class GetVpcIpamPoolsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcIpamPoolsFilterArgs:
@@ -16642,7 +16320,6 @@ class GetVpcIpamPoolsFilterArgs:
 class GetVpcIpamsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcIpamsFilterArgs:
@@ -16663,7 +16340,6 @@ class GetVpcIpamsFilterArgs:
 class GetVpcPeeringConnectionFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcPeeringConnectionFilterArgs:
@@ -16684,7 +16360,6 @@ class GetVpcPeeringConnectionFilterArgs:
 class GetVpcPeeringConnectionsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcPeeringConnectionsFilterArgs:
@@ -16705,7 +16380,6 @@ class GetVpcPeeringConnectionsFilterArgs:
 class GetVpcsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcsFilterArgs:
@@ -16726,7 +16400,6 @@ class GetVpcsFilterArgs:
 class GetVpnConnectionFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpnConnectionFilterArgs:
@@ -16747,7 +16420,6 @@ class GetVpnConnectionFilterArgs:
 class GetVpnGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpnGatewayFilterArgs:

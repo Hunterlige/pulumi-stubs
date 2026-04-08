@@ -25,7 +25,6 @@ class ProductProvisioningArtifactParametersArgsDict(TypedDict):
     template_physical_id: NotRequired[pulumi.Input[_builtins.str]]
     template_url: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProductProvisioningArtifactParametersArgs:
@@ -76,7 +75,6 @@ class ProvisionedProductOutputArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProvisionedProductOutputArgs:
@@ -107,7 +105,6 @@ class ProvisionedProductProvisioningParameterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     use_previous_value: NotRequired[pulumi.Input[_builtins.bool]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProvisionedProductProvisioningParameterArgs:
@@ -141,7 +138,6 @@ class ProvisionedProductStackSetProvisioningPreferencesArgsDict(TypedDict):
     max_concurrency_count: NotRequired[pulumi.Input[_builtins.int]]
     max_concurrency_percentage: NotRequired[pulumi.Input[_builtins.int]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ProvisionedProductStackSetProvisioningPreferencesArgs:
@@ -204,7 +200,6 @@ class ServiceActionDefinitionArgsDict(TypedDict):
     assume_role: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceActionDefinitionArgs:

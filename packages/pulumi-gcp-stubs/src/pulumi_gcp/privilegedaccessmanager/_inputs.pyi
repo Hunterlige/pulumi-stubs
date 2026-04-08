@@ -55,7 +55,6 @@ class SettingsEmailNotificationSettingsArgsDict(TypedDict):
     disable_all_notifications: NotRequired[
         pulumi.Input[SettingsEmailNotificationSettingsDisableAllNotificationsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SettingsEmailNotificationSettingsArgs:
@@ -118,7 +117,6 @@ class SettingsEmailNotificationSettingsCustomNotificationBehaviorArgsDict(TypedD
             SettingsEmailNotificationSettingsCustomNotificationBehaviorRequesterNotificationsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SettingsEmailNotificationSettingsCustomNotificationBehaviorArgs:
@@ -203,7 +201,6 @@ class SettingsEmailNotificationSettingsCustomNotificationBehaviorAdminNotificati
     grant_activation_failed: NotRequired[pulumi.Input[_builtins.str]]
     grant_ended: NotRequired[pulumi.Input[_builtins.str]]
     grant_externally_modified: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsEmailNotificationSettingsCustomNotificationBehaviorAdminNotificationsArgs:
@@ -242,7 +239,6 @@ class SettingsEmailNotificationSettingsCustomNotificationBehaviorApproverNotific
     TypedDict
 ):
     pending_approval: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsEmailNotificationSettingsCustomNotificationBehaviorApproverNotificationsArgs:
@@ -266,7 +262,6 @@ class SettingsEmailNotificationSettingsCustomNotificationBehaviorRequesterNotifi
     grant_expired: NotRequired[pulumi.Input[_builtins.str]]
     grant_externally_modified: NotRequired[pulumi.Input[_builtins.str]]
     grant_revoked: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsEmailNotificationSettingsCustomNotificationBehaviorRequesterNotificationsArgs:
@@ -333,7 +328,6 @@ class SettingsEmailNotificationSettingsDisableAllNotificationsArgs:
 
 class SettingsServiceAccountApproverSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SettingsServiceAccountApproverSettingsArgs:
@@ -353,7 +347,6 @@ class EntitlementAdditionalNotificationTargetsArgsDict(TypedDict):
     requester_email_recipients: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EntitlementAdditionalNotificationTargetsArgs:
@@ -388,7 +381,6 @@ class EntitlementAdditionalNotificationTargetsArgs:
 
 class EntitlementApprovalWorkflowArgsDict(TypedDict):
     manual_approvals: pulumi.Input[EntitlementApprovalWorkflowManualApprovalsArgsDict]
-    ...
 
 @pulumi.input_type
 class EntitlementApprovalWorkflowArgs:
@@ -412,7 +404,6 @@ class EntitlementApprovalWorkflowManualApprovalsArgsDict(TypedDict):
         Sequence[pulumi.Input[EntitlementApprovalWorkflowManualApprovalsStepArgsDict]]
     ]
     require_approver_justification: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EntitlementApprovalWorkflowManualApprovalsArgs:
@@ -457,7 +448,6 @@ class EntitlementApprovalWorkflowManualApprovalsStepArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntitlementApprovalWorkflowManualApprovalsStepArgs:
@@ -507,7 +497,6 @@ class EntitlementApprovalWorkflowManualApprovalsStepArgs:
 
 class EntitlementApprovalWorkflowManualApprovalsStepApproversArgsDict(TypedDict):
     principals: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EntitlementApprovalWorkflowManualApprovalsStepApproversArgs:
@@ -524,7 +513,6 @@ class EntitlementApprovalWorkflowManualApprovalsStepApproversArgs:
 
 class EntitlementEligibleUserArgsDict(TypedDict):
     principals: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EntitlementEligibleUserArgs:
@@ -541,7 +529,6 @@ class EntitlementEligibleUserArgs:
 
 class EntitlementPrivilegedAccessArgsDict(TypedDict):
     gcp_iam_access: pulumi.Input[EntitlementPrivilegedAccessGcpIamAccessArgsDict]
-    ...
 
 @pulumi.input_type
 class EntitlementPrivilegedAccessArgs:
@@ -568,7 +555,6 @@ class EntitlementPrivilegedAccessGcpIamAccessArgsDict(TypedDict):
             pulumi.Input[EntitlementPrivilegedAccessGcpIamAccessRoleBindingArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EntitlementPrivilegedAccessGcpIamAccessArgs:
@@ -614,7 +600,6 @@ class EntitlementPrivilegedAccessGcpIamAccessRoleBindingArgsDict(TypedDict):
     role: pulumi.Input[_builtins.str]
     condition_expression: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntitlementPrivilegedAccessGcpIamAccessRoleBindingArgs:
@@ -648,7 +633,6 @@ class EntitlementRequesterJustificationConfigArgsDict(TypedDict):
     unstructured: NotRequired[
         pulumi.Input[EntitlementRequesterJustificationConfigUnstructuredArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EntitlementRequesterJustificationConfigArgs:

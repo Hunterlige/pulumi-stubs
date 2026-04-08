@@ -21,7 +21,6 @@ __all__ = [
 class RuleExcludeResourceTagArgsDict(TypedDict):
     resource_tag_key: pulumi.Input[_builtins.str]
     resource_tag_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleExcludeResourceTagArgs:
@@ -44,7 +43,6 @@ class RuleExcludeResourceTagArgs:
 
 class RuleLockConfigurationArgsDict(TypedDict):
     unlock_delay: pulumi.Input[RuleLockConfigurationUnlockDelayArgsDict]
-    ...
 
 @pulumi.input_type
 class RuleLockConfigurationArgs:
@@ -62,7 +60,6 @@ class RuleLockConfigurationArgs:
 class RuleLockConfigurationUnlockDelayArgsDict(TypedDict):
     unlock_delay_unit: pulumi.Input[_builtins.str]
     unlock_delay_value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RuleLockConfigurationUnlockDelayArgs:
@@ -86,7 +83,6 @@ class RuleLockConfigurationUnlockDelayArgs:
 class RuleResourceTagArgsDict(TypedDict):
     resource_tag_key: pulumi.Input[_builtins.str]
     resource_tag_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleResourceTagArgs:
@@ -110,7 +106,6 @@ class RuleResourceTagArgs:
 class RuleRetentionPeriodArgsDict(TypedDict):
     retention_period_unit: pulumi.Input[_builtins.str]
     retention_period_value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RuleRetentionPeriodArgs:

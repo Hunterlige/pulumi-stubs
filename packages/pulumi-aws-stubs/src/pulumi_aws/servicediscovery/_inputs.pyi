@@ -21,7 +21,6 @@ class ServiceDnsConfigArgsDict(TypedDict):
     dns_records: pulumi.Input[Sequence[pulumi.Input[ServiceDnsConfigDnsRecordArgsDict]]]
     namespace_id: pulumi.Input[_builtins.str]
     routing_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceDnsConfigArgs:
@@ -57,7 +56,6 @@ class ServiceDnsConfigArgs:
 class ServiceDnsConfigDnsRecordArgsDict(TypedDict):
     ttl: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceDnsConfigDnsRecordArgs:
@@ -79,7 +77,6 @@ class ServiceHealthCheckConfigArgsDict(TypedDict):
     failure_threshold: NotRequired[pulumi.Input[_builtins.int]]
     resource_path: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceHealthCheckConfigArgs:
@@ -108,7 +105,6 @@ class ServiceHealthCheckConfigArgs:
 
 class ServiceHealthCheckCustomConfigArgsDict(TypedDict):
     failure_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceHealthCheckCustomConfigArgs:

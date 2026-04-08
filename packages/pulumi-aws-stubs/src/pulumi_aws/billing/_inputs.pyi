@@ -24,7 +24,6 @@ class ViewDataFilterExpressionArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ViewDataFilterExpressionTagArgsDict]]]
     ]
     time_range: NotRequired[pulumi.Input[ViewDataFilterExpressionTimeRangeArgsDict]]
-    ...
 
 @pulumi.input_type
 class ViewDataFilterExpressionArgs:
@@ -75,7 +74,6 @@ class ViewDataFilterExpressionArgs:
 class ViewDataFilterExpressionDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ViewDataFilterExpressionDimensionsArgs:
@@ -99,7 +97,6 @@ class ViewDataFilterExpressionDimensionsArgs:
 class ViewDataFilterExpressionTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ViewDataFilterExpressionTagArgs:
@@ -123,7 +120,6 @@ class ViewDataFilterExpressionTagArgs:
 class ViewDataFilterExpressionTimeRangeArgsDict(TypedDict):
     begin_date_inclusive: pulumi.Input[_builtins.str]
     end_date_inclusive: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ViewDataFilterExpressionTimeRangeArgs:
@@ -148,7 +144,6 @@ class ViewTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ViewTimeoutsArgs:

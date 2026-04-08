@@ -63,7 +63,6 @@ __all__ = [
 class DeploymentConfigMinimumHealthyHostsArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigMinimumHealthyHostsArgs:
@@ -92,7 +91,6 @@ class DeploymentConfigTrafficRoutingConfigArgsDict(TypedDict):
         pulumi.Input[DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgsDict]
     ]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigTrafficRoutingConfigArgs:
@@ -144,7 +142,6 @@ class DeploymentConfigTrafficRoutingConfigArgs:
 class DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.int]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgs:
@@ -168,7 +165,6 @@ class DeploymentConfigTrafficRoutingConfigTimeBasedCanaryArgs:
 class DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.int]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigTrafficRoutingConfigTimeBasedLinearArgs:
@@ -195,7 +191,6 @@ class DeploymentConfigZonalConfigArgsDict(TypedDict):
         pulumi.Input[DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgsDict]
     ]
     monitor_duration_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigZonalConfigArgs:
@@ -244,7 +239,6 @@ class DeploymentConfigZonalConfigArgs:
 class DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentConfigZonalConfigMinimumHealthyHostsPerZoneArgs:
@@ -269,7 +263,6 @@ class DeploymentGroupAlarmConfigurationArgsDict(TypedDict):
     alarms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     ignore_poll_alarm_failure: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupAlarmConfigurationArgs:
@@ -305,7 +298,6 @@ class DeploymentGroupAlarmConfigurationArgs:
 class DeploymentGroupAutoRollbackConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupAutoRollbackConfigurationArgs:
@@ -346,7 +338,6 @@ class DeploymentGroupBlueGreenDeploymentConfigArgsDict(TypedDict):
             DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupBlueGreenDeploymentConfigArgs:
@@ -425,7 +416,6 @@ class DeploymentGroupBlueGreenDeploymentConfigArgs:
 class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionArgsDict(TypedDict):
     action_on_timeout: NotRequired[pulumi.Input[_builtins.str]]
     wait_time_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionArgs:
@@ -450,7 +440,6 @@ class DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionArgsDi
     TypedDict
 ):
     action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionArgs:
@@ -468,7 +457,6 @@ class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
 ):
     action: NotRequired[pulumi.Input[_builtins.str]]
     termination_wait_time_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessArgs:
@@ -496,7 +484,6 @@ class DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeployment
 class DeploymentGroupDeploymentStyleArgsDict(TypedDict):
     deployment_option: NotRequired[pulumi.Input[_builtins.str]]
     deployment_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupDeploymentStyleArgs:
@@ -521,7 +508,6 @@ class DeploymentGroupEc2TagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupEc2TagFilterArgs:
@@ -554,7 +540,6 @@ class DeploymentGroupEc2TagSetArgsDict(TypedDict):
             Sequence[pulumi.Input[DeploymentGroupEc2TagSetEc2TagFilterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupEc2TagSetArgs:
@@ -588,7 +573,6 @@ class DeploymentGroupEc2TagSetEc2TagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupEc2TagSetEc2TagFilterArgs:
@@ -618,7 +602,6 @@ class DeploymentGroupEc2TagSetEc2TagFilterArgs:
 class DeploymentGroupEcsServiceArgsDict(TypedDict):
     cluster_name: pulumi.Input[_builtins.str]
     service_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupEcsServiceArgs:
@@ -655,7 +638,6 @@ class DeploymentGroupLoadBalancerInfoArgsDict(TypedDict):
     target_group_pair_info: NotRequired[
         pulumi.Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoArgs:
@@ -731,7 +713,6 @@ class DeploymentGroupLoadBalancerInfoArgs:
 
 class DeploymentGroupLoadBalancerInfoElbInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoElbInfoArgs:
@@ -746,7 +727,6 @@ class DeploymentGroupLoadBalancerInfoElbInfoArgs:
 
 class DeploymentGroupLoadBalancerInfoTargetGroupInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoTargetGroupInfoArgs:
@@ -775,7 +755,6 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgsDict(TypedDict):
             DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoArgs:
@@ -857,7 +836,6 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgsDict
     TypedDict
 ):
     listener_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgs:
@@ -874,7 +852,6 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteArgs:
 
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupArgs:
@@ -889,7 +866,6 @@ class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgsDict
     TypedDict
 ):
     listener_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteArgs:
@@ -908,7 +884,6 @@ class DeploymentGroupOnPremisesInstanceTagFilterArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupOnPremisesInstanceTagFilterArgs:
@@ -939,7 +914,6 @@ class DeploymentGroupTriggerConfigurationArgsDict(TypedDict):
     trigger_events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     trigger_name: pulumi.Input[_builtins.str]
     trigger_target_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DeploymentGroupTriggerConfigurationArgs:

@@ -22,7 +22,6 @@ __all__ = [
 
 class PipelineBufferOptionsArgsDict(TypedDict):
     persistent_buffer_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class PipelineBufferOptionsArgs:
@@ -37,7 +36,6 @@ class PipelineBufferOptionsArgs:
 
 class PipelineEncryptionAtRestOptionsArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineEncryptionAtRestOptionsArgs:
@@ -53,7 +51,6 @@ class PipelineLogPublishingOptionsArgsDict(TypedDict):
         pulumi.Input[PipelineLogPublishingOptionsCloudwatchLogDestinationArgsDict]
     ]
     is_logging_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineLogPublishingOptionsArgs:
@@ -87,7 +84,6 @@ class PipelineLogPublishingOptionsArgs:
 
 class PipelineLogPublishingOptionsCloudwatchLogDestinationArgsDict(TypedDict):
     log_group: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineLogPublishingOptionsCloudwatchLogDestinationArgs:
@@ -102,7 +98,6 @@ class PipelineTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineTimeoutsArgs:
@@ -133,7 +128,6 @@ class PipelineVpcOptionsArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_endpoint_management: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineVpcOptionsArgs:

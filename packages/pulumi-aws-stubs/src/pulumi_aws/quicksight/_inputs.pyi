@@ -255,7 +255,6 @@ __all__ = [
 class AccountSettingsTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountSettingsTimeoutsArgs:
@@ -291,7 +290,6 @@ class AnalysisParametersArgsDict(TypedDict):
     string_parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AnalysisParametersStringParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisParametersArgs:
@@ -375,7 +373,6 @@ class AnalysisParametersArgs:
 class AnalysisParametersDateTimeParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AnalysisParametersDateTimeParameterArgs:
@@ -399,7 +396,6 @@ class AnalysisParametersDateTimeParameterArgs:
 class AnalysisParametersDecimalParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.float]]]
-    ...
 
 @pulumi.input_type
 class AnalysisParametersDecimalParameterArgs:
@@ -423,7 +419,6 @@ class AnalysisParametersDecimalParameterArgs:
 class AnalysisParametersIntegerParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class AnalysisParametersIntegerParameterArgs:
@@ -447,7 +442,6 @@ class AnalysisParametersIntegerParameterArgs:
 class AnalysisParametersStringParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AnalysisParametersStringParameterArgs:
@@ -471,7 +465,6 @@ class AnalysisParametersStringParameterArgs:
 class AnalysisPermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalysisPermissionArgs:
@@ -496,7 +489,6 @@ class AnalysisSourceEntityArgsDict(TypedDict):
     source_template: NotRequired[
         pulumi.Input[AnalysisSourceEntitySourceTemplateArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisSourceEntityArgs:
@@ -524,7 +516,6 @@ class AnalysisSourceEntitySourceTemplateArgsDict(TypedDict):
             pulumi.Input[AnalysisSourceEntitySourceTemplateDataSetReferenceArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisSourceEntitySourceTemplateArgs:
@@ -563,7 +554,6 @@ class AnalysisSourceEntitySourceTemplateArgs:
 class AnalysisSourceEntitySourceTemplateDataSetReferenceArgsDict(TypedDict):
     data_set_arn: pulumi.Input[_builtins.str]
     data_set_placeholder: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalysisSourceEntitySourceTemplateDataSetReferenceArgs:
@@ -608,7 +598,6 @@ class CustomPermissionsCapabilitiesArgsDict(TypedDict):
     share_datasets: NotRequired[pulumi.Input[_builtins.str]]
     subscribe_dashboard_email_reports: NotRequired[pulumi.Input[_builtins.str]]
     view_account_spice_capacity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomPermissionsCapabilitiesArgs:
@@ -840,7 +829,6 @@ class DashboardDashboardPublishOptionsArgsDict(TypedDict):
     visual_menu_option: NotRequired[
         pulumi.Input[DashboardDashboardPublishOptionsVisualMenuOptionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsArgs:
@@ -1031,7 +1019,6 @@ class DashboardDashboardPublishOptionsArgs:
 
 class DashboardDashboardPublishOptionsAdHocFilteringOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsAdHocFilteringOptionArgs:
@@ -1046,7 +1033,6 @@ class DashboardDashboardPublishOptionsAdHocFilteringOptionArgs:
 
 class DashboardDashboardPublishOptionsDataPointDrillUpDownOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsDataPointDrillUpDownOptionArgs:
@@ -1061,7 +1047,6 @@ class DashboardDashboardPublishOptionsDataPointDrillUpDownOptionArgs:
 
 class DashboardDashboardPublishOptionsDataPointMenuLabelOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsDataPointMenuLabelOptionArgs:
@@ -1076,7 +1061,6 @@ class DashboardDashboardPublishOptionsDataPointMenuLabelOptionArgs:
 
 class DashboardDashboardPublishOptionsDataPointTooltipOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsDataPointTooltipOptionArgs:
@@ -1091,7 +1075,6 @@ class DashboardDashboardPublishOptionsDataPointTooltipOptionArgs:
 
 class DashboardDashboardPublishOptionsExportToCsvOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsExportToCsvOptionArgs:
@@ -1106,7 +1089,6 @@ class DashboardDashboardPublishOptionsExportToCsvOptionArgs:
 
 class DashboardDashboardPublishOptionsExportWithHiddenFieldsOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsExportWithHiddenFieldsOptionArgs:
@@ -1121,7 +1103,6 @@ class DashboardDashboardPublishOptionsExportWithHiddenFieldsOptionArgs:
 
 class DashboardDashboardPublishOptionsSheetControlsOptionArgsDict(TypedDict):
     visibility_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsSheetControlsOptionArgs:
@@ -1138,7 +1119,6 @@ class DashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionArgsDi
     TypedDict
 ):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionArgs:
@@ -1153,7 +1133,6 @@ class DashboardDashboardPublishOptionsSheetLayoutElementMaximizationOptionArgs:
 
 class DashboardDashboardPublishOptionsVisualAxisSortOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsVisualAxisSortOptionArgs:
@@ -1168,7 +1147,6 @@ class DashboardDashboardPublishOptionsVisualAxisSortOptionArgs:
 
 class DashboardDashboardPublishOptionsVisualMenuOptionArgsDict(TypedDict):
     availability_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DashboardDashboardPublishOptionsVisualMenuOptionArgs:
@@ -1200,7 +1178,6 @@ class DashboardParametersArgsDict(TypedDict):
     string_parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DashboardParametersStringParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DashboardParametersArgs:
@@ -1292,7 +1269,6 @@ class DashboardParametersArgs:
 class DashboardParametersDateTimeParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DashboardParametersDateTimeParameterArgs:
@@ -1316,7 +1292,6 @@ class DashboardParametersDateTimeParameterArgs:
 class DashboardParametersDecimalParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.float]]]
-    ...
 
 @pulumi.input_type
 class DashboardParametersDecimalParameterArgs:
@@ -1340,7 +1315,6 @@ class DashboardParametersDecimalParameterArgs:
 class DashboardParametersIntegerParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class DashboardParametersIntegerParameterArgs:
@@ -1364,7 +1338,6 @@ class DashboardParametersIntegerParameterArgs:
 class DashboardParametersStringParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DashboardParametersStringParameterArgs:
@@ -1388,7 +1361,6 @@ class DashboardParametersStringParameterArgs:
 class DashboardPermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DashboardPermissionArgs:
@@ -1413,7 +1385,6 @@ class DashboardSourceEntityArgsDict(TypedDict):
     source_template: NotRequired[
         pulumi.Input[DashboardSourceEntitySourceTemplateArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DashboardSourceEntityArgs:
@@ -1441,7 +1412,6 @@ class DashboardSourceEntitySourceTemplateArgsDict(TypedDict):
             pulumi.Input[DashboardSourceEntitySourceTemplateDataSetReferenceArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DashboardSourceEntitySourceTemplateArgs:
@@ -1480,7 +1450,6 @@ class DashboardSourceEntitySourceTemplateArgs:
 class DashboardSourceEntitySourceTemplateDataSetReferenceArgsDict(TypedDict):
     data_set_arn: pulumi.Input[_builtins.str]
     data_set_placeholder: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DashboardSourceEntitySourceTemplateDataSetReferenceArgs:
@@ -1505,7 +1474,6 @@ class DataSetColumnGroupArgsDict(TypedDict):
     geo_spatial_column_group: NotRequired[
         pulumi.Input[DataSetColumnGroupGeoSpatialColumnGroupArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetColumnGroupArgs:
@@ -1530,7 +1498,6 @@ class DataSetColumnGroupGeoSpatialColumnGroupArgsDict(TypedDict):
     columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     country_code: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetColumnGroupGeoSpatialColumnGroupArgs:
@@ -1560,7 +1527,6 @@ class DataSetColumnGroupGeoSpatialColumnGroupArgs:
 class DataSetColumnLevelPermissionRuleArgsDict(TypedDict):
     column_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principals: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataSetColumnLevelPermissionRuleArgs:
@@ -1594,7 +1560,6 @@ class DataSetColumnLevelPermissionRuleArgs:
 class DataSetDataSetUsageConfigurationArgsDict(TypedDict):
     disable_use_as_direct_query_source: NotRequired[pulumi.Input[_builtins.bool]]
     disable_use_as_imported_source: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataSetDataSetUsageConfigurationArgs:
@@ -1629,7 +1594,6 @@ class DataSetFieldFolderArgsDict(TypedDict):
     field_folders_id: pulumi.Input[_builtins.str]
     columns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetFieldFolderArgs:
@@ -1669,7 +1633,6 @@ class DataSetLogicalTableMapArgsDict(TypedDict):
             Sequence[pulumi.Input[DataSetLogicalTableMapDataTransformArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapArgs:
@@ -1739,7 +1702,6 @@ class DataSetLogicalTableMapDataTransformArgsDict(TypedDict):
     untag_column_operation: NotRequired[
         pulumi.Input[DataSetLogicalTableMapDataTransformUntagColumnOperationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformArgs:
@@ -1871,7 +1833,6 @@ class DataSetLogicalTableMapDataTransformCastColumnTypeOperationArgsDict(TypedDi
     column_name: pulumi.Input[_builtins.str]
     new_column_type: pulumi.Input[_builtins.str]
     format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformCastColumnTypeOperationArgs:
@@ -1906,7 +1867,6 @@ class DataSetLogicalTableMapDataTransformCreateColumnsOperationArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformCreateColumnsOperationArgs:
@@ -1950,7 +1910,6 @@ class DataSetLogicalTableMapDataTransformCreateColumnsOperationColumnArgsDict(
     column_id: pulumi.Input[_builtins.str]
     column_name: pulumi.Input[_builtins.str]
     expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformCreateColumnsOperationColumnArgs:
@@ -1979,7 +1938,6 @@ class DataSetLogicalTableMapDataTransformCreateColumnsOperationColumnArgs:
 
 class DataSetLogicalTableMapDataTransformFilterOperationArgsDict(TypedDict):
     condition_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformFilterOperationArgs:
@@ -1994,7 +1952,6 @@ class DataSetLogicalTableMapDataTransformFilterOperationArgs:
 
 class DataSetLogicalTableMapDataTransformProjectOperationArgsDict(TypedDict):
     projected_columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformProjectOperationArgs:
@@ -2016,7 +1973,6 @@ class DataSetLogicalTableMapDataTransformProjectOperationArgs:
 class DataSetLogicalTableMapDataTransformRenameColumnOperationArgsDict(TypedDict):
     column_name: pulumi.Input[_builtins.str]
     new_column_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformRenameColumnOperationArgs:
@@ -2046,7 +2002,6 @@ class DataSetLogicalTableMapDataTransformTagColumnOperationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformTagColumnOperationArgs:
@@ -2095,7 +2050,6 @@ class DataSetLogicalTableMapDataTransformTagColumnOperationTagArgsDict(TypedDict
         ]
     ]
     column_geographic_role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformTagColumnOperationTagArgs:
@@ -2137,7 +2091,6 @@ class DataSetLogicalTableMapDataTransformTagColumnOperationTagColumnDescriptionA
     TypedDict
 ):
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformTagColumnOperationTagColumnDescriptionArgs:
@@ -2153,7 +2106,6 @@ class DataSetLogicalTableMapDataTransformTagColumnOperationTagColumnDescriptionA
 class DataSetLogicalTableMapDataTransformUntagColumnOperationArgsDict(TypedDict):
     column_name: pulumi.Input[_builtins.str]
     tag_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapDataTransformUntagColumnOperationArgs:
@@ -2180,7 +2132,6 @@ class DataSetLogicalTableMapSourceArgsDict(TypedDict):
         pulumi.Input[DataSetLogicalTableMapSourceJoinInstructionArgsDict]
     ]
     physical_table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapSourceArgs:
@@ -2229,7 +2180,6 @@ class DataSetLogicalTableMapSourceJoinInstructionArgsDict(TypedDict):
             DataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapSourceJoinInstructionArgs:
@@ -2312,7 +2262,6 @@ class DataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesArgsDict(
     TypedDict
 ):
     unique_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesArgs:
@@ -2329,7 +2278,6 @@ class DataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesArgsDict(
     TypedDict
 ):
     unique_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesArgs:
@@ -2346,7 +2294,6 @@ class DataSetOutputColumnArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetOutputColumnArgs:
@@ -2376,7 +2323,6 @@ class DataSetOutputColumnArgs:
 class DataSetPermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetPermissionArgs:
@@ -2404,7 +2350,6 @@ class DataSetPhysicalTableMapArgsDict(TypedDict):
         pulumi.Input[DataSetPhysicalTableMapRelationalTableArgsDict]
     ]
     s3_source: NotRequired[pulumi.Input[DataSetPhysicalTableMapS3SourceArgsDict]]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapArgs:
@@ -2460,7 +2405,6 @@ class DataSetPhysicalTableMapCustomSqlArgsDict(TypedDict):
             Sequence[pulumi.Input[DataSetPhysicalTableMapCustomSqlColumnArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapCustomSqlArgs:
@@ -2511,7 +2455,6 @@ class DataSetPhysicalTableMapCustomSqlArgs:
 class DataSetPhysicalTableMapCustomSqlColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapCustomSqlColumnArgs:
@@ -2542,7 +2485,6 @@ class DataSetPhysicalTableMapRelationalTableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog: NotRequired[pulumi.Input[_builtins.str]]
     schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapRelationalTableArgs:
@@ -2599,7 +2541,6 @@ class DataSetPhysicalTableMapRelationalTableArgs:
 class DataSetPhysicalTableMapRelationalTableInputColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapRelationalTableInputColumnArgs:
@@ -2626,7 +2567,6 @@ class DataSetPhysicalTableMapS3SourceArgsDict(TypedDict):
         Sequence[pulumi.Input[DataSetPhysicalTableMapS3SourceInputColumnArgsDict]]
     ]
     upload_settings: pulumi.Input[DataSetPhysicalTableMapS3SourceUploadSettingsArgsDict]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapS3SourceArgs:
@@ -2673,7 +2613,6 @@ class DataSetPhysicalTableMapS3SourceArgs:
 class DataSetPhysicalTableMapS3SourceInputColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapS3SourceInputColumnArgs:
@@ -2700,7 +2639,6 @@ class DataSetPhysicalTableMapS3SourceUploadSettingsArgsDict(TypedDict):
     format: NotRequired[pulumi.Input[_builtins.str]]
     start_from_row: NotRequired[pulumi.Input[_builtins.int]]
     text_qualifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetPhysicalTableMapS3SourceUploadSettingsArgs:
@@ -2743,7 +2681,6 @@ class DataSetRefreshPropertiesArgsDict(TypedDict):
     refresh_configuration: pulumi.Input[
         DataSetRefreshPropertiesRefreshConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataSetRefreshPropertiesArgs:
@@ -2768,7 +2705,6 @@ class DataSetRefreshPropertiesRefreshConfigurationArgsDict(TypedDict):
     incremental_refresh: pulumi.Input[
         DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataSetRefreshPropertiesRefreshConfigurationArgs:
@@ -2798,7 +2734,6 @@ class DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshArgsDict(Typ
     lookback_window: pulumi.Input[
         DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshArgs:
@@ -2830,7 +2765,6 @@ class DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWind
     column_name: pulumi.Input[_builtins.str]
     size: pulumi.Input[_builtins.int]
     size_unit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowArgs:
@@ -2863,7 +2797,6 @@ class DataSetRowLevelPermissionDataSetArgsDict(TypedDict):
     format_version: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetRowLevelPermissionDataSetArgs:
@@ -2907,7 +2840,6 @@ class DataSetRowLevelPermissionTagConfigurationArgsDict(TypedDict):
         Sequence[pulumi.Input[DataSetRowLevelPermissionTagConfigurationTagRuleArgsDict]]
     ]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetRowLevelPermissionTagConfigurationArgs:
@@ -2944,7 +2876,6 @@ class DataSetRowLevelPermissionTagConfigurationTagRuleArgsDict(TypedDict):
     tag_key: pulumi.Input[_builtins.str]
     match_all_value: NotRequired[pulumi.Input[_builtins.str]]
     tag_multi_value_delimiter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSetRowLevelPermissionTagConfigurationTagRuleArgs:
@@ -2985,7 +2916,6 @@ class DataSourceCredentialsArgsDict(TypedDict):
         pulumi.Input[DataSourceCredentialsCredentialPairArgsDict]
     ]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCredentialsArgs:
@@ -3021,7 +2951,6 @@ class DataSourceCredentialsArgs:
 class DataSourceCredentialsCredentialPairArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceCredentialsCredentialPairArgs:
@@ -3070,7 +2999,6 @@ class DataSourceParametersArgsDict(TypedDict):
     sql_server: NotRequired[pulumi.Input[DataSourceParametersSqlServerArgsDict]]
     teradata: NotRequired[pulumi.Input[DataSourceParametersTeradataArgsDict]]
     twitter: NotRequired[pulumi.Input[DataSourceParametersTwitterArgsDict]]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersArgs:
@@ -3253,7 +3181,6 @@ class DataSourceParametersArgs:
 
 class DataSourceParametersAmazonElasticsearchArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersAmazonElasticsearchArgs:
@@ -3266,7 +3193,6 @@ class DataSourceParametersAmazonElasticsearchArgs:
 
 class DataSourceParametersAthenaArgsDict(TypedDict):
     work_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersAthenaArgs:
@@ -3283,7 +3209,6 @@ class DataSourceParametersAuroraArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersAuroraArgs:
@@ -3314,7 +3239,6 @@ class DataSourceParametersAuroraPostgresqlArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersAuroraPostgresqlArgs:
@@ -3343,7 +3267,6 @@ class DataSourceParametersAuroraPostgresqlArgs:
 
 class DataSourceParametersAwsIotAnalyticsArgsDict(TypedDict):
     data_set_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersAwsIotAnalyticsArgs:
@@ -3358,7 +3281,6 @@ class DataSourceParametersDatabricksArgsDict(TypedDict):
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
     sql_endpoint_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersDatabricksArgs:
@@ -3387,7 +3309,6 @@ class DataSourceParametersDatabricksArgs:
 
 class DataSourceParametersJiraArgsDict(TypedDict):
     site_base_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersJiraArgs:
@@ -3402,7 +3323,6 @@ class DataSourceParametersMariaDbArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersMariaDbArgs:
@@ -3433,7 +3353,6 @@ class DataSourceParametersMysqlArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersMysqlArgs:
@@ -3464,7 +3383,6 @@ class DataSourceParametersOracleArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersOracleArgs:
@@ -3495,7 +3413,6 @@ class DataSourceParametersPostgresqlArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersPostgresqlArgs:
@@ -3526,7 +3443,6 @@ class DataSourceParametersPrestoArgsDict(TypedDict):
     catalog: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersPrestoArgs:
@@ -3556,7 +3472,6 @@ class DataSourceParametersPrestoArgs:
 class DataSourceParametersRdsArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     instance_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersRdsArgs:
@@ -3582,7 +3497,6 @@ class DataSourceParametersRedshiftArgsDict(TypedDict):
     cluster_id: NotRequired[pulumi.Input[_builtins.str]]
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersRedshiftArgs:
@@ -3620,7 +3534,6 @@ class DataSourceParametersS3ArgsDict(TypedDict):
         DataSourceParametersS3ManifestFileLocationArgsDict
     ]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersS3Args:
@@ -3650,7 +3563,6 @@ class DataSourceParametersS3Args:
 class DataSourceParametersS3ManifestFileLocationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersS3ManifestFileLocationArgs:
@@ -3673,7 +3585,6 @@ class DataSourceParametersS3ManifestFileLocationArgs:
 
 class DataSourceParametersServiceNowArgsDict(TypedDict):
     site_base_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersServiceNowArgs:
@@ -3688,7 +3599,6 @@ class DataSourceParametersSnowflakeArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     warehouse: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersSnowflakeArgs:
@@ -3718,7 +3628,6 @@ class DataSourceParametersSnowflakeArgs:
 class DataSourceParametersSparkArgsDict(TypedDict):
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersSparkArgs:
@@ -3743,7 +3652,6 @@ class DataSourceParametersSqlServerArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersSqlServerArgs:
@@ -3774,7 +3682,6 @@ class DataSourceParametersTeradataArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersTeradataArgs:
@@ -3804,7 +3711,6 @@ class DataSourceParametersTeradataArgs:
 class DataSourceParametersTwitterArgsDict(TypedDict):
     max_rows: pulumi.Input[_builtins.int]
     query: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceParametersTwitterArgs:
@@ -3828,7 +3734,6 @@ class DataSourceParametersTwitterArgs:
 class DataSourcePermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourcePermissionArgs:
@@ -3851,7 +3756,6 @@ class DataSourcePermissionArgs:
 
 class DataSourceSslPropertiesArgsDict(TypedDict):
     disable_ssl: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DataSourceSslPropertiesArgs:
@@ -3864,7 +3768,6 @@ class DataSourceSslPropertiesArgs:
 
 class DataSourceVpcConnectionPropertiesArgsDict(TypedDict):
     vpc_connection_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceVpcConnectionPropertiesArgs:
@@ -3880,7 +3783,6 @@ class DataSourceVpcConnectionPropertiesArgs:
 class FolderPermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FolderPermissionArgs:
@@ -3904,7 +3806,6 @@ class FolderPermissionArgs:
 class IamPolicyAssignmentIdentitiesArgsDict(TypedDict):
     groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     users: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class IamPolicyAssignmentIdentitiesArgs:
@@ -3936,7 +3837,6 @@ class IamPolicyAssignmentIdentitiesArgs:
 class KeyRegistrationKeyRegistrationArgsDict(TypedDict):
     key_arn: pulumi.Input[_builtins.str]
     default_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class KeyRegistrationKeyRegistrationArgs:
@@ -3960,7 +3860,6 @@ class KeyRegistrationKeyRegistrationArgs:
 class NamespaceTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NamespaceTimeoutsArgs:
@@ -3985,7 +3884,6 @@ class RefreshScheduleScheduleArgsDict(TypedDict):
     refresh_type: pulumi.Input[_builtins.str]
     schedule_frequency: pulumi.Input[RefreshScheduleScheduleScheduleFrequencyArgsDict]
     start_after_date_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RefreshScheduleScheduleArgs:
@@ -4023,7 +3921,6 @@ class RefreshScheduleScheduleScheduleFrequencyArgsDict(TypedDict):
     ]
     time_of_the_day: NotRequired[pulumi.Input[_builtins.str]]
     timezone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RefreshScheduleScheduleScheduleFrequencyArgs:
@@ -4070,7 +3967,6 @@ class RefreshScheduleScheduleScheduleFrequencyArgs:
 class RefreshScheduleScheduleScheduleFrequencyRefreshOnDayArgsDict(TypedDict):
     day_of_month: NotRequired[pulumi.Input[_builtins.str]]
     day_of_week: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RefreshScheduleScheduleScheduleFrequencyRefreshOnDayArgs:
@@ -4094,7 +3990,6 @@ class RefreshScheduleScheduleScheduleFrequencyRefreshOnDayArgs:
 class TemplatePermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TemplatePermissionArgs:
@@ -4122,7 +4017,6 @@ class TemplateSourceEntityArgsDict(TypedDict):
     source_template: NotRequired[
         pulumi.Input[TemplateSourceEntitySourceTemplateArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TemplateSourceEntityArgs:
@@ -4162,7 +4056,6 @@ class TemplateSourceEntitySourceAnalysisArgsDict(TypedDict):
             pulumi.Input[TemplateSourceEntitySourceAnalysisDataSetReferenceArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TemplateSourceEntitySourceAnalysisArgs:
@@ -4201,7 +4094,6 @@ class TemplateSourceEntitySourceAnalysisArgs:
 class TemplateSourceEntitySourceAnalysisDataSetReferenceArgsDict(TypedDict):
     data_set_arn: pulumi.Input[_builtins.str]
     data_set_placeholder: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TemplateSourceEntitySourceAnalysisDataSetReferenceArgs:
@@ -4224,7 +4116,6 @@ class TemplateSourceEntitySourceAnalysisDataSetReferenceArgs:
 
 class TemplateSourceEntitySourceTemplateArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TemplateSourceEntitySourceTemplateArgs:
@@ -4244,7 +4135,6 @@ class ThemeConfigurationArgsDict(TypedDict):
     ui_color_palette: NotRequired[
         pulumi.Input[ThemeConfigurationUiColorPaletteArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationArgs:
@@ -4297,7 +4187,6 @@ class ThemeConfigurationDataColorPaletteArgsDict(TypedDict):
     colors: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     empty_fill_color: NotRequired[pulumi.Input[_builtins.str]]
     min_max_gradients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationDataColorPaletteArgs:
@@ -4337,7 +4226,6 @@ class ThemeConfigurationDataColorPaletteArgs:
 class ThemeConfigurationSheetArgsDict(TypedDict):
     tile: NotRequired[pulumi.Input[ThemeConfigurationSheetTileArgsDict]]
     tile_layout: NotRequired[pulumi.Input[ThemeConfigurationSheetTileLayoutArgsDict]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetArgs:
@@ -4366,7 +4254,6 @@ class ThemeConfigurationSheetArgs:
 
 class ThemeConfigurationSheetTileArgsDict(TypedDict):
     border: NotRequired[pulumi.Input[ThemeConfigurationSheetTileBorderArgsDict]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetTileArgs:
@@ -4387,7 +4274,6 @@ class ThemeConfigurationSheetTileArgs:
 
 class ThemeConfigurationSheetTileBorderArgsDict(TypedDict):
     show: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetTileBorderArgs:
@@ -4403,7 +4289,6 @@ class ThemeConfigurationSheetTileBorderArgs:
 class ThemeConfigurationSheetTileLayoutArgsDict(TypedDict):
     gutter: NotRequired[pulumi.Input[ThemeConfigurationSheetTileLayoutGutterArgsDict]]
     margin: NotRequired[pulumi.Input[ThemeConfigurationSheetTileLayoutMarginArgsDict]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetTileLayoutArgs:
@@ -4438,7 +4323,6 @@ class ThemeConfigurationSheetTileLayoutArgs:
 
 class ThemeConfigurationSheetTileLayoutGutterArgsDict(TypedDict):
     show: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetTileLayoutGutterArgs:
@@ -4453,7 +4337,6 @@ class ThemeConfigurationSheetTileLayoutGutterArgs:
 
 class ThemeConfigurationSheetTileLayoutMarginArgsDict(TypedDict):
     show: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationSheetTileLayoutMarginArgs:
@@ -4472,7 +4355,6 @@ class ThemeConfigurationTypographyArgsDict(TypedDict):
             Sequence[pulumi.Input[ThemeConfigurationTypographyFontFamilyArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationTypographyArgs:
@@ -4504,7 +4386,6 @@ class ThemeConfigurationTypographyArgs:
 
 class ThemeConfigurationTypographyFontFamilyArgsDict(TypedDict):
     font_family: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationTypographyFontFamilyArgs:
@@ -4534,7 +4415,6 @@ class ThemeConfigurationUiColorPaletteArgsDict(TypedDict):
     success_foreground: NotRequired[pulumi.Input[_builtins.str]]
     warning: NotRequired[pulumi.Input[_builtins.str]]
     warning_foreground: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ThemeConfigurationUiColorPaletteArgs:
@@ -4642,7 +4522,6 @@ class ThemeConfigurationUiColorPaletteArgs:
 class ThemePermissionArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ThemePermissionArgs:
@@ -4667,7 +4546,6 @@ class VpcConnectionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcConnectionTimeoutsArgs:

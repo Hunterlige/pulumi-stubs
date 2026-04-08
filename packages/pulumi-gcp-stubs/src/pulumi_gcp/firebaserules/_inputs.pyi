@@ -16,7 +16,6 @@ __all__ = [
 
 class RulesetMetadataArgsDict(TypedDict):
     services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RulesetMetadataArgs:
@@ -38,7 +37,6 @@ class RulesetMetadataArgs:
 class RulesetSourceArgsDict(TypedDict):
     files: pulumi.Input[Sequence[pulumi.Input[RulesetSourceFileArgsDict]]]
     language: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RulesetSourceArgs:
@@ -65,7 +63,6 @@ class RulesetSourceFileArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     fingerprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RulesetSourceFileArgs:

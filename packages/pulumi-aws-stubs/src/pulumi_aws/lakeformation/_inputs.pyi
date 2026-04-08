@@ -113,7 +113,6 @@ class DataCellsFilterTableDataArgsDict(TypedDict):
         pulumi.Input[DataCellsFilterTableDataColumnWildcardArgsDict]
     ]
     version_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataCellsFilterTableDataArgs:
@@ -188,7 +187,6 @@ class DataCellsFilterTableDataColumnWildcardArgsDict(TypedDict):
     excluded_column_names: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DataCellsFilterTableDataColumnWildcardArgs:
@@ -214,7 +212,6 @@ class DataCellsFilterTableDataRowFilterArgsDict(TypedDict):
         pulumi.Input[DataCellsFilterTableDataRowFilterAllRowsWildcardArgsDict]
     ]
     filter_expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataCellsFilterTableDataRowFilterArgs:
@@ -254,7 +251,6 @@ class DataCellsFilterTableDataRowFilterAllRowsWildcardArgs:
 
 class DataCellsFilterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataCellsFilterTimeoutsArgs:
@@ -270,7 +266,6 @@ class DataCellsFilterTimeoutsArgs:
 class DataLakeSettingsCreateDatabaseDefaultPermissionArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataLakeSettingsCreateDatabaseDefaultPermissionArgs:
@@ -300,7 +295,6 @@ class DataLakeSettingsCreateDatabaseDefaultPermissionArgs:
 class DataLakeSettingsCreateTableDefaultPermissionArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataLakeSettingsCreateTableDefaultPermissionArgs:
@@ -330,7 +324,6 @@ class DataLakeSettingsCreateTableDefaultPermissionArgs:
 class LfTagExpressionExpressionArgsDict(TypedDict):
     tag_key: pulumi.Input[_builtins.str]
     tag_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LfTagExpressionExpressionArgs:
@@ -355,7 +348,6 @@ class LfTagExpressionExpressionArgs:
 
 class OptInConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInConditionArgs:
@@ -370,7 +362,6 @@ class OptInConditionArgs:
 
 class OptInPrincipalArgsDict(TypedDict):
     data_lake_principal_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OptInPrincipalArgs:
@@ -405,7 +396,6 @@ class OptInResourceDataArgsDict(TypedDict):
     table_with_columns: NotRequired[
         pulumi.Input[OptInResourceDataTableWithColumnsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataArgs:
@@ -533,7 +523,6 @@ class OptInResourceDataArgs:
 
 class OptInResourceDataCatalogArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataCatalogArgs:
@@ -551,7 +540,6 @@ class OptInResourceDataDataCellsFilterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     table_catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     table_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataDataCellsFilterArgs:
@@ -587,7 +575,6 @@ class OptInResourceDataDataCellsFilterArgs:
 class OptInResourceDataDataLocationArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataDataLocationArgs:
@@ -611,7 +598,6 @@ class OptInResourceDataDataLocationArgs:
 class OptInResourceDataDatabaseArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataDatabaseArgs:
@@ -636,7 +622,6 @@ class OptInResourceDataLfTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataLfTagArgs:
@@ -666,7 +651,6 @@ class OptInResourceDataLfTagArgs:
 class OptInResourceDataLfTagExpressionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataLfTagExpressionArgs:
@@ -692,7 +676,6 @@ class OptInResourceDataLfTagPolicyArgsDict(TypedDict):
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     expression_name: NotRequired[pulumi.Input[_builtins.str]]
     expressions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataLfTagPolicyArgs:
@@ -736,7 +719,6 @@ class OptInResourceDataTableArgsDict(TypedDict):
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataTableArgs:
@@ -777,7 +759,6 @@ class OptInResourceDataTableWithColumnsArgsDict(TypedDict):
     column_wildcard: NotRequired[
         pulumi.Input[OptInResourceDataTableWithColumnsColumnWildcardArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataTableWithColumnsArgs:
@@ -837,7 +818,6 @@ class OptInResourceDataTableWithColumnsColumnWildcardArgsDict(TypedDict):
     excluded_column_names: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class OptInResourceDataTableWithColumnsColumnWildcardArgs:
@@ -863,7 +843,6 @@ class PermissionsDataCellsFilterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     table_catalog_id: pulumi.Input[_builtins.str]
     table_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PermissionsDataCellsFilterArgs:
@@ -899,7 +878,6 @@ class PermissionsDataCellsFilterArgs:
 class PermissionsDataLocationArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsDataLocationArgs:
@@ -923,7 +901,6 @@ class PermissionsDataLocationArgs:
 class PermissionsDatabaseArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsDatabaseArgs:
@@ -948,7 +925,6 @@ class PermissionsLfTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsLfTagArgs:
@@ -981,7 +957,6 @@ class PermissionsLfTagPolicyArgsDict(TypedDict):
     ]
     resource_type: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsLfTagPolicyArgs:
@@ -1020,7 +995,6 @@ class PermissionsLfTagPolicyArgs:
 class PermissionsLfTagPolicyExpressionArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PermissionsLfTagPolicyExpressionArgs:
@@ -1046,7 +1020,6 @@ class PermissionsTableArgsDict(TypedDict):
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PermissionsTableArgs:
@@ -1088,7 +1061,6 @@ class PermissionsTableWithColumnsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PermissionsTableWithColumnsArgs:
@@ -1148,7 +1120,6 @@ class PermissionsTableWithColumnsArgs:
 class ResourceLfTagDatabaseArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagDatabaseArgs:
@@ -1173,7 +1144,6 @@ class ResourceLfTagLfTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagLfTagArgs:
@@ -1205,7 +1175,6 @@ class ResourceLfTagTableArgsDict(TypedDict):
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagTableArgs:
@@ -1246,7 +1215,6 @@ class ResourceLfTagTableWithColumnsArgsDict(TypedDict):
     column_wildcard: NotRequired[
         pulumi.Input[ResourceLfTagTableWithColumnsColumnWildcardArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagTableWithColumnsArgs:
@@ -1302,7 +1270,6 @@ class ResourceLfTagTableWithColumnsColumnWildcardArgsDict(TypedDict):
     excluded_column_names: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagTableWithColumnsColumnWildcardArgs:
@@ -1326,7 +1293,6 @@ class ResourceLfTagTableWithColumnsColumnWildcardArgs:
 class ResourceLfTagTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagTimeoutsArgs:
@@ -1350,7 +1316,6 @@ class ResourceLfTagTimeoutsArgs:
 class ResourceLfTagsDatabaseArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagsDatabaseArgs:
@@ -1375,7 +1340,6 @@ class ResourceLfTagsLfTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagsLfTagArgs:
@@ -1407,7 +1371,6 @@ class ResourceLfTagsTableArgsDict(TypedDict):
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagsTableArgs:
@@ -1449,7 +1412,6 @@ class ResourceLfTagsTableWithColumnsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     wildcard: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ResourceLfTagsTableWithColumnsArgs:
@@ -1511,7 +1473,6 @@ class GetPermissionsDataCellsFilterArgsDict(TypedDict):
     name: _builtins.str
     table_catalog_id: _builtins.str
     table_name: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPermissionsDataCellsFilterArgs:
@@ -1547,7 +1508,6 @@ class GetPermissionsDataCellsFilterArgs:
 class GetPermissionsDataLocationArgsDict(TypedDict):
     arn: _builtins.str
     catalog_id: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPermissionsDataLocationArgs:
@@ -1568,7 +1528,6 @@ class GetPermissionsDataLocationArgs:
 class GetPermissionsDatabaseArgsDict(TypedDict):
     catalog_id: _builtins.str
     name: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPermissionsDatabaseArgs:
@@ -1590,7 +1549,6 @@ class GetPermissionsLfTagArgsDict(TypedDict):
     catalog_id: _builtins.str
     key: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPermissionsLfTagArgs:
@@ -1621,7 +1579,6 @@ class GetPermissionsLfTagPolicyArgsDict(TypedDict):
     catalog_id: _builtins.str
     expressions: Sequence[GetPermissionsLfTagPolicyExpressionArgsDict]
     resource_type: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPermissionsLfTagPolicyArgs:
@@ -1651,7 +1608,6 @@ class GetPermissionsLfTagPolicyArgs:
 class GetPermissionsLfTagPolicyExpressionArgsDict(TypedDict):
     key: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPermissionsLfTagPolicyExpressionArgs:
@@ -1674,7 +1630,6 @@ class GetPermissionsTableArgsDict(TypedDict):
     database_name: _builtins.str
     name: _builtins.str
     wildcard: NotRequired[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class GetPermissionsTableArgs:
@@ -1714,7 +1669,6 @@ class GetPermissionsTableWithColumnsArgsDict(TypedDict):
     column_names: NotRequired[Sequence[_builtins.str]]
     excluded_column_names: NotRequired[Sequence[_builtins.str]]
     wildcard: NotRequired[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class GetPermissionsTableWithColumnsArgs:

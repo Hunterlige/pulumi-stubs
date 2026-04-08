@@ -31,7 +31,6 @@ __all__ = [
 class AssessmentAssessmentReportsDestinationArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
     destination_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentAssessmentReportsDestinationArgs:
@@ -55,7 +54,6 @@ class AssessmentAssessmentReportsDestinationArgs:
 class AssessmentRoleArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     role_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentRoleArgs:
@@ -79,7 +77,6 @@ class AssessmentRoleArgs:
 class AssessmentRolesAllArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     role_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentRolesAllArgs:
@@ -107,7 +104,6 @@ class AssessmentScopeArgsDict(TypedDict):
     aws_services: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AssessmentScopeAwsServiceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AssessmentScopeArgs:
@@ -152,7 +148,6 @@ class AssessmentScopeArgs:
 
 class AssessmentScopeAwsAccountArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentScopeAwsAccountArgs:
@@ -165,7 +160,6 @@ class AssessmentScopeAwsAccountArgs:
 
 class AssessmentScopeAwsServiceArgsDict(TypedDict):
     service_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentScopeAwsServiceArgs:
@@ -187,7 +181,6 @@ class ControlControlMappingSourceArgsDict(TypedDict):
         pulumi.Input[ControlControlMappingSourceSourceKeywordArgsDict]
     ]
     troubleshooting_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlControlMappingSourceArgs:
@@ -254,7 +247,6 @@ class ControlControlMappingSourceArgs:
 class ControlControlMappingSourceSourceKeywordArgsDict(TypedDict):
     keyword_input_type: pulumi.Input[_builtins.str]
     keyword_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ControlControlMappingSourceSourceKeywordArgs:
@@ -281,7 +273,6 @@ class FrameworkControlSetArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[FrameworkControlSetControlArgsDict]]]
     ]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkControlSetArgs:
@@ -321,7 +312,6 @@ class FrameworkControlSetArgs:
 
 class FrameworkControlSetControlArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FrameworkControlSetControlArgs:

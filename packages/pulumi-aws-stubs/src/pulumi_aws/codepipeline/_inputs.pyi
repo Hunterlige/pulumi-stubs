@@ -100,7 +100,6 @@ class CustomActionTypeConfigurationPropertyArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     queryable: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomActionTypeConfigurationPropertyArgs:
@@ -154,7 +153,6 @@ class CustomActionTypeConfigurationPropertyArgs:
 class CustomActionTypeInputArtifactDetailsArgsDict(TypedDict):
     maximum_count: pulumi.Input[_builtins.int]
     minimum_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CustomActionTypeInputArtifactDetailsArgs:
@@ -178,7 +176,6 @@ class CustomActionTypeInputArtifactDetailsArgs:
 class CustomActionTypeOutputArtifactDetailsArgsDict(TypedDict):
     maximum_count: pulumi.Input[_builtins.int]
     minimum_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CustomActionTypeOutputArtifactDetailsArgs:
@@ -204,7 +201,6 @@ class CustomActionTypeSettingsArgsDict(TypedDict):
     execution_url_template: NotRequired[pulumi.Input[_builtins.str]]
     revision_url_template: NotRequired[pulumi.Input[_builtins.str]]
     third_party_configuration_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomActionTypeSettingsArgs:
@@ -248,7 +244,6 @@ class PipelineArtifactStoreArgsDict(TypedDict):
         pulumi.Input[PipelineArtifactStoreEncryptionKeyArgsDict]
     ]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineArtifactStoreArgs:
@@ -290,7 +285,6 @@ class PipelineArtifactStoreArgs:
 class PipelineArtifactStoreEncryptionKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineArtifactStoreEncryptionKeyArgs:
@@ -314,7 +308,6 @@ class PipelineStageArgsDict(TypedDict):
     before_entry: NotRequired[pulumi.Input[PipelineStageBeforeEntryArgsDict]]
     on_failure: NotRequired[pulumi.Input[PipelineStageOnFailureArgsDict]]
     on_success: NotRequired[pulumi.Input[PipelineStageOnSuccessArgsDict]]
-    ...
 
 @pulumi.input_type
 class PipelineStageArgs:
@@ -373,7 +366,6 @@ class PipelineStageActionArgsDict(TypedDict):
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     run_order: NotRequired[pulumi.Input[_builtins.int]]
     timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipelineStageActionArgs:
@@ -480,7 +472,6 @@ class PipelineStageActionArgs:
 
 class PipelineStageBeforeEntryArgsDict(TypedDict):
     condition: pulumi.Input[PipelineStageBeforeEntryConditionArgsDict]
-    ...
 
 @pulumi.input_type
 class PipelineStageBeforeEntryArgs:
@@ -498,7 +489,6 @@ class PipelineStageBeforeEntryConditionArgsDict(TypedDict):
         Sequence[pulumi.Input[PipelineStageBeforeEntryConditionRuleArgsDict]]
     ]
     result: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageBeforeEntryConditionArgs:
@@ -539,7 +529,6 @@ class PipelineStageBeforeEntryConditionRuleArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipelineStageBeforeEntryConditionRuleArgs:
@@ -621,7 +610,6 @@ class PipelineStageBeforeEntryConditionRuleRuleTypeIdArgsDict(TypedDict):
     provider: pulumi.Input[_builtins.str]
     owner: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageBeforeEntryConditionRuleRuleTypeIdArgs:
@@ -660,7 +648,6 @@ class PipelineStageOnFailureArgsDict(TypedDict):
     retry_configuration: NotRequired[
         pulumi.Input[PipelineStageOnFailureRetryConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnFailureArgs:
@@ -703,7 +690,6 @@ class PipelineStageOnFailureConditionArgsDict(TypedDict):
         Sequence[pulumi.Input[PipelineStageOnFailureConditionRuleArgsDict]]
     ]
     result: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnFailureConditionArgs:
@@ -744,7 +730,6 @@ class PipelineStageOnFailureConditionRuleArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnFailureConditionRuleArgs:
@@ -826,7 +811,6 @@ class PipelineStageOnFailureConditionRuleRuleTypeIdArgsDict(TypedDict):
     provider: pulumi.Input[_builtins.str]
     owner: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnFailureConditionRuleRuleTypeIdArgs:
@@ -861,7 +845,6 @@ class PipelineStageOnFailureConditionRuleRuleTypeIdArgs:
 
 class PipelineStageOnFailureRetryConfigurationArgsDict(TypedDict):
     retry_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnFailureRetryConfigurationArgs:
@@ -876,7 +859,6 @@ class PipelineStageOnFailureRetryConfigurationArgs:
 
 class PipelineStageOnSuccessArgsDict(TypedDict):
     condition: pulumi.Input[PipelineStageOnSuccessConditionArgsDict]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnSuccessArgs:
@@ -894,7 +876,6 @@ class PipelineStageOnSuccessConditionArgsDict(TypedDict):
         Sequence[pulumi.Input[PipelineStageOnSuccessConditionRuleArgsDict]]
     ]
     result: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnSuccessConditionArgs:
@@ -935,7 +916,6 @@ class PipelineStageOnSuccessConditionRuleArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnSuccessConditionRuleArgs:
@@ -1017,7 +997,6 @@ class PipelineStageOnSuccessConditionRuleRuleTypeIdArgsDict(TypedDict):
     provider: pulumi.Input[_builtins.str]
     owner: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineStageOnSuccessConditionRuleRuleTypeIdArgs:
@@ -1053,7 +1032,6 @@ class PipelineStageOnSuccessConditionRuleRuleTypeIdArgs:
 class PipelineTriggerArgsDict(TypedDict):
     git_configuration: pulumi.Input[PipelineTriggerGitConfigurationArgsDict]
     provider_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerArgs:
@@ -1083,7 +1061,6 @@ class PipelineTriggerAllArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationArgsDict]]]
     ]
     provider_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllArgs:
@@ -1129,7 +1106,6 @@ class PipelineTriggerAllGitConfigurationArgsDict(TypedDict):
         ]
     ]
     source_action_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationArgs:
@@ -1212,7 +1188,6 @@ class PipelineTriggerAllGitConfigurationPullRequestArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPullRequestArgs:
@@ -1300,7 +1275,6 @@ class PipelineTriggerAllGitConfigurationPullRequestArgs:
 class PipelineTriggerAllGitConfigurationPullRequestBranchArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPullRequestBranchArgs:
@@ -1332,7 +1306,6 @@ class PipelineTriggerAllGitConfigurationPullRequestBranchArgs:
 class PipelineTriggerAllGitConfigurationPullRequestFilePathArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPullRequestFilePathArgs:
@@ -1379,7 +1352,6 @@ class PipelineTriggerAllGitConfigurationPushArgsDict(TypedDict):
             Sequence[pulumi.Input[PipelineTriggerAllGitConfigurationPushTagArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPushArgs:
@@ -1464,7 +1436,6 @@ class PipelineTriggerAllGitConfigurationPushArgs:
 class PipelineTriggerAllGitConfigurationPushBranchArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPushBranchArgs:
@@ -1496,7 +1467,6 @@ class PipelineTriggerAllGitConfigurationPushBranchArgs:
 class PipelineTriggerAllGitConfigurationPushFilePathArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPushFilePathArgs:
@@ -1528,7 +1498,6 @@ class PipelineTriggerAllGitConfigurationPushFilePathArgs:
 class PipelineTriggerAllGitConfigurationPushTagArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerAllGitConfigurationPushTagArgs:
@@ -1569,7 +1538,6 @@ class PipelineTriggerGitConfigurationArgsDict(TypedDict):
             Sequence[pulumi.Input[PipelineTriggerGitConfigurationPushArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationArgs:
@@ -1636,7 +1604,6 @@ class PipelineTriggerGitConfigurationPullRequestArgsDict(TypedDict):
     file_paths: NotRequired[
         pulumi.Input[PipelineTriggerGitConfigurationPullRequestFilePathsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPullRequestArgs:
@@ -1692,7 +1659,6 @@ class PipelineTriggerGitConfigurationPullRequestArgs:
 class PipelineTriggerGitConfigurationPullRequestBranchesArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPullRequestBranchesArgs:
@@ -1724,7 +1690,6 @@ class PipelineTriggerGitConfigurationPullRequestBranchesArgs:
 class PipelineTriggerGitConfigurationPullRequestFilePathsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPullRequestFilePathsArgs:
@@ -1761,7 +1726,6 @@ class PipelineTriggerGitConfigurationPushArgsDict(TypedDict):
         pulumi.Input[PipelineTriggerGitConfigurationPushFilePathsArgsDict]
     ]
     tags: NotRequired[pulumi.Input[PipelineTriggerGitConfigurationPushTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPushArgs:
@@ -1809,7 +1773,6 @@ class PipelineTriggerGitConfigurationPushArgs:
 class PipelineTriggerGitConfigurationPushBranchesArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPushBranchesArgs:
@@ -1841,7 +1804,6 @@ class PipelineTriggerGitConfigurationPushBranchesArgs:
 class PipelineTriggerGitConfigurationPushFilePathsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPushFilePathsArgs:
@@ -1873,7 +1835,6 @@ class PipelineTriggerGitConfigurationPushFilePathsArgs:
 class PipelineTriggerGitConfigurationPushTagsArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipelineTriggerGitConfigurationPushTagsArgs:
@@ -1906,7 +1867,6 @@ class PipelineVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     default_value: NotRequired[pulumi.Input[_builtins.str]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineVariableArgs:
@@ -1936,7 +1896,6 @@ class PipelineVariableArgs:
 class WebhookAuthenticationConfigurationArgsDict(TypedDict):
     allowed_ip_range: NotRequired[pulumi.Input[_builtins.str]]
     secret_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebhookAuthenticationConfigurationArgs:
@@ -1960,7 +1919,6 @@ class WebhookAuthenticationConfigurationArgs:
 class WebhookFilterArgsDict(TypedDict):
     json_path: pulumi.Input[_builtins.str]
     match_equals: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebhookFilterArgs:

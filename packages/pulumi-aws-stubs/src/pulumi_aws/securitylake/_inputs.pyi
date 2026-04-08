@@ -59,7 +59,6 @@ class AwsLogSourceSourceArgsDict(TypedDict):
     source_name: pulumi.Input[_builtins.str]
     accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AwsLogSourceSourceArgs:
@@ -100,7 +99,6 @@ class CustomLogSourceAttributeArgsDict(TypedDict):
     crawler_arn: pulumi.Input[_builtins.str]
     database_arn: pulumi.Input[_builtins.str]
     table_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomLogSourceAttributeArgs:
@@ -134,7 +132,6 @@ class CustomLogSourceConfigurationArgsDict(TypedDict):
     provider_identity: pulumi.Input[
         CustomLogSourceConfigurationProviderIdentityArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationArgs:
@@ -169,7 +166,6 @@ class CustomLogSourceConfigurationArgs:
 
 class CustomLogSourceConfigurationCrawlerConfigurationArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationCrawlerConfigurationArgs:
@@ -183,7 +179,6 @@ class CustomLogSourceConfigurationCrawlerConfigurationArgs:
 class CustomLogSourceConfigurationProviderIdentityArgsDict(TypedDict):
     external_id: pulumi.Input[_builtins.str]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomLogSourceConfigurationProviderIdentityArgs:
@@ -207,7 +202,6 @@ class CustomLogSourceConfigurationProviderIdentityArgs:
 class CustomLogSourceProviderDetailArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomLogSourceProviderDetailArgs:
@@ -241,7 +235,6 @@ class DataLakeConfigurationArgsDict(TypedDict):
     replication_configuration: NotRequired[
         pulumi.Input[DataLakeConfigurationReplicationConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationArgs:
@@ -309,7 +302,6 @@ class DataLakeConfigurationArgs:
 
 class DataLakeConfigurationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationEncryptionConfigurationArgs:
@@ -333,7 +325,6 @@ class DataLakeConfigurationLifecycleConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationArgs:
@@ -394,7 +385,6 @@ class DataLakeConfigurationLifecycleConfigurationArgs:
 
 class DataLakeConfigurationLifecycleConfigurationExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationExpirationArgs:
@@ -410,7 +400,6 @@ class DataLakeConfigurationLifecycleConfigurationExpirationArgs:
 class DataLakeConfigurationLifecycleConfigurationTransitionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationLifecycleConfigurationTransitionArgs:
@@ -434,7 +423,6 @@ class DataLakeConfigurationLifecycleConfigurationTransitionArgs:
 class DataLakeConfigurationReplicationConfigurationArgsDict(TypedDict):
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataLakeConfigurationReplicationConfigurationArgs:
@@ -463,7 +451,6 @@ class DataLakeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataLakeTimeoutsArgs:
@@ -501,7 +488,6 @@ class SubscriberNotificationConfigurationArgsDict(TypedDict):
             SubscriberNotificationConfigurationSqsNotificationConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SubscriberNotificationConfigurationArgs:
@@ -564,7 +550,6 @@ class SubscriberNotificationConfigurationHttpsNotificationConfigurationArgsDict(
     authorization_api_key_name: NotRequired[pulumi.Input[_builtins.str]]
     authorization_api_key_value: NotRequired[pulumi.Input[_builtins.str]]
     http_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriberNotificationConfigurationHttpsNotificationConfigurationArgs:
@@ -622,7 +607,6 @@ class SubscriberSourceArgsDict(TypedDict):
     custom_log_source_resource: NotRequired[
         pulumi.Input[SubscriberSourceCustomLogSourceResourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SubscriberSourceArgs:
@@ -658,7 +642,6 @@ class SubscriberSourceArgs:
 class SubscriberSourceAwsLogSourceResourceArgsDict(TypedDict):
     source_name: pulumi.Input[_builtins.str]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriberSourceAwsLogSourceResourceArgs:
@@ -696,7 +679,6 @@ class SubscriberSourceCustomLogSourceResourceArgsDict(TypedDict):
         ]
     ]
     source_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceArgs:
@@ -775,7 +757,6 @@ class SubscriberSourceCustomLogSourceResourceAttributeArgsDict(TypedDict):
     crawler_arn: pulumi.Input[_builtins.str]
     database_arn: pulumi.Input[_builtins.str]
     table_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceAttributeArgs:
@@ -805,7 +786,6 @@ class SubscriberSourceCustomLogSourceResourceAttributeArgs:
 class SubscriberSourceCustomLogSourceResourceProviderArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SubscriberSourceCustomLogSourceResourceProviderArgs:
@@ -829,7 +809,6 @@ class SubscriberSourceCustomLogSourceResourceProviderArgs:
 class SubscriberSubscriberIdentityArgsDict(TypedDict):
     external_id: pulumi.Input[_builtins.str]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SubscriberSubscriberIdentityArgs:
@@ -854,7 +833,6 @@ class SubscriberTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriberTimeoutsArgs:

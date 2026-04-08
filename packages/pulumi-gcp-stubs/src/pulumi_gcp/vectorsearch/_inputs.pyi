@@ -20,7 +20,6 @@ class CollectionVectorSchemaArgsDict(TypedDict):
     field_name: pulumi.Input[_builtins.str]
     dense_vector: NotRequired[pulumi.Input[CollectionVectorSchemaDenseVectorArgsDict]]
     sparse_vector: NotRequired[pulumi.Input[CollectionVectorSchemaSparseVectorArgsDict]]
-    ...
 
 @pulumi.input_type
 class CollectionVectorSchemaArgs:
@@ -64,7 +63,6 @@ class CollectionVectorSchemaDenseVectorArgsDict(TypedDict):
     vertex_embedding_config: NotRequired[
         pulumi.Input[CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CollectionVectorSchemaDenseVectorArgs:
@@ -100,7 +98,6 @@ class CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgsDict(TypedDict):
     model_id: pulumi.Input[_builtins.str]
     task_type: pulumi.Input[_builtins.str]
     text_template: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CollectionVectorSchemaDenseVectorVertexEmbeddingConfigArgs:

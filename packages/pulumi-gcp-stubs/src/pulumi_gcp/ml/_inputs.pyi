@@ -9,7 +9,6 @@ __all__ = ["EngineModelDefaultVersionArgs", "EngineModelDefaultVersionArgsDict"]
 
 class EngineModelDefaultVersionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EngineModelDefaultVersionArgs:

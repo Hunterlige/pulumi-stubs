@@ -15,7 +15,6 @@ __all__ = [
 class WorkspaceNetworkAccessControlArgsDict(TypedDict):
     prefix_list_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpce_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkspaceNetworkAccessControlArgs:
@@ -43,7 +42,6 @@ class WorkspaceNetworkAccessControlArgs:
 class WorkspaceVpcConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkspaceVpcConfigurationArgs:

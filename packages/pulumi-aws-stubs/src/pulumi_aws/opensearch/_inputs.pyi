@@ -101,7 +101,6 @@ __all__ = [
 class ApplicationAppConfigArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationAppConfigArgs:
@@ -125,7 +124,6 @@ class ApplicationAppConfigArgs:
 class ApplicationDataSourceArgsDict(TypedDict):
     data_source_arn: NotRequired[pulumi.Input[_builtins.str]]
     data_source_description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationDataSourceArgs:
@@ -153,7 +151,6 @@ class ApplicationIamIdentityCenterOptionsArgsDict(TypedDict):
     iam_role_for_identity_center_application_arn: NotRequired[
         pulumi.Input[_builtins.str]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationIamIdentityCenterOptionsArgs:
@@ -206,7 +203,6 @@ class ApplicationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationTimeoutsArgs:
@@ -236,7 +232,6 @@ class ApplicationTimeoutsArgs:
 class AuthorizeVpcEndpointAccessAuthorizedPrincipalArgsDict(TypedDict):
     principal: pulumi.Input[_builtins.str]
     principal_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AuthorizeVpcEndpointAccessAuthorizedPrincipalArgs:
@@ -267,7 +262,6 @@ class DomainAdvancedSecurityOptionsArgsDict(TypedDict):
     master_user_options: NotRequired[
         pulumi.Input[DomainAdvancedSecurityOptionsMasterUserOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainAdvancedSecurityOptionsArgs:
@@ -330,7 +324,6 @@ class DomainAdvancedSecurityOptionsJwtOptionsArgsDict(TypedDict):
     public_key: NotRequired[pulumi.Input[_builtins.str]]
     roles_key: NotRequired[pulumi.Input[_builtins.str]]
     subject_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainAdvancedSecurityOptionsJwtOptionsArgs:
@@ -367,7 +360,6 @@ class DomainAdvancedSecurityOptionsMasterUserOptionsArgsDict(TypedDict):
     master_user_arn: NotRequired[pulumi.Input[_builtins.str]]
     master_user_name: NotRequired[pulumi.Input[_builtins.str]]
     master_user_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainAdvancedSecurityOptionsMasterUserOptionsArgs:
@@ -404,7 +396,6 @@ class DomainAimlOptionsArgsDict(TypedDict):
     serverless_vector_acceleration: NotRequired[
         pulumi.Input[DomainAimlOptionsServerlessVectorAccelerationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainAimlOptionsArgs:
@@ -459,7 +450,6 @@ class DomainAimlOptionsArgs:
 
 class DomainAimlOptionsNaturalLanguageQueryGenerationOptionsArgsDict(TypedDict):
     desired_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainAimlOptionsNaturalLanguageQueryGenerationOptionsArgs:
@@ -474,7 +464,6 @@ class DomainAimlOptionsNaturalLanguageQueryGenerationOptionsArgs:
 
 class DomainAimlOptionsS3VectorsEngineArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainAimlOptionsS3VectorsEngineArgs:
@@ -489,7 +478,6 @@ class DomainAimlOptionsS3VectorsEngineArgs:
 
 class DomainAimlOptionsServerlessVectorAccelerationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainAimlOptionsServerlessVectorAccelerationArgs:
@@ -511,7 +499,6 @@ class DomainAutoTuneOptionsArgsDict(TypedDict):
     ]
     rollback_on_disable: NotRequired[pulumi.Input[_builtins.str]]
     use_off_peak_window: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainAutoTuneOptionsArgs:
@@ -565,7 +552,6 @@ class DomainAutoTuneOptionsMaintenanceScheduleArgsDict(TypedDict):
     cron_expression_for_recurrence: pulumi.Input[_builtins.str]
     duration: pulumi.Input[DomainAutoTuneOptionsMaintenanceScheduleDurationArgsDict]
     start_at: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainAutoTuneOptionsMaintenanceScheduleArgs:
@@ -599,7 +585,6 @@ class DomainAutoTuneOptionsMaintenanceScheduleArgs:
 class DomainAutoTuneOptionsMaintenanceScheduleDurationArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainAutoTuneOptionsMaintenanceScheduleDurationArgs:
@@ -640,7 +625,6 @@ class DomainClusterConfigArgsDict(TypedDict):
         pulumi.Input[DomainClusterConfigZoneAwarenessConfigArgsDict]
     ]
     zone_awareness_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainClusterConfigArgs:
@@ -758,7 +742,6 @@ class DomainClusterConfigArgs:
 
 class DomainClusterConfigColdStorageOptionsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainClusterConfigColdStorageOptionsArgs:
@@ -776,7 +759,6 @@ class DomainClusterConfigNodeOptionArgsDict(TypedDict):
         pulumi.Input[DomainClusterConfigNodeOptionNodeConfigArgsDict]
     ]
     node_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainClusterConfigNodeOptionArgs:
@@ -807,7 +789,6 @@ class DomainClusterConfigNodeOptionNodeConfigArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainClusterConfigNodeOptionNodeConfigArgs:
@@ -836,7 +817,6 @@ class DomainClusterConfigNodeOptionNodeConfigArgs:
 
 class DomainClusterConfigZoneAwarenessConfigArgsDict(TypedDict):
     availability_zone_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainClusterConfigZoneAwarenessConfigArgs:
@@ -856,7 +836,6 @@ class DomainCognitoOptionsArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     user_pool_id: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainCognitoOptionsArgs:
@@ -895,7 +874,6 @@ class DomainDomainEndpointOptionsArgsDict(TypedDict):
     custom_endpoint_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     enforce_https: NotRequired[pulumi.Input[_builtins.bool]]
     tls_security_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDomainEndpointOptionsArgs:
@@ -946,7 +924,6 @@ class DomainEbsOptionsArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainEbsOptionsArgs:
@@ -988,7 +965,6 @@ class DomainEbsOptionsArgs:
 class DomainEncryptAtRestArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainEncryptAtRestArgs:
@@ -1014,7 +990,6 @@ class DomainIdentityCenterOptionsArgsDict(TypedDict):
     identity_center_instance_arn: NotRequired[pulumi.Input[_builtins.str]]
     roles_key: NotRequired[pulumi.Input[_builtins.str]]
     subject_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainIdentityCenterOptionsArgs:
@@ -1053,7 +1028,6 @@ class DomainLogPublishingOptionArgsDict(TypedDict):
     cloudwatch_log_group_arn: pulumi.Input[_builtins.str]
     log_type: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainLogPublishingOptionArgs:
@@ -1082,7 +1056,6 @@ class DomainLogPublishingOptionArgs:
 
 class DomainNodeToNodeEncryptionArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DomainNodeToNodeEncryptionArgs:
@@ -1098,7 +1071,6 @@ class DomainOffPeakWindowOptionsArgsDict(TypedDict):
     off_peak_window: NotRequired[
         pulumi.Input[DomainOffPeakWindowOptionsOffPeakWindowArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainOffPeakWindowOptionsArgs:
@@ -1129,7 +1101,6 @@ class DomainOffPeakWindowOptionsOffPeakWindowArgsDict(TypedDict):
     window_start_time: NotRequired[
         pulumi.Input[DomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainOffPeakWindowOptionsOffPeakWindowArgs:
@@ -1158,7 +1129,6 @@ class DomainOffPeakWindowOptionsOffPeakWindowArgs:
 class DomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeArgsDict(TypedDict):
     hours: NotRequired[pulumi.Input[_builtins.int]]
     minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeArgs:
@@ -1187,7 +1157,6 @@ class DomainSamlOptionsSamlOptionsArgsDict(TypedDict):
     roles_key: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
     subject_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainSamlOptionsSamlOptionsArgs:
@@ -1243,7 +1212,6 @@ class DomainSamlOptionsSamlOptionsArgs:
 class DomainSamlOptionsSamlOptionsIdpArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
     metadata_content: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainSamlOptionsSamlOptionsIdpArgs:
@@ -1266,7 +1234,6 @@ class DomainSamlOptionsSamlOptionsIdpArgs:
 
 class DomainSnapshotOptionsArgsDict(TypedDict):
     automated_snapshot_start_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainSnapshotOptionsArgs:
@@ -1281,7 +1248,6 @@ class DomainSnapshotOptionsArgs:
 
 class DomainSoftwareUpdateOptionsArgsDict(TypedDict):
     auto_software_update_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainSoftwareUpdateOptionsArgs:
@@ -1305,7 +1271,6 @@ class DomainVpcOptionsArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainVpcOptionsArgs:
@@ -1359,7 +1324,6 @@ class OutboundConnectionConnectionPropertiesArgsDict(TypedDict):
         pulumi.Input[OutboundConnectionConnectionPropertiesCrossClusterSearchArgsDict]
     ]
     endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OutboundConnectionConnectionPropertiesArgs:
@@ -1393,7 +1357,6 @@ class OutboundConnectionConnectionPropertiesArgs:
 
 class OutboundConnectionConnectionPropertiesCrossClusterSearchArgsDict(TypedDict):
     skip_unavailable: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OutboundConnectionConnectionPropertiesCrossClusterSearchArgs:
@@ -1410,7 +1373,6 @@ class OutboundConnectionLocalDomainInfoArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     owner_id: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OutboundConnectionLocalDomainInfoArgs:
@@ -1441,7 +1403,6 @@ class OutboundConnectionRemoteDomainInfoArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     owner_id: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OutboundConnectionRemoteDomainInfoArgs:
@@ -1471,7 +1432,6 @@ class OutboundConnectionRemoteDomainInfoArgs:
 class PackagePackageSourceArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PackagePackageSourceArgs:
@@ -1495,7 +1455,6 @@ class PackagePackageSourceArgs:
 class ServerlessCollectionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerlessCollectionTimeoutsArgs:
@@ -1521,7 +1480,6 @@ class ServerlessSecurityConfigSamlOptionsArgsDict(TypedDict):
     group_attribute: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout: NotRequired[pulumi.Input[_builtins.int]]
     user_attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerlessSecurityConfigSamlOptionsArgs:
@@ -1558,7 +1516,6 @@ class ServerlessVpcEndpointTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerlessVpcEndpointTimeoutsArgs:
@@ -1590,7 +1547,6 @@ class VpcEndpointVpcOptionsArgsDict(TypedDict):
     availability_zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointVpcOptionsArgs:
@@ -1642,7 +1598,6 @@ class GetServerlessSecurityConfigSamlOptionArgsDict(TypedDict):
     metadata: _builtins.str
     session_timeout: _builtins.int
     user_attribute: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetServerlessSecurityConfigSamlOptionArgs:

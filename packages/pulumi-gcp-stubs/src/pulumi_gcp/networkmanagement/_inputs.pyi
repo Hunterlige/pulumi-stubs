@@ -30,7 +30,6 @@ class ConnectivityTestDestinationArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     redis_cluster: NotRequired[pulumi.Input[_builtins.str]]
     redis_instance: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectivityTestDestinationArgs:
@@ -123,7 +122,6 @@ class ConnectivityTestSourceArgsDict(TypedDict):
     network_type: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectivityTestSourceArgs:
@@ -218,7 +216,6 @@ class ConnectivityTestSourceArgs:
 
 class ConnectivityTestSourceAppEngineVersionArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectivityTestSourceAppEngineVersionArgs:
@@ -233,7 +230,6 @@ class ConnectivityTestSourceAppEngineVersionArgs:
 
 class ConnectivityTestSourceCloudFunctionArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectivityTestSourceCloudFunctionArgs:
@@ -248,7 +244,6 @@ class ConnectivityTestSourceCloudFunctionArgs:
 
 class ConnectivityTestSourceCloudRunRevisionArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectivityTestSourceCloudRunRevisionArgs:

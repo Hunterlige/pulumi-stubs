@@ -101,7 +101,6 @@ class AliasRoutingConfigArgsDict(TypedDict):
     additional_version_weights: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.float]]]
     ]
-    ...
 
 @pulumi.input_type
 class AliasRoutingConfigArgs:
@@ -132,7 +131,6 @@ class CapacityProviderCapacityProviderScalingConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CapacityProviderCapacityProviderScalingConfigArgs:
@@ -183,7 +181,6 @@ class CapacityProviderCapacityProviderScalingConfigArgs:
 class CapacityProviderCapacityProviderScalingConfigScalingPolicyArgsDict(TypedDict):
     predefined_metric_type: pulumi.Input[_builtins.str]
     target_value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class CapacityProviderCapacityProviderScalingConfigScalingPolicyArgs:
@@ -208,7 +205,6 @@ class CapacityProviderInstanceRequirementArgsDict(TypedDict):
     allowed_instance_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     architectures: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     excluded_instance_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderInstanceRequirementArgs:
@@ -247,7 +243,6 @@ class CapacityProviderInstanceRequirementArgs:
 
 class CapacityProviderPermissionsConfigArgsDict(TypedDict):
     capacity_provider_operator_role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CapacityProviderPermissionsConfigArgs:
@@ -266,7 +261,6 @@ class CapacityProviderTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderTimeoutsArgs:
@@ -296,7 +290,6 @@ class CapacityProviderTimeoutsArgs:
 class CapacityProviderVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderVpcConfigArgs:
@@ -325,7 +318,6 @@ class CapacityProviderVpcConfigArgs:
 
 class CodeSigningConfigAllowedPublishersArgsDict(TypedDict):
     signing_profile_version_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CodeSigningConfigAllowedPublishersArgs:
@@ -348,7 +340,6 @@ class CodeSigningConfigAllowedPublishersArgs:
 
 class CodeSigningConfigPoliciesArgsDict(TypedDict):
     untrusted_artifact_on_deployment: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CodeSigningConfigPoliciesArgs:
@@ -368,7 +359,6 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigArgsDict(TypedDict):
             EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigArgs:
@@ -429,7 +419,6 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigArgs:
@@ -525,7 +514,6 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigA
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigArgs:
@@ -550,7 +538,6 @@ class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigS
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigArgs:
@@ -567,7 +554,6 @@ class EventSourceMappingDestinationConfigArgsDict(TypedDict):
     on_failure: NotRequired[
         pulumi.Input[EventSourceMappingDestinationConfigOnFailureArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingDestinationConfigArgs:
@@ -591,7 +577,6 @@ class EventSourceMappingDestinationConfigArgs:
 
 class EventSourceMappingDestinationConfigOnFailureArgsDict(TypedDict):
     destination_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingDestinationConfigOnFailureArgs:
@@ -606,7 +591,6 @@ class EventSourceMappingDocumentDbEventSourceConfigArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
     collection_name: NotRequired[pulumi.Input[_builtins.str]]
     full_document: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingDocumentDbEventSourceConfigArgs:
@@ -639,7 +623,6 @@ class EventSourceMappingFilterCriteriaArgsDict(TypedDict):
             Sequence[pulumi.Input[EventSourceMappingFilterCriteriaFilterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingFilterCriteriaArgs:
@@ -671,7 +654,6 @@ class EventSourceMappingFilterCriteriaArgs:
 
 class EventSourceMappingFilterCriteriaFilterArgsDict(TypedDict):
     pattern: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingFilterCriteriaFilterArgs:
@@ -686,7 +668,6 @@ class EventSourceMappingFilterCriteriaFilterArgs:
 
 class EventSourceMappingMetricsConfigArgsDict(TypedDict):
     metrics: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingMetricsConfigArgs:
@@ -703,7 +684,6 @@ class EventSourceMappingProvisionedPollerConfigArgsDict(TypedDict):
     maximum_pollers: NotRequired[pulumi.Input[_builtins.int]]
     minimum_pollers: NotRequired[pulumi.Input[_builtins.int]]
     poller_group_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingProvisionedPollerConfigArgs:
@@ -732,7 +712,6 @@ class EventSourceMappingProvisionedPollerConfigArgs:
 
 class EventSourceMappingScalingConfigArgsDict(TypedDict):
     maximum_concurrency: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingScalingConfigArgs:
@@ -747,7 +726,6 @@ class EventSourceMappingScalingConfigArgs:
 
 class EventSourceMappingSelfManagedEventSourceArgsDict(TypedDict):
     endpoints: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSelfManagedEventSourceArgs:
@@ -769,7 +747,6 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigArgsDict(TypedDict):
             EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSelfManagedKafkaEventSourceConfigArgs:
@@ -830,7 +807,6 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArg
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigArgs:
@@ -926,7 +902,6 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAcc
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigArgs:
@@ -951,7 +926,6 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSch
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigArgs:
@@ -967,7 +941,6 @@ class EventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSch
 class EventSourceMappingSourceAccessConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventSourceMappingSourceAccessConfigurationArgs:
@@ -989,7 +962,6 @@ class FunctionCapacityProviderConfigArgsDict(TypedDict):
     lambda_managed_instances_capacity_provider_config: pulumi.Input[
         FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FunctionCapacityProviderConfigArgs:
@@ -1023,7 +995,6 @@ class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig
         pulumi.Input[_builtins.float]
     ]
     per_execution_environment_max_concurrency: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigArgs:
@@ -1064,7 +1035,6 @@ class FunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig
 
 class FunctionDeadLetterConfigArgsDict(TypedDict):
     target_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionDeadLetterConfigArgs:
@@ -1078,7 +1048,6 @@ class FunctionDeadLetterConfigArgs:
 class FunctionDurableConfigArgsDict(TypedDict):
     execution_timeout: pulumi.Input[_builtins.int]
     retention_period: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FunctionDurableConfigArgs:
@@ -1101,7 +1070,6 @@ class FunctionDurableConfigArgs:
 
 class FunctionEnvironmentArgsDict(TypedDict):
     variables: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FunctionEnvironmentArgs:
@@ -1124,7 +1092,6 @@ class FunctionEnvironmentArgs:
 
 class FunctionEphemeralStorageArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FunctionEphemeralStorageArgs:
@@ -1144,7 +1111,6 @@ class FunctionEventInvokeConfigDestinationConfigArgsDict(TypedDict):
     on_success: NotRequired[
         pulumi.Input[FunctionEventInvokeConfigDestinationConfigOnSuccessArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FunctionEventInvokeConfigDestinationConfigArgs:
@@ -1189,7 +1155,6 @@ class FunctionEventInvokeConfigDestinationConfigArgs:
 
 class FunctionEventInvokeConfigDestinationConfigOnFailureArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionEventInvokeConfigDestinationConfigOnFailureArgs:
@@ -1202,7 +1167,6 @@ class FunctionEventInvokeConfigDestinationConfigOnFailureArgs:
 
 class FunctionEventInvokeConfigDestinationConfigOnSuccessArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionEventInvokeConfigDestinationConfigOnSuccessArgs:
@@ -1216,7 +1180,6 @@ class FunctionEventInvokeConfigDestinationConfigOnSuccessArgs:
 class FunctionFileSystemConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     local_mount_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionFileSystemConfigArgs:
@@ -1241,7 +1204,6 @@ class FunctionImageConfigArgsDict(TypedDict):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     entry_points: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     working_directory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionImageConfigArgs:
@@ -1283,7 +1245,6 @@ class FunctionLoggingConfigArgsDict(TypedDict):
     application_log_level: NotRequired[pulumi.Input[_builtins.str]]
     log_group: NotRequired[pulumi.Input[_builtins.str]]
     system_log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionLoggingConfigArgs:
@@ -1319,7 +1280,6 @@ class FunctionLoggingConfigArgs:
 class FunctionSnapStartArgsDict(TypedDict):
     apply_on: pulumi.Input[_builtins.str]
     optimization_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionSnapStartArgs:
@@ -1342,7 +1302,6 @@ class FunctionSnapStartArgs:
 
 class FunctionTenancyConfigArgsDict(TypedDict):
     tenant_isolation_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionTenancyConfigArgs:
@@ -1357,7 +1316,6 @@ class FunctionTenancyConfigArgs:
 
 class FunctionTracingConfigArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionTracingConfigArgs:
@@ -1375,7 +1333,6 @@ class FunctionUrlCorsArgsDict(TypedDict):
     allow_origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     max_age: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FunctionUrlCorsArgs:
@@ -1449,7 +1406,6 @@ class FunctionVpcConfigArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ipv6_allowed_for_dual_stack: NotRequired[pulumi.Input[_builtins.bool]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionVpcConfigArgs:

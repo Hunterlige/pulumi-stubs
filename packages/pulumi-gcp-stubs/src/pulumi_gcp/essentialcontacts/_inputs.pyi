@@ -104,7 +104,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgsDict(TypedDict):
             DocumentAiWarehouseDocumentSchemaPropertyDefinitionTimestampTypeOptionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionArgs:
@@ -393,7 +392,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionEnumTypeOptionsArgsDict
 ):
     possible_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     validation_check_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionEnumTypeOptionsArgs:
@@ -454,7 +452,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsArgs:
@@ -547,7 +544,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
             DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionTimestampTypeOptionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionArgs:
@@ -813,7 +809,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
 ):
     possible_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     validation_check_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionEnumTypeOptionsArgs:
@@ -869,7 +864,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsProp
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     processor_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionPropertyTypeOptionsPropertyDefinitionSchemaSourceArgs:
@@ -911,7 +905,6 @@ class DocumentAiWarehouseDocumentSchemaPropertyDefinitionSchemaSourceArgsDict(
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     processor_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentAiWarehouseDocumentSchemaPropertyDefinitionSchemaSourceArgs:

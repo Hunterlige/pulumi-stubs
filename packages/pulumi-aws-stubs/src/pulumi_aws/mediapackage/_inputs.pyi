@@ -16,7 +16,6 @@ class ChannelHlsIngestArgsDict(TypedDict):
     ingest_endpoints: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ChannelHlsIngestIngestEndpointArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ChannelHlsIngestArgs:
@@ -46,7 +45,6 @@ class ChannelHlsIngestIngestEndpointArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChannelHlsIngestIngestEndpointArgs:

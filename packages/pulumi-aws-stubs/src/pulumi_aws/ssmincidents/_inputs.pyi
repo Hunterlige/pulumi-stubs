@@ -29,7 +29,6 @@ class ReplicationSetRegionArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     status_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicationSetRegionArgs:
@@ -66,7 +65,6 @@ class ResponsePlanActionArgsDict(TypedDict):
     ssm_automations: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ResponsePlanActionSsmAutomationArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ResponsePlanActionArgs:
@@ -105,7 +103,6 @@ class ResponsePlanActionSsmAutomationArgsDict(TypedDict):
         ]
     ]
     target_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResponsePlanActionSsmAutomationArgs:
@@ -176,7 +173,6 @@ class ResponsePlanActionSsmAutomationArgs:
 class ResponsePlanActionSsmAutomationParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ResponsePlanActionSsmAutomationParameterArgs:
@@ -210,7 +206,6 @@ class ResponsePlanIncidentTemplateArgsDict(TypedDict):
         ]
     ]
     summary: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResponsePlanIncidentTemplateArgs:
@@ -284,7 +279,6 @@ class ResponsePlanIncidentTemplateArgs:
 
 class ResponsePlanIncidentTemplateNotificationTargetArgsDict(TypedDict):
     sns_topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponsePlanIncidentTemplateNotificationTargetArgs:
@@ -299,7 +293,6 @@ class ResponsePlanIntegrationArgsDict(TypedDict):
     pagerduties: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ResponsePlanIntegrationPagerdutyArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ResponsePlanIntegrationArgs:
@@ -329,7 +322,6 @@ class ResponsePlanIntegrationPagerdutyArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     secret_id: pulumi.Input[_builtins.str]
     service_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponsePlanIntegrationPagerdutyArgs:

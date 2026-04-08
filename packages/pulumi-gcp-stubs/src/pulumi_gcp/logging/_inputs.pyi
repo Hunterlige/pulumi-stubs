@@ -69,7 +69,6 @@ class BillingAccountBucketConfigCmekSettingsArgsDict(TypedDict):
     kms_key_version_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BillingAccountBucketConfigCmekSettingsArgs:
@@ -105,7 +104,6 @@ class BillingAccountBucketConfigCmekSettingsArgs:
 class BillingAccountBucketConfigIndexConfigArgsDict(TypedDict):
     field_path: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BillingAccountBucketConfigIndexConfigArgs:
@@ -128,7 +126,6 @@ class BillingAccountBucketConfigIndexConfigArgs:
 
 class BillingAccountSinkBigqueryOptionsArgsDict(TypedDict):
     use_partitioned_tables: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BillingAccountSinkBigqueryOptionsArgs:
@@ -146,7 +143,6 @@ class BillingAccountSinkExclusionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BillingAccountSinkExclusionArgs:
@@ -184,7 +180,6 @@ class FolderBucketConfigCmekSettingsArgsDict(TypedDict):
     kms_key_version_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FolderBucketConfigCmekSettingsArgs:
@@ -220,7 +215,6 @@ class FolderBucketConfigCmekSettingsArgs:
 class FolderBucketConfigIndexConfigArgsDict(TypedDict):
     field_path: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FolderBucketConfigIndexConfigArgs:
@@ -243,7 +237,6 @@ class FolderBucketConfigIndexConfigArgs:
 
 class FolderSinkBigqueryOptionsArgsDict(TypedDict):
     use_partitioned_tables: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class FolderSinkBigqueryOptionsArgs:
@@ -261,7 +254,6 @@ class FolderSinkExclusionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FolderSinkExclusionArgs:
@@ -296,7 +288,6 @@ class FolderSinkExclusionArgs:
 
 class LinkedDatasetBigqueryDatasetArgsDict(TypedDict):
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LinkedDatasetBigqueryDatasetArgs:
@@ -313,7 +304,6 @@ class LogViewIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogViewIamBindingConditionArgs:
@@ -344,7 +334,6 @@ class LogViewIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogViewIamMemberConditionArgs:
@@ -379,7 +368,6 @@ class MetricBucketOptionsArgsDict(TypedDict):
         pulumi.Input[MetricBucketOptionsExponentialBucketsArgsDict]
     ]
     linear_buckets: NotRequired[pulumi.Input[MetricBucketOptionsLinearBucketsArgsDict]]
-    ...
 
 @pulumi.input_type
 class MetricBucketOptionsArgs:
@@ -426,7 +414,6 @@ class MetricBucketOptionsArgs:
 
 class MetricBucketOptionsExplicitBucketsArgsDict(TypedDict):
     bounds: pulumi.Input[Sequence[pulumi.Input[_builtins.float]]]
-    ...
 
 @pulumi.input_type
 class MetricBucketOptionsExplicitBucketsArgs:
@@ -443,7 +430,6 @@ class MetricBucketOptionsExponentialBucketsArgsDict(TypedDict):
     growth_factor: pulumi.Input[_builtins.float]
     num_finite_buckets: pulumi.Input[_builtins.int]
     scale: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class MetricBucketOptionsExponentialBucketsArgs:
@@ -474,7 +460,6 @@ class MetricBucketOptionsLinearBucketsArgsDict(TypedDict):
     num_finite_buckets: pulumi.Input[_builtins.int]
     offset: pulumi.Input[_builtins.float]
     width: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class MetricBucketOptionsLinearBucketsArgs:
@@ -509,7 +494,6 @@ class MetricMetricDescriptorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[MetricMetricDescriptorLabelArgsDict]]]
     ]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetricMetricDescriptorArgs:
@@ -563,7 +547,6 @@ class MetricMetricDescriptorLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     value_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetricMetricDescriptorLabelArgs:
@@ -595,7 +578,6 @@ class OrganizationBucketConfigCmekSettingsArgsDict(TypedDict):
     kms_key_version_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationBucketConfigCmekSettingsArgs:
@@ -631,7 +613,6 @@ class OrganizationBucketConfigCmekSettingsArgs:
 class OrganizationBucketConfigIndexConfigArgsDict(TypedDict):
     field_path: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OrganizationBucketConfigIndexConfigArgs:
@@ -654,7 +635,6 @@ class OrganizationBucketConfigIndexConfigArgs:
 
 class OrganizationSinkBigqueryOptionsArgsDict(TypedDict):
     use_partitioned_tables: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationSinkBigqueryOptionsArgs:
@@ -672,7 +652,6 @@ class OrganizationSinkExclusionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OrganizationSinkExclusionArgs:
@@ -710,7 +689,6 @@ class ProjectBucketConfigCmekSettingsArgsDict(TypedDict):
     kms_key_version_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectBucketConfigCmekSettingsArgs:
@@ -746,7 +724,6 @@ class ProjectBucketConfigCmekSettingsArgs:
 class ProjectBucketConfigIndexConfigArgsDict(TypedDict):
     field_path: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectBucketConfigIndexConfigArgs:
@@ -769,7 +746,6 @@ class ProjectBucketConfigIndexConfigArgs:
 
 class ProjectSinkBigqueryOptionsArgsDict(TypedDict):
     use_partitioned_tables: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ProjectSinkBigqueryOptionsArgs:
@@ -787,7 +763,6 @@ class ProjectSinkExclusionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ProjectSinkExclusionArgs:
@@ -827,7 +802,6 @@ class SavedQueryLoggingQueryArgsDict(TypedDict):
     summary_fields: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[SavedQueryLoggingQuerySummaryFieldArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class SavedQueryLoggingQueryArgs:
@@ -873,7 +847,6 @@ class SavedQueryLoggingQueryArgs:
 
 class SavedQueryLoggingQuerySummaryFieldArgsDict(TypedDict):
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SavedQueryLoggingQuerySummaryFieldArgs:
@@ -888,7 +861,6 @@ class SavedQueryLoggingQuerySummaryFieldArgs:
 
 class SavedQueryOpsAnalyticsQueryArgsDict(TypedDict):
     sql_query_text: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SavedQueryOpsAnalyticsQueryArgs:

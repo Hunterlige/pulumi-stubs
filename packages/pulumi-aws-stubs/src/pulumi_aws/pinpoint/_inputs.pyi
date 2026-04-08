@@ -24,7 +24,6 @@ class AppCampaignHookArgsDict(TypedDict):
     lambda_function_name: NotRequired[pulumi.Input[_builtins.str]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     web_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppCampaignHookArgs:
@@ -56,7 +55,6 @@ class AppLimitsArgsDict(TypedDict):
     maximum_duration: NotRequired[pulumi.Input[_builtins.int]]
     messages_per_second: NotRequired[pulumi.Input[_builtins.int]]
     total: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AppLimitsArgs:
@@ -92,7 +90,6 @@ class AppLimitsArgs:
 class AppQuietTimeArgsDict(TypedDict):
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppQuietTimeArgs:
@@ -123,7 +120,6 @@ class EmailTemplateEmailTemplateArgsDict(TypedDict):
     recommender_id: NotRequired[pulumi.Input[_builtins.str]]
     subject: NotRequired[pulumi.Input[_builtins.str]]
     text_part: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EmailTemplateEmailTemplateArgs:
@@ -188,7 +184,6 @@ class EmailTemplateEmailTemplateArgs:
 class EmailTemplateEmailTemplateHeaderArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EmailTemplateEmailTemplateHeaderArgs:
@@ -213,7 +208,6 @@ class Smsvoicev2PhoneNumberTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Smsvoicev2PhoneNumberTimeoutsArgs:

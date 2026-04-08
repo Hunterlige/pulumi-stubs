@@ -56,7 +56,6 @@ class FloorsettingAiPlatformFloorSettingArgsDict(TypedDict):
     enable_cloud_logging: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_and_block: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FloorsettingAiPlatformFloorSettingArgs:
@@ -92,7 +91,6 @@ class FloorsettingFilterConfigArgsDict(TypedDict):
     ]
     rai_settings: NotRequired[pulumi.Input[FloorsettingFilterConfigRaiSettingsArgsDict]]
     sdp_settings: NotRequired[pulumi.Input[FloorsettingFilterConfigSdpSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigArgs:
@@ -161,7 +159,6 @@ class FloorsettingFilterConfigArgs:
 
 class FloorsettingFilterConfigMaliciousUriFilterSettingsArgsDict(TypedDict):
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigMaliciousUriFilterSettingsArgs:
@@ -177,7 +174,6 @@ class FloorsettingFilterConfigMaliciousUriFilterSettingsArgs:
 class FloorsettingFilterConfigPiAndJailbreakFilterSettingsArgsDict(TypedDict):
     confidence_level: NotRequired[pulumi.Input[_builtins.str]]
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigPiAndJailbreakFilterSettingsArgs:
@@ -202,7 +198,6 @@ class FloorsettingFilterConfigRaiSettingsArgsDict(TypedDict):
     rai_filters: pulumi.Input[
         Sequence[pulumi.Input[FloorsettingFilterConfigRaiSettingsRaiFilterArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigRaiSettingsArgs:
@@ -231,7 +226,6 @@ class FloorsettingFilterConfigRaiSettingsArgs:
 class FloorsettingFilterConfigRaiSettingsRaiFilterArgsDict(TypedDict):
     filter_type: pulumi.Input[_builtins.str]
     confidence_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigRaiSettingsRaiFilterArgs:
@@ -259,7 +253,6 @@ class FloorsettingFilterConfigSdpSettingsArgsDict(TypedDict):
     basic_config: NotRequired[
         pulumi.Input[FloorsettingFilterConfigSdpSettingsBasicConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigSdpSettingsArgs:
@@ -303,7 +296,6 @@ class FloorsettingFilterConfigSdpSettingsArgs:
 class FloorsettingFilterConfigSdpSettingsAdvancedConfigArgsDict(TypedDict):
     deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
     inspect_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigSdpSettingsAdvancedConfigArgs:
@@ -326,7 +318,6 @@ class FloorsettingFilterConfigSdpSettingsAdvancedConfigArgs:
 
 class FloorsettingFilterConfigSdpSettingsBasicConfigArgsDict(TypedDict):
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FloorsettingFilterConfigSdpSettingsBasicConfigArgs:
@@ -343,7 +334,6 @@ class FloorsettingFloorSettingMetadataArgsDict(TypedDict):
     multi_language_detection: NotRequired[
         pulumi.Input[FloorsettingFloorSettingMetadataMultiLanguageDetectionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FloorsettingFloorSettingMetadataArgs:
@@ -371,7 +361,6 @@ class FloorsettingFloorSettingMetadataArgs:
 
 class FloorsettingFloorSettingMetadataMultiLanguageDetectionArgsDict(TypedDict):
     enable_multi_language_detection: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class FloorsettingFloorSettingMetadataMultiLanguageDetectionArgs:
@@ -388,7 +377,6 @@ class FloorsettingGoogleMcpServerFloorSettingArgsDict(TypedDict):
     enable_cloud_logging: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_and_block: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FloorsettingGoogleMcpServerFloorSettingArgs:
@@ -424,7 +412,6 @@ class TemplateFilterConfigArgsDict(TypedDict):
     ]
     rai_settings: NotRequired[pulumi.Input[TemplateFilterConfigRaiSettingsArgsDict]]
     sdp_settings: NotRequired[pulumi.Input[TemplateFilterConfigSdpSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigArgs:
@@ -487,7 +474,6 @@ class TemplateFilterConfigArgs:
 
 class TemplateFilterConfigMaliciousUriFilterSettingsArgsDict(TypedDict):
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigMaliciousUriFilterSettingsArgs:
@@ -503,7 +489,6 @@ class TemplateFilterConfigMaliciousUriFilterSettingsArgs:
 class TemplateFilterConfigPiAndJailbreakFilterSettingsArgsDict(TypedDict):
     confidence_level: NotRequired[pulumi.Input[_builtins.str]]
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigPiAndJailbreakFilterSettingsArgs:
@@ -528,7 +513,6 @@ class TemplateFilterConfigRaiSettingsArgsDict(TypedDict):
     rai_filters: pulumi.Input[
         Sequence[pulumi.Input[TemplateFilterConfigRaiSettingsRaiFilterArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigRaiSettingsArgs:
@@ -557,7 +541,6 @@ class TemplateFilterConfigRaiSettingsArgs:
 class TemplateFilterConfigRaiSettingsRaiFilterArgsDict(TypedDict):
     filter_type: pulumi.Input[_builtins.str]
     confidence_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigRaiSettingsRaiFilterArgs:
@@ -585,7 +568,6 @@ class TemplateFilterConfigSdpSettingsArgsDict(TypedDict):
     basic_config: NotRequired[
         pulumi.Input[TemplateFilterConfigSdpSettingsBasicConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigSdpSettingsArgs:
@@ -625,7 +607,6 @@ class TemplateFilterConfigSdpSettingsArgs:
 class TemplateFilterConfigSdpSettingsAdvancedConfigArgsDict(TypedDict):
     deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
     inspect_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigSdpSettingsAdvancedConfigArgs:
@@ -648,7 +629,6 @@ class TemplateFilterConfigSdpSettingsAdvancedConfigArgs:
 
 class TemplateFilterConfigSdpSettingsBasicConfigArgsDict(TypedDict):
     filter_enforcement: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TemplateFilterConfigSdpSettingsBasicConfigArgs:
@@ -673,7 +653,6 @@ class TemplateTemplateMetadataArgsDict(TypedDict):
     multi_language_detection: NotRequired[
         pulumi.Input[TemplateTemplateMetadataMultiLanguageDetectionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TemplateTemplateMetadataArgs:
@@ -777,7 +756,6 @@ class TemplateTemplateMetadataArgs:
 
 class TemplateTemplateMetadataMultiLanguageDetectionArgsDict(TypedDict):
     enable_multi_language_detection: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class TemplateTemplateMetadataMultiLanguageDetectionArgs:

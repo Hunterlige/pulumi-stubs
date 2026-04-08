@@ -211,7 +211,6 @@ class CompositeAlarmActionsSuppressorArgsDict(TypedDict):
     alarm: pulumi.Input[_builtins.str]
     extension_period: pulumi.Input[_builtins.int]
     wait_period: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CompositeAlarmActionsSuppressorArgs:
@@ -240,7 +239,6 @@ class CompositeAlarmActionsSuppressorArgs:
 
 class EventBusDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventBusDeadLetterConfigArgs:
@@ -256,7 +254,6 @@ class EventBusDeadLetterConfigArgs:
 class EventBusLogConfigArgsDict(TypedDict):
     include_detail: NotRequired[pulumi.Input[_builtins.str]]
     level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventBusLogConfigArgs:
@@ -287,7 +284,6 @@ class EventConnectionAuthParametersArgsDict(TypedDict):
         pulumi.Input[EventConnectionAuthParametersInvocationHttpParametersArgsDict]
     ]
     oauth: NotRequired[pulumi.Input[EventConnectionAuthParametersOauthArgsDict]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersArgs:
@@ -363,7 +359,6 @@ class EventConnectionAuthParametersArgs:
 class EventConnectionAuthParametersApiKeyArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersApiKeyArgs:
@@ -387,7 +382,6 @@ class EventConnectionAuthParametersApiKeyArgs:
 class EventConnectionAuthParametersBasicArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersBasicArgs:
@@ -412,7 +406,6 @@ class EventConnectionAuthParametersConnectivityParametersArgsDict(TypedDict):
     resource_parameters: pulumi.Input[
         EventConnectionAuthParametersConnectivityParametersResourceParametersArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersConnectivityParametersArgs:
@@ -443,7 +436,6 @@ class EventConnectionAuthParametersConnectivityParametersResourceParametersArgsD
 ):
     resource_configuration_arn: pulumi.Input[_builtins.str]
     resource_association_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersConnectivityParametersResourceParametersArgs:
@@ -494,7 +486,6 @@ class EventConnectionAuthParametersInvocationHttpParametersArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersInvocationHttpParametersArgs:
@@ -612,7 +603,6 @@ class EventConnectionAuthParametersInvocationHttpParametersBodyArgsDict(TypedDic
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersInvocationHttpParametersBodyArgs:
@@ -643,7 +633,6 @@ class EventConnectionAuthParametersInvocationHttpParametersHeaderArgsDict(TypedD
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersInvocationHttpParametersHeaderArgs:
@@ -676,7 +665,6 @@ class EventConnectionAuthParametersInvocationHttpParametersQueryStringArgsDict(
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersInvocationHttpParametersQueryStringArgs:
@@ -712,7 +700,6 @@ class EventConnectionAuthParametersOauthArgsDict(TypedDict):
     client_parameters: NotRequired[
         pulumi.Input[EventConnectionAuthParametersOauthClientParametersArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthArgs:
@@ -766,7 +753,6 @@ class EventConnectionAuthParametersOauthArgs:
 class EventConnectionAuthParametersOauthClientParametersArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
     client_secret: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthClientParametersArgs:
@@ -815,7 +801,6 @@ class EventConnectionAuthParametersOauthOauthHttpParametersArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthOauthHttpParametersArgs:
@@ -933,7 +918,6 @@ class EventConnectionAuthParametersOauthOauthHttpParametersBodyArgsDict(TypedDic
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthOauthHttpParametersBodyArgs:
@@ -964,7 +948,6 @@ class EventConnectionAuthParametersOauthOauthHttpParametersHeaderArgsDict(TypedD
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthOauthHttpParametersHeaderArgs:
@@ -997,7 +980,6 @@ class EventConnectionAuthParametersOauthOauthHttpParametersQueryStringArgsDict(
     is_value_secret: NotRequired[pulumi.Input[_builtins.bool]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionAuthParametersOauthOauthHttpParametersQueryStringArgs:
@@ -1028,7 +1010,6 @@ class EventConnectionInvocationConnectivityParametersArgsDict(TypedDict):
     resource_parameters: pulumi.Input[
         EventConnectionInvocationConnectivityParametersResourceParametersArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class EventConnectionInvocationConnectivityParametersArgs:
@@ -1059,7 +1040,6 @@ class EventConnectionInvocationConnectivityParametersResourceParametersArgsDict(
 ):
     resource_configuration_arn: pulumi.Input[_builtins.str]
     resource_association_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventConnectionInvocationConnectivityParametersResourceParametersArgs:
@@ -1084,7 +1064,6 @@ class EventConnectionInvocationConnectivityParametersResourceParametersArgs:
 
 class EventEndpointEventBusArgsDict(TypedDict):
     event_bus_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventEndpointEventBusArgs:
@@ -1097,7 +1076,6 @@ class EventEndpointEventBusArgs:
 
 class EventEndpointReplicationConfigArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventEndpointReplicationConfigArgs:
@@ -1112,7 +1090,6 @@ class EventEndpointReplicationConfigArgs:
 
 class EventEndpointRoutingConfigArgsDict(TypedDict):
     failover_config: pulumi.Input[EventEndpointRoutingConfigFailoverConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class EventEndpointRoutingConfigArgs:
@@ -1134,7 +1111,6 @@ class EventEndpointRoutingConfigArgs:
 class EventEndpointRoutingConfigFailoverConfigArgsDict(TypedDict):
     primary: pulumi.Input[EventEndpointRoutingConfigFailoverConfigPrimaryArgsDict]
     secondary: pulumi.Input[EventEndpointRoutingConfigFailoverConfigSecondaryArgsDict]
-    ...
 
 @pulumi.input_type
 class EventEndpointRoutingConfigFailoverConfigArgs:
@@ -1165,7 +1141,6 @@ class EventEndpointRoutingConfigFailoverConfigArgs:
 
 class EventEndpointRoutingConfigFailoverConfigPrimaryArgsDict(TypedDict):
     health_check: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventEndpointRoutingConfigFailoverConfigPrimaryArgs:
@@ -1180,7 +1155,6 @@ class EventEndpointRoutingConfigFailoverConfigPrimaryArgs:
 
 class EventEndpointRoutingConfigFailoverConfigSecondaryArgsDict(TypedDict):
     route: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventEndpointRoutingConfigFailoverConfigSecondaryArgs:
@@ -1197,7 +1171,6 @@ class EventPermissionConditionArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventPermissionConditionArgs:
@@ -1226,7 +1199,6 @@ class EventPermissionConditionArgs:
 
 class EventTargetAppsyncTargetArgsDict(TypedDict):
     graphql_operation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetAppsyncTargetArgs:
@@ -1244,7 +1216,6 @@ class EventTargetBatchTargetArgsDict(TypedDict):
     job_name: pulumi.Input[_builtins.str]
     array_size: NotRequired[pulumi.Input[_builtins.int]]
     job_attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EventTargetBatchTargetArgs:
@@ -1279,7 +1250,6 @@ class EventTargetBatchTargetArgs:
 
 class EventTargetDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetDeadLetterConfigArgs:
@@ -1320,7 +1290,6 @@ class EventTargetEcsTargetArgsDict(TypedDict):
     propagate_tags: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     task_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EventTargetEcsTargetArgs:
@@ -1475,7 +1444,6 @@ class EventTargetEcsTargetCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
     base: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EventTargetEcsTargetCapacityProviderStrategyArgs:
@@ -1506,7 +1474,6 @@ class EventTargetEcsTargetNetworkConfigurationArgsDict(TypedDict):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     assign_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EventTargetEcsTargetNetworkConfigurationArgs:
@@ -1542,7 +1509,6 @@ class EventTargetEcsTargetNetworkConfigurationArgs:
 class EventTargetEcsTargetOrderedPlacementStrategyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetEcsTargetOrderedPlacementStrategyArgs:
@@ -1566,7 +1532,6 @@ class EventTargetEcsTargetOrderedPlacementStrategyArgs:
 class EventTargetEcsTargetPlacementConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetEcsTargetPlacementConstraintArgs:
@@ -1597,7 +1562,6 @@ class EventTargetHttpTargetArgsDict(TypedDict):
     query_string_parameters: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EventTargetHttpTargetArgs:
@@ -1645,7 +1609,6 @@ class EventTargetHttpTargetArgs:
 class EventTargetInputTransformerArgsDict(TypedDict):
     input_template: pulumi.Input[_builtins.str]
     input_paths: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EventTargetInputTransformerArgs:
@@ -1674,7 +1637,6 @@ class EventTargetInputTransformerArgs:
 
 class EventTargetKinesisTargetArgsDict(TypedDict):
     partition_key_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetKinesisTargetArgs:
@@ -1694,7 +1656,6 @@ class EventTargetRedshiftTargetArgsDict(TypedDict):
     sql: NotRequired[pulumi.Input[_builtins.str]]
     statement_name: NotRequired[pulumi.Input[_builtins.str]]
     with_event: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EventTargetRedshiftTargetArgs:
@@ -1742,7 +1703,6 @@ class EventTargetRedshiftTargetArgs:
 class EventTargetRetryPolicyArgsDict(TypedDict):
     maximum_event_age_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     maximum_retry_attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EventTargetRetryPolicyArgs:
@@ -1768,7 +1728,6 @@ class EventTargetRetryPolicyArgs:
 class EventTargetRunCommandTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EventTargetRunCommandTargetArgs:
@@ -1799,7 +1758,6 @@ class EventTargetSagemakerPipelineTargetArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventTargetSagemakerPipelineTargetArgs:
@@ -1846,7 +1804,6 @@ class EventTargetSagemakerPipelineTargetArgs:
 class EventTargetSagemakerPipelineTargetPipelineParameterListArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventTargetSagemakerPipelineTargetPipelineParameterListArgs:
@@ -1869,7 +1826,6 @@ class EventTargetSagemakerPipelineTargetPipelineParameterListArgs:
 
 class EventTargetSqsTargetArgsDict(TypedDict):
     message_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventTargetSqsTargetArgs:
@@ -1885,7 +1841,6 @@ class EventTargetSqsTargetArgs:
 class InternetMonitorHealthEventsConfigArgsDict(TypedDict):
     availability_score_threshold: NotRequired[pulumi.Input[_builtins.float]]
     performance_score_threshold: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class InternetMonitorHealthEventsConfigArgs:
@@ -1918,7 +1873,6 @@ class InternetMonitorInternetMeasurementsLogDeliveryArgsDict(TypedDict):
     s3_config: NotRequired[
         pulumi.Input[InternetMonitorInternetMeasurementsLogDeliveryS3ConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InternetMonitorInternetMeasurementsLogDeliveryArgs:
@@ -1948,7 +1902,6 @@ class InternetMonitorInternetMeasurementsLogDeliveryS3ConfigArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     log_delivery_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InternetMonitorInternetMeasurementsLogDeliveryS3ConfigArgs:
@@ -1977,7 +1930,6 @@ class InternetMonitorInternetMeasurementsLogDeliveryS3ConfigArgs:
 
 class LogDeliveryDestinationDeliveryDestinationConfigurationArgsDict(TypedDict):
     destination_resource_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogDeliveryDestinationDeliveryDestinationConfigurationArgs:
@@ -1997,7 +1949,6 @@ class LogDeliveryDestinationDeliveryDestinationConfigurationArgs:
 class LogDeliveryS3DeliveryConfigurationArgsDict(TypedDict):
     enable_hive_compatible_path: pulumi.Input[_builtins.bool]
     suffix_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LogDeliveryS3DeliveryConfigurationArgs:
@@ -2025,7 +1976,6 @@ class LogMetricFilterMetricTransformationArgsDict(TypedDict):
     default_value: NotRequired[pulumi.Input[_builtins.str]]
     dimensions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogMetricFilterMetricTransformationArgs:
@@ -2176,7 +2126,6 @@ class LogTransformerTransformerConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigArgs:
@@ -2632,7 +2581,6 @@ class LogTransformerTransformerConfigAddKeysArgsDict(TypedDict):
     entries: pulumi.Input[
         Sequence[pulumi.Input[LogTransformerTransformerConfigAddKeysEntryArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigAddKeysArgs:
@@ -2662,7 +2610,6 @@ class LogTransformerTransformerConfigAddKeysEntryArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     overwrite_if_exists: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigAddKeysEntryArgs:
@@ -2693,7 +2640,6 @@ class LogTransformerTransformerConfigCopyValueArgsDict(TypedDict):
     entries: pulumi.Input[
         Sequence[pulumi.Input[LogTransformerTransformerConfigCopyValueEntryArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigCopyValueArgs:
@@ -2723,7 +2669,6 @@ class LogTransformerTransformerConfigCopyValueEntryArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
     target: pulumi.Input[_builtins.str]
     overwrite_if_exists: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigCopyValueEntryArgs:
@@ -2755,7 +2700,6 @@ class LogTransformerTransformerConfigCsvArgsDict(TypedDict):
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
     quote_character: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigCsvArgs:
@@ -2800,7 +2744,6 @@ class LogTransformerTransformerConfigDateTimeConverterArgsDict(TypedDict):
     source_timezone: NotRequired[pulumi.Input[_builtins.str]]
     target_format: NotRequired[pulumi.Input[_builtins.str]]
     target_timezone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigDateTimeConverterArgs:
@@ -2855,7 +2798,6 @@ class LogTransformerTransformerConfigDateTimeConverterArgs:
 
 class LogTransformerTransformerConfigDeleteKeyArgsDict(TypedDict):
     with_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigDeleteKeyArgs:
@@ -2871,7 +2813,6 @@ class LogTransformerTransformerConfigDeleteKeyArgs:
 class LogTransformerTransformerConfigGrokArgsDict(TypedDict):
     match: pulumi.Input[_builtins.str]
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigGrokArgs:
@@ -2899,7 +2840,6 @@ class LogTransformerTransformerConfigListToMapArgsDict(TypedDict):
     flattened_element: NotRequired[pulumi.Input[_builtins.str]]
     target: NotRequired[pulumi.Input[_builtins.str]]
     value_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigListToMapArgs:
@@ -2946,7 +2886,6 @@ class LogTransformerTransformerConfigListToMapArgs:
 
 class LogTransformerTransformerConfigLowerCaseStringArgsDict(TypedDict):
     with_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigLowerCaseStringArgs:
@@ -2963,7 +2902,6 @@ class LogTransformerTransformerConfigMoveKeyArgsDict(TypedDict):
     entries: pulumi.Input[
         Sequence[pulumi.Input[LogTransformerTransformerConfigMoveKeyEntryArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigMoveKeyArgs:
@@ -2993,7 +2931,6 @@ class LogTransformerTransformerConfigMoveKeyEntryArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
     target: pulumi.Input[_builtins.str]
     overwrite_if_exists: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigMoveKeyEntryArgs:
@@ -3022,7 +2959,6 @@ class LogTransformerTransformerConfigMoveKeyEntryArgs:
 
 class LogTransformerTransformerConfigParseCloudfrontArgsDict(TypedDict):
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseCloudfrontArgs:
@@ -3038,7 +2974,6 @@ class LogTransformerTransformerConfigParseCloudfrontArgs:
 class LogTransformerTransformerConfigParseJsonArgsDict(TypedDict):
     destination: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseJsonArgs:
@@ -3067,7 +3002,6 @@ class LogTransformerTransformerConfigParseKeyValueArgsDict(TypedDict):
     non_match_value: NotRequired[pulumi.Input[_builtins.str]]
     overwrite_if_exists: NotRequired[pulumi.Input[_builtins.bool]]
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseKeyValueArgs:
@@ -3120,7 +3054,6 @@ class LogTransformerTransformerConfigParseKeyValueArgs:
 
 class LogTransformerTransformerConfigParsePostgresArgsDict(TypedDict):
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParsePostgresArgs:
@@ -3135,7 +3068,6 @@ class LogTransformerTransformerConfigParsePostgresArgs:
 
 class LogTransformerTransformerConfigParseRoute53ArgsDict(TypedDict):
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseRoute53Args:
@@ -3152,7 +3084,6 @@ class LogTransformerTransformerConfigParseToOcsfArgsDict(TypedDict):
     event_source: pulumi.Input[_builtins.str]
     ocsf_version: pulumi.Input[_builtins.str]
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseToOcsfArgs:
@@ -3181,7 +3112,6 @@ class LogTransformerTransformerConfigParseToOcsfArgs:
 
 class LogTransformerTransformerConfigParseVpcArgsDict(TypedDict):
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseVpcArgs:
@@ -3196,7 +3126,6 @@ class LogTransformerTransformerConfigParseVpcArgs:
 
 class LogTransformerTransformerConfigParseWafArgsDict(TypedDict):
     source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigParseWafArgs:
@@ -3213,7 +3142,6 @@ class LogTransformerTransformerConfigRenameKeyArgsDict(TypedDict):
     entries: pulumi.Input[
         Sequence[pulumi.Input[LogTransformerTransformerConfigRenameKeyEntryArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigRenameKeyArgs:
@@ -3243,7 +3171,6 @@ class LogTransformerTransformerConfigRenameKeyEntryArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     rename_to: pulumi.Input[_builtins.str]
     overwrite_if_exists: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigRenameKeyEntryArgs:
@@ -3274,7 +3201,6 @@ class LogTransformerTransformerConfigSplitStringArgsDict(TypedDict):
     entries: pulumi.Input[
         Sequence[pulumi.Input[LogTransformerTransformerConfigSplitStringEntryArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigSplitStringArgs:
@@ -3303,7 +3229,6 @@ class LogTransformerTransformerConfigSplitStringArgs:
 class LogTransformerTransformerConfigSplitStringEntryArgsDict(TypedDict):
     delimiter: pulumi.Input[_builtins.str]
     source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigSplitStringEntryArgs:
@@ -3330,7 +3255,6 @@ class LogTransformerTransformerConfigSubstituteStringArgsDict(TypedDict):
             pulumi.Input[LogTransformerTransformerConfigSubstituteStringEntryArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigSubstituteStringArgs:
@@ -3364,7 +3288,6 @@ class LogTransformerTransformerConfigSubstituteStringEntryArgsDict(TypedDict):
     from_: pulumi.Input[_builtins.str]
     source: pulumi.Input[_builtins.str]
     to: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigSubstituteStringEntryArgs:
@@ -3393,7 +3316,6 @@ class LogTransformerTransformerConfigSubstituteStringEntryArgs:
 
 class LogTransformerTransformerConfigTrimStringArgsDict(TypedDict):
     with_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigTrimStringArgs:
@@ -3412,7 +3334,6 @@ class LogTransformerTransformerConfigTypeConverterArgsDict(TypedDict):
             pulumi.Input[LogTransformerTransformerConfigTypeConverterEntryArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigTypeConverterArgs:
@@ -3445,7 +3366,6 @@ class LogTransformerTransformerConfigTypeConverterArgs:
 class LogTransformerTransformerConfigTypeConverterEntryArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigTypeConverterEntryArgs:
@@ -3465,7 +3385,6 @@ class LogTransformerTransformerConfigTypeConverterEntryArgs:
 
 class LogTransformerTransformerConfigUpperCaseStringArgsDict(TypedDict):
     with_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LogTransformerTransformerConfigUpperCaseStringArgs:
@@ -3486,7 +3405,6 @@ class MetricAlarmMetricQueryArgsDict(TypedDict):
     metric: NotRequired[pulumi.Input[MetricAlarmMetricQueryMetricArgsDict]]
     period: NotRequired[pulumi.Input[_builtins.int]]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MetricAlarmMetricQueryArgs:
@@ -3546,7 +3464,6 @@ class MetricAlarmMetricQueryMetricArgsDict(TypedDict):
     dimensions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetricAlarmMetricQueryMetricArgs:
@@ -3600,7 +3517,6 @@ class MetricAlarmMetricQueryMetricArgs:
 class MetricStreamExcludeFilterArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     metric_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MetricStreamExcludeFilterArgs:
@@ -3630,7 +3546,6 @@ class MetricStreamExcludeFilterArgs:
 class MetricStreamIncludeFilterArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     metric_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MetricStreamIncludeFilterArgs:
@@ -3662,7 +3577,6 @@ class MetricStreamStatisticsConfigurationArgsDict(TypedDict):
     include_metrics: pulumi.Input[
         Sequence[pulumi.Input[MetricStreamStatisticsConfigurationIncludeMetricArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class MetricStreamStatisticsConfigurationArgs:
@@ -3701,7 +3615,6 @@ class MetricStreamStatisticsConfigurationArgs:
 class MetricStreamStatisticsConfigurationIncludeMetricArgsDict(TypedDict):
     metric_name: pulumi.Input[_builtins.str]
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MetricStreamStatisticsConfigurationIncludeMetricArgs:
@@ -3726,7 +3639,6 @@ class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgsDict]]]
     version: pulumi.Input[iam.PolicyDocumentVersion]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDocumentArgs:
@@ -3763,7 +3675,6 @@ class GetLogDataProtectionPolicyDocumentConfigurationArgsDict(TypedDict):
             GetLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentConfigurationArgs:
@@ -3800,7 +3711,6 @@ class GetLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierArgsDic
 ):
     name: _builtins.str
     regex: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierArgs:
@@ -3820,7 +3730,6 @@ class GetLogDataProtectionPolicyDocumentStatementArgsDict(TypedDict):
     data_identifiers: Sequence[_builtins.str]
     operation: GetLogDataProtectionPolicyDocumentStatementOperationArgsDict
     sid: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementArgs:
@@ -3856,7 +3765,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationArgsDict(TypedDict):
     deidentify: NotRequired[
         GetLogDataProtectionPolicyDocumentStatementOperationDeidentifyArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationArgs:
@@ -3897,7 +3805,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationArgs:
 
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditArgsDict(TypedDict):
     findings_destination: GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationArgsDict
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditArgs:
@@ -3931,7 +3838,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinati
     s3: NotRequired[
         GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3ArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationArgs:
@@ -3995,7 +3901,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinati
     TypedDict
 ):
     log_group: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogsArgs:
@@ -4010,7 +3915,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinati
     TypedDict
 ):
     delivery_stream: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehoseArgs:
@@ -4025,7 +3929,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinati
     TypedDict
 ):
     bucket: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3Args:
@@ -4040,7 +3943,6 @@ class GetLogDataProtectionPolicyDocumentStatementOperationDeidentifyArgsDict(Typ
     mask_config: (
         GetLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfigArgsDict
     )
-    ...
 
 @pulumi.input_type
 class GetLogDataProtectionPolicyDocumentStatementOperationDeidentifyArgs:

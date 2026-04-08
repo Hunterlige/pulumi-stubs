@@ -30,7 +30,6 @@ __all__ = [
 
 class SigningJobDestinationArgsDict(TypedDict):
     s3: pulumi.Input[SigningJobDestinationS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class SigningJobDestinationArgs:
@@ -46,7 +45,6 @@ class SigningJobDestinationArgs:
 class SigningJobDestinationS3ArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SigningJobDestinationS3Args:
@@ -71,7 +69,6 @@ class SigningJobRevocationRecordArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     revoked_at: NotRequired[pulumi.Input[_builtins.str]]
     revoked_by: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SigningJobRevocationRecordArgs:
@@ -102,7 +99,6 @@ class SigningJobSignedObjectArgsDict(TypedDict):
     s3s: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[SigningJobSignedObjectS3ArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class SigningJobSignedObjectArgs:
@@ -131,7 +127,6 @@ class SigningJobSignedObjectArgs:
 class SigningJobSignedObjectS3ArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SigningJobSignedObjectS3Args:
@@ -154,7 +149,6 @@ class SigningJobSignedObjectS3Args:
 
 class SigningJobSourceArgsDict(TypedDict):
     s3: pulumi.Input[SigningJobSourceS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class SigningJobSourceArgs:
@@ -169,7 +163,6 @@ class SigningJobSourceS3ArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SigningJobSourceS3Args:
@@ -200,7 +193,6 @@ class SigningProfileRevocationRecordArgsDict(TypedDict):
     revocation_effective_from: NotRequired[pulumi.Input[_builtins.str]]
     revoked_at: NotRequired[pulumi.Input[_builtins.str]]
     revoked_by: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SigningProfileRevocationRecordArgs:
@@ -232,7 +224,6 @@ class SigningProfileRevocationRecordArgs:
 class SigningProfileSignatureValidityPeriodArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class SigningProfileSignatureValidityPeriodArgs:
@@ -255,7 +246,6 @@ class SigningProfileSignatureValidityPeriodArgs:
 
 class SigningProfileSigningMaterialArgsDict(TypedDict):
     certificate_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SigningProfileSigningMaterialArgs:

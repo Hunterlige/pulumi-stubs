@@ -15,7 +15,6 @@ __all__ = [
 class ProviderBatchingArgsDict(TypedDict):
     enable_batching: NotRequired[pulumi.Input[_builtins.bool]]
     send_after: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProviderBatchingArgs:
@@ -40,7 +39,6 @@ class ProviderExternalCredentialsArgsDict(TypedDict):
     audience: pulumi.Input[_builtins.str]
     identity_token: pulumi.Input[_builtins.str]
     service_account_email: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProviderExternalCredentialsArgs:

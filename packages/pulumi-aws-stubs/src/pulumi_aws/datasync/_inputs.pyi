@@ -57,7 +57,6 @@ __all__ = [
 class EfsLocationEc2ConfigArgsDict(TypedDict):
     security_group_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EfsLocationEc2ConfigArgs:
@@ -84,7 +83,6 @@ class EfsLocationEc2ConfigArgs:
 
 class FsxOpenZfsFileSystemProtocolArgsDict(TypedDict):
     nfs: pulumi.Input[FsxOpenZfsFileSystemProtocolNfsArgsDict]
-    ...
 
 @pulumi.input_type
 class FsxOpenZfsFileSystemProtocolArgs:
@@ -99,7 +97,6 @@ class FsxOpenZfsFileSystemProtocolArgs:
 
 class FsxOpenZfsFileSystemProtocolNfsArgsDict(TypedDict):
     mount_options: pulumi.Input[FsxOpenZfsFileSystemProtocolNfsMountOptionsArgsDict]
-    ...
 
 @pulumi.input_type
 class FsxOpenZfsFileSystemProtocolNfsArgs:
@@ -120,7 +117,6 @@ class FsxOpenZfsFileSystemProtocolNfsArgs:
 
 class FsxOpenZfsFileSystemProtocolNfsMountOptionsArgsDict(TypedDict):
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FsxOpenZfsFileSystemProtocolNfsMountOptionsArgs:
@@ -135,7 +131,6 @@ class FsxOpenZfsFileSystemProtocolNfsMountOptionsArgs:
 
 class LocationAzureBlobSasConfigurationArgsDict(TypedDict):
     token: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LocationAzureBlobSasConfigurationArgs:
@@ -149,7 +144,6 @@ class LocationAzureBlobSasConfigurationArgs:
 class LocationFsxOntapFileSystemProtocolArgsDict(TypedDict):
     nfs: NotRequired[pulumi.Input[LocationFsxOntapFileSystemProtocolNfsArgsDict]]
     smb: NotRequired[pulumi.Input[LocationFsxOntapFileSystemProtocolSmbArgsDict]]
-    ...
 
 @pulumi.input_type
 class LocationFsxOntapFileSystemProtocolArgs:
@@ -182,7 +176,6 @@ class LocationFsxOntapFileSystemProtocolNfsArgsDict(TypedDict):
     mount_options: pulumi.Input[
         LocationFsxOntapFileSystemProtocolNfsMountOptionsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class LocationFsxOntapFileSystemProtocolNfsArgs:
@@ -205,7 +198,6 @@ class LocationFsxOntapFileSystemProtocolNfsArgs:
 
 class LocationFsxOntapFileSystemProtocolNfsMountOptionsArgsDict(TypedDict):
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LocationFsxOntapFileSystemProtocolNfsMountOptionsArgs:
@@ -225,7 +217,6 @@ class LocationFsxOntapFileSystemProtocolSmbArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     user: pulumi.Input[_builtins.str]
     domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LocationFsxOntapFileSystemProtocolSmbArgs:
@@ -266,7 +257,6 @@ class LocationFsxOntapFileSystemProtocolSmbArgs:
 
 class LocationFsxOntapFileSystemProtocolSmbMountOptionsArgsDict(TypedDict):
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LocationFsxOntapFileSystemProtocolSmbMountOptionsArgs:
@@ -282,7 +272,6 @@ class LocationFsxOntapFileSystemProtocolSmbMountOptionsArgs:
 class LocationHdfsNameNodeArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LocationHdfsNameNodeArgs:
@@ -306,7 +295,6 @@ class LocationHdfsNameNodeArgs:
 class LocationHdfsQopConfigurationArgsDict(TypedDict):
     data_transfer_protection: NotRequired[pulumi.Input[_builtins.str]]
     rpc_protection: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LocationHdfsQopConfigurationArgs:
@@ -331,7 +319,6 @@ class LocationHdfsQopConfigurationArgs:
 
 class LocationSmbMountOptionsArgsDict(TypedDict):
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LocationSmbMountOptionsArgs:
@@ -346,7 +333,6 @@ class LocationSmbMountOptionsArgs:
 
 class NfsLocationMountOptionsArgsDict(TypedDict):
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NfsLocationMountOptionsArgs:
@@ -361,7 +347,6 @@ class NfsLocationMountOptionsArgs:
 
 class NfsLocationOnPremConfigArgsDict(TypedDict):
     agent_arns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class NfsLocationOnPremConfigArgs:
@@ -378,7 +363,6 @@ class NfsLocationOnPremConfigArgs:
 
 class S3LocationS3ConfigArgsDict(TypedDict):
     bucket_access_role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class S3LocationS3ConfigArgs:
@@ -394,7 +378,6 @@ class S3LocationS3ConfigArgs:
 class TaskExcludesArgsDict(TypedDict):
     filter_type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskExcludesArgs:
@@ -418,7 +401,6 @@ class TaskExcludesArgs:
 class TaskIncludesArgsDict(TypedDict):
     filter_type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskIncludesArgs:
@@ -455,7 +437,6 @@ class TaskOptionsArgsDict(TypedDict):
     transfer_mode: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
     verify_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskOptionsArgs:
@@ -560,7 +541,6 @@ class TaskOptionsArgs:
 
 class TaskScheduleArgsDict(TypedDict):
     schedule_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TaskScheduleArgs:
@@ -581,7 +561,6 @@ class TaskTaskReportConfigArgsDict(TypedDict):
         pulumi.Input[TaskTaskReportConfigReportOverridesArgsDict]
     ]
     s3_object_versioning: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskTaskReportConfigArgs:
@@ -633,7 +612,6 @@ class TaskTaskReportConfigReportOverridesArgsDict(TypedDict):
     skipped_override: NotRequired[pulumi.Input[_builtins.str]]
     transferred_override: NotRequired[pulumi.Input[_builtins.str]]
     verified_override: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskTaskReportConfigReportOverridesArgs:
@@ -670,7 +648,6 @@ class TaskTaskReportConfigS3DestinationArgsDict(TypedDict):
     bucket_access_role_arn: pulumi.Input[_builtins.str]
     s3_bucket_arn: pulumi.Input[_builtins.str]
     subdirectory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskTaskReportConfigS3DestinationArgs:

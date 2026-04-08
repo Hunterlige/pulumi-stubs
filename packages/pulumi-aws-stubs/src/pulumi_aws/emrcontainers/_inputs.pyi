@@ -42,7 +42,6 @@ class JobTemplateJobTemplateDataArgsDict(TypedDict):
         pulumi.Input[JobTemplateJobTemplateDataConfigurationOverridesArgsDict]
     ]
     job_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataArgs:
@@ -115,7 +114,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesArgsDict(TypedDict):
             JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesArgs:
@@ -196,7 +194,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationAr
         ]
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationArgs:
@@ -263,7 +260,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationCo
 ):
     classification: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationArgs:
@@ -304,7 +300,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArg
             JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationArgs:
@@ -370,7 +365,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationClo
 ):
     log_group_name: pulumi.Input[_builtins.str]
     log_stream_name_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationArgs:
@@ -395,7 +389,6 @@ class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3M
     TypedDict
 ):
     log_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationArgs:
@@ -413,7 +406,6 @@ class JobTemplateJobTemplateDataJobDriverArgsDict(TypedDict):
     spark_submit_job_driver: NotRequired[
         pulumi.Input[JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataJobDriverArgs:
@@ -459,7 +451,6 @@ class JobTemplateJobTemplateDataJobDriverArgs:
 class JobTemplateJobTemplateDataJobDriverSparkSqlJobDriverArgsDict(TypedDict):
     entry_point: NotRequired[pulumi.Input[_builtins.str]]
     spark_sql_parameters: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataJobDriverSparkSqlJobDriverArgs:
@@ -486,7 +477,6 @@ class JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgsDict(TypedDict)
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     spark_submit_parameters: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverArgs:
@@ -523,7 +513,6 @@ class VirtualClusterContainerProviderArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     info: pulumi.Input[VirtualClusterContainerProviderInfoArgsDict]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VirtualClusterContainerProviderArgs:
@@ -552,7 +541,6 @@ class VirtualClusterContainerProviderArgs:
 
 class VirtualClusterContainerProviderInfoArgsDict(TypedDict):
     eks_info: pulumi.Input[VirtualClusterContainerProviderInfoEksInfoArgsDict]
-    ...
 
 @pulumi.input_type
 class VirtualClusterContainerProviderInfoArgs:
@@ -573,7 +561,6 @@ class VirtualClusterContainerProviderInfoArgs:
 
 class VirtualClusterContainerProviderInfoEksInfoArgsDict(TypedDict):
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VirtualClusterContainerProviderInfoEksInfoArgs:

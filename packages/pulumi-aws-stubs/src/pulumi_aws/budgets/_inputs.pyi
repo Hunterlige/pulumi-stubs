@@ -139,7 +139,6 @@ __all__ = [
 class BudgetActionActionThresholdArgsDict(TypedDict):
     action_threshold_type: pulumi.Input[_builtins.str]
     action_threshold_value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class BudgetActionActionThresholdArgs:
@@ -170,7 +169,6 @@ class BudgetActionDefinitionArgsDict(TypedDict):
     ssm_action_definition: NotRequired[
         pulumi.Input[BudgetActionDefinitionSsmActionDefinitionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BudgetActionDefinitionArgs:
@@ -223,7 +221,6 @@ class BudgetActionDefinitionIamActionDefinitionArgsDict(TypedDict):
     groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     users: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetActionDefinitionIamActionDefinitionArgs:
@@ -271,7 +268,6 @@ class BudgetActionDefinitionIamActionDefinitionArgs:
 class BudgetActionDefinitionScpActionDefinitionArgsDict(TypedDict):
     policy_id: pulumi.Input[_builtins.str]
     target_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BudgetActionDefinitionScpActionDefinitionArgs:
@@ -298,7 +294,6 @@ class BudgetActionDefinitionSsmActionDefinitionArgsDict(TypedDict):
     action_sub_type: pulumi.Input[_builtins.str]
     instance_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BudgetActionDefinitionSsmActionDefinitionArgs:
@@ -330,7 +325,6 @@ class BudgetActionDefinitionSsmActionDefinitionArgs:
 class BudgetActionSubscriberArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     subscription_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BudgetActionSubscriberArgs:
@@ -357,7 +351,6 @@ class BudgetAutoAdjustDataArgsDict(TypedDict):
         pulumi.Input[BudgetAutoAdjustDataHistoricalOptionsArgsDict]
     ]
     last_auto_adjust_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BudgetAutoAdjustDataArgs:
@@ -393,7 +386,6 @@ class BudgetAutoAdjustDataArgs:
 class BudgetAutoAdjustDataHistoricalOptionsArgsDict(TypedDict):
     budget_adjustment_period: pulumi.Input[_builtins.int]
     lookback_available_periods: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BudgetAutoAdjustDataHistoricalOptionsArgs:
@@ -419,7 +411,6 @@ class BudgetAutoAdjustDataHistoricalOptionsArgs:
 class BudgetCostFilterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BudgetCostFilterArgs:
@@ -452,7 +443,6 @@ class BudgetCostTypesArgsDict(TypedDict):
     include_upfront: NotRequired[pulumi.Input[_builtins.bool]]
     use_amortized: NotRequired[pulumi.Input[_builtins.bool]]
     use_blended: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BudgetCostTypesArgs:
@@ -542,7 +532,6 @@ class BudgetFilterExpressionArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BudgetFilterExpressionOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionArgs:
@@ -632,7 +621,6 @@ class BudgetFilterExpressionAndArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BudgetFilterExpressionAndOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndArgs:
@@ -721,7 +709,6 @@ class BudgetFilterExpressionAndAndArgsDict(TypedDict):
         pulumi.Input[BudgetFilterExpressionAndAndDimensionsArgsDict]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionAndAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndAndArgs:
@@ -767,7 +754,6 @@ class BudgetFilterExpressionAndAndCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndAndCostCategoriesArgs:
@@ -808,7 +794,6 @@ class BudgetFilterExpressionAndAndDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndAndDimensionsArgs:
@@ -845,7 +830,6 @@ class BudgetFilterExpressionAndAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndAndTagsArgs:
@@ -886,7 +870,6 @@ class BudgetFilterExpressionAndCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndCostCategoriesArgs:
@@ -927,7 +910,6 @@ class BudgetFilterExpressionAndDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndDimensionsArgs:
@@ -968,7 +950,6 @@ class BudgetFilterExpressionAndNotArgsDict(TypedDict):
         pulumi.Input[BudgetFilterExpressionAndNotDimensionsArgsDict]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionAndNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndNotArgs:
@@ -1014,7 +995,6 @@ class BudgetFilterExpressionAndNotCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndNotCostCategoriesArgs:
@@ -1055,7 +1035,6 @@ class BudgetFilterExpressionAndNotDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndNotDimensionsArgs:
@@ -1092,7 +1071,6 @@ class BudgetFilterExpressionAndNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndNotTagsArgs:
@@ -1135,7 +1113,6 @@ class BudgetFilterExpressionAndOrArgsDict(TypedDict):
     ]
     dimensions: NotRequired[pulumi.Input[BudgetFilterExpressionAndOrDimensionsArgsDict]]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionAndOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndOrArgs:
@@ -1181,7 +1158,6 @@ class BudgetFilterExpressionAndOrCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndOrCostCategoriesArgs:
@@ -1222,7 +1198,6 @@ class BudgetFilterExpressionAndOrDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndOrDimensionsArgs:
@@ -1259,7 +1234,6 @@ class BudgetFilterExpressionAndOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndOrTagsArgs:
@@ -1300,7 +1274,6 @@ class BudgetFilterExpressionAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionAndTagsArgs:
@@ -1341,7 +1314,6 @@ class BudgetFilterExpressionCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionCostCategoriesArgs:
@@ -1382,7 +1354,6 @@ class BudgetFilterExpressionDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionDimensionsArgs:
@@ -1428,7 +1399,6 @@ class BudgetFilterExpressionNotArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BudgetFilterExpressionNotOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotArgs:
@@ -1517,7 +1487,6 @@ class BudgetFilterExpressionNotAndArgsDict(TypedDict):
         pulumi.Input[BudgetFilterExpressionNotAndDimensionsArgsDict]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionNotAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotAndArgs:
@@ -1563,7 +1532,6 @@ class BudgetFilterExpressionNotAndCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotAndCostCategoriesArgs:
@@ -1604,7 +1572,6 @@ class BudgetFilterExpressionNotAndDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotAndDimensionsArgs:
@@ -1641,7 +1608,6 @@ class BudgetFilterExpressionNotAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotAndTagsArgs:
@@ -1682,7 +1648,6 @@ class BudgetFilterExpressionNotCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotCostCategoriesArgs:
@@ -1723,7 +1688,6 @@ class BudgetFilterExpressionNotDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotDimensionsArgs:
@@ -1764,7 +1728,6 @@ class BudgetFilterExpressionNotNotArgsDict(TypedDict):
         pulumi.Input[BudgetFilterExpressionNotNotDimensionsArgsDict]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionNotNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotNotArgs:
@@ -1810,7 +1773,6 @@ class BudgetFilterExpressionNotNotCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotNotCostCategoriesArgs:
@@ -1851,7 +1813,6 @@ class BudgetFilterExpressionNotNotDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotNotDimensionsArgs:
@@ -1888,7 +1849,6 @@ class BudgetFilterExpressionNotNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotNotTagsArgs:
@@ -1931,7 +1891,6 @@ class BudgetFilterExpressionNotOrArgsDict(TypedDict):
     ]
     dimensions: NotRequired[pulumi.Input[BudgetFilterExpressionNotOrDimensionsArgsDict]]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionNotOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotOrArgs:
@@ -1977,7 +1936,6 @@ class BudgetFilterExpressionNotOrCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotOrCostCategoriesArgs:
@@ -2018,7 +1976,6 @@ class BudgetFilterExpressionNotOrDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotOrDimensionsArgs:
@@ -2055,7 +2012,6 @@ class BudgetFilterExpressionNotOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotOrTagsArgs:
@@ -2096,7 +2052,6 @@ class BudgetFilterExpressionNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionNotTagsArgs:
@@ -2146,7 +2101,6 @@ class BudgetFilterExpressionOrArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[BudgetFilterExpressionOrOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrArgs:
@@ -2231,7 +2185,6 @@ class BudgetFilterExpressionOrAndArgsDict(TypedDict):
     ]
     dimensions: NotRequired[pulumi.Input[BudgetFilterExpressionOrAndDimensionsArgsDict]]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionOrAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrAndArgs:
@@ -2277,7 +2230,6 @@ class BudgetFilterExpressionOrAndCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrAndCostCategoriesArgs:
@@ -2318,7 +2270,6 @@ class BudgetFilterExpressionOrAndDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrAndDimensionsArgs:
@@ -2355,7 +2306,6 @@ class BudgetFilterExpressionOrAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrAndTagsArgs:
@@ -2396,7 +2346,6 @@ class BudgetFilterExpressionOrCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrCostCategoriesArgs:
@@ -2437,7 +2386,6 @@ class BudgetFilterExpressionOrDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrDimensionsArgs:
@@ -2476,7 +2424,6 @@ class BudgetFilterExpressionOrNotArgsDict(TypedDict):
     ]
     dimensions: NotRequired[pulumi.Input[BudgetFilterExpressionOrNotDimensionsArgsDict]]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionOrNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrNotArgs:
@@ -2522,7 +2469,6 @@ class BudgetFilterExpressionOrNotCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrNotCostCategoriesArgs:
@@ -2563,7 +2509,6 @@ class BudgetFilterExpressionOrNotDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrNotDimensionsArgs:
@@ -2600,7 +2545,6 @@ class BudgetFilterExpressionOrNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrNotTagsArgs:
@@ -2643,7 +2587,6 @@ class BudgetFilterExpressionOrOrArgsDict(TypedDict):
     ]
     dimensions: NotRequired[pulumi.Input[BudgetFilterExpressionOrOrDimensionsArgsDict]]
     tags: NotRequired[pulumi.Input[BudgetFilterExpressionOrOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrOrArgs:
@@ -2689,7 +2632,6 @@ class BudgetFilterExpressionOrOrCostCategoriesArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrOrCostCategoriesArgs:
@@ -2730,7 +2672,6 @@ class BudgetFilterExpressionOrOrDimensionsArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrOrDimensionsArgs:
@@ -2767,7 +2708,6 @@ class BudgetFilterExpressionOrOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrOrTagsArgs:
@@ -2808,7 +2748,6 @@ class BudgetFilterExpressionOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionOrTagsArgs:
@@ -2849,7 +2788,6 @@ class BudgetFilterExpressionTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetFilterExpressionTagsArgs:
@@ -2897,7 +2835,6 @@ class BudgetNotificationArgsDict(TypedDict):
     subscriber_sns_topic_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class BudgetNotificationArgs:
@@ -2958,7 +2895,6 @@ class BudgetPlannedLimitArgsDict(TypedDict):
     amount: pulumi.Input[_builtins.str]
     start_time: pulumi.Input[_builtins.str]
     unit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BudgetPlannedLimitArgs:

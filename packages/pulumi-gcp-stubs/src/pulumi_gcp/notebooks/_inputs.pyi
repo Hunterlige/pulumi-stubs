@@ -57,7 +57,6 @@ __all__ = [
 class EnvironmentContainerImageArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentContainerImageArgs:
@@ -82,7 +81,6 @@ class EnvironmentVmImageArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     image_family: NotRequired[pulumi.Input[_builtins.str]]
     image_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentVmImageArgs:
@@ -112,7 +110,6 @@ class EnvironmentVmImageArgs:
 class InstanceAcceleratorConfigArgsDict(TypedDict):
     core_count: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAcceleratorConfigArgs:
@@ -136,7 +133,6 @@ class InstanceAcceleratorConfigArgs:
 class InstanceContainerImageArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceContainerImageArgs:
@@ -161,7 +157,6 @@ class InstanceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamBindingConditionArgs:
@@ -192,7 +187,6 @@ class InstanceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamMemberConditionArgs:
@@ -223,7 +217,6 @@ class InstanceReservationAffinityArgsDict(TypedDict):
     consume_reservation_type: pulumi.Input[_builtins.str]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceReservationAffinityArgs:
@@ -258,7 +251,6 @@ class InstanceShieldedInstanceConfigArgsDict(TypedDict):
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceShieldedInstanceConfigArgs:
@@ -291,7 +283,6 @@ class InstanceVmImageArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     image_family: NotRequired[pulumi.Input[_builtins.str]]
     image_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceVmImageArgs:
@@ -322,7 +313,6 @@ class RuntimeAccessConfigArgsDict(TypedDict):
     access_type: NotRequired[pulumi.Input[_builtins.str]]
     proxy_uri: NotRequired[pulumi.Input[_builtins.str]]
     runtime_owner: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeAccessConfigArgs:
@@ -353,7 +343,6 @@ class RuntimeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeIamBindingConditionArgs:
@@ -384,7 +373,6 @@ class RuntimeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeIamMemberConditionArgs:
@@ -413,7 +401,6 @@ class RuntimeIamMemberConditionArgs:
 
 class RuntimeMetricArgsDict(TypedDict):
     system_metrics: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuntimeMetricArgs:
@@ -447,7 +434,6 @@ class RuntimeSoftwareConfigArgsDict(TypedDict):
     post_startup_script: NotRequired[pulumi.Input[_builtins.str]]
     post_startup_script_behavior: NotRequired[pulumi.Input[_builtins.str]]
     upgradeable: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RuntimeSoftwareConfigArgs:
@@ -536,7 +522,6 @@ class RuntimeSoftwareConfigArgs:
 class RuntimeSoftwareConfigKernelArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeSoftwareConfigKernelArgs:
@@ -563,7 +548,6 @@ class RuntimeVirtualMachineArgsDict(TypedDict):
     virtual_machine_config: NotRequired[
         pulumi.Input[RuntimeVirtualMachineVirtualMachineConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineArgs:
@@ -632,7 +616,6 @@ class RuntimeVirtualMachineVirtualMachineConfigArgsDict(TypedDict):
     subnet: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigArgs:
@@ -830,7 +813,6 @@ class RuntimeVirtualMachineVirtualMachineConfigArgs:
 class RuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigArgsDict(TypedDict):
     core_count: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigArgs:
@@ -854,7 +836,6 @@ class RuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigArgs:
 class RuntimeVirtualMachineVirtualMachineConfigContainerImageArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigContainerImageArgs:
@@ -892,7 +873,6 @@ class RuntimeVirtualMachineVirtualMachineConfigDataDiskArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigDataDiskArgs:
@@ -1008,7 +988,6 @@ class RuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsArgsDict(
     disk_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     disk_type: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsArgs:
@@ -1053,7 +1032,6 @@ class RuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsArgs:
 
 class RuntimeVirtualMachineVirtualMachineConfigEncryptionConfigArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigEncryptionConfigArgs:
@@ -1072,7 +1050,6 @@ class RuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigArgsDict(
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigArgs:

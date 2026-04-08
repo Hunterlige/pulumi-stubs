@@ -35,7 +35,6 @@ __all__ = [
 class GroupExternalIdArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     issuer: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupExternalIdArgs:
@@ -65,7 +64,6 @@ class UserAddressesArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     street_address: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserAddressesArgs:
@@ -126,7 +124,6 @@ class UserEmailsArgsDict(TypedDict):
     primary: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserEmailsArgs:
@@ -156,7 +153,6 @@ class UserEmailsArgs:
 class UserExternalIdArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     issuer: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserExternalIdArgs:
@@ -184,7 +180,6 @@ class UserNameArgsDict(TypedDict):
     honorific_prefix: NotRequired[pulumi.Input[_builtins.str]]
     honorific_suffix: NotRequired[pulumi.Input[_builtins.str]]
     middle_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserNameArgs:
@@ -233,7 +228,6 @@ class UserPhoneNumbersArgsDict(TypedDict):
     primary: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPhoneNumbersArgs:
@@ -263,7 +257,6 @@ class UserPhoneNumbersArgs:
 class GetGroupAlternateIdentifierArgsDict(TypedDict):
     external_id: NotRequired[GetGroupAlternateIdentifierExternalIdArgsDict]
     unique_attribute: NotRequired[GetGroupAlternateIdentifierUniqueAttributeArgsDict]
-    ...
 
 @pulumi.input_type
 class GetGroupAlternateIdentifierArgs:
@@ -295,7 +288,6 @@ class GetGroupAlternateIdentifierArgs:
 class GetGroupAlternateIdentifierExternalIdArgsDict(TypedDict):
     id: _builtins.str
     issuer: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetGroupAlternateIdentifierExternalIdArgs:
@@ -314,7 +306,6 @@ class GetGroupAlternateIdentifierExternalIdArgs:
 class GetGroupAlternateIdentifierUniqueAttributeArgsDict(TypedDict):
     attribute_path: _builtins.str
     attribute_value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetGroupAlternateIdentifierUniqueAttributeArgs:
@@ -335,7 +326,6 @@ class GetGroupAlternateIdentifierUniqueAttributeArgs:
 class GetUserAlternateIdentifierArgsDict(TypedDict):
     external_id: NotRequired[GetUserAlternateIdentifierExternalIdArgsDict]
     unique_attribute: NotRequired[GetUserAlternateIdentifierUniqueAttributeArgsDict]
-    ...
 
 @pulumi.input_type
 class GetUserAlternateIdentifierArgs:
@@ -365,7 +355,6 @@ class GetUserAlternateIdentifierArgs:
 class GetUserAlternateIdentifierExternalIdArgsDict(TypedDict):
     id: _builtins.str
     issuer: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetUserAlternateIdentifierExternalIdArgs:
@@ -384,7 +373,6 @@ class GetUserAlternateIdentifierExternalIdArgs:
 class GetUserAlternateIdentifierUniqueAttributeArgsDict(TypedDict):
     attribute_path: _builtins.str
     attribute_value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetUserAlternateIdentifierUniqueAttributeArgs:

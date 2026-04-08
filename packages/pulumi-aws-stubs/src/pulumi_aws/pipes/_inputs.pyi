@@ -121,7 +121,6 @@ class PipeEnrichmentParametersArgsDict(TypedDict):
         pulumi.Input[PipeEnrichmentParametersHttpParametersArgsDict]
     ]
     input_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeEnrichmentParametersArgs:
@@ -156,7 +155,6 @@ class PipeEnrichmentParametersHttpParametersArgsDict(TypedDict):
     query_string_parameters: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PipeEnrichmentParametersHttpParametersArgs:
@@ -209,7 +207,6 @@ class PipeLogConfigurationArgsDict(TypedDict):
     s3_log_destination: NotRequired[
         pulumi.Input[PipeLogConfigurationS3LogDestinationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipeLogConfigurationArgs:
@@ -280,7 +277,6 @@ class PipeLogConfigurationArgs:
 
 class PipeLogConfigurationCloudwatchLogsLogDestinationArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeLogConfigurationCloudwatchLogsLogDestinationArgs:
@@ -293,7 +289,6 @@ class PipeLogConfigurationCloudwatchLogsLogDestinationArgs:
 
 class PipeLogConfigurationFirehoseLogDestinationArgsDict(TypedDict):
     delivery_stream_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeLogConfigurationFirehoseLogDestinationArgs:
@@ -311,7 +306,6 @@ class PipeLogConfigurationS3LogDestinationArgsDict(TypedDict):
     bucket_owner: pulumi.Input[_builtins.str]
     output_format: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeLogConfigurationS3LogDestinationArgs:
@@ -369,7 +363,6 @@ class PipeSourceParametersArgsDict(TypedDict):
     sqs_queue_parameters: NotRequired[
         pulumi.Input[PipeSourceParametersSqsQueueParametersArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersArgs:
@@ -493,7 +486,6 @@ class PipeSourceParametersActivemqBrokerParametersArgsDict(TypedDict):
     queue_name: pulumi.Input[_builtins.str]
     batch_size: NotRequired[pulumi.Input[_builtins.int]]
     maximum_batching_window_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersActivemqBrokerParametersArgs:
@@ -541,7 +533,6 @@ class PipeSourceParametersActivemqBrokerParametersArgs:
 
 class PipeSourceParametersActivemqBrokerParametersCredentialsArgsDict(TypedDict):
     basic_auth: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersActivemqBrokerParametersCredentialsArgs:
@@ -565,7 +556,6 @@ class PipeSourceParametersDynamodbStreamParametersArgsDict(TypedDict):
     maximum_retry_attempts: NotRequired[pulumi.Input[_builtins.int]]
     on_partial_batch_item_failure: NotRequired[pulumi.Input[_builtins.str]]
     parallelization_factor: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersDynamodbStreamParametersArgs:
@@ -651,7 +641,6 @@ class PipeSourceParametersDynamodbStreamParametersArgs:
 
 class PipeSourceParametersDynamodbStreamParametersDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersDynamodbStreamParametersDeadLetterConfigArgs:
@@ -670,7 +659,6 @@ class PipeSourceParametersFilterCriteriaArgsDict(TypedDict):
             Sequence[pulumi.Input[PipeSourceParametersFilterCriteriaFilterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersFilterCriteriaArgs:
@@ -704,7 +692,6 @@ class PipeSourceParametersFilterCriteriaArgs:
 
 class PipeSourceParametersFilterCriteriaFilterArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersFilterCriteriaFilterArgs:
@@ -729,7 +716,6 @@ class PipeSourceParametersKinesisStreamParametersArgsDict(TypedDict):
     on_partial_batch_item_failure: NotRequired[pulumi.Input[_builtins.str]]
     parallelization_factor: NotRequired[pulumi.Input[_builtins.int]]
     starting_position_timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersKinesisStreamParametersArgs:
@@ -823,7 +809,6 @@ class PipeSourceParametersKinesisStreamParametersArgs:
 
 class PipeSourceParametersKinesisStreamParametersDeadLetterConfigArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersKinesisStreamParametersDeadLetterConfigArgs:
@@ -847,7 +832,6 @@ class PipeSourceParametersManagedStreamingKafkaParametersArgsDict(TypedDict):
     ]
     maximum_batching_window_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     starting_position: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersManagedStreamingKafkaParametersArgs:
@@ -914,7 +898,6 @@ class PipeSourceParametersManagedStreamingKafkaParametersArgs:
 class PipeSourceParametersManagedStreamingKafkaParametersCredentialsArgsDict(TypedDict):
     client_certificate_tls_auth: NotRequired[pulumi.Input[_builtins.str]]
     sasl_scram512_auth: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersManagedStreamingKafkaParametersCredentialsArgs:
@@ -945,7 +928,6 @@ class PipeSourceParametersRabbitmqBrokerParametersArgsDict(TypedDict):
     batch_size: NotRequired[pulumi.Input[_builtins.int]]
     maximum_batching_window_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     virtual_host: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersRabbitmqBrokerParametersArgs:
@@ -999,7 +981,6 @@ class PipeSourceParametersRabbitmqBrokerParametersArgs:
 
 class PipeSourceParametersRabbitmqBrokerParametersCredentialsArgsDict(TypedDict):
     basic_auth: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersRabbitmqBrokerParametersCredentialsArgs:
@@ -1026,7 +1007,6 @@ class PipeSourceParametersSelfManagedKafkaParametersArgsDict(TypedDict):
     vpc: NotRequired[
         pulumi.Input[PipeSourceParametersSelfManagedKafkaParametersVpcArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersSelfManagedKafkaParametersArgs:
@@ -1128,7 +1108,6 @@ class PipeSourceParametersSelfManagedKafkaParametersCredentialsArgsDict(TypedDic
     client_certificate_tls_auth: NotRequired[pulumi.Input[_builtins.str]]
     sasl_scram256_auth: NotRequired[pulumi.Input[_builtins.str]]
     sasl_scram512_auth: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersSelfManagedKafkaParametersCredentialsArgs:
@@ -1166,7 +1145,6 @@ class PipeSourceParametersSelfManagedKafkaParametersCredentialsArgs:
 class PipeSourceParametersSelfManagedKafkaParametersVpcArgsDict(TypedDict):
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersSelfManagedKafkaParametersVpcArgs:
@@ -1200,7 +1178,6 @@ class PipeSourceParametersSelfManagedKafkaParametersVpcArgs:
 class PipeSourceParametersSqsQueueParametersArgsDict(TypedDict):
     batch_size: NotRequired[pulumi.Input[_builtins.int]]
     maximum_batching_window_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeSourceParametersSqsQueueParametersArgs:
@@ -1260,7 +1237,6 @@ class PipeTargetParametersArgsDict(TypedDict):
     step_function_state_machine_parameters: NotRequired[
         pulumi.Input[PipeTargetParametersStepFunctionStateMachineParametersArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersArgs:
@@ -1446,7 +1422,6 @@ class PipeTargetParametersBatchJobParametersArgsDict(TypedDict):
     retry_strategy: NotRequired[
         pulumi.Input[PipeTargetParametersBatchJobParametersRetryStrategyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersArgs:
@@ -1559,7 +1534,6 @@ class PipeTargetParametersBatchJobParametersArgs:
 
 class PipeTargetParametersBatchJobParametersArrayPropertiesArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersArrayPropertiesArgs:
@@ -1593,7 +1567,6 @@ class PipeTargetParametersBatchJobParametersContainerOverridesArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersContainerOverridesArgs:
@@ -1693,7 +1666,6 @@ class PipeTargetParametersBatchJobParametersContainerOverridesEnvironmentArgsDic
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersContainerOverridesEnvironmentArgs:
@@ -1719,7 +1691,6 @@ class PipeTargetParametersBatchJobParametersContainerOverridesResourceRequiremen
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersContainerOverridesResourceRequirementArgs:
@@ -1743,7 +1714,6 @@ class PipeTargetParametersBatchJobParametersContainerOverridesResourceRequiremen
 class PipeTargetParametersBatchJobParametersDependsOnArgsDict(TypedDict):
     job_id: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersDependsOnArgs:
@@ -1766,7 +1736,6 @@ class PipeTargetParametersBatchJobParametersDependsOnArgs:
 
 class PipeTargetParametersBatchJobParametersRetryStrategyArgsDict(TypedDict):
     attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersBatchJobParametersRetryStrategyArgs:
@@ -1782,7 +1751,6 @@ class PipeTargetParametersBatchJobParametersRetryStrategyArgs:
 class PipeTargetParametersCloudwatchLogsParametersArgsDict(TypedDict):
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
     timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersCloudwatchLogsParametersArgs:
@@ -1847,7 +1815,6 @@ class PipeTargetParametersEcsTaskParametersArgsDict(TypedDict):
     reference_id: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     task_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersArgs:
@@ -2061,7 +2028,6 @@ class PipeTargetParametersEcsTaskParametersCapacityProviderStrategyArgsDict(Type
     capacity_provider: pulumi.Input[_builtins.str]
     base: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersCapacityProviderStrategyArgs:
@@ -2094,7 +2060,6 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationArgsDict(TypedDic
             PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersNetworkConfigurationArgs:
@@ -2132,7 +2097,6 @@ class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurati
     assign_public_ip: NotRequired[pulumi.Input[_builtins.str]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfigurationArgs:
@@ -2197,7 +2161,6 @@ class PipeTargetParametersEcsTaskParametersOverridesArgsDict(TypedDict):
     ]
     memory: NotRequired[pulumi.Input[_builtins.str]]
     task_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesArgs:
@@ -2356,7 +2319,6 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideArgs:
@@ -2509,7 +2471,6 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentArgs:
@@ -2535,7 +2496,6 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFileArgs:
@@ -2561,7 +2521,6 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceReq
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementArgs:
@@ -2584,7 +2543,6 @@ class PipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceReq
 
 class PipeTargetParametersEcsTaskParametersOverridesEphemeralStorageArgsDict(TypedDict):
     size_in_gib: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesEphemeralStorageArgs:
@@ -2600,7 +2558,6 @@ class PipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 ):
     device_name: NotRequired[pulumi.Input[_builtins.str]]
     device_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideArgs:
@@ -2624,7 +2581,6 @@ class PipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 class PipeTargetParametersEcsTaskParametersPlacementConstraintArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersPlacementConstraintArgs:
@@ -2648,7 +2604,6 @@ class PipeTargetParametersEcsTaskParametersPlacementConstraintArgs:
 class PipeTargetParametersEcsTaskParametersPlacementStrategyArgsDict(TypedDict):
     field: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEcsTaskParametersPlacementStrategyArgs:
@@ -2675,7 +2630,6 @@ class PipeTargetParametersEventbridgeEventBusParametersArgsDict(TypedDict):
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     source: NotRequired[pulumi.Input[_builtins.str]]
     time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersEventbridgeEventBusParametersArgs:
@@ -2726,7 +2680,6 @@ class PipeTargetParametersHttpParametersArgsDict(TypedDict):
     query_string_parameters: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersHttpParametersArgs:
@@ -2767,7 +2720,6 @@ class PipeTargetParametersHttpParametersArgs:
 
 class PipeTargetParametersKinesisStreamParametersArgsDict(TypedDict):
     partition_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersKinesisStreamParametersArgs:
@@ -2780,7 +2732,6 @@ class PipeTargetParametersKinesisStreamParametersArgs:
 
 class PipeTargetParametersLambdaFunctionParametersArgsDict(TypedDict):
     invocation_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersLambdaFunctionParametersArgs:
@@ -2798,7 +2749,6 @@ class PipeTargetParametersRedshiftDataParametersArgsDict(TypedDict):
     secret_manager_arn: NotRequired[pulumi.Input[_builtins.str]]
     statement_name: NotRequired[pulumi.Input[_builtins.str]]
     with_event: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersRedshiftDataParametersArgs:
@@ -2853,7 +2803,6 @@ class PipeTargetParametersSagemakerPipelineParametersArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersSagemakerPipelineParametersArgs:
@@ -2902,7 +2851,6 @@ class PipeTargetParametersSagemakerPipelineParametersPipelineParameterArgsDict(
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersSagemakerPipelineParametersPipelineParameterArgs:
@@ -2926,7 +2874,6 @@ class PipeTargetParametersSagemakerPipelineParametersPipelineParameterArgs:
 class PipeTargetParametersSqsQueueParametersArgsDict(TypedDict):
     message_deduplication_id: NotRequired[pulumi.Input[_builtins.str]]
     message_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersSqsQueueParametersArgs:
@@ -2951,7 +2898,6 @@ class PipeTargetParametersSqsQueueParametersArgs:
 
 class PipeTargetParametersStepFunctionStateMachineParametersArgsDict(TypedDict):
     invocation_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipeTargetParametersStepFunctionStateMachineParametersArgs:

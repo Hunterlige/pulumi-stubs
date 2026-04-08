@@ -83,7 +83,6 @@ __all__ = [
 class ClusterComputeResourceArgsDict(TypedDict):
     config: pulumi.Input[ClusterComputeResourceConfigArgsDict]
     id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceArgs:
@@ -117,7 +116,6 @@ class ClusterComputeResourceConfigArgsDict(TypedDict):
     new_spot_instances: NotRequired[
         pulumi.Input[ClusterComputeResourceConfigNewSpotInstancesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceConfigArgs:
@@ -194,7 +192,6 @@ class ClusterComputeResourceConfigNewFlexStartInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
     max_duration: pulumi.Input[_builtins.str]
     zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceConfigNewFlexStartInstancesArgs:
@@ -224,7 +221,6 @@ class ClusterComputeResourceConfigNewFlexStartInstancesArgs:
 class ClusterComputeResourceConfigNewOnDemandInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
     zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceConfigNewOnDemandInstancesArgs:
@@ -247,7 +243,6 @@ class ClusterComputeResourceConfigNewOnDemandInstancesArgs:
 
 class ClusterComputeResourceConfigNewReservedInstancesArgsDict(TypedDict):
     reservation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceConfigNewReservedInstancesArgs:
@@ -264,7 +259,6 @@ class ClusterComputeResourceConfigNewSpotInstancesArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
     zone: pulumi.Input[_builtins.str]
     termination_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterComputeResourceConfigNewSpotInstancesArgs:
@@ -297,7 +291,6 @@ class ClusterNetworkResourceArgsDict(TypedDict):
     networks: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ClusterNetworkResourceNetworkArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkResourceArgs:
@@ -344,7 +337,6 @@ class ClusterNetworkResourceConfigArgsDict(TypedDict):
     new_network: NotRequired[
         pulumi.Input[ClusterNetworkResourceConfigNewNetworkArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkResourceConfigArgs:
@@ -381,7 +373,6 @@ class ClusterNetworkResourceConfigArgs:
 class ClusterNetworkResourceConfigExistingNetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     subnetwork: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkResourceConfigExistingNetworkArgs:
@@ -405,7 +396,6 @@ class ClusterNetworkResourceConfigExistingNetworkArgs:
 class ClusterNetworkResourceConfigNewNetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkResourceConfigNewNetworkArgs:
@@ -429,7 +419,6 @@ class ClusterNetworkResourceConfigNewNetworkArgs:
 class ClusterNetworkResourceNetworkArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkResourceNetworkArgs:
@@ -452,7 +441,6 @@ class ClusterNetworkResourceNetworkArgs:
 
 class ClusterOrchestratorArgsDict(TypedDict):
     slurm: NotRequired[pulumi.Input[ClusterOrchestratorSlurmArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorArgs:
@@ -480,7 +468,6 @@ class ClusterOrchestratorSlurmArgsDict(TypedDict):
     prolog_bash_scripts: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmArgs:
@@ -582,7 +569,6 @@ class ClusterOrchestratorSlurmLoginNodesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmLoginNodesArgs:
@@ -703,7 +689,6 @@ class ClusterOrchestratorSlurmLoginNodesArgs:
 class ClusterOrchestratorSlurmLoginNodesBootDiskArgsDict(TypedDict):
     size_gb: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmLoginNodesBootDiskArgs:
@@ -726,7 +711,6 @@ class ClusterOrchestratorSlurmLoginNodesBootDiskArgs:
 
 class ClusterOrchestratorSlurmLoginNodesInstanceArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmLoginNodesInstanceArgs:
@@ -742,7 +726,6 @@ class ClusterOrchestratorSlurmLoginNodesInstanceArgs:
 class ClusterOrchestratorSlurmLoginNodesStorageConfigArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     local_mount: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmLoginNodesStorageConfigArgs:
@@ -776,7 +759,6 @@ class ClusterOrchestratorSlurmNodeSetArgsDict(TypedDict):
             Sequence[pulumi.Input[ClusterOrchestratorSlurmNodeSetStorageConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmNodeSetArgs:
@@ -853,7 +835,6 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceArgsDict(TypedDict):
     ]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     startup_script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmNodeSetComputeInstanceArgs:
@@ -898,7 +879,6 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceArgs:
 class ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgsDict(TypedDict):
     size_gb: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgs:
@@ -922,7 +902,6 @@ class ClusterOrchestratorSlurmNodeSetComputeInstanceBootDiskArgs:
 class ClusterOrchestratorSlurmNodeSetStorageConfigArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     local_mount: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmNodeSetStorageConfigArgs:
@@ -946,7 +925,6 @@ class ClusterOrchestratorSlurmNodeSetStorageConfigArgs:
 class ClusterOrchestratorSlurmPartitionArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     node_set_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ClusterOrchestratorSlurmPartitionArgs:
@@ -981,7 +959,6 @@ class ClusterStorageResourceArgsDict(TypedDict):
     lustres: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ClusterStorageResourceLustreArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceArgs:
@@ -1055,7 +1032,6 @@ class ClusterStorageResourceArgs:
 
 class ClusterStorageResourceBucketArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceBucketArgs:
@@ -1083,7 +1059,6 @@ class ClusterStorageResourceConfigArgsDict(TypedDict):
         pulumi.Input[ClusterStorageResourceConfigNewFilestoreArgsDict]
     ]
     new_lustre: NotRequired[pulumi.Input[ClusterStorageResourceConfigNewLustreArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigArgs:
@@ -1172,7 +1147,6 @@ class ClusterStorageResourceConfigArgs:
 
 class ClusterStorageResourceConfigExistingBucketArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigExistingBucketArgs:
@@ -1185,7 +1159,6 @@ class ClusterStorageResourceConfigExistingBucketArgs:
 
 class ClusterStorageResourceConfigExistingFilestoreArgsDict(TypedDict):
     filestore: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigExistingFilestoreArgs:
@@ -1198,7 +1171,6 @@ class ClusterStorageResourceConfigExistingFilestoreArgs:
 
 class ClusterStorageResourceConfigExistingLustreArgsDict(TypedDict):
     lustre: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigExistingLustreArgs:
@@ -1218,7 +1190,6 @@ class ClusterStorageResourceConfigNewBucketArgsDict(TypedDict):
         pulumi.Input[ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgsDict]
     ]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewBucketArgs:
@@ -1273,7 +1244,6 @@ class ClusterStorageResourceConfigNewBucketArgs:
 
 class ClusterStorageResourceConfigNewBucketAutoclassArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewBucketAutoclassArgs:
@@ -1286,7 +1256,6 @@ class ClusterStorageResourceConfigNewBucketAutoclassArgs:
 
 class ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewBucketHierarchicalNamespaceArgs:
@@ -1309,7 +1278,6 @@ class ClusterStorageResourceConfigNewFilestoreArgsDict(TypedDict):
     tier: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewFilestoreArgs:
@@ -1366,7 +1334,6 @@ class ClusterStorageResourceConfigNewFilestoreArgs:
 class ClusterStorageResourceConfigNewFilestoreFileShareArgsDict(TypedDict):
     capacity_gb: pulumi.Input[_builtins.str]
     file_share: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewFilestoreFileShareArgs:
@@ -1392,7 +1359,6 @@ class ClusterStorageResourceConfigNewLustreArgsDict(TypedDict):
     filesystem: pulumi.Input[_builtins.str]
     lustre: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceConfigNewLustreArgs:
@@ -1427,7 +1393,6 @@ class ClusterStorageResourceConfigNewLustreArgs:
 
 class ClusterStorageResourceFilestoreArgsDict(TypedDict):
     filestore: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceFilestoreArgs:
@@ -1442,7 +1407,6 @@ class ClusterStorageResourceFilestoreArgs:
 
 class ClusterStorageResourceLustreArgsDict(TypedDict):
     lustre: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageResourceLustreArgs:

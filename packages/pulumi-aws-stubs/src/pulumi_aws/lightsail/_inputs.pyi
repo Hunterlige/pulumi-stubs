@@ -51,7 +51,6 @@ class CertificateDomainValidationOptionArgsDict(TypedDict):
     resource_record_name: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_type: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateDomainValidationOptionArgs:
@@ -90,7 +89,6 @@ class ContainerServiceDeploymentVersionContainerArgsDict(TypedDict):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     environment: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     ports: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ContainerServiceDeploymentVersionContainerArgs:
@@ -149,7 +147,6 @@ class ContainerServiceDeploymentVersionPublicEndpointArgsDict(TypedDict):
     health_check: pulumi.Input[
         ContainerServiceDeploymentVersionPublicEndpointHealthCheckArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ContainerServiceDeploymentVersionPublicEndpointArgs:
@@ -194,7 +191,6 @@ class ContainerServiceDeploymentVersionPublicEndpointHealthCheckArgsDict(TypedDi
     success_codes: NotRequired[pulumi.Input[_builtins.str]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
     unhealthy_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ContainerServiceDeploymentVersionPublicEndpointHealthCheckArgs:
@@ -243,7 +239,6 @@ class ContainerServicePrivateRegistryAccessArgsDict(TypedDict):
     ecr_image_puller_role: NotRequired[
         pulumi.Input[ContainerServicePrivateRegistryAccessEcrImagePullerRoleArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ContainerServicePrivateRegistryAccessArgs:
@@ -272,7 +267,6 @@ class ContainerServicePrivateRegistryAccessArgs:
 class ContainerServicePrivateRegistryAccessEcrImagePullerRoleArgsDict(TypedDict):
     is_active: NotRequired[pulumi.Input[_builtins.bool]]
     principal_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ContainerServicePrivateRegistryAccessEcrImagePullerRoleArgs:
@@ -297,7 +291,6 @@ class ContainerServicePublicDomainNamesArgsDict(TypedDict):
     certificates: pulumi.Input[
         Sequence[pulumi.Input[ContainerServicePublicDomainNamesCertificateArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ContainerServicePublicDomainNamesArgs:
@@ -326,7 +319,6 @@ class ContainerServicePublicDomainNamesArgs:
 class ContainerServicePublicDomainNamesCertificateArgsDict(TypedDict):
     certificate_name: pulumi.Input[_builtins.str]
     domain_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ContainerServicePublicDomainNamesCertificateArgs:
@@ -352,7 +344,6 @@ class ContainerServicePublicDomainNamesCertificateArgs:
 class DistributionCacheBehaviorArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionCacheBehaviorArgs:
@@ -388,7 +379,6 @@ class DistributionCacheBehaviorSettingsArgsDict(TypedDict):
     ]
     maximum_ttl: NotRequired[pulumi.Input[_builtins.int]]
     minimum_ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DistributionCacheBehaviorSettingsArgs:
@@ -483,7 +473,6 @@ class DistributionCacheBehaviorSettingsForwardedCookiesArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     option: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionCacheBehaviorSettingsForwardedCookiesArgs:
@@ -515,7 +504,6 @@ class DistributionCacheBehaviorSettingsForwardedHeadersArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     option: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionCacheBehaviorSettingsForwardedHeadersArgs:
@@ -547,7 +535,6 @@ class DistributionCacheBehaviorSettingsForwardedQueryStringsArgsDict(TypedDict):
     query_strings_allowed_lists: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionCacheBehaviorSettingsForwardedQueryStringsArgs:
@@ -576,7 +563,6 @@ class DistributionCacheBehaviorSettingsForwardedQueryStringsArgs:
 
 class DistributionDefaultCacheBehaviorArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorArgs:
@@ -590,7 +576,6 @@ class DistributionDefaultCacheBehaviorArgs:
 class DistributionLocationArgsDict(TypedDict):
     availability_zone: pulumi.Input[_builtins.str]
     region_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionLocationArgs:
@@ -616,7 +601,6 @@ class DistributionOriginArgsDict(TypedDict):
     region_name: pulumi.Input[_builtins.str]
     protocol_policy: NotRequired[pulumi.Input[_builtins.str]]
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionOriginArgs:
@@ -653,7 +637,6 @@ class InstanceAddOnArgsDict(TypedDict):
     snapshot_time: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAddOnArgs:
@@ -687,7 +670,6 @@ class InstancePublicPortsPortInfoArgsDict(TypedDict):
     cidr_list_aliases: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ipv6_cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstancePublicPortsPortInfoArgs:
@@ -751,7 +733,6 @@ class LbCertificateDomainValidationRecordArgsDict(TypedDict):
     resource_record_name: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_type: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LbCertificateDomainValidationRecordArgs:

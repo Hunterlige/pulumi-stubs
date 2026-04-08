@@ -84,7 +84,6 @@ class FleetComputeConfigurationArgsDict(TypedDict):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.int]]
     vcpu: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetComputeConfigurationArgs:
@@ -136,7 +135,6 @@ class FleetScalingConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FleetScalingConfigurationArgs:
@@ -199,7 +197,6 @@ class FleetScalingConfigurationArgs:
 class FleetScalingConfigurationTargetTrackingScalingConfigArgsDict(TypedDict):
     metric_type: NotRequired[pulumi.Input[_builtins.str]]
     target_value: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class FleetScalingConfigurationTargetTrackingScalingConfigArgs:
@@ -224,7 +221,6 @@ class FleetStatusArgsDict(TypedDict):
     context: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     status_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetStatusArgs:
@@ -255,7 +251,6 @@ class FleetVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FleetVpcConfigArgs:
@@ -297,7 +292,6 @@ class ProjectArtifactsArgsDict(TypedDict):
     override_artifact_name: NotRequired[pulumi.Input[_builtins.bool]]
     packaging: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectArtifactsArgs:
@@ -371,7 +365,6 @@ class ProjectBuildBatchConfigArgsDict(TypedDict):
     combine_artifacts: NotRequired[pulumi.Input[_builtins.bool]]
     restrictions: NotRequired[pulumi.Input[ProjectBuildBatchConfigRestrictionsArgsDict]]
     timeout_in_mins: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ProjectBuildBatchConfigArgs:
@@ -415,7 +408,6 @@ class ProjectBuildBatchConfigRestrictionsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     maximum_builds_allowed: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ProjectBuildBatchConfigRestrictionsArgs:
@@ -447,7 +439,6 @@ class ProjectCacheArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     modes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectCacheArgs:
@@ -501,7 +492,6 @@ class ProjectEnvironmentArgsDict(TypedDict):
     registry_credential: NotRequired[
         pulumi.Input[ProjectEnvironmentRegistryCredentialArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ProjectEnvironmentArgs:
@@ -600,7 +590,6 @@ class ProjectEnvironmentArgs:
 class ProjectEnvironmentDockerServerArgsDict(TypedDict):
     compute_type: pulumi.Input[_builtins.str]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ProjectEnvironmentDockerServerArgs:
@@ -631,7 +620,6 @@ class ProjectEnvironmentEnvironmentVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectEnvironmentEnvironmentVariableArgs:
@@ -660,7 +648,6 @@ class ProjectEnvironmentEnvironmentVariableArgs:
 
 class ProjectEnvironmentFleetArgsDict(TypedDict):
     fleet_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectEnvironmentFleetArgs:
@@ -676,7 +663,6 @@ class ProjectEnvironmentFleetArgs:
 class ProjectEnvironmentRegistryCredentialArgsDict(TypedDict):
     credential: pulumi.Input[_builtins.str]
     credential_provider: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectEnvironmentRegistryCredentialArgs:
@@ -703,7 +689,6 @@ class ProjectFileSystemLocationArgsDict(TypedDict):
     mount_options: NotRequired[pulumi.Input[_builtins.str]]
     mount_point: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectFileSystemLocationArgs:
@@ -745,7 +730,6 @@ class ProjectFileSystemLocationArgs:
 class ProjectLogsConfigArgsDict(TypedDict):
     cloudwatch_logs: NotRequired[pulumi.Input[ProjectLogsConfigCloudwatchLogsArgsDict]]
     s3_logs: NotRequired[pulumi.Input[ProjectLogsConfigS3LogsArgsDict]]
-    ...
 
 @pulumi.input_type
 class ProjectLogsConfigArgs:
@@ -776,7 +760,6 @@ class ProjectLogsConfigCloudwatchLogsArgsDict(TypedDict):
     group_name: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectLogsConfigCloudwatchLogsArgs:
@@ -808,7 +791,6 @@ class ProjectLogsConfigS3LogsArgsDict(TypedDict):
     encryption_disabled: NotRequired[pulumi.Input[_builtins.bool]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectLogsConfigS3LogsArgs:
@@ -852,7 +834,6 @@ class ProjectSecondaryArtifactArgsDict(TypedDict):
     override_artifact_name: NotRequired[pulumi.Input[_builtins.bool]]
     packaging: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectSecondaryArtifactArgs:
@@ -936,7 +917,6 @@ class ProjectSecondarySourceArgsDict(TypedDict):
     insecure_ssl: NotRequired[pulumi.Input[_builtins.bool]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     report_build_status: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ProjectSecondarySourceArgs:
@@ -1021,7 +1001,6 @@ class ProjectSecondarySourceArgs:
 class ProjectSecondarySourceAuthArgsDict(TypedDict):
     resource: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectSecondarySourceAuthArgs:
@@ -1045,7 +1024,6 @@ class ProjectSecondarySourceAuthArgs:
 class ProjectSecondarySourceBuildStatusConfigArgsDict(TypedDict):
     context: NotRequired[pulumi.Input[_builtins.str]]
     target_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectSecondarySourceBuildStatusConfigArgs:
@@ -1068,7 +1046,6 @@ class ProjectSecondarySourceBuildStatusConfigArgs:
 
 class ProjectSecondarySourceGitSubmodulesConfigArgsDict(TypedDict):
     fetch_submodules: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ProjectSecondarySourceGitSubmodulesConfigArgs:
@@ -1084,7 +1061,6 @@ class ProjectSecondarySourceGitSubmodulesConfigArgs:
 class ProjectSecondarySourceVersionArgsDict(TypedDict):
     source_identifier: pulumi.Input[_builtins.str]
     source_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectSecondarySourceVersionArgs:
@@ -1119,7 +1095,6 @@ class ProjectSourceArgsDict(TypedDict):
     insecure_ssl: NotRequired[pulumi.Input[_builtins.bool]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     report_build_status: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ProjectSourceArgs:
@@ -1197,7 +1172,6 @@ class ProjectSourceArgs:
 class ProjectSourceAuthArgsDict(TypedDict):
     resource: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectSourceAuthArgs:
@@ -1221,7 +1195,6 @@ class ProjectSourceAuthArgs:
 class ProjectSourceBuildStatusConfigArgsDict(TypedDict):
     context: NotRequired[pulumi.Input[_builtins.str]]
     target_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectSourceBuildStatusConfigArgs:
@@ -1244,7 +1217,6 @@ class ProjectSourceBuildStatusConfigArgs:
 
 class ProjectSourceGitSubmodulesConfigArgsDict(TypedDict):
     fetch_submodules: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ProjectSourceGitSubmodulesConfigArgs:
@@ -1261,7 +1233,6 @@ class ProjectVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectVpcConfigArgs:
@@ -1297,7 +1268,6 @@ class ReportGroupExportConfigArgsDict(TypedDict):
     s3_destination: NotRequired[
         pulumi.Input[ReportGroupExportConfigS3DestinationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ReportGroupExportConfigArgs:
@@ -1330,7 +1300,6 @@ class ReportGroupExportConfigS3DestinationArgsDict(TypedDict):
     encryption_disabled: NotRequired[pulumi.Input[_builtins.bool]]
     packaging: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReportGroupExportConfigS3DestinationArgs:
@@ -1373,7 +1342,6 @@ class WebhookFilterGroupArgsDict(TypedDict):
     filters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WebhookFilterGroupFilterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WebhookFilterGroupArgs:
@@ -1403,7 +1371,6 @@ class WebhookFilterGroupFilterArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     exclude_matched_pattern: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WebhookFilterGroupFilterArgs:
@@ -1435,7 +1402,6 @@ class WebhookFilterGroupFilterArgs:
 class WebhookPullRequestBuildPolicyArgsDict(TypedDict):
     requires_comment_approval: pulumi.Input[_builtins.str]
     approver_roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebhookPullRequestBuildPolicyArgs:
@@ -1466,7 +1432,6 @@ class WebhookScopeConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
     domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebhookScopeConfigurationArgs:

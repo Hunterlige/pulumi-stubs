@@ -10,7 +10,6 @@ __all__ = ["WebResourceSiteArgs", "WebResourceSiteArgsDict"]
 class WebResourceSiteArgsDict(TypedDict):
     identifier: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebResourceSiteArgs:

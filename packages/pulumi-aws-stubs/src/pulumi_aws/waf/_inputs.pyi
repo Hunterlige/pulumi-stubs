@@ -59,7 +59,6 @@ class ByteMatchSetByteMatchTupleArgsDict(TypedDict):
     positional_constraint: pulumi.Input[_builtins.str]
     text_transformation: pulumi.Input[_builtins.str]
     target_string: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ByteMatchSetByteMatchTupleArgs:
@@ -99,7 +98,6 @@ class ByteMatchSetByteMatchTupleArgs:
 class ByteMatchSetByteMatchTupleFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ByteMatchSetByteMatchTupleFieldToMatchArgs:
@@ -123,7 +121,6 @@ class ByteMatchSetByteMatchTupleFieldToMatchArgs:
 class GeoMatchSetGeoMatchConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GeoMatchSetGeoMatchConstraintArgs:
@@ -147,7 +144,6 @@ class GeoMatchSetGeoMatchConstraintArgs:
 class IpSetIpSetDescriptorArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IpSetIpSetDescriptorArgs:
@@ -172,7 +168,6 @@ class RateBasedRulePredicateArgsDict(TypedDict):
     data_id: pulumi.Input[_builtins.str]
     negated: pulumi.Input[_builtins.bool]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RateBasedRulePredicateArgs:
@@ -203,7 +198,6 @@ class RegexMatchSetRegexMatchTupleArgsDict(TypedDict):
     field_to_match: pulumi.Input[RegexMatchSetRegexMatchTupleFieldToMatchArgsDict]
     regex_pattern_set_id: pulumi.Input[_builtins.str]
     text_transformation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegexMatchSetRegexMatchTupleArgs:
@@ -237,7 +231,6 @@ class RegexMatchSetRegexMatchTupleArgs:
 class RegexMatchSetRegexMatchTupleFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegexMatchSetRegexMatchTupleFieldToMatchArgs:
@@ -263,7 +256,6 @@ class RuleGroupActivatedRuleArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     rule_id: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupActivatedRuleArgs:
@@ -298,7 +290,6 @@ class RuleGroupActivatedRuleArgs:
 
 class RuleGroupActivatedRuleActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupActivatedRuleActionArgs:
@@ -313,7 +304,6 @@ class RulePredicateArgsDict(TypedDict):
     data_id: pulumi.Input[_builtins.str]
     negated: pulumi.Input[_builtins.bool]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RulePredicateArgs:
@@ -345,7 +335,6 @@ class SizeConstraintSetSizeConstraintArgsDict(TypedDict):
     field_to_match: pulumi.Input[SizeConstraintSetSizeConstraintFieldToMatchArgsDict]
     size: pulumi.Input[_builtins.int]
     text_transformation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SizeConstraintSetSizeConstraintArgs:
@@ -385,7 +374,6 @@ class SizeConstraintSetSizeConstraintArgs:
 class SizeConstraintSetSizeConstraintFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SizeConstraintSetSizeConstraintFieldToMatchArgs:
@@ -411,7 +399,6 @@ class SqlInjectionMatchSetSqlInjectionMatchTupleArgsDict(TypedDict):
         SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchArgsDict
     ]
     text_transformation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SqlInjectionMatchSetSqlInjectionMatchTupleArgs:
@@ -442,7 +429,6 @@ class SqlInjectionMatchSetSqlInjectionMatchTupleArgs:
 class SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchArgs:
@@ -465,7 +451,6 @@ class SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchArgs:
 
 class WebAclDefaultActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionArgs:
@@ -481,7 +466,6 @@ class WebAclLoggingConfigurationArgsDict(TypedDict):
     redacted_fields: NotRequired[
         pulumi.Input[WebAclLoggingConfigurationRedactedFieldsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationArgs:
@@ -515,7 +499,6 @@ class WebAclLoggingConfigurationRedactedFieldsArgsDict(TypedDict):
             pulumi.Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatchArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationRedactedFieldsArgs:
@@ -548,7 +531,6 @@ class WebAclLoggingConfigurationRedactedFieldsArgs:
 class WebAclLoggingConfigurationRedactedFieldsFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationRedactedFieldsFieldToMatchArgs:
@@ -575,7 +557,6 @@ class WebAclRuleArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[WebAclRuleActionArgsDict]]
     override_action: NotRequired[pulumi.Input[WebAclRuleOverrideActionArgsDict]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleArgs:
@@ -620,7 +601,6 @@ class WebAclRuleArgs:
 
 class WebAclRuleActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionArgs:
@@ -633,7 +613,6 @@ class WebAclRuleActionArgs:
 
 class WebAclRuleOverrideActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleOverrideActionArgs:
@@ -647,7 +626,6 @@ class WebAclRuleOverrideActionArgs:
 class XssMatchSetXssMatchTupleArgsDict(TypedDict):
     field_to_match: pulumi.Input[XssMatchSetXssMatchTupleFieldToMatchArgsDict]
     text_transformation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class XssMatchSetXssMatchTupleArgs:
@@ -675,7 +653,6 @@ class XssMatchSetXssMatchTupleArgs:
 class XssMatchSetXssMatchTupleFieldToMatchArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class XssMatchSetXssMatchTupleFieldToMatchArgs:

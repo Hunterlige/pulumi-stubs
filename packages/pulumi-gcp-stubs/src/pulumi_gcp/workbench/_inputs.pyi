@@ -68,7 +68,6 @@ class InstanceGceSetupArgsDict(TypedDict):
     ]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vm_image: NotRequired[pulumi.Input[InstanceGceSetupVmImageArgsDict]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupArgs:
@@ -240,7 +239,6 @@ class InstanceGceSetupArgs:
 class InstanceGceSetupAcceleratorConfigArgsDict(TypedDict):
     core_count: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupAcceleratorConfigArgs:
@@ -266,7 +264,6 @@ class InstanceGceSetupBootDiskArgsDict(TypedDict):
     disk_size_gb: NotRequired[pulumi.Input[_builtins.str]]
     disk_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupBootDiskArgs:
@@ -301,7 +298,6 @@ class InstanceGceSetupBootDiskArgs:
 
 class InstanceGceSetupConfidentialInstanceConfigArgsDict(TypedDict):
     confidential_instance_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupConfidentialInstanceConfigArgs:
@@ -321,7 +317,6 @@ class InstanceGceSetupConfidentialInstanceConfigArgs:
 class InstanceGceSetupContainerImageArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupContainerImageArgs:
@@ -347,7 +342,6 @@ class InstanceGceSetupDataDisksArgsDict(TypedDict):
     disk_size_gb: NotRequired[pulumi.Input[_builtins.str]]
     disk_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupDataDisksArgs:
@@ -389,7 +383,6 @@ class InstanceGceSetupNetworkInterfaceArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     nic_type: NotRequired[pulumi.Input[_builtins.str]]
     subnet: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupNetworkInterfaceArgs:
@@ -441,7 +434,6 @@ class InstanceGceSetupNetworkInterfaceArgs:
 
 class InstanceGceSetupNetworkInterfaceAccessConfigArgsDict(TypedDict):
     external_ip: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupNetworkInterfaceAccessConfigArgs:
@@ -456,7 +448,6 @@ class InstanceGceSetupReservationAffinityArgsDict(TypedDict):
     consume_reservation_type: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupReservationAffinityArgs:
@@ -492,7 +483,6 @@ class InstanceGceSetupReservationAffinityArgs:
 class InstanceGceSetupServiceAccountArgsDict(TypedDict):
     email: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupServiceAccountArgs:
@@ -521,7 +511,6 @@ class InstanceGceSetupShieldedInstanceConfigArgsDict(TypedDict):
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupShieldedInstanceConfigArgs:
@@ -554,7 +543,6 @@ class InstanceGceSetupVmImageArgsDict(TypedDict):
     family: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceGceSetupVmImageArgs:
@@ -591,7 +579,6 @@ class InstanceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamBindingConditionArgs:
@@ -622,7 +609,6 @@ class InstanceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamMemberConditionArgs:
@@ -659,7 +645,6 @@ class InstanceUpgradeHistoryArgsDict(TypedDict):
     target_version: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
     vm_image: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceUpgradeHistoryArgs:

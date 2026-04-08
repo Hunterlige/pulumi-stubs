@@ -39,7 +39,6 @@ __all__ = [
 class DatabaseHiveOptionsArgsDict(TypedDict):
     location_uri: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatabaseHiveOptionsArgs:
@@ -70,7 +69,6 @@ class IcebergCatalogIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergCatalogIamBindingConditionArgs:
@@ -101,7 +99,6 @@ class IcebergCatalogIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergCatalogIamMemberConditionArgs:
@@ -131,7 +128,6 @@ class IcebergCatalogIamMemberConditionArgs:
 class IcebergCatalogReplicaArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergCatalogReplicaArgs:
@@ -156,7 +152,6 @@ class IcebergNamespaceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergNamespaceIamBindingConditionArgs:
@@ -187,7 +182,6 @@ class IcebergNamespaceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergNamespaceIamMemberConditionArgs:
@@ -218,7 +212,6 @@ class IcebergTableIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergTableIamBindingConditionArgs:
@@ -249,7 +242,6 @@ class IcebergTableIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergTableIamMemberConditionArgs:
@@ -279,7 +271,6 @@ class IcebergTableIamMemberConditionArgs:
 class IcebergTablePartitionSpecArgsDict(TypedDict):
     fields: pulumi.Input[Sequence[pulumi.Input[IcebergTablePartitionSpecFieldArgsDict]]]
     spec_id: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IcebergTablePartitionSpecArgs:
@@ -312,7 +303,6 @@ class IcebergTablePartitionSpecFieldArgsDict(TypedDict):
     source_id: pulumi.Input[_builtins.int]
     transform: pulumi.Input[_builtins.str]
     field_id: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IcebergTablePartitionSpecFieldArgs:
@@ -352,7 +342,6 @@ class IcebergTableSchemaArgsDict(TypedDict):
     ]
     schema_id: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergTableSchemaArgs:
@@ -401,7 +390,6 @@ class IcebergTableSchemaFieldArgsDict(TypedDict):
     required: pulumi.Input[_builtins.bool]
     type: pulumi.Input[_builtins.str]
     doc: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IcebergTableSchemaFieldArgs:
@@ -446,7 +434,6 @@ class TableHiveOptionsArgsDict(TypedDict):
         pulumi.Input[TableHiveOptionsStorageDescriptorArgsDict]
     ]
     table_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableHiveOptionsArgs:
@@ -489,7 +476,6 @@ class TableHiveOptionsStorageDescriptorArgsDict(TypedDict):
     input_format: NotRequired[pulumi.Input[_builtins.str]]
     location_uri: NotRequired[pulumi.Input[_builtins.str]]
     output_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableHiveOptionsStorageDescriptorArgs:

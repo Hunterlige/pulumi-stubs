@@ -48,7 +48,6 @@ class ConfigurationAggregatorAccountAggregationSourceArgsDict(TypedDict):
     account_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     all_regions: NotRequired[pulumi.Input[_builtins.bool]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationAggregatorAccountAggregationSourceArgs:
@@ -85,7 +84,6 @@ class ConfigurationAggregatorOrganizationAggregationSourceArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     all_regions: NotRequired[pulumi.Input[_builtins.bool]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationAggregatorOrganizationAggregationSourceArgs:
@@ -119,7 +117,6 @@ class ConfigurationAggregatorOrganizationAggregationSourceArgs:
 class ConformancePackInputParameterArgsDict(TypedDict):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConformancePackInputParameterArgs:
@@ -142,7 +139,6 @@ class ConformancePackInputParameterArgs:
 
 class DeliveryChannelSnapshotDeliveryPropertiesArgsDict(TypedDict):
     delivery_frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryChannelSnapshotDeliveryPropertiesArgs:
@@ -158,7 +154,6 @@ class DeliveryChannelSnapshotDeliveryPropertiesArgs:
 class OrganizationConformancePackInputParameterArgsDict(TypedDict):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OrganizationConformancePackInputParameterArgs:
@@ -195,7 +190,6 @@ class RecorderRecordingGroupArgsDict(TypedDict):
         ]
     ]
     resource_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecorderRecordingGroupArgs:
@@ -284,7 +278,6 @@ class RecorderRecordingGroupArgs:
 
 class RecorderRecordingGroupExclusionByResourceTypeArgsDict(TypedDict):
     resource_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecorderRecordingGroupExclusionByResourceTypeArgs:
@@ -307,7 +300,6 @@ class RecorderRecordingGroupExclusionByResourceTypeArgs:
 
 class RecorderRecordingGroupRecordingStrategyArgsDict(TypedDict):
     use_only: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecorderRecordingGroupRecordingStrategyArgs:
@@ -325,7 +317,6 @@ class RecorderRecordingModeArgsDict(TypedDict):
     recording_mode_override: NotRequired[
         pulumi.Input[RecorderRecordingModeRecordingModeOverrideArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RecorderRecordingModeArgs:
@@ -357,7 +348,6 @@ class RecorderRecordingModeRecordingModeOverrideArgsDict(TypedDict):
     recording_frequency: pulumi.Input[_builtins.str]
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecorderRecordingModeRecordingModeOverrideArgs:
@@ -390,7 +380,6 @@ class RemediationConfigurationExecutionControlsArgsDict(TypedDict):
     ssm_controls: NotRequired[
         pulumi.Input[RemediationConfigurationExecutionControlsSsmControlsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RemediationConfigurationExecutionControlsArgs:
@@ -419,7 +408,6 @@ class RemediationConfigurationExecutionControlsArgs:
 class RemediationConfigurationExecutionControlsSsmControlsArgsDict(TypedDict):
     concurrent_execution_rate_percentage: NotRequired[pulumi.Input[_builtins.int]]
     error_percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RemediationConfigurationExecutionControlsSsmControlsArgs:
@@ -451,7 +439,6 @@ class RemediationConfigurationParameterArgsDict(TypedDict):
     resource_value: NotRequired[pulumi.Input[_builtins.str]]
     static_value: NotRequired[pulumi.Input[_builtins.str]]
     static_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RemediationConfigurationParameterArgs:
@@ -492,7 +479,6 @@ class RemediationConfigurationParameterArgs:
 
 class RuleEvaluationModeArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleEvaluationModeArgs:
@@ -512,7 +498,6 @@ class RuleScopeArgsDict(TypedDict):
     ]
     tag_key: NotRequired[pulumi.Input[_builtins.str]]
     tag_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleScopeArgs:
@@ -560,7 +545,6 @@ class RuleSourceArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[RuleSourceSourceDetailArgsDict]]]
     ]
     source_identifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleSourceArgs:
@@ -612,7 +596,6 @@ class RuleSourceCustomPolicyDetailsArgsDict(TypedDict):
     policy_runtime: pulumi.Input[_builtins.str]
     policy_text: pulumi.Input[_builtins.str]
     enable_debug_log_delivery: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RuleSourceCustomPolicyDetailsArgs:
@@ -645,7 +628,6 @@ class RuleSourceSourceDetailArgsDict(TypedDict):
     event_source: NotRequired[pulumi.Input[_builtins.str]]
     maximum_execution_frequency: NotRequired[pulumi.Input[_builtins.str]]
     message_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleSourceSourceDetailArgs:

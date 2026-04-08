@@ -112,7 +112,6 @@ class AiLogicConfigGenerativeLanguageConfigArgsDict(TypedDict):
     api_key: NotRequired[pulumi.Input[_builtins.str]]
     api_key_wo: NotRequired[pulumi.Input[_builtins.str]]
     api_key_wo_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiLogicConfigGenerativeLanguageConfigArgs:
@@ -142,7 +141,6 @@ class AiLogicConfigGenerativeLanguageConfigArgs:
 class AiLogicConfigTelemetryConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     sampling_rate: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AiLogicConfigTelemetryConfigArgs:
@@ -166,7 +164,6 @@ class AiLogicConfigTelemetryConfigArgs:
 class AppHostingBackendCodebaseArgsDict(TypedDict):
     repository: pulumi.Input[_builtins.str]
     root_directory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingBackendCodebaseArgs:
@@ -193,7 +190,6 @@ class AppHostingBackendManagedResourceArgsDict(TypedDict):
             Sequence[pulumi.Input[AppHostingBackendManagedResourceRunServiceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppHostingBackendManagedResourceArgs:
@@ -227,7 +223,6 @@ class AppHostingBackendManagedResourceArgs:
 
 class AppHostingBackendManagedResourceRunServiceArgsDict(TypedDict):
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingBackendManagedResourceRunServiceArgs:
@@ -246,7 +241,6 @@ class AppHostingBuildErrorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingBuildErrorArgs:
@@ -291,7 +285,6 @@ class AppHostingBuildErrorArgs:
 class AppHostingBuildSourceArgsDict(TypedDict):
     codebase: NotRequired[pulumi.Input[AppHostingBuildSourceCodebaseArgsDict]]
     container: NotRequired[pulumi.Input[AppHostingBuildSourceContainerArgsDict]]
-    ...
 
 @pulumi.input_type
 class AppHostingBuildSourceArgs:
@@ -331,7 +324,6 @@ class AppHostingBuildSourceCodebaseArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     hash: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingBuildSourceCodebaseArgs:
@@ -407,7 +399,6 @@ class AppHostingBuildSourceCodebaseAuthorArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     email: NotRequired[pulumi.Input[_builtins.str]]
     image_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingBuildSourceCodebaseAuthorArgs:
@@ -436,7 +427,6 @@ class AppHostingBuildSourceCodebaseAuthorArgs:
 
 class AppHostingBuildSourceContainerArgsDict(TypedDict):
     image: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppHostingBuildSourceContainerArgs:
@@ -465,7 +455,6 @@ class AppHostingDomainCustomDomainStatusArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusArgs:
@@ -552,7 +541,6 @@ class AppHostingDomainCustomDomainStatusIssueArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     details: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusIssueArgs:
@@ -600,7 +588,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateArgsDict(TypedDict):
         ]
     ]
     domain_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateArgs:
@@ -711,7 +698,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredArgs:
@@ -802,7 +788,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredCheckErrorArgsDi
     code: NotRequired[pulumi.Input[_builtins.int]]
     details: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredCheckErrorArgs:
@@ -837,7 +822,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredRecordArgsDict(
     relevant_states: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDesiredRecordArgs:
@@ -902,7 +886,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredArgsDict(Type
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredArgs:
@@ -993,7 +976,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredCheckErrorArg
     code: NotRequired[pulumi.Input[_builtins.int]]
     details: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredCheckErrorArgs:
@@ -1028,7 +1010,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredRecordArgsDic
     relevant_states: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredRecordArgs:
@@ -1075,7 +1056,6 @@ class AppHostingDomainCustomDomainStatusRequiredDnsUpdateDiscoveredRecordArgs:
 
 class AppHostingDomainServeArgsDict(TypedDict):
     redirect: NotRequired[pulumi.Input[AppHostingDomainServeRedirectArgsDict]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainServeArgs:
@@ -1095,7 +1075,6 @@ class AppHostingDomainServeArgs:
 class AppHostingDomainServeRedirectArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingDomainServeRedirectArgs:
@@ -1120,7 +1099,6 @@ class AppHostingTrafficCurrentArgsDict(TypedDict):
     splits: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AppHostingTrafficCurrentSplitArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppHostingTrafficCurrentArgs:
@@ -1149,7 +1127,6 @@ class AppHostingTrafficCurrentArgs:
 class AppHostingTrafficCurrentSplitArgsDict(TypedDict):
     build: NotRequired[pulumi.Input[_builtins.str]]
     percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AppHostingTrafficCurrentSplitArgs:
@@ -1174,7 +1151,6 @@ class AppHostingTrafficRolloutPolicyArgsDict(TypedDict):
     codebase_branch: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     disabled_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppHostingTrafficRolloutPolicyArgs:
@@ -1203,7 +1179,6 @@ class AppHostingTrafficRolloutPolicyArgs:
 
 class AppHostingTrafficTargetArgsDict(TypedDict):
     splits: pulumi.Input[Sequence[pulumi.Input[AppHostingTrafficTargetSplitArgsDict]]]
-    ...
 
 @pulumi.input_type
 class AppHostingTrafficTargetArgs:
@@ -1226,7 +1201,6 @@ class AppHostingTrafficTargetArgs:
 class AppHostingTrafficTargetSplitArgsDict(TypedDict):
     build: pulumi.Input[_builtins.str]
     percent: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AppHostingTrafficTargetSplitArgs:
@@ -1259,7 +1233,6 @@ class ExtensionsInstanceConfigArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     populated_postinstall_content: NotRequired[pulumi.Input[_builtins.str]]
     system_params: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ExtensionsInstanceConfigArgs:
@@ -1346,7 +1319,6 @@ class ExtensionsInstanceErrorStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExtensionsInstanceErrorStatusArgs:
@@ -1396,7 +1368,6 @@ class ExtensionsInstanceRuntimeDataArgsDict(TypedDict):
         pulumi.Input[ExtensionsInstanceRuntimeDataProcessingStateArgsDict]
     ]
     state_update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExtensionsInstanceRuntimeDataArgs:
@@ -1438,7 +1409,6 @@ class ExtensionsInstanceRuntimeDataArgs:
 
 class ExtensionsInstanceRuntimeDataFatalErrorArgsDict(TypedDict):
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExtensionsInstanceRuntimeDataFatalErrorArgs:
@@ -1454,7 +1424,6 @@ class ExtensionsInstanceRuntimeDataFatalErrorArgs:
 class ExtensionsInstanceRuntimeDataProcessingStateArgsDict(TypedDict):
     detail_message: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExtensionsInstanceRuntimeDataProcessingStateArgs:
@@ -1479,7 +1448,6 @@ class HostingCustomDomainCertArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     verification: NotRequired[pulumi.Input[HostingCustomDomainCertVerificationArgsDict]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertArgs:
@@ -1515,7 +1483,6 @@ class HostingCustomDomainCertArgs:
 class HostingCustomDomainCertVerificationArgsDict(TypedDict):
     dns: NotRequired[pulumi.Input[HostingCustomDomainCertVerificationDnsArgsDict]]
     http: NotRequired[pulumi.Input[HostingCustomDomainCertVerificationHttpArgsDict]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationArgs:
@@ -1560,7 +1527,6 @@ class HostingCustomDomainCertVerificationDnsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationDnsArgs:
@@ -1640,7 +1606,6 @@ class HostingCustomDomainCertVerificationDnsDesiredArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationDnsDesiredArgs:
@@ -1693,7 +1658,6 @@ class HostingCustomDomainCertVerificationDnsDesiredRecordArgsDict(TypedDict):
     rdata: NotRequired[pulumi.Input[_builtins.str]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationDnsDesiredRecordArgs:
@@ -1737,7 +1701,6 @@ class HostingCustomDomainCertVerificationDnsDiscoveredArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationDnsDiscoveredArgs:
@@ -1790,7 +1753,6 @@ class HostingCustomDomainCertVerificationDnsDiscoveredRecordArgsDict(TypedDict):
     rdata: NotRequired[pulumi.Input[_builtins.str]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationDnsDiscoveredRecordArgs:
@@ -1828,7 +1790,6 @@ class HostingCustomDomainCertVerificationHttpArgsDict(TypedDict):
     discovered: NotRequired[pulumi.Input[_builtins.str]]
     last_check_time: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainCertVerificationHttpArgs:
@@ -1865,7 +1826,6 @@ class HostingCustomDomainIssueArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     details: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainIssueArgs:
@@ -1906,7 +1866,6 @@ class HostingCustomDomainRequiredDnsUpdateArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainRequiredDnsUpdateArgs:
@@ -1980,7 +1939,6 @@ class HostingCustomDomainRequiredDnsUpdateDesiredArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainRequiredDnsUpdateDesiredArgs:
@@ -2029,7 +1987,6 @@ class HostingCustomDomainRequiredDnsUpdateDesiredRecordArgsDict(TypedDict):
     rdata: NotRequired[pulumi.Input[_builtins.str]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainRequiredDnsUpdateDesiredRecordArgs:
@@ -2073,7 +2030,6 @@ class HostingCustomDomainRequiredDnsUpdateDiscoveredArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainRequiredDnsUpdateDiscoveredArgs:
@@ -2126,7 +2082,6 @@ class HostingCustomDomainRequiredDnsUpdateDiscoveredRecordArgsDict(TypedDict):
     rdata: NotRequired[pulumi.Input[_builtins.str]]
     required_action: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingCustomDomainRequiredDnsUpdateDiscoveredRecordArgs:
@@ -2169,7 +2124,6 @@ class HostingVersionConfigArgsDict(TypedDict):
     rewrites: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[HostingVersionConfigRewriteArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class HostingVersionConfigArgs:
@@ -2233,7 +2187,6 @@ class HostingVersionConfigHeaderArgsDict(TypedDict):
     headers: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     glob: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingVersionConfigHeaderArgs:
@@ -2267,7 +2220,6 @@ class HostingVersionConfigRedirectArgsDict(TypedDict):
     status_code: pulumi.Input[_builtins.int]
     glob: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingVersionConfigRedirectArgs:
@@ -2306,7 +2258,6 @@ class HostingVersionConfigRewriteArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
     regex: NotRequired[pulumi.Input[_builtins.str]]
     run: NotRequired[pulumi.Input[HostingVersionConfigRewriteRunArgsDict]]
-    ...
 
 @pulumi.input_type
 class HostingVersionConfigRewriteArgs:
@@ -2350,7 +2301,6 @@ class HostingVersionConfigRewriteArgs:
 class HostingVersionConfigRewriteRunArgsDict(TypedDict):
     service_id: pulumi.Input[_builtins.str]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HostingVersionConfigRewriteRunArgs:

@@ -53,7 +53,6 @@ class ConnectionBitbucketCloudConfigArgsDict(TypedDict):
     ]
     webhook_secret_secret_version: pulumi.Input[_builtins.str]
     workspace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigArgs:
@@ -103,7 +102,6 @@ class ConnectionBitbucketCloudConfigArgs:
 class ConnectionBitbucketCloudConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigAuthorizerCredentialArgs:
@@ -127,7 +125,6 @@ class ConnectionBitbucketCloudConfigAuthorizerCredentialArgs:
 class ConnectionBitbucketCloudConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigReadAuthorizerCredentialArgs:
@@ -162,7 +159,6 @@ class ConnectionBitbucketDataCenterConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgsDict]
     ]
     ssl_ca: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigArgs:
@@ -247,7 +243,6 @@ class ConnectionBitbucketDataCenterConfigArgs:
 class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgs:
@@ -271,7 +266,6 @@ class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgs:
 class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgs:
@@ -294,7 +288,6 @@ class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgs:
 
 class ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgs:
@@ -310,7 +303,6 @@ class ConnectionGithubConfigArgsDict(TypedDict):
     authorizer_credential: NotRequired[
         pulumi.Input[ConnectionGithubConfigAuthorizerCredentialArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubConfigArgs:
@@ -341,7 +333,6 @@ class ConnectionGithubConfigArgs:
 class ConnectionGithubConfigAuthorizerCredentialArgsDict(TypedDict):
     oauth_token_secret_version: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubConfigAuthorizerCredentialArgs:
@@ -375,7 +366,6 @@ class ConnectionGithubEnterpriseConfigArgsDict(TypedDict):
     ]
     ssl_ca: NotRequired[pulumi.Input[_builtins.str]]
     webhook_secret_secret_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubEnterpriseConfigArgs:
@@ -451,7 +441,6 @@ class ConnectionGithubEnterpriseConfigArgs:
 
 class ConnectionGithubEnterpriseConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubEnterpriseConfigServiceDirectoryConfigArgs:
@@ -476,7 +465,6 @@ class ConnectionGitlabConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionGitlabConfigServiceDirectoryConfigArgsDict]
     ]
     ssl_ca: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigArgs:
@@ -549,7 +537,6 @@ class ConnectionGitlabConfigArgs:
 class ConnectionGitlabConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigAuthorizerCredentialArgs:
@@ -573,7 +560,6 @@ class ConnectionGitlabConfigAuthorizerCredentialArgs:
 class ConnectionGitlabConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigReadAuthorizerCredentialArgs:
@@ -596,7 +582,6 @@ class ConnectionGitlabConfigReadAuthorizerCredentialArgs:
 
 class ConnectionGitlabConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigServiceDirectoryConfigArgs:
@@ -611,7 +596,6 @@ class ConnectionIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionIAMBindingConditionArgs:
@@ -642,7 +626,6 @@ class ConnectionIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionIAMMemberConditionArgs:
@@ -673,7 +656,6 @@ class ConnectionInstallationStateArgsDict(TypedDict):
     action_uri: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     stage: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionInstallationStateArgs:

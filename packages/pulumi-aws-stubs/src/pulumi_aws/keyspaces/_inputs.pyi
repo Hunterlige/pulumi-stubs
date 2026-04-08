@@ -35,7 +35,6 @@ __all__ = [
 class KeyspaceReplicationSpecificationArgsDict(TypedDict):
     region_lists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     replication_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyspaceReplicationSpecificationArgs:
@@ -66,7 +65,6 @@ class TableCapacitySpecificationArgsDict(TypedDict):
     read_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     throughput_mode: NotRequired[pulumi.Input[_builtins.str]]
     write_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableCapacitySpecificationArgs:
@@ -95,7 +93,6 @@ class TableCapacitySpecificationArgs:
 
 class TableClientSideTimestampsArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableClientSideTimestampsArgs:
@@ -108,7 +105,6 @@ class TableClientSideTimestampsArgs:
 
 class TableCommentArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableCommentArgs:
@@ -124,7 +120,6 @@ class TableCommentArgs:
 class TableEncryptionSpecificationArgsDict(TypedDict):
     kms_key_identifier: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableEncryptionSpecificationArgs:
@@ -147,7 +142,6 @@ class TableEncryptionSpecificationArgs:
 
 class TablePointInTimeRecoveryArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TablePointInTimeRecoveryArgs:
@@ -171,7 +165,6 @@ class TableSchemaDefinitionArgsDict(TypedDict):
     static_columns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TableSchemaDefinitionStaticColumnArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TableSchemaDefinitionArgs:
@@ -245,7 +238,6 @@ class TableSchemaDefinitionArgs:
 class TableSchemaDefinitionClusteringKeyArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     order_by: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableSchemaDefinitionClusteringKeyArgs:
@@ -269,7 +261,6 @@ class TableSchemaDefinitionClusteringKeyArgs:
 class TableSchemaDefinitionColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableSchemaDefinitionColumnArgs:
@@ -292,7 +283,6 @@ class TableSchemaDefinitionColumnArgs:
 
 class TableSchemaDefinitionPartitionKeyArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableSchemaDefinitionPartitionKeyArgs:
@@ -305,7 +295,6 @@ class TableSchemaDefinitionPartitionKeyArgs:
 
 class TableSchemaDefinitionStaticColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableSchemaDefinitionStaticColumnArgs:
@@ -318,7 +307,6 @@ class TableSchemaDefinitionStaticColumnArgs:
 
 class TableTtlArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableTtlArgs:

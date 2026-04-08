@@ -43,7 +43,6 @@ __all__ = [
 class AppAuthorizationConnectionAuthRequestArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     redirect_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationConnectionAuthRequestArgs:
@@ -67,7 +66,6 @@ class AppAuthorizationConnectionAuthRequestArgs:
 class AppAuthorizationConnectionTenantArgsDict(TypedDict):
     tenant_display_name: pulumi.Input[_builtins.str]
     tenant_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationConnectionTenantArgs:
@@ -90,7 +88,6 @@ class AppAuthorizationConnectionTenantArgs:
 
 class AppAuthorizationConnectionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationConnectionTimeoutsArgs:
@@ -112,7 +109,6 @@ class AppAuthorizationCredentialArgsDict(TypedDict):
     oauth2_credential: NotRequired[
         pulumi.Input[AppAuthorizationCredentialOauth2CredentialArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationCredentialArgs:
@@ -159,7 +155,6 @@ class AppAuthorizationCredentialArgs:
 
 class AppAuthorizationCredentialApiKeyCredentialArgsDict(TypedDict):
     api_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationCredentialApiKeyCredentialArgs:
@@ -173,7 +168,6 @@ class AppAuthorizationCredentialApiKeyCredentialArgs:
 class AppAuthorizationCredentialOauth2CredentialArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
     client_secret: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationCredentialOauth2CredentialArgs:
@@ -197,7 +191,6 @@ class AppAuthorizationCredentialOauth2CredentialArgs:
 class AppAuthorizationTenantArgsDict(TypedDict):
     tenant_display_name: pulumi.Input[_builtins.str]
     tenant_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationTenantArgs:
@@ -222,7 +215,6 @@ class AppAuthorizationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppAuthorizationTimeoutsArgs:
@@ -253,7 +245,6 @@ class IngestionDestinationDestinationConfigurationArgsDict(TypedDict):
     audit_log: pulumi.Input[
         IngestionDestinationDestinationConfigurationAuditLogArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationDestinationConfigurationArgs:
@@ -279,7 +270,6 @@ class IngestionDestinationDestinationConfigurationAuditLogArgsDict(TypedDict):
     destination: pulumi.Input[
         IngestionDestinationDestinationConfigurationAuditLogDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationDestinationConfigurationAuditLogArgs:
@@ -318,7 +308,6 @@ class IngestionDestinationDestinationConfigurationAuditLogDestinationArgsDict(
             IngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationDestinationConfigurationAuditLogDestinationArgs:
@@ -377,7 +366,6 @@ class IngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStr
     TypedDict
 ):
     stream_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamArgs:
@@ -393,7 +381,6 @@ class IngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketArg
 ):
     bucket_name: pulumi.Input[_builtins.str]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketArgs:
@@ -416,7 +403,6 @@ class IngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketArg
 
 class IngestionDestinationProcessingConfigurationArgsDict(TypedDict):
     audit_log: pulumi.Input[IngestionDestinationProcessingConfigurationAuditLogArgsDict]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationProcessingConfigurationArgs:
@@ -441,7 +427,6 @@ class IngestionDestinationProcessingConfigurationArgs:
 class IngestionDestinationProcessingConfigurationAuditLogArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
     schema: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationProcessingConfigurationAuditLogArgs:
@@ -466,7 +451,6 @@ class IngestionDestinationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IngestionDestinationTimeoutsArgs:

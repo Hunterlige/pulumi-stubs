@@ -24,7 +24,6 @@ class ClusterMasterUserSecretArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterUserSecretArgs:
@@ -55,7 +54,6 @@ class ClusterParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     apply_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterParameterGroupParameterArgs:
@@ -87,7 +85,6 @@ class ClusterRestoreToPointInTimeArgsDict(TypedDict):
     restore_to_time: NotRequired[pulumi.Input[_builtins.str]]
     restore_type: NotRequired[pulumi.Input[_builtins.str]]
     use_latest_restorable_time: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreToPointInTimeArgs:
@@ -125,7 +122,6 @@ class ClusterRestoreToPointInTimeArgs:
 class ClusterServerlessV2ScalingConfigurationArgsDict(TypedDict):
     max_capacity: pulumi.Input[_builtins.float]
     min_capacity: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class ClusterServerlessV2ScalingConfigurationArgs:
@@ -150,7 +146,6 @@ class ElasticClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ElasticClusterTimeoutsArgs:
@@ -180,7 +175,6 @@ class ElasticClusterTimeoutsArgs:
 class GlobalClusterGlobalClusterMemberArgsDict(TypedDict):
     db_cluster_arn: NotRequired[pulumi.Input[_builtins.str]]
     is_writer: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GlobalClusterGlobalClusterMemberArgs:

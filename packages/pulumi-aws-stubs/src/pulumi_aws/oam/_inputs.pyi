@@ -21,7 +21,6 @@ class LinkLinkConfigurationArgsDict(TypedDict):
     metric_configuration: NotRequired[
         pulumi.Input[LinkLinkConfigurationMetricConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LinkLinkConfigurationArgs:
@@ -58,7 +57,6 @@ class LinkLinkConfigurationArgs:
 
 class LinkLinkConfigurationLogGroupConfigurationArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LinkLinkConfigurationLogGroupConfigurationArgs:
@@ -71,7 +69,6 @@ class LinkLinkConfigurationLogGroupConfigurationArgs:
 
 class LinkLinkConfigurationMetricConfigurationArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LinkLinkConfigurationMetricConfigurationArgs:

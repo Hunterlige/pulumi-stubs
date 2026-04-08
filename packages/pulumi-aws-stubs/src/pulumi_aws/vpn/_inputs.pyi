@@ -10,7 +10,6 @@ __all__ = ["GetConnectionFilterArgs", "GetConnectionFilterArgsDict"]
 class GetConnectionFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetConnectionFilterArgs:

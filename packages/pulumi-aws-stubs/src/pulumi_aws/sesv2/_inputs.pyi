@@ -48,7 +48,6 @@ __all__ = [
 
 class AccountVdmAttributesDashboardAttributesArgsDict(TypedDict):
     engagement_metrics: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountVdmAttributesDashboardAttributesArgs:
@@ -63,7 +62,6 @@ class AccountVdmAttributesDashboardAttributesArgs:
 
 class AccountVdmAttributesGuardianAttributesArgsDict(TypedDict):
     optimized_shared_delivery: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountVdmAttributesGuardianAttributesArgs:
@@ -84,7 +82,6 @@ class ConfigurationSetDeliveryOptionsArgsDict(TypedDict):
     max_delivery_seconds: NotRequired[pulumi.Input[_builtins.int]]
     sending_pool_name: NotRequired[pulumi.Input[_builtins.str]]
     tls_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetDeliveryOptionsArgs:
@@ -139,7 +136,6 @@ class ConfigurationSetEventDestinationEventDestinationArgsDict(TypedDict):
             ConfigurationSetEventDestinationEventDestinationSnsDestinationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationArgs:
@@ -287,7 +283,6 @@ class ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationArgs:
@@ -331,7 +326,6 @@ class ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimen
     default_dimension_value: pulumi.Input[_builtins.str]
     dimension_name: pulumi.Input[_builtins.str]
     dimension_value_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationArgs:
@@ -362,7 +356,6 @@ class ConfigurationSetEventDestinationEventDestinationEventBridgeDestinationArgs
     TypedDict
 ):
     event_bus_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationEventBridgeDestinationArgs:
@@ -378,7 +371,6 @@ class ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination
 ):
     delivery_stream_arn: pulumi.Input[_builtins.str]
     iam_role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationArgs:
@@ -403,7 +395,6 @@ class ConfigurationSetEventDestinationEventDestinationPinpointDestinationArgsDic
     TypedDict
 ):
     application_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationPinpointDestinationArgs:
@@ -416,7 +407,6 @@ class ConfigurationSetEventDestinationEventDestinationPinpointDestinationArgs:
 
 class ConfigurationSetEventDestinationEventDestinationSnsDestinationArgsDict(TypedDict):
     topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetEventDestinationEventDestinationSnsDestinationArgs:
@@ -430,7 +420,6 @@ class ConfigurationSetEventDestinationEventDestinationSnsDestinationArgs:
 class ConfigurationSetReputationOptionsArgsDict(TypedDict):
     last_fresh_start: NotRequired[pulumi.Input[_builtins.str]]
     reputation_metrics_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetReputationOptionsArgs:
@@ -455,7 +444,6 @@ class ConfigurationSetReputationOptionsArgs:
 
 class ConfigurationSetSendingOptionsArgsDict(TypedDict):
     sending_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetSendingOptionsArgs:
@@ -470,7 +458,6 @@ class ConfigurationSetSendingOptionsArgs:
 
 class ConfigurationSetSuppressionOptionsArgsDict(TypedDict):
     suppressed_reasons: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetSuppressionOptionsArgs:
@@ -494,7 +481,6 @@ class ConfigurationSetSuppressionOptionsArgs:
 class ConfigurationSetTrackingOptionsArgsDict(TypedDict):
     custom_redirect_domain: pulumi.Input[_builtins.str]
     https_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetTrackingOptionsArgs:
@@ -522,7 +508,6 @@ class ConfigurationSetVdmOptionsArgsDict(TypedDict):
     guardian_options: NotRequired[
         pulumi.Input[ConfigurationSetVdmOptionsGuardianOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetVdmOptionsArgs:
@@ -559,7 +544,6 @@ class ConfigurationSetVdmOptionsArgs:
 
 class ConfigurationSetVdmOptionsDashboardOptionsArgsDict(TypedDict):
     engagement_metrics: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetVdmOptionsDashboardOptionsArgs:
@@ -574,7 +558,6 @@ class ConfigurationSetVdmOptionsDashboardOptionsArgs:
 
 class ConfigurationSetVdmOptionsGuardianOptionsArgsDict(TypedDict):
     optimized_shared_delivery: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetVdmOptionsGuardianOptionsArgs:
@@ -596,7 +579,6 @@ class ContactListTopicArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
     topic_name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ContactListTopicArgs:
@@ -638,7 +620,6 @@ class EmailIdentityDkimSigningAttributesArgsDict(TypedDict):
     signing_attributes_origin: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     tokens: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EmailIdentityDkimSigningAttributesArgs:

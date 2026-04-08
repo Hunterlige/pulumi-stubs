@@ -41,7 +41,6 @@ class QueueAppEngineRoutingOverrideArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     service: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueAppEngineRoutingOverrideArgs:
@@ -82,7 +81,6 @@ class QueueHttpTargetArgsDict(TypedDict):
     oauth_token: NotRequired[pulumi.Input[QueueHttpTargetOauthTokenArgsDict]]
     oidc_token: NotRequired[pulumi.Input[QueueHttpTargetOidcTokenArgsDict]]
     uri_override: NotRequired[pulumi.Input[QueueHttpTargetUriOverrideArgsDict]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetArgs:
@@ -142,7 +140,6 @@ class QueueHttpTargetArgs:
 
 class QueueHttpTargetHeaderOverrideArgsDict(TypedDict):
     header: pulumi.Input[QueueHttpTargetHeaderOverrideHeaderArgsDict]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetHeaderOverrideArgs:
@@ -158,7 +155,6 @@ class QueueHttpTargetHeaderOverrideArgs:
 class QueueHttpTargetHeaderOverrideHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetHeaderOverrideHeaderArgs:
@@ -182,7 +178,6 @@ class QueueHttpTargetHeaderOverrideHeaderArgs:
 class QueueHttpTargetOauthTokenArgsDict(TypedDict):
     service_account_email: pulumi.Input[_builtins.str]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetOauthTokenArgs:
@@ -206,7 +201,6 @@ class QueueHttpTargetOauthTokenArgs:
 class QueueHttpTargetOidcTokenArgsDict(TypedDict):
     service_account_email: pulumi.Input[_builtins.str]
     audience: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetOidcTokenArgs:
@@ -238,7 +232,6 @@ class QueueHttpTargetUriOverrideArgsDict(TypedDict):
     ]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
     uri_override_enforce_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetUriOverrideArgs:
@@ -299,7 +292,6 @@ class QueueHttpTargetUriOverrideArgs:
 
 class QueueHttpTargetUriOverridePathOverrideArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetUriOverridePathOverrideArgs:
@@ -314,7 +306,6 @@ class QueueHttpTargetUriOverridePathOverrideArgs:
 
 class QueueHttpTargetUriOverrideQueryOverrideArgsDict(TypedDict):
     query_params: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueHttpTargetUriOverrideQueryOverrideArgs:
@@ -331,7 +322,6 @@ class QueueIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueIamBindingConditionArgs:
@@ -362,7 +352,6 @@ class QueueIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueIamMemberConditionArgs:
@@ -393,7 +382,6 @@ class QueueRateLimitsArgsDict(TypedDict):
     max_burst_size: NotRequired[pulumi.Input[_builtins.int]]
     max_concurrent_dispatches: NotRequired[pulumi.Input[_builtins.int]]
     max_dispatches_per_second: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class QueueRateLimitsArgs:
@@ -430,7 +418,6 @@ class QueueRetryConfigArgsDict(TypedDict):
     max_doublings: NotRequired[pulumi.Input[_builtins.int]]
     max_retry_duration: NotRequired[pulumi.Input[_builtins.str]]
     min_backoff: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueRetryConfigArgs:
@@ -471,7 +458,6 @@ class QueueRetryConfigArgs:
 
 class QueueStackdriverLoggingConfigArgsDict(TypedDict):
     sampling_ratio: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class QueueStackdriverLoggingConfigArgs:

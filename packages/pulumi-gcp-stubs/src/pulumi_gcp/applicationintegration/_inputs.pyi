@@ -44,7 +44,6 @@ class AuthConfigClientCertificateArgsDict(TypedDict):
     encrypted_private_key: pulumi.Input[_builtins.str]
     ssl_certificate: pulumi.Input[_builtins.str]
     passphrase: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigClientCertificateArgs:
@@ -92,7 +91,6 @@ class AuthConfigDecryptedCredentialArgsDict(TypedDict):
     username_and_password: NotRequired[
         pulumi.Input[AuthConfigDecryptedCredentialUsernameAndPasswordArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialArgs:
@@ -210,7 +208,6 @@ class AuthConfigDecryptedCredentialArgs:
 class AuthConfigDecryptedCredentialAuthTokenArgsDict(TypedDict):
     token: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialAuthTokenArgs:
@@ -236,7 +233,6 @@ class AuthConfigDecryptedCredentialJwtArgsDict(TypedDict):
     jwt_header: NotRequired[pulumi.Input[_builtins.str]]
     jwt_payload: NotRequired[pulumi.Input[_builtins.str]]
     secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialJwtArgs:
@@ -275,7 +271,6 @@ class AuthConfigDecryptedCredentialOauth2AuthorizationCodeArgsDict(TypedDict):
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     scope: NotRequired[pulumi.Input[_builtins.str]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2AuthorizationCodeArgs:
@@ -325,7 +320,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsArgsDict(TypedDict):
             AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsArgs:
@@ -399,7 +393,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsArgs:
@@ -456,7 +449,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryArgsDi
             AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryArgs:
@@ -519,7 +511,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryKeyArg
             AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryKeyLiteralValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryKeyArgs:
@@ -555,7 +546,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryKeyLit
     TypedDict
 ):
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryKeyLiteralValueArgs:
@@ -576,7 +566,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueA
             AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueLiteralValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueArgs:
@@ -612,7 +601,6 @@ class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueL
     TypedDict
 ):
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntryValueLiteralValueArgs:
@@ -630,7 +618,6 @@ class AuthConfigDecryptedCredentialOidcTokenArgsDict(TypedDict):
     service_account_email: NotRequired[pulumi.Input[_builtins.str]]
     token: NotRequired[pulumi.Input[_builtins.str]]
     token_expire_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialOidcTokenArgs:
@@ -666,7 +653,6 @@ class AuthConfigDecryptedCredentialOidcTokenArgs:
 class AuthConfigDecryptedCredentialServiceAccountCredentialsArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialServiceAccountCredentialsArgs:
@@ -690,7 +676,6 @@ class AuthConfigDecryptedCredentialServiceAccountCredentialsArgs:
 class AuthConfigDecryptedCredentialUsernameAndPasswordArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthConfigDecryptedCredentialUsernameAndPasswordArgs:
@@ -717,7 +702,6 @@ class ClientCloudKmsConfigArgsDict(TypedDict):
     kms_ring: pulumi.Input[_builtins.str]
     key_version: NotRequired[pulumi.Input[_builtins.str]]
     kms_project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClientCloudKmsConfigArgs:

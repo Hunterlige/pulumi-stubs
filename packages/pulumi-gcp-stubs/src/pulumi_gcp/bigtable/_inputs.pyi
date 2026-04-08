@@ -43,7 +43,6 @@ __all__ = [
 
 class AppProfileDataBoostIsolationReadOnlyArgsDict(TypedDict):
     compute_billing_owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppProfileDataBoostIsolationReadOnlyArgs:
@@ -59,7 +58,6 @@ class AppProfileDataBoostIsolationReadOnlyArgs:
 class AppProfileSingleClusterRoutingArgsDict(TypedDict):
     cluster_id: pulumi.Input[_builtins.str]
     allow_transactional_writes: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppProfileSingleClusterRoutingArgs:
@@ -84,7 +82,6 @@ class AppProfileSingleClusterRoutingArgs:
 
 class AppProfileStandardIsolationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppProfileStandardIsolationArgs:
@@ -102,7 +99,6 @@ class AuthorizedViewSubsetViewArgsDict(TypedDict):
         ]
     ]
     row_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorizedViewSubsetViewArgs:
@@ -148,7 +144,6 @@ class AuthorizedViewSubsetViewFamilySubsetArgsDict(TypedDict):
     family_name: pulumi.Input[_builtins.str]
     qualifier_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     qualifiers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorizedViewSubsetViewFamilySubsetArgs:
@@ -188,7 +183,6 @@ class AuthorizedViewSubsetViewFamilySubsetArgs:
 class GCPolicyMaxAgeArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
     duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GCPolicyMaxAgeArgs:
@@ -212,7 +206,6 @@ class GCPolicyMaxAgeArgs:
 
 class GCPolicyMaxVersionArgsDict(TypedDict):
     number: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GCPolicyMaxVersionArgs:
@@ -234,7 +227,6 @@ class InstanceClusterArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
     storage_type: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceClusterArgs:
@@ -302,7 +294,6 @@ class InstanceClusterAutoscalingConfigArgsDict(TypedDict):
     max_nodes: pulumi.Input[_builtins.int]
     min_nodes: pulumi.Input[_builtins.int]
     storage_target: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceClusterAutoscalingConfigArgs:
@@ -339,7 +330,6 @@ class InstanceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamBindingConditionArgs:
@@ -370,7 +360,6 @@ class InstanceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamMemberConditionArgs:
@@ -399,7 +388,6 @@ class InstanceIamMemberConditionArgs:
 
 class SchemaBundleProtoSchemaArgsDict(TypedDict):
     proto_descriptors: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SchemaBundleProtoSchemaArgs:
@@ -415,7 +403,6 @@ class SchemaBundleProtoSchemaArgs:
 class TableAutomatedBackupPolicyArgsDict(TypedDict):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
     retention_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableAutomatedBackupPolicyArgs:
@@ -439,7 +426,6 @@ class TableAutomatedBackupPolicyArgs:
 class TableColumnFamilyArgsDict(TypedDict):
     family: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableColumnFamilyArgs:
@@ -464,7 +450,6 @@ class TableIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableIamBindingConditionArgs:
@@ -495,7 +480,6 @@ class TableIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableIamMemberConditionArgs:

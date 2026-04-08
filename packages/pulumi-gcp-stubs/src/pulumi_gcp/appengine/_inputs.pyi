@@ -100,7 +100,6 @@ __all__ = [
 
 class ApplicationFeatureSettingsArgsDict(TypedDict):
     split_health_checks: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ApplicationFeatureSettingsArgs:
@@ -118,7 +117,6 @@ class ApplicationIapArgsDict(TypedDict):
     oauth2_client_secret: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     oauth2_client_secret_sha256: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationIapArgs:
@@ -157,7 +155,6 @@ class ApplicationUrlDispatchRuleArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationUrlDispatchRuleArgs:
@@ -188,7 +185,6 @@ class ApplicationUrlDispatchRulesDispatchRuleArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     service: pulumi.Input[_builtins.str]
     domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationUrlDispatchRulesDispatchRuleArgs:
@@ -219,7 +215,6 @@ class DomainMappingResourceRecordArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     rrdata: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMappingResourceRecordArgs:
@@ -250,7 +245,6 @@ class DomainMappingSslSettingsArgsDict(TypedDict):
     ssl_management_type: pulumi.Input[_builtins.str]
     certificate_id: NotRequired[pulumi.Input[_builtins.str]]
     pending_managed_certificate_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMappingSslSettingsArgs:
@@ -284,7 +278,6 @@ class DomainMappingSslSettingsArgs:
 class EngineSplitTrafficSplitArgsDict(TypedDict):
     allocations: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     shard_by: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EngineSplitTrafficSplitArgs:
@@ -315,7 +308,6 @@ class FlexibleAppVersionApiConfigArgsDict(TypedDict):
     login: NotRequired[pulumi.Input[_builtins.str]]
     security_level: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionApiConfigArgs:
@@ -375,7 +367,6 @@ class FlexibleAppVersionAutomaticScalingArgsDict(TypedDict):
     request_utilization: NotRequired[
         pulumi.Input[FlexibleAppVersionAutomaticScalingRequestUtilizationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionAutomaticScalingArgs:
@@ -498,7 +489,6 @@ class FlexibleAppVersionAutomaticScalingArgs:
 class FlexibleAppVersionAutomaticScalingCpuUtilizationArgsDict(TypedDict):
     target_utilization: pulumi.Input[_builtins.float]
     aggregation_window_length: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionAutomaticScalingCpuUtilizationArgs:
@@ -526,7 +516,6 @@ class FlexibleAppVersionAutomaticScalingDiskUtilizationArgsDict(TypedDict):
     target_read_ops_per_second: NotRequired[pulumi.Input[_builtins.int]]
     target_write_bytes_per_second: NotRequired[pulumi.Input[_builtins.int]]
     target_write_ops_per_second: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionAutomaticScalingDiskUtilizationArgs:
@@ -574,7 +563,6 @@ class FlexibleAppVersionAutomaticScalingNetworkUtilizationArgsDict(TypedDict):
     target_received_packets_per_second: NotRequired[pulumi.Input[_builtins.int]]
     target_sent_bytes_per_second: NotRequired[pulumi.Input[_builtins.int]]
     target_sent_packets_per_second: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionAutomaticScalingNetworkUtilizationArgs:
@@ -624,7 +612,6 @@ class FlexibleAppVersionAutomaticScalingNetworkUtilizationArgs:
 class FlexibleAppVersionAutomaticScalingRequestUtilizationArgsDict(TypedDict):
     target_concurrent_requests: NotRequired[pulumi.Input[_builtins.float]]
     target_request_count_per_second: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionAutomaticScalingRequestUtilizationArgs:
@@ -660,7 +647,6 @@ class FlexibleAppVersionDeploymentArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[FlexibleAppVersionDeploymentFileArgsDict]]]
     ]
     zip: NotRequired[pulumi.Input[FlexibleAppVersionDeploymentZipArgsDict]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionDeploymentArgs:
@@ -724,7 +710,6 @@ class FlexibleAppVersionDeploymentArgs:
 class FlexibleAppVersionDeploymentCloudBuildOptionsArgsDict(TypedDict):
     app_yaml_path: pulumi.Input[_builtins.str]
     cloud_build_timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionDeploymentCloudBuildOptionsArgs:
@@ -747,7 +732,6 @@ class FlexibleAppVersionDeploymentCloudBuildOptionsArgs:
 
 class FlexibleAppVersionDeploymentContainerArgsDict(TypedDict):
     image: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionDeploymentContainerArgs:
@@ -762,7 +746,6 @@ class FlexibleAppVersionDeploymentFileArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     source_url: pulumi.Input[_builtins.str]
     sha1_sum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionDeploymentFileArgs:
@@ -792,7 +775,6 @@ class FlexibleAppVersionDeploymentFileArgs:
 class FlexibleAppVersionDeploymentZipArgsDict(TypedDict):
     source_url: pulumi.Input[_builtins.str]
     files_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionDeploymentZipArgs:
@@ -818,7 +800,6 @@ class FlexibleAppVersionEndpointsApiServiceArgsDict(TypedDict):
     config_id: NotRequired[pulumi.Input[_builtins.str]]
     disable_trace_sampling: NotRequired[pulumi.Input[_builtins.bool]]
     rollout_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionEndpointsApiServiceArgs:
@@ -853,7 +834,6 @@ class FlexibleAppVersionEndpointsApiServiceArgs:
 
 class FlexibleAppVersionEntrypointArgsDict(TypedDict):
     shell: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionEntrypointArgs:
@@ -867,7 +847,6 @@ class FlexibleAppVersionEntrypointArgs:
 class FlexibleAppVersionFlexibleRuntimeSettingsArgsDict(TypedDict):
     operating_system: NotRequired[pulumi.Input[_builtins.str]]
     runtime_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionFlexibleRuntimeSettingsArgs:
@@ -898,7 +877,6 @@ class FlexibleAppVersionHandlerArgsDict(TypedDict):
         pulumi.Input[FlexibleAppVersionHandlerStaticFilesArgsDict]
     ]
     url_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionHandlerArgs:
@@ -961,7 +939,6 @@ class FlexibleAppVersionHandlerArgs:
 
 class FlexibleAppVersionHandlerScriptArgsDict(TypedDict):
     script_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionHandlerScriptArgs:
@@ -980,7 +957,6 @@ class FlexibleAppVersionHandlerStaticFilesArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
     require_matching_file: NotRequired[pulumi.Input[_builtins.bool]]
     upload_path_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionHandlerStaticFilesArgs:
@@ -1045,7 +1021,6 @@ class FlexibleAppVersionLivenessCheckArgsDict(TypedDict):
     initial_delay: NotRequired[pulumi.Input[_builtins.str]]
     success_threshold: NotRequired[pulumi.Input[_builtins.float]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionLivenessCheckArgs:
@@ -1098,7 +1073,6 @@ class FlexibleAppVersionLivenessCheckArgs:
 
 class FlexibleAppVersionManualScalingArgsDict(TypedDict):
     instances: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionManualScalingArgs:
@@ -1116,7 +1090,6 @@ class FlexibleAppVersionNetworkArgsDict(TypedDict):
     instance_tag: NotRequired[pulumi.Input[_builtins.str]]
     session_affinity: NotRequired[pulumi.Input[_builtins.bool]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionNetworkArgs:
@@ -1175,7 +1148,6 @@ class FlexibleAppVersionReadinessCheckArgsDict(TypedDict):
     host: NotRequired[pulumi.Input[_builtins.str]]
     success_threshold: NotRequired[pulumi.Input[_builtins.float]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionReadinessCheckArgs:
@@ -1233,7 +1205,6 @@ class FlexibleAppVersionResourcesArgsDict(TypedDict):
     volumes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[FlexibleAppVersionResourcesVolumeArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionResourcesArgs:
@@ -1281,7 +1252,6 @@ class FlexibleAppVersionResourcesVolumeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     size_gb: pulumi.Input[_builtins.int]
     volume_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionResourcesVolumeArgs:
@@ -1310,7 +1280,6 @@ class FlexibleAppVersionResourcesVolumeArgs:
 
 class FlexibleAppVersionVpcAccessConnectorArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlexibleAppVersionVpcAccessConnectorArgs:
@@ -1323,7 +1292,6 @@ class FlexibleAppVersionVpcAccessConnectorArgs:
 
 class ServiceNetworkSettingsNetworkSettingsArgsDict(TypedDict):
     ingress_traffic_allowed: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkSettingsNetworkSettingsArgs:
@@ -1349,7 +1317,6 @@ class StandardAppVersionAutomaticScalingArgsDict(TypedDict):
             StandardAppVersionAutomaticScalingStandardSchedulerSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionAutomaticScalingArgs:
@@ -1414,7 +1381,6 @@ class StandardAppVersionAutomaticScalingStandardSchedulerSettingsArgsDict(TypedD
     min_instances: NotRequired[pulumi.Input[_builtins.int]]
     target_cpu_utilization: NotRequired[pulumi.Input[_builtins.float]]
     target_throughput_utilization: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionAutomaticScalingStandardSchedulerSettingsArgs:
@@ -1456,7 +1422,6 @@ class StandardAppVersionAutomaticScalingStandardSchedulerSettingsArgs:
 class StandardAppVersionBasicScalingArgsDict(TypedDict):
     max_instances: pulumi.Input[_builtins.int]
     idle_timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionBasicScalingArgs:
@@ -1482,7 +1447,6 @@ class StandardAppVersionDeploymentArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[StandardAppVersionDeploymentFileArgsDict]]]
     ]
     zip: NotRequired[pulumi.Input[StandardAppVersionDeploymentZipArgsDict]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionDeploymentArgs:
@@ -1520,7 +1484,6 @@ class StandardAppVersionDeploymentFileArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     source_url: pulumi.Input[_builtins.str]
     sha1_sum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionDeploymentFileArgs:
@@ -1550,7 +1513,6 @@ class StandardAppVersionDeploymentFileArgs:
 class StandardAppVersionDeploymentZipArgsDict(TypedDict):
     source_url: pulumi.Input[_builtins.str]
     files_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionDeploymentZipArgs:
@@ -1573,7 +1535,6 @@ class StandardAppVersionDeploymentZipArgs:
 
 class StandardAppVersionEntrypointArgsDict(TypedDict):
     shell: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionEntrypointArgs:
@@ -1594,7 +1555,6 @@ class StandardAppVersionHandlerArgsDict(TypedDict):
         pulumi.Input[StandardAppVersionHandlerStaticFilesArgsDict]
     ]
     url_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionHandlerArgs:
@@ -1657,7 +1617,6 @@ class StandardAppVersionHandlerArgs:
 
 class StandardAppVersionHandlerScriptArgsDict(TypedDict):
     script_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionHandlerScriptArgs:
@@ -1676,7 +1635,6 @@ class StandardAppVersionHandlerStaticFilesArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
     require_matching_file: NotRequired[pulumi.Input[_builtins.bool]]
     upload_path_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionHandlerStaticFilesArgs:
@@ -1736,7 +1694,6 @@ class StandardAppVersionHandlerStaticFilesArgs:
 class StandardAppVersionLibraryArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionLibraryArgs:
@@ -1759,7 +1716,6 @@ class StandardAppVersionLibraryArgs:
 
 class StandardAppVersionManualScalingArgsDict(TypedDict):
     instances: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionManualScalingArgs:
@@ -1773,7 +1729,6 @@ class StandardAppVersionManualScalingArgs:
 class StandardAppVersionVpcAccessConnectorArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     egress_setting: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StandardAppVersionVpcAccessConnectorArgs:

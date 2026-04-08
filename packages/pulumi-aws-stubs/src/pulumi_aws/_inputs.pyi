@@ -37,7 +37,6 @@ class ProviderAssumeRoleArgsDict(TypedDict):
     transitive_tag_keys: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ProviderAssumeRoleArgs:
@@ -124,7 +123,6 @@ class ProviderAssumeRoleWithWebIdentityArgsDict(TypedDict):
     session_name: NotRequired[pulumi.Input[_builtins.str]]
     web_identity_token: NotRequired[pulumi.Input[_builtins.str]]
     web_identity_token_file: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProviderAssumeRoleWithWebIdentityArgs:
@@ -183,7 +181,6 @@ class ProviderAssumeRoleWithWebIdentityArgs:
 
 class ProviderDefaultTagsArgsDict(TypedDict):
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ProviderDefaultTagsArgs:
@@ -512,7 +509,6 @@ class ProviderEndpointArgsDict(TypedDict):
     workspaces: NotRequired[pulumi.Input[_builtins.str]]
     workspacesweb: NotRequired[pulumi.Input[_builtins.str]]
     xray: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProviderEndpointArgs:
@@ -2400,7 +2396,6 @@ class ProviderEndpointArgs:
 class ProviderIgnoreTagsArgsDict(TypedDict):
     key_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ProviderIgnoreTagsArgs:
@@ -2432,7 +2427,6 @@ class ProviderIgnoreTagsArgs:
 class GetAvailabilityZoneFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAvailabilityZoneFilterArgs:
@@ -2453,7 +2447,6 @@ class GetAvailabilityZoneFilterArgs:
 class GetAvailabilityZonesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAvailabilityZonesFilterArgs:
@@ -2474,7 +2467,6 @@ class GetAvailabilityZonesFilterArgs:
 class GetRegionsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRegionsFilterArgs:

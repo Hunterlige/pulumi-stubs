@@ -33,4 +33,4 @@ jobs:
         run: cd packages/${{ inputs.package }} && uv build
 
       - name: Publish package
-        run: cd packages/${{ inputs.package }} && uv publish --repository testpypi
+        run: cd packages/${{ inputs.package }} && uv publish --index testpypi

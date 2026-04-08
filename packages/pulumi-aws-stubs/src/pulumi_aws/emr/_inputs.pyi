@@ -83,7 +83,6 @@ class BlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeArgsDic
 ):
     max_range: pulumi.Input[_builtins.int]
     min_range: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeArgs:
@@ -106,7 +105,6 @@ class BlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeArgs:
 
 class ClusterAutoTerminationPolicyArgsDict(TypedDict):
     idle_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterAutoTerminationPolicyArgs:
@@ -123,7 +121,6 @@ class ClusterBootstrapActionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterBootstrapActionArgs:
@@ -167,7 +164,6 @@ class ClusterCoreInstanceFleetArgsDict(TypedDict):
     provisioned_spot_capacity: NotRequired[pulumi.Input[_builtins.int]]
     target_on_demand_capacity: NotRequired[pulumi.Input[_builtins.int]]
     target_spot_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetArgs:
@@ -281,7 +277,6 @@ class ClusterCoreInstanceFleetInstanceTypeConfigArgsDict(TypedDict):
         ]
     ]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetInstanceTypeConfigArgs:
@@ -391,7 +386,6 @@ class ClusterCoreInstanceFleetInstanceTypeConfigArgs:
 class ClusterCoreInstanceFleetInstanceTypeConfigConfigurationArgsDict(TypedDict):
     classification: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetInstanceTypeConfigConfigurationArgs:
@@ -423,7 +417,6 @@ class ClusterCoreInstanceFleetInstanceTypeConfigEbsConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     iops: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetInstanceTypeConfigEbsConfigArgs:
@@ -475,7 +468,6 @@ class ClusterCoreInstanceFleetLaunchSpecificationsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetLaunchSpecificationsArgs:
@@ -558,7 +550,6 @@ class ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationArgsDict(
     TypedDict
 ):
     allocation_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationArgs:
@@ -576,7 +567,6 @@ class ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationArgsDict(Type
     timeout_action: pulumi.Input[_builtins.str]
     timeout_duration_minutes: pulumi.Input[_builtins.int]
     block_duration_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationArgs:
@@ -619,7 +609,6 @@ class ClusterCoreInstanceGroupArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     instance_count: NotRequired[pulumi.Input[_builtins.int]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceGroupArgs:
@@ -687,7 +676,6 @@ class ClusterCoreInstanceGroupEbsConfigArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCoreInstanceGroupEbsConfigArgs:
@@ -736,7 +724,6 @@ class ClusterEc2AttributesArgsDict(TypedDict):
     service_access_security_group: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterEc2AttributesArgs:
@@ -829,7 +816,6 @@ class ClusterKerberosAttributesArgsDict(TypedDict):
     ad_domain_join_password: NotRequired[pulumi.Input[_builtins.str]]
     ad_domain_join_user: NotRequired[pulumi.Input[_builtins.str]]
     cross_realm_trust_principal_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterKerberosAttributesArgs:
@@ -889,7 +875,6 @@ class ClusterMasterInstanceFleetArgsDict(TypedDict):
     provisioned_spot_capacity: NotRequired[pulumi.Input[_builtins.int]]
     target_on_demand_capacity: NotRequired[pulumi.Input[_builtins.int]]
     target_spot_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetArgs:
@@ -1005,7 +990,6 @@ class ClusterMasterInstanceFleetInstanceTypeConfigArgsDict(TypedDict):
         ]
     ]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetInstanceTypeConfigArgs:
@@ -1115,7 +1099,6 @@ class ClusterMasterInstanceFleetInstanceTypeConfigArgs:
 class ClusterMasterInstanceFleetInstanceTypeConfigConfigurationArgsDict(TypedDict):
     classification: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetInstanceTypeConfigConfigurationArgs:
@@ -1147,7 +1130,6 @@ class ClusterMasterInstanceFleetInstanceTypeConfigEbsConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     iops: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetInstanceTypeConfigEbsConfigArgs:
@@ -1199,7 +1181,6 @@ class ClusterMasterInstanceFleetLaunchSpecificationsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetLaunchSpecificationsArgs:
@@ -1282,7 +1263,6 @@ class ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationArgsDic
     TypedDict
 ):
     allocation_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationArgs:
@@ -1302,7 +1282,6 @@ class ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationArgsDict(
     timeout_action: pulumi.Input[_builtins.str]
     timeout_duration_minutes: pulumi.Input[_builtins.int]
     block_duration_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationArgs:
@@ -1346,7 +1325,6 @@ class ClusterMasterInstanceGroupArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     instance_count: NotRequired[pulumi.Input[_builtins.int]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceGroupArgs:
@@ -1412,7 +1390,6 @@ class ClusterMasterInstanceGroupEbsConfigArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterInstanceGroupEbsConfigArgs:
@@ -1454,7 +1431,6 @@ class ClusterMasterInstanceGroupEbsConfigArgs:
 class ClusterPlacementGroupConfigArgsDict(TypedDict):
     instance_role: pulumi.Input[_builtins.str]
     placement_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPlacementGroupConfigArgs:
@@ -1479,7 +1455,6 @@ class ClusterStepArgsDict(TypedDict):
     action_on_failure: pulumi.Input[_builtins.str]
     hadoop_jar_step: pulumi.Input[ClusterStepHadoopJarStepArgsDict]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterStepArgs:
@@ -1511,7 +1486,6 @@ class ClusterStepHadoopJarStepArgsDict(TypedDict):
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterStepHadoopJarStepArgs:
@@ -1569,7 +1543,6 @@ class InstanceFleetInstanceTypeConfigArgsDict(TypedDict):
         ]
     ]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceFleetInstanceTypeConfigArgs:
@@ -1657,7 +1630,6 @@ class InstanceFleetInstanceTypeConfigArgs:
 class InstanceFleetInstanceTypeConfigConfigurationArgsDict(TypedDict):
     classification: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceFleetInstanceTypeConfigConfigurationArgs:
@@ -1689,7 +1661,6 @@ class InstanceFleetInstanceTypeConfigEbsConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     iops: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceFleetInstanceTypeConfigEbsConfigArgs:
@@ -1739,7 +1710,6 @@ class InstanceFleetLaunchSpecificationsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceFleetLaunchSpecificationsArgs:
@@ -1812,7 +1782,6 @@ class InstanceFleetLaunchSpecificationsArgs:
 
 class InstanceFleetLaunchSpecificationsOnDemandSpecificationArgsDict(TypedDict):
     allocation_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceFleetLaunchSpecificationsOnDemandSpecificationArgs:
@@ -1830,7 +1799,6 @@ class InstanceFleetLaunchSpecificationsSpotSpecificationArgsDict(TypedDict):
     timeout_action: pulumi.Input[_builtins.str]
     timeout_duration_minutes: pulumi.Input[_builtins.int]
     block_duration_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceFleetLaunchSpecificationsSpotSpecificationArgs:
@@ -1868,7 +1836,6 @@ class InstanceGroupEbsConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     iops: NotRequired[pulumi.Input[_builtins.int]]
     volumes_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceGroupEbsConfigArgs:
@@ -1907,7 +1874,6 @@ class ManagedScalingPolicyComputeLimitArgsDict(TypedDict):
     unit_type: pulumi.Input[_builtins.str]
     maximum_core_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     maximum_ondemand_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ManagedScalingPolicyComputeLimitArgs:
@@ -1955,7 +1921,6 @@ class ManagedScalingPolicyComputeLimitArgs:
 class GetReleaseLabelsFiltersArgsDict(TypedDict):
     application: NotRequired[_builtins.str]
     prefix: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetReleaseLabelsFiltersArgs:

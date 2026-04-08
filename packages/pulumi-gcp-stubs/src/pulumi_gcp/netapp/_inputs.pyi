@@ -58,7 +58,6 @@ class BackupVaultBackupRetentionPolicyArgsDict(TypedDict):
     manual_backup_immutable: NotRequired[pulumi.Input[_builtins.bool]]
     monthly_backup_immutable: NotRequired[pulumi.Input[_builtins.bool]]
     weekly_backup_immutable: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BackupVaultBackupRetentionPolicyArgs:
@@ -109,7 +108,6 @@ class VolumeBackupConfigArgsDict(TypedDict):
     backup_policies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     backup_vault: NotRequired[pulumi.Input[_builtins.str]]
     scheduled_backup_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VolumeBackupConfigArgs:
@@ -150,7 +148,6 @@ class VolumeBlockDeviceArgsDict(TypedDict):
     identifier: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     size_gib: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeBlockDeviceArgs:
@@ -207,7 +204,6 @@ class VolumeCacheParametersArgsDict(TypedDict):
     peer_volume_name: NotRequired[pulumi.Input[_builtins.str]]
     peering_command_expiry_time: NotRequired[pulumi.Input[_builtins.str]]
     state_details: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeCacheParametersArgs:
@@ -300,7 +296,6 @@ class VolumeCacheParametersArgs:
 
 class VolumeCacheParametersCacheConfigArgsDict(TypedDict):
     cifs_change_notify_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VolumeCacheParametersCacheConfigArgs:
@@ -319,7 +314,6 @@ class VolumeCacheParametersCacheConfigArgs:
 
 class VolumeExportPolicyArgsDict(TypedDict):
     rules: pulumi.Input[Sequence[pulumi.Input[VolumeExportPolicyRuleArgsDict]]]
-    ...
 
 @pulumi.input_type
 class VolumeExportPolicyArgs:
@@ -352,7 +346,6 @@ class VolumeExportPolicyRuleArgsDict(TypedDict):
     nfsv3: NotRequired[pulumi.Input[_builtins.bool]]
     nfsv4: NotRequired[pulumi.Input[_builtins.bool]]
     squash_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeExportPolicyRuleArgs:
@@ -451,7 +444,6 @@ class VolumeHybridReplicationParametersArgsDict(TypedDict):
     peer_volume_name: NotRequired[pulumi.Input[_builtins.str]]
     replication: NotRequired[pulumi.Input[_builtins.str]]
     replication_schedule: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeHybridReplicationParametersArgs:
@@ -542,7 +534,6 @@ class VolumeHybridReplicationParametersArgs:
 
 class VolumeLargeCapacityConfigArgsDict(TypedDict):
     constituent_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeLargeCapacityConfigArgs:
@@ -561,7 +552,6 @@ class VolumeMountOptionArgsDict(TypedDict):
     instructions: NotRequired[pulumi.Input[_builtins.str]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeMountOptionArgs:
@@ -608,7 +598,6 @@ class VolumeReplicationDestinationVolumeParametersArgsDict(TypedDict):
         pulumi.Input[VolumeReplicationDestinationVolumeParametersTieringPolicyArgsDict]
     ]
     volume_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeReplicationDestinationVolumeParametersArgs:
@@ -661,7 +650,6 @@ class VolumeReplicationDestinationVolumeParametersArgs:
 class VolumeReplicationDestinationVolumeParametersTieringPolicyArgsDict(TypedDict):
     cooling_threshold_days: NotRequired[pulumi.Input[_builtins.int]]
     tier_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeReplicationDestinationVolumeParametersTieringPolicyArgs:
@@ -690,7 +678,6 @@ class VolumeReplicationHybridPeeringDetailArgsDict(TypedDict):
     peer_svm_name: NotRequired[pulumi.Input[_builtins.str]]
     peer_volume_name: NotRequired[pulumi.Input[_builtins.str]]
     subnet_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeReplicationHybridPeeringDetailArgs:
@@ -743,7 +730,6 @@ class VolumeReplicationHybridPeeringDetailArgs:
 
 class VolumeReplicationHybridReplicationUserCommandArgsDict(TypedDict):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class VolumeReplicationHybridReplicationUserCommandArgs:
@@ -771,7 +757,6 @@ class VolumeReplicationTransferStatArgsDict(TypedDict):
     total_transfer_duration: NotRequired[pulumi.Input[_builtins.str]]
     transfer_bytes: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeReplicationTransferStatArgs:
@@ -831,7 +816,6 @@ class VolumeReplicationTransferStatArgs:
 class VolumeRestoreParametersArgsDict(TypedDict):
     source_backup: NotRequired[pulumi.Input[_builtins.str]]
     source_snapshot: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeRestoreParametersArgs:
@@ -864,7 +848,6 @@ class VolumeSnapshotPolicyArgsDict(TypedDict):
     weekly_schedule: NotRequired[
         pulumi.Input[VolumeSnapshotPolicyWeeklyScheduleArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class VolumeSnapshotPolicyArgs:
@@ -931,7 +914,6 @@ class VolumeSnapshotPolicyDailyScheduleArgsDict(TypedDict):
     snapshots_to_keep: pulumi.Input[_builtins.int]
     hour: NotRequired[pulumi.Input[_builtins.int]]
     minute: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeSnapshotPolicyDailyScheduleArgs:
@@ -961,7 +943,6 @@ class VolumeSnapshotPolicyDailyScheduleArgs:
 class VolumeSnapshotPolicyHourlyScheduleArgsDict(TypedDict):
     snapshots_to_keep: pulumi.Input[_builtins.int]
     minute: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeSnapshotPolicyHourlyScheduleArgs:
@@ -987,7 +968,6 @@ class VolumeSnapshotPolicyMonthlyScheduleArgsDict(TypedDict):
     days_of_month: NotRequired[pulumi.Input[_builtins.str]]
     hour: NotRequired[pulumi.Input[_builtins.int]]
     minute: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeSnapshotPolicyMonthlyScheduleArgs:
@@ -1025,7 +1005,6 @@ class VolumeSnapshotPolicyWeeklyScheduleArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.str]]
     hour: NotRequired[pulumi.Input[_builtins.int]]
     minute: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VolumeSnapshotPolicyWeeklyScheduleArgs:
@@ -1062,7 +1041,6 @@ class VolumeTieringPolicyArgsDict(TypedDict):
     cooling_threshold_days: NotRequired[pulumi.Input[_builtins.int]]
     hot_tier_bypass_mode_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     tier_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VolumeTieringPolicyArgs:

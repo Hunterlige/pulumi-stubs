@@ -10,7 +10,6 @@ __all__ = ["ConnectorSubnetArgs", "ConnectorSubnetArgsDict"]
 class ConnectorSubnetArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorSubnetArgs:

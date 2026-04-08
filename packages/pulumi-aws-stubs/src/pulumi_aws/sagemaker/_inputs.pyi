@@ -589,7 +589,6 @@ class AppImageConfigCodeEditorAppImageConfigArgsDict(TypedDict):
     file_system_config: NotRequired[
         pulumi.Input[AppImageConfigCodeEditorAppImageConfigFileSystemConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppImageConfigCodeEditorAppImageConfigArgs:
@@ -642,7 +641,6 @@ class AppImageConfigCodeEditorAppImageConfigContainerConfigArgsDict(TypedDict):
     container_environment_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppImageConfigCodeEditorAppImageConfigContainerConfigArgs:
@@ -691,7 +689,6 @@ class AppImageConfigCodeEditorAppImageConfigFileSystemConfigArgsDict(TypedDict):
     default_gid: NotRequired[pulumi.Input[_builtins.int]]
     default_uid: NotRequired[pulumi.Input[_builtins.int]]
     mount_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppImageConfigCodeEditorAppImageConfigFileSystemConfigArgs:
@@ -725,7 +722,6 @@ class AppImageConfigJupyterLabImageConfigArgsDict(TypedDict):
     file_system_config: NotRequired[
         pulumi.Input[AppImageConfigJupyterLabImageConfigFileSystemConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppImageConfigJupyterLabImageConfigArgs:
@@ -778,7 +774,6 @@ class AppImageConfigJupyterLabImageConfigContainerConfigArgsDict(TypedDict):
     container_environment_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppImageConfigJupyterLabImageConfigContainerConfigArgs:
@@ -827,7 +822,6 @@ class AppImageConfigJupyterLabImageConfigFileSystemConfigArgsDict(TypedDict):
     default_gid: NotRequired[pulumi.Input[_builtins.int]]
     default_uid: NotRequired[pulumi.Input[_builtins.int]]
     mount_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppImageConfigJupyterLabImageConfigFileSystemConfigArgs:
@@ -861,7 +855,6 @@ class AppImageConfigKernelGatewayImageConfigArgsDict(TypedDict):
     file_system_config: NotRequired[
         pulumi.Input[AppImageConfigKernelGatewayImageConfigFileSystemConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppImageConfigKernelGatewayImageConfigArgs:
@@ -908,7 +901,6 @@ class AppImageConfigKernelGatewayImageConfigFileSystemConfigArgsDict(TypedDict):
     default_gid: NotRequired[pulumi.Input[_builtins.int]]
     default_uid: NotRequired[pulumi.Input[_builtins.int]]
     mount_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppImageConfigKernelGatewayImageConfigFileSystemConfigArgs:
@@ -938,7 +930,6 @@ class AppImageConfigKernelGatewayImageConfigFileSystemConfigArgs:
 class AppImageConfigKernelGatewayImageConfigKernelSpecArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppImageConfigKernelGatewayImageConfigKernelSpecArgs:
@@ -965,7 +956,6 @@ class AppResourceSpecArgsDict(TypedDict):
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppResourceSpecArgs:
@@ -1014,7 +1004,6 @@ class CodeRepositoryGitConfigArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
     branch: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CodeRepositoryGitConfigArgs:
@@ -1046,7 +1035,6 @@ class DataQualityJobDefinitionDataQualityAppSpecificationArgsDict(TypedDict):
     environment: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     post_analytics_processor_source_uri: NotRequired[pulumi.Input[_builtins.str]]
     record_preprocessor_source_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityAppSpecificationArgs:
@@ -1106,7 +1094,6 @@ class DataQualityJobDefinitionDataQualityBaselineConfigArgsDict(TypedDict):
             DataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityBaselineConfigArgs:
@@ -1165,7 +1152,6 @@ class DataQualityJobDefinitionDataQualityBaselineConfigConstraintsResourceArgsDi
     TypedDict
 ):
     s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityBaselineConfigConstraintsResourceArgs:
@@ -1182,7 +1168,6 @@ class DataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceArgsDic
     TypedDict
 ):
     s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceArgs:
@@ -1204,7 +1189,6 @@ class DataQualityJobDefinitionDataQualityJobInputArgsDict(TypedDict):
     endpoint_input: NotRequired[
         pulumi.Input[DataQualityJobDefinitionDataQualityJobInputEndpointInputArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputArgs:
@@ -1259,7 +1243,6 @@ class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputArgsDict(Typ
     local_path: NotRequired[pulumi.Input[_builtins.str]]
     s3_data_distribution_type: NotRequired[pulumi.Input[_builtins.str]]
     s3_input_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputArgs:
@@ -1324,7 +1307,6 @@ class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetForma
             DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJsonArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatArgs:
@@ -1383,7 +1365,6 @@ class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetForma
     TypedDict
 ):
     header: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsvArgs:
@@ -1400,7 +1381,6 @@ class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetForma
     TypedDict
 ):
     line: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJsonArgs:
@@ -1418,7 +1398,6 @@ class DataQualityJobDefinitionDataQualityJobInputEndpointInputArgsDict(TypedDict
     local_path: NotRequired[pulumi.Input[_builtins.str]]
     s3_data_distribution_type: NotRequired[pulumi.Input[_builtins.str]]
     s3_input_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobInputEndpointInputArgs:
@@ -1458,7 +1437,6 @@ class DataQualityJobDefinitionDataQualityJobOutputConfigArgsDict(TypedDict):
         DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsArgsDict
     ]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobOutputConfigArgs:
@@ -1496,7 +1474,6 @@ class DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsArgsDic
     s3_output: pulumi.Input[
         DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3OutputArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsArgs:
@@ -1528,7 +1505,6 @@ class DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Outpu
     s3_uri: pulumi.Input[_builtins.str]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
     s3_upload_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3OutputArgs:
@@ -1559,7 +1535,6 @@ class DataQualityJobDefinitionJobResourcesArgsDict(TypedDict):
     cluster_config: pulumi.Input[
         DataQualityJobDefinitionJobResourcesClusterConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionJobResourcesArgs:
@@ -1585,7 +1560,6 @@ class DataQualityJobDefinitionJobResourcesClusterConfigArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
     volume_size_in_gb: pulumi.Input[_builtins.int]
     volume_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionJobResourcesClusterConfigArgs:
@@ -1624,7 +1598,6 @@ class DataQualityJobDefinitionNetworkConfigArgsDict(TypedDict):
     vpc_config: NotRequired[
         pulumi.Input[DataQualityJobDefinitionNetworkConfigVpcConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionNetworkConfigArgs:
@@ -1671,7 +1644,6 @@ class DataQualityJobDefinitionNetworkConfigArgs:
 class DataQualityJobDefinitionNetworkConfigVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionNetworkConfigVpcConfigArgs:
@@ -1698,7 +1670,6 @@ class DataQualityJobDefinitionNetworkConfigVpcConfigArgs:
 
 class DataQualityJobDefinitionStoppingConditionArgsDict(TypedDict):
     max_runtime_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DataQualityJobDefinitionStoppingConditionArgs:
@@ -1715,7 +1686,6 @@ class DeviceDeviceArgsDict(TypedDict):
     device_name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     iot_thing_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeviceDeviceArgs:
@@ -1745,7 +1715,6 @@ class DeviceDeviceArgs:
 class DeviceFleetOutputConfigArgsDict(TypedDict):
     s3_output_location: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeviceFleetOutputConfigArgs:
@@ -1791,7 +1760,6 @@ class DomainDefaultSpaceSettingsArgsDict(TypedDict):
     space_storage_settings: NotRequired[
         pulumi.Input[DomainDefaultSpaceSettingsSpaceStorageSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsArgs:
@@ -1934,7 +1902,6 @@ class DomainDefaultSpaceSettingsCustomFileSystemConfigArgsDict(TypedDict):
             DomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsCustomFileSystemConfigArgs:
@@ -1971,7 +1938,6 @@ class DomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigArgsDic
 ):
     file_system_id: pulumi.Input[_builtins.str]
     file_system_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
@@ -1995,7 +1961,6 @@ class DomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
 class DomainDefaultSpaceSettingsCustomPosixUserConfigArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsCustomPosixUserConfigArgs:
@@ -2049,7 +2014,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsArgs:
@@ -2221,7 +2185,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementArgsD
             DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementArgs:
@@ -2260,7 +2223,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleS
     lifecycle_management: NotRequired[pulumi.Input[_builtins.str]]
     max_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     min_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -2299,7 +2261,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleS
 
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryArgs:
@@ -2314,7 +2275,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageArgsDict(TypedDi
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageArgs:
@@ -2349,7 +2309,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecArgsDict
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecArgs:
@@ -2401,7 +2360,6 @@ class DomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettingsArgsDict(TypedDi
     execution_role_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettingsArgs:
@@ -2452,7 +2410,6 @@ class DomainDefaultSpaceSettingsJupyterServerAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterServerAppSettingsArgs:
@@ -2535,7 +2492,6 @@ class DomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryArgsDict(
     TypedDict
 ):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryArgs:
@@ -2554,7 +2510,6 @@ class DomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecArgsD
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecArgs:
@@ -2617,7 +2572,6 @@ class DomainDefaultSpaceSettingsKernelGatewayAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsKernelGatewayAppSettingsArgs:
@@ -2700,7 +2654,6 @@ class DomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageArgsDict(Type
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageArgs:
@@ -2735,7 +2688,6 @@ class DomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecArgsD
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecArgs:
@@ -2786,7 +2738,6 @@ class DomainDefaultSpaceSettingsSpaceStorageSettingsArgsDict(TypedDict):
             DomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsSpaceStorageSettingsArgs:
@@ -2823,7 +2774,6 @@ class DomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArg
 ):
     default_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
     maximum_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgs:
@@ -2893,7 +2843,6 @@ class DomainDefaultUserSettingsArgsDict(TypedDict):
     tensor_board_app_settings: NotRequired[
         pulumi.Input[DomainDefaultUserSettingsTensorBoardAppSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsArgs:
@@ -3192,7 +3141,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsArgsDict(TypedDict):
             DomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsArgs:
@@ -3387,7 +3335,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsArgs:
 
 class DomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsArgs:
@@ -3405,7 +3352,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsArgsDict(
 ):
     execution_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsArgs:
@@ -3428,7 +3374,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsArgs:
 
 class DomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettingsArgsDict(TypedDict):
     amazon_bedrock_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettingsArgs:
@@ -3449,7 +3394,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgs
     secret_arn: pulumi.Input[_builtins.str]
     data_source_name: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgs:
@@ -3478,7 +3422,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgs
 
 class DomainDefaultUserSettingsCanvasAppSettingsKendraSettingsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsKendraSettingsArgs:
@@ -3496,7 +3439,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsArgsDict(
 ):
     cross_account_model_register_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsArgs:
@@ -3528,7 +3470,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArg
 ):
     amazon_forecast_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArgs:
@@ -3554,7 +3495,6 @@ class DomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArg
 class DomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsArgsDict(TypedDict):
     s3_artifact_path: NotRequired[pulumi.Input[_builtins.str]]
     s3_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsArgs:
@@ -3599,7 +3539,6 @@ class DomainDefaultUserSettingsCodeEditorAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCodeEditorAppSettingsArgs:
@@ -3719,7 +3658,6 @@ class DomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementArgsDi
             DomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementArgs:
@@ -3758,7 +3696,6 @@ class DomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSe
     lifecycle_management: NotRequired[pulumi.Input[_builtins.str]]
     max_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     min_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -3799,7 +3736,6 @@ class DomainDefaultUserSettingsCodeEditorAppSettingsCustomImageArgsDict(TypedDic
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCodeEditorAppSettingsCustomImageArgs:
@@ -3834,7 +3770,6 @@ class DomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecArgs:
@@ -3885,7 +3820,6 @@ class DomainDefaultUserSettingsCustomFileSystemConfigArgsDict(TypedDict):
             DomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCustomFileSystemConfigArgs:
@@ -3922,7 +3856,6 @@ class DomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgsDict
 ):
     file_system_id: pulumi.Input[_builtins.str]
     file_system_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
@@ -3946,7 +3879,6 @@ class DomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
 class DomainDefaultUserSettingsCustomPosixUserConfigArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsCustomPosixUserConfigArgs:
@@ -4000,7 +3932,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsArgs:
@@ -4172,7 +4103,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementArgsDi
             DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementArgs:
@@ -4211,7 +4141,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSe
     lifecycle_management: NotRequired[pulumi.Input[_builtins.str]]
     max_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     min_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -4250,7 +4179,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSe
 
 class DomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryArgs:
@@ -4265,7 +4193,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsCustomImageArgsDict(TypedDic
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsCustomImageArgs:
@@ -4300,7 +4227,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecArgs:
@@ -4352,7 +4278,6 @@ class DomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsArgsDict(TypedDic
     execution_role_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsArgs:
@@ -4403,7 +4328,6 @@ class DomainDefaultUserSettingsJupyterServerAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterServerAppSettingsArgs:
@@ -4486,7 +4410,6 @@ class DomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryArgsDict(
     TypedDict
 ):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryArgs:
@@ -4505,7 +4428,6 @@ class DomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecArgsDi
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecArgs:
@@ -4568,7 +4490,6 @@ class DomainDefaultUserSettingsKernelGatewayAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsKernelGatewayAppSettingsArgs:
@@ -4651,7 +4572,6 @@ class DomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageArgsDict(Typed
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageArgs:
@@ -4686,7 +4606,6 @@ class DomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecArgsDi
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecArgs:
@@ -4746,7 +4665,6 @@ class DomainDefaultUserSettingsRSessionAppSettingsArgsDict(TypedDict):
             DomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsRSessionAppSettingsArgs:
@@ -4817,7 +4735,6 @@ class DomainDefaultUserSettingsRSessionAppSettingsCustomImageArgsDict(TypedDict)
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsRSessionAppSettingsCustomImageArgs:
@@ -4852,7 +4769,6 @@ class DomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecArgs:
@@ -4900,7 +4816,6 @@ class DomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecArgs:
 class DomainDefaultUserSettingsRStudioServerProAppSettingsArgsDict(TypedDict):
     access_status: NotRequired[pulumi.Input[_builtins.str]]
     user_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsRStudioServerProAppSettingsArgs:
@@ -4925,7 +4840,6 @@ class DomainDefaultUserSettingsSharingSettingsArgsDict(TypedDict):
     notebook_output_option: NotRequired[pulumi.Input[_builtins.str]]
     s3_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     s3_output_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsSharingSettingsArgs:
@@ -4958,7 +4872,6 @@ class DomainDefaultUserSettingsSpaceStorageSettingsArgsDict(TypedDict):
             DomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsSpaceStorageSettingsArgs:
@@ -4995,7 +4908,6 @@ class DomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgs
 ):
     default_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
     maximum_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgs:
@@ -5022,7 +4934,6 @@ class DomainDefaultUserSettingsStudioWebPortalSettingsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     hidden_ml_tools: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsStudioWebPortalSettingsArgs:
@@ -5073,7 +4984,6 @@ class DomainDefaultUserSettingsTensorBoardAppSettingsArgsDict(TypedDict):
             DomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsTensorBoardAppSettingsArgs:
@@ -5113,7 +5023,6 @@ class DomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgsDict
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgs:
@@ -5170,7 +5079,6 @@ class DomainDomainSettingsArgsDict(TypedDict):
     trusted_identity_propagation_settings: NotRequired[
         pulumi.Input[DomainDomainSettingsTrustedIdentityPropagationSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDomainSettingsArgs:
@@ -5252,7 +5160,6 @@ class DomainDomainSettingsDockerSettingsArgsDict(TypedDict):
     vpc_only_trusted_accounts: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainDomainSettingsDockerSettingsArgs:
@@ -5288,7 +5195,6 @@ class DomainDomainSettingsRStudioServerProDomainSettingsArgsDict(TypedDict):
     ]
     r_studio_connect_url: NotRequired[pulumi.Input[_builtins.str]]
     r_studio_package_manager_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDomainSettingsRStudioServerProDomainSettingsArgs:
@@ -5348,7 +5254,6 @@ class DomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecArgsD
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecArgs:
@@ -5395,7 +5300,6 @@ class DomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecArgs:
 
 class DomainDomainSettingsTrustedIdentityPropagationSettingsArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainDomainSettingsTrustedIdentityPropagationSettingsArgs:
@@ -5408,7 +5312,6 @@ class DomainDomainSettingsTrustedIdentityPropagationSettingsArgs:
 
 class DomainRetentionPolicyArgsDict(TypedDict):
     home_efs_file_system: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainRetentionPolicyArgs:
@@ -5428,7 +5331,6 @@ class EndpointConfigurationAsyncInferenceConfigArgsDict(TypedDict):
     client_config: NotRequired[
         pulumi.Input[EndpointConfigurationAsyncInferenceConfigClientConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationAsyncInferenceConfigArgs:
@@ -5469,7 +5371,6 @@ class EndpointConfigurationAsyncInferenceConfigArgs:
 
 class EndpointConfigurationAsyncInferenceConfigClientConfigArgsDict(TypedDict):
     max_concurrent_invocations_per_instance: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationAsyncInferenceConfigClientConfigArgs:
@@ -5499,7 +5400,6 @@ class EndpointConfigurationAsyncInferenceConfigOutputConfigArgsDict(TypedDict):
         ]
     ]
     s3_failure_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationAsyncInferenceConfigOutputConfigArgs:
@@ -5557,7 +5457,6 @@ class EndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigArg
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     success_topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigArgs:
@@ -5605,7 +5504,6 @@ class EndpointConfigurationDataCaptureConfigArgsDict(TypedDict):
     ]
     enable_capture: NotRequired[pulumi.Input[_builtins.bool]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationDataCaptureConfigArgs:
@@ -5683,7 +5581,6 @@ class EndpointConfigurationDataCaptureConfigArgs:
 class EndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderArgsDict(TypedDict):
     csv_content_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     json_content_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderArgs:
@@ -5718,7 +5615,6 @@ class EndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderArgs:
 
 class EndpointConfigurationDataCaptureConfigCaptureOptionArgsDict(TypedDict):
     capture_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationDataCaptureConfigCaptureOptionArgs:
@@ -5763,7 +5659,6 @@ class EndpointConfigurationProductionVariantArgsDict(TypedDict):
     ]
     variant_name: NotRequired[pulumi.Input[_builtins.str]]
     volume_size_in_gb: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationProductionVariantArgs:
@@ -5943,7 +5838,6 @@ class EndpointConfigurationProductionVariantArgs:
 class EndpointConfigurationProductionVariantCoreDumpConfigArgsDict(TypedDict):
     destination_s3_uri: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationProductionVariantCoreDumpConfigArgs:
@@ -5968,7 +5862,6 @@ class EndpointConfigurationProductionVariantManagedInstanceScalingArgsDict(Typed
     max_instance_count: NotRequired[pulumi.Input[_builtins.int]]
     min_instance_count: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationProductionVariantManagedInstanceScalingArgs:
@@ -5997,7 +5890,6 @@ class EndpointConfigurationProductionVariantManagedInstanceScalingArgs:
 
 class EndpointConfigurationProductionVariantRoutingConfigArgsDict(TypedDict):
     routing_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationProductionVariantRoutingConfigArgs:
@@ -6014,7 +5906,6 @@ class EndpointConfigurationProductionVariantServerlessConfigArgsDict(TypedDict):
     max_concurrency: pulumi.Input[_builtins.int]
     memory_size_in_mb: pulumi.Input[_builtins.int]
     provisioned_concurrency: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationProductionVariantServerlessConfigArgs:
@@ -6077,7 +5968,6 @@ class EndpointConfigurationShadowProductionVariantArgsDict(TypedDict):
     ]
     variant_name: NotRequired[pulumi.Input[_builtins.str]]
     volume_size_in_gb: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationShadowProductionVariantArgs:
@@ -6265,7 +6155,6 @@ class EndpointConfigurationShadowProductionVariantArgs:
 class EndpointConfigurationShadowProductionVariantCoreDumpConfigArgsDict(TypedDict):
     destination_s3_uri: pulumi.Input[_builtins.str]
     kms_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationShadowProductionVariantCoreDumpConfigArgs:
@@ -6292,7 +6181,6 @@ class EndpointConfigurationShadowProductionVariantManagedInstanceScalingArgsDict
     max_instance_count: NotRequired[pulumi.Input[_builtins.int]]
     min_instance_count: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationShadowProductionVariantManagedInstanceScalingArgs:
@@ -6321,7 +6209,6 @@ class EndpointConfigurationShadowProductionVariantManagedInstanceScalingArgs:
 
 class EndpointConfigurationShadowProductionVariantRoutingConfigArgsDict(TypedDict):
     routing_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationShadowProductionVariantRoutingConfigArgs:
@@ -6338,7 +6225,6 @@ class EndpointConfigurationShadowProductionVariantServerlessConfigArgsDict(Typed
     max_concurrency: pulumi.Input[_builtins.int]
     memory_size_in_mb: pulumi.Input[_builtins.int]
     provisioned_concurrency: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointConfigurationShadowProductionVariantServerlessConfigArgs:
@@ -6375,7 +6261,6 @@ class EndpointDeploymentConfigArgsDict(TypedDict):
     rolling_update_policy: NotRequired[
         pulumi.Input[EndpointDeploymentConfigRollingUpdatePolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigArgs:
@@ -6439,7 +6324,6 @@ class EndpointDeploymentConfigAutoRollbackConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigAutoRollbackConfigurationArgs:
@@ -6483,7 +6367,6 @@ class EndpointDeploymentConfigAutoRollbackConfigurationArgs:
 
 class EndpointDeploymentConfigAutoRollbackConfigurationAlarmArgsDict(TypedDict):
     alarm_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigAutoRollbackConfigurationAlarmArgs:
@@ -6500,7 +6383,6 @@ class EndpointDeploymentConfigBlueGreenUpdatePolicyArgsDict(TypedDict):
     ]
     maximum_execution_timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     termination_wait_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigBlueGreenUpdatePolicyArgs:
@@ -6561,7 +6443,6 @@ class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationAr
             EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationArgs:
@@ -6633,7 +6514,6 @@ class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCa
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeArgs:
@@ -6659,7 +6539,6 @@ class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLi
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeArgs:
@@ -6691,7 +6570,6 @@ class EndpointDeploymentConfigRollingUpdatePolicyArgsDict(TypedDict):
             EndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigRollingUpdatePolicyArgs:
@@ -6761,7 +6639,6 @@ class EndpointDeploymentConfigRollingUpdatePolicyArgs:
 class EndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeArgs:
@@ -6787,7 +6664,6 @@ class EndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeArgsDic
 ):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeArgs:
@@ -6815,7 +6691,6 @@ class FeatureGroupFeatureDefinitionArgsDict(TypedDict):
     collection_type: NotRequired[pulumi.Input[_builtins.str]]
     feature_name: NotRequired[pulumi.Input[_builtins.str]]
     feature_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupFeatureDefinitionArgs:
@@ -6861,7 +6736,6 @@ class FeatureGroupFeatureDefinitionCollectionConfigArgsDict(TypedDict):
     vector_config: NotRequired[
         pulumi.Input[FeatureGroupFeatureDefinitionCollectionConfigVectorConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureGroupFeatureDefinitionCollectionConfigArgs:
@@ -6889,7 +6763,6 @@ class FeatureGroupFeatureDefinitionCollectionConfigArgs:
 
 class FeatureGroupFeatureDefinitionCollectionConfigVectorConfigArgsDict(TypedDict):
     dimension: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupFeatureDefinitionCollectionConfigVectorConfigArgs:
@@ -6911,7 +6784,6 @@ class FeatureGroupOfflineStoreConfigArgsDict(TypedDict):
     ]
     disable_glue_table_creation: NotRequired[pulumi.Input[_builtins.bool]]
     table_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOfflineStoreConfigArgs:
@@ -6967,7 +6839,6 @@ class FeatureGroupOfflineStoreConfigDataCatalogConfigArgsDict(TypedDict):
     catalog: NotRequired[pulumi.Input[_builtins.str]]
     database: NotRequired[pulumi.Input[_builtins.str]]
     table_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOfflineStoreConfigDataCatalogConfigArgs:
@@ -6998,7 +6869,6 @@ class FeatureGroupOfflineStoreConfigS3StorageConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     resolved_output_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOfflineStoreConfigS3StorageConfigArgs:
@@ -7034,7 +6904,6 @@ class FeatureGroupOnlineStoreConfigArgsDict(TypedDict):
     ttl_duration: NotRequired[
         pulumi.Input[FeatureGroupOnlineStoreConfigTtlDurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOnlineStoreConfigArgs:
@@ -7083,7 +6952,6 @@ class FeatureGroupOnlineStoreConfigArgs:
 
 class FeatureGroupOnlineStoreConfigSecurityConfigArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOnlineStoreConfigSecurityConfigArgs:
@@ -7099,7 +6967,6 @@ class FeatureGroupOnlineStoreConfigSecurityConfigArgs:
 class FeatureGroupOnlineStoreConfigTtlDurationArgsDict(TypedDict):
     unit: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupOnlineStoreConfigTtlDurationArgs:
@@ -7124,7 +6991,6 @@ class FeatureGroupThroughputConfigArgsDict(TypedDict):
     provisioned_read_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     provisioned_write_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     throughput_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureGroupThroughputConfigArgs:
@@ -7165,7 +7031,6 @@ class FlowDefinitionHumanLoopActivationConfigArgsDict(TypedDict):
             FlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopActivationConfigArgs:
@@ -7201,7 +7066,6 @@ class FlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig
     TypedDict
 ):
     human_loop_activation_conditions: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigArgs:
@@ -7226,7 +7090,6 @@ class FlowDefinitionHumanLoopConfigArgsDict(TypedDict):
     task_availability_lifetime_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     task_keywords: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     task_time_limit_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopConfigArgs:
@@ -7320,7 +7183,6 @@ class FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceArgsDict(TypedDict):
             FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceArgs:
@@ -7358,7 +7220,6 @@ class FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdArgsDict(
     cents: NotRequired[pulumi.Input[_builtins.int]]
     dollars: NotRequired[pulumi.Input[_builtins.int]]
     tenth_fractions_of_a_cent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdArgs:
@@ -7389,7 +7250,6 @@ class FlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdArgs:
 
 class FlowDefinitionHumanLoopRequestSourceArgsDict(TypedDict):
     aws_managed_human_loop_request_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionHumanLoopRequestSourceArgs:
@@ -7407,7 +7267,6 @@ class FlowDefinitionHumanLoopRequestSourceArgs:
 class FlowDefinitionOutputConfigArgsDict(TypedDict):
     s3_output_path: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDefinitionOutputConfigArgs:
@@ -7430,7 +7289,6 @@ class FlowDefinitionOutputConfigArgs:
 
 class HubS3StorageConfigArgsDict(TypedDict):
     s3_output_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HubS3StorageConfigArgs:
@@ -7447,7 +7305,6 @@ class HumanTaskUIUiTemplateArgsDict(TypedDict):
     content: NotRequired[pulumi.Input[_builtins.str]]
     content_sha256: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HumanTaskUIUiTemplateArgs:
@@ -7491,7 +7348,6 @@ class LabelingJobHumanTaskConfigArgsDict(TypedDict):
     ]
     task_availability_lifetime_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     task_keywords: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LabelingJobHumanTaskConfigArgs:
@@ -7618,7 +7474,6 @@ class LabelingJobHumanTaskConfigArgs:
 
 class LabelingJobHumanTaskConfigAnnotationConsolidationConfigArgsDict(TypedDict):
     annotation_consolidation_lambda_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LabelingJobHumanTaskConfigAnnotationConsolidationConfigArgs:
@@ -7639,7 +7494,6 @@ class LabelingJobHumanTaskConfigPublicWorkforceTaskPriceArgsDict(TypedDict):
             LabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobHumanTaskConfigPublicWorkforceTaskPriceArgs:
@@ -7673,7 +7527,6 @@ class LabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdArgsDict(Type
     cents: NotRequired[pulumi.Input[_builtins.int]]
     dollars: NotRequired[pulumi.Input[_builtins.int]]
     tenth_fractions_of_a_cent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdArgs:
@@ -7705,7 +7558,6 @@ class LabelingJobHumanTaskConfigPublicWorkforceTaskPriceAmountInUsdArgs:
 class LabelingJobHumanTaskConfigUiConfigArgsDict(TypedDict):
     human_task_ui_arn: NotRequired[pulumi.Input[_builtins.str]]
     ui_template_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LabelingJobHumanTaskConfigUiConfigArgs:
@@ -7731,7 +7583,6 @@ class LabelingJobInputConfigArgsDict(TypedDict):
     data_attributes: NotRequired[
         pulumi.Input[LabelingJobInputConfigDataAttributesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobInputConfigArgs:
@@ -7764,7 +7615,6 @@ class LabelingJobInputConfigDataAttributesArgsDict(TypedDict):
     content_classifiers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobInputConfigDataAttributesArgs:
@@ -7792,7 +7642,6 @@ class LabelingJobInputConfigDataSourceArgsDict(TypedDict):
     sns_data_source: NotRequired[
         pulumi.Input[LabelingJobInputConfigDataSourceSnsDataSourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobInputConfigDataSourceArgs:
@@ -7831,7 +7680,6 @@ class LabelingJobInputConfigDataSourceArgs:
 
 class LabelingJobInputConfigDataSourceS3DataSourceArgsDict(TypedDict):
     manifest_s3_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LabelingJobInputConfigDataSourceS3DataSourceArgs:
@@ -7844,7 +7692,6 @@ class LabelingJobInputConfigDataSourceS3DataSourceArgs:
 
 class LabelingJobInputConfigDataSourceSnsDataSourceArgsDict(TypedDict):
     sns_topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LabelingJobInputConfigDataSourceSnsDataSourceArgs:
@@ -7861,7 +7708,6 @@ class LabelingJobLabelCounterArgsDict(TypedDict):
     machine_labeled: pulumi.Input[_builtins.int]
     total_labeled: pulumi.Input[_builtins.int]
     unlabeled: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LabelingJobLabelCounterArgs:
@@ -7908,7 +7754,6 @@ class LabelingJobLabelingJobAlgorithmsConfigArgsDict(TypedDict):
             LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobLabelingJobAlgorithmsConfigArgs:
@@ -7969,7 +7814,6 @@ class LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigArgsDict(
             LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigArgs:
@@ -8012,7 +7856,6 @@ class LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigAr
 ):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LabelingJobLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfigArgs:
@@ -8041,7 +7884,6 @@ class LabelingJobOutputConfigArgsDict(TypedDict):
     s3_output_path: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     sns_topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LabelingJobOutputConfigArgs:
@@ -8071,7 +7913,6 @@ class LabelingJobOutputConfigArgs:
 class LabelingJobStoppingConditionArgsDict(TypedDict):
     max_human_labeled_object_count: pulumi.Input[_builtins.int]
     max_percentage_of_input_dataset_labeled: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LabelingJobStoppingConditionArgs:
@@ -8100,7 +7941,6 @@ class MlflowAppTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MlflowAppTimeoutsArgs:
@@ -8129,7 +7969,6 @@ class MlflowAppTimeoutsArgs:
 
 class ModelCardExportJobExportArtifactArgsDict(TypedDict):
     s3_export_artifacts: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelCardExportJobExportArtifactArgs:
@@ -8144,7 +7983,6 @@ class ModelCardExportJobExportArtifactArgs:
 
 class ModelCardExportJobOutputConfigArgsDict(TypedDict):
     s3_output_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelCardExportJobOutputConfigArgs:
@@ -8157,7 +7995,6 @@ class ModelCardExportJobOutputConfigArgs:
 
 class ModelCardExportJobTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ModelCardExportJobTimeoutsArgs:
@@ -8172,7 +8009,6 @@ class ModelCardExportJobTimeoutsArgs:
 
 class ModelCardSecurityConfigArgsDict(TypedDict):
     kms_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelCardSecurityConfigArgs:
@@ -8185,7 +8021,6 @@ class ModelCardSecurityConfigArgs:
 
 class ModelCardTimeoutsArgsDict(TypedDict):
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ModelCardTimeoutsArgs:
@@ -8216,7 +8051,6 @@ class ModelContainerArgsDict(TypedDict):
     multi_model_config: NotRequired[
         pulumi.Input[ModelContainerMultiModelConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerArgs:
@@ -8337,7 +8171,6 @@ class ModelContainerAdditionalModelDataSourceArgsDict(TypedDict):
             pulumi.Input[ModelContainerAdditionalModelDataSourceS3DataSourceArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerAdditionalModelDataSourceArgs:
@@ -8382,7 +8215,6 @@ class ModelContainerAdditionalModelDataSourceS3DataSourceArgsDict(TypedDict):
             ModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerAdditionalModelDataSourceS3DataSourceArgs:
@@ -8436,7 +8268,6 @@ class ModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigArgsDi
     TypedDict
 ):
     accept_eula: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigArgs:
@@ -8452,7 +8283,6 @@ class ModelContainerImageConfigArgsDict(TypedDict):
     repository_auth_config: NotRequired[
         pulumi.Input[ModelContainerImageConfigRepositoryAuthConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerImageConfigArgs:
@@ -8484,7 +8314,6 @@ class ModelContainerImageConfigArgs:
 
 class ModelContainerImageConfigRepositoryAuthConfigArgsDict(TypedDict):
     repository_credentials_provider_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelContainerImageConfigRepositoryAuthConfigArgs:
@@ -8503,7 +8332,6 @@ class ModelContainerModelDataSourceArgsDict(TypedDict):
     s3_data_sources: pulumi.Input[
         Sequence[pulumi.Input[ModelContainerModelDataSourceS3DataSourceArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerModelDataSourceArgs:
@@ -8536,7 +8364,6 @@ class ModelContainerModelDataSourceS3DataSourceArgsDict(TypedDict):
     model_access_config: NotRequired[
         pulumi.Input[ModelContainerModelDataSourceS3DataSourceModelAccessConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ModelContainerModelDataSourceS3DataSourceArgs:
@@ -8582,7 +8409,6 @@ class ModelContainerModelDataSourceS3DataSourceArgs:
 
 class ModelContainerModelDataSourceS3DataSourceModelAccessConfigArgsDict(TypedDict):
     accept_eula: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ModelContainerModelDataSourceS3DataSourceModelAccessConfigArgs:
@@ -8595,7 +8421,6 @@ class ModelContainerModelDataSourceS3DataSourceModelAccessConfigArgs:
 
 class ModelContainerMultiModelConfigArgsDict(TypedDict):
     model_cache_setting: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ModelContainerMultiModelConfigArgs:
@@ -8610,7 +8435,6 @@ class ModelContainerMultiModelConfigArgs:
 
 class ModelInferenceExecutionConfigArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelInferenceExecutionConfigArgs:
@@ -8643,7 +8467,6 @@ class ModelPrimaryContainerArgsDict(TypedDict):
     multi_model_config: NotRequired[
         pulumi.Input[ModelPrimaryContainerMultiModelConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerArgs:
@@ -8774,7 +8597,6 @@ class ModelPrimaryContainerAdditionalModelDataSourceArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerAdditionalModelDataSourceArgs:
@@ -8825,7 +8647,6 @@ class ModelPrimaryContainerAdditionalModelDataSourceS3DataSourceArgsDict(TypedDi
             ModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerAdditionalModelDataSourceS3DataSourceArgs:
@@ -8879,7 +8700,6 @@ class ModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfi
     TypedDict
 ):
     accept_eula: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfigArgs:
@@ -8895,7 +8715,6 @@ class ModelPrimaryContainerImageConfigArgsDict(TypedDict):
     repository_auth_config: NotRequired[
         pulumi.Input[ModelPrimaryContainerImageConfigRepositoryAuthConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerImageConfigArgs:
@@ -8929,7 +8748,6 @@ class ModelPrimaryContainerImageConfigArgs:
 
 class ModelPrimaryContainerImageConfigRepositoryAuthConfigArgsDict(TypedDict):
     repository_credentials_provider_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerImageConfigRepositoryAuthConfigArgs:
@@ -8948,7 +8766,6 @@ class ModelPrimaryContainerModelDataSourceArgsDict(TypedDict):
     s3_data_sources: pulumi.Input[
         Sequence[pulumi.Input[ModelPrimaryContainerModelDataSourceS3DataSourceArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerModelDataSourceArgs:
@@ -8983,7 +8800,6 @@ class ModelPrimaryContainerModelDataSourceS3DataSourceArgsDict(TypedDict):
             ModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerModelDataSourceS3DataSourceArgs:
@@ -9037,7 +8853,6 @@ class ModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigArgsDict(
     TypedDict
 ):
     accept_eula: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigArgs:
@@ -9050,7 +8865,6 @@ class ModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigArgs:
 
 class ModelPrimaryContainerMultiModelConfigArgsDict(TypedDict):
     model_cache_setting: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ModelPrimaryContainerMultiModelConfigArgs:
@@ -9066,7 +8880,6 @@ class ModelPrimaryContainerMultiModelConfigArgs:
 class ModelVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ModelVpcConfigArgs:
@@ -9102,7 +8915,6 @@ class MonitoringScheduleMonitoringScheduleConfigArgsDict(TypedDict):
     schedule_config: NotRequired[
         pulumi.Input[MonitoringScheduleMonitoringScheduleConfigScheduleConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigArgs:
@@ -9203,7 +9015,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionArgs:
@@ -9393,7 +9204,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineA
             MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineStatisticsResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineArgs:
@@ -9458,7 +9268,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineC
     TypedDict
 ):
     s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineConstraintsResourceArgs:
@@ -9475,7 +9284,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineS
     TypedDict
 ):
     s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionBaselineStatisticsResourceArgs:
@@ -9500,7 +9308,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     ]
     post_analytics_processor_source_uri: NotRequired[pulumi.Input[_builtins.str]]
     record_preprocessor_source_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringAppSpecificationArgs:
@@ -9574,7 +9381,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
             MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsEndpointInputArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsArgs:
@@ -9646,7 +9452,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     s3_data_distribution_type: NotRequired[pulumi.Input[_builtins.str]]
     s3_input_mode: NotRequired[pulumi.Input[_builtins.str]]
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsBatchTransformInputArgs:
@@ -9759,7 +9564,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
             MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsBatchTransformInputDatasetFormatJsonArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsBatchTransformInputDatasetFormatArgs:
@@ -9818,7 +9622,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     TypedDict
 ):
     header: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsBatchTransformInputDatasetFormatCsvArgs:
@@ -9835,7 +9638,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     TypedDict
 ):
     line: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsBatchTransformInputDatasetFormatJsonArgs:
@@ -9862,7 +9664,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     s3_data_distribution_type: NotRequired[pulumi.Input[_builtins.str]]
     s3_input_mode: NotRequired[pulumi.Input[_builtins.str]]
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsEndpointInputArgs:
@@ -9952,7 +9753,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
         MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputsArgsDict
     ]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigArgs:
@@ -9990,7 +9790,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     s3_output: pulumi.Input[
         MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputsS3OutputArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputsArgs:
@@ -10022,7 +9821,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     local_path: pulumi.Input[_builtins.str]
     s3_uri: pulumi.Input[_builtins.str]
     s3_upload_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputsS3OutputArgs:
@@ -10055,7 +9853,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     cluster_config: pulumi.Input[
         MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringResourcesClusterConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringResourcesArgs:
@@ -10088,7 +9885,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitorin
     instance_type: pulumi.Input[_builtins.str]
     volume_size_in_gb: pulumi.Input[_builtins.int]
     volume_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionMonitoringResourcesClusterConfigArgs:
@@ -10131,7 +9927,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionNetworkCo
             MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionNetworkConfigVpcConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionNetworkConfigArgs:
@@ -10188,7 +9983,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionNetworkCo
 ):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionNetworkConfigVpcConfigArgs:
@@ -10217,7 +10011,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionStoppingC
     TypedDict
 ):
     max_runtime_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionStoppingConditionArgs:
@@ -10232,7 +10025,6 @@ class MonitoringScheduleMonitoringScheduleConfigMonitoringJobDefinitionStoppingC
 
 class MonitoringScheduleMonitoringScheduleConfigScheduleConfigArgsDict(TypedDict):
     schedule_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MonitoringScheduleMonitoringScheduleConfigScheduleConfigArgs:
@@ -10247,7 +10039,6 @@ class MonitoringScheduleMonitoringScheduleConfigScheduleConfigArgs:
 
 class NotebookInstanceInstanceMetadataServiceConfigurationArgsDict(TypedDict):
     minimum_instance_metadata_service_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookInstanceInstanceMetadataServiceConfigurationArgs:
@@ -10270,7 +10061,6 @@ class NotebookInstanceInstanceMetadataServiceConfigurationArgs:
 
 class PipelineParallelismConfigurationArgsDict(TypedDict):
     max_parallel_execution_steps: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PipelineParallelismConfigurationArgs:
@@ -10287,7 +10077,6 @@ class PipelinePipelineDefinitionS3LocationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     object_key: pulumi.Input[_builtins.str]
     version_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelinePipelineDefinitionS3LocationArgs:
@@ -10327,7 +10116,6 @@ class ProjectServiceCatalogProvisioningDetailsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ProjectServiceCatalogProvisioningDetailsArgs:
@@ -10394,7 +10182,6 @@ class ProjectServiceCatalogProvisioningDetailsArgs:
 class ProjectServiceCatalogProvisioningDetailsProvisioningParameterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectServiceCatalogProvisioningDetailsProvisioningParameterArgs:
@@ -10417,7 +10204,6 @@ class ProjectServiceCatalogProvisioningDetailsProvisioningParameterArgs:
 
 class SpaceOwnershipSettingsArgsDict(TypedDict):
     owner_user_profile_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpaceOwnershipSettingsArgs:
@@ -10450,7 +10236,6 @@ class SpaceSpaceSettingsArgsDict(TypedDict):
     space_storage_settings: NotRequired[
         pulumi.Input[SpaceSpaceSettingsSpaceStorageSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsArgs:
@@ -10553,7 +10338,6 @@ class SpaceSpaceSettingsCodeEditorAppSettingsArgsDict(TypedDict):
             SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCodeEditorAppSettingsArgs:
@@ -10606,7 +10390,6 @@ class SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementArgsDict(Type
             SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementArgs:
@@ -10642,7 +10425,6 @@ class SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsA
     TypedDict
 ):
     idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -10663,7 +10445,6 @@ class SpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecArgsDict(TypedDi
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpecArgs:
@@ -10712,7 +10493,6 @@ class SpaceSpaceSettingsCustomFileSystemArgsDict(TypedDict):
     efs_file_system: pulumi.Input[
         SpaceSpaceSettingsCustomFileSystemEfsFileSystemArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCustomFileSystemArgs:
@@ -10735,7 +10515,6 @@ class SpaceSpaceSettingsCustomFileSystemArgs:
 
 class SpaceSpaceSettingsCustomFileSystemEfsFileSystemArgsDict(TypedDict):
     file_system_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsCustomFileSystemEfsFileSystemArgs:
@@ -10764,7 +10543,6 @@ class SpaceSpaceSettingsJupyterLabAppSettingsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterLabAppSettingsArgs:
@@ -10850,7 +10628,6 @@ class SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementArgsDict(Type
             SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementArgs:
@@ -10886,7 +10663,6 @@ class SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsA
     TypedDict
 ):
     idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -10903,7 +10679,6 @@ class SpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsA
 
 class SpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryArgs:
@@ -10920,7 +10695,6 @@ class SpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecArgsDict(TypedDi
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecArgs:
@@ -10981,7 +10755,6 @@ class SpaceSpaceSettingsJupyterServerAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterServerAppSettingsArgs:
@@ -11056,7 +10829,6 @@ class SpaceSpaceSettingsJupyterServerAppSettingsArgs:
 
 class SpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryArgs:
@@ -11073,7 +10845,6 @@ class SpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecArgsDict(Type
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecArgs:
@@ -11134,7 +10905,6 @@ class SpaceSpaceSettingsKernelGatewayAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsKernelGatewayAppSettingsArgs:
@@ -11209,7 +10979,6 @@ class SpaceSpaceSettingsKernelGatewayAppSettingsCustomImageArgsDict(TypedDict):
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsKernelGatewayAppSettingsCustomImageArgs:
@@ -11242,7 +11011,6 @@ class SpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecArgsDict(Type
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecArgs:
@@ -11291,7 +11059,6 @@ class SpaceSpaceSettingsSpaceStorageSettingsArgsDict(TypedDict):
     ebs_storage_settings: pulumi.Input[
         SpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsSpaceStorageSettingsArgs:
@@ -11317,7 +11084,6 @@ class SpaceSpaceSettingsSpaceStorageSettingsArgs:
 
 class SpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsArgsDict(TypedDict):
     ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsArgs:
@@ -11332,7 +11098,6 @@ class SpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettingsArgs:
 
 class SpaceSpaceSharingSettingsArgsDict(TypedDict):
     sharing_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpaceSpaceSharingSettingsArgs:
@@ -11392,7 +11157,6 @@ class UserProfileUserSettingsArgsDict(TypedDict):
     tensor_board_app_settings: NotRequired[
         pulumi.Input[UserProfileUserSettingsTensorBoardAppSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsArgs:
@@ -11676,7 +11440,6 @@ class UserProfileUserSettingsCanvasAppSettingsArgsDict(TypedDict):
     workspace_settings: NotRequired[
         pulumi.Input[UserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsArgs:
@@ -11863,7 +11626,6 @@ class UserProfileUserSettingsCanvasAppSettingsArgs:
 
 class UserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsArgs:
@@ -11879,7 +11641,6 @@ class UserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsArgs:
 class UserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsArgsDict(TypedDict):
     execution_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsArgs:
@@ -11902,7 +11663,6 @@ class UserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsArgs:
 
 class UserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsArgsDict(TypedDict):
     amazon_bedrock_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsArgs:
@@ -11923,7 +11683,6 @@ class UserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgsDi
     secret_arn: pulumi.Input[_builtins.str]
     data_source_name: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgs:
@@ -11952,7 +11711,6 @@ class UserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingArgs:
 
 class UserProfileUserSettingsCanvasAppSettingsKendraSettingsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsKendraSettingsArgs:
@@ -11968,7 +11726,6 @@ class UserProfileUserSettingsCanvasAppSettingsKendraSettingsArgs:
 class UserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsArgsDict(TypedDict):
     cross_account_model_register_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsArgs:
@@ -12000,7 +11757,6 @@ class UserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArgsD
 ):
     amazon_forecast_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArgs:
@@ -12026,7 +11782,6 @@ class UserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsArgs:
 class UserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsArgsDict(TypedDict):
     s3_artifact_path: NotRequired[pulumi.Input[_builtins.str]]
     s3_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsArgs:
@@ -12071,7 +11826,6 @@ class UserProfileUserSettingsCodeEditorAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCodeEditorAppSettingsArgs:
@@ -12191,7 +11945,6 @@ class UserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementArgsDict
             UserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementArgs:
@@ -12230,7 +11983,6 @@ class UserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSett
     lifecycle_management: NotRequired[pulumi.Input[_builtins.str]]
     max_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     min_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -12271,7 +12023,6 @@ class UserProfileUserSettingsCodeEditorAppSettingsCustomImageArgsDict(TypedDict)
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCodeEditorAppSettingsCustomImageArgs:
@@ -12306,7 +12057,6 @@ class UserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecArgs:
@@ -12361,7 +12111,6 @@ class UserProfileUserSettingsCustomFileSystemConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCustomFileSystemConfigArgs:
@@ -12410,7 +12159,6 @@ class UserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgsDict(
 ):
     file_system_id: pulumi.Input[_builtins.str]
     file_system_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
@@ -12434,7 +12182,6 @@ class UserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigArgs:
 class UserProfileUserSettingsCustomPosixUserConfigArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsCustomPosixUserConfigArgs:
@@ -12488,7 +12235,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsArgs:
@@ -12660,7 +12406,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementArgsDict
             UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementArgs:
@@ -12699,7 +12444,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSett
     lifecycle_management: NotRequired[pulumi.Input[_builtins.str]]
     max_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     min_idle_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsArgs:
@@ -12738,7 +12482,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSett
 
 class UserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryArgs:
@@ -12753,7 +12496,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsCustomImageArgsDict(TypedDict)
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsCustomImageArgs:
@@ -12788,7 +12530,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecArgs:
@@ -12840,7 +12581,6 @@ class UserProfileUserSettingsJupyterLabAppSettingsEmrSettingsArgsDict(TypedDict)
     execution_role_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterLabAppSettingsEmrSettingsArgs:
@@ -12891,7 +12631,6 @@ class UserProfileUserSettingsJupyterServerAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterServerAppSettingsArgs:
@@ -12972,7 +12711,6 @@ class UserProfileUserSettingsJupyterServerAppSettingsArgs:
 
 class UserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryArgsDict(TypedDict):
     repository_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryArgs:
@@ -12991,7 +12729,6 @@ class UserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecArgsDict
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecArgs:
@@ -13054,7 +12791,6 @@ class UserProfileUserSettingsKernelGatewayAppSettingsArgsDict(TypedDict):
     lifecycle_config_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsKernelGatewayAppSettingsArgs:
@@ -13137,7 +12873,6 @@ class UserProfileUserSettingsKernelGatewayAppSettingsCustomImageArgsDict(TypedDi
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsKernelGatewayAppSettingsCustomImageArgs:
@@ -13172,7 +12907,6 @@ class UserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecArgsDict
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecArgs:
@@ -13232,7 +12966,6 @@ class UserProfileUserSettingsRSessionAppSettingsArgsDict(TypedDict):
             UserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsRSessionAppSettingsArgs:
@@ -13299,7 +13032,6 @@ class UserProfileUserSettingsRSessionAppSettingsCustomImageArgsDict(TypedDict):
     app_image_config_name: pulumi.Input[_builtins.str]
     image_name: pulumi.Input[_builtins.str]
     image_version_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsRSessionAppSettingsCustomImageArgs:
@@ -13332,7 +13064,6 @@ class UserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecArgsDict(Type
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecArgs:
@@ -13380,7 +13111,6 @@ class UserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecArgs:
 class UserProfileUserSettingsRStudioServerProAppSettingsArgsDict(TypedDict):
     access_status: NotRequired[pulumi.Input[_builtins.str]]
     user_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsRStudioServerProAppSettingsArgs:
@@ -13405,7 +13135,6 @@ class UserProfileUserSettingsSharingSettingsArgsDict(TypedDict):
     notebook_output_option: NotRequired[pulumi.Input[_builtins.str]]
     s3_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     s3_output_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsSharingSettingsArgs:
@@ -13438,7 +13167,6 @@ class UserProfileUserSettingsSpaceStorageSettingsArgsDict(TypedDict):
             UserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsSpaceStorageSettingsArgs:
@@ -13475,7 +13203,6 @@ class UserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgsDi
 ):
     default_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
     maximum_ebs_volume_size_in_gb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsArgs:
@@ -13502,7 +13229,6 @@ class UserProfileUserSettingsStudioWebPortalSettingsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     hidden_ml_tools: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsStudioWebPortalSettingsArgs:
@@ -13553,7 +13279,6 @@ class UserProfileUserSettingsTensorBoardAppSettingsArgsDict(TypedDict):
             UserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsTensorBoardAppSettingsArgs:
@@ -13593,7 +13318,6 @@ class UserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgsDict(
     sagemaker_image_arn: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_alias: NotRequired[pulumi.Input[_builtins.str]]
     sagemaker_image_version_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgs:
@@ -13641,7 +13365,6 @@ class UserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecArgs:
 class WorkforceCognitoConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
     user_pool: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkforceCognitoConfigArgs:
@@ -13675,7 +13398,6 @@ class WorkforceOidcConfigArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforceOidcConfigArgs:
@@ -13752,7 +13474,6 @@ class WorkforceOidcConfigArgs:
 
 class WorkforceSourceIpConfigArgsDict(TypedDict):
     cidrs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkforceSourceIpConfigArgs:
@@ -13770,7 +13491,6 @@ class WorkforceWorkforceVpcConfigArgsDict(TypedDict):
     subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforceWorkforceVpcConfigArgs:
@@ -13820,7 +13540,6 @@ class WorkteamMemberDefinitionArgsDict(TypedDict):
     oidc_member_definition: NotRequired[
         pulumi.Input[WorkteamMemberDefinitionOidcMemberDefinitionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkteamMemberDefinitionArgs:
@@ -13863,7 +13582,6 @@ class WorkteamMemberDefinitionCognitoMemberDefinitionArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
     user_group: pulumi.Input[_builtins.str]
     user_pool: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkteamMemberDefinitionCognitoMemberDefinitionArgs:
@@ -13892,7 +13610,6 @@ class WorkteamMemberDefinitionCognitoMemberDefinitionArgs:
 
 class WorkteamMemberDefinitionOidcMemberDefinitionArgsDict(TypedDict):
     groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkteamMemberDefinitionOidcMemberDefinitionArgs:
@@ -13907,7 +13624,6 @@ class WorkteamMemberDefinitionOidcMemberDefinitionArgs:
 
 class WorkteamNotificationConfigurationArgsDict(TypedDict):
     notification_topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkteamNotificationConfigurationArgs:
@@ -13924,7 +13640,6 @@ class WorkteamWorkerAccessConfigurationArgsDict(TypedDict):
     s3_presign: NotRequired[
         pulumi.Input[WorkteamWorkerAccessConfigurationS3PresignArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkteamWorkerAccessConfigurationArgs:
@@ -13952,7 +13667,6 @@ class WorkteamWorkerAccessConfigurationS3PresignArgsDict(TypedDict):
             WorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkteamWorkerAccessConfigurationS3PresignArgs:
@@ -13985,7 +13699,6 @@ class WorkteamWorkerAccessConfigurationS3PresignArgs:
 class WorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsArgsDict(TypedDict):
     source_ip: NotRequired[pulumi.Input[_builtins.str]]
     vpc_source_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsArgs:

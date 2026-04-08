@@ -147,7 +147,6 @@ class AclConfigIdpConfigArgsDict(TypedDict):
         pulumi.Input[AclConfigIdpConfigExternalIdpConfigArgsDict]
     ]
     idp_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AclConfigIdpConfigArgs:
@@ -176,7 +175,6 @@ class AclConfigIdpConfigArgs:
 
 class AclConfigIdpConfigExternalIdpConfigArgsDict(TypedDict):
     workforce_pool_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AclConfigIdpConfigExternalIdpConfigArgs:
@@ -198,7 +196,6 @@ class AssistantCustomerPolicyArgsDict(TypedDict):
     model_armor_config: NotRequired[
         pulumi.Input[AssistantCustomerPolicyModelArmorConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AssistantCustomerPolicyArgs:
@@ -244,7 +241,6 @@ class AssistantCustomerPolicyBannedPhraseArgsDict(TypedDict):
     phrase: pulumi.Input[_builtins.str]
     ignore_diacritics: NotRequired[pulumi.Input[_builtins.bool]]
     match_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssistantCustomerPolicyBannedPhraseArgs:
@@ -275,7 +271,6 @@ class AssistantCustomerPolicyModelArmorConfigArgsDict(TypedDict):
     response_template: pulumi.Input[_builtins.str]
     user_prompt_template: pulumi.Input[_builtins.str]
     failure_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssistantCustomerPolicyModelArmorConfigArgs:
@@ -307,7 +302,6 @@ class AssistantGenerationConfigArgsDict(TypedDict):
     system_instruction: NotRequired[
         pulumi.Input[AssistantGenerationConfigSystemInstructionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AssistantGenerationConfigArgs:
@@ -337,7 +331,6 @@ class AssistantGenerationConfigArgs:
 
 class AssistantGenerationConfigSystemInstructionArgsDict(TypedDict):
     additional_system_instruction: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssistantGenerationConfigSystemInstructionArgs:
@@ -362,7 +355,6 @@ class ChatEngineChatEngineConfigArgsDict(TypedDict):
     ]
     allow_cross_region: NotRequired[pulumi.Input[_builtins.bool]]
     dialogflow_agent_to_link: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChatEngineChatEngineConfigArgs:
@@ -405,7 +397,6 @@ class ChatEngineChatEngineConfigAgentCreationConfigArgsDict(TypedDict):
     time_zone: pulumi.Input[_builtins.str]
     business: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChatEngineChatEngineConfigAgentCreationConfigArgs:
@@ -440,7 +431,6 @@ class ChatEngineChatEngineConfigAgentCreationConfigArgs:
 
 class ChatEngineChatEngineMetadataArgsDict(TypedDict):
     dialogflow_agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChatEngineChatEngineMetadataArgs:
@@ -455,7 +445,6 @@ class ChatEngineChatEngineMetadataArgs:
 
 class ChatEngineCommonConfigArgsDict(TypedDict):
     company_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChatEngineCommonConfigArgs:
@@ -470,7 +459,6 @@ class ChatEngineCommonConfigArgs:
 
 class CmekConfigSingleRegionKeyArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CmekConfigSingleRegionKeyArgs:
@@ -488,7 +476,6 @@ class ControlBoostActionArgsDict(TypedDict):
     interpolation_boost_spec: NotRequired[
         pulumi.Input[ControlBoostActionInterpolationBoostSpecArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ControlBoostActionArgs:
@@ -535,7 +522,6 @@ class ControlBoostActionInterpolationBoostSpecArgsDict(TypedDict):
     ]
     field_name: NotRequired[pulumi.Input[_builtins.str]]
     interpolation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlBoostActionInterpolationBoostSpecArgs:
@@ -582,7 +568,6 @@ class ControlBoostActionInterpolationBoostSpecArgs:
 class ControlBoostActionInterpolationBoostSpecControlPointArgsDict(TypedDict):
     attribute_value: NotRequired[pulumi.Input[_builtins.str]]
     boost_amount: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ControlBoostActionInterpolationBoostSpecControlPointArgs:
@@ -611,7 +596,6 @@ class ControlConditionArgsDict(TypedDict):
     query_terms: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ControlConditionQueryTermArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ControlConditionArgs:
@@ -663,7 +647,6 @@ class ControlConditionArgs:
 class ControlConditionActiveTimeRangeArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlConditionActiveTimeRangeArgs:
@@ -687,7 +670,6 @@ class ControlConditionActiveTimeRangeArgs:
 class ControlConditionQueryTermArgsDict(TypedDict):
     full_match: NotRequired[pulumi.Input[_builtins.bool]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlConditionQueryTermArgs:
@@ -711,7 +693,6 @@ class ControlConditionQueryTermArgs:
 class ControlFilterActionArgsDict(TypedDict):
     data_store: pulumi.Input[_builtins.str]
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ControlFilterActionArgs:
@@ -735,7 +716,6 @@ class ControlFilterActionArgs:
 class ControlPromoteActionArgsDict(TypedDict):
     data_store: pulumi.Input[_builtins.str]
     search_link_promotion: pulumi.Input[ControlPromoteActionSearchLinkPromotionArgsDict]
-    ...
 
 @pulumi.input_type
 class ControlPromoteActionArgs:
@@ -769,7 +749,6 @@ class ControlPromoteActionSearchLinkPromotionArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     image_uri: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlPromoteActionSearchLinkPromotionArgs:
@@ -816,7 +795,6 @@ class ControlPromoteActionSearchLinkPromotionArgs:
 
 class ControlRedirectActionArgsDict(TypedDict):
     redirect_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ControlRedirectActionArgs:
@@ -829,7 +807,6 @@ class ControlRedirectActionArgs:
 
 class ControlSynonymsActionArgsDict(TypedDict):
     synonyms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ControlSynonymsActionArgs:
@@ -852,7 +829,6 @@ class DataConnectorActionConfigArgsDict(TypedDict):
     action_params: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     create_bap_connection: NotRequired[pulumi.Input[_builtins.bool]]
     is_action_configured: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataConnectorActionConfigArgs:
@@ -890,7 +866,6 @@ class DataConnectorBapConfigArgsDict(TypedDict):
     supported_connector_modes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DataConnectorBapConfigArgs:
@@ -930,7 +905,6 @@ class DataConnectorDestinationConfigArgsDict(TypedDict):
         ]
     ]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataConnectorDestinationConfigArgs:
@@ -970,7 +944,6 @@ class DataConnectorDestinationConfigArgs:
 
 class DataConnectorDestinationConfigDestinationArgsDict(TypedDict):
     host: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataConnectorDestinationConfigDestinationArgs:
@@ -990,7 +963,6 @@ class DataConnectorEntityArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     params: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataConnectorEntityArgs:
@@ -1032,7 +1004,6 @@ class DataConnectorEntityArgs:
 class DataConnectorErrorArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataConnectorErrorArgs:
@@ -1056,7 +1027,6 @@ class DataConnectorErrorArgs:
 class DataStoreAdvancedSiteSearchConfigArgsDict(TypedDict):
     disable_automatic_refresh: NotRequired[pulumi.Input[_builtins.bool]]
     disable_initial_index: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataStoreAdvancedSiteSearchConfigArgs:
@@ -1096,7 +1066,6 @@ class DataStoreDocumentProcessingConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigArgs:
@@ -1184,7 +1153,6 @@ class DataStoreDocumentProcessingConfigChunkingConfigArgsDict(TypedDict):
             DataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigChunkingConfigArgs:
@@ -1221,7 +1189,6 @@ class DataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigAr
 ):
     chunk_size: NotRequired[pulumi.Input[_builtins.int]]
     include_ancestor_headings: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigArgs:
@@ -1260,7 +1227,6 @@ class DataStoreDocumentProcessingConfigDefaultParsingConfigArgsDict(TypedDict):
             DataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigDefaultParsingConfigArgs:
@@ -1361,7 +1327,6 @@ class DataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigAr
     structured_content_types: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigArgs:
@@ -1438,7 +1403,6 @@ class DataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigArgsD
     TypedDict
 ):
     use_native_text: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigArgs:
@@ -1468,7 +1432,6 @@ class DataStoreDocumentProcessingConfigParsingConfigOverrideArgsDict(TypedDict):
             DataStoreDocumentProcessingConfigParsingConfigOverrideOcrParsingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigParsingConfigOverrideArgs:
@@ -1575,7 +1538,6 @@ class DataStoreDocumentProcessingConfigParsingConfigOverrideLayoutParsingConfigA
     structured_content_types: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigParsingConfigOverrideLayoutParsingConfigArgs:
@@ -1652,7 +1614,6 @@ class DataStoreDocumentProcessingConfigParsingConfigOverrideOcrParsingConfigArgs
     TypedDict
 ):
     use_native_text: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataStoreDocumentProcessingConfigParsingConfigOverrideOcrParsingConfigArgs:
@@ -1669,7 +1630,6 @@ class LicenseConfigEndDateArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LicenseConfigEndDateArgs:
@@ -1700,7 +1660,6 @@ class LicenseConfigStartDateArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LicenseConfigStartDateArgs:
@@ -1729,7 +1688,6 @@ class LicenseConfigStartDateArgs:
 
 class RecommendationEngineCommonConfigArgsDict(TypedDict):
     company_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineCommonConfigArgs:
@@ -1756,7 +1714,6 @@ class RecommendationEngineMediaRecommendationEngineConfigArgsDict(TypedDict):
     ]
     training_state: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineMediaRecommendationEngineConfigArgs:
@@ -1842,7 +1799,6 @@ class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigArg
             RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigArgs:
@@ -1901,7 +1857,6 @@ class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMos
     TypedDict
 ):
     time_window_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigArgs:
@@ -1918,7 +1873,6 @@ class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRec
     TypedDict
 ):
     context_event_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigArgs:
@@ -1936,7 +1890,6 @@ class RecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveCo
 ):
     target_field: NotRequired[pulumi.Input[_builtins.str]]
     target_field_value_float: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class RecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigArgs:
@@ -1961,7 +1914,6 @@ class RecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveCo
 
 class SearchEngineCommonConfigArgsDict(TypedDict):
     company_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SearchEngineCommonConfigArgs:
@@ -1983,7 +1935,6 @@ class SearchEngineKnowledgeGraphConfigArgsDict(TypedDict):
     feature_config: NotRequired[
         pulumi.Input[SearchEngineKnowledgeGraphConfigFeatureConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SearchEngineKnowledgeGraphConfigArgs:
@@ -2044,7 +1995,6 @@ class SearchEngineKnowledgeGraphConfigFeatureConfigArgsDict(TypedDict):
     disable_private_kg_enrichment: NotRequired[pulumi.Input[_builtins.bool]]
     disable_private_kg_query_ui_chips: NotRequired[pulumi.Input[_builtins.bool]]
     disable_private_kg_query_understanding: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SearchEngineKnowledgeGraphConfigFeatureConfigArgs:
@@ -2099,7 +2049,6 @@ class SearchEngineSearchEngineConfigArgsDict(TypedDict):
     required_subscription_tier: NotRequired[pulumi.Input[_builtins.str]]
     search_add_ons: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     search_tier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SearchEngineSearchEngineConfigArgs:
@@ -2138,7 +2087,6 @@ class TargetSiteFailureReasonArgsDict(TypedDict):
     quota_failure: NotRequired[
         pulumi.Input[TargetSiteFailureReasonQuotaFailureArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TargetSiteFailureReasonArgs:
@@ -2161,7 +2109,6 @@ class TargetSiteFailureReasonArgs:
 
 class TargetSiteFailureReasonQuotaFailureArgsDict(TypedDict):
     total_required_quota: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TargetSiteFailureReasonQuotaFailureArgs:
@@ -2177,7 +2124,6 @@ class TargetSiteFailureReasonQuotaFailureArgs:
 class TargetSiteSiteVerificationInfoArgsDict(TypedDict):
     site_verification_state: NotRequired[pulumi.Input[_builtins.str]]
     verify_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetSiteSiteVerificationInfoArgs:
@@ -2206,7 +2152,6 @@ class WidgetConfigAccessSettingsArgsDict(TypedDict):
     enable_web_app: NotRequired[pulumi.Input[_builtins.bool]]
     language_code: NotRequired[pulumi.Input[_builtins.str]]
     workforce_identity_pool_provider: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigAccessSettingsArgs:
@@ -2261,7 +2206,6 @@ class WidgetConfigHomepageSettingArgsDict(TypedDict):
             Sequence[pulumi.Input[WidgetConfigHomepageSettingShortcutArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WidgetConfigHomepageSettingArgs:
@@ -2295,7 +2239,6 @@ class WidgetConfigHomepageSettingShortcutArgsDict(TypedDict):
     destination_uri: NotRequired[pulumi.Input[_builtins.str]]
     icon: NotRequired[pulumi.Input[WidgetConfigHomepageSettingShortcutIconArgsDict]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigHomepageSettingShortcutArgs:
@@ -2328,7 +2271,6 @@ class WidgetConfigHomepageSettingShortcutArgs:
 
 class WidgetConfigHomepageSettingShortcutIconArgsDict(TypedDict):
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigHomepageSettingShortcutIconArgs:
@@ -2343,7 +2285,6 @@ class WidgetConfigHomepageSettingShortcutIconArgs:
 
 class WidgetConfigUiBrandingArgsDict(TypedDict):
     logo: NotRequired[pulumi.Input[WidgetConfigUiBrandingLogoArgsDict]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiBrandingArgs:
@@ -2358,7 +2299,6 @@ class WidgetConfigUiBrandingArgs:
 
 class WidgetConfigUiBrandingLogoArgsDict(TypedDict):
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiBrandingLogoArgs:
@@ -2391,7 +2331,6 @@ class WidgetConfigUiSettingsArgsDict(TypedDict):
     ]
     interaction_type: NotRequired[pulumi.Input[_builtins.str]]
     result_description_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiSettingsArgs:
@@ -2538,7 +2477,6 @@ class WidgetConfigUiSettingsDataStoreUiConfigArgsDict(TypedDict):
         ]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiSettingsDataStoreUiConfigArgs:
@@ -2620,7 +2558,6 @@ class WidgetConfigUiSettingsDataStoreUiConfigArgs:
 class WidgetConfigUiSettingsDataStoreUiConfigFacetFieldArgsDict(TypedDict):
     field: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiSettingsDataStoreUiConfigFacetFieldArgs:
@@ -2648,7 +2585,6 @@ class WidgetConfigUiSettingsDataStoreUiConfigFieldsUiComponentsMapArgsDict(Typed
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     display_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiSettingsDataStoreUiConfigFieldsUiComponentsMapArgs:
@@ -2698,7 +2634,6 @@ class WidgetConfigUiSettingsGenerativeAnswerConfigArgsDict(TypedDict):
     model_prompt_preamble: NotRequired[pulumi.Input[_builtins.str]]
     model_version: NotRequired[pulumi.Input[_builtins.str]]
     result_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WidgetConfigUiSettingsGenerativeAnswerConfigArgs:

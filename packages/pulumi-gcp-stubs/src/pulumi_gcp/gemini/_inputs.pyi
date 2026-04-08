@@ -26,7 +26,6 @@ class CodeToolsSettingEnabledToolArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[CodeToolsSettingEnabledToolConfigArgsDict]]]
     ]
     uri_override: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CodeToolsSettingEnabledToolArgs:
@@ -79,7 +78,6 @@ class CodeToolsSettingEnabledToolArgs:
 class CodeToolsSettingEnabledToolConfigArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CodeToolsSettingEnabledToolConfigArgs:
@@ -104,7 +102,6 @@ class RepositoryGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryGroupIamBindingConditionArgs:
@@ -135,7 +132,6 @@ class RepositoryGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryGroupIamMemberConditionArgs:
@@ -165,7 +161,6 @@ class RepositoryGroupIamMemberConditionArgs:
 class RepositoryGroupRepositoryArgsDict(TypedDict):
     branch_pattern: pulumi.Input[_builtins.str]
     resource: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryGroupRepositoryArgs:

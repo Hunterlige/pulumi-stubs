@@ -52,7 +52,6 @@ class DataAccessScopeAllowedDataAccessLabelArgsDict(TypedDict):
         pulumi.Input[DataAccessScopeAllowedDataAccessLabelIngestionLabelArgsDict]
     ]
     log_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataAccessScopeAllowedDataAccessLabelArgs:
@@ -105,7 +104,6 @@ class DataAccessScopeAllowedDataAccessLabelArgs:
 class DataAccessScopeAllowedDataAccessLabelIngestionLabelArgsDict(TypedDict):
     ingestion_label_key: pulumi.Input[_builtins.str]
     ingestion_label_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataAccessScopeAllowedDataAccessLabelIngestionLabelArgs:
@@ -134,7 +132,6 @@ class DataAccessScopeDeniedDataAccessLabelArgsDict(TypedDict):
         pulumi.Input[DataAccessScopeDeniedDataAccessLabelIngestionLabelArgsDict]
     ]
     log_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataAccessScopeDeniedDataAccessLabelArgs:
@@ -187,7 +184,6 @@ class DataAccessScopeDeniedDataAccessLabelArgs:
 class DataAccessScopeDeniedDataAccessLabelIngestionLabelArgsDict(TypedDict):
     ingestion_label_key: pulumi.Input[_builtins.str]
     ingestion_label_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataAccessScopeDeniedDataAccessLabelIngestionLabelArgs:
@@ -215,7 +211,6 @@ class DataTableColumnInfoArgsDict(TypedDict):
     key_column: NotRequired[pulumi.Input[_builtins.bool]]
     mapped_column_path: NotRequired[pulumi.Input[_builtins.str]]
     repeated_values: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataTableColumnInfoArgs:
@@ -262,7 +257,6 @@ class DataTableColumnInfoArgs:
 
 class DataTableScopeInfoArgsDict(TypedDict):
     data_access_scopes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DataTableScopeInfoArgs:
@@ -283,7 +277,6 @@ class DataTableScopeInfoArgs:
 
 class ReferenceListEntryArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReferenceListEntryArgs:
@@ -298,7 +291,6 @@ class ReferenceListScopeInfoArgsDict(TypedDict):
     reference_list_scope: NotRequired[
         pulumi.Input[ReferenceListScopeInfoReferenceListScopeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ReferenceListScopeInfoArgs:
@@ -322,7 +314,6 @@ class ReferenceListScopeInfoArgs:
 
 class ReferenceListScopeInfoReferenceListScopeArgsDict(TypedDict):
     scope_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ReferenceListScopeInfoReferenceListScopeArgs:
@@ -346,7 +337,6 @@ class ReferenceListScopeInfoReferenceListScopeArgs:
 class RetrohuntExecutionIntervalArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RetrohuntExecutionIntervalArgs:
@@ -370,7 +360,6 @@ class RetrohuntExecutionIntervalArgs:
 class RetrohuntProcessIntervalArgsDict(TypedDict):
     end_time: pulumi.Input[_builtins.str]
     start_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RetrohuntProcessIntervalArgs:
@@ -396,7 +385,6 @@ class RuleCompilationDiagnosticArgsDict(TypedDict):
     position: NotRequired[pulumi.Input[RuleCompilationDiagnosticPositionArgsDict]]
     severity: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleCompilationDiagnosticArgs:
@@ -438,7 +426,6 @@ class RuleCompilationDiagnosticPositionArgsDict(TypedDict):
     end_line: NotRequired[pulumi.Input[_builtins.int]]
     start_column: NotRequired[pulumi.Input[_builtins.int]]
     start_line: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RuleCompilationDiagnosticPositionArgs:
@@ -473,7 +460,6 @@ class RuleCompilationDiagnosticPositionArgs:
 
 class RuleSeverityArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleSeverityArgs:
@@ -489,7 +475,6 @@ class RuleSeverityArgs:
 class WatchlistEntityCountArgsDict(TypedDict):
     asset: NotRequired[pulumi.Input[_builtins.int]]
     user: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WatchlistEntityCountArgs:
@@ -512,7 +497,6 @@ class WatchlistEntityCountArgs:
 
 class WatchlistEntityPopulationMechanismArgsDict(TypedDict):
     manual: NotRequired[pulumi.Input[WatchlistEntityPopulationMechanismManualArgsDict]]
-    ...
 
 @pulumi.input_type
 class WatchlistEntityPopulationMechanismArgs:
@@ -542,7 +526,6 @@ class WatchlistEntityPopulationMechanismManualArgs:
 
 class WatchlistWatchlistUserPreferencesArgsDict(TypedDict):
     pinned: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WatchlistWatchlistUserPreferencesArgs:

@@ -34,7 +34,6 @@ class AnalysisRuleAnnotatorSelectorArgsDict(TypedDict):
     summarization_config: NotRequired[
         pulumi.Input[AnalysisRuleAnnotatorSelectorSummarizationConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisRuleAnnotatorSelectorArgs:
@@ -166,7 +165,6 @@ class AnalysisRuleAnnotatorSelectorQaConfigArgsDict(TypedDict):
     scorecard_list: NotRequired[
         pulumi.Input[AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisRuleAnnotatorSelectorQaConfigArgs:
@@ -196,7 +194,6 @@ class AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgsDict(TypedDict):
     qa_scorecard_revisions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgs:
@@ -220,7 +217,6 @@ class AnalysisRuleAnnotatorSelectorQaConfigScorecardListArgs:
 class AnalysisRuleAnnotatorSelectorSummarizationConfigArgsDict(TypedDict):
     conversation_profile: NotRequired[pulumi.Input[_builtins.str]]
     summarization_model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalysisRuleAnnotatorSelectorSummarizationConfigArgs:
@@ -244,7 +240,6 @@ class AnalysisRuleAnnotatorSelectorSummarizationConfigArgs:
 class AutoLabelingRuleConditionArgsDict(TypedDict):
     condition: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutoLabelingRuleConditionArgs:

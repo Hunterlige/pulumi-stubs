@@ -11,7 +11,6 @@ class NotificationRuleTargetArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotificationRuleTargetArgs:

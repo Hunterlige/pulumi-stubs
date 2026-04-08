@@ -18,7 +18,6 @@ class ReplicationConfigurationTemplatePitPolicyArgsDict(TypedDict):
     units: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     rule_id: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationTemplatePitPolicyArgs:
@@ -61,7 +60,6 @@ class ReplicationConfigurationTemplateTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationTemplateTimeoutsArgs:

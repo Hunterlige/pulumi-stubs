@@ -24,7 +24,6 @@ __all__ = [
 
 class CanaryArtifactConfigArgsDict(TypedDict):
     s3_encryption: NotRequired[pulumi.Input[CanaryArtifactConfigS3EncryptionArgsDict]]
-    ...
 
 @pulumi.input_type
 class CanaryArtifactConfigArgs:
@@ -48,7 +47,6 @@ class CanaryArtifactConfigArgs:
 class CanaryArtifactConfigS3EncryptionArgsDict(TypedDict):
     encryption_mode: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CanaryArtifactConfigS3EncryptionArgs:
@@ -77,7 +75,6 @@ class CanaryRunConfigArgsDict(TypedDict):
     ephemeral_storage: NotRequired[pulumi.Input[_builtins.int]]
     memory_in_mb: NotRequired[pulumi.Input[_builtins.int]]
     timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CanaryRunConfigArgs:
@@ -126,7 +123,6 @@ class CanaryScheduleArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     duration_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     retry_config: NotRequired[pulumi.Input[CanaryScheduleRetryConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class CanaryScheduleArgs:
@@ -157,7 +153,6 @@ class CanaryScheduleArgs:
 
 class CanaryScheduleRetryConfigArgsDict(TypedDict):
     max_retries: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CanaryScheduleRetryConfigArgs:
@@ -173,7 +168,6 @@ class CanaryTimelineArgsDict(TypedDict):
     last_modified: NotRequired[pulumi.Input[_builtins.str]]
     last_started: NotRequired[pulumi.Input[_builtins.str]]
     last_stopped: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CanaryTimelineArgs:
@@ -211,7 +205,6 @@ class CanaryVpcConfigArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CanaryVpcConfigArgs:

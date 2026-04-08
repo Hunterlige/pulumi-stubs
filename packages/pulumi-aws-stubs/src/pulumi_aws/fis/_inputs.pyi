@@ -49,7 +49,6 @@ class ExperimentTemplateActionArgsDict(TypedDict):
     ]
     start_afters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     target: NotRequired[pulumi.Input[ExperimentTemplateActionTargetArgsDict]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateActionArgs:
@@ -116,7 +115,6 @@ class ExperimentTemplateActionArgs:
 class ExperimentTemplateActionParameterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateActionParameterArgs:
@@ -140,7 +138,6 @@ class ExperimentTemplateActionParameterArgs:
 class ExperimentTemplateActionTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateActionTargetArgs:
@@ -164,7 +161,6 @@ class ExperimentTemplateActionTargetArgs:
 class ExperimentTemplateExperimentOptionsArgsDict(TypedDict):
     account_targeting: NotRequired[pulumi.Input[_builtins.str]]
     empty_target_resolution_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentOptionsArgs:
@@ -196,7 +192,6 @@ class ExperimentTemplateExperimentReportConfigurationArgsDict(TypedDict):
     ]
     post_experiment_duration: NotRequired[pulumi.Input[_builtins.str]]
     pre_experiment_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentReportConfigurationArgs:
@@ -263,7 +258,6 @@ class ExperimentTemplateExperimentReportConfigurationDataSourcesArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentReportConfigurationDataSourcesArgs:
@@ -311,7 +305,6 @@ class ExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashbo
     TypedDict
 ):
     dashboard_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardArgs:
@@ -330,7 +323,6 @@ class ExperimentTemplateExperimentReportConfigurationOutputsArgsDict(TypedDict):
             ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentReportConfigurationOutputsArgs:
@@ -367,7 +359,6 @@ class ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgsD
 ):
     bucket_name: pulumi.Input[_builtins.str]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationArgs:
@@ -398,7 +389,6 @@ class ExperimentTemplateLogConfigurationArgsDict(TypedDict):
     s3_configuration: NotRequired[
         pulumi.Input[ExperimentTemplateLogConfigurationS3ConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateLogConfigurationArgs:
@@ -453,7 +443,6 @@ class ExperimentTemplateLogConfigurationArgs:
 
 class ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgsDict(TypedDict):
     log_group_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgs:
@@ -467,7 +456,6 @@ class ExperimentTemplateLogConfigurationCloudwatchLogsConfigurationArgs:
 class ExperimentTemplateLogConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateLogConfigurationS3ConfigurationArgs:
@@ -491,7 +479,6 @@ class ExperimentTemplateLogConfigurationS3ConfigurationArgs:
 class ExperimentTemplateStopConditionArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateStopConditionArgs:
@@ -526,7 +513,6 @@ class ExperimentTemplateTargetArgsDict(TypedDict):
             Sequence[pulumi.Input[ExperimentTemplateTargetResourceTagArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateTargetArgs:
@@ -618,7 +604,6 @@ class ExperimentTemplateTargetArgs:
 class ExperimentTemplateTargetFilterArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateTargetFilterArgs:
@@ -642,7 +627,6 @@ class ExperimentTemplateTargetFilterArgs:
 class ExperimentTemplateTargetResourceTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExperimentTemplateTargetResourceTagArgs:

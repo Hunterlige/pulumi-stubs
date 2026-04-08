@@ -10,7 +10,6 @@ __all__ = ["GroupInsightsConfigurationArgs", "GroupInsightsConfigurationArgsDict
 class GroupInsightsConfigurationArgsDict(TypedDict):
     insights_enabled: pulumi.Input[_builtins.bool]
     notifications_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GroupInsightsConfigurationArgs:

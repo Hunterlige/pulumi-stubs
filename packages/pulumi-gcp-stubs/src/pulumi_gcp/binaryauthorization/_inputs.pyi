@@ -32,7 +32,6 @@ class AttestorAttestationAuthorityNoteArgsDict(TypedDict):
             Sequence[pulumi.Input[AttestorAttestationAuthorityNotePublicKeyArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AttestorAttestationAuthorityNoteArgs:
@@ -87,7 +86,6 @@ class AttestorAttestationAuthorityNotePublicKeyArgsDict(TypedDict):
     pkix_public_key: NotRequired[
         pulumi.Input[AttestorAttestationAuthorityNotePublicKeyPkixPublicKeyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AttestorAttestationAuthorityNotePublicKeyArgs:
@@ -136,7 +134,6 @@ class AttestorAttestationAuthorityNotePublicKeyArgs:
 class AttestorAttestationAuthorityNotePublicKeyPkixPublicKeyArgsDict(TypedDict):
     public_key_pem: NotRequired[pulumi.Input[_builtins.str]]
     signature_algorithm: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AttestorAttestationAuthorityNotePublicKeyPkixPublicKeyArgs:
@@ -161,7 +158,6 @@ class AttestorIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AttestorIamBindingConditionArgs:
@@ -192,7 +188,6 @@ class AttestorIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AttestorIamMemberConditionArgs:
@@ -221,7 +216,6 @@ class AttestorIamMemberConditionArgs:
 
 class PolicyAdmissionWhitelistPatternArgsDict(TypedDict):
     name_pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyAdmissionWhitelistPatternArgs:
@@ -239,7 +233,6 @@ class PolicyClusterAdmissionRuleArgsDict(TypedDict):
     require_attestations_bies: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyClusterAdmissionRuleArgs:
@@ -284,7 +277,6 @@ class PolicyDefaultAdmissionRuleArgsDict(TypedDict):
     require_attestations_bies: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyDefaultAdmissionRuleArgs:

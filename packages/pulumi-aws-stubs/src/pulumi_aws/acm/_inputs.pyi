@@ -21,7 +21,6 @@ class CertificateDomainValidationOptionArgsDict(TypedDict):
     resource_record_name: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_type: NotRequired[pulumi.Input[_builtins.str]]
     resource_record_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateDomainValidationOptionArgs:
@@ -59,7 +58,6 @@ class CertificateOptionsArgsDict(TypedDict):
         pulumi.Input[_builtins.str]
     ]
     export: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateOptionsArgs:
@@ -90,7 +88,6 @@ class CertificateRenewalSummaryArgsDict(TypedDict):
     renewal_status: NotRequired[pulumi.Input[_builtins.str]]
     renewal_status_reason: NotRequired[pulumi.Input[_builtins.str]]
     updated_at: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateRenewalSummaryArgs:
@@ -120,7 +117,6 @@ class CertificateRenewalSummaryArgs:
 class CertificateValidationOptionArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     validation_domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CertificateValidationOptionArgs:

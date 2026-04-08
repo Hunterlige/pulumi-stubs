@@ -34,7 +34,6 @@ class AcceleratorAttributesArgsDict(TypedDict):
     flow_logs_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     flow_logs_s3_bucket: NotRequired[pulumi.Input[_builtins.str]]
     flow_logs_s3_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AcceleratorAttributesArgs:
@@ -64,7 +63,6 @@ class AcceleratorAttributesArgs:
 class AcceleratorIpSetArgsDict(TypedDict):
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_family: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AcceleratorIpSetArgs:
@@ -95,7 +93,6 @@ class CrossAccountAttachmentResourceArgsDict(TypedDict):
     cidr_block: NotRequired[pulumi.Input[_builtins.str]]
     endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CrossAccountAttachmentResourceArgs:
@@ -126,7 +123,6 @@ class CustomRoutingAcceleratorAttributesArgsDict(TypedDict):
     flow_logs_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     flow_logs_s3_bucket: NotRequired[pulumi.Input[_builtins.str]]
     flow_logs_s3_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomRoutingAcceleratorAttributesArgs:
@@ -156,7 +152,6 @@ class CustomRoutingAcceleratorAttributesArgs:
 class CustomRoutingAcceleratorIpSetArgsDict(TypedDict):
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_family: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomRoutingAcceleratorIpSetArgs:
@@ -187,7 +182,6 @@ class CustomRoutingEndpointGroupDestinationConfigurationArgsDict(TypedDict):
     from_port: pulumi.Input[_builtins.int]
     protocols: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CustomRoutingEndpointGroupDestinationConfigurationArgs:
@@ -216,7 +210,6 @@ class CustomRoutingEndpointGroupDestinationConfigurationArgs:
 
 class CustomRoutingEndpointGroupEndpointConfigurationArgsDict(TypedDict):
     endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomRoutingEndpointGroupEndpointConfigurationArgs:
@@ -232,7 +225,6 @@ class CustomRoutingEndpointGroupEndpointConfigurationArgs:
 class CustomRoutingListenerPortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CustomRoutingListenerPortRangeArgs:
@@ -258,7 +250,6 @@ class EndpointGroupEndpointConfigurationArgsDict(TypedDict):
     client_ip_preservation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EndpointGroupEndpointConfigurationArgs:
@@ -298,7 +289,6 @@ class EndpointGroupEndpointConfigurationArgs:
 class EndpointGroupPortOverrideArgsDict(TypedDict):
     endpoint_port: pulumi.Input[_builtins.int]
     listener_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointGroupPortOverrideArgs:
@@ -322,7 +312,6 @@ class EndpointGroupPortOverrideArgs:
 class ListenerPortRangeArgsDict(TypedDict):
     from_port: NotRequired[pulumi.Input[_builtins.int]]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerPortRangeArgs:

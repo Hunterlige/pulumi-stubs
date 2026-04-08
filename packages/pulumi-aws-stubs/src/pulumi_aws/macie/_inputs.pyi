@@ -18,7 +18,6 @@ class FindingsFilterFindingCriteriaArgsDict(TypedDict):
             Sequence[pulumi.Input[FindingsFilterFindingCriteriaCriterionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FindingsFilterFindingCriteriaArgs:
@@ -57,7 +56,6 @@ class FindingsFilterFindingCriteriaCriterionArgsDict(TypedDict):
     lt: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
     neqs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FindingsFilterFindingCriteriaCriterionArgs:

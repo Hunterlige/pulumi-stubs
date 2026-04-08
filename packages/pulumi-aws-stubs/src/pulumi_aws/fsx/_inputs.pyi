@@ -121,7 +121,6 @@ class DataRepositoryAssociationS3ArgsDict(TypedDict):
     auto_import_policy: NotRequired[
         pulumi.Input[DataRepositoryAssociationS3AutoImportPolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataRepositoryAssociationS3Args:
@@ -158,7 +157,6 @@ class DataRepositoryAssociationS3Args:
 
 class DataRepositoryAssociationS3AutoExportPolicyArgsDict(TypedDict):
     events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataRepositoryAssociationS3AutoExportPolicyArgs:
@@ -179,7 +177,6 @@ class DataRepositoryAssociationS3AutoExportPolicyArgs:
 
 class DataRepositoryAssociationS3AutoImportPolicyArgsDict(TypedDict):
     events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataRepositoryAssociationS3AutoImportPolicyArgs:
@@ -216,7 +213,6 @@ class FileCacheDataRepositoryAssociationArgsDict(TypedDict):
     ]
     resource_arn: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FileCacheDataRepositoryAssociationArgs:
@@ -321,7 +317,6 @@ class FileCacheDataRepositoryAssociationArgs:
 class FileCacheDataRepositoryAssociationNfArgsDict(TypedDict):
     version: pulumi.Input[_builtins.str]
     dns_ips: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FileCacheDataRepositoryAssociationNfArgs:
@@ -361,7 +356,6 @@ class FileCacheLustreConfigurationArgsDict(TypedDict):
     ]
     mount_name: NotRequired[pulumi.Input[_builtins.str]]
     weekly_maintenance_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FileCacheLustreConfigurationArgs:
@@ -445,7 +439,6 @@ class FileCacheLustreConfigurationArgs:
 class FileCacheLustreConfigurationLogConfigurationArgsDict(TypedDict):
     destination: NotRequired[pulumi.Input[_builtins.str]]
     level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FileCacheLustreConfigurationLogConfigurationArgs:
@@ -468,7 +461,6 @@ class FileCacheLustreConfigurationLogConfigurationArgs:
 
 class FileCacheLustreConfigurationMetadataConfigurationArgsDict(TypedDict):
     storage_capacity: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FileCacheLustreConfigurationMetadataConfigurationArgs:
@@ -484,7 +476,6 @@ class FileCacheLustreConfigurationMetadataConfigurationArgs:
 class LustreFileSystemDataReadCacheConfigurationArgsDict(TypedDict):
     sizing_mode: pulumi.Input[_builtins.str]
     size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LustreFileSystemDataReadCacheConfigurationArgs:
@@ -508,7 +499,6 @@ class LustreFileSystemDataReadCacheConfigurationArgs:
 class LustreFileSystemLogConfigurationArgsDict(TypedDict):
     destination: NotRequired[pulumi.Input[_builtins.str]]
     level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LustreFileSystemLogConfigurationArgs:
@@ -532,7 +522,6 @@ class LustreFileSystemLogConfigurationArgs:
 class LustreFileSystemMetadataConfigurationArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LustreFileSystemMetadataConfigurationArgs:
@@ -556,7 +545,6 @@ class LustreFileSystemMetadataConfigurationArgs:
 class LustreFileSystemRootSquashConfigurationArgsDict(TypedDict):
     no_squash_nids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     root_squash: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LustreFileSystemRootSquashConfigurationArgs:
@@ -586,7 +574,6 @@ class LustreFileSystemRootSquashConfigurationArgs:
 class OntapFileSystemDiskIopsConfigurationArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OntapFileSystemDiskIopsConfigurationArgs:
@@ -616,7 +603,6 @@ class OntapFileSystemEndpointArgsDict(TypedDict):
     managements: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[OntapFileSystemEndpointManagementArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class OntapFileSystemEndpointArgs:
@@ -666,7 +652,6 @@ class OntapFileSystemEndpointArgs:
 class OntapFileSystemEndpointInterclusterArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapFileSystemEndpointInterclusterArgs:
@@ -696,7 +681,6 @@ class OntapFileSystemEndpointInterclusterArgs:
 class OntapFileSystemEndpointManagementArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapFileSystemEndpointManagementArgs:
@@ -730,7 +714,6 @@ class OntapStorageVirtualMachineActiveDirectoryConfigurationArgsDict(TypedDict):
             OntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineActiveDirectoryConfigurationArgs:
@@ -777,7 +760,6 @@ class OntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDir
     username: pulumi.Input[_builtins.str]
     file_system_administrators_group: NotRequired[pulumi.Input[_builtins.str]]
     organizational_unit_distinguished_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationArgs:
@@ -853,7 +835,6 @@ class OntapStorageVirtualMachineEndpointArgsDict(TypedDict):
             Sequence[pulumi.Input[OntapStorageVirtualMachineEndpointSmbArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineEndpointArgs:
@@ -953,7 +934,6 @@ class OntapStorageVirtualMachineEndpointArgs:
 class OntapStorageVirtualMachineEndpointIscsiArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineEndpointIscsiArgs:
@@ -983,7 +963,6 @@ class OntapStorageVirtualMachineEndpointIscsiArgs:
 class OntapStorageVirtualMachineEndpointManagementArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineEndpointManagementArgs:
@@ -1013,7 +992,6 @@ class OntapStorageVirtualMachineEndpointManagementArgs:
 class OntapStorageVirtualMachineEndpointNfArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineEndpointNfArgs:
@@ -1043,7 +1021,6 @@ class OntapStorageVirtualMachineEndpointNfArgs:
 class OntapStorageVirtualMachineEndpointSmbArgsDict(TypedDict):
     dns_name: NotRequired[pulumi.Input[_builtins.str]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OntapStorageVirtualMachineEndpointSmbArgs:
@@ -1074,7 +1051,6 @@ class OntapVolumeAggregateConfigurationArgsDict(TypedDict):
     aggregates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     constituents_per_aggregate: NotRequired[pulumi.Input[_builtins.int]]
     total_constituents: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeAggregateConfigurationArgs:
@@ -1118,7 +1094,6 @@ class OntapVolumeSnaplockConfigurationArgsDict(TypedDict):
         pulumi.Input[OntapVolumeSnaplockConfigurationRetentionPeriodArgsDict]
     ]
     volume_append_mode_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationArgs:
@@ -1190,7 +1165,6 @@ class OntapVolumeSnaplockConfigurationArgs:
 class OntapVolumeSnaplockConfigurationAutocommitPeriodArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationAutocommitPeriodArgs:
@@ -1227,7 +1201,6 @@ class OntapVolumeSnaplockConfigurationRetentionPeriodArgsDict(TypedDict):
             OntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationRetentionPeriodArgs:
@@ -1310,7 +1283,6 @@ class OntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionArgsDict(
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionArgs:
@@ -1336,7 +1308,6 @@ class OntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionArgsDict(
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionArgs:
@@ -1362,7 +1333,6 @@ class OntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionArgsDict(
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionArgs:
@@ -1386,7 +1356,6 @@ class OntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionArgs:
 class OntapVolumeTieringPolicyArgsDict(TypedDict):
     cooling_period: NotRequired[pulumi.Input[_builtins.int]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OntapVolumeTieringPolicyArgs:
@@ -1410,7 +1379,6 @@ class OntapVolumeTieringPolicyArgs:
 class OpenZfsFileSystemDiskIopsConfigurationArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemDiskIopsConfigurationArgs:
@@ -1434,7 +1402,6 @@ class OpenZfsFileSystemDiskIopsConfigurationArgs:
 class OpenZfsFileSystemReadCacheConfigurationArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
     sizing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemReadCacheConfigurationArgs:
@@ -1472,7 +1439,6 @@ class OpenZfsFileSystemRootVolumeConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemRootVolumeConfigurationArgs:
@@ -1565,7 +1531,6 @@ class OpenZfsFileSystemRootVolumeConfigurationNfsExportsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemRootVolumeConfigurationNfsExportsArgs:
@@ -1608,7 +1573,6 @@ class OpenZfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationArgsD
 ):
     clients: pulumi.Input[_builtins.str]
     options: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationArgs:
@@ -1633,7 +1597,6 @@ class OpenZfsFileSystemRootVolumeConfigurationUserAndGroupQuotaArgsDict(TypedDic
     id: pulumi.Input[_builtins.int]
     storage_capacity_quota_gib: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OpenZfsFileSystemRootVolumeConfigurationUserAndGroupQuotaArgs:
@@ -1664,7 +1627,6 @@ class OpenZfsVolumeNfsExportsArgsDict(TypedDict):
     client_configurations: pulumi.Input[
         Sequence[pulumi.Input[OpenZfsVolumeNfsExportsClientConfigurationArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class OpenZfsVolumeNfsExportsArgs:
@@ -1693,7 +1655,6 @@ class OpenZfsVolumeNfsExportsArgs:
 class OpenZfsVolumeNfsExportsClientConfigurationArgsDict(TypedDict):
     clients: pulumi.Input[_builtins.str]
     options: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class OpenZfsVolumeNfsExportsClientConfigurationArgs:
@@ -1717,7 +1678,6 @@ class OpenZfsVolumeNfsExportsClientConfigurationArgs:
 class OpenZfsVolumeOriginSnapshotArgsDict(TypedDict):
     copy_strategy: pulumi.Input[_builtins.str]
     snapshot_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OpenZfsVolumeOriginSnapshotArgs:
@@ -1742,7 +1702,6 @@ class OpenZfsVolumeUserAndGroupQuotaArgsDict(TypedDict):
     id: pulumi.Input[_builtins.int]
     storage_capacity_quota_gib: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OpenZfsVolumeUserAndGroupQuotaArgs:
@@ -1774,7 +1733,6 @@ class S3AccessPointAttachmentOpenzfsConfigurationArgsDict(TypedDict):
         S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityArgsDict
     ]
     volume_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentOpenzfsConfigurationArgs:
@@ -1813,7 +1771,6 @@ class S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityArgsDict(Type
             S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityArgs:
@@ -1857,7 +1814,6 @@ class S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserArgs
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
     secondary_gids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserArgs:
@@ -1895,7 +1851,6 @@ class S3AccessPointAttachmentS3AccessPointArgsDict(TypedDict):
     vpc_configuration: NotRequired[
         pulumi.Input[S3AccessPointAttachmentS3AccessPointVpcConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentS3AccessPointArgs:
@@ -1929,7 +1884,6 @@ class S3AccessPointAttachmentS3AccessPointArgs:
 
 class S3AccessPointAttachmentS3AccessPointVpcConfigurationArgsDict(TypedDict):
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentS3AccessPointVpcConfigurationArgs:
@@ -1945,7 +1899,6 @@ class S3AccessPointAttachmentS3AccessPointVpcConfigurationArgs:
 class S3AccessPointAttachmentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class S3AccessPointAttachmentTimeoutsArgs:
@@ -1970,7 +1923,6 @@ class WindowsFileSystemAuditLogConfigurationArgsDict(TypedDict):
     audit_log_destination: NotRequired[pulumi.Input[_builtins.str]]
     file_access_audit_log_level: NotRequired[pulumi.Input[_builtins.str]]
     file_share_access_audit_log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WindowsFileSystemAuditLogConfigurationArgs:
@@ -2006,7 +1958,6 @@ class WindowsFileSystemAuditLogConfigurationArgs:
 class WindowsFileSystemDiskIopsConfigurationArgsDict(TypedDict):
     iops: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WindowsFileSystemDiskIopsConfigurationArgs:
@@ -2035,7 +1986,6 @@ class WindowsFileSystemSelfManagedActiveDirectoryArgsDict(TypedDict):
     organizational_unit_distinguished_name: NotRequired[pulumi.Input[_builtins.str]]
     password: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WindowsFileSystemSelfManagedActiveDirectoryArgs:
@@ -2103,7 +2053,6 @@ class WindowsFileSystemSelfManagedActiveDirectoryArgs:
 class GetOntapStorageVirtualMachineFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetOntapStorageVirtualMachineFilterArgs:
@@ -2124,7 +2073,6 @@ class GetOntapStorageVirtualMachineFilterArgs:
 class GetOntapStorageVirtualMachinesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetOntapStorageVirtualMachinesFilterArgs:
@@ -2145,7 +2093,6 @@ class GetOntapStorageVirtualMachinesFilterArgs:
 class GetOpenZfsSnapshotFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetOpenZfsSnapshotFilterArgs:

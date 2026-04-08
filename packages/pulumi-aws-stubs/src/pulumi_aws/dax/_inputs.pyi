@@ -19,7 +19,6 @@ class ClusterNodeArgsDict(TypedDict):
     availability_zone: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterNodeArgs:
@@ -54,7 +53,6 @@ class ClusterNodeArgs:
 
 class ClusterServerSideEncryptionArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterServerSideEncryptionArgs:
@@ -70,7 +68,6 @@ class ClusterServerSideEncryptionArgs:
 class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:

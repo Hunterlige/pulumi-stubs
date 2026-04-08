@@ -60,7 +60,6 @@ class DetectorDatasourcesArgsDict(TypedDict):
         pulumi.Input[DetectorDatasourcesMalwareProtectionArgsDict]
     ]
     s3_logs: NotRequired[pulumi.Input[DetectorDatasourcesS3LogsArgsDict]]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesArgs:
@@ -99,7 +98,6 @@ class DetectorDatasourcesArgs:
 
 class DetectorDatasourcesKubernetesArgsDict(TypedDict):
     audit_logs: pulumi.Input[DetectorDatasourcesKubernetesAuditLogsArgsDict]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesKubernetesArgs:
@@ -120,7 +118,6 @@ class DetectorDatasourcesKubernetesArgs:
 
 class DetectorDatasourcesKubernetesAuditLogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesKubernetesAuditLogsArgs:
@@ -135,7 +132,6 @@ class DetectorDatasourcesMalwareProtectionArgsDict(TypedDict):
     scan_ec2_instance_with_findings: pulumi.Input[
         DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesMalwareProtectionArgs:
@@ -167,7 +163,6 @@ class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgsDict(
     ebs_volumes: pulumi.Input[
         DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgs:
@@ -197,7 +192,6 @@ class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesA
     TypedDict
 ):
     enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgs:
@@ -210,7 +204,6 @@ class DetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesA
 
 class DetectorDatasourcesS3LogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DetectorDatasourcesS3LogsArgs:
@@ -224,7 +217,6 @@ class DetectorDatasourcesS3LogsArgs:
 class DetectorFeatureAdditionalConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DetectorFeatureAdditionalConfigurationArgs:
@@ -249,7 +241,6 @@ class FilterFindingCriteriaArgsDict(TypedDict):
     criterions: pulumi.Input[
         Sequence[pulumi.Input[FilterFindingCriteriaCriterionArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class FilterFindingCriteriaArgs:
@@ -281,7 +272,6 @@ class FilterFindingCriteriaCriterionArgsDict(TypedDict):
     matches: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     not_equals: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     not_matches: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FilterFindingCriteriaCriterionArgs:
@@ -366,7 +356,6 @@ class MalwareProtectionPlanActionArgsDict(TypedDict):
     taggings: pulumi.Input[
         Sequence[pulumi.Input[MalwareProtectionPlanActionTaggingArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class MalwareProtectionPlanActionArgs:
@@ -394,7 +383,6 @@ class MalwareProtectionPlanActionArgs:
 
 class MalwareProtectionPlanActionTaggingArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MalwareProtectionPlanActionTaggingArgs:
@@ -407,7 +395,6 @@ class MalwareProtectionPlanActionTaggingArgs:
 
 class MalwareProtectionPlanProtectedResourceArgsDict(TypedDict):
     s3_bucket: pulumi.Input[MalwareProtectionPlanProtectedResourceS3BucketArgsDict]
-    ...
 
 @pulumi.input_type
 class MalwareProtectionPlanProtectedResourceArgs:
@@ -429,7 +416,6 @@ class MalwareProtectionPlanProtectedResourceArgs:
 class MalwareProtectionPlanProtectedResourceS3BucketArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     object_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MalwareProtectionPlanProtectedResourceS3BucketArgs:
@@ -459,7 +445,6 @@ class MalwareProtectionPlanProtectedResourceS3BucketArgs:
 class MemberDetectorFeatureAdditionalConfigurationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MemberDetectorFeatureAdditionalConfigurationArgs:
@@ -490,7 +475,6 @@ class OrganizationConfigurationDatasourcesArgsDict(TypedDict):
     s3_logs: NotRequired[
         pulumi.Input[OrganizationConfigurationDatasourcesS3LogsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesArgs:
@@ -548,7 +532,6 @@ class OrganizationConfigurationDatasourcesKubernetesArgsDict(TypedDict):
     audit_logs: pulumi.Input[
         OrganizationConfigurationDatasourcesKubernetesAuditLogsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesKubernetesArgs:
@@ -574,7 +557,6 @@ class OrganizationConfigurationDatasourcesKubernetesArgs:
 
 class OrganizationConfigurationDatasourcesKubernetesAuditLogsArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesKubernetesAuditLogsArgs:
@@ -589,7 +571,6 @@ class OrganizationConfigurationDatasourcesMalwareProtectionArgsDict(TypedDict):
     scan_ec2_instance_with_findings: pulumi.Input[
         OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesMalwareProtectionArgs:
@@ -621,7 +602,6 @@ class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFi
     ebs_volumes: pulumi.Input[
         OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsArgs:
@@ -651,7 +631,6 @@ class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFi
     TypedDict
 ):
     auto_enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesArgs:
@@ -664,7 +643,6 @@ class OrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFi
 
 class OrganizationConfigurationDatasourcesS3LogsArgsDict(TypedDict):
     auto_enable: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationDatasourcesS3LogsArgs:
@@ -678,7 +656,6 @@ class OrganizationConfigurationDatasourcesS3LogsArgs:
 class OrganizationConfigurationFeatureAdditionalConfigurationArgsDict(TypedDict):
     auto_enable: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationFeatureAdditionalConfigurationArgs:

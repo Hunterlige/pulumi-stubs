@@ -227,7 +227,6 @@ __all__ = [
 class AccessLevelBasicArgsDict(TypedDict):
     conditions: pulumi.Input[Sequence[pulumi.Input[AccessLevelBasicConditionArgsDict]]]
     combining_function: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicArgs:
@@ -268,7 +267,6 @@ class AccessLevelBasicConditionArgsDict(TypedDict):
             Sequence[pulumi.Input[AccessLevelBasicConditionVpcNetworkSourceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicConditionArgs:
@@ -379,7 +377,6 @@ class AccessLevelBasicConditionDevicePolicyArgsDict(TypedDict):
     require_admin_approval: NotRequired[pulumi.Input[_builtins.bool]]
     require_corp_owned: NotRequired[pulumi.Input[_builtins.bool]]
     require_screen_lock: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicConditionDevicePolicyArgs:
@@ -463,7 +460,6 @@ class AccessLevelBasicConditionDevicePolicyOsConstraintArgsDict(TypedDict):
     os_type: pulumi.Input[_builtins.str]
     minimum_version: NotRequired[pulumi.Input[_builtins.str]]
     require_verified_chrome_os: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicConditionDevicePolicyOsConstraintArgs:
@@ -496,7 +492,6 @@ class AccessLevelBasicConditionVpcNetworkSourceArgsDict(TypedDict):
     vpc_subnetwork: NotRequired[
         pulumi.Input[AccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicConditionVpcNetworkSourceArgs:
@@ -525,7 +520,6 @@ class AccessLevelBasicConditionVpcNetworkSourceArgs:
 class AccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     vpc_ip_subnetworks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgs:
@@ -567,7 +561,6 @@ class AccessLevelConditionDevicePolicyArgsDict(TypedDict):
     require_admin_approval: NotRequired[pulumi.Input[_builtins.bool]]
     require_corp_owned: NotRequired[pulumi.Input[_builtins.bool]]
     require_screen_lock: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AccessLevelConditionDevicePolicyArgs:
@@ -644,7 +637,6 @@ class AccessLevelConditionDevicePolicyArgs:
 class AccessLevelConditionDevicePolicyOsConstraintArgsDict(TypedDict):
     os_type: pulumi.Input[_builtins.str]
     minimum_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelConditionDevicePolicyOsConstraintArgs:
@@ -669,7 +661,6 @@ class AccessLevelConditionVpcNetworkSourceArgsDict(TypedDict):
     vpc_subnetwork: NotRequired[
         pulumi.Input[AccessLevelConditionVpcNetworkSourceVpcSubnetworkArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AccessLevelConditionVpcNetworkSourceArgs:
@@ -698,7 +689,6 @@ class AccessLevelConditionVpcNetworkSourceArgs:
 class AccessLevelConditionVpcNetworkSourceVpcSubnetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     vpc_ip_subnetworks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AccessLevelConditionVpcNetworkSourceVpcSubnetworkArgs:
@@ -727,7 +717,6 @@ class AccessLevelConditionVpcNetworkSourceVpcSubnetworkArgs:
 
 class AccessLevelCustomArgsDict(TypedDict):
     expr: pulumi.Input[AccessLevelCustomExprArgsDict]
-    ...
 
 @pulumi.input_type
 class AccessLevelCustomArgs:
@@ -745,7 +734,6 @@ class AccessLevelCustomExprArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelCustomExprArgs:
@@ -784,7 +772,6 @@ class AccessLevelsAccessLevelArgsDict(TypedDict):
     basic: NotRequired[pulumi.Input[AccessLevelsAccessLevelBasicArgsDict]]
     custom: NotRequired[pulumi.Input[AccessLevelsAccessLevelCustomArgsDict]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelArgs:
@@ -832,7 +819,6 @@ class AccessLevelsAccessLevelBasicArgsDict(TypedDict):
         Sequence[pulumi.Input[AccessLevelsAccessLevelBasicConditionArgsDict]]
     ]
     combining_function: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicArgs:
@@ -884,7 +870,6 @@ class AccessLevelsAccessLevelBasicConditionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicConditionArgs:
@@ -1012,7 +997,6 @@ class AccessLevelsAccessLevelBasicConditionDevicePolicyArgsDict(TypedDict):
     require_admin_approval: NotRequired[pulumi.Input[_builtins.bool]]
     require_corp_owned: NotRequired[pulumi.Input[_builtins.bool]]
     require_screen_lock: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicConditionDevicePolicyArgs:
@@ -1101,7 +1085,6 @@ class AccessLevelsAccessLevelBasicConditionDevicePolicyArgs:
 class AccessLevelsAccessLevelBasicConditionDevicePolicyOsConstraintArgsDict(TypedDict):
     os_type: pulumi.Input[_builtins.str]
     minimum_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicConditionDevicePolicyOsConstraintArgs:
@@ -1128,7 +1111,6 @@ class AccessLevelsAccessLevelBasicConditionVpcNetworkSourceArgsDict(TypedDict):
             AccessLevelsAccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicConditionVpcNetworkSourceArgs:
@@ -1165,7 +1147,6 @@ class AccessLevelsAccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgsDict
 ):
     network: pulumi.Input[_builtins.str]
     vpc_ip_subnetworks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgs:
@@ -1194,7 +1175,6 @@ class AccessLevelsAccessLevelBasicConditionVpcNetworkSourceVpcSubnetworkArgs:
 
 class AccessLevelsAccessLevelCustomArgsDict(TypedDict):
     expr: pulumi.Input[AccessLevelsAccessLevelCustomExprArgsDict]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelCustomArgs:
@@ -1212,7 +1192,6 @@ class AccessLevelsAccessLevelCustomExprArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessLevelsAccessLevelCustomExprArgs:
@@ -1249,7 +1228,6 @@ class AccessPolicyIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessPolicyIamBindingConditionArgs:
@@ -1280,7 +1258,6 @@ class AccessPolicyIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessPolicyIamMemberConditionArgs:
@@ -1317,7 +1294,6 @@ class GcpUserAccessBindingScopedAccessSettingArgsDict(TypedDict):
     scope: NotRequired[
         pulumi.Input[GcpUserAccessBindingScopedAccessSettingScopeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingArgs:
@@ -1380,7 +1356,6 @@ class GcpUserAccessBindingScopedAccessSettingActiveSettingsArgsDict(TypedDict):
             GcpUserAccessBindingScopedAccessSettingActiveSettingsSessionSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingActiveSettingsArgs:
@@ -1432,7 +1407,6 @@ class GcpUserAccessBindingScopedAccessSettingActiveSettingsSessionSettingsArgsDi
     session_length_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     session_reauth_method: NotRequired[pulumi.Input[_builtins.str]]
     use_oidc_max_age: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingActiveSettingsSessionSettingsArgs:
@@ -1473,7 +1447,6 @@ class GcpUserAccessBindingScopedAccessSettingActiveSettingsSessionSettingsArgs:
 
 class GcpUserAccessBindingScopedAccessSettingDryRunSettingsArgsDict(TypedDict):
     access_levels: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingDryRunSettingsArgs:
@@ -1490,7 +1463,6 @@ class GcpUserAccessBindingScopedAccessSettingScopeArgsDict(TypedDict):
     client_scope: NotRequired[
         pulumi.Input[GcpUserAccessBindingScopedAccessSettingScopeClientScopeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingScopeArgs:
@@ -1522,7 +1494,6 @@ class GcpUserAccessBindingScopedAccessSettingScopeClientScopeArgsDict(TypedDict)
             GcpUserAccessBindingScopedAccessSettingScopeClientScopeRestrictedClientApplicationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingScopeClientScopeArgs:
@@ -1559,7 +1530,6 @@ class GcpUserAccessBindingScopedAccessSettingScopeClientScopeRestrictedClientApp
 ):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingScopedAccessSettingScopeClientScopeRestrictedClientApplicationArgs:
@@ -1586,7 +1556,6 @@ class GcpUserAccessBindingSessionSettingsArgsDict(TypedDict):
     session_length_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     session_reauth_method: NotRequired[pulumi.Input[_builtins.str]]
     use_oidc_max_age: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GcpUserAccessBindingSessionSettingsArgs:
@@ -1636,7 +1605,6 @@ class ServicePerimeterDryRunEgressPolicyEgressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunEgressPolicyEgressFromArgs:
@@ -1699,7 +1667,6 @@ class ServicePerimeterDryRunEgressPolicyEgressFromArgs:
 class ServicePerimeterDryRunEgressPolicyEgressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunEgressPolicyEgressFromSourceArgs:
@@ -1733,7 +1700,6 @@ class ServicePerimeterDryRunEgressPolicyEgressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunEgressPolicyEgressToArgs:
@@ -1818,7 +1784,6 @@ class ServicePerimeterDryRunEgressPolicyEgressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunEgressPolicyEgressToOperationArgs:
@@ -1873,7 +1838,6 @@ class ServicePerimeterDryRunEgressPolicyEgressToOperationMethodSelectorArgsDict(
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -1906,7 +1870,6 @@ class ServicePerimeterDryRunIngressPolicyIngressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunIngressPolicyIngressFromArgs:
@@ -1967,7 +1930,6 @@ class ServicePerimeterDryRunIngressPolicyIngressFromArgs:
 class ServicePerimeterDryRunIngressPolicyIngressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunIngressPolicyIngressFromSourceArgs:
@@ -2000,7 +1962,6 @@ class ServicePerimeterDryRunIngressPolicyIngressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunIngressPolicyIngressToArgs:
@@ -2073,7 +2034,6 @@ class ServicePerimeterDryRunIngressPolicyIngressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunIngressPolicyIngressToOperationArgs:
@@ -2128,7 +2088,6 @@ class ServicePerimeterDryRunIngressPolicyIngressToOperationMethodSelectorArgsDic
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterDryRunIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -2158,7 +2117,6 @@ class ServicePerimeterEgressPolicyEgressFromArgsDict(TypedDict):
             Sequence[pulumi.Input[ServicePerimeterEgressPolicyEgressFromSourceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterEgressPolicyEgressFromArgs:
@@ -2215,7 +2173,6 @@ class ServicePerimeterEgressPolicyEgressFromArgs:
 class ServicePerimeterEgressPolicyEgressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterEgressPolicyEgressFromSourceArgs:
@@ -2247,7 +2204,6 @@ class ServicePerimeterEgressPolicyEgressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterEgressPolicyEgressToArgs:
@@ -2326,7 +2282,6 @@ class ServicePerimeterEgressPolicyEgressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterEgressPolicyEgressToOperationArgs:
@@ -2379,7 +2334,6 @@ class ServicePerimeterEgressPolicyEgressToOperationArgs:
 class ServicePerimeterEgressPolicyEgressToOperationMethodSelectorArgsDict(TypedDict):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -2410,7 +2364,6 @@ class ServicePerimeterIngressPolicyIngressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterIngressPolicyIngressFromArgs:
@@ -2465,7 +2418,6 @@ class ServicePerimeterIngressPolicyIngressFromArgs:
 class ServicePerimeterIngressPolicyIngressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterIngressPolicyIngressFromSourceArgs:
@@ -2496,7 +2448,6 @@ class ServicePerimeterIngressPolicyIngressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterIngressPolicyIngressToArgs:
@@ -2563,7 +2514,6 @@ class ServicePerimeterIngressPolicyIngressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterIngressPolicyIngressToOperationArgs:
@@ -2616,7 +2566,6 @@ class ServicePerimeterIngressPolicyIngressToOperationArgs:
 class ServicePerimeterIngressPolicyIngressToOperationMethodSelectorArgsDict(TypedDict):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -2652,7 +2601,6 @@ class ServicePerimeterSpecArgsDict(TypedDict):
     vpc_accessible_services: NotRequired[
         pulumi.Input[ServicePerimeterSpecVpcAccessibleServicesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecArgs:
@@ -2750,7 +2698,6 @@ class ServicePerimeterSpecEgressPolicyArgsDict(TypedDict):
         pulumi.Input[ServicePerimeterSpecEgressPolicyEgressToArgsDict]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyArgs:
@@ -2802,7 +2749,6 @@ class ServicePerimeterSpecEgressPolicyEgressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyEgressFromArgs:
@@ -2863,7 +2809,6 @@ class ServicePerimeterSpecEgressPolicyEgressFromArgs:
 class ServicePerimeterSpecEgressPolicyEgressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyEgressFromSourceArgs:
@@ -2895,7 +2840,6 @@ class ServicePerimeterSpecEgressPolicyEgressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyEgressToArgs:
@@ -2976,7 +2920,6 @@ class ServicePerimeterSpecEgressPolicyEgressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyEgressToOperationArgs:
@@ -3031,7 +2974,6 @@ class ServicePerimeterSpecEgressPolicyEgressToOperationMethodSelectorArgsDict(
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -3060,7 +3002,6 @@ class ServicePerimeterSpecIngressPolicyArgsDict(TypedDict):
         pulumi.Input[ServicePerimeterSpecIngressPolicyIngressToArgsDict]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyArgs:
@@ -3111,7 +3052,6 @@ class ServicePerimeterSpecIngressPolicyIngressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyIngressFromArgs:
@@ -3168,7 +3108,6 @@ class ServicePerimeterSpecIngressPolicyIngressFromArgs:
 class ServicePerimeterSpecIngressPolicyIngressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyIngressFromSourceArgs:
@@ -3201,7 +3140,6 @@ class ServicePerimeterSpecIngressPolicyIngressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyIngressToArgs:
@@ -3274,7 +3212,6 @@ class ServicePerimeterSpecIngressPolicyIngressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyIngressToOperationArgs:
@@ -3329,7 +3266,6 @@ class ServicePerimeterSpecIngressPolicyIngressToOperationMethodSelectorArgsDict(
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -3353,7 +3289,6 @@ class ServicePerimeterSpecIngressPolicyIngressToOperationMethodSelectorArgs:
 class ServicePerimeterSpecVpcAccessibleServicesArgsDict(TypedDict):
     allowed_services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enable_restriction: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterSpecVpcAccessibleServicesArgs:
@@ -3397,7 +3332,6 @@ class ServicePerimeterStatusArgsDict(TypedDict):
     vpc_accessible_services: NotRequired[
         pulumi.Input[ServicePerimeterStatusVpcAccessibleServicesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusArgs:
@@ -3499,7 +3433,6 @@ class ServicePerimeterStatusEgressPolicyArgsDict(TypedDict):
         pulumi.Input[ServicePerimeterStatusEgressPolicyEgressToArgsDict]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyArgs:
@@ -3551,7 +3484,6 @@ class ServicePerimeterStatusEgressPolicyEgressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyEgressFromArgs:
@@ -3614,7 +3546,6 @@ class ServicePerimeterStatusEgressPolicyEgressFromArgs:
 class ServicePerimeterStatusEgressPolicyEgressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyEgressFromSourceArgs:
@@ -3648,7 +3579,6 @@ class ServicePerimeterStatusEgressPolicyEgressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyEgressToArgs:
@@ -3733,7 +3663,6 @@ class ServicePerimeterStatusEgressPolicyEgressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyEgressToOperationArgs:
@@ -3788,7 +3717,6 @@ class ServicePerimeterStatusEgressPolicyEgressToOperationMethodSelectorArgsDict(
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -3817,7 +3745,6 @@ class ServicePerimeterStatusIngressPolicyArgsDict(TypedDict):
         pulumi.Input[ServicePerimeterStatusIngressPolicyIngressToArgsDict]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyArgs:
@@ -3872,7 +3799,6 @@ class ServicePerimeterStatusIngressPolicyIngressFromArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyIngressFromArgs:
@@ -3933,7 +3859,6 @@ class ServicePerimeterStatusIngressPolicyIngressFromArgs:
 class ServicePerimeterStatusIngressPolicyIngressFromSourceArgsDict(TypedDict):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyIngressFromSourceArgs:
@@ -3966,7 +3891,6 @@ class ServicePerimeterStatusIngressPolicyIngressToArgsDict(TypedDict):
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyIngressToArgs:
@@ -4039,7 +3963,6 @@ class ServicePerimeterStatusIngressPolicyIngressToOperationArgsDict(TypedDict):
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyIngressToOperationArgs:
@@ -4094,7 +4017,6 @@ class ServicePerimeterStatusIngressPolicyIngressToOperationMethodSelectorArgsDic
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -4118,7 +4040,6 @@ class ServicePerimeterStatusIngressPolicyIngressToOperationMethodSelectorArgs:
 class ServicePerimeterStatusVpcAccessibleServicesArgsDict(TypedDict):
     allowed_services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enable_restriction: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServicePerimeterStatusVpcAccessibleServicesArgs:
@@ -4155,7 +4076,6 @@ class ServicePerimetersServicePerimeterArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[ServicePerimetersServicePerimeterStatusArgsDict]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
     use_explicit_dry_run_spec: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterArgs:
@@ -4253,7 +4173,6 @@ class ServicePerimetersServicePerimeterSpecArgsDict(TypedDict):
     vpc_accessible_services: NotRequired[
         pulumi.Input[ServicePerimetersServicePerimeterSpecVpcAccessibleServicesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecArgs:
@@ -4381,7 +4300,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyArgsDict(TypedDict):
         pulumi.Input[ServicePerimetersServicePerimeterSpecEgressPolicyEgressToArgsDict]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyArgs:
@@ -4447,7 +4365,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyEgressFromArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyEgressFromArgs:
@@ -4518,7 +4435,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyEgressFromSourceArgsDict(
 ):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyEgressFromSourceArgs:
@@ -4552,7 +4468,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToArgsDict(TypedDic
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToArgs:
@@ -4641,7 +4556,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToOperationArgsDict
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToOperationArgs:
@@ -4696,7 +4610,6 @@ class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToOperationMethodSe
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -4729,7 +4642,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyArgsDict(TypedDict):
         ]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyArgs:
@@ -4798,7 +4710,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressFromArgsDict(Type
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyIngressFromArgs:
@@ -4863,7 +4774,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressFromSourceArgsDic
 ):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyIngressFromSourceArgs:
@@ -4896,7 +4806,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToArgsDict(TypedD
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToArgs:
@@ -4973,7 +4882,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToOperationArgsDi
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToOperationArgs:
@@ -5028,7 +4936,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToOperationMethod
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -5052,7 +4959,6 @@ class ServicePerimetersServicePerimeterSpecIngressPolicyIngressToOperationMethod
 class ServicePerimetersServicePerimeterSpecVpcAccessibleServicesArgsDict(TypedDict):
     allowed_services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enable_restriction: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterSpecVpcAccessibleServicesArgs:
@@ -5108,7 +5014,6 @@ class ServicePerimetersServicePerimeterStatusArgsDict(TypedDict):
             ServicePerimetersServicePerimeterStatusVpcAccessibleServicesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusArgs:
@@ -5250,7 +5155,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyArgsDict(TypedDict):
         ]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyArgs:
@@ -5320,7 +5224,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyEgressFromArgsDict(Type
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyEgressFromArgs:
@@ -5391,7 +5294,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyEgressFromSourceArgsDic
 ):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyEgressFromSourceArgs:
@@ -5425,7 +5327,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToArgsDict(TypedD
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToArgs:
@@ -5514,7 +5415,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToOperationArgsDi
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToOperationArgs:
@@ -5569,7 +5469,6 @@ class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToOperationMethod
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusEgressPolicyEgressToOperationMethodSelectorArgs:
@@ -5602,7 +5501,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyArgsDict(TypedDict):
         ]
     ]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyArgs:
@@ -5675,7 +5573,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressFromArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyIngressFromArgs:
@@ -5740,7 +5637,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressFromSourceArgsD
 ):
     access_level: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyIngressFromSourceArgs:
@@ -5773,7 +5669,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToArgsDict(Type
     ]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToArgs:
@@ -5850,7 +5745,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToOperationArgs
         ]
     ]
     service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToOperationArgs:
@@ -5905,7 +5799,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToOperationMeth
 ):
     method: NotRequired[pulumi.Input[_builtins.str]]
     permission: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToOperationMethodSelectorArgs:
@@ -5929,7 +5822,6 @@ class ServicePerimetersServicePerimeterStatusIngressPolicyIngressToOperationMeth
 class ServicePerimetersServicePerimeterStatusVpcAccessibleServicesArgsDict(TypedDict):
     allowed_services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enable_restriction: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServicePerimetersServicePerimeterStatusVpcAccessibleServicesArgs:

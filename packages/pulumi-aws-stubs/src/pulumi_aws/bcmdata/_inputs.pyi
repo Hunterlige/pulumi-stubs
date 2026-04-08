@@ -37,7 +37,6 @@ class ExportExportArgsDict(TypedDict):
     refresh_cadences: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ExportExportRefreshCadenceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ExportExportArgs:
@@ -124,7 +123,6 @@ class ExportExportDataQueryArgsDict(TypedDict):
             Mapping[str, pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExportExportDataQueryArgs:
@@ -170,7 +168,6 @@ class ExportExportDestinationConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExportExportDestinationConfigurationArgs:
@@ -221,7 +218,6 @@ class ExportExportDestinationConfigurationS3DestinationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExportExportDestinationConfigurationS3DestinationArgs:
@@ -290,7 +286,6 @@ class ExportExportDestinationConfigurationS3DestinationS3OutputConfigurationArgs
     format: pulumi.Input[_builtins.str]
     output_type: pulumi.Input[_builtins.str]
     overwrite: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExportExportDestinationConfigurationS3DestinationS3OutputConfigurationArgs:
@@ -325,7 +320,6 @@ class ExportExportDestinationConfigurationS3DestinationS3OutputConfigurationArgs
 
 class ExportExportRefreshCadenceArgsDict(TypedDict):
     frequency: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExportExportRefreshCadenceArgs:
@@ -339,7 +333,6 @@ class ExportExportRefreshCadenceArgs:
 class ExportTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExportTimeoutsArgs:

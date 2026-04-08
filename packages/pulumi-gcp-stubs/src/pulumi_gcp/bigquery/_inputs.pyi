@@ -201,7 +201,6 @@ __all__ = [
 
 class AppProfileDataBoostIsolationReadOnlyArgsDict(TypedDict):
     compute_billing_owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppProfileDataBoostIsolationReadOnlyArgs:
@@ -217,7 +216,6 @@ class AppProfileDataBoostIsolationReadOnlyArgs:
 class AppProfileSingleClusterRoutingArgsDict(TypedDict):
     cluster_id: pulumi.Input[_builtins.str]
     allow_transactional_writes: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppProfileSingleClusterRoutingArgs:
@@ -242,7 +240,6 @@ class AppProfileSingleClusterRoutingArgs:
 
 class AppProfileStandardIsolationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppProfileStandardIsolationArgs:
@@ -257,7 +254,6 @@ class BiReservationPreferredTableArgsDict(TypedDict):
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BiReservationPreferredTableArgs:
@@ -286,7 +282,6 @@ class BiReservationPreferredTableArgs:
 
 class ConnectionAwsArgsDict(TypedDict):
     access_role: pulumi.Input[ConnectionAwsAccessRoleArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectionAwsArgs:
@@ -302,7 +297,6 @@ class ConnectionAwsArgs:
 class ConnectionAwsAccessRoleArgsDict(TypedDict):
     iam_role_id: pulumi.Input[_builtins.str]
     identity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAwsAccessRoleArgs:
@@ -331,7 +325,6 @@ class ConnectionAzureArgsDict(TypedDict):
     identity: NotRequired[pulumi.Input[_builtins.str]]
     object_id: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAzureArgs:
@@ -388,7 +381,6 @@ class ConnectionAzureArgs:
 
 class ConnectionCloudResourceArgsDict(TypedDict):
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionCloudResourceArgs:
@@ -408,7 +400,6 @@ class ConnectionCloudSpannerArgsDict(TypedDict):
     use_data_boost: NotRequired[pulumi.Input[_builtins.bool]]
     use_parallelism: NotRequired[pulumi.Input[_builtins.bool]]
     use_serverless_analytics: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionCloudSpannerArgs:
@@ -462,7 +453,6 @@ class ConnectionCloudSqlArgsDict(TypedDict):
     instance_id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     service_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionCloudSqlArgs:
@@ -504,7 +494,6 @@ class ConnectionCloudSqlArgs:
 class ConnectionCloudSqlCredentialArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionCloudSqlCredentialArgs:
@@ -529,7 +518,6 @@ class ConnectionIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionIamBindingConditionArgs:
@@ -560,7 +548,6 @@ class ConnectionIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionIamMemberConditionArgs:
@@ -595,7 +582,6 @@ class ConnectionSparkArgsDict(TypedDict):
     spark_history_server_config: NotRequired[
         pulumi.Input[ConnectionSparkSparkHistoryServerConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionSparkArgs:
@@ -636,7 +622,6 @@ class ConnectionSparkArgs:
 
 class ConnectionSparkMetastoreServiceConfigArgsDict(TypedDict):
     metastore_service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionSparkMetastoreServiceConfigArgs:
@@ -651,7 +636,6 @@ class ConnectionSparkMetastoreServiceConfigArgs:
 
 class ConnectionSparkSparkHistoryServerConfigArgsDict(TypedDict):
     dataproc_cluster: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionSparkSparkHistoryServerConfigArgs:
@@ -666,7 +650,6 @@ class ConnectionSparkSparkHistoryServerConfigArgs:
 
 class DataTransferConfigEmailPreferencesArgsDict(TypedDict):
     enable_failure_email: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DataTransferConfigEmailPreferencesArgs:
@@ -681,7 +664,6 @@ class DataTransferConfigEmailPreferencesArgs:
 
 class DataTransferConfigEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataTransferConfigEncryptionConfigurationArgs:
@@ -696,7 +678,6 @@ class DataTransferConfigScheduleOptionsArgsDict(TypedDict):
     disable_auto_scheduling: NotRequired[pulumi.Input[_builtins.bool]]
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataTransferConfigScheduleOptionsArgs:
@@ -729,7 +710,6 @@ class DataTransferConfigSensitiveParamsArgsDict(TypedDict):
     secret_access_key: NotRequired[pulumi.Input[_builtins.str]]
     secret_access_key_wo: NotRequired[pulumi.Input[_builtins.str]]
     secret_access_key_wo_version: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DataTransferConfigSensitiveParamsArgs:
@@ -761,7 +741,6 @@ class DataTransferConfigSensitiveParamsArgs:
 class Datapolicyv2DataPolicyDataMaskingPolicyArgsDict(TypedDict):
     predefined_expression: NotRequired[pulumi.Input[_builtins.str]]
     routine: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Datapolicyv2DataPolicyDataMaskingPolicyArgs:
@@ -786,7 +765,6 @@ class Datapolicyv2DataPolicyIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Datapolicyv2DataPolicyIamBindingConditionArgs:
@@ -817,7 +795,6 @@ class Datapolicyv2DataPolicyIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Datapolicyv2DataPolicyIamMemberConditionArgs:
@@ -855,7 +832,6 @@ class DatasetAccessArgsDict(TypedDict):
     special_group: NotRequired[pulumi.Input[_builtins.str]]
     user_by_email: NotRequired[pulumi.Input[_builtins.str]]
     view: NotRequired[pulumi.Input[DatasetAccessViewArgsDict]]
-    ...
 
 @pulumi.input_type
 class DatasetAccessArgs:
@@ -927,7 +903,6 @@ class DatasetAccessArgs:
 class DatasetAccessAuthorizedDatasetArgsDict(TypedDict):
     dataset: pulumi.Input[DatasetAccessAuthorizedDatasetDatasetArgsDict]
     target_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DatasetAccessAuthorizedDatasetArgs:
@@ -955,7 +930,6 @@ class DatasetAccessAuthorizedDatasetArgs:
 class DatasetAccessAuthorizedDatasetDatasetArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetAccessAuthorizedDatasetDatasetArgs:
@@ -981,7 +955,6 @@ class DatasetAccessConditionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetAccessConditionArgs:
@@ -1017,7 +990,6 @@ class DatasetAccessConditionArgs:
 class DatasetAccessDatasetArgsDict(TypedDict):
     dataset: pulumi.Input[DatasetAccessDatasetDatasetArgsDict]
     target_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DatasetAccessDatasetArgs:
@@ -1043,7 +1015,6 @@ class DatasetAccessDatasetArgs:
 class DatasetAccessDatasetDatasetArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetAccessDatasetDatasetArgs:
@@ -1068,7 +1039,6 @@ class DatasetAccessRoutineArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     routine_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetAccessRoutineArgs:
@@ -1099,7 +1069,6 @@ class DatasetAccessViewArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetAccessViewArgs:
@@ -1128,7 +1097,6 @@ class DatasetAccessViewArgs:
 
 class DatasetDefaultEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetDefaultEncryptionConfigurationArgs:
@@ -1142,7 +1110,6 @@ class DatasetDefaultEncryptionConfigurationArgs:
 class DatasetExternalCatalogDatasetOptionsArgsDict(TypedDict):
     default_storage_location_uri: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatasetExternalCatalogDatasetOptionsArgs:
@@ -1174,7 +1141,6 @@ class DatasetExternalCatalogDatasetOptionsArgs:
 class DatasetExternalDatasetReferenceArgsDict(TypedDict):
     connection: pulumi.Input[_builtins.str]
     external_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatasetExternalDatasetReferenceArgs:
@@ -1199,7 +1165,6 @@ class DatasetIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetIamBindingConditionArgs:
@@ -1230,7 +1195,6 @@ class DatasetIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetIamMemberConditionArgs:
@@ -1261,7 +1225,6 @@ class IamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IamBindingConditionArgs:
@@ -1292,7 +1255,6 @@ class IamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IamMemberConditionArgs:
@@ -1327,7 +1289,6 @@ class JobCopyArgsDict(TypedDict):
     ]
     destination_table: NotRequired[pulumi.Input[JobCopyDestinationTableArgsDict]]
     write_disposition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobCopyArgs:
@@ -1384,7 +1345,6 @@ class JobCopyArgs:
 class JobCopyDestinationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
     kms_key_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobCopyDestinationEncryptionConfigurationArgs:
@@ -1409,7 +1369,6 @@ class JobCopyDestinationTableArgsDict(TypedDict):
     table_id: pulumi.Input[_builtins.str]
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobCopyDestinationTableArgs:
@@ -1440,7 +1399,6 @@ class JobCopySourceTableArgsDict(TypedDict):
     table_id: pulumi.Input[_builtins.str]
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobCopySourceTableArgs:
@@ -1476,7 +1434,6 @@ class JobExtractArgsDict(TypedDict):
     source_model: NotRequired[pulumi.Input[JobExtractSourceModelArgsDict]]
     source_table: NotRequired[pulumi.Input[JobExtractSourceTableArgsDict]]
     use_avro_logical_types: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class JobExtractArgs:
@@ -1545,7 +1502,6 @@ class JobExtractSourceModelArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     model_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobExtractSourceModelArgs:
@@ -1576,7 +1532,6 @@ class JobExtractSourceTableArgsDict(TypedDict):
     table_id: pulumi.Input[_builtins.str]
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobExtractSourceTableArgs:
@@ -1629,7 +1584,6 @@ class JobLoadArgsDict(TypedDict):
     source_format: NotRequired[pulumi.Input[_builtins.str]]
     time_partitioning: NotRequired[pulumi.Input[JobLoadTimePartitioningArgsDict]]
     write_disposition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobLoadArgs:
@@ -1794,7 +1748,6 @@ class JobLoadArgs:
 class JobLoadDestinationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
     kms_key_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobLoadDestinationEncryptionConfigurationArgs:
@@ -1819,7 +1772,6 @@ class JobLoadDestinationTableArgsDict(TypedDict):
     table_id: pulumi.Input[_builtins.str]
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobLoadDestinationTableArgs:
@@ -1849,7 +1801,6 @@ class JobLoadDestinationTableArgs:
 class JobLoadParquetOptionsArgsDict(TypedDict):
     enable_list_inference: NotRequired[pulumi.Input[_builtins.bool]]
     enum_as_string: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class JobLoadParquetOptionsArgs:
@@ -1874,7 +1825,6 @@ class JobLoadTimePartitioningArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     expiration_ms: NotRequired[pulumi.Input[_builtins.str]]
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobLoadTimePartitioningArgs:
@@ -1931,7 +1881,6 @@ class JobQueryArgsDict(TypedDict):
         ]
     ]
     write_disposition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryArgs:
@@ -2104,7 +2053,6 @@ class JobQueryArgs:
 class JobQueryConnectionPropertyArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobQueryConnectionPropertyArgs:
@@ -2128,7 +2076,6 @@ class JobQueryConnectionPropertyArgs:
 class JobQueryDefaultDatasetArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryDefaultDatasetArgs:
@@ -2152,7 +2099,6 @@ class JobQueryDefaultDatasetArgs:
 class JobQueryDestinationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
     kms_key_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryDestinationEncryptionConfigurationArgs:
@@ -2177,7 +2123,6 @@ class JobQueryDestinationTableArgsDict(TypedDict):
     table_id: pulumi.Input[_builtins.str]
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryDestinationTableArgs:
@@ -2208,7 +2153,6 @@ class JobQueryScriptOptionsArgsDict(TypedDict):
     key_result_statement: NotRequired[pulumi.Input[_builtins.str]]
     statement_byte_budget: NotRequired[pulumi.Input[_builtins.str]]
     statement_timeout_ms: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryScriptOptionsArgs:
@@ -2238,7 +2182,6 @@ class JobQueryScriptOptionsArgs:
 class JobQueryUserDefinedFunctionResourceArgsDict(TypedDict):
     inline_code: NotRequired[pulumi.Input[_builtins.str]]
     resource_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueryUserDefinedFunctionResourceArgs:
@@ -2265,7 +2208,6 @@ class JobStatusArgsDict(TypedDict):
     ]
     errors: NotRequired[pulumi.Input[Sequence[pulumi.Input[JobStatusErrorArgsDict]]]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobStatusArgs:
@@ -2309,7 +2251,6 @@ class JobStatusErrorArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobStatusErrorArgs:
@@ -2340,7 +2281,6 @@ class JobStatusErrorResultArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobStatusErrorResultArgs:
@@ -2370,7 +2310,6 @@ class JobStatusErrorResultArgs:
 class ReservationAutoscaleArgsDict(TypedDict):
     current_slots: NotRequired[pulumi.Input[_builtins.int]]
     max_slots: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ReservationAutoscaleArgs:
@@ -2397,7 +2336,6 @@ class ReservationReplicationStatusArgsDict(TypedDict):
     ]
     last_error_time: NotRequired[pulumi.Input[_builtins.str]]
     last_replication_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReservationReplicationStatusArgs:
@@ -2438,7 +2376,6 @@ class ReservationReplicationStatusArgs:
 class ReservationReplicationStatusErrorArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReservationReplicationStatusErrorArgs:
@@ -2464,7 +2401,6 @@ class RoutineArgumentArgsDict(TypedDict):
     data_type: NotRequired[pulumi.Input[_builtins.str]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoutineArgumentArgs:
@@ -2503,7 +2439,6 @@ class RoutineExternalRuntimeOptionsArgsDict(TypedDict):
     max_batching_rows: NotRequired[pulumi.Input[_builtins.str]]
     runtime_connection: NotRequired[pulumi.Input[_builtins.str]]
     runtime_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoutineExternalRuntimeOptionsArgs:
@@ -2545,7 +2480,6 @@ class RoutineExternalRuntimeOptionsArgs:
 class RoutinePythonOptionsArgsDict(TypedDict):
     entry_point: pulumi.Input[_builtins.str]
     packages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RoutinePythonOptionsArgs:
@@ -2577,7 +2511,6 @@ class RoutineRemoteFunctionOptionsArgsDict(TypedDict):
     user_defined_context: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class RoutineRemoteFunctionOptionsArgs:
@@ -2627,7 +2560,6 @@ class RoutineSparkOptionsArgsDict(TypedDict):
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     py_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     runtime_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoutineSparkOptionsArgs:
@@ -2727,7 +2659,6 @@ class TableBiglakeConfigurationArgsDict(TypedDict):
     file_format: pulumi.Input[_builtins.str]
     storage_uri: pulumi.Input[_builtins.str]
     table_format: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableBiglakeConfigurationArgs:
@@ -2763,7 +2694,6 @@ class TableBiglakeConfigurationArgs:
 class TableEncryptionConfigurationArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
     kms_key_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableEncryptionConfigurationArgs:
@@ -2790,7 +2720,6 @@ class TableExternalCatalogTableOptionsArgsDict(TypedDict):
     storage_descriptor: NotRequired[
         pulumi.Input[TableExternalCatalogTableOptionsStorageDescriptorArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TableExternalCatalogTableOptionsArgs:
@@ -2841,7 +2770,6 @@ class TableExternalCatalogTableOptionsStorageDescriptorArgsDict(TypedDict):
     serde_info: NotRequired[
         pulumi.Input[TableExternalCatalogTableOptionsStorageDescriptorSerdeInfoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TableExternalCatalogTableOptionsStorageDescriptorArgs:
@@ -2889,7 +2817,6 @@ class TableExternalCatalogTableOptionsStorageDescriptorSerdeInfoArgsDict(TypedDi
     serialization_library: pulumi.Input[_builtins.str]
     name: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TableExternalCatalogTableOptionsStorageDescriptorSerdeInfoArgs:
@@ -2960,7 +2887,6 @@ class TableExternalDataConfigurationArgsDict(TypedDict):
     reference_file_schema_uri: NotRequired[pulumi.Input[_builtins.str]]
     schema: NotRequired[pulumi.Input[_builtins.str]]
     source_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationArgs:
@@ -3166,7 +3092,6 @@ class TableExternalDataConfigurationArgs:
 
 class TableExternalDataConfigurationAvroOptionsArgsDict(TypedDict):
     use_avro_logical_types: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationAvroOptionsArgs:
@@ -3192,7 +3117,6 @@ class TableExternalDataConfigurationBigtableOptionsArgsDict(TypedDict):
     ignore_unspecified_column_families: NotRequired[pulumi.Input[_builtins.bool]]
     output_column_families_as_json: NotRequired[pulumi.Input[_builtins.bool]]
     read_rowkey_as_string: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationBigtableOptionsArgs:
@@ -3278,7 +3202,6 @@ class TableExternalDataConfigurationBigtableOptionsColumnFamilyArgsDict(TypedDic
     family_id: NotRequired[pulumi.Input[_builtins.str]]
     only_read_latest: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationBigtableOptionsColumnFamilyArgs:
@@ -3355,7 +3278,6 @@ class TableExternalDataConfigurationBigtableOptionsColumnFamilyColumnArgsDict(
     qualifier_encoded: NotRequired[pulumi.Input[_builtins.str]]
     qualifier_string: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationBigtableOptionsColumnFamilyColumnArgs:
@@ -3408,7 +3330,6 @@ class TableExternalDataConfigurationCsvOptionsArgsDict(TypedDict):
     field_delimiter: NotRequired[pulumi.Input[_builtins.str]]
     skip_leading_rows: NotRequired[pulumi.Input[_builtins.int]]
     source_column_match: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationCsvOptionsArgs:
@@ -3462,7 +3383,6 @@ class TableExternalDataConfigurationCsvOptionsArgs:
 class TableExternalDataConfigurationGoogleSheetsOptionsArgsDict(TypedDict):
     range: NotRequired[pulumi.Input[_builtins.str]]
     skip_leading_rows: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationGoogleSheetsOptionsArgs:
@@ -3487,7 +3407,6 @@ class TableExternalDataConfigurationHivePartitioningOptionsArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     require_partition_filter: NotRequired[pulumi.Input[_builtins.bool]]
     source_uri_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationHivePartitioningOptionsArgs:
@@ -3518,7 +3437,6 @@ class TableExternalDataConfigurationHivePartitioningOptionsArgs:
 
 class TableExternalDataConfigurationJsonOptionsArgsDict(TypedDict):
     encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationJsonOptionsArgs:
@@ -3534,7 +3452,6 @@ class TableExternalDataConfigurationJsonOptionsArgs:
 class TableExternalDataConfigurationParquetOptionsArgsDict(TypedDict):
     enable_list_inference: NotRequired[pulumi.Input[_builtins.bool]]
     enum_as_string: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableExternalDataConfigurationParquetOptionsArgs:
@@ -3560,7 +3477,6 @@ class TableMaterializedViewArgsDict(TypedDict):
     allow_non_incremental_definition: NotRequired[pulumi.Input[_builtins.bool]]
     enable_refresh: NotRequired[pulumi.Input[_builtins.bool]]
     refresh_interval_ms: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableMaterializedViewArgs:
@@ -3600,7 +3516,6 @@ class TableMaterializedViewArgs:
 class TableRangePartitioningArgsDict(TypedDict):
     field: pulumi.Input[_builtins.str]
     range: pulumi.Input[TableRangePartitioningRangeArgsDict]
-    ...
 
 @pulumi.input_type
 class TableRangePartitioningArgs:
@@ -3625,7 +3540,6 @@ class TableRangePartitioningRangeArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     interval: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TableRangePartitioningRangeArgs:
@@ -3654,7 +3568,6 @@ class TableRangePartitioningRangeArgs:
 
 class TableSchemaForeignTypeInfoArgsDict(TypedDict):
     type_system: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableSchemaForeignTypeInfoArgs:
@@ -3670,7 +3583,6 @@ class TableTableConstraintsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[TableTableConstraintsForeignKeyArgsDict]]]
     ]
     primary_key: NotRequired[pulumi.Input[TableTableConstraintsPrimaryKeyArgsDict]]
-    ...
 
 @pulumi.input_type
 class TableTableConstraintsArgs:
@@ -3714,7 +3626,6 @@ class TableTableConstraintsForeignKeyArgsDict(TypedDict):
         TableTableConstraintsForeignKeyReferencedTableArgsDict
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableTableConstraintsForeignKeyArgs:
@@ -3756,7 +3667,6 @@ class TableTableConstraintsForeignKeyArgs:
 class TableTableConstraintsForeignKeyColumnReferencesArgsDict(TypedDict):
     referenced_column: pulumi.Input[_builtins.str]
     referencing_column: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableTableConstraintsForeignKeyColumnReferencesArgs:
@@ -3781,7 +3691,6 @@ class TableTableConstraintsForeignKeyReferencedTableArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableTableConstraintsForeignKeyReferencedTableArgs:
@@ -3810,7 +3719,6 @@ class TableTableConstraintsForeignKeyReferencedTableArgs:
 
 class TableTableConstraintsPrimaryKeyArgsDict(TypedDict):
     columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class TableTableConstraintsPrimaryKeyArgs:
@@ -3828,7 +3736,6 @@ class TableTableReplicationInfoArgsDict(TypedDict):
     source_project_id: pulumi.Input[_builtins.str]
     source_table_id: pulumi.Input[_builtins.str]
     replication_interval_ms: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableTableReplicationInfoArgs:
@@ -3866,7 +3773,6 @@ class TableTimePartitioningArgsDict(TypedDict):
     expiration_ms: NotRequired[pulumi.Input[_builtins.int]]
     field: NotRequired[pulumi.Input[_builtins.str]]
     require_partition_filter: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableTimePartitioningArgs:
@@ -3905,7 +3811,6 @@ class TableTimePartitioningArgs:
 class TableViewArgsDict(TypedDict):
     query: pulumi.Input[_builtins.str]
     use_legacy_sql: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableViewArgs:

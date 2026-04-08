@@ -48,7 +48,6 @@ class CapacityReservationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapacityReservationTimeoutsArgs:
@@ -77,7 +76,6 @@ class CapacityReservationTimeoutsArgs:
 
 class DatabaseAclConfigurationArgsDict(TypedDict):
     s3_acl_option: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatabaseAclConfigurationArgs:
@@ -91,7 +89,6 @@ class DatabaseAclConfigurationArgs:
 class DatabaseEncryptionConfigurationArgsDict(TypedDict):
     encryption_option: pulumi.Input[_builtins.str]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseEncryptionConfigurationArgs:
@@ -144,7 +141,6 @@ class WorkgroupConfigurationArgsDict(TypedDict):
     result_configuration: NotRequired[
         pulumi.Input[WorkgroupConfigurationResultConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationArgs:
@@ -327,7 +323,6 @@ class WorkgroupConfigurationArgs:
 
 class WorkgroupConfigurationCustomerContentEncryptionConfigurationArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationCustomerContentEncryptionConfigurationArgs:
@@ -343,7 +338,6 @@ class WorkgroupConfigurationCustomerContentEncryptionConfigurationArgs:
 class WorkgroupConfigurationEngineVersionArgsDict(TypedDict):
     effective_engine_version: NotRequired[pulumi.Input[_builtins.str]]
     selected_engine_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationEngineVersionArgs:
@@ -369,7 +363,6 @@ class WorkgroupConfigurationEngineVersionArgs:
 class WorkgroupConfigurationIdentityCenterConfigurationArgsDict(TypedDict):
     enable_identity_center: NotRequired[pulumi.Input[_builtins.bool]]
     identity_center_instance_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationIdentityCenterConfigurationArgs:
@@ -399,7 +392,6 @@ class WorkgroupConfigurationManagedQueryResultsConfigurationArgsDict(TypedDict):
             WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationManagedQueryResultsConfigurationArgs:
@@ -441,7 +433,6 @@ class WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurat
     TypedDict
 ):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationArgs:
@@ -470,7 +461,6 @@ class WorkgroupConfigurationMonitoringConfigurationArgsDict(TypedDict):
             WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationMonitoringConfigurationArgs:
@@ -563,7 +553,6 @@ class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguratio
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationArgs:
@@ -630,7 +619,6 @@ class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguratio
 ):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeArgs:
@@ -656,7 +644,6 @@ class WorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationAr
 ):
     enabled: pulumi.Input[_builtins.bool]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationArgs:
@@ -683,7 +670,6 @@ class WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgsDic
     enabled: pulumi.Input[_builtins.bool]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
     log_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationArgs:
@@ -714,7 +700,6 @@ class WorkgroupConfigurationQueryResultsS3AccessGrantsConfigurationArgsDict(Type
     authentication_type: pulumi.Input[_builtins.str]
     enable_s3_access_grants: pulumi.Input[_builtins.bool]
     create_user_level_prefix: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationQueryResultsS3AccessGrantsConfigurationArgs:
@@ -754,7 +739,6 @@ class WorkgroupConfigurationResultConfigurationArgsDict(TypedDict):
     ]
     expected_bucket_owner: NotRequired[pulumi.Input[_builtins.str]]
     output_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationResultConfigurationArgs:
@@ -817,7 +801,6 @@ class WorkgroupConfigurationResultConfigurationArgs:
 
 class WorkgroupConfigurationResultConfigurationAclConfigurationArgsDict(TypedDict):
     s3_acl_option: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationResultConfigurationAclConfigurationArgs:
@@ -833,7 +816,6 @@ class WorkgroupConfigurationResultConfigurationEncryptionConfigurationArgsDict(
 ):
     encryption_option: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigurationResultConfigurationEncryptionConfigurationArgs:

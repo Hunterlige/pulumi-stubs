@@ -29,7 +29,6 @@ __all__ = [
 class ConnectionAliasTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAliasTimeoutsArgs:
@@ -53,7 +52,6 @@ class ConnectionAliasTimeoutsArgs:
 class DirectoryActiveDirectoryConfigArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     service_account_secret_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DirectoryActiveDirectoryConfigArgs:
@@ -77,7 +75,6 @@ class DirectoryActiveDirectoryConfigArgs:
 class DirectoryCertificateBasedAuthPropertiesArgsDict(TypedDict):
     certificate_authority_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DirectoryCertificateBasedAuthPropertiesArgs:
@@ -104,7 +101,6 @@ class DirectorySamlPropertiesArgsDict(TypedDict):
     relay_state_parameter_name: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     user_access_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DirectorySamlPropertiesArgs:
@@ -139,7 +135,6 @@ class DirectorySelfServicePermissionsArgsDict(TypedDict):
     rebuild_workspace: NotRequired[pulumi.Input[_builtins.bool]]
     restart_workspace: NotRequired[pulumi.Input[_builtins.bool]]
     switch_running_mode: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DirectorySelfServicePermissionsArgs:
@@ -187,7 +182,6 @@ class DirectoryWorkspaceAccessPropertiesArgsDict(TypedDict):
     device_type_web: NotRequired[pulumi.Input[_builtins.str]]
     device_type_windows: NotRequired[pulumi.Input[_builtins.str]]
     device_type_zeroclient: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DirectoryWorkspaceAccessPropertiesArgs:
@@ -250,7 +244,6 @@ class DirectoryWorkspaceCreationPropertiesArgsDict(TypedDict):
     enable_internet_access: NotRequired[pulumi.Input[_builtins.bool]]
     enable_maintenance_mode: NotRequired[pulumi.Input[_builtins.bool]]
     user_enabled_as_local_administrator: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DirectoryWorkspaceCreationPropertiesArgs:
@@ -302,7 +295,6 @@ class DirectoryWorkspaceCreationPropertiesArgs:
 class IpGroupRuleArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IpGroupRuleArgs:
@@ -329,7 +321,6 @@ class WorkspaceWorkspacePropertiesArgsDict(TypedDict):
     running_mode: NotRequired[pulumi.Input[_builtins.str]]
     running_mode_auto_stop_timeout_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
     user_volume_size_gib: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkspaceWorkspacePropertiesArgs:

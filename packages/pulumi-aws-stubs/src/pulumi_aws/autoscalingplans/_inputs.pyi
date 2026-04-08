@@ -31,7 +31,6 @@ class ScalingPlanApplicationSourceArgsDict(TypedDict):
             Sequence[pulumi.Input[ScalingPlanApplicationSourceTagFilterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScalingPlanApplicationSourceArgs:
@@ -72,7 +71,6 @@ class ScalingPlanApplicationSourceArgs:
 class ScalingPlanApplicationSourceTagFilterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanApplicationSourceTagFilterArgs:
@@ -126,7 +124,6 @@ class ScalingPlanScalingInstructionArgsDict(TypedDict):
     predictive_scaling_mode: NotRequired[pulumi.Input[_builtins.str]]
     scaling_policy_update_behavior: NotRequired[pulumi.Input[_builtins.str]]
     scheduled_action_buffer_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionArgs:
@@ -296,7 +293,6 @@ class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgsDict(Typ
     statistic: pulumi.Input[_builtins.str]
     dimensions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgs:
@@ -344,7 +340,6 @@ class ScalingPlanScalingInstructionCustomizedLoadMetricSpecificationArgs:
 class ScalingPlanScalingInstructionPredefinedLoadMetricSpecificationArgsDict(TypedDict):
     predefined_load_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionPredefinedLoadMetricSpecificationArgs:
@@ -381,7 +376,6 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationArgsDict(TypedDict
     ]
     scale_in_cooldown: NotRequired[pulumi.Input[_builtins.int]]
     scale_out_cooldown: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionTargetTrackingConfigurationArgs:
@@ -476,7 +470,6 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingM
     statistic: pulumi.Input[_builtins.str]
     dimensions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationArgs:
@@ -526,7 +519,6 @@ class ScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingM
 ):
     predefined_scaling_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationArgs:

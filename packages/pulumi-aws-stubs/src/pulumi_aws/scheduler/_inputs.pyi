@@ -39,7 +39,6 @@ __all__ = [
 class ScheduleFlexibleTimeWindowArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
     maximum_window_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduleFlexibleTimeWindowArgs:
@@ -81,7 +80,6 @@ class ScheduleTargetArgsDict(TypedDict):
         pulumi.Input[ScheduleTargetSagemakerPipelineParametersArgsDict]
     ]
     sqs_parameters: NotRequired[pulumi.Input[ScheduleTargetSqsParametersArgsDict]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetArgs:
@@ -187,7 +185,6 @@ class ScheduleTargetArgs:
 
 class ScheduleTargetDeadLetterConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetDeadLetterConfigArgs:
@@ -233,7 +230,6 @@ class ScheduleTargetEcsParametersArgsDict(TypedDict):
     reference_id: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     task_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEcsParametersArgs:
@@ -412,7 +408,6 @@ class ScheduleTargetEcsParametersCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
     base: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEcsParametersCapacityProviderStrategyArgs:
@@ -443,7 +438,6 @@ class ScheduleTargetEcsParametersNetworkConfigurationArgsDict(TypedDict):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     assign_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEcsParametersNetworkConfigurationArgs:
@@ -479,7 +473,6 @@ class ScheduleTargetEcsParametersNetworkConfigurationArgs:
 class ScheduleTargetEcsParametersPlacementConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEcsParametersPlacementConstraintArgs:
@@ -503,7 +496,6 @@ class ScheduleTargetEcsParametersPlacementConstraintArgs:
 class ScheduleTargetEcsParametersPlacementStrategyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEcsParametersPlacementStrategyArgs:
@@ -527,7 +519,6 @@ class ScheduleTargetEcsParametersPlacementStrategyArgs:
 class ScheduleTargetEventbridgeParametersArgsDict(TypedDict):
     detail_type: pulumi.Input[_builtins.str]
     source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetEventbridgeParametersArgs:
@@ -550,7 +541,6 @@ class ScheduleTargetEventbridgeParametersArgs:
 
 class ScheduleTargetKinesisParametersArgsDict(TypedDict):
     partition_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetKinesisParametersArgs:
@@ -564,7 +554,6 @@ class ScheduleTargetKinesisParametersArgs:
 class ScheduleTargetRetryPolicyArgsDict(TypedDict):
     maximum_event_age_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     maximum_retry_attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetRetryPolicyArgs:
@@ -597,7 +586,6 @@ class ScheduleTargetSagemakerPipelineParametersArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetSagemakerPipelineParametersArgs:
@@ -644,7 +632,6 @@ class ScheduleTargetSagemakerPipelineParametersArgs:
 class ScheduleTargetSagemakerPipelineParametersPipelineParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetSagemakerPipelineParametersPipelineParameterArgs:
@@ -667,7 +654,6 @@ class ScheduleTargetSagemakerPipelineParametersPipelineParameterArgs:
 
 class ScheduleTargetSqsParametersArgsDict(TypedDict):
     message_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleTargetSqsParametersArgs:

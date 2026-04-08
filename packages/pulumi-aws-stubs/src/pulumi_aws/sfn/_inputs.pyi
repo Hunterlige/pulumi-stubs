@@ -22,7 +22,6 @@ class ActivityEncryptionConfigurationArgsDict(TypedDict):
     kms_data_key_reuse_period_seconds: NotRequired[pulumi.Input[_builtins.int]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ActivityEncryptionConfigurationArgs:
@@ -56,7 +55,6 @@ class ActivityEncryptionConfigurationArgs:
 class AliasRoutingConfigurationArgsDict(TypedDict):
     state_machine_version_arn: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AliasRoutingConfigurationArgs:
@@ -81,7 +79,6 @@ class StateMachineEncryptionConfigurationArgsDict(TypedDict):
     kms_data_key_reuse_period_seconds: NotRequired[pulumi.Input[_builtins.int]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StateMachineEncryptionConfigurationArgs:
@@ -116,7 +113,6 @@ class StateMachineLoggingConfigurationArgsDict(TypedDict):
     include_execution_data: NotRequired[pulumi.Input[_builtins.bool]]
     level: NotRequired[pulumi.Input[_builtins.str]]
     log_destination: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StateMachineLoggingConfigurationArgs:
@@ -145,7 +141,6 @@ class StateMachineLoggingConfigurationArgs:
 
 class StateMachineTracingConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StateMachineTracingConfigurationArgs:

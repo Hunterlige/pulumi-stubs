@@ -133,7 +133,6 @@ __all__ = [
 
 class GroupAvailabilityZoneDistributionArgsDict(TypedDict):
     capacity_distribution_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupAvailabilityZoneDistributionArgs:
@@ -159,7 +158,6 @@ class GroupCapacityReservationSpecificationArgsDict(TypedDict):
             GroupCapacityReservationSpecificationCapacityReservationTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GroupCapacityReservationSpecificationArgs:
@@ -206,7 +204,6 @@ class GroupCapacityReservationSpecificationCapacityReservationTargetArgsDict(Typ
     capacity_reservation_resource_group_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class GroupCapacityReservationSpecificationCapacityReservationTargetArgs:
@@ -247,7 +244,6 @@ class GroupInitialLifecycleHookArgsDict(TypedDict):
     notification_metadata: NotRequired[pulumi.Input[_builtins.str]]
     notification_target_arn: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupInitialLifecycleHookArgs:
@@ -301,7 +297,6 @@ class GroupInitialLifecycleHookArgs:
 class GroupInstanceMaintenancePolicyArgsDict(TypedDict):
     max_healthy_percentage: pulumi.Input[_builtins.int]
     min_healthy_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GroupInstanceMaintenancePolicyArgs:
@@ -326,7 +321,6 @@ class GroupInstanceRefreshArgsDict(TypedDict):
     strategy: pulumi.Input[_builtins.str]
     preferences: NotRequired[pulumi.Input[GroupInstanceRefreshPreferencesArgsDict]]
     triggers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GroupInstanceRefreshArgs:
@@ -376,7 +370,6 @@ class GroupInstanceRefreshPreferencesArgsDict(TypedDict):
     scale_in_protected_instances: NotRequired[pulumi.Input[_builtins.str]]
     skip_matching: NotRequired[pulumi.Input[_builtins.bool]]
     standby_instances: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupInstanceRefreshPreferencesArgs:
@@ -466,7 +459,6 @@ class GroupInstanceRefreshPreferencesArgs:
 
 class GroupInstanceRefreshPreferencesAlarmSpecificationArgsDict(TypedDict):
     alarms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GroupInstanceRefreshPreferencesAlarmSpecificationArgs:
@@ -489,7 +481,6 @@ class GroupLaunchTemplateArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupLaunchTemplateArgs:
@@ -521,7 +512,6 @@ class GroupMixedInstancesPolicyArgsDict(TypedDict):
     instances_distribution: NotRequired[
         pulumi.Input[GroupMixedInstancesPolicyInstancesDistributionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyArgs:
@@ -562,7 +552,6 @@ class GroupMixedInstancesPolicyInstancesDistributionArgsDict(TypedDict):
     spot_allocation_strategy: NotRequired[pulumi.Input[_builtins.str]]
     spot_instance_pools: NotRequired[pulumi.Input[_builtins.int]]
     spot_max_price: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyInstancesDistributionArgs:
@@ -630,7 +619,6 @@ class GroupMixedInstancesPolicyLaunchTemplateArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateArgs:
@@ -689,7 +677,6 @@ class GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationArgsDict
     launch_template_id: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationArgs:
@@ -729,7 +716,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideArgsDict(TypedDict):
         ]
     ]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideArgs:
@@ -875,7 +861,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsArgsDic
             GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsArgs:
@@ -1254,7 +1239,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceler
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountArgs:
@@ -1280,7 +1264,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceler
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibArgs:
@@ -1306,7 +1289,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselin
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
@@ -1332,7 +1314,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryG
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuArgs:
@@ -1358,7 +1339,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryM
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibArgs:
@@ -1384,7 +1364,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetwork
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsArgs:
@@ -1410,7 +1389,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetwork
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountArgs:
@@ -1436,7 +1414,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLo
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbArgs:
@@ -1462,7 +1439,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCou
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountArgs:
@@ -1489,7 +1465,6 @@ class GroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification
     launch_template_id: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationArgs:
@@ -1520,7 +1495,6 @@ class GroupTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     propagate_at_launch: pulumi.Input[_builtins.bool]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GroupTagArgs:
@@ -1550,7 +1524,6 @@ class GroupTagArgs:
 class GroupTrafficSourceArgsDict(TypedDict):
     identifier: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupTrafficSourceArgs:
@@ -1578,7 +1551,6 @@ class GroupWarmPoolArgsDict(TypedDict):
     max_group_prepared_capacity: NotRequired[pulumi.Input[_builtins.int]]
     min_size: NotRequired[pulumi.Input[_builtins.int]]
     pool_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupWarmPoolArgs:
@@ -1621,7 +1593,6 @@ class GroupWarmPoolArgs:
 
 class GroupWarmPoolInstanceReusePolicyArgsDict(TypedDict):
     reuse_on_scale_in: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GroupWarmPoolInstanceReusePolicyArgs:
@@ -1642,7 +1613,6 @@ class PolicyPredictiveScalingConfigurationArgsDict(TypedDict):
     max_capacity_buffer: NotRequired[pulumi.Input[_builtins.str]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     scheduling_buffer_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationArgs:
@@ -1724,7 +1694,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationArgsDict(TypedDict)
             PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationArgs:
@@ -1887,7 +1856,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityM
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationArgs:
@@ -1937,7 +1905,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityM
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryArgs:
@@ -2001,7 +1968,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityM
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -2053,7 +2019,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityM
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -2114,7 +2079,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityM
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -2145,7 +2109,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetri
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationArgs:
@@ -2195,7 +2158,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetri
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryArgs:
@@ -2259,7 +2221,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetri
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -2311,7 +2272,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetri
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -2372,7 +2332,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetri
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -2403,7 +2362,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationArgs:
@@ -2453,7 +2411,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMe
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryArgs:
@@ -2517,7 +2474,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMe
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -2569,7 +2525,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -2630,7 +2585,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMe
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -2656,7 +2610,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetri
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationArgs:
@@ -2682,7 +2635,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPai
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationArgs:
@@ -2708,7 +2660,6 @@ class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMe
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationArgs:
@@ -2733,7 +2684,6 @@ class PolicyStepAdjustmentArgsDict(TypedDict):
     scaling_adjustment: pulumi.Input[_builtins.int]
     metric_interval_lower_bound: NotRequired[pulumi.Input[_builtins.str]]
     metric_interval_upper_bound: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyStepAdjustmentArgs:
@@ -2777,7 +2727,6 @@ class PolicyTargetTrackingConfigurationArgsDict(TypedDict):
             PolicyTargetTrackingConfigurationPredefinedMetricSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationArgs:
@@ -2864,7 +2813,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationArgsDict(Typ
     period: NotRequired[pulumi.Input[_builtins.int]]
     statistic: NotRequired[pulumi.Input[_builtins.str]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationArgs:
@@ -2985,7 +2933,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricArgsDi
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricArgs:
@@ -3046,7 +2993,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimens
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionArgs:
@@ -3076,7 +3022,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetric
     stat: pulumi.Input[_builtins.str]
     period: NotRequired[pulumi.Input[_builtins.int]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetricStatArgs:
@@ -3134,7 +3079,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetric
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetricStatMetricArgs:
@@ -3195,7 +3139,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetric
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetricStatMetricDimensionArgs:
@@ -3219,7 +3162,6 @@ class PolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricMetric
 class PolicyTargetTrackingConfigurationPredefinedMetricSpecificationArgsDict(TypedDict):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingConfigurationPredefinedMetricSpecificationArgs:
@@ -3244,7 +3186,6 @@ class TagTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     propagate_at_launch: pulumi.Input[_builtins.bool]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TagTagArgs:
@@ -3274,7 +3215,6 @@ class TagTagArgs:
 class TrafficSourceAttachmentTrafficSourceArgsDict(TypedDict):
     identifier: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TrafficSourceAttachmentTrafficSourceArgs:
@@ -3298,7 +3238,6 @@ class TrafficSourceAttachmentTrafficSourceArgs:
 class GetAmiIdsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAmiIdsFilterArgs:

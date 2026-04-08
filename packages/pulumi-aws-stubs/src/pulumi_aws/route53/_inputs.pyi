@@ -77,7 +77,6 @@ class ProfilesAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfilesAssociationTimeoutsArgs:
@@ -108,7 +107,6 @@ class ProfilesProfileTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     read: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfilesProfileTimeoutsArgs:
@@ -139,7 +137,6 @@ class ProfilesResourceAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     read: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfilesResourceAssociationTimeoutsArgs:
@@ -170,7 +167,6 @@ class RecordAliasArgsDict(TypedDict):
     evaluate_target_health: pulumi.Input[_builtins.bool]
     name: pulumi.Input[_builtins.str]
     zone_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordAliasArgs:
@@ -200,7 +196,6 @@ class RecordAliasArgs:
 class RecordCidrRoutingPolicyArgsDict(TypedDict):
     collection_id: pulumi.Input[_builtins.str]
     location_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordCidrRoutingPolicyArgs:
@@ -223,7 +218,6 @@ class RecordCidrRoutingPolicyArgs:
 
 class RecordFailoverRoutingPolicyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordFailoverRoutingPolicyArgs:
@@ -238,7 +232,6 @@ class RecordGeolocationRoutingPolicyArgsDict(TypedDict):
     continent: NotRequired[pulumi.Input[_builtins.str]]
     country: NotRequired[pulumi.Input[_builtins.str]]
     subdivision: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordGeolocationRoutingPolicyArgs:
@@ -274,7 +267,6 @@ class RecordGeoproximityRoutingPolicyArgsDict(TypedDict):
         ]
     ]
     local_zone_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordGeoproximityRoutingPolicyArgs:
@@ -327,7 +319,6 @@ class RecordGeoproximityRoutingPolicyArgs:
 class RecordGeoproximityRoutingPolicyCoordinateArgsDict(TypedDict):
     latitude: pulumi.Input[_builtins.str]
     longitude: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordGeoproximityRoutingPolicyCoordinateArgs:
@@ -350,7 +341,6 @@ class RecordGeoproximityRoutingPolicyCoordinateArgs:
 
 class RecordLatencyRoutingPolicyArgsDict(TypedDict):
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordLatencyRoutingPolicyArgs:
@@ -363,7 +353,6 @@ class RecordLatencyRoutingPolicyArgs:
 
 class RecordWeightedRoutingPolicyArgsDict(TypedDict):
     weight: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class RecordWeightedRoutingPolicyArgs:
@@ -404,7 +393,6 @@ class RecordsExclusiveResourceRecordSetArgsDict(TypedDict):
     ttl: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetArgs:
@@ -566,7 +554,6 @@ class RecordsExclusiveResourceRecordSetAliasTargetArgsDict(TypedDict):
     dns_name: pulumi.Input[_builtins.str]
     evaluate_target_health: pulumi.Input[_builtins.bool]
     hosted_zone_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetAliasTargetArgs:
@@ -596,7 +583,6 @@ class RecordsExclusiveResourceRecordSetAliasTargetArgs:
 class RecordsExclusiveResourceRecordSetCidrRoutingConfigArgsDict(TypedDict):
     collection_id: pulumi.Input[_builtins.str]
     location_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetCidrRoutingConfigArgs:
@@ -621,7 +607,6 @@ class RecordsExclusiveResourceRecordSetGeolocationArgsDict(TypedDict):
     continent_code: NotRequired[pulumi.Input[_builtins.str]]
     country_code: NotRequired[pulumi.Input[_builtins.str]]
     subdivision_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetGeolocationArgs:
@@ -657,7 +642,6 @@ class RecordsExclusiveResourceRecordSetGeoproximityLocationArgsDict(TypedDict):
         ]
     ]
     local_zone_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetGeoproximityLocationArgs:
@@ -712,7 +696,6 @@ class RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesArgsDict(
 ):
     latitude: pulumi.Input[_builtins.str]
     longitude: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesArgs:
@@ -735,7 +718,6 @@ class RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesArgs:
 
 class RecordsExclusiveResourceRecordSetResourceRecordArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveResourceRecordSetResourceRecordArgs:
@@ -749,7 +731,6 @@ class RecordsExclusiveResourceRecordSetResourceRecordArgs:
 class RecordsExclusiveTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordsExclusiveTimeoutsArgs:
@@ -775,7 +756,6 @@ class ResolverEndpointIpAddressArgsDict(TypedDict):
     ip: NotRequired[pulumi.Input[_builtins.str]]
     ip_id: NotRequired[pulumi.Input[_builtins.str]]
     ipv6: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResolverEndpointIpAddressArgs:
@@ -813,7 +793,6 @@ class ResolverRuleTargetIpArgsDict(TypedDict):
     ipv6: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResolverRuleTargetIpArgs:
@@ -849,7 +828,6 @@ class ResolverRuleTargetIpArgs:
 class ZoneVpcArgsDict(TypedDict):
     vpc_id: pulumi.Input[_builtins.str]
     vpc_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneVpcArgs:
@@ -873,7 +851,6 @@ class ZoneVpcArgs:
 class GetQueryLogConfigFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetQueryLogConfigFilterArgs:
@@ -894,7 +871,6 @@ class GetQueryLogConfigFilterArgs:
 class GetResolverEndpointFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetResolverEndpointFilterArgs:
@@ -917,7 +893,6 @@ class GetTrafficPolicyDocumentEndpointArgsDict(TypedDict):
     region: NotRequired[_builtins.str]
     type: NotRequired[_builtins.str]
     value: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentEndpointArgs:
@@ -961,7 +936,6 @@ class GetTrafficPolicyDocumentRuleArgsDict(TypedDict):
     regions: NotRequired[Sequence[GetTrafficPolicyDocumentRuleRegionArgsDict]]
     secondary: NotRequired[GetTrafficPolicyDocumentRuleSecondaryArgsDict]
     type: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleArgs:
@@ -1042,7 +1016,6 @@ class GetTrafficPolicyDocumentRuleGeoProximityLocationArgsDict(TypedDict):
     longitude: NotRequired[_builtins.str]
     region: NotRequired[_builtins.str]
     rule_reference: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleGeoProximityLocationArgs:
@@ -1102,7 +1075,6 @@ class GetTrafficPolicyDocumentRuleGeoProximityLocationArgs:
 class GetTrafficPolicyDocumentRuleItemArgsDict(TypedDict):
     endpoint_reference: NotRequired[_builtins.str]
     health_check: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleItemArgs:
@@ -1132,7 +1104,6 @@ class GetTrafficPolicyDocumentRuleLocationArgsDict(TypedDict):
     is_default: NotRequired[_builtins.bool]
     rule_reference: NotRequired[_builtins.str]
     subdivision: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleLocationArgs:
@@ -1194,7 +1165,6 @@ class GetTrafficPolicyDocumentRulePrimaryArgsDict(TypedDict):
     evaluate_target_health: NotRequired[_builtins.bool]
     health_check: NotRequired[_builtins.str]
     rule_reference: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRulePrimaryArgs:
@@ -1233,7 +1203,6 @@ class GetTrafficPolicyDocumentRuleRegionArgsDict(TypedDict):
     health_check: NotRequired[_builtins.str]
     region: NotRequired[_builtins.str]
     rule_reference: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleRegionArgs:
@@ -1277,7 +1246,6 @@ class GetTrafficPolicyDocumentRuleSecondaryArgsDict(TypedDict):
     evaluate_target_health: NotRequired[_builtins.bool]
     health_check: NotRequired[_builtins.str]
     rule_reference: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTrafficPolicyDocumentRuleSecondaryArgs:

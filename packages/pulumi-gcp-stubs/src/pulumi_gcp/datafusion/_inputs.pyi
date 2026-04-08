@@ -21,7 +21,6 @@ __all__ = [
 class InstanceAcceleratorArgsDict(TypedDict):
     accelerator_type: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAcceleratorArgs:
@@ -44,7 +43,6 @@ class InstanceAcceleratorArgs:
 
 class InstanceCryptoKeyConfigArgsDict(TypedDict):
     key_reference: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceCryptoKeyConfigArgs:
@@ -58,7 +56,6 @@ class InstanceCryptoKeyConfigArgs:
 class InstanceEventPublishConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceEventPublishConfigArgs:
@@ -86,7 +83,6 @@ class InstanceNetworkConfigArgsDict(TypedDict):
     private_service_connect_config: NotRequired[
         pulumi.Input[InstanceNetworkConfigPrivateServiceConnectConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkConfigArgs:
@@ -134,7 +130,6 @@ class InstanceNetworkConfigPrivateServiceConnectConfigArgsDict(TypedDict):
     effective_unreachable_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
     network_attachment: NotRequired[pulumi.Input[_builtins.str]]
     unreachable_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkConfigPrivateServiceConnectConfigArgs:

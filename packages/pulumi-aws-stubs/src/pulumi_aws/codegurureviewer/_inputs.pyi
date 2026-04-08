@@ -27,7 +27,6 @@ __all__ = [
 class RepositoryAssociationKmsKeyDetailsArgsDict(TypedDict):
     encryption_option: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationKmsKeyDetailsArgs:
@@ -61,7 +60,6 @@ class RepositoryAssociationRepositoryArgsDict(TypedDict):
     s3_bucket: NotRequired[
         pulumi.Input[RepositoryAssociationRepositoryS3BucketArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationRepositoryArgs:
@@ -129,7 +127,6 @@ class RepositoryAssociationRepositoryBitbucketArgsDict(TypedDict):
     connection_arn: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationRepositoryBitbucketArgs:
@@ -158,7 +155,6 @@ class RepositoryAssociationRepositoryBitbucketArgs:
 
 class RepositoryAssociationRepositoryCodecommitArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationRepositoryCodecommitArgs:
@@ -173,7 +169,6 @@ class RepositoryAssociationRepositoryGithubEnterpriseServerArgsDict(TypedDict):
     connection_arn: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationRepositoryGithubEnterpriseServerArgs:
@@ -203,7 +198,6 @@ class RepositoryAssociationRepositoryGithubEnterpriseServerArgs:
 class RepositoryAssociationRepositoryS3BucketArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationRepositoryS3BucketArgs:
@@ -235,7 +229,6 @@ class RepositoryAssociationS3RepositoryDetailArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationS3RepositoryDetailArgs:
@@ -286,7 +279,6 @@ class RepositoryAssociationS3RepositoryDetailArgs:
 class RepositoryAssociationS3RepositoryDetailCodeArtifactArgsDict(TypedDict):
     build_artifacts_object_key: NotRequired[pulumi.Input[_builtins.str]]
     source_code_artifacts_object_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryAssociationS3RepositoryDetailCodeArtifactArgs:

@@ -30,7 +30,6 @@ class JobAppEngineHttpTargetArgsDict(TypedDict):
     body: NotRequired[pulumi.Input[_builtins.str]]
     headers: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     http_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobAppEngineHttpTargetArgs:
@@ -85,7 +84,6 @@ class JobAppEngineHttpTargetAppEngineRoutingArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     service: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobAppEngineHttpTargetAppEngineRoutingArgs:
@@ -119,7 +117,6 @@ class JobHttpTargetArgsDict(TypedDict):
     http_method: NotRequired[pulumi.Input[_builtins.str]]
     oauth_token: NotRequired[pulumi.Input[JobHttpTargetOauthTokenArgsDict]]
     oidc_token: NotRequired[pulumi.Input[JobHttpTargetOidcTokenArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobHttpTargetArgs:
@@ -175,7 +172,6 @@ class JobHttpTargetArgs:
 class JobHttpTargetOauthTokenArgsDict(TypedDict):
     service_account_email: pulumi.Input[_builtins.str]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobHttpTargetOauthTokenArgs:
@@ -199,7 +195,6 @@ class JobHttpTargetOauthTokenArgs:
 class JobHttpTargetOidcTokenArgsDict(TypedDict):
     service_account_email: pulumi.Input[_builtins.str]
     audience: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobHttpTargetOidcTokenArgs:
@@ -224,7 +219,6 @@ class JobPubsubTargetArgsDict(TypedDict):
     topic_name: pulumi.Input[_builtins.str]
     attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobPubsubTargetArgs:
@@ -263,7 +257,6 @@ class JobRetryConfigArgsDict(TypedDict):
     max_retry_duration: NotRequired[pulumi.Input[_builtins.str]]
     min_backoff_duration: NotRequired[pulumi.Input[_builtins.str]]
     retry_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobRetryConfigArgs:

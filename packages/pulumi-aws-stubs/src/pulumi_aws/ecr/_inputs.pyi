@@ -50,7 +50,6 @@ __all__ = [
 
 class LifecyclePolicyActionArgsDict(TypedDict):
     type: pulumi.Input[LifecyclePolicyActionType]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyActionArgs:
@@ -65,7 +64,6 @@ class LifecyclePolicyActionArgs:
 
 class LifecyclePolicyDocumentArgsDict(TypedDict):
     rules: pulumi.Input[Sequence[pulumi.Input[LifecyclePolicyRuleArgsDict]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyDocumentArgs:
@@ -89,7 +87,6 @@ class LifecyclePolicyRuleArgsDict(TypedDict):
     rule_priority: pulumi.Input[_builtins.int]
     selection: pulumi.Input[LifecyclePolicySelectionArgsDict]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyRuleArgs:
@@ -128,7 +125,6 @@ class LifecyclePolicySelectionArgsDict(TypedDict):
     tag_status: pulumi.Input[LifecyclePolicyTagStatus]
     count_unit: NotRequired[pulumi.Input[_builtins.str]]
     tag_prefix_list: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicySelectionArgs:
@@ -177,7 +173,6 @@ class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgsDict]]]
     version: pulumi.Input[iam.PolicyDocumentVersion]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDocumentArgs:
@@ -215,7 +210,6 @@ class RegistryScanningConfigurationRuleArgsDict(TypedDict):
         ]
     ]
     scan_frequency: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegistryScanningConfigurationRuleArgs:
@@ -254,7 +248,6 @@ class RegistryScanningConfigurationRuleArgs:
 class RegistryScanningConfigurationRuleRepositoryFilterArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
     filter_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegistryScanningConfigurationRuleRepositoryFilterArgs:
@@ -281,7 +274,6 @@ class ReplicationConfigurationReplicationConfigurationArgsDict(TypedDict):
             pulumi.Input[ReplicationConfigurationReplicationConfigurationRuleArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationReplicationConfigurationArgs:
@@ -328,7 +320,6 @@ class ReplicationConfigurationReplicationConfigurationRuleArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationReplicationConfigurationRuleArgs:
@@ -406,7 +397,6 @@ class ReplicationConfigurationReplicationConfigurationRuleDestinationArgsDict(
 ):
     region: pulumi.Input[_builtins.str]
     registry_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationReplicationConfigurationRuleDestinationArgs:
@@ -432,7 +422,6 @@ class ReplicationConfigurationReplicationConfigurationRuleRepositoryFilterArgsDi
 ):
     filter: pulumi.Input[_builtins.str]
     filter_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationReplicationConfigurationRuleRepositoryFilterArgs:
@@ -456,7 +445,6 @@ class ReplicationConfigurationReplicationConfigurationRuleRepositoryFilterArgs:
 class RepositoryCreationTemplateEncryptionConfigurationArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryCreationTemplateEncryptionConfigurationArgs:
@@ -480,7 +468,6 @@ class RepositoryCreationTemplateEncryptionConfigurationArgs:
 class RepositoryCreationTemplateImageTagMutabilityExclusionFilterArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
     filter_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryCreationTemplateImageTagMutabilityExclusionFilterArgs:
@@ -504,7 +491,6 @@ class RepositoryCreationTemplateImageTagMutabilityExclusionFilterArgs:
 class RepositoryEncryptionConfigurationArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryEncryptionConfigurationArgs:
@@ -527,7 +513,6 @@ class RepositoryEncryptionConfigurationArgs:
 
 class RepositoryImageScanningConfigurationArgsDict(TypedDict):
     scan_on_push: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RepositoryImageScanningConfigurationArgs:
@@ -541,7 +526,6 @@ class RepositoryImageScanningConfigurationArgs:
 class RepositoryImageTagMutabilityExclusionFilterArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
     filter_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryImageTagMutabilityExclusionFilterArgs:
@@ -567,7 +551,6 @@ class GetLifecyclePolicyDocumentRuleArgsDict(TypedDict):
     selection: GetLifecyclePolicyDocumentRuleSelectionArgsDict
     action: NotRequired[GetLifecyclePolicyDocumentRuleActionArgsDict]
     description: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLifecyclePolicyDocumentRuleArgs:
@@ -603,7 +586,6 @@ class GetLifecyclePolicyDocumentRuleArgs:
 class GetLifecyclePolicyDocumentRuleActionArgsDict(TypedDict):
     type: _builtins.str
     target_storage_class: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLifecyclePolicyDocumentRuleActionArgs:
@@ -632,7 +614,6 @@ class GetLifecyclePolicyDocumentRuleSelectionArgsDict(TypedDict):
     storage_class: NotRequired[_builtins.str]
     tag_pattern_lists: NotRequired[Sequence[_builtins.str]]
     tag_prefix_lists: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetLifecyclePolicyDocumentRuleSelectionArgs:

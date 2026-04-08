@@ -421,8 +421,14 @@ wheels = [
 
 [[package]]
 name = "pulumi-aws-stubs"
-version = "0.1.0"
+version = "7.23.0.20260407"
 source = { directory = "packages/pulumi-aws-stubs" }
+dependencies = [
+    { name = "pulumi-aws" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pulumi-aws", specifier = ">=7" }]
 
 [[package]]
 name = "pulumi-azure-native"
@@ -442,8 +448,14 @@ wheels = [
 
 [[package]]
 name = "pulumi-azure-native-stubs"
-version = "0.1.0"
+version = "3.16.0.20260407"
 source = { directory = "packages/pulumi-azure-native-stubs" }
+dependencies = [
+    { name = "pulumi-azure-native" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pulumi-azure-native", specifier = ">=3" }]
 
 [[package]]
 name = "pulumi-gcp"
@@ -463,8 +475,14 @@ wheels = [
 
 [[package]]
 name = "pulumi-gcp-stubs"
-version = "0.1.0"
+version = "9.16.0.20260407"
 source = { directory = "packages/pulumi-gcp-stubs" }
+dependencies = [
+    { name = "pulumi-gcp" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pulumi-gcp", specifier = ">=9" }]
 
 [[package]]
 name = "pulumi-stubs"

@@ -65,7 +65,6 @@ class DestinationEndpointArgsDict(TypedDict):
     csp: pulumi.Input[_builtins.str]
     state: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DestinationEndpointArgs:
@@ -102,7 +101,6 @@ class DestinationStateTimelineArgsDict(TypedDict):
     states: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DestinationStateTimelineStateArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DestinationStateTimelineArgs:
@@ -131,7 +129,6 @@ class DestinationStateTimelineArgs:
 class DestinationStateTimelineStateArgsDict(TypedDict):
     effective_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DestinationStateTimelineStateArgs:
@@ -154,7 +151,6 @@ class DestinationStateTimelineStateArgs:
 
 class GroupAutoAcceptArgsDict(TypedDict):
     auto_accept_projects: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class GroupAutoAcceptArgs:
@@ -175,7 +171,6 @@ class GroupAutoAcceptArgs:
 
 class HubRoutingVpcArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HubRoutingVpcArgs:
@@ -191,7 +186,6 @@ class HubRoutingVpcArgs:
 class InternalRangeAllocationOptionsArgsDict(TypedDict):
     allocation_strategy: NotRequired[pulumi.Input[_builtins.str]]
     first_available_ranges_lookup_size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InternalRangeAllocationOptionsArgs:
@@ -219,7 +213,6 @@ class InternalRangeAllocationOptionsArgs:
 class InternalRangeMigrationArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
     target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InternalRangeMigrationArgs:
@@ -247,7 +240,6 @@ class MulticloudDataTransferConfigServiceArgsDict(TypedDict):
             Sequence[pulumi.Input[MulticloudDataTransferConfigServiceStateArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MulticloudDataTransferConfigServiceArgs:
@@ -288,7 +280,6 @@ class MulticloudDataTransferConfigServiceArgs:
 class MulticloudDataTransferConfigServiceStateArgsDict(TypedDict):
     effective_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticloudDataTransferConfigServiceStateArgs:
@@ -314,7 +305,6 @@ class PolicyBasedRouteFilterArgsDict(TypedDict):
     dest_range: NotRequired[pulumi.Input[_builtins.str]]
     ip_protocol: NotRequired[pulumi.Input[_builtins.str]]
     src_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyBasedRouteFilterArgs:
@@ -349,7 +339,6 @@ class PolicyBasedRouteFilterArgs:
 
 class PolicyBasedRouteInterconnectAttachmentArgsDict(TypedDict):
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyBasedRouteInterconnectAttachmentArgs:
@@ -362,7 +351,6 @@ class PolicyBasedRouteInterconnectAttachmentArgs:
 
 class PolicyBasedRouteVirtualMachineArgsDict(TypedDict):
     tags: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PolicyBasedRouteVirtualMachineArgs:
@@ -379,7 +367,6 @@ class PolicyBasedRouteWarningArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
     data: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     warning_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyBasedRouteWarningArgs:
@@ -417,7 +404,6 @@ class ServiceConnectionPolicyPscConfigArgsDict(TypedDict):
     ]
     limit: NotRequired[pulumi.Input[_builtins.str]]
     producer_instance_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceConnectionPolicyPscConfigArgs:
@@ -472,7 +458,6 @@ class ServiceConnectionPolicyPscConnectionArgsDict(TypedDict):
     gce_operation: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_id: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceConnectionPolicyPscConnectionArgs:
@@ -559,7 +544,6 @@ class ServiceConnectionPolicyPscConnectionErrorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceConnectionPolicyPscConnectionErrorArgs:
@@ -605,7 +589,6 @@ class ServiceConnectionPolicyPscConnectionErrorInfoArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
     metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceConnectionPolicyPscConnectionErrorInfoArgs:
@@ -644,7 +627,6 @@ class SpokeGatewayArgsDict(TypedDict):
         Sequence[pulumi.Input[SpokeGatewayIpRangeReservationArgsDict]]
     ]
     routers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SpokeGatewayArgs:
@@ -684,7 +666,6 @@ class SpokeGatewayArgs:
 
 class SpokeGatewayIpRangeReservationArgsDict(TypedDict):
     ip_range: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpokeGatewayIpRangeReservationArgs:
@@ -701,7 +682,6 @@ class SpokeLinkedInterconnectAttachmentsArgsDict(TypedDict):
     include_import_ranges: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedInterconnectAttachmentsArgs:
@@ -744,7 +724,6 @@ class SpokeLinkedProducerVpcNetworkArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     producer_network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedProducerVpcNetworkArgs:
@@ -803,7 +782,6 @@ class SpokeLinkedRouterApplianceInstancesArgsDict(TypedDict):
     include_import_ranges: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedRouterApplianceInstancesArgs:
@@ -850,7 +828,6 @@ class SpokeLinkedRouterApplianceInstancesArgs:
 class SpokeLinkedRouterApplianceInstancesInstanceArgsDict(TypedDict):
     ip_address: pulumi.Input[_builtins.str]
     virtual_machine: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedRouterApplianceInstancesInstanceArgs:
@@ -879,7 +856,6 @@ class SpokeLinkedVpcNetworkArgsDict(TypedDict):
     include_export_ranges: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedVpcNetworkArgs:
@@ -924,7 +900,6 @@ class SpokeLinkedVpnTunnelsArgsDict(TypedDict):
     include_import_ranges: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SpokeLinkedVpnTunnelsArgs:
@@ -961,7 +936,6 @@ class SpokeReasonArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     user_details: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SpokeReasonArgs:

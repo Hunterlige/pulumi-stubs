@@ -83,7 +83,6 @@ class InstanceAutomatedBackupConfigArgsDict(TypedDict):
         InstanceAutomatedBackupConfigFixedFrequencyScheduleArgsDict
     ]
     retention: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAutomatedBackupConfigArgs:
@@ -115,7 +114,6 @@ class InstanceAutomatedBackupConfigFixedFrequencyScheduleArgsDict(TypedDict):
     start_time: pulumi.Input[
         InstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAutomatedBackupConfigFixedFrequencyScheduleArgs:
@@ -143,7 +141,6 @@ class InstanceAutomatedBackupConfigFixedFrequencyScheduleArgs:
 
 class InstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgsDict(TypedDict):
     hours: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgs:
@@ -176,7 +173,6 @@ class InstanceCrossInstanceReplicationConfigArgsDict(TypedDict):
         ]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigArgs:
@@ -295,7 +291,6 @@ class InstanceCrossInstanceReplicationConfigMembershipArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigMembershipArgs:
@@ -379,7 +374,6 @@ class InstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceArgsDict(
 ):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceArgs:
@@ -405,7 +399,6 @@ class InstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceArgsDict(
 ):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceArgs:
@@ -429,7 +422,6 @@ class InstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceArgs:
 class InstanceCrossInstanceReplicationConfigPrimaryInstanceArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigPrimaryInstanceArgs:
@@ -453,7 +445,6 @@ class InstanceCrossInstanceReplicationConfigPrimaryInstanceArgs:
 class InstanceCrossInstanceReplicationConfigSecondaryInstanceArgsDict(TypedDict):
     instance: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCrossInstanceReplicationConfigSecondaryInstanceArgs:
@@ -477,7 +468,6 @@ class InstanceCrossInstanceReplicationConfigSecondaryInstanceArgs:
 class InstanceDesiredAutoCreatedEndpointArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredAutoCreatedEndpointArgs:
@@ -501,7 +491,6 @@ class InstanceDesiredAutoCreatedEndpointArgs:
 class InstanceDesiredPscAutoConnectionArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredPscAutoConnectionArgs:
@@ -532,7 +521,6 @@ class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointArgsDict(Type
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointArgs:
@@ -584,7 +572,6 @@ class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointConnectionArg
             InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointConnectionPscConnectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointConnectionArgs:
@@ -627,7 +614,6 @@ class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointConnectionPsc
     connection_type: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointConnectionPscConnectionArgs:
@@ -688,7 +674,6 @@ class InstanceDiscoveryEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceDiscoveryEndpointArgs:
@@ -719,7 +704,6 @@ class InstanceEndpointArgsDict(TypedDict):
     connections: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[InstanceEndpointConnectionArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceEndpointArgs:
@@ -749,7 +733,6 @@ class InstanceEndpointConnectionArgsDict(TypedDict):
     psc_auto_connection: NotRequired[
         pulumi.Input[InstanceEndpointConnectionPscAutoConnectionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceEndpointConnectionArgs:
@@ -780,7 +763,6 @@ class InstanceEndpointConnectionPscAutoConnectionArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_id: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceEndpointConnectionPscAutoConnectionArgs:
@@ -839,7 +821,6 @@ class InstanceEndpointConnectionPscAutoConnectionArgs:
 
 class InstanceGcsSourceArgsDict(TypedDict):
     uris: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class InstanceGcsSourceArgs:
@@ -862,7 +843,6 @@ class InstanceMaintenancePolicyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyArgs:
@@ -916,7 +896,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgsDict(TypedDict):
         InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict
     ]
     duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgs:
@@ -959,7 +938,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict(TypedDic
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgs:
@@ -996,7 +974,6 @@ class InstanceMaintenanceScheduleArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     schedule_deadline_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceScheduleArgs:
@@ -1025,7 +1002,6 @@ class InstanceMaintenanceScheduleArgs:
 
 class InstanceManagedBackupSourceArgsDict(TypedDict):
     backup: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceManagedBackupSourceArgs:
@@ -1040,7 +1016,6 @@ class InstanceManagedServerCaArgsDict(TypedDict):
     ca_certs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[InstanceManagedServerCaCaCertArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceManagedServerCaArgs:
@@ -1068,7 +1043,6 @@ class InstanceManagedServerCaArgs:
 
 class InstanceManagedServerCaCaCertArgsDict(TypedDict):
     certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceManagedServerCaCaCertArgs:
@@ -1091,7 +1065,6 @@ class InstanceManagedServerCaCaCertArgs:
 
 class InstanceNodeConfigArgsDict(TypedDict):
     size_gb: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class InstanceNodeConfigArgs:
@@ -1108,7 +1081,6 @@ class InstancePersistenceConfigArgsDict(TypedDict):
     aof_config: NotRequired[pulumi.Input[InstancePersistenceConfigAofConfigArgsDict]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     rdb_config: NotRequired[pulumi.Input[InstancePersistenceConfigRdbConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class InstancePersistenceConfigArgs:
@@ -1149,7 +1121,6 @@ class InstancePersistenceConfigArgs:
 
 class InstancePersistenceConfigAofConfigArgsDict(TypedDict):
     append_fsync: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePersistenceConfigAofConfigArgs:
@@ -1165,7 +1136,6 @@ class InstancePersistenceConfigAofConfigArgs:
 class InstancePersistenceConfigRdbConfigArgsDict(TypedDict):
     rdb_snapshot_period: NotRequired[pulumi.Input[_builtins.str]]
     rdb_snapshot_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePersistenceConfigRdbConfigArgs:
@@ -1189,7 +1159,6 @@ class InstancePersistenceConfigRdbConfigArgs:
 class InstancePscAttachmentDetailArgsDict(TypedDict):
     connection_type: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscAttachmentDetailArgs:
@@ -1220,7 +1189,6 @@ class InstancePscAutoConnectionArgsDict(TypedDict):
     psc_connection_id: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_status: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscAutoConnectionArgs:
@@ -1287,7 +1255,6 @@ class InstanceStateInfoArgsDict(TypedDict):
     update_infos: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[InstanceStateInfoUpdateInfoArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceStateInfoArgs:
@@ -1318,7 +1285,6 @@ class InstanceStateInfoUpdateInfoArgsDict(TypedDict):
     target_node_type: NotRequired[pulumi.Input[_builtins.str]]
     target_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     target_shard_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceStateInfoUpdateInfoArgs:
@@ -1354,7 +1320,6 @@ class InstanceStateInfoUpdateInfoArgs:
 class InstanceZoneDistributionConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceZoneDistributionConfigArgs:

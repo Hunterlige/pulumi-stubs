@@ -30,7 +30,6 @@ __all__ = [
 
 class EndpointServicePrivateDnsVerificationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointServicePrivateDnsVerificationTimeoutsArgs:
@@ -46,7 +45,6 @@ class EndpointServicePrivateDnsVerificationTimeoutsArgs:
 class RouteServerEndpointTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerEndpointTimeoutsArgs:
@@ -70,7 +68,6 @@ class RouteServerEndpointTimeoutsArgs:
 class RouteServerPeerBgpOptionsArgsDict(TypedDict):
     peer_asn: pulumi.Input[_builtins.int]
     peer_liveness_detection: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerPeerBgpOptionsArgs:
@@ -94,7 +91,6 @@ class RouteServerPeerBgpOptionsArgs:
 class RouteServerPeerTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerPeerTimeoutsArgs:
@@ -118,7 +114,6 @@ class RouteServerPeerTimeoutsArgs:
 class RouteServerPropagationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerPropagationTimeoutsArgs:
@@ -143,7 +138,6 @@ class RouteServerTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerTimeoutsArgs:
@@ -173,7 +167,6 @@ class RouteServerTimeoutsArgs:
 class RouteServerVpcAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RouteServerVpcAssociationTimeoutsArgs:
@@ -197,7 +190,6 @@ class RouteServerVpcAssociationTimeoutsArgs:
 class SecurityGroupVpcAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGroupVpcAssociationTimeoutsArgs:
@@ -221,7 +213,6 @@ class SecurityGroupVpcAssociationTimeoutsArgs:
 class GetSecurityGroupRuleFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecurityGroupRuleFilterArgs:
@@ -242,7 +233,6 @@ class GetSecurityGroupRuleFilterArgs:
 class GetSecurityGroupRulesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecurityGroupRulesFilterArgs:

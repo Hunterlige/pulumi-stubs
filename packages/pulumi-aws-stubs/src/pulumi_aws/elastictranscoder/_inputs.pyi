@@ -31,7 +31,6 @@ __all__ = [
 class PipelineContentConfigArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineContentConfigArgs:
@@ -56,7 +55,6 @@ class PipelineContentConfigPermissionArgsDict(TypedDict):
     accesses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     grantee: NotRequired[pulumi.Input[_builtins.str]]
     grantee_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineContentConfigPermissionArgs:
@@ -92,7 +90,6 @@ class PipelineNotificationsArgsDict(TypedDict):
     error: NotRequired[pulumi.Input[_builtins.str]]
     progressing: NotRequired[pulumi.Input[_builtins.str]]
     warning: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineNotificationsArgs:
@@ -128,7 +125,6 @@ class PipelineNotificationsArgs:
 class PipelineThumbnailConfigArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineThumbnailConfigArgs:
@@ -153,7 +149,6 @@ class PipelineThumbnailConfigPermissionArgsDict(TypedDict):
     accesses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     grantee: NotRequired[pulumi.Input[_builtins.str]]
     grantee_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineThumbnailConfigPermissionArgs:
@@ -190,7 +185,6 @@ class PresetAudioArgsDict(TypedDict):
     channels: NotRequired[pulumi.Input[_builtins.str]]
     codec: NotRequired[pulumi.Input[_builtins.str]]
     sample_rate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PresetAudioArgs:
@@ -234,7 +228,6 @@ class PresetAudioCodecOptionsArgsDict(TypedDict):
     bit_order: NotRequired[pulumi.Input[_builtins.str]]
     profile: NotRequired[pulumi.Input[_builtins.str]]
     signed: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PresetAudioCodecOptionsArgs:
@@ -276,7 +269,6 @@ class PresetThumbnailsArgsDict(TypedDict):
     padding_policy: NotRequired[pulumi.Input[_builtins.str]]
     resolution: NotRequired[pulumi.Input[_builtins.str]]
     sizing_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PresetThumbnailsArgs:
@@ -347,7 +339,6 @@ class PresetVideoArgsDict(TypedDict):
     padding_policy: NotRequired[pulumi.Input[_builtins.str]]
     resolution: NotRequired[pulumi.Input[_builtins.str]]
     sizing_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PresetVideoArgs:
@@ -445,7 +436,6 @@ class PresetVideoWatermarkArgsDict(TypedDict):
     target: NotRequired[pulumi.Input[_builtins.str]]
     vertical_align: NotRequired[pulumi.Input[_builtins.str]]
     vertical_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PresetVideoWatermarkArgs:

@@ -65,7 +65,6 @@ class ApiHubInstanceConfigArgsDict(TypedDict):
     disable_search: NotRequired[pulumi.Input[_builtins.bool]]
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     vertex_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiHubInstanceConfigArgs:
@@ -102,7 +101,6 @@ class CurationEndpointArgsDict(TypedDict):
     application_integration_endpoint_details: pulumi.Input[
         CurationEndpointApplicationIntegrationEndpointDetailsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class CurationEndpointArgs:
@@ -127,7 +125,6 @@ class CurationEndpointArgs:
 class CurationEndpointApplicationIntegrationEndpointDetailsArgsDict(TypedDict):
     trigger_id: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CurationEndpointApplicationIntegrationEndpointDetailsArgs:
@@ -151,7 +148,6 @@ class CurationEndpointApplicationIntegrationEndpointDetailsArgs:
 class CurationPluginInstanceActionArgsDict(TypedDict):
     action_id: NotRequired[pulumi.Input[_builtins.str]]
     plugin_instance: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CurationPluginInstanceActionArgs:
@@ -177,7 +173,6 @@ class PluginActionsConfigArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
     id: pulumi.Input[_builtins.str]
     trigger_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginActionsConfigArgs:
@@ -219,7 +214,6 @@ class PluginConfigTemplateArgsDict(TypedDict):
     auth_config_template: NotRequired[
         pulumi.Input[PluginConfigTemplateAuthConfigTemplateArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateArgs:
@@ -287,7 +281,6 @@ class PluginConfigTemplateAdditionalConfigTemplateArgsDict(TypedDict):
     ]
     required: NotRequired[pulumi.Input[_builtins.bool]]
     validation_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateAdditionalConfigTemplateArgs:
@@ -398,7 +391,6 @@ class PluginConfigTemplateAdditionalConfigTemplateEnumOptionArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
     id: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateAdditionalConfigTemplateEnumOptionArgs:
@@ -429,7 +421,6 @@ class PluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionArgsDict(Type
     display_name: pulumi.Input[_builtins.str]
     id: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionArgs:
@@ -461,7 +452,6 @@ class PluginConfigTemplateAuthConfigTemplateArgsDict(TypedDict):
     service_account: NotRequired[
         pulumi.Input[PluginConfigTemplateAuthConfigTemplateServiceAccountArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateAuthConfigTemplateArgs:
@@ -499,7 +489,6 @@ class PluginConfigTemplateAuthConfigTemplateArgs:
 
 class PluginConfigTemplateAuthConfigTemplateServiceAccountArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginConfigTemplateAuthConfigTemplateServiceAccountArgs:
@@ -512,7 +501,6 @@ class PluginConfigTemplateAuthConfigTemplateServiceAccountArgs:
 
 class PluginDocumentationArgsDict(TypedDict):
     external_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginDocumentationArgs:
@@ -527,7 +515,6 @@ class PluginDocumentationArgs:
 
 class PluginHostingServiceArgsDict(TypedDict):
     service_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginHostingServiceArgs:
@@ -553,7 +540,6 @@ class PluginInstanceActionArgsDict(TypedDict):
     schedule_cron_expression: NotRequired[pulumi.Input[_builtins.str]]
     schedule_time_zone: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginInstanceActionArgs:
@@ -626,7 +612,6 @@ class PluginInstanceActionCurationConfigArgsDict(TypedDict):
     custom_curation: NotRequired[
         pulumi.Input[PluginInstanceActionCurationConfigCustomCurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PluginInstanceActionCurationConfigArgs:
@@ -660,7 +645,6 @@ class PluginInstanceActionCurationConfigArgs:
 
 class PluginInstanceActionCurationConfigCustomCurationArgsDict(TypedDict):
     curation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceActionCurationConfigCustomCurationArgs:
@@ -680,7 +664,6 @@ class PluginInstanceActionHubInstanceActionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PluginInstanceActionHubInstanceActionArgs:
@@ -729,7 +712,6 @@ class PluginInstanceActionHubInstanceActionLastExecutionArgsDict(TypedDict):
     error_message: NotRequired[pulumi.Input[_builtins.str]]
     result: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PluginInstanceActionHubInstanceActionLastExecutionArgs:
@@ -776,7 +758,6 @@ class PluginInstanceAuthConfigArgsDict(TypedDict):
     user_password_config: NotRequired[
         pulumi.Input[PluginInstanceAuthConfigUserPasswordConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigArgs:
@@ -854,7 +835,6 @@ class PluginInstanceAuthConfigApiKeyConfigArgsDict(TypedDict):
     api_key: pulumi.Input[PluginInstanceAuthConfigApiKeyConfigApiKeyArgsDict]
     http_element_location: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigApiKeyConfigArgs:
@@ -887,7 +867,6 @@ class PluginInstanceAuthConfigApiKeyConfigArgs:
 
 class PluginInstanceAuthConfigApiKeyConfigApiKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigApiKeyConfigApiKeyArgs:
@@ -900,7 +879,6 @@ class PluginInstanceAuthConfigApiKeyConfigApiKeyArgs:
 
 class PluginInstanceAuthConfigGoogleServiceAccountConfigArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigGoogleServiceAccountConfigArgs:
@@ -916,7 +894,6 @@ class PluginInstanceAuthConfigOauth2ClientCredentialsConfigArgsDict(TypedDict):
     client_secret: pulumi.Input[
         PluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigOauth2ClientCredentialsConfigArgs:
@@ -952,7 +929,6 @@ class PluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretArgsDict(
     TypedDict
 ):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretArgs:
@@ -966,7 +942,6 @@ class PluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretArgs:
 class PluginInstanceAuthConfigUserPasswordConfigArgsDict(TypedDict):
     password: pulumi.Input[PluginInstanceAuthConfigUserPasswordConfigPasswordArgsDict]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigUserPasswordConfigArgs:
@@ -994,7 +969,6 @@ class PluginInstanceAuthConfigUserPasswordConfigArgs:
 
 class PluginInstanceAuthConfigUserPasswordConfigPasswordArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PluginInstanceAuthConfigUserPasswordConfigPasswordArgs:

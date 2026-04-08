@@ -2237,7 +2237,6 @@ __all__ = [
 class BotAbortStatementArgsDict(TypedDict):
     messages: pulumi.Input[Sequence[pulumi.Input[BotAbortStatementMessageArgsDict]]]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BotAbortStatementArgs:
@@ -2266,7 +2265,6 @@ class BotAbortStatementMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BotAbortStatementMessageArgs:
@@ -2298,7 +2296,6 @@ class BotAliasConversationLogsArgsDict(TypedDict):
     log_settings: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[BotAliasConversationLogsLogSettingArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class BotAliasConversationLogsArgs:
@@ -2336,7 +2333,6 @@ class BotAliasConversationLogsLogSettingArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     resource_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BotAliasConversationLogsLogSettingArgs:
@@ -2381,7 +2377,6 @@ class BotClarificationPromptArgsDict(TypedDict):
         Sequence[pulumi.Input[BotClarificationPromptMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BotClarificationPromptArgs:
@@ -2419,7 +2414,6 @@ class BotClarificationPromptMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BotClarificationPromptMessageArgs:
@@ -2449,7 +2443,6 @@ class BotClarificationPromptMessageArgs:
 class BotIntentArgsDict(TypedDict):
     intent_name: pulumi.Input[_builtins.str]
     intent_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BotIntentArgs:
@@ -2475,7 +2468,6 @@ class IntentConclusionStatementArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentConclusionStatementMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentConclusionStatementArgs:
@@ -2509,7 +2501,6 @@ class IntentConclusionStatementMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentConclusionStatementMessageArgs:
@@ -2542,7 +2533,6 @@ class IntentConfirmationPromptArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentConfirmationPromptMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentConfirmationPromptArgs:
@@ -2582,7 +2572,6 @@ class IntentConfirmationPromptMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentConfirmationPromptMessageArgs:
@@ -2612,7 +2601,6 @@ class IntentConfirmationPromptMessageArgs:
 class IntentDialogCodeHookArgsDict(TypedDict):
     message_version: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IntentDialogCodeHookArgs:
@@ -2636,7 +2624,6 @@ class IntentDialogCodeHookArgs:
 class IntentFollowUpPromptArgsDict(TypedDict):
     prompt: pulumi.Input[IntentFollowUpPromptPromptArgsDict]
     rejection_statement: pulumi.Input[IntentFollowUpPromptRejectionStatementArgsDict]
-    ...
 
 @pulumi.input_type
 class IntentFollowUpPromptArgs:
@@ -2667,7 +2654,6 @@ class IntentFollowUpPromptPromptArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentFollowUpPromptPromptMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentFollowUpPromptPromptArgs:
@@ -2709,7 +2695,6 @@ class IntentFollowUpPromptPromptMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentFollowUpPromptPromptMessageArgs:
@@ -2741,7 +2726,6 @@ class IntentFollowUpPromptRejectionStatementArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentFollowUpPromptRejectionStatementMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentFollowUpPromptRejectionStatementArgs:
@@ -2777,7 +2761,6 @@ class IntentFollowUpPromptRejectionStatementMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentFollowUpPromptRejectionStatementMessageArgs:
@@ -2807,7 +2790,6 @@ class IntentFollowUpPromptRejectionStatementMessageArgs:
 class IntentFulfillmentActivityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     code_hook: NotRequired[pulumi.Input[IntentFulfillmentActivityCodeHookArgsDict]]
-    ...
 
 @pulumi.input_type
 class IntentFulfillmentActivityArgs:
@@ -2835,7 +2817,6 @@ class IntentFulfillmentActivityArgs:
 class IntentFulfillmentActivityCodeHookArgsDict(TypedDict):
     message_version: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IntentFulfillmentActivityCodeHookArgs:
@@ -2861,7 +2842,6 @@ class IntentRejectionStatementArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentRejectionStatementMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentRejectionStatementArgs:
@@ -2895,7 +2875,6 @@ class IntentRejectionStatementMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentRejectionStatementMessageArgs:
@@ -2934,7 +2913,6 @@ class IntentSlotArgsDict(TypedDict):
     value_elicitation_prompt: NotRequired[
         pulumi.Input[IntentSlotValueElicitationPromptArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IntentSlotArgs:
@@ -3015,7 +2993,6 @@ class IntentSlotValueElicitationPromptArgsDict(TypedDict):
         Sequence[pulumi.Input[IntentSlotValueElicitationPromptMessageArgsDict]]
     ]
     response_card: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentSlotValueElicitationPromptArgs:
@@ -3057,7 +3034,6 @@ class IntentSlotValueElicitationPromptMessageArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     group_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IntentSlotValueElicitationPromptMessageArgs:
@@ -3087,7 +3063,6 @@ class IntentSlotValueElicitationPromptMessageArgs:
 class SlotTypeEnumerationValueArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
     synonyms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SlotTypeEnumerationValueArgs:
@@ -3114,7 +3089,6 @@ class SlotTypeEnumerationValueArgs:
 
 class V2modelsBotDataPrivacyArgsDict(TypedDict):
     child_directed: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2modelsBotDataPrivacyArgs:
@@ -3129,7 +3103,6 @@ class V2modelsBotLocaleTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsBotLocaleTimeoutsArgs:
@@ -3159,7 +3132,6 @@ class V2modelsBotLocaleTimeoutsArgs:
 class V2modelsBotLocaleVoiceSettingsArgsDict(TypedDict):
     voice_id: pulumi.Input[_builtins.str]
     engine: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsBotLocaleVoiceSettingsArgs:
@@ -3186,7 +3158,6 @@ class V2modelsBotMemberArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsBotMemberArgs:
@@ -3229,7 +3200,6 @@ class V2modelsBotTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsBotTimeoutsArgs:
@@ -3258,7 +3228,6 @@ class V2modelsBotTimeoutsArgs:
 
 class V2modelsBotVersionLocaleSpecificationArgsDict(TypedDict):
     source_bot_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsBotVersionLocaleSpecificationArgs:
@@ -3274,7 +3243,6 @@ class V2modelsBotVersionLocaleSpecificationArgs:
 class V2modelsBotVersionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsBotVersionTimeoutsArgs:
@@ -3304,7 +3272,6 @@ class V2modelsIntentClosingSettingArgsDict(TypedDict):
         pulumi.Input[V2modelsIntentClosingSettingConditionalArgsDict]
     ]
     next_step: NotRequired[pulumi.Input[V2modelsIntentClosingSettingNextStepArgsDict]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingArgs:
@@ -3367,7 +3334,6 @@ class V2modelsIntentClosingSettingClosingResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseArgs:
@@ -3432,7 +3398,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupArgs:
@@ -3518,7 +3483,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageArgsDict(Typ
             V2modelsIntentClosingSettingClosingResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageArgs:
@@ -3623,7 +3587,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageCustomPayloa
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageCustomPayloadArgs:
@@ -3649,7 +3612,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageImageRespons
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardArgs:
@@ -3716,7 +3678,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageImageRespons
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -3741,7 +3702,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessagePlainTextMes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessagePlainTextMessageArgs:
@@ -3756,7 +3716,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageSsmlMessageA
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupMessageSsmlMessageArgs:
@@ -3790,7 +3749,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationArgsDict(
             V2modelsIntentClosingSettingClosingResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationArgs:
@@ -3895,7 +3853,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationCustomPayl
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationCustomPayloadArgs:
@@ -3921,7 +3878,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationImageRespo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationImageResponseCardArgs:
@@ -3988,7 +3944,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationImageRespo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -4013,7 +3968,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationPlainTextM
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationPlainTextMessageArgs:
@@ -4028,7 +3982,6 @@ class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationSsmlMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingClosingResponseMessageGroupVariationSsmlMessageArgs:
@@ -4053,7 +4006,6 @@ class V2modelsIntentClosingSettingConditionalArgsDict(TypedDict):
     default_branch: NotRequired[
         pulumi.Input[V2modelsIntentClosingSettingConditionalDefaultBranchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalArgs:
@@ -4137,7 +4089,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchArgsDict(TypedDict
             V2modelsIntentClosingSettingConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchArgs:
@@ -4225,7 +4176,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchConditionArgsDict(
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchConditionArgs:
@@ -4254,7 +4204,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepArgsDict(
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepArgs:
@@ -4327,7 +4276,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepDialogActi
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepDialogActionArgs:
@@ -4367,7 +4315,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentArgs:
@@ -4427,7 +4374,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentSlot
             V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -4475,7 +4421,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentSlot
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -4501,7 +4446,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseArgs:
@@ -4568,7 +4512,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupArgs:
@@ -4658,7 +4601,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
             V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -4763,7 +4705,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -4789,7 +4730,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -4856,7 +4796,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -4881,7 +4820,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -4896,7 +4834,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -4930,7 +4867,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
             V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -5035,7 +4971,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -5061,7 +4996,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -5128,7 +5062,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -5153,7 +5086,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -5168,7 +5100,6 @@ class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGro
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -5190,7 +5121,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchArgsDict(TypedDict):
             V2modelsIntentClosingSettingConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchArgs:
@@ -5255,7 +5185,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepArgsDict(Typed
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepArgs:
@@ -5328,7 +5257,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionAr
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionArgs:
@@ -5368,7 +5296,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentArgs:
@@ -5428,7 +5355,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotArgs
             V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -5476,7 +5402,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotValu
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -5500,7 +5425,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseArgs:
@@ -5567,7 +5491,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupArgs:
@@ -5657,7 +5580,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
             V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -5762,7 +5684,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -5788,7 +5709,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -5855,7 +5775,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -5880,7 +5799,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -5895,7 +5813,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -5929,7 +5846,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
             V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -6034,7 +5950,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -6060,7 +5975,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -6127,7 +6041,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -6152,7 +6065,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -6167,7 +6079,6 @@ class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVa
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -6188,7 +6099,6 @@ class V2modelsIntentClosingSettingNextStepArgsDict(TypedDict):
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingNextStepArgs:
@@ -6243,7 +6153,6 @@ class V2modelsIntentClosingSettingNextStepDialogActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingNextStepDialogActionArgs:
@@ -6279,7 +6188,6 @@ class V2modelsIntentClosingSettingNextStepIntentArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingNextStepIntentArgs:
@@ -6327,7 +6235,6 @@ class V2modelsIntentClosingSettingNextStepIntentSlotArgsDict(TypedDict):
     value: NotRequired[
         pulumi.Input[V2modelsIntentClosingSettingNextStepIntentSlotValueArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingNextStepIntentSlotArgs:
@@ -6367,7 +6274,6 @@ class V2modelsIntentClosingSettingNextStepIntentSlotArgs:
 
 class V2modelsIntentClosingSettingNextStepIntentSlotValueArgsDict(TypedDict):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentClosingSettingNextStepIntentSlotValueArgs:
@@ -6418,7 +6324,6 @@ class V2modelsIntentConfirmationSettingArgsDict(TypedDict):
     prompt_specification: NotRequired[
         pulumi.Input[V2modelsIntentConfirmationSettingPromptSpecificationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingArgs:
@@ -6642,7 +6547,6 @@ class V2modelsIntentConfirmationSettingCodeHookArgsDict(TypedDict):
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookArgs:
@@ -6740,7 +6644,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationArgsDict
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationArgs:
@@ -6974,7 +6877,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalArgs:
@@ -7066,7 +6968,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchArgs:
@@ -7154,7 +7055,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchConditionArgs:
@@ -7183,7 +7083,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepArgs:
@@ -7256,7 +7155,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepDialogActionArgs:
@@ -7296,7 +7194,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentArgs:
@@ -7356,7 +7253,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -7404,7 +7300,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -7430,7 +7325,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseArgs:
@@ -7497,7 +7391,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupArgs:
@@ -7587,7 +7480,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -7692,7 +7584,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -7718,7 +7609,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -7785,7 +7675,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -7810,7 +7699,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -7825,7 +7713,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -7859,7 +7746,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -7964,7 +7850,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -7990,7 +7875,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -8057,7 +7941,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -8082,7 +7965,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -8097,7 +7979,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -8121,7 +8002,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchArgs:
@@ -8192,7 +8072,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepArgs:
@@ -8265,7 +8144,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepDialogActionArgs:
@@ -8305,7 +8183,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentArgs:
@@ -8365,7 +8242,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -8413,7 +8289,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -8439,7 +8314,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseArgs:
@@ -8506,7 +8380,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupArgs:
@@ -8596,7 +8469,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -8701,7 +8573,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -8727,7 +8598,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -8794,7 +8664,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -8819,7 +8688,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -8834,7 +8702,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -8868,7 +8735,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -8973,7 +8839,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -8999,7 +8864,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -9066,7 +8930,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -9091,7 +8954,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -9106,7 +8968,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -9133,7 +8994,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureN
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepArgs:
@@ -9206,7 +9066,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureN
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepDialogActionArgs:
@@ -9246,7 +9105,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureN
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentArgs:
@@ -9306,7 +9164,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureN
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotArgs:
@@ -9354,7 +9211,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureN
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValueArgs:
@@ -9380,7 +9236,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseArgs:
@@ -9447,7 +9302,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupArgs:
@@ -9537,7 +9391,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageArgs:
@@ -9642,7 +9495,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageCustomPayloadArgs:
@@ -9668,7 +9520,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardArgs:
@@ -9735,7 +9586,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -9760,7 +9610,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessagePlainTextMessageArgs:
@@ -9775,7 +9624,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessageArgs:
@@ -9809,7 +9657,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationArgs:
@@ -9914,7 +9761,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationCustomPayloadArgs:
@@ -9940,7 +9786,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardArgs:
@@ -10007,7 +9852,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -10032,7 +9876,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationPlainTextMessageArgs:
@@ -10047,7 +9890,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessageArgs:
@@ -10076,7 +9918,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalArgs:
@@ -10168,7 +10009,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchArgs:
@@ -10256,7 +10096,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchConditionArgs:
@@ -10285,7 +10124,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepArgs:
@@ -10358,7 +10196,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepDialogActionArgs:
@@ -10398,7 +10235,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentArgs:
@@ -10458,7 +10294,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -10506,7 +10341,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -10532,7 +10366,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseArgs:
@@ -10599,7 +10432,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupArgs:
@@ -10689,7 +10521,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -10794,7 +10625,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -10820,7 +10650,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -10887,7 +10716,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -10912,7 +10740,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -10927,7 +10754,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -10961,7 +10787,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -11066,7 +10891,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -11092,7 +10916,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -11159,7 +10982,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -11184,7 +11006,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -11199,7 +11020,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -11223,7 +11043,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchArgs:
@@ -11294,7 +11113,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepArgs:
@@ -11367,7 +11185,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepDialogActionArgs:
@@ -11407,7 +11224,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentArgs:
@@ -11467,7 +11283,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -11515,7 +11330,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -11541,7 +11355,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseArgs:
@@ -11608,7 +11421,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupArgs:
@@ -11698,7 +11510,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -11803,7 +11614,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -11829,7 +11639,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -11896,7 +11705,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -11921,7 +11729,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -11936,7 +11743,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -11970,7 +11776,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -12075,7 +11880,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -12101,7 +11905,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -12168,7 +11971,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -12193,7 +11995,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -12208,7 +12009,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -12235,7 +12035,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessN
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepArgs:
@@ -12308,7 +12107,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessN
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepDialogActionArgs:
@@ -12348,7 +12146,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessN
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentArgs:
@@ -12408,7 +12205,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessN
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotArgs:
@@ -12456,7 +12252,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessN
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValueArgs:
@@ -12482,7 +12277,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseArgs:
@@ -12549,7 +12343,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupArgs:
@@ -12639,7 +12432,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageArgs:
@@ -12744,7 +12536,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageCustomPayloadArgs:
@@ -12770,7 +12561,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardArgs:
@@ -12837,7 +12627,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -12862,7 +12651,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessagePlainTextMessageArgs:
@@ -12877,7 +12665,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgs:
@@ -12911,7 +12698,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationArgs:
@@ -13016,7 +12802,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationCustomPayloadArgs:
@@ -13042,7 +12827,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardArgs:
@@ -13109,7 +12893,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -13134,7 +12917,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageArgs:
@@ -13149,7 +12931,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgs:
@@ -13178,7 +12959,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalArgs:
@@ -13270,7 +13050,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchArgs:
@@ -13358,7 +13137,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchConditionArgs:
@@ -13387,7 +13165,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepArgs:
@@ -13460,7 +13237,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepDialogActionArgs:
@@ -13500,7 +13276,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentArgs:
@@ -13560,7 +13335,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -13608,7 +13382,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -13634,7 +13407,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseArgs:
@@ -13701,7 +13473,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupArgs:
@@ -13791,7 +13562,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -13896,7 +13666,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -13922,7 +13691,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -13989,7 +13757,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -14014,7 +13781,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -14029,7 +13795,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -14063,7 +13828,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -14168,7 +13932,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -14194,7 +13957,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -14261,7 +14023,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -14286,7 +14047,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -14301,7 +14061,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -14325,7 +14084,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchArgs:
@@ -14396,7 +14154,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepArgs:
@@ -14469,7 +14226,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepDialogActionArgs:
@@ -14509,7 +14265,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentArgs:
@@ -14569,7 +14324,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -14617,7 +14371,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -14643,7 +14396,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseArgs:
@@ -14710,7 +14462,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupArgs:
@@ -14800,7 +14551,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -14905,7 +14655,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -14931,7 +14680,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -14998,7 +14746,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -15023,7 +14770,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -15038,7 +14784,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -15072,7 +14817,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -15177,7 +14921,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -15203,7 +14946,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -15270,7 +15012,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -15295,7 +15036,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -15310,7 +15050,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -15337,7 +15076,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutN
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepArgs:
@@ -15410,7 +15148,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutN
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepDialogActionArgs:
@@ -15450,7 +15187,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutN
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentArgs:
@@ -15510,7 +15246,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutN
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotArgs:
@@ -15558,7 +15293,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutN
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotValueArgs:
@@ -15584,7 +15318,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseArgs:
@@ -15651,7 +15384,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupArgs:
@@ -15741,7 +15473,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageArgs:
@@ -15846,7 +15577,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageCustomPayloadArgs:
@@ -15872,7 +15602,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageImageResponseCardArgs:
@@ -15939,7 +15668,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -15964,7 +15692,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessagePlainTextMessageArgs:
@@ -15979,7 +15706,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgs:
@@ -16013,7 +15739,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
             V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationArgs:
@@ -16118,7 +15843,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationCustomPayloadArgs:
@@ -16144,7 +15868,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationImageResponseCardArgs:
@@ -16211,7 +15934,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -16236,7 +15958,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationPlainTextMessageArgs:
@@ -16251,7 +15972,6 @@ class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgs:
@@ -16278,7 +15998,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalArgsDict(TypedDict
             V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalArgs:
@@ -16370,7 +16089,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchA
             V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchArgs:
@@ -16458,7 +16176,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchC
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchConditionArgs:
@@ -16487,7 +16204,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchN
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepArgs:
@@ -16560,7 +16276,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchN
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepDialogActionArgs:
@@ -16600,7 +16315,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchN
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepIntentArgs:
@@ -16660,7 +16374,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchN
             V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -16708,7 +16421,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchN
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -16734,7 +16446,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseArgs:
@@ -16801,7 +16512,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupArgs:
@@ -16891,7 +16601,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
             V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -16996,7 +16705,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -17022,7 +16730,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -17089,7 +16796,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -17114,7 +16820,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -17129,7 +16834,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -17163,7 +16867,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
             V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -17268,7 +16971,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -17294,7 +16996,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -17361,7 +17062,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -17386,7 +17086,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -17401,7 +17100,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchR
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -17425,7 +17123,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchArgsD
             V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchArgs:
@@ -17496,7 +17193,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextS
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepArgs:
@@ -17569,7 +17265,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextS
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepDialogActionArgs:
@@ -17609,7 +17304,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextS
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentArgs:
@@ -17669,7 +17363,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextS
             V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -17717,7 +17410,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextS
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -17743,7 +17435,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseArgs:
@@ -17810,7 +17501,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupArgs:
@@ -17900,7 +17590,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
             V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -18005,7 +17694,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -18031,7 +17719,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -18098,7 +17785,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -18123,7 +17809,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -18138,7 +17823,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -18172,7 +17856,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
             V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -18277,7 +17960,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -18303,7 +17985,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -18370,7 +18051,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -18395,7 +18075,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -18410,7 +18089,6 @@ class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -18435,7 +18113,6 @@ class V2modelsIntentConfirmationSettingConfirmationNextStepArgsDict(TypedDict):
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationNextStepArgs:
@@ -18506,7 +18183,6 @@ class V2modelsIntentConfirmationSettingConfirmationNextStepDialogActionArgsDict(
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationNextStepDialogActionArgs:
@@ -18544,7 +18220,6 @@ class V2modelsIntentConfirmationSettingConfirmationNextStepIntentArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationNextStepIntentArgs:
@@ -18604,7 +18279,6 @@ class V2modelsIntentConfirmationSettingConfirmationNextStepIntentSlotArgsDict(
             V2modelsIntentConfirmationSettingConfirmationNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationNextStepIntentSlotArgs:
@@ -18652,7 +18326,6 @@ class V2modelsIntentConfirmationSettingConfirmationNextStepIntentSlotValueArgsDi
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationNextStepIntentSlotValueArgs:
@@ -18676,7 +18349,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseArgs:
@@ -18743,7 +18415,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupArgs:
@@ -18833,7 +18504,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageAr
             V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageArgs:
@@ -18938,7 +18608,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageCu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageCustomPayloadArgs:
@@ -18964,7 +18633,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageIm
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageImageResponseCardArgs:
@@ -19031,7 +18699,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageIm
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -19056,7 +18723,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessagePl
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessagePlainTextMessageArgs:
@@ -19071,7 +18737,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageSs
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupMessageSsmlMessageArgs:
@@ -19105,7 +18770,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
             V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationArgs:
@@ -19210,7 +18874,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationCustomPayloadArgs:
@@ -19236,7 +18899,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationImageResponseCardArgs:
@@ -19303,7 +18965,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -19328,7 +18989,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationPlainTextMessageArgs:
@@ -19343,7 +19003,6 @@ class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariation
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingConfirmationResponseMessageGroupVariationSsmlMessageArgs:
@@ -19370,7 +19029,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalArgsDict(TypedDict)
             V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalArgs:
@@ -19462,7 +19120,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchAr
             V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchArgs:
@@ -19550,7 +19207,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchCo
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchConditionArgs:
@@ -19579,7 +19235,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNe
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepArgs:
@@ -19652,7 +19307,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNe
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepDialogActionArgs:
@@ -19692,7 +19346,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepIntentArgs:
@@ -19752,7 +19405,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNe
             V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -19800,7 +19452,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNe
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -19826,7 +19477,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseArgs:
@@ -19893,7 +19543,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupArgs:
@@ -19983,7 +19632,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
             V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -20088,7 +19736,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -20114,7 +19761,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -20181,7 +19827,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -20206,7 +19851,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -20221,7 +19865,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -20255,7 +19898,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
             V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -20360,7 +20002,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -20386,7 +20027,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -20453,7 +20093,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -20478,7 +20117,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -20493,7 +20131,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchRe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -20517,7 +20154,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchArgsDi
             V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchArgs:
@@ -20588,7 +20224,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextSt
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepArgs:
@@ -20661,7 +20296,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextSt
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepDialogActionArgs:
@@ -20701,7 +20335,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextSt
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepIntentArgs:
@@ -20761,7 +20394,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextSt
             V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -20809,7 +20441,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextSt
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -20835,7 +20466,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseArgs:
@@ -20902,7 +20532,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupArgs:
@@ -20992,7 +20621,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
             V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -21097,7 +20725,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -21123,7 +20750,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -21190,7 +20816,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -21215,7 +20840,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -21230,7 +20854,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -21264,7 +20887,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
             V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -21369,7 +20991,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -21395,7 +21016,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -21462,7 +21082,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -21487,7 +21106,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -21502,7 +21120,6 @@ class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -21525,7 +21142,6 @@ class V2modelsIntentConfirmationSettingDeclinationNextStepArgsDict(TypedDict):
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationNextStepArgs:
@@ -21592,7 +21208,6 @@ class V2modelsIntentConfirmationSettingDeclinationNextStepDialogActionArgsDict(
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationNextStepDialogActionArgs:
@@ -21630,7 +21245,6 @@ class V2modelsIntentConfirmationSettingDeclinationNextStepIntentArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationNextStepIntentArgs:
@@ -21688,7 +21302,6 @@ class V2modelsIntentConfirmationSettingDeclinationNextStepIntentSlotArgsDict(Typ
             V2modelsIntentConfirmationSettingDeclinationNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationNextStepIntentSlotArgs:
@@ -21736,7 +21349,6 @@ class V2modelsIntentConfirmationSettingDeclinationNextStepIntentSlotValueArgsDic
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationNextStepIntentSlotValueArgs:
@@ -21760,7 +21372,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseArgs:
@@ -21827,7 +21438,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupArgs:
@@ -21917,7 +21527,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageArg
             V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageArgs:
@@ -22022,7 +21631,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageCus
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageCustomPayloadArgs:
@@ -22048,7 +21656,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageIma
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardArgs:
@@ -22115,7 +21722,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageIma
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -22140,7 +21746,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessagePla
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessagePlainTextMessageArgs:
@@ -22155,7 +21760,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageSsm
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageSsmlMessageArgs:
@@ -22189,7 +21793,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationA
             V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationArgs:
@@ -22294,7 +21897,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationCustomPayloadArgs:
@@ -22320,7 +21922,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationI
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationImageResponseCardArgs:
@@ -22387,7 +21988,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationI
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -22412,7 +22012,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationP
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationPlainTextMessageArgs:
@@ -22427,7 +22026,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationS
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationSsmlMessageArgs:
@@ -22441,7 +22039,6 @@ class V2modelsIntentConfirmationSettingDeclinationResponseMessageGroupVariationS
 class V2modelsIntentConfirmationSettingElicitationCodeHookArgsDict(TypedDict):
     enable_code_hook_invocation: NotRequired[pulumi.Input[_builtins.bool]]
     invocation_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingElicitationCodeHookArgs:
@@ -22480,7 +22077,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalArgsDict(TypedDict):
             V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalArgs:
@@ -22572,7 +22168,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchArgsDi
             V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchArgs:
@@ -22660,7 +22255,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchCondit
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchConditionArgs:
@@ -22689,7 +22283,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextSt
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepArgs:
@@ -22762,7 +22355,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextSt
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepDialogActionArgs:
@@ -22802,7 +22394,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextSt
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepIntentArgs:
@@ -22862,7 +22453,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextSt
             V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -22910,7 +22500,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextSt
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -22936,7 +22525,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseArgs:
@@ -23003,7 +22591,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupArgs:
@@ -23093,7 +22680,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
             V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -23198,7 +22784,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -23224,7 +22809,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -23291,7 +22875,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -23316,7 +22899,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -23331,7 +22913,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -23365,7 +22946,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
             V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -23470,7 +23050,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -23496,7 +23075,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -23563,7 +23141,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -23588,7 +23165,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -23603,7 +23179,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchRespon
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -23627,7 +23202,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchArgsDict(
             V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchArgs:
@@ -23698,7 +23272,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepAr
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepArgs:
@@ -23771,7 +23344,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepDi
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepDialogActionArgs:
@@ -23811,7 +23383,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIn
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIntentArgs:
@@ -23871,7 +23442,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIn
             V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -23919,7 +23489,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIn
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -23945,7 +23514,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseArgs:
@@ -24012,7 +23580,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupArgs:
@@ -24102,7 +23669,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
             V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -24207,7 +23773,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -24233,7 +23798,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -24300,7 +23864,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -24325,7 +23888,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -24340,7 +23902,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -24374,7 +23935,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
             V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -24479,7 +24039,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -24505,7 +24064,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -24572,7 +24130,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -24597,7 +24154,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -24612,7 +24168,6 @@ class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -24635,7 +24190,6 @@ class V2modelsIntentConfirmationSettingFailureNextStepArgsDict(TypedDict):
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureNextStepArgs:
@@ -24698,7 +24252,6 @@ class V2modelsIntentConfirmationSettingFailureNextStepDialogActionArgsDict(Typed
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureNextStepDialogActionArgs:
@@ -24736,7 +24289,6 @@ class V2modelsIntentConfirmationSettingFailureNextStepIntentArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureNextStepIntentArgs:
@@ -24794,7 +24346,6 @@ class V2modelsIntentConfirmationSettingFailureNextStepIntentSlotArgsDict(TypedDi
             V2modelsIntentConfirmationSettingFailureNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureNextStepIntentSlotArgs:
@@ -24842,7 +24393,6 @@ class V2modelsIntentConfirmationSettingFailureNextStepIntentSlotValueArgsDict(
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureNextStepIntentSlotValueArgs:
@@ -24866,7 +24416,6 @@ class V2modelsIntentConfirmationSettingFailureResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseArgs:
@@ -24931,7 +24480,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupArgs:
@@ -25021,7 +24569,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageArgsDic
             V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageArgs:
@@ -25126,7 +24673,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageCustomP
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageCustomPayloadArgs:
@@ -25152,7 +24698,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageImageRe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageImageResponseCardArgs:
@@ -25219,7 +24764,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageImageRe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -25244,7 +24788,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessagePlainTe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessagePlainTextMessageArgs:
@@ -25259,7 +24802,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageSsmlMes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupMessageSsmlMessageArgs:
@@ -25293,7 +24835,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationArgsD
             V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationArgs:
@@ -25398,7 +24939,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationCusto
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationCustomPayloadArgs:
@@ -25424,7 +24964,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationImage
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationImageResponseCardArgs:
@@ -25491,7 +25030,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationImage
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -25516,7 +25054,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationPlain
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationPlainTextMessageArgs:
@@ -25531,7 +25068,6 @@ class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationSsmlM
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingFailureResponseMessageGroupVariationSsmlMessageArgs:
@@ -25564,7 +25100,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationArgs:
@@ -25680,7 +25215,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupArgs:
@@ -25770,7 +25304,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageArg
             V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageArgs:
@@ -25875,7 +25408,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageCus
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageCustomPayloadArgs:
@@ -25901,7 +25433,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageIma
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageImageResponseCardArgs:
@@ -25968,7 +25499,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageIma
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonArgs:
@@ -25993,7 +25523,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessagePla
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessagePlainTextMessageArgs:
@@ -26008,7 +25537,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageSsm
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgs:
@@ -26042,7 +25570,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationA
             V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationArgs:
@@ -26147,7 +25674,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationCustomPayloadArgs:
@@ -26173,7 +25699,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationI
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationImageResponseCardArgs:
@@ -26240,7 +25765,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationI
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonArgs:
@@ -26265,7 +25789,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationP
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationPlainTextMessageArgs:
@@ -26280,7 +25803,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationS
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgs:
@@ -26311,7 +25833,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
             V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationArgs:
@@ -26406,7 +25927,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
 ):
     allow_audio_input: pulumi.Input[_builtins.bool]
     allow_dtmf_input: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesArgs:
@@ -26441,7 +25961,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
             V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationArgs:
@@ -26507,7 +26026,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
 ):
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationArgs:
@@ -26535,7 +26053,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
     end_character: pulumi.Input[_builtins.str]
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgs:
@@ -26572,7 +26089,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
     TypedDict
 ):
     start_timeout_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgs:
@@ -26587,7 +26103,6 @@ class V2modelsIntentConfirmationSettingPromptSpecificationPromptAttemptsSpecific
 
 class V2modelsIntentDialogCodeHookArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentDialogCodeHookArgs:
@@ -26611,7 +26126,6 @@ class V2modelsIntentFulfillmentCodeHookArgsDict(TypedDict):
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookArgs:
@@ -26693,7 +26207,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationArgsDict(
             V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationArgs:
@@ -26774,7 +26287,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseArgs:
@@ -26847,7 +26359,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupArgs:
@@ -26937,7 +26448,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
             V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageArgs:
@@ -27042,7 +26552,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageCustomPayloadArgs:
@@ -27068,7 +26577,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageImageResponseCardArgs:
@@ -27135,7 +26643,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -27160,7 +26667,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessagePlainTextMessageArgs:
@@ -27175,7 +26681,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupMessageSsmlMessageArgs:
@@ -27209,7 +26714,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
             V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationArgs:
@@ -27314,7 +26818,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationCustomPayloadArgs:
@@ -27340,7 +26843,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationImageResponseCardArgs:
@@ -27407,7 +26909,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -27432,7 +26933,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationPlainTextMessageArgs:
@@ -27447,7 +26947,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartRespo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupVariationSsmlMessageArgs:
@@ -27472,7 +26971,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseArgs:
@@ -27545,7 +27043,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupArgs:
@@ -27635,7 +27132,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
             V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageArgs:
@@ -27740,7 +27236,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageCustomPayloadArgs:
@@ -27766,7 +27261,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageImageResponseCardArgs:
@@ -27833,7 +27327,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -27858,7 +27351,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessagePlainTextMessageArgs:
@@ -27873,7 +27365,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupMessageSsmlMessageArgs:
@@ -27907,7 +27398,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
             V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationArgs:
@@ -28012,7 +27502,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationCustomPayloadArgs:
@@ -28038,7 +27527,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationImageResponseCardArgs:
@@ -28105,7 +27593,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -28130,7 +27617,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationPlainTextMessageArgs:
@@ -28145,7 +27631,6 @@ class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationUpdateResponseMessageGroupVariationSsmlMessageArgs:
@@ -28204,7 +27689,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationArgsDic
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationArgs:
@@ -28438,7 +27922,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalArgs:
@@ -28530,7 +28013,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchArgs:
@@ -28618,7 +28100,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchConditionArgs:
@@ -28647,7 +28128,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepArgs:
@@ -28720,7 +28200,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepDialogActionArgs:
@@ -28760,7 +28239,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepIntentArgs:
@@ -28820,7 +28298,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -28868,7 +28345,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -28894,7 +28370,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseArgs:
@@ -28961,7 +28436,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupArgs:
@@ -29051,7 +28525,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -29156,7 +28629,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -29182,7 +28654,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -29249,7 +28720,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -29274,7 +28744,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -29289,7 +28758,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -29323,7 +28791,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -29428,7 +28895,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -29454,7 +28920,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -29521,7 +28986,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -29546,7 +29010,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -29561,7 +29024,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -29585,7 +29047,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchArgs:
@@ -29656,7 +29117,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepArgs:
@@ -29729,7 +29189,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepDialogActionArgs:
@@ -29769,7 +29228,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepIntentArgs:
@@ -29829,7 +29287,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -29877,7 +29334,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -29903,7 +29359,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseArgs:
@@ -29970,7 +29425,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupArgs:
@@ -30060,7 +29514,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -30165,7 +29618,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -30191,7 +29643,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -30258,7 +29709,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -30283,7 +29733,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -30298,7 +29747,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -30332,7 +29780,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -30437,7 +29884,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -30463,7 +29909,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -30530,7 +29975,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -30555,7 +29999,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -30570,7 +30013,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -30597,7 +30039,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepArgs:
@@ -30670,7 +30111,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepDialogActionArgs:
@@ -30710,7 +30150,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepIntentArgs:
@@ -30770,7 +30209,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepIntentSlotArgs:
@@ -30818,7 +30256,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureNextStepIntentSlotValueArgs:
@@ -30844,7 +30281,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseArgs:
@@ -30911,7 +30347,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupArgs:
@@ -31001,7 +30436,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageArgs:
@@ -31106,7 +30540,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageCustomPayloadArgs:
@@ -31132,7 +30565,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageImageResponseCardArgs:
@@ -31199,7 +30631,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -31224,7 +30655,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessagePlainTextMessageArgs:
@@ -31239,7 +30669,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupMessageSsmlMessageArgs:
@@ -31273,7 +30702,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationArgs:
@@ -31378,7 +30806,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationCustomPayloadArgs:
@@ -31404,7 +30831,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationImageResponseCardArgs:
@@ -31471,7 +30897,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -31496,7 +30921,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationPlainTextMessageArgs:
@@ -31511,7 +30935,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailure
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationFailureResponseMessageGroupVariationSsmlMessageArgs:
@@ -31540,7 +30963,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalArgs:
@@ -31632,7 +31054,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchArgs:
@@ -31720,7 +31141,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchConditionArgs:
@@ -31749,7 +31169,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepArgs:
@@ -31822,7 +31241,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepDialogActionArgs:
@@ -31862,7 +31280,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepIntentArgs:
@@ -31922,7 +31339,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -31970,7 +31386,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -31996,7 +31411,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseArgs:
@@ -32063,7 +31477,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupArgs:
@@ -32153,7 +31566,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -32258,7 +31670,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -32284,7 +31695,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -32351,7 +31761,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -32376,7 +31785,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -32391,7 +31799,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -32425,7 +31832,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -32530,7 +31936,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -32556,7 +31961,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -32623,7 +32027,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -32648,7 +32051,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -32663,7 +32065,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -32687,7 +32088,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchArgs:
@@ -32758,7 +32158,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepArgs:
@@ -32831,7 +32230,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepDialogActionArgs:
@@ -32871,7 +32269,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepIntentArgs:
@@ -32931,7 +32328,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -32979,7 +32375,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -33005,7 +32400,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseArgs:
@@ -33072,7 +32466,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupArgs:
@@ -33162,7 +32555,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -33267,7 +32659,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -33293,7 +32684,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -33360,7 +32750,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -33385,7 +32774,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -33400,7 +32788,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -33434,7 +32821,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -33539,7 +32925,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -33565,7 +32950,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -33632,7 +33016,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -33657,7 +33040,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -33672,7 +33054,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -33699,7 +33080,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepArgs:
@@ -33772,7 +33152,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepDialogActionArgs:
@@ -33812,7 +33191,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepIntentArgs:
@@ -33872,7 +33250,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepIntentSlotArgs:
@@ -33920,7 +33297,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessNextStepIntentSlotValueArgs:
@@ -33946,7 +33322,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseArgs:
@@ -34013,7 +33388,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupArgs:
@@ -34103,7 +33477,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageArgs:
@@ -34208,7 +33581,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageCustomPayloadArgs:
@@ -34234,7 +33606,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageImageResponseCardArgs:
@@ -34301,7 +33672,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -34326,7 +33696,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessagePlainTextMessageArgs:
@@ -34341,7 +33710,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgs:
@@ -34375,7 +33743,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationArgs:
@@ -34480,7 +33847,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationCustomPayloadArgs:
@@ -34506,7 +33872,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationImageResponseCardArgs:
@@ -34573,7 +33938,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -34598,7 +33962,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationPlainTextMessageArgs:
@@ -34613,7 +33976,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccess
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgs:
@@ -34642,7 +34004,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalArgs:
@@ -34734,7 +34095,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchArgs:
@@ -34822,7 +34182,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchConditionArgs:
@@ -34851,7 +34210,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepArgs:
@@ -34924,7 +34282,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepDialogActionArgs:
@@ -34964,7 +34321,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepIntentArgs:
@@ -35024,7 +34380,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -35072,7 +34427,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -35098,7 +34452,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseArgs:
@@ -35165,7 +34518,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupArgs:
@@ -35255,7 +34607,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -35360,7 +34711,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -35386,7 +34736,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -35453,7 +34802,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -35478,7 +34826,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -35493,7 +34840,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -35527,7 +34873,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -35632,7 +34977,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -35658,7 +35002,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -35725,7 +35068,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -35750,7 +35092,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -35765,7 +35106,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -35789,7 +35129,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchArgs:
@@ -35860,7 +35199,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepArgs:
@@ -35933,7 +35271,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepDialogActionArgs:
@@ -35973,7 +35310,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepIntentArgs:
@@ -36033,7 +35369,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -36081,7 +35416,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -36107,7 +35441,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseArgs:
@@ -36174,7 +35507,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupArgs:
@@ -36264,7 +35596,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -36369,7 +35700,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -36395,7 +35725,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -36462,7 +35791,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -36487,7 +35815,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -36502,7 +35829,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -36536,7 +35862,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -36641,7 +35966,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -36667,7 +35991,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -36734,7 +36057,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -36759,7 +36081,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -36774,7 +36095,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -36801,7 +36121,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepArgs:
@@ -36874,7 +36193,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepDialogActionArgs:
@@ -36914,7 +36232,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepIntentArgs:
@@ -36974,7 +36291,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepIntentSlotArgs:
@@ -37022,7 +36338,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutNextStepIntentSlotValueArgs:
@@ -37048,7 +36363,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseArgs:
@@ -37115,7 +36429,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupArgs:
@@ -37205,7 +36518,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageArgs:
@@ -37310,7 +36622,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageCustomPayloadArgs:
@@ -37336,7 +36647,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageImageResponseCardArgs:
@@ -37403,7 +36713,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -37428,7 +36737,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessagePlainTextMessageArgs:
@@ -37443,7 +36751,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgs:
@@ -37477,7 +36784,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
             V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationArgs:
@@ -37582,7 +36888,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationCustomPayloadArgs:
@@ -37608,7 +36913,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationImageResponseCardArgs:
@@ -37675,7 +36979,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -37700,7 +37003,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationPlainTextMessageArgs:
@@ -37715,7 +37017,6 @@ class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeout
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgs:
@@ -37739,7 +37040,6 @@ class V2modelsIntentInitialResponseSettingArgsDict(TypedDict):
     next_step: NotRequired[
         pulumi.Input[V2modelsIntentInitialResponseSettingNextStepArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingArgs:
@@ -37817,7 +37117,6 @@ class V2modelsIntentInitialResponseSettingCodeHookArgsDict(TypedDict):
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookArgs:
@@ -37915,7 +37214,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationArgsD
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationArgs:
@@ -38149,7 +37447,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalArgs:
@@ -38241,7 +37538,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchArgs:
@@ -38329,7 +37625,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchConditionArgs:
@@ -38358,7 +37653,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepArgs:
@@ -38431,7 +37725,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepDialogActionArgs:
@@ -38471,7 +37764,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentArgs:
@@ -38531,7 +37823,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -38579,7 +37870,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -38605,7 +37895,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseArgs:
@@ -38672,7 +37961,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupArgs:
@@ -38762,7 +38050,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -38867,7 +38154,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -38893,7 +38179,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -38960,7 +38245,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -38985,7 +38269,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -39000,7 +38283,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -39034,7 +38316,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -39139,7 +38420,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -39165,7 +38445,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -39232,7 +38511,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -39257,7 +38535,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -39272,7 +38549,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -39296,7 +38572,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchArgs:
@@ -39367,7 +38642,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepArgs:
@@ -39440,7 +38714,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepDialogActionArgs:
@@ -39480,7 +38753,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentArgs:
@@ -39540,7 +38812,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -39588,7 +38859,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -39614,7 +38884,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseArgs:
@@ -39681,7 +38950,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupArgs:
@@ -39771,7 +39039,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -39876,7 +39143,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -39902,7 +39168,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -39969,7 +39234,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -39994,7 +39258,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -40009,7 +39272,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -40043,7 +39305,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -40148,7 +39409,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -40174,7 +39434,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -40241,7 +39500,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -40266,7 +39524,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -40281,7 +39538,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -40308,7 +39564,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepArgs:
@@ -40381,7 +39636,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepDialogActionArgs:
@@ -40421,7 +39675,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentArgs:
@@ -40481,7 +39734,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotArgs:
@@ -40529,7 +39781,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValueArgs:
@@ -40555,7 +39806,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseArgs:
@@ -40622,7 +39872,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupArgs:
@@ -40712,7 +39961,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageArgs:
@@ -40817,7 +40065,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageCustomPayloadArgs:
@@ -40843,7 +40090,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardArgs:
@@ -40910,7 +40156,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -40935,7 +40180,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessagePlainTextMessageArgs:
@@ -40950,7 +40194,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessageArgs:
@@ -40984,7 +40227,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationArgs:
@@ -41089,7 +40331,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationCustomPayloadArgs:
@@ -41115,7 +40356,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardArgs:
@@ -41182,7 +40422,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -41207,7 +40446,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationPlainTextMessageArgs:
@@ -41222,7 +40460,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessageArgs:
@@ -41251,7 +40488,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalArgs:
@@ -41343,7 +40579,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchArgs:
@@ -41431,7 +40666,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchConditionArgs:
@@ -41460,7 +40694,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepArgs:
@@ -41533,7 +40766,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepDialogActionArgs:
@@ -41573,7 +40805,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentArgs:
@@ -41633,7 +40864,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -41681,7 +40911,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -41707,7 +40936,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseArgs:
@@ -41774,7 +41002,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupArgs:
@@ -41864,7 +41091,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -41969,7 +41195,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -41995,7 +41220,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -42062,7 +41286,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -42087,7 +41310,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -42102,7 +41324,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -42136,7 +41357,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -42241,7 +41461,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -42267,7 +41486,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -42334,7 +41552,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -42359,7 +41576,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -42374,7 +41590,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -42398,7 +41613,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchArgs:
@@ -42469,7 +41683,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepArgs:
@@ -42542,7 +41755,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepDialogActionArgs:
@@ -42582,7 +41794,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentArgs:
@@ -42642,7 +41853,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -42690,7 +41900,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -42716,7 +41925,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseArgs:
@@ -42783,7 +41991,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupArgs:
@@ -42873,7 +42080,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -42978,7 +42184,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -43004,7 +42209,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -43071,7 +42275,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -43096,7 +42299,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -43111,7 +42313,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -43145,7 +42346,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -43250,7 +42450,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -43276,7 +42475,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -43343,7 +42541,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -43368,7 +42565,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -43383,7 +42579,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -43410,7 +42605,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepArgs:
@@ -43483,7 +42677,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepDialogActionArgs:
@@ -43523,7 +42716,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentArgs:
@@ -43583,7 +42775,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotArgs:
@@ -43631,7 +42822,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValueArgs:
@@ -43657,7 +42847,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseArgs:
@@ -43724,7 +42913,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupArgs:
@@ -43814,7 +43002,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageArgs:
@@ -43919,7 +43106,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageCustomPayloadArgs:
@@ -43945,7 +43131,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardArgs:
@@ -44012,7 +43197,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -44037,7 +43221,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessagePlainTextMessageArgs:
@@ -44052,7 +43235,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessageArgs:
@@ -44086,7 +43268,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationArgs:
@@ -44191,7 +43372,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationCustomPayloadArgs:
@@ -44217,7 +43397,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardArgs:
@@ -44284,7 +43463,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -44309,7 +43487,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageArgs:
@@ -44324,7 +43501,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSucce
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessageArgs:
@@ -44353,7 +43529,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalArgs:
@@ -44445,7 +43620,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchArgs:
@@ -44533,7 +43707,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchConditionArgs:
@@ -44562,7 +43735,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepArgs:
@@ -44635,7 +43807,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepDialogActionArgs:
@@ -44675,7 +43846,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentArgs:
@@ -44735,7 +43905,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -44783,7 +43952,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -44809,7 +43977,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseArgs:
@@ -44876,7 +44043,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupArgs:
@@ -44966,7 +44132,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -45071,7 +44236,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -45097,7 +44261,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -45164,7 +44327,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -45189,7 +44351,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -45204,7 +44365,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -45238,7 +44398,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -45343,7 +44502,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -45369,7 +44527,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -45436,7 +44593,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -45461,7 +44617,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -45476,7 +44631,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -45500,7 +44654,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchArgs:
@@ -45571,7 +44724,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepArgs:
@@ -45644,7 +44796,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepDialogActionArgs:
@@ -45684,7 +44835,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentArgs:
@@ -45744,7 +44894,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -45792,7 +44941,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -45818,7 +44966,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseArgs:
@@ -45885,7 +45032,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupArgs:
@@ -45975,7 +45121,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -46080,7 +45225,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -46106,7 +45250,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -46173,7 +45316,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -46198,7 +45340,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -46213,7 +45354,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -46247,7 +45387,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -46352,7 +45491,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -46378,7 +45516,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -46445,7 +45582,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -46470,7 +45606,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -46485,7 +45620,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -46512,7 +45646,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepArgs:
@@ -46585,7 +45718,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepDialogActionArgs:
@@ -46625,7 +45757,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentArgs:
@@ -46685,7 +45816,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotArgs:
@@ -46733,7 +45863,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutNextStepIntentSlotValueArgs:
@@ -46759,7 +45888,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseArgs:
@@ -46826,7 +45954,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupArgs:
@@ -46916,7 +46043,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageArgs:
@@ -47021,7 +46147,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageCustomPayloadArgs:
@@ -47047,7 +46172,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageImageResponseCardArgs:
@@ -47114,7 +46238,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -47139,7 +46262,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessagePlainTextMessageArgs:
@@ -47154,7 +46276,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupMessageSsmlMessageArgs:
@@ -47188,7 +46309,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
             V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationArgs:
@@ -47293,7 +46413,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationCustomPayloadArgs:
@@ -47319,7 +46438,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationImageResponseCardArgs:
@@ -47386,7 +46504,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -47411,7 +46528,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationPlainTextMessageArgs:
@@ -47426,7 +46542,6 @@ class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeo
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationTimeoutResponseMessageGroupVariationSsmlMessageArgs:
@@ -47453,7 +46568,6 @@ class V2modelsIntentInitialResponseSettingConditionalArgsDict(TypedDict):
             V2modelsIntentInitialResponseSettingConditionalDefaultBranchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalArgs:
@@ -47543,7 +46657,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchArgsDict(
             V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchArgs:
@@ -47631,7 +46744,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchConditionA
     TypedDict
 ):
     expression_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchConditionArgs:
@@ -47660,7 +46772,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepAr
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepArgs:
@@ -47733,7 +46844,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepDi
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepDialogActionArgs:
@@ -47773,7 +46883,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIn
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIntentArgs:
@@ -47833,7 +46942,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIn
             V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIntentSlotArgs:
@@ -47881,7 +46989,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIn
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchNextStepIntentSlotValueArgs:
@@ -47907,7 +47014,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseArgs:
@@ -47974,7 +47080,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupArgs:
@@ -48064,7 +47169,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
             V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageArgs:
@@ -48169,7 +47273,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -48195,7 +47298,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -48262,7 +47364,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -48287,7 +47388,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -48302,7 +47402,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -48336,7 +47435,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
             V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationArgs:
@@ -48441,7 +47539,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -48467,7 +47564,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -48534,7 +47630,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -48559,7 +47654,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -48574,7 +47668,6 @@ class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -48596,7 +47689,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchArgsDict(Typed
             V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchArgs:
@@ -48667,7 +47759,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepArgsDi
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepArgs:
@@ -48740,7 +47831,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepDialog
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepDialogActionArgs:
@@ -48780,7 +47870,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntent
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntentArgs:
@@ -48840,7 +47929,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntent
             V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntentSlotArgs:
@@ -48888,7 +47976,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntent
     TypedDict
 ):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntentSlotValueArgs:
@@ -48914,7 +48001,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseArgsDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseArgs:
@@ -48981,7 +48067,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupArgs:
@@ -49071,7 +48156,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
             V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageArgs:
@@ -49176,7 +48260,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageCustomPayloadArgs:
@@ -49202,7 +48285,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardArgs:
@@ -49269,7 +48351,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -49294,7 +48375,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessageArgs:
@@ -49309,7 +48389,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupMessageSsmlMessageArgs:
@@ -49343,7 +48422,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
             V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationArgs:
@@ -49448,7 +48526,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationCustomPayloadArgs:
@@ -49474,7 +48551,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardArgs:
@@ -49541,7 +48617,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -49566,7 +48641,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessageArgs:
@@ -49581,7 +48655,6 @@ class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessag
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageArgs:
@@ -49603,7 +48676,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseArgs:
@@ -49670,7 +48742,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupArgs:
@@ -49760,7 +48831,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageArgs
             V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageArgs:
@@ -49865,7 +48935,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCust
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCustomPayloadArgs:
@@ -49891,7 +48960,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageImag
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageImageResponseCardArgs:
@@ -49958,7 +49026,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageImag
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -49983,7 +49050,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessagePlai
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessagePlainTextMessageArgs:
@@ -49998,7 +49064,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageSsml
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupMessageSsmlMessageArgs:
@@ -50032,7 +49097,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationAr
             V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationArgs:
@@ -50137,7 +49201,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationCu
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationCustomPayloadArgs:
@@ -50163,7 +49226,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationIm
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardArgs:
@@ -50230,7 +49292,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationIm
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -50255,7 +49316,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationPl
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationPlainTextMessageArgs:
@@ -50270,7 +49330,6 @@ class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationSs
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingInitialResponseMessageGroupVariationSsmlMessageArgs:
@@ -50291,7 +49350,6 @@ class V2modelsIntentInitialResponseSettingNextStepArgsDict(TypedDict):
     session_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingNextStepArgs:
@@ -50350,7 +49408,6 @@ class V2modelsIntentInitialResponseSettingNextStepDialogActionArgsDict(TypedDict
     type: pulumi.Input[_builtins.str]
     slot_to_elicit: NotRequired[pulumi.Input[_builtins.str]]
     suppress_next_message: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingNextStepDialogActionArgs:
@@ -50388,7 +49445,6 @@ class V2modelsIntentInitialResponseSettingNextStepIntentArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingNextStepIntentArgs:
@@ -50444,7 +49500,6 @@ class V2modelsIntentInitialResponseSettingNextStepIntentSlotArgsDict(TypedDict):
             V2modelsIntentInitialResponseSettingNextStepIntentSlotValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingNextStepIntentSlotArgs:
@@ -50488,7 +49543,6 @@ class V2modelsIntentInitialResponseSettingNextStepIntentSlotArgs:
 
 class V2modelsIntentInitialResponseSettingNextStepIntentSlotValueArgsDict(TypedDict):
     interpreted_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInitialResponseSettingNextStepIntentSlotValueArgs:
@@ -50503,7 +49557,6 @@ class V2modelsIntentInitialResponseSettingNextStepIntentSlotValueArgs:
 
 class V2modelsIntentInputContextArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentInputContextArgs:
@@ -50518,7 +49571,6 @@ class V2modelsIntentKendraConfigurationArgsDict(TypedDict):
     kendra_index: pulumi.Input[_builtins.str]
     query_filter_string: NotRequired[pulumi.Input[_builtins.str]]
     query_filter_string_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentKendraConfigurationArgs:
@@ -50551,7 +49603,6 @@ class V2modelsIntentOutputContextArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     time_to_live_in_seconds: pulumi.Input[_builtins.int]
     turns_to_live: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentOutputContextArgs:
@@ -50589,7 +49640,6 @@ class V2modelsIntentQnaIntentConfigurationArgsDict(TypedDict):
             V2modelsIntentQnaIntentConfigurationDataSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationArgs:
@@ -50649,7 +49699,6 @@ class V2modelsIntentQnaIntentConfigurationBedrockModelConfigurationArgsDict(Type
         ]
     ]
     trace_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationBedrockModelConfigurationArgs:
@@ -50704,7 +49753,6 @@ class V2modelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailArgs
 ):
     identifier: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailArgs:
@@ -50741,7 +49789,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationArgsDict(TypedD
             V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationArgs:
@@ -50829,7 +49876,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledg
             V2modelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationArgs:
@@ -50877,7 +49923,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledg
     TypedDict
 ):
     answer_field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsArgs:
@@ -50897,7 +49942,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigura
     exact_response: NotRequired[pulumi.Input[_builtins.bool]]
     query_filter_string: NotRequired[pulumi.Input[_builtins.str]]
     query_filter_string_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationArgs:
@@ -50944,7 +49988,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfi
         ]
     ]
     include_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationArgs:
@@ -51011,7 +50054,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfi
 ):
     answer_field: pulumi.Input[_builtins.str]
     question_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsArgs:
@@ -51034,7 +50076,6 @@ class V2modelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfi
 
 class V2modelsIntentSampleUtteranceArgsDict(TypedDict):
     utterance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentSampleUtteranceArgs:
@@ -51048,7 +50089,6 @@ class V2modelsIntentSampleUtteranceArgs:
 class V2modelsIntentSlotPriorityArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     slot_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentSlotPriorityArgs:
@@ -51073,7 +50113,6 @@ class V2modelsIntentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsIntentTimeoutsArgs:
@@ -51102,7 +50141,6 @@ class V2modelsIntentTimeoutsArgs:
 
 class V2modelsSlotMultipleValuesSettingArgsDict(TypedDict):
     allow_multiple_values: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotMultipleValuesSettingArgs:
@@ -51117,7 +50155,6 @@ class V2modelsSlotMultipleValuesSettingArgs:
 
 class V2modelsSlotObfuscationSettingArgsDict(TypedDict):
     obfuscation_setting_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotObfuscationSettingArgs:
@@ -51137,7 +50174,6 @@ class V2modelsSlotSubSlotSettingArgsDict(TypedDict):
             Sequence[pulumi.Input[V2modelsSlotSubSlotSettingSlotSpecificationArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingArgs:
@@ -51187,7 +50223,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationArgs:
@@ -51278,7 +50313,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingArgs:
@@ -51425,7 +50459,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultV
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultValueSpecificationArgs:
@@ -51467,7 +50500,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultV
     TypedDict
 ):
     default_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultValueSpecificationDefaultValueListArgs:
@@ -51502,7 +50534,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationArgs:
@@ -51618,7 +50649,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupArgs:
@@ -51708,7 +50738,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageArgs:
@@ -51813,7 +50842,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadArgs:
@@ -51839,7 +50867,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardArgs:
@@ -51906,7 +50933,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonArgs:
@@ -51931,7 +50957,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageArgs:
@@ -51946,7 +50971,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgs:
@@ -51980,7 +51004,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationArgs:
@@ -52085,7 +51108,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadArgs:
@@ -52111,7 +51133,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardArgs:
@@ -52178,7 +51199,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonArgs:
@@ -52203,7 +51223,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageArgs:
@@ -52218,7 +51237,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgs:
@@ -52249,7 +51267,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationArgs:
@@ -52344,7 +51361,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
 ):
     allow_audio_input: pulumi.Input[_builtins.bool]
     allow_dtmf_input: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesArgs:
@@ -52379,7 +51395,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationArgs:
@@ -52445,7 +51460,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
 ):
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationArgs:
@@ -52473,7 +51487,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     end_character: pulumi.Input[_builtins.str]
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgs:
@@ -52510,7 +51523,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSp
     TypedDict
 ):
     start_timeout_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgs:
@@ -52527,7 +51539,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingSampleUt
     TypedDict
 ):
     utterance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingSampleUtteranceArgs:
@@ -52569,7 +51580,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationArgs:
@@ -52702,7 +51712,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseArgs:
@@ -52769,7 +51778,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupArgs:
@@ -52859,7 +51867,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageArgs:
@@ -52964,7 +51971,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadArgs:
@@ -52990,7 +51996,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardArgs:
@@ -53057,7 +52062,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -53082,7 +52086,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageArgs:
@@ -53097,7 +52100,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageArgs:
@@ -53131,7 +52133,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationArgs:
@@ -53236,7 +52237,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadArgs:
@@ -53262,7 +52262,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardArgs:
@@ -53329,7 +52328,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -53354,7 +52352,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageArgs:
@@ -53369,7 +52366,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageArgs:
@@ -53395,7 +52391,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseArgs:
@@ -53474,7 +52469,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupArgs:
@@ -53564,7 +52558,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageArgs:
@@ -53669,7 +52662,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadArgs:
@@ -53695,7 +52687,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardArgs:
@@ -53762,7 +52753,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -53787,7 +52777,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageArgs:
@@ -53802,7 +52791,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageArgs:
@@ -53836,7 +52824,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationArgs:
@@ -53941,7 +52928,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadArgs:
@@ -53967,7 +52953,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardArgs:
@@ -54034,7 +53019,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -54059,7 +53043,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageArgs:
@@ -54074,7 +53057,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageArgs:
@@ -54098,7 +53080,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseArgs:
@@ -54165,7 +53146,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupArgs:
@@ -54255,7 +53235,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageArgs:
@@ -54360,7 +53339,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadArgs:
@@ -54386,7 +53364,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardArgs:
@@ -54453,7 +53430,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -54478,7 +53454,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageArgs:
@@ -54493,7 +53468,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageArgs:
@@ -54527,7 +53501,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
             V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationArgs:
@@ -54632,7 +53605,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadArgs:
@@ -54658,7 +53630,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardArgs:
@@ -54725,7 +53696,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -54750,7 +53720,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageArgs:
@@ -54765,7 +53734,6 @@ class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageArgs:
@@ -54780,7 +53748,6 @@ class V2modelsSlotTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTimeoutsArgs:
@@ -54815,7 +53782,6 @@ class V2modelsSlotTypeCompositeSlotTypeSettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeCompositeSlotTypeSettingArgs:
@@ -54854,7 +53820,6 @@ class V2modelsSlotTypeCompositeSlotTypeSettingArgs:
 class V2modelsSlotTypeCompositeSlotTypeSettingSubSlotArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     slot_type_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeCompositeSlotTypeSettingSubSlotArgs:
@@ -54885,7 +53850,6 @@ class V2modelsSlotTypeExternalSourceSettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeExternalSourceSettingArgs:
@@ -54939,7 +53903,6 @@ class V2modelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingArgs:
@@ -54989,7 +53952,6 @@ class V2modelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceArgsDict(
     kms_key_arn: pulumi.Input[_builtins.str]
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_object_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingSourceArgs:
@@ -55027,7 +53989,6 @@ class V2modelsSlotTypeSlotTypeValueArgsDict(TypedDict):
             Sequence[pulumi.Input[V2modelsSlotTypeSlotTypeValueSynonymArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeSlotTypeValueArgs:
@@ -55082,7 +54043,6 @@ class V2modelsSlotTypeSlotTypeValueArgs:
 
 class V2modelsSlotTypeSlotTypeValueSampleValueArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeSlotTypeValueSampleValueArgs:
@@ -55095,7 +54055,6 @@ class V2modelsSlotTypeSlotTypeValueSampleValueArgs:
 
 class V2modelsSlotTypeSlotTypeValueSynonymArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeSlotTypeValueSynonymArgs:
@@ -55110,7 +54069,6 @@ class V2modelsSlotTypeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeTimeoutsArgs:
@@ -55155,7 +54113,6 @@ class V2modelsSlotTypeValueSelectionSettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeValueSelectionSettingArgs:
@@ -55236,7 +54193,6 @@ class V2modelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingArgsDict(
     TypedDict
 ):
     audio_recognition_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingArgs:
@@ -55255,7 +54211,6 @@ class V2modelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingArgs:
 
 class V2modelsSlotTypeValueSelectionSettingRegexFilterArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotTypeValueSelectionSettingRegexFilterArgs:
@@ -55305,7 +54260,6 @@ class V2modelsSlotValueElicitationSettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingArgs:
@@ -55479,7 +54433,6 @@ class V2modelsSlotValueElicitationSettingDefaultValueSpecificationArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingDefaultValueSpecificationArgs:
@@ -55521,7 +54474,6 @@ class V2modelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueLi
     TypedDict
 ):
     default_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListArgs:
@@ -55554,7 +54506,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationArgs:
@@ -55670,7 +54621,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupArgs:
@@ -55760,7 +54710,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageA
             V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageArgs:
@@ -55865,7 +54814,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageC
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadArgs:
@@ -55891,7 +54839,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageI
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardArgs:
@@ -55958,7 +54905,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageI
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonArgs:
@@ -55983,7 +54929,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageP
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageArgs:
@@ -55998,7 +54943,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageS
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageArgs:
@@ -56032,7 +54976,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
             V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationArgs:
@@ -56137,7 +55080,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadArgs:
@@ -56163,7 +55105,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardArgs:
@@ -56230,7 +55171,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonArgs:
@@ -56255,7 +55195,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageArgs:
@@ -56270,7 +55209,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariatio
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageArgs:
@@ -56301,7 +55239,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
             V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationArgs:
@@ -56396,7 +55333,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
 ):
     allow_audio_input: pulumi.Input[_builtins.bool]
     allow_dtmf_input: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesArgs:
@@ -56431,7 +55367,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
             V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationArgs:
@@ -56497,7 +55432,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
 ):
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationArgs:
@@ -56525,7 +55459,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
     end_character: pulumi.Input[_builtins.str]
     end_timeout_ms: pulumi.Input[_builtins.int]
     max_length: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationArgs:
@@ -56562,7 +55495,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
     TypedDict
 ):
     start_timeout_ms: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationArgs:
@@ -56577,7 +55509,6 @@ class V2modelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecif
 
 class V2modelsSlotValueElicitationSettingSampleUtteranceArgsDict(TypedDict):
     utterance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingSampleUtteranceArgs:
@@ -56590,7 +55521,6 @@ class V2modelsSlotValueElicitationSettingSampleUtteranceArgs:
 
 class V2modelsSlotValueElicitationSettingSlotResolutionSettingArgsDict(TypedDict):
     slot_resolution_strategy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingSlotResolutionSettingArgs:
@@ -56634,7 +55564,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationArgs:
@@ -56767,7 +55696,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseArgs:
@@ -56834,7 +55762,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupArgs:
@@ -56924,7 +55851,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageArgs:
@@ -57029,7 +55955,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadArgs:
@@ -57055,7 +55980,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardArgs:
@@ -57122,7 +56046,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -57147,7 +56070,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageArgs:
@@ -57162,7 +56084,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageArgs:
@@ -57196,7 +56117,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationArgs:
@@ -57301,7 +56221,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadArgs:
@@ -57327,7 +56246,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardArgs:
@@ -57394,7 +56312,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -57419,7 +56336,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageArgs:
@@ -57434,7 +56350,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueRes
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageArgs:
@@ -57460,7 +56375,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseArgs:
@@ -57539,7 +56453,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupArgs:
@@ -57629,7 +56542,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageArgs:
@@ -57734,7 +56646,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadArgs:
@@ -57760,7 +56671,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardArgs:
@@ -57827,7 +56737,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -57852,7 +56761,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageArgs:
@@ -57867,7 +56775,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageArgs:
@@ -57901,7 +56808,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationArgs:
@@ -58006,7 +56912,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadArgs:
@@ -58032,7 +56937,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardArgs:
@@ -58099,7 +57003,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -58124,7 +57027,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageArgs:
@@ -58139,7 +57041,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitin
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageArgs:
@@ -58163,7 +57064,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseArgs:
@@ -58230,7 +57130,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupArgs:
@@ -58320,7 +57219,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageArgs:
@@ -58425,7 +57323,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadArgs:
@@ -58451,7 +57348,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardArgs:
@@ -58518,7 +57414,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonArgs:
@@ -58543,7 +57438,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageArgs:
@@ -58558,7 +57452,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageArgs:
@@ -58592,7 +57485,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
             V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationArgs:
@@ -58697,7 +57589,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadArgs:
@@ -58723,7 +57614,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     ]
     image_url: NotRequired[pulumi.Input[_builtins.str]]
     subtitle: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardArgs:
@@ -58790,7 +57680,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
 ):
     text: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonArgs:
@@ -58815,7 +57704,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageArgs:
@@ -58830,7 +57718,6 @@ class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResp
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2modelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageArgs:

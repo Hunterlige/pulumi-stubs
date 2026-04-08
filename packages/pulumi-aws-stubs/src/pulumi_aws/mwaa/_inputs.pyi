@@ -32,7 +32,6 @@ class EnvironmentLastUpdatedArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[EnvironmentLastUpdatedErrorArgsDict]]]
     ]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLastUpdatedArgs:
@@ -73,7 +72,6 @@ class EnvironmentLastUpdatedArgs:
 class EnvironmentLastUpdatedErrorArgsDict(TypedDict):
     error_code: NotRequired[pulumi.Input[_builtins.str]]
     error_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLastUpdatedErrorArgs:
@@ -110,7 +108,6 @@ class EnvironmentLoggingConfigurationArgsDict(TypedDict):
     worker_logs: NotRequired[
         pulumi.Input[EnvironmentLoggingConfigurationWorkerLogsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationArgs:
@@ -191,7 +188,6 @@ class EnvironmentLoggingConfigurationDagProcessingLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationDagProcessingLogsArgs:
@@ -224,7 +220,6 @@ class EnvironmentLoggingConfigurationSchedulerLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationSchedulerLogsArgs:
@@ -257,7 +252,6 @@ class EnvironmentLoggingConfigurationTaskLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationTaskLogsArgs:
@@ -290,7 +284,6 @@ class EnvironmentLoggingConfigurationWebserverLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationWebserverLogsArgs:
@@ -323,7 +316,6 @@ class EnvironmentLoggingConfigurationWorkerLogsArgsDict(TypedDict):
     cloud_watch_log_group_arn: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLoggingConfigurationWorkerLogsArgs:
@@ -355,7 +347,6 @@ class EnvironmentLoggingConfigurationWorkerLogsArgs:
 class EnvironmentNetworkConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EnvironmentNetworkConfigurationArgs:

@@ -159,7 +159,6 @@ class AutomationRuleArgsDict(TypedDict):
     timed_promote_release_rule: NotRequired[
         pulumi.Input[AutomationRuleTimedPromoteReleaseRuleArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AutomationRuleArgs:
@@ -220,7 +219,6 @@ class AutomationRuleAdvanceRolloutRuleArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     source_phases: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     wait: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleAdvanceRolloutRuleArgs:
@@ -258,7 +256,6 @@ class AutomationRulePromoteReleaseRuleArgsDict(TypedDict):
     destination_phase: NotRequired[pulumi.Input[_builtins.str]]
     destination_target_id: NotRequired[pulumi.Input[_builtins.str]]
     wait: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRulePromoteReleaseRuleArgs:
@@ -300,7 +297,6 @@ class AutomationRuleRepairRolloutRuleArgsDict(TypedDict):
             Sequence[pulumi.Input[AutomationRuleRepairRolloutRuleRepairPhaseArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AutomationRuleRepairRolloutRuleArgs:
@@ -363,7 +359,6 @@ class AutomationRuleRepairRolloutRuleRepairPhaseArgsDict(TypedDict):
     rollback: NotRequired[
         pulumi.Input[AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AutomationRuleRepairRolloutRuleRepairPhaseArgs:
@@ -410,7 +405,6 @@ class AutomationRuleRepairRolloutRuleRepairPhaseRetryArgsDict(TypedDict):
     attempts: pulumi.Input[_builtins.str]
     backoff_mode: NotRequired[pulumi.Input[_builtins.str]]
     wait: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleRepairRolloutRuleRepairPhaseRetryArgs:
@@ -440,7 +434,6 @@ class AutomationRuleRepairRolloutRuleRepairPhaseRetryArgs:
 class AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgsDict(TypedDict):
     destination_phase: NotRequired[pulumi.Input[_builtins.str]]
     disable_rollback_if_rollout_pending: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleRepairRolloutRuleRepairPhaseRollbackArgs:
@@ -473,7 +466,6 @@ class AutomationRuleTimedPromoteReleaseRuleArgsDict(TypedDict):
     time_zone: pulumi.Input[_builtins.str]
     destination_phase: NotRequired[pulumi.Input[_builtins.str]]
     destination_target_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleTimedPromoteReleaseRuleArgs:
@@ -514,7 +506,6 @@ class AutomationRuleTimedPromoteReleaseRuleArgs:
 
 class AutomationSelectorArgsDict(TypedDict):
     targets: pulumi.Input[Sequence[pulumi.Input[AutomationSelectorTargetArgsDict]]]
-    ...
 
 @pulumi.input_type
 class AutomationSelectorArgs:
@@ -536,7 +527,6 @@ class AutomationSelectorArgs:
 class AutomationSelectorTargetArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AutomationSelectorTargetArgs:
@@ -571,7 +561,6 @@ class CustomTargetTypeCustomActionsArgsDict(TypedDict):
         ]
     ]
     render_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeCustomActionsArgs:
@@ -636,7 +625,6 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgsDict(TypedDict):
             CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleArgs:
@@ -722,7 +710,6 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGitArgsDict(TypedDict):
     repo: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
     ref: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGitArgs:
@@ -755,7 +742,6 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudBuildRepoArgs
     repository: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
     ref: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudBuildRepoArgs:
@@ -787,7 +773,6 @@ class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgsDi
 ):
     source: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeCustomActionsIncludeSkaffoldModuleGoogleCloudStorageArgs:
@@ -812,7 +797,6 @@ class CustomTargetTypeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeIamBindingConditionArgs:
@@ -843,7 +827,6 @@ class CustomTargetTypeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomTargetTypeIamMemberConditionArgs:
@@ -892,7 +875,6 @@ class DeliveryPipelineConditionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineConditionArgs:
@@ -985,7 +967,6 @@ class DeliveryPipelineConditionArgs:
 class DeliveryPipelineConditionPipelineReadyConditionArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.bool]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineConditionPipelineReadyConditionArgs:
@@ -1010,7 +991,6 @@ class DeliveryPipelineConditionTargetsPresentConditionArgsDict(TypedDict):
     missing_targets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     status: NotRequired[pulumi.Input[_builtins.bool]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineConditionTargetsPresentConditionArgs:
@@ -1046,7 +1026,6 @@ class DeliveryPipelineConditionTargetsPresentConditionArgs:
 class DeliveryPipelineConditionTargetsTypeConditionArgsDict(TypedDict):
     error_details: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineConditionTargetsTypeConditionArgs:
@@ -1071,7 +1050,6 @@ class DeliveryPipelineIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineIamBindingConditionArgs:
@@ -1102,7 +1080,6 @@ class DeliveryPipelineIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineIamMemberConditionArgs:
@@ -1135,7 +1112,6 @@ class DeliveryPipelineSerialPipelineArgsDict(TypedDict):
             Sequence[pulumi.Input[DeliveryPipelineSerialPipelineStageArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineArgs:
@@ -1178,7 +1154,6 @@ class DeliveryPipelineSerialPipelineStageArgsDict(TypedDict):
         pulumi.Input[DeliveryPipelineSerialPipelineStageStrategyArgsDict]
     ]
     target_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageArgs:
@@ -1250,7 +1225,6 @@ class DeliveryPipelineSerialPipelineStageDeployParameterArgsDict(TypedDict):
     match_target_labels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageDeployParameterArgs:
@@ -1286,7 +1260,6 @@ class DeliveryPipelineSerialPipelineStageStrategyArgsDict(TypedDict):
     standard: NotRequired[
         pulumi.Input[DeliveryPipelineSerialPipelineStageStrategyStandardArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyArgs:
@@ -1345,7 +1318,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryArgsDict(TypedDict):
             DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryArgs:
@@ -1436,7 +1408,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgsDict(
         ]
     ]
     verify: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentArgs:
@@ -1509,7 +1480,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPostdeplo
     TypedDict
 ):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPostdeployArgs:
@@ -1532,7 +1502,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPredeploy
     TypedDict
 ):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCanaryDeploymentPredeployArgs:
@@ -1561,7 +1530,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentArg
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentArgs:
@@ -1616,7 +1584,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     ]
     profiles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     verify: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigArgs:
@@ -1703,7 +1670,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     TypedDict
 ):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPostdeployArgs:
@@ -1726,7 +1692,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPha
     TypedDict
 ):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryCustomCanaryDeploymentPhaseConfigPredeployArgs:
@@ -1756,7 +1721,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgsDict(Typ
             DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigArgs:
@@ -1824,7 +1788,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs
     stable_revision_tags: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigCloudRunArgs:
@@ -1890,7 +1853,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesAr
             DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesServiceNetworkingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesArgs:
@@ -1959,7 +1921,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGa
     ]
     route_update_wait_time: NotRequired[pulumi.Input[_builtins.str]]
     stable_cutback_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshArgs:
@@ -2032,7 +1993,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGa
 ):
     destination_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     propagate_service: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsArgs:
@@ -2064,7 +2024,6 @@ class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesSe
     service: pulumi.Input[_builtins.str]
     disable_pod_overprovisioning: NotRequired[pulumi.Input[_builtins.bool]]
     pod_selector_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyCanaryRuntimeConfigKubernetesServiceNetworkingArgs:
@@ -2113,7 +2072,6 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardArgsDict(TypedDict):
         ]
     ]
     verify: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyStandardArgs:
@@ -2172,7 +2130,6 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardArgs:
 
 class DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgsDict(TypedDict):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgs:
@@ -2193,7 +2150,6 @@ class DeliveryPipelineSerialPipelineStageStrategyStandardPostdeployArgs:
 
 class DeliveryPipelineSerialPipelineStageStrategyStandardPredeployArgsDict(TypedDict):
     actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeliveryPipelineSerialPipelineStageStrategyStandardPredeployArgs:
@@ -2216,7 +2172,6 @@ class DeployPolicyRuleArgsDict(TypedDict):
     rollout_restriction: NotRequired[
         pulumi.Input[DeployPolicyRuleRolloutRestrictionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleArgs:
@@ -2244,7 +2199,6 @@ class DeployPolicyRuleRolloutRestrictionArgsDict(TypedDict):
     time_windows: NotRequired[
         pulumi.Input[DeployPolicyRuleRolloutRestrictionTimeWindowsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionArgs:
@@ -2314,7 +2268,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsArgs:
@@ -2412,7 +2365,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgsDict(TypedDi
     start_time: pulumi.Input[
         DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowArgs:
@@ -2495,7 +2447,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndDateArgsDict(
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndDateArgs:
@@ -2529,7 +2480,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndTimeArgsDict(
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowEndTimeArgs:
@@ -2568,7 +2518,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartDateArgsDic
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartDateArgs:
@@ -2602,7 +2551,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgsDic
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsOneTimeWindowStartTimeArgs:
@@ -2647,7 +2595,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgsDict(TypedDic
             DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowArgs:
@@ -2721,7 +2668,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowEndTimeArgsDict(
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowEndTimeArgs:
@@ -2761,7 +2707,6 @@ class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgsDict
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DeployPolicyRuleRolloutRestrictionTimeWindowsWeeklyWindowStartTimeArgs:
@@ -2799,7 +2744,6 @@ class DeployPolicySelectorArgsDict(TypedDict):
         pulumi.Input[DeployPolicySelectorDeliveryPipelineArgsDict]
     ]
     target: NotRequired[pulumi.Input[DeployPolicySelectorTargetArgsDict]]
-    ...
 
 @pulumi.input_type
 class DeployPolicySelectorArgs:
@@ -2829,7 +2773,6 @@ class DeployPolicySelectorArgs:
 class DeployPolicySelectorDeliveryPipelineArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeployPolicySelectorDeliveryPipelineArgs:
@@ -2857,7 +2800,6 @@ class DeployPolicySelectorDeliveryPipelineArgs:
 class DeployPolicySelectorTargetArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DeployPolicySelectorTargetArgs:
@@ -2884,7 +2826,6 @@ class DeployPolicySelectorTargetArgs:
 
 class TargetAnthosClusterArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetAnthosClusterArgs:
@@ -2907,7 +2848,6 @@ class TargetAssociatedEntityArgsDict(TypedDict):
     gke_clusters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TargetAssociatedEntityGkeClusterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TargetAssociatedEntityArgs:
@@ -2962,7 +2902,6 @@ class TargetAssociatedEntityArgs:
 
 class TargetAssociatedEntityAnthosClusterArgsDict(TypedDict):
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetAssociatedEntityAnthosClusterArgs:
@@ -2979,7 +2918,6 @@ class TargetAssociatedEntityGkeClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
     internal_ip: NotRequired[pulumi.Input[_builtins.bool]]
     proxy_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetAssociatedEntityGkeClusterArgs:
@@ -3008,7 +2946,6 @@ class TargetAssociatedEntityGkeClusterArgs:
 
 class TargetCustomTargetArgsDict(TypedDict):
     custom_target_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TargetCustomTargetArgs:
@@ -3028,7 +2965,6 @@ class TargetExecutionConfigArgsDict(TypedDict):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
     verbose: NotRequired[pulumi.Input[_builtins.bool]]
     worker_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetExecutionConfigArgs:
@@ -3078,7 +3014,6 @@ class TargetGkeArgsDict(TypedDict):
     dns_endpoint: NotRequired[pulumi.Input[_builtins.bool]]
     internal_ip: NotRequired[pulumi.Input[_builtins.bool]]
     proxy_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetGkeArgs:
@@ -3115,7 +3050,6 @@ class TargetIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetIamBindingConditionArgs:
@@ -3146,7 +3080,6 @@ class TargetIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetIamMemberConditionArgs:
@@ -3175,7 +3108,6 @@ class TargetIamMemberConditionArgs:
 
 class TargetMultiTargetArgsDict(TypedDict):
     target_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class TargetMultiTargetArgs:
@@ -3192,7 +3124,6 @@ class TargetMultiTargetArgs:
 
 class TargetRunArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TargetRunArgs:

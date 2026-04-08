@@ -15,7 +15,6 @@ __all__ = [
 class ParameterPolicyMemberArgsDict(TypedDict):
     iam_policy_name_principal: NotRequired[pulumi.Input[_builtins.str]]
     iam_policy_uid_principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ParameterPolicyMemberArgs:
@@ -43,7 +42,6 @@ class ParameterPolicyMemberArgs:
 class RegionalParameterPolicyMemberArgsDict(TypedDict):
     iam_policy_name_principal: NotRequired[pulumi.Input[_builtins.str]]
     iam_policy_uid_principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegionalParameterPolicyMemberArgs:

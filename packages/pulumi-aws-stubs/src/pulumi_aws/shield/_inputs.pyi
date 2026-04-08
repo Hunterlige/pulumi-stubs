@@ -20,7 +20,6 @@ class ApplicationLayerAutomaticResponseTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationLayerAutomaticResponseTimeoutsArgs:
@@ -50,7 +49,6 @@ class ApplicationLayerAutomaticResponseTimeoutsArgs:
 class DrtAccessLogBucketAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DrtAccessLogBucketAssociationTimeoutsArgs:
@@ -75,7 +73,6 @@ class DrtAccessRoleArnAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DrtAccessRoleArnAssociationTimeoutsArgs:
@@ -106,7 +103,6 @@ class ProactiveEngagementEmergencyContactArgsDict(TypedDict):
     email_address: pulumi.Input[_builtins.str]
     contact_notes: NotRequired[pulumi.Input[_builtins.str]]
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProactiveEngagementEmergencyContactArgs:

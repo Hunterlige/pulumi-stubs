@@ -31,7 +31,6 @@ class EventDataStoreAdvancedEventSelectorArgsDict(TypedDict):
         ]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventDataStoreAdvancedEventSelectorArgs:
@@ -81,7 +80,6 @@ class EventDataStoreAdvancedEventSelectorFieldSelectorArgsDict(TypedDict):
     not_equals: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     not_starts_withs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     starts_withs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EventDataStoreAdvancedEventSelectorFieldSelectorArgs:
@@ -167,7 +165,6 @@ class TrailAdvancedEventSelectorArgsDict(TypedDict):
         Sequence[pulumi.Input[TrailAdvancedEventSelectorFieldSelectorArgsDict]]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrailAdvancedEventSelectorArgs:
@@ -207,7 +204,6 @@ class TrailAdvancedEventSelectorFieldSelectorArgsDict(TypedDict):
     not_equals: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     not_starts_withs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     starts_withs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TrailAdvancedEventSelectorFieldSelectorArgs:
@@ -297,7 +293,6 @@ class TrailEventSelectorArgsDict(TypedDict):
     ]
     include_management_events: NotRequired[pulumi.Input[_builtins.bool]]
     read_write_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrailEventSelectorArgs:
@@ -352,7 +347,6 @@ class TrailEventSelectorArgs:
 class TrailEventSelectorDataResourceArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class TrailEventSelectorDataResourceArgs:
@@ -375,7 +369,6 @@ class TrailEventSelectorDataResourceArgs:
 
 class TrailInsightSelectorArgsDict(TypedDict):
     insight_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TrailInsightSelectorArgs:

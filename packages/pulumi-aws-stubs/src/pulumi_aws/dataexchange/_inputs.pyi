@@ -38,7 +38,6 @@ __all__ = [
 
 class EventActionActionArgsDict(TypedDict):
     export_revision_to_s3: pulumi.Input[EventActionActionExportRevisionToS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class EventActionActionArgs:
@@ -64,7 +63,6 @@ class EventActionActionExportRevisionToS3ArgsDict(TypedDict):
     encryption: NotRequired[
         pulumi.Input[EventActionActionExportRevisionToS3EncryptionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EventActionActionExportRevisionToS3Args:
@@ -104,7 +102,6 @@ class EventActionActionExportRevisionToS3Args:
 class EventActionActionExportRevisionToS3EncryptionArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventActionActionExportRevisionToS3EncryptionArgs:
@@ -128,7 +125,6 @@ class EventActionActionExportRevisionToS3EncryptionArgs:
 class EventActionActionExportRevisionToS3RevisionDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key_pattern: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EventActionActionExportRevisionToS3RevisionDestinationArgs:
@@ -151,7 +147,6 @@ class EventActionActionExportRevisionToS3RevisionDestinationArgs:
 
 class EventActionEventArgsDict(TypedDict):
     revision_published: pulumi.Input[EventActionEventRevisionPublishedArgsDict]
-    ...
 
 @pulumi.input_type
 class EventActionEventArgs:
@@ -172,7 +167,6 @@ class EventActionEventArgs:
 
 class EventActionEventRevisionPublishedArgsDict(TypedDict):
     data_set_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventActionEventRevisionPublishedArgs:
@@ -198,7 +192,6 @@ class RevisionAssetsAssetArgsDict(TypedDict):
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
     updated_at: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetArgs:
@@ -287,7 +280,6 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgsDict(TypedDict):
             RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketArgs:
@@ -342,7 +334,6 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceArgs:
@@ -416,7 +407,6 @@ class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant
     TypedDict
 ):
     kms_key_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantArgs:
@@ -431,7 +421,6 @@ class RevisionAssetsAssetImportAssetsFromS3ArgsDict(TypedDict):
     asset_source: NotRequired[
         pulumi.Input[RevisionAssetsAssetImportAssetsFromS3AssetSourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetImportAssetsFromS3Args:
@@ -460,7 +449,6 @@ class RevisionAssetsAssetImportAssetsFromS3Args:
 class RevisionAssetsAssetImportAssetsFromS3AssetSourceArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetImportAssetsFromS3AssetSourceArgs:
@@ -483,7 +471,6 @@ class RevisionAssetsAssetImportAssetsFromS3AssetSourceArgs:
 
 class RevisionAssetsAssetImportAssetsFromSignedUrlArgsDict(TypedDict):
     filename: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsAssetImportAssetsFromSignedUrlArgs:
@@ -496,7 +483,6 @@ class RevisionAssetsAssetImportAssetsFromSignedUrlArgs:
 
 class RevisionAssetsTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RevisionAssetsTimeoutsArgs:

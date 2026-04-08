@@ -101,7 +101,6 @@ __all__ = [
 class AccessHomeDirectoryMappingArgsDict(TypedDict):
     entry: pulumi.Input[_builtins.str]
     target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AccessHomeDirectoryMappingArgs:
@@ -126,7 +125,6 @@ class AccessPosixProfileArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
     secondary_gids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class AccessPosixProfileArgs:
@@ -168,7 +166,6 @@ class ConnectorAs2ConfigArgsDict(TypedDict):
     signing_algorithm: pulumi.Input[_builtins.str]
     mdn_signing_algorithm: NotRequired[pulumi.Input[_builtins.str]]
     message_subject: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorAs2ConfigArgs:
@@ -227,7 +224,6 @@ class ConnectorAs2ConfigArgs:
 
 class ConnectorEgressConfigArgsDict(TypedDict):
     vpc_lattice: NotRequired[pulumi.Input[ConnectorEgressConfigVpcLatticeArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConnectorEgressConfigArgs:
@@ -249,7 +245,6 @@ class ConnectorEgressConfigArgs:
 class ConnectorEgressConfigVpcLatticeArgsDict(TypedDict):
     resource_configuration_arn: pulumi.Input[_builtins.str]
     port_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectorEgressConfigVpcLatticeArgs:
@@ -273,7 +268,6 @@ class ConnectorEgressConfigVpcLatticeArgs:
 class ConnectorSftpConfigArgsDict(TypedDict):
     trusted_host_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     user_secret_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorSftpConfigArgs:
@@ -308,7 +302,6 @@ class ServerEndpointDetailsArgsDict(TypedDict):
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerEndpointDetailsArgs:
@@ -368,7 +361,6 @@ class ServerProtocolDetailsArgsDict(TypedDict):
     passive_ip: NotRequired[pulumi.Input[_builtins.str]]
     set_stat_option: NotRequired[pulumi.Input[_builtins.str]]
     tls_session_resumption_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerProtocolDetailsArgs:
@@ -411,7 +403,6 @@ class ServerProtocolDetailsArgs:
 
 class ServerS3StorageOptionsArgsDict(TypedDict):
     directory_listing_optimization: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerS3StorageOptionsArgs:
@@ -435,7 +426,6 @@ class ServerWorkflowDetailsArgsDict(TypedDict):
         pulumi.Input[ServerWorkflowDetailsOnPartialUploadArgsDict]
     ]
     on_upload: NotRequired[pulumi.Input[ServerWorkflowDetailsOnUploadArgsDict]]
-    ...
 
 @pulumi.input_type
 class ServerWorkflowDetailsArgs:
@@ -469,7 +459,6 @@ class ServerWorkflowDetailsArgs:
 class ServerWorkflowDetailsOnPartialUploadArgsDict(TypedDict):
     execution_role: pulumi.Input[_builtins.str]
     workflow_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerWorkflowDetailsOnPartialUploadArgs:
@@ -493,7 +482,6 @@ class ServerWorkflowDetailsOnPartialUploadArgs:
 class ServerWorkflowDetailsOnUploadArgsDict(TypedDict):
     execution_role: pulumi.Input[_builtins.str]
     workflow_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerWorkflowDetailsOnUploadArgs:
@@ -517,7 +505,6 @@ class ServerWorkflowDetailsOnUploadArgs:
 class UserHomeDirectoryMappingArgsDict(TypedDict):
     entry: pulumi.Input[_builtins.str]
     target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserHomeDirectoryMappingArgs:
@@ -542,7 +529,6 @@ class UserPosixProfileArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
     secondary_gids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class UserPosixProfileArgs:
@@ -577,7 +563,6 @@ class UserPosixProfileArgs:
 
 class WebAppEndpointDetailsArgsDict(TypedDict):
     vpc: NotRequired[pulumi.Input[WebAppEndpointDetailsVpcArgsDict]]
-    ...
 
 @pulumi.input_type
 class WebAppEndpointDetailsArgs:
@@ -595,7 +580,6 @@ class WebAppEndpointDetailsVpcArgsDict(TypedDict):
     vpc_id: pulumi.Input[_builtins.str]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAppEndpointDetailsVpcArgs:
@@ -640,7 +624,6 @@ class WebAppIdentityProviderDetailsArgsDict(TypedDict):
     identity_center_config: NotRequired[
         pulumi.Input[WebAppIdentityProviderDetailsIdentityCenterConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAppIdentityProviderDetailsArgs:
@@ -670,7 +653,6 @@ class WebAppIdentityProviderDetailsIdentityCenterConfigArgsDict(TypedDict):
     application_arn: NotRequired[pulumi.Input[_builtins.str]]
     instance_arn: NotRequired[pulumi.Input[_builtins.str]]
     role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAppIdentityProviderDetailsIdentityCenterConfigArgs:
@@ -699,7 +681,6 @@ class WebAppIdentityProviderDetailsIdentityCenterConfigArgs:
 
 class WebAppWebAppUnitArgsDict(TypedDict):
     provisioned: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class WebAppWebAppUnitArgs:
@@ -727,7 +708,6 @@ class WorkflowOnExceptionStepArgsDict(TypedDict):
     tag_step_details: NotRequired[
         pulumi.Input[WorkflowOnExceptionStepTagStepDetailsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepArgs:
@@ -814,7 +794,6 @@ class WorkflowOnExceptionStepCopyStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     overwrite_existing: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepCopyStepDetailsArgs:
@@ -873,7 +852,6 @@ class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationArgsDict(Type
             WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationS3FileLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationArgs:
@@ -933,7 +911,6 @@ class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationEfsFileLocati
 ):
     file_system_id: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationEfsFileLocationArgs:
@@ -959,7 +936,6 @@ class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationS3FileLocatio
 ):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepCopyStepDetailsDestinationFileLocationS3FileLocationArgs:
@@ -985,7 +961,6 @@ class WorkflowOnExceptionStepCustomStepDetailsArgsDict(TypedDict):
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
     target: NotRequired[pulumi.Input[_builtins.str]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepCustomStepDetailsArgs:
@@ -1028,7 +1003,6 @@ class WorkflowOnExceptionStepDecryptStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     overwrite_existing: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepDecryptStepDetailsArgs:
@@ -1097,7 +1071,6 @@ class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationArgsDict(
             WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationArgs:
@@ -1157,7 +1130,6 @@ class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationEfsFileLoc
 ):
     file_system_id: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationEfsFileLocationArgs:
@@ -1183,7 +1155,6 @@ class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationS3FileLoca
 ):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgs:
@@ -1207,7 +1178,6 @@ class WorkflowOnExceptionStepDecryptStepDetailsDestinationFileLocationS3FileLoca
 class WorkflowOnExceptionStepDeleteStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepDeleteStepDetailsArgs:
@@ -1236,7 +1206,6 @@ class WorkflowOnExceptionStepTagStepDetailsArgsDict(TypedDict):
             Sequence[pulumi.Input[WorkflowOnExceptionStepTagStepDetailsTagArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepTagStepDetailsArgs:
@@ -1283,7 +1252,6 @@ class WorkflowOnExceptionStepTagStepDetailsArgs:
 class WorkflowOnExceptionStepTagStepDetailsTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkflowOnExceptionStepTagStepDetailsTagArgs:
@@ -1317,7 +1285,6 @@ class WorkflowStepArgsDict(TypedDict):
         pulumi.Input[WorkflowStepDeleteStepDetailsArgsDict]
     ]
     tag_step_details: NotRequired[pulumi.Input[WorkflowStepTagStepDetailsArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepArgs:
@@ -1397,7 +1364,6 @@ class WorkflowStepCopyStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     overwrite_existing: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepCopyStepDetailsArgs:
@@ -1452,7 +1418,6 @@ class WorkflowStepCopyStepDetailsDestinationFileLocationArgsDict(TypedDict):
             WorkflowStepCopyStepDetailsDestinationFileLocationS3FileLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowStepCopyStepDetailsDestinationFileLocationArgs:
@@ -1512,7 +1477,6 @@ class WorkflowStepCopyStepDetailsDestinationFileLocationEfsFileLocationArgsDict(
 ):
     file_system_id: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepCopyStepDetailsDestinationFileLocationEfsFileLocationArgs:
@@ -1538,7 +1502,6 @@ class WorkflowStepCopyStepDetailsDestinationFileLocationS3FileLocationArgsDict(
 ):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepCopyStepDetailsDestinationFileLocationS3FileLocationArgs:
@@ -1564,7 +1527,6 @@ class WorkflowStepCustomStepDetailsArgsDict(TypedDict):
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
     target: NotRequired[pulumi.Input[_builtins.str]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepCustomStepDetailsArgs:
@@ -1605,7 +1567,6 @@ class WorkflowStepDecryptStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     overwrite_existing: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepDecryptStepDetailsArgs:
@@ -1666,7 +1627,6 @@ class WorkflowStepDecryptStepDetailsDestinationFileLocationArgsDict(TypedDict):
             WorkflowStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowStepDecryptStepDetailsDestinationFileLocationArgs:
@@ -1726,7 +1686,6 @@ class WorkflowStepDecryptStepDetailsDestinationFileLocationEfsFileLocationArgsDi
 ):
     file_system_id: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepDecryptStepDetailsDestinationFileLocationEfsFileLocationArgs:
@@ -1752,7 +1711,6 @@ class WorkflowStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgsDic
 ):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgs:
@@ -1776,7 +1734,6 @@ class WorkflowStepDecryptStepDetailsDestinationFileLocationS3FileLocationArgs:
 class WorkflowStepDeleteStepDetailsArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     source_file_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowStepDeleteStepDetailsArgs:
@@ -1803,7 +1760,6 @@ class WorkflowStepTagStepDetailsArgsDict(TypedDict):
     tags: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WorkflowStepTagStepDetailsTagArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowStepTagStepDetailsArgs:
@@ -1844,7 +1800,6 @@ class WorkflowStepTagStepDetailsArgs:
 class WorkflowStepTagStepDetailsTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkflowStepTagStepDetailsTagArgs:

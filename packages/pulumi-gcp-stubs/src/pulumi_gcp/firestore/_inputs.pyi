@@ -36,7 +36,6 @@ class BackupScheduleDailyRecurrenceArgs:
 
 class BackupScheduleWeeklyRecurrenceArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupScheduleWeeklyRecurrenceArgs:
@@ -54,7 +53,6 @@ class DatabaseCmekConfigArgsDict(TypedDict):
     active_key_versions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DatabaseCmekConfigArgs:
@@ -85,7 +83,6 @@ class FieldIndexConfigArgsDict(TypedDict):
     indexes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[FieldIndexConfigIndexArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class FieldIndexConfigArgs:
@@ -113,7 +110,6 @@ class FieldIndexConfigIndexArgsDict(TypedDict):
     array_config: NotRequired[pulumi.Input[_builtins.str]]
     order: NotRequired[pulumi.Input[_builtins.str]]
     query_scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FieldIndexConfigIndexArgs:
@@ -142,7 +138,6 @@ class FieldIndexConfigIndexArgs:
 
 class FieldTtlConfigArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FieldTtlConfigArgs:
@@ -160,7 +155,6 @@ class IndexFieldArgsDict(TypedDict):
     field_path: NotRequired[pulumi.Input[_builtins.str]]
     order: NotRequired[pulumi.Input[_builtins.str]]
     vector_config: NotRequired[pulumi.Input[IndexFieldVectorConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class IndexFieldArgs:
@@ -198,7 +192,6 @@ class IndexFieldArgs:
 class IndexFieldVectorConfigArgsDict(TypedDict):
     dimension: NotRequired[pulumi.Input[_builtins.int]]
     flat: NotRequired[pulumi.Input[IndexFieldVectorConfigFlatArgsDict]]
-    ...
 
 @pulumi.input_type
 class IndexFieldVectorConfigArgs:
@@ -227,7 +220,6 @@ class IndexFieldVectorConfigFlatArgs:
 
 class UserCredsResourceIdentityArgsDict(TypedDict):
     principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserCredsResourceIdentityArgs:

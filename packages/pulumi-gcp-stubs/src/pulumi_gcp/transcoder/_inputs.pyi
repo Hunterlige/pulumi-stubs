@@ -153,7 +153,6 @@ class JobConfigArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[JobConfigOverlayArgsDict]]]
     ]
     pubsub_destination: NotRequired[pulumi.Input[JobConfigPubsubDestinationArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobConfigArgs:
@@ -289,7 +288,6 @@ class JobConfigArgs:
 
 class JobConfigAdBreakArgsDict(TypedDict):
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigAdBreakArgs:
@@ -306,7 +304,6 @@ class JobConfigEditListArgsDict(TypedDict):
     inputs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigEditListArgs:
@@ -345,7 +342,6 @@ class JobConfigElementaryStreamArgsDict(TypedDict):
     video_stream: NotRequired[
         pulumi.Input[JobConfigElementaryStreamVideoStreamArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobConfigElementaryStreamArgs:
@@ -390,7 +386,6 @@ class JobConfigElementaryStreamAudioStreamArgsDict(TypedDict):
     channel_layouts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     codec: NotRequired[pulumi.Input[_builtins.str]]
     sample_rate_hertz: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobConfigElementaryStreamAudioStreamArgs:
@@ -437,7 +432,6 @@ class JobConfigElementaryStreamAudioStreamArgs:
 
 class JobConfigElementaryStreamVideoStreamArgsDict(TypedDict):
     h264: NotRequired[pulumi.Input[JobConfigElementaryStreamVideoStreamH264ArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobConfigElementaryStreamVideoStreamArgs:
@@ -475,7 +469,6 @@ class JobConfigElementaryStreamVideoStreamH264ArgsDict(TypedDict):
     vbv_fullness_bits: NotRequired[pulumi.Input[_builtins.int]]
     vbv_size_bits: NotRequired[pulumi.Input[_builtins.int]]
     width_pixels: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobConfigElementaryStreamVideoStreamH264Args:
@@ -609,7 +602,6 @@ class JobConfigEncryptionArgsDict(TypedDict):
     secret_manager_key_source: NotRequired[
         pulumi.Input[JobConfigEncryptionSecretManagerKeySourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobConfigEncryptionArgs:
@@ -682,7 +674,6 @@ class JobConfigEncryptionDrmSystemsArgsDict(TypedDict):
     fairplay: NotRequired[pulumi.Input[JobConfigEncryptionDrmSystemsFairplayArgsDict]]
     playready: NotRequired[pulumi.Input[JobConfigEncryptionDrmSystemsPlayreadyArgsDict]]
     widevine: NotRequired[pulumi.Input[JobConfigEncryptionDrmSystemsWidevineArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobConfigEncryptionDrmSystemsArgs:
@@ -765,7 +756,6 @@ class JobConfigEncryptionDrmSystemsWidevineArgs:
 
 class JobConfigEncryptionMpegCencArgsDict(TypedDict):
     scheme: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobConfigEncryptionMpegCencArgs:
@@ -784,7 +774,6 @@ class JobConfigEncryptionSampleAesArgs:
 
 class JobConfigEncryptionSecretManagerKeySourceArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobConfigEncryptionSecretManagerKeySourceArgs:
@@ -798,7 +787,6 @@ class JobConfigEncryptionSecretManagerKeySourceArgs:
 class JobConfigInputArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigInputArgs:
@@ -823,7 +811,6 @@ class JobConfigManifestArgsDict(TypedDict):
     file_name: NotRequired[pulumi.Input[_builtins.str]]
     mux_streams: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigManifestArgs:
@@ -865,7 +852,6 @@ class JobConfigMuxStreamArgsDict(TypedDict):
     segment_settings: NotRequired[
         pulumi.Input[JobConfigMuxStreamSegmentSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobConfigMuxStreamArgs:
@@ -924,7 +910,6 @@ class JobConfigMuxStreamArgs:
 
 class JobConfigMuxStreamSegmentSettingsArgsDict(TypedDict):
     segment_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigMuxStreamSegmentSettingsArgs:
@@ -939,7 +924,6 @@ class JobConfigMuxStreamSegmentSettingsArgs:
 
 class JobConfigOutputArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigOutputArgs:
@@ -957,7 +941,6 @@ class JobConfigOverlayArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[JobConfigOverlayAnimationArgsDict]]]
     ]
     image: NotRequired[pulumi.Input[JobConfigOverlayImageArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobConfigOverlayArgs:
@@ -993,7 +976,6 @@ class JobConfigOverlayAnimationArgsDict(TypedDict):
     animation_fade: NotRequired[
         pulumi.Input[JobConfigOverlayAnimationAnimationFadeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobConfigOverlayAnimationArgs:
@@ -1019,7 +1001,6 @@ class JobConfigOverlayAnimationAnimationFadeArgsDict(TypedDict):
     end_time_offset: NotRequired[pulumi.Input[_builtins.str]]
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
     xy: NotRequired[pulumi.Input[JobConfigOverlayAnimationAnimationFadeXyArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobConfigOverlayAnimationAnimationFadeArgs:
@@ -1060,7 +1041,6 @@ class JobConfigOverlayAnimationAnimationFadeArgs:
 class JobConfigOverlayAnimationAnimationFadeXyArgsDict(TypedDict):
     x: NotRequired[pulumi.Input[_builtins.float]]
     y: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class JobConfigOverlayAnimationAnimationFadeXyArgs:
@@ -1083,7 +1063,6 @@ class JobConfigOverlayAnimationAnimationFadeXyArgs:
 
 class JobConfigOverlayImageArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobConfigOverlayImageArgs:
@@ -1096,7 +1075,6 @@ class JobConfigOverlayImageArgs:
 
 class JobConfigPubsubDestinationArgsDict(TypedDict):
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobConfigPubsubDestinationArgs:
@@ -1138,7 +1116,6 @@ class JobTemplateConfigArgsDict(TypedDict):
     pubsub_destination: NotRequired[
         pulumi.Input[JobTemplateConfigPubsubDestinationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigArgs:
@@ -1301,7 +1278,6 @@ class JobTemplateConfigArgs:
 
 class JobTemplateConfigAdBreakArgsDict(TypedDict):
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigAdBreakArgs:
@@ -1318,7 +1294,6 @@ class JobTemplateConfigEditListArgsDict(TypedDict):
     inputs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     start_time_offset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigEditListArgs:
@@ -1357,7 +1332,6 @@ class JobTemplateConfigElementaryStreamArgsDict(TypedDict):
     video_stream: NotRequired[
         pulumi.Input[JobTemplateConfigElementaryStreamVideoStreamArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigElementaryStreamArgs:
@@ -1404,7 +1378,6 @@ class JobTemplateConfigElementaryStreamAudioStreamArgsDict(TypedDict):
     channel_layouts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     codec: NotRequired[pulumi.Input[_builtins.str]]
     sample_rate_hertz: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigElementaryStreamAudioStreamArgs:
@@ -1453,7 +1426,6 @@ class JobTemplateConfigElementaryStreamVideoStreamArgsDict(TypedDict):
     h264: NotRequired[
         pulumi.Input[JobTemplateConfigElementaryStreamVideoStreamH264ArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigElementaryStreamVideoStreamArgs:
@@ -1499,7 +1471,6 @@ class JobTemplateConfigElementaryStreamVideoStreamH264ArgsDict(TypedDict):
     vbv_fullness_bits: NotRequired[pulumi.Input[_builtins.int]]
     vbv_size_bits: NotRequired[pulumi.Input[_builtins.int]]
     width_pixels: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigElementaryStreamVideoStreamH264Args:
@@ -1643,7 +1614,6 @@ class JobTemplateConfigEncryptionArgsDict(TypedDict):
     secret_manager_key_source: NotRequired[
         pulumi.Input[JobTemplateConfigEncryptionSecretManagerKeySourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigEncryptionArgs:
@@ -1740,7 +1710,6 @@ class JobTemplateConfigEncryptionDrmSystemsArgsDict(TypedDict):
     widevine: NotRequired[
         pulumi.Input[JobTemplateConfigEncryptionDrmSystemsWidevineArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigEncryptionDrmSystemsArgs:
@@ -1835,7 +1804,6 @@ class JobTemplateConfigEncryptionDrmSystemsWidevineArgs:
 
 class JobTemplateConfigEncryptionMpegCencArgsDict(TypedDict):
     scheme: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigEncryptionMpegCencArgs:
@@ -1854,7 +1822,6 @@ class JobTemplateConfigEncryptionSampleAesArgs:
 
 class JobTemplateConfigEncryptionSecretManagerKeySourceArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigEncryptionSecretManagerKeySourceArgs:
@@ -1868,7 +1835,6 @@ class JobTemplateConfigEncryptionSecretManagerKeySourceArgs:
 class JobTemplateConfigInputArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigInputArgs:
@@ -1893,7 +1859,6 @@ class JobTemplateConfigManifestArgsDict(TypedDict):
     file_name: NotRequired[pulumi.Input[_builtins.str]]
     mux_streams: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigManifestArgs:
@@ -1935,7 +1900,6 @@ class JobTemplateConfigMuxStreamArgsDict(TypedDict):
     segment_settings: NotRequired[
         pulumi.Input[JobTemplateConfigMuxStreamSegmentSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigMuxStreamArgs:
@@ -1995,7 +1959,6 @@ class JobTemplateConfigMuxStreamArgs:
 
 class JobTemplateConfigMuxStreamSegmentSettingsArgsDict(TypedDict):
     segment_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigMuxStreamSegmentSettingsArgs:
@@ -2010,7 +1973,6 @@ class JobTemplateConfigMuxStreamSegmentSettingsArgs:
 
 class JobTemplateConfigOutputArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOutputArgs:
@@ -2028,7 +1990,6 @@ class JobTemplateConfigOverlayArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[JobTemplateConfigOverlayAnimationArgsDict]]]
     ]
     image: NotRequired[pulumi.Input[JobTemplateConfigOverlayImageArgsDict]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOverlayArgs:
@@ -2066,7 +2027,6 @@ class JobTemplateConfigOverlayAnimationArgsDict(TypedDict):
     animation_fade: NotRequired[
         pulumi.Input[JobTemplateConfigOverlayAnimationAnimationFadeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOverlayAnimationArgs:
@@ -2097,7 +2057,6 @@ class JobTemplateConfigOverlayAnimationAnimationFadeArgsDict(TypedDict):
     xy: NotRequired[
         pulumi.Input[JobTemplateConfigOverlayAnimationAnimationFadeXyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOverlayAnimationAnimationFadeArgs:
@@ -2144,7 +2103,6 @@ class JobTemplateConfigOverlayAnimationAnimationFadeArgs:
 class JobTemplateConfigOverlayAnimationAnimationFadeXyArgsDict(TypedDict):
     x: NotRequired[pulumi.Input[_builtins.float]]
     y: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOverlayAnimationAnimationFadeXyArgs:
@@ -2167,7 +2125,6 @@ class JobTemplateConfigOverlayAnimationAnimationFadeXyArgs:
 
 class JobTemplateConfigOverlayImageArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigOverlayImageArgs:
@@ -2180,7 +2137,6 @@ class JobTemplateConfigOverlayImageArgs:
 
 class JobTemplateConfigPubsubDestinationArgsDict(TypedDict):
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobTemplateConfigPubsubDestinationArgs:

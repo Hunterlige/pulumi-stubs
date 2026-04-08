@@ -641,7 +641,6 @@ __all__ = [
 class AgentAgentActionGroupActionGroupExecutorArgsDict(TypedDict):
     custom_control: NotRequired[pulumi.Input[_builtins.str]]
     lambda_: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupActionGroupExecutorArgs:
@@ -665,7 +664,6 @@ class AgentAgentActionGroupActionGroupExecutorArgs:
 class AgentAgentActionGroupApiSchemaArgsDict(TypedDict):
     payload: NotRequired[pulumi.Input[_builtins.str]]
     s3: NotRequired[pulumi.Input[AgentAgentActionGroupApiSchemaS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupApiSchemaArgs:
@@ -691,7 +689,6 @@ class AgentAgentActionGroupApiSchemaArgs:
 class AgentAgentActionGroupApiSchemaS3ArgsDict(TypedDict):
     s3_bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     s3_object_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupApiSchemaS3Args:
@@ -716,7 +713,6 @@ class AgentAgentActionGroupFunctionSchemaArgsDict(TypedDict):
     member_functions: NotRequired[
         pulumi.Input[AgentAgentActionGroupFunctionSchemaMemberFunctionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupFunctionSchemaArgs:
@@ -752,7 +748,6 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsArgs:
@@ -808,7 +803,6 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionArgs:
@@ -871,7 +865,6 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionParameterArgsDic
     type: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionParameterArgs:
@@ -907,7 +900,6 @@ class AgentAgentActionGroupFunctionSchemaMemberFunctionsFunctionParameterArgs:
 class AgentAgentActionGroupTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentActionGroupTimeoutsArgs:
@@ -931,7 +923,6 @@ class AgentAgentActionGroupTimeoutsArgs:
 class AgentAgentAliasRoutingConfigurationArgsDict(TypedDict):
     agent_version: pulumi.Input[_builtins.str]
     provisioned_throughput: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentAgentAliasRoutingConfigurationArgs:
@@ -956,7 +947,6 @@ class AgentAgentAliasTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentAliasTimeoutsArgs:
@@ -985,7 +975,6 @@ class AgentAgentAliasTimeoutsArgs:
 
 class AgentAgentCollaboratorAgentDescriptorArgsDict(TypedDict):
     alias_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentAgentCollaboratorAgentDescriptorArgs:
@@ -1000,7 +989,6 @@ class AgentAgentCollaboratorTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentCollaboratorTimeoutsArgs:
@@ -1030,7 +1018,6 @@ class AgentAgentCollaboratorTimeoutsArgs:
 class AgentAgentGuardrailConfigurationArgsDict(TypedDict):
     guardrail_identifier: pulumi.Input[_builtins.str]
     guardrail_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentAgentGuardrailConfigurationArgs:
@@ -1054,7 +1041,6 @@ class AgentAgentGuardrailConfigurationArgs:
 class AgentAgentKnowledgeBaseAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentKnowledgeBaseAssociationTimeoutsArgs:
@@ -1085,7 +1071,6 @@ class AgentAgentMemoryConfigurationArgsDict(TypedDict):
         ]
     ]
     storage_days: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentAgentMemoryConfigurationArgs:
@@ -1139,7 +1124,6 @@ class AgentAgentMemoryConfigurationArgs:
 
 class AgentAgentMemoryConfigurationSessionSummaryConfigurationArgsDict(TypedDict):
     max_recent_sessions: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentAgentMemoryConfigurationSessionSummaryConfigurationArgs:
@@ -1161,7 +1145,6 @@ class AgentAgentPromptOverrideConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentAgentPromptOverrideConfigurationArgs:
@@ -1216,7 +1199,6 @@ class AgentAgentPromptOverrideConfigurationPromptConfigurationArgsDict(TypedDict
     prompt_creation_mode: pulumi.Input[_builtins.str]
     prompt_state: pulumi.Input[_builtins.str]
     prompt_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentAgentPromptOverrideConfigurationPromptConfigurationArgs:
@@ -1292,7 +1274,6 @@ class AgentAgentPromptOverrideConfigurationPromptConfigurationInferenceConfigura
     temperature: pulumi.Input[_builtins.float]
     top_k: pulumi.Input[_builtins.int]
     top_p: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class AgentAgentPromptOverrideConfigurationPromptConfigurationInferenceConfigurationArgs:
@@ -1337,7 +1318,6 @@ class AgentAgentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentAgentTimeoutsArgs:
@@ -1387,7 +1367,6 @@ class AgentDataSourceDataSourceConfigurationArgsDict(TypedDict):
     web_configuration: NotRequired[
         pulumi.Input[AgentDataSourceDataSourceConfigurationWebConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationArgs:
@@ -1510,7 +1489,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgsDict(Type
             AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationArgs:
@@ -1573,7 +1551,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
             AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationArgs:
@@ -1618,7 +1595,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationArgs:
@@ -1680,7 +1656,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgs:
@@ -1730,7 +1705,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfig
     object_type: pulumi.Input[_builtins.str]
     exclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     inclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgs:
@@ -1776,7 +1750,6 @@ class AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigu
     credentials_secret_arn: pulumi.Input[_builtins.str]
     host_type: pulumi.Input[_builtins.str]
     host_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationConfluenceConfigurationSourceConfigurationArgs:
@@ -1813,7 +1786,6 @@ class AgentDataSourceDataSourceConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
     inclusion_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationS3ConfigurationArgs:
@@ -1857,7 +1829,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgsDict(Type
             AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationArgs:
@@ -1920,7 +1891,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
             AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationArgs:
@@ -1965,7 +1935,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationArgs:
@@ -2027,7 +1996,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgs:
@@ -2077,7 +2045,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfig
     object_type: pulumi.Input[_builtins.str]
     exclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     inclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgs:
@@ -2122,7 +2089,6 @@ class AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigu
     auth_type: pulumi.Input[_builtins.str]
     credentials_secret_arn: pulumi.Input[_builtins.str]
     host_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSalesforceConfigurationSourceConfigurationArgs:
@@ -2160,7 +2126,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationArgsDict(Type
             AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationArgs:
@@ -2223,7 +2188,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
             AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationArgs:
@@ -2268,7 +2232,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationArgs:
@@ -2330,7 +2293,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterArgs:
@@ -2380,7 +2342,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfig
     object_type: pulumi.Input[_builtins.str]
     exclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     inclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilterArgs:
@@ -2428,7 +2389,6 @@ class AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigu
     host_type: pulumi.Input[_builtins.str]
     site_urls: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     tenant_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationSharePointConfigurationSourceConfigurationArgs:
@@ -2484,7 +2444,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationArgsDict(TypedDict):
             AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationArgs:
@@ -2551,7 +2510,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
     inclusion_filters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     scope: NotRequired[pulumi.Input[_builtins.str]]
     user_agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationArgs:
@@ -2624,7 +2582,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfiguration
 ):
     max_pages: NotRequired[pulumi.Input[_builtins.int]]
     rate_limit: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimitsArgs:
@@ -2651,7 +2608,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationA
     url_configuration: pulumi.Input[
         AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationArgs:
@@ -2689,7 +2645,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationU
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationArgs:
@@ -2737,7 +2692,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationU
     TypedDict
 ):
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrlArgs:
@@ -2752,7 +2706,6 @@ class AgentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationU
 
 class AgentDataSourceServerSideEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceServerSideEncryptionConfigurationArgs:
@@ -2768,7 +2721,6 @@ class AgentDataSourceServerSideEncryptionConfigurationArgs:
 class AgentDataSourceTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceTimeoutsArgs:
@@ -2805,7 +2757,6 @@ class AgentDataSourceVectorIngestionConfigurationArgsDict(TypedDict):
             AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationArgs:
@@ -2902,7 +2853,6 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgsDict(
             AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationArgs:
@@ -2991,7 +2941,6 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeC
 ):
     max_tokens: pulumi.Input[_builtins.int]
     overlap_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationArgs:
@@ -3025,7 +2974,6 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationArgs:
@@ -3079,7 +3027,6 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchic
     TypedDict
 ):
     max_tokens: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationArgs:
@@ -3096,7 +3043,6 @@ class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticCh
     breakpoint_percentile_threshold: pulumi.Input[_builtins.int]
     buffer_size: pulumi.Input[_builtins.int]
     max_token: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationArgs:
@@ -3136,7 +3082,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
             AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationArgs:
@@ -3199,7 +3144,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
             AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageArgs:
@@ -3235,7 +3179,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
     TypedDict
 ):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationArgs:
@@ -3255,7 +3198,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
             AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationArgs:
@@ -3301,7 +3243,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
             AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionArgs:
@@ -3337,7 +3278,6 @@ class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurati
     TypedDict
 ):
     lambda_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationArgs:
@@ -3362,7 +3302,6 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgsDict(
             AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationArgs:
@@ -3427,7 +3366,6 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockData
     TypedDict
 ):
     parsing_modality: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfigurationArgs:
@@ -3450,7 +3388,6 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoun
             AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationArgs:
@@ -3498,7 +3435,6 @@ class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoun
     TypedDict
 ):
     parsing_prompt_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptArgs:
@@ -3518,7 +3454,6 @@ class AgentFlowDefinitionArgsDict(TypedDict):
     nodes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionNodeArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionArgs:
@@ -3569,7 +3504,6 @@ class AgentFlowDefinitionConnectionArgsDict(TypedDict):
     configuration: NotRequired[
         pulumi.Input[AgentFlowDefinitionConnectionConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionConnectionArgs:
@@ -3622,7 +3556,6 @@ class AgentFlowDefinitionConnectionConfigurationArgsDict(TypedDict):
     data: NotRequired[
         pulumi.Input[AgentFlowDefinitionConnectionConfigurationDataArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionConnectionConfigurationArgs:
@@ -3665,7 +3598,6 @@ class AgentFlowDefinitionConnectionConfigurationArgs:
 
 class AgentFlowDefinitionConnectionConfigurationConditionalArgsDict(TypedDict):
     condition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionConnectionConfigurationConditionalArgs:
@@ -3679,7 +3611,6 @@ class AgentFlowDefinitionConnectionConfigurationConditionalArgs:
 class AgentFlowDefinitionConnectionConfigurationDataArgsDict(TypedDict):
     source_output: pulumi.Input[_builtins.str]
     target_input: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionConnectionConfigurationDataArgs:
@@ -3712,7 +3643,6 @@ class AgentFlowDefinitionNodeArgsDict(TypedDict):
     outputs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AgentFlowDefinitionNodeOutputArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeArgs:
@@ -3813,7 +3743,6 @@ class AgentFlowDefinitionNodeConfigurationArgsDict(TypedDict):
     storage: NotRequired[
         pulumi.Input[AgentFlowDefinitionNodeConfigurationStorageArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationArgs:
@@ -4006,7 +3935,6 @@ class AgentFlowDefinitionNodeConfigurationArgs:
 
 class AgentFlowDefinitionNodeConfigurationAgentArgsDict(TypedDict):
     agent_alias_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationAgentArgs:
@@ -4033,7 +3961,6 @@ class AgentFlowDefinitionNodeConfigurationConditionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationConditionArgs:
@@ -4078,7 +4005,6 @@ class AgentFlowDefinitionNodeConfigurationConditionArgs:
 class AgentFlowDefinitionNodeConfigurationConditionConditionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationConditionConditionArgs:
@@ -4102,7 +4028,6 @@ class AgentFlowDefinitionNodeConfigurationConditionConditionArgs:
 class AgentFlowDefinitionNodeConfigurationInlineCodeArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     language: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationInlineCodeArgs:
@@ -4149,7 +4074,6 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgsDict(TypedDict):
         ]
     ]
     number_of_results: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseArgs:
@@ -4227,7 +4151,6 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationArg
 ):
     guardrail_identifier: pulumi.Input[_builtins.str]
     guardrail_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfigurationArgs:
@@ -4256,7 +4179,6 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationArg
             AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationArgs:
@@ -4295,7 +4217,6 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTex
     stop_sequences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
     top_p: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextArgs:
@@ -4336,7 +4257,6 @@ class AgentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTex
 
 class AgentFlowDefinitionNodeConfigurationLambdaFunctionArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationLambdaFunctionArgs:
@@ -4350,7 +4270,6 @@ class AgentFlowDefinitionNodeConfigurationLambdaFunctionArgs:
 class AgentFlowDefinitionNodeConfigurationLexArgsDict(TypedDict):
     bot_alias_arn: pulumi.Input[_builtins.str]
     locale_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationLexArgs:
@@ -4388,7 +4307,6 @@ class AgentFlowDefinitionNodeConfigurationPromptArgsDict(TypedDict):
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptArgs:
@@ -4446,7 +4364,6 @@ class AgentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationArgsDict(
 ):
     guardrail_identifier: pulumi.Input[_builtins.str]
     guardrail_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptGuardrailConfigurationArgs:
@@ -4478,7 +4395,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgsDict(Type
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationArgs:
@@ -4549,7 +4465,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgsDic
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineArgs:
@@ -4634,7 +4549,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferen
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationArgs:
@@ -4673,7 +4587,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferen
     stop_sequences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
     top_p: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationTextArgs:
@@ -4725,7 +4638,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationArgs:
@@ -4813,7 +4725,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatArgs:
@@ -4948,7 +4859,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariableArgs:
@@ -4968,7 +4878,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageArgs:
@@ -5015,7 +4924,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentArgs:
@@ -5057,7 +4965,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePointArgs:
@@ -5077,7 +4984,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemArgs:
@@ -5119,7 +5025,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePointArgs:
@@ -5147,7 +5052,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationArgs:
@@ -5227,7 +5131,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolArgs:
@@ -5286,7 +5189,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePointArgs:
@@ -5315,7 +5217,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceArgs:
@@ -5413,7 +5314,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceToolArgs:
@@ -5434,7 +5334,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecArgs:
@@ -5482,7 +5381,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgs:
@@ -5513,7 +5411,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextArgs:
@@ -5590,7 +5487,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePointArgs:
@@ -5605,7 +5501,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplat
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariableArgs:
@@ -5620,7 +5515,6 @@ class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgsD
     TypedDict
 ):
     prompt_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceArgs:
@@ -5637,7 +5531,6 @@ class AgentFlowDefinitionNodeConfigurationRetrievalArgsDict(TypedDict):
             AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationRetrievalArgs:
@@ -5677,7 +5570,6 @@ class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgsDict(
             AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationArgs:
@@ -5713,7 +5605,6 @@ class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3ArgsDic
     TypedDict
 ):
     bucket_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3Args:
@@ -5730,7 +5621,6 @@ class AgentFlowDefinitionNodeConfigurationStorageArgsDict(TypedDict):
             AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationStorageArgs:
@@ -5770,7 +5660,6 @@ class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgsDict(
             AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationArgs:
@@ -5806,7 +5695,6 @@ class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3ArgsDict(
     TypedDict
 ):
     bucket_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3Args:
@@ -5822,7 +5710,6 @@ class AgentFlowDefinitionNodeInputArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     category: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeInputArgs:
@@ -5858,7 +5745,6 @@ class AgentFlowDefinitionNodeInputArgs:
 class AgentFlowDefinitionNodeOutputArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentFlowDefinitionNodeOutputArgs:
@@ -5883,7 +5769,6 @@ class AgentFlowTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentFlowTimeoutsArgs:
@@ -5927,7 +5812,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationArgsDict(TypedDict):
             AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationArgs:
@@ -6015,7 +5899,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurati
     TypedDict
 ):
     kendra_index_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationArgs:
@@ -6037,7 +5920,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationA
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationArgs:
@@ -6089,7 +5971,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationArgs:
@@ -6169,7 +6050,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationArgs:
@@ -6237,7 +6117,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationArgsDict
     ]
     cluster_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationArgs:
@@ -6275,7 +6154,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     type: pulumi.Input[_builtins.str]
     database_user: NotRequired[pulumi.Input[_builtins.str]]
     username_password_secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfigurationArgs:
@@ -6311,7 +6189,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
         AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationArgsDict
     ]
     workgroup_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationArgs:
@@ -6348,7 +6225,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
 ):
     type: pulumi.Input[_builtins.str]
     username_password_secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfigurationArgs:
@@ -6380,7 +6256,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationArgs:
@@ -6441,7 +6316,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextArgs:
@@ -6525,7 +6399,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
 ):
     natural_language: pulumi.Input[_builtins.str]
     sql: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQueryArgs:
@@ -6561,7 +6434,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
     inclusion: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableArgs:
@@ -6629,7 +6501,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     description: NotRequired[pulumi.Input[_builtins.str]]
     inclusion: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumnArgs:
@@ -6670,7 +6541,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
             AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationArgs:
@@ -6735,7 +6605,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     TypedDict
 ):
     table_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfigurationArgs:
@@ -6754,7 +6623,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationR
     TypedDict
 ):
     database_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfigurationArgs:
@@ -6779,7 +6647,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
             AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationArgs:
@@ -6848,7 +6715,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
             AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationArgs:
@@ -6885,7 +6751,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
 ):
     dimensions: NotRequired[pulumi.Input[_builtins.int]]
     embedding_data_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationArgs:
@@ -6916,7 +6781,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationArgs:
@@ -6963,7 +6827,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
             AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationArgs:
@@ -7005,7 +6868,6 @@ class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurati
     TypedDict
 ):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3LocationArgs:
@@ -7056,7 +6918,6 @@ class AgentKnowledgeBaseStorageConfigurationArgsDict(TypedDict):
             AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationArgs:
@@ -7258,7 +7119,6 @@ class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgsDict(
     vector_index_name: pulumi.Input[_builtins.str]
     endpoint_service_name: NotRequired[pulumi.Input[_builtins.str]]
     text_index_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationArgs:
@@ -7332,7 +7192,6 @@ class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappin
     metadata_field: pulumi.Input[_builtins.str]
     text_field: pulumi.Input[_builtins.str]
     vector_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationMongoDbAtlasConfigurationFieldMappingArgs:
@@ -7366,7 +7225,6 @@ class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationArgsDic
         AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingArgsDict
     ]
     graph_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationArgs:
@@ -7403,7 +7261,6 @@ class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMa
 ):
     metadata_field: pulumi.Input[_builtins.str]
     text_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationNeptuneAnalyticsConfigurationFieldMappingArgs:
@@ -7433,7 +7290,6 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguratio
         AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingArgsDict
     ]
     vector_index_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationArgs:
@@ -7483,7 +7339,6 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfiguratio
     metadata_field: pulumi.Input[_builtins.str]
     text_field: pulumi.Input[_builtins.str]
     vector_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationOpensearchManagedClusterConfigurationFieldMappingArgs:
@@ -7518,7 +7373,6 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArg
         AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingArgsDict
     ]
     vector_index_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationArgs:
@@ -7562,7 +7416,6 @@ class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFie
     metadata_field: pulumi.Input[_builtins.str]
     text_field: pulumi.Input[_builtins.str]
     vector_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingArgs:
@@ -7596,7 +7449,6 @@ class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgsDict(TypedD
         AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArgsDict
     ]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationArgs:
@@ -7645,7 +7497,6 @@ class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArg
 ):
     metadata_field: pulumi.Input[_builtins.str]
     text_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingArgs:
@@ -7674,7 +7525,6 @@ class AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgsDict(TypedDict):
     ]
     resource_arn: pulumi.Input[_builtins.str]
     table_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationRdsConfigurationArgs:
@@ -7732,7 +7582,6 @@ class AgentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingArgsDict
     text_field: pulumi.Input[_builtins.str]
     vector_field: pulumi.Input[_builtins.str]
     custom_metadata_field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingArgs:
@@ -7780,7 +7629,6 @@ class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArg
         AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingArgsDict
     ]
     vector_index_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationArgs:
@@ -7830,7 +7678,6 @@ class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFie
     metadata_field: NotRequired[pulumi.Input[_builtins.str]]
     text_field: NotRequired[pulumi.Input[_builtins.str]]
     vector_field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingArgs:
@@ -7861,7 +7708,6 @@ class AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgsDict(Typed
     index_arn: NotRequired[pulumi.Input[_builtins.str]]
     index_name: NotRequired[pulumi.Input[_builtins.str]]
     vector_bucket_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseStorageConfigurationS3VectorsConfigurationArgs:
@@ -7892,7 +7738,6 @@ class AgentKnowledgeBaseTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentKnowledgeBaseTimeoutsArgs:
@@ -7934,7 +7779,6 @@ class AgentPromptVariantArgsDict(TypedDict):
     template_configuration: NotRequired[
         pulumi.Input[AgentPromptVariantTemplateConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantArgs:
@@ -8027,7 +7871,6 @@ class AgentPromptVariantArgs:
 
 class AgentPromptVariantGenAiResourceArgsDict(TypedDict):
     agent: NotRequired[pulumi.Input[AgentPromptVariantGenAiResourceAgentArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantGenAiResourceArgs:
@@ -8048,7 +7891,6 @@ class AgentPromptVariantGenAiResourceArgs:
 
 class AgentPromptVariantGenAiResourceAgentArgsDict(TypedDict):
     agent_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantGenAiResourceAgentArgs:
@@ -8065,7 +7907,6 @@ class AgentPromptVariantInferenceConfigurationArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[AgentPromptVariantInferenceConfigurationTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantInferenceConfigurationArgs:
@@ -8092,7 +7933,6 @@ class AgentPromptVariantInferenceConfigurationTextArgsDict(TypedDict):
     stop_sequences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
     top_p: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantInferenceConfigurationTextArgs:
@@ -8134,7 +7974,6 @@ class AgentPromptVariantInferenceConfigurationTextArgs:
 class AgentPromptVariantMetadataArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantMetadataArgs:
@@ -8158,7 +7997,6 @@ class AgentPromptVariantMetadataArgs:
 class AgentPromptVariantTemplateConfigurationArgsDict(TypedDict):
     chat: NotRequired[pulumi.Input[AgentPromptVariantTemplateConfigurationChatArgsDict]]
     text: NotRequired[pulumi.Input[AgentPromptVariantTemplateConfigurationTextArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationArgs:
@@ -8220,7 +8058,6 @@ class AgentPromptVariantTemplateConfigurationChatArgsDict(TypedDict):
             AgentPromptVariantTemplateConfigurationChatToolConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatArgs:
@@ -8337,7 +8174,6 @@ class AgentPromptVariantTemplateConfigurationChatArgs:
 
 class AgentPromptVariantTemplateConfigurationChatInputVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatInputVariableArgs:
@@ -8353,7 +8189,6 @@ class AgentPromptVariantTemplateConfigurationChatMessageArgsDict(TypedDict):
     content: NotRequired[
         pulumi.Input[AgentPromptVariantTemplateConfigurationChatMessageContentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatMessageArgs:
@@ -8392,7 +8227,6 @@ class AgentPromptVariantTemplateConfigurationChatMessageContentArgsDict(TypedDic
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatMessageContentArgs:
@@ -8434,7 +8268,6 @@ class AgentPromptVariantTemplateConfigurationChatMessageContentCachePointArgsDic
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatMessageContentCachePointArgs:
@@ -8452,7 +8285,6 @@ class AgentPromptVariantTemplateConfigurationChatSystemArgsDict(TypedDict):
         ]
     ]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatSystemArgs:
@@ -8490,7 +8322,6 @@ class AgentPromptVariantTemplateConfigurationChatSystemArgs:
 
 class AgentPromptVariantTemplateConfigurationChatSystemCachePointArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatSystemCachePointArgs:
@@ -8516,7 +8347,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationArgs:
@@ -8596,7 +8426,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolArgsDict(
             AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolArgs:
@@ -8655,7 +8484,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint
     TypedDict
 ):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointArgs:
@@ -8684,7 +8512,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs
             AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceArgs:
@@ -8782,7 +8609,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolArgs:
@@ -8803,7 +8629,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecAr
             AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecArgs:
@@ -8851,7 +8676,6 @@ class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecIn
     TypedDict
 ):
     json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaArgs:
@@ -8878,7 +8702,6 @@ class AgentPromptVariantTemplateConfigurationTextArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationTextArgs:
@@ -8947,7 +8770,6 @@ class AgentPromptVariantTemplateConfigurationTextArgs:
 
 class AgentPromptVariantTemplateConfigurationTextCachePointArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationTextCachePointArgs:
@@ -8960,7 +8782,6 @@ class AgentPromptVariantTemplateConfigurationTextCachePointArgs:
 
 class AgentPromptVariantTemplateConfigurationTextInputVariableArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentPromptVariantTemplateConfigurationTextInputVariableArgs:
@@ -8980,7 +8801,6 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactArgsDict(TypedDict):
             AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAgentRuntimeArtifactArgs:
@@ -9037,7 +8857,6 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgsDict(TypedDi
             AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationArgs:
@@ -9087,7 +8906,6 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgsDict(Typ
             AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeArgs:
@@ -9125,7 +8943,6 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3ArgsDict(
     bucket: pulumi.Input[_builtins.str]
     prefix: pulumi.Input[_builtins.str]
     version_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationCodeS3Args:
@@ -9156,7 +8973,6 @@ class AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgsDict(
     TypedDict
 ):
     container_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationArgs:
@@ -9173,7 +8989,6 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationArgsDict(TypedDict):
             AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAuthorizerConfigurationArgs:
@@ -9212,7 +9027,6 @@ class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgsDict(
     allowed_audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     allowed_clients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     allowed_scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerArgs:
@@ -9267,7 +9081,6 @@ class AgentcoreAgentRuntimeEndpointTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeEndpointTimeoutsArgs:
@@ -9297,7 +9110,6 @@ class AgentcoreAgentRuntimeEndpointTimeoutsArgs:
 class AgentcoreAgentRuntimeLifecycleConfigurationArgsDict(TypedDict):
     idle_runtime_session_timeout: pulumi.Input[_builtins.int]
     max_lifetime: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeLifecycleConfigurationArgs:
@@ -9323,7 +9135,6 @@ class AgentcoreAgentRuntimeNetworkConfigurationArgsDict(TypedDict):
     network_mode_config: NotRequired[
         pulumi.Input[AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeNetworkConfigurationArgs:
@@ -9358,7 +9169,6 @@ class AgentcoreAgentRuntimeNetworkConfigurationArgs:
 class AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgs:
@@ -9385,7 +9195,6 @@ class AgentcoreAgentRuntimeNetworkConfigurationNetworkModeConfigArgs:
 
 class AgentcoreAgentRuntimeProtocolConfigurationArgsDict(TypedDict):
     server_protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeProtocolConfigurationArgs:
@@ -9402,7 +9211,6 @@ class AgentcoreAgentRuntimeRequestHeaderConfigurationArgsDict(TypedDict):
     request_header_allowlists: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeRequestHeaderConfigurationArgs:
@@ -9427,7 +9235,6 @@ class AgentcoreAgentRuntimeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeTimeoutsArgs:
@@ -9456,7 +9263,6 @@ class AgentcoreAgentRuntimeTimeoutsArgs:
 
 class AgentcoreAgentRuntimeWorkloadIdentityDetailArgsDict(TypedDict):
     workload_identity_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreAgentRuntimeWorkloadIdentityDetailArgs:
@@ -9471,7 +9277,6 @@ class AgentcoreAgentRuntimeWorkloadIdentityDetailArgs:
 
 class AgentcoreApiKeyCredentialProviderApiKeySecretArnArgsDict(TypedDict):
     secret_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreApiKeyCredentialProviderApiKeySecretArnArgs:
@@ -9487,7 +9292,6 @@ class AgentcoreBrowserNetworkConfigurationArgsDict(TypedDict):
     vpc_config: NotRequired[
         pulumi.Input[AgentcoreBrowserNetworkConfigurationVpcConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreBrowserNetworkConfigurationArgs:
@@ -9520,7 +9324,6 @@ class AgentcoreBrowserNetworkConfigurationArgs:
 class AgentcoreBrowserNetworkConfigurationVpcConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreBrowserNetworkConfigurationVpcConfigArgs:
@@ -9548,7 +9351,6 @@ class AgentcoreBrowserNetworkConfigurationVpcConfigArgs:
 class AgentcoreBrowserRecordingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     s3_location: NotRequired[pulumi.Input[AgentcoreBrowserRecordingS3LocationArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentcoreBrowserRecordingArgs:
@@ -9578,7 +9380,6 @@ class AgentcoreBrowserRecordingArgs:
 class AgentcoreBrowserRecordingS3LocationArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     prefix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreBrowserRecordingS3LocationArgs:
@@ -9602,7 +9403,6 @@ class AgentcoreBrowserRecordingS3LocationArgs:
 class AgentcoreBrowserTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreBrowserTimeoutsArgs:
@@ -9628,7 +9428,6 @@ class AgentcoreCodeInterpreterNetworkConfigurationArgsDict(TypedDict):
     vpc_config: NotRequired[
         pulumi.Input[AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreCodeInterpreterNetworkConfigurationArgs:
@@ -9663,7 +9462,6 @@ class AgentcoreCodeInterpreterNetworkConfigurationArgs:
 class AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgs:
@@ -9691,7 +9489,6 @@ class AgentcoreCodeInterpreterNetworkConfigurationVpcConfigArgs:
 class AgentcoreCodeInterpreterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreCodeInterpreterTimeoutsArgs:
@@ -9716,7 +9513,6 @@ class AgentcoreGatewayAuthorizerConfigurationArgsDict(TypedDict):
     custom_jwt_authorizer: NotRequired[
         pulumi.Input[AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayAuthorizerConfigurationArgs:
@@ -9747,7 +9543,6 @@ class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgsDict(TypedDi
     discovery_url: pulumi.Input[_builtins.str]
     allowed_audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     allowed_clients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerArgs:
@@ -9802,7 +9597,6 @@ class AgentcoreGatewayInterceptorConfigurationArgsDict(TypedDict):
     interceptor: NotRequired[
         pulumi.Input[AgentcoreGatewayInterceptorConfigurationInterceptorArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayInterceptorConfigurationArgs:
@@ -9857,7 +9651,6 @@ class AgentcoreGatewayInterceptorConfigurationArgs:
 
 class AgentcoreGatewayInterceptorConfigurationInputConfigurationArgsDict(TypedDict):
     pass_request_headers: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayInterceptorConfigurationInputConfigurationArgs:
@@ -9874,7 +9667,6 @@ class AgentcoreGatewayInterceptorConfigurationInterceptorArgsDict(TypedDict):
     lambda_: NotRequired[
         pulumi.Input[AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayInterceptorConfigurationInterceptorArgs:
@@ -9902,7 +9694,6 @@ class AgentcoreGatewayInterceptorConfigurationInterceptorArgs:
 
 class AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgs:
@@ -9915,7 +9706,6 @@ class AgentcoreGatewayInterceptorConfigurationInterceptorLambdaArgs:
 
 class AgentcoreGatewayProtocolConfigurationArgsDict(TypedDict):
     mcp: NotRequired[pulumi.Input[AgentcoreGatewayProtocolConfigurationMcpArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayProtocolConfigurationArgs:
@@ -9939,7 +9729,6 @@ class AgentcoreGatewayProtocolConfigurationMcpArgsDict(TypedDict):
     instructions: NotRequired[pulumi.Input[_builtins.str]]
     search_type: NotRequired[pulumi.Input[_builtins.str]]
     supported_versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayProtocolConfigurationMcpArgs:
@@ -9986,7 +9775,6 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationArgsDict(TypedDict):
     oauth: NotRequired[
         pulumi.Input[AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetCredentialProviderConfigurationArgs:
@@ -10061,7 +9849,6 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationApiKeyArgsDict(TypedD
     credential_location: NotRequired[pulumi.Input[_builtins.str]]
     credential_parameter_name: NotRequired[pulumi.Input[_builtins.str]]
     credential_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetCredentialProviderConfigurationApiKeyArgs:
@@ -10112,7 +9899,6 @@ class AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgsDict(TypedDi
     ]
     default_return_url: NotRequired[pulumi.Input[_builtins.str]]
     grant_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetCredentialProviderConfigurationOauthArgs:
@@ -10167,7 +9953,6 @@ class AgentcoreGatewayTargetMetadataConfigurationArgsDict(TypedDict):
     allowed_response_headers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetMetadataConfigurationArgs:
@@ -10214,7 +9999,6 @@ class AgentcoreGatewayTargetMetadataConfigurationArgs:
 
 class AgentcoreGatewayTargetTargetConfigurationArgsDict(TypedDict):
     mcp: NotRequired[pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpArgsDict]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationArgs:
@@ -10249,7 +10033,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpArgsDict(TypedDict):
     smithy_model: NotRequired[
         pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpArgs:
@@ -10331,7 +10114,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgsDict(TypedDict):
     tool_schema: pulumi.Input[
         AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaArgs:
@@ -10378,7 +10160,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgsDict(Typed
             AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaArgs:
@@ -10456,7 +10237,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadA
             AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadArgs:
@@ -10536,7 +10316,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaArgs:
@@ -10634,7 +10413,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsArgs:
@@ -10720,7 +10498,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     description: NotRequired[pulumi.Input[_builtins.str]]
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsArgs:
@@ -10762,7 +10539,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyArgs:
@@ -10828,7 +10604,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
         ]
     ]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyArgs:
@@ -10938,7 +10713,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsArgs:
@@ -11024,7 +10798,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     description: NotRequired[pulumi.Input[_builtins.str]]
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsArgs:
@@ -11066,7 +10839,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyArgs:
@@ -11120,7 +10892,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadI
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyArgs:
@@ -11184,7 +10955,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaArgs:
@@ -11282,7 +11052,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsArgs:
@@ -11368,7 +11137,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     description: NotRequired[pulumi.Input[_builtins.str]]
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsArgs:
@@ -11410,7 +11178,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyArgs:
@@ -11476,7 +11243,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
         ]
     ]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyArgs:
@@ -11586,7 +11352,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsArgs:
@@ -11672,7 +11437,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     description: NotRequired[pulumi.Input[_builtins.str]]
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsArgs:
@@ -11714,7 +11478,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyArgs:
@@ -11768,7 +11531,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
     items_json: NotRequired[pulumi.Input[_builtins.str]]
     properties_json: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyArgs:
@@ -11816,7 +11578,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadO
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3Args:
@@ -11839,7 +11600,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3Args:
 
 class AgentcoreGatewayTargetTargetConfigurationMcpMcpServerArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpMcpServerArgs:
@@ -11861,7 +11621,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgsDict(TypedDic
             AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaArgs:
@@ -11918,7 +11677,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgs
     TypedDict
 ):
     payload: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgs:
@@ -11932,7 +11690,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadArgs
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3Args:
@@ -11962,7 +11719,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgsDict(TypedDict)
     s3: NotRequired[
         pulumi.Input[AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelArgs:
@@ -12015,7 +11771,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgsDi
     TypedDict
 ):
     payload: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgs:
@@ -12029,7 +11784,6 @@ class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadArgs:
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3ArgsDict(TypedDict):
     bucket_owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3Args:
@@ -12054,7 +11808,6 @@ class AgentcoreGatewayTargetTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTargetTimeoutsArgs:
@@ -12085,7 +11838,6 @@ class AgentcoreGatewayTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayTimeoutsArgs:
@@ -12114,7 +11866,6 @@ class AgentcoreGatewayTimeoutsArgs:
 
 class AgentcoreGatewayWorkloadIdentityDetailArgsDict(TypedDict):
     workload_identity_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreGatewayWorkloadIdentityDetailArgs:
@@ -12135,7 +11886,6 @@ class AgentcoreMemoryStrategyConfigurationArgsDict(TypedDict):
     extraction: NotRequired[
         pulumi.Input[AgentcoreMemoryStrategyConfigurationExtractionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreMemoryStrategyConfigurationArgs:
@@ -12185,7 +11935,6 @@ class AgentcoreMemoryStrategyConfigurationArgs:
 class AgentcoreMemoryStrategyConfigurationConsolidationArgsDict(TypedDict):
     append_to_prompt: pulumi.Input[_builtins.str]
     model_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreMemoryStrategyConfigurationConsolidationArgs:
@@ -12209,7 +11958,6 @@ class AgentcoreMemoryStrategyConfigurationConsolidationArgs:
 class AgentcoreMemoryStrategyConfigurationExtractionArgsDict(TypedDict):
     append_to_prompt: pulumi.Input[_builtins.str]
     model_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreMemoryStrategyConfigurationExtractionArgs:
@@ -12234,7 +11982,6 @@ class AgentcoreMemoryStrategyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreMemoryStrategyTimeoutsArgs:
@@ -12264,7 +12011,6 @@ class AgentcoreMemoryStrategyTimeoutsArgs:
 class AgentcoreMemoryTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreMemoryTimeoutsArgs:
@@ -12287,7 +12033,6 @@ class AgentcoreMemoryTimeoutsArgs:
 
 class AgentcoreOauth2CredentialProviderClientSecretArnArgsDict(TypedDict):
     secret_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderClientSecretArnArgs:
@@ -12329,7 +12074,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgsDict(TypedDict):
             AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigArgs:
@@ -12489,7 +12233,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
             AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigArgs:
@@ -12564,7 +12307,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
         ]
     ]
     discovery_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryArgs:
@@ -12609,7 +12351,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderC
     issuer: pulumi.Input[_builtins.str]
     token_endpoint: pulumi.Input[_builtins.str]
     response_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigCustomOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -12665,7 +12406,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigArgs:
@@ -12754,7 +12494,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
         ]
     ]
     discovery_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryArgs:
@@ -12805,7 +12544,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderC
     issuer: pulumi.Input[_builtins.str]
     response_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGithubOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -12857,7 +12595,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigArgs:
@@ -12946,7 +12683,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
         ]
     ]
     discovery_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryArgs:
@@ -12997,7 +12733,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderC
     issuer: pulumi.Input[_builtins.str]
     response_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigGoogleOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -13049,7 +12784,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigArgs:
@@ -13138,7 +12872,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
         ]
     ]
     discovery_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryArgs:
@@ -13189,7 +12922,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2Provid
     issuer: pulumi.Input[_builtins.str]
     response_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigMicrosoftOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -13241,7 +12973,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigArgs:
@@ -13330,7 +13061,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
         ]
     ]
     discovery_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryArgs:
@@ -13381,7 +13111,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2Provi
     issuer: pulumi.Input[_builtins.str]
     response_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSalesforceOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -13433,7 +13162,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigArgs:
@@ -13522,7 +13250,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
         ]
     ]
     discovery_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryArgs:
@@ -13573,7 +13300,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
     issuer: pulumi.Input[_builtins.str]
     response_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataArgs:
@@ -13611,7 +13337,6 @@ class AgentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderCo
 class AgentcoreTokenVaultCmkKmsConfigurationArgsDict(TypedDict):
     key_type: pulumi.Input[_builtins.str]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentcoreTokenVaultCmkKmsConfigurationArgs:
@@ -13634,7 +13359,6 @@ class AgentcoreTokenVaultCmkKmsConfigurationArgs:
 
 class CustomModelOutputDataConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomModelOutputDataConfigArgs:
@@ -13648,7 +13372,6 @@ class CustomModelOutputDataConfigArgs:
 class CustomModelTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomModelTimeoutsArgs:
@@ -13671,7 +13394,6 @@ class CustomModelTimeoutsArgs:
 
 class CustomModelTrainingDataConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomModelTrainingDataConfigArgs:
@@ -13684,7 +13406,6 @@ class CustomModelTrainingDataConfigArgs:
 
 class CustomModelTrainingMetricArgsDict(TypedDict):
     training_loss: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class CustomModelTrainingMetricArgs:
@@ -13699,7 +13420,6 @@ class CustomModelValidationDataConfigArgsDict(TypedDict):
     validators: pulumi.Input[
         Sequence[pulumi.Input[CustomModelValidationDataConfigValidatorArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class CustomModelValidationDataConfigArgs:
@@ -13727,7 +13447,6 @@ class CustomModelValidationDataConfigArgs:
 
 class CustomModelValidationDataConfigValidatorArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomModelValidationDataConfigValidatorArgs:
@@ -13740,7 +13459,6 @@ class CustomModelValidationDataConfigValidatorArgs:
 
 class CustomModelValidationMetricArgsDict(TypedDict):
     validation_loss: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class CustomModelValidationMetricArgs:
@@ -13756,7 +13474,6 @@ class CustomModelValidationMetricArgs:
 class CustomModelVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CustomModelVpcConfigArgs:
@@ -13794,7 +13511,6 @@ class GuardrailContentPolicyConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[GuardrailContentPolicyConfigTierConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailContentPolicyConfigArgs:
@@ -13857,7 +13573,6 @@ class GuardrailContentPolicyConfigFiltersConfigArgsDict(TypedDict):
     output_action: NotRequired[pulumi.Input[_builtins.str]]
     output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     output_modalities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuardrailContentPolicyConfigFiltersConfigArgs:
@@ -13934,7 +13649,6 @@ class GuardrailContentPolicyConfigFiltersConfigArgs:
 
 class GuardrailContentPolicyConfigTierConfigArgsDict(TypedDict):
     tier_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailContentPolicyConfigTierConfigArgs:
@@ -13955,7 +13669,6 @@ class GuardrailContextualGroundingPolicyConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailContextualGroundingPolicyConfigArgs:
@@ -14000,7 +13713,6 @@ class GuardrailContextualGroundingPolicyConfigArgs:
 class GuardrailContextualGroundingPolicyConfigFiltersConfigArgsDict(TypedDict):
     threshold: pulumi.Input[_builtins.float]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailContextualGroundingPolicyConfigFiltersConfigArgs:
@@ -14023,7 +13735,6 @@ class GuardrailContextualGroundingPolicyConfigFiltersConfigArgs:
 
 class GuardrailCrossRegionConfigArgsDict(TypedDict):
     guardrail_profile_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailCrossRegionConfigArgs:
@@ -14055,7 +13766,6 @@ class GuardrailSensitiveInformationPolicyConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailSensitiveInformationPolicyConfigArgs:
@@ -14139,7 +13849,6 @@ class GuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigArgsDict(TypedDi
     input_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     output_action: NotRequired[pulumi.Input[_builtins.str]]
     output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigArgs:
@@ -14193,7 +13902,6 @@ class GuardrailSensitiveInformationPolicyConfigRegexesConfigArgsDict(TypedDict):
     input_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     output_action: NotRequired[pulumi.Input[_builtins.str]]
     output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailSensitiveInformationPolicyConfigRegexesConfigArgs:
@@ -14254,7 +13962,6 @@ class GuardrailTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuardrailTimeoutsArgs:
@@ -14292,7 +13999,6 @@ class GuardrailTopicPolicyConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[GuardrailTopicPolicyConfigTopicsConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailTopicPolicyConfigArgs:
@@ -14345,7 +14051,6 @@ class GuardrailTopicPolicyConfigArgs:
 
 class GuardrailTopicPolicyConfigTierConfigArgsDict(TypedDict):
     tier_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailTopicPolicyConfigTierConfigArgs:
@@ -14361,7 +14066,6 @@ class GuardrailTopicPolicyConfigTopicsConfigArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     examples: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuardrailTopicPolicyConfigTopicsConfigArgs:
@@ -14401,7 +14105,6 @@ class GuardrailTopicPolicyConfigTopicsConfigArgs:
 class GuardrailVersionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuardrailVersionTimeoutsArgs:
@@ -14435,7 +14138,6 @@ class GuardrailWordPolicyConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[GuardrailWordPolicyConfigWordsConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailWordPolicyConfigArgs:
@@ -14498,7 +14200,6 @@ class GuardrailWordPolicyConfigManagedWordListsConfigArgsDict(TypedDict):
     input_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     output_action: NotRequired[pulumi.Input[_builtins.str]]
     output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailWordPolicyConfigManagedWordListsConfigArgs:
@@ -14543,7 +14244,6 @@ class GuardrailWordPolicyConfigWordsConfigArgsDict(TypedDict):
     input_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     output_action: NotRequired[pulumi.Input[_builtins.str]]
     output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailWordPolicyConfigWordsConfigArgs:
@@ -14584,7 +14284,6 @@ class GuardrailWordPolicyConfigWordsConfigArgs:
 
 class InferenceProfileModelArgsDict(TypedDict):
     model_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InferenceProfileModelArgs:
@@ -14597,7 +14296,6 @@ class InferenceProfileModelArgs:
 
 class InferenceProfileModelSourceArgsDict(TypedDict):
     copy_from: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InferenceProfileModelSourceArgs:
@@ -14612,7 +14310,6 @@ class InferenceProfileTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InferenceProfileTimeoutsArgs:
@@ -14641,7 +14338,6 @@ class InferenceProfileTimeoutsArgs:
 
 class ProvisionedModelThroughputTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProvisionedModelThroughputTimeoutsArgs:
@@ -14664,7 +14360,6 @@ class GetAgentAgentVersionsAgentVersionSummaryArgsDict(TypedDict):
     guardrail_configurations: NotRequired[
         Sequence[GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GetAgentAgentVersionsAgentVersionSummaryArgs:
@@ -14729,7 +14424,6 @@ class GetAgentAgentVersionsAgentVersionSummaryArgs:
 class GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgsDict(TypedDict):
     guardrail_identifier: _builtins.str
     guardrail_version: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetAgentAgentVersionsAgentVersionSummaryGuardrailConfigurationArgs:

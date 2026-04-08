@@ -38,7 +38,6 @@ __all__ = [
 
 class ApiConfigGatewayConfigArgsDict(TypedDict):
     backend_config: pulumi.Input[ApiConfigGatewayConfigBackendConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class ApiConfigGatewayConfigArgs:
@@ -59,7 +58,6 @@ class ApiConfigGatewayConfigArgs:
 
 class ApiConfigGatewayConfigBackendConfigArgsDict(TypedDict):
     google_service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiConfigGatewayConfigBackendConfigArgs:
@@ -77,7 +75,6 @@ class ApiConfigGrpcServiceArgsDict(TypedDict):
     sources: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ApiConfigGrpcServiceSourceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ApiConfigGrpcServiceArgs:
@@ -116,7 +113,6 @@ class ApiConfigGrpcServiceArgs:
 class ApiConfigGrpcServiceFileDescriptorSetArgsDict(TypedDict):
     contents: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiConfigGrpcServiceFileDescriptorSetArgs:
@@ -140,7 +136,6 @@ class ApiConfigGrpcServiceFileDescriptorSetArgs:
 class ApiConfigGrpcServiceSourceArgsDict(TypedDict):
     contents: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiConfigGrpcServiceSourceArgs:
@@ -165,7 +160,6 @@ class ApiConfigIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiConfigIamBindingConditionArgs:
@@ -196,7 +190,6 @@ class ApiConfigIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiConfigIamMemberConditionArgs:
@@ -226,7 +219,6 @@ class ApiConfigIamMemberConditionArgs:
 class ApiConfigManagedServiceConfigArgsDict(TypedDict):
     contents: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiConfigManagedServiceConfigArgs:
@@ -249,7 +241,6 @@ class ApiConfigManagedServiceConfigArgs:
 
 class ApiConfigOpenapiDocumentArgsDict(TypedDict):
     document: pulumi.Input[ApiConfigOpenapiDocumentDocumentArgsDict]
-    ...
 
 @pulumi.input_type
 class ApiConfigOpenapiDocumentArgs:
@@ -265,7 +256,6 @@ class ApiConfigOpenapiDocumentArgs:
 class ApiConfigOpenapiDocumentDocumentArgsDict(TypedDict):
     contents: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiConfigOpenapiDocumentDocumentArgs:
@@ -290,7 +280,6 @@ class ApiIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiIamBindingConditionArgs:
@@ -321,7 +310,6 @@ class ApiIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiIamMemberConditionArgs:
@@ -352,7 +340,6 @@ class GatewayIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayIamBindingConditionArgs:
@@ -383,7 +370,6 @@ class GatewayIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayIamMemberConditionArgs:

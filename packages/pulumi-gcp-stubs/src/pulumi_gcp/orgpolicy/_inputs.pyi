@@ -32,7 +32,6 @@ class PolicyDryRunSpecArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[PolicyDryRunSpecRuleArgsDict]]]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDryRunSpecArgs:
@@ -85,7 +84,6 @@ class PolicyDryRunSpecRuleArgsDict(TypedDict):
     enforce: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[PolicyDryRunSpecRuleValuesArgsDict]]
-    ...
 
 @pulumi.input_type
 class PolicyDryRunSpecRuleArgs:
@@ -139,7 +137,6 @@ class PolicyDryRunSpecRuleConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDryRunSpecRuleConditionArgs:
@@ -175,7 +172,6 @@ class PolicyDryRunSpecRuleConditionArgs:
 class PolicyDryRunSpecRuleValuesArgsDict(TypedDict):
     allowed_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     denied_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicyDryRunSpecRuleValuesArgs:
@@ -214,7 +210,6 @@ class PolicySpecArgsDict(TypedDict):
     reset: NotRequired[pulumi.Input[_builtins.bool]]
     rules: NotRequired[pulumi.Input[Sequence[pulumi.Input[PolicySpecRuleArgsDict]]]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicySpecArgs:
@@ -264,7 +259,6 @@ class PolicySpecRuleArgsDict(TypedDict):
     enforce: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[PolicySpecRuleValuesArgsDict]]
-    ...
 
 @pulumi.input_type
 class PolicySpecRuleArgs:
@@ -314,7 +308,6 @@ class PolicySpecRuleConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicySpecRuleConditionArgs:
@@ -350,7 +343,6 @@ class PolicySpecRuleConditionArgs:
 class PolicySpecRuleValuesArgsDict(TypedDict):
     allowed_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     denied_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicySpecRuleValuesArgs:

@@ -15,7 +15,6 @@ class GetVoicesVoiceArgsDict(TypedDict):
     language_name: _builtins.str
     name: _builtins.str
     supported_engines: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVoicesVoiceArgs:

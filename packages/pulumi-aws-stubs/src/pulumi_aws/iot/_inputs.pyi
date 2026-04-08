@@ -148,7 +148,6 @@ __all__ = [
 
 class BillingGroupMetadataArgsDict(TypedDict):
     creation_date: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BillingGroupMetadataArgs:
@@ -161,7 +160,6 @@ class BillingGroupMetadataArgs:
 
 class BillingGroupPropertiesArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BillingGroupPropertiesArgs:
@@ -178,7 +176,6 @@ class CaCertificateRegistrationConfigArgsDict(TypedDict):
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     template_body: NotRequired[pulumi.Input[_builtins.str]]
     template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaCertificateRegistrationConfigArgs:
@@ -208,7 +205,6 @@ class CaCertificateRegistrationConfigArgs:
 class CaCertificateValidityArgsDict(TypedDict):
     not_after: NotRequired[pulumi.Input[_builtins.str]]
     not_before: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaCertificateValidityArgs:
@@ -232,7 +228,6 @@ class CaCertificateValidityArgs:
 class DomainConfigurationAuthorizerConfigArgsDict(TypedDict):
     allow_authorizer_override: NotRequired[pulumi.Input[_builtins.bool]]
     default_authorizer_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainConfigurationAuthorizerConfigArgs:
@@ -257,7 +252,6 @@ class DomainConfigurationAuthorizerConfigArgs:
 
 class DomainConfigurationTlsConfigArgsDict(TypedDict):
     security_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainConfigurationTlsConfigArgs:
@@ -290,7 +284,6 @@ class IndexingConfigurationThingGroupIndexingConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingGroupIndexingConfigurationArgs:
@@ -380,7 +373,6 @@ class IndexingConfigurationThingGroupIndexingConfigurationCustomFieldArgsDict(
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingGroupIndexingConfigurationCustomFieldArgs:
@@ -406,7 +398,6 @@ class IndexingConfigurationThingGroupIndexingConfigurationManagedFieldArgsDict(
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingGroupIndexingConfigurationManagedFieldArgs:
@@ -453,7 +444,6 @@ class IndexingConfigurationThingIndexingConfigurationArgsDict(TypedDict):
     ]
     named_shadow_indexing_mode: NotRequired[pulumi.Input[_builtins.str]]
     thing_connectivity_indexing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingIndexingConfigurationArgs:
@@ -586,7 +576,6 @@ class IndexingConfigurationThingIndexingConfigurationArgs:
 class IndexingConfigurationThingIndexingConfigurationCustomFieldArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingIndexingConfigurationCustomFieldArgs:
@@ -609,7 +598,6 @@ class IndexingConfigurationThingIndexingConfigurationCustomFieldArgs:
 
 class IndexingConfigurationThingIndexingConfigurationFilterArgsDict(TypedDict):
     named_shadow_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingIndexingConfigurationFilterArgs:
@@ -633,7 +621,6 @@ class IndexingConfigurationThingIndexingConfigurationFilterArgs:
 class IndexingConfigurationThingIndexingConfigurationManagedFieldArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexingConfigurationThingIndexingConfigurationManagedFieldArgs:
@@ -657,7 +644,6 @@ class IndexingConfigurationThingIndexingConfigurationManagedFieldArgs:
 class ProvisioningTemplatePreProvisioningHookArgsDict(TypedDict):
     target_arn: pulumi.Input[_builtins.str]
     payload_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProvisioningTemplatePreProvisioningHookArgs:
@@ -686,7 +672,6 @@ class ThingGroupMetadataArgsDict(TypedDict):
             Sequence[pulumi.Input[ThingGroupMetadataRootToParentGroupArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ThingGroupMetadataArgs:
@@ -731,7 +716,6 @@ class ThingGroupMetadataArgs:
 class ThingGroupMetadataRootToParentGroupArgsDict(TypedDict):
     group_arn: NotRequired[pulumi.Input[_builtins.str]]
     group_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ThingGroupMetadataRootToParentGroupArgs:
@@ -757,7 +741,6 @@ class ThingGroupPropertiesArgsDict(TypedDict):
         pulumi.Input[ThingGroupPropertiesAttributePayloadArgsDict]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ThingGroupPropertiesArgs:
@@ -786,7 +769,6 @@ class ThingGroupPropertiesArgs:
 
 class ThingGroupPropertiesAttributePayloadArgsDict(TypedDict):
     attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ThingGroupPropertiesAttributePayloadArgs:
@@ -812,7 +794,6 @@ class ThingTypePropertiesArgsDict(TypedDict):
     searchable_attributes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ThingTypePropertiesArgs:
@@ -844,7 +825,6 @@ class TopicRuleCloudwatchAlarmArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     state_reason: pulumi.Input[_builtins.str]
     state_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleCloudwatchAlarmArgs:
@@ -881,7 +861,6 @@ class TopicRuleCloudwatchLogArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TopicRuleCloudwatchLogArgs:
@@ -915,7 +894,6 @@ class TopicRuleCloudwatchMetricArgsDict(TypedDict):
     metric_value: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     metric_timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleCloudwatchMetricArgs:
@@ -965,7 +943,6 @@ class TopicRuleDestinationVpcConfigurationArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TopicRuleDestinationVpcConfigurationArgs:
@@ -1017,7 +994,6 @@ class TopicRuleDynamodbArgsDict(TypedDict):
     range_key_field: NotRequired[pulumi.Input[_builtins.str]]
     range_key_type: NotRequired[pulumi.Input[_builtins.str]]
     range_key_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleDynamodbArgs:
@@ -1089,7 +1065,6 @@ class TopicRuleDynamodbArgs:
 class TopicRuleDynamodbv2ArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     put_item: NotRequired[pulumi.Input[TopicRuleDynamodbv2PutItemArgsDict]]
-    ...
 
 @pulumi.input_type
 class TopicRuleDynamodbv2Args:
@@ -1114,7 +1089,6 @@ class TopicRuleDynamodbv2Args:
 
 class TopicRuleDynamodbv2PutItemArgsDict(TypedDict):
     table_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleDynamodbv2PutItemArgs:
@@ -1131,7 +1105,6 @@ class TopicRuleElasticsearchArgsDict(TypedDict):
     index: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleElasticsearchArgs:
@@ -1196,7 +1169,6 @@ class TopicRuleErrorActionArgsDict(TypedDict):
     sqs: NotRequired[pulumi.Input[TopicRuleErrorActionSqsArgsDict]]
     step_functions: NotRequired[pulumi.Input[TopicRuleErrorActionStepFunctionsArgsDict]]
     timestream: NotRequired[pulumi.Input[TopicRuleErrorActionTimestreamArgsDict]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionArgs:
@@ -1384,7 +1356,6 @@ class TopicRuleErrorActionCloudwatchAlarmArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     state_reason: pulumi.Input[_builtins.str]
     state_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionCloudwatchAlarmArgs:
@@ -1421,7 +1392,6 @@ class TopicRuleErrorActionCloudwatchLogsArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionCloudwatchLogsArgs:
@@ -1455,7 +1425,6 @@ class TopicRuleErrorActionCloudwatchMetricArgsDict(TypedDict):
     metric_value: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     metric_timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionCloudwatchMetricArgs:
@@ -1511,7 +1480,6 @@ class TopicRuleErrorActionDynamodbArgsDict(TypedDict):
     range_key_field: NotRequired[pulumi.Input[_builtins.str]]
     range_key_type: NotRequired[pulumi.Input[_builtins.str]]
     range_key_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionDynamodbArgs:
@@ -1583,7 +1551,6 @@ class TopicRuleErrorActionDynamodbArgs:
 class TopicRuleErrorActionDynamodbv2ArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     put_item: NotRequired[pulumi.Input[TopicRuleErrorActionDynamodbv2PutItemArgsDict]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionDynamodbv2Args:
@@ -1612,7 +1579,6 @@ class TopicRuleErrorActionDynamodbv2Args:
 
 class TopicRuleErrorActionDynamodbv2PutItemArgsDict(TypedDict):
     table_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionDynamodbv2PutItemArgs:
@@ -1629,7 +1595,6 @@ class TopicRuleErrorActionElasticsearchArgsDict(TypedDict):
     index: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionElasticsearchArgs:
@@ -1673,7 +1638,6 @@ class TopicRuleErrorActionFirehoseArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
     separator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionFirehoseArgs:
@@ -1712,7 +1676,6 @@ class TopicRuleErrorActionHttpArgsDict(TypedDict):
     http_headers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TopicRuleErrorActionHttpHttpHeaderArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionHttpArgs:
@@ -1753,7 +1716,6 @@ class TopicRuleErrorActionHttpArgs:
 class TopicRuleErrorActionHttpHttpHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionHttpHttpHeaderArgs:
@@ -1778,7 +1740,6 @@ class TopicRuleErrorActionIotAnalyticsArgsDict(TypedDict):
     channel_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionIotAnalyticsArgs:
@@ -1810,7 +1771,6 @@ class TopicRuleErrorActionIotEventsArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
     message_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionIotEventsArgs:
@@ -1852,7 +1812,6 @@ class TopicRuleErrorActionKafkaArgsDict(TypedDict):
     ]
     key: NotRequired[pulumi.Input[_builtins.str]]
     partition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionKafkaArgs:
@@ -1915,7 +1874,6 @@ class TopicRuleErrorActionKafkaArgs:
 class TopicRuleErrorActionKafkaHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionKafkaHeaderArgs:
@@ -1940,7 +1898,6 @@ class TopicRuleErrorActionKinesisArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     stream_name: pulumi.Input[_builtins.str]
     partition_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionKinesisArgs:
@@ -1969,7 +1926,6 @@ class TopicRuleErrorActionKinesisArgs:
 
 class TopicRuleErrorActionLambdaArgsDict(TypedDict):
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionLambdaArgs:
@@ -1984,7 +1940,6 @@ class TopicRuleErrorActionRepublishArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     topic: pulumi.Input[_builtins.str]
     qos: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionRepublishArgs:
@@ -2016,7 +1971,6 @@ class TopicRuleErrorActionS3ArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     canned_acl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionS3Args:
@@ -2053,7 +2007,6 @@ class TopicRuleErrorActionSnsArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     target_arn: pulumi.Input[_builtins.str]
     message_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionSnsArgs:
@@ -2084,7 +2037,6 @@ class TopicRuleErrorActionSqsArgsDict(TypedDict):
     queue_url: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     use_base64: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionSqsArgs:
@@ -2115,7 +2067,6 @@ class TopicRuleErrorActionStepFunctionsArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     state_machine_name: pulumi.Input[_builtins.str]
     execution_name_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionStepFunctionsArgs:
@@ -2152,7 +2103,6 @@ class TopicRuleErrorActionTimestreamArgsDict(TypedDict):
     timestamp: NotRequired[
         pulumi.Input[TopicRuleErrorActionTimestreamTimestampArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionTimestreamArgs:
@@ -2211,7 +2161,6 @@ class TopicRuleErrorActionTimestreamArgs:
 class TopicRuleErrorActionTimestreamDimensionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionTimestreamDimensionArgs:
@@ -2235,7 +2184,6 @@ class TopicRuleErrorActionTimestreamDimensionArgs:
 class TopicRuleErrorActionTimestreamTimestampArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleErrorActionTimestreamTimestampArgs:
@@ -2261,7 +2209,6 @@ class TopicRuleFirehoseArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
     separator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleFirehoseArgs:
@@ -2300,7 +2247,6 @@ class TopicRuleHttpArgsDict(TypedDict):
     http_headers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TopicRuleHttpHttpHeaderArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TopicRuleHttpArgs:
@@ -2341,7 +2287,6 @@ class TopicRuleHttpArgs:
 class TopicRuleHttpHttpHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleHttpHttpHeaderArgs:
@@ -2366,7 +2311,6 @@ class TopicRuleIotAnalyticArgsDict(TypedDict):
     channel_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TopicRuleIotAnalyticArgs:
@@ -2398,7 +2342,6 @@ class TopicRuleIotEventArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     batch_mode: NotRequired[pulumi.Input[_builtins.bool]]
     message_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleIotEventArgs:
@@ -2440,7 +2383,6 @@ class TopicRuleKafkaArgsDict(TypedDict):
     ]
     key: NotRequired[pulumi.Input[_builtins.str]]
     partition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleKafkaArgs:
@@ -2499,7 +2441,6 @@ class TopicRuleKafkaArgs:
 class TopicRuleKafkaHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleKafkaHeaderArgs:
@@ -2524,7 +2465,6 @@ class TopicRuleKinesisArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     stream_name: pulumi.Input[_builtins.str]
     partition_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleKinesisArgs:
@@ -2553,7 +2493,6 @@ class TopicRuleKinesisArgs:
 
 class TopicRuleLambdaArgsDict(TypedDict):
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleLambdaArgs:
@@ -2568,7 +2507,6 @@ class TopicRuleRepublishArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     topic: pulumi.Input[_builtins.str]
     qos: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TopicRuleRepublishArgs:
@@ -2600,7 +2538,6 @@ class TopicRuleS3ArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     canned_acl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleS3Args:
@@ -2637,7 +2574,6 @@ class TopicRuleSnsArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     target_arn: pulumi.Input[_builtins.str]
     message_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleSnsArgs:
@@ -2668,7 +2604,6 @@ class TopicRuleSqsArgsDict(TypedDict):
     queue_url: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     use_base64: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class TopicRuleSqsArgs:
@@ -2699,7 +2634,6 @@ class TopicRuleStepFunctionArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     state_machine_name: pulumi.Input[_builtins.str]
     execution_name_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicRuleStepFunctionArgs:
@@ -2734,7 +2668,6 @@ class TopicRuleTimestreamArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     table_name: pulumi.Input[_builtins.str]
     timestamp: NotRequired[pulumi.Input[TopicRuleTimestreamTimestampArgsDict]]
-    ...
 
 @pulumi.input_type
 class TopicRuleTimestreamArgs:
@@ -2785,7 +2718,6 @@ class TopicRuleTimestreamArgs:
 class TopicRuleTimestreamDimensionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleTimestreamDimensionArgs:
@@ -2809,7 +2741,6 @@ class TopicRuleTimestreamDimensionArgs:
 class TopicRuleTimestreamTimestampArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicRuleTimestreamTimestampArgs:

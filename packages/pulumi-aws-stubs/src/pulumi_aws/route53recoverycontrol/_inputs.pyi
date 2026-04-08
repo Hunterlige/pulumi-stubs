@@ -15,7 +15,6 @@ __all__ = [
 class ClusterClusterEndpointArgsDict(TypedDict):
     endpoint: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterEndpointArgs:
@@ -40,7 +39,6 @@ class SafetyRuleRuleConfigArgsDict(TypedDict):
     inverted: pulumi.Input[_builtins.bool]
     threshold: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SafetyRuleRuleConfigArgs:

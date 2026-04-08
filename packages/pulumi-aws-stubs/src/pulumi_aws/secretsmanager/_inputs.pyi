@@ -20,7 +20,6 @@ class SecretReplicaArgsDict(TypedDict):
     last_accessed_date: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     status_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecretReplicaArgs:
@@ -63,7 +62,6 @@ class SecretRotationRotationRulesArgsDict(TypedDict):
     automatically_after_days: NotRequired[pulumi.Input[_builtins.int]]
     duration: NotRequired[pulumi.Input[_builtins.str]]
     schedule_expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecretRotationRotationRulesArgs:
@@ -95,7 +93,6 @@ class SecretRotationRotationRulesArgs:
 class GetSecretsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecretsFilterArgs:

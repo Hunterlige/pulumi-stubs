@@ -19,7 +19,6 @@ class GroupConfigurationArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[GroupConfigurationParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class GroupConfigurationArgs:
@@ -54,7 +53,6 @@ class GroupConfigurationArgs:
 class GroupConfigurationParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class GroupConfigurationParameterArgs:
@@ -78,7 +76,6 @@ class GroupConfigurationParameterArgs:
 class GroupResourceQueryArgsDict(TypedDict):
     query: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupResourceQueryArgs:

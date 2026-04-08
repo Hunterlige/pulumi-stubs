@@ -66,7 +66,6 @@ class NotebookExecutionCustomEnvironmentSpecArgsDict(TypedDict):
     persistent_disk_spec: NotRequired[
         pulumi.Input[NotebookExecutionCustomEnvironmentSpecPersistentDiskSpecArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionCustomEnvironmentSpecArgs:
@@ -130,7 +129,6 @@ class NotebookExecutionCustomEnvironmentSpecMachineSpecArgsDict(TypedDict):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionCustomEnvironmentSpecMachineSpecArgs:
@@ -161,7 +159,6 @@ class NotebookExecutionCustomEnvironmentSpecNetworkSpecArgsDict(TypedDict):
     enable_internet_access: NotRequired[pulumi.Input[_builtins.bool]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionCustomEnvironmentSpecNetworkSpecArgs:
@@ -191,7 +188,6 @@ class NotebookExecutionCustomEnvironmentSpecNetworkSpecArgs:
 class NotebookExecutionCustomEnvironmentSpecPersistentDiskSpecArgsDict(TypedDict):
     disk_size_gb: NotRequired[pulumi.Input[_builtins.str]]
     disk_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionCustomEnvironmentSpecPersistentDiskSpecArgs:
@@ -215,7 +211,6 @@ class NotebookExecutionCustomEnvironmentSpecPersistentDiskSpecArgs:
 class NotebookExecutionDataformRepositorySourceArgsDict(TypedDict):
     dataform_repository_resource_name: pulumi.Input[_builtins.str]
     commit_sha: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionDataformRepositorySourceArgs:
@@ -238,7 +233,6 @@ class NotebookExecutionDataformRepositorySourceArgs:
 
 class NotebookExecutionDirectNotebookSourceArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionDirectNotebookSourceArgs:
@@ -252,7 +246,6 @@ class NotebookExecutionDirectNotebookSourceArgs:
 class NotebookExecutionGcsNotebookSourceArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotebookExecutionGcsNotebookSourceArgs:
@@ -275,7 +268,6 @@ class NotebookExecutionGcsNotebookSourceArgs:
 
 class RuntimeNotebookRuntimeTemplateRefArgsDict(TypedDict):
     notebook_runtime_template: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuntimeNotebookRuntimeTemplateRefArgs:
@@ -291,7 +283,6 @@ class RuntimeNotebookRuntimeTemplateRefArgs:
 class RuntimeTemplateDataPersistentDiskSpecArgsDict(TypedDict):
     disk_size_gb: NotRequired[pulumi.Input[_builtins.str]]
     disk_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateDataPersistentDiskSpecArgs:
@@ -314,7 +305,6 @@ class RuntimeTemplateDataPersistentDiskSpecArgs:
 
 class RuntimeTemplateEncryptionSpecArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateEncryptionSpecArgs:
@@ -329,7 +319,6 @@ class RuntimeTemplateEncryptionSpecArgs:
 
 class RuntimeTemplateEucConfigArgsDict(TypedDict):
     euc_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateEucConfigArgs:
@@ -346,7 +335,6 @@ class RuntimeTemplateIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateIamBindingConditionArgs:
@@ -377,7 +365,6 @@ class RuntimeTemplateIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateIamMemberConditionArgs:
@@ -406,7 +393,6 @@ class RuntimeTemplateIamMemberConditionArgs:
 
 class RuntimeTemplateIdleShutdownConfigArgsDict(TypedDict):
     idle_timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateIdleShutdownConfigArgs:
@@ -423,7 +409,6 @@ class RuntimeTemplateMachineSpecArgsDict(TypedDict):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateMachineSpecArgs:
@@ -454,7 +439,6 @@ class RuntimeTemplateNetworkSpecArgsDict(TypedDict):
     enable_internet_access: NotRequired[pulumi.Input[_builtins.bool]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateNetworkSpecArgs:
@@ -483,7 +467,6 @@ class RuntimeTemplateNetworkSpecArgs:
 
 class RuntimeTemplateShieldedVmConfigArgsDict(TypedDict):
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateShieldedVmConfigArgs:
@@ -503,7 +486,6 @@ class RuntimeTemplateSoftwareConfigArgsDict(TypedDict):
     post_startup_script_config: NotRequired[
         pulumi.Input[RuntimeTemplateSoftwareConfigPostStartupScriptConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateSoftwareConfigArgs:
@@ -549,7 +531,6 @@ class RuntimeTemplateSoftwareConfigArgs:
 class RuntimeTemplateSoftwareConfigEnvArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateSoftwareConfigEnvArgs:
@@ -574,7 +555,6 @@ class RuntimeTemplateSoftwareConfigPostStartupScriptConfigArgsDict(TypedDict):
     post_startup_script: NotRequired[pulumi.Input[_builtins.str]]
     post_startup_script_behavior: NotRequired[pulumi.Input[_builtins.str]]
     post_startup_script_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuntimeTemplateSoftwareConfigPostStartupScriptConfigArgs:
@@ -607,7 +587,6 @@ class ScheduleCreateNotebookExecutionJobRequestArgsDict(TypedDict):
     notebook_execution_job: pulumi.Input[
         ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ScheduleCreateNotebookExecutionJobRequestArgs:
@@ -650,7 +629,6 @@ class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobArgsDict(Type
         ]
     ]
     service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobArgs:
@@ -750,7 +728,6 @@ class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepos
 ):
     dataform_repository_resource_name: pulumi.Input[_builtins.str]
     commit_sha: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceArgs:
@@ -776,7 +753,6 @@ class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSo
 ):
     uri: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceArgs:

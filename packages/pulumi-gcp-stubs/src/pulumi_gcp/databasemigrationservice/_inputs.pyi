@@ -67,7 +67,6 @@ __all__ = [
 class ConnectionProfileAlloydbArgsDict(TypedDict):
     cluster_id: pulumi.Input[_builtins.str]
     settings: NotRequired[pulumi.Input[ConnectionProfileAlloydbSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileAlloydbArgs:
@@ -99,7 +98,6 @@ class ConnectionProfileAlloydbSettingsArgsDict(TypedDict):
     primary_instance_settings: NotRequired[
         pulumi.Input[ConnectionProfileAlloydbSettingsPrimaryInstanceSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileAlloydbSettingsArgs:
@@ -155,7 +153,6 @@ class ConnectionProfileAlloydbSettingsInitialUserArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     user: pulumi.Input[_builtins.str]
     password_set: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileAlloydbSettingsInitialUserArgs:
@@ -190,7 +187,6 @@ class ConnectionProfileAlloydbSettingsPrimaryInstanceSettingsArgsDict(TypedDict)
     database_flags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     private_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileAlloydbSettingsPrimaryInstanceSettingsArgs:
@@ -254,7 +250,6 @@ class ConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigArgsDi
     TypedDict
 ):
     cpu_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigArgs:
@@ -270,7 +265,6 @@ class ConnectionProfileCloudsqlArgsDict(TypedDict):
     private_ip: NotRequired[pulumi.Input[_builtins.str]]
     public_ip: NotRequired[pulumi.Input[_builtins.str]]
     settings: NotRequired[pulumi.Input[ConnectionProfileCloudsqlSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileCloudsqlArgs:
@@ -327,7 +321,6 @@ class ConnectionProfileCloudsqlSettingsArgsDict(TypedDict):
     tier: NotRequired[pulumi.Input[_builtins.str]]
     user_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileCloudsqlSettingsArgs:
@@ -472,7 +465,6 @@ class ConnectionProfileCloudsqlSettingsIpConfigArgsDict(TypedDict):
     enable_ipv4: NotRequired[pulumi.Input[_builtins.bool]]
     private_network: NotRequired[pulumi.Input[_builtins.str]]
     require_ssl: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileCloudsqlSettingsIpConfigArgs:
@@ -539,7 +531,6 @@ class ConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworkArgsDict(TypedDi
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
     label: NotRequired[pulumi.Input[_builtins.str]]
     ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworkArgs:
@@ -578,7 +569,6 @@ class ConnectionProfileErrorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileErrorArgs:
@@ -628,7 +618,6 @@ class ConnectionProfileMysqlArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     ssl: NotRequired[pulumi.Input[ConnectionProfileMysqlSslArgsDict]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMysqlArgs:
@@ -684,7 +673,6 @@ class ConnectionProfileMysqlSslArgsDict(TypedDict):
     client_certificate: NotRequired[pulumi.Input[_builtins.str]]
     client_key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMysqlSslArgs:
@@ -734,7 +722,6 @@ class ConnectionProfileOracleArgsDict(TypedDict):
     static_service_ip_connectivity: NotRequired[
         pulumi.Input[ConnectionProfileOracleStaticServiceIpConnectivityArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileOracleArgs:
@@ -836,7 +823,6 @@ class ConnectionProfileOracleForwardSshConnectivityArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
     password: NotRequired[pulumi.Input[_builtins.str]]
     private_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileOracleForwardSshConnectivityArgs:
@@ -877,7 +863,6 @@ class ConnectionProfileOracleForwardSshConnectivityArgs:
 
 class ConnectionProfileOraclePrivateConnectivityArgsDict(TypedDict):
     private_connection: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileOraclePrivateConnectivityArgs:
@@ -895,7 +880,6 @@ class ConnectionProfileOracleSslArgsDict(TypedDict):
     client_certificate: NotRequired[pulumi.Input[_builtins.str]]
     client_key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileOracleSslArgs:
@@ -944,7 +928,6 @@ class ConnectionProfilePostgresqlArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     ssl: NotRequired[pulumi.Input[ConnectionProfilePostgresqlSslArgsDict]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlArgs:
@@ -1014,7 +997,6 @@ class ConnectionProfilePostgresqlSslArgsDict(TypedDict):
     client_certificate: NotRequired[pulumi.Input[_builtins.str]]
     client_key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlSslArgs:
@@ -1051,7 +1033,6 @@ class MigrationJobDumpFlagsArgsDict(TypedDict):
     dump_flags: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[MigrationJobDumpFlagsDumpFlagArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class MigrationJobDumpFlagsArgs:
@@ -1080,7 +1061,6 @@ class MigrationJobDumpFlagsArgs:
 class MigrationJobDumpFlagsDumpFlagArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MigrationJobDumpFlagsDumpFlagArgs:
@@ -1107,7 +1087,6 @@ class MigrationJobErrorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MigrationJobErrorArgs:
@@ -1151,7 +1130,6 @@ class MigrationJobErrorArgs:
 
 class MigrationJobPerformanceConfigArgsDict(TypedDict):
     dump_parallel_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MigrationJobPerformanceConfigArgs:
@@ -1169,7 +1147,6 @@ class MigrationJobReverseSshConnectivityArgsDict(TypedDict):
     vm_ip: NotRequired[pulumi.Input[_builtins.str]]
     vm_port: NotRequired[pulumi.Input[_builtins.int]]
     vpc: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MigrationJobReverseSshConnectivityArgs:
@@ -1210,7 +1187,6 @@ class MigrationJobStaticIpConnectivityArgs:
 
 class MigrationJobVpcPeeringConnectivityArgsDict(TypedDict):
     vpc: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MigrationJobVpcPeeringConnectivityArgs:
@@ -1226,7 +1202,6 @@ class MigrationJobVpcPeeringConnectivityArgs:
 class PrivateConnectionErrorArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateConnectionErrorArgs:
@@ -1256,7 +1231,6 @@ class PrivateConnectionErrorArgs:
 class PrivateConnectionVpcPeeringConfigArgsDict(TypedDict):
     subnet: pulumi.Input[_builtins.str]
     vpc_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PrivateConnectionVpcPeeringConfigArgs:

@@ -339,7 +339,6 @@ class AutomationRuleActionArgsDict(TypedDict):
         pulumi.Input[AutomationRuleActionFindingFieldsUpdateArgsDict]
     ]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionArgs:
@@ -390,7 +389,6 @@ class AutomationRuleActionFindingFieldsUpdateArgsDict(TypedDict):
     workflow: NotRequired[
         pulumi.Input[AutomationRuleActionFindingFieldsUpdateWorkflowArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionFindingFieldsUpdateArgs:
@@ -522,7 +520,6 @@ class AutomationRuleActionFindingFieldsUpdateArgs:
 class AutomationRuleActionFindingFieldsUpdateNoteArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
     updated_by: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionFindingFieldsUpdateNoteArgs:
@@ -546,7 +543,6 @@ class AutomationRuleActionFindingFieldsUpdateNoteArgs:
 class AutomationRuleActionFindingFieldsUpdateRelatedFindingArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     product_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionFindingFieldsUpdateRelatedFindingArgs:
@@ -570,7 +566,6 @@ class AutomationRuleActionFindingFieldsUpdateRelatedFindingArgs:
 class AutomationRuleActionFindingFieldsUpdateSeverityArgsDict(TypedDict):
     label: NotRequired[pulumi.Input[_builtins.str]]
     product: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionFindingFieldsUpdateSeverityArgs:
@@ -593,7 +588,6 @@ class AutomationRuleActionFindingFieldsUpdateSeverityArgs:
 
 class AutomationRuleActionFindingFieldsUpdateWorkflowArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleActionFindingFieldsUpdateWorkflowArgs:
@@ -769,7 +763,6 @@ class AutomationRuleCriteriaArgsDict(TypedDict):
             Sequence[pulumi.Input[AutomationRuleCriteriaWorkflowStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaArgs:
@@ -1545,7 +1538,6 @@ class AutomationRuleCriteriaArgs:
 class AutomationRuleCriteriaAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaAwsAccountIdArgs:
@@ -1569,7 +1561,6 @@ class AutomationRuleCriteriaAwsAccountIdArgs:
 class AutomationRuleCriteriaAwsAccountNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaAwsAccountNameArgs:
@@ -1593,7 +1584,6 @@ class AutomationRuleCriteriaAwsAccountNameArgs:
 class AutomationRuleCriteriaCompanyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaCompanyNameArgs:
@@ -1617,7 +1607,6 @@ class AutomationRuleCriteriaCompanyNameArgs:
 class AutomationRuleCriteriaComplianceAssociatedStandardsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaComplianceAssociatedStandardsIdArgs:
@@ -1641,7 +1630,6 @@ class AutomationRuleCriteriaComplianceAssociatedStandardsIdArgs:
 class AutomationRuleCriteriaComplianceSecurityControlIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaComplianceSecurityControlIdArgs:
@@ -1665,7 +1653,6 @@ class AutomationRuleCriteriaComplianceSecurityControlIdArgs:
 class AutomationRuleCriteriaComplianceStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaComplianceStatusArgs:
@@ -1692,7 +1679,6 @@ class AutomationRuleCriteriaConfidenceArgsDict(TypedDict):
     gte: NotRequired[pulumi.Input[_builtins.float]]
     lt: NotRequired[pulumi.Input[_builtins.float]]
     lte: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaConfidenceArgs:
@@ -1737,7 +1723,6 @@ class AutomationRuleCriteriaCreatedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaCreatedAtArgs:
@@ -1774,7 +1759,6 @@ class AutomationRuleCriteriaCreatedAtArgs:
 class AutomationRuleCriteriaCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaCreatedAtDateRangeArgs:
@@ -1801,7 +1785,6 @@ class AutomationRuleCriteriaCriticalityArgsDict(TypedDict):
     gte: NotRequired[pulumi.Input[_builtins.float]]
     lt: NotRequired[pulumi.Input[_builtins.float]]
     lte: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaCriticalityArgs:
@@ -1843,7 +1826,6 @@ class AutomationRuleCriteriaCriticalityArgs:
 class AutomationRuleCriteriaDescriptionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaDescriptionArgs:
@@ -1870,7 +1852,6 @@ class AutomationRuleCriteriaFirstObservedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaFirstObservedAtArgs:
@@ -1909,7 +1890,6 @@ class AutomationRuleCriteriaFirstObservedAtArgs:
 class AutomationRuleCriteriaFirstObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaFirstObservedAtDateRangeArgs:
@@ -1933,7 +1913,6 @@ class AutomationRuleCriteriaFirstObservedAtDateRangeArgs:
 class AutomationRuleCriteriaGeneratorIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaGeneratorIdArgs:
@@ -1957,7 +1936,6 @@ class AutomationRuleCriteriaGeneratorIdArgs:
 class AutomationRuleCriteriaIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaIdArgs:
@@ -1984,7 +1962,6 @@ class AutomationRuleCriteriaLastObservedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaLastObservedAtArgs:
@@ -2023,7 +2000,6 @@ class AutomationRuleCriteriaLastObservedAtArgs:
 class AutomationRuleCriteriaLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaLastObservedAtDateRangeArgs:
@@ -2047,7 +2023,6 @@ class AutomationRuleCriteriaLastObservedAtDateRangeArgs:
 class AutomationRuleCriteriaNoteTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaNoteTextArgs:
@@ -2074,7 +2049,6 @@ class AutomationRuleCriteriaNoteUpdatedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaNoteUpdatedAtArgs:
@@ -2111,7 +2085,6 @@ class AutomationRuleCriteriaNoteUpdatedAtArgs:
 class AutomationRuleCriteriaNoteUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaNoteUpdatedAtDateRangeArgs:
@@ -2135,7 +2108,6 @@ class AutomationRuleCriteriaNoteUpdatedAtDateRangeArgs:
 class AutomationRuleCriteriaNoteUpdatedByArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaNoteUpdatedByArgs:
@@ -2159,7 +2131,6 @@ class AutomationRuleCriteriaNoteUpdatedByArgs:
 class AutomationRuleCriteriaProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaProductArnArgs:
@@ -2183,7 +2154,6 @@ class AutomationRuleCriteriaProductArnArgs:
 class AutomationRuleCriteriaProductNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaProductNameArgs:
@@ -2207,7 +2177,6 @@ class AutomationRuleCriteriaProductNameArgs:
 class AutomationRuleCriteriaRecordStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaRecordStateArgs:
@@ -2231,7 +2200,6 @@ class AutomationRuleCriteriaRecordStateArgs:
 class AutomationRuleCriteriaRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaRelatedFindingsIdArgs:
@@ -2255,7 +2223,6 @@ class AutomationRuleCriteriaRelatedFindingsIdArgs:
 class AutomationRuleCriteriaRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaRelatedFindingsProductArnArgs:
@@ -2279,7 +2246,6 @@ class AutomationRuleCriteriaRelatedFindingsProductArnArgs:
 class AutomationRuleCriteriaResourceApplicationArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceApplicationArnArgs:
@@ -2303,7 +2269,6 @@ class AutomationRuleCriteriaResourceApplicationArnArgs:
 class AutomationRuleCriteriaResourceApplicationNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceApplicationNameArgs:
@@ -2328,7 +2293,6 @@ class AutomationRuleCriteriaResourceDetailsOtherArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceDetailsOtherArgs:
@@ -2358,7 +2322,6 @@ class AutomationRuleCriteriaResourceDetailsOtherArgs:
 class AutomationRuleCriteriaResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceIdArgs:
@@ -2382,7 +2345,6 @@ class AutomationRuleCriteriaResourceIdArgs:
 class AutomationRuleCriteriaResourcePartitionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourcePartitionArgs:
@@ -2406,7 +2368,6 @@ class AutomationRuleCriteriaResourcePartitionArgs:
 class AutomationRuleCriteriaResourceRegionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceRegionArgs:
@@ -2431,7 +2392,6 @@ class AutomationRuleCriteriaResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceTagArgs:
@@ -2461,7 +2421,6 @@ class AutomationRuleCriteriaResourceTagArgs:
 class AutomationRuleCriteriaResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaResourceTypeArgs:
@@ -2485,7 +2444,6 @@ class AutomationRuleCriteriaResourceTypeArgs:
 class AutomationRuleCriteriaSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaSeverityLabelArgs:
@@ -2509,7 +2467,6 @@ class AutomationRuleCriteriaSeverityLabelArgs:
 class AutomationRuleCriteriaSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaSourceUrlArgs:
@@ -2533,7 +2490,6 @@ class AutomationRuleCriteriaSourceUrlArgs:
 class AutomationRuleCriteriaTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaTitleArgs:
@@ -2557,7 +2513,6 @@ class AutomationRuleCriteriaTitleArgs:
 class AutomationRuleCriteriaTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaTypeArgs:
@@ -2584,7 +2539,6 @@ class AutomationRuleCriteriaUpdatedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaUpdatedAtArgs:
@@ -2621,7 +2575,6 @@ class AutomationRuleCriteriaUpdatedAtArgs:
 class AutomationRuleCriteriaUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaUpdatedAtDateRangeArgs:
@@ -2646,7 +2599,6 @@ class AutomationRuleCriteriaUserDefinedFieldArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaUserDefinedFieldArgs:
@@ -2676,7 +2628,6 @@ class AutomationRuleCriteriaUserDefinedFieldArgs:
 class AutomationRuleCriteriaVerificationStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaVerificationStateArgs:
@@ -2700,7 +2651,6 @@ class AutomationRuleCriteriaVerificationStateArgs:
 class AutomationRuleCriteriaWorkflowStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutomationRuleCriteriaWorkflowStatusArgs:
@@ -2731,7 +2681,6 @@ class ConfigurationPolicyConfigurationPolicyArgsDict(TypedDict):
             ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicyArgs:
@@ -2799,7 +2748,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationArgs:
@@ -2878,7 +2826,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
         ]
     ]
     security_control_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterArgs:
@@ -2967,7 +2914,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
             ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterArgs:
@@ -3176,7 +3122,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     value: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolArgs:
@@ -3191,7 +3136,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleArgs:
@@ -3206,7 +3150,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumArgs:
@@ -3221,7 +3164,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListArgs:
@@ -3238,7 +3180,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntArgs:
@@ -3253,7 +3194,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListArgs:
@@ -3270,7 +3210,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringArgs:
@@ -3285,7 +3224,6 @@ class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurit
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListArgs:
@@ -3665,7 +3603,6 @@ class InsightFiltersArgsDict(TypedDict):
     workflow_statuses: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[InsightFiltersWorkflowStatusArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class InsightFiltersArgs:
@@ -5437,7 +5374,6 @@ class InsightFiltersArgs:
 class InsightFiltersAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersAwsAccountIdArgs:
@@ -5461,7 +5397,6 @@ class InsightFiltersAwsAccountIdArgs:
 class InsightFiltersCompanyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersCompanyNameArgs:
@@ -5485,7 +5420,6 @@ class InsightFiltersCompanyNameArgs:
 class InsightFiltersComplianceStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersComplianceStatusArgs:
@@ -5510,7 +5444,6 @@ class InsightFiltersConfidenceArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersConfidenceArgs:
@@ -5541,7 +5474,6 @@ class InsightFiltersCreatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersCreatedAtDateRangeArgsDict]]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersCreatedAtArgs:
@@ -5575,7 +5507,6 @@ class InsightFiltersCreatedAtArgs:
 class InsightFiltersCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersCreatedAtDateRangeArgs:
@@ -5600,7 +5531,6 @@ class InsightFiltersCriticalityArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersCriticalityArgs:
@@ -5630,7 +5560,6 @@ class InsightFiltersCriticalityArgs:
 class InsightFiltersDescriptionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersDescriptionArgs:
@@ -5655,7 +5584,6 @@ class InsightFiltersFindingProviderFieldsConfidenceArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsConfidenceArgs:
@@ -5686,7 +5614,6 @@ class InsightFiltersFindingProviderFieldsCriticalityArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsCriticalityArgs:
@@ -5716,7 +5643,6 @@ class InsightFiltersFindingProviderFieldsCriticalityArgs:
 class InsightFiltersFindingProviderFieldsRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsRelatedFindingsIdArgs:
@@ -5740,7 +5666,6 @@ class InsightFiltersFindingProviderFieldsRelatedFindingsIdArgs:
 class InsightFiltersFindingProviderFieldsRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsRelatedFindingsProductArnArgs:
@@ -5764,7 +5689,6 @@ class InsightFiltersFindingProviderFieldsRelatedFindingsProductArnArgs:
 class InsightFiltersFindingProviderFieldsSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsSeverityLabelArgs:
@@ -5788,7 +5712,6 @@ class InsightFiltersFindingProviderFieldsSeverityLabelArgs:
 class InsightFiltersFindingProviderFieldsSeverityOriginalArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsSeverityOriginalArgs:
@@ -5812,7 +5735,6 @@ class InsightFiltersFindingProviderFieldsSeverityOriginalArgs:
 class InsightFiltersFindingProviderFieldsTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFindingProviderFieldsTypeArgs:
@@ -5839,7 +5761,6 @@ class InsightFiltersFirstObservedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFirstObservedAtArgs:
@@ -5875,7 +5796,6 @@ class InsightFiltersFirstObservedAtArgs:
 class InsightFiltersFirstObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersFirstObservedAtDateRangeArgs:
@@ -5899,7 +5819,6 @@ class InsightFiltersFirstObservedAtDateRangeArgs:
 class InsightFiltersGeneratorIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersGeneratorIdArgs:
@@ -5923,7 +5842,6 @@ class InsightFiltersGeneratorIdArgs:
 class InsightFiltersIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersIdArgs:
@@ -5946,7 +5864,6 @@ class InsightFiltersIdArgs:
 
 class InsightFiltersKeywordArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersKeywordArgs:
@@ -5961,7 +5878,6 @@ class InsightFiltersLastObservedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersLastObservedAtDateRangeArgsDict]]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersLastObservedAtArgs:
@@ -5997,7 +5913,6 @@ class InsightFiltersLastObservedAtArgs:
 class InsightFiltersLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersLastObservedAtDateRangeArgs:
@@ -6021,7 +5936,6 @@ class InsightFiltersLastObservedAtDateRangeArgs:
 class InsightFiltersMalwareNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersMalwareNameArgs:
@@ -6045,7 +5959,6 @@ class InsightFiltersMalwareNameArgs:
 class InsightFiltersMalwarePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersMalwarePathArgs:
@@ -6069,7 +5982,6 @@ class InsightFiltersMalwarePathArgs:
 class InsightFiltersMalwareStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersMalwareStateArgs:
@@ -6093,7 +6005,6 @@ class InsightFiltersMalwareStateArgs:
 class InsightFiltersMalwareTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersMalwareTypeArgs:
@@ -6117,7 +6028,6 @@ class InsightFiltersMalwareTypeArgs:
 class InsightFiltersNetworkDestinationDomainArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkDestinationDomainArgs:
@@ -6140,7 +6050,6 @@ class InsightFiltersNetworkDestinationDomainArgs:
 
 class InsightFiltersNetworkDestinationIpv4ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkDestinationIpv4Args:
@@ -6153,7 +6062,6 @@ class InsightFiltersNetworkDestinationIpv4Args:
 
 class InsightFiltersNetworkDestinationIpv6ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkDestinationIpv6Args:
@@ -6168,7 +6076,6 @@ class InsightFiltersNetworkDestinationPortArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkDestinationPortArgs:
@@ -6198,7 +6105,6 @@ class InsightFiltersNetworkDestinationPortArgs:
 class InsightFiltersNetworkDirectionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkDirectionArgs:
@@ -6222,7 +6128,6 @@ class InsightFiltersNetworkDirectionArgs:
 class InsightFiltersNetworkProtocolArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkProtocolArgs:
@@ -6246,7 +6151,6 @@ class InsightFiltersNetworkProtocolArgs:
 class InsightFiltersNetworkSourceDomainArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkSourceDomainArgs:
@@ -6269,7 +6173,6 @@ class InsightFiltersNetworkSourceDomainArgs:
 
 class InsightFiltersNetworkSourceIpv4ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkSourceIpv4Args:
@@ -6282,7 +6185,6 @@ class InsightFiltersNetworkSourceIpv4Args:
 
 class InsightFiltersNetworkSourceIpv6ArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkSourceIpv6Args:
@@ -6296,7 +6198,6 @@ class InsightFiltersNetworkSourceIpv6Args:
 class InsightFiltersNetworkSourceMacArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkSourceMacArgs:
@@ -6321,7 +6222,6 @@ class InsightFiltersNetworkSourcePortArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNetworkSourcePortArgs:
@@ -6351,7 +6251,6 @@ class InsightFiltersNetworkSourcePortArgs:
 class InsightFiltersNoteTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNoteTextArgs:
@@ -6376,7 +6275,6 @@ class InsightFiltersNoteUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersNoteUpdatedAtDateRangeArgsDict]]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNoteUpdatedAtArgs:
@@ -6412,7 +6310,6 @@ class InsightFiltersNoteUpdatedAtArgs:
 class InsightFiltersNoteUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNoteUpdatedAtDateRangeArgs:
@@ -6436,7 +6333,6 @@ class InsightFiltersNoteUpdatedAtDateRangeArgs:
 class InsightFiltersNoteUpdatedByArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersNoteUpdatedByArgs:
@@ -6463,7 +6359,6 @@ class InsightFiltersProcessLaunchedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessLaunchedAtArgs:
@@ -6500,7 +6395,6 @@ class InsightFiltersProcessLaunchedAtArgs:
 class InsightFiltersProcessLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessLaunchedAtDateRangeArgs:
@@ -6524,7 +6418,6 @@ class InsightFiltersProcessLaunchedAtDateRangeArgs:
 class InsightFiltersProcessNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessNameArgs:
@@ -6549,7 +6442,6 @@ class InsightFiltersProcessParentPidArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessParentPidArgs:
@@ -6579,7 +6471,6 @@ class InsightFiltersProcessParentPidArgs:
 class InsightFiltersProcessPathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessPathArgs:
@@ -6604,7 +6495,6 @@ class InsightFiltersProcessPidArgsDict(TypedDict):
     eq: NotRequired[pulumi.Input[_builtins.str]]
     gte: NotRequired[pulumi.Input[_builtins.str]]
     lte: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessPidArgs:
@@ -6637,7 +6527,6 @@ class InsightFiltersProcessTerminatedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessTerminatedAtArgs:
@@ -6674,7 +6563,6 @@ class InsightFiltersProcessTerminatedAtArgs:
 class InsightFiltersProcessTerminatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProcessTerminatedAtDateRangeArgs:
@@ -6698,7 +6586,6 @@ class InsightFiltersProcessTerminatedAtDateRangeArgs:
 class InsightFiltersProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProductArnArgs:
@@ -6723,7 +6610,6 @@ class InsightFiltersProductFieldArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProductFieldArgs:
@@ -6753,7 +6639,6 @@ class InsightFiltersProductFieldArgs:
 class InsightFiltersProductNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersProductNameArgs:
@@ -6777,7 +6662,6 @@ class InsightFiltersProductNameArgs:
 class InsightFiltersRecommendationTextArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersRecommendationTextArgs:
@@ -6801,7 +6685,6 @@ class InsightFiltersRecommendationTextArgs:
 class InsightFiltersRecordStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersRecordStateArgs:
@@ -6825,7 +6708,6 @@ class InsightFiltersRecordStateArgs:
 class InsightFiltersRelatedFindingsIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersRelatedFindingsIdArgs:
@@ -6849,7 +6731,6 @@ class InsightFiltersRelatedFindingsIdArgs:
 class InsightFiltersRelatedFindingsProductArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersRelatedFindingsProductArnArgs:
@@ -6873,7 +6754,6 @@ class InsightFiltersRelatedFindingsProductArnArgs:
 class InsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnArgs:
@@ -6897,7 +6777,6 @@ class InsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnArgs:
 class InsightFiltersResourceAwsEc2InstanceImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceImageIdArgs:
@@ -6920,7 +6799,6 @@ class InsightFiltersResourceAwsEc2InstanceImageIdArgs:
 
 class InsightFiltersResourceAwsEc2InstanceIpv4AddressArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceIpv4AddressArgs:
@@ -6933,7 +6811,6 @@ class InsightFiltersResourceAwsEc2InstanceIpv4AddressArgs:
 
 class InsightFiltersResourceAwsEc2InstanceIpv6AddressArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceIpv6AddressArgs:
@@ -6947,7 +6824,6 @@ class InsightFiltersResourceAwsEc2InstanceIpv6AddressArgs:
 class InsightFiltersResourceAwsEc2InstanceKeyNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceKeyNameArgs:
@@ -6974,7 +6850,6 @@ class InsightFiltersResourceAwsEc2InstanceLaunchedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceLaunchedAtArgs:
@@ -7015,7 +6890,6 @@ class InsightFiltersResourceAwsEc2InstanceLaunchedAtArgs:
 class InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgs:
@@ -7039,7 +6913,6 @@ class InsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeArgs:
 class InsightFiltersResourceAwsEc2InstanceSubnetIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceSubnetIdArgs:
@@ -7063,7 +6936,6 @@ class InsightFiltersResourceAwsEc2InstanceSubnetIdArgs:
 class InsightFiltersResourceAwsEc2InstanceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceTypeArgs:
@@ -7087,7 +6959,6 @@ class InsightFiltersResourceAwsEc2InstanceTypeArgs:
 class InsightFiltersResourceAwsEc2InstanceVpcIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsEc2InstanceVpcIdArgs:
@@ -7114,7 +6985,6 @@ class InsightFiltersResourceAwsIamAccessKeyCreatedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsIamAccessKeyCreatedAtArgs:
@@ -7155,7 +7025,6 @@ class InsightFiltersResourceAwsIamAccessKeyCreatedAtArgs:
 class InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgs:
@@ -7179,7 +7048,6 @@ class InsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeArgs:
 class InsightFiltersResourceAwsIamAccessKeyStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsIamAccessKeyStatusArgs:
@@ -7203,7 +7071,6 @@ class InsightFiltersResourceAwsIamAccessKeyStatusArgs:
 class InsightFiltersResourceAwsIamAccessKeyUserNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsIamAccessKeyUserNameArgs:
@@ -7227,7 +7094,6 @@ class InsightFiltersResourceAwsIamAccessKeyUserNameArgs:
 class InsightFiltersResourceAwsS3BucketOwnerIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsS3BucketOwnerIdArgs:
@@ -7251,7 +7117,6 @@ class InsightFiltersResourceAwsS3BucketOwnerIdArgs:
 class InsightFiltersResourceAwsS3BucketOwnerNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceAwsS3BucketOwnerNameArgs:
@@ -7275,7 +7140,6 @@ class InsightFiltersResourceAwsS3BucketOwnerNameArgs:
 class InsightFiltersResourceContainerImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceContainerImageIdArgs:
@@ -7299,7 +7163,6 @@ class InsightFiltersResourceContainerImageIdArgs:
 class InsightFiltersResourceContainerImageNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceContainerImageNameArgs:
@@ -7326,7 +7189,6 @@ class InsightFiltersResourceContainerLaunchedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceContainerLaunchedAtArgs:
@@ -7367,7 +7229,6 @@ class InsightFiltersResourceContainerLaunchedAtArgs:
 class InsightFiltersResourceContainerLaunchedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceContainerLaunchedAtDateRangeArgs:
@@ -7391,7 +7252,6 @@ class InsightFiltersResourceContainerLaunchedAtDateRangeArgs:
 class InsightFiltersResourceContainerNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceContainerNameArgs:
@@ -7416,7 +7276,6 @@ class InsightFiltersResourceDetailsOtherArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceDetailsOtherArgs:
@@ -7446,7 +7305,6 @@ class InsightFiltersResourceDetailsOtherArgs:
 class InsightFiltersResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceIdArgs:
@@ -7470,7 +7328,6 @@ class InsightFiltersResourceIdArgs:
 class InsightFiltersResourcePartitionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourcePartitionArgs:
@@ -7494,7 +7351,6 @@ class InsightFiltersResourcePartitionArgs:
 class InsightFiltersResourceRegionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceRegionArgs:
@@ -7519,7 +7375,6 @@ class InsightFiltersResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceTagArgs:
@@ -7549,7 +7404,6 @@ class InsightFiltersResourceTagArgs:
 class InsightFiltersResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersResourceTypeArgs:
@@ -7573,7 +7427,6 @@ class InsightFiltersResourceTypeArgs:
 class InsightFiltersSeverityLabelArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersSeverityLabelArgs:
@@ -7597,7 +7450,6 @@ class InsightFiltersSeverityLabelArgs:
 class InsightFiltersSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersSourceUrlArgs:
@@ -7621,7 +7473,6 @@ class InsightFiltersSourceUrlArgs:
 class InsightFiltersThreatIntelIndicatorCategoryArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorCategoryArgs:
@@ -7648,7 +7499,6 @@ class InsightFiltersThreatIntelIndicatorLastObservedAtArgsDict(TypedDict):
     ]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorLastObservedAtArgs:
@@ -7689,7 +7539,6 @@ class InsightFiltersThreatIntelIndicatorLastObservedAtArgs:
 class InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgs:
@@ -7713,7 +7562,6 @@ class InsightFiltersThreatIntelIndicatorLastObservedAtDateRangeArgs:
 class InsightFiltersThreatIntelIndicatorSourceArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorSourceArgs:
@@ -7737,7 +7585,6 @@ class InsightFiltersThreatIntelIndicatorSourceArgs:
 class InsightFiltersThreatIntelIndicatorSourceUrlArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorSourceUrlArgs:
@@ -7761,7 +7608,6 @@ class InsightFiltersThreatIntelIndicatorSourceUrlArgs:
 class InsightFiltersThreatIntelIndicatorTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorTypeArgs:
@@ -7785,7 +7631,6 @@ class InsightFiltersThreatIntelIndicatorTypeArgs:
 class InsightFiltersThreatIntelIndicatorValueArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersThreatIntelIndicatorValueArgs:
@@ -7809,7 +7654,6 @@ class InsightFiltersThreatIntelIndicatorValueArgs:
 class InsightFiltersTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersTitleArgs:
@@ -7833,7 +7677,6 @@ class InsightFiltersTitleArgs:
 class InsightFiltersTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersTypeArgs:
@@ -7858,7 +7701,6 @@ class InsightFiltersUpdatedAtArgsDict(TypedDict):
     date_range: NotRequired[pulumi.Input[InsightFiltersUpdatedAtDateRangeArgsDict]]
     end: NotRequired[pulumi.Input[_builtins.str]]
     start: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightFiltersUpdatedAtArgs:
@@ -7892,7 +7734,6 @@ class InsightFiltersUpdatedAtArgs:
 class InsightFiltersUpdatedAtDateRangeArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightFiltersUpdatedAtDateRangeArgs:
@@ -7917,7 +7758,6 @@ class InsightFiltersUserDefinedValueArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersUserDefinedValueArgs:
@@ -7947,7 +7787,6 @@ class InsightFiltersUserDefinedValueArgs:
 class InsightFiltersVerificationStateArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersVerificationStateArgs:
@@ -7971,7 +7810,6 @@ class InsightFiltersVerificationStateArgs:
 class InsightFiltersWorkflowStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightFiltersWorkflowStatusArgs:
@@ -7994,7 +7832,6 @@ class InsightFiltersWorkflowStatusArgs:
 
 class OrganizationConfigurationOrganizationConfigurationArgsDict(TypedDict):
     configuration_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationOrganizationConfigurationArgs:

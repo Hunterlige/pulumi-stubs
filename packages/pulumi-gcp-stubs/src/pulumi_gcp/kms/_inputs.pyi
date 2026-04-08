@@ -53,7 +53,6 @@ class CryptoKeyIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyIAMBindingConditionArgs:
@@ -84,7 +83,6 @@ class CryptoKeyIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyIAMMemberConditionArgs:
@@ -115,7 +113,6 @@ class CryptoKeyKeyAccessJustificationsPolicyArgsDict(TypedDict):
     allowed_access_reasons: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class CryptoKeyKeyAccessJustificationsPolicyArgs:
@@ -139,7 +136,6 @@ class CryptoKeyKeyAccessJustificationsPolicyArgs:
 class CryptoKeyPrimaryArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyPrimaryArgs:
@@ -169,7 +165,6 @@ class CryptoKeyVersionAttestationArgsDict(TypedDict):
         pulumi.Input[CryptoKeyVersionAttestationExternalProtectionLevelOptionsArgsDict]
     ]
     format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyVersionAttestationArgs:
@@ -226,7 +221,6 @@ class CryptoKeyVersionAttestationCertChainsArgsDict(TypedDict):
     google_partition_certs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class CryptoKeyVersionAttestationCertChainsArgs:
@@ -274,7 +268,6 @@ class CryptoKeyVersionAttestationCertChainsArgs:
 class CryptoKeyVersionAttestationExternalProtectionLevelOptionsArgsDict(TypedDict):
     ekm_connection_key_path: NotRequired[pulumi.Input[_builtins.str]]
     external_key_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyVersionAttestationExternalProtectionLevelOptionsArgs:
@@ -298,7 +291,6 @@ class CryptoKeyVersionAttestationExternalProtectionLevelOptionsArgs:
 class CryptoKeyVersionExternalProtectionLevelOptionsArgsDict(TypedDict):
     ekm_connection_key_path: NotRequired[pulumi.Input[_builtins.str]]
     external_key_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyVersionExternalProtectionLevelOptionsArgs:
@@ -322,7 +314,6 @@ class CryptoKeyVersionExternalProtectionLevelOptionsArgs:
 class CryptoKeyVersionTemplateArgsDict(TypedDict):
     algorithm: pulumi.Input[_builtins.str]
     protection_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CryptoKeyVersionTemplateArgs:
@@ -347,7 +338,6 @@ class EkmConnectionIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EkmConnectionIamBindingConditionArgs:
@@ -378,7 +368,6 @@ class EkmConnectionIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EkmConnectionIamMemberConditionArgs:
@@ -412,7 +401,6 @@ class EkmConnectionServiceResolverArgsDict(TypedDict):
     ]
     service_directory_service: pulumi.Input[_builtins.str]
     endpoint_filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EkmConnectionServiceResolverArgs:
@@ -468,7 +456,6 @@ class EkmConnectionServiceResolverServerCertificateArgsDict(TypedDict):
     subject_alternative_dns_names: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EkmConnectionServiceResolverServerCertificateArgs:
@@ -541,7 +528,6 @@ class FolderKajPolicyConfigDefaultKeyAccessJustificationPolicyArgsDict(TypedDict
     allowed_access_reasons: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FolderKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs:
@@ -566,7 +552,6 @@ class KeyRingIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyRingIAMBindingConditionArgs:
@@ -597,7 +582,6 @@ class KeyRingIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyRingIAMMemberConditionArgs:
@@ -627,7 +611,6 @@ class KeyRingIAMMemberConditionArgs:
 class KeyRingImportJobAttestationArgsDict(TypedDict):
     content: NotRequired[pulumi.Input[_builtins.str]]
     format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyRingImportJobAttestationArgs:
@@ -650,7 +633,6 @@ class KeyRingImportJobAttestationArgs:
 
 class KeyRingImportJobPublicKeyArgsDict(TypedDict):
     pem: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyRingImportJobPublicKeyArgs:
@@ -667,7 +649,6 @@ class OrganizationKajPolicyConfigDefaultKeyAccessJustificationPolicyArgsDict(Typ
     allowed_access_reasons: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs:
@@ -692,7 +673,6 @@ class ProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyArgsDict(TypedDic
     allowed_access_reasons: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyArgs:

@@ -254,7 +254,6 @@ class AnalyticsApplicationCloudwatchLoggingOptionsArgsDict(TypedDict):
     log_stream_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationCloudwatchLoggingOptionsArgs:
@@ -307,7 +306,6 @@ class AnalyticsApplicationInputsArgsDict(TypedDict):
         ]
     ]
     stream_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsArgs:
@@ -438,7 +436,6 @@ class AnalyticsApplicationInputsArgs:
 class AnalyticsApplicationInputsKinesisFirehoseArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsKinesisFirehoseArgs:
@@ -462,7 +459,6 @@ class AnalyticsApplicationInputsKinesisFirehoseArgs:
 class AnalyticsApplicationInputsKinesisStreamArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsKinesisStreamArgs:
@@ -485,7 +481,6 @@ class AnalyticsApplicationInputsKinesisStreamArgs:
 
 class AnalyticsApplicationInputsParallelismArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsParallelismArgs:
@@ -502,7 +497,6 @@ class AnalyticsApplicationInputsProcessingConfigurationArgsDict(TypedDict):
     lambda_: pulumi.Input[
         AnalyticsApplicationInputsProcessingConfigurationLambdaArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsProcessingConfigurationArgs:
@@ -529,7 +523,6 @@ class AnalyticsApplicationInputsProcessingConfigurationArgs:
 class AnalyticsApplicationInputsProcessingConfigurationLambdaArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsProcessingConfigurationLambdaArgs:
@@ -556,7 +549,6 @@ class AnalyticsApplicationInputsSchemaArgsDict(TypedDict):
     ]
     record_format: pulumi.Input[AnalyticsApplicationInputsSchemaRecordFormatArgsDict]
     record_encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaArgs:
@@ -602,7 +594,6 @@ class AnalyticsApplicationInputsSchemaRecordColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     sql_type: pulumi.Input[_builtins.str]
     mapping: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaRecordColumnArgs:
@@ -636,7 +627,6 @@ class AnalyticsApplicationInputsSchemaRecordFormatArgsDict(TypedDict):
         ]
     ]
     record_format_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaRecordFormatArgs:
@@ -683,7 +673,6 @@ class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersArgsDict(Type
             AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersArgs:
@@ -743,7 +732,6 @@ class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvArgsDict(
 ):
     record_column_delimiter: pulumi.Input[_builtins.str]
     record_row_delimiter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvArgs:
@@ -768,7 +756,6 @@ class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonArgsDict(
     TypedDict
 ):
     record_row_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonArgs:
@@ -781,7 +768,6 @@ class AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonArgs:
 
 class AnalyticsApplicationInputsStartingPositionConfigurationArgsDict(TypedDict):
     starting_position: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationInputsStartingPositionConfigurationArgs:
@@ -805,7 +791,6 @@ class AnalyticsApplicationOutputArgsDict(TypedDict):
         pulumi.Input[AnalyticsApplicationOutputKinesisStreamArgsDict]
     ]
     lambda_: NotRequired[pulumi.Input[AnalyticsApplicationOutputLambdaArgsDict]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationOutputArgs:
@@ -870,7 +855,6 @@ class AnalyticsApplicationOutputArgs:
 class AnalyticsApplicationOutputKinesisFirehoseArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationOutputKinesisFirehoseArgs:
@@ -894,7 +878,6 @@ class AnalyticsApplicationOutputKinesisFirehoseArgs:
 class AnalyticsApplicationOutputKinesisStreamArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationOutputKinesisStreamArgs:
@@ -918,7 +901,6 @@ class AnalyticsApplicationOutputKinesisStreamArgs:
 class AnalyticsApplicationOutputLambdaArgsDict(TypedDict):
     resource_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationOutputLambdaArgs:
@@ -941,7 +923,6 @@ class AnalyticsApplicationOutputLambdaArgs:
 
 class AnalyticsApplicationOutputSchemaArgsDict(TypedDict):
     record_format_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationOutputSchemaArgs:
@@ -959,7 +940,6 @@ class AnalyticsApplicationReferenceDataSourcesArgsDict(TypedDict):
     schema: pulumi.Input[AnalyticsApplicationReferenceDataSourcesSchemaArgsDict]
     table_name: pulumi.Input[_builtins.str]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesArgs:
@@ -1002,7 +982,6 @@ class AnalyticsApplicationReferenceDataSourcesS3ArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
     file_key: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesS3Args:
@@ -1041,7 +1020,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaArgsDict(TypedDict):
         AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatArgsDict
     ]
     record_encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaArgs:
@@ -1104,7 +1082,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaRecordColumnArgsDict(TypedDi
     name: pulumi.Input[_builtins.str]
     sql_type: pulumi.Input[_builtins.str]
     mapping: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaRecordColumnArgs:
@@ -1138,7 +1115,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatArgsDict(TypedDi
         ]
     ]
     record_format_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatArgs:
@@ -1189,7 +1165,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
             AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersArgs:
@@ -1249,7 +1224,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
 ):
     record_column_delimiter: pulumi.Input[_builtins.str]
     record_row_delimiter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvArgs:
@@ -1274,7 +1248,6 @@ class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
     TypedDict
 ):
     record_row_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonArgs:
@@ -1312,7 +1285,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationArgsDict(TypedDict):
     vpc_config: NotRequired[
         pulumi.Input[FirehoseDeliveryStreamElasticsearchConfigurationVpcConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationArgs:
@@ -1467,7 +1439,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsAr
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsArgs:
@@ -1507,7 +1478,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationArg
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationArgs:
@@ -1570,7 +1540,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationPro
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorArgs:
@@ -1625,7 +1594,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationPro
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -1662,7 +1630,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationArgsDict(
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationArgs:
@@ -1748,7 +1715,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchL
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -1780,7 +1746,6 @@ class FirehoseDeliveryStreamElasticsearchConfigurationVpcConfigArgsDict(TypedDic
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamElasticsearchConfigurationVpcConfigArgs:
@@ -1856,7 +1821,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationArgsDict(TypedDict):
         ]
     ]
     s3_backup_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationArgs:
@@ -2052,7 +2016,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsArgsD
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -2092,7 +2055,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
         FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationArgsDict
     ]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationArgs:
@@ -2164,7 +2126,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     deserializer: pulumi.Input[
         FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationArgs:
@@ -2203,7 +2164,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
             FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerArgs:
@@ -2262,7 +2222,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     TypedDict
 ):
     timestamp_formats: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeArgs:
@@ -2291,7 +2250,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     convert_dots_in_json_keys_to_underscores: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeArgs:
@@ -2336,7 +2294,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     serializer: pulumi.Input[
         FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationArgs:
@@ -2375,7 +2332,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
             FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerArgs:
@@ -2445,7 +2401,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     padding_tolerance: NotRequired[pulumi.Input[_builtins.float]]
     row_index_stride: NotRequired[pulumi.Input[_builtins.int]]
     stripe_size_bytes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeArgs:
@@ -2537,7 +2492,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     max_padding_bytes: NotRequired[pulumi.Input[_builtins.int]]
     page_size_bytes: NotRequired[pulumi.Input[_builtins.int]]
     writer_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeArgs:
@@ -2595,7 +2549,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
     version_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationArgs:
@@ -2645,7 +2598,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurat
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     retry_duration: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationArgs:
@@ -2679,7 +2631,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationArgsDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationArgs:
@@ -2742,7 +2693,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProces
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorArgs:
@@ -2797,7 +2747,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProces
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -2834,7 +2783,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationArgsDict
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationArgs:
@@ -2920,7 +2868,6 @@ class FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwat
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsArgs:
@@ -2979,7 +2926,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationArgsDict(TypedDict):
             FirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationArgs:
@@ -3151,7 +3097,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsArg
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsArgs:
@@ -3191,7 +3136,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationArgs:
@@ -3254,7 +3198,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProc
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorArgs:
@@ -3309,7 +3252,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProc
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -3343,7 +3285,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationArgsDic
         ]
     ]
     content_encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationArgs:
@@ -3398,7 +3339,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonA
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributeArgs:
@@ -3433,7 +3373,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationArgsDict(Typ
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationArgs:
@@ -3519,7 +3458,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLo
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -3552,7 +3490,6 @@ class FirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfiguration
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationArgs:
@@ -3609,7 +3546,6 @@ class FirehoseDeliveryStreamIcebergConfigurationArgsDict(TypedDict):
     ]
     retry_duration: NotRequired[pulumi.Input[_builtins.int]]
     s3_backup_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationArgs:
@@ -3764,7 +3700,6 @@ class FirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsArgsDict
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationCloudwatchLoggingOptionsArgs:
@@ -3798,7 +3733,6 @@ class FirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationArg
     table_name: pulumi.Input[_builtins.str]
     s3_error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     unique_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationDestinationTableConfigurationArgs:
@@ -3850,7 +3784,6 @@ class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationArgs:
@@ -3913,7 +3846,6 @@ class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessor
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorArgs:
@@ -3968,7 +3900,6 @@ class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessor
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -4003,7 +3934,6 @@ class FirehoseDeliveryStreamIcebergConfigurationS3ConfigurationArgsDict(TypedDic
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationS3ConfigurationArgs:
@@ -4089,7 +4019,6 @@ class FirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLogging
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -4119,7 +4048,6 @@ class FirehoseDeliveryStreamIcebergConfigurationS3ConfigurationCloudwatchLogging
 class FirehoseDeliveryStreamKinesisSourceConfigurationArgsDict(TypedDict):
     kinesis_stream_arn: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamKinesisSourceConfigurationArgs:
@@ -4147,7 +4075,6 @@ class FirehoseDeliveryStreamMskSourceConfigurationArgsDict(TypedDict):
     msk_cluster_arn: pulumi.Input[_builtins.str]
     topic_name: pulumi.Input[_builtins.str]
     read_from_timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamMskSourceConfigurationArgs:
@@ -4196,7 +4123,6 @@ class FirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationArg
 ):
     connectivity: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationArgs:
@@ -4249,7 +4175,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationArgsDict(TypedDict):
     vpc_config: NotRequired[
         pulumi.Input[FirehoseDeliveryStreamOpensearchConfigurationVpcConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationArgs:
@@ -4425,7 +4350,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsArgsD
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsArgs:
@@ -4454,7 +4378,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsArgs:
 
 class FirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsArgsDict(TypedDict):
     default_document_id_format: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsArgs:
@@ -4480,7 +4403,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationArgsDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationArgs:
@@ -4543,7 +4465,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProces
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorArgs:
@@ -4598,7 +4519,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProces
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -4633,7 +4553,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationArgsDict(Typed
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationArgs:
@@ -4719,7 +4638,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLogg
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -4751,7 +4669,6 @@ class FirehoseDeliveryStreamOpensearchConfigurationVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchConfigurationVpcConfigArgs:
@@ -4816,7 +4733,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationArgsDict(TypedDict)
             FirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationArgs:
@@ -4959,7 +4875,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOp
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsArgs:
@@ -4999,7 +4914,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigura
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationArgs:
@@ -5062,7 +4976,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigura
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorArgs:
@@ -5117,7 +5030,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigura
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -5154,7 +5066,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationArgs
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationArgs:
@@ -5240,7 +5151,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationClou
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -5274,7 +5184,6 @@ class FirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigArgsDict(
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigArgs:
@@ -5346,7 +5255,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationArgsDict(TypedDict):
         ]
     ]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationArgs:
@@ -5524,7 +5432,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsArgsDic
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsArgs:
@@ -5564,7 +5471,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationArgs:
@@ -5627,7 +5533,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcesso
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorArgs:
@@ -5682,7 +5587,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcesso
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -5719,7 +5623,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationArgsDict(
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationArgs:
@@ -5805,7 +5708,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatch
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsArgs:
@@ -5846,7 +5748,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationArgsDict(TypedDi
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationArgs:
@@ -5932,7 +5833,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggin
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -5965,7 +5865,6 @@ class FirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationArgs
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationArgs:
@@ -5996,7 +5895,6 @@ class FirehoseDeliveryStreamServerSideEncryptionArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     key_arn: NotRequired[pulumi.Input[_builtins.str]]
     key_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamServerSideEncryptionArgs:
@@ -6067,7 +5965,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationArgsDict(TypedDict):
         ]
     ]
     user: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationArgs:
@@ -6304,7 +6201,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsArgsDi
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsArgs:
@@ -6344,7 +6240,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationArgs:
@@ -6407,7 +6302,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcess
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorArgs:
@@ -6462,7 +6356,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcess
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -6497,7 +6390,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationArgsDict(TypedD
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationArgs:
@@ -6583,7 +6475,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggi
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -6616,7 +6507,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationArg
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationArgs:
@@ -6648,7 +6538,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationArgs
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     snowflake_role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationArgs:
@@ -6673,7 +6562,6 @@ class FirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationArgsD
     TypedDict
 ):
     private_link_vpce_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationArgs:
@@ -6713,7 +6601,6 @@ class FirehoseDeliveryStreamSplunkConfigurationArgsDict(TypedDict):
             FirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationArgs:
@@ -6862,7 +6749,6 @@ class FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsArgsDict(
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsArgs:
@@ -6902,7 +6788,6 @@ class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationArgs:
@@ -6965,7 +6850,6 @@ class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorArgs:
@@ -7020,7 +6904,6 @@ class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorP
 ):
     parameter_name: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameterArgs:
@@ -7055,7 +6938,6 @@ class FirehoseDeliveryStreamSplunkConfigurationS3ConfigurationArgsDict(TypedDict
     error_output_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationS3ConfigurationArgs:
@@ -7141,7 +7023,6 @@ class FirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingO
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     log_stream_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsArgs:
@@ -7174,7 +7055,6 @@ class FirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationArgsDi
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationArgs:
@@ -7203,7 +7083,6 @@ class FirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationArgs:
 
 class StreamStreamModeDetailsArgsDict(TypedDict):
     stream_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamStreamModeDetailsArgs:

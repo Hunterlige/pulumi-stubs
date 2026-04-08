@@ -26,7 +26,6 @@ __all__ = [
 
 class SdkvoiceGlobalSettingsVoiceConnectorArgsDict(TypedDict):
     cdr_bucket: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SdkvoiceGlobalSettingsVoiceConnectorArgs:
@@ -41,7 +40,6 @@ class SdkvoiceGlobalSettingsVoiceConnectorArgs:
 
 class SdkvoiceSipMediaApplicationEndpointsArgsDict(TypedDict):
     lambda_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SdkvoiceSipMediaApplicationEndpointsArgs:
@@ -56,7 +54,6 @@ class SdkvoiceSipRuleTargetApplicationArgsDict(TypedDict):
     aws_region: pulumi.Input[_builtins.str]
     priority: pulumi.Input[_builtins.int]
     sip_media_application_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SdkvoiceSipRuleTargetApplicationArgs:
@@ -85,7 +82,6 @@ class SdkvoiceSipRuleTargetApplicationArgs:
 
 class SdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationArgs:
@@ -99,7 +95,6 @@ class SdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationArgs:
 class VoiceConnectorGroupConnectorArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     voice_connector_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VoiceConnectorGroupConnectorArgs:
@@ -126,7 +121,6 @@ class VoiceConnectorOriginationRouteArgsDict(TypedDict):
     protocol: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class VoiceConnectorOriginationRouteArgs:
@@ -168,7 +162,6 @@ class VoiceConnectorOriginationRouteArgs:
 class VoiceConnectorStreamingMediaInsightsConfigurationArgsDict(TypedDict):
     configuration_arn: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VoiceConnectorStreamingMediaInsightsConfigurationArgs:
@@ -192,7 +185,6 @@ class VoiceConnectorStreamingMediaInsightsConfigurationArgs:
 class VoiceConnectorTerminationCredentialsCredentialArgsDict(TypedDict):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VoiceConnectorTerminationCredentialsCredentialArgs:

@@ -25,7 +25,6 @@ class ResiliencyPolicyPolicyArgsDict(TypedDict):
     hardware: NotRequired[pulumi.Input[ResiliencyPolicyPolicyHardwareArgsDict]]
     region: NotRequired[pulumi.Input[ResiliencyPolicyPolicyRegionArgsDict]]
     software: NotRequired[pulumi.Input[ResiliencyPolicyPolicySoftwareArgsDict]]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyPolicyArgs:
@@ -71,7 +70,6 @@ class ResiliencyPolicyPolicyArgs:
 class ResiliencyPolicyPolicyAzArgsDict(TypedDict):
     rpo: pulumi.Input[_builtins.str]
     rto: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyPolicyAzArgs:
@@ -92,7 +90,6 @@ class ResiliencyPolicyPolicyAzArgs:
 class ResiliencyPolicyPolicyHardwareArgsDict(TypedDict):
     rpo: pulumi.Input[_builtins.str]
     rto: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyPolicyHardwareArgs:
@@ -113,7 +110,6 @@ class ResiliencyPolicyPolicyHardwareArgs:
 class ResiliencyPolicyPolicyRegionArgsDict(TypedDict):
     rpo: NotRequired[pulumi.Input[_builtins.str]]
     rto: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyPolicyRegionArgs:
@@ -137,7 +133,6 @@ class ResiliencyPolicyPolicyRegionArgs:
 class ResiliencyPolicyPolicySoftwareArgsDict(TypedDict):
     rpo: pulumi.Input[_builtins.str]
     rto: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyPolicySoftwareArgs:
@@ -159,7 +154,6 @@ class ResiliencyPolicyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResiliencyPolicyTimeoutsArgs:

@@ -46,7 +46,6 @@ class ClusterClusterNodeArgsDict(TypedDict):
     node_role: NotRequired[pulumi.Input[_builtins.str]]
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     public_ip_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterNodeArgs:
@@ -81,7 +80,6 @@ class EndpointAccessVpcEndpointArgsDict(TypedDict):
     ]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointAccessVpcEndpointArgs:
@@ -130,7 +128,6 @@ class EndpointAccessVpcEndpointNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointAccessVpcEndpointNetworkInterfaceArgs:
@@ -168,7 +165,6 @@ class IdcApplicationAuthorizedTokenIssuerArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     trusted_token_issuer_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IdcApplicationAuthorizedTokenIssuerArgs:
@@ -207,7 +203,6 @@ class IdcApplicationServiceIntegrationArgsDict(TypedDict):
     s3_access_grants: NotRequired[
         pulumi.Input[IdcApplicationServiceIntegrationS3AccessGrantsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationArgs:
@@ -265,7 +260,6 @@ class IdcApplicationServiceIntegrationLakeFormationArgsDict(TypedDict):
             IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationLakeFormationArgs:
@@ -301,7 +295,6 @@ class IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgsDict(
     TypedDict
 ):
     authorization: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationLakeFormationLakeFormationQueryArgs:
@@ -316,7 +309,6 @@ class IdcApplicationServiceIntegrationRedshiftArgsDict(TypedDict):
     connect: NotRequired[
         pulumi.Input[IdcApplicationServiceIntegrationRedshiftConnectArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationRedshiftArgs:
@@ -344,7 +336,6 @@ class IdcApplicationServiceIntegrationRedshiftArgs:
 
 class IdcApplicationServiceIntegrationRedshiftConnectArgsDict(TypedDict):
     authorization: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationRedshiftConnectArgs:
@@ -361,7 +352,6 @@ class IdcApplicationServiceIntegrationS3AccessGrantsArgsDict(TypedDict):
             IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationS3AccessGrantsArgs:
@@ -393,7 +383,6 @@ class IdcApplicationServiceIntegrationS3AccessGrantsArgs:
 
 class IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgsDict(TypedDict):
     authorization: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessArgs:
@@ -408,7 +397,6 @@ class IntegrationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntegrationTimeoutsArgs:
@@ -438,7 +426,6 @@ class IntegrationTimeoutsArgs:
 class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:
@@ -469,7 +456,6 @@ class ScheduledActionTargetActionArgsDict(TypedDict):
     resume_cluster: NotRequired[
         pulumi.Input[ScheduledActionTargetActionResumeClusterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledActionTargetActionArgs:
@@ -518,7 +504,6 @@ class ScheduledActionTargetActionArgs:
 
 class ScheduledActionTargetActionPauseClusterArgsDict(TypedDict):
     cluster_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduledActionTargetActionPauseClusterArgs:
@@ -537,7 +522,6 @@ class ScheduledActionTargetActionResizeClusterArgsDict(TypedDict):
     cluster_type: NotRequired[pulumi.Input[_builtins.str]]
     node_type: NotRequired[pulumi.Input[_builtins.str]]
     number_of_nodes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledActionTargetActionResizeClusterArgs:
@@ -578,7 +562,6 @@ class ScheduledActionTargetActionResizeClusterArgs:
 
 class ScheduledActionTargetActionResumeClusterArgsDict(TypedDict):
     cluster_identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduledActionTargetActionResumeClusterArgs:

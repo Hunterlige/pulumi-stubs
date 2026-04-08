@@ -152,7 +152,6 @@ __all__ = [
 
 class FirewallAvailabilityZoneMappingArgsDict(TypedDict):
     availability_zone_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirewallAvailabilityZoneMappingArgs:
@@ -168,7 +167,6 @@ class FirewallAvailabilityZoneMappingArgs:
 class FirewallEncryptionConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallEncryptionConfigurationArgs:
@@ -202,7 +200,6 @@ class FirewallFirewallStatusArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirewallFirewallStatusArgs:
@@ -270,7 +267,6 @@ class FirewallFirewallStatusSyncStateArgsDict(TypedDict):
         ]
     ]
     availability_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallFirewallStatusSyncStateArgs:
@@ -311,7 +307,6 @@ class FirewallFirewallStatusSyncStateArgs:
 class FirewallFirewallStatusSyncStateAttachmentArgsDict(TypedDict):
     endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallFirewallStatusSyncStateAttachmentArgs:
@@ -334,7 +329,6 @@ class FirewallFirewallStatusSyncStateAttachmentArgs:
 
 class FirewallFirewallStatusTransitGatewayAttachmentSyncStateArgsDict(TypedDict):
     attachment_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallFirewallStatusTransitGatewayAttachmentSyncStateArgs:
@@ -350,7 +344,6 @@ class FirewallFirewallStatusTransitGatewayAttachmentSyncStateArgs:
 class FirewallPolicyEncryptionConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyEncryptionConfigurationArgs:
@@ -411,7 +404,6 @@ class FirewallPolicyFirewallPolicyArgsDict(TypedDict):
         ]
     ]
     tls_inspection_configuration_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyArgs:
@@ -601,7 +593,6 @@ class FirewallPolicyFirewallPolicyPolicyVariablesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyPolicyVariablesArgs:
@@ -650,7 +641,6 @@ class FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableArgsDict(TypedDict)
         FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableIpSetArgsDict
     ]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableArgs:
@@ -684,7 +674,6 @@ class FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableArgs:
 
 class FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableIpSetArgsDict(TypedDict):
     definitions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyPolicyVariablesRuleVariableIpSetArgs:
@@ -707,7 +696,6 @@ class FirewallPolicyFirewallPolicyStatefulEngineOptionsArgsDict(TypedDict):
     ]
     rule_order: NotRequired[pulumi.Input[_builtins.str]]
     stream_exception_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatefulEngineOptionsArgs:
@@ -751,7 +739,6 @@ class FirewallPolicyFirewallPolicyStatefulEngineOptionsArgs:
 
 class FirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsArgsDict(TypedDict):
     tcp_idle_timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsArgs:
@@ -777,7 +764,6 @@ class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceArgsDict(TypedDict):
         ]
     ]
     priority: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceArgs:
@@ -827,7 +813,6 @@ class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceArgs:
 
 class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideArgs:
@@ -845,7 +830,6 @@ class FirewallPolicyFirewallPolicyStatelessCustomActionArgsDict(TypedDict):
         FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionArgsDict
     ]
     action_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatelessCustomActionArgs:
@@ -883,7 +867,6 @@ class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionArgsDict(
     publish_metric_action: pulumi.Input[
         FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionArgs:
@@ -919,7 +902,6 @@ class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionArgs:
@@ -961,7 +943,6 @@ class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMe
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionArgs:
@@ -975,7 +956,6 @@ class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMe
 class FirewallPolicyFirewallPolicyStatelessRuleGroupReferenceArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FirewallPolicyFirewallPolicyStatelessRuleGroupReferenceArgs:
@@ -999,7 +979,6 @@ class FirewallPolicyFirewallPolicyStatelessRuleGroupReferenceArgs:
 class FirewallSubnetMappingArgsDict(TypedDict):
     subnet_id: pulumi.Input[_builtins.str]
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallSubnetMappingArgs:
@@ -1023,7 +1002,6 @@ class FirewallSubnetMappingArgs:
 class FirewallTransitGatewayAttachmentAccepterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FirewallTransitGatewayAttachmentAccepterTimeoutsArgs:
@@ -1052,7 +1030,6 @@ class LoggingConfigurationLoggingConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationLoggingConfigurationArgs:
@@ -1094,7 +1071,6 @@ class LoggingConfigurationLoggingConfigurationLogDestinationConfigArgsDict(Typed
     log_destination: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     log_destination_type: pulumi.Input[_builtins.str]
     log_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationLoggingConfigurationLogDestinationConfigArgs:
@@ -1128,7 +1104,6 @@ class LoggingConfigurationLoggingConfigurationLogDestinationConfigArgs:
 class RuleGroupEncryptionConfigurationArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupEncryptionConfigurationArgs:
@@ -1156,7 +1131,6 @@ class RuleGroupRuleGroupArgsDict(TypedDict):
     stateful_rule_options: NotRequired[
         pulumi.Input[RuleGroupRuleGroupStatefulRuleOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupArgs:
@@ -1215,7 +1189,6 @@ class RuleGroupRuleGroupReferenceSetsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupReferenceSetsArgs:
@@ -1260,7 +1233,6 @@ class RuleGroupRuleGroupReferenceSetsIpSetReferenceArgsDict(TypedDict):
         ]
     ]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupReferenceSetsIpSetReferenceArgs:
@@ -1306,7 +1278,6 @@ class RuleGroupRuleGroupReferenceSetsIpSetReferenceArgs:
 
 class RuleGroupRuleGroupReferenceSetsIpSetReferenceIpSetReferenceArgsDict(TypedDict):
     reference_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupReferenceSetsIpSetReferenceIpSetReferenceArgs:
@@ -1328,7 +1299,6 @@ class RuleGroupRuleGroupRuleVariablesArgsDict(TypedDict):
             Sequence[pulumi.Input[RuleGroupRuleGroupRuleVariablesPortSetArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRuleVariablesArgs:
@@ -1382,7 +1352,6 @@ class RuleGroupRuleGroupRuleVariablesArgs:
 class RuleGroupRuleGroupRuleVariablesIpSetArgsDict(TypedDict):
     ip_set: pulumi.Input[RuleGroupRuleGroupRuleVariablesIpSetIpSetArgsDict]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRuleVariablesIpSetArgs:
@@ -1407,7 +1376,6 @@ class RuleGroupRuleGroupRuleVariablesIpSetArgs:
 
 class RuleGroupRuleGroupRuleVariablesIpSetIpSetArgsDict(TypedDict):
     definitions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRuleVariablesIpSetIpSetArgs:
@@ -1425,7 +1393,6 @@ class RuleGroupRuleGroupRuleVariablesIpSetIpSetArgs:
 class RuleGroupRuleGroupRuleVariablesPortSetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     port_set: pulumi.Input[RuleGroupRuleGroupRuleVariablesPortSetPortSetArgsDict]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRuleVariablesPortSetArgs:
@@ -1452,7 +1419,6 @@ class RuleGroupRuleGroupRuleVariablesPortSetArgs:
 
 class RuleGroupRuleGroupRuleVariablesPortSetPortSetArgsDict(TypedDict):
     definitions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRuleVariablesPortSetPortSetArgs:
@@ -1482,7 +1448,6 @@ class RuleGroupRuleGroupRulesSourceArgsDict(TypedDict):
             RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceArgs:
@@ -1558,7 +1523,6 @@ class RuleGroupRuleGroupRulesSourceRulesSourceListArgsDict(TypedDict):
     generated_rules_type: pulumi.Input[_builtins.str]
     target_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     targets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceRulesSourceListArgs:
@@ -1595,7 +1559,6 @@ class RuleGroupRuleGroupRulesSourceStatefulRuleArgsDict(TypedDict):
             pulumi.Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatefulRuleArgs:
@@ -1648,7 +1611,6 @@ class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderArgsDict(TypedDict):
     protocol: pulumi.Input[_builtins.str]
     source: pulumi.Input[_builtins.str]
     source_port: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderArgs:
@@ -1696,7 +1658,6 @@ class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderArgs:
 class RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionArgsDict(TypedDict):
     keyword: pulumi.Input[_builtins.str]
     settings: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionArgs:
@@ -1738,7 +1699,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsArgs:
@@ -1818,7 +1778,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionArg
         RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionArgsDict
     ]
     action_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionArgs:
@@ -1856,7 +1815,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
     publish_metric_action: pulumi.Input[
         RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionArgs:
@@ -1892,7 +1850,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionArgs:
@@ -1934,7 +1891,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
     TypedDict
 ):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionArgs:
@@ -1952,7 +1908,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleAr
     rule_definition: pulumi.Input[
         RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleArgs:
@@ -1991,7 +1946,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     match_attributes: pulumi.Input[
         RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionArgs:
@@ -2072,7 +2026,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesArgs:
@@ -2270,7 +2223,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     TypedDict
 ):
     address_definition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationArgs:
@@ -2288,7 +2240,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 ):
     from_port: pulumi.Input[_builtins.int]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortArgs:
@@ -2313,7 +2264,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
     TypedDict
 ):
     address_definition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceArgs:
@@ -2331,7 +2281,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 ):
     from_port: pulumi.Input[_builtins.int]
     to_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortArgs:
@@ -2357,7 +2306,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 ):
     flags: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     masks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagArgs:
@@ -2384,7 +2332,6 @@ class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 
 class RuleGroupRuleGroupStatefulRuleOptionsArgsDict(TypedDict):
     rule_order: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleGroupStatefulRuleOptionsArgs:
@@ -2400,7 +2347,6 @@ class TlsInspectionConfigurationCertificateArgsDict(TypedDict):
     certificate_serial: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
     status_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationCertificateArgs:
@@ -2438,7 +2384,6 @@ class TlsInspectionConfigurationCertificateAuthorityArgsDict(TypedDict):
     certificate_serial: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
     status_message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationCertificateAuthorityArgs:
@@ -2474,7 +2419,6 @@ class TlsInspectionConfigurationCertificateAuthorityArgs:
 class TlsInspectionConfigurationEncryptionConfigurationArgsDict(TypedDict):
     key_id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationEncryptionConfigurationArgs:
@@ -2499,7 +2443,6 @@ class TlsInspectionConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTimeoutsArgs:
@@ -2530,7 +2473,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationArgsDict(TypedDict):
     server_certificate_configuration: pulumi.Input[
         TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationArgs:
@@ -2581,7 +2523,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationArgs:
@@ -2690,7 +2631,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
 ):
     revoked_status_action: NotRequired[pulumi.Input[_builtins.str]]
     unknown_status_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationCheckCertificateRevocationStatusArgs:
@@ -2749,7 +2689,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeArgs:
@@ -2902,7 +2841,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
     TypedDict
 ):
     address_definition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationArgs:
@@ -2920,7 +2858,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
 ):
     from_port: pulumi.Input[_builtins.int]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeDestinationPortArgs:
@@ -2945,7 +2882,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
     TypedDict
 ):
     address_definition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourceArgs:
@@ -2963,7 +2899,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
 ):
     from_port: pulumi.Input[_builtins.int]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationScopeSourcePortArgs:
@@ -2988,7 +2923,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
     TypedDict
 ):
     resource_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateArgs:
@@ -3004,7 +2938,6 @@ class TlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfi
 class VpcEndpointAssociationSubnetMappingArgsDict(TypedDict):
     subnet_id: pulumi.Input[_builtins.str]
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointAssociationSubnetMappingArgs:
@@ -3028,7 +2961,6 @@ class VpcEndpointAssociationSubnetMappingArgs:
 class VpcEndpointAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcEndpointAssociationTimeoutsArgs:
@@ -3057,7 +2989,6 @@ class VpcEndpointAssociationVpcEndpointAssociationStatusArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class VpcEndpointAssociationVpcEndpointAssociationStatusArgs:
@@ -3106,7 +3037,6 @@ class VpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateArgs
         ]
     ]
     availability_zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateArgs:
@@ -3157,7 +3087,6 @@ class VpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAtta
     status: pulumi.Input[_builtins.str]
     status_message: pulumi.Input[_builtins.str]
     subnet_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentArgs:

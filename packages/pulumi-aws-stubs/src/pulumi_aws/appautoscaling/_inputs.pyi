@@ -84,7 +84,6 @@ class PolicyPredictiveScalingPolicyConfigurationArgsDict(TypedDict):
     max_capacity_buffer: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     scheduling_buffer_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationArgs:
@@ -180,7 +179,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationArgsDict(Type
             PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationArgs:
@@ -343,7 +341,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCap
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationArgs:
@@ -393,7 +390,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCap
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryArgs:
@@ -457,7 +453,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCap
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -509,7 +504,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCap
     ]
     metric_name: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -570,7 +564,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCap
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -601,7 +594,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoa
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationArgs:
@@ -651,7 +643,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoa
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryArgs:
@@ -715,7 +706,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoa
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -767,7 +757,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoa
     ]
     metric_name: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -828,7 +817,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoa
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -859,7 +847,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedSca
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationArgs:
@@ -909,7 +896,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedSca
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryArgs:
@@ -973,7 +959,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedSca
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatArgs:
@@ -1025,7 +1010,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedSca
     ]
     metric_name: NotRequired[pulumi.Input[_builtins.str]]
     namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricArgs:
@@ -1086,7 +1070,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedSca
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimensionArgs:
@@ -1112,7 +1095,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoa
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecificationArgs:
@@ -1138,7 +1120,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMet
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecificationArgs:
@@ -1164,7 +1145,6 @@ class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedSca
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecificationArgs:
@@ -1197,7 +1177,6 @@ class PolicyStepScalingPolicyConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyStepScalingPolicyConfigurationArgs:
@@ -1265,7 +1244,6 @@ class PolicyStepScalingPolicyConfigurationStepAdjustmentArgsDict(TypedDict):
     scaling_adjustment: pulumi.Input[_builtins.int]
     metric_interval_lower_bound: NotRequired[pulumi.Input[_builtins.str]]
     metric_interval_upper_bound: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyStepScalingPolicyConfigurationStepAdjustmentArgs:
@@ -1311,7 +1289,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationArgsDict(TypedDict):
     ]
     scale_in_cooldown: NotRequired[pulumi.Input[_builtins.int]]
     scale_out_cooldown: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationArgs:
@@ -1415,7 +1392,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
     namespace: NotRequired[pulumi.Input[_builtins.str]]
     statistic: NotRequired[pulumi.Input[_builtins.str]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationArgs:
@@ -1523,7 +1499,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionArgs:
@@ -1556,7 +1531,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
         ]
     ]
     return_data: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricArgs:
@@ -1620,7 +1594,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
     ]
     stat: pulumi.Input[_builtins.str]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricMetricStatArgs:
@@ -1672,7 +1645,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricMetricStatMetricArgs:
@@ -1733,7 +1705,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricMetricStatMetricDimensionArgs:
@@ -1759,7 +1730,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificatio
 ):
     predefined_metric_type: pulumi.Input[_builtins.str]
     resource_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationArgs:
@@ -1783,7 +1753,6 @@ class PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificatio
 class ScheduledActionScalableTargetActionArgsDict(TypedDict):
     max_capacity: NotRequired[pulumi.Input[_builtins.int]]
     min_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledActionScalableTargetActionArgs:
@@ -1808,7 +1777,6 @@ class TargetSuspendedStateArgsDict(TypedDict):
     dynamic_scaling_in_suspended: NotRequired[pulumi.Input[_builtins.bool]]
     dynamic_scaling_out_suspended: NotRequired[pulumi.Input[_builtins.bool]]
     scheduled_scaling_suspended: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TargetSuspendedStateArgs:

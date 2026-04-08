@@ -114,7 +114,6 @@ class DomainMappingMetadataArgsDict(TypedDict):
     resource_version: NotRequired[pulumi.Input[_builtins.str]]
     self_link: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMappingMetadataArgs:
@@ -215,7 +214,6 @@ class DomainMappingSpecArgsDict(TypedDict):
     route_name: pulumi.Input[_builtins.str]
     certificate_mode: NotRequired[pulumi.Input[_builtins.str]]
     force_override: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainMappingSpecArgs:
@@ -251,7 +249,6 @@ class DomainMappingStatusArgsDict(TypedDict):
     resource_records: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DomainMappingStatusResourceRecordArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainMappingStatusArgs:
@@ -311,7 +308,6 @@ class DomainMappingStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMappingStatusConditionArgs:
@@ -348,7 +344,6 @@ class DomainMappingStatusResourceRecordArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     rrdata: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMappingStatusResourceRecordArgs:
@@ -379,7 +374,6 @@ class IamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IamBindingConditionArgs:
@@ -410,7 +404,6 @@ class IamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IamMemberConditionArgs:
@@ -452,7 +445,6 @@ class ServiceMetadataArgsDict(TypedDict):
     resource_version: NotRequired[pulumi.Input[_builtins.str]]
     self_link: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceMetadataArgs:
@@ -560,7 +552,6 @@ class ServiceStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ServiceStatusTrafficArgsDict]]]
     ]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceStatusArgs:
@@ -630,7 +621,6 @@ class ServiceStatusConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceStatusConditionArgs:
@@ -669,7 +659,6 @@ class ServiceStatusTrafficArgsDict(TypedDict):
     revision_name: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceStatusTrafficArgs:
@@ -711,7 +700,6 @@ class ServiceStatusTrafficArgs:
 class ServiceTemplateArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[ServiceTemplateMetadataArgsDict]]
     spec: NotRequired[pulumi.Input[ServiceTemplateSpecArgsDict]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateArgs:
@@ -741,7 +729,6 @@ class ServiceTemplateMetadataArgsDict(TypedDict):
     resource_version: NotRequired[pulumi.Input[_builtins.str]]
     self_link: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateMetadataArgs:
@@ -820,7 +807,6 @@ class ServiceTemplateSpecArgsDict(TypedDict):
     volumes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ServiceTemplateSpecVolumeArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecArgs:
@@ -932,7 +918,6 @@ class ServiceTemplateSpecContainerArgsDict(TypedDict):
         ]
     ]
     working_dir: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerArgs:
@@ -1114,7 +1099,6 @@ class ServiceTemplateSpecContainerEnvArgsDict(TypedDict):
     value_from: NotRequired[
         pulumi.Input[ServiceTemplateSpecContainerEnvValueFromArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvArgs:
@@ -1156,7 +1140,6 @@ class ServiceTemplateSpecContainerEnvFromArgsDict(TypedDict):
     secret_ref: NotRequired[
         pulumi.Input[ServiceTemplateSpecContainerEnvFromSecretRefArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvFromArgs:
@@ -1208,7 +1191,6 @@ class ServiceTemplateSpecContainerEnvFromConfigMapRefArgsDict(TypedDict):
         ]
     ]
     optional: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvFromConfigMapRefArgs:
@@ -1250,7 +1232,6 @@ class ServiceTemplateSpecContainerEnvFromConfigMapRefLocalObjectReferenceArgsDic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvFromConfigMapRefLocalObjectReferenceArgs:
@@ -1268,7 +1249,6 @@ class ServiceTemplateSpecContainerEnvFromSecretRefArgsDict(TypedDict):
         ]
     ]
     optional: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvFromSecretRefArgs:
@@ -1310,7 +1290,6 @@ class ServiceTemplateSpecContainerEnvFromSecretRefLocalObjectReferenceArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvFromSecretRefLocalObjectReferenceArgs:
@@ -1325,7 +1304,6 @@ class ServiceTemplateSpecContainerEnvValueFromArgsDict(TypedDict):
     secret_key_ref: pulumi.Input[
         ServiceTemplateSpecContainerEnvValueFromSecretKeyRefArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvValueFromArgs:
@@ -1350,7 +1328,6 @@ class ServiceTemplateSpecContainerEnvValueFromArgs:
 class ServiceTemplateSpecContainerEnvValueFromSecretKeyRefArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerEnvValueFromSecretKeyRefArgs:
@@ -1379,7 +1356,6 @@ class ServiceTemplateSpecContainerLivenessProbeArgsDict(TypedDict):
     initial_delay_seconds: NotRequired[pulumi.Input[_builtins.int]]
     period_seconds: NotRequired[pulumi.Input[_builtins.int]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerLivenessProbeArgs:
@@ -1447,7 +1423,6 @@ class ServiceTemplateSpecContainerLivenessProbeArgs:
 class ServiceTemplateSpecContainerLivenessProbeGrpcArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerLivenessProbeGrpcArgs:
@@ -1480,7 +1455,6 @@ class ServiceTemplateSpecContainerLivenessProbeHttpGetArgsDict(TypedDict):
     ]
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerLivenessProbeHttpGetArgs:
@@ -1539,7 +1513,6 @@ class ServiceTemplateSpecContainerLivenessProbeHttpGetArgs:
 class ServiceTemplateSpecContainerLivenessProbeHttpGetHttpHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerLivenessProbeHttpGetHttpHeaderArgs:
@@ -1564,7 +1537,6 @@ class ServiceTemplateSpecContainerPortArgsDict(TypedDict):
     container_port: NotRequired[pulumi.Input[_builtins.int]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerPortArgs:
@@ -1602,7 +1574,6 @@ class ServiceTemplateSpecContainerReadinessProbeArgsDict(TypedDict):
     period_seconds: NotRequired[pulumi.Input[_builtins.int]]
     success_threshold: NotRequired[pulumi.Input[_builtins.int]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerReadinessProbeArgs:
@@ -1670,7 +1641,6 @@ class ServiceTemplateSpecContainerReadinessProbeArgs:
 class ServiceTemplateSpecContainerReadinessProbeGrpcArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerReadinessProbeGrpcArgs:
@@ -1694,7 +1664,6 @@ class ServiceTemplateSpecContainerReadinessProbeGrpcArgs:
 class ServiceTemplateSpecContainerReadinessProbeHttpGetArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerReadinessProbeHttpGetArgs:
@@ -1718,7 +1687,6 @@ class ServiceTemplateSpecContainerReadinessProbeHttpGetArgs:
 class ServiceTemplateSpecContainerResourcesArgsDict(TypedDict):
     limits: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     requests: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerResourcesArgs:
@@ -1763,7 +1731,6 @@ class ServiceTemplateSpecContainerStartupProbeArgsDict(TypedDict):
         pulumi.Input[ServiceTemplateSpecContainerStartupProbeTcpSocketArgsDict]
     ]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerStartupProbeArgs:
@@ -1846,7 +1813,6 @@ class ServiceTemplateSpecContainerStartupProbeArgs:
 class ServiceTemplateSpecContainerStartupProbeGrpcArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerStartupProbeGrpcArgs:
@@ -1879,7 +1845,6 @@ class ServiceTemplateSpecContainerStartupProbeHttpGetArgsDict(TypedDict):
     ]
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerStartupProbeHttpGetArgs:
@@ -1938,7 +1903,6 @@ class ServiceTemplateSpecContainerStartupProbeHttpGetArgs:
 class ServiceTemplateSpecContainerStartupProbeHttpGetHttpHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerStartupProbeHttpGetHttpHeaderArgs:
@@ -1961,7 +1925,6 @@ class ServiceTemplateSpecContainerStartupProbeHttpGetHttpHeaderArgs:
 
 class ServiceTemplateSpecContainerStartupProbeTcpSocketArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerStartupProbeTcpSocketArgs:
@@ -1978,7 +1941,6 @@ class ServiceTemplateSpecContainerVolumeMountArgsDict(TypedDict):
     mount_path: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     sub_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecContainerVolumeMountArgs:
@@ -2011,7 +1973,6 @@ class ServiceTemplateSpecVolumeArgsDict(TypedDict):
     empty_dir: NotRequired[pulumi.Input[ServiceTemplateSpecVolumeEmptyDirArgsDict]]
     nfs: NotRequired[pulumi.Input[ServiceTemplateSpecVolumeNfsArgsDict]]
     secret: NotRequired[pulumi.Input[ServiceTemplateSpecVolumeSecretArgsDict]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeArgs:
@@ -2062,7 +2023,6 @@ class ServiceTemplateSpecVolumeCsiArgsDict(TypedDict):
     volume_attributes: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeCsiArgs:
@@ -2098,7 +2058,6 @@ class ServiceTemplateSpecVolumeCsiArgs:
 class ServiceTemplateSpecVolumeEmptyDirArgsDict(TypedDict):
     medium: NotRequired[pulumi.Input[_builtins.str]]
     size_limit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeEmptyDirArgs:
@@ -2123,7 +2082,6 @@ class ServiceTemplateSpecVolumeNfsArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     server: pulumi.Input[_builtins.str]
     read_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeNfsArgs:
@@ -2158,7 +2116,6 @@ class ServiceTemplateSpecVolumeSecretArgsDict(TypedDict):
             Sequence[pulumi.Input[ServiceTemplateSpecVolumeSecretItemArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeSecretArgs:
@@ -2204,7 +2161,6 @@ class ServiceTemplateSpecVolumeSecretItemArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
     mode: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceTemplateSpecVolumeSecretItemArgs:
@@ -2237,7 +2193,6 @@ class ServiceTrafficArgsDict(TypedDict):
     revision_name: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceTrafficArgs:

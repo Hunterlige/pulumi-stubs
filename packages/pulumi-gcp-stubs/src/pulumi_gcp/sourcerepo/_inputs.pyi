@@ -18,7 +18,6 @@ class RepositoryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamBindingConditionArgs:
@@ -49,7 +48,6 @@ class RepositoryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamMemberConditionArgs:
@@ -80,7 +78,6 @@ class RepositoryPubsubConfigArgsDict(TypedDict):
     message_format: pulumi.Input[_builtins.str]
     topic: pulumi.Input[_builtins.str]
     service_account_email: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryPubsubConfigArgs:

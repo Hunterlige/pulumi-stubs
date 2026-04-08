@@ -12,7 +12,6 @@ __all__ = [
 
 class ProfilingGroupAgentOrchestrationConfigArgsDict(TypedDict):
     profiling_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ProfilingGroupAgentOrchestrationConfigArgs:

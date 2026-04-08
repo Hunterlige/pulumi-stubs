@@ -46,7 +46,6 @@ class ClusterCacheNodeArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     outpost_arn: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCacheNodeArgs:
@@ -90,7 +89,6 @@ class ClusterLogDeliveryConfigurationArgsDict(TypedDict):
     destination_type: pulumi.Input[_builtins.str]
     log_format: pulumi.Input[_builtins.str]
     log_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterLogDeliveryConfigurationArgs:
@@ -126,7 +124,6 @@ class ClusterLogDeliveryConfigurationArgs:
 class GlobalReplicationGroupGlobalNodeGroupArgsDict(TypedDict):
     global_node_group_id: NotRequired[pulumi.Input[_builtins.str]]
     slots: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GlobalReplicationGroupGlobalNodeGroupArgs:
@@ -150,7 +147,6 @@ class GlobalReplicationGroupGlobalNodeGroupArgs:
 class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:
@@ -176,7 +172,6 @@ class ReplicationGroupLogDeliveryConfigurationArgsDict(TypedDict):
     destination_type: pulumi.Input[_builtins.str]
     log_format: pulumi.Input[_builtins.str]
     log_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReplicationGroupLogDeliveryConfigurationArgs:
@@ -221,7 +216,6 @@ class ReplicationGroupNodeGroupConfigurationArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     slots: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicationGroupNodeGroupConfigurationArgs:
@@ -289,7 +283,6 @@ class ReplicationGroupNodeGroupConfigurationArgs:
 class ReservedCacheNodeRecurringChargeArgsDict(TypedDict):
     recurring_charge_amount: pulumi.Input[_builtins.float]
     recurring_charge_frequency: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReservedCacheNodeRecurringChargeArgs:
@@ -314,7 +307,6 @@ class ReservedCacheNodeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReservedCacheNodeTimeoutsArgs:
@@ -350,7 +342,6 @@ class ServerlessCacheCacheUsageLimitsArgsDict(TypedDict):
             Sequence[pulumi.Input[ServerlessCacheCacheUsageLimitsEcpuPerSecondArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheCacheUsageLimitsArgs:
@@ -399,7 +390,6 @@ class ServerlessCacheCacheUsageLimitsDataStorageArgsDict(TypedDict):
     unit: pulumi.Input[_builtins.str]
     maximum: NotRequired[pulumi.Input[_builtins.int]]
     minimum: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheCacheUsageLimitsDataStorageArgs:
@@ -429,7 +419,6 @@ class ServerlessCacheCacheUsageLimitsDataStorageArgs:
 class ServerlessCacheCacheUsageLimitsEcpuPerSecondArgsDict(TypedDict):
     maximum: NotRequired[pulumi.Input[_builtins.int]]
     minimum: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheCacheUsageLimitsEcpuPerSecondArgs:
@@ -453,7 +442,6 @@ class ServerlessCacheCacheUsageLimitsEcpuPerSecondArgs:
 class ServerlessCacheEndpointArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheEndpointArgs:
@@ -477,7 +465,6 @@ class ServerlessCacheEndpointArgs:
 class ServerlessCacheReaderEndpointArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheReaderEndpointArgs:
@@ -502,7 +489,6 @@ class ServerlessCacheTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerlessCacheTimeoutsArgs:
@@ -533,7 +519,6 @@ class UserAuthenticationModeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     password_count: NotRequired[pulumi.Input[_builtins.int]]
     passwords: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class UserAuthenticationModeArgs:
@@ -567,7 +552,6 @@ class UserAuthenticationModeArgs:
 class GetUserAuthenticationModeArgsDict(TypedDict):
     password_count: NotRequired[_builtins.int]
     type: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetUserAuthenticationModeArgs:

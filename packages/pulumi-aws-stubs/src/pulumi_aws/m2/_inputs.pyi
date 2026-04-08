@@ -27,7 +27,6 @@ __all__ = [
 class ApplicationDefinitionArgsDict(TypedDict):
     content: NotRequired[pulumi.Input[_builtins.str]]
     s3_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationDefinitionArgs:
@@ -52,7 +51,6 @@ class ApplicationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationTimeoutsArgs:
@@ -83,7 +81,6 @@ class DeploymentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentTimeoutsArgs:
@@ -112,7 +109,6 @@ class DeploymentTimeoutsArgs:
 
 class EnvironmentHighAvailabilityConfigArgsDict(TypedDict):
     desired_capacity: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EnvironmentHighAvailabilityConfigArgs:
@@ -128,7 +124,6 @@ class EnvironmentHighAvailabilityConfigArgs:
 class EnvironmentStorageConfigurationArgsDict(TypedDict):
     efs: NotRequired[pulumi.Input[EnvironmentStorageConfigurationEfsArgsDict]]
     fsx: NotRequired[pulumi.Input[EnvironmentStorageConfigurationFsxArgsDict]]
-    ...
 
 @pulumi.input_type
 class EnvironmentStorageConfigurationArgs:
@@ -156,7 +151,6 @@ class EnvironmentStorageConfigurationArgs:
 class EnvironmentStorageConfigurationEfsArgsDict(TypedDict):
     file_system_id: pulumi.Input[_builtins.str]
     mount_point: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentStorageConfigurationEfsArgs:
@@ -180,7 +174,6 @@ class EnvironmentStorageConfigurationEfsArgs:
 class EnvironmentStorageConfigurationFsxArgsDict(TypedDict):
     file_system_id: pulumi.Input[_builtins.str]
     mount_point: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentStorageConfigurationFsxArgs:
@@ -205,7 +198,6 @@ class EnvironmentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentTimeoutsArgs:

@@ -41,7 +41,6 @@ class RegistrationContactSettingsArgsDict(TypedDict):
         RegistrationContactSettingsRegistrantContactArgsDict
     ]
     technical_contact: pulumi.Input[RegistrationContactSettingsTechnicalContactArgsDict]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsArgs:
@@ -97,7 +96,6 @@ class RegistrationContactSettingsAdminContactArgsDict(TypedDict):
         RegistrationContactSettingsAdminContactPostalAddressArgsDict
     ]
     fax_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsAdminContactArgs:
@@ -145,7 +143,6 @@ class RegistrationContactSettingsAdminContactPostalAddressArgsDict(TypedDict):
     organization: NotRequired[pulumi.Input[_builtins.str]]
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     recipients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsAdminContactPostalAddressArgs:
@@ -213,7 +210,6 @@ class RegistrationContactSettingsRegistrantContactArgsDict(TypedDict):
         RegistrationContactSettingsRegistrantContactPostalAddressArgsDict
     ]
     fax_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsRegistrantContactArgs:
@@ -265,7 +261,6 @@ class RegistrationContactSettingsRegistrantContactPostalAddressArgsDict(TypedDic
     organization: NotRequired[pulumi.Input[_builtins.str]]
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     recipients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsRegistrantContactPostalAddressArgs:
@@ -333,7 +328,6 @@ class RegistrationContactSettingsTechnicalContactArgsDict(TypedDict):
         RegistrationContactSettingsTechnicalContactPostalAddressArgsDict
     ]
     fax_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsTechnicalContactArgs:
@@ -383,7 +377,6 @@ class RegistrationContactSettingsTechnicalContactPostalAddressArgsDict(TypedDict
     organization: NotRequired[pulumi.Input[_builtins.str]]
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     recipients: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RegistrationContactSettingsTechnicalContactPostalAddressArgs:
@@ -449,7 +442,6 @@ class RegistrationDnsSettingsArgsDict(TypedDict):
     glue_records: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[RegistrationDnsSettingsGlueRecordArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class RegistrationDnsSettingsArgs:
@@ -492,7 +484,6 @@ class RegistrationDnsSettingsCustomDnsArgsDict(TypedDict):
             Sequence[pulumi.Input[RegistrationDnsSettingsCustomDnsDsRecordArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RegistrationDnsSettingsCustomDnsArgs:
@@ -537,7 +528,6 @@ class RegistrationDnsSettingsCustomDnsDsRecordArgsDict(TypedDict):
     digest: NotRequired[pulumi.Input[_builtins.str]]
     digest_type: NotRequired[pulumi.Input[_builtins.str]]
     key_tag: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RegistrationDnsSettingsCustomDnsDsRecordArgs:
@@ -574,7 +564,6 @@ class RegistrationDnsSettingsGlueRecordArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
     ipv4_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ipv6_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RegistrationDnsSettingsGlueRecordArgs:
@@ -617,7 +606,6 @@ class RegistrationManagementSettingsArgsDict(TypedDict):
     preferred_renewal_method: NotRequired[pulumi.Input[_builtins.str]]
     renewal_method: NotRequired[pulumi.Input[_builtins.str]]
     transfer_lock_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegistrationManagementSettingsArgs:
@@ -649,7 +637,6 @@ class RegistrationManagementSettingsArgs:
 class RegistrationYearlyPriceArgsDict(TypedDict):
     currency_code: NotRequired[pulumi.Input[_builtins.str]]
     units: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegistrationYearlyPriceArgs:

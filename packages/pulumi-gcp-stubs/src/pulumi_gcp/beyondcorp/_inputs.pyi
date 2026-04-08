@@ -73,7 +73,6 @@ __all__ = [
 class AppConnectionApplicationEndpointArgsDict(TypedDict):
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AppConnectionApplicationEndpointArgs:
@@ -99,7 +98,6 @@ class AppConnectionGatewayArgsDict(TypedDict):
     ingress_port: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppConnectionGatewayArgs:
@@ -134,7 +132,6 @@ class AppConnectionGatewayArgs:
 
 class AppConnectorPrincipalInfoArgsDict(TypedDict):
     service_account: pulumi.Input[AppConnectorPrincipalInfoServiceAccountArgsDict]
-    ...
 
 @pulumi.input_type
 class AppConnectorPrincipalInfoArgs:
@@ -155,7 +152,6 @@ class AppConnectorPrincipalInfoArgs:
 
 class AppConnectorPrincipalInfoServiceAccountArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppConnectorPrincipalInfoServiceAccountArgs:
@@ -169,7 +165,6 @@ class AppConnectorPrincipalInfoServiceAccountArgs:
 class AppGatewayAllocatedConnectionArgsDict(TypedDict):
     ingress_port: NotRequired[pulumi.Input[_builtins.int]]
     psc_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppGatewayAllocatedConnectionArgs:
@@ -193,7 +188,6 @@ class AppGatewayAllocatedConnectionArgs:
 class SecurityGatewayApplicationEndpointMatcherArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
     ports: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationEndpointMatcherArgs:
@@ -218,7 +212,6 @@ class SecurityGatewayApplicationIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationIamBindingConditionArgs:
@@ -249,7 +242,6 @@ class SecurityGatewayApplicationIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationIamMemberConditionArgs:
@@ -289,7 +281,6 @@ class SecurityGatewayApplicationUpstreamArgsDict(TypedDict):
     proxy_protocol: NotRequired[
         pulumi.Input[SecurityGatewayApplicationUpstreamProxyProtocolArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamArgs:
@@ -358,7 +349,6 @@ class SecurityGatewayApplicationUpstreamArgs:
 
 class SecurityGatewayApplicationUpstreamEgressPolicyArgsDict(TypedDict):
     regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamEgressPolicyArgs:
@@ -377,7 +367,6 @@ class SecurityGatewayApplicationUpstreamExternalArgsDict(TypedDict):
             pulumi.Input[SecurityGatewayApplicationUpstreamExternalEndpointArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamExternalArgs:
@@ -410,7 +399,6 @@ class SecurityGatewayApplicationUpstreamExternalArgs:
 class SecurityGatewayApplicationUpstreamExternalEndpointArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamExternalEndpointArgs:
@@ -433,7 +421,6 @@ class SecurityGatewayApplicationUpstreamExternalEndpointArgs:
 
 class SecurityGatewayApplicationUpstreamNetworkArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamNetworkArgs:
@@ -458,7 +445,6 @@ class SecurityGatewayApplicationUpstreamProxyProtocolArgsDict(TypedDict):
     metadata_headers: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamProxyProtocolArgs:
@@ -545,7 +531,6 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgsDict(
             SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersArgs:
@@ -633,7 +618,6 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersDeviceInfo
     TypedDict
 ):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersDeviceInfoArgs:
@@ -650,7 +634,6 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersGroupInfoA
     TypedDict
 ):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersGroupInfoArgs:
@@ -667,7 +650,6 @@ class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoAr
     TypedDict
 ):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayApplicationUpstreamProxyProtocolContextualHeadersUserInfoArgs:
@@ -685,7 +667,6 @@ class SecurityGatewayHubArgsDict(TypedDict):
     internet_gateway: NotRequired[
         pulumi.Input[SecurityGatewayHubInternetGatewayArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayHubArgs:
@@ -714,7 +695,6 @@ class SecurityGatewayHubArgs:
 
 class SecurityGatewayHubInternetGatewayArgsDict(TypedDict):
     assigned_ips: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayHubInternetGatewayArgs:
@@ -739,7 +719,6 @@ class SecurityGatewayIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayIamBindingConditionArgs:
@@ -770,7 +749,6 @@ class SecurityGatewayIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayIamMemberConditionArgs:
@@ -815,7 +793,6 @@ class SecurityGatewayProxyProtocolConfigArgsDict(TypedDict):
     metadata_headers: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayProxyProtocolConfigArgs:
@@ -894,7 +871,6 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersArgsDict(TypedDict):
             SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayProxyProtocolConfigContextualHeadersArgs:
@@ -974,7 +950,6 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersArgs:
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgs:
@@ -989,7 +964,6 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoArgs:
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgs:
@@ -1004,7 +978,6 @@ class SecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoArgs:
 
 class SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgsDict(TypedDict):
     output_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayProxyProtocolConfigContextualHeadersUserInfoArgs:
@@ -1021,7 +994,6 @@ class SecurityGatewayServiceDiscoveryArgsDict(TypedDict):
     api_gateway: NotRequired[
         pulumi.Input[SecurityGatewayServiceDiscoveryApiGatewayArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayServiceDiscoveryArgs:
@@ -1047,7 +1019,6 @@ class SecurityGatewayServiceDiscoveryApiGatewayArgsDict(TypedDict):
     resource_override: NotRequired[
         pulumi.Input[SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayServiceDiscoveryApiGatewayArgs:
@@ -1075,7 +1046,6 @@ class SecurityGatewayServiceDiscoveryApiGatewayArgs:
 
 class SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityGatewayServiceDiscoveryApiGatewayResourceOverrideArgs:

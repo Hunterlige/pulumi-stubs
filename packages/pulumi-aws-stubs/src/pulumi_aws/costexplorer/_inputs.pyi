@@ -193,7 +193,6 @@ __all__ = [
 class AnomalySubscriptionSubscriberArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionSubscriberArgs:
@@ -233,7 +232,6 @@ class AnomalySubscriptionThresholdExpressionArgsDict(TypedDict):
         ]
     ]
     tags: NotRequired[pulumi.Input[AnomalySubscriptionThresholdExpressionTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionArgs:
@@ -358,7 +356,6 @@ class AnomalySubscriptionThresholdExpressionAndArgsDict(TypedDict):
     tags: NotRequired[
         pulumi.Input[AnomalySubscriptionThresholdExpressionAndTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionAndArgs:
@@ -420,7 +417,6 @@ class AnomalySubscriptionThresholdExpressionAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionAndCostCategoryArgs:
@@ -461,7 +457,6 @@ class AnomalySubscriptionThresholdExpressionAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionAndDimensionArgs:
@@ -502,7 +497,6 @@ class AnomalySubscriptionThresholdExpressionAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionAndTagsArgs:
@@ -543,7 +537,6 @@ class AnomalySubscriptionThresholdExpressionCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionCostCategoryArgs:
@@ -584,7 +577,6 @@ class AnomalySubscriptionThresholdExpressionDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionDimensionArgs:
@@ -631,7 +623,6 @@ class AnomalySubscriptionThresholdExpressionNotArgsDict(TypedDict):
     tags: NotRequired[
         pulumi.Input[AnomalySubscriptionThresholdExpressionNotTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionNotArgs:
@@ -693,7 +684,6 @@ class AnomalySubscriptionThresholdExpressionNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionNotCostCategoryArgs:
@@ -734,7 +724,6 @@ class AnomalySubscriptionThresholdExpressionNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionNotDimensionArgs:
@@ -775,7 +764,6 @@ class AnomalySubscriptionThresholdExpressionNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionNotTagsArgs:
@@ -822,7 +810,6 @@ class AnomalySubscriptionThresholdExpressionOrArgsDict(TypedDict):
     tags: NotRequired[
         pulumi.Input[AnomalySubscriptionThresholdExpressionOrTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionOrArgs:
@@ -882,7 +869,6 @@ class AnomalySubscriptionThresholdExpressionOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionOrCostCategoryArgs:
@@ -923,7 +909,6 @@ class AnomalySubscriptionThresholdExpressionOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionOrDimensionArgs:
@@ -964,7 +949,6 @@ class AnomalySubscriptionThresholdExpressionOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionOrTagsArgs:
@@ -1005,7 +989,6 @@ class AnomalySubscriptionThresholdExpressionTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnomalySubscriptionThresholdExpressionTagsArgs:
@@ -1047,7 +1030,6 @@ class CostCategoryRuleArgsDict(TypedDict):
     rule: NotRequired[pulumi.Input[CostCategoryRuleRuleArgsDict]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleArgs:
@@ -1089,7 +1071,6 @@ class CostCategoryRuleArgs:
 class CostCategoryRuleInheritedValueArgsDict(TypedDict):
     dimension_key: NotRequired[pulumi.Input[_builtins.str]]
     dimension_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleInheritedValueArgs:
@@ -1121,7 +1102,6 @@ class CostCategoryRuleRuleArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleArgs:
@@ -1209,7 +1189,6 @@ class CostCategoryRuleRuleAndArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleAndOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndArgs:
@@ -1292,7 +1271,6 @@ class CostCategoryRuleRuleAndAndArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleAndAndDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleAndAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndAndArgs:
@@ -1337,7 +1315,6 @@ class CostCategoryRuleRuleAndAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndAndCostCategoryArgs:
@@ -1378,7 +1355,6 @@ class CostCategoryRuleRuleAndAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndAndDimensionArgs:
@@ -1419,7 +1395,6 @@ class CostCategoryRuleRuleAndAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndAndTagsArgs:
@@ -1460,7 +1435,6 @@ class CostCategoryRuleRuleAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndCostCategoryArgs:
@@ -1501,7 +1475,6 @@ class CostCategoryRuleRuleAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndDimensionArgs:
@@ -1544,7 +1517,6 @@ class CostCategoryRuleRuleAndNotArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleAndNotDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleAndNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndNotArgs:
@@ -1589,7 +1561,6 @@ class CostCategoryRuleRuleAndNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndNotCostCategoryArgs:
@@ -1630,7 +1601,6 @@ class CostCategoryRuleRuleAndNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndNotDimensionArgs:
@@ -1671,7 +1641,6 @@ class CostCategoryRuleRuleAndNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndNotTagsArgs:
@@ -1714,7 +1683,6 @@ class CostCategoryRuleRuleAndOrArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleAndOrDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleAndOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndOrArgs:
@@ -1757,7 +1725,6 @@ class CostCategoryRuleRuleAndOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndOrCostCategoryArgs:
@@ -1798,7 +1765,6 @@ class CostCategoryRuleRuleAndOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndOrDimensionArgs:
@@ -1839,7 +1805,6 @@ class CostCategoryRuleRuleAndOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndOrTagsArgs:
@@ -1880,7 +1845,6 @@ class CostCategoryRuleRuleAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleAndTagsArgs:
@@ -1921,7 +1885,6 @@ class CostCategoryRuleRuleCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleCostCategoryArgs:
@@ -1962,7 +1925,6 @@ class CostCategoryRuleRuleDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleDimensionArgs:
@@ -2012,7 +1974,6 @@ class CostCategoryRuleRuleNotArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleNotOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotArgs:
@@ -2095,7 +2056,6 @@ class CostCategoryRuleRuleNotAndArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleNotAndDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleNotAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotAndArgs:
@@ -2140,7 +2100,6 @@ class CostCategoryRuleRuleNotAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotAndCostCategoryArgs:
@@ -2181,7 +2140,6 @@ class CostCategoryRuleRuleNotAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotAndDimensionArgs:
@@ -2222,7 +2180,6 @@ class CostCategoryRuleRuleNotAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotAndTagsArgs:
@@ -2263,7 +2220,6 @@ class CostCategoryRuleRuleNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotCostCategoryArgs:
@@ -2304,7 +2260,6 @@ class CostCategoryRuleRuleNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotDimensionArgs:
@@ -2347,7 +2302,6 @@ class CostCategoryRuleRuleNotNotArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleNotNotDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleNotNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotNotArgs:
@@ -2392,7 +2346,6 @@ class CostCategoryRuleRuleNotNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotNotCostCategoryArgs:
@@ -2433,7 +2386,6 @@ class CostCategoryRuleRuleNotNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotNotDimensionArgs:
@@ -2474,7 +2426,6 @@ class CostCategoryRuleRuleNotNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotNotTagsArgs:
@@ -2517,7 +2468,6 @@ class CostCategoryRuleRuleNotOrArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleNotOrDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleNotOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotOrArgs:
@@ -2560,7 +2510,6 @@ class CostCategoryRuleRuleNotOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotOrCostCategoryArgs:
@@ -2601,7 +2550,6 @@ class CostCategoryRuleRuleNotOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotOrDimensionArgs:
@@ -2642,7 +2590,6 @@ class CostCategoryRuleRuleNotOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotOrTagsArgs:
@@ -2683,7 +2630,6 @@ class CostCategoryRuleRuleNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleNotTagsArgs:
@@ -2731,7 +2677,6 @@ class CostCategoryRuleRuleOrArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[CostCategoryRuleRuleOrOrArgsDict]]]
     ]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrArgs:
@@ -2814,7 +2759,6 @@ class CostCategoryRuleRuleOrAndArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleOrAndDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleOrAndTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrAndArgs:
@@ -2857,7 +2801,6 @@ class CostCategoryRuleRuleOrAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrAndCostCategoryArgs:
@@ -2898,7 +2841,6 @@ class CostCategoryRuleRuleOrAndDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrAndDimensionArgs:
@@ -2939,7 +2881,6 @@ class CostCategoryRuleRuleOrAndTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrAndTagsArgs:
@@ -2980,7 +2921,6 @@ class CostCategoryRuleRuleOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrCostCategoryArgs:
@@ -3021,7 +2961,6 @@ class CostCategoryRuleRuleOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrDimensionArgs:
@@ -3064,7 +3003,6 @@ class CostCategoryRuleRuleOrNotArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleOrNotDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleOrNotTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrNotArgs:
@@ -3107,7 +3045,6 @@ class CostCategoryRuleRuleOrNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrNotCostCategoryArgs:
@@ -3148,7 +3085,6 @@ class CostCategoryRuleRuleOrNotDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrNotDimensionArgs:
@@ -3189,7 +3125,6 @@ class CostCategoryRuleRuleOrNotTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrNotTagsArgs:
@@ -3232,7 +3167,6 @@ class CostCategoryRuleRuleOrOrArgsDict(TypedDict):
     ]
     dimension: NotRequired[pulumi.Input[CostCategoryRuleRuleOrOrDimensionArgsDict]]
     tags: NotRequired[pulumi.Input[CostCategoryRuleRuleOrOrTagsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrOrArgs:
@@ -3273,7 +3207,6 @@ class CostCategoryRuleRuleOrOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrOrCostCategoryArgs:
@@ -3314,7 +3247,6 @@ class CostCategoryRuleRuleOrOrDimensionArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrOrDimensionArgs:
@@ -3355,7 +3287,6 @@ class CostCategoryRuleRuleOrOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrOrTagsArgs:
@@ -3396,7 +3327,6 @@ class CostCategoryRuleRuleOrTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleOrTagsArgs:
@@ -3437,7 +3367,6 @@ class CostCategoryRuleRuleTagsArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     match_options: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategoryRuleRuleTagsArgs:
@@ -3483,7 +3412,6 @@ class CostCategorySplitChargeRuleArgsDict(TypedDict):
             Sequence[pulumi.Input[CostCategorySplitChargeRuleParameterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CostCategorySplitChargeRuleArgs:
@@ -3534,7 +3462,6 @@ class CostCategorySplitChargeRuleArgs:
 class CostCategorySplitChargeRuleParameterArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CostCategorySplitChargeRuleParameterArgs:
@@ -3566,7 +3493,6 @@ class GetTagsFilterArgsDict(TypedDict):
     not_: NotRequired[GetTagsFilterNotArgsDict]
     ors: NotRequired[Sequence[GetTagsFilterOrArgsDict]]
     tags: NotRequired[GetTagsFilterTagsArgsDict]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterArgs:
@@ -3615,7 +3541,6 @@ class GetTagsFilterAndArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterAndCostCategoryArgsDict]
     dimension: NotRequired[GetTagsFilterAndDimensionArgsDict]
     tags: NotRequired[GetTagsFilterAndTagsArgsDict]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterAndArgs:
@@ -3646,7 +3571,6 @@ class GetTagsFilterAndCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterAndCostCategoryArgs:
@@ -3677,7 +3601,6 @@ class GetTagsFilterAndDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterAndDimensionArgs:
@@ -3708,7 +3631,6 @@ class GetTagsFilterAndTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterAndTagsArgs:
@@ -3739,7 +3661,6 @@ class GetTagsFilterCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterCostCategoryArgs:
@@ -3770,7 +3691,6 @@ class GetTagsFilterDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterDimensionArgs:
@@ -3801,7 +3721,6 @@ class GetTagsFilterNotArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterNotCostCategoryArgsDict]
     dimension: NotRequired[GetTagsFilterNotDimensionArgsDict]
     tags: NotRequired[GetTagsFilterNotTagsArgsDict]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterNotArgs:
@@ -3832,7 +3751,6 @@ class GetTagsFilterNotCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterNotCostCategoryArgs:
@@ -3863,7 +3781,6 @@ class GetTagsFilterNotDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterNotDimensionArgs:
@@ -3894,7 +3811,6 @@ class GetTagsFilterNotTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterNotTagsArgs:
@@ -3925,7 +3841,6 @@ class GetTagsFilterOrArgsDict(TypedDict):
     cost_category: NotRequired[GetTagsFilterOrCostCategoryArgsDict]
     dimension: NotRequired[GetTagsFilterOrDimensionArgsDict]
     tags: NotRequired[GetTagsFilterOrTagsArgsDict]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterOrArgs:
@@ -3956,7 +3871,6 @@ class GetTagsFilterOrCostCategoryArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterOrCostCategoryArgs:
@@ -3987,7 +3901,6 @@ class GetTagsFilterOrDimensionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterOrDimensionArgs:
@@ -4018,7 +3931,6 @@ class GetTagsFilterOrTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterOrTagsArgs:
@@ -4049,7 +3961,6 @@ class GetTagsFilterTagsArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     match_options: NotRequired[Sequence[_builtins.str]]
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTagsFilterTagsArgs:
@@ -4079,7 +3990,6 @@ class GetTagsFilterTagsArgs:
 class GetTagsSortByArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     sort_order: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTagsSortByArgs:
@@ -4103,7 +4013,6 @@ class GetTagsSortByArgs:
 class GetTagsTimePeriodArgsDict(TypedDict):
     end: _builtins.str
     start: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetTagsTimePeriodArgs:

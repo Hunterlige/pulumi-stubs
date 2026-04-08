@@ -86,7 +86,6 @@ class ApplicationAttributesArgsDict(TypedDict):
     operator_owners: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ApplicationAttributesOperatorOwnerArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesArgs:
@@ -173,7 +172,6 @@ class ApplicationAttributesArgs:
 class ApplicationAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesBusinessOwnerArgs:
@@ -196,7 +194,6 @@ class ApplicationAttributesBusinessOwnerArgs:
 
 class ApplicationAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesCriticalityArgs:
@@ -210,7 +207,6 @@ class ApplicationAttributesCriticalityArgs:
 class ApplicationAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesDeveloperOwnerArgs:
@@ -233,7 +229,6 @@ class ApplicationAttributesDeveloperOwnerArgs:
 
 class ApplicationAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesEnvironmentArgs:
@@ -247,7 +242,6 @@ class ApplicationAttributesEnvironmentArgs:
 class ApplicationAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationAttributesOperatorOwnerArgs:
@@ -270,7 +264,6 @@ class ApplicationAttributesOperatorOwnerArgs:
 
 class ApplicationScopeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationScopeArgs:
@@ -293,7 +286,6 @@ class ServiceAttributesArgsDict(TypedDict):
     operator_owners: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ServiceAttributesOperatorOwnerArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesArgs:
@@ -376,7 +368,6 @@ class ServiceAttributesArgs:
 class ServiceAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesBusinessOwnerArgs:
@@ -399,7 +390,6 @@ class ServiceAttributesBusinessOwnerArgs:
 
 class ServiceAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesCriticalityArgs:
@@ -413,7 +403,6 @@ class ServiceAttributesCriticalityArgs:
 class ServiceAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesDeveloperOwnerArgs:
@@ -436,7 +425,6 @@ class ServiceAttributesDeveloperOwnerArgs:
 
 class ServiceAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesEnvironmentArgs:
@@ -450,7 +438,6 @@ class ServiceAttributesEnvironmentArgs:
 class ServiceAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceAttributesOperatorOwnerArgs:
@@ -493,7 +480,6 @@ class ServiceServicePropertyArgsDict(TypedDict):
         ]
     ]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyArgs:
@@ -607,7 +593,6 @@ class ServiceServicePropertyExtendedMetadataArgsDict(TypedDict):
             Sequence[pulumi.Input[ServiceServicePropertyExtendedMetadataValueArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyExtendedMetadataArgs:
@@ -648,7 +633,6 @@ class ServiceServicePropertyExtendedMetadataArgs:
 class ServiceServicePropertyExtendedMetadataValueArgsDict(TypedDict):
     extended_metadata_schema: NotRequired[pulumi.Input[_builtins.str]]
     metadata_struct: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyExtendedMetadataValueArgs:
@@ -673,7 +657,6 @@ class ServiceServicePropertyExtendedMetadataValueArgs:
 
 class ServiceServicePropertyFunctionalTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyFunctionalTypeArgs:
@@ -688,7 +671,6 @@ class ServiceServicePropertyFunctionalTypeArgs:
 
 class ServiceServicePropertyIdentityArgsDict(TypedDict):
     principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyIdentityArgs:
@@ -703,7 +685,6 @@ class ServiceServicePropertyIdentityArgs:
 
 class ServiceServicePropertyRegistrationTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServicePropertyRegistrationTypeArgs:
@@ -718,7 +699,6 @@ class ServiceServicePropertyRegistrationTypeArgs:
 
 class ServiceServiceReferenceArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceReferenceArgs:
@@ -743,7 +723,6 @@ class WorkloadAttributesArgsDict(TypedDict):
     operator_owners: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WorkloadAttributesOperatorOwnerArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesArgs:
@@ -826,7 +805,6 @@ class WorkloadAttributesArgs:
 class WorkloadAttributesBusinessOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesBusinessOwnerArgs:
@@ -849,7 +827,6 @@ class WorkloadAttributesBusinessOwnerArgs:
 
 class WorkloadAttributesCriticalityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesCriticalityArgs:
@@ -863,7 +840,6 @@ class WorkloadAttributesCriticalityArgs:
 class WorkloadAttributesDeveloperOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesDeveloperOwnerArgs:
@@ -886,7 +862,6 @@ class WorkloadAttributesDeveloperOwnerArgs:
 
 class WorkloadAttributesEnvironmentArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesEnvironmentArgs:
@@ -900,7 +875,6 @@ class WorkloadAttributesEnvironmentArgs:
 class WorkloadAttributesOperatorOwnerArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadAttributesOperatorOwnerArgs:
@@ -938,7 +912,6 @@ class WorkloadWorkloadPropertyArgsDict(TypedDict):
     ]
     location: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadPropertyArgs:
@@ -1035,7 +1008,6 @@ class WorkloadWorkloadPropertyExtendedMetadataArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadPropertyExtendedMetadataArgs:
@@ -1080,7 +1052,6 @@ class WorkloadWorkloadPropertyExtendedMetadataArgs:
 class WorkloadWorkloadPropertyExtendedMetadataValueArgsDict(TypedDict):
     extended_metadata_schema: NotRequired[pulumi.Input[_builtins.str]]
     metadata_struct: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadPropertyExtendedMetadataValueArgs:
@@ -1105,7 +1076,6 @@ class WorkloadWorkloadPropertyExtendedMetadataValueArgs:
 
 class WorkloadWorkloadPropertyFunctionalTypeArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadPropertyFunctionalTypeArgs:
@@ -1120,7 +1090,6 @@ class WorkloadWorkloadPropertyFunctionalTypeArgs:
 
 class WorkloadWorkloadPropertyIdentityArgsDict(TypedDict):
     principal: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadPropertyIdentityArgs:
@@ -1135,7 +1104,6 @@ class WorkloadWorkloadPropertyIdentityArgs:
 
 class WorkloadWorkloadReferenceArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadReferenceArgs:

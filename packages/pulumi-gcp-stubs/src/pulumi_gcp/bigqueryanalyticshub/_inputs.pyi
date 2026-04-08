@@ -64,7 +64,6 @@ class DataExchangeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataExchangeIamBindingConditionArgs:
@@ -95,7 +94,6 @@ class DataExchangeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataExchangeIamMemberConditionArgs:
@@ -129,7 +127,6 @@ class DataExchangeSharingEnvironmentConfigArgsDict(TypedDict):
     default_exchange_config: NotRequired[
         pulumi.Input[DataExchangeSharingEnvironmentConfigDefaultExchangeConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataExchangeSharingEnvironmentConfigArgs:
@@ -192,7 +189,6 @@ class DataExchangeSubscriptionDestinationDatasetArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     friendly_name: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataExchangeSubscriptionDestinationDatasetArgs:
@@ -249,7 +245,6 @@ class DataExchangeSubscriptionDestinationDatasetArgs:
 class DataExchangeSubscriptionDestinationDatasetDatasetReferenceArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataExchangeSubscriptionDestinationDatasetDatasetReferenceArgs:
@@ -275,7 +270,6 @@ class DataExchangeSubscriptionLinkedDatasetMapArgsDict(TypedDict):
     linked_dataset: NotRequired[pulumi.Input[_builtins.str]]
     linked_pubsub_subscription: NotRequired[pulumi.Input[_builtins.str]]
     listing: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataExchangeSubscriptionLinkedDatasetMapArgs:
@@ -313,7 +307,6 @@ class DataExchangeSubscriptionLinkedDatasetMapArgs:
 class DataExchangeSubscriptionLinkedResourceArgsDict(TypedDict):
     linked_dataset: NotRequired[pulumi.Input[_builtins.str]]
     listing: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataExchangeSubscriptionLinkedResourceArgs:
@@ -347,7 +340,6 @@ class ListingBigqueryDatasetArgsDict(TypedDict):
             Sequence[pulumi.Input[ListingBigqueryDatasetSelectedResourceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListingBigqueryDatasetArgs:
@@ -420,7 +412,6 @@ class ListingBigqueryDatasetEffectiveReplicaArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     primary_state: NotRequired[pulumi.Input[_builtins.str]]
     replica_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingBigqueryDatasetEffectiveReplicaArgs:
@@ -450,7 +441,6 @@ class ListingBigqueryDatasetEffectiveReplicaArgs:
 class ListingBigqueryDatasetSelectedResourceArgsDict(TypedDict):
     routine: NotRequired[pulumi.Input[_builtins.str]]
     table: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingBigqueryDatasetSelectedResourceArgs:
@@ -477,7 +467,6 @@ class ListingCommercialInfoArgsDict(TypedDict):
             Sequence[pulumi.Input[ListingCommercialInfoCloudMarketplaceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListingCommercialInfoArgs:
@@ -510,7 +499,6 @@ class ListingCommercialInfoArgs:
 class ListingCommercialInfoCloudMarketplaceArgsDict(TypedDict):
     commercial_state: NotRequired[pulumi.Input[_builtins.str]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingCommercialInfoCloudMarketplaceArgs:
@@ -534,7 +522,6 @@ class ListingCommercialInfoCloudMarketplaceArgs:
 class ListingDataProviderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     primary_contact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingDataProviderArgs:
@@ -559,7 +546,6 @@ class ListingIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingIamBindingConditionArgs:
@@ -590,7 +576,6 @@ class ListingIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingIamMemberConditionArgs:
@@ -620,7 +605,6 @@ class ListingIamMemberConditionArgs:
 class ListingPublisherArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     primary_contact: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingPublisherArgs:
@@ -646,7 +630,6 @@ class ListingPubsubTopicArgsDict(TypedDict):
     data_affinity_regions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ListingPubsubTopicArgs:
@@ -677,7 +660,6 @@ class ListingRestrictedExportConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     restrict_direct_table_access: NotRequired[pulumi.Input[_builtins.bool]]
     restrict_query_result: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ListingRestrictedExportConfigArgs:
@@ -716,7 +698,6 @@ class ListingSubscriptionCommercialInfoArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionCommercialInfoArgs:
@@ -756,7 +737,6 @@ class ListingSubscriptionCommercialInfoArgs:
 
 class ListingSubscriptionCommercialInfoCloudMarketplaceArgsDict(TypedDict):
     order: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionCommercialInfoCloudMarketplaceArgs:
@@ -778,7 +758,6 @@ class ListingSubscriptionDestinationDatasetArgsDict(TypedDict):
     friendly_name: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     replica_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionDestinationDatasetArgs:
@@ -843,7 +822,6 @@ class ListingSubscriptionDestinationDatasetArgs:
 class ListingSubscriptionDestinationDatasetDatasetReferenceArgsDict(TypedDict):
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionDestinationDatasetDatasetReferenceArgs:
@@ -868,7 +846,6 @@ class ListingSubscriptionLinkedDatasetMapArgsDict(TypedDict):
     resource_name: pulumi.Input[_builtins.str]
     linked_dataset: NotRequired[pulumi.Input[_builtins.str]]
     listing: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionLinkedDatasetMapArgs:
@@ -898,7 +875,6 @@ class ListingSubscriptionLinkedDatasetMapArgs:
 class ListingSubscriptionLinkedResourceArgsDict(TypedDict):
     linked_dataset: NotRequired[pulumi.Input[_builtins.str]]
     listing: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListingSubscriptionLinkedResourceArgs:

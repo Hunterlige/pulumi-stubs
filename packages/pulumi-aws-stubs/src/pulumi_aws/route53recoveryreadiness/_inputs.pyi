@@ -25,7 +25,6 @@ class ResourceSetResourceArgsDict(TypedDict):
     ]
     readiness_scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     resource_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceArgs:
@@ -78,7 +77,6 @@ class ResourceSetResourceDnsTargetResourceArgsDict(TypedDict):
     target_resource: NotRequired[
         pulumi.Input[ResourceSetResourceDnsTargetResourceTargetResourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceDnsTargetResourceArgs:
@@ -139,7 +137,6 @@ class ResourceSetResourceDnsTargetResourceTargetResourceArgsDict(TypedDict):
             ResourceSetResourceDnsTargetResourceTargetResourceR53ResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceDnsTargetResourceTargetResourceArgs:
@@ -192,7 +189,6 @@ class ResourceSetResourceDnsTargetResourceTargetResourceArgs:
 
 class ResourceSetResourceDnsTargetResourceTargetResourceNlbResourceArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceDnsTargetResourceTargetResourceNlbResourceArgs:
@@ -208,7 +204,6 @@ class ResourceSetResourceDnsTargetResourceTargetResourceNlbResourceArgs:
 class ResourceSetResourceDnsTargetResourceTargetResourceR53ResourceArgsDict(TypedDict):
     domain_name: NotRequired[pulumi.Input[_builtins.str]]
     record_set_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceDnsTargetResourceTargetResourceR53ResourceArgs:

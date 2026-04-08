@@ -26,7 +26,6 @@ class ConsumersIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConsumersIamBindingConditionArgs:
@@ -57,7 +56,6 @@ class ConsumersIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConsumersIamMemberConditionArgs:
@@ -89,7 +87,6 @@ class ServiceApiArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     syntax: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceApiArgs:
@@ -134,7 +131,6 @@ class ServiceApiMethodArgsDict(TypedDict):
     request_type: NotRequired[pulumi.Input[_builtins.str]]
     response_type: NotRequired[pulumi.Input[_builtins.str]]
     syntax: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceApiMethodArgs:
@@ -170,7 +166,6 @@ class ServiceApiMethodArgs:
 class ServiceEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceEndpointArgs:
@@ -195,7 +190,6 @@ class ServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceIamBindingConditionArgs:
@@ -226,7 +220,6 @@ class ServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceIamMemberConditionArgs:

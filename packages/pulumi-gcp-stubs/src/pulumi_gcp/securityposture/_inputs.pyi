@@ -54,7 +54,6 @@ class PosturePolicySetArgsDict(TypedDict):
     policies: pulumi.Input[Sequence[pulumi.Input[PosturePolicySetPolicyArgsDict]]]
     policy_set_id: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetArgs:
@@ -94,7 +93,6 @@ class PosturePolicySetPolicyArgsDict(TypedDict):
         ]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyArgs:
@@ -147,7 +145,6 @@ class PosturePolicySetPolicyArgs:
 class PosturePolicySetPolicyComplianceStandardArgsDict(TypedDict):
     control: NotRequired[pulumi.Input[_builtins.str]]
     standard: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyComplianceStandardArgs:
@@ -185,7 +182,6 @@ class PosturePolicySetPolicyConstraintArgsDict(TypedDict):
             PosturePolicySetPolicyConstraintSecurityHealthAnalyticsModuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintArgs:
@@ -281,7 +277,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintArgs:
@@ -338,7 +333,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomArgsDict(TypedDic
             PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomCustomConstraintArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomArgs:
@@ -409,7 +403,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomCustomConstraintA
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomCustomConstraintArgs:
@@ -480,7 +473,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleArgsDic
             PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleValuesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleArgs:
@@ -560,7 +552,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleConditi
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleConditionArgs:
@@ -598,7 +589,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleValuesA
 ):
     allowed_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     denied_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintCustomPolicyRuleValuesArgs:
@@ -645,7 +635,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleArgsDict(Type
             PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleValuesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleArgs:
@@ -725,7 +714,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleConditionArgs
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleConditionArgs:
@@ -763,7 +751,6 @@ class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleValuesArgsDic
 ):
     allowed_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     denied_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintOrgPolicyConstraintPolicyRuleValuesArgs:
@@ -805,7 +792,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleArgsDic
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     module_enablement_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleArgs:
@@ -866,7 +852,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigA
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
     recommendation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigArgs:
@@ -962,7 +947,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputArgs:
@@ -1015,7 +999,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigC
             PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertyArgs:
@@ -1060,7 +1043,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigC
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertyValueExpressionArgs:
@@ -1100,7 +1082,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigP
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateArgs:
@@ -1137,7 +1118,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigR
     TypedDict
 ):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorArgs:
@@ -1155,7 +1135,6 @@ class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsCustomModuleConfigR
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsModuleArgsDict(TypedDict):
     module_name: pulumi.Input[_builtins.str]
     module_enablement_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PosturePolicySetPolicyConstraintSecurityHealthAnalyticsModuleArgs:

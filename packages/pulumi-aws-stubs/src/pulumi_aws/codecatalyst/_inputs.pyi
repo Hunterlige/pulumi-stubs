@@ -19,7 +19,6 @@ __all__ = [
 class DevEnvironmentIdesArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     runtime: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DevEnvironmentIdesArgs:
@@ -42,7 +41,6 @@ class DevEnvironmentIdesArgs:
 
 class DevEnvironmentPersistentStorageArgsDict(TypedDict):
     size: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DevEnvironmentPersistentStorageArgs:
@@ -56,7 +54,6 @@ class DevEnvironmentPersistentStorageArgs:
 class DevEnvironmentRepositoryArgsDict(TypedDict):
     repository_name: pulumi.Input[_builtins.str]
     branch_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DevEnvironmentRepositoryArgs:
@@ -80,7 +77,6 @@ class DevEnvironmentRepositoryArgs:
 class GetDevEnvironmentRepositoryArgsDict(TypedDict):
     branch_name: _builtins.str
     repository_name: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetDevEnvironmentRepositoryArgs:

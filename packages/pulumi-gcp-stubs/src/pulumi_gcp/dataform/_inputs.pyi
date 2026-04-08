@@ -40,7 +40,6 @@ class RepositoryGitRemoteSettingsArgsDict(TypedDict):
         pulumi.Input[RepositoryGitRemoteSettingsSshAuthenticationConfigArgsDict]
     ]
     token_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryGitRemoteSettingsArgs:
@@ -99,7 +98,6 @@ class RepositoryGitRemoteSettingsArgs:
 class RepositoryGitRemoteSettingsSshAuthenticationConfigArgsDict(TypedDict):
     host_public_key: pulumi.Input[_builtins.str]
     user_private_key_secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryGitRemoteSettingsSshAuthenticationConfigArgs:
@@ -124,7 +122,6 @@ class RepositoryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamBindingConditionArgs:
@@ -155,7 +152,6 @@ class RepositoryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamMemberConditionArgs:
@@ -191,7 +187,6 @@ class RepositoryReleaseConfigCodeCompilationConfigArgsDict(TypedDict):
     schema_suffix: NotRequired[pulumi.Input[_builtins.str]]
     table_prefix: NotRequired[pulumi.Input[_builtins.str]]
     vars: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RepositoryReleaseConfigCodeCompilationConfigArgs:
@@ -264,7 +259,6 @@ class RepositoryReleaseConfigRecentScheduledReleaseRecordArgsDict(TypedDict):
         ]
     ]
     release_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryReleaseConfigRecentScheduledReleaseRecordArgs:
@@ -323,7 +317,6 @@ class RepositoryReleaseConfigRecentScheduledReleaseRecordArgs:
 class RepositoryReleaseConfigRecentScheduledReleaseRecordErrorStatusArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryReleaseConfigRecentScheduledReleaseRecordErrorStatusArgs:
@@ -359,7 +352,6 @@ class RepositoryWorkflowConfigInvocationConfigArgsDict(TypedDict):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
     transitive_dependencies_included: NotRequired[pulumi.Input[_builtins.bool]]
     transitive_dependents_included: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RepositoryWorkflowConfigInvocationConfigArgs:
@@ -455,7 +447,6 @@ class RepositoryWorkflowConfigInvocationConfigIncludedTargetArgsDict(TypedDict):
     database: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryWorkflowConfigInvocationConfigIncludedTargetArgs:
@@ -494,7 +485,6 @@ class RepositoryWorkflowConfigRecentScheduledExecutionRecordArgsDict(TypedDict):
     ]
     execution_time: NotRequired[pulumi.Input[_builtins.str]]
     workflow_invocation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryWorkflowConfigRecentScheduledExecutionRecordArgs:
@@ -555,7 +545,6 @@ class RepositoryWorkflowConfigRecentScheduledExecutionRecordErrorStatusArgsDict(
 ):
     code: NotRequired[pulumi.Input[_builtins.int]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryWorkflowConfigRecentScheduledExecutionRecordErrorStatusArgs:
@@ -580,7 +569,6 @@ class RepositoryWorkspaceCompilationOverridesArgsDict(TypedDict):
     default_database: NotRequired[pulumi.Input[_builtins.str]]
     schema_suffix: NotRequired[pulumi.Input[_builtins.str]]
     table_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryWorkspaceCompilationOverridesArgs:

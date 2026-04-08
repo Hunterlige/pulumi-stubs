@@ -23,7 +23,6 @@ class EnterpriseKeyAndroidSettingsArgsDict(TypedDict):
     allowed_package_names: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EnterpriseKeyAndroidSettingsArgs:
@@ -55,7 +54,6 @@ class EnterpriseKeyAndroidSettingsArgs:
 class EnterpriseKeyIosSettingsArgsDict(TypedDict):
     allow_all_bundle_ids: NotRequired[pulumi.Input[_builtins.bool]]
     allowed_bundle_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EnterpriseKeyIosSettingsArgs:
@@ -85,7 +83,6 @@ class EnterpriseKeyIosSettingsArgs:
 class EnterpriseKeyTestingOptionsArgsDict(TypedDict):
     testing_challenge: NotRequired[pulumi.Input[_builtins.str]]
     testing_score: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EnterpriseKeyTestingOptionsArgs:
@@ -109,7 +106,6 @@ class EnterpriseKeyTestingOptionsArgs:
 class EnterpriseKeyWafSettingsArgsDict(TypedDict):
     waf_feature: pulumi.Input[_builtins.str]
     waf_service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnterpriseKeyWafSettingsArgs:
@@ -136,7 +132,6 @@ class EnterpriseKeyWebSettingsArgsDict(TypedDict):
     allow_amp_traffic: NotRequired[pulumi.Input[_builtins.bool]]
     allowed_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     challenge_security_preference: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnterpriseKeyWebSettingsArgs:

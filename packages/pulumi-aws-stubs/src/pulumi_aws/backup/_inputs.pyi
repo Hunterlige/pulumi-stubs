@@ -60,7 +60,6 @@ class FrameworkControlArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[FrameworkControlInputParameterArgsDict]]]
     ]
     scope: NotRequired[pulumi.Input[FrameworkControlScopeArgsDict]]
-    ...
 
 @pulumi.input_type
 class FrameworkControlArgs:
@@ -101,7 +100,6 @@ class FrameworkControlArgs:
 class FrameworkControlInputParameterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkControlInputParameterArgs:
@@ -130,7 +128,6 @@ class FrameworkControlScopeArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FrameworkControlScopeArgs:
@@ -175,7 +172,6 @@ class FrameworkControlScopeArgs:
 
 class LogicallyAirGappedVaultTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LogicallyAirGappedVaultTimeoutsArgs:
@@ -191,7 +187,6 @@ class LogicallyAirGappedVaultTimeoutsArgs:
 class PlanAdvancedBackupSettingArgsDict(TypedDict):
     backup_options: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     resource_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanAdvancedBackupSettingArgs:
@@ -237,7 +232,6 @@ class PlanRuleArgsDict(TypedDict):
     target_logically_air_gapped_backup_vault_arn: NotRequired[
         pulumi.Input[_builtins.str]
     ]
-    ...
 
 @pulumi.input_type
 class PlanRuleArgs:
@@ -351,7 +345,6 @@ class PlanRuleArgs:
 class PlanRuleCopyActionArgsDict(TypedDict):
     destination_vault_arn: pulumi.Input[_builtins.str]
     lifecycle: NotRequired[pulumi.Input[PlanRuleCopyActionLifecycleArgsDict]]
-    ...
 
 @pulumi.input_type
 class PlanRuleCopyActionArgs:
@@ -378,7 +371,6 @@ class PlanRuleCopyActionLifecycleArgsDict(TypedDict):
     cold_storage_after: NotRequired[pulumi.Input[_builtins.int]]
     delete_after: NotRequired[pulumi.Input[_builtins.int]]
     opt_in_to_archive_for_supported_resources: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PlanRuleCopyActionLifecycleArgs:
@@ -415,7 +407,6 @@ class PlanRuleLifecycleArgsDict(TypedDict):
     cold_storage_after: NotRequired[pulumi.Input[_builtins.int]]
     delete_after: NotRequired[pulumi.Input[_builtins.int]]
     opt_in_to_archive_for_supported_resources: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PlanRuleLifecycleArgs:
@@ -451,7 +442,6 @@ class PlanRuleLifecycleArgs:
 class PlanRuleScanActionArgsDict(TypedDict):
     malware_scanner: pulumi.Input[_builtins.str]
     scan_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanRuleScanActionArgs:
@@ -476,7 +466,6 @@ class PlanScanSettingArgsDict(TypedDict):
     malware_scanner: pulumi.Input[_builtins.str]
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     scanner_role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanScanSettingArgs:
@@ -509,7 +498,6 @@ class ReportPlanReportDeliveryChannelArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     formats: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     s3_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReportPlanReportDeliveryChannelArgs:
@@ -547,7 +535,6 @@ class ReportPlanReportSettingArgsDict(TypedDict):
     number_of_frameworks: NotRequired[pulumi.Input[_builtins.int]]
     organization_units: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ReportPlanReportSettingArgs:
@@ -618,7 +605,6 @@ class RestoreTestingPlanRecoveryPointSelectionArgsDict(TypedDict):
     recovery_point_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     exclude_vaults: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     selection_window_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RestoreTestingPlanRecoveryPointSelectionArgs:
@@ -688,7 +674,6 @@ class RestoreTestingSelectionProtectedResourceConditionsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestoreTestingSelectionProtectedResourceConditionsArgs:
@@ -770,7 +755,6 @@ class RestoreTestingSelectionProtectedResourceConditionsArgs:
 class RestoreTestingSelectionProtectedResourceConditionsStringEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestoreTestingSelectionProtectedResourceConditionsStringEqualArgs:
@@ -796,7 +780,6 @@ class RestoreTestingSelectionProtectedResourceConditionsStringNotEqualArgsDict(
 ):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestoreTestingSelectionProtectedResourceConditionsStringNotEqualArgs:
@@ -830,7 +813,6 @@ class SelectionConditionArgsDict(TypedDict):
     string_not_likes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[SelectionConditionStringNotLikeArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class SelectionConditionArgs:
@@ -910,7 +892,6 @@ class SelectionConditionArgs:
 class SelectionConditionStringEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SelectionConditionStringEqualArgs:
@@ -934,7 +915,6 @@ class SelectionConditionStringEqualArgs:
 class SelectionConditionStringLikeArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SelectionConditionStringLikeArgs:
@@ -958,7 +938,6 @@ class SelectionConditionStringLikeArgs:
 class SelectionConditionStringNotEqualArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SelectionConditionStringNotEqualArgs:
@@ -982,7 +961,6 @@ class SelectionConditionStringNotEqualArgs:
 class SelectionConditionStringNotLikeArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SelectionConditionStringNotLikeArgs:
@@ -1007,7 +985,6 @@ class SelectionSelectionTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SelectionSelectionTagArgs:

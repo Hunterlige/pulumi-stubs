@@ -13,7 +13,6 @@ __all__ = [
 class AssessmentTemplateEventSubscriptionArgsDict(TypedDict):
     event: pulumi.Input[_builtins.str]
     topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AssessmentTemplateEventSubscriptionArgs:

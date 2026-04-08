@@ -19,7 +19,6 @@ class RepositoryCatalogDataArgsDict(TypedDict):
     logo_image_blob: NotRequired[pulumi.Input[_builtins.str]]
     operating_systems: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     usage_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryCatalogDataArgs:
@@ -79,7 +78,6 @@ class RepositoryCatalogDataArgs:
 class GetImagesImageIdArgsDict(TypedDict):
     image_digest: NotRequired[_builtins.str]
     image_tag: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetImagesImageIdArgs:

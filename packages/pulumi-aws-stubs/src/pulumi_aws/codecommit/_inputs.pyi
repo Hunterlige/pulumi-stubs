@@ -13,7 +13,6 @@ class TriggerTriggerArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     branches: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     custom_data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerTriggerArgs:

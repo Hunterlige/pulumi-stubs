@@ -16,7 +16,6 @@ __all__ = [
 
 class PermissionTimeoutsArgsDict(TypedDict):
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionTimeoutsArgs:
@@ -33,7 +32,6 @@ class ResourceShareResourceShareConfigurationArgsDict(TypedDict):
     retain_sharing_on_account_leave_organization: NotRequired[
         pulumi.Input[_builtins.bool]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceShareResourceShareConfigurationArgs:
@@ -57,7 +55,6 @@ class ResourceShareResourceShareConfigurationArgs:
 class GetResourceShareFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetResourceShareFilterArgs:

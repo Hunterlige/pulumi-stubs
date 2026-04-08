@@ -47,7 +47,6 @@ class ApiCorsConfigurationArgsDict(TypedDict):
     allow_origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     max_age: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApiCorsConfigurationArgs:
@@ -119,7 +118,6 @@ class ApiCorsConfigurationArgs:
 class AuthorizerJwtConfigurationArgsDict(TypedDict):
     audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     issuer: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthorizerJwtConfigurationArgs:
@@ -152,7 +150,6 @@ class DomainNameDomainNameConfigurationArgsDict(TypedDict):
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
     ownership_verification_certificate_arn: NotRequired[pulumi.Input[_builtins.str]]
     target_domain_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainNameDomainNameConfigurationArgs:
@@ -212,7 +209,6 @@ class DomainNameDomainNameConfigurationArgs:
 class DomainNameMutualTlsAuthenticationArgsDict(TypedDict):
     truststore_uri: pulumi.Input[_builtins.str]
     truststore_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainNameMutualTlsAuthenticationArgs:
@@ -236,7 +232,6 @@ class DomainNameMutualTlsAuthenticationArgs:
 class IntegrationResponseParameterArgsDict(TypedDict):
     mappings: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     status_code: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IntegrationResponseParameterArgs:
@@ -261,7 +256,6 @@ class IntegrationResponseParameterArgs:
 
 class IntegrationTlsConfigArgsDict(TypedDict):
     server_name_to_verify: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntegrationTlsConfigArgs:
@@ -277,7 +271,6 @@ class IntegrationTlsConfigArgs:
 class RouteRequestParameterArgsDict(TypedDict):
     request_parameter_key: pulumi.Input[_builtins.str]
     required: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RouteRequestParameterArgs:
@@ -300,7 +293,6 @@ class RouteRequestParameterArgs:
 
 class RoutingRuleActionArgsDict(TypedDict):
     invoke_api: pulumi.Input[RoutingRuleActionInvokeApiArgsDict]
-    ...
 
 @pulumi.input_type
 class RoutingRuleActionArgs:
@@ -317,7 +309,6 @@ class RoutingRuleActionInvokeApiArgsDict(TypedDict):
     api_id: pulumi.Input[_builtins.str]
     stage: pulumi.Input[_builtins.str]
     strip_base_path: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RoutingRuleActionInvokeApiArgs:
@@ -349,7 +340,6 @@ class RoutingRuleConditionArgsDict(TypedDict):
         pulumi.Input[RoutingRuleConditionMatchBasePathsArgsDict]
     ]
     match_headers: NotRequired[pulumi.Input[RoutingRuleConditionMatchHeadersArgsDict]]
-    ...
 
 @pulumi.input_type
 class RoutingRuleConditionArgs:
@@ -384,7 +374,6 @@ class RoutingRuleConditionArgs:
 
 class RoutingRuleConditionMatchBasePathsArgsDict(TypedDict):
     any_ofs: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RoutingRuleConditionMatchBasePathsArgs:
@@ -399,7 +388,6 @@ class RoutingRuleConditionMatchBasePathsArgs:
 
 class RoutingRuleConditionMatchHeadersArgsDict(TypedDict):
     any_of: pulumi.Input[RoutingRuleConditionMatchHeadersAnyOfArgsDict]
-    ...
 
 @pulumi.input_type
 class RoutingRuleConditionMatchHeadersArgs:
@@ -417,7 +405,6 @@ class RoutingRuleConditionMatchHeadersArgs:
 class RoutingRuleConditionMatchHeadersAnyOfArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
     value_glob: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RoutingRuleConditionMatchHeadersAnyOfArgs:
@@ -441,7 +428,6 @@ class RoutingRuleConditionMatchHeadersAnyOfArgs:
 class StageAccessLogSettingsArgsDict(TypedDict):
     destination_arn: pulumi.Input[_builtins.str]
     format: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StageAccessLogSettingsArgs:
@@ -468,7 +454,6 @@ class StageDefaultRouteSettingsArgsDict(TypedDict):
     logging_level: NotRequired[pulumi.Input[_builtins.str]]
     throttling_burst_limit: NotRequired[pulumi.Input[_builtins.int]]
     throttling_rate_limit: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StageDefaultRouteSettingsArgs:
@@ -516,7 +501,6 @@ class StageRouteSettingArgsDict(TypedDict):
     logging_level: NotRequired[pulumi.Input[_builtins.str]]
     throttling_burst_limit: NotRequired[pulumi.Input[_builtins.int]]
     throttling_rate_limit: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StageRouteSettingArgs:

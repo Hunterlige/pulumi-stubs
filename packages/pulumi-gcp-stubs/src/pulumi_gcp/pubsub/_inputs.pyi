@@ -84,7 +84,6 @@ __all__ = [
 
 class LiteSubscriptionDeliveryConfigArgsDict(TypedDict):
     delivery_requirement: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LiteSubscriptionDeliveryConfigArgs:
@@ -100,7 +99,6 @@ class LiteSubscriptionDeliveryConfigArgs:
 class LiteTopicPartitionConfigArgsDict(TypedDict):
     count: pulumi.Input[_builtins.int]
     capacity: NotRequired[pulumi.Input[LiteTopicPartitionConfigCapacityArgsDict]]
-    ...
 
 @pulumi.input_type
 class LiteTopicPartitionConfigArgs:
@@ -128,7 +126,6 @@ class LiteTopicPartitionConfigArgs:
 class LiteTopicPartitionConfigCapacityArgsDict(TypedDict):
     publish_mib_per_sec: pulumi.Input[_builtins.int]
     subscribe_mib_per_sec: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LiteTopicPartitionConfigCapacityArgs:
@@ -151,7 +148,6 @@ class LiteTopicPartitionConfigCapacityArgs:
 
 class LiteTopicReservationConfigArgsDict(TypedDict):
     throughput_reservation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LiteTopicReservationConfigArgs:
@@ -167,7 +163,6 @@ class LiteTopicReservationConfigArgs:
 class LiteTopicRetentionConfigArgsDict(TypedDict):
     per_partition_bytes: pulumi.Input[_builtins.str]
     period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LiteTopicRetentionConfigArgs:
@@ -192,7 +187,6 @@ class SchemaIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SchemaIamBindingConditionArgs:
@@ -223,7 +217,6 @@ class SchemaIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SchemaIamMemberConditionArgs:
@@ -257,7 +250,6 @@ class SubscriptionBigqueryConfigArgsDict(TypedDict):
     use_table_schema: NotRequired[pulumi.Input[_builtins.bool]]
     use_topic_schema: NotRequired[pulumi.Input[_builtins.bool]]
     write_metadata: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SubscriptionBigqueryConfigArgs:
@@ -318,7 +310,6 @@ class SubscriptionCloudStorageConfigArgsDict(TypedDict):
     text_config: NotRequired[
         pulumi.Input[SubscriptionCloudStorageConfigTextConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SubscriptionCloudStorageConfigArgs:
@@ -412,7 +403,6 @@ class SubscriptionCloudStorageConfigArgs:
 class SubscriptionCloudStorageConfigAvroConfigArgsDict(TypedDict):
     use_topic_schema: NotRequired[pulumi.Input[_builtins.bool]]
     write_metadata: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SubscriptionCloudStorageConfigAvroConfigArgs:
@@ -435,7 +425,6 @@ class SubscriptionCloudStorageConfigAvroConfigArgs:
 
 class SubscriptionCloudStorageConfigTextConfigArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriptionCloudStorageConfigTextConfigArgs:
@@ -451,7 +440,6 @@ class SubscriptionCloudStorageConfigTextConfigArgs:
 class SubscriptionDeadLetterPolicyArgsDict(TypedDict):
     dead_letter_topic: NotRequired[pulumi.Input[_builtins.str]]
     max_delivery_attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SubscriptionDeadLetterPolicyArgs:
@@ -474,7 +462,6 @@ class SubscriptionDeadLetterPolicyArgs:
 
 class SubscriptionExpirationPolicyArgsDict(TypedDict):
     ttl: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SubscriptionExpirationPolicyArgs:
@@ -489,7 +476,6 @@ class SubscriptionIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriptionIAMBindingConditionArgs:
@@ -520,7 +506,6 @@ class SubscriptionIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriptionIAMMemberConditionArgs:
@@ -552,7 +537,6 @@ class SubscriptionMessageTransformArgsDict(TypedDict):
     javascript_udf: NotRequired[
         pulumi.Input[SubscriptionMessageTransformJavascriptUdfArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SubscriptionMessageTransformArgs:
@@ -583,7 +567,6 @@ class SubscriptionMessageTransformArgs:
 class SubscriptionMessageTransformJavascriptUdfArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     function_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SubscriptionMessageTransformJavascriptUdfArgs:
@@ -609,7 +592,6 @@ class SubscriptionPushConfigArgsDict(TypedDict):
     attributes: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     no_wrapper: NotRequired[pulumi.Input[SubscriptionPushConfigNoWrapperArgsDict]]
     oidc_token: NotRequired[pulumi.Input[SubscriptionPushConfigOidcTokenArgsDict]]
-    ...
 
 @pulumi.input_type
 class SubscriptionPushConfigArgs:
@@ -658,7 +640,6 @@ class SubscriptionPushConfigArgs:
 
 class SubscriptionPushConfigNoWrapperArgsDict(TypedDict):
     write_metadata: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class SubscriptionPushConfigNoWrapperArgs:
@@ -672,7 +653,6 @@ class SubscriptionPushConfigNoWrapperArgs:
 class SubscriptionPushConfigOidcTokenArgsDict(TypedDict):
     service_account_email: pulumi.Input[_builtins.str]
     audience: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriptionPushConfigOidcTokenArgs:
@@ -696,7 +676,6 @@ class SubscriptionPushConfigOidcTokenArgs:
 class SubscriptionRetryPolicyArgsDict(TypedDict):
     maximum_backoff: NotRequired[pulumi.Input[_builtins.str]]
     minimum_backoff: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubscriptionRetryPolicyArgs:
@@ -721,7 +700,6 @@ class TopicIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIAMBindingConditionArgs:
@@ -752,7 +730,6 @@ class TopicIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIAMMemberConditionArgs:
@@ -796,7 +773,6 @@ class TopicIngestionDataSourceSettingsArgsDict(TypedDict):
     platform_logs_settings: NotRequired[
         pulumi.Input[TopicIngestionDataSourceSettingsPlatformLogsSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsArgs:
@@ -895,7 +871,6 @@ class TopicIngestionDataSourceSettingsAwsKinesisArgsDict(TypedDict):
     consumer_arn: pulumi.Input[_builtins.str]
     gcp_service_account: pulumi.Input[_builtins.str]
     stream_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsAwsKinesisArgs:
@@ -933,7 +908,6 @@ class TopicIngestionDataSourceSettingsAwsMskArgsDict(TypedDict):
     cluster_arn: pulumi.Input[_builtins.str]
     gcp_service_account: pulumi.Input[_builtins.str]
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsAwsMskArgs:
@@ -974,7 +948,6 @@ class TopicIngestionDataSourceSettingsAzureEventHubsArgsDict(TypedDict):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     subscription_id: NotRequired[pulumi.Input[_builtins.str]]
     tenant_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsAzureEventHubsArgs:
@@ -1040,7 +1013,6 @@ class TopicIngestionDataSourceSettingsCloudStorageArgsDict(TypedDict):
     text_format: NotRequired[
         pulumi.Input[TopicIngestionDataSourceSettingsCloudStorageTextFormatArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsCloudStorageArgs:
@@ -1140,7 +1112,6 @@ class TopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatArgs:
 
 class TopicIngestionDataSourceSettingsCloudStorageTextFormatArgsDict(TypedDict):
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsCloudStorageTextFormatArgs:
@@ -1159,7 +1130,6 @@ class TopicIngestionDataSourceSettingsConfluentCloudArgsDict(TypedDict):
     identity_pool_id: pulumi.Input[_builtins.str]
     topic: pulumi.Input[_builtins.str]
     cluster_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsConfluentCloudArgs:
@@ -1200,7 +1170,6 @@ class TopicIngestionDataSourceSettingsConfluentCloudArgs:
 
 class TopicIngestionDataSourceSettingsPlatformLogsSettingsArgsDict(TypedDict):
     severity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicIngestionDataSourceSettingsPlatformLogsSettingsArgs:
@@ -1216,7 +1185,6 @@ class TopicIngestionDataSourceSettingsPlatformLogsSettingsArgs:
 class TopicMessageStoragePolicyArgsDict(TypedDict):
     allowed_persistence_regions: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     enforce_in_transit: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TopicMessageStoragePolicyArgs:
@@ -1248,7 +1216,6 @@ class TopicMessageTransformArgsDict(TypedDict):
     javascript_udf: NotRequired[
         pulumi.Input[TopicMessageTransformJavascriptUdfArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TopicMessageTransformArgs:
@@ -1278,7 +1245,6 @@ class TopicMessageTransformArgs:
 class TopicMessageTransformJavascriptUdfArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     function_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TopicMessageTransformJavascriptUdfArgs:
@@ -1302,7 +1268,6 @@ class TopicMessageTransformJavascriptUdfArgs:
 class TopicSchemaSettingsArgsDict(TypedDict):
     schema: pulumi.Input[_builtins.str]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TopicSchemaSettingsArgs:

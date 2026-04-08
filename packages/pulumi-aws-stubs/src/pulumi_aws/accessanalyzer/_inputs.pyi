@@ -29,7 +29,6 @@ class AnalyzerConfigurationArgsDict(TypedDict):
         pulumi.Input[AnalyzerConfigurationInternalAccessArgsDict]
     ]
     unused_access: NotRequired[pulumi.Input[AnalyzerConfigurationUnusedAccessArgsDict]]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationArgs:
@@ -66,7 +65,6 @@ class AnalyzerConfigurationInternalAccessArgsDict(TypedDict):
     analysis_rule: NotRequired[
         pulumi.Input[AnalyzerConfigurationInternalAccessAnalysisRuleArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationInternalAccessArgs:
@@ -102,7 +100,6 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationInternalAccessAnalysisRuleArgs:
@@ -150,7 +147,6 @@ class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgsDict(TypedDict
     account_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     resource_arns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     resource_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationInternalAccessAnalysisRuleInclusionArgs:
@@ -200,7 +196,6 @@ class AnalyzerConfigurationUnusedAccessArgsDict(TypedDict):
         pulumi.Input[AnalyzerConfigurationUnusedAccessAnalysisRuleArgsDict]
     ]
     unused_access_age: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationUnusedAccessArgs:
@@ -240,7 +235,6 @@ class AnalyzerConfigurationUnusedAccessAnalysisRuleArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationUnusedAccessAnalysisRuleArgs:
@@ -287,7 +281,6 @@ class AnalyzerConfigurationUnusedAccessAnalysisRuleExclusionArgsDict(TypedDict):
     resource_tags: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
-    ...
 
 @pulumi.input_type
 class AnalyzerConfigurationUnusedAccessAnalysisRuleExclusionArgs:
@@ -335,7 +328,6 @@ class ArchiveRuleFilterArgsDict(TypedDict):
     eqs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     exists: NotRequired[pulumi.Input[_builtins.str]]
     neqs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ArchiveRuleFilterArgs:

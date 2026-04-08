@@ -21,7 +21,6 @@ class KeyKeyAttributeArgsDict(TypedDict):
     key_modes_of_uses: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[KeyKeyAttributeKeyModesOfUseArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class KeyKeyAttributeArgs:
@@ -75,7 +74,6 @@ class KeyKeyAttributeKeyModesOfUseArgsDict(TypedDict):
     unwrap: NotRequired[pulumi.Input[_builtins.bool]]
     verify: NotRequired[pulumi.Input[_builtins.bool]]
     wrap: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class KeyKeyAttributeKeyModesOfUseArgs:
@@ -142,7 +140,6 @@ class KeyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyTimeoutsArgs:

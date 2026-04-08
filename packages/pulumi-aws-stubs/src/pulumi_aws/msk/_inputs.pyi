@@ -93,7 +93,6 @@ class ClusterBrokerNodeGroupInfoArgsDict(TypedDict):
     storage_info: NotRequired[
         pulumi.Input[ClusterBrokerNodeGroupInfoStorageInfoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoArgs:
@@ -164,7 +163,6 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoArgsDict(TypedDict):
     vpc_connectivity: NotRequired[
         pulumi.Input[ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoConnectivityInfoArgs:
@@ -209,7 +207,6 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoArgs:
 
 class ClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessArgs:
@@ -228,7 +225,6 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgsDict(TypedDic
             ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityArgs:
@@ -269,7 +265,6 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticat
         ]
     ]
     tls: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationArgs:
@@ -312,7 +307,6 @@ class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticat
 ):
     iam: NotRequired[pulumi.Input[_builtins.bool]]
     scram: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslArgs:
@@ -337,7 +331,6 @@ class ClusterBrokerNodeGroupInfoStorageInfoArgsDict(TypedDict):
     ebs_storage_info: NotRequired[
         pulumi.Input[ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoStorageInfoArgs:
@@ -370,7 +363,6 @@ class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgsDict(TypedDict):
         ]
     ]
     volume_size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoArgs:
@@ -413,7 +405,6 @@ class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputAr
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     volume_throughput: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputArgs:
@@ -438,7 +429,6 @@ class ClusterClientAuthenticationArgsDict(TypedDict):
     sasl: NotRequired[pulumi.Input[ClusterClientAuthenticationSaslArgsDict]]
     tls: NotRequired[pulumi.Input[ClusterClientAuthenticationTlsArgsDict]]
     unauthenticated: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterClientAuthenticationArgs:
@@ -472,7 +462,6 @@ class ClusterClientAuthenticationArgs:
 class ClusterClientAuthenticationSaslArgsDict(TypedDict):
     iam: NotRequired[pulumi.Input[_builtins.bool]]
     scram: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterClientAuthenticationSaslArgs:
@@ -497,7 +486,6 @@ class ClusterClientAuthenticationTlsArgsDict(TypedDict):
     certificate_authority_arns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClientAuthenticationTlsArgs:
@@ -521,7 +509,6 @@ class ClusterClientAuthenticationTlsArgs:
 class ClusterConfigurationInfoArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     revision: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ClusterConfigurationInfoArgs:
@@ -547,7 +534,6 @@ class ClusterEncryptionInfoArgsDict(TypedDict):
     encryption_in_transit: NotRequired[
         pulumi.Input[ClusterEncryptionInfoEncryptionInTransitArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionInfoArgs:
@@ -582,7 +568,6 @@ class ClusterEncryptionInfoArgs:
 class ClusterEncryptionInfoEncryptionInTransitArgsDict(TypedDict):
     client_broker: NotRequired[pulumi.Input[_builtins.str]]
     in_cluster: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionInfoEncryptionInTransitArgs:
@@ -605,7 +590,6 @@ class ClusterEncryptionInfoEncryptionInTransitArgs:
 
 class ClusterLoggingInfoArgsDict(TypedDict):
     broker_logs: pulumi.Input[ClusterLoggingInfoBrokerLogsArgsDict]
-    ...
 
 @pulumi.input_type
 class ClusterLoggingInfoArgs:
@@ -624,7 +608,6 @@ class ClusterLoggingInfoBrokerLogsArgsDict(TypedDict):
     ]
     firehose: NotRequired[pulumi.Input[ClusterLoggingInfoBrokerLogsFirehoseArgsDict]]
     s3: NotRequired[pulumi.Input[ClusterLoggingInfoBrokerLogsS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterLoggingInfoBrokerLogsArgs:
@@ -667,7 +650,6 @@ class ClusterLoggingInfoBrokerLogsArgs:
 class ClusterLoggingInfoBrokerLogsCloudwatchLogsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     log_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterLoggingInfoBrokerLogsCloudwatchLogsArgs:
@@ -691,7 +673,6 @@ class ClusterLoggingInfoBrokerLogsCloudwatchLogsArgs:
 class ClusterLoggingInfoBrokerLogsFirehoseArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     delivery_stream: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterLoggingInfoBrokerLogsFirehoseArgs:
@@ -716,7 +697,6 @@ class ClusterLoggingInfoBrokerLogsS3ArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterLoggingInfoBrokerLogsS3Args:
@@ -745,7 +725,6 @@ class ClusterLoggingInfoBrokerLogsS3Args:
 
 class ClusterOpenMonitoringArgsDict(TypedDict):
     prometheus: pulumi.Input[ClusterOpenMonitoringPrometheusArgsDict]
-    ...
 
 @pulumi.input_type
 class ClusterOpenMonitoringArgs:
@@ -765,7 +744,6 @@ class ClusterOpenMonitoringPrometheusArgsDict(TypedDict):
     node_exporter: NotRequired[
         pulumi.Input[ClusterOpenMonitoringPrometheusNodeExporterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterOpenMonitoringPrometheusArgs:
@@ -802,7 +780,6 @@ class ClusterOpenMonitoringPrometheusArgs:
 
 class ClusterOpenMonitoringPrometheusJmxExporterArgsDict(TypedDict):
     enabled_in_broker: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ClusterOpenMonitoringPrometheusJmxExporterArgs:
@@ -817,7 +794,6 @@ class ClusterOpenMonitoringPrometheusJmxExporterArgs:
 
 class ClusterOpenMonitoringPrometheusNodeExporterArgsDict(TypedDict):
     enabled_in_broker: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ClusterOpenMonitoringPrometheusNodeExporterArgs:
@@ -832,7 +808,6 @@ class ClusterOpenMonitoringPrometheusNodeExporterArgs:
 
 class ClusterRebalancingArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterRebalancingArgs:
@@ -846,7 +821,6 @@ class ClusterRebalancingArgs:
 class ReplicatorKafkaClusterArgsDict(TypedDict):
     amazon_msk_cluster: pulumi.Input[ReplicatorKafkaClusterAmazonMskClusterArgsDict]
     vpc_config: pulumi.Input[ReplicatorKafkaClusterVpcConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class ReplicatorKafkaClusterArgs:
@@ -873,7 +847,6 @@ class ReplicatorKafkaClusterArgs:
 
 class ReplicatorKafkaClusterAmazonMskClusterArgsDict(TypedDict):
     msk_cluster_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReplicatorKafkaClusterAmazonMskClusterArgs:
@@ -889,7 +862,6 @@ class ReplicatorKafkaClusterVpcConfigArgsDict(TypedDict):
     security_groups_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ReplicatorKafkaClusterVpcConfigArgs:
@@ -932,7 +904,6 @@ class ReplicatorReplicationInfoListArgsDict(TypedDict):
     ]
     source_kafka_cluster_alias: NotRequired[pulumi.Input[_builtins.str]]
     target_kafka_cluster_alias: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicatorReplicationInfoListArgs:
@@ -1022,7 +993,6 @@ class ReplicatorReplicationInfoListConsumerGroupReplicationArgsDict(TypedDict):
     ]
     detect_and_copy_new_consumer_groups: NotRequired[pulumi.Input[_builtins.bool]]
     synchronise_consumer_group_offsets: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ReplicatorReplicationInfoListConsumerGroupReplicationArgs:
@@ -1095,7 +1065,6 @@ class ReplicatorReplicationInfoListTopicReplicationArgsDict(TypedDict):
         ]
     ]
     topics_to_excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ReplicatorReplicationInfoListTopicReplicationArgs:
@@ -1200,7 +1169,6 @@ class ReplicatorReplicationInfoListTopicReplicationArgs:
 
 class ReplicatorReplicationInfoListTopicReplicationStartingPositionArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicatorReplicationInfoListTopicReplicationStartingPositionArgs:
@@ -1217,7 +1185,6 @@ class ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgsDic
     TypedDict
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgs:
@@ -1232,7 +1199,6 @@ class ReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationArgs:
 
 class ServerlessClusterClientAuthenticationArgsDict(TypedDict):
     sasl: pulumi.Input[ServerlessClusterClientAuthenticationSaslArgsDict]
-    ...
 
 @pulumi.input_type
 class ServerlessClusterClientAuthenticationArgs:
@@ -1249,7 +1215,6 @@ class ServerlessClusterClientAuthenticationArgs:
 
 class ServerlessClusterClientAuthenticationSaslArgsDict(TypedDict):
     iam: pulumi.Input[ServerlessClusterClientAuthenticationSaslIamArgsDict]
-    ...
 
 @pulumi.input_type
 class ServerlessClusterClientAuthenticationSaslArgs:
@@ -1266,7 +1231,6 @@ class ServerlessClusterClientAuthenticationSaslArgs:
 
 class ServerlessClusterClientAuthenticationSaslIamArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ServerlessClusterClientAuthenticationSaslIamArgs:
@@ -1280,7 +1244,6 @@ class ServerlessClusterClientAuthenticationSaslIamArgs:
 class ServerlessClusterVpcConfigArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServerlessClusterVpcConfigArgs:

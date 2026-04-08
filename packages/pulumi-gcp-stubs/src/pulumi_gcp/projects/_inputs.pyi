@@ -43,7 +43,6 @@ __all__ = [
 class AccessApprovalSettingsEnrolledServiceArgsDict(TypedDict):
     cloud_product: pulumi.Input[_builtins.str]
     enrollment_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessApprovalSettingsEnrolledServiceArgs:
@@ -80,7 +79,6 @@ class ApiKeyRestrictionsArgsDict(TypedDict):
     server_key_restrictions: NotRequired[
         pulumi.Input[ApiKeyRestrictionsServerKeyRestrictionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsArgs:
@@ -164,7 +162,6 @@ class ApiKeyRestrictionsAndroidKeyRestrictionsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsAndroidKeyRestrictionsArgs:
@@ -203,7 +200,6 @@ class ApiKeyRestrictionsAndroidKeyRestrictionsArgs:
 class ApiKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationArgsDict(TypedDict):
     package_name: pulumi.Input[_builtins.str]
     sha1_fingerprint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationArgs:
@@ -227,7 +223,6 @@ class ApiKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationArgs:
 class ApiKeyRestrictionsApiTargetArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
     methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsApiTargetArgs:
@@ -254,7 +249,6 @@ class ApiKeyRestrictionsApiTargetArgs:
 
 class ApiKeyRestrictionsBrowserKeyRestrictionsArgsDict(TypedDict):
     allowed_referrers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsBrowserKeyRestrictionsArgs:
@@ -275,7 +269,6 @@ class ApiKeyRestrictionsBrowserKeyRestrictionsArgs:
 
 class ApiKeyRestrictionsIosKeyRestrictionsArgsDict(TypedDict):
     allowed_bundle_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsIosKeyRestrictionsArgs:
@@ -296,7 +289,6 @@ class ApiKeyRestrictionsIosKeyRestrictionsArgs:
 
 class ApiKeyRestrictionsServerKeyRestrictionsArgsDict(TypedDict):
     allowed_ips: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ApiKeyRestrictionsServerKeyRestrictionsArgs:
@@ -314,7 +306,6 @@ class ApiKeyRestrictionsServerKeyRestrictionsArgs:
 class IAMAuditConfigAuditLogConfigArgsDict(TypedDict):
     log_type: pulumi.Input[_builtins.str]
     exempted_members: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class IAMAuditConfigAuditLogConfigArgs:
@@ -345,7 +336,6 @@ class IAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IAMBindingConditionArgs:
@@ -376,7 +366,6 @@ class IAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IAMMemberConditionArgs:
@@ -405,7 +394,6 @@ class IAMMemberConditionArgs:
 
 class OrganizationPolicyBooleanPolicyArgsDict(TypedDict):
     enforced: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationPolicyBooleanPolicyArgs:
@@ -421,7 +409,6 @@ class OrganizationPolicyListPolicyArgsDict(TypedDict):
     deny: NotRequired[pulumi.Input[OrganizationPolicyListPolicyDenyArgsDict]]
     inherit_from_parent: NotRequired[pulumi.Input[_builtins.bool]]
     suggested_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationPolicyListPolicyArgs:
@@ -463,7 +450,6 @@ class OrganizationPolicyListPolicyArgs:
 class OrganizationPolicyListPolicyAllowArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OrganizationPolicyListPolicyAllowArgs:
@@ -491,7 +477,6 @@ class OrganizationPolicyListPolicyAllowArgs:
 class OrganizationPolicyListPolicyDenyArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OrganizationPolicyListPolicyDenyArgs:
@@ -518,7 +503,6 @@ class OrganizationPolicyListPolicyDenyArgs:
 
 class OrganizationPolicyRestorePolicyArgsDict(TypedDict):
     default: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class OrganizationPolicyRestorePolicyArgs:

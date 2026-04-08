@@ -60,7 +60,6 @@ class WorkstationClusterConditionArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationClusterConditionArgs:
@@ -104,7 +103,6 @@ class WorkstationClusterConditionArgs:
 
 class WorkstationClusterDomainConfigArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkstationClusterDomainConfigArgs:
@@ -120,7 +118,6 @@ class WorkstationClusterPrivateClusterConfigArgsDict(TypedDict):
     allowed_projects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     cluster_hostname: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationClusterPrivateClusterConfigArgs:
@@ -162,7 +159,6 @@ class WorkstationClusterPrivateClusterConfigArgs:
 class WorkstationConfigAllowedPortArgsDict(TypedDict):
     first: NotRequired[pulumi.Input[_builtins.int]]
     last: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigAllowedPortArgs:
@@ -189,7 +185,6 @@ class WorkstationConfigConditionArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigConditionArgs:
@@ -238,7 +233,6 @@ class WorkstationConfigContainerArgsDict(TypedDict):
     image: NotRequired[pulumi.Input[_builtins.str]]
     run_as_user: NotRequired[pulumi.Input[_builtins.int]]
     working_dir: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigContainerArgs:
@@ -296,7 +290,6 @@ class WorkstationConfigContainerArgs:
 class WorkstationConfigEncryptionKeyArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
     kms_key_service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigEncryptionKeyArgs:
@@ -320,7 +313,6 @@ class WorkstationConfigEncryptionKeyArgs:
 class WorkstationConfigEphemeralDirectoryArgsDict(TypedDict):
     gce_pd: NotRequired[pulumi.Input[WorkstationConfigEphemeralDirectoryGcePdArgsDict]]
     mount_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigEphemeralDirectoryArgs:
@@ -353,7 +345,6 @@ class WorkstationConfigEphemeralDirectoryGcePdArgsDict(TypedDict):
     read_only: NotRequired[pulumi.Input[_builtins.bool]]
     source_image: NotRequired[pulumi.Input[_builtins.str]]
     source_snapshot: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigEphemeralDirectoryGcePdArgs:
@@ -388,7 +379,6 @@ class WorkstationConfigEphemeralDirectoryGcePdArgs:
 
 class WorkstationConfigHostArgsDict(TypedDict):
     gce_instance: NotRequired[pulumi.Input[WorkstationConfigHostGceInstanceArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostArgs:
@@ -438,7 +428,6 @@ class WorkstationConfigHostGceInstanceArgsDict(TypedDict):
     ]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vm_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceArgs:
@@ -610,7 +599,6 @@ class WorkstationConfigHostGceInstanceArgs:
 class WorkstationConfigHostGceInstanceAcceleratorArgsDict(TypedDict):
     count: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceAcceleratorArgs:
@@ -646,7 +634,6 @@ class WorkstationConfigHostGceInstanceBoostConfigArgsDict(TypedDict):
     enable_nested_virtualization: NotRequired[pulumi.Input[_builtins.bool]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     pool_size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceBoostConfigArgs:
@@ -725,7 +712,6 @@ class WorkstationConfigHostGceInstanceBoostConfigArgs:
 class WorkstationConfigHostGceInstanceBoostConfigAcceleratorArgsDict(TypedDict):
     count: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceBoostConfigAcceleratorArgs:
@@ -748,7 +734,6 @@ class WorkstationConfigHostGceInstanceBoostConfigAcceleratorArgs:
 
 class WorkstationConfigHostGceInstanceConfidentialInstanceConfigArgsDict(TypedDict):
     enable_confidential_compute: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceConfidentialInstanceConfigArgs:
@@ -769,7 +754,6 @@ class WorkstationConfigHostGceInstanceShieldedInstanceConfigArgsDict(TypedDict):
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigHostGceInstanceShieldedInstanceConfigArgs:
@@ -802,7 +786,6 @@ class WorkstationConfigIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigIamBindingConditionArgs:
@@ -833,7 +816,6 @@ class WorkstationConfigIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigIamMemberConditionArgs:
@@ -863,7 +845,6 @@ class WorkstationConfigIamMemberConditionArgs:
 class WorkstationConfigPersistentDirectoryArgsDict(TypedDict):
     gce_pd: NotRequired[pulumi.Input[WorkstationConfigPersistentDirectoryGcePdArgsDict]]
     mount_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigPersistentDirectoryArgs:
@@ -897,7 +878,6 @@ class WorkstationConfigPersistentDirectoryGcePdArgsDict(TypedDict):
     reclaim_policy: NotRequired[pulumi.Input[_builtins.str]]
     size_gb: NotRequired[pulumi.Input[_builtins.int]]
     source_snapshot: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigPersistentDirectoryGcePdArgs:
@@ -939,7 +919,6 @@ class WorkstationConfigPersistentDirectoryGcePdArgs:
 class WorkstationConfigReadinessCheckArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class WorkstationConfigReadinessCheckArgs:
@@ -964,7 +943,6 @@ class WorkstationIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationIamBindingConditionArgs:
@@ -995,7 +973,6 @@ class WorkstationIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkstationIamMemberConditionArgs:

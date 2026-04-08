@@ -79,7 +79,6 @@ class ConfigBlockingFunctionsArgsDict(TypedDict):
     forward_inbound_credentials: NotRequired[
         pulumi.Input[ConfigBlockingFunctionsForwardInboundCredentialsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigBlockingFunctionsArgs:
@@ -122,7 +121,6 @@ class ConfigBlockingFunctionsForwardInboundCredentialsArgsDict(TypedDict):
     access_token: NotRequired[pulumi.Input[_builtins.bool]]
     id_token: NotRequired[pulumi.Input[_builtins.bool]]
     refresh_token: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigBlockingFunctionsForwardInboundCredentialsArgs:
@@ -153,7 +151,6 @@ class ConfigBlockingFunctionsTriggerArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     function_uri: pulumi.Input[_builtins.str]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigBlockingFunctionsTriggerArgs:
@@ -184,7 +181,6 @@ class ConfigClientArgsDict(TypedDict):
     api_key: NotRequired[pulumi.Input[_builtins.str]]
     firebase_subdomain: NotRequired[pulumi.Input[_builtins.str]]
     permissions: NotRequired[pulumi.Input[ConfigClientPermissionsArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConfigClientArgs:
@@ -216,7 +212,6 @@ class ConfigClientArgs:
 class ConfigClientPermissionsArgsDict(TypedDict):
     disabled_user_deletion: NotRequired[pulumi.Input[_builtins.bool]]
     disabled_user_signup: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigClientPermissionsArgs:
@@ -243,7 +238,6 @@ class ConfigMfaArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ConfigMfaProviderConfigArgsDict]]]
     ]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigMfaArgs:
@@ -292,7 +286,6 @@ class ConfigMfaProviderConfigArgsDict(TypedDict):
     totp_provider_config: NotRequired[
         pulumi.Input[ConfigMfaProviderConfigTotpProviderConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigMfaProviderConfigArgs:
@@ -322,7 +315,6 @@ class ConfigMfaProviderConfigArgs:
 
 class ConfigMfaProviderConfigTotpProviderConfigArgsDict(TypedDict):
     adjacent_intervals: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConfigMfaProviderConfigTotpProviderConfigArgs:
@@ -337,7 +329,6 @@ class ConfigMfaProviderConfigTotpProviderConfigArgs:
 
 class ConfigMonitoringArgsDict(TypedDict):
     request_logging: NotRequired[pulumi.Input[ConfigMonitoringRequestLoggingArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConfigMonitoringArgs:
@@ -360,7 +351,6 @@ class ConfigMonitoringArgs:
 
 class ConfigMonitoringRequestLoggingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigMonitoringRequestLoggingArgs:
@@ -376,7 +366,6 @@ class ConfigMonitoringRequestLoggingArgs:
 class ConfigMultiTenantArgsDict(TypedDict):
     allow_tenants: NotRequired[pulumi.Input[_builtins.bool]]
     default_tenant_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigMultiTenantArgs:
@@ -401,7 +390,6 @@ class ConfigQuotaArgsDict(TypedDict):
     sign_up_quota_config: NotRequired[
         pulumi.Input[ConfigQuotaSignUpQuotaConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigQuotaArgs:
@@ -426,7 +414,6 @@ class ConfigQuotaSignUpQuotaConfigArgsDict(TypedDict):
     quota: NotRequired[pulumi.Input[_builtins.int]]
     quota_duration: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigQuotaSignUpQuotaConfigArgs:
@@ -461,7 +448,6 @@ class ConfigSignInArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ConfigSignInHashConfigArgsDict]]]
     ]
     phone_number: NotRequired[pulumi.Input[ConfigSignInPhoneNumberArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConfigSignInArgs:
@@ -513,7 +499,6 @@ class ConfigSignInArgs:
 
 class ConfigSignInAnonymousArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ConfigSignInAnonymousArgs:
@@ -527,7 +512,6 @@ class ConfigSignInAnonymousArgs:
 class ConfigSignInEmailArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     password_required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConfigSignInEmailArgs:
@@ -554,7 +538,6 @@ class ConfigSignInHashConfigArgsDict(TypedDict):
     rounds: NotRequired[pulumi.Input[_builtins.int]]
     salt_separator: NotRequired[pulumi.Input[_builtins.str]]
     signer_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigSignInHashConfigArgs:
@@ -598,7 +581,6 @@ class ConfigSignInPhoneNumberArgsDict(TypedDict):
     test_phone_numbers: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigSignInPhoneNumberArgs:
@@ -632,7 +614,6 @@ class ConfigSmsRegionConfigArgsDict(TypedDict):
     allowlist_only: NotRequired[
         pulumi.Input[ConfigSmsRegionConfigAllowlistOnlyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConfigSmsRegionConfigArgs:
@@ -667,7 +648,6 @@ class ConfigSmsRegionConfigArgs:
 
 class ConfigSmsRegionConfigAllowByDefaultArgsDict(TypedDict):
     disallowed_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConfigSmsRegionConfigAllowByDefaultArgs:
@@ -690,7 +670,6 @@ class ConfigSmsRegionConfigAllowByDefaultArgs:
 
 class ConfigSmsRegionConfigAllowlistOnlyArgsDict(TypedDict):
     allowed_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConfigSmsRegionConfigAllowlistOnlyArgs:
@@ -718,7 +697,6 @@ class InboundSamlConfigIdpConfigArgsDict(TypedDict):
     idp_entity_id: pulumi.Input[_builtins.str]
     sso_url: pulumi.Input[_builtins.str]
     sign_request: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InboundSamlConfigIdpConfigArgs:
@@ -764,7 +742,6 @@ class InboundSamlConfigIdpConfigArgs:
 
 class InboundSamlConfigIdpConfigIdpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InboundSamlConfigIdpConfigIdpCertificateArgs:
@@ -785,7 +762,6 @@ class InboundSamlConfigSpConfigArgsDict(TypedDict):
         ]
     ]
     sp_entity_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InboundSamlConfigSpConfigArgs:
@@ -829,7 +805,6 @@ class InboundSamlConfigSpConfigArgs:
 
 class InboundSamlConfigSpConfigSpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InboundSamlConfigSpConfigSpCertificateArgs:
@@ -845,7 +820,6 @@ class InboundSamlConfigSpConfigSpCertificateArgs:
 class OauthIdpConfigResponseTypeArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.bool]]
     id_token: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OauthIdpConfigResponseTypeArgs:
@@ -868,7 +842,6 @@ class OauthIdpConfigResponseTypeArgs:
 
 class TenantClientArgsDict(TypedDict):
     permissions: NotRequired[pulumi.Input[TenantClientPermissionsArgsDict]]
-    ...
 
 @pulumi.input_type
 class TenantClientArgs:
@@ -888,7 +861,6 @@ class TenantClientArgs:
 class TenantClientPermissionsArgsDict(TypedDict):
     disabled_user_deletion: NotRequired[pulumi.Input[_builtins.bool]]
     disabled_user_signup: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TenantClientPermissionsArgs:
@@ -916,7 +888,6 @@ class TenantInboundSamlConfigIdpConfigArgsDict(TypedDict):
     idp_entity_id: pulumi.Input[_builtins.str]
     sso_url: pulumi.Input[_builtins.str]
     sign_request: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TenantInboundSamlConfigIdpConfigArgs:
@@ -962,7 +933,6 @@ class TenantInboundSamlConfigIdpConfigArgs:
 
 class TenantInboundSamlConfigIdpConfigIdpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TenantInboundSamlConfigIdpConfigIdpCertificateArgs:
@@ -983,7 +953,6 @@ class TenantInboundSamlConfigSpConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[TenantInboundSamlConfigSpConfigSpCertificateArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class TenantInboundSamlConfigSpConfigArgs:
@@ -1029,7 +998,6 @@ class TenantInboundSamlConfigSpConfigArgs:
 
 class TenantInboundSamlConfigSpConfigSpCertificateArgsDict(TypedDict):
     x509_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TenantInboundSamlConfigSpConfigSpCertificateArgs:

@@ -85,7 +85,6 @@ class AssociationOutputLocationArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
     s3_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssociationOutputLocationArgs:
@@ -115,7 +114,6 @@ class AssociationOutputLocationArgs:
 class AssociationTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AssociationTargetArgs:
@@ -159,7 +157,6 @@ class ContactsRotationRecurrenceArgsDict(TypedDict):
             Sequence[pulumi.Input[ContactsRotationRecurrenceWeeklySettingArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceArgs:
@@ -273,7 +270,6 @@ class ContactsRotationRecurrenceArgs:
 class ContactsRotationRecurrenceDailySettingArgsDict(TypedDict):
     hour_of_day: pulumi.Input[_builtins.int]
     minute_of_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceDailySettingArgs:
@@ -299,7 +295,6 @@ class ContactsRotationRecurrenceMonthlySettingArgsDict(TypedDict):
     hand_off_time: NotRequired[
         pulumi.Input[ContactsRotationRecurrenceMonthlySettingHandOffTimeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceMonthlySettingArgs:
@@ -334,7 +329,6 @@ class ContactsRotationRecurrenceMonthlySettingArgs:
 class ContactsRotationRecurrenceMonthlySettingHandOffTimeArgsDict(TypedDict):
     hour_of_day: pulumi.Input[_builtins.int]
     minute_of_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceMonthlySettingHandOffTimeArgs:
@@ -362,7 +356,6 @@ class ContactsRotationRecurrenceShiftCoverageArgsDict(TypedDict):
         ]
     ]
     map_block_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceShiftCoverageArgs:
@@ -405,7 +398,6 @@ class ContactsRotationRecurrenceShiftCoverageCoverageTimeArgsDict(TypedDict):
     start: NotRequired[
         pulumi.Input[ContactsRotationRecurrenceShiftCoverageCoverageTimeStartArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceShiftCoverageCoverageTimeArgs:
@@ -451,7 +443,6 @@ class ContactsRotationRecurrenceShiftCoverageCoverageTimeArgs:
 class ContactsRotationRecurrenceShiftCoverageCoverageTimeEndArgsDict(TypedDict):
     hour_of_day: pulumi.Input[_builtins.int]
     minute_of_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceShiftCoverageCoverageTimeEndArgs:
@@ -475,7 +466,6 @@ class ContactsRotationRecurrenceShiftCoverageCoverageTimeEndArgs:
 class ContactsRotationRecurrenceShiftCoverageCoverageTimeStartArgsDict(TypedDict):
     hour_of_day: pulumi.Input[_builtins.int]
     minute_of_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceShiftCoverageCoverageTimeStartArgs:
@@ -501,7 +491,6 @@ class ContactsRotationRecurrenceWeeklySettingArgsDict(TypedDict):
     hand_off_time: NotRequired[
         pulumi.Input[ContactsRotationRecurrenceWeeklySettingHandOffTimeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceWeeklySettingArgs:
@@ -536,7 +525,6 @@ class ContactsRotationRecurrenceWeeklySettingArgs:
 class ContactsRotationRecurrenceWeeklySettingHandOffTimeArgsDict(TypedDict):
     hour_of_day: pulumi.Input[_builtins.int]
     minute_of_hour: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContactsRotationRecurrenceWeeklySettingHandOffTimeArgs:
@@ -561,7 +549,6 @@ class DocumentAttachmentsSourceArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentAttachmentsSourceArgs:
@@ -593,7 +580,6 @@ class DocumentParameterArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentParameterArgs:
@@ -629,7 +615,6 @@ class DocumentParameterArgs:
 class MaintenanceWindowTargetTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTargetTargetArgs:
@@ -653,7 +638,6 @@ class MaintenanceWindowTargetTargetArgs:
 class MaintenanceWindowTaskTargetArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTargetArgs:
@@ -695,7 +679,6 @@ class MaintenanceWindowTaskTaskInvocationParametersArgsDict(TypedDict):
             MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersArgs:
@@ -807,7 +790,6 @@ class MaintenanceWindowTaskTaskInvocationParametersAutomationParametersArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersAutomationParametersArgs:
@@ -862,7 +844,6 @@ class MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter
 ):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterArgs:
@@ -887,7 +868,6 @@ class MaintenanceWindowTaskTaskInvocationParametersLambdaParametersArgsDict(Type
     client_context: NotRequired[pulumi.Input[_builtins.str]]
     payload: NotRequired[pulumi.Input[_builtins.str]]
     qualifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersLambdaParametersArgs:
@@ -944,7 +924,6 @@ class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersArgsDict(
     ]
     service_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersArgs:
@@ -1087,7 +1066,6 @@ class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatc
 ):
     cloudwatch_log_group_name: NotRequired[pulumi.Input[_builtins.str]]
     cloudwatch_output_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigArgs:
@@ -1120,7 +1098,6 @@ class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificat
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     notification_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigArgs:
@@ -1158,7 +1135,6 @@ class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter
 ):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterArgs:
@@ -1184,7 +1160,6 @@ class MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersArgsDi
 ):
     input: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersArgs:
@@ -1213,7 +1188,6 @@ class PatchBaselineApprovalRuleArgsDict(TypedDict):
     approve_until_date: NotRequired[pulumi.Input[_builtins.str]]
     compliance_level: NotRequired[pulumi.Input[_builtins.str]]
     enable_non_security: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PatchBaselineApprovalRuleArgs:
@@ -1266,7 +1240,6 @@ class PatchBaselineApprovalRuleArgs:
 class PatchBaselineApprovalRulePatchFilterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PatchBaselineApprovalRulePatchFilterArgs:
@@ -1290,7 +1263,6 @@ class PatchBaselineApprovalRulePatchFilterArgs:
 class PatchBaselineGlobalFilterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PatchBaselineGlobalFilterArgs:
@@ -1315,7 +1287,6 @@ class PatchBaselineSourceArgsDict(TypedDict):
     configuration: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     products: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PatchBaselineSourceArgs:
@@ -1349,7 +1320,6 @@ class QuicksetupConfigurationManagerConfigurationDefinitionArgsDict(TypedDict):
     local_deployment_administration_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     local_deployment_execution_role_name: NotRequired[pulumi.Input[_builtins.str]]
     type_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QuicksetupConfigurationManagerConfigurationDefinitionArgs:
@@ -1412,7 +1382,6 @@ class QuicksetupConfigurationManagerStatusSummaryArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
     status_message: pulumi.Input[_builtins.str]
     status_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QuicksetupConfigurationManagerStatusSummaryArgs:
@@ -1443,7 +1412,6 @@ class QuicksetupConfigurationManagerTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QuicksetupConfigurationManagerTimeoutsArgs:
@@ -1476,7 +1444,6 @@ class ResourceDataSyncS3DestinationArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     sync_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceDataSyncS3DestinationArgs:
@@ -1518,7 +1485,6 @@ class ResourceDataSyncS3DestinationArgs:
 class GetInstancesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstancesFilterArgs:
@@ -1539,7 +1505,6 @@ class GetInstancesFilterArgs:
 class GetMaintenanceWindowsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetMaintenanceWindowsFilterArgs:
@@ -1560,7 +1525,6 @@ class GetMaintenanceWindowsFilterArgs:
 class GetPatchBaselinesFilterArgsDict(TypedDict):
     key: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPatchBaselinesFilterArgs:

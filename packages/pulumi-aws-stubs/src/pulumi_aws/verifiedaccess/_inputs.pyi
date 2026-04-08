@@ -51,7 +51,6 @@ class EndpointCidrOptionsArgsDict(TypedDict):
     ]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EndpointCidrOptionsArgs:
@@ -98,7 +97,6 @@ class EndpointCidrOptionsArgs:
 class EndpointCidrOptionsPortRangeArgsDict(TypedDict):
     from_port: pulumi.Input[_builtins.int]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointCidrOptionsPortRangeArgs:
@@ -129,7 +127,6 @@ class EndpointLoadBalancerOptionsArgsDict(TypedDict):
     ]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EndpointLoadBalancerOptionsArgs:
@@ -190,7 +187,6 @@ class EndpointLoadBalancerOptionsArgs:
 class EndpointLoadBalancerOptionsPortRangeArgsDict(TypedDict):
     from_port: pulumi.Input[_builtins.int]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointLoadBalancerOptionsPortRangeArgs:
@@ -220,7 +216,6 @@ class EndpointNetworkInterfaceOptionsArgsDict(TypedDict):
         ]
     ]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointNetworkInterfaceOptionsArgs:
@@ -273,7 +268,6 @@ class EndpointNetworkInterfaceOptionsArgs:
 class EndpointNetworkInterfaceOptionsPortRangeArgsDict(TypedDict):
     from_port: pulumi.Input[_builtins.int]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class EndpointNetworkInterfaceOptionsPortRangeArgs:
@@ -302,7 +296,6 @@ class EndpointRdsOptionsArgsDict(TypedDict):
     rds_db_proxy_arn: NotRequired[pulumi.Input[_builtins.str]]
     rds_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EndpointRdsOptionsArgs:
@@ -360,7 +353,6 @@ class EndpointRdsOptionsArgs:
 class EndpointSseSpecificationArgsDict(TypedDict):
     customer_managed_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointSseSpecificationArgs:
@@ -388,7 +380,6 @@ class EndpointSseSpecificationArgs:
 class GroupSseConfigurationArgsDict(TypedDict):
     customer_managed_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GroupSseConfigurationArgs:
@@ -423,7 +414,6 @@ class InstanceLoggingConfigurationAccessLogsArgsDict(TypedDict):
     ]
     log_version: NotRequired[pulumi.Input[_builtins.str]]
     s3: NotRequired[pulumi.Input[InstanceLoggingConfigurationAccessLogsS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class InstanceLoggingConfigurationAccessLogsArgs:
@@ -492,7 +482,6 @@ class InstanceLoggingConfigurationAccessLogsArgs:
 class InstanceLoggingConfigurationAccessLogsCloudwatchLogsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     log_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceLoggingConfigurationAccessLogsCloudwatchLogsArgs:
@@ -516,7 +505,6 @@ class InstanceLoggingConfigurationAccessLogsCloudwatchLogsArgs:
 class InstanceLoggingConfigurationAccessLogsKinesisDataFirehoseArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     delivery_stream: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceLoggingConfigurationAccessLogsKinesisDataFirehoseArgs:
@@ -542,7 +530,6 @@ class InstanceLoggingConfigurationAccessLogsS3ArgsDict(TypedDict):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_owner: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceLoggingConfigurationAccessLogsS3Args:
@@ -581,7 +568,6 @@ class InstanceVerifiedAccessTrustProviderArgsDict(TypedDict):
     trust_provider_type: NotRequired[pulumi.Input[_builtins.str]]
     user_trust_provider_type: NotRequired[pulumi.Input[_builtins.str]]
     verified_access_trust_provider_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceVerifiedAccessTrustProviderArgs:
@@ -630,7 +616,6 @@ class InstanceVerifiedAccessTrustProviderArgs:
 
 class TrustProviderDeviceOptionsArgsDict(TypedDict):
     tenant_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustProviderDeviceOptionsArgs:
@@ -652,7 +637,6 @@ class TrustProviderNativeApplicationOidcOptionsArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     user_info_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustProviderNativeApplicationOidcOptionsArgs:
@@ -719,7 +703,6 @@ class TrustProviderOidcOptionsArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     user_info_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustProviderOidcOptionsArgs:
@@ -773,7 +756,6 @@ class TrustProviderOidcOptionsArgs:
 class TrustProviderSseSpecificationArgsDict(TypedDict):
     customer_managed_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustProviderSseSpecificationArgs:

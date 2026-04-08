@@ -10,7 +10,6 @@ __all__ = ["GetResourcesTagFilterArgs", "GetResourcesTagFilterArgsDict"]
 class GetResourcesTagFilterArgsDict(TypedDict):
     key: _builtins.str
     values: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetResourcesTagFilterArgs:

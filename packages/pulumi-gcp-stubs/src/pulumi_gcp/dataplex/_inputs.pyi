@@ -200,7 +200,6 @@ class AspectTypeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AspectTypeIamBindingConditionArgs:
@@ -231,7 +230,6 @@ class AspectTypeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AspectTypeIamMemberConditionArgs:
@@ -265,7 +263,6 @@ class AssetDiscoverySpecArgsDict(TypedDict):
     include_patterns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     json_options: NotRequired[pulumi.Input[AssetDiscoverySpecJsonOptionsArgsDict]]
     schedule: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetDiscoverySpecArgs:
@@ -335,7 +332,6 @@ class AssetDiscoverySpecCsvOptionsArgsDict(TypedDict):
     disable_type_inference: NotRequired[pulumi.Input[_builtins.bool]]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
     header_rows: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AssetDiscoverySpecCsvOptionsArgs:
@@ -371,7 +367,6 @@ class AssetDiscoverySpecCsvOptionsArgs:
 class AssetDiscoverySpecJsonOptionsArgsDict(TypedDict):
     disable_type_inference: NotRequired[pulumi.Input[_builtins.bool]]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetDiscoverySpecJsonOptionsArgs:
@@ -401,7 +396,6 @@ class AssetDiscoveryStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[AssetDiscoveryStatusStatArgsDict]]]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetDiscoveryStatusArgs:
@@ -462,7 +456,6 @@ class AssetDiscoveryStatusStatArgsDict(TypedDict):
     data_size: NotRequired[pulumi.Input[_builtins.int]]
     filesets: NotRequired[pulumi.Input[_builtins.int]]
     tables: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AssetDiscoveryStatusStatArgs:
@@ -499,7 +492,6 @@ class AssetIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetIamBindingConditionArgs:
@@ -530,7 +522,6 @@ class AssetIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetIamMemberConditionArgs:
@@ -561,7 +552,6 @@ class AssetResourceSpecArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     name: NotRequired[pulumi.Input[_builtins.str]]
     read_access_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetResourceSpecArgs:
@@ -592,7 +582,6 @@ class AssetResourceStatusArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetResourceStatusArgs:
@@ -623,7 +612,6 @@ class AssetSecurityStatusArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetSecurityStatusArgs:
@@ -653,7 +641,6 @@ class AssetSecurityStatusArgs:
 class DataAssetAccessGroupConfigArgsDict(TypedDict):
     access_group: pulumi.Input[_builtins.str]
     iam_roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataAssetAccessGroupConfigArgs:
@@ -684,7 +671,6 @@ class DataProductAccessGroupArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     principal: pulumi.Input[DataProductAccessGroupPrincipalArgsDict]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataProductAccessGroupArgs:
@@ -725,7 +711,6 @@ class DataProductAccessGroupArgs:
 
 class DataProductAccessGroupPrincipalArgsDict(TypedDict):
     google_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataProductAccessGroupPrincipalArgs:
@@ -741,7 +726,6 @@ class DataProductAccessGroupPrincipalArgs:
 class DataProductDataAssetAccessGroupConfigArgsDict(TypedDict):
     access_group: pulumi.Input[_builtins.str]
     iam_roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataProductDataAssetAccessGroupConfigArgs:
@@ -769,7 +753,6 @@ class DataProductDataAssetAccessGroupConfigArgs:
 class DatascanDataArgsDict(TypedDict):
     entity: NotRequired[pulumi.Input[_builtins.str]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanDataArgs:
@@ -797,7 +780,6 @@ class DatascanDataDiscoverySpecArgsDict(TypedDict):
     storage_config: NotRequired[
         pulumi.Input[DatascanDataDiscoverySpecStorageConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataDiscoverySpecArgs:
@@ -840,7 +822,6 @@ class DatascanDataDiscoverySpecBigqueryPublishingConfigArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     project: NotRequired[pulumi.Input[_builtins.str]]
     table_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanDataDiscoverySpecBigqueryPublishingConfigArgs:
@@ -882,7 +863,6 @@ class DatascanDataDiscoverySpecStorageConfigArgsDict(TypedDict):
     json_options: NotRequired[
         pulumi.Input[DatascanDataDiscoverySpecStorageConfigJsonOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataDiscoverySpecStorageConfigArgs:
@@ -955,7 +935,6 @@ class DatascanDataDiscoverySpecStorageConfigCsvOptionsArgsDict(TypedDict):
     header_rows: NotRequired[pulumi.Input[_builtins.int]]
     quote: NotRequired[pulumi.Input[_builtins.str]]
     type_inference_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatascanDataDiscoverySpecStorageConfigCsvOptionsArgs:
@@ -999,7 +978,6 @@ class DatascanDataDiscoverySpecStorageConfigCsvOptionsArgs:
 class DatascanDataDiscoverySpecStorageConfigJsonOptionsArgsDict(TypedDict):
     encoding: NotRequired[pulumi.Input[_builtins.str]]
     type_inference_disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatascanDataDiscoverySpecStorageConfigJsonOptionsArgs:
@@ -1041,7 +1019,6 @@ class DatascanDataProfileSpecArgsDict(TypedDict):
     ]
     row_filter: NotRequired[pulumi.Input[_builtins.str]]
     sampling_percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class DatascanDataProfileSpecArgs:
@@ -1108,7 +1085,6 @@ class DatascanDataProfileSpecArgs:
 
 class DatascanDataProfileSpecExcludeFieldsArgsDict(TypedDict):
     field_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatascanDataProfileSpecExcludeFieldsArgs:
@@ -1131,7 +1107,6 @@ class DatascanDataProfileSpecExcludeFieldsArgs:
 
 class DatascanDataProfileSpecIncludeFieldsArgsDict(TypedDict):
     field_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatascanDataProfileSpecIncludeFieldsArgs:
@@ -1156,7 +1131,6 @@ class DatascanDataProfileSpecPostScanActionsArgsDict(TypedDict):
     bigquery_export: NotRequired[
         pulumi.Input[DatascanDataProfileSpecPostScanActionsBigqueryExportArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataProfileSpecPostScanActionsArgs:
@@ -1184,7 +1158,6 @@ class DatascanDataProfileSpecPostScanActionsArgs:
 
 class DatascanDataProfileSpecPostScanActionsBigqueryExportArgsDict(TypedDict):
     results_table: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanDataProfileSpecPostScanActionsBigqueryExportArgs:
@@ -1207,7 +1180,6 @@ class DatascanDataQualitySpecArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[DatascanDataQualitySpecRuleArgsDict]]]
     ]
     sampling_percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecArgs:
@@ -1272,7 +1244,6 @@ class DatascanDataQualitySpecPostScanActionsArgsDict(TypedDict):
     notification_report: NotRequired[
         pulumi.Input[DatascanDataQualitySpecPostScanActionsNotificationReportArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecPostScanActionsArgs:
@@ -1317,7 +1288,6 @@ class DatascanDataQualitySpecPostScanActionsArgs:
 
 class DatascanDataQualitySpecPostScanActionsBigqueryExportArgsDict(TypedDict):
     results_table: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecPostScanActionsBigqueryExportArgs:
@@ -1349,7 +1319,6 @@ class DatascanDataQualitySpecPostScanActionsNotificationReportArgsDict(TypedDict
             DatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecPostScanActionsNotificationReportArgs:
@@ -1464,7 +1433,6 @@ class DatascanDataQualitySpecPostScanActionsNotificationReportRecipientsArgsDict
     TypedDict
 ):
     emails: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecPostScanActionsNotificationReportRecipientsArgs:
@@ -1487,7 +1455,6 @@ class DatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrig
     TypedDict
 ):
     score_threshold: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerArgs:
@@ -1535,7 +1502,6 @@ class DatascanDataQualitySpecRuleArgsDict(TypedDict):
     uniqueness_expectation: NotRequired[
         pulumi.Input[DatascanDataQualitySpecRuleUniquenessExpectationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleArgs:
@@ -1731,7 +1697,6 @@ class DatascanDataQualitySpecRuleRangeExpectationArgsDict(TypedDict):
     min_value: NotRequired[pulumi.Input[_builtins.str]]
     strict_max_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     strict_min_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleRangeExpectationArgs:
@@ -1766,7 +1731,6 @@ class DatascanDataQualitySpecRuleRangeExpectationArgs:
 
 class DatascanDataQualitySpecRuleRegexExpectationArgsDict(TypedDict):
     regex: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleRegexExpectationArgs:
@@ -1779,7 +1743,6 @@ class DatascanDataQualitySpecRuleRegexExpectationArgs:
 
 class DatascanDataQualitySpecRuleRowConditionExpectationArgsDict(TypedDict):
     sql_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleRowConditionExpectationArgs:
@@ -1792,7 +1755,6 @@ class DatascanDataQualitySpecRuleRowConditionExpectationArgs:
 
 class DatascanDataQualitySpecRuleSetExpectationArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleSetExpectationArgs:
@@ -1807,7 +1769,6 @@ class DatascanDataQualitySpecRuleSetExpectationArgs:
 
 class DatascanDataQualitySpecRuleSqlAssertionArgsDict(TypedDict):
     sql_statement: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleSqlAssertionArgs:
@@ -1824,7 +1785,6 @@ class DatascanDataQualitySpecRuleStatisticRangeExpectationArgsDict(TypedDict):
     min_value: NotRequired[pulumi.Input[_builtins.str]]
     strict_max_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     strict_min_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleStatisticRangeExpectationArgs:
@@ -1865,7 +1825,6 @@ class DatascanDataQualitySpecRuleStatisticRangeExpectationArgs:
 
 class DatascanDataQualitySpecRuleTableConditionExpectationArgsDict(TypedDict):
     sql_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatascanDataQualitySpecRuleTableConditionExpectationArgs:
@@ -1885,7 +1844,6 @@ class DatascanDataQualitySpecRuleUniquenessExpectationArgs:
 class DatascanExecutionSpecArgsDict(TypedDict):
     trigger: pulumi.Input[DatascanExecutionSpecTriggerArgsDict]
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanExecutionSpecArgs:
@@ -1910,7 +1868,6 @@ class DatascanExecutionSpecTriggerArgsDict(TypedDict):
     on_demand: NotRequired[pulumi.Input[DatascanExecutionSpecTriggerOnDemandArgsDict]]
     one_time: NotRequired[pulumi.Input[DatascanExecutionSpecTriggerOneTimeArgsDict]]
     schedule: NotRequired[pulumi.Input[DatascanExecutionSpecTriggerScheduleArgsDict]]
-    ...
 
 @pulumi.input_type
 class DatascanExecutionSpecTriggerArgs:
@@ -1961,7 +1918,6 @@ class DatascanExecutionSpecTriggerOnDemandArgs:
 
 class DatascanExecutionSpecTriggerOneTimeArgsDict(TypedDict):
     ttl_after_scan_completion: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanExecutionSpecTriggerOneTimeArgs:
@@ -1980,7 +1936,6 @@ class DatascanExecutionSpecTriggerOneTimeArgs:
 
 class DatascanExecutionSpecTriggerScheduleArgsDict(TypedDict):
     cron: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatascanExecutionSpecTriggerScheduleArgs:
@@ -1994,7 +1949,6 @@ class DatascanExecutionSpecTriggerScheduleArgs:
 class DatascanExecutionStatusArgsDict(TypedDict):
     latest_job_end_time: NotRequired[pulumi.Input[_builtins.str]]
     latest_job_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanExecutionStatusArgs:
@@ -2019,7 +1973,6 @@ class DatascanIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanIamBindingConditionArgs:
@@ -2050,7 +2003,6 @@ class DatascanIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatascanIamMemberConditionArgs:
@@ -2080,7 +2032,6 @@ class DatascanIamMemberConditionArgs:
 class EntryAspectArgsDict(TypedDict):
     aspect: pulumi.Input[EntryAspectAspectArgsDict]
     aspect_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EntryAspectArgs:
@@ -2107,7 +2058,6 @@ class EntryAspectAspectArgsDict(TypedDict):
     create_time: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryAspectAspectArgs:
@@ -2159,7 +2109,6 @@ class EntryEntrySourceArgsDict(TypedDict):
     resource: NotRequired[pulumi.Input[_builtins.str]]
     system: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryEntrySourceArgs:
@@ -2246,7 +2195,6 @@ class EntryEntrySourceArgs:
 class EntryEntrySourceAncestorArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryEntrySourceAncestorArgs:
@@ -2271,7 +2219,6 @@ class EntryGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryGroupIamBindingConditionArgs:
@@ -2302,7 +2249,6 @@ class EntryGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryGroupIamMemberConditionArgs:
@@ -2333,7 +2279,6 @@ class EntryLinkEntryReferenceArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryLinkEntryReferenceArgs:
@@ -2364,7 +2309,6 @@ class EntryTypeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryTypeIamBindingConditionArgs:
@@ -2395,7 +2339,6 @@ class EntryTypeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryTypeIamMemberConditionArgs:
@@ -2424,7 +2367,6 @@ class EntryTypeIamMemberConditionArgs:
 
 class EntryTypeRequiredAspectArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryTypeRequiredAspectArgs:
@@ -2441,7 +2383,6 @@ class GlossaryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GlossaryIamBindingConditionArgs:
@@ -2472,7 +2413,6 @@ class GlossaryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GlossaryIamMemberConditionArgs:
@@ -2503,7 +2443,6 @@ class LakeAssetStatusArgsDict(TypedDict):
     active_assets: NotRequired[pulumi.Input[_builtins.int]]
     security_policy_applying_assets: NotRequired[pulumi.Input[_builtins.int]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LakeAssetStatusArgs:
@@ -2538,7 +2477,6 @@ class LakeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LakeIamBindingConditionArgs:
@@ -2569,7 +2507,6 @@ class LakeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LakeIamMemberConditionArgs:
@@ -2598,7 +2535,6 @@ class LakeIamMemberConditionArgs:
 
 class LakeMetastoreArgsDict(TypedDict):
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LakeMetastoreArgs:
@@ -2616,7 +2552,6 @@ class LakeMetastoreStatusArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LakeMetastoreStatusArgs:
@@ -2655,7 +2590,6 @@ class TaskExecutionSpecArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
     max_job_execution_lifetime: NotRequired[pulumi.Input[_builtins.str]]
     project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskExecutionSpecArgs:
@@ -2705,7 +2639,6 @@ class TaskExecutionStatusArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[TaskExecutionStatusLatestJobArgsDict]]]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskExecutionStatusArgs:
@@ -2747,7 +2680,6 @@ class TaskExecutionStatusLatestJobArgsDict(TypedDict):
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskExecutionStatusLatestJobArgs:
@@ -2814,7 +2746,6 @@ class TaskIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskIamBindingConditionArgs:
@@ -2845,7 +2776,6 @@ class TaskIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskIamMemberConditionArgs:
@@ -2879,7 +2809,6 @@ class TaskNotebookArgsDict(TypedDict):
     infrastructure_spec: NotRequired[
         pulumi.Input[TaskNotebookInfrastructureSpecArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TaskNotebookArgs:
@@ -2936,7 +2865,6 @@ class TaskNotebookInfrastructureSpecArgsDict(TypedDict):
     vpc_network: NotRequired[
         pulumi.Input[TaskNotebookInfrastructureSpecVpcNetworkArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TaskNotebookInfrastructureSpecArgs:
@@ -2984,7 +2912,6 @@ class TaskNotebookInfrastructureSpecArgs:
 class TaskNotebookInfrastructureSpecBatchArgsDict(TypedDict):
     executors_count: NotRequired[pulumi.Input[_builtins.int]]
     max_executors_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TaskNotebookInfrastructureSpecBatchArgs:
@@ -3010,7 +2937,6 @@ class TaskNotebookInfrastructureSpecContainerImageArgsDict(TypedDict):
     java_jars: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     python_packages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TaskNotebookInfrastructureSpecContainerImageArgs:
@@ -3063,7 +2989,6 @@ class TaskNotebookInfrastructureSpecVpcNetworkArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     network_tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     sub_network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskNotebookInfrastructureSpecVpcNetworkArgs:
@@ -3105,7 +3030,6 @@ class TaskSparkArgsDict(TypedDict):
     python_script_file: NotRequired[pulumi.Input[_builtins.str]]
     sql_script: NotRequired[pulumi.Input[_builtins.str]]
     sql_script_file: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskSparkArgs:
@@ -3186,7 +3110,6 @@ class TaskSparkInfrastructureSpecArgsDict(TypedDict):
     vpc_network: NotRequired[
         pulumi.Input[TaskSparkInfrastructureSpecVpcNetworkArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TaskSparkInfrastructureSpecArgs:
@@ -3231,7 +3154,6 @@ class TaskSparkInfrastructureSpecArgs:
 class TaskSparkInfrastructureSpecBatchArgsDict(TypedDict):
     executors_count: NotRequired[pulumi.Input[_builtins.int]]
     max_executors_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TaskSparkInfrastructureSpecBatchArgs:
@@ -3257,7 +3179,6 @@ class TaskSparkInfrastructureSpecContainerImageArgsDict(TypedDict):
     java_jars: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     python_packages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TaskSparkInfrastructureSpecContainerImageArgs:
@@ -3310,7 +3231,6 @@ class TaskSparkInfrastructureSpecVpcNetworkArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     network_tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     sub_network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskSparkInfrastructureSpecVpcNetworkArgs:
@@ -3349,7 +3269,6 @@ class TaskTriggerSpecArgsDict(TypedDict):
     max_retries: NotRequired[pulumi.Input[_builtins.int]]
     schedule: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskTriggerSpecArgs:
@@ -3392,7 +3311,6 @@ class ZoneAssetStatusArgsDict(TypedDict):
     active_assets: NotRequired[pulumi.Input[_builtins.int]]
     security_policy_applying_assets: NotRequired[pulumi.Input[_builtins.int]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneAssetStatusArgs:
@@ -3430,7 +3348,6 @@ class ZoneDiscoverySpecArgsDict(TypedDict):
     include_patterns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     json_options: NotRequired[pulumi.Input[ZoneDiscoverySpecJsonOptionsArgsDict]]
     schedule: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneDiscoverySpecArgs:
@@ -3500,7 +3417,6 @@ class ZoneDiscoverySpecCsvOptionsArgsDict(TypedDict):
     disable_type_inference: NotRequired[pulumi.Input[_builtins.bool]]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
     header_rows: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ZoneDiscoverySpecCsvOptionsArgs:
@@ -3536,7 +3452,6 @@ class ZoneDiscoverySpecCsvOptionsArgs:
 class ZoneDiscoverySpecJsonOptionsArgsDict(TypedDict):
     disable_type_inference: NotRequired[pulumi.Input[_builtins.bool]]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneDiscoverySpecJsonOptionsArgs:
@@ -3561,7 +3476,6 @@ class ZoneIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneIamBindingConditionArgs:
@@ -3592,7 +3506,6 @@ class ZoneIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ZoneIamMemberConditionArgs:
@@ -3621,7 +3534,6 @@ class ZoneIamMemberConditionArgs:
 
 class ZoneResourceSpecArgsDict(TypedDict):
     location_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ZoneResourceSpecArgs:

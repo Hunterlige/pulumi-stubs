@@ -10,7 +10,6 @@ __all__ = ["VaultNotificationArgs", "VaultNotificationArgsDict"]
 class VaultNotificationArgsDict(TypedDict):
     events: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     sns_topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VaultNotificationArgs:

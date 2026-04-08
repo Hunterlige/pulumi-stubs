@@ -13,7 +13,6 @@ class ClusterClusterCertificateArgsDict(TypedDict):
     cluster_csr: NotRequired[pulumi.Input[_builtins.str]]
     hsm_certificate: NotRequired[pulumi.Input[_builtins.str]]
     manufacturer_hardware_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterCertificateArgs:

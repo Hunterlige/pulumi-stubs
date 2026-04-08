@@ -55,7 +55,6 @@ class AssetTypeFormsInputArgsDict(TypedDict):
     type_identifier: pulumi.Input[_builtins.str]
     type_revision: pulumi.Input[_builtins.str]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AssetTypeFormsInputArgs:
@@ -90,7 +89,6 @@ class AssetTypeFormsInputArgs:
 
 class AssetTypeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AssetTypeTimeoutsArgs:
@@ -106,7 +104,6 @@ class AssetTypeTimeoutsArgs:
 class DomainSingleSignOnArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     user_assignment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainSingleSignOnArgs:
@@ -130,7 +127,6 @@ class DomainSingleSignOnArgs:
 class DomainTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainTimeoutsArgs:
@@ -160,7 +156,6 @@ class EnvironmentLastDeploymentArgsDict(TypedDict):
     ]
     is_deployment_complete: pulumi.Input[_builtins.bool]
     messages: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EnvironmentLastDeploymentArgs:
@@ -219,7 +214,6 @@ class EnvironmentLastDeploymentArgs:
 class EnvironmentLastDeploymentFailureReasonArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentLastDeploymentFailureReasonArgs:
@@ -243,7 +237,6 @@ class EnvironmentLastDeploymentFailureReasonArgs:
 class EnvironmentProfileUserParameterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentProfileUserParameterArgs:
@@ -269,7 +262,6 @@ class EnvironmentProvisionedResourceArgsDict(TypedDict):
     provider: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentProvisionedResourceArgs:
@@ -306,7 +298,6 @@ class EnvironmentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentTimeoutsArgs:
@@ -336,7 +327,6 @@ class EnvironmentTimeoutsArgs:
 class EnvironmentUserParameterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentUserParameterArgs:
@@ -360,7 +350,6 @@ class EnvironmentUserParameterArgs:
 class FormTypeImportArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     revision: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FormTypeImportArgs:
@@ -383,7 +372,6 @@ class FormTypeImportArgs:
 
 class FormTypeModelArgsDict(TypedDict):
     smithy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FormTypeModelArgs:
@@ -396,7 +384,6 @@ class FormTypeModelArgs:
 
 class FormTypeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FormTypeTimeoutsArgs:
@@ -412,7 +399,6 @@ class FormTypeTimeoutsArgs:
 class GlossaryTermTermRelationsArgsDict(TypedDict):
     classifies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     is_as: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GlossaryTermTermRelationsArgs:
@@ -443,7 +429,6 @@ class GlossaryTermTermRelationsArgs:
 
 class GlossaryTermTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GlossaryTermTimeoutsArgs:
@@ -459,7 +444,6 @@ class GlossaryTermTimeoutsArgs:
 class ProjectFailureReasonArgsDict(TypedDict):
     code: pulumi.Input[_builtins.str]
     message: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectFailureReasonArgs:
@@ -483,7 +467,6 @@ class ProjectFailureReasonArgs:
 class ProjectTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectTimeoutsArgs:
@@ -507,7 +490,6 @@ class ProjectTimeoutsArgs:
 class UserProfileDetailArgsDict(TypedDict):
     iams: pulumi.Input[Sequence[pulumi.Input[UserProfileDetailIamArgsDict]]]
     ssos: pulumi.Input[Sequence[pulumi.Input[UserProfileDetailSsoArgsDict]]]
-    ...
 
 @pulumi.input_type
 class UserProfileDetailArgs:
@@ -538,7 +520,6 @@ class UserProfileDetailArgs:
 
 class UserProfileDetailIamArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserProfileDetailIamArgs:
@@ -553,7 +534,6 @@ class UserProfileDetailSsoArgsDict(TypedDict):
     first_name: pulumi.Input[_builtins.str]
     last_name: pulumi.Input[_builtins.str]
     user_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserProfileDetailSsoArgs:
@@ -583,7 +563,6 @@ class UserProfileDetailSsoArgs:
 class UserProfileTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserProfileTimeoutsArgs:

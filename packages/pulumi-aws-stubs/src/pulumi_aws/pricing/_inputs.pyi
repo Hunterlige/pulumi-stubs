@@ -10,7 +10,6 @@ __all__ = ["GetProductFilterArgs", "GetProductFilterArgsDict"]
 class GetProductFilterArgsDict(TypedDict):
     field: _builtins.str
     value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetProductFilterArgs:

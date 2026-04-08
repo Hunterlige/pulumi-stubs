@@ -23,7 +23,6 @@ class DirectoryConnectSettingsArgsDict(TypedDict):
     vpc_id: pulumi.Input[_builtins.str]
     availability_zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     connect_ips: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DirectoryConnectSettingsArgs:
@@ -90,7 +89,6 @@ class DirectoryVpcSettingsArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
     availability_zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DirectoryVpcSettingsArgs:
@@ -128,7 +126,6 @@ class DirectoryVpcSettingsArgs:
 class ServiceRegionVpcSettingsArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceRegionVpcSettingsArgs:
@@ -154,7 +151,6 @@ class ServiceRegionVpcSettingsArgs:
 class SharedDirectoryTargetArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SharedDirectoryTargetArgs:

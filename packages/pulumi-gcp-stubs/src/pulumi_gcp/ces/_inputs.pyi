@@ -466,7 +466,6 @@ class AgentAfterAgentCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentAfterAgentCallbackArgs:
@@ -497,7 +496,6 @@ class AgentAfterModelCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentAfterModelCallbackArgs:
@@ -528,7 +526,6 @@ class AgentAfterToolCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentAfterToolCallbackArgs:
@@ -559,7 +556,6 @@ class AgentBeforeAgentCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentBeforeAgentCallbackArgs:
@@ -590,7 +586,6 @@ class AgentBeforeModelCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentBeforeModelCallbackArgs:
@@ -621,7 +616,6 @@ class AgentBeforeToolCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AgentBeforeToolCallbackArgs:
@@ -657,7 +651,6 @@ class AgentLlmAgentArgs:
 class AgentModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AgentModelSettingsArgs:
@@ -688,7 +681,6 @@ class AgentRemoteDialogflowAgentArgsDict(TypedDict):
     output_variable_mapping: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AgentRemoteDialogflowAgentArgs:
@@ -742,7 +734,6 @@ class AgentRemoteDialogflowAgentArgs:
 class AgentToolsetArgsDict(TypedDict):
     toolset: pulumi.Input[_builtins.str]
     tool_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AgentToolsetArgs:
@@ -782,7 +773,6 @@ class AppAudioProcessingConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppAudioProcessingConfigArgs:
@@ -853,7 +843,6 @@ class AppAudioProcessingConfigAmbientSoundConfigArgsDict(TypedDict):
     gcs_uri: NotRequired[pulumi.Input[_builtins.str]]
     prebuilt_ambient_sound: NotRequired[pulumi.Input[_builtins.str]]
     volume_gain_db: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppAudioProcessingConfigAmbientSoundConfigArgs:
@@ -882,7 +871,6 @@ class AppAudioProcessingConfigAmbientSoundConfigArgs:
 
 class AppAudioProcessingConfigBargeInConfigArgsDict(TypedDict):
     barge_in_awareness: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppAudioProcessingConfigBargeInConfigArgs:
@@ -899,7 +887,6 @@ class AppAudioProcessingConfigSynthesizeSpeechConfigArgsDict(TypedDict):
     language_code: pulumi.Input[_builtins.str]
     speaking_rate: NotRequired[pulumi.Input[_builtins.float]]
     voice: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppAudioProcessingConfigSynthesizeSpeechConfigArgs:
@@ -930,7 +917,6 @@ class AppClientCertificateSettingsArgsDict(TypedDict):
     private_key: pulumi.Input[_builtins.str]
     tls_certificate: pulumi.Input[_builtins.str]
     passphrase: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppClientCertificateSettingsArgs:
@@ -961,7 +947,6 @@ class AppDataStoreSettingsArgsDict(TypedDict):
     engines: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AppDataStoreSettingsEngineArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppDataStoreSettingsArgs:
@@ -990,7 +975,6 @@ class AppDataStoreSettingsArgs:
 class AppDataStoreSettingsEngineArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppDataStoreSettingsEngineArgs:
@@ -1022,7 +1006,6 @@ class AppDefaultChannelProfileArgsDict(TypedDict):
     web_widget_config: NotRequired[
         pulumi.Input[AppDefaultChannelProfileWebWidgetConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppDefaultChannelProfileArgs:
@@ -1083,7 +1066,6 @@ class AppDefaultChannelProfileArgs:
 
 class AppDefaultChannelProfilePersonaPropertyArgsDict(TypedDict):
     persona: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppDefaultChannelProfilePersonaPropertyArgs:
@@ -1100,7 +1082,6 @@ class AppDefaultChannelProfileWebWidgetConfigArgsDict(TypedDict):
     modality: NotRequired[pulumi.Input[_builtins.str]]
     theme: NotRequired[pulumi.Input[_builtins.str]]
     web_widget_title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppDefaultChannelProfileWebWidgetConfigArgs:
@@ -1133,7 +1114,6 @@ class AppEvaluationMetricsThresholdsArgsDict(TypedDict):
             AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppEvaluationMetricsThresholdsArgs:
@@ -1178,7 +1158,6 @@ class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsArgsDict(
             AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsArgs:
@@ -1239,7 +1218,6 @@ class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectation
     tool_invocation_parameter_correctness_threshold: NotRequired[
         pulumi.Input[_builtins.float]
     ]
-    ...
 
 @pulumi.input_type
 class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsArgs:
@@ -1267,7 +1245,6 @@ class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMe
         pulumi.Input[_builtins.float]
     ]
     semantic_similarity_success_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsArgs:
@@ -1307,7 +1284,6 @@ class AppLanguageSettingsArgsDict(TypedDict):
     supported_language_codes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppLanguageSettingsArgs:
@@ -1364,7 +1340,6 @@ class AppLoggingSettingsArgsDict(TypedDict):
     redaction_config: NotRequired[
         pulumi.Input[AppLoggingSettingsRedactionConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsArgs:
@@ -1440,7 +1415,6 @@ class AppLoggingSettingsArgs:
 class AppLoggingSettingsAudioRecordingConfigArgsDict(TypedDict):
     gcs_bucket: NotRequired[pulumi.Input[_builtins.str]]
     gcs_path_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsAudioRecordingConfigArgs:
@@ -1465,7 +1439,6 @@ class AppLoggingSettingsBigqueryExportSettingsArgsDict(TypedDict):
     dataset: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsBigqueryExportSettingsArgs:
@@ -1494,7 +1467,6 @@ class AppLoggingSettingsBigqueryExportSettingsArgs:
 
 class AppLoggingSettingsCloudLoggingSettingsArgsDict(TypedDict):
     enable_cloud_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsCloudLoggingSettingsArgs:
@@ -1509,7 +1481,6 @@ class AppLoggingSettingsCloudLoggingSettingsArgs:
 
 class AppLoggingSettingsConversationLoggingSettingsArgsDict(TypedDict):
     disable_conversation_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsConversationLoggingSettingsArgs:
@@ -1532,7 +1503,6 @@ class AppLoggingSettingsRedactionConfigArgsDict(TypedDict):
     deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
     enable_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppLoggingSettingsRedactionConfigArgs:
@@ -1562,7 +1532,6 @@ class AppLoggingSettingsRedactionConfigArgs:
 class AppModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppModelSettingsArgs:
@@ -1585,7 +1554,6 @@ class AppModelSettingsArgs:
 
 class AppTimeZoneSettingsArgsDict(TypedDict):
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppTimeZoneSettingsArgs:
@@ -1602,7 +1570,6 @@ class AppVariableDeclarationArgsDict(TypedDict):
     description: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     schema: pulumi.Input[AppVariableDeclarationSchemaArgsDict]
-    ...
 
 @pulumi.input_type
 class AppVariableDeclarationArgs:
@@ -1645,7 +1612,6 @@ class AppVariableDeclarationSchemaArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     title: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVariableDeclarationSchemaArgs:
@@ -1771,7 +1737,6 @@ class AppVersionSnapshotArgsDict(TypedDict):
     toolsets: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AppVersionSnapshotToolsetArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotArgs:
@@ -1936,7 +1901,6 @@ class AppVersionSnapshotAgentArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[AppVersionSnapshotAgentToolsetArgsDict]]]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentArgs:
@@ -2245,7 +2209,6 @@ class AppVersionSnapshotAgentAfterAgentCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentAfterAgentCallbackArgs:
@@ -2276,7 +2239,6 @@ class AppVersionSnapshotAgentAfterModelCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentAfterModelCallbackArgs:
@@ -2307,7 +2269,6 @@ class AppVersionSnapshotAgentAfterToolCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentAfterToolCallbackArgs:
@@ -2338,7 +2299,6 @@ class AppVersionSnapshotAgentBeforeAgentCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentBeforeAgentCallbackArgs:
@@ -2369,7 +2329,6 @@ class AppVersionSnapshotAgentBeforeModelCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentBeforeModelCallbackArgs:
@@ -2400,7 +2359,6 @@ class AppVersionSnapshotAgentBeforeToolCallbackArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentBeforeToolCallbackArgs:
@@ -2436,7 +2394,6 @@ class AppVersionSnapshotAgentLlmAgentArgs:
 class AppVersionSnapshotAgentModelSettingArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentModelSettingArgs:
@@ -2467,7 +2424,6 @@ class AppVersionSnapshotAgentRemoteDialogflowAgentArgsDict(TypedDict):
     output_variable_mapping: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentRemoteDialogflowAgentArgs:
@@ -2521,7 +2477,6 @@ class AppVersionSnapshotAgentRemoteDialogflowAgentArgs:
 class AppVersionSnapshotAgentToolsetArgsDict(TypedDict):
     tool_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     toolset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAgentToolsetArgs:
@@ -2610,7 +2565,6 @@ class AppVersionSnapshotAppArgsDict(TypedDict):
             Sequence[pulumi.Input[AppVersionSnapshotAppVariableDeclarationArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppArgs:
@@ -2948,7 +2902,6 @@ class AppVersionSnapshotAppAudioProcessingConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppAudioProcessingConfigArgs:
@@ -3072,7 +3025,6 @@ class AppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigArgsDict(Typed
     gcs_uri: NotRequired[pulumi.Input[_builtins.str]]
     prebuilt_ambient_sound: NotRequired[pulumi.Input[_builtins.str]]
     volume_gain_db: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigArgs:
@@ -3101,7 +3053,6 @@ class AppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigArgs:
 
 class AppVersionSnapshotAppAudioProcessingConfigBargeInConfigArgsDict(TypedDict):
     barge_in_awareness: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppAudioProcessingConfigBargeInConfigArgs:
@@ -3120,7 +3071,6 @@ class AppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigArgsDict(
     language_code: pulumi.Input[_builtins.str]
     speaking_rate: NotRequired[pulumi.Input[_builtins.float]]
     voice: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigArgs:
@@ -3151,7 +3101,6 @@ class AppVersionSnapshotAppClientCertificateSettingArgsDict(TypedDict):
     passphrase: NotRequired[pulumi.Input[_builtins.str]]
     private_key: NotRequired[pulumi.Input[_builtins.str]]
     tls_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppClientCertificateSettingArgs:
@@ -3184,7 +3133,6 @@ class AppVersionSnapshotAppDataStoreSettingArgsDict(TypedDict):
             Sequence[pulumi.Input[AppVersionSnapshotAppDataStoreSettingEngineArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppDataStoreSettingArgs:
@@ -3219,7 +3167,6 @@ class AppVersionSnapshotAppDataStoreSettingArgs:
 class AppVersionSnapshotAppDataStoreSettingEngineArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppDataStoreSettingEngineArgs:
@@ -3263,7 +3210,6 @@ class AppVersionSnapshotAppDefaultChannelProfileArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppDefaultChannelProfileArgs:
@@ -3370,7 +3316,6 @@ class AppVersionSnapshotAppDefaultChannelProfileArgs:
 
 class AppVersionSnapshotAppDefaultChannelProfilePersonaPropertyArgsDict(TypedDict):
     persona: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppDefaultChannelProfilePersonaPropertyArgs:
@@ -3387,7 +3332,6 @@ class AppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigArgsDict(TypedDic
     modality: NotRequired[pulumi.Input[_builtins.str]]
     theme: NotRequired[pulumi.Input[_builtins.str]]
     web_widget_title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigArgs:
@@ -3424,7 +3368,6 @@ class AppVersionSnapshotAppEvaluationMetricsThresholdArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppEvaluationMetricsThresholdArgs:
@@ -3489,7 +3432,6 @@ class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThre
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThresholdArgs:
@@ -3574,7 +3516,6 @@ class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThre
     tool_invocation_parameter_correctness_threshold: NotRequired[
         pulumi.Input[_builtins.float]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThresholdExpectationLevelMetricsThresholdArgs:
@@ -3602,7 +3543,6 @@ class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThre
         pulumi.Input[_builtins.float]
     ]
     semantic_similarity_success_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppEvaluationMetricsThresholdGoldenEvaluationMetricsThresholdTurnLevelMetricsThresholdArgs:
@@ -3642,7 +3582,6 @@ class AppVersionSnapshotAppLanguageSettingArgsDict(TypedDict):
     supported_language_codes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLanguageSettingArgs:
@@ -3727,7 +3666,6 @@ class AppVersionSnapshotAppLoggingSettingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingArgs:
@@ -3906,7 +3844,6 @@ class AppVersionSnapshotAppLoggingSettingArgs:
 class AppVersionSnapshotAppLoggingSettingAudioRecordingConfigArgsDict(TypedDict):
     gcs_bucket: NotRequired[pulumi.Input[_builtins.str]]
     gcs_path_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingAudioRecordingConfigArgs:
@@ -3931,7 +3868,6 @@ class AppVersionSnapshotAppLoggingSettingBigqueryExportSettingArgsDict(TypedDict
     dataset: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingBigqueryExportSettingArgs:
@@ -3960,7 +3896,6 @@ class AppVersionSnapshotAppLoggingSettingBigqueryExportSettingArgs:
 
 class AppVersionSnapshotAppLoggingSettingCloudLoggingSettingArgsDict(TypedDict):
     enable_cloud_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingCloudLoggingSettingArgs:
@@ -3975,7 +3910,6 @@ class AppVersionSnapshotAppLoggingSettingCloudLoggingSettingArgs:
 
 class AppVersionSnapshotAppLoggingSettingConversationLoggingSettingArgsDict(TypedDict):
     disable_conversation_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingConversationLoggingSettingArgs:
@@ -3998,7 +3932,6 @@ class AppVersionSnapshotAppLoggingSettingRedactionConfigArgsDict(TypedDict):
     deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
     enable_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     inspect_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppLoggingSettingRedactionConfigArgs:
@@ -4028,7 +3961,6 @@ class AppVersionSnapshotAppLoggingSettingRedactionConfigArgs:
 class AppVersionSnapshotAppModelSettingArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppModelSettingArgs:
@@ -4051,7 +3983,6 @@ class AppVersionSnapshotAppModelSettingArgs:
 
 class AppVersionSnapshotAppTimeZoneSettingArgsDict(TypedDict):
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppTimeZoneSettingArgs:
@@ -4074,7 +4005,6 @@ class AppVersionSnapshotAppVariableDeclarationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppVariableDeclarationArgs:
@@ -4137,7 +4067,6 @@ class AppVersionSnapshotAppVariableDeclarationSchemaArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotAppVariableDeclarationSchemaArgs:
@@ -4250,7 +4179,6 @@ class AppVersionSnapshotExampleArgsDict(TypedDict):
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleArgs:
@@ -4331,7 +4259,6 @@ class AppVersionSnapshotExampleMessageArgsDict(TypedDict):
         ]
     ]
     role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageArgs:
@@ -4396,7 +4323,6 @@ class AppVersionSnapshotExampleMessageChunkArgsDict(TypedDict):
         ]
     ]
     updated_variables: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkArgs:
@@ -4528,7 +4454,6 @@ class AppVersionSnapshotExampleMessageChunkArgs:
 class AppVersionSnapshotExampleMessageChunkAgentTransferArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     target_agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkAgentTransferArgs:
@@ -4552,7 +4477,6 @@ class AppVersionSnapshotExampleMessageChunkAgentTransferArgs:
 class AppVersionSnapshotExampleMessageChunkImageArgsDict(TypedDict):
     data: NotRequired[pulumi.Input[_builtins.str]]
     mime_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkImageArgs:
@@ -4587,7 +4511,6 @@ class AppVersionSnapshotExampleMessageChunkToolCallArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkToolCallArgs:
@@ -4658,7 +4581,6 @@ class AppVersionSnapshotExampleMessageChunkToolCallArgs:
 class AppVersionSnapshotExampleMessageChunkToolCallToolsetToolArgsDict(TypedDict):
     tool_id: NotRequired[pulumi.Input[_builtins.str]]
     toolset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkToolCallToolsetToolArgs:
@@ -4693,7 +4615,6 @@ class AppVersionSnapshotExampleMessageChunkToolResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkToolResponseArgs:
@@ -4764,7 +4685,6 @@ class AppVersionSnapshotExampleMessageChunkToolResponseArgs:
 class AppVersionSnapshotExampleMessageChunkToolResponseToolsetToolArgsDict(TypedDict):
     tool_id: NotRequired[pulumi.Input[_builtins.str]]
     toolset: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotExampleMessageChunkToolResponseToolsetToolArgs:
@@ -4821,7 +4741,6 @@ class AppVersionSnapshotGuardrailArgsDict(TypedDict):
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailArgs:
@@ -5024,7 +4943,6 @@ class AppVersionSnapshotGuardrailActionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailActionArgs:
@@ -5124,7 +5042,6 @@ class AppVersionSnapshotGuardrailActionArgs:
 
 class AppVersionSnapshotGuardrailActionGenerativeAnswerArgsDict(TypedDict):
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailActionGenerativeAnswerArgs:
@@ -5147,7 +5064,6 @@ class AppVersionSnapshotGuardrailActionRespondImmediatelyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailActionRespondImmediatelyArgs:
@@ -5194,7 +5110,6 @@ class AppVersionSnapshotGuardrailActionRespondImmediatelyArgs:
 class AppVersionSnapshotGuardrailActionRespondImmediatelyResponseArgsDict(TypedDict):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailActionRespondImmediatelyResponseArgs:
@@ -5217,7 +5132,6 @@ class AppVersionSnapshotGuardrailActionRespondImmediatelyResponseArgs:
 
 class AppVersionSnapshotGuardrailActionTransferAgentArgsDict(TypedDict):
     agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailActionTransferAgentArgs:
@@ -5267,7 +5181,6 @@ class AppVersionSnapshotGuardrailCodeCallbackArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailCodeCallbackArgs:
@@ -5420,7 +5333,6 @@ class AppVersionSnapshotGuardrailCodeCallbackAfterAgentCallbackArgsDict(TypedDic
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailCodeCallbackAfterAgentCallbackArgs:
@@ -5451,7 +5363,6 @@ class AppVersionSnapshotGuardrailCodeCallbackAfterModelCallbackArgsDict(TypedDic
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailCodeCallbackAfterModelCallbackArgs:
@@ -5482,7 +5393,6 @@ class AppVersionSnapshotGuardrailCodeCallbackBeforeAgentCallbackArgsDict(TypedDi
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailCodeCallbackBeforeAgentCallbackArgs:
@@ -5513,7 +5423,6 @@ class AppVersionSnapshotGuardrailCodeCallbackBeforeModelCallbackArgsDict(TypedDi
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailCodeCallbackBeforeModelCallbackArgs:
@@ -5550,7 +5459,6 @@ class AppVersionSnapshotGuardrailContentFilterArgsDict(TypedDict):
     ]
     disregard_diacritics: NotRequired[pulumi.Input[_builtins.bool]]
     match_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailContentFilterArgs:
@@ -5619,7 +5527,6 @@ class AppVersionSnapshotGuardrailLlmPolicyArgsDict(TypedDict):
     ]
     policy_scope: NotRequired[pulumi.Input[_builtins.str]]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPolicyArgs:
@@ -5684,7 +5591,6 @@ class AppVersionSnapshotGuardrailLlmPolicyArgs:
 class AppVersionSnapshotGuardrailLlmPolicyModelSettingArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPolicyModelSettingArgs:
@@ -5724,7 +5630,6 @@ class AppVersionSnapshotGuardrailLlmPromptSecurityArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPromptSecurityArgs:
@@ -5817,7 +5722,6 @@ class AppVersionSnapshotGuardrailLlmPromptSecurityCustomPolicyArgsDict(TypedDict
     ]
     policy_scope: NotRequired[pulumi.Input[_builtins.str]]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPromptSecurityCustomPolicyArgs:
@@ -5892,7 +5796,6 @@ class AppVersionSnapshotGuardrailLlmPromptSecurityCustomPolicyModelSettingArgsDi
 ):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPromptSecurityCustomPolicyModelSettingArgs:
@@ -5915,7 +5818,6 @@ class AppVersionSnapshotGuardrailLlmPromptSecurityCustomPolicyModelSettingArgs:
 
 class AppVersionSnapshotGuardrailLlmPromptSecurityDefaultSettingArgsDict(TypedDict):
     default_prompt_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailLlmPromptSecurityDefaultSettingArgs:
@@ -5940,7 +5842,6 @@ class AppVersionSnapshotGuardrailModelSafetyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailModelSafetyArgs:
@@ -5985,7 +5886,6 @@ class AppVersionSnapshotGuardrailModelSafetyArgs:
 class AppVersionSnapshotGuardrailModelSafetySafetySettingArgsDict(TypedDict):
     category: NotRequired[pulumi.Input[_builtins.str]]
     threshold: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotGuardrailModelSafetySafetySettingArgs:
@@ -6040,7 +5940,6 @@ class AppVersionSnapshotToolArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[AppVersionSnapshotToolSystemToolArgsDict]]]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolArgs:
@@ -6224,7 +6123,6 @@ class AppVersionSnapshotToolClientFunctionArgsDict(TypedDict):
             Sequence[pulumi.Input[AppVersionSnapshotToolClientFunctionResponseArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolClientFunctionArgs:
@@ -6310,7 +6208,6 @@ class AppVersionSnapshotToolClientFunctionParameterArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolClientFunctionParameterArgs:
@@ -6426,7 +6323,6 @@ class AppVersionSnapshotToolClientFunctionResponseArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolClientFunctionResponseArgs:
@@ -6550,7 +6446,6 @@ class AppVersionSnapshotToolDataStoreToolArgsDict(TypedDict):
         ]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolArgs:
@@ -6665,7 +6560,6 @@ class AppVersionSnapshotToolDataStoreToolBoostSpecArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolBoostSpecArgs:
@@ -6723,7 +6617,6 @@ class AppVersionSnapshotToolDataStoreToolBoostSpecSpecArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolBoostSpecSpecArgs:
@@ -6781,7 +6674,6 @@ class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecArgsDict
         ]
     ]
     condition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecArgs:
@@ -6852,7 +6744,6 @@ class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostCon
     ]
     field_name: NotRequired[pulumi.Input[_builtins.str]]
     interpolation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecArgs:
@@ -6919,7 +6810,6 @@ class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostCon
 ):
     attribute_value: NotRequired[pulumi.Input[_builtins.str]]
     boost_amount: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecControlPointArgs:
@@ -6952,7 +6842,6 @@ class AppVersionSnapshotToolDataStoreToolEngineSourceArgsDict(TypedDict):
     ]
     engine: NotRequired[pulumi.Input[_builtins.str]]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolEngineSourceArgs:
@@ -7019,7 +6908,6 @@ class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceArgsDict(Typ
         ]
     ]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceArgs:
@@ -7086,7 +6974,6 @@ class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceDataStoreArg
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceDataStoreArgs:
@@ -7168,7 +7055,6 @@ class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceDataStoreCon
     collection: NotRequired[pulumi.Input[_builtins.str]]
     collection_display_name: NotRequired[pulumi.Input[_builtins.str]]
     data_source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolEngineSourceDataStoreSourceDataStoreConnectorConfigArgs:
@@ -7224,7 +7110,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigArgs:
@@ -7349,7 +7234,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigGroundingConfigArgsDict(
 ):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     grounding_level: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigGroundingConfigArgs:
@@ -7384,7 +7268,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigRewriterConfigArgsDict(
         ]
     ]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigRewriterConfigArgs:
@@ -7445,7 +7328,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigRewriterConfigModelSettin
 ):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigRewriterConfigModelSettingArgs:
@@ -7480,7 +7362,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigSummarizationConfigArgsDi
         ]
     ]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigSummarizationConfigArgs:
@@ -7541,7 +7422,6 @@ class AppVersionSnapshotToolDataStoreToolModalityConfigSummarizationConfigModelS
 ):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolDataStoreToolModalityConfigSummarizationConfigModelSettingArgs:
@@ -7566,7 +7446,6 @@ class AppVersionSnapshotToolGoogleSearchToolArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     exclude_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolGoogleSearchToolArgs:
@@ -7626,7 +7505,6 @@ class AppVersionSnapshotToolOpenApiToolArgsDict(TypedDict):
         ]
     ]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolArgs:
@@ -7789,7 +7667,6 @@ class AppVersionSnapshotToolOpenApiToolApiAuthenticationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolApiAuthenticationArgs:
@@ -7942,7 +7819,6 @@ class AppVersionSnapshotToolOpenApiToolApiAuthenticationApiKeyConfigArgsDict(Typ
     api_key_secret_version: NotRequired[pulumi.Input[_builtins.str]]
     key_name: NotRequired[pulumi.Input[_builtins.str]]
     request_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolApiAuthenticationApiKeyConfigArgs:
@@ -7975,7 +7851,6 @@ class AppVersionSnapshotToolOpenApiToolApiAuthenticationOauthConfigArgsDict(Type
     oauth_grant_type: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolApiAuthenticationOauthConfigArgs:
@@ -8022,7 +7897,6 @@ class AppVersionSnapshotToolOpenApiToolApiAuthenticationServiceAccountAuthConfig
     TypedDict
 ):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolApiAuthenticationServiceAccountAuthConfigArgs:
@@ -8045,7 +7919,6 @@ class AppVersionSnapshotToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthC
 
 class AppVersionSnapshotToolOpenApiToolServiceDirectoryConfigArgsDict(TypedDict):
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolServiceDirectoryConfigArgs:
@@ -8066,7 +7939,6 @@ class AppVersionSnapshotToolOpenApiToolTlsConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolTlsConfigArgs:
@@ -8105,7 +7977,6 @@ class AppVersionSnapshotToolOpenApiToolTlsConfigArgs:
 class AppVersionSnapshotToolOpenApiToolTlsConfigCaCertArgsDict(TypedDict):
     cert: NotRequired[pulumi.Input[_builtins.str]]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolOpenApiToolTlsConfigCaCertArgs:
@@ -8130,7 +8001,6 @@ class AppVersionSnapshotToolPythonFunctionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolPythonFunctionArgs:
@@ -8160,7 +8030,6 @@ class AppVersionSnapshotToolPythonFunctionArgs:
 class AppVersionSnapshotToolSystemToolArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolSystemToolArgs:
@@ -8194,7 +8063,6 @@ class AppVersionSnapshotToolsetArgsDict(TypedDict):
         ]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetArgs:
@@ -8297,7 +8165,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetArgsDict(TypedDict):
         ]
     ]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetArgs:
@@ -8467,7 +8334,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationArgs:
@@ -8657,7 +8523,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationApiKeyConfigArgsDi
     api_key_secret_version: NotRequired[pulumi.Input[_builtins.str]]
     key_name: NotRequired[pulumi.Input[_builtins.str]]
     request_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationApiKeyConfigArgs:
@@ -8688,7 +8553,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigA
     TypedDict
 ):
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigArgs:
@@ -8709,7 +8573,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationOauthConfigArgsDic
     oauth_grant_type: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationOauthConfigArgs:
@@ -8756,7 +8619,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationServiceAccountAuth
     TypedDict
 ):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigArgs:
@@ -8779,7 +8641,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetApiAuthenticationServiceAgentIdToke
 
 class AppVersionSnapshotToolsetOpenApiToolsetServiceDirectoryConfigArgsDict(TypedDict):
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetServiceDirectoryConfigArgs:
@@ -8802,7 +8663,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetTlsConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetTlsConfigArgs:
@@ -8847,7 +8707,6 @@ class AppVersionSnapshotToolsetOpenApiToolsetTlsConfigArgs:
 class AppVersionSnapshotToolsetOpenApiToolsetTlsConfigCaCertArgsDict(TypedDict):
     cert: NotRequired[pulumi.Input[_builtins.str]]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppVersionSnapshotToolsetOpenApiToolsetTlsConfigCaCertArgs:
@@ -8879,7 +8738,6 @@ class DeploymentChannelProfileArgsDict(TypedDict):
     web_widget_config: NotRequired[
         pulumi.Input[DeploymentChannelProfileWebWidgetConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DeploymentChannelProfileArgs:
@@ -8940,7 +8798,6 @@ class DeploymentChannelProfileArgs:
 
 class DeploymentChannelProfilePersonaPropertyArgsDict(TypedDict):
     persona: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentChannelProfilePersonaPropertyArgs:
@@ -8957,7 +8814,6 @@ class DeploymentChannelProfileWebWidgetConfigArgsDict(TypedDict):
     modality: NotRequired[pulumi.Input[_builtins.str]]
     theme: NotRequired[pulumi.Input[_builtins.str]]
     web_widget_title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentChannelProfileWebWidgetConfigArgs:
@@ -8989,7 +8845,6 @@ class ExampleMessageArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ExampleMessageChunkArgsDict]]]
     ]
     role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExampleMessageArgs:
@@ -9024,7 +8879,6 @@ class ExampleMessageChunkArgsDict(TypedDict):
     tool_call: NotRequired[pulumi.Input[ExampleMessageChunkToolCallArgsDict]]
     tool_response: NotRequired[pulumi.Input[ExampleMessageChunkToolResponseArgsDict]]
     updated_variables: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkArgs:
@@ -9086,7 +8940,6 @@ class ExampleMessageChunkArgs:
 class ExampleMessageChunkAgentTransferArgsDict(TypedDict):
     target_agent: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkAgentTransferArgs:
@@ -9110,7 +8963,6 @@ class ExampleMessageChunkAgentTransferArgs:
 class ExampleMessageChunkImageArgsDict(TypedDict):
     data: pulumi.Input[_builtins.str]
     mime_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkImageArgs:
@@ -9139,7 +8991,6 @@ class ExampleMessageChunkToolCallArgsDict(TypedDict):
     toolset_tool: NotRequired[
         pulumi.Input[ExampleMessageChunkToolCallToolsetToolArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkToolCallArgs:
@@ -9187,7 +9038,6 @@ class ExampleMessageChunkToolCallArgs:
 class ExampleMessageChunkToolCallToolsetToolArgsDict(TypedDict):
     toolset: pulumi.Input[_builtins.str]
     tool_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkToolCallToolsetToolArgs:
@@ -9216,7 +9066,6 @@ class ExampleMessageChunkToolResponseArgsDict(TypedDict):
     toolset_tool: NotRequired[
         pulumi.Input[ExampleMessageChunkToolResponseToolsetToolArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkToolResponseArgs:
@@ -9265,7 +9114,6 @@ class ExampleMessageChunkToolResponseArgs:
 class ExampleMessageChunkToolResponseToolsetToolArgsDict(TypedDict):
     toolset: pulumi.Input[_builtins.str]
     tool_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExampleMessageChunkToolResponseToolsetToolArgs:
@@ -9294,7 +9142,6 @@ class GuardrailActionArgsDict(TypedDict):
         pulumi.Input[GuardrailActionRespondImmediatelyArgsDict]
     ]
     transfer_agent: NotRequired[pulumi.Input[GuardrailActionTransferAgentArgsDict]]
-    ...
 
 @pulumi.input_type
 class GuardrailActionArgs:
@@ -9339,7 +9186,6 @@ class GuardrailActionArgs:
 
 class GuardrailActionGenerativeAnswerArgsDict(TypedDict):
     prompt: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailActionGenerativeAnswerArgs:
@@ -9354,7 +9200,6 @@ class GuardrailActionRespondImmediatelyArgsDict(TypedDict):
     responses: pulumi.Input[
         Sequence[pulumi.Input[GuardrailActionRespondImmediatelyResponseArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailActionRespondImmediatelyArgs:
@@ -9383,7 +9228,6 @@ class GuardrailActionRespondImmediatelyArgs:
 class GuardrailActionRespondImmediatelyResponseArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailActionRespondImmediatelyResponseArgs:
@@ -9406,7 +9250,6 @@ class GuardrailActionRespondImmediatelyResponseArgs:
 
 class GuardrailActionTransferAgentArgsDict(TypedDict):
     agent: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailActionTransferAgentArgs:
@@ -9430,7 +9273,6 @@ class GuardrailCodeCallbackArgsDict(TypedDict):
     before_model_callback: NotRequired[
         pulumi.Input[GuardrailCodeCallbackBeforeModelCallbackArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailCodeCallbackArgs:
@@ -9493,7 +9335,6 @@ class GuardrailCodeCallbackAfterAgentCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailCodeCallbackAfterAgentCallbackArgs:
@@ -9524,7 +9365,6 @@ class GuardrailCodeCallbackAfterModelCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailCodeCallbackAfterModelCallbackArgs:
@@ -9555,7 +9395,6 @@ class GuardrailCodeCallbackBeforeAgentCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailCodeCallbackBeforeAgentCallbackArgs:
@@ -9586,7 +9425,6 @@ class GuardrailCodeCallbackBeforeModelCallbackArgsDict(TypedDict):
     python_code: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailCodeCallbackBeforeModelCallbackArgs:
@@ -9623,7 +9461,6 @@ class GuardrailContentFilterArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     disregard_diacritics: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GuardrailContentFilterArgs:
@@ -9687,7 +9524,6 @@ class GuardrailLlmPolicyArgsDict(TypedDict):
     fail_open: NotRequired[pulumi.Input[_builtins.bool]]
     max_conversation_messages: NotRequired[pulumi.Input[_builtins.int]]
     model_settings: NotRequired[pulumi.Input[GuardrailLlmPolicyModelSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPolicyArgs:
@@ -9743,7 +9579,6 @@ class GuardrailLlmPolicyArgs:
 class GuardrailLlmPolicyModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPolicyModelSettingsArgs:
@@ -9771,7 +9606,6 @@ class GuardrailLlmPromptSecurityArgsDict(TypedDict):
     default_settings: NotRequired[
         pulumi.Input[GuardrailLlmPromptSecurityDefaultSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPromptSecurityArgs:
@@ -9814,7 +9648,6 @@ class GuardrailLlmPromptSecurityCustomPolicyArgsDict(TypedDict):
     model_settings: NotRequired[
         pulumi.Input[GuardrailLlmPromptSecurityCustomPolicyModelSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPromptSecurityCustomPolicyArgs:
@@ -9875,7 +9708,6 @@ class GuardrailLlmPromptSecurityCustomPolicyArgs:
 class GuardrailLlmPromptSecurityCustomPolicyModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPromptSecurityCustomPolicyModelSettingsArgs:
@@ -9898,7 +9730,6 @@ class GuardrailLlmPromptSecurityCustomPolicyModelSettingsArgs:
 
 class GuardrailLlmPromptSecurityDefaultSettingsArgsDict(TypedDict):
     default_prompt_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuardrailLlmPromptSecurityDefaultSettingsArgs:
@@ -9917,7 +9748,6 @@ class GuardrailModelSafetyArgsDict(TypedDict):
     safety_settings: pulumi.Input[
         Sequence[pulumi.Input[GuardrailModelSafetySafetySettingArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class GuardrailModelSafetyArgs:
@@ -9946,7 +9776,6 @@ class GuardrailModelSafetyArgs:
 class GuardrailModelSafetySafetySettingArgsDict(TypedDict):
     category: pulumi.Input[_builtins.str]
     threshold: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuardrailModelSafetySafetySettingArgs:
@@ -9972,7 +9801,6 @@ class ToolClientFunctionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[ToolClientFunctionParametersArgsDict]]
     response: NotRequired[pulumi.Input[ToolClientFunctionResponseArgsDict]]
-    ...
 
 @pulumi.input_type
 class ToolClientFunctionArgs:
@@ -10031,7 +9859,6 @@ class ToolClientFunctionParametersArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     title: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ToolClientFunctionParametersArgs:
@@ -10182,7 +10009,6 @@ class ToolClientFunctionResponseArgsDict(TypedDict):
     requireds: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     title: NotRequired[pulumi.Input[_builtins.str]]
     unique_items: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ToolClientFunctionResponseArgs:
@@ -10324,7 +10150,6 @@ class ToolDataStoreToolArgsDict(TypedDict):
     modality_configs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ToolDataStoreToolModalityConfigArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolArgs:
@@ -10398,7 +10223,6 @@ class ToolDataStoreToolArgs:
 class ToolDataStoreToolBoostSpecArgsDict(TypedDict):
     data_stores: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     specs: pulumi.Input[Sequence[pulumi.Input[ToolDataStoreToolBoostSpecSpecArgsDict]]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolBoostSpecArgs:
@@ -10430,7 +10254,6 @@ class ToolDataStoreToolBoostSpecSpecArgsDict(TypedDict):
     condition_boost_specs: pulumi.Input[
         Sequence[pulumi.Input[ToolDataStoreToolBoostSpecSpecConditionBoostSpecArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolBoostSpecSpecArgs:
@@ -10464,7 +10287,6 @@ class ToolDataStoreToolBoostSpecSpecConditionBoostSpecArgsDict(TypedDict):
             ToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolBoostSpecSpecConditionBoostSpecArgs:
@@ -10523,7 +10345,6 @@ class ToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecArgsDict(
     ]
     field_name: NotRequired[pulumi.Input[_builtins.str]]
     interpolation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecArgs:
@@ -10590,7 +10411,6 @@ class ToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecControlPoi
 ):
     attribute_value: NotRequired[pulumi.Input[_builtins.str]]
     boost_amount: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolBoostSpecSpecConditionBoostSpecBoostControlSpecControlPointArgs:
@@ -10619,7 +10439,6 @@ class ToolDataStoreToolEngineSourceArgsDict(TypedDict):
         ]
     ]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolEngineSourceArgs:
@@ -10668,7 +10487,6 @@ class ToolDataStoreToolEngineSourceDataStoreSourceArgsDict(TypedDict):
         pulumi.Input[ToolDataStoreToolEngineSourceDataStoreSourceDataStoreArgsDict]
     ]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolEngineSourceDataStoreSourceArgs:
@@ -10715,7 +10533,6 @@ class ToolDataStoreToolEngineSourceDataStoreSourceDataStoreArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolEngineSourceDataStoreSourceDataStoreArgs:
@@ -10797,7 +10614,6 @@ class ToolDataStoreToolEngineSourceDataStoreSourceDataStoreConnectorConfigArgsDi
     collection: NotRequired[pulumi.Input[_builtins.str]]
     collection_display_name: NotRequired[pulumi.Input[_builtins.str]]
     data_source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolEngineSourceDataStoreSourceDataStoreConnectorConfigArgs:
@@ -10835,7 +10651,6 @@ class ToolDataStoreToolModalityConfigArgsDict(TypedDict):
     summarization_config: NotRequired[
         pulumi.Input[ToolDataStoreToolModalityConfigSummarizationConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigArgs:
@@ -10900,7 +10715,6 @@ class ToolDataStoreToolModalityConfigArgs:
 class ToolDataStoreToolModalityConfigGroundingConfigArgsDict(TypedDict):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     grounding_level: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigGroundingConfigArgs:
@@ -10927,7 +10741,6 @@ class ToolDataStoreToolModalityConfigRewriterConfigArgsDict(TypedDict):
     ]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigRewriterConfigArgs:
@@ -10968,7 +10781,6 @@ class ToolDataStoreToolModalityConfigRewriterConfigArgs:
 class ToolDataStoreToolModalityConfigRewriterConfigModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigRewriterConfigModelSettingsArgs:
@@ -10997,7 +10809,6 @@ class ToolDataStoreToolModalityConfigSummarizationConfigArgsDict(TypedDict):
         ]
     ]
     prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigSummarizationConfigArgs:
@@ -11046,7 +10857,6 @@ class ToolDataStoreToolModalityConfigSummarizationConfigModelSettingsArgsDict(
 ):
     model: NotRequired[pulumi.Input[_builtins.str]]
     temperature: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ToolDataStoreToolModalityConfigSummarizationConfigModelSettingsArgs:
@@ -11073,7 +10883,6 @@ class ToolGoogleSearchToolArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     exclude_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     preferred_domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ToolGoogleSearchToolArgs:
@@ -11147,7 +10956,6 @@ class ToolOpenApiToolArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ToolOpenApiToolTlsConfigArgsDict]]]
     ]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolArgs:
@@ -11277,7 +11085,6 @@ class ToolOpenApiToolApiAuthenticationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolApiAuthenticationArgs:
@@ -11435,7 +11242,6 @@ class ToolOpenApiToolApiAuthenticationApiKeyConfigArgsDict(TypedDict):
     api_key_secret_version: NotRequired[pulumi.Input[_builtins.str]]
     key_name: NotRequired[pulumi.Input[_builtins.str]]
     request_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolApiAuthenticationApiKeyConfigArgs:
@@ -11464,7 +11270,6 @@ class ToolOpenApiToolApiAuthenticationApiKeyConfigArgs:
 
 class ToolOpenApiToolApiAuthenticationBearerTokenConfigArgsDict(TypedDict):
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolApiAuthenticationBearerTokenConfigArgs:
@@ -11483,7 +11288,6 @@ class ToolOpenApiToolApiAuthenticationOauthConfigArgsDict(TypedDict):
     oauth_grant_type: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     token_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolApiAuthenticationOauthConfigArgs:
@@ -11528,7 +11332,6 @@ class ToolOpenApiToolApiAuthenticationOauthConfigArgs:
 
 class ToolOpenApiToolApiAuthenticationServiceAccountAuthConfigArgsDict(TypedDict):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolApiAuthenticationServiceAccountAuthConfigArgs:
@@ -11551,7 +11354,6 @@ class ToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigArgs:
 
 class ToolOpenApiToolServiceDirectoryConfigArgsDict(TypedDict):
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolServiceDirectoryConfigArgs:
@@ -11568,7 +11370,6 @@ class ToolOpenApiToolTlsConfigArgsDict(TypedDict):
     ca_certs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ToolOpenApiToolTlsConfigCaCertArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolTlsConfigArgs:
@@ -11597,7 +11398,6 @@ class ToolOpenApiToolTlsConfigArgs:
 class ToolOpenApiToolTlsConfigCaCertArgsDict(TypedDict):
     cert: NotRequired[pulumi.Input[_builtins.str]]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolOpenApiToolTlsConfigCaCertArgs:
@@ -11622,7 +11422,6 @@ class ToolPythonFunctionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     python_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolPythonFunctionArgs:
@@ -11652,7 +11451,6 @@ class ToolPythonFunctionArgs:
 class ToolSystemToolArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolSystemToolArgs:
@@ -11682,7 +11480,6 @@ class ToolsetMcpToolsetArgsDict(TypedDict):
         pulumi.Input[ToolsetMcpToolsetServiceDirectoryConfigArgsDict]
     ]
     tls_config: NotRequired[pulumi.Input[ToolsetMcpToolsetTlsConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetArgs:
@@ -11747,7 +11544,6 @@ class ToolsetMcpToolsetApiAuthenticationArgsDict(TypedDict):
             ToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetApiAuthenticationArgs:
@@ -11847,7 +11643,6 @@ class ToolsetMcpToolsetApiAuthenticationApiKeyConfigArgsDict(TypedDict):
     api_key_secret_version: pulumi.Input[_builtins.str]
     key_name: pulumi.Input[_builtins.str]
     request_location: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetApiAuthenticationApiKeyConfigArgs:
@@ -11876,7 +11671,6 @@ class ToolsetMcpToolsetApiAuthenticationApiKeyConfigArgs:
 
 class ToolsetMcpToolsetApiAuthenticationBearerTokenConfigArgsDict(TypedDict):
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetApiAuthenticationBearerTokenConfigArgs:
@@ -11895,7 +11689,6 @@ class ToolsetMcpToolsetApiAuthenticationOauthConfigArgsDict(TypedDict):
     oauth_grant_type: pulumi.Input[_builtins.str]
     token_endpoint: pulumi.Input[_builtins.str]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetApiAuthenticationOauthConfigArgs:
@@ -11941,7 +11734,6 @@ class ToolsetMcpToolsetApiAuthenticationOauthConfigArgs:
 class ToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfigArgs:
@@ -11976,7 +11768,6 @@ class ToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfigArgs:
 
 class ToolsetMcpToolsetServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetServiceDirectoryConfigArgs:
@@ -11991,7 +11782,6 @@ class ToolsetMcpToolsetTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
         Sequence[pulumi.Input[ToolsetMcpToolsetTlsConfigCaCertArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetTlsConfigArgs:
@@ -12018,7 +11808,6 @@ class ToolsetMcpToolsetTlsConfigArgs:
 class ToolsetMcpToolsetTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
     display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetMcpToolsetTlsConfigCaCertArgs:
@@ -12050,7 +11839,6 @@ class ToolsetOpenApiToolsetArgsDict(TypedDict):
     ]
     tls_config: NotRequired[pulumi.Input[ToolsetOpenApiToolsetTlsConfigArgsDict]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetArgs:
@@ -12132,7 +11920,6 @@ class ToolsetOpenApiToolsetApiAuthenticationArgsDict(TypedDict):
             ToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetApiAuthenticationArgs:
@@ -12240,7 +12027,6 @@ class ToolsetOpenApiToolsetApiAuthenticationApiKeyConfigArgsDict(TypedDict):
     api_key_secret_version: pulumi.Input[_builtins.str]
     key_name: pulumi.Input[_builtins.str]
     request_location: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetApiAuthenticationApiKeyConfigArgs:
@@ -12269,7 +12055,6 @@ class ToolsetOpenApiToolsetApiAuthenticationApiKeyConfigArgs:
 
 class ToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigArgsDict(TypedDict):
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetApiAuthenticationBearerTokenConfigArgs:
@@ -12288,7 +12073,6 @@ class ToolsetOpenApiToolsetApiAuthenticationOauthConfigArgsDict(TypedDict):
     oauth_grant_type: pulumi.Input[_builtins.str]
     token_endpoint: pulumi.Input[_builtins.str]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetApiAuthenticationOauthConfigArgs:
@@ -12334,7 +12118,6 @@ class ToolsetOpenApiToolsetApiAuthenticationOauthConfigArgs:
 class ToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfigArgs:
@@ -12369,7 +12152,6 @@ class ToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigArgs:
 
 class ToolsetOpenApiToolsetServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetServiceDirectoryConfigArgs:
@@ -12384,7 +12166,6 @@ class ToolsetOpenApiToolsetTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
         Sequence[pulumi.Input[ToolsetOpenApiToolsetTlsConfigCaCertArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetTlsConfigArgs:
@@ -12413,7 +12194,6 @@ class ToolsetOpenApiToolsetTlsConfigArgs:
 class ToolsetOpenApiToolsetTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
     display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ToolsetOpenApiToolsetTlsConfigCaCertArgs:

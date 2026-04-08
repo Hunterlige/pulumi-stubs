@@ -44,7 +44,6 @@ class AclAclEntryArgsDict(TypedDict):
     principal: pulumi.Input[_builtins.str]
     host: NotRequired[pulumi.Input[_builtins.str]]
     permission_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AclAclEntryArgs:
@@ -79,7 +78,6 @@ class AclAclEntryArgs:
 
 class ClusterBrokerCapacityConfigArgsDict(TypedDict):
     disk_size_gib: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterBrokerCapacityConfigArgs:
@@ -95,7 +93,6 @@ class ClusterBrokerCapacityConfigArgs:
 class ClusterCapacityConfigArgsDict(TypedDict):
     memory_bytes: pulumi.Input[_builtins.str]
     vcpu_count: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterCapacityConfigArgs:
@@ -119,7 +116,6 @@ class ClusterCapacityConfigArgs:
 class ClusterGcpConfigArgsDict(TypedDict):
     access_config: pulumi.Input[ClusterGcpConfigAccessConfigArgsDict]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterGcpConfigArgs:
@@ -144,7 +140,6 @@ class ClusterGcpConfigAccessConfigArgsDict(TypedDict):
     network_configs: pulumi.Input[
         Sequence[pulumi.Input[ClusterGcpConfigAccessConfigNetworkConfigArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterGcpConfigAccessConfigArgs:
@@ -172,7 +167,6 @@ class ClusterGcpConfigAccessConfigArgs:
 
 class ClusterGcpConfigAccessConfigNetworkConfigArgsDict(TypedDict):
     subnet: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterGcpConfigAccessConfigNetworkConfigArgs:
@@ -185,7 +179,6 @@ class ClusterGcpConfigAccessConfigNetworkConfigArgs:
 
 class ClusterRebalanceConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterRebalanceConfigArgs:
@@ -201,7 +194,6 @@ class ClusterRebalanceConfigArgs:
 class ClusterTlsConfigArgsDict(TypedDict):
     ssl_principal_mapping_rules: NotRequired[pulumi.Input[_builtins.str]]
     trust_config: NotRequired[pulumi.Input[ClusterTlsConfigTrustConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterTlsConfigArgs:
@@ -234,7 +226,6 @@ class ClusterTlsConfigTrustConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[ClusterTlsConfigTrustConfigCasConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterTlsConfigTrustConfigArgs:
@@ -266,7 +257,6 @@ class ClusterTlsConfigTrustConfigArgs:
 
 class ClusterTlsConfigTrustConfigCasConfigArgsDict(TypedDict):
     ca_pool: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterTlsConfigTrustConfigCasConfigArgs:
@@ -280,7 +270,6 @@ class ClusterTlsConfigTrustConfigCasConfigArgs:
 class ConnectClusterCapacityConfigArgsDict(TypedDict):
     memory_bytes: pulumi.Input[_builtins.str]
     vcpu_count: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectClusterCapacityConfigArgs:
@@ -303,7 +292,6 @@ class ConnectClusterCapacityConfigArgs:
 
 class ConnectClusterGcpConfigArgsDict(TypedDict):
     access_config: pulumi.Input[ConnectClusterGcpConfigAccessConfigArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectClusterGcpConfigArgs:
@@ -326,7 +314,6 @@ class ConnectClusterGcpConfigAccessConfigArgsDict(TypedDict):
     network_configs: pulumi.Input[
         Sequence[pulumi.Input[ConnectClusterGcpConfigAccessConfigNetworkConfigArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectClusterGcpConfigAccessConfigArgs:
@@ -356,7 +343,6 @@ class ConnectClusterGcpConfigAccessConfigNetworkConfigArgsDict(TypedDict):
     primary_subnet: pulumi.Input[_builtins.str]
     additional_subnets: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     dns_domain_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConnectClusterGcpConfigAccessConfigNetworkConfigArgs:
@@ -399,7 +385,6 @@ class ConnectClusterGcpConfigAccessConfigNetworkConfigArgs:
 class ConnectorTaskRestartPolicyArgsDict(TypedDict):
     maximum_backoff: NotRequired[pulumi.Input[_builtins.str]]
     minimum_backoff: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorTaskRestartPolicyArgs:

@@ -68,7 +68,6 @@ __all__ = [
 
 class GoogleApiSourceLoggingConfigArgsDict(TypedDict):
     log_severity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GoogleApiSourceLoggingConfigArgs:
@@ -83,7 +82,6 @@ class GoogleApiSourceLoggingConfigArgs:
 
 class MessageBusLoggingConfigArgsDict(TypedDict):
     log_severity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MessageBusLoggingConfigArgs:
@@ -108,7 +106,6 @@ class PipelineDestinationArgsDict(TypedDict):
     ]
     topic: NotRequired[pulumi.Input[_builtins.str]]
     workflow: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationArgs:
@@ -190,7 +187,6 @@ class PipelineDestinationAuthenticationConfigArgsDict(TypedDict):
     oauth_token: NotRequired[
         pulumi.Input[PipelineDestinationAuthenticationConfigOauthTokenArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationAuthenticationConfigArgs:
@@ -236,7 +232,6 @@ class PipelineDestinationAuthenticationConfigArgs:
 class PipelineDestinationAuthenticationConfigGoogleOidcArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
     audience: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationAuthenticationConfigGoogleOidcArgs:
@@ -260,7 +255,6 @@ class PipelineDestinationAuthenticationConfigGoogleOidcArgs:
 class PipelineDestinationAuthenticationConfigOauthTokenArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationAuthenticationConfigOauthTokenArgs:
@@ -284,7 +278,6 @@ class PipelineDestinationAuthenticationConfigOauthTokenArgs:
 class PipelineDestinationHttpEndpointArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     message_binding_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationHttpEndpointArgs:
@@ -309,7 +302,6 @@ class PipelineDestinationHttpEndpointArgs:
 
 class PipelineDestinationNetworkConfigArgsDict(TypedDict):
     network_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationNetworkConfigArgs:
@@ -328,7 +320,6 @@ class PipelineDestinationOutputPayloadFormatArgsDict(TypedDict):
     protobuf: NotRequired[
         pulumi.Input[PipelineDestinationOutputPayloadFormatProtobufArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationOutputPayloadFormatArgs:
@@ -380,7 +371,6 @@ class PipelineDestinationOutputPayloadFormatArgs:
 
 class PipelineDestinationOutputPayloadFormatAvroArgsDict(TypedDict):
     schema_definition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationOutputPayloadFormatAvroArgs:
@@ -401,7 +391,6 @@ class PipelineDestinationOutputPayloadFormatJsonArgs:
 
 class PipelineDestinationOutputPayloadFormatProtobufArgsDict(TypedDict):
     schema_definition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDestinationOutputPayloadFormatProtobufArgs:
@@ -418,7 +407,6 @@ class PipelineInputPayloadFormatArgsDict(TypedDict):
     avro: NotRequired[pulumi.Input[PipelineInputPayloadFormatAvroArgsDict]]
     json: NotRequired[pulumi.Input[PipelineInputPayloadFormatJsonArgsDict]]
     protobuf: NotRequired[pulumi.Input[PipelineInputPayloadFormatProtobufArgsDict]]
-    ...
 
 @pulumi.input_type
 class PipelineInputPayloadFormatArgs:
@@ -455,7 +443,6 @@ class PipelineInputPayloadFormatArgs:
 
 class PipelineInputPayloadFormatAvroArgsDict(TypedDict):
     schema_definition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineInputPayloadFormatAvroArgs:
@@ -476,7 +463,6 @@ class PipelineInputPayloadFormatJsonArgs:
 
 class PipelineInputPayloadFormatProtobufArgsDict(TypedDict):
     schema_definition: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineInputPayloadFormatProtobufArgs:
@@ -491,7 +477,6 @@ class PipelineInputPayloadFormatProtobufArgs:
 
 class PipelineLoggingConfigArgsDict(TypedDict):
     log_severity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineLoggingConfigArgs:
@@ -506,7 +491,6 @@ class PipelineLoggingConfigArgs:
 
 class PipelineMediationArgsDict(TypedDict):
     transformation: NotRequired[pulumi.Input[PipelineMediationTransformationArgsDict]]
-    ...
 
 @pulumi.input_type
 class PipelineMediationArgs:
@@ -529,7 +513,6 @@ class PipelineMediationArgs:
 
 class PipelineMediationTransformationArgsDict(TypedDict):
     transformation_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineMediationTransformationArgs:
@@ -548,7 +531,6 @@ class PipelineRetryPolicyArgsDict(TypedDict):
     max_attempts: NotRequired[pulumi.Input[_builtins.int]]
     max_retry_delay: NotRequired[pulumi.Input[_builtins.str]]
     min_retry_delay: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineRetryPolicyArgs:
@@ -584,7 +566,6 @@ class TriggerDestinationArgsDict(TypedDict):
     http_endpoint: NotRequired[pulumi.Input[TriggerDestinationHttpEndpointArgsDict]]
     network_config: NotRequired[pulumi.Input[TriggerDestinationNetworkConfigArgsDict]]
     workflow: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerDestinationArgs:
@@ -649,7 +630,6 @@ class TriggerDestinationCloudRunServiceArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerDestinationCloudRunServiceArgs:
@@ -682,7 +662,6 @@ class TriggerDestinationGkeArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     service: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerDestinationGkeArgs:
@@ -723,7 +702,6 @@ class TriggerDestinationGkeArgs:
 
 class TriggerDestinationHttpEndpointArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TriggerDestinationHttpEndpointArgs:
@@ -736,7 +714,6 @@ class TriggerDestinationHttpEndpointArgs:
 
 class TriggerDestinationNetworkConfigArgsDict(TypedDict):
     network_attachment: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TriggerDestinationNetworkConfigArgs:
@@ -753,7 +730,6 @@ class TriggerMatchingCriteriaArgsDict(TypedDict):
     attribute: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     operator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerMatchingCriteriaArgs:
@@ -782,7 +758,6 @@ class TriggerMatchingCriteriaArgs:
 
 class TriggerRetryPolicyArgsDict(TypedDict):
     max_attempts: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TriggerRetryPolicyArgs:
@@ -797,7 +772,6 @@ class TriggerRetryPolicyArgs:
 
 class TriggerTransportArgsDict(TypedDict):
     pubsub: NotRequired[pulumi.Input[TriggerTransportPubsubArgsDict]]
-    ...
 
 @pulumi.input_type
 class TriggerTransportArgs:
@@ -813,7 +787,6 @@ class TriggerTransportArgs:
 class TriggerTransportPubsubArgsDict(TypedDict):
     subscription: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerTransportPubsubArgs:

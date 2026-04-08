@@ -24,7 +24,6 @@ __all__ = [
 
 class FileSystemAssociationCacheAttributesArgsDict(TypedDict):
     cache_stale_timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FileSystemAssociationCacheAttributesArgs:
@@ -45,7 +44,6 @@ class FileSystemAssociationCacheAttributesArgs:
 
 class GatewayGatewayNetworkInterfaceArgsDict(TypedDict):
     ipv4_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GatewayGatewayNetworkInterfaceArgs:
@@ -63,7 +61,6 @@ class GatewayMaintenanceStartTimeArgsDict(TypedDict):
     day_of_month: NotRequired[pulumi.Input[_builtins.str]]
     day_of_week: NotRequired[pulumi.Input[_builtins.str]]
     minute_of_hour: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewayMaintenanceStartTimeArgs:
@@ -104,7 +101,6 @@ class GatewaySmbActiveDirectorySettingsArgsDict(TypedDict):
     domain_controllers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     organizational_unit: NotRequired[pulumi.Input[_builtins.str]]
     timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GatewaySmbActiveDirectorySettingsArgs:
@@ -163,7 +159,6 @@ class GatewaySmbActiveDirectorySettingsArgs:
 
 class NfsFileShareCacheAttributesArgsDict(TypedDict):
     cache_stale_timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class NfsFileShareCacheAttributesArgs:
@@ -187,7 +182,6 @@ class NfsFileShareNfsFileShareDefaultsArgsDict(TypedDict):
     file_mode: NotRequired[pulumi.Input[_builtins.str]]
     group_id: NotRequired[pulumi.Input[_builtins.str]]
     owner_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NfsFileShareNfsFileShareDefaultsArgs:
@@ -222,7 +216,6 @@ class NfsFileShareNfsFileShareDefaultsArgs:
 
 class SmbFileShareCacheAttributesArgsDict(TypedDict):
     cache_stale_timeout_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SmbFileShareCacheAttributesArgs:

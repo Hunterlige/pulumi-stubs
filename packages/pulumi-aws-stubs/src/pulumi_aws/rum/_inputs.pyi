@@ -22,7 +22,6 @@ class AppMonitorAppMonitorConfigurationArgsDict(TypedDict):
     included_pages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     session_sample_rate: NotRequired[pulumi.Input[_builtins.float]]
     telemetries: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AppMonitorAppMonitorConfigurationArgs:
@@ -111,7 +110,6 @@ class AppMonitorAppMonitorConfigurationArgs:
 
 class AppMonitorCustomEventsArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppMonitorCustomEventsArgs:

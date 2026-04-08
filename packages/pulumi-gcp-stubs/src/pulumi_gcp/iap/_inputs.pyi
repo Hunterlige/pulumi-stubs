@@ -88,7 +88,6 @@ class AppEngineServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppEngineServiceIamBindingConditionArgs:
@@ -119,7 +118,6 @@ class AppEngineServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppEngineServiceIamMemberConditionArgs:
@@ -150,7 +148,6 @@ class AppEngineVersionIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppEngineVersionIamBindingConditionArgs:
@@ -181,7 +178,6 @@ class AppEngineVersionIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppEngineVersionIamMemberConditionArgs:
@@ -224,7 +220,6 @@ class SettingsAccessSettingsArgsDict(TypedDict):
     workforce_identity_settings: NotRequired[
         pulumi.Input[SettingsAccessSettingsWorkforceIdentitySettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsArgs:
@@ -326,7 +321,6 @@ class SettingsAccessSettingsArgs:
 class SettingsAccessSettingsAllowedDomainsSettingsArgsDict(TypedDict):
     domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     enable: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsAllowedDomainsSettingsArgs:
@@ -353,7 +347,6 @@ class SettingsAccessSettingsAllowedDomainsSettingsArgs:
 
 class SettingsAccessSettingsCorsSettingsArgsDict(TypedDict):
     allow_http_options: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsCorsSettingsArgs:
@@ -369,7 +362,6 @@ class SettingsAccessSettingsCorsSettingsArgs:
 class SettingsAccessSettingsGcipSettingsArgsDict(TypedDict):
     login_page_uri: NotRequired[pulumi.Input[_builtins.str]]
     tenant_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsGcipSettingsArgs:
@@ -402,7 +394,6 @@ class SettingsAccessSettingsOauthSettingsArgsDict(TypedDict):
     programmatic_clients: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsOauthSettingsArgs:
@@ -451,7 +442,6 @@ class SettingsAccessSettingsReauthSettingsArgsDict(TypedDict):
     max_age: pulumi.Input[_builtins.str]
     method: pulumi.Input[_builtins.str]
     policy_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsReauthSettingsArgs:
@@ -483,7 +473,6 @@ class SettingsAccessSettingsWorkforceIdentitySettingsArgsDict(TypedDict):
         pulumi.Input[SettingsAccessSettingsWorkforceIdentitySettingsOauth2ArgsDict]
     ]
     workforce_pools: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsWorkforceIdentitySettingsArgs:
@@ -519,7 +508,6 @@ class SettingsAccessSettingsWorkforceIdentitySettingsOauth2ArgsDict(TypedDict):
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     client_secret_sha256: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsAccessSettingsWorkforceIdentitySettingsOauth2Args:
@@ -557,7 +545,6 @@ class SettingsApplicationSettingsArgsDict(TypedDict):
     csm_settings: NotRequired[
         pulumi.Input[SettingsApplicationSettingsCsmSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SettingsApplicationSettingsArgs:
@@ -622,7 +609,6 @@ class SettingsApplicationSettingsAccessDeniedPageSettingsArgsDict(TypedDict):
     access_denied_page_uri: NotRequired[pulumi.Input[_builtins.str]]
     generate_troubleshooting_uri: NotRequired[pulumi.Input[_builtins.bool]]
     remediation_token_generation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SettingsApplicationSettingsAccessDeniedPageSettingsArgs:
@@ -663,7 +649,6 @@ class SettingsApplicationSettingsAttributePropagationSettingsArgsDict(TypedDict)
     enable: NotRequired[pulumi.Input[_builtins.bool]]
     expression: NotRequired[pulumi.Input[_builtins.str]]
     output_credentials: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SettingsApplicationSettingsAttributePropagationSettingsArgs:
@@ -698,7 +683,6 @@ class SettingsApplicationSettingsAttributePropagationSettingsArgs:
 
 class SettingsApplicationSettingsCsmSettingsArgsDict(TypedDict):
     rctoken_aud: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SettingsApplicationSettingsCsmSettingsArgs:
@@ -715,7 +699,6 @@ class TunnelDestGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelDestGroupIamBindingConditionArgs:
@@ -746,7 +729,6 @@ class TunnelDestGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelDestGroupIamMemberConditionArgs:
@@ -777,7 +759,6 @@ class TunnelIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelIamBindingConditionArgs:
@@ -808,7 +789,6 @@ class TunnelIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelIamMemberConditionArgs:
@@ -839,7 +819,6 @@ class TunnelInstanceIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelInstanceIAMBindingConditionArgs:
@@ -870,7 +849,6 @@ class TunnelInstanceIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TunnelInstanceIAMMemberConditionArgs:
@@ -901,7 +879,6 @@ class WebBackendServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebBackendServiceIamBindingConditionArgs:
@@ -932,7 +909,6 @@ class WebBackendServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebBackendServiceIamMemberConditionArgs:
@@ -963,7 +939,6 @@ class WebCloudRunServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebCloudRunServiceIamBindingConditionArgs:
@@ -994,7 +969,6 @@ class WebCloudRunServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebCloudRunServiceIamMemberConditionArgs:
@@ -1025,7 +999,6 @@ class WebForwardingRuleServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebForwardingRuleServiceIamBindingConditionArgs:
@@ -1056,7 +1029,6 @@ class WebForwardingRuleServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebForwardingRuleServiceIamMemberConditionArgs:
@@ -1087,7 +1059,6 @@ class WebIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebIamBindingConditionArgs:
@@ -1118,7 +1089,6 @@ class WebIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebIamMemberConditionArgs:
@@ -1149,7 +1119,6 @@ class WebRegionBackendServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebRegionBackendServiceIamBindingConditionArgs:
@@ -1180,7 +1149,6 @@ class WebRegionBackendServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebRegionBackendServiceIamMemberConditionArgs:
@@ -1211,7 +1179,6 @@ class WebRegionForwardingRuleServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebRegionForwardingRuleServiceIamBindingConditionArgs:
@@ -1242,7 +1209,6 @@ class WebRegionForwardingRuleServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebRegionForwardingRuleServiceIamMemberConditionArgs:
@@ -1273,7 +1239,6 @@ class WebTypeAppEngingIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebTypeAppEngingIamBindingConditionArgs:
@@ -1304,7 +1269,6 @@ class WebTypeAppEngingIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebTypeAppEngingIamMemberConditionArgs:
@@ -1335,7 +1299,6 @@ class WebTypeComputeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebTypeComputeIamBindingConditionArgs:
@@ -1366,7 +1329,6 @@ class WebTypeComputeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebTypeComputeIamMemberConditionArgs:

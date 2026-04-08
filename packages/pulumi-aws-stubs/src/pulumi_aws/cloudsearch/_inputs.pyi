@@ -17,7 +17,6 @@ __all__ = [
 class DomainEndpointOptionsArgsDict(TypedDict):
     enforce_https: NotRequired[pulumi.Input[_builtins.bool]]
     tls_security_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainEndpointOptionsArgs:
@@ -49,7 +48,6 @@ class DomainIndexFieldArgsDict(TypedDict):
     search: NotRequired[pulumi.Input[_builtins.bool]]
     sort: NotRequired[pulumi.Input[_builtins.bool]]
     source_fields: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainIndexFieldArgs:
@@ -122,7 +120,6 @@ class DomainScalingParametersArgsDict(TypedDict):
     desired_instance_type: NotRequired[pulumi.Input[_builtins.str]]
     desired_partition_count: NotRequired[pulumi.Input[_builtins.int]]
     desired_replication_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DomainScalingParametersArgs:

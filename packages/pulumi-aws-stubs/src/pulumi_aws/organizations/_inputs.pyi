@@ -28,7 +28,6 @@ class OrganizationAccountArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationAccountArgs:
@@ -95,7 +94,6 @@ class OrganizationNonMasterAccountArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationNonMasterAccountArgs:
@@ -160,7 +158,6 @@ class OrganizationRootArgsDict(TypedDict):
     policy_types: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[OrganizationRootPolicyTypeArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationRootArgs:
@@ -207,7 +204,6 @@ class OrganizationRootArgs:
 class OrganizationRootPolicyTypeArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationRootPolicyTypeArgs:
@@ -233,7 +229,6 @@ class OrganizationalUnitAccountArgsDict(TypedDict):
     email: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationalUnitAccountArgs:

@@ -20,7 +20,6 @@ __all__ = [
 
 class ContactChannelDeliveryAddressArgsDict(TypedDict):
     simple_address: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ContactChannelDeliveryAddressArgs:
@@ -34,7 +33,6 @@ class ContactChannelDeliveryAddressArgs:
 class PlanStageArgsDict(TypedDict):
     duration_in_minutes: pulumi.Input[_builtins.int]
     targets: NotRequired[pulumi.Input[Sequence[pulumi.Input[PlanStageTargetArgsDict]]]]
-    ...
 
 @pulumi.input_type
 class PlanStageArgs:
@@ -68,7 +66,6 @@ class PlanStageTargetArgsDict(TypedDict):
     contact_target_info: NotRequired[
         pulumi.Input[PlanStageTargetContactTargetInfoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PlanStageTargetArgs:
@@ -104,7 +101,6 @@ class PlanStageTargetArgs:
 class PlanStageTargetChannelTargetInfoArgsDict(TypedDict):
     contact_channel_id: pulumi.Input[_builtins.str]
     retry_interval_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanStageTargetChannelTargetInfoArgs:
@@ -130,7 +126,6 @@ class PlanStageTargetChannelTargetInfoArgs:
 class PlanStageTargetContactTargetInfoArgsDict(TypedDict):
     is_essential: pulumi.Input[_builtins.bool]
     contact_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanStageTargetContactTargetInfoArgs:

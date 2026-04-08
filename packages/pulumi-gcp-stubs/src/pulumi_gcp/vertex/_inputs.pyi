@@ -253,7 +253,6 @@ __all__ = [
 
 class AiDatasetEncryptionSpecArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiDatasetEncryptionSpecArgs:
@@ -281,7 +280,6 @@ class AiDeploymentResourcePoolDedicatedResourcesArgsDict(TypedDict):
         ]
     ]
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiDeploymentResourcePoolDedicatedResourcesArgs:
@@ -355,7 +353,6 @@ class AiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecArgsDict(
 ):
     metric_name: pulumi.Input[_builtins.str]
     target: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecArgs:
@@ -380,7 +377,6 @@ class AiDeploymentResourcePoolDedicatedResourcesMachineSpecArgsDict(TypedDict):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiDeploymentResourcePoolDedicatedResourcesMachineSpecArgs:
@@ -432,7 +428,6 @@ class AiEndpointDeployedModelArgsDict(TypedDict):
     ]
     service_account: NotRequired[pulumi.Input[_builtins.str]]
     shared_resources: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelArgs:
@@ -567,7 +562,6 @@ class AiEndpointDeployedModelArgs:
 class AiEndpointDeployedModelAutomaticResourceArgsDict(TypedDict):
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     min_replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelAutomaticResourceArgs:
@@ -609,7 +603,6 @@ class AiEndpointDeployedModelDedicatedResourceArgsDict(TypedDict):
     ]
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     min_replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelDedicatedResourceArgs:
@@ -701,7 +694,6 @@ class AiEndpointDeployedModelDedicatedResourceArgs:
 class AiEndpointDeployedModelDedicatedResourceAutoscalingMetricSpecArgsDict(TypedDict):
     metric_name: NotRequired[pulumi.Input[_builtins.str]]
     target: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelDedicatedResourceAutoscalingMetricSpecArgs:
@@ -726,7 +718,6 @@ class AiEndpointDeployedModelDedicatedResourceMachineSpecArgsDict(TypedDict):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelDedicatedResourceMachineSpecArgs:
@@ -758,7 +749,6 @@ class AiEndpointDeployedModelPrivateEndpointArgsDict(TypedDict):
     health_http_uri: NotRequired[pulumi.Input[_builtins.str]]
     predict_http_uri: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointDeployedModelPrivateEndpointArgs:
@@ -793,7 +783,6 @@ class AiEndpointDeployedModelPrivateEndpointArgs:
 
 class AiEndpointEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiEndpointEncryptionSpecArgs:
@@ -808,7 +797,6 @@ class AiEndpointIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointIamBindingConditionArgs:
@@ -839,7 +827,6 @@ class AiEndpointIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointIamMemberConditionArgs:
@@ -874,7 +861,6 @@ class AiEndpointPredictRequestResponseLoggingConfigArgsDict(TypedDict):
     ]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     sampling_rate: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AiEndpointPredictRequestResponseLoggingConfigArgs:
@@ -922,7 +908,6 @@ class AiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationArgsDict(
     TypedDict
 ):
     output_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationArgs:
@@ -948,7 +933,6 @@ class AiEndpointPrivateServiceConnectConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiEndpointPrivateServiceConnectConfigArgs:
@@ -1029,7 +1013,6 @@ class AiEndpointPrivateServiceConnectConfigPscAutomationConfigArgsDict(TypedDict
     forwarding_rule: NotRequired[pulumi.Input[_builtins.str]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointPrivateServiceConnectConfigPscAutomationConfigArgs:
@@ -1082,7 +1065,6 @@ class AiEndpointWithModelGardenDeploymentDeployConfigArgsDict(TypedDict):
     ]
     fast_tryout_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     system_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentDeployConfigArgs:
@@ -1151,7 +1133,6 @@ class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesArgsDict(
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     required_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     spot: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesArgs:
@@ -1241,7 +1222,6 @@ class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscali
 ):
     metric_name: pulumi.Input[_builtins.str]
     target: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecArgs:
@@ -1275,7 +1255,6 @@ class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSp
         ]
     ]
     tpu_topology: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecArgs:
@@ -1345,7 +1324,6 @@ class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSp
     reservation_affinity_type: pulumi.Input[_builtins.str]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityArgs:
@@ -1384,7 +1362,6 @@ class AiEndpointWithModelGardenDeploymentEndpointConfigArgsDict(TypedDict):
             AiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentEndpointConfigArgs:
@@ -1441,7 +1418,6 @@ class AiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConf
         ]
     ]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigArgs:
@@ -1506,7 +1482,6 @@ class AiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConf
     forwarding_rule: NotRequired[pulumi.Input[_builtins.str]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsArgs:
@@ -1561,7 +1536,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigArgsDict(TypedDict):
     hugging_face_access_token: NotRequired[pulumi.Input[_builtins.str]]
     hugging_face_cache_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     model_display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigArgs:
@@ -1669,7 +1643,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecArgsDict(TypedD
             AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecArgs:
@@ -1903,7 +1876,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecArgs:
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvArgs:
@@ -1928,7 +1900,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortArgsDic
     TypedDict
 ):
     container_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortArgs:
@@ -1969,7 +1940,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeArgs
         ]
     ]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeArgs:
@@ -2104,7 +2074,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec
     TypedDict
 ):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecArgs:
@@ -2128,7 +2097,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc
 ):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcArgs:
@@ -2165,7 +2133,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttp
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetArgs:
@@ -2238,7 +2205,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttp
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaderArgs:
@@ -2264,7 +2230,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpS
 ):
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketArgs:
@@ -2313,7 +2278,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeAr
         ]
     ]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeArgs:
@@ -2448,7 +2412,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeEx
     TypedDict
 ):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecArgs:
@@ -2472,7 +2435,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGr
 ):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcArgs:
@@ -2509,7 +2471,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHt
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetArgs:
@@ -2582,7 +2543,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHt
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaderArgs:
@@ -2608,7 +2568,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTc
 ):
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketArgs:
@@ -2633,7 +2592,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortArgsDict(
     TypedDict
 ):
     container_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortArgs:
@@ -2674,7 +2632,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeArg
         ]
     ]
     timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeArgs:
@@ -2809,7 +2766,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExe
     TypedDict
 ):
     commands: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecArgs:
@@ -2833,7 +2789,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrp
 ):
     port: NotRequired[pulumi.Input[_builtins.int]]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcArgs:
@@ -2870,7 +2825,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHtt
     path: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     scheme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetArgs:
@@ -2943,7 +2897,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHtt
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaderArgs:
@@ -2969,7 +2922,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcp
 ):
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketArgs:
@@ -2993,7 +2945,6 @@ class AiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcp
 class AiFeatureGroupBigQueryArgsDict(TypedDict):
     big_query_source: pulumi.Input[AiFeatureGroupBigQueryBigQuerySourceArgsDict]
     entity_id_columns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiFeatureGroupBigQueryArgs:
@@ -3026,7 +2977,6 @@ class AiFeatureGroupBigQueryArgs:
 
 class AiFeatureGroupBigQueryBigQuerySourceArgsDict(TypedDict):
     input_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiFeatureGroupBigQueryBigQuerySourceArgs:
@@ -3041,7 +2991,6 @@ class AiFeatureGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureGroupIamBindingConditionArgs:
@@ -3072,7 +3021,6 @@ class AiFeatureGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureGroupIamMemberConditionArgs:
@@ -3103,7 +3051,6 @@ class AiFeatureOnlineStoreBigtableArgsDict(TypedDict):
     auto_scaling: pulumi.Input[AiFeatureOnlineStoreBigtableAutoScalingArgsDict]
     enable_direct_bigtable_access: NotRequired[pulumi.Input[_builtins.bool]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreBigtableArgs:
@@ -3142,7 +3089,6 @@ class AiFeatureOnlineStoreBigtableAutoScalingArgsDict(TypedDict):
     max_node_count: pulumi.Input[_builtins.int]
     min_node_count: pulumi.Input[_builtins.int]
     cpu_utilization_target: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreBigtableAutoScalingArgs:
@@ -3177,7 +3123,6 @@ class AiFeatureOnlineStoreDedicatedServingEndpointArgsDict(TypedDict):
     ]
     public_endpoint_domain_name: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreDedicatedServingEndpointArgs:
@@ -3228,7 +3173,6 @@ class AiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigArg
 ):
     enable_private_service_connect: pulumi.Input[_builtins.bool]
     project_allowlists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigArgs:
@@ -3257,7 +3201,6 @@ class AiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigArg
 
 class AiFeatureOnlineStoreEmbeddingManagementArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreEmbeddingManagementArgs:
@@ -3272,7 +3215,6 @@ class AiFeatureOnlineStoreEmbeddingManagementArgs:
 
 class AiFeatureOnlineStoreEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreEncryptionSpecArgs:
@@ -3286,7 +3228,6 @@ class AiFeatureOnlineStoreEncryptionSpecArgs:
 class AiFeatureOnlineStoreFeatureviewBigQuerySourceArgsDict(TypedDict):
     entity_id_columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewBigQuerySourceArgs:
@@ -3320,7 +3261,6 @@ class AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceArgsDict(TypedDict):
         ]
     ]
     project_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceArgs:
@@ -3369,7 +3309,6 @@ class AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupArgsDict(
 ):
     feature_group_id: pulumi.Input[_builtins.str]
     feature_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupArgs:
@@ -3396,7 +3335,6 @@ class AiFeatureOnlineStoreFeatureviewIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewIamBindingConditionArgs:
@@ -3427,7 +3365,6 @@ class AiFeatureOnlineStoreFeatureviewIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewIamMemberConditionArgs:
@@ -3457,7 +3394,6 @@ class AiFeatureOnlineStoreFeatureviewIamMemberConditionArgs:
 class AiFeatureOnlineStoreFeatureviewSyncConfigArgsDict(TypedDict):
     continuous: NotRequired[pulumi.Input[_builtins.bool]]
     cron: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewSyncConfigArgs:
@@ -3494,7 +3430,6 @@ class AiFeatureOnlineStoreFeatureviewVectorSearchConfigArgsDict(TypedDict):
             AiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewVectorSearchConfigArgs:
@@ -3593,7 +3528,6 @@ class AiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigArgs:
 
 class AiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigArgsDict(TypedDict):
     leaf_node_embedding_count: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigArgs:
@@ -3614,7 +3548,6 @@ class AiFeatureOnlineStoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreIamBindingConditionArgs:
@@ -3645,7 +3578,6 @@ class AiFeatureOnlineStoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureOnlineStoreIamMemberConditionArgs:
@@ -3680,7 +3612,6 @@ class AiFeatureOnlineStoreOptimizedArgs:
 
 class AiFeatureStoreEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEncryptionSpecArgs:
@@ -3695,7 +3626,6 @@ class AiFeatureStoreEntityTypeIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeIamBindingConditionArgs:
@@ -3726,7 +3656,6 @@ class AiFeatureStoreEntityTypeIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeIamMemberConditionArgs:
@@ -3772,7 +3701,6 @@ class AiFeatureStoreEntityTypeMonitoringConfigArgsDict(TypedDict):
     snapshot_analysis: NotRequired[
         pulumi.Input[AiFeatureStoreEntityTypeMonitoringConfigSnapshotAnalysisArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeMonitoringConfigArgs:
@@ -3869,7 +3797,6 @@ class AiFeatureStoreEntityTypeMonitoringConfigCategoricalThresholdConfigArgsDict
     TypedDict
 ):
     value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeMonitoringConfigCategoricalThresholdConfigArgs:
@@ -3883,7 +3810,6 @@ class AiFeatureStoreEntityTypeMonitoringConfigCategoricalThresholdConfigArgs:
 class AiFeatureStoreEntityTypeMonitoringConfigImportFeaturesAnalysisArgsDict(TypedDict):
     anomaly_detection_baseline: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeMonitoringConfigImportFeaturesAnalysisArgs:
@@ -3910,7 +3836,6 @@ class AiFeatureStoreEntityTypeMonitoringConfigNumericalThresholdConfigArgsDict(
     TypedDict
 ):
     value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeMonitoringConfigNumericalThresholdConfigArgs:
@@ -3926,7 +3851,6 @@ class AiFeatureStoreEntityTypeMonitoringConfigSnapshotAnalysisArgsDict(TypedDict
     monitoring_interval: NotRequired[pulumi.Input[_builtins.str]]
     monitoring_interval_days: NotRequired[pulumi.Input[_builtins.int]]
     staleness_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreEntityTypeMonitoringConfigSnapshotAnalysisArgs:
@@ -3966,7 +3890,6 @@ class AiFeatureStoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreIamBindingConditionArgs:
@@ -3997,7 +3920,6 @@ class AiFeatureStoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreIamMemberConditionArgs:
@@ -4027,7 +3949,6 @@ class AiFeatureStoreIamMemberConditionArgs:
 class AiFeatureStoreOnlineServingConfigArgsDict(TypedDict):
     fixed_node_count: NotRequired[pulumi.Input[_builtins.int]]
     scaling: NotRequired[pulumi.Input[AiFeatureStoreOnlineServingConfigScalingArgsDict]]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreOnlineServingConfigArgs:
@@ -4058,7 +3979,6 @@ class AiFeatureStoreOnlineServingConfigArgs:
 class AiFeatureStoreOnlineServingConfigScalingArgsDict(TypedDict):
     max_node_count: pulumi.Input[_builtins.int]
     min_node_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AiFeatureStoreOnlineServingConfigScalingArgs:
@@ -4082,7 +4002,6 @@ class AiFeatureStoreOnlineServingConfigScalingArgs:
 class AiIndexDeployedIndexArgsDict(TypedDict):
     deployed_index_id: NotRequired[pulumi.Input[_builtins.str]]
     index_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexDeployedIndexArgs:
@@ -4105,7 +4024,6 @@ class AiIndexDeployedIndexArgs:
 
 class AiIndexEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiIndexEncryptionSpecArgs:
@@ -4119,7 +4037,6 @@ class AiIndexEncryptionSpecArgs:
 class AiIndexEndpointDeployedIndexAutomaticResourcesArgsDict(TypedDict):
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     min_replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexAutomaticResourcesArgs:
@@ -4146,7 +4063,6 @@ class AiIndexEndpointDeployedIndexDedicatedResourcesArgsDict(TypedDict):
     ]
     min_replica_count: pulumi.Input[_builtins.int]
     max_replica_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexDedicatedResourcesArgs:
@@ -4186,7 +4102,6 @@ class AiIndexEndpointDeployedIndexDedicatedResourcesArgs:
 
 class AiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecArgsDict(TypedDict):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexDedicatedResourcesMachineSpecArgs:
@@ -4205,7 +4120,6 @@ class AiIndexEndpointDeployedIndexDeployedIndexAuthConfigArgsDict(TypedDict):
             AiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexDeployedIndexAuthConfigArgs:
@@ -4242,7 +4156,6 @@ class AiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderArgsDict(
 ):
     allowed_issuers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderArgs:
@@ -4285,7 +4198,6 @@ class AiIndexEndpointDeployedIndexPrivateEndpointArgsDict(TypedDict):
         ]
     ]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexPrivateEndpointArgs:
@@ -4347,7 +4259,6 @@ class AiIndexEndpointDeployedIndexPrivateEndpointPscAutomatedEndpointArgsDict(
     match_address: NotRequired[pulumi.Input[_builtins.str]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointDeployedIndexPrivateEndpointPscAutomatedEndpointArgs:
@@ -4376,7 +4287,6 @@ class AiIndexEndpointDeployedIndexPrivateEndpointPscAutomatedEndpointArgs:
 
 class AiIndexEndpointEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointEncryptionSpecArgs:
@@ -4399,7 +4309,6 @@ class AiIndexEndpointPrivateServiceConnectConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointPrivateServiceConnectConfigArgs:
@@ -4464,7 +4373,6 @@ class AiIndexEndpointPrivateServiceConnectConfigArgs:
 class AiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigArgs:
@@ -4488,7 +4396,6 @@ class AiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigArgs:
 class AiIndexIndexStatArgsDict(TypedDict):
     shards_count: NotRequired[pulumi.Input[_builtins.int]]
     vectors_count: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexIndexStatArgs:
@@ -4513,7 +4420,6 @@ class AiIndexMetadataArgsDict(TypedDict):
     config: pulumi.Input[AiIndexMetadataConfigArgsDict]
     contents_delta_uri: NotRequired[pulumi.Input[_builtins.str]]
     is_complete_overwrite: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AiIndexMetadataArgs:
@@ -4549,7 +4455,6 @@ class AiIndexMetadataConfigArgsDict(TypedDict):
     distance_measure_type: NotRequired[pulumi.Input[_builtins.str]]
     feature_norm_type: NotRequired[pulumi.Input[_builtins.str]]
     shard_size: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiIndexMetadataConfigArgs:
@@ -4609,7 +4514,6 @@ class AiIndexMetadataConfigAlgorithmConfigArgsDict(TypedDict):
     tree_ah_config: NotRequired[
         pulumi.Input[AiIndexMetadataConfigAlgorithmConfigTreeAhConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AiIndexMetadataConfigAlgorithmConfigArgs:
@@ -4661,7 +4565,6 @@ class AiIndexMetadataConfigAlgorithmConfigBruteForceConfigArgs:
 class AiIndexMetadataConfigAlgorithmConfigTreeAhConfigArgsDict(TypedDict):
     leaf_node_embedding_count: NotRequired[pulumi.Input[_builtins.int]]
     leaf_nodes_to_search_percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AiIndexMetadataConfigAlgorithmConfigTreeAhConfigArgs:
@@ -4688,7 +4591,6 @@ class AiIndexMetadataConfigAlgorithmConfigTreeAhConfigArgs:
 
 class AiMetadataStoreEncryptionSpecArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiMetadataStoreEncryptionSpecArgs:
@@ -4703,7 +4605,6 @@ class AiMetadataStoreEncryptionSpecArgs:
 
 class AiMetadataStoreStateArgsDict(TypedDict):
     disk_utilization_bytes: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiMetadataStoreStateArgs:
@@ -4722,7 +4623,6 @@ class AiRagEngineConfigRagManagedDbConfigArgsDict(TypedDict):
     unprovisioned: NotRequired[
         pulumi.Input[AiRagEngineConfigRagManagedDbConfigUnprovisionedArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AiRagEngineConfigRagManagedDbConfigArgs:
@@ -4794,7 +4694,6 @@ class AiRagEngineConfigRagManagedDbConfigUnprovisionedArgs:
 
 class AiReasoningEngineEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineEncryptionSpecArgs:
@@ -4816,7 +4715,6 @@ class AiReasoningEngineSpecArgsDict(TypedDict):
     source_code_spec: NotRequired[
         pulumi.Input[AiReasoningEngineSpecSourceCodeSpecArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecArgs:
@@ -4899,7 +4797,6 @@ class AiReasoningEngineSpecDeploymentSpecArgsDict(TypedDict):
             Sequence[pulumi.Input[AiReasoningEngineSpecDeploymentSpecSecretEnvArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecArgs:
@@ -5002,7 +4899,6 @@ class AiReasoningEngineSpecDeploymentSpecArgs:
 class AiReasoningEngineSpecDeploymentSpecEnvArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecEnvArgs:
@@ -5034,7 +4930,6 @@ class AiReasoningEngineSpecDeploymentSpecPscInterfaceConfigArgsDict(TypedDict):
         ]
     ]
     network_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecPscInterfaceConfigArgs:
@@ -5090,7 +4985,6 @@ class AiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigArgsD
     domain: pulumi.Input[_builtins.str]
     target_network: pulumi.Input[_builtins.str]
     target_project: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigArgs:
@@ -5122,7 +5016,6 @@ class AiReasoningEngineSpecDeploymentSpecSecretEnvArgsDict(TypedDict):
     secret_ref: pulumi.Input[
         AiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecSecretEnvArgs:
@@ -5153,7 +5046,6 @@ class AiReasoningEngineSpecDeploymentSpecSecretEnvArgs:
 class AiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefArgsDict(TypedDict):
     secret: pulumi.Input[_builtins.str]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefArgs:
@@ -5179,7 +5071,6 @@ class AiReasoningEngineSpecPackageSpecArgsDict(TypedDict):
     pickle_object_gcs_uri: NotRequired[pulumi.Input[_builtins.str]]
     python_version: NotRequired[pulumi.Input[_builtins.str]]
     requirements_gcs_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecPackageSpecArgs:
@@ -5224,7 +5115,6 @@ class AiReasoningEngineSpecSourceCodeSpecArgsDict(TypedDict):
     python_spec: NotRequired[
         pulumi.Input[AiReasoningEngineSpecSourceCodeSpecPythonSpecArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecSourceCodeSpecArgs:
@@ -5286,7 +5176,6 @@ class AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceArgsDict(TypedDic
     config: pulumi.Input[
         AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceArgs:
@@ -5318,7 +5207,6 @@ class AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigArgsDict(
     dir: pulumi.Input[_builtins.str]
     git_repository_link: pulumi.Input[_builtins.str]
     revision: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigArgs:
@@ -5347,7 +5235,6 @@ class AiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigArgs:
 
 class AiReasoningEngineSpecSourceCodeSpecInlineSourceArgsDict(TypedDict):
     source_archive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecSourceCodeSpecInlineSourceArgs:
@@ -5365,7 +5252,6 @@ class AiReasoningEngineSpecSourceCodeSpecPythonSpecArgsDict(TypedDict):
     entrypoint_object: NotRequired[pulumi.Input[_builtins.str]]
     requirements_file: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AiReasoningEngineSpecSourceCodeSpecPythonSpecArgs:
@@ -5400,7 +5286,6 @@ class AiReasoningEngineSpecSourceCodeSpecPythonSpecArgs:
 
 class AiTensorboardEncryptionSpecArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AiTensorboardEncryptionSpecArgs:

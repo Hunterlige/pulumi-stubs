@@ -36,7 +36,6 @@ class EndpointElasticsearchSettingsArgsDict(TypedDict):
     error_retry_duration: NotRequired[pulumi.Input[_builtins.int]]
     full_load_error_percentage: NotRequired[pulumi.Input[_builtins.int]]
     use_new_mapping_type: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EndpointElasticsearchSettingsArgs:
@@ -97,7 +96,6 @@ class EndpointKafkaSettingsArgsDict(TypedDict):
     ssl_client_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     ssl_client_key_password: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointKafkaSettingsArgs:
@@ -247,7 +245,6 @@ class EndpointKinesisSettingsArgsDict(TypedDict):
     service_access_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     stream_arn: NotRequired[pulumi.Input[_builtins.str]]
     use_large_integer_value: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EndpointKinesisSettingsArgs:
@@ -340,7 +337,6 @@ class EndpointMongodbSettingsArgsDict(TypedDict):
     extract_doc_id: NotRequired[pulumi.Input[_builtins.str]]
     nesting_level: NotRequired[pulumi.Input[_builtins.str]]
     use_update_lookup: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EndpointMongodbSettingsArgs:
@@ -402,7 +398,6 @@ class EndpointMysqlSettingsArgsDict(TypedDict):
     server_timezone: NotRequired[pulumi.Input[_builtins.str]]
     service_access_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     target_db_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointMysqlSettingsArgs:
@@ -517,7 +512,6 @@ class EndpointOracleSettingsArgsDict(TypedDict):
     use_direct_path_full_load: NotRequired[pulumi.Input[_builtins.bool]]
     use_logminer_reader: NotRequired[pulumi.Input[_builtins.bool]]
     use_path_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointOracleSettingsArgs:
@@ -827,7 +821,6 @@ class EndpointPostgresSettingsArgsDict(TypedDict):
     plugin_name: NotRequired[pulumi.Input[_builtins.str]]
     service_access_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     slot_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointPostgresSettingsArgs:
@@ -956,7 +949,6 @@ class EndpointRedisSettingsArgsDict(TypedDict):
     auth_user_name: NotRequired[pulumi.Input[_builtins.str]]
     ssl_ca_certificate_arn: NotRequired[pulumi.Input[_builtins.str]]
     ssl_security_protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointRedisSettingsArgs:
@@ -1013,7 +1005,6 @@ class EndpointRedshiftSettingsArgsDict(TypedDict):
     encryption_mode: NotRequired[pulumi.Input[_builtins.str]]
     server_side_encryption_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     service_access_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointRedshiftSettingsArgs:
@@ -1068,7 +1059,6 @@ class ReplicationConfigComputeConfigArgsDict(TypedDict):
     vpc_security_group_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigComputeConfigArgs:
@@ -1143,7 +1133,6 @@ class ReplicationInstanceKerberosAuthenticationSettingsArgsDict(TypedDict):
     key_cache_secret_iam_arn: pulumi.Input[_builtins.str]
     key_cache_secret_id: pulumi.Input[_builtins.str]
     krb5_file_contents: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ReplicationInstanceKerberosAuthenticationSettingsArgs:

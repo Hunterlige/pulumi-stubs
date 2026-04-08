@@ -134,7 +134,6 @@ class PlanAssociatedAlarmArgsDict(TypedDict):
     resource_identifier: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanAssociatedAlarmArgs:
@@ -177,7 +176,6 @@ class PlanTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanTimeoutsArgs:
@@ -212,7 +210,6 @@ class PlanTriggerArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[PlanTriggerConditionArgsDict]]]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanTriggerArgs:
@@ -263,7 +260,6 @@ class PlanTriggerArgs:
 class PlanTriggerConditionArgsDict(TypedDict):
     associated_alarm_name: pulumi.Input[_builtins.str]
     condition: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanTriggerConditionArgs:
@@ -289,7 +285,6 @@ class PlanWorkflowArgsDict(TypedDict):
     steps: NotRequired[pulumi.Input[Sequence[pulumi.Input[PlanWorkflowStepArgsDict]]]]
     workflow_description: NotRequired[pulumi.Input[_builtins.str]]
     workflow_target_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowArgs:
@@ -382,7 +377,6 @@ class PlanWorkflowStepArgsDict(TypedDict):
             Sequence[pulumi.Input[PlanWorkflowStepRoute53HealthCheckConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepArgs:
@@ -655,7 +649,6 @@ class PlanWorkflowStepArcRoutingControlConfigArgsDict(TypedDict):
         ]
     ]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepArcRoutingControlConfigArgs:
@@ -728,7 +721,6 @@ class PlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlArgs:
@@ -783,7 +775,6 @@ class PlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlRoutingContr
 ):
     routing_control_arn: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlRoutingControlArgs:
@@ -822,7 +813,6 @@ class PlanWorkflowStepCustomActionLambdaConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepCustomActionLambdaConfigArgs:
@@ -909,7 +899,6 @@ class PlanWorkflowStepCustomActionLambdaConfigLambdaArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepCustomActionLambdaConfigLambdaArgs:
@@ -938,7 +927,6 @@ class PlanWorkflowStepCustomActionLambdaConfigLambdaArgs:
 
 class PlanWorkflowStepCustomActionLambdaConfigUngracefulArgsDict(TypedDict):
     behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepCustomActionLambdaConfigUngracefulArgs:
@@ -961,7 +949,6 @@ class PlanWorkflowStepDocumentDbConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[PlanWorkflowStepDocumentDbConfigUngracefulArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepDocumentDbConfigArgs:
@@ -1035,7 +1022,6 @@ class PlanWorkflowStepDocumentDbConfigArgs:
 
 class PlanWorkflowStepDocumentDbConfigUngracefulArgsDict(TypedDict):
     ungraceful: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepDocumentDbConfigUngracefulArgs:
@@ -1060,7 +1046,6 @@ class PlanWorkflowStepEc2AsgCapacityIncreaseConfigArgsDict(TypedDict):
     ungraceful: NotRequired[
         pulumi.Input[PlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEc2AsgCapacityIncreaseConfigArgs:
@@ -1135,7 +1120,6 @@ class PlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgArgs:
@@ -1164,7 +1148,6 @@ class PlanWorkflowStepEc2AsgCapacityIncreaseConfigAsgArgs:
 
 class PlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulArgsDict(TypedDict):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEc2AsgCapacityIncreaseConfigUngracefulArgs:
@@ -1191,7 +1174,6 @@ class PlanWorkflowStepEcsCapacityIncreaseConfigArgsDict(TypedDict):
     ungraceful: NotRequired[
         pulumi.Input[PlanWorkflowStepEcsCapacityIncreaseConfigUngracefulArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEcsCapacityIncreaseConfigArgs:
@@ -1267,7 +1249,6 @@ class PlanWorkflowStepEcsCapacityIncreaseConfigServiceArgsDict(TypedDict):
     service_arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEcsCapacityIncreaseConfigServiceArgs:
@@ -1302,7 +1283,6 @@ class PlanWorkflowStepEcsCapacityIncreaseConfigServiceArgs:
 
 class PlanWorkflowStepEcsCapacityIncreaseConfigUngracefulArgsDict(TypedDict):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEcsCapacityIncreaseConfigUngracefulArgs:
@@ -1351,7 +1331,6 @@ class PlanWorkflowStepEksResourceScalingConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigArgs:
@@ -1510,7 +1489,6 @@ class PlanWorkflowStepEksResourceScalingConfigEksClusterArgsDict(TypedDict):
     cluster_arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigEksClusterArgs:
@@ -1540,7 +1518,6 @@ class PlanWorkflowStepEksResourceScalingConfigEksClusterArgs:
 class PlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeArgsDict(TypedDict):
     api_version: pulumi.Input[_builtins.str]
     kind: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigKubernetesResourceTypeArgs:
@@ -1572,7 +1549,6 @@ class PlanWorkflowStepEksResourceScalingConfigScalingResourceArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigScalingResourceArgs:
@@ -1629,7 +1605,6 @@ class PlanWorkflowStepEksResourceScalingConfigScalingResourceResourceArgsDict(
     namespace: pulumi.Input[_builtins.str]
     resource_name: pulumi.Input[_builtins.str]
     hpa_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigScalingResourceResourceArgs:
@@ -1664,7 +1639,6 @@ class PlanWorkflowStepEksResourceScalingConfigScalingResourceResourceArgs:
 
 class PlanWorkflowStepEksResourceScalingConfigUngracefulArgsDict(TypedDict):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepEksResourceScalingConfigUngracefulArgs:
@@ -1680,7 +1654,6 @@ class PlanWorkflowStepEksResourceScalingConfigUngracefulArgs:
 class PlanWorkflowStepExecutionApprovalConfigArgsDict(TypedDict):
     approval_role: pulumi.Input[_builtins.str]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepExecutionApprovalConfigArgs:
@@ -1713,7 +1686,6 @@ class PlanWorkflowStepGlobalAuroraConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[PlanWorkflowStepGlobalAuroraConfigUngracefulArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepGlobalAuroraConfigArgs:
@@ -1787,7 +1759,6 @@ class PlanWorkflowStepGlobalAuroraConfigArgs:
 
 class PlanWorkflowStepGlobalAuroraConfigUngracefulArgsDict(TypedDict):
     ungraceful: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepGlobalAuroraConfigUngracefulArgs:
@@ -1802,7 +1773,6 @@ class PlanWorkflowStepParallelConfigArgsDict(TypedDict):
     steps: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[PlanWorkflowStepParallelConfigStepArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigArgs:
@@ -1920,7 +1890,6 @@ class PlanWorkflowStepParallelConfigStepArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepArgs:
@@ -2302,7 +2271,6 @@ class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigArgsDict(TypedDic
         ]
     ]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigArgs:
@@ -2377,7 +2345,6 @@ class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlArgs:
@@ -2432,7 +2399,6 @@ class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingC
 ):
     routing_control_arn: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlRoutingControlArgs:
@@ -2475,7 +2441,6 @@ class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigArgs:
@@ -2578,7 +2543,6 @@ class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaArgsDict(
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambdaArgs:
@@ -2609,7 +2573,6 @@ class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulArgsDi
     TypedDict
 ):
     behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngracefulArgs:
@@ -2636,7 +2599,6 @@ class PlanWorkflowStepParallelConfigStepDocumentDbConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepDocumentDbConfigArgs:
@@ -2722,7 +2684,6 @@ class PlanWorkflowStepParallelConfigStepDocumentDbConfigArgs:
 
 class PlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulArgsDict(TypedDict):
     ungraceful: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepDocumentDbConfigUngracefulArgs:
@@ -2751,7 +2712,6 @@ class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigArgsDict(Typ
             PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigArgs:
@@ -2842,7 +2802,6 @@ class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgArgsDict(
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsgArgs:
@@ -2873,7 +2832,6 @@ class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulAr
     TypedDict
 ):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngracefulArgs:
@@ -2904,7 +2862,6 @@ class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigArgsDict(TypedD
             PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigArgs:
@@ -2996,7 +2953,6 @@ class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceArgsDict
     service_arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigServiceArgs:
@@ -3033,7 +2989,6 @@ class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulArgsD
     TypedDict
 ):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngracefulArgs:
@@ -3086,7 +3041,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigArgs:
@@ -3259,7 +3213,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusterArgsDi
     cluster_arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusterArgs:
@@ -3291,7 +3244,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResour
 ):
     api_version: pulumi.Input[_builtins.str]
     kind: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceTypeArgs:
@@ -3325,7 +3277,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourceA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourceArgs:
@@ -3382,7 +3333,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourceR
     namespace: pulumi.Input[_builtins.str]
     resource_name: pulumi.Input[_builtins.str]
     hpa_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourceResourceArgs:
@@ -3419,7 +3369,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulArgsDi
     TypedDict
 ):
     minimum_success_percentage: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulArgs:
@@ -3435,7 +3384,6 @@ class PlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngracefulArgs:
 class PlanWorkflowStepParallelConfigStepExecutionApprovalConfigArgsDict(TypedDict):
     approval_role: pulumi.Input[_builtins.str]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepExecutionApprovalConfigArgs:
@@ -3472,7 +3420,6 @@ class PlanWorkflowStepParallelConfigStepGlobalAuroraConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepGlobalAuroraConfigArgs:
@@ -3558,7 +3505,6 @@ class PlanWorkflowStepParallelConfigStepGlobalAuroraConfigArgs:
 
 class PlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulArgsDict(TypedDict):
     ungraceful: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngracefulArgs:
@@ -3573,7 +3519,6 @@ class PlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigArgsDict(TypedDict
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigArgs:
@@ -3615,7 +3560,6 @@ class PlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigArgsDict(TypedDi
         ]
     ]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigArgs:
@@ -3694,7 +3638,6 @@ class PlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetArgsDic
 ):
     record_set_identifier: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetArgs:
@@ -3719,7 +3662,6 @@ class PlanWorkflowStepRegionSwitchPlanConfigArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     cross_account_role: NotRequired[pulumi.Input[_builtins.str]]
     external_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepRegionSwitchPlanConfigArgs:
@@ -3759,7 +3701,6 @@ class PlanWorkflowStepRoute53HealthCheckConfigArgsDict(TypedDict):
         ]
     ]
     timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepRoute53HealthCheckConfigArgs:
@@ -3830,7 +3771,6 @@ class PlanWorkflowStepRoute53HealthCheckConfigArgs:
 class PlanWorkflowStepRoute53HealthCheckConfigRecordSetArgsDict(TypedDict):
     record_set_identifier: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PlanWorkflowStepRoute53HealthCheckConfigRecordSetArgs:

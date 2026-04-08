@@ -35,7 +35,6 @@ class AppAutoBranchCreationConfigArgsDict(TypedDict):
     framework: NotRequired[pulumi.Input[_builtins.str]]
     pull_request_environment_name: NotRequired[pulumi.Input[_builtins.str]]
     stage: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppAutoBranchCreationConfigArgs:
@@ -120,7 +119,6 @@ class AppAutoBranchCreationConfigArgs:
 
 class AppCacheConfigArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AppCacheConfigArgs:
@@ -136,7 +134,6 @@ class AppCustomRuleArgsDict(TypedDict):
     target: pulumi.Input[_builtins.str]
     condition: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppCustomRuleArgs:
@@ -171,7 +168,6 @@ class AppCustomRuleArgs:
 
 class AppJobConfigArgsDict(TypedDict):
     build_compute_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppJobConfigArgs:
@@ -189,7 +185,6 @@ class AppProductionBranchArgsDict(TypedDict):
     last_deploy_time: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     thumbnail_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppProductionBranchArgs:
@@ -226,7 +221,6 @@ class DomainAssociationCertificateSettingsArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     certificate_verification_dns_record: NotRequired[pulumi.Input[_builtins.str]]
     custom_certificate_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainAssociationCertificateSettingsArgs:
@@ -264,7 +258,6 @@ class DomainAssociationSubDomainArgsDict(TypedDict):
     prefix: pulumi.Input[_builtins.str]
     dns_record: NotRequired[pulumi.Input[_builtins.str]]
     verified: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DomainAssociationSubDomainArgs:

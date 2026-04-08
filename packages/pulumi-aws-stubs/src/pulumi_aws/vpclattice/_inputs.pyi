@@ -73,7 +73,6 @@ class ListenerDefaultActionArgsDict(TypedDict):
     forwards: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ListenerDefaultActionForwardArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionArgs:
@@ -113,7 +112,6 @@ class ListenerDefaultActionArgs:
 
 class ListenerDefaultActionFixedResponseArgsDict(TypedDict):
     status_code: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionFixedResponseArgs:
@@ -130,7 +128,6 @@ class ListenerDefaultActionForwardArgsDict(TypedDict):
             Sequence[pulumi.Input[ListenerDefaultActionForwardTargetGroupArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionForwardArgs:
@@ -165,7 +162,6 @@ class ListenerDefaultActionForwardArgs:
 class ListenerDefaultActionForwardTargetGroupArgsDict(TypedDict):
     target_group_identifier: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionForwardTargetGroupArgs:
@@ -189,7 +185,6 @@ class ListenerDefaultActionForwardTargetGroupArgs:
 class ListenerRuleActionArgsDict(TypedDict):
     fixed_response: NotRequired[pulumi.Input[ListenerRuleActionFixedResponseArgsDict]]
     forward: NotRequired[pulumi.Input[ListenerRuleActionForwardArgsDict]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionArgs:
@@ -218,7 +213,6 @@ class ListenerRuleActionArgs:
 
 class ListenerRuleActionFixedResponseArgsDict(TypedDict):
     status_code: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionFixedResponseArgs:
@@ -233,7 +227,6 @@ class ListenerRuleActionForwardArgsDict(TypedDict):
     target_groups: pulumi.Input[
         Sequence[pulumi.Input[ListenerRuleActionForwardTargetGroupArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionForwardArgs:
@@ -262,7 +255,6 @@ class ListenerRuleActionForwardArgs:
 class ListenerRuleActionForwardTargetGroupArgsDict(TypedDict):
     target_group_identifier: pulumi.Input[_builtins.str]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionForwardTargetGroupArgs:
@@ -285,7 +277,6 @@ class ListenerRuleActionForwardTargetGroupArgs:
 
 class ListenerRuleMatchArgsDict(TypedDict):
     http_match: pulumi.Input[ListenerRuleMatchHttpMatchArgsDict]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchArgs:
@@ -306,7 +297,6 @@ class ListenerRuleMatchHttpMatchArgsDict(TypedDict):
     ]
     method: NotRequired[pulumi.Input[_builtins.str]]
     path_match: NotRequired[pulumi.Input[ListenerRuleMatchHttpMatchPathMatchArgsDict]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchHttpMatchArgs:
@@ -358,7 +348,6 @@ class ListenerRuleMatchHttpMatchHeaderMatchArgsDict(TypedDict):
     match: pulumi.Input[ListenerRuleMatchHttpMatchHeaderMatchMatchArgsDict]
     name: pulumi.Input[_builtins.str]
     case_sensitive: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchHttpMatchHeaderMatchArgs:
@@ -391,7 +380,6 @@ class ListenerRuleMatchHttpMatchHeaderMatchMatchArgsDict(TypedDict):
     contains: NotRequired[pulumi.Input[_builtins.str]]
     exact: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchHttpMatchHeaderMatchMatchArgs:
@@ -421,7 +409,6 @@ class ListenerRuleMatchHttpMatchHeaderMatchMatchArgs:
 class ListenerRuleMatchHttpMatchPathMatchArgsDict(TypedDict):
     match: pulumi.Input[ListenerRuleMatchHttpMatchPathMatchMatchArgsDict]
     case_sensitive: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchHttpMatchPathMatchArgs:
@@ -447,7 +434,6 @@ class ListenerRuleMatchHttpMatchPathMatchArgs:
 class ListenerRuleMatchHttpMatchPathMatchMatchArgsDict(TypedDict):
     exact: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleMatchHttpMatchPathMatchMatchArgs:
@@ -484,7 +470,6 @@ class ResourceConfigurationResourceConfigurationDefinitionArgsDict(TypedDict):
             ResourceConfigurationResourceConfigurationDefinitionIpResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ResourceConfigurationResourceConfigurationDefinitionArgs:
@@ -564,7 +549,6 @@ class ResourceConfigurationResourceConfigurationDefinitionArnResourceArgsDict(
     TypedDict
 ):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResourceConfigurationResourceConfigurationDefinitionArnResourceArgs:
@@ -580,7 +564,6 @@ class ResourceConfigurationResourceConfigurationDefinitionDnsResourceArgsDict(
 ):
     domain_name: pulumi.Input[_builtins.str]
     ip_address_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResourceConfigurationResourceConfigurationDefinitionDnsResourceArgs:
@@ -603,7 +586,6 @@ class ResourceConfigurationResourceConfigurationDefinitionDnsResourceArgs:
 
 class ResourceConfigurationResourceConfigurationDefinitionIpResourceArgsDict(TypedDict):
     ip_address: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResourceConfigurationResourceConfigurationDefinitionIpResourceArgs:
@@ -618,7 +600,6 @@ class ResourceConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceConfigurationTimeoutsArgs:
@@ -649,7 +630,6 @@ class ResourceGatewayTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceGatewayTimeoutsArgs:
@@ -679,7 +659,6 @@ class ResourceGatewayTimeoutsArgs:
 class ServiceDnsEntryArgsDict(TypedDict):
     domain_name: NotRequired[pulumi.Input[_builtins.str]]
     hosted_zone_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceDnsEntryArgs:
@@ -703,7 +682,6 @@ class ServiceDnsEntryArgs:
 class ServiceNetworkResourceAssociationDnsEntryArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     hosted_zone_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkResourceAssociationDnsEntryArgs:
@@ -727,7 +705,6 @@ class ServiceNetworkResourceAssociationDnsEntryArgs:
 class ServiceNetworkResourceAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkResourceAssociationTimeoutsArgs:
@@ -751,7 +728,6 @@ class ServiceNetworkResourceAssociationTimeoutsArgs:
 class ServiceNetworkServiceAssociationDnsEntryArgsDict(TypedDict):
     domain_name: NotRequired[pulumi.Input[_builtins.str]]
     hosted_zone_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkServiceAssociationDnsEntryArgs:
@@ -777,7 +753,6 @@ class ServiceNetworkVpcAssociationDnsOptionsArgsDict(TypedDict):
     private_dns_specified_domains: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkVpcAssociationDnsOptionsArgs:
@@ -807,7 +782,6 @@ class ServiceNetworkVpcAssociationDnsOptionsArgs:
 class TargetGroupAttachmentTargetArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TargetGroupAttachmentTargetArgs:
@@ -836,7 +810,6 @@ class TargetGroupConfigArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     protocol_version: NotRequired[pulumi.Input[_builtins.str]]
     vpc_identifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetGroupConfigArgs:
@@ -906,7 +879,6 @@ class TargetGroupConfigHealthCheckArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     protocol_version: NotRequired[pulumi.Input[_builtins.str]]
     unhealthy_threshold_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TargetGroupConfigHealthCheckArgs:
@@ -989,7 +961,6 @@ class TargetGroupConfigHealthCheckArgs:
 
 class TargetGroupConfigHealthCheckMatcherArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetGroupConfigHealthCheckMatcherArgs:

@@ -50,7 +50,6 @@ class EntryBigqueryDateShardedSpecArgsDict(TypedDict):
     dataset: NotRequired[pulumi.Input[_builtins.str]]
     shard_count: NotRequired[pulumi.Input[_builtins.int]]
     table_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryBigqueryDateShardedSpecArgs:
@@ -85,7 +84,6 @@ class EntryBigqueryTableSpecArgsDict(TypedDict):
     view_specs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[EntryBigqueryTableSpecViewSpecArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class EntryBigqueryTableSpecArgs:
@@ -136,7 +134,6 @@ class EntryBigqueryTableSpecArgs:
 
 class EntryBigqueryTableSpecTableSpecArgsDict(TypedDict):
     grouped_entry: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryBigqueryTableSpecTableSpecArgs:
@@ -151,7 +148,6 @@ class EntryBigqueryTableSpecTableSpecArgs:
 
 class EntryBigqueryTableSpecViewSpecArgsDict(TypedDict):
     view_query: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryBigqueryTableSpecViewSpecArgs:
@@ -171,7 +167,6 @@ class EntryGcsFilesetSpecArgsDict(TypedDict):
             Sequence[pulumi.Input[EntryGcsFilesetSpecSampleGcsFileSpecArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EntryGcsFilesetSpecArgs:
@@ -212,7 +207,6 @@ class EntryGcsFilesetSpecArgs:
 class EntryGcsFilesetSpecSampleGcsFileSpecArgsDict(TypedDict):
     file_path: NotRequired[pulumi.Input[_builtins.str]]
     size_bytes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class EntryGcsFilesetSpecSampleGcsFileSpecArgs:
@@ -237,7 +231,6 @@ class EntryGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryGroupIamBindingConditionArgs:
@@ -268,7 +261,6 @@ class EntryGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntryGroupIamMemberConditionArgs:
@@ -299,7 +291,6 @@ class PolicyTagIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTagIamBindingConditionArgs:
@@ -330,7 +321,6 @@ class PolicyTagIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyTagIamMemberConditionArgs:
@@ -366,7 +356,6 @@ class TagFieldArgsDict(TypedDict):
     order: NotRequired[pulumi.Input[_builtins.int]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TagFieldArgs:
@@ -431,7 +420,6 @@ class TagTemplateFieldArgsDict(TypedDict):
     is_required: NotRequired[pulumi.Input[_builtins.bool]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     order: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TagTemplateFieldArgs:
@@ -485,7 +473,6 @@ class TagTemplateFieldArgs:
 class TagTemplateFieldTypeArgsDict(TypedDict):
     enum_type: NotRequired[pulumi.Input[TagTemplateFieldTypeEnumTypeArgsDict]]
     primitive_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TagTemplateFieldTypeArgs:
@@ -512,7 +499,6 @@ class TagTemplateFieldTypeEnumTypeArgsDict(TypedDict):
     allowed_values: pulumi.Input[
         Sequence[pulumi.Input[TagTemplateFieldTypeEnumTypeAllowedValueArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TagTemplateFieldTypeEnumTypeArgs:
@@ -540,7 +526,6 @@ class TagTemplateFieldTypeEnumTypeArgs:
 
 class TagTemplateFieldTypeEnumTypeAllowedValueArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TagTemplateFieldTypeEnumTypeAllowedValueArgs:
@@ -555,7 +540,6 @@ class TagTemplateIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TagTemplateIamBindingConditionArgs:
@@ -586,7 +570,6 @@ class TagTemplateIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TagTemplateIamMemberConditionArgs:
@@ -617,7 +600,6 @@ class TaxonomyIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaxonomyIamBindingConditionArgs:
@@ -648,7 +630,6 @@ class TaxonomyIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaxonomyIamMemberConditionArgs:

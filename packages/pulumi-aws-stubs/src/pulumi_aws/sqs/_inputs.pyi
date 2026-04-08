@@ -12,7 +12,6 @@ class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgsDict]]]
     version: pulumi.Input[iam.PolicyDocumentVersion]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDocumentArgs:

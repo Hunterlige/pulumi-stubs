@@ -41,7 +41,6 @@ class CertificateIssuanceConfigCertificateAuthorityConfigArgsDict(TypedDict):
             CertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateIssuanceConfigCertificateAuthorityConfigArgs:
@@ -77,7 +76,6 @@ class CertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthoritySer
     TypedDict
 ):
     ca_pool: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfigArgs:
@@ -103,7 +101,6 @@ class CertificateManagedArgsDict(TypedDict):
         ]
     ]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateManagedArgs:
@@ -195,7 +192,6 @@ class CertificateManagedAuthorizationAttemptInfoArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
     failure_reason: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateManagedAuthorizationAttemptInfoArgs:
@@ -231,7 +227,6 @@ class CertificateManagedAuthorizationAttemptInfoArgs:
 class CertificateManagedProvisioningIssueArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[_builtins.str]]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateManagedProvisioningIssueArgs:
@@ -258,7 +253,6 @@ class CertificateMapGclbTargetArgsDict(TypedDict):
     ]
     target_https_proxy: NotRequired[pulumi.Input[_builtins.str]]
     target_ssl_proxy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateMapGclbTargetArgs:
@@ -299,7 +293,6 @@ class CertificateMapGclbTargetArgs:
 class CertificateMapGclbTargetIpConfigArgsDict(TypedDict):
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     ports: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CertificateMapGclbTargetIpConfigArgs:
@@ -329,7 +322,6 @@ class CertificateSelfManagedArgsDict(TypedDict):
     pem_certificate: NotRequired[pulumi.Input[_builtins.str]]
     pem_private_key: NotRequired[pulumi.Input[_builtins.str]]
     private_key_pem: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateSelfManagedArgs:
@@ -368,7 +360,6 @@ class DnsAuthorizationDnsResourceRecordArgsDict(TypedDict):
     data: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DnsAuthorizationDnsResourceRecordArgs:
@@ -397,7 +388,6 @@ class DnsAuthorizationDnsResourceRecordArgs:
 
 class TrustConfigAllowlistedCertificateArgsDict(TypedDict):
     pem_certificate: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TrustConfigAllowlistedCertificateArgs:
@@ -417,7 +407,6 @@ class TrustConfigTrustStoreArgsDict(TypedDict):
     trust_anchors: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TrustConfigTrustStoreTrustAnchorArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TrustConfigTrustStoreArgs:
@@ -466,7 +455,6 @@ class TrustConfigTrustStoreArgs:
 
 class TrustConfigTrustStoreIntermediateCaArgsDict(TypedDict):
     pem_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustConfigTrustStoreIntermediateCaArgs:
@@ -481,7 +469,6 @@ class TrustConfigTrustStoreIntermediateCaArgs:
 
 class TrustConfigTrustStoreTrustAnchorArgsDict(TypedDict):
     pem_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustConfigTrustStoreTrustAnchorArgs:

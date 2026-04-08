@@ -75,7 +75,6 @@ __all__ = [
 
 class ConnectAttachmentOptionsArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectAttachmentOptionsArgs:
@@ -90,7 +89,6 @@ class ConnectAttachmentOptionsArgs:
 
 class ConnectPeerBgpOptionsArgsDict(TypedDict):
     peer_asn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectPeerBgpOptionsArgs:
@@ -113,7 +111,6 @@ class ConnectPeerConfigurationArgsDict(TypedDict):
     inside_cidr_blocks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     peer_address: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectPeerConfigurationArgs:
@@ -180,7 +177,6 @@ class ConnectPeerConfigurationBgpConfigurationArgsDict(TypedDict):
     core_network_asn: NotRequired[pulumi.Input[_builtins.int]]
     peer_address: NotRequired[pulumi.Input[_builtins.str]]
     peer_asn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectPeerConfigurationBgpConfigurationArgs:
@@ -217,7 +213,6 @@ class CoreNetworkEdgeArgsDict(TypedDict):
     asn: NotRequired[pulumi.Input[_builtins.int]]
     edge_location: NotRequired[pulumi.Input[_builtins.str]]
     inside_cidr_blocks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CoreNetworkEdgeArgs:
@@ -254,7 +249,6 @@ class CoreNetworkSegmentArgsDict(TypedDict):
     edge_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     shared_segments: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CoreNetworkSegmentArgs:
@@ -296,7 +290,6 @@ class CoreNetworkSegmentArgs:
 class DeviceAwsLocationArgsDict(TypedDict):
     subnet_arn: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeviceAwsLocationArgs:
@@ -321,7 +314,6 @@ class DeviceLocationArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     latitude: NotRequired[pulumi.Input[_builtins.str]]
     longitude: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeviceLocationArgs:
@@ -352,7 +344,6 @@ class DxGatewayAttachmentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DxGatewayAttachmentTimeoutsArgs:
@@ -382,7 +373,6 @@ class DxGatewayAttachmentTimeoutsArgs:
 class LinkBandwidthArgsDict(TypedDict):
     download_speed: NotRequired[pulumi.Input[_builtins.int]]
     upload_speed: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class LinkBandwidthArgs:
@@ -407,7 +397,6 @@ class SiteLocationArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     latitude: NotRequired[pulumi.Input[_builtins.str]]
     longitude: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SiteLocationArgs:
@@ -439,7 +428,6 @@ class VpcAttachmentOptionsArgsDict(TypedDict):
     dns_support: NotRequired[pulumi.Input[_builtins.bool]]
     ipv6_support: NotRequired[pulumi.Input[_builtins.bool]]
     security_group_referencing_support: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class VpcAttachmentOptionsArgs:
@@ -484,7 +472,6 @@ class GetCoreNetworkPolicyDocumentAttachmentPolicyArgsDict(TypedDict):
     rule_number: _builtins.int
     condition_logic: NotRequired[_builtins.str]
     description: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentPolicyArgs:
@@ -533,7 +520,6 @@ class GetCoreNetworkPolicyDocumentAttachmentPolicyActionArgsDict(TypedDict):
     require_acceptance: NotRequired[_builtins.bool]
     segment: NotRequired[_builtins.str]
     tag_value_of_key: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentPolicyActionArgs:
@@ -577,7 +563,6 @@ class GetCoreNetworkPolicyDocumentAttachmentPolicyConditionArgsDict(TypedDict):
     key: NotRequired[_builtins.str]
     operator: NotRequired[_builtins.str]
     value: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentPolicyConditionArgs:
@@ -618,7 +603,6 @@ class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleArgsDict(TypedDict)
     rule_number: _builtins.int
     description: NotRequired[_builtins.str]
     edge_locations: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleArgs:
@@ -674,7 +658,6 @@ class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleArgs:
 
 class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleActionArgsDict(TypedDict):
     associate_routing_policies: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleActionArgs:
@@ -692,7 +675,6 @@ class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleConditionArgsDict(
 ):
     type: _builtins.str
     value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentAttachmentRoutingPolicyRuleConditionArgs:
@@ -717,7 +699,6 @@ class GetCoreNetworkPolicyDocumentCoreNetworkConfigurationArgsDict(TypedDict):
     inside_cidr_blocks: NotRequired[Sequence[_builtins.str]]
     security_group_referencing_support: NotRequired[_builtins.bool]
     vpn_ecmp_support: NotRequired[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentCoreNetworkConfigurationArgs:
@@ -779,7 +760,6 @@ class GetCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationArgsDict(
     location: _builtins.str
     asn: NotRequired[_builtins.str]
     inside_cidr_blocks: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationArgs:
@@ -810,7 +790,6 @@ class GetCoreNetworkPolicyDocumentNetworkFunctionGroupArgsDict(TypedDict):
     name: _builtins.str
     require_attachment_acceptance: _builtins.bool
     description: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentNetworkFunctionGroupArgs:
@@ -845,7 +824,6 @@ class GetCoreNetworkPolicyDocumentRoutingPolicyArgsDict(TypedDict):
         GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleArgsDict
     ]
     routing_policy_description: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentRoutingPolicyArgs:
@@ -896,7 +874,6 @@ class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleArgsDict(TypedDi
         GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionArgsDict
     )
     rule_number: _builtins.int
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleArgs:
@@ -934,7 +911,6 @@ class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionAr
             GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionMatchConditionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionArgs:
@@ -988,7 +964,6 @@ class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionAc
 ):
     type: _builtins.str
     value: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionActionArgs:
@@ -1011,7 +986,6 @@ class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionMa
 ):
     type: _builtins.str
     value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentRoutingPolicyRoutingPolicyRuleRuleDefinitionMatchConditionArgs:
@@ -1035,7 +1009,6 @@ class GetCoreNetworkPolicyDocumentSegmentArgsDict(TypedDict):
     edge_locations: NotRequired[Sequence[_builtins.str]]
     isolate_attachments: NotRequired[_builtins.bool]
     require_attachment_acceptance: NotRequired[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentArgs:
@@ -1103,7 +1076,6 @@ class GetCoreNetworkPolicyDocumentSegmentActionArgsDict(TypedDict):
     when_sent_to: NotRequired[
         GetCoreNetworkPolicyDocumentSegmentActionWhenSentToArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentActionArgs:
@@ -1209,7 +1181,6 @@ class GetCoreNetworkPolicyDocumentSegmentActionEdgeLocationAssociationArgsDict(
     edge_location: _builtins.str
     peer_edge_location: _builtins.str
     routing_policy_names: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentActionEdgeLocationAssociationArgs:
@@ -1241,7 +1212,6 @@ class GetCoreNetworkPolicyDocumentSegmentActionViaArgsDict(TypedDict):
     with_edge_overrides: NotRequired[
         Sequence[GetCoreNetworkPolicyDocumentSegmentActionViaWithEdgeOverrideArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentActionViaArgs:
@@ -1277,7 +1247,6 @@ class GetCoreNetworkPolicyDocumentSegmentActionViaWithEdgeOverrideArgsDict(Typed
     edge_sets: NotRequired[Sequence[Sequence[_builtins.str]]]
     use_edge: NotRequired[_builtins.str]
     use_edge_location: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentActionViaWithEdgeOverrideArgs:
@@ -1307,7 +1276,6 @@ class GetCoreNetworkPolicyDocumentSegmentActionViaWithEdgeOverrideArgs:
 
 class GetCoreNetworkPolicyDocumentSegmentActionWhenSentToArgsDict(TypedDict):
     segments: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetCoreNetworkPolicyDocumentSegmentActionWhenSentToArgs:

@@ -64,7 +64,6 @@ class ReleaseBlueprintArgsDict(TypedDict):
     engine: NotRequired[pulumi.Input[_builtins.str]]
     package: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReleaseBlueprintArgs:
@@ -95,7 +94,6 @@ class ReleaseInputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReleaseInputVariableArgs:
@@ -126,7 +124,6 @@ class ReleaseInputVariableDefaultArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReleaseInputVariableDefaultArgs:
@@ -157,7 +154,6 @@ class ReleaseOutputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReleaseOutputVariableArgs:
@@ -188,7 +184,6 @@ class ReleaseReleaseRequirementsArgsDict(TypedDict):
     upgradeable_from_releases: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ReleaseReleaseRequirementsArgs:
@@ -212,7 +207,6 @@ class ReleaseReleaseRequirementsArgs:
 class RolloutKindErrorBudgetArgsDict(TypedDict):
     allowed_count: NotRequired[pulumi.Input[_builtins.int]]
     allowed_percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RolloutKindErrorBudgetArgs:
@@ -235,7 +229,6 @@ class RolloutKindErrorBudgetArgs:
 
 class SaaSLocationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SaaSLocationArgs:
@@ -254,7 +247,6 @@ class UnitConditionArgsDict(TypedDict):
     reason: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UnitConditionArgs:
@@ -296,7 +288,6 @@ class UnitConditionArgs:
 class UnitDependencyArgsDict(TypedDict):
     alias: NotRequired[pulumi.Input[_builtins.str]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitDependencyArgs:
@@ -320,7 +311,6 @@ class UnitDependencyArgs:
 class UnitDependentArgsDict(TypedDict):
     alias: NotRequired[pulumi.Input[_builtins.str]]
     unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitDependentArgs:
@@ -345,7 +335,6 @@ class UnitInputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitInputVariableArgs:
@@ -375,7 +364,6 @@ class UnitInputVariableArgs:
 class UnitKindDependencyArgsDict(TypedDict):
     alias: pulumi.Input[_builtins.str]
     unit_kind: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UnitKindDependencyArgs:
@@ -400,7 +388,6 @@ class UnitKindInputVariableMappingArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     from_: NotRequired[pulumi.Input[UnitKindInputVariableMappingFromArgsDict]]
     to: NotRequired[pulumi.Input[UnitKindInputVariableMappingToArgsDict]]
-    ...
 
 @pulumi.input_type
 class UnitKindInputVariableMappingArgs:
@@ -432,7 +419,6 @@ class UnitKindInputVariableMappingArgs:
 class UnitKindInputVariableMappingFromArgsDict(TypedDict):
     dependency: pulumi.Input[_builtins.str]
     output_variable: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UnitKindInputVariableMappingFromArgs:
@@ -457,7 +443,6 @@ class UnitKindInputVariableMappingToArgsDict(TypedDict):
     dependency: pulumi.Input[_builtins.str]
     input_variable: pulumi.Input[_builtins.str]
     ignore_for_lookup: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UnitKindInputVariableMappingToArgs:
@@ -488,7 +473,6 @@ class UnitKindOutputVariableMappingArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     from_: NotRequired[pulumi.Input[UnitKindOutputVariableMappingFromArgsDict]]
     to: NotRequired[pulumi.Input[UnitKindOutputVariableMappingToArgsDict]]
-    ...
 
 @pulumi.input_type
 class UnitKindOutputVariableMappingArgs:
@@ -524,7 +508,6 @@ class UnitKindOutputVariableMappingArgs:
 class UnitKindOutputVariableMappingFromArgsDict(TypedDict):
     dependency: pulumi.Input[_builtins.str]
     output_variable: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UnitKindOutputVariableMappingFromArgs:
@@ -549,7 +532,6 @@ class UnitKindOutputVariableMappingToArgsDict(TypedDict):
     dependency: pulumi.Input[_builtins.str]
     input_variable: pulumi.Input[_builtins.str]
     ignore_for_lookup: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UnitKindOutputVariableMappingToArgs:
@@ -578,7 +560,6 @@ class UnitKindOutputVariableMappingToArgs:
 
 class UnitMaintenanceArgsDict(TypedDict):
     pinned_until_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitMaintenanceArgs:
@@ -597,7 +578,6 @@ class UnitOperationConditionArgsDict(TypedDict):
     reason: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOperationConditionArgs:
@@ -649,7 +629,6 @@ class UnitOperationProvisionArgsDict(TypedDict):
         ]
     ]
     release: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOperationProvisionArgs:
@@ -689,7 +668,6 @@ class UnitOperationProvisionInputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOperationProvisionInputVariableArgs:
@@ -721,7 +699,6 @@ class UnitOperationUpgradeArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[UnitOperationUpgradeInputVariableArgsDict]]]
     ]
     release: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOperationUpgradeArgs:
@@ -757,7 +734,6 @@ class UnitOperationUpgradeInputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOperationUpgradeInputVariableArgs:
@@ -788,7 +764,6 @@ class UnitOutputVariableArgsDict(TypedDict):
     variable: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UnitOutputVariableArgs:

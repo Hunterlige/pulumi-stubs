@@ -84,7 +84,6 @@ class DnsManagedZoneIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DnsManagedZoneIamBindingConditionArgs:
@@ -115,7 +114,6 @@ class DnsManagedZoneIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DnsManagedZoneIamMemberConditionArgs:
@@ -144,7 +142,6 @@ class DnsManagedZoneIamMemberConditionArgs:
 
 class ManagedZoneCloudLoggingConfigArgsDict(TypedDict):
     enable_logging: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ManagedZoneCloudLoggingConfigArgs:
@@ -164,7 +161,6 @@ class ManagedZoneDnssecConfigArgsDict(TypedDict):
     kind: NotRequired[pulumi.Input[_builtins.str]]
     non_existence: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedZoneDnssecConfigArgs:
@@ -217,7 +213,6 @@ class ManagedZoneDnssecConfigDefaultKeySpecArgsDict(TypedDict):
     key_length: NotRequired[pulumi.Input[_builtins.int]]
     key_type: NotRequired[pulumi.Input[_builtins.str]]
     kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedZoneDnssecConfigDefaultKeySpecArgs:
@@ -254,7 +249,6 @@ class ManagedZoneForwardingConfigArgsDict(TypedDict):
     target_name_servers: pulumi.Input[
         Sequence[pulumi.Input[ManagedZoneForwardingConfigTargetNameServerArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ManagedZoneForwardingConfigArgs:
@@ -285,7 +279,6 @@ class ManagedZoneForwardingConfigTargetNameServerArgsDict(TypedDict):
     forwarding_path: NotRequired[pulumi.Input[_builtins.str]]
     ipv4_address: NotRequired[pulumi.Input[_builtins.str]]
     ipv6_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedZoneForwardingConfigTargetNameServerArgs:
@@ -320,7 +313,6 @@ class ManagedZoneForwardingConfigTargetNameServerArgs:
 
 class ManagedZonePeeringConfigArgsDict(TypedDict):
     target_network: pulumi.Input[ManagedZonePeeringConfigTargetNetworkArgsDict]
-    ...
 
 @pulumi.input_type
 class ManagedZonePeeringConfigArgs:
@@ -341,7 +333,6 @@ class ManagedZonePeeringConfigArgs:
 
 class ManagedZonePeeringConfigTargetNetworkArgsDict(TypedDict):
     network_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ManagedZonePeeringConfigTargetNetworkArgs:
@@ -363,7 +354,6 @@ class ManagedZonePrivateVisibilityConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[ManagedZonePrivateVisibilityConfigNetworkArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagedZonePrivateVisibilityConfigArgs:
@@ -420,7 +410,6 @@ class ManagedZonePrivateVisibilityConfigArgs:
 
 class ManagedZonePrivateVisibilityConfigGkeClusterArgsDict(TypedDict):
     gke_cluster_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ManagedZonePrivateVisibilityConfigGkeClusterArgs:
@@ -435,7 +424,6 @@ class ManagedZonePrivateVisibilityConfigGkeClusterArgs:
 
 class ManagedZonePrivateVisibilityConfigNetworkArgsDict(TypedDict):
     network_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ManagedZonePrivateVisibilityConfigNetworkArgs:
@@ -448,7 +436,6 @@ class ManagedZonePrivateVisibilityConfigNetworkArgs:
 
 class ManagedZoneServiceDirectoryConfigArgsDict(TypedDict):
     namespace: pulumi.Input[ManagedZoneServiceDirectoryConfigNamespaceArgsDict]
-    ...
 
 @pulumi.input_type
 class ManagedZoneServiceDirectoryConfigArgs:
@@ -469,7 +456,6 @@ class ManagedZoneServiceDirectoryConfigArgs:
 
 class ManagedZoneServiceDirectoryConfigNamespaceArgsDict(TypedDict):
     namespace_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ManagedZoneServiceDirectoryConfigNamespaceArgs:
@@ -486,7 +472,6 @@ class PolicyAlternativeNameServerConfigArgsDict(TypedDict):
             pulumi.Input[PolicyAlternativeNameServerConfigTargetNameServerArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicyAlternativeNameServerConfigArgs:
@@ -519,7 +504,6 @@ class PolicyAlternativeNameServerConfigArgs:
 class PolicyAlternativeNameServerConfigTargetNameServerArgsDict(TypedDict):
     ipv4_address: pulumi.Input[_builtins.str]
     forwarding_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyAlternativeNameServerConfigTargetNameServerArgs:
@@ -542,7 +526,6 @@ class PolicyAlternativeNameServerConfigTargetNameServerArgs:
 
 class PolicyDns64ConfigArgsDict(TypedDict):
     scope: pulumi.Input[PolicyDns64ConfigScopeArgsDict]
-    ...
 
 @pulumi.input_type
 class PolicyDns64ConfigArgs:
@@ -557,7 +540,6 @@ class PolicyDns64ConfigArgs:
 
 class PolicyDns64ConfigScopeArgsDict(TypedDict):
     all_queries: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PolicyDns64ConfigScopeArgs:
@@ -572,7 +554,6 @@ class PolicyDns64ConfigScopeArgs:
 
 class PolicyNetworkArgsDict(TypedDict):
     network_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyNetworkArgs:
@@ -595,7 +576,6 @@ class RecordSetRoutingPolicyArgsDict(TypedDict):
     wrrs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[RecordSetRoutingPolicyWrrArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyArgs:
@@ -668,7 +648,6 @@ class RecordSetRoutingPolicyGeoArgsDict(TypedDict):
         pulumi.Input[RecordSetRoutingPolicyGeoHealthCheckedTargetsArgsDict]
     ]
     rrdatas: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyGeoArgs:
@@ -719,7 +698,6 @@ class RecordSetRoutingPolicyGeoHealthCheckedTargetsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyGeoHealthCheckedTargetsArgs:
@@ -785,7 +763,6 @@ class RecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancerArgsDict(
     project: pulumi.Input[_builtins.str]
     load_balancer_type: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancerArgs:
@@ -843,7 +820,6 @@ class RecordSetRoutingPolicyPrimaryBackupArgsDict(TypedDict):
     primary: pulumi.Input[RecordSetRoutingPolicyPrimaryBackupPrimaryArgsDict]
     enable_geo_fencing_for_backups: NotRequired[pulumi.Input[_builtins.bool]]
     trickle_ratio: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupArgs:
@@ -903,7 +879,6 @@ class RecordSetRoutingPolicyPrimaryBackupBackupGeoArgsDict(TypedDict):
         ]
     ]
     rrdatas: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupBackupGeoArgs:
@@ -964,7 +939,6 @@ class RecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsArgs:
@@ -1030,7 +1004,6 @@ class RecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLo
     project: pulumi.Input[_builtins.str]
     load_balancer_type: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancerArgs:
@@ -1092,7 +1065,6 @@ class RecordSetRoutingPolicyPrimaryBackupPrimaryArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupPrimaryArgs:
@@ -1156,7 +1128,6 @@ class RecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancerArgsDict(Typ
     project: pulumi.Input[_builtins.str]
     load_balancer_type: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancerArgs:
@@ -1213,7 +1184,6 @@ class RecordSetRoutingPolicyWrrArgsDict(TypedDict):
         pulumi.Input[RecordSetRoutingPolicyWrrHealthCheckedTargetsArgsDict]
     ]
     rrdatas: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyWrrArgs:
@@ -1264,7 +1234,6 @@ class RecordSetRoutingPolicyWrrHealthCheckedTargetsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyWrrHealthCheckedTargetsArgs:
@@ -1330,7 +1299,6 @@ class RecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancerArgsDict(
     project: pulumi.Input[_builtins.str]
     load_balancer_type: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancerArgs:
@@ -1383,7 +1351,6 @@ class RecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancerArgs:
 
 class ResponsePolicyGkeClusterArgsDict(TypedDict):
     gke_cluster_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponsePolicyGkeClusterArgs:
@@ -1398,7 +1365,6 @@ class ResponsePolicyGkeClusterArgs:
 
 class ResponsePolicyNetworkArgsDict(TypedDict):
     network_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponsePolicyNetworkArgs:
@@ -1413,7 +1379,6 @@ class ResponsePolicyRuleLocalDataArgsDict(TypedDict):
     local_datas: pulumi.Input[
         Sequence[pulumi.Input[ResponsePolicyRuleLocalDataLocalDataArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ResponsePolicyRuleLocalDataArgs:
@@ -1444,7 +1409,6 @@ class ResponsePolicyRuleLocalDataLocalDataArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     rrdatas: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ResponsePolicyRuleLocalDataLocalDataArgs:

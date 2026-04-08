@@ -37,7 +37,6 @@ __all__ = [
 class FeatureEvaluationRuleArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureEvaluationRuleArgs:
@@ -61,7 +60,6 @@ class FeatureEvaluationRuleArgs:
 class FeatureVariationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[FeatureVariationValueArgsDict]
-    ...
 
 @pulumi.input_type
 class FeatureVariationArgs:
@@ -87,7 +85,6 @@ class FeatureVariationValueArgsDict(TypedDict):
     double_value: NotRequired[pulumi.Input[_builtins.str]]
     long_value: NotRequired[pulumi.Input[_builtins.str]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FeatureVariationValueArgs:
@@ -123,7 +120,6 @@ class FeatureVariationValueArgs:
 class LaunchExecutionArgsDict(TypedDict):
     ended_time: NotRequired[pulumi.Input[_builtins.str]]
     started_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchExecutionArgs:
@@ -149,7 +145,6 @@ class LaunchGroupArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     variation: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchGroupArgs:
@@ -184,7 +179,6 @@ class LaunchGroupArgs:
 
 class LaunchMetricMonitorArgsDict(TypedDict):
     metric_definition: pulumi.Input[LaunchMetricMonitorMetricDefinitionArgsDict]
-    ...
 
 @pulumi.input_type
 class LaunchMetricMonitorArgs:
@@ -209,7 +203,6 @@ class LaunchMetricMonitorMetricDefinitionArgsDict(TypedDict):
     value_key: pulumi.Input[_builtins.str]
     event_pattern: NotRequired[pulumi.Input[_builtins.str]]
     unit_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LaunchMetricMonitorMetricDefinitionArgs:
@@ -250,7 +243,6 @@ class LaunchMetricMonitorMetricDefinitionArgs:
 
 class LaunchScheduledSplitsConfigArgsDict(TypedDict):
     steps: pulumi.Input[Sequence[pulumi.Input[LaunchScheduledSplitsConfigStepArgsDict]]]
-    ...
 
 @pulumi.input_type
 class LaunchScheduledSplitsConfigArgs:
@@ -284,7 +276,6 @@ class LaunchScheduledSplitsConfigStepArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LaunchScheduledSplitsConfigStepArgs:
@@ -340,7 +331,6 @@ class LaunchScheduledSplitsConfigStepSegmentOverrideArgsDict(TypedDict):
     evaluation_order: pulumi.Input[_builtins.int]
     segment: pulumi.Input[_builtins.str]
     weights: pulumi.Input[Mapping[str, pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class LaunchScheduledSplitsConfigStepSegmentOverrideArgs:
@@ -374,7 +364,6 @@ class ProjectDataDeliveryArgsDict(TypedDict):
         pulumi.Input[ProjectDataDeliveryCloudwatchLogsArgsDict]
     ]
     s3_destination: NotRequired[pulumi.Input[ProjectDataDeliveryS3DestinationArgsDict]]
-    ...
 
 @pulumi.input_type
 class ProjectDataDeliveryArgs:
@@ -409,7 +398,6 @@ class ProjectDataDeliveryArgs:
 
 class ProjectDataDeliveryCloudwatchLogsArgsDict(TypedDict):
     log_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectDataDeliveryCloudwatchLogsArgs:
@@ -425,7 +413,6 @@ class ProjectDataDeliveryCloudwatchLogsArgs:
 class ProjectDataDeliveryS3DestinationArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectDataDeliveryS3DestinationArgs:

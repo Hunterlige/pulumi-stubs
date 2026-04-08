@@ -220,7 +220,6 @@ __all__ = [
 
 class BatchOperationsJobBucketListArgsDict(TypedDict):
     buckets: pulumi.Input[BatchOperationsJobBucketListBucketsArgsDict]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobBucketListArgs:
@@ -241,7 +240,6 @@ class BatchOperationsJobBucketListBucketsArgsDict(TypedDict):
     prefix_list: NotRequired[
         pulumi.Input[BatchOperationsJobBucketListBucketsPrefixListArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobBucketListBucketsArgs:
@@ -286,7 +284,6 @@ class BatchOperationsJobBucketListBucketsArgs:
 
 class BatchOperationsJobBucketListBucketsManifestArgsDict(TypedDict):
     manifest_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobBucketListBucketsManifestArgs:
@@ -303,7 +300,6 @@ class BatchOperationsJobBucketListBucketsPrefixListArgsDict(TypedDict):
     included_object_prefixes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobBucketListBucketsPrefixListArgs:
@@ -326,7 +322,6 @@ class BatchOperationsJobBucketListBucketsPrefixListArgs:
 
 class BatchOperationsJobDeleteObjectArgsDict(TypedDict):
     permanent_object_deletion_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobDeleteObjectArgs:
@@ -351,7 +346,6 @@ class BatchOperationsJobPutMetadataArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     custom_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobPutMetadataArgs:
@@ -411,7 +405,6 @@ class BatchOperationsJobPutMetadataArgs:
 class BatchOperationsJobPutObjectHoldArgsDict(TypedDict):
     event_based_hold: NotRequired[pulumi.Input[_builtins.str]]
     temporary_hold: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobPutObjectHoldArgs:
@@ -434,7 +427,6 @@ class BatchOperationsJobPutObjectHoldArgs:
 
 class BatchOperationsJobRewriteObjectArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BatchOperationsJobRewriteObjectArgs:
@@ -448,7 +440,6 @@ class BatchOperationsJobRewriteObjectArgs:
 class BucketAutoclassArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     terminal_storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketAutoclassArgs:
@@ -474,7 +465,6 @@ class BucketCorArgsDict(TypedDict):
     methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     response_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketCorArgs:
@@ -523,7 +513,6 @@ class BucketCorArgs:
 
 class BucketCustomPlacementConfigArgsDict(TypedDict):
     data_locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BucketCustomPlacementConfigArgs:
@@ -540,7 +529,6 @@ class BucketCustomPlacementConfigArgs:
 
 class BucketEncryptionArgsDict(TypedDict):
     default_kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketEncryptionArgs:
@@ -555,7 +543,6 @@ class BucketEncryptionArgs:
 
 class BucketHierarchicalNamespaceArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BucketHierarchicalNamespaceArgs:
@@ -570,7 +557,6 @@ class BucketIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketIAMBindingConditionArgs:
@@ -601,7 +587,6 @@ class BucketIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketIAMMemberConditionArgs:
@@ -638,7 +623,6 @@ class BucketIpFilterArgsDict(TypedDict):
     vpc_network_sources: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[BucketIpFilterVpcNetworkSourceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketIpFilterArgs:
@@ -700,7 +684,6 @@ class BucketIpFilterArgs:
 
 class BucketIpFilterPublicNetworkSourceArgsDict(TypedDict):
     allowed_ip_cidr_ranges: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BucketIpFilterPublicNetworkSourceArgs:
@@ -722,7 +705,6 @@ class BucketIpFilterPublicNetworkSourceArgs:
 class BucketIpFilterVpcNetworkSourceArgsDict(TypedDict):
     allowed_ip_cidr_ranges: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     network: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketIpFilterVpcNetworkSourceArgs:
@@ -750,7 +732,6 @@ class BucketIpFilterVpcNetworkSourceArgs:
 class BucketLifecycleRuleArgsDict(TypedDict):
     action: pulumi.Input[BucketLifecycleRuleActionArgsDict]
     condition: pulumi.Input[BucketLifecycleRuleConditionArgsDict]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleArgs:
@@ -774,7 +755,6 @@ class BucketLifecycleRuleArgs:
 class BucketLifecycleRuleActionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleActionArgs:
@@ -813,7 +793,6 @@ class BucketLifecycleRuleConditionArgsDict(TypedDict):
     send_days_since_noncurrent_time_if_zero: NotRequired[pulumi.Input[_builtins.bool]]
     send_num_newer_versions_if_zero: NotRequired[pulumi.Input[_builtins.bool]]
     with_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleConditionArgs:
@@ -951,7 +930,6 @@ class BucketLifecycleRuleConditionArgs:
 class BucketLoggingArgsDict(TypedDict):
     log_bucket: pulumi.Input[_builtins.str]
     log_object_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLoggingArgs:
@@ -974,7 +952,6 @@ class BucketLoggingArgs:
 
 class BucketObjectContextsArgsDict(TypedDict):
     customs: pulumi.Input[Sequence[pulumi.Input[BucketObjectContextsCustomArgsDict]]]
-    ...
 
 @pulumi.input_type
 class BucketObjectContextsArgs:
@@ -999,7 +976,6 @@ class BucketObjectContextsCustomArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
     create_time: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketObjectContextsCustomArgs:
@@ -1035,7 +1011,6 @@ class BucketObjectContextsCustomArgs:
 class BucketObjectCustomerEncryptionArgsDict(TypedDict):
     encryption_key: pulumi.Input[_builtins.str]
     encryption_algorithm: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketObjectCustomerEncryptionArgs:
@@ -1059,7 +1034,6 @@ class BucketObjectCustomerEncryptionArgs:
 class BucketObjectRetentionArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
     retain_until_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketObjectRetentionArgs:
@@ -1083,7 +1057,6 @@ class BucketObjectRetentionArgs:
 class BucketRetentionPolicyArgsDict(TypedDict):
     retention_period: pulumi.Input[_builtins.str]
     is_locked: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketRetentionPolicyArgs:
@@ -1107,7 +1080,6 @@ class BucketRetentionPolicyArgs:
 class BucketSoftDeletePolicyArgsDict(TypedDict):
     effective_time: NotRequired[pulumi.Input[_builtins.str]]
     retention_duration_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketSoftDeletePolicyArgs:
@@ -1132,7 +1104,6 @@ class BucketSoftDeletePolicyArgs:
 
 class BucketVersioningArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BucketVersioningArgs:
@@ -1146,7 +1117,6 @@ class BucketVersioningArgs:
 class BucketWebsiteArgsDict(TypedDict):
     main_page_suffix: NotRequired[pulumi.Input[_builtins.str]]
     not_found_page: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteArgs:
@@ -1170,7 +1140,6 @@ class BucketWebsiteArgs:
 class ControlFolderIntelligenceConfigEffectiveIntelligenceConfigArgsDict(TypedDict):
     effective_edition: NotRequired[pulumi.Input[_builtins.str]]
     intelligence_config: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigEffectiveIntelligenceConfigArgs:
@@ -1212,7 +1181,6 @@ class ControlFolderIntelligenceConfigFilterArgsDict(TypedDict):
             ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigFilterArgs:
@@ -1317,7 +1285,6 @@ class ControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsArgsDict(
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsArgs:
@@ -1340,7 +1307,6 @@ class ControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsArgsDict
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsArgs:
@@ -1357,7 +1323,6 @@ class ControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsArgsDict(
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsArgs:
@@ -1380,7 +1345,6 @@ class ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
@@ -1395,7 +1359,6 @@ class ControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
 
 class ControlFolderIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlFolderIntelligenceConfigTrialConfigArgs:
@@ -1413,7 +1376,6 @@ class ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgsDict(
 ):
     effective_edition: NotRequired[pulumi.Input[_builtins.str]]
     intelligence_config: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigArgs:
@@ -1455,7 +1417,6 @@ class ControlOrganizationIntelligenceConfigFilterArgsDict(TypedDict):
             ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigFilterArgs:
@@ -1560,7 +1521,6 @@ class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsArgs
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsArgs:
@@ -1583,7 +1543,6 @@ class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsAr
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsArgs:
@@ -1600,7 +1559,6 @@ class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsArgs
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsArgs:
@@ -1623,7 +1581,6 @@ class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsAr
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
@@ -1638,7 +1595,6 @@ class ControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsAr
 
 class ControlOrganizationIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlOrganizationIntelligenceConfigTrialConfigArgs:
@@ -1654,7 +1610,6 @@ class ControlOrganizationIntelligenceConfigTrialConfigArgs:
 class ControlProjectIntelligenceConfigEffectiveIntelligenceConfigArgsDict(TypedDict):
     effective_edition: NotRequired[pulumi.Input[_builtins.str]]
     intelligence_config: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigEffectiveIntelligenceConfigArgs:
@@ -1696,7 +1651,6 @@ class ControlProjectIntelligenceConfigFilterArgsDict(TypedDict):
             ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigFilterArgs:
@@ -1801,7 +1755,6 @@ class ControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsArgsDict(
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigFilterExcludedCloudStorageBucketsArgs:
@@ -1824,7 +1777,6 @@ class ControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsArgsDic
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsArgs:
@@ -1841,7 +1793,6 @@ class ControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsArgsDict(
     TypedDict
 ):
     bucket_id_regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigFilterIncludedCloudStorageBucketsArgs:
@@ -1864,7 +1815,6 @@ class ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgsDic
     TypedDict
 ):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
@@ -1879,7 +1829,6 @@ class ControlProjectIntelligenceConfigFilterIncludedCloudStorageLocationsArgs:
 
 class ControlProjectIntelligenceConfigTrialConfigArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ControlProjectIntelligenceConfigTrialConfigArgs:
@@ -1895,7 +1844,6 @@ class ControlProjectIntelligenceConfigTrialConfigArgs:
 class DefaultObjectAccessControlProjectTeamArgsDict(TypedDict):
     project_number: NotRequired[pulumi.Input[_builtins.str]]
     team: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultObjectAccessControlProjectTeamArgs:
@@ -1924,7 +1872,6 @@ class InsightsDatasetConfigExcludeCloudStorageBucketsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigExcludeCloudStorageBucketsArgs:
@@ -1967,7 +1914,6 @@ class InsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketArgsDict(
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketArgs:
@@ -1990,7 +1936,6 @@ class InsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketArgs:
 
 class InsightsDatasetConfigExcludeCloudStorageLocationsArgsDict(TypedDict):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigExcludeCloudStorageLocationsArgs:
@@ -2006,7 +1951,6 @@ class InsightsDatasetConfigExcludeCloudStorageLocationsArgs:
 class InsightsDatasetConfigIdentityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigIdentityArgs:
@@ -2035,7 +1979,6 @@ class InsightsDatasetConfigIncludeCloudStorageBucketsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigIncludeCloudStorageBucketsArgs:
@@ -2078,7 +2021,6 @@ class InsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketArgsDict(
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketArgs:
@@ -2101,7 +2043,6 @@ class InsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketArgs:
 
 class InsightsDatasetConfigIncludeCloudStorageLocationsArgsDict(TypedDict):
     locations: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigIncludeCloudStorageLocationsArgs:
@@ -2117,7 +2058,6 @@ class InsightsDatasetConfigIncludeCloudStorageLocationsArgs:
 class InsightsDatasetConfigLinkArgsDict(TypedDict):
     dataset: NotRequired[pulumi.Input[_builtins.str]]
     linked: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigLinkArgs:
@@ -2140,7 +2080,6 @@ class InsightsDatasetConfigLinkArgs:
 
 class InsightsDatasetConfigSourceFoldersArgsDict(TypedDict):
     folder_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigSourceFoldersArgs:
@@ -2163,7 +2102,6 @@ class InsightsDatasetConfigSourceFoldersArgs:
 
 class InsightsDatasetConfigSourceProjectsArgsDict(TypedDict):
     project_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InsightsDatasetConfigSourceProjectsArgs:
@@ -2188,7 +2126,6 @@ class InsightsReportConfigCsvOptionsArgsDict(TypedDict):
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
     header_required: NotRequired[pulumi.Input[_builtins.bool]]
     record_separator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigCsvOptionsArgs:
@@ -2219,7 +2156,6 @@ class InsightsReportConfigFrequencyOptionsArgsDict(TypedDict):
     end_date: pulumi.Input[InsightsReportConfigFrequencyOptionsEndDateArgsDict]
     frequency: pulumi.Input[_builtins.str]
     start_date: pulumi.Input[InsightsReportConfigFrequencyOptionsStartDateArgsDict]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigFrequencyOptionsArgs:
@@ -2258,7 +2194,6 @@ class InsightsReportConfigFrequencyOptionsEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigFrequencyOptionsEndDateArgs:
@@ -2289,7 +2224,6 @@ class InsightsReportConfigFrequencyOptionsStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigFrequencyOptionsStartDateArgs:
@@ -2326,7 +2260,6 @@ class InsightsReportConfigObjectMetadataReportOptionsArgsDict(TypedDict):
             InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigObjectMetadataReportOptionsArgs:
@@ -2388,7 +2321,6 @@ class InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsAr
 ):
     bucket: pulumi.Input[_builtins.str]
     destination_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsArgs:
@@ -2411,7 +2343,6 @@ class InsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsAr
 
 class InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsReportConfigObjectMetadataReportOptionsStorageFiltersArgs:
@@ -2434,7 +2365,6 @@ class ManagedFolderIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedFolderIamBindingConditionArgs:
@@ -2465,7 +2395,6 @@ class ManagedFolderIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedFolderIamMemberConditionArgs:
@@ -2495,7 +2424,6 @@ class ManagedFolderIamMemberConditionArgs:
 class ObjectAccessControlProjectTeamArgsDict(TypedDict):
     project_number: NotRequired[pulumi.Input[_builtins.str]]
     team: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ObjectAccessControlProjectTeamArgs:
@@ -2518,7 +2446,6 @@ class ObjectAccessControlProjectTeamArgs:
 
 class TransferAgentPoolBandwidthLimitArgsDict(TypedDict):
     limit_mbps: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferAgentPoolBandwidthLimitArgs:
@@ -2533,7 +2460,6 @@ class TransferJobEventStreamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     event_stream_expiration_time: NotRequired[pulumi.Input[_builtins.str]]
     event_stream_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobEventStreamArgs:
@@ -2566,7 +2492,6 @@ class TransferJobLoggingConfigArgsDict(TypedDict):
     enable_on_prem_gcs_transfer_logs: NotRequired[pulumi.Input[_builtins.bool]]
     log_action_states: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     log_actions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TransferJobLoggingConfigArgs:
@@ -2613,7 +2538,6 @@ class TransferJobNotificationConfigArgsDict(TypedDict):
     payload_format: pulumi.Input[_builtins.str]
     pubsub_topic: pulumi.Input[_builtins.str]
     event_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TransferJobNotificationConfigArgs:
@@ -2659,7 +2583,6 @@ class TransferJobReplicationSpecArgsDict(TypedDict):
     transfer_options: NotRequired[
         pulumi.Input[TransferJobReplicationSpecTransferOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecArgs:
@@ -2721,7 +2644,6 @@ class TransferJobReplicationSpecArgs:
 class TransferJobReplicationSpecGcsDataSinkArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecGcsDataSinkArgs:
@@ -2745,7 +2667,6 @@ class TransferJobReplicationSpecGcsDataSinkArgs:
 class TransferJobReplicationSpecGcsDataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecGcsDataSourceArgs:
@@ -2773,7 +2694,6 @@ class TransferJobReplicationSpecObjectConditionsArgsDict(TypedDict):
     last_modified_since: NotRequired[pulumi.Input[_builtins.str]]
     max_time_elapsed_since_last_modification: NotRequired[pulumi.Input[_builtins.str]]
     min_time_elapsed_since_last_modification: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecObjectConditionsArgs:
@@ -2852,7 +2772,6 @@ class TransferJobReplicationSpecTransferOptionsArgsDict(TypedDict):
         pulumi.Input[_builtins.bool]
     ]
     overwrite_when: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecTransferOptionsArgs:
@@ -2928,7 +2847,6 @@ class TransferJobReplicationSpecTransferOptionsMetadataOptionsArgsDict(TypedDict
     temporary_hold: NotRequired[pulumi.Input[_builtins.str]]
     time_created: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobReplicationSpecTransferOptionsMetadataOptionsArgs:
@@ -3000,7 +2918,6 @@ class TransferJobScheduleArgsDict(TypedDict):
     start_time_of_day: NotRequired[
         pulumi.Input[TransferJobScheduleStartTimeOfDayArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TransferJobScheduleArgs:
@@ -3053,7 +2970,6 @@ class TransferJobScheduleScheduleEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TransferJobScheduleScheduleEndDateArgs:
@@ -3084,7 +3000,6 @@ class TransferJobScheduleScheduleStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TransferJobScheduleScheduleStartDateArgs:
@@ -3116,7 +3031,6 @@ class TransferJobScheduleStartTimeOfDayArgsDict(TypedDict):
     minutes: pulumi.Input[_builtins.int]
     nanos: pulumi.Input[_builtins.int]
     seconds: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TransferJobScheduleStartTimeOfDayArgs:
@@ -3186,7 +3100,6 @@ class TransferJobTransferSpecArgsDict(TypedDict):
     transfer_options: NotRequired[
         pulumi.Input[TransferJobTransferSpecTransferOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecArgs:
@@ -3369,7 +3282,6 @@ class TransferJobTransferSpecAwsS3CompatibleDataSourceArgsDict(TypedDict):
     s3_metadata: NotRequired[
         pulumi.Input[TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAwsS3CompatibleDataSourceArgs:
@@ -3424,7 +3336,6 @@ class TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgsDict(TypedDi
     list_api: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     request_model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataArgs:
@@ -3467,7 +3378,6 @@ class TransferJobTransferSpecAwsS3DataSourceArgsDict(TypedDict):
     managed_private_network: NotRequired[pulumi.Input[_builtins.bool]]
     path: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAwsS3DataSourceArgs:
@@ -3534,7 +3444,6 @@ class TransferJobTransferSpecAwsS3DataSourceArgs:
 class TransferJobTransferSpecAwsS3DataSourceAwsAccessKeyArgsDict(TypedDict):
     access_key_id: pulumi.Input[_builtins.str]
     secret_access_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAwsS3DataSourceAwsAccessKeyArgs:
@@ -3570,7 +3479,6 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceArgsDict(TypedDict):
         ]
     ]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAzureBlobStorageDataSourceArgs:
@@ -3653,7 +3561,6 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsArgsDict(
     TypedDict
 ):
     sas_token: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsArgs:
@@ -3669,7 +3576,6 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigAr
 ):
     client_id: pulumi.Input[_builtins.str]
     tenant_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigArgs:
@@ -3693,7 +3599,6 @@ class TransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigAr
 class TransferJobTransferSpecGcsDataSinkArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecGcsDataSinkArgs:
@@ -3717,7 +3622,6 @@ class TransferJobTransferSpecGcsDataSinkArgs:
 class TransferJobTransferSpecGcsDataSourceArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecGcsDataSourceArgs:
@@ -3740,7 +3644,6 @@ class TransferJobTransferSpecGcsDataSourceArgs:
 
 class TransferJobTransferSpecHdfsDataSourceArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecHdfsDataSourceArgs:
@@ -3753,7 +3656,6 @@ class TransferJobTransferSpecHdfsDataSourceArgs:
 
 class TransferJobTransferSpecHttpDataSourceArgsDict(TypedDict):
     list_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecHttpDataSourceArgs:
@@ -3771,7 +3673,6 @@ class TransferJobTransferSpecObjectConditionsArgsDict(TypedDict):
     last_modified_since: NotRequired[pulumi.Input[_builtins.str]]
     max_time_elapsed_since_last_modification: NotRequired[pulumi.Input[_builtins.str]]
     min_time_elapsed_since_last_modification: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecObjectConditionsArgs:
@@ -3842,7 +3743,6 @@ class TransferJobTransferSpecObjectConditionsArgs:
 
 class TransferJobTransferSpecPosixDataSinkArgsDict(TypedDict):
     root_directory: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecPosixDataSinkArgs:
@@ -3855,7 +3755,6 @@ class TransferJobTransferSpecPosixDataSinkArgs:
 
 class TransferJobTransferSpecPosixDataSourceArgsDict(TypedDict):
     root_directory: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecPosixDataSourceArgs:
@@ -3868,7 +3767,6 @@ class TransferJobTransferSpecPosixDataSourceArgs:
 
 class TransferJobTransferSpecTransferManifestArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecTransferManifestArgs:
@@ -3889,7 +3787,6 @@ class TransferJobTransferSpecTransferOptionsArgsDict(TypedDict):
         pulumi.Input[_builtins.bool]
     ]
     overwrite_when: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecTransferOptionsArgs:
@@ -3965,7 +3862,6 @@ class TransferJobTransferSpecTransferOptionsMetadataOptionsArgsDict(TypedDict):
     temporary_hold: NotRequired[pulumi.Input[_builtins.str]]
     time_created: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TransferJobTransferSpecTransferOptionsMetadataOptionsArgs:

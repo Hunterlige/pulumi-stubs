@@ -43,7 +43,6 @@ __all__ = [
 class PolicyExcludeMapArgsDict(TypedDict):
     accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     orgunits: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicyExcludeMapArgs:
@@ -75,7 +74,6 @@ class PolicyExcludeMapArgs:
 class PolicyIncludeMapArgsDict(TypedDict):
     accounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     orgunits: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicyIncludeMapArgs:
@@ -110,7 +108,6 @@ class PolicySecurityServicePolicyDataArgsDict(TypedDict):
     policy_option: NotRequired[
         pulumi.Input[PolicySecurityServicePolicyDataPolicyOptionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataArgs:
@@ -160,7 +157,6 @@ class PolicySecurityServicePolicyDataPolicyOptionArgsDict(TypedDict):
             PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionArgs:
@@ -246,7 +242,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyArgsDict(
             PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyArgs:
@@ -301,7 +296,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetArgs:
@@ -420,7 +414,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryArgs:
@@ -534,7 +527,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
 ):
     code: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeArgs:
@@ -560,7 +552,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeArgs:
@@ -607,7 +598,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryArgs:
@@ -721,7 +711,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
 ):
     code: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeArgs:
@@ -747,7 +736,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAc
 ):
     from_: NotRequired[pulumi.Input[_builtins.int]]
     to: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeArgs:
@@ -772,7 +760,6 @@ class PolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyArgsDict(
     TypedDict
 ):
     firewall_deployment_model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyArgs:
@@ -793,7 +780,6 @@ class PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgsDic
     TypedDict
 ):
     firewall_deployment_model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyArgs:
@@ -820,7 +806,6 @@ class ResourceSetResourceSetArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     update_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceSetResourceSetArgs:
@@ -881,7 +866,6 @@ class ResourceSetTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResourceSetTimeoutsArgs:

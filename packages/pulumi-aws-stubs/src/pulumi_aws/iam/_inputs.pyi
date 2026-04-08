@@ -33,7 +33,6 @@ __all__ = [
 
 class AWSPrincipalArgsDict(TypedDict):
     aws: pulumi.Input[Union[_builtins.str, Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AWSPrincipalArgs:
@@ -57,7 +56,6 @@ class AWSPrincipalArgs:
 
 class FederatedPrincipalArgsDict(TypedDict):
     federated: pulumi.Input[Union[_builtins.str, Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FederatedPrincipalArgs:
@@ -85,7 +83,6 @@ class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[PolicyStatementArgsDict]]]
     version: pulumi.Input[PolicyDocumentVersion]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDocumentArgs:
@@ -152,7 +149,6 @@ class PolicyStatementArgsDict(TypedDict):
         pulumi.Input[Union[_builtins.str, Sequence[pulumi.Input[_builtins.str]]]]
     ]
     sid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyStatementArgs:
@@ -326,7 +322,6 @@ class PolicyStatementArgs:
 class RoleInlinePolicyArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoleInlinePolicyArgs:
@@ -349,7 +344,6 @@ class RoleInlinePolicyArgs:
 
 class ServicePrincipalArgsDict(TypedDict):
     service: pulumi.Input[Union[_builtins.str, Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServicePrincipalArgs:
@@ -385,7 +379,6 @@ class GetPolicyDocumentStatementArgsDict(TypedDict):
     principals: NotRequired[Sequence[GetPolicyDocumentStatementPrincipalArgsDict]]
     resources: NotRequired[Sequence[_builtins.str]]
     sid: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPolicyDocumentStatementArgs:
@@ -466,7 +459,6 @@ class GetPolicyDocumentStatementConditionArgsDict(TypedDict):
     test: _builtins.str
     values: Sequence[_builtins.str]
     variable: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPolicyDocumentStatementConditionArgs:
@@ -496,7 +488,6 @@ class GetPolicyDocumentStatementConditionArgs:
 class GetPolicyDocumentStatementNotPrincipalArgsDict(TypedDict):
     identifiers: Sequence[_builtins.str]
     type: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPolicyDocumentStatementNotPrincipalArgs:
@@ -517,7 +508,6 @@ class GetPolicyDocumentStatementNotPrincipalArgs:
 class GetPolicyDocumentStatementPrincipalArgsDict(TypedDict):
     identifiers: Sequence[_builtins.str]
     type: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPolicyDocumentStatementPrincipalArgs:
@@ -539,7 +529,6 @@ class GetPrincipalPolicySimulationContextArgsDict(TypedDict):
     key: _builtins.str
     type: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPrincipalPolicySimulationContextArgs:

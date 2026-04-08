@@ -38,7 +38,6 @@ class V2QueuedResourceTpuArgsDict(TypedDict):
     node_specs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[V2QueuedResourceTpuNodeSpecArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class V2QueuedResourceTpuArgs:
@@ -68,7 +67,6 @@ class V2QueuedResourceTpuNodeSpecArgsDict(TypedDict):
     node: pulumi.Input[V2QueuedResourceTpuNodeSpecNodeArgsDict]
     parent: pulumi.Input[_builtins.str]
     node_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2QueuedResourceTpuNodeSpecArgs:
@@ -102,7 +100,6 @@ class V2QueuedResourceTpuNodeSpecNodeArgsDict(TypedDict):
     network_config: NotRequired[
         pulumi.Input[V2QueuedResourceTpuNodeSpecNodeNetworkConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class V2QueuedResourceTpuNodeSpecNodeArgs:
@@ -148,7 +145,6 @@ class V2QueuedResourceTpuNodeSpecNodeNetworkConfigArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     queue_count: NotRequired[pulumi.Input[_builtins.int]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2QueuedResourceTpuNodeSpecNodeNetworkConfigArgs:
@@ -190,7 +186,6 @@ class V2QueuedResourceTpuNodeSpecNodeNetworkConfigArgs:
 class V2VmAcceleratorConfigArgsDict(TypedDict):
     topology: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2VmAcceleratorConfigArgs:
@@ -214,7 +209,6 @@ class V2VmAcceleratorConfigArgs:
 class V2VmDataDiskArgsDict(TypedDict):
     source_disk: pulumi.Input[_builtins.str]
     mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2VmDataDiskArgs:
@@ -241,7 +235,6 @@ class V2VmNetworkConfigArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     queue_count: NotRequired[pulumi.Input[_builtins.int]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2VmNetworkConfigArgs:
@@ -286,7 +279,6 @@ class V2VmNetworkEndpointArgsDict(TypedDict):
     ]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class V2VmNetworkEndpointArgs:
@@ -326,7 +318,6 @@ class V2VmNetworkEndpointArgs:
 
 class V2VmNetworkEndpointAccessConfigArgsDict(TypedDict):
     external_ip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2VmNetworkEndpointAccessConfigArgs:
@@ -343,7 +334,6 @@ class V2VmSchedulingConfigArgsDict(TypedDict):
     preemptible: NotRequired[pulumi.Input[_builtins.bool]]
     reserved: NotRequired[pulumi.Input[_builtins.bool]]
     spot: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2VmSchedulingConfigArgs:
@@ -373,7 +363,6 @@ class V2VmSchedulingConfigArgs:
 class V2VmServiceAccountArgsDict(TypedDict):
     email: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2VmServiceAccountArgs:
@@ -400,7 +389,6 @@ class V2VmServiceAccountArgs:
 
 class V2VmShieldedInstanceConfigArgsDict(TypedDict):
     enable_secure_boot: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class V2VmShieldedInstanceConfigArgs:
@@ -418,7 +406,6 @@ class V2VmSymptomArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[_builtins.str]]
     symptom_type: NotRequired[pulumi.Input[_builtins.str]]
     worker_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2VmSymptomArgs:

@@ -28,7 +28,6 @@ class LoggingConfigurationDestinationConfigurationArgsDict(TypedDict):
     s3: NotRequired[
         pulumi.Input[LoggingConfigurationDestinationConfigurationS3ArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationDestinationConfigurationArgs:
@@ -88,7 +87,6 @@ class LoggingConfigurationDestinationConfigurationArgs:
 
 class LoggingConfigurationDestinationConfigurationCloudwatchLogsArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationDestinationConfigurationCloudwatchLogsArgs:
@@ -101,7 +99,6 @@ class LoggingConfigurationDestinationConfigurationCloudwatchLogsArgs:
 
 class LoggingConfigurationDestinationConfigurationFirehoseArgsDict(TypedDict):
     delivery_stream_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationDestinationConfigurationFirehoseArgs:
@@ -116,7 +113,6 @@ class LoggingConfigurationDestinationConfigurationFirehoseArgs:
 
 class LoggingConfigurationDestinationConfigurationS3ArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LoggingConfigurationDestinationConfigurationS3Args:
@@ -130,7 +126,6 @@ class LoggingConfigurationDestinationConfigurationS3Args:
 class RoomMessageReviewHandlerArgsDict(TypedDict):
     fallback_result: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoomMessageReviewHandlerArgs:

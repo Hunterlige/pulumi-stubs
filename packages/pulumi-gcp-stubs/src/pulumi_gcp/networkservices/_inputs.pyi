@@ -226,7 +226,6 @@ class AgentGatewayAgentGatewayCardArgsDict(TypedDict):
     mtls_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     root_certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     service_extensions_service_account: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AgentGatewayAgentGatewayCardArgs:
@@ -265,7 +264,6 @@ class AgentGatewayAgentGatewayCardArgs:
 
 class AgentGatewayGoogleManagedArgsDict(TypedDict):
     governed_access_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentGatewayGoogleManagedArgs:
@@ -280,7 +278,6 @@ class AgentGatewayGoogleManagedArgs:
 
 class AgentGatewayNetworkConfigArgsDict(TypedDict):
     egress: pulumi.Input[AgentGatewayNetworkConfigEgressArgsDict]
-    ...
 
 @pulumi.input_type
 class AgentGatewayNetworkConfigArgs:
@@ -295,7 +292,6 @@ class AgentGatewayNetworkConfigArgs:
 
 class AgentGatewayNetworkConfigEgressArgsDict(TypedDict):
     network_attachment: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentGatewayNetworkConfigEgressArgs:
@@ -310,7 +306,6 @@ class AgentGatewayNetworkConfigEgressArgs:
 
 class AgentGatewaySelfManagedArgsDict(TypedDict):
     resource_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AgentGatewaySelfManagedArgs:
@@ -325,7 +320,6 @@ class EdgeCacheKeysetPublicKeyArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     managed: NotRequired[pulumi.Input[_builtins.bool]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheKeysetPublicKeyArgs:
@@ -354,7 +348,6 @@ class EdgeCacheKeysetPublicKeyArgs:
 
 class EdgeCacheKeysetValidationSharedKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EdgeCacheKeysetValidationSharedKeyArgs:
@@ -369,7 +362,6 @@ class EdgeCacheOriginAwsV4AuthenticationArgsDict(TypedDict):
     access_key_id: pulumi.Input[_builtins.str]
     origin_region: pulumi.Input[_builtins.str]
     secret_access_key_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginAwsV4AuthenticationArgs:
@@ -398,7 +390,6 @@ class EdgeCacheOriginAwsV4AuthenticationArgs:
 
 class EdgeCacheOriginFlexShieldingArgsDict(TypedDict):
     flex_shielding_regions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginFlexShieldingArgs:
@@ -418,7 +409,6 @@ class EdgeCacheOriginOriginOverrideActionArgsDict(TypedDict):
     url_rewrite: NotRequired[
         pulumi.Input[EdgeCacheOriginOriginOverrideActionUrlRewriteArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginOriginOverrideActionArgs:
@@ -469,7 +459,6 @@ class EdgeCacheOriginOriginOverrideActionHeaderActionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginOriginOverrideActionHeaderActionArgs:
@@ -519,7 +508,6 @@ class EdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddArgsDict
     header_name: pulumi.Input[_builtins.str]
     header_value: pulumi.Input[_builtins.str]
     replace: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddArgs:
@@ -548,7 +536,6 @@ class EdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddArgs:
 
 class EdgeCacheOriginOriginOverrideActionUrlRewriteArgsDict(TypedDict):
     host_rewrite: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginOriginOverrideActionUrlRewriteArgs:
@@ -565,7 +552,6 @@ class EdgeCacheOriginOriginRedirectArgsDict(TypedDict):
     redirect_conditions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginOriginRedirectArgs:
@@ -591,7 +577,6 @@ class EdgeCacheOriginTimeoutArgsDict(TypedDict):
     max_attempts_timeout: NotRequired[pulumi.Input[_builtins.str]]
     read_timeout: NotRequired[pulumi.Input[_builtins.str]]
     response_timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheOriginTimeoutArgs:
@@ -627,7 +612,6 @@ class EdgeCacheOriginTimeoutArgs:
 class EdgeCacheServiceLogConfigArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
     sample_rate: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceLogConfigArgs:
@@ -655,7 +639,6 @@ class EdgeCacheServiceRoutingArgsDict(TypedDict):
     path_matchers: pulumi.Input[
         Sequence[pulumi.Input[EdgeCacheServiceRoutingPathMatcherArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingArgs:
@@ -700,7 +683,6 @@ class EdgeCacheServiceRoutingHostRuleArgsDict(TypedDict):
     hosts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     path_matcher: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingHostRuleArgs:
@@ -733,7 +715,6 @@ class EdgeCacheServiceRoutingPathMatcherArgsDict(TypedDict):
         Sequence[pulumi.Input[EdgeCacheServiceRoutingPathMatcherRouteRuleArgsDict]]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherArgs:
@@ -792,7 +773,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleArgsDict(TypedDict):
     url_redirect: NotRequired[
         pulumi.Input[EdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleArgs:
@@ -945,7 +925,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionArgs:
@@ -1100,7 +1079,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddA
     header_name: pulumi.Input[_builtins.str]
     header_value: pulumi.Input[_builtins.str]
     replace: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddArgs:
@@ -1131,7 +1109,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemo
     TypedDict
 ):
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveArgs:
@@ -1148,7 +1125,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAdd
     header_name: pulumi.Input[_builtins.str]
     header_value: pulumi.Input[_builtins.str]
     replace: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddArgs:
@@ -1179,7 +1155,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRem
     TypedDict
 ):
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveArgs:
@@ -1213,7 +1188,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleArgs:
@@ -1325,7 +1299,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchArgsDict(
     prefix_match: NotRequired[pulumi.Input[_builtins.str]]
     present_match: NotRequired[pulumi.Input[_builtins.bool]]
     suffix_match: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchArgs:
@@ -1376,7 +1349,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchArg
     name: pulumi.Input[_builtins.str]
     exact_match: NotRequired[pulumi.Input[_builtins.str]]
     present_match: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchArgs:
@@ -1420,7 +1392,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionArgsDict(TypedDict):
             EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionArgs:
@@ -1533,7 +1504,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyArgsDict(
             EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyArgs:
@@ -1685,7 +1655,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatur
     keyset: NotRequired[pulumi.Input[_builtins.str]]
     token_query_parameter: NotRequired[pulumi.Input[_builtins.str]]
     token_ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesArgs:
@@ -1748,7 +1717,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPol
     included_query_parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyArgs:
@@ -1830,7 +1798,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedToken
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     token_query_parameter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsArgs:
@@ -1867,7 +1834,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyArgsDict(
     allow_origins: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyArgs:
@@ -1948,7 +1914,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteArgsDict(
     host_rewrite: NotRequired[pulumi.Input[_builtins.str]]
     path_prefix_rewrite: NotRequired[pulumi.Input[_builtins.str]]
     path_template_rewrite: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteArgs:
@@ -1977,7 +1942,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteArgs:
 
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsArgsDict(TypedDict):
     allowed_methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsArgs:
@@ -2005,7 +1969,6 @@ class EdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectArgsDict(TypedDict):
     prefix_redirect: NotRequired[pulumi.Input[_builtins.str]]
     redirect_response_code: NotRequired[pulumi.Input[_builtins.str]]
     strip_query: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectArgs:
@@ -2054,7 +2017,6 @@ class EndpointPolicyEndpointMatcherArgsDict(TypedDict):
     metadata_label_matcher: pulumi.Input[
         EndpointPolicyEndpointMatcherMetadataLabelMatcherArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class EndpointPolicyEndpointMatcherArgs:
@@ -2086,7 +2048,6 @@ class EndpointPolicyEndpointMatcherMetadataLabelMatcherArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EndpointPolicyEndpointMatcherMetadataLabelMatcherArgs:
@@ -2139,7 +2100,6 @@ class EndpointPolicyEndpointMatcherMetadataLabelMatcherArgs:
 class EndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelArgsDict(TypedDict):
     label_name: pulumi.Input[_builtins.str]
     label_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelArgs:
@@ -2162,7 +2122,6 @@ class EndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelArgs:
 
 class EndpointPolicyTrafficPortSelectorArgsDict(TypedDict):
     ports: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EndpointPolicyTrafficPortSelectorArgs:
@@ -2180,7 +2139,6 @@ class GrpcRouteRuleArgsDict(TypedDict):
     matches: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[GrpcRouteRuleMatchArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleArgs:
@@ -2217,7 +2175,6 @@ class GrpcRouteRuleActionArgsDict(TypedDict):
     ]
     retry_policy: NotRequired[pulumi.Input[GrpcRouteRuleActionRetryPolicyArgsDict]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionArgs:
@@ -2274,7 +2231,6 @@ class GrpcRouteRuleActionArgs:
 class GrpcRouteRuleActionDestinationArgsDict(TypedDict):
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionDestinationArgs:
@@ -2302,7 +2258,6 @@ class GrpcRouteRuleActionFaultInjectionPolicyArgsDict(TypedDict):
     delay: NotRequired[
         pulumi.Input[GrpcRouteRuleActionFaultInjectionPolicyDelayArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionFaultInjectionPolicyArgs:
@@ -2340,7 +2295,6 @@ class GrpcRouteRuleActionFaultInjectionPolicyArgs:
 class GrpcRouteRuleActionFaultInjectionPolicyAbortArgsDict(TypedDict):
     http_status: NotRequired[pulumi.Input[_builtins.int]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionFaultInjectionPolicyAbortArgs:
@@ -2364,7 +2318,6 @@ class GrpcRouteRuleActionFaultInjectionPolicyAbortArgs:
 class GrpcRouteRuleActionFaultInjectionPolicyDelayArgsDict(TypedDict):
     fixed_delay: NotRequired[pulumi.Input[_builtins.str]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionFaultInjectionPolicyDelayArgs:
@@ -2388,7 +2341,6 @@ class GrpcRouteRuleActionFaultInjectionPolicyDelayArgs:
 class GrpcRouteRuleActionRetryPolicyArgsDict(TypedDict):
     num_retries: NotRequired[pulumi.Input[_builtins.int]]
     retry_conditions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleActionRetryPolicyArgs:
@@ -2420,7 +2372,6 @@ class GrpcRouteRuleMatchArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[GrpcRouteRuleMatchHeaderArgsDict]]]
     ]
     method: NotRequired[pulumi.Input[GrpcRouteRuleMatchMethodArgsDict]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleMatchArgs:
@@ -2456,7 +2407,6 @@ class GrpcRouteRuleMatchHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleMatchHeaderArgs:
@@ -2487,7 +2437,6 @@ class GrpcRouteRuleMatchMethodArgsDict(TypedDict):
     grpc_method: pulumi.Input[_builtins.str]
     grpc_service: pulumi.Input[_builtins.str]
     case_sensitive: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GrpcRouteRuleMatchMethodArgs:
@@ -2519,7 +2468,6 @@ class HttpRouteRuleArgsDict(TypedDict):
     matches: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[HttpRouteRuleMatchArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleArgs:
@@ -2568,7 +2516,6 @@ class HttpRouteRuleActionArgsDict(TypedDict):
     retry_policy: NotRequired[pulumi.Input[HttpRouteRuleActionRetryPolicyArgsDict]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
     url_rewrite: NotRequired[pulumi.Input[HttpRouteRuleActionUrlRewriteArgsDict]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionArgs:
@@ -2699,7 +2646,6 @@ class HttpRouteRuleActionCorsPolicyArgsDict(TypedDict):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     max_age: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionCorsPolicyArgs:
@@ -2789,7 +2735,6 @@ class HttpRouteRuleActionCorsPolicyArgs:
 class HttpRouteRuleActionDestinationArgsDict(TypedDict):
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionDestinationArgs:
@@ -2817,7 +2762,6 @@ class HttpRouteRuleActionFaultInjectionPolicyArgsDict(TypedDict):
     delay: NotRequired[
         pulumi.Input[HttpRouteRuleActionFaultInjectionPolicyDelayArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionFaultInjectionPolicyArgs:
@@ -2855,7 +2799,6 @@ class HttpRouteRuleActionFaultInjectionPolicyArgs:
 class HttpRouteRuleActionFaultInjectionPolicyAbortArgsDict(TypedDict):
     http_status: NotRequired[pulumi.Input[_builtins.int]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionFaultInjectionPolicyAbortArgs:
@@ -2879,7 +2822,6 @@ class HttpRouteRuleActionFaultInjectionPolicyAbortArgs:
 class HttpRouteRuleActionFaultInjectionPolicyDelayArgsDict(TypedDict):
     fixed_delay: NotRequired[pulumi.Input[_builtins.str]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionFaultInjectionPolicyDelayArgs:
@@ -2908,7 +2850,6 @@ class HttpRouteRuleActionRedirectArgsDict(TypedDict):
     prefix_rewrite: NotRequired[pulumi.Input[_builtins.str]]
     response_code: NotRequired[pulumi.Input[_builtins.str]]
     strip_query: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionRedirectArgs:
@@ -2963,7 +2904,6 @@ class HttpRouteRuleActionRequestHeaderModifierArgsDict(TypedDict):
     add: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     removes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     set: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionRequestHeaderModifierArgs:
@@ -3006,7 +2946,6 @@ class HttpRouteRuleActionRequestMirrorPolicyArgsDict(TypedDict):
     destination: NotRequired[
         pulumi.Input[HttpRouteRuleActionRequestMirrorPolicyDestinationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionRequestMirrorPolicyArgs:
@@ -3035,7 +2974,6 @@ class HttpRouteRuleActionRequestMirrorPolicyArgs:
 class HttpRouteRuleActionRequestMirrorPolicyDestinationArgsDict(TypedDict):
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionRequestMirrorPolicyDestinationArgs:
@@ -3060,7 +2998,6 @@ class HttpRouteRuleActionResponseHeaderModifierArgsDict(TypedDict):
     add: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     removes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     set: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionResponseHeaderModifierArgs:
@@ -3103,7 +3040,6 @@ class HttpRouteRuleActionRetryPolicyArgsDict(TypedDict):
     num_retries: NotRequired[pulumi.Input[_builtins.int]]
     per_try_timeout: NotRequired[pulumi.Input[_builtins.str]]
     retry_conditions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionRetryPolicyArgs:
@@ -3139,7 +3075,6 @@ class HttpRouteRuleActionRetryPolicyArgs:
 class HttpRouteRuleActionUrlRewriteArgsDict(TypedDict):
     host_rewrite: NotRequired[pulumi.Input[_builtins.str]]
     path_prefix_rewrite: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleActionUrlRewriteArgs:
@@ -3171,7 +3106,6 @@ class HttpRouteRuleMatchArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[HttpRouteRuleMatchQueryParameterArgsDict]]]
     ]
     regex_match: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleMatchArgs:
@@ -3247,7 +3181,6 @@ class HttpRouteRuleMatchHeaderArgsDict(TypedDict):
     range_match: NotRequired[pulumi.Input[HttpRouteRuleMatchHeaderRangeMatchArgsDict]]
     regex_match: NotRequired[pulumi.Input[_builtins.str]]
     suffix_match: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleMatchHeaderArgs:
@@ -3313,7 +3246,6 @@ class HttpRouteRuleMatchHeaderArgs:
 class HttpRouteRuleMatchHeaderRangeMatchArgsDict(TypedDict):
     end: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleMatchHeaderRangeMatchArgs:
@@ -3339,7 +3271,6 @@ class HttpRouteRuleMatchQueryParameterArgsDict(TypedDict):
     present_match: NotRequired[pulumi.Input[_builtins.bool]]
     query_parameter: NotRequired[pulumi.Input[_builtins.str]]
     regex_match: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HttpRouteRuleMatchQueryParameterArgs:
@@ -3378,7 +3309,6 @@ class LbEdgeExtensionExtensionChainArgsDict(TypedDict):
     ]
     match_condition: pulumi.Input[LbEdgeExtensionExtensionChainMatchConditionArgsDict]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbEdgeExtensionExtensionChainArgs:
@@ -3426,7 +3356,6 @@ class LbEdgeExtensionExtensionChainExtensionArgsDict(TypedDict):
     fail_open: NotRequired[pulumi.Input[_builtins.bool]]
     forward_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     supported_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LbEdgeExtensionExtensionChainExtensionArgs:
@@ -3479,7 +3408,6 @@ class LbEdgeExtensionExtensionChainExtensionArgs:
 
 class LbEdgeExtensionExtensionChainMatchConditionArgsDict(TypedDict):
     cel_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbEdgeExtensionExtensionChainMatchConditionArgs:
@@ -3496,7 +3424,6 @@ class LbRouteExtensionExtensionChainArgsDict(TypedDict):
     ]
     match_condition: pulumi.Input[LbRouteExtensionExtensionChainMatchConditionArgsDict]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbRouteExtensionExtensionChainArgs:
@@ -3549,7 +3476,6 @@ class LbRouteExtensionExtensionChainExtensionArgsDict(TypedDict):
     request_body_send_mode: NotRequired[pulumi.Input[_builtins.str]]
     supported_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LbRouteExtensionExtensionChainExtensionArgs:
@@ -3638,7 +3564,6 @@ class LbRouteExtensionExtensionChainExtensionArgs:
 
 class LbRouteExtensionExtensionChainMatchConditionArgsDict(TypedDict):
     cel_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbRouteExtensionExtensionChainMatchConditionArgs:
@@ -3657,7 +3582,6 @@ class LbTrafficExtensionExtensionChainArgsDict(TypedDict):
         LbTrafficExtensionExtensionChainMatchConditionArgsDict
     ]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbTrafficExtensionExtensionChainArgs:
@@ -3710,7 +3634,6 @@ class LbTrafficExtensionExtensionChainExtensionArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     supported_events: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LbTrafficExtensionExtensionChainExtensionArgs:
@@ -3787,7 +3710,6 @@ class LbTrafficExtensionExtensionChainExtensionArgs:
 
 class LbTrafficExtensionExtensionChainMatchConditionArgsDict(TypedDict):
     cel_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LbTrafficExtensionExtensionChainMatchConditionArgs:
@@ -3800,7 +3722,6 @@ class LbTrafficExtensionExtensionChainMatchConditionArgs:
 
 class MulticastConsumerAssociationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastConsumerAssociationStateArgs:
@@ -3815,7 +3736,6 @@ class MulticastConsumerAssociationStateArgs:
 
 class MulticastDomainActivationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainActivationStateArgs:
@@ -3834,7 +3754,6 @@ class MulticastDomainActivationTrafficSpecArgsDict(TypedDict):
     avg_packet_size: NotRequired[pulumi.Input[_builtins.int]]
     max_per_group_ingress_pps: NotRequired[pulumi.Input[_builtins.str]]
     max_per_group_subscribers: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainActivationTrafficSpecArgs:
@@ -3880,7 +3799,6 @@ class MulticastDomainActivationTrafficSpecArgs:
 class MulticastDomainConnectionConfigArgsDict(TypedDict):
     connection_type: pulumi.Input[_builtins.str]
     ncc_hub: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainConnectionConfigArgs:
@@ -3903,7 +3821,6 @@ class MulticastDomainConnectionConfigArgs:
 
 class MulticastDomainGroupStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainGroupStateArgs:
@@ -3918,7 +3835,6 @@ class MulticastDomainGroupStateArgs:
 
 class MulticastDomainStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainStateArgs:
@@ -3933,7 +3849,6 @@ class MulticastDomainStateArgs:
 
 class MulticastDomainUllMulticastDomainArgsDict(TypedDict):
     preconfigured_ull_domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastDomainUllMulticastDomainArgs:
@@ -3952,7 +3867,6 @@ class MulticastDomainUllMulticastDomainArgs:
 
 class MulticastGroupConsumerActivationLogConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupConsumerActivationLogConfigArgs:
@@ -3967,7 +3881,6 @@ class MulticastGroupConsumerActivationLogConfigArgs:
 
 class MulticastGroupConsumerActivationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupConsumerActivationStateArgs:
@@ -3982,7 +3895,6 @@ class MulticastGroupConsumerActivationStateArgs:
 
 class MulticastGroupProducerActivationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupProducerActivationStateArgs:
@@ -3997,7 +3909,6 @@ class MulticastGroupProducerActivationStateArgs:
 
 class MulticastGroupRangeActivationLogConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupRangeActivationLogConfigArgs:
@@ -4012,7 +3923,6 @@ class MulticastGroupRangeActivationLogConfigArgs:
 
 class MulticastGroupRangeActivationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupRangeActivationStateArgs:
@@ -4027,7 +3937,6 @@ class MulticastGroupRangeActivationStateArgs:
 
 class MulticastGroupRangeLogConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupRangeLogConfigArgs:
@@ -4042,7 +3951,6 @@ class MulticastGroupRangeLogConfigArgs:
 
 class MulticastGroupRangeStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastGroupRangeStateArgs:
@@ -4057,7 +3965,6 @@ class MulticastGroupRangeStateArgs:
 
 class MulticastProducerAssociationStateArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MulticastProducerAssociationStateArgs:
@@ -4072,7 +3979,6 @@ class MulticastProducerAssociationStateArgs:
 
 class ServiceLbPoliciesAutoCapacityDrainArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServiceLbPoliciesAutoCapacityDrainArgs:
@@ -4087,7 +3993,6 @@ class ServiceLbPoliciesAutoCapacityDrainArgs:
 
 class ServiceLbPoliciesFailoverConfigArgsDict(TypedDict):
     failover_health_threshold: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ServiceLbPoliciesFailoverConfigArgs:
@@ -4103,7 +4008,6 @@ class ServiceLbPoliciesFailoverConfigArgs:
 class ServiceLbPoliciesIsolationConfigArgsDict(TypedDict):
     isolation_granularity: NotRequired[pulumi.Input[_builtins.str]]
     isolation_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceLbPoliciesIsolationConfigArgs:
@@ -4129,7 +4033,6 @@ class TcpRouteRuleArgsDict(TypedDict):
     matches: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TcpRouteRuleMatchArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TcpRouteRuleArgs:
@@ -4163,7 +4066,6 @@ class TcpRouteRuleActionArgsDict(TypedDict):
     ]
     idle_timeout: NotRequired[pulumi.Input[_builtins.str]]
     original_destination: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TcpRouteRuleActionArgs:
@@ -4204,7 +4106,6 @@ class TcpRouteRuleActionArgs:
 class TcpRouteRuleActionDestinationArgsDict(TypedDict):
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TcpRouteRuleActionDestinationArgs:
@@ -4228,7 +4129,6 @@ class TcpRouteRuleActionDestinationArgs:
 class TcpRouteRuleMatchArgsDict(TypedDict):
     address: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TcpRouteRuleMatchArgs:
@@ -4252,7 +4152,6 @@ class TcpRouteRuleMatchArgs:
 class TlsRouteRuleArgsDict(TypedDict):
     action: pulumi.Input[TlsRouteRuleActionArgsDict]
     matches: pulumi.Input[Sequence[pulumi.Input[TlsRouteRuleMatchArgsDict]]]
-    ...
 
 @pulumi.input_type
 class TlsRouteRuleArgs:
@@ -4281,7 +4180,6 @@ class TlsRouteRuleActionArgsDict(TypedDict):
     destinations: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TlsRouteRuleActionDestinationArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TlsRouteRuleActionArgs:
@@ -4310,7 +4208,6 @@ class TlsRouteRuleActionArgs:
 class TlsRouteRuleActionDestinationArgsDict(TypedDict):
     service_name: NotRequired[pulumi.Input[_builtins.str]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TlsRouteRuleActionDestinationArgs:
@@ -4334,7 +4231,6 @@ class TlsRouteRuleActionDestinationArgs:
 class TlsRouteRuleMatchArgsDict(TypedDict):
     alpns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     sni_hosts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TlsRouteRuleMatchArgs:
@@ -4367,7 +4263,6 @@ class WasmPluginLogConfigArgsDict(TypedDict):
     enable: NotRequired[pulumi.Input[_builtins.bool]]
     min_log_level: NotRequired[pulumi.Input[_builtins.str]]
     sample_rate: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class WasmPluginLogConfigArgs:
@@ -4396,7 +4291,6 @@ class WasmPluginLogConfigArgs:
 
 class WasmPluginUsedByArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WasmPluginUsedByArgs:
@@ -4420,7 +4314,6 @@ class WasmPluginVersionArgsDict(TypedDict):
     plugin_config_digest: NotRequired[pulumi.Input[_builtins.str]]
     plugin_config_uri: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WasmPluginVersionArgs:

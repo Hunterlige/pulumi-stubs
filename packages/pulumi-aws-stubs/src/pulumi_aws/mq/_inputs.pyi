@@ -25,7 +25,6 @@ __all__ = [
 class BrokerConfigurationArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     revision: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BrokerConfigurationArgs:
@@ -49,7 +48,6 @@ class BrokerConfigurationArgs:
 class BrokerEncryptionOptionsArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     use_aws_owned_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BrokerEncryptionOptionsArgs:
@@ -74,7 +72,6 @@ class BrokerInstanceArgsDict(TypedDict):
     console_url: NotRequired[pulumi.Input[_builtins.str]]
     endpoints: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BrokerInstanceArgs:
@@ -117,7 +114,6 @@ class BrokerLdapServerMetadataArgsDict(TypedDict):
     user_role_name: NotRequired[pulumi.Input[_builtins.str]]
     user_search_matching: NotRequired[pulumi.Input[_builtins.str]]
     user_search_subtree: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BrokerLdapServerMetadataArgs:
@@ -203,7 +199,6 @@ class BrokerLdapServerMetadataArgs:
 class BrokerLogsArgsDict(TypedDict):
     audit: NotRequired[pulumi.Input[_builtins.bool]]
     general: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BrokerLogsArgs:
@@ -228,7 +223,6 @@ class BrokerMaintenanceWindowStartTimeArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
     time_of_day: pulumi.Input[_builtins.str]
     time_zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BrokerMaintenanceWindowStartTimeArgs:
@@ -261,7 +255,6 @@ class BrokerUserArgsDict(TypedDict):
     console_access: NotRequired[pulumi.Input[_builtins.bool]]
     groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     replication_user: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BrokerUserArgs:

@@ -28,7 +28,6 @@ class AccessPointPosixUserArgsDict(TypedDict):
     gid: pulumi.Input[_builtins.int]
     uid: pulumi.Input[_builtins.int]
     secondary_gids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class AccessPointPosixUserArgs:
@@ -66,7 +65,6 @@ class AccessPointRootDirectoryArgsDict(TypedDict):
         pulumi.Input[AccessPointRootDirectoryCreationInfoArgsDict]
     ]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessPointRootDirectoryArgs:
@@ -97,7 +95,6 @@ class AccessPointRootDirectoryCreationInfoArgsDict(TypedDict):
     owner_gid: pulumi.Input[_builtins.int]
     owner_uid: pulumi.Input[_builtins.int]
     permissions: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AccessPointRootDirectoryCreationInfoArgs:
@@ -126,7 +123,6 @@ class AccessPointRootDirectoryCreationInfoArgs:
 
 class BackupPolicyBackupPolicyArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BackupPolicyBackupPolicyArgs:
@@ -141,7 +137,6 @@ class FileSystemLifecyclePolicyArgsDict(TypedDict):
     transition_to_archive: NotRequired[pulumi.Input[_builtins.str]]
     transition_to_ia: NotRequired[pulumi.Input[_builtins.str]]
     transition_to_primary_storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FileSystemLifecyclePolicyArgs:
@@ -176,7 +171,6 @@ class FileSystemLifecyclePolicyArgs:
 
 class FileSystemProtectionArgsDict(TypedDict):
     replication_overwrite: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FileSystemProtectionArgs:
@@ -193,7 +187,6 @@ class FileSystemSizeInByteArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.int]]
     value_in_ia: NotRequired[pulumi.Input[_builtins.int]]
     value_in_standard: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FileSystemSizeInByteArgs:
@@ -226,7 +219,6 @@ class ReplicationConfigurationDestinationArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReplicationConfigurationDestinationArgs:

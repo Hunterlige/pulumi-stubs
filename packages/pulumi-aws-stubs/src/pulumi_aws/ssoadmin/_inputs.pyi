@@ -39,7 +39,6 @@ class ApplicationPortalOptionsArgsDict(TypedDict):
         pulumi.Input[ApplicationPortalOptionsSignInOptionsArgsDict]
     ]
     visibility: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationPortalOptionsArgs:
@@ -69,7 +68,6 @@ class ApplicationPortalOptionsArgs:
 class ApplicationPortalOptionsSignInOptionsArgsDict(TypedDict):
     origin: pulumi.Input[_builtins.str]
     application_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationPortalOptionsSignInOptionsArgs:
@@ -93,7 +91,6 @@ class ApplicationPortalOptionsSignInOptionsArgs:
 class CustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceArgs:
@@ -119,7 +116,6 @@ class CustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceArg
 ):
     name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceArgs:
@@ -143,7 +139,6 @@ class CustomerManagedPolicyAttachmentsExclusiveCustomerManagedPolicyReferenceArg
 class CustomerManagedPolicyAttachmentsExclusiveTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomerManagedPolicyAttachmentsExclusiveTimeoutsArgs:
@@ -169,7 +164,6 @@ class InstanceAccessControlAttributesAttributeArgsDict(TypedDict):
     values: pulumi.Input[
         Sequence[pulumi.Input[InstanceAccessControlAttributesAttributeValueArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAccessControlAttributesAttributeArgs:
@@ -203,7 +197,6 @@ class InstanceAccessControlAttributesAttributeArgs:
 
 class InstanceAccessControlAttributesAttributeValueArgsDict(TypedDict):
     sources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class InstanceAccessControlAttributesAttributeValueArgs:
@@ -219,7 +212,6 @@ class InstanceAccessControlAttributesAttributeValueArgs:
 class ManagedPolicyAttachmentsExclusiveTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagedPolicyAttachmentsExclusiveTimeoutsArgs:
@@ -247,7 +239,6 @@ class PermissionsBoundaryAttachmentPermissionsBoundaryArgsDict(TypedDict):
         ]
     ]
     managed_policy_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsBoundaryAttachmentPermissionsBoundaryArgs:
@@ -290,7 +281,6 @@ class PermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyRefer
 ):
     name: pulumi.Input[_builtins.str]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceArgs:
@@ -315,7 +305,6 @@ class TrustedTokenIssuerTrustedTokenIssuerConfigurationArgsDict(TypedDict):
     oidc_jwt_configuration: pulumi.Input[
         TrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class TrustedTokenIssuerTrustedTokenIssuerConfigurationArgs:
@@ -348,7 +337,6 @@ class TrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationArgsD
     identity_store_attribute_path: pulumi.Input[_builtins.str]
     issuer_url: pulumi.Input[_builtins.str]
     jwks_retrieval_option: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationArgs:
@@ -385,7 +373,6 @@ class GetPrincipalApplicationAssignmentsApplicationAssignmentArgsDict(TypedDict)
     application_arn: _builtins.str
     principal_id: _builtins.str
     principal_type: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPrincipalApplicationAssignmentsApplicationAssignmentArgs:

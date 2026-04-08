@@ -39,7 +39,6 @@ __all__ = [
 class AccountThrottleSettingArgsDict(TypedDict):
     burst_limit: pulumi.Input[_builtins.int]
     rate_limit: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class AccountThrottleSettingArgs:
@@ -66,7 +65,6 @@ class DocumentationPartLocationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
     status_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentationPartLocationArgs:
@@ -108,7 +106,6 @@ class DocumentationPartLocationArgs:
 class DomainNameEndpointConfigurationArgsDict(TypedDict):
     types: pulumi.Input[_builtins.str]
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainNameEndpointConfigurationArgs:
@@ -132,7 +129,6 @@ class DomainNameEndpointConfigurationArgs:
 class DomainNameMutualTlsAuthenticationArgsDict(TypedDict):
     truststore_uri: pulumi.Input[_builtins.str]
     truststore_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainNameMutualTlsAuthenticationArgs:
@@ -155,7 +151,6 @@ class DomainNameMutualTlsAuthenticationArgs:
 
 class IntegrationTlsConfigArgsDict(TypedDict):
     insecure_skip_verification: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class IntegrationTlsConfigArgs:
@@ -183,7 +178,6 @@ class MethodSettingsSettingsArgsDict(TypedDict):
     throttling_burst_limit: NotRequired[pulumi.Input[_builtins.int]]
     throttling_rate_limit: NotRequired[pulumi.Input[_builtins.float]]
     unauthorized_cache_control_header_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MethodSettingsSettingsArgs:
@@ -268,7 +262,6 @@ class RestApiEndpointConfigurationArgsDict(TypedDict):
     types: pulumi.Input[_builtins.str]
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
     vpc_endpoint_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestApiEndpointConfigurationArgs:
@@ -303,7 +296,6 @@ class RestApiEndpointConfigurationArgs:
 
 class RestApiPutTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestApiPutTimeoutsArgs:
@@ -319,7 +311,6 @@ class RestApiPutTimeoutsArgs:
 class StageAccessLogSettingsArgsDict(TypedDict):
     destination_arn: pulumi.Input[_builtins.str]
     format: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StageAccessLogSettingsArgs:
@@ -347,7 +338,6 @@ class StageCanarySettingsArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     use_stage_cache: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StageCanarySettingsArgs:
@@ -392,7 +382,6 @@ class UsagePlanApiStageArgsDict(TypedDict):
     throttles: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[UsagePlanApiStageThrottleArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class UsagePlanApiStageArgs:
@@ -434,7 +423,6 @@ class UsagePlanApiStageThrottleArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     burst_limit: NotRequired[pulumi.Input[_builtins.int]]
     rate_limit: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class UsagePlanApiStageThrottleArgs:
@@ -465,7 +453,6 @@ class UsagePlanQuotaSettingsArgsDict(TypedDict):
     limit: pulumi.Input[_builtins.int]
     period: pulumi.Input[_builtins.str]
     offset: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UsagePlanQuotaSettingsArgs:
@@ -495,7 +482,6 @@ class UsagePlanQuotaSettingsArgs:
 class UsagePlanThrottleSettingsArgsDict(TypedDict):
     burst_limit: NotRequired[pulumi.Input[_builtins.int]]
     rate_limit: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class UsagePlanThrottleSettingsArgs:

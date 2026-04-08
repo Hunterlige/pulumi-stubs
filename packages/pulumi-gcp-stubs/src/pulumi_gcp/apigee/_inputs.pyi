@@ -140,7 +140,6 @@ class AddonsConfigAddonsConfigArgsDict(TypedDict):
     monetization_config: NotRequired[
         pulumi.Input[AddonsConfigAddonsConfigMonetizationConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigArgs:
@@ -220,7 +219,6 @@ class AddonsConfigAddonsConfigArgs:
 
 class AddonsConfigAddonsConfigAdvancedApiOpsConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigAdvancedApiOpsConfigArgs:
@@ -236,7 +234,6 @@ class AddonsConfigAddonsConfigAdvancedApiOpsConfigArgs:
 class AddonsConfigAddonsConfigApiSecurityConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     expires_at: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigApiSecurityConfigArgs:
@@ -260,7 +257,6 @@ class AddonsConfigAddonsConfigApiSecurityConfigArgs:
 class AddonsConfigAddonsConfigConnectorsPlatformConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     expires_at: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigConnectorsPlatformConfigArgs:
@@ -283,7 +279,6 @@ class AddonsConfigAddonsConfigConnectorsPlatformConfigArgs:
 
 class AddonsConfigAddonsConfigIntegrationConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigIntegrationConfigArgs:
@@ -298,7 +293,6 @@ class AddonsConfigAddonsConfigIntegrationConfigArgs:
 
 class AddonsConfigAddonsConfigMonetizationConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AddonsConfigAddonsConfigMonetizationConfigArgs:
@@ -315,7 +309,6 @@ class ApiMetaDataArgsDict(TypedDict):
     created_at: NotRequired[pulumi.Input[_builtins.str]]
     last_modified_at: NotRequired[pulumi.Input[_builtins.str]]
     sub_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiMetaDataArgs:
@@ -345,7 +338,6 @@ class ApiMetaDataArgs:
 class ApiProductAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductAttributeArgs:
@@ -375,7 +367,6 @@ class ApiProductGraphqlOperationGroupArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApiProductGraphqlOperationGroupArgs:
@@ -440,7 +431,6 @@ class ApiProductGraphqlOperationGroupOperationConfigArgsDict(TypedDict):
     quota: NotRequired[
         pulumi.Input[ApiProductGraphqlOperationGroupOperationConfigQuotaArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApiProductGraphqlOperationGroupOperationConfigArgs:
@@ -545,7 +535,6 @@ class ApiProductGraphqlOperationGroupOperationConfigArgs:
 class ApiProductGraphqlOperationGroupOperationConfigAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductGraphqlOperationGroupOperationConfigAttributeArgs:
@@ -569,7 +558,6 @@ class ApiProductGraphqlOperationGroupOperationConfigAttributeArgs:
 class ApiProductGraphqlOperationGroupOperationConfigOperationArgsDict(TypedDict):
     operation: NotRequired[pulumi.Input[_builtins.str]]
     operation_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ApiProductGraphqlOperationGroupOperationConfigOperationArgs:
@@ -600,7 +588,6 @@ class ApiProductGraphqlOperationGroupOperationConfigQuotaArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.str]]
     limit: NotRequired[pulumi.Input[_builtins.str]]
     time_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductGraphqlOperationGroupOperationConfigQuotaArgs:
@@ -633,7 +620,6 @@ class ApiProductGrpcOperationGroupArgsDict(TypedDict):
             Sequence[pulumi.Input[ApiProductGrpcOperationGroupOperationConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApiProductGrpcOperationGroupArgs:
@@ -681,7 +667,6 @@ class ApiProductGrpcOperationGroupOperationConfigArgsDict(TypedDict):
         pulumi.Input[ApiProductGrpcOperationGroupOperationConfigQuotaArgsDict]
     ]
     service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductGrpcOperationGroupOperationConfigArgs:
@@ -765,7 +750,6 @@ class ApiProductGrpcOperationGroupOperationConfigArgs:
 class ApiProductGrpcOperationGroupOperationConfigAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductGrpcOperationGroupOperationConfigAttributeArgs:
@@ -790,7 +774,6 @@ class ApiProductGrpcOperationGroupOperationConfigQuotaArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.str]]
     limit: NotRequired[pulumi.Input[_builtins.str]]
     time_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductGrpcOperationGroupOperationConfigQuotaArgs:
@@ -824,7 +807,6 @@ class ApiProductOperationGroupArgsDict(TypedDict):
             Sequence[pulumi.Input[ApiProductOperationGroupOperationConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApiProductOperationGroupArgs:
@@ -881,7 +863,6 @@ class ApiProductOperationGroupOperationConfigArgsDict(TypedDict):
     quota: NotRequired[
         pulumi.Input[ApiProductOperationGroupOperationConfigQuotaArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApiProductOperationGroupOperationConfigArgs:
@@ -966,7 +947,6 @@ class ApiProductOperationGroupOperationConfigArgs:
 class ApiProductOperationGroupOperationConfigAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductOperationGroupOperationConfigAttributeArgs:
@@ -990,7 +970,6 @@ class ApiProductOperationGroupOperationConfigAttributeArgs:
 class ApiProductOperationGroupOperationConfigOperationArgsDict(TypedDict):
     methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductOperationGroupOperationConfigOperationArgs:
@@ -1019,7 +998,6 @@ class ApiProductOperationGroupOperationConfigQuotaArgsDict(TypedDict):
     interval: NotRequired[pulumi.Input[_builtins.str]]
     limit: NotRequired[pulumi.Input[_builtins.str]]
     time_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiProductOperationGroupOperationConfigQuotaArgs:
@@ -1049,7 +1027,6 @@ class ApiProductOperationGroupOperationConfigQuotaArgs:
 class AppGroupAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AppGroupAttributeArgs:
@@ -1073,7 +1050,6 @@ class AppGroupAttributeArgs:
 class DeveloperAppAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeveloperAppAttributeArgs:
@@ -1107,7 +1083,6 @@ class DeveloperAppCredentialArgsDict(TypedDict):
     issued_at: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeveloperAppCredentialArgs:
@@ -1193,7 +1168,6 @@ class DeveloperAppCredentialArgs:
 class DeveloperAppCredentialApiProductArgsDict(TypedDict):
     apiproduct: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeveloperAppCredentialApiProductArgs:
@@ -1217,7 +1191,6 @@ class DeveloperAppCredentialApiProductArgs:
 class DeveloperAppCredentialAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeveloperAppCredentialAttributeArgs:
@@ -1241,7 +1214,6 @@ class DeveloperAppCredentialAttributeArgs:
 class DeveloperAttributeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeveloperAttributeArgs:
@@ -1265,7 +1237,6 @@ class DeveloperAttributeArgs:
 class DnsZonePeeringConfigArgsDict(TypedDict):
     target_network_id: pulumi.Input[_builtins.str]
     target_project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DnsZonePeeringConfigArgs:
@@ -1290,7 +1261,6 @@ class EnvironmentClientIpResolutionConfigArgsDict(TypedDict):
     header_index_algorithm: NotRequired[
         pulumi.Input[EnvironmentClientIpResolutionConfigHeaderIndexAlgorithmArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentClientIpResolutionConfigArgs:
@@ -1319,7 +1289,6 @@ class EnvironmentClientIpResolutionConfigArgs:
 class EnvironmentClientIpResolutionConfigHeaderIndexAlgorithmArgsDict(TypedDict):
     ip_header_index: pulumi.Input[_builtins.int]
     ip_header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentClientIpResolutionConfigHeaderIndexAlgorithmArgs:
@@ -1344,7 +1313,6 @@ class EnvironmentIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentIamBindingConditionArgs:
@@ -1375,7 +1343,6 @@ class EnvironmentIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentIamMemberConditionArgs:
@@ -1406,7 +1373,6 @@ class EnvironmentNodeConfigArgsDict(TypedDict):
     current_aggregate_node_count: NotRequired[pulumi.Input[_builtins.str]]
     max_node_count: NotRequired[pulumi.Input[_builtins.str]]
     min_node_count: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentNodeConfigArgs:
@@ -1439,7 +1405,6 @@ class EnvironmentPropertiesArgsDict(TypedDict):
     properties: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[EnvironmentPropertiesPropertyArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentPropertiesArgs:
@@ -1468,7 +1433,6 @@ class EnvironmentPropertiesArgs:
 class EnvironmentPropertiesPropertyArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentPropertiesPropertyArgs:
@@ -1492,7 +1456,6 @@ class EnvironmentPropertiesPropertyArgs:
 class InstanceAccessLoggingConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceAccessLoggingConfigArgs:
@@ -1525,7 +1488,6 @@ class KeystoresAliasesKeyCertFileCertsInfoArgsDict(TypedDict):
     subject_alternative_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     valid_from: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesKeyCertFileCertsInfoArgs:
@@ -1609,7 +1571,6 @@ class KeystoresAliasesKeyCertFileTimeoutsArgsDict(TypedDict):
     delete: NotRequired[pulumi.Input[_builtins.str]]
     read: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesKeyCertFileTimeoutsArgs:
@@ -1648,7 +1609,6 @@ class KeystoresAliasesPkcs12CertsInfoArgsDict(TypedDict):
             Sequence[pulumi.Input[KeystoresAliasesPkcs12CertsInfoCertInfoArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesPkcs12CertsInfoArgs:
@@ -1694,7 +1654,6 @@ class KeystoresAliasesPkcs12CertsInfoCertInfoArgsDict(TypedDict):
     ]
     valid_from: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesPkcs12CertsInfoCertInfoArgs:
@@ -1783,7 +1742,6 @@ class KeystoresAliasesSelfSignedCertCertsInfoArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesSelfSignedCertCertsInfoArgs:
@@ -1833,7 +1791,6 @@ class KeystoresAliasesSelfSignedCertCertsInfoCertInfoArgsDict(TypedDict):
     ]
     valid_from: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesSelfSignedCertCertsInfoCertInfoArgs:
@@ -1922,7 +1879,6 @@ class KeystoresAliasesSelfSignedCertSubjectArgsDict(TypedDict):
     org: NotRequired[pulumi.Input[_builtins.str]]
     org_unit: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesSelfSignedCertSubjectArgs:
@@ -1975,7 +1931,6 @@ class KeystoresAliasesSelfSignedCertSubjectArgs:
 
 class KeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesArgsDict(TypedDict):
     subject_alternative_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesArgs:
@@ -1996,7 +1951,6 @@ class OrganizationPropertiesArgsDict(TypedDict):
     properties: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[OrganizationPropertiesPropertyArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationPropertiesArgs:
@@ -2025,7 +1979,6 @@ class OrganizationPropertiesArgs:
 class OrganizationPropertiesPropertyArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationPropertiesPropertyArgs:
@@ -2064,7 +2017,6 @@ class SecurityActionConditionConfigArgsDict(TypedDict):
     ip_address_ranges: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     region_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     user_agents: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SecurityActionConditionConfigArgs:
@@ -2199,7 +2151,6 @@ class SecurityActionConditionConfigArgs:
 
 class SecurityActionDenyArgsDict(TypedDict):
     response_code: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class SecurityActionDenyArgs:
@@ -2216,7 +2167,6 @@ class SecurityActionFlagArgsDict(TypedDict):
     headers: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[SecurityActionFlagHeaderArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityActionFlagArgs:
@@ -2245,7 +2195,6 @@ class SecurityActionFlagArgs:
 class SecurityActionFlagHeaderArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityActionFlagHeaderArgs:
@@ -2269,7 +2218,6 @@ class SecurityActionFlagHeaderArgs:
 class SecurityFeedbackFeedbackContextArgsDict(TypedDict):
     attribute: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class SecurityFeedbackFeedbackContextArgs:
@@ -2299,7 +2247,6 @@ class SecurityMonitoringConditionIncludeAllResourcesArgs:
 class SecurityProfileV2ProfileAssessmentConfigArgsDict(TypedDict):
     assessment: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecurityProfileV2ProfileAssessmentConfigArgs:
@@ -2324,7 +2271,6 @@ class SharedflowMetaDataArgsDict(TypedDict):
     created_at: NotRequired[pulumi.Input[_builtins.str]]
     last_modified_at: NotRequired[pulumi.Input[_builtins.str]]
     sub_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SharedflowMetaDataArgs:
@@ -2362,7 +2308,6 @@ class TargetServerSSlInfoArgsDict(TypedDict):
     key_store: NotRequired[pulumi.Input[_builtins.str]]
     protocols: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     trust_store: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetServerSSlInfoArgs:
@@ -2448,7 +2393,6 @@ class TargetServerSSlInfoArgs:
 class TargetServerSSlInfoCommonNameArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
     wildcard_match: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TargetServerSSlInfoCommonNameArgs:

@@ -11,7 +11,6 @@ class QueueReservationPlanSettingsArgsDict(TypedDict):
     commitment: pulumi.Input[_builtins.str]
     renewal_type: pulumi.Input[_builtins.str]
     reserved_slots: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class QueueReservationPlanSettingsArgs:

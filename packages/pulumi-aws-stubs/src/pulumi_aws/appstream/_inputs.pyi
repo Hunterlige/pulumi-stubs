@@ -37,7 +37,6 @@ __all__ = [
 class DirectoryConfigCertificateBasedAuthPropertiesArgsDict(TypedDict):
     certificate_authority_arn: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DirectoryConfigCertificateBasedAuthPropertiesArgs:
@@ -63,7 +62,6 @@ class DirectoryConfigCertificateBasedAuthPropertiesArgs:
 class DirectoryConfigServiceAccountCredentialsArgsDict(TypedDict):
     account_name: pulumi.Input[_builtins.str]
     account_password: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DirectoryConfigServiceAccountCredentialsArgs:
@@ -90,7 +88,6 @@ class FleetComputeCapacityArgsDict(TypedDict):
     desired_sessions: NotRequired[pulumi.Input[_builtins.int]]
     in_use: NotRequired[pulumi.Input[_builtins.int]]
     running: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetComputeCapacityArgs:
@@ -132,7 +129,6 @@ class FleetComputeCapacityArgs:
 class FleetDomainJoinInfoArgsDict(TypedDict):
     directory_name: NotRequired[pulumi.Input[_builtins.str]]
     organizational_unit_distinguished_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetDomainJoinInfoArgs:
@@ -162,7 +158,6 @@ class FleetDomainJoinInfoArgs:
 class FleetVpcConfigArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FleetVpcConfigArgs:
@@ -196,7 +191,6 @@ class FleetVpcConfigArgs:
 class ImageBuilderAccessEndpointArgsDict(TypedDict):
     endpoint_type: pulumi.Input[_builtins.str]
     vpce_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageBuilderAccessEndpointArgs:
@@ -220,7 +214,6 @@ class ImageBuilderAccessEndpointArgs:
 class ImageBuilderDomainJoinInfoArgsDict(TypedDict):
     directory_name: NotRequired[pulumi.Input[_builtins.str]]
     organizational_unit_distinguished_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ImageBuilderDomainJoinInfoArgs:
@@ -250,7 +243,6 @@ class ImageBuilderDomainJoinInfoArgs:
 class ImageBuilderVpcConfigArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ImageBuilderVpcConfigArgs:
@@ -284,7 +276,6 @@ class ImageBuilderVpcConfigArgs:
 class StackAccessEndpointArgsDict(TypedDict):
     endpoint_type: pulumi.Input[_builtins.str]
     vpce_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackAccessEndpointArgs:
@@ -308,7 +299,6 @@ class StackAccessEndpointArgs:
 class StackApplicationSettingsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     settings_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackApplicationSettingsArgs:
@@ -333,7 +323,6 @@ class StackStorageConnectorArgsDict(TypedDict):
     connector_type: pulumi.Input[_builtins.str]
     domains: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     resource_identifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackStorageConnectorArgs:
@@ -366,7 +355,6 @@ class StackStorageConnectorArgs:
 
 class StackStreamingExperienceSettingsArgsDict(TypedDict):
     preferred_protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackStreamingExperienceSettingsArgs:
@@ -382,7 +370,6 @@ class StackStreamingExperienceSettingsArgs:
 class StackUserSettingArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
     permission: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StackUserSettingArgs:

@@ -129,7 +129,6 @@ class ApplicationApplicationConfigurationArgsDict(TypedDict):
     vpc_configuration: NotRequired[
         pulumi.Input[ApplicationApplicationConfigurationVpcConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationArgs:
@@ -305,7 +304,6 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationArgsDict(
             ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationApplicationCodeConfigurationArgs:
@@ -352,7 +350,6 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
         ]
     ]
     text_content: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentArgs:
@@ -396,7 +393,6 @@ class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
     bucket_arn: pulumi.Input[_builtins.str]
     file_key: pulumi.Input[_builtins.str]
     object_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationArgs:
@@ -428,7 +424,6 @@ class ApplicationApplicationConfigurationApplicationEncryptionConfigurationArgsD
 ):
     key_type: pulumi.Input[_builtins.str]
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationApplicationEncryptionConfigurationArgs:
@@ -453,7 +448,6 @@ class ApplicationApplicationConfigurationApplicationSnapshotConfigurationArgsDic
     TypedDict
 ):
     snapshots_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationApplicationSnapshotConfigurationArgs:
@@ -474,7 +468,6 @@ class ApplicationApplicationConfigurationEnvironmentPropertiesArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationEnvironmentPropertiesArgs:
@@ -517,7 +510,6 @@ class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupArgsD
 ):
     property_group_id: pulumi.Input[_builtins.str]
     property_map: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupArgs:
@@ -560,7 +552,6 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgsDict(
             ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationArgs:
@@ -645,7 +636,6 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpoint
     checkpoint_interval: NotRequired[pulumi.Input[_builtins.int]]
     checkpointing_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     min_pause_between_checkpoints: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationArgs:
@@ -688,7 +678,6 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoring
     configuration_type: pulumi.Input[_builtins.str]
     log_level: NotRequired[pulumi.Input[_builtins.str]]
     metrics_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationArgs:
@@ -722,7 +711,6 @@ class ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelis
     auto_scaling_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     parallelism: NotRequired[pulumi.Input[_builtins.int]]
     parallelism_per_kpu: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationArgs:
@@ -766,7 +754,6 @@ class ApplicationApplicationConfigurationRunConfigurationArgsDict(TypedDict):
             ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationRunConfigurationArgs:
@@ -826,7 +813,6 @@ class ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfi
 ):
     application_restore_type: NotRequired[pulumi.Input[_builtins.str]]
     snapshot_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationArgs:
@@ -853,7 +839,6 @@ class ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationAr
     TypedDict
 ):
     allow_non_restored_state: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationArgs:
@@ -890,7 +875,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationArgsDict(Typ
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationArgs:
@@ -1020,7 +1004,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgsDic
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputArgs:
@@ -1201,7 +1184,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPa
     TypedDict
 ):
     count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismArgs:
@@ -1220,7 +1202,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
     input_lambda_processor: pulumi.Input[
         ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationArgs:
@@ -1250,7 +1231,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorArgs:
@@ -1275,7 +1255,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
         ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatArgsDict
     ]
     record_encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaArgs:
@@ -1342,7 +1321,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     name: pulumi.Input[_builtins.str]
     sql_type: pulumi.Input[_builtins.str]
     mapping: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnArgs:
@@ -1376,7 +1354,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
         ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersArgsDict
     ]
     record_format_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatArgs:
@@ -1421,7 +1398,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
             ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersArgs:
@@ -1481,7 +1457,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
 ):
     record_column_delimiter: pulumi.Input[_builtins.str]
     record_row_delimiter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersArgs:
@@ -1506,7 +1481,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     TypedDict
 ):
     record_row_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersArgs:
@@ -1521,7 +1495,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSt
     TypedDict
 ):
     input_starting_position: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationArgs:
@@ -1540,7 +1513,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesis
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputArgs:
@@ -1555,7 +1527,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesis
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputArgs:
@@ -1589,7 +1560,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgsDi
         ]
     ]
     output_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputArgs:
@@ -1700,7 +1670,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestin
     TypedDict
 ):
     record_format_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaArgs:
@@ -1717,7 +1686,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesi
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputArgs:
@@ -1732,7 +1700,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesi
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputArgs:
@@ -1747,7 +1714,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambda
     TypedDict
 ):
     resource_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputArgs:
@@ -1769,7 +1735,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     ]
     table_name: pulumi.Input[_builtins.str]
     reference_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceArgs:
@@ -1838,7 +1803,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatArgsDict
     ]
     record_encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaArgs:
@@ -1905,7 +1869,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     name: pulumi.Input[_builtins.str]
     sql_type: pulumi.Input[_builtins.str]
     mapping: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumnArgs:
@@ -1939,7 +1902,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
         ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersArgsDict
     ]
     record_format_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatArgs:
@@ -1984,7 +1946,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
             ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersArgs:
@@ -2044,7 +2005,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
 ):
     record_column_delimiter: pulumi.Input[_builtins.str]
     record_row_delimiter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersArgs:
@@ -2069,7 +2029,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
     TypedDict
 ):
     record_row_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersArgs:
@@ -2085,7 +2044,6 @@ class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
 ):
     bucket_arn: pulumi.Input[_builtins.str]
     file_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceArgs:
@@ -2111,7 +2069,6 @@ class ApplicationApplicationConfigurationVpcConfigurationArgsDict(TypedDict):
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_configuration_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationApplicationConfigurationVpcConfigurationArgs:
@@ -2153,7 +2110,6 @@ class ApplicationApplicationConfigurationVpcConfigurationArgs:
 class ApplicationCloudwatchLoggingOptionsArgsDict(TypedDict):
     log_stream_arn: pulumi.Input[_builtins.str]
     cloudwatch_logging_option_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationCloudwatchLoggingOptionsArgs:

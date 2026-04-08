@@ -24,7 +24,6 @@ class DbClusterLogDeliveryConfigurationArgsDict(TypedDict):
     s3_configuration: NotRequired[
         pulumi.Input[DbClusterLogDeliveryConfigurationS3ConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DbClusterLogDeliveryConfigurationArgs:
@@ -53,7 +52,6 @@ class DbClusterLogDeliveryConfigurationArgs:
 class DbClusterLogDeliveryConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DbClusterLogDeliveryConfigurationS3ConfigurationArgs:
@@ -78,7 +76,6 @@ class DbClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbClusterTimeoutsArgs:
@@ -109,7 +106,6 @@ class DbInstanceLogDeliveryConfigurationArgsDict(TypedDict):
     s3_configuration: NotRequired[
         pulumi.Input[DbInstanceLogDeliveryConfigurationS3ConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DbInstanceLogDeliveryConfigurationArgs:
@@ -138,7 +134,6 @@ class DbInstanceLogDeliveryConfigurationArgs:
 class DbInstanceLogDeliveryConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class DbInstanceLogDeliveryConfigurationS3ConfigurationArgs:
@@ -163,7 +158,6 @@ class DbInstanceTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbInstanceTimeoutsArgs:

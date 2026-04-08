@@ -16,7 +16,6 @@ class RepositoryExternalConnectionsArgsDict(TypedDict):
     external_connection_name: pulumi.Input[_builtins.str]
     package_format: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryExternalConnectionsArgs:
@@ -45,7 +44,6 @@ class RepositoryExternalConnectionsArgs:
 
 class RepositoryUpstreamArgsDict(TypedDict):
     repository_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryUpstreamArgs:

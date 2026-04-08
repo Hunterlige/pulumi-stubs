@@ -95,7 +95,6 @@ class BackupPlanBackupConfigArgsDict(TypedDict):
     selected_namespaces: NotRequired[
         pulumi.Input[BackupPlanBackupConfigSelectedNamespacesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigArgs:
@@ -183,7 +182,6 @@ class BackupPlanBackupConfigArgs:
 
 class BackupPlanBackupConfigEncryptionKeyArgsDict(TypedDict):
     gcp_kms_encryption_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigEncryptionKeyArgs:
@@ -204,7 +202,6 @@ class BackupPlanBackupConfigSelectedApplicationsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigSelectedApplicationsArgs:
@@ -243,7 +240,6 @@ class BackupPlanBackupConfigSelectedApplicationsArgs:
 class BackupPlanBackupConfigSelectedApplicationsNamespacedNameArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigSelectedApplicationsNamespacedNameArgs:
@@ -272,7 +268,6 @@ class BackupPlanBackupConfigSelectedNamespaceLabelsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigSelectedNamespaceLabelsArgs:
@@ -311,7 +306,6 @@ class BackupPlanBackupConfigSelectedNamespaceLabelsArgs:
 class BackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelArgs:
@@ -334,7 +328,6 @@ class BackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelArgs:
 
 class BackupPlanBackupConfigSelectedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupConfigSelectedNamespacesArgs:
@@ -353,7 +346,6 @@ class BackupPlanBackupScheduleArgsDict(TypedDict):
     cron_schedule: NotRequired[pulumi.Input[_builtins.str]]
     paused: NotRequired[pulumi.Input[_builtins.bool]]
     rpo_config: NotRequired[pulumi.Input[BackupPlanBackupScheduleRpoConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleArgs:
@@ -393,7 +385,6 @@ class BackupPlanBackupScheduleRpoConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleRpoConfigArgs:
@@ -449,7 +440,6 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgsDict(TypedDict):
             BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
@@ -529,7 +519,6 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowArgs:
 
 class BackupPlanBackupScheduleRpoConfigExclusionWindowDaysOfWeekArgsDict(TypedDict):
     days_of_weeks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleRpoConfigExclusionWindowDaysOfWeekArgs:
@@ -556,7 +545,6 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgsDi
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleRpoConfigExclusionWindowSingleOccurrenceDateArgs:
@@ -588,7 +576,6 @@ class BackupPlanBackupScheduleRpoConfigExclusionWindowStartTimeArgsDict(TypedDic
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupScheduleRpoConfigExclusionWindowStartTimeArgs:
@@ -625,7 +612,6 @@ class BackupPlanIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupPlanIamBindingConditionArgs:
@@ -656,7 +642,6 @@ class BackupPlanIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupPlanIamMemberConditionArgs:
@@ -687,7 +672,6 @@ class BackupPlanRetentionPolicyArgsDict(TypedDict):
     backup_delete_lock_days: NotRequired[pulumi.Input[_builtins.int]]
     backup_retain_days: NotRequired[pulumi.Input[_builtins.int]]
     locked: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BackupPlanRetentionPolicyArgs:
@@ -718,7 +702,6 @@ class RestorePlanIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanIamBindingConditionArgs:
@@ -749,7 +732,6 @@ class RestorePlanIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanIamMemberConditionArgs:
@@ -811,7 +793,6 @@ class RestorePlanRestoreConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigArgs:
@@ -1005,7 +986,6 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigClusterResourceRestoreScopeArgs:
@@ -1101,7 +1081,6 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindArgsDi
 ):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     resource_kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindArgs:
@@ -1127,7 +1106,6 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindArgsDi
 ):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     resource_kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindArgs:
@@ -1150,7 +1128,6 @@ class RestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindArgs:
 
 class RestorePlanRestoreConfigExcludedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigExcludedNamespacesArgs:
@@ -1173,7 +1150,6 @@ class RestorePlanRestoreConfigRestoreOrderArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigRestoreOrderArgs:
@@ -1216,7 +1192,6 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyArgsDict(TypedDict)
     satisfying: pulumi.Input[
         RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyArgs:
@@ -1264,7 +1239,6 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyRequiringArgsDict(
 ):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     resource_kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencyRequiringArgs:
@@ -1290,7 +1264,6 @@ class RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgsDict(
 ):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     resource_kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigRestoreOrderGroupKindDependencySatisfyingArgs:
@@ -1319,7 +1292,6 @@ class RestorePlanRestoreConfigSelectedApplicationsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigSelectedApplicationsArgs:
@@ -1358,7 +1330,6 @@ class RestorePlanRestoreConfigSelectedApplicationsArgs:
 class RestorePlanRestoreConfigSelectedApplicationsNamespacedNameArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigSelectedApplicationsNamespacedNameArgs:
@@ -1381,7 +1352,6 @@ class RestorePlanRestoreConfigSelectedApplicationsNamespacedNameArgs:
 
 class RestorePlanRestoreConfigSelectedNamespacesArgsDict(TypedDict):
     namespaces: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigSelectedNamespacesArgs:
@@ -1406,7 +1376,6 @@ class RestorePlanRestoreConfigTransformationRuleArgsDict(TypedDict):
     resource_filter: NotRequired[
         pulumi.Input[RestorePlanRestoreConfigTransformationRuleResourceFilterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigTransformationRuleArgs:
@@ -1466,7 +1435,6 @@ class RestorePlanRestoreConfigTransformationRuleFieldActionArgsDict(TypedDict):
     from_path: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigTransformationRuleFieldActionArgs:
@@ -1511,7 +1479,6 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterArgsDict(TypedDict
     ]
     json_path: NotRequired[pulumi.Input[_builtins.str]]
     namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigTransformationRuleResourceFilterArgs:
@@ -1576,7 +1543,6 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterGroupKindArgsDict(
 ):
     resource_group: NotRequired[pulumi.Input[_builtins.str]]
     resource_kind: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigTransformationRuleResourceFilterGroupKindArgs:
@@ -1600,7 +1566,6 @@ class RestorePlanRestoreConfigTransformationRuleResourceFilterGroupKindArgs:
 class RestorePlanRestoreConfigVolumeDataRestorePolicyBindingArgsDict(TypedDict):
     policy: pulumi.Input[_builtins.str]
     volume_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestorePlanRestoreConfigVolumeDataRestorePolicyBindingArgs:

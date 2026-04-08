@@ -33,7 +33,6 @@ __all__ = [
 class CentralizationRuleForOrganizationRuleArgsDict(TypedDict):
     destination: pulumi.Input[CentralizationRuleForOrganizationRuleDestinationArgsDict]
     source: pulumi.Input[CentralizationRuleForOrganizationRuleSourceArgsDict]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleArgs:
@@ -70,7 +69,6 @@ class CentralizationRuleForOrganizationRuleDestinationArgsDict(TypedDict):
             CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleDestinationArgs:
@@ -132,7 +130,6 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
             CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationArgs:
@@ -215,7 +212,6 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
 ):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationArgs:
@@ -240,7 +236,6 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     TypedDict
 ):
     log_group_name_pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogGroupNameConfigurationArgs:
@@ -259,7 +254,6 @@ class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurati
     encryption_strategy: pulumi.Input[_builtins.str]
     encryption_conflict_resolution_strategy: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationArgs:
@@ -300,7 +294,6 @@ class CentralizationRuleForOrganizationRuleSourceArgsDict(TypedDict):
             CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleSourceArgs:
@@ -349,7 +342,6 @@ class CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgsDict
 ):
     encrypted_log_group_strategy: pulumi.Input[_builtins.str]
     log_group_selection_criteria: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgs:
@@ -373,7 +365,6 @@ class CentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationArgs:
 class CentralizationRuleForOrganizationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CentralizationRuleForOrganizationTimeoutsArgs:
@@ -396,7 +387,6 @@ class CentralizationRuleForOrganizationTimeoutsArgs:
 
 class TelemetryPipelineConfigurationArgsDict(TypedDict):
     body: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TelemetryPipelineConfigurationArgs:
@@ -411,7 +401,6 @@ class TelemetryPipelineTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TelemetryPipelineTimeoutsArgs:

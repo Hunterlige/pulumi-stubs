@@ -32,7 +32,6 @@ class AccountIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountIamBindingConditionArgs:
@@ -63,7 +62,6 @@ class AccountIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountIamMemberConditionArgs:
@@ -98,7 +96,6 @@ class BudgetAllUpdatesRuleArgsDict(TypedDict):
     ]
     pubsub_topic: NotRequired[pulumi.Input[_builtins.str]]
     schema_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BudgetAllUpdatesRuleArgs:
@@ -154,7 +151,6 @@ class BudgetAllUpdatesRuleArgs:
 class BudgetAmountArgsDict(TypedDict):
     last_period_amount: NotRequired[pulumi.Input[_builtins.bool]]
     specified_amount: NotRequired[pulumi.Input[BudgetAmountSpecifiedAmountArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetAmountArgs:
@@ -183,7 +179,6 @@ class BudgetAmountSpecifiedAmountArgsDict(TypedDict):
     currency_code: NotRequired[pulumi.Input[_builtins.str]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     units: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BudgetAmountSpecifiedAmountArgs:
@@ -220,7 +215,6 @@ class BudgetBudgetFilterArgsDict(TypedDict):
     resource_ancestors: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     services: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subaccounts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BudgetBudgetFilterArgs:
@@ -320,7 +314,6 @@ class BudgetBudgetFilterArgs:
 class BudgetBudgetFilterCustomPeriodArgsDict(TypedDict):
     start_date: pulumi.Input[BudgetBudgetFilterCustomPeriodStartDateArgsDict]
     end_date: NotRequired[pulumi.Input[BudgetBudgetFilterCustomPeriodEndDateArgsDict]]
-    ...
 
 @pulumi.input_type
 class BudgetBudgetFilterCustomPeriodArgs:
@@ -355,7 +348,6 @@ class BudgetBudgetFilterCustomPeriodEndDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BudgetBudgetFilterCustomPeriodEndDateArgs:
@@ -386,7 +378,6 @@ class BudgetBudgetFilterCustomPeriodStartDateArgsDict(TypedDict):
     day: pulumi.Input[_builtins.int]
     month: pulumi.Input[_builtins.int]
     year: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BudgetBudgetFilterCustomPeriodStartDateArgs:
@@ -416,7 +407,6 @@ class BudgetBudgetFilterCustomPeriodStartDateArgs:
 class BudgetThresholdRuleArgsDict(TypedDict):
     threshold_percent: pulumi.Input[_builtins.float]
     spend_basis: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BudgetThresholdRuleArgs:

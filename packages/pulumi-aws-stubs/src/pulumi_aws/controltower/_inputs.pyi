@@ -19,7 +19,6 @@ __all__ = [
 class BaselineParametersArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BaselineParametersArgs:
@@ -44,7 +43,6 @@ class BaselineTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BaselineTimeoutsArgs:
@@ -74,7 +72,6 @@ class BaselineTimeoutsArgs:
 class ControlTowerControlParameterArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ControlTowerControlParameterArgs:
@@ -97,7 +94,6 @@ class ControlTowerControlParameterArgs:
 
 class LandingZoneDriftStatusArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LandingZoneDriftStatusArgs:

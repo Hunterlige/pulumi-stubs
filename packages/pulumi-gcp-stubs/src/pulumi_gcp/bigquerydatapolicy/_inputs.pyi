@@ -17,7 +17,6 @@ __all__ = [
 class DataPolicyDataMaskingPolicyArgsDict(TypedDict):
     predefined_expression: NotRequired[pulumi.Input[_builtins.str]]
     routine: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataPolicyDataMaskingPolicyArgs:
@@ -42,7 +41,6 @@ class DataPolicyIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataPolicyIamBindingConditionArgs:
@@ -73,7 +71,6 @@ class DataPolicyIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataPolicyIamMemberConditionArgs:

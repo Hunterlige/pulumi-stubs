@@ -21,7 +21,6 @@ class ApplicationAppversionLifecycleArgsDict(TypedDict):
     delete_source_from_s3: NotRequired[pulumi.Input[_builtins.bool]]
     max_age_in_days: NotRequired[pulumi.Input[_builtins.int]]
     max_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationAppversionLifecycleArgs:
@@ -59,7 +58,6 @@ class ConfigurationTemplateSettingArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationTemplateSettingArgs:
@@ -97,7 +95,6 @@ class EnvironmentAllSettingArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentAllSettingArgs:
@@ -135,7 +132,6 @@ class EnvironmentSettingArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentSettingArgs:

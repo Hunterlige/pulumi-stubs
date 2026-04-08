@@ -46,7 +46,6 @@ __all__ = [
 
 class ApplicationAutoStartConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ApplicationAutoStartConfigurationArgs:
@@ -62,7 +61,6 @@ class ApplicationAutoStartConfigurationArgs:
 class ApplicationAutoStopConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     idle_timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationAutoStopConfigurationArgs:
@@ -85,7 +83,6 @@ class ApplicationAutoStopConfigurationArgs:
 
 class ApplicationImageConfigurationArgsDict(TypedDict):
     image_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationImageConfigurationArgs:
@@ -101,7 +98,6 @@ class ApplicationInitialCapacityArgsDict(TypedDict):
     initial_capacity_config: NotRequired[
         pulumi.Input[ApplicationInitialCapacityInitialCapacityConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationInitialCapacityArgs:
@@ -140,7 +136,6 @@ class ApplicationInitialCapacityInitialCapacityConfigArgsDict(TypedDict):
             ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationInitialCapacityInitialCapacityConfigArgs:
@@ -184,7 +179,6 @@ class ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgsDict
     cpu: pulumi.Input[_builtins.str]
     memory: pulumi.Input[_builtins.str]
     disk: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgs:
@@ -214,7 +208,6 @@ class ApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationArgs:
 class ApplicationInteractiveConfigurationArgsDict(TypedDict):
     livy_endpoint_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     studio_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ApplicationInteractiveConfigurationArgs:
@@ -237,7 +230,6 @@ class ApplicationInteractiveConfigurationArgs:
 
 class ApplicationJobLevelCostAllocationConfigurationArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ApplicationJobLevelCostAllocationConfigurationArgs:
@@ -254,7 +246,6 @@ class ApplicationMaximumCapacityArgsDict(TypedDict):
     cpu: pulumi.Input[_builtins.str]
     memory: pulumi.Input[_builtins.str]
     disk: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationMaximumCapacityArgs:
@@ -302,7 +293,6 @@ class ApplicationMonitoringConfigurationArgsDict(TypedDict):
             ApplicationMonitoringConfigurationS3MonitoringConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationArgs:
@@ -417,7 +407,6 @@ class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationArgs:
@@ -490,7 +479,6 @@ class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypeArg
 ):
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypeArgs:
@@ -516,7 +504,6 @@ class ApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguratio
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     encryption_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationManagedPersistenceMonitoringConfigurationArgs:
@@ -541,7 +528,6 @@ class ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgsDic
     TypedDict
 ):
     remote_write_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgs:
@@ -557,7 +543,6 @@ class ApplicationMonitoringConfigurationPrometheusMonitoringConfigurationArgs:
 class ApplicationMonitoringConfigurationS3MonitoringConfigurationArgsDict(TypedDict):
     encryption_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     log_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationMonitoringConfigurationS3MonitoringConfigurationArgs:
@@ -581,7 +566,6 @@ class ApplicationMonitoringConfigurationS3MonitoringConfigurationArgs:
 class ApplicationNetworkConfigurationArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     subnet_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ApplicationNetworkConfigurationArgs:
@@ -615,7 +599,6 @@ class ApplicationNetworkConfigurationArgs:
 class ApplicationRuntimeConfigurationArgsDict(TypedDict):
     classification: pulumi.Input[_builtins.str]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ApplicationRuntimeConfigurationArgs:
@@ -645,7 +628,6 @@ class ApplicationRuntimeConfigurationArgs:
 class ApplicationSchedulerConfigurationArgsDict(TypedDict):
     max_concurrent_runs: NotRequired[pulumi.Input[_builtins.int]]
     queue_timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApplicationSchedulerConfigurationArgs:

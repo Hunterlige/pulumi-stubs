@@ -28,7 +28,6 @@ class PipelineScheduleInfoArgsDict(TypedDict):
     next_job_time: NotRequired[pulumi.Input[_builtins.str]]
     schedule: NotRequired[pulumi.Input[_builtins.str]]
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineScheduleInfoArgs:
@@ -62,7 +61,6 @@ class PipelineWorkloadArgsDict(TypedDict):
     dataflow_launch_template_request: NotRequired[
         pulumi.Input[PipelineWorkloadDataflowLaunchTemplateRequestArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadArgs:
@@ -106,7 +104,6 @@ class PipelineWorkloadDataflowFlexTemplateRequestArgsDict(TypedDict):
     location: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     validate_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowFlexTemplateRequestArgs:
@@ -164,7 +161,6 @@ class PipelineWorkloadDataflowFlexTemplateRequestLaunchParameterArgsDict(TypedDi
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     update: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowFlexTemplateRequestLaunchParameterArgs:
@@ -273,7 +269,6 @@ class PipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentArgsD
     worker_region: NotRequired[pulumi.Input[_builtins.str]]
     worker_zone: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentArgs:
@@ -402,7 +397,6 @@ class PipelineWorkloadDataflowLaunchTemplateRequestArgsDict(TypedDict):
     ]
     location: NotRequired[pulumi.Input[_builtins.str]]
     validate_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowLaunchTemplateRequestArgs:
@@ -468,7 +462,6 @@ class PipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersArgsDict(Type
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     update: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersArgs:
@@ -559,7 +552,6 @@ class PipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentAr
     worker_region: NotRequired[pulumi.Input[_builtins.str]]
     worker_zone: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentArgs:

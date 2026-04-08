@@ -51,7 +51,6 @@ class CustomDomainAssociationCertificateValidationRecordArgsDict(TypedDict):
     status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomDomainAssociationCertificateValidationRecordArgs:
@@ -86,7 +85,6 @@ class CustomDomainAssociationCertificateValidationRecordArgs:
 
 class DeploymentTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DeploymentTimeoutsArgs:
@@ -101,7 +99,6 @@ class DeploymentTimeoutsArgs:
 
 class ObservabilityConfigurationTraceConfigurationArgsDict(TypedDict):
     vendor: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ObservabilityConfigurationTraceConfigurationArgs:
@@ -116,7 +113,6 @@ class ObservabilityConfigurationTraceConfigurationArgs:
 
 class ServiceEncryptionConfigurationArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceEncryptionConfigurationArgs:
@@ -134,7 +130,6 @@ class ServiceHealthCheckConfigurationArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
     unhealthy_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceHealthCheckConfigurationArgs:
@@ -183,7 +178,6 @@ class ServiceInstanceConfigurationArgsDict(TypedDict):
     cpu: NotRequired[pulumi.Input[_builtins.str]]
     instance_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     memory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceInstanceConfigurationArgs:
@@ -218,7 +212,6 @@ class ServiceNetworkConfigurationArgsDict(TypedDict):
         pulumi.Input[ServiceNetworkConfigurationIngressConfigurationArgsDict]
     ]
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkConfigurationArgs:
@@ -268,7 +261,6 @@ class ServiceNetworkConfigurationArgs:
 class ServiceNetworkConfigurationEgressConfigurationArgsDict(TypedDict):
     egress_type: NotRequired[pulumi.Input[_builtins.str]]
     vpc_connector_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkConfigurationEgressConfigurationArgs:
@@ -291,7 +283,6 @@ class ServiceNetworkConfigurationEgressConfigurationArgs:
 
 class ServiceNetworkConfigurationIngressConfigurationArgsDict(TypedDict):
     is_publicly_accessible: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkConfigurationIngressConfigurationArgs:
@@ -309,7 +300,6 @@ class ServiceNetworkConfigurationIngressConfigurationArgs:
 class ServiceObservabilityConfigurationArgsDict(TypedDict):
     observability_enabled: pulumi.Input[_builtins.bool]
     observability_configuration_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceObservabilityConfigurationArgs:
@@ -345,7 +335,6 @@ class ServiceSourceConfigurationArgsDict(TypedDict):
     image_repository: NotRequired[
         pulumi.Input[ServiceSourceConfigurationImageRepositoryArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationArgs:
@@ -408,7 +397,6 @@ class ServiceSourceConfigurationArgs:
 class ServiceSourceConfigurationAuthenticationConfigurationArgsDict(TypedDict):
     access_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     connection_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationAuthenticationConfigurationArgs:
@@ -438,7 +426,6 @@ class ServiceSourceConfigurationCodeRepositoryArgsDict(TypedDict):
         pulumi.Input[ServiceSourceConfigurationCodeRepositoryCodeConfigurationArgsDict]
     ]
     source_directory: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationCodeRepositoryArgs:
@@ -500,7 +487,6 @@ class ServiceSourceConfigurationCodeRepositoryCodeConfigurationArgsDict(TypedDic
             ServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationCodeRepositoryCodeConfigurationArgs:
@@ -551,7 +537,6 @@ class ServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfiguration
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     start_command: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesArgs:
@@ -611,7 +596,6 @@ class ServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfiguration
 class ServiceSourceConfigurationCodeRepositorySourceCodeVersionArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationCodeRepositorySourceCodeVersionArgs:
@@ -640,7 +624,6 @@ class ServiceSourceConfigurationImageRepositoryArgsDict(TypedDict):
             ServiceSourceConfigurationImageRepositoryImageConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationImageRepositoryArgs:
@@ -691,7 +674,6 @@ class ServiceSourceConfigurationImageRepositoryImageConfigurationArgsDict(TypedD
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     start_command: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceSourceConfigurationImageRepositoryImageConfigurationArgs:
@@ -739,7 +721,6 @@ class ServiceSourceConfigurationImageRepositoryImageConfigurationArgs:
 class VpcIngressConnectionIngressVpcConfigurationArgsDict(TypedDict):
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcIngressConnectionIngressVpcConfigurationArgs:

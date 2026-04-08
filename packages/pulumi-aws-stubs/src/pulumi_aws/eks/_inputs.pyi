@@ -91,7 +91,6 @@ __all__ = [
 class AccessPolicyAssociationAccessScopeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     namespaces: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AccessPolicyAssociationAccessScopeArgs:
@@ -119,7 +118,6 @@ class AccessPolicyAssociationAccessScopeArgs:
 class AddonPodIdentityAssociationArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AddonPodIdentityAssociationArgs:
@@ -142,7 +140,6 @@ class AddonPodIdentityAssociationArgs:
 
 class CapabilityConfigurationArgsDict(TypedDict):
     argo_cd: NotRequired[pulumi.Input[CapabilityConfigurationArgoCdArgsDict]]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgs:
@@ -171,7 +168,6 @@ class CapabilityConfigurationArgoCdArgsDict(TypedDict):
         ]
     ]
     server_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgoCdArgs:
@@ -238,7 +234,6 @@ class CapabilityConfigurationArgoCdAwsIdcArgsDict(TypedDict):
     idc_instance_arn: pulumi.Input[_builtins.str]
     idc_managed_application_arn: NotRequired[pulumi.Input[_builtins.str]]
     idc_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgoCdAwsIdcArgs:
@@ -269,7 +264,6 @@ class CapabilityConfigurationArgoCdAwsIdcArgs:
 
 class CapabilityConfigurationArgoCdNetworkAccessArgsDict(TypedDict):
     vpce_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgoCdNetworkAccessArgs:
@@ -295,7 +289,6 @@ class CapabilityConfigurationArgoCdRbacRoleMappingArgsDict(TypedDict):
         ]
     ]
     role: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgoCdRbacRoleMappingArgs:
@@ -334,7 +327,6 @@ class CapabilityConfigurationArgoCdRbacRoleMappingArgs:
 class CapabilityConfigurationArgoCdRbacRoleMappingIdentityArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CapabilityConfigurationArgoCdRbacRoleMappingIdentityArgs:
@@ -356,7 +348,6 @@ class CapabilityTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapabilityTimeoutsArgs:
@@ -388,7 +379,6 @@ class ClusterAccessConfigArgsDict(TypedDict):
     bootstrap_cluster_creator_admin_permissions: NotRequired[
         pulumi.Input[_builtins.bool]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterAccessConfigArgs:
@@ -417,7 +407,6 @@ class ClusterAccessConfigArgs:
 
 class ClusterCertificateAuthorityArgsDict(TypedDict):
     data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCertificateAuthorityArgs:
@@ -434,7 +423,6 @@ class ClusterComputeConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     node_pools: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     node_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterComputeConfigArgs:
@@ -467,7 +455,6 @@ class ClusterComputeConfigArgs:
 
 class ClusterControlPlaneScalingConfigArgsDict(TypedDict):
     tier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneScalingConfigArgs:
@@ -483,7 +470,6 @@ class ClusterControlPlaneScalingConfigArgs:
 class ClusterEncryptionConfigArgsDict(TypedDict):
     provider: pulumi.Input[ClusterEncryptionConfigProviderArgsDict]
     resources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionConfigArgs:
@@ -506,7 +492,6 @@ class ClusterEncryptionConfigArgs:
 
 class ClusterEncryptionConfigProviderArgsDict(TypedDict):
     key_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionConfigProviderArgs:
@@ -521,7 +506,6 @@ class ClusterIdentityArgsDict(TypedDict):
     oidcs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ClusterIdentityOidcArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterIdentityArgs:
@@ -545,7 +529,6 @@ class ClusterIdentityArgs:
 
 class ClusterIdentityOidcArgsDict(TypedDict):
     issuer: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterIdentityOidcArgs:
@@ -565,7 +548,6 @@ class ClusterKubernetesNetworkConfigArgsDict(TypedDict):
     ip_family: NotRequired[pulumi.Input[_builtins.str]]
     service_ipv4_cidr: NotRequired[pulumi.Input[_builtins.str]]
     service_ipv6_cidr: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterKubernetesNetworkConfigArgs:
@@ -611,7 +593,6 @@ class ClusterKubernetesNetworkConfigArgs:
 
 class ClusterKubernetesNetworkConfigElasticLoadBalancingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterKubernetesNetworkConfigElasticLoadBalancingArgs:
@@ -630,7 +611,6 @@ class ClusterOutpostConfigArgsDict(TypedDict):
     control_plane_placement: NotRequired[
         pulumi.Input[ClusterOutpostConfigControlPlanePlacementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterOutpostConfigArgs:
@@ -668,7 +648,6 @@ class ClusterOutpostConfigArgs:
 
 class ClusterOutpostConfigControlPlanePlacementArgsDict(TypedDict):
     group_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterOutpostConfigControlPlanePlacementArgs:
@@ -686,7 +665,6 @@ class ClusterRemoteNetworkConfigArgsDict(TypedDict):
     remote_pod_networks: NotRequired[
         pulumi.Input[ClusterRemoteNetworkConfigRemotePodNetworksArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterRemoteNetworkConfigArgs:
@@ -722,7 +700,6 @@ class ClusterRemoteNetworkConfigArgs:
 
 class ClusterRemoteNetworkConfigRemoteNodeNetworksArgsDict(TypedDict):
     cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterRemoteNetworkConfigRemoteNodeNetworksArgs:
@@ -743,7 +720,6 @@ class ClusterRemoteNetworkConfigRemoteNodeNetworksArgs:
 
 class ClusterRemoteNetworkConfigRemotePodNetworksArgsDict(TypedDict):
     cidrs: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterRemoteNetworkConfigRemotePodNetworksArgs:
@@ -764,7 +740,6 @@ class ClusterRemoteNetworkConfigRemotePodNetworksArgs:
 
 class ClusterStorageConfigArgsDict(TypedDict):
     block_storage: NotRequired[pulumi.Input[ClusterStorageConfigBlockStorageArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageConfigArgs:
@@ -787,7 +762,6 @@ class ClusterStorageConfigArgs:
 
 class ClusterStorageConfigBlockStorageArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterStorageConfigBlockStorageArgs:
@@ -802,7 +776,6 @@ class ClusterStorageConfigBlockStorageArgs:
 
 class ClusterUpgradePolicyArgsDict(TypedDict):
     support_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterUpgradePolicyArgs:
@@ -825,7 +798,6 @@ class ClusterVpcConfigArgsDict(TypedDict):
     ]
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterVpcConfigArgs:
@@ -896,7 +868,6 @@ class ClusterVpcConfigArgs:
 
 class ClusterZonalShiftConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterZonalShiftConfigArgs:
@@ -912,7 +883,6 @@ class ClusterZonalShiftConfigArgs:
 class FargateProfileSelectorArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FargateProfileSelectorArgs:
@@ -948,7 +918,6 @@ class IdentityProviderConfigOidcArgsDict(TypedDict):
     ]
     username_claim: NotRequired[pulumi.Input[_builtins.str]]
     username_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IdentityProviderConfigOidcArgs:
@@ -1015,7 +984,6 @@ class NodeGroupLaunchTemplateArgsDict(TypedDict):
     version: pulumi.Input[_builtins.str]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodeGroupLaunchTemplateArgs:
@@ -1055,7 +1023,6 @@ class NodeGroupNodeRepairConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class NodeGroupNodeRepairConfigArgs:
@@ -1148,7 +1115,6 @@ class NodeGroupNodeRepairConfigNodeRepairConfigOverrideArgsDict(TypedDict):
     node_monitoring_condition: pulumi.Input[_builtins.str]
     node_unhealthy_reason: pulumi.Input[_builtins.str]
     repair_action: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NodeGroupNodeRepairConfigNodeRepairConfigOverrideArgs:
@@ -1186,7 +1152,6 @@ class NodeGroupRemoteAccessArgsDict(TypedDict):
     source_security_group_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class NodeGroupRemoteAccessArgs:
@@ -1218,7 +1183,6 @@ class NodeGroupResourceArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[NodeGroupResourceAutoscalingGroupArgsDict]]]
     ]
     remote_access_security_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodeGroupResourceArgs:
@@ -1256,7 +1220,6 @@ class NodeGroupResourceArgs:
 
 class NodeGroupResourceAutoscalingGroupArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodeGroupResourceAutoscalingGroupArgs:
@@ -1273,7 +1236,6 @@ class NodeGroupScalingConfigArgsDict(TypedDict):
     desired_size: pulumi.Input[_builtins.int]
     max_size: pulumi.Input[_builtins.int]
     min_size: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class NodeGroupScalingConfigArgs:
@@ -1304,7 +1266,6 @@ class NodeGroupTaintArgsDict(TypedDict):
     effect: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodeGroupTaintArgs:
@@ -1335,7 +1296,6 @@ class NodeGroupUpdateConfigArgsDict(TypedDict):
     max_unavailable: NotRequired[pulumi.Input[_builtins.int]]
     max_unavailable_percentage: NotRequired[pulumi.Input[_builtins.int]]
     update_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodeGroupUpdateConfigArgs:

@@ -29,7 +29,6 @@ class CollaborationDataEncryptionMetadataArgsDict(TypedDict):
     allow_duplicates: pulumi.Input[_builtins.bool]
     allow_joins_on_columns_with_different_names: pulumi.Input[_builtins.bool]
     preserve_nulls: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class CollaborationDataEncryptionMetadataArgs:
@@ -71,7 +70,6 @@ class CollaborationMemberArgsDict(TypedDict):
     display_name: pulumi.Input[_builtins.str]
     member_abilities: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CollaborationMemberArgs:
@@ -111,7 +109,6 @@ class CollaborationMemberArgs:
 class ConfiguredTableTableReferenceArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
     table_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConfiguredTableTableReferenceArgs:
@@ -137,7 +134,6 @@ class MembershipDefaultResultConfigurationArgsDict(TypedDict):
         MembershipDefaultResultConfigurationOutputConfigurationArgsDict
     ]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipDefaultResultConfigurationArgs:
@@ -169,7 +165,6 @@ class MembershipDefaultResultConfigurationArgs:
 
 class MembershipDefaultResultConfigurationOutputConfigurationArgsDict(TypedDict):
     s3: pulumi.Input[MembershipDefaultResultConfigurationOutputConfigurationS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class MembershipDefaultResultConfigurationOutputConfigurationArgs:
@@ -197,7 +192,6 @@ class MembershipDefaultResultConfigurationOutputConfigurationS3ArgsDict(TypedDic
     bucket: pulumi.Input[_builtins.str]
     result_format: pulumi.Input[_builtins.str]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MembershipDefaultResultConfigurationOutputConfigurationS3Args:
@@ -226,7 +220,6 @@ class MembershipDefaultResultConfigurationOutputConfigurationS3Args:
 
 class MembershipPaymentConfigurationArgsDict(TypedDict):
     query_compute: pulumi.Input[MembershipPaymentConfigurationQueryComputeArgsDict]
-    ...
 
 @pulumi.input_type
 class MembershipPaymentConfigurationArgs:
@@ -247,7 +240,6 @@ class MembershipPaymentConfigurationArgs:
 
 class MembershipPaymentConfigurationQueryComputeArgsDict(TypedDict):
     is_responsible: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class MembershipPaymentConfigurationQueryComputeArgs:

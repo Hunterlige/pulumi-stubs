@@ -21,7 +21,6 @@ class ServiceQuotaUsageMetricArgsDict(TypedDict):
     metric_name: NotRequired[pulumi.Input[_builtins.str]]
     metric_namespace: NotRequired[pulumi.Input[_builtins.str]]
     metric_statistic_recommendation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceQuotaUsageMetricArgs:
@@ -78,7 +77,6 @@ class ServiceQuotaUsageMetricMetricDimensionArgsDict(TypedDict):
     resource: NotRequired[pulumi.Input[_builtins.str]]
     service: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceQuotaUsageMetricMetricDimensionArgs:

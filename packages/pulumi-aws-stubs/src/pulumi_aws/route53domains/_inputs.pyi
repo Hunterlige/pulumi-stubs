@@ -46,7 +46,6 @@ class DelegationSignerRecordSigningAttributesArgsDict(TypedDict):
     algorithm: pulumi.Input[_builtins.int]
     flags: pulumi.Input[_builtins.int]
     public_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DelegationSignerRecordSigningAttributesArgs:
@@ -76,7 +75,6 @@ class DelegationSignerRecordSigningAttributesArgs:
 class DelegationSignerRecordTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DelegationSignerRecordTimeoutsArgs:
@@ -114,7 +112,6 @@ class DomainAdminContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainAdminContactArgs:
@@ -221,7 +218,6 @@ class DomainAdminContactArgs:
 class DomainAdminContactExtraParamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainAdminContactExtraParamArgs:
@@ -259,7 +255,6 @@ class DomainBillingContactArgsDict(TypedDict):
     phone_number: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
     zip_code: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainBillingContactArgs:
@@ -362,7 +357,6 @@ class DomainBillingContactArgs:
 class DomainBillingContactExtraParamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainBillingContactExtraParamArgs:
@@ -386,7 +380,6 @@ class DomainBillingContactExtraParamArgs:
 class DomainNameServerArgsDict(TypedDict):
     glue_ips: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainNameServerArgs:
@@ -424,7 +417,6 @@ class DomainRegistrantContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainRegistrantContactArgs:
@@ -531,7 +523,6 @@ class DomainRegistrantContactArgs:
 class DomainRegistrantContactExtraParamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainRegistrantContactExtraParamArgs:
@@ -569,7 +560,6 @@ class DomainTechContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainTechContactArgs:
@@ -676,7 +666,6 @@ class DomainTechContactArgs:
 class DomainTechContactExtraParamArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainTechContactExtraParamArgs:
@@ -701,7 +690,6 @@ class DomainTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainTimeoutsArgs:
@@ -743,7 +731,6 @@ class RegisteredDomainAdminContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegisteredDomainAdminContactArgs:
@@ -857,7 +844,6 @@ class RegisteredDomainBillingContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegisteredDomainBillingContactArgs:
@@ -959,7 +945,6 @@ class RegisteredDomainBillingContactArgs:
 class RegisteredDomainNameServerArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     glue_ips: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RegisteredDomainNameServerArgs:
@@ -999,7 +984,6 @@ class RegisteredDomainRegistrantContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegisteredDomainRegistrantContactArgs:
@@ -1113,7 +1097,6 @@ class RegisteredDomainTechContactArgsDict(TypedDict):
     phone_number: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     zip_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegisteredDomainTechContactArgs:

@@ -55,7 +55,6 @@ class FunctionBuildConfigArgsDict(TypedDict):
     service_account: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[FunctionBuildConfigSourceArgsDict]]
     worker_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionBuildConfigArgs:
@@ -151,7 +150,6 @@ class FunctionBuildConfigAutomaticUpdatePolicyArgs:
 
 class FunctionBuildConfigOnDeployUpdatePolicyArgsDict(TypedDict):
     runtime_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionBuildConfigOnDeployUpdatePolicyArgs:
@@ -169,7 +167,6 @@ class FunctionBuildConfigSourceArgsDict(TypedDict):
     storage_source: NotRequired[
         pulumi.Input[FunctionBuildConfigSourceStorageSourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FunctionBuildConfigSourceArgs:
@@ -210,7 +207,6 @@ class FunctionBuildConfigSourceRepoSourceArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     repo_name: NotRequired[pulumi.Input[_builtins.str]]
     tag_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionBuildConfigSourceRepoSourceArgs:
@@ -265,7 +261,6 @@ class FunctionBuildConfigSourceStorageSourceArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     generation: NotRequired[pulumi.Input[_builtins.int]]
     object: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionBuildConfigSourceStorageSourceArgs:
@@ -302,7 +297,6 @@ class FunctionEventTriggerArgsDict(TypedDict):
     service_account_email: NotRequired[pulumi.Input[_builtins.str]]
     trigger: NotRequired[pulumi.Input[_builtins.str]]
     trigger_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionEventTriggerArgs:
@@ -368,7 +362,6 @@ class FunctionEventTriggerEventFilterArgsDict(TypedDict):
     attribute: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     operator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionEventTriggerEventFilterArgs:
@@ -399,7 +392,6 @@ class FunctionIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionIamBindingConditionArgs:
@@ -430,7 +422,6 @@ class FunctionIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionIamMemberConditionArgs:
@@ -494,7 +485,6 @@ class FunctionServiceConfigArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
     vpc_connector: NotRequired[pulumi.Input[_builtins.str]]
     vpc_connector_egress_settings: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionServiceConfigArgs:
@@ -700,7 +690,6 @@ class FunctionServiceConfigDirectVpcNetworkInterfaceArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FunctionServiceConfigDirectVpcNetworkInterfaceArgs:
@@ -734,7 +723,6 @@ class FunctionServiceConfigSecretEnvironmentVariableArgsDict(TypedDict):
     project_id: pulumi.Input[_builtins.str]
     secret: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionServiceConfigSecretEnvironmentVariableArgs:
@@ -776,7 +764,6 @@ class FunctionServiceConfigSecretVolumeArgsDict(TypedDict):
             Sequence[pulumi.Input[FunctionServiceConfigSecretVolumeVersionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FunctionServiceConfigSecretVolumeArgs:
@@ -829,7 +816,6 @@ class FunctionServiceConfigSecretVolumeArgs:
 class FunctionServiceConfigSecretVolumeVersionArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionServiceConfigSecretVolumeVersionArgs:

@@ -123,7 +123,6 @@ class ConnectionAuthConfigArgsDict(TypedDict):
     ]
     ssh_public_key: NotRequired[pulumi.Input[ConnectionAuthConfigSshPublicKeyArgsDict]]
     user_password: NotRequired[pulumi.Input[ConnectionAuthConfigUserPasswordArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigArgs:
@@ -237,7 +236,6 @@ class ConnectionAuthConfigAdditionalVariableArgsDict(TypedDict):
         pulumi.Input[ConnectionAuthConfigAdditionalVariableSecretValueArgsDict]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigAdditionalVariableArgs:
@@ -307,7 +305,6 @@ class ConnectionAuthConfigAdditionalVariableArgs:
 class ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgs:
@@ -330,7 +327,6 @@ class ConnectionAuthConfigAdditionalVariableEncryptionKeyValueArgs:
 
 class ConnectionAuthConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigAdditionalVariableSecretValueArgs:
@@ -349,7 +345,6 @@ class ConnectionAuthConfigOauth2AuthCodeFlowArgsDict(TypedDict):
     ]
     enable_pkce: NotRequired[pulumi.Input[_builtins.bool]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2AuthCodeFlowArgs:
@@ -405,7 +400,6 @@ class ConnectionAuthConfigOauth2AuthCodeFlowArgs:
 
 class ConnectionAuthConfigOauth2AuthCodeFlowClientSecretArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2AuthCodeFlowClientSecretArgs:
@@ -421,7 +415,6 @@ class ConnectionAuthConfigOauth2ClientCredentialsArgsDict(TypedDict):
     client_secret: NotRequired[
         pulumi.Input[ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2ClientCredentialsArgs:
@@ -455,7 +448,6 @@ class ConnectionAuthConfigOauth2ClientCredentialsArgs:
 
 class ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2ClientCredentialsClientSecretArgs:
@@ -473,7 +465,6 @@ class ConnectionAuthConfigOauth2JwtBearerArgsDict(TypedDict):
     jwt_claims: NotRequired[
         pulumi.Input[ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2JwtBearerArgs:
@@ -510,7 +501,6 @@ class ConnectionAuthConfigOauth2JwtBearerArgs:
 
 class ConnectionAuthConfigOauth2JwtBearerClientKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2JwtBearerClientKeyArgs:
@@ -525,7 +515,6 @@ class ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgsDict(TypedDict):
     audience: NotRequired[pulumi.Input[_builtins.str]]
     issuer: NotRequired[pulumi.Input[_builtins.str]]
     subject: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigOauth2JwtBearerJwtClaimsArgs:
@@ -561,7 +550,6 @@ class ConnectionAuthConfigSshPublicKeyArgsDict(TypedDict):
     ssh_client_cert_pass: NotRequired[
         pulumi.Input[ConnectionAuthConfigSshPublicKeySshClientCertPassArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigSshPublicKeyArgs:
@@ -616,7 +604,6 @@ class ConnectionAuthConfigSshPublicKeyArgs:
 
 class ConnectionAuthConfigSshPublicKeySshClientCertArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigSshPublicKeySshClientCertArgs:
@@ -629,7 +616,6 @@ class ConnectionAuthConfigSshPublicKeySshClientCertArgs:
 
 class ConnectionAuthConfigSshPublicKeySshClientCertPassArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigSshPublicKeySshClientCertPassArgs:
@@ -645,7 +631,6 @@ class ConnectionAuthConfigUserPasswordArgsDict(TypedDict):
     password: NotRequired[
         pulumi.Input[ConnectionAuthConfigUserPasswordPasswordArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigUserPasswordArgs:
@@ -675,7 +660,6 @@ class ConnectionAuthConfigUserPasswordArgs:
 
 class ConnectionAuthConfigUserPasswordPasswordArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionAuthConfigUserPasswordPasswordArgs:
@@ -695,7 +679,6 @@ class ConnectionConfigVariableArgsDict(TypedDict):
     integer_value: NotRequired[pulumi.Input[_builtins.int]]
     secret_value: NotRequired[pulumi.Input[ConnectionConfigVariableSecretValueArgsDict]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionConfigVariableArgs:
@@ -756,7 +739,6 @@ class ConnectionConfigVariableArgs:
 class ConnectionConfigVariableEncryptionKeyValueArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionConfigVariableEncryptionKeyValueArgs:
@@ -779,7 +761,6 @@ class ConnectionConfigVariableEncryptionKeyValueArgs:
 
 class ConnectionConfigVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionConfigVariableSecretValueArgs:
@@ -792,7 +773,6 @@ class ConnectionConfigVariableSecretValueArgs:
 
 class ConnectionConnectorVersionInfraConfigArgsDict(TypedDict):
     ratelimit_threshold: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionConnectorVersionInfraConfigArgs:
@@ -812,7 +792,6 @@ class ConnectionDestinationConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[ConnectionDestinationConfigDestinationArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionDestinationConfigArgs:
@@ -852,7 +831,6 @@ class ConnectionDestinationConfigDestinationArgsDict(TypedDict):
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionDestinationConfigDestinationArgs:
@@ -890,7 +868,6 @@ class ConnectionEventingConfigArgsDict(TypedDict):
     ]
     auth_config: NotRequired[pulumi.Input[ConnectionEventingConfigAuthConfigArgsDict]]
     enrichment_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigArgs:
@@ -966,7 +943,6 @@ class ConnectionEventingConfigAdditionalVariableArgsDict(TypedDict):
         pulumi.Input[ConnectionEventingConfigAdditionalVariableSecretValueArgsDict]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAdditionalVariableArgs:
@@ -1040,7 +1016,6 @@ class ConnectionEventingConfigAdditionalVariableArgs:
 class ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgs:
@@ -1063,7 +1038,6 @@ class ConnectionEventingConfigAdditionalVariableEncryptionKeyValueArgs:
 
 class ConnectionEventingConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAdditionalVariableSecretValueArgs:
@@ -1087,7 +1061,6 @@ class ConnectionEventingConfigAuthConfigArgsDict(TypedDict):
         ]
     ]
     auth_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigArgs:
@@ -1166,7 +1139,6 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableArgsDict(TypedDict):
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigAdditionalVariableArgs:
@@ -1250,7 +1222,6 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueArgs
 ):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueArgs:
@@ -1275,7 +1246,6 @@ class ConnectionEventingConfigAuthConfigAdditionalVariableSecretValueArgsDict(
     TypedDict
 ):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigAdditionalVariableSecretValueArgs:
@@ -1291,7 +1261,6 @@ class ConnectionEventingConfigAuthConfigUserPasswordArgsDict(TypedDict):
         pulumi.Input[ConnectionEventingConfigAuthConfigUserPasswordPasswordArgsDict]
     ]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigUserPasswordArgs:
@@ -1325,7 +1294,6 @@ class ConnectionEventingConfigAuthConfigUserPasswordArgs:
 
 class ConnectionEventingConfigAuthConfigUserPasswordPasswordArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigAuthConfigUserPasswordPasswordArgs:
@@ -1347,7 +1315,6 @@ class ConnectionEventingConfigRegistrationDestinationConfigArgsDict(TypedDict):
         ]
     ]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigRegistrationDestinationConfigArgs:
@@ -1403,7 +1370,6 @@ class ConnectionEventingConfigRegistrationDestinationConfigDestinationArgsDict(
     host: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingConfigRegistrationDestinationConfigDestinationArgs:
@@ -1437,7 +1403,6 @@ class ConnectionEventingRuntimeDataArgsDict(TypedDict):
             Sequence[pulumi.Input[ConnectionEventingRuntimeDataStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingRuntimeDataArgs:
@@ -1478,7 +1443,6 @@ class ConnectionEventingRuntimeDataArgs:
 class ConnectionEventingRuntimeDataStatusArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionEventingRuntimeDataStatusArgs:
@@ -1502,7 +1466,6 @@ class ConnectionEventingRuntimeDataStatusArgs:
 class ConnectionLockConfigArgsDict(TypedDict):
     locked: pulumi.Input[_builtins.bool]
     reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionLockConfigArgs:
@@ -1526,7 +1489,6 @@ class ConnectionLockConfigArgs:
 class ConnectionLogConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionLogConfigArgs:
@@ -1550,7 +1512,6 @@ class ConnectionLogConfigArgs:
 class ConnectionNodeConfigArgsDict(TypedDict):
     max_node_count: NotRequired[pulumi.Input[_builtins.int]]
     min_node_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectionNodeConfigArgs:
@@ -1594,7 +1555,6 @@ class ConnectionSslConfigArgsDict(TypedDict):
     server_cert_type: NotRequired[pulumi.Input[_builtins.str]]
     trust_model: NotRequired[pulumi.Input[_builtins.str]]
     use_ssl: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigArgs:
@@ -1714,7 +1674,6 @@ class ConnectionSslConfigAdditionalVariableArgsDict(TypedDict):
         pulumi.Input[ConnectionSslConfigAdditionalVariableSecretValueArgsDict]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigAdditionalVariableArgs:
@@ -1784,7 +1743,6 @@ class ConnectionSslConfigAdditionalVariableArgs:
 class ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgs:
@@ -1807,7 +1765,6 @@ class ConnectionSslConfigAdditionalVariableEncryptionKeyValueArgs:
 
 class ConnectionSslConfigAdditionalVariableSecretValueArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigAdditionalVariableSecretValueArgs:
@@ -1820,7 +1777,6 @@ class ConnectionSslConfigAdditionalVariableSecretValueArgs:
 
 class ConnectionSslConfigClientCertificateArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigClientCertificateArgs:
@@ -1833,7 +1789,6 @@ class ConnectionSslConfigClientCertificateArgs:
 
 class ConnectionSslConfigClientPrivateKeyArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigClientPrivateKeyArgs:
@@ -1846,7 +1801,6 @@ class ConnectionSslConfigClientPrivateKeyArgs:
 
 class ConnectionSslConfigClientPrivateKeyPassArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigClientPrivateKeyPassArgs:
@@ -1859,7 +1813,6 @@ class ConnectionSslConfigClientPrivateKeyPassArgs:
 
 class ConnectionSslConfigPrivateServerCertificateArgsDict(TypedDict):
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionSslConfigPrivateServerCertificateArgs:
@@ -1874,7 +1827,6 @@ class ConnectionStatusArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionStatusArgs:

@@ -79,7 +79,6 @@ __all__ = [
 class AccountConnectorProviderOauthConfigArgsDict(TypedDict):
     scopes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     system_provider_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccountConnectorProviderOauthConfigArgs:
@@ -109,7 +108,6 @@ class ConnectionBitbucketCloudConfigArgsDict(TypedDict):
     ]
     webhook_secret_secret_version: pulumi.Input[_builtins.str]
     workspace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigArgs:
@@ -159,7 +157,6 @@ class ConnectionBitbucketCloudConfigArgs:
 class ConnectionBitbucketCloudConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigAuthorizerCredentialArgs:
@@ -183,7 +180,6 @@ class ConnectionBitbucketCloudConfigAuthorizerCredentialArgs:
 class ConnectionBitbucketCloudConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketCloudConfigReadAuthorizerCredentialArgs:
@@ -218,7 +214,6 @@ class ConnectionBitbucketDataCenterConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgsDict]
     ]
     ssl_ca_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigArgs:
@@ -303,7 +298,6 @@ class ConnectionBitbucketDataCenterConfigArgs:
 class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgs:
@@ -327,7 +321,6 @@ class ConnectionBitbucketDataCenterConfigAuthorizerCredentialArgs:
 class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgs:
@@ -350,7 +343,6 @@ class ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialArgs:
 
 class ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgs:
@@ -363,7 +355,6 @@ class ConnectionBitbucketDataCenterConfigServiceDirectoryConfigArgs:
 
 class ConnectionCryptoKeyConfigArgsDict(TypedDict):
     key_reference: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionCryptoKeyConfigArgs:
@@ -381,7 +372,6 @@ class ConnectionGithubConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionGithubConfigAuthorizerCredentialArgsDict]
     ]
     installation_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubConfigArgs:
@@ -424,7 +414,6 @@ class ConnectionGithubConfigArgs:
 class ConnectionGithubConfigAuthorizerCredentialArgsDict(TypedDict):
     oauth_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubConfigAuthorizerCredentialArgs:
@@ -458,7 +447,6 @@ class ConnectionGithubEnterpriseConfigArgsDict(TypedDict):
     ]
     ssl_ca_certificate: NotRequired[pulumi.Input[_builtins.str]]
     webhook_secret_secret_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubEnterpriseConfigArgs:
@@ -546,7 +534,6 @@ class ConnectionGithubEnterpriseConfigArgs:
 
 class ConnectionGithubEnterpriseConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionGithubEnterpriseConfigServiceDirectoryConfigArgs:
@@ -565,7 +552,6 @@ class ConnectionGitlabConfigArgsDict(TypedDict):
         ConnectionGitlabConfigReadAuthorizerCredentialArgsDict
     ]
     webhook_secret_secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigArgs:
@@ -607,7 +593,6 @@ class ConnectionGitlabConfigArgs:
 class ConnectionGitlabConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigAuthorizerCredentialArgs:
@@ -631,7 +616,6 @@ class ConnectionGitlabConfigAuthorizerCredentialArgs:
 class ConnectionGitlabConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabConfigReadAuthorizerCredentialArgs:
@@ -666,7 +650,6 @@ class ConnectionGitlabEnterpriseConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionGitlabEnterpriseConfigServiceDirectoryConfigArgsDict]
     ]
     ssl_ca_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabEnterpriseConfigArgs:
@@ -747,7 +730,6 @@ class ConnectionGitlabEnterpriseConfigArgs:
 class ConnectionGitlabEnterpriseConfigAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabEnterpriseConfigAuthorizerCredentialArgs:
@@ -771,7 +753,6 @@ class ConnectionGitlabEnterpriseConfigAuthorizerCredentialArgs:
 class ConnectionGitlabEnterpriseConfigReadAuthorizerCredentialArgsDict(TypedDict):
     user_token_secret_version: pulumi.Input[_builtins.str]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabEnterpriseConfigReadAuthorizerCredentialArgs:
@@ -794,7 +775,6 @@ class ConnectionGitlabEnterpriseConfigReadAuthorizerCredentialArgs:
 
 class ConnectionGitlabEnterpriseConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionGitlabEnterpriseConfigServiceDirectoryConfigArgs:
@@ -817,7 +797,6 @@ class ConnectionHttpConfigArgsDict(TypedDict):
         pulumi.Input[ConnectionHttpConfigServiceDirectoryConfigArgsDict]
     ]
     ssl_ca_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionHttpConfigArgs:
@@ -881,7 +860,6 @@ class ConnectionHttpConfigArgs:
 class ConnectionHttpConfigBasicAuthenticationArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
     password_secret_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionHttpConfigBasicAuthenticationArgs:
@@ -904,7 +882,6 @@ class ConnectionHttpConfigBasicAuthenticationArgs:
 
 class ConnectionHttpConfigBearerTokenAuthenticationArgsDict(TypedDict):
     token_secret_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionHttpConfigBearerTokenAuthenticationArgs:
@@ -919,7 +896,6 @@ class ConnectionHttpConfigBearerTokenAuthenticationArgs:
 
 class ConnectionHttpConfigServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionHttpConfigServiceDirectoryConfigArgs:
@@ -934,7 +910,6 @@ class ConnectionInstallationStateArgsDict(TypedDict):
     action_uri: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
     stage: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionInstallationStateArgs:
@@ -969,7 +944,6 @@ class InsightsConfigArtifactConfigArgsDict(TypedDict):
         pulumi.Input[InsightsConfigArtifactConfigGoogleArtifactRegistryArgsDict]
     ]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigArtifactConfigArgs:
@@ -1020,7 +994,6 @@ class InsightsConfigArtifactConfigArgs:
 
 class InsightsConfigArtifactConfigGoogleArtifactAnalysisArgsDict(TypedDict):
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightsConfigArtifactConfigGoogleArtifactAnalysisArgs:
@@ -1034,7 +1007,6 @@ class InsightsConfigArtifactConfigGoogleArtifactAnalysisArgs:
 class InsightsConfigArtifactConfigGoogleArtifactRegistryArgsDict(TypedDict):
     artifact_registry_package: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InsightsConfigArtifactConfigGoogleArtifactRegistryArgs:
@@ -1061,7 +1033,6 @@ class InsightsConfigErrorArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[InsightsConfigErrorDetailArgsDict]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigErrorArgs:
@@ -1101,7 +1072,6 @@ class InsightsConfigErrorArgs:
 
 class InsightsConfigErrorDetailArgsDict(TypedDict):
     detail_message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigErrorDetailArgs:
@@ -1123,7 +1093,6 @@ class InsightsConfigRuntimeConfigArgsDict(TypedDict):
         pulumi.Input[InsightsConfigRuntimeConfigGkeWorkloadArgsDict]
     ]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigRuntimeConfigArgs:
@@ -1173,7 +1142,6 @@ class InsightsConfigRuntimeConfigAppHubWorkloadArgsDict(TypedDict):
     criticality: NotRequired[pulumi.Input[_builtins.str]]
     environment: NotRequired[pulumi.Input[_builtins.str]]
     workload: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigRuntimeConfigAppHubWorkloadArgs:
@@ -1203,7 +1171,6 @@ class InsightsConfigRuntimeConfigAppHubWorkloadArgs:
 class InsightsConfigRuntimeConfigGkeWorkloadArgsDict(TypedDict):
     cluster: pulumi.Input[_builtins.str]
     deployment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigRuntimeConfigGkeWorkloadArgs:
@@ -1226,7 +1193,6 @@ class InsightsConfigRuntimeConfigGkeWorkloadArgs:
 
 class InsightsConfigTargetProjectsArgsDict(TypedDict):
     project_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InsightsConfigTargetProjectsArgs:

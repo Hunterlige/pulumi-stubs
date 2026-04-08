@@ -42,7 +42,6 @@ __all__ = [
 
 class RegionalSecretCustomerManagedEncryptionArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegionalSecretCustomerManagedEncryptionArgs:
@@ -57,7 +56,6 @@ class RegionalSecretIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegionalSecretIamBindingConditionArgs:
@@ -88,7 +86,6 @@ class RegionalSecretIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegionalSecretIamMemberConditionArgs:
@@ -118,7 +115,6 @@ class RegionalSecretIamMemberConditionArgs:
 class RegionalSecretRotationArgsDict(TypedDict):
     next_rotation_time: NotRequired[pulumi.Input[_builtins.str]]
     rotation_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegionalSecretRotationArgs:
@@ -141,7 +137,6 @@ class RegionalSecretRotationArgs:
 
 class RegionalSecretTopicArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegionalSecretTopicArgs:
@@ -154,7 +149,6 @@ class RegionalSecretTopicArgs:
 
 class RegionalSecretVersionCustomerManagedEncryptionArgsDict(TypedDict):
     kms_key_version_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RegionalSecretVersionCustomerManagedEncryptionArgs:
@@ -171,7 +165,6 @@ class SecretIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecretIamBindingConditionArgs:
@@ -202,7 +195,6 @@ class SecretIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecretIamMemberConditionArgs:
@@ -232,7 +224,6 @@ class SecretIamMemberConditionArgs:
 class SecretReplicationArgsDict(TypedDict):
     auto: NotRequired[pulumi.Input[SecretReplicationAutoArgsDict]]
     user_managed: NotRequired[pulumi.Input[SecretReplicationUserManagedArgsDict]]
-    ...
 
 @pulumi.input_type
 class SecretReplicationArgs:
@@ -261,7 +252,6 @@ class SecretReplicationAutoArgsDict(TypedDict):
     customer_managed_encryption: NotRequired[
         pulumi.Input[SecretReplicationAutoCustomerManagedEncryptionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SecretReplicationAutoArgs:
@@ -287,7 +277,6 @@ class SecretReplicationAutoArgs:
 
 class SecretReplicationAutoCustomerManagedEncryptionArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecretReplicationAutoCustomerManagedEncryptionArgs:
@@ -302,7 +291,6 @@ class SecretReplicationUserManagedArgsDict(TypedDict):
     replicas: pulumi.Input[
         Sequence[pulumi.Input[SecretReplicationUserManagedReplicaArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class SecretReplicationUserManagedArgs:
@@ -335,7 +323,6 @@ class SecretReplicationUserManagedReplicaArgsDict(TypedDict):
             SecretReplicationUserManagedReplicaCustomerManagedEncryptionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecretReplicationUserManagedReplicaArgs:
@@ -373,7 +360,6 @@ class SecretReplicationUserManagedReplicaArgs:
 
 class SecretReplicationUserManagedReplicaCustomerManagedEncryptionArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecretReplicationUserManagedReplicaCustomerManagedEncryptionArgs:
@@ -387,7 +373,6 @@ class SecretReplicationUserManagedReplicaCustomerManagedEncryptionArgs:
 class SecretRotationArgsDict(TypedDict):
     next_rotation_time: NotRequired[pulumi.Input[_builtins.str]]
     rotation_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecretRotationArgs:
@@ -410,7 +395,6 @@ class SecretRotationArgs:
 
 class SecretTopicArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecretTopicArgs:

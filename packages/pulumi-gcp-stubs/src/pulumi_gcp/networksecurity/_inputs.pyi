@@ -175,7 +175,6 @@ class AddressGroupIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AddressGroupIamBindingConditionArgs:
@@ -206,7 +205,6 @@ class AddressGroupIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AddressGroupIamMemberConditionArgs:
@@ -240,7 +238,6 @@ class AuthorizationPolicyRuleArgsDict(TypedDict):
     sources: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AuthorizationPolicyRuleSourceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AuthorizationPolicyRuleArgs:
@@ -290,7 +287,6 @@ class AuthorizationPolicyRuleDestinationArgsDict(TypedDict):
     http_header_match: NotRequired[
         pulumi.Input[AuthorizationPolicyRuleDestinationHttpHeaderMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthorizationPolicyRuleDestinationArgs:
@@ -337,7 +333,6 @@ class AuthorizationPolicyRuleDestinationArgs:
 class AuthorizationPolicyRuleDestinationHttpHeaderMatchArgsDict(TypedDict):
     header_name: pulumi.Input[_builtins.str]
     regex_match: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AuthorizationPolicyRuleDestinationHttpHeaderMatchArgs:
@@ -361,7 +356,6 @@ class AuthorizationPolicyRuleDestinationHttpHeaderMatchArgs:
 class AuthorizationPolicyRuleSourceArgsDict(TypedDict):
     ip_blocks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principals: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorizationPolicyRuleSourceArgs:
@@ -395,7 +389,6 @@ class AuthzPolicyCustomProviderArgsDict(TypedDict):
         pulumi.Input[AuthzPolicyCustomProviderAuthzExtensionArgsDict]
     ]
     cloud_iap: NotRequired[pulumi.Input[AuthzPolicyCustomProviderCloudIapArgsDict]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyCustomProviderArgs:
@@ -428,7 +421,6 @@ class AuthzPolicyCustomProviderArgs:
 
 class AuthzPolicyCustomProviderAuthzExtensionArgsDict(TypedDict):
     resources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyCustomProviderAuthzExtensionArgs:
@@ -443,7 +435,6 @@ class AuthzPolicyCustomProviderAuthzExtensionArgs:
 
 class AuthzPolicyCustomProviderCloudIapArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyCustomProviderCloudIapArgs:
@@ -458,7 +449,6 @@ class AuthzPolicyHttpRuleArgsDict(TypedDict):
     from_: NotRequired[pulumi.Input[AuthzPolicyHttpRuleFromArgsDict]]
     to: NotRequired[pulumi.Input[AuthzPolicyHttpRuleToArgsDict]]
     when: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleArgs:
@@ -492,7 +482,6 @@ class AuthzPolicyHttpRuleFromArgsDict(TypedDict):
     sources: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AuthzPolicyHttpRuleFromSourceArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromArgs:
@@ -551,7 +540,6 @@ class AuthzPolicyHttpRuleFromNotSourceArgsDict(TypedDict):
             Sequence[pulumi.Input[AuthzPolicyHttpRuleFromNotSourceResourceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourceArgs:
@@ -632,7 +620,6 @@ class AuthzPolicyHttpRuleFromNotSourceArgs:
 class AuthzPolicyHttpRuleFromNotSourceIpBlockArgsDict(TypedDict):
     length: pulumi.Input[_builtins.int]
     prefix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourceIpBlockArgs:
@@ -663,7 +650,6 @@ class AuthzPolicyHttpRuleFromNotSourcePrincipalArgsDict(TypedDict):
     ]
     principal_selector: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourcePrincipalArgs:
@@ -736,7 +722,6 @@ class AuthzPolicyHttpRuleFromNotSourcePrincipalPrincipalArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourcePrincipalPrincipalArgs:
@@ -782,7 +767,6 @@ class AuthzPolicyHttpRuleFromNotSourceResourceArgsDict(TypedDict):
     tag_value_id_set: NotRequired[
         pulumi.Input[AuthzPolicyHttpRuleFromNotSourceResourceTagValueIdSetArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourceResourceArgs:
@@ -831,7 +815,6 @@ class AuthzPolicyHttpRuleFromNotSourceResourceIamServiceAccountArgsDict(TypedDic
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourceResourceIamServiceAccountArgs:
@@ -872,7 +855,6 @@ class AuthzPolicyHttpRuleFromNotSourceResourceIamServiceAccountArgs:
 
 class AuthzPolicyHttpRuleFromNotSourceResourceTagValueIdSetArgsDict(TypedDict):
     ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromNotSourceResourceTagValueIdSetArgs:
@@ -905,7 +887,6 @@ class AuthzPolicyHttpRuleFromSourceArgsDict(TypedDict):
             Sequence[pulumi.Input[AuthzPolicyHttpRuleFromSourceResourceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourceArgs:
@@ -980,7 +961,6 @@ class AuthzPolicyHttpRuleFromSourceArgs:
 class AuthzPolicyHttpRuleFromSourceIpBlockArgsDict(TypedDict):
     length: pulumi.Input[_builtins.int]
     prefix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourceIpBlockArgs:
@@ -1011,7 +991,6 @@ class AuthzPolicyHttpRuleFromSourcePrincipalArgsDict(TypedDict):
     ]
     principal_selector: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourcePrincipalArgs:
@@ -1084,7 +1063,6 @@ class AuthzPolicyHttpRuleFromSourcePrincipalPrincipalArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourcePrincipalPrincipalArgs:
@@ -1130,7 +1108,6 @@ class AuthzPolicyHttpRuleFromSourceResourceArgsDict(TypedDict):
     tag_value_id_set: NotRequired[
         pulumi.Input[AuthzPolicyHttpRuleFromSourceResourceTagValueIdSetArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourceResourceArgs:
@@ -1179,7 +1156,6 @@ class AuthzPolicyHttpRuleFromSourceResourceIamServiceAccountArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourceResourceIamServiceAccountArgs:
@@ -1220,7 +1196,6 @@ class AuthzPolicyHttpRuleFromSourceResourceIamServiceAccountArgs:
 
 class AuthzPolicyHttpRuleFromSourceResourceTagValueIdSetArgsDict(TypedDict):
     ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleFromSourceResourceTagValueIdSetArgs:
@@ -1244,7 +1219,6 @@ class AuthzPolicyHttpRuleToArgsDict(TypedDict):
     operations: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AuthzPolicyHttpRuleToOperationArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToArgs:
@@ -1302,7 +1276,6 @@ class AuthzPolicyHttpRuleToNotOperationArgsDict(TypedDict):
             Sequence[pulumi.Input[AuthzPolicyHttpRuleToNotOperationPathArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationArgs:
@@ -1384,7 +1357,6 @@ class AuthzPolicyHttpRuleToNotOperationHeaderSetArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationHeaderSetArgs:
@@ -1425,7 +1397,6 @@ class AuthzPolicyHttpRuleToNotOperationHeaderSetHeaderArgsDict(TypedDict):
     value: NotRequired[
         pulumi.Input[AuthzPolicyHttpRuleToNotOperationHeaderSetHeaderValueArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationHeaderSetHeaderArgs:
@@ -1463,7 +1434,6 @@ class AuthzPolicyHttpRuleToNotOperationHeaderSetHeaderValueArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationHeaderSetHeaderValueArgs:
@@ -1508,7 +1478,6 @@ class AuthzPolicyHttpRuleToNotOperationHostArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationHostArgs:
@@ -1553,7 +1522,6 @@ class AuthzPolicyHttpRuleToNotOperationPathArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToNotOperationPathArgs:
@@ -1604,7 +1572,6 @@ class AuthzPolicyHttpRuleToOperationArgsDict(TypedDict):
     paths: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AuthzPolicyHttpRuleToOperationPathArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationArgs:
@@ -1685,7 +1652,6 @@ class AuthzPolicyHttpRuleToOperationHeaderSetArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationHeaderSetArgs:
@@ -1726,7 +1692,6 @@ class AuthzPolicyHttpRuleToOperationHeaderSetHeaderArgsDict(TypedDict):
     value: NotRequired[
         pulumi.Input[AuthzPolicyHttpRuleToOperationHeaderSetHeaderValueArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationHeaderSetHeaderArgs:
@@ -1764,7 +1729,6 @@ class AuthzPolicyHttpRuleToOperationHeaderSetHeaderValueArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationHeaderSetHeaderValueArgs:
@@ -1809,7 +1773,6 @@ class AuthzPolicyHttpRuleToOperationHostArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationHostArgs:
@@ -1855,7 +1818,6 @@ class AuthzPolicyHttpRuleToOperationMcpArgsDict(TypedDict):
             Sequence[pulumi.Input[AuthzPolicyHttpRuleToOperationMcpMethodArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationMcpArgs:
@@ -1902,7 +1864,6 @@ class AuthzPolicyHttpRuleToOperationMcpMethodArgsDict(TypedDict):
             Sequence[pulumi.Input[AuthzPolicyHttpRuleToOperationMcpMethodParamArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationMcpMethodArgs:
@@ -1946,7 +1907,6 @@ class AuthzPolicyHttpRuleToOperationMcpMethodParamArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationMcpMethodParamArgs:
@@ -1991,7 +1951,6 @@ class AuthzPolicyHttpRuleToOperationPathArgsDict(TypedDict):
     ignore_case: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     suffix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyHttpRuleToOperationPathArgs:
@@ -2033,7 +1992,6 @@ class AuthzPolicyHttpRuleToOperationPathArgs:
 class AuthzPolicyTargetArgsDict(TypedDict):
     load_balancing_scheme: NotRequired[pulumi.Input[_builtins.str]]
     resources: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthzPolicyTargetArgs:
@@ -2067,7 +2025,6 @@ class ClientTlsPolicyClientCertificateArgsDict(TypedDict):
     grpc_endpoint: NotRequired[
         pulumi.Input[ClientTlsPolicyClientCertificateGrpcEndpointArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyClientCertificateArgs:
@@ -2112,7 +2069,6 @@ class ClientTlsPolicyClientCertificateArgs:
 
 class ClientTlsPolicyClientCertificateCertificateProviderInstanceArgsDict(TypedDict):
     plugin_instance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyClientCertificateCertificateProviderInstanceArgs:
@@ -2125,7 +2081,6 @@ class ClientTlsPolicyClientCertificateCertificateProviderInstanceArgs:
 
 class ClientTlsPolicyClientCertificateGrpcEndpointArgsDict(TypedDict):
     target_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyClientCertificateGrpcEndpointArgs:
@@ -2145,7 +2100,6 @@ class ClientTlsPolicyServerValidationCaArgsDict(TypedDict):
     grpc_endpoint: NotRequired[
         pulumi.Input[ClientTlsPolicyServerValidationCaGrpcEndpointArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyServerValidationCaArgs:
@@ -2192,7 +2146,6 @@ class ClientTlsPolicyServerValidationCaArgs:
 
 class ClientTlsPolicyServerValidationCaCertificateProviderInstanceArgsDict(TypedDict):
     plugin_instance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyServerValidationCaCertificateProviderInstanceArgs:
@@ -2205,7 +2158,6 @@ class ClientTlsPolicyServerValidationCaCertificateProviderInstanceArgs:
 
 class ClientTlsPolicyServerValidationCaGrpcEndpointArgsDict(TypedDict):
     target_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClientTlsPolicyServerValidationCaGrpcEndpointArgs:
@@ -2218,7 +2170,6 @@ class ClientTlsPolicyServerValidationCaGrpcEndpointArgs:
 
 class FirewallEndpointEndpointSettingsArgsDict(TypedDict):
     jumbo_frames_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FirewallEndpointEndpointSettingsArgs:
@@ -2233,7 +2184,6 @@ class FirewallEndpointEndpointSettingsArgs:
 
 class InterceptDeploymentGroupConnectedEndpointGroupArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptDeploymentGroupConnectedEndpointGroupArgs:
@@ -2249,7 +2199,6 @@ class InterceptDeploymentGroupConnectedEndpointGroupArgs:
 class InterceptDeploymentGroupLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptDeploymentGroupLocationArgs:
@@ -2274,7 +2223,6 @@ class InterceptEndpointGroupAssociationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptEndpointGroupAssociationArgs:
@@ -2304,7 +2252,6 @@ class InterceptEndpointGroupAssociationArgs:
 class InterceptEndpointGroupAssociationLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptEndpointGroupAssociationLocationArgs:
@@ -2328,7 +2275,6 @@ class InterceptEndpointGroupAssociationLocationArgs:
 class InterceptEndpointGroupAssociationLocationsDetailArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptEndpointGroupAssociationLocationsDetailArgs:
@@ -2360,7 +2306,6 @@ class InterceptEndpointGroupConnectedDeploymentGroupArgsDict(TypedDict):
         ]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptEndpointGroupConnectedDeploymentGroupArgs:
@@ -2411,7 +2356,6 @@ class InterceptEndpointGroupConnectedDeploymentGroupArgs:
 class InterceptEndpointGroupConnectedDeploymentGroupLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InterceptEndpointGroupConnectedDeploymentGroupLocationArgs:
@@ -2434,7 +2378,6 @@ class InterceptEndpointGroupConnectedDeploymentGroupLocationArgs:
 
 class MirroringDeploymentGroupConnectedEndpointGroupArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringDeploymentGroupConnectedEndpointGroupArgs:
@@ -2450,7 +2393,6 @@ class MirroringDeploymentGroupConnectedEndpointGroupArgs:
 class MirroringDeploymentGroupLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringDeploymentGroupLocationArgs:
@@ -2475,7 +2417,6 @@ class MirroringEndpointGroupAssociationArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringEndpointGroupAssociationArgs:
@@ -2505,7 +2446,6 @@ class MirroringEndpointGroupAssociationArgs:
 class MirroringEndpointGroupAssociationLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringEndpointGroupAssociationLocationArgs:
@@ -2529,7 +2469,6 @@ class MirroringEndpointGroupAssociationLocationArgs:
 class MirroringEndpointGroupAssociationLocationsDetailArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringEndpointGroupAssociationLocationsDetailArgs:
@@ -2561,7 +2500,6 @@ class MirroringEndpointGroupConnectedDeploymentGroupArgsDict(TypedDict):
         ]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringEndpointGroupConnectedDeploymentGroupArgs:
@@ -2612,7 +2550,6 @@ class MirroringEndpointGroupConnectedDeploymentGroupArgs:
 class MirroringEndpointGroupConnectedDeploymentGroupLocationArgsDict(TypedDict):
     location: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MirroringEndpointGroupConnectedDeploymentGroupLocationArgs:
@@ -2636,7 +2573,6 @@ class MirroringEndpointGroupConnectedDeploymentGroupLocationArgs:
 class SacAttachmentSymantecOptionsArgsDict(TypedDict):
     symantec_location_name: NotRequired[pulumi.Input[_builtins.str]]
     symantec_site: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SacAttachmentSymantecOptionsArgs:
@@ -2660,7 +2596,6 @@ class SacAttachmentSymantecOptionsArgs:
 class SacRealmPairingKeyArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SacRealmPairingKeyArgs:
@@ -2687,7 +2622,6 @@ class SacRealmSymantecOptionsArgsDict(TypedDict):
     ]
     secret_path: NotRequired[pulumi.Input[_builtins.str]]
     symantec_connection_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SacRealmSymantecOptionsArgs:
@@ -2724,7 +2658,6 @@ class SacRealmSymantecOptionsArgs:
 
 class SecurityProfileCustomInterceptProfileArgsDict(TypedDict):
     intercept_endpoint_group: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecurityProfileCustomInterceptProfileArgs:
@@ -2743,7 +2676,6 @@ class SecurityProfileCustomMirroringProfileArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     mirroring_endpoint_group_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityProfileCustomMirroringProfileArgs:
@@ -2808,7 +2740,6 @@ class SecurityProfileThreatPreventionProfileArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityProfileThreatPreventionProfileArgs:
@@ -2921,7 +2852,6 @@ class SecurityProfileThreatPreventionProfileArgs:
 class SecurityProfileThreatPreventionProfileAntivirusOverrideArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
     protocol: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecurityProfileThreatPreventionProfileAntivirusOverrideArgs:
@@ -2945,7 +2875,6 @@ class SecurityProfileThreatPreventionProfileAntivirusOverrideArgs:
 class SecurityProfileThreatPreventionProfileSeverityOverrideArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
     severity: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SecurityProfileThreatPreventionProfileSeverityOverrideArgs:
@@ -2970,7 +2899,6 @@ class SecurityProfileThreatPreventionProfileThreatOverrideArgsDict(TypedDict):
     action: pulumi.Input[_builtins.str]
     threat_id: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityProfileThreatPreventionProfileThreatOverrideArgs:
@@ -3003,7 +2931,6 @@ class SecurityProfileUrlFilteringProfileArgsDict(TypedDict):
             Sequence[pulumi.Input[SecurityProfileUrlFilteringProfileUrlFilterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SecurityProfileUrlFilteringProfileArgs:
@@ -3039,7 +2966,6 @@ class SecurityProfileUrlFilteringProfileUrlFilterArgsDict(TypedDict):
     filtering_action: pulumi.Input[_builtins.str]
     priority: pulumi.Input[_builtins.int]
     urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SecurityProfileUrlFilteringProfileUrlFilterArgs:
@@ -3076,7 +3002,6 @@ class ServerTlsPolicyMtlsPolicyArgsDict(TypedDict):
     ]
     client_validation_mode: NotRequired[pulumi.Input[_builtins.str]]
     client_validation_trust_config: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyMtlsPolicyArgs:
@@ -3133,7 +3058,6 @@ class ServerTlsPolicyMtlsPolicyClientValidationCaArgsDict(TypedDict):
     grpc_endpoint: NotRequired[
         pulumi.Input[ServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyMtlsPolicyClientValidationCaArgs:
@@ -3186,7 +3110,6 @@ class ServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceArgs
     TypedDict
 ):
     plugin_instance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceArgs:
@@ -3199,7 +3122,6 @@ class ServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceArgs
 
 class ServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointArgsDict(TypedDict):
     target_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointArgs:
@@ -3219,7 +3141,6 @@ class ServerTlsPolicyServerCertificateArgsDict(TypedDict):
     grpc_endpoint: NotRequired[
         pulumi.Input[ServerTlsPolicyServerCertificateGrpcEndpointArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyServerCertificateArgs:
@@ -3264,7 +3185,6 @@ class ServerTlsPolicyServerCertificateArgs:
 
 class ServerTlsPolicyServerCertificateCertificateProviderInstanceArgsDict(TypedDict):
     plugin_instance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyServerCertificateCertificateProviderInstanceArgs:
@@ -3277,7 +3197,6 @@ class ServerTlsPolicyServerCertificateCertificateProviderInstanceArgs:
 
 class ServerTlsPolicyServerCertificateGrpcEndpointArgsDict(TypedDict):
     target_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServerTlsPolicyServerCertificateGrpcEndpointArgs:

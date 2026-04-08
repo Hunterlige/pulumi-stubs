@@ -20,7 +20,6 @@ class ClusterParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     apply_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterParameterGroupParameterArgs:
@@ -50,7 +49,6 @@ class ClusterParameterGroupParameterArgs:
 class ClusterServerlessV2ScalingConfigurationArgsDict(TypedDict):
     max_capacity: NotRequired[pulumi.Input[_builtins.float]]
     min_capacity: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ClusterServerlessV2ScalingConfigurationArgs:
@@ -74,7 +72,6 @@ class ClusterServerlessV2ScalingConfigurationArgs:
 class GlobalClusterGlobalClusterMemberArgsDict(TypedDict):
     db_cluster_arn: NotRequired[pulumi.Input[_builtins.str]]
     is_writer: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GlobalClusterGlobalClusterMemberArgs:
@@ -99,7 +96,6 @@ class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     apply_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:

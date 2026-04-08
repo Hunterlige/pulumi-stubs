@@ -42,7 +42,6 @@ class DocumentClassifierInputDataConfigArgsDict(TypedDict):
     label_delimiter: NotRequired[pulumi.Input[_builtins.str]]
     s3_uri: NotRequired[pulumi.Input[_builtins.str]]
     test_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentClassifierInputDataConfigArgs:
@@ -111,7 +110,6 @@ class DocumentClassifierInputDataConfigAugmentedManifestArgsDict(TypedDict):
     document_type: NotRequired[pulumi.Input[_builtins.str]]
     source_documents_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
     split: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentClassifierInputDataConfigAugmentedManifestArgs:
@@ -164,7 +162,6 @@ class DocumentClassifierOutputDataConfigArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     output_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DocumentClassifierOutputDataConfigArgs:
@@ -194,7 +191,6 @@ class DocumentClassifierOutputDataConfigArgs:
 class DocumentClassifierVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DocumentClassifierVpcConfigArgs:
@@ -240,7 +236,6 @@ class EntityRecognizerInputDataConfigArgsDict(TypedDict):
     entity_list: NotRequired[
         pulumi.Input[EntityRecognizerInputDataConfigEntityListArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigArgs:
@@ -341,7 +336,6 @@ class EntityRecognizerInputDataConfigArgs:
 class EntityRecognizerInputDataConfigAnnotationsArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
     test_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigAnnotationsArgs:
@@ -369,7 +363,6 @@ class EntityRecognizerInputDataConfigAugmentedManifestArgsDict(TypedDict):
     document_type: NotRequired[pulumi.Input[_builtins.str]]
     source_documents_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
     split: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigAugmentedManifestArgs:
@@ -422,7 +415,6 @@ class EntityRecognizerInputDataConfigDocumentsArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
     input_format: NotRequired[pulumi.Input[_builtins.str]]
     test_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigDocumentsArgs:
@@ -451,7 +443,6 @@ class EntityRecognizerInputDataConfigDocumentsArgs:
 
 class EntityRecognizerInputDataConfigEntityListArgsDict(TypedDict):
     s3_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigEntityListArgs:
@@ -464,7 +455,6 @@ class EntityRecognizerInputDataConfigEntityListArgs:
 
 class EntityRecognizerInputDataConfigEntityTypeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerInputDataConfigEntityTypeArgs:
@@ -478,7 +468,6 @@ class EntityRecognizerInputDataConfigEntityTypeArgs:
 class EntityRecognizerVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class EntityRecognizerVpcConfigArgs:

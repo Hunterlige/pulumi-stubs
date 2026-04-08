@@ -105,7 +105,6 @@ class DataSourceConfigurationArgsDict(TypedDict):
     web_crawler_configuration: NotRequired[
         pulumi.Input[DataSourceConfigurationWebCrawlerConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationArgs:
@@ -171,7 +170,6 @@ class DataSourceConfigurationS3ConfigurationArgsDict(TypedDict):
     exclusion_patterns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     inclusion_patterns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     inclusion_prefixes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationS3ConfigurationArgs:
@@ -272,7 +270,6 @@ class DataSourceConfigurationS3ConfigurationAccessControlListConfigurationArgsDi
     TypedDict
 ):
     key_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationS3ConfigurationAccessControlListConfigurationArgs:
@@ -289,7 +286,6 @@ class DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgsDi
     TypedDict
 ):
     s3_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgs:
@@ -304,7 +300,6 @@ class DataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationArgs:
 
 class DataSourceConfigurationTemplateConfigurationArgsDict(TypedDict):
     template: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationTemplateConfigurationArgs:
@@ -337,7 +332,6 @@ class DataSourceConfigurationWebCrawlerConfigurationArgsDict(TypedDict):
     url_inclusion_patterns: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationArgs:
@@ -473,7 +467,6 @@ class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationArgs:
@@ -523,7 +516,6 @@ class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationB
     credentials: pulumi.Input[_builtins.str]
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationArgs:
@@ -556,7 +548,6 @@ class DataSourceConfigurationWebCrawlerConfigurationProxyConfigurationArgsDict(
     host: pulumi.Input[_builtins.str]
     port: pulumi.Input[_builtins.int]
     credentials: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationProxyConfigurationArgs:
@@ -594,7 +585,6 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsArgsDict(TypedDict):
             DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationUrlsArgs:
@@ -654,7 +644,6 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationArgs
 ):
     seed_urls: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     web_crawler_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationArgs:
@@ -679,7 +668,6 @@ class DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArg
     TypedDict
 ):
     site_maps: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationArgs:
@@ -713,7 +701,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationArgsDict(TypedDict):
         ]
     ]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationArgs:
@@ -823,7 +810,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationArgsDict
             DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationArgs:
@@ -896,7 +882,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
             DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionConditionOnValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionArgs:
@@ -947,7 +932,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditio
     long_value: NotRequired[pulumi.Input[_builtins.int]]
     string_list_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationConditionConditionOnValueArgs:
@@ -996,7 +980,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetAr
         ]
     ]
     target_document_attribute_value_deletion: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetArgs:
@@ -1057,7 +1040,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTa
     long_value: NotRequired[pulumi.Input[_builtins.int]]
     string_list_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationTargetTargetDocumentAttributeValueArgs:
@@ -1106,7 +1088,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
             DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationArgs:
@@ -1160,7 +1141,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
             DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionArgs:
@@ -1211,7 +1191,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigura
     long_value: NotRequired[pulumi.Input[_builtins.int]]
     string_list_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueArgs:
@@ -1260,7 +1239,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
             DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationArgs:
@@ -1314,7 +1292,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
             DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionArgs:
@@ -1365,7 +1342,6 @@ class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurat
     long_value: NotRequired[pulumi.Input[_builtins.int]]
     string_list_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueArgs:
@@ -1411,7 +1387,6 @@ class ExperienceConfigurationArgsDict(TypedDict):
     user_identity_configuration: NotRequired[
         pulumi.Input[ExperienceConfigurationUserIdentityConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ExperienceConfigurationArgs:
@@ -1458,7 +1433,6 @@ class ExperienceConfigurationContentSourceConfigurationArgsDict(TypedDict):
     data_source_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     direct_put_content: NotRequired[pulumi.Input[_builtins.bool]]
     faq_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ExperienceConfigurationContentSourceConfigurationArgs:
@@ -1497,7 +1471,6 @@ class ExperienceConfigurationContentSourceConfigurationArgs:
 
 class ExperienceConfigurationUserIdentityConfigurationArgsDict(TypedDict):
     identity_attribute_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExperienceConfigurationUserIdentityConfigurationArgs:
@@ -1513,7 +1486,6 @@ class ExperienceConfigurationUserIdentityConfigurationArgs:
 class ExperienceEndpointArgsDict(TypedDict):
     endpoint: NotRequired[pulumi.Input[_builtins.str]]
     endpoint_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExperienceEndpointArgs:
@@ -1537,7 +1509,6 @@ class ExperienceEndpointArgs:
 class FaqS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FaqS3PathArgs:
@@ -1561,7 +1532,6 @@ class FaqS3PathArgs:
 class IndexCapacityUnitsArgsDict(TypedDict):
     query_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     storage_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IndexCapacityUnitsArgs:
@@ -1591,7 +1561,6 @@ class IndexDocumentMetadataConfigurationUpdateArgsDict(TypedDict):
     search: NotRequired[
         pulumi.Input[IndexDocumentMetadataConfigurationUpdateSearchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IndexDocumentMetadataConfigurationUpdateArgs:
@@ -1652,7 +1621,6 @@ class IndexDocumentMetadataConfigurationUpdateRelevanceArgsDict(TypedDict):
     values_importance_map: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.int]]]
     ]
-    ...
 
 @pulumi.input_type
 class IndexDocumentMetadataConfigurationUpdateRelevanceArgs:
@@ -1702,7 +1670,6 @@ class IndexDocumentMetadataConfigurationUpdateSearchArgsDict(TypedDict):
     facetable: NotRequired[pulumi.Input[_builtins.bool]]
     searchable: NotRequired[pulumi.Input[_builtins.bool]]
     sortable: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class IndexDocumentMetadataConfigurationUpdateSearchArgs:
@@ -1744,7 +1711,6 @@ class IndexIndexStatisticArgsDict(TypedDict):
             Sequence[pulumi.Input[IndexIndexStatisticTextDocumentStatisticArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IndexIndexStatisticArgs:
@@ -1795,7 +1761,6 @@ class IndexIndexStatisticArgs:
 
 class IndexIndexStatisticFaqStatisticArgsDict(TypedDict):
     indexed_question_answers_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IndexIndexStatisticFaqStatisticArgs:
@@ -1817,7 +1782,6 @@ class IndexIndexStatisticFaqStatisticArgs:
 class IndexIndexStatisticTextDocumentStatisticArgsDict(TypedDict):
     indexed_text_bytes: NotRequired[pulumi.Input[_builtins.int]]
     indexed_text_documents_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class IndexIndexStatisticTextDocumentStatisticArgs:
@@ -1842,7 +1806,6 @@ class IndexIndexStatisticTextDocumentStatisticArgs:
 
 class IndexServerSideEncryptionConfigurationArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexServerSideEncryptionConfigurationArgs:
@@ -1857,7 +1820,6 @@ class IndexServerSideEncryptionConfigurationArgs:
 
 class IndexUserGroupResolutionConfigurationArgsDict(TypedDict):
     user_group_resolution_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IndexUserGroupResolutionConfigurationArgs:
@@ -1877,7 +1839,6 @@ class IndexUserTokenConfigurationsArgsDict(TypedDict):
     jwt_token_type_configuration: NotRequired[
         pulumi.Input[IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IndexUserTokenConfigurationsArgs:
@@ -1923,7 +1884,6 @@ class IndexUserTokenConfigurationsArgs:
 class IndexUserTokenConfigurationsJsonTokenTypeConfigurationArgsDict(TypedDict):
     group_attribute_field: pulumi.Input[_builtins.str]
     user_name_attribute_field: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IndexUserTokenConfigurationsJsonTokenTypeConfigurationArgs:
@@ -1952,7 +1912,6 @@ class IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgsDict(TypedDict):
     secrets_manager_arn: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
     user_name_attribute_field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgs:
@@ -2008,7 +1967,6 @@ class IndexUserTokenConfigurationsJwtTokenTypeConfigurationArgs:
 class QuerySuggestionsBlockListSourceS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QuerySuggestionsBlockListSourceS3PathArgs:
@@ -2032,7 +1990,6 @@ class QuerySuggestionsBlockListSourceS3PathArgs:
 class ThesaurusSourceS3PathArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ThesaurusSourceS3PathArgs:

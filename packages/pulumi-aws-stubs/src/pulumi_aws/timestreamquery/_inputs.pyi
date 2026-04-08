@@ -74,7 +74,6 @@ class ScheduledQueryErrorReportConfigurationArgsDict(TypedDict):
     s3_configuration: pulumi.Input[
         ScheduledQueryErrorReportConfigurationS3ConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryErrorReportConfigurationArgs:
@@ -100,7 +99,6 @@ class ScheduledQueryErrorReportConfigurationS3ConfigurationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     encryption_option: NotRequired[pulumi.Input[_builtins.str]]
     object_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryErrorReportConfigurationS3ConfigurationArgs:
@@ -151,7 +149,6 @@ class ScheduledQueryLastRunSummaryArgsDict(TypedDict):
     ]
     run_status: NotRequired[pulumi.Input[_builtins.str]]
     trigger_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryArgs:
@@ -273,7 +270,6 @@ class ScheduledQueryLastRunSummaryErrorReportLocationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryErrorReportLocationArgs:
@@ -322,7 +318,6 @@ class ScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationArgsDict(
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     object_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryErrorReportLocationS3ReportLocationArgs:
@@ -350,7 +345,6 @@ class ScheduledQueryLastRunSummaryExecutionStatArgsDict(TypedDict):
     execution_time_in_millis: NotRequired[pulumi.Input[_builtins.int]]
     query_result_rows: NotRequired[pulumi.Input[_builtins.int]]
     records_ingested: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryExecutionStatArgs:
@@ -421,7 +415,6 @@ class ScheduledQueryLastRunSummaryQueryInsightsResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryQueryInsightsResponseArgs:
@@ -530,7 +523,6 @@ class ScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageArgs:
@@ -580,7 +572,6 @@ class ScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxis
     partition_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxisArgs:
@@ -625,7 +616,6 @@ class ScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeArgs:
@@ -674,7 +664,6 @@ class ScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxisAr
 ):
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryLastRunSummaryQueryInsightsResponseQueryTemporalRangeMaxisArgs:
@@ -699,7 +688,6 @@ class ScheduledQueryNotificationConfigurationArgsDict(TypedDict):
     sns_configuration: pulumi.Input[
         ScheduledQueryNotificationConfigurationSnsConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryNotificationConfigurationArgs:
@@ -725,7 +713,6 @@ class ScheduledQueryNotificationConfigurationArgs:
 
 class ScheduledQueryNotificationConfigurationSnsConfigurationArgsDict(TypedDict):
     topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryNotificationConfigurationSnsConfigurationArgs:
@@ -762,7 +749,6 @@ class ScheduledQueryRecentlyFailedRunArgsDict(TypedDict):
     ]
     run_status: NotRequired[pulumi.Input[_builtins.str]]
     trigger_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunArgs:
@@ -890,7 +876,6 @@ class ScheduledQueryRecentlyFailedRunErrorReportLocationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunErrorReportLocationArgs:
@@ -939,7 +924,6 @@ class ScheduledQueryRecentlyFailedRunErrorReportLocationS3ReportLocationArgsDict
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     object_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunErrorReportLocationS3ReportLocationArgs:
@@ -967,7 +951,6 @@ class ScheduledQueryRecentlyFailedRunExecutionStatArgsDict(TypedDict):
     execution_time_in_millis: NotRequired[pulumi.Input[_builtins.int]]
     query_result_rows: NotRequired[pulumi.Input[_builtins.int]]
     records_ingested: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunExecutionStatArgs:
@@ -1038,7 +1021,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunQueryInsightsResponseArgs:
@@ -1147,7 +1129,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQuerySpatialCoverageAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQuerySpatialCoverageArgs:
@@ -1197,7 +1178,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQuerySpatialCoverageMa
     partition_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQuerySpatialCoverageMaxisArgs:
@@ -1242,7 +1222,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQueryTemporalRangeArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQueryTemporalRangeArgs:
@@ -1291,7 +1270,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQueryTemporalRangeMaxi
 ):
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQueryTemporalRangeMaxisArgs:
@@ -1314,7 +1292,6 @@ class ScheduledQueryRecentlyFailedRunQueryInsightsResponseQueryTemporalRangeMaxi
 
 class ScheduledQueryScheduleConfigurationArgsDict(TypedDict):
     schedule_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryScheduleConfigurationArgs:
@@ -1331,7 +1308,6 @@ class ScheduledQueryTargetConfigurationArgsDict(TypedDict):
     timestream_configuration: pulumi.Input[
         ScheduledQueryTargetConfigurationTimestreamConfigurationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationArgs:
@@ -1381,7 +1357,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationArgsDict(TypedDict
             ScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationArgs:
@@ -1506,7 +1481,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingAr
 ):
     dimension_value_type: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMappingArgs:
@@ -1543,7 +1517,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappin
     ]
     source_column: NotRequired[pulumi.Input[_builtins.str]]
     target_measure_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingArgs:
@@ -1617,7 +1590,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappin
     measure_value_type: pulumi.Input[_builtins.str]
     source_column: pulumi.Input[_builtins.str]
     target_multi_measure_attribute_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationMixedMeasureMappingMultiMeasureAttributeMappingArgs:
@@ -1661,7 +1633,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappin
         ]
     ]
     target_multi_measure_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsArgs:
@@ -1713,7 +1684,6 @@ class ScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappin
     measure_value_type: pulumi.Input[_builtins.str]
     source_column: pulumi.Input[_builtins.str]
     target_multi_measure_attribute_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingArgs:
@@ -1750,7 +1720,6 @@ class ScheduledQueryTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScheduledQueryTimeoutsArgs:

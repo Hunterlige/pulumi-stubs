@@ -66,7 +66,6 @@ class ClassificationExportConfigurationS3DestinationArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     kms_key_arn: pulumi.Input[_builtins.str]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationExportConfigurationS3DestinationArgs:
@@ -105,7 +104,6 @@ class ClassificationJobS3JobDefinitionArgsDict(TypedDict):
         ]
     ]
     scoping: NotRequired[pulumi.Input[ClassificationJobS3JobDefinitionScopingArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionArgs:
@@ -175,7 +173,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaArgsDict(TypedDict):
     includes: NotRequired[
         pulumi.Input[ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaArgs:
@@ -228,7 +225,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesArgs:
@@ -283,7 +279,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndArgsDict(TypedDic
             ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndArgs:
@@ -344,7 +339,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionAr
     comparator: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionArgs:
@@ -388,7 +382,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionArgs:
@@ -443,7 +436,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagVa
 ):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValueArgs:
@@ -474,7 +466,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesArgs:
@@ -529,7 +520,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndArgsDict(TypedDic
             ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndArgs:
@@ -590,7 +580,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionAr
     comparator: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterionArgs:
@@ -634,7 +623,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionArgs:
@@ -689,7 +677,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagVa
 ):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValueArgs:
@@ -713,7 +700,6 @@ class ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagVa
 class ClassificationJobS3JobDefinitionBucketDefinitionArgsDict(TypedDict):
     account_id: pulumi.Input[_builtins.str]
     buckets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionBucketDefinitionArgs:
@@ -741,7 +727,6 @@ class ClassificationJobS3JobDefinitionScopingArgsDict(TypedDict):
     includes: NotRequired[
         pulumi.Input[ClassificationJobS3JobDefinitionScopingIncludesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingArgs:
@@ -792,7 +777,6 @@ class ClassificationJobS3JobDefinitionScopingExcludesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingExcludesArgs:
@@ -841,7 +825,6 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndArgsDict(TypedDict):
             ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingExcludesAndArgs:
@@ -900,7 +883,6 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgsDict(
     comparator: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermArgs:
@@ -944,7 +926,6 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgsDict(Typ
         ]
     ]
     target: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermArgs:
@@ -1011,7 +992,6 @@ class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValueArgs
 ):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValueArgs:
@@ -1040,7 +1020,6 @@ class ClassificationJobS3JobDefinitionScopingIncludesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingIncludesArgs:
@@ -1089,7 +1068,6 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndArgsDict(TypedDict):
             ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingIncludesAndArgs:
@@ -1148,7 +1126,6 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgsDict(
     comparator: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermArgs:
@@ -1192,7 +1169,6 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgsDict(Typ
         ]
     ]
     target: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermArgs:
@@ -1259,7 +1235,6 @@ class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValueArgs
 ):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValueArgs:
@@ -1284,7 +1259,6 @@ class ClassificationJobScheduleFrequencyArgsDict(TypedDict):
     daily_schedule: NotRequired[pulumi.Input[_builtins.bool]]
     monthly_schedule: NotRequired[pulumi.Input[_builtins.int]]
     weekly_schedule: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobScheduleFrequencyArgs:
@@ -1315,7 +1289,6 @@ class ClassificationJobUserPausedDetailArgsDict(TypedDict):
     job_expires_at: NotRequired[pulumi.Input[_builtins.str]]
     job_imminent_expiration_health_event_arn: NotRequired[pulumi.Input[_builtins.str]]
     job_paused_at: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassificationJobUserPausedDetailArgs:

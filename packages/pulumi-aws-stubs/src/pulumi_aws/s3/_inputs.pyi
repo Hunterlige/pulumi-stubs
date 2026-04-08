@@ -343,7 +343,6 @@ class AccessPointPublicAccessBlockConfigurationArgsDict(TypedDict):
     block_public_policy: NotRequired[pulumi.Input[_builtins.bool]]
     ignore_public_acls: NotRequired[pulumi.Input[_builtins.bool]]
     restrict_public_buckets: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AccessPointPublicAccessBlockConfigurationArgs:
@@ -380,7 +379,6 @@ class AccessPointPublicAccessBlockConfigurationArgs:
 
 class AccessPointVpcConfigurationArgsDict(TypedDict):
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AccessPointVpcConfigurationArgs:
@@ -394,7 +392,6 @@ class AccessPointVpcConfigurationArgs:
 class AnalyticsConfigurationFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AnalyticsConfigurationFilterArgs:
@@ -423,7 +420,6 @@ class AnalyticsConfigurationStorageClassAnalysisArgsDict(TypedDict):
     data_export: pulumi.Input[
         AnalyticsConfigurationStorageClassAnalysisDataExportArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AnalyticsConfigurationStorageClassAnalysisArgs:
@@ -450,7 +446,6 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportArgsDict(TypedDict):
         AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgsDict
     ]
     output_schema_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsConfigurationStorageClassAnalysisDataExportArgs:
@@ -488,7 +483,6 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgsDict(
     s3_bucket_destination: pulumi.Input[
         AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationArgs:
@@ -521,7 +515,6 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDes
     bucket_account_id: NotRequired[pulumi.Input[_builtins.str]]
     format: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationArgs:
@@ -556,7 +549,6 @@ class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDes
 
 class BucketAbacAbacStatusArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketAbacAbacStatusArgs:
@@ -572,7 +564,6 @@ class BucketAclAccessControlPolicyArgsDict(TypedDict):
     grants: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[BucketAclAccessControlPolicyGrantArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketAclAccessControlPolicyArgs:
@@ -607,7 +598,6 @@ class BucketAclAccessControlPolicyArgs:
 class BucketAclAccessControlPolicyGrantArgsDict(TypedDict):
     permission: pulumi.Input[_builtins.str]
     grantee: NotRequired[pulumi.Input[BucketAclAccessControlPolicyGrantGranteeArgsDict]]
-    ...
 
 @pulumi.input_type
 class BucketAclAccessControlPolicyGrantArgs:
@@ -641,7 +631,6 @@ class BucketAclAccessControlPolicyGrantGranteeArgsDict(TypedDict):
     email_address: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketAclAccessControlPolicyGrantGranteeArgs:
@@ -684,7 +673,6 @@ class BucketAclAccessControlPolicyGrantGranteeArgs:
 class BucketAclAccessControlPolicyOwnerArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketAclAccessControlPolicyOwnerArgs:
@@ -713,7 +701,6 @@ class BucketAclV2AccessControlPolicyArgsDict(TypedDict):
             Sequence[pulumi.Input[BucketAclV2AccessControlPolicyGrantArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketAclV2AccessControlPolicyArgs:
@@ -754,7 +741,6 @@ class BucketAclV2AccessControlPolicyGrantArgsDict(TypedDict):
     grantee: NotRequired[
         pulumi.Input[BucketAclV2AccessControlPolicyGrantGranteeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketAclV2AccessControlPolicyGrantArgs:
@@ -788,7 +774,6 @@ class BucketAclV2AccessControlPolicyGrantGranteeArgsDict(TypedDict):
     email_address: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketAclV2AccessControlPolicyGrantGranteeArgs:
@@ -831,7 +816,6 @@ class BucketAclV2AccessControlPolicyGrantGranteeArgs:
 class BucketAclV2AccessControlPolicyOwnerArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketAclV2AccessControlPolicyOwnerArgs:
@@ -860,7 +844,6 @@ class BucketCorsConfigurationCorsRuleArgsDict(TypedDict):
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     max_age_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketCorsConfigurationCorsRuleArgs:
@@ -932,7 +915,6 @@ class BucketCorsConfigurationV2CorsRuleArgsDict(TypedDict):
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     max_age_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketCorsConfigurationV2CorsRuleArgs:
@@ -1003,7 +985,6 @@ class BucketCorsRuleArgsDict(TypedDict):
     allowed_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     max_age_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketCorsRuleArgs:
@@ -1067,7 +1048,6 @@ class BucketGrantArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketGrantArgs:
@@ -1105,7 +1085,6 @@ class BucketGrantArgs:
 class BucketIntelligentTieringConfigurationFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketIntelligentTieringConfigurationFilterArgs:
@@ -1133,7 +1112,6 @@ class BucketIntelligentTieringConfigurationFilterArgs:
 class BucketIntelligentTieringConfigurationTieringArgsDict(TypedDict):
     access_tier: pulumi.Input[_builtins.str]
     days: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BucketIntelligentTieringConfigurationTieringArgs:
@@ -1186,7 +1164,6 @@ class BucketLifecycleConfigurationRuleArgsDict(TypedDict):
             Sequence[pulumi.Input[BucketLifecycleConfigurationRuleTransitionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleArgs:
@@ -1341,7 +1318,6 @@ class BucketLifecycleConfigurationRuleArgs:
 
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgsDict(TypedDict):
     days_after_initiation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadArgs:
@@ -1358,7 +1334,6 @@ class BucketLifecycleConfigurationRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
     expired_object_delete_marker: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleExpirationArgs:
@@ -1395,7 +1370,6 @@ class BucketLifecycleConfigurationRuleFilterArgsDict(TypedDict):
     object_size_less_than: NotRequired[pulumi.Input[_builtins.int]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[BucketLifecycleConfigurationRuleFilterTagArgsDict]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleFilterArgs:
@@ -1455,7 +1429,6 @@ class BucketLifecycleConfigurationRuleFilterAndArgsDict(TypedDict):
     object_size_less_than: NotRequired[pulumi.Input[_builtins.int]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleFilterAndArgs:
@@ -1497,7 +1470,6 @@ class BucketLifecycleConfigurationRuleFilterAndArgs:
 class BucketLifecycleConfigurationRuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleFilterTagArgs:
@@ -1521,7 +1493,6 @@ class BucketLifecycleConfigurationRuleFilterTagArgs:
 class BucketLifecycleConfigurationRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
     newer_noncurrent_versions: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleNoncurrentVersionExpirationArgs:
@@ -1548,7 +1519,6 @@ class BucketLifecycleConfigurationRuleNoncurrentVersionTransitionArgsDict(TypedD
     noncurrent_days: pulumi.Input[_builtins.int]
     storage_class: pulumi.Input[_builtins.str]
     newer_noncurrent_versions: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleNoncurrentVersionTransitionArgs:
@@ -1581,7 +1551,6 @@ class BucketLifecycleConfigurationRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationRuleTransitionArgs:
@@ -1611,7 +1580,6 @@ class BucketLifecycleConfigurationRuleTransitionArgs:
 class BucketLifecycleConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationTimeoutsArgs:
@@ -1664,7 +1632,6 @@ class BucketLifecycleConfigurationV2RuleArgsDict(TypedDict):
             Sequence[pulumi.Input[BucketLifecycleConfigurationV2RuleTransitionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleArgs:
@@ -1824,7 +1791,6 @@ class BucketLifecycleConfigurationV2RuleAbortIncompleteMultipartUploadArgsDict(
     TypedDict
 ):
     days_after_initiation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleAbortIncompleteMultipartUploadArgs:
@@ -1841,7 +1807,6 @@ class BucketLifecycleConfigurationV2RuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
     expired_object_delete_marker: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleExpirationArgs:
@@ -1878,7 +1843,6 @@ class BucketLifecycleConfigurationV2RuleFilterArgsDict(TypedDict):
     object_size_less_than: NotRequired[pulumi.Input[_builtins.int]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[BucketLifecycleConfigurationV2RuleFilterTagArgsDict]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleFilterArgs:
@@ -1938,7 +1902,6 @@ class BucketLifecycleConfigurationV2RuleFilterAndArgsDict(TypedDict):
     object_size_less_than: NotRequired[pulumi.Input[_builtins.int]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleFilterAndArgs:
@@ -1980,7 +1943,6 @@ class BucketLifecycleConfigurationV2RuleFilterAndArgs:
 class BucketLifecycleConfigurationV2RuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleFilterTagArgs:
@@ -2004,7 +1966,6 @@ class BucketLifecycleConfigurationV2RuleFilterTagArgs:
 class BucketLifecycleConfigurationV2RuleNoncurrentVersionExpirationArgsDict(TypedDict):
     noncurrent_days: pulumi.Input[_builtins.int]
     newer_noncurrent_versions: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleNoncurrentVersionExpirationArgs:
@@ -2031,7 +1992,6 @@ class BucketLifecycleConfigurationV2RuleNoncurrentVersionTransitionArgsDict(Type
     noncurrent_days: pulumi.Input[_builtins.int]
     storage_class: pulumi.Input[_builtins.str]
     newer_noncurrent_versions: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleNoncurrentVersionTransitionArgs:
@@ -2064,7 +2024,6 @@ class BucketLifecycleConfigurationV2RuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2RuleTransitionArgs:
@@ -2094,7 +2053,6 @@ class BucketLifecycleConfigurationV2RuleTransitionArgs:
 class BucketLifecycleConfigurationV2TimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleConfigurationV2TimeoutsArgs:
@@ -2135,7 +2093,6 @@ class BucketLifecycleRuleArgsDict(TypedDict):
     transitions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[BucketLifecycleRuleTransitionArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleArgs:
@@ -2257,7 +2214,6 @@ class BucketLifecycleRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
     expired_object_delete_marker: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleExpirationArgs:
@@ -2290,7 +2246,6 @@ class BucketLifecycleRuleExpirationArgs:
 
 class BucketLifecycleRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleNoncurrentVersionExpirationArgs:
@@ -2306,7 +2261,6 @@ class BucketLifecycleRuleNoncurrentVersionExpirationArgs:
 class BucketLifecycleRuleNoncurrentVersionTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleNoncurrentVersionTransitionArgs:
@@ -2331,7 +2285,6 @@ class BucketLifecycleRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketLifecycleRuleTransitionArgs:
@@ -2361,7 +2314,6 @@ class BucketLifecycleRuleTransitionArgs:
 class BucketLoggingArgsDict(TypedDict):
     target_bucket: pulumi.Input[_builtins.str]
     target_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLoggingArgs:
@@ -2385,7 +2337,6 @@ class BucketLoggingArgs:
 class BucketLoggingTargetGrantArgsDict(TypedDict):
     grantee: pulumi.Input[BucketLoggingTargetGrantGranteeArgsDict]
     permission: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLoggingTargetGrantArgs:
@@ -2412,7 +2363,6 @@ class BucketLoggingTargetGrantGranteeArgsDict(TypedDict):
     email_address: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLoggingTargetGrantGranteeArgs:
@@ -2459,7 +2409,6 @@ class BucketLoggingTargetObjectKeyFormatArgsDict(TypedDict):
     simple_prefix: NotRequired[
         pulumi.Input[BucketLoggingTargetObjectKeyFormatSimplePrefixArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketLoggingTargetObjectKeyFormatArgs:
@@ -2502,7 +2451,6 @@ class BucketLoggingTargetObjectKeyFormatArgs:
 
 class BucketLoggingTargetObjectKeyFormatPartitionedPrefixArgsDict(TypedDict):
     partition_date_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLoggingTargetObjectKeyFormatPartitionedPrefixArgs:
@@ -2524,7 +2472,6 @@ class BucketLoggingTargetObjectKeyFormatSimplePrefixArgs:
 class BucketLoggingV2TargetGrantArgsDict(TypedDict):
     grantee: pulumi.Input[BucketLoggingV2TargetGrantGranteeArgsDict]
     permission: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLoggingV2TargetGrantArgs:
@@ -2551,7 +2498,6 @@ class BucketLoggingV2TargetGrantGranteeArgsDict(TypedDict):
     email_address: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketLoggingV2TargetGrantGranteeArgs:
@@ -2598,7 +2544,6 @@ class BucketLoggingV2TargetObjectKeyFormatArgsDict(TypedDict):
     simple_prefix: NotRequired[
         pulumi.Input[BucketLoggingV2TargetObjectKeyFormatSimplePrefixArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketLoggingV2TargetObjectKeyFormatArgs:
@@ -2643,7 +2588,6 @@ class BucketLoggingV2TargetObjectKeyFormatArgs:
 
 class BucketLoggingV2TargetObjectKeyFormatPartitionedPrefixArgsDict(TypedDict):
     partition_date_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketLoggingV2TargetObjectKeyFormatPartitionedPrefixArgs:
@@ -2678,7 +2622,6 @@ class BucketMetadataConfigurationMetadataConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationArgs:
@@ -2760,7 +2703,6 @@ class BucketMetadataConfigurationMetadataConfigurationDestinationArgsDict(TypedD
     table_bucket_arn: pulumi.Input[_builtins.str]
     table_bucket_type: pulumi.Input[_builtins.str]
     table_namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationDestinationArgs:
@@ -2798,7 +2740,6 @@ class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguratio
     ]
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     table_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationArgs:
@@ -2853,7 +2794,6 @@ class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguratio
 ):
     sse_algorithm: pulumi.Input[_builtins.str]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationArgs:
@@ -2887,7 +2827,6 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationA
     ]
     table_arn: NotRequired[pulumi.Input[_builtins.str]]
     table_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationArgs:
@@ -2953,7 +2892,6 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationE
 ):
     sse_algorithm: pulumi.Input[_builtins.str]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationArgs:
@@ -2979,7 +2917,6 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationR
 ):
     expiration: pulumi.Input[_builtins.str]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationArgs:
@@ -3002,7 +2939,6 @@ class BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationR
 
 class BucketMetadataConfigurationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketMetadataConfigurationTimeoutsArgs:
@@ -3019,7 +2955,6 @@ class BucketMetricFilterArgsDict(TypedDict):
     access_point: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketMetricFilterArgs:
@@ -3056,7 +2991,6 @@ class BucketNotificationLambdaFunctionArgsDict(TypedDict):
     filter_suffix: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     lambda_function_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketNotificationLambdaFunctionArgs:
@@ -3101,7 +3035,6 @@ class BucketNotificationQueueArgsDict(TypedDict):
     filter_prefix: NotRequired[pulumi.Input[_builtins.str]]
     filter_suffix: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketNotificationQueueArgs:
@@ -3146,7 +3079,6 @@ class BucketNotificationTopicArgsDict(TypedDict):
     filter_prefix: NotRequired[pulumi.Input[_builtins.str]]
     filter_suffix: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketNotificationTopicArgs:
@@ -3188,7 +3120,6 @@ class BucketNotificationTopicArgs:
 class BucketObjectLockConfigurationArgsDict(TypedDict):
     object_lock_enabled: NotRequired[pulumi.Input[_builtins.str]]
     rule: NotRequired[pulumi.Input[BucketObjectLockConfigurationRuleArgsDict]]
-    ...
 
 @pulumi.input_type
 class BucketObjectLockConfigurationArgs:
@@ -3217,7 +3148,6 @@ class BucketObjectLockConfigurationRuleArgsDict(TypedDict):
     default_retention: pulumi.Input[
         BucketObjectLockConfigurationRuleDefaultRetentionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class BucketObjectLockConfigurationRuleArgs:
@@ -3242,7 +3172,6 @@ class BucketObjectLockConfigurationRuleDefaultRetentionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     years: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketObjectLockConfigurationRuleDefaultRetentionArgs:
@@ -3273,7 +3202,6 @@ class BucketObjectLockConfigurationV2RuleArgsDict(TypedDict):
     default_retention: pulumi.Input[
         BucketObjectLockConfigurationV2RuleDefaultRetentionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class BucketObjectLockConfigurationV2RuleArgs:
@@ -3299,7 +3227,6 @@ class BucketObjectLockConfigurationV2RuleDefaultRetentionArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     years: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketObjectLockConfigurationV2RuleDefaultRetentionArgs:
@@ -3330,7 +3257,6 @@ class BucketObjectv2OverrideProviderArgsDict(TypedDict):
     default_tags: NotRequired[
         pulumi.Input[BucketObjectv2OverrideProviderDefaultTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketObjectv2OverrideProviderArgs:
@@ -3354,7 +3280,6 @@ class BucketObjectv2OverrideProviderArgs:
 
 class BucketObjectv2OverrideProviderDefaultTagsArgsDict(TypedDict):
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketObjectv2OverrideProviderDefaultTagsArgs:
@@ -3375,7 +3300,6 @@ class BucketObjectv2OverrideProviderDefaultTagsArgs:
 
 class BucketOwnershipControlsRuleArgsDict(TypedDict):
     object_ownership: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketOwnershipControlsRuleArgs:
@@ -3404,7 +3328,6 @@ class BucketReplicationConfigRuleArgsDict(TypedDict):
     source_selection_criteria: NotRequired[
         pulumi.Input[BucketReplicationConfigRuleSourceSelectionCriteriaArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleArgs:
@@ -3511,7 +3434,6 @@ class BucketReplicationConfigRuleArgs:
 
 class BucketReplicationConfigRuleDeleteMarkerReplicationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDeleteMarkerReplicationArgs:
@@ -3542,7 +3464,6 @@ class BucketReplicationConfigRuleDestinationArgsDict(TypedDict):
         pulumi.Input[BucketReplicationConfigRuleDestinationReplicationTimeArgsDict]
     ]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationArgs:
@@ -3645,7 +3566,6 @@ class BucketReplicationConfigRuleDestinationArgs:
 
 class BucketReplicationConfigRuleDestinationAccessControlTranslationArgsDict(TypedDict):
     owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationAccessControlTranslationArgs:
@@ -3658,7 +3578,6 @@ class BucketReplicationConfigRuleDestinationAccessControlTranslationArgs:
 
 class BucketReplicationConfigRuleDestinationEncryptionConfigurationArgsDict(TypedDict):
     replica_kms_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationEncryptionConfigurationArgs:
@@ -3678,7 +3597,6 @@ class BucketReplicationConfigRuleDestinationMetricsArgsDict(TypedDict):
             BucketReplicationConfigRuleDestinationMetricsEventThresholdArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationMetricsArgs:
@@ -3716,7 +3634,6 @@ class BucketReplicationConfigRuleDestinationMetricsArgs:
 
 class BucketReplicationConfigRuleDestinationMetricsEventThresholdArgsDict(TypedDict):
     minutes: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationMetricsEventThresholdArgs:
@@ -3732,7 +3649,6 @@ class BucketReplicationConfigRuleDestinationReplicationTimeArgsDict(TypedDict):
     time: pulumi.Input[
         BucketReplicationConfigRuleDestinationReplicationTimeTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationReplicationTimeArgs:
@@ -3766,7 +3682,6 @@ class BucketReplicationConfigRuleDestinationReplicationTimeArgs:
 
 class BucketReplicationConfigRuleDestinationReplicationTimeTimeArgsDict(TypedDict):
     minutes: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleDestinationReplicationTimeTimeArgs:
@@ -3779,7 +3694,6 @@ class BucketReplicationConfigRuleDestinationReplicationTimeTimeArgs:
 
 class BucketReplicationConfigRuleExistingObjectReplicationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleExistingObjectReplicationArgs:
@@ -3794,7 +3708,6 @@ class BucketReplicationConfigRuleFilterArgsDict(TypedDict):
     and_: NotRequired[pulumi.Input[BucketReplicationConfigRuleFilterAndArgsDict]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tag: NotRequired[pulumi.Input[BucketReplicationConfigRuleFilterTagArgsDict]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleFilterArgs:
@@ -3832,7 +3745,6 @@ class BucketReplicationConfigRuleFilterArgs:
 class BucketReplicationConfigRuleFilterAndArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleFilterAndArgs:
@@ -3860,7 +3772,6 @@ class BucketReplicationConfigRuleFilterAndArgs:
 class BucketReplicationConfigRuleFilterTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleFilterTagArgs:
@@ -3892,7 +3803,6 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaArgsDict(TypedDict):
             BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleSourceSelectionCriteriaArgs:
@@ -3951,7 +3861,6 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaReplicaModificationsArgs
     TypedDict
 ):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleSourceSelectionCriteriaReplicaModificationsArgs:
@@ -3966,7 +3875,6 @@ class BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsAr
     TypedDict
 ):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgs:
@@ -3982,7 +3890,6 @@ class BucketReplicationConfigurationArgsDict(TypedDict):
     rules: pulumi.Input[
         Sequence[pulumi.Input[BucketReplicationConfigurationRuleArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationArgs:
@@ -4025,7 +3932,6 @@ class BucketReplicationConfigurationRuleArgsDict(TypedDict):
     source_selection_criteria: NotRequired[
         pulumi.Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleArgs:
@@ -4126,7 +4032,6 @@ class BucketReplicationConfigurationRuleDestinationArgsDict(TypedDict):
         ]
     ]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleDestinationArgs:
@@ -4224,7 +4129,6 @@ class BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgsD
     TypedDict
 ):
     owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgs:
@@ -4238,7 +4142,6 @@ class BucketReplicationConfigurationRuleDestinationAccessControlTranslationArgs:
 class BucketReplicationConfigurationRuleDestinationMetricsArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleDestinationMetricsArgs:
@@ -4262,7 +4165,6 @@ class BucketReplicationConfigurationRuleDestinationMetricsArgs:
 class BucketReplicationConfigurationRuleDestinationReplicationTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleDestinationReplicationTimeArgs:
@@ -4286,7 +4188,6 @@ class BucketReplicationConfigurationRuleDestinationReplicationTimeArgs:
 class BucketReplicationConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleFilterArgs:
@@ -4317,7 +4218,6 @@ class BucketReplicationConfigurationRuleSourceSelectionCriteriaArgsDict(TypedDic
             BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleSourceSelectionCriteriaArgs:
@@ -4353,7 +4253,6 @@ class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedOb
     TypedDict
 ):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsArgs:
@@ -4366,7 +4265,6 @@ class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedOb
 
 class BucketServerSideEncryptionConfigurationArgsDict(TypedDict):
     rule: pulumi.Input[BucketServerSideEncryptionConfigurationRuleArgsDict]
-    ...
 
 @pulumi.input_type
 class BucketServerSideEncryptionConfigurationArgs:
@@ -4391,7 +4289,6 @@ class BucketServerSideEncryptionConfigurationRuleArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     bucket_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketServerSideEncryptionConfigurationRuleArgs:
@@ -4446,7 +4343,6 @@ class BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefa
 ):
     sse_algorithm: pulumi.Input[_builtins.str]
     kms_master_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultArgs:
@@ -4477,7 +4373,6 @@ class BucketServerSideEncryptionConfigurationV2RuleArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     bucket_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketServerSideEncryptionConfigurationV2RuleArgs:
@@ -4532,7 +4427,6 @@ class BucketServerSideEncryptionConfigurationV2RuleApplyServerSideEncryptionByDe
 ):
     sse_algorithm: pulumi.Input[_builtins.str]
     kms_master_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketServerSideEncryptionConfigurationV2RuleApplyServerSideEncryptionByDefaultArgs:
@@ -4559,7 +4453,6 @@ class BucketV2CorsRuleArgsDict(TypedDict):
     allowed_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     expose_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     max_age_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketV2CorsRuleArgs:
@@ -4623,7 +4516,6 @@ class BucketV2GrantArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2GrantArgs:
@@ -4684,7 +4576,6 @@ class BucketV2LifecycleRuleArgsDict(TypedDict):
     transitions: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[BucketV2LifecycleRuleTransitionArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2LifecycleRuleArgs:
@@ -4825,7 +4716,6 @@ class BucketV2LifecycleRuleExpirationArgsDict(TypedDict):
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
     expired_object_delete_marker: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketV2LifecycleRuleExpirationArgs:
@@ -4858,7 +4748,6 @@ class BucketV2LifecycleRuleExpirationArgs:
 
 class BucketV2LifecycleRuleNoncurrentVersionExpirationArgsDict(TypedDict):
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketV2LifecycleRuleNoncurrentVersionExpirationArgs:
@@ -4874,7 +4763,6 @@ class BucketV2LifecycleRuleNoncurrentVersionExpirationArgs:
 class BucketV2LifecycleRuleNoncurrentVersionTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketV2LifecycleRuleNoncurrentVersionTransitionArgs:
@@ -4899,7 +4787,6 @@ class BucketV2LifecycleRuleTransitionArgsDict(TypedDict):
     storage_class: pulumi.Input[_builtins.str]
     date: NotRequired[pulumi.Input[_builtins.str]]
     days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketV2LifecycleRuleTransitionArgs:
@@ -4929,7 +4816,6 @@ class BucketV2LifecycleRuleTransitionArgs:
 class BucketV2LoggingArgsDict(TypedDict):
     target_bucket: pulumi.Input[_builtins.str]
     target_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2LoggingArgs:
@@ -4957,7 +4843,6 @@ class BucketV2ObjectLockConfigurationArgsDict(TypedDict):
             Sequence[pulumi.Input[BucketV2ObjectLockConfigurationRuleArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ObjectLockConfigurationArgs:
@@ -5001,7 +4886,6 @@ class BucketV2ObjectLockConfigurationRuleArgsDict(TypedDict):
             pulumi.Input[BucketV2ObjectLockConfigurationRuleDefaultRetentionArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ObjectLockConfigurationRuleArgs:
@@ -5035,7 +4919,6 @@ class BucketV2ObjectLockConfigurationRuleDefaultRetentionArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
     days: NotRequired[pulumi.Input[_builtins.int]]
     years: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BucketV2ObjectLockConfigurationRuleDefaultRetentionArgs:
@@ -5067,7 +4950,6 @@ class BucketV2ReplicationConfigurationArgsDict(TypedDict):
     rules: pulumi.Input[
         Sequence[pulumi.Input[BucketV2ReplicationConfigurationRuleArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationArgs:
@@ -5122,7 +5004,6 @@ class BucketV2ReplicationConfigurationRuleArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleArgs:
@@ -5272,7 +5153,6 @@ class BucketV2ReplicationConfigurationRuleDestinationArgsDict(TypedDict):
         ]
     ]
     storage_class: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleDestinationArgs:
@@ -5412,7 +5292,6 @@ class BucketV2ReplicationConfigurationRuleDestinationAccessControlTranslationArg
     TypedDict
 ):
     owner: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleDestinationAccessControlTranslationArgs:
@@ -5426,7 +5305,6 @@ class BucketV2ReplicationConfigurationRuleDestinationAccessControlTranslationArg
 class BucketV2ReplicationConfigurationRuleDestinationMetricArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleDestinationMetricArgs:
@@ -5450,7 +5328,6 @@ class BucketV2ReplicationConfigurationRuleDestinationMetricArgs:
 class BucketV2ReplicationConfigurationRuleDestinationReplicationTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleDestinationReplicationTimeArgs:
@@ -5474,7 +5351,6 @@ class BucketV2ReplicationConfigurationRuleDestinationReplicationTimeArgs:
 class BucketV2ReplicationConfigurationRuleFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleFilterArgs:
@@ -5509,7 +5385,6 @@ class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaArgs:
@@ -5557,7 +5432,6 @@ class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncrypted
     TypedDict
 ):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class BucketV2ReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectArgs:
@@ -5572,7 +5446,6 @@ class BucketV2ServerSideEncryptionConfigurationArgsDict(TypedDict):
     rules: pulumi.Input[
         Sequence[pulumi.Input[BucketV2ServerSideEncryptionConfigurationRuleArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class BucketV2ServerSideEncryptionConfigurationArgs:
@@ -5607,7 +5480,6 @@ class BucketV2ServerSideEncryptionConfigurationRuleArgsDict(TypedDict):
         ]
     ]
     bucket_key_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketV2ServerSideEncryptionConfigurationRuleArgs:
@@ -5656,7 +5528,6 @@ class BucketV2ServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDe
 ):
     sse_algorithm: pulumi.Input[_builtins.str]
     kms_master_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2ServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultArgs:
@@ -5680,7 +5551,6 @@ class BucketV2ServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDe
 class BucketV2VersioningArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     mfa_delete: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketV2VersioningArgs:
@@ -5706,7 +5576,6 @@ class BucketV2WebsiteArgsDict(TypedDict):
     index_document: NotRequired[pulumi.Input[_builtins.str]]
     redirect_all_requests_to: NotRequired[pulumi.Input[_builtins.str]]
     routing_rules: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketV2WebsiteArgs:
@@ -5744,7 +5613,6 @@ class BucketV2WebsiteArgs:
 class BucketVersioningArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     mfa_delete: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class BucketVersioningArgs:
@@ -5768,7 +5636,6 @@ class BucketVersioningArgs:
 class BucketVersioningV2VersioningConfigurationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
     mfa_delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketVersioningV2VersioningConfigurationArgs:
@@ -5792,7 +5659,6 @@ class BucketVersioningV2VersioningConfigurationArgs:
 class BucketVersioningVersioningConfigurationArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
     mfa_delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketVersioningVersioningConfigurationArgs:
@@ -5818,7 +5684,6 @@ class BucketWebsiteArgsDict(TypedDict):
     index_document: NotRequired[pulumi.Input[_builtins.str]]
     redirect_all_requests_to: NotRequired[pulumi.Input[_builtins.str]]
     routing_rules: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteArgs:
@@ -5855,7 +5720,6 @@ class BucketWebsiteArgs:
 
 class BucketWebsiteConfigurationErrorDocumentArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationErrorDocumentArgs:
@@ -5868,7 +5732,6 @@ class BucketWebsiteConfigurationErrorDocumentArgs:
 
 class BucketWebsiteConfigurationIndexDocumentArgsDict(TypedDict):
     suffix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationIndexDocumentArgs:
@@ -5882,7 +5745,6 @@ class BucketWebsiteConfigurationIndexDocumentArgs:
 class BucketWebsiteConfigurationRedirectAllRequestsToArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationRedirectAllRequestsToArgs:
@@ -5908,7 +5770,6 @@ class BucketWebsiteConfigurationRoutingRuleArgsDict(TypedDict):
     condition: NotRequired[
         pulumi.Input[BucketWebsiteConfigurationRoutingRuleConditionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationRoutingRuleArgs:
@@ -5945,7 +5806,6 @@ class BucketWebsiteConfigurationRoutingRuleArgs:
 class BucketWebsiteConfigurationRoutingRuleConditionArgsDict(TypedDict):
     http_error_code_returned_equals: NotRequired[pulumi.Input[_builtins.str]]
     key_prefix_equals: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationRoutingRuleConditionArgs:
@@ -5976,7 +5836,6 @@ class BucketWebsiteConfigurationRoutingRuleRedirectArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     replace_key_prefix_with: NotRequired[pulumi.Input[_builtins.str]]
     replace_key_with: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationRoutingRuleRedirectArgs:
@@ -6017,7 +5876,6 @@ class BucketWebsiteConfigurationRoutingRuleRedirectArgs:
 
 class BucketWebsiteConfigurationV2ErrorDocumentArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2ErrorDocumentArgs:
@@ -6030,7 +5888,6 @@ class BucketWebsiteConfigurationV2ErrorDocumentArgs:
 
 class BucketWebsiteConfigurationV2IndexDocumentArgsDict(TypedDict):
     suffix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2IndexDocumentArgs:
@@ -6044,7 +5901,6 @@ class BucketWebsiteConfigurationV2IndexDocumentArgs:
 class BucketWebsiteConfigurationV2RedirectAllRequestsToArgsDict(TypedDict):
     host_name: pulumi.Input[_builtins.str]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2RedirectAllRequestsToArgs:
@@ -6070,7 +5926,6 @@ class BucketWebsiteConfigurationV2RoutingRuleArgsDict(TypedDict):
     condition: NotRequired[
         pulumi.Input[BucketWebsiteConfigurationV2RoutingRuleConditionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2RoutingRuleArgs:
@@ -6109,7 +5964,6 @@ class BucketWebsiteConfigurationV2RoutingRuleArgs:
 class BucketWebsiteConfigurationV2RoutingRuleConditionArgsDict(TypedDict):
     http_error_code_returned_equals: NotRequired[pulumi.Input[_builtins.str]]
     key_prefix_equals: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2RoutingRuleConditionArgs:
@@ -6140,7 +5994,6 @@ class BucketWebsiteConfigurationV2RoutingRuleRedirectArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     replace_key_prefix_with: NotRequired[pulumi.Input[_builtins.str]]
     replace_key_with: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BucketWebsiteConfigurationV2RoutingRuleRedirectArgs:
@@ -6182,7 +6035,6 @@ class BucketWebsiteConfigurationV2RoutingRuleRedirectArgs:
 class DirectoryBucketLocationArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DirectoryBucketLocationArgs:
@@ -6205,7 +6057,6 @@ class DirectoryBucketLocationArgs:
 
 class InventoryDestinationArgsDict(TypedDict):
     bucket: pulumi.Input[InventoryDestinationBucketArgsDict]
-    ...
 
 @pulumi.input_type
 class InventoryDestinationArgs:
@@ -6224,7 +6075,6 @@ class InventoryDestinationBucketArgsDict(TypedDict):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
     encryption: NotRequired[pulumi.Input[InventoryDestinationBucketEncryptionArgsDict]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InventoryDestinationBucketArgs:
@@ -6274,7 +6124,6 @@ class InventoryDestinationBucketEncryptionArgsDict(TypedDict):
         pulumi.Input[InventoryDestinationBucketEncryptionSseKmsArgsDict]
     ]
     sse_s3: NotRequired[pulumi.Input[InventoryDestinationBucketEncryptionSseS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class InventoryDestinationBucketEncryptionArgs:
@@ -6311,7 +6160,6 @@ class InventoryDestinationBucketEncryptionArgs:
 
 class InventoryDestinationBucketEncryptionSseKmsArgsDict(TypedDict):
     key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InventoryDestinationBucketEncryptionSseKmsArgs:
@@ -6330,7 +6178,6 @@ class InventoryDestinationBucketEncryptionSseS3Args:
 
 class InventoryFilterArgsDict(TypedDict):
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InventoryFilterArgs:
@@ -6345,7 +6192,6 @@ class InventoryFilterArgs:
 
 class InventoryScheduleArgsDict(TypedDict):
     frequency: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InventoryScheduleArgs:
@@ -6362,7 +6208,6 @@ class ObjectCopyGrantArgsDict(TypedDict):
     email: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ObjectCopyGrantArgs:
@@ -6407,7 +6252,6 @@ class ObjectCopyOverrideProviderArgsDict(TypedDict):
     default_tags: NotRequired[
         pulumi.Input[ObjectCopyOverrideProviderDefaultTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ObjectCopyOverrideProviderArgs:
@@ -6430,7 +6274,6 @@ class ObjectCopyOverrideProviderArgs:
 
 class ObjectCopyOverrideProviderDefaultTagsArgsDict(TypedDict):
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ObjectCopyOverrideProviderDefaultTagsArgs:
@@ -6453,7 +6296,6 @@ class PolicyDocumentArgsDict(TypedDict):
     statement: pulumi.Input[Sequence[pulumi.Input[_iam.PolicyStatementArgsDict]]]
     version: pulumi.Input[iam.PolicyDocumentVersion]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDocumentArgs:
@@ -6487,7 +6329,6 @@ class PolicyDocumentArgs:
 class VectorsIndexEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
     sse_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VectorsIndexEncryptionConfigurationArgs:
@@ -6510,7 +6351,6 @@ class VectorsIndexEncryptionConfigurationArgs:
 
 class VectorsIndexMetadataConfigurationArgsDict(TypedDict):
     non_filterable_metadata_keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class VectorsIndexMetadataConfigurationArgs:
@@ -6534,7 +6374,6 @@ class VectorsIndexMetadataConfigurationArgs:
 class VectorsVectorBucketEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
     sse_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class VectorsVectorBucketEncryptionConfigurationArgs:

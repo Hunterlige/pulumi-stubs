@@ -325,7 +325,6 @@ class FilterFilterCriteriaArgsDict(TypedDict):
             Sequence[pulumi.Input[FilterFilterCriteriaVulnerablePackageArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaArgs:
@@ -1285,7 +1284,6 @@ class FilterFilterCriteriaArgs:
 class FilterFilterCriteriaAwsAccountIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaAwsAccountIdArgs:
@@ -1309,7 +1307,6 @@ class FilterFilterCriteriaAwsAccountIdArgs:
 class FilterFilterCriteriaCodeRepositoryProjectNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaCodeRepositoryProjectNameArgs:
@@ -1333,7 +1330,6 @@ class FilterFilterCriteriaCodeRepositoryProjectNameArgs:
 class FilterFilterCriteriaCodeRepositoryProviderTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaCodeRepositoryProviderTypeArgs:
@@ -1357,7 +1353,6 @@ class FilterFilterCriteriaCodeRepositoryProviderTypeArgs:
 class FilterFilterCriteriaCodeVulnerabilityDetectorNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaCodeVulnerabilityDetectorNameArgs:
@@ -1381,7 +1376,6 @@ class FilterFilterCriteriaCodeVulnerabilityDetectorNameArgs:
 class FilterFilterCriteriaCodeVulnerabilityDetectorTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaCodeVulnerabilityDetectorTagArgs:
@@ -1405,7 +1399,6 @@ class FilterFilterCriteriaCodeVulnerabilityDetectorTagArgs:
 class FilterFilterCriteriaCodeVulnerabilityFilePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaCodeVulnerabilityFilePathArgs:
@@ -1429,7 +1422,6 @@ class FilterFilterCriteriaCodeVulnerabilityFilePathArgs:
 class FilterFilterCriteriaComponentIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaComponentIdArgs:
@@ -1453,7 +1445,6 @@ class FilterFilterCriteriaComponentIdArgs:
 class FilterFilterCriteriaComponentTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaComponentTypeArgs:
@@ -1477,7 +1468,6 @@ class FilterFilterCriteriaComponentTypeArgs:
 class FilterFilterCriteriaEc2InstanceImageIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEc2InstanceImageIdArgs:
@@ -1501,7 +1491,6 @@ class FilterFilterCriteriaEc2InstanceImageIdArgs:
 class FilterFilterCriteriaEc2InstanceSubnetIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEc2InstanceSubnetIdArgs:
@@ -1525,7 +1514,6 @@ class FilterFilterCriteriaEc2InstanceSubnetIdArgs:
 class FilterFilterCriteriaEc2InstanceVpcIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEc2InstanceVpcIdArgs:
@@ -1549,7 +1537,6 @@ class FilterFilterCriteriaEc2InstanceVpcIdArgs:
 class FilterFilterCriteriaEcrImageArchitectureArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageArchitectureArgs:
@@ -1573,7 +1560,6 @@ class FilterFilterCriteriaEcrImageArchitectureArgs:
 class FilterFilterCriteriaEcrImageHashArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageHashArgs:
@@ -1597,7 +1583,6 @@ class FilterFilterCriteriaEcrImageHashArgs:
 class FilterFilterCriteriaEcrImageInUseCountArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
     upper_inclusive: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageInUseCountArgs:
@@ -1621,7 +1606,6 @@ class FilterFilterCriteriaEcrImageInUseCountArgs:
 class FilterFilterCriteriaEcrImageLastInUseAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageLastInUseAtArgs:
@@ -1645,7 +1629,6 @@ class FilterFilterCriteriaEcrImageLastInUseAtArgs:
 class FilterFilterCriteriaEcrImagePushedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImagePushedAtArgs:
@@ -1669,7 +1652,6 @@ class FilterFilterCriteriaEcrImagePushedAtArgs:
 class FilterFilterCriteriaEcrImageRegistryArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageRegistryArgs:
@@ -1693,7 +1675,6 @@ class FilterFilterCriteriaEcrImageRegistryArgs:
 class FilterFilterCriteriaEcrImageRepositoryNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageRepositoryNameArgs:
@@ -1717,7 +1698,6 @@ class FilterFilterCriteriaEcrImageRepositoryNameArgs:
 class FilterFilterCriteriaEcrImageTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEcrImageTagArgs:
@@ -1741,7 +1721,6 @@ class FilterFilterCriteriaEcrImageTagArgs:
 class FilterFilterCriteriaEpssScoreArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
     upper_inclusive: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaEpssScoreArgs:
@@ -1765,7 +1744,6 @@ class FilterFilterCriteriaEpssScoreArgs:
 class FilterFilterCriteriaExploitAvailableArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaExploitAvailableArgs:
@@ -1789,7 +1767,6 @@ class FilterFilterCriteriaExploitAvailableArgs:
 class FilterFilterCriteriaFindingArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaFindingArnArgs:
@@ -1813,7 +1790,6 @@ class FilterFilterCriteriaFindingArnArgs:
 class FilterFilterCriteriaFindingStatusArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaFindingStatusArgs:
@@ -1837,7 +1813,6 @@ class FilterFilterCriteriaFindingStatusArgs:
 class FilterFilterCriteriaFindingTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaFindingTypeArgs:
@@ -1861,7 +1836,6 @@ class FilterFilterCriteriaFindingTypeArgs:
 class FilterFilterCriteriaFirstObservedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaFirstObservedAtArgs:
@@ -1885,7 +1859,6 @@ class FilterFilterCriteriaFirstObservedAtArgs:
 class FilterFilterCriteriaFixAvailableArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaFixAvailableArgs:
@@ -1909,7 +1882,6 @@ class FilterFilterCriteriaFixAvailableArgs:
 class FilterFilterCriteriaInspectorScoreArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
     upper_inclusive: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaInspectorScoreArgs:
@@ -1933,7 +1905,6 @@ class FilterFilterCriteriaInspectorScoreArgs:
 class FilterFilterCriteriaLambdaFunctionExecutionRoleArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLambdaFunctionExecutionRoleArnArgs:
@@ -1957,7 +1928,6 @@ class FilterFilterCriteriaLambdaFunctionExecutionRoleArnArgs:
 class FilterFilterCriteriaLambdaFunctionLastModifiedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLambdaFunctionLastModifiedAtArgs:
@@ -1981,7 +1951,6 @@ class FilterFilterCriteriaLambdaFunctionLastModifiedAtArgs:
 class FilterFilterCriteriaLambdaFunctionLayerArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLambdaFunctionLayerArgs:
@@ -2005,7 +1974,6 @@ class FilterFilterCriteriaLambdaFunctionLayerArgs:
 class FilterFilterCriteriaLambdaFunctionNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLambdaFunctionNameArgs:
@@ -2029,7 +1997,6 @@ class FilterFilterCriteriaLambdaFunctionNameArgs:
 class FilterFilterCriteriaLambdaFunctionRuntimeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLambdaFunctionRuntimeArgs:
@@ -2053,7 +2020,6 @@ class FilterFilterCriteriaLambdaFunctionRuntimeArgs:
 class FilterFilterCriteriaLastObservedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaLastObservedAtArgs:
@@ -2077,7 +2043,6 @@ class FilterFilterCriteriaLastObservedAtArgs:
 class FilterFilterCriteriaNetworkProtocolArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaNetworkProtocolArgs:
@@ -2101,7 +2066,6 @@ class FilterFilterCriteriaNetworkProtocolArgs:
 class FilterFilterCriteriaPortRangeArgsDict(TypedDict):
     begin_inclusive: pulumi.Input[_builtins.int]
     end_inclusive: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaPortRangeArgs:
@@ -2125,7 +2089,6 @@ class FilterFilterCriteriaPortRangeArgs:
 class FilterFilterCriteriaRelatedVulnerabilityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaRelatedVulnerabilityArgs:
@@ -2149,7 +2112,6 @@ class FilterFilterCriteriaRelatedVulnerabilityArgs:
 class FilterFilterCriteriaResourceIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaResourceIdArgs:
@@ -2174,7 +2136,6 @@ class FilterFilterCriteriaResourceTagArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaResourceTagArgs:
@@ -2204,7 +2165,6 @@ class FilterFilterCriteriaResourceTagArgs:
 class FilterFilterCriteriaResourceTypeArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaResourceTypeArgs:
@@ -2228,7 +2188,6 @@ class FilterFilterCriteriaResourceTypeArgs:
 class FilterFilterCriteriaSeverityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaSeverityArgs:
@@ -2252,7 +2211,6 @@ class FilterFilterCriteriaSeverityArgs:
 class FilterFilterCriteriaTitleArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaTitleArgs:
@@ -2276,7 +2234,6 @@ class FilterFilterCriteriaTitleArgs:
 class FilterFilterCriteriaUpdatedAtArgsDict(TypedDict):
     end_inclusive: NotRequired[pulumi.Input[_builtins.str]]
     start_inclusive: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaUpdatedAtArgs:
@@ -2300,7 +2257,6 @@ class FilterFilterCriteriaUpdatedAtArgs:
 class FilterFilterCriteriaVendorSeverityArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVendorSeverityArgs:
@@ -2324,7 +2280,6 @@ class FilterFilterCriteriaVendorSeverityArgs:
 class FilterFilterCriteriaVulnerabilityIdArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerabilityIdArgs:
@@ -2348,7 +2303,6 @@ class FilterFilterCriteriaVulnerabilityIdArgs:
 class FilterFilterCriteriaVulnerabilitySourceArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerabilitySourceArgs:
@@ -2394,7 +2348,6 @@ class FilterFilterCriteriaVulnerablePackageArgsDict(TypedDict):
     version: NotRequired[
         pulumi.Input[FilterFilterCriteriaVulnerablePackageVersionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageArgs:
@@ -2534,7 +2487,6 @@ class FilterFilterCriteriaVulnerablePackageArgs:
 class FilterFilterCriteriaVulnerablePackageArchitectureArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageArchitectureArgs:
@@ -2558,7 +2510,6 @@ class FilterFilterCriteriaVulnerablePackageArchitectureArgs:
 class FilterFilterCriteriaVulnerablePackageEpochArgsDict(TypedDict):
     lower_inclusive: pulumi.Input[_builtins.float]
     upper_inclusive: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageEpochArgs:
@@ -2582,7 +2533,6 @@ class FilterFilterCriteriaVulnerablePackageEpochArgs:
 class FilterFilterCriteriaVulnerablePackageFilePathArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageFilePathArgs:
@@ -2606,7 +2556,6 @@ class FilterFilterCriteriaVulnerablePackageFilePathArgs:
 class FilterFilterCriteriaVulnerablePackageNameArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageNameArgs:
@@ -2630,7 +2579,6 @@ class FilterFilterCriteriaVulnerablePackageNameArgs:
 class FilterFilterCriteriaVulnerablePackageReleaseArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageReleaseArgs:
@@ -2654,7 +2602,6 @@ class FilterFilterCriteriaVulnerablePackageReleaseArgs:
 class FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgs:
@@ -2678,7 +2625,6 @@ class FilterFilterCriteriaVulnerablePackageSourceLambdaLayerArnArgs:
 class FilterFilterCriteriaVulnerablePackageSourceLayerHashArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageSourceLayerHashArgs:
@@ -2702,7 +2648,6 @@ class FilterFilterCriteriaVulnerablePackageSourceLayerHashArgs:
 class FilterFilterCriteriaVulnerablePackageVersionArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FilterFilterCriteriaVulnerablePackageVersionArgs:
@@ -2729,7 +2674,6 @@ class OrganizationConfigurationAutoEnableArgsDict(TypedDict):
     code_repository: NotRequired[pulumi.Input[_builtins.bool]]
     lambda_: NotRequired[pulumi.Input[_builtins.bool]]
     lambda_code: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OrganizationConfigurationAutoEnableArgs:

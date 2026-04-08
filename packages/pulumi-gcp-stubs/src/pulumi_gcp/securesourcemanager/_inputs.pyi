@@ -30,7 +30,6 @@ __all__ = [
 
 class HookPushOptionArgsDict(TypedDict):
     branch_filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class HookPushOptionArgs:
@@ -48,7 +47,6 @@ class InstanceHostConfigArgsDict(TypedDict):
     git_http: NotRequired[pulumi.Input[_builtins.str]]
     git_ssh: NotRequired[pulumi.Input[_builtins.str]]
     html: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceHostConfigArgs:
@@ -85,7 +83,6 @@ class InstanceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamBindingConditionArgs:
@@ -116,7 +113,6 @@ class InstanceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamMemberConditionArgs:
@@ -148,7 +144,6 @@ class InstancePrivateConfigArgsDict(TypedDict):
     ca_pool: NotRequired[pulumi.Input[_builtins.str]]
     http_service_attachment: NotRequired[pulumi.Input[_builtins.str]]
     ssh_service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePrivateConfigArgs:
@@ -183,7 +178,6 @@ class InstancePrivateConfigArgs:
 
 class InstanceWorkforceIdentityFederationConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class InstanceWorkforceIdentityFederationConfigArgs:
@@ -198,7 +192,6 @@ class RepositoryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamBindingConditionArgs:
@@ -229,7 +222,6 @@ class RepositoryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamMemberConditionArgs:
@@ -261,7 +253,6 @@ class RepositoryInitialConfigArgsDict(TypedDict):
     gitignores: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     license: NotRequired[pulumi.Input[_builtins.str]]
     readme: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryInitialConfigArgs:
@@ -302,7 +293,6 @@ class RepositoryUriArgsDict(TypedDict):
     api: NotRequired[pulumi.Input[_builtins.str]]
     git_https: NotRequired[pulumi.Input[_builtins.str]]
     html: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryUriArgs:

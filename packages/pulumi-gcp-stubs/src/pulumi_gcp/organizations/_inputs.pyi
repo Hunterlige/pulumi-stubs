@@ -37,7 +37,6 @@ __all__ = [
 class AccessApprovalSettingsEnrolledServiceArgsDict(TypedDict):
     cloud_product: pulumi.Input[_builtins.str]
     enrollment_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessApprovalSettingsEnrolledServiceArgs:
@@ -62,7 +61,6 @@ class IAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IAMBindingConditionArgs:
@@ -93,7 +91,6 @@ class IAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IAMMemberConditionArgs:
@@ -123,7 +120,6 @@ class IAMMemberConditionArgs:
 class IamAuditConfigAuditLogConfigArgsDict(TypedDict):
     log_type: pulumi.Input[_builtins.str]
     exempted_members: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class IamAuditConfigAuditLogConfigArgs:
@@ -152,7 +148,6 @@ class IamAuditConfigAuditLogConfigArgs:
 
 class PolicyBooleanPolicyArgsDict(TypedDict):
     enforced: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class PolicyBooleanPolicyArgs:
@@ -168,7 +163,6 @@ class PolicyListPolicyArgsDict(TypedDict):
     deny: NotRequired[pulumi.Input[PolicyListPolicyDenyArgsDict]]
     inherit_from_parent: NotRequired[pulumi.Input[_builtins.bool]]
     suggested_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyListPolicyArgs:
@@ -204,7 +198,6 @@ class PolicyListPolicyArgs:
 class PolicyListPolicyAllowArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicyListPolicyAllowArgs:
@@ -232,7 +225,6 @@ class PolicyListPolicyAllowArgs:
 class PolicyListPolicyDenyArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[_builtins.bool]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PolicyListPolicyDenyArgs:
@@ -259,7 +251,6 @@ class PolicyListPolicyDenyArgs:
 
 class PolicyRestorePolicyArgsDict(TypedDict):
     default: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class PolicyRestorePolicyArgs:
@@ -273,7 +264,6 @@ class PolicyRestorePolicyArgs:
 class GetIAMPolicyAuditConfigArgsDict(TypedDict):
     audit_log_configs: Sequence[GetIAMPolicyAuditConfigAuditLogConfigArgsDict]
     service: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetIAMPolicyAuditConfigArgs:
@@ -301,7 +291,6 @@ class GetIAMPolicyAuditConfigArgs:
 class GetIAMPolicyAuditConfigAuditLogConfigArgsDict(TypedDict):
     log_type: _builtins.str
     exempted_members: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetIAMPolicyAuditConfigAuditLogConfigArgs:
@@ -326,7 +315,6 @@ class GetIAMPolicyBindingArgsDict(TypedDict):
     members: Sequence[_builtins.str]
     role: _builtins.str
     condition: NotRequired[GetIAMPolicyBindingConditionArgsDict]
-    ...
 
 @pulumi.input_type
 class GetIAMPolicyBindingArgs:
@@ -357,7 +345,6 @@ class GetIAMPolicyBindingConditionArgsDict(TypedDict):
     expression: _builtins.str
     title: _builtins.str
     description: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetIAMPolicyBindingConditionArgs:

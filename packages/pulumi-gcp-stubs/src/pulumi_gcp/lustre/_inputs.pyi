@@ -21,7 +21,6 @@ class InstanceAccessRulesOptionsArgsDict(TypedDict):
     ]
     default_squash_gid: NotRequired[pulumi.Input[_builtins.int]]
     default_squash_uid: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceAccessRulesOptionsArgs:
@@ -73,7 +72,6 @@ class InstanceAccessRulesOptionsAccessRuleArgsDict(TypedDict):
     ip_address_ranges: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
     squash_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceAccessRulesOptionsAccessRuleArgs:

@@ -38,7 +38,6 @@ class AliasRoutingStrategyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     fleet_id: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AliasRoutingStrategyArgs:
@@ -70,7 +69,6 @@ class BuildStorageLocationArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     object_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BuildStorageLocationArgs:
@@ -105,7 +103,6 @@ class BuildStorageLocationArgs:
 
 class FleetCertificateConfigurationArgsDict(TypedDict):
     certificate_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetCertificateConfigurationArgs:
@@ -123,7 +120,6 @@ class FleetEc2InboundPermissionArgsDict(TypedDict):
     ip_range: pulumi.Input[_builtins.str]
     protocol: pulumi.Input[_builtins.str]
     to_port: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FleetEc2InboundPermissionArgs:
@@ -159,7 +155,6 @@ class FleetEc2InboundPermissionArgs:
 class FleetResourceCreationLimitPolicyArgsDict(TypedDict):
     new_game_sessions_per_creator: NotRequired[pulumi.Input[_builtins.int]]
     policy_period_in_minutes: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FleetResourceCreationLimitPolicyArgs:
@@ -194,7 +189,6 @@ class FleetRuntimeConfigurationArgsDict(TypedDict):
             Sequence[pulumi.Input[FleetRuntimeConfigurationServerProcessArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FleetRuntimeConfigurationArgs:
@@ -252,7 +246,6 @@ class FleetRuntimeConfigurationServerProcessArgsDict(TypedDict):
     concurrent_executions: pulumi.Input[_builtins.int]
     launch_path: pulumi.Input[_builtins.str]
     parameters: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FleetRuntimeConfigurationServerProcessArgs:
@@ -284,7 +277,6 @@ class GameServerGroupAutoScalingPolicyArgsDict(TypedDict):
         GameServerGroupAutoScalingPolicyTargetTrackingConfigurationArgsDict
     ]
     estimated_instance_warmup: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GameServerGroupAutoScalingPolicyArgs:
@@ -320,7 +312,6 @@ class GameServerGroupAutoScalingPolicyArgs:
 
 class GameServerGroupAutoScalingPolicyTargetTrackingConfigurationArgsDict(TypedDict):
     target_value: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class GameServerGroupAutoScalingPolicyTargetTrackingConfigurationArgs:
@@ -334,7 +325,6 @@ class GameServerGroupAutoScalingPolicyTargetTrackingConfigurationArgs:
 class GameServerGroupInstanceDefinitionArgsDict(TypedDict):
     instance_type: pulumi.Input[_builtins.str]
     weighted_capacity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GameServerGroupInstanceDefinitionArgs:
@@ -359,7 +349,6 @@ class GameServerGroupLaunchTemplateArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GameServerGroupLaunchTemplateArgs:
@@ -389,7 +378,6 @@ class GameServerGroupLaunchTemplateArgs:
 class GameSessionQueuePlayerLatencyPolicyArgsDict(TypedDict):
     maximum_individual_player_latency_milliseconds: pulumi.Input[_builtins.int]
     policy_duration_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GameSessionQueuePlayerLatencyPolicyArgs:
@@ -419,7 +407,6 @@ class ScriptStorageLocationArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     object_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScriptStorageLocationArgs:

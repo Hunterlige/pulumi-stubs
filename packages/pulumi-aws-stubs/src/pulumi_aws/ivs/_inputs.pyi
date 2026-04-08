@@ -16,7 +16,6 @@ __all__ = [
 
 class RecordingConfigurationDestinationConfigurationArgsDict(TypedDict):
     s3: pulumi.Input[RecordingConfigurationDestinationConfigurationS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class RecordingConfigurationDestinationConfigurationArgs:
@@ -37,7 +36,6 @@ class RecordingConfigurationDestinationConfigurationArgs:
 
 class RecordingConfigurationDestinationConfigurationS3ArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecordingConfigurationDestinationConfigurationS3Args:
@@ -51,7 +49,6 @@ class RecordingConfigurationDestinationConfigurationS3Args:
 class RecordingConfigurationThumbnailConfigurationArgsDict(TypedDict):
     recording_mode: NotRequired[pulumi.Input[_builtins.str]]
     target_interval_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RecordingConfigurationThumbnailConfigurationArgs:

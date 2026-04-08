@@ -14,7 +14,6 @@ class SQuotaPreferenceQuotaConfigArgsDict(TypedDict):
     request_origin: NotRequired[pulumi.Input[_builtins.str]]
     state_detail: NotRequired[pulumi.Input[_builtins.str]]
     trace_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SQuotaPreferenceQuotaConfigArgs:

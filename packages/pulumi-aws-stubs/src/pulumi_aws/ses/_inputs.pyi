@@ -34,7 +34,6 @@ __all__ = [
 
 class ConfigurationSetDeliveryOptionsArgsDict(TypedDict):
     tls_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetDeliveryOptionsArgs:
@@ -49,7 +48,6 @@ class ConfigurationSetDeliveryOptionsArgs:
 
 class ConfigurationSetTrackingOptionsArgsDict(TypedDict):
     custom_redirect_domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationSetTrackingOptionsArgs:
@@ -66,7 +64,6 @@ class EventDestinationCloudwatchDestinationArgsDict(TypedDict):
     default_value: pulumi.Input[_builtins.str]
     dimension_name: pulumi.Input[_builtins.str]
     value_source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventDestinationCloudwatchDestinationArgs:
@@ -96,7 +93,6 @@ class EventDestinationCloudwatchDestinationArgs:
 class EventDestinationKinesisDestinationArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     stream_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventDestinationKinesisDestinationArgs:
@@ -119,7 +115,6 @@ class EventDestinationKinesisDestinationArgs:
 
 class EventDestinationSnsDestinationArgsDict(TypedDict):
     topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventDestinationSnsDestinationArgs:
@@ -134,7 +129,6 @@ class ReceiptRuleAddHeaderActionArgsDict(TypedDict):
     header_name: pulumi.Input[_builtins.str]
     header_value: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleAddHeaderActionArgs:
@@ -168,7 +162,6 @@ class ReceiptRuleBounceActionArgsDict(TypedDict):
     smtp_reply_code: pulumi.Input[_builtins.str]
     status_code: NotRequired[pulumi.Input[_builtins.str]]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleBounceActionArgs:
@@ -218,7 +211,6 @@ class ReceiptRuleLambdaActionArgsDict(TypedDict):
     position: pulumi.Input[_builtins.int]
     invocation_type: NotRequired[pulumi.Input[_builtins.str]]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleLambdaActionArgs:
@@ -258,7 +250,6 @@ class ReceiptRuleS3ActionArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     object_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleS3ActionArgs:
@@ -307,7 +298,6 @@ class ReceiptRuleSnsActionArgsDict(TypedDict):
     position: pulumi.Input[_builtins.int]
     topic_arn: pulumi.Input[_builtins.str]
     encoding: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleSnsActionArgs:
@@ -338,7 +328,6 @@ class ReceiptRuleStopActionArgsDict(TypedDict):
     position: pulumi.Input[_builtins.int]
     scope: pulumi.Input[_builtins.str]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleStopActionArgs:
@@ -369,7 +358,6 @@ class ReceiptRuleWorkmailActionArgsDict(TypedDict):
     organization_arn: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.int]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReceiptRuleWorkmailActionArgs:

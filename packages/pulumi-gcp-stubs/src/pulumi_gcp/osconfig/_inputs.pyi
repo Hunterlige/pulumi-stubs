@@ -570,7 +570,6 @@ class GuestPoliciesAssignmentArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[GuestPoliciesAssignmentOsTypeArgsDict]]]
     ]
     zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesAssignmentArgs:
@@ -647,7 +646,6 @@ class GuestPoliciesAssignmentArgs:
 
 class GuestPoliciesAssignmentGroupLabelArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesAssignmentGroupLabelArgs:
@@ -666,7 +664,6 @@ class GuestPoliciesAssignmentOsTypeArgsDict(TypedDict):
     os_architecture: NotRequired[pulumi.Input[_builtins.str]]
     os_short_name: NotRequired[pulumi.Input[_builtins.str]]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesAssignmentOsTypeArgs:
@@ -697,7 +694,6 @@ class GuestPoliciesPackageArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     desired_state: NotRequired[pulumi.Input[_builtins.str]]
     manager: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageArgs:
@@ -729,7 +725,6 @@ class GuestPoliciesPackageRepositoryArgsDict(TypedDict):
     goo: NotRequired[pulumi.Input[GuestPoliciesPackageRepositoryGooArgsDict]]
     yum: NotRequired[pulumi.Input[GuestPoliciesPackageRepositoryYumArgsDict]]
     zypper: NotRequired[pulumi.Input[GuestPoliciesPackageRepositoryZypperArgsDict]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageRepositoryArgs:
@@ -778,7 +773,6 @@ class GuestPoliciesPackageRepositoryAptArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     archive_type: NotRequired[pulumi.Input[_builtins.str]]
     gpg_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageRepositoryAptArgs:
@@ -822,7 +816,6 @@ class GuestPoliciesPackageRepositoryAptArgs:
 class GuestPoliciesPackageRepositoryGooArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageRepositoryGooArgs:
@@ -845,7 +838,6 @@ class GuestPoliciesPackageRepositoryYumArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageRepositoryYumArgs:
@@ -887,7 +879,6 @@ class GuestPoliciesPackageRepositoryZypperArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesPackageRepositoryZypperArgs:
@@ -937,7 +928,6 @@ class GuestPoliciesRecipeArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[GuestPoliciesRecipeUpdateStepArgsDict]]]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeArgs:
@@ -1020,7 +1010,6 @@ class GuestPoliciesRecipeArtifactArgsDict(TypedDict):
     allow_insecure: NotRequired[pulumi.Input[_builtins.bool]]
     gcs: NotRequired[pulumi.Input[GuestPoliciesRecipeArtifactGcsArgsDict]]
     remote: NotRequired[pulumi.Input[GuestPoliciesRecipeArtifactRemoteArgsDict]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeArtifactArgs:
@@ -1063,7 +1052,6 @@ class GuestPoliciesRecipeArtifactGcsArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     generation: NotRequired[pulumi.Input[_builtins.int]]
     object: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeArtifactGcsArgs:
@@ -1093,7 +1081,6 @@ class GuestPoliciesRecipeArtifactGcsArgs:
 class GuestPoliciesRecipeArtifactRemoteArgsDict(TypedDict):
     check_sum: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeArtifactRemoteArgs:
@@ -1132,7 +1119,6 @@ class GuestPoliciesRecipeInstallStepArgsDict(TypedDict):
     script_run: NotRequired[
         pulumi.Input[GuestPoliciesRecipeInstallStepScriptRunArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepArgs:
@@ -1243,7 +1229,6 @@ class GuestPoliciesRecipeInstallStepArchiveExtractionArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     destination: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepArchiveExtractionArgs:
@@ -1272,7 +1257,6 @@ class GuestPoliciesRecipeInstallStepArchiveExtractionArgs:
 
 class GuestPoliciesRecipeInstallStepDpkgInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepDpkgInstallationArgs:
@@ -1288,7 +1272,6 @@ class GuestPoliciesRecipeInstallStepFileCopyArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
     overwrite: NotRequired[pulumi.Input[_builtins.bool]]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepFileCopyArgs:
@@ -1326,7 +1309,6 @@ class GuestPoliciesRecipeInstallStepFileExecArgsDict(TypedDict):
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     artifact_id: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepFileExecArgs:
@@ -1365,7 +1347,6 @@ class GuestPoliciesRecipeInstallStepMsiInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
     allowed_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     flags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepMsiInstallationArgs:
@@ -1404,7 +1385,6 @@ class GuestPoliciesRecipeInstallStepMsiInstallationArgs:
 
 class GuestPoliciesRecipeInstallStepRpmInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepRpmInstallationArgs:
@@ -1419,7 +1399,6 @@ class GuestPoliciesRecipeInstallStepScriptRunArgsDict(TypedDict):
     script: pulumi.Input[_builtins.str]
     allowed_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeInstallStepScriptRunArgs:
@@ -1470,7 +1449,6 @@ class GuestPoliciesRecipeUpdateStepArgsDict(TypedDict):
     script_run: NotRequired[
         pulumi.Input[GuestPoliciesRecipeUpdateStepScriptRunArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepArgs:
@@ -1575,7 +1553,6 @@ class GuestPoliciesRecipeUpdateStepArchiveExtractionArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     destination: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepArchiveExtractionArgs:
@@ -1604,7 +1581,6 @@ class GuestPoliciesRecipeUpdateStepArchiveExtractionArgs:
 
 class GuestPoliciesRecipeUpdateStepDpkgInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepDpkgInstallationArgs:
@@ -1620,7 +1596,6 @@ class GuestPoliciesRecipeUpdateStepFileCopyArgsDict(TypedDict):
     destination: pulumi.Input[_builtins.str]
     overwrite: NotRequired[pulumi.Input[_builtins.bool]]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepFileCopyArgs:
@@ -1658,7 +1633,6 @@ class GuestPoliciesRecipeUpdateStepFileExecArgsDict(TypedDict):
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     artifact_id: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepFileExecArgs:
@@ -1703,7 +1677,6 @@ class GuestPoliciesRecipeUpdateStepMsiInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
     allowed_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     flags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepMsiInstallationArgs:
@@ -1742,7 +1715,6 @@ class GuestPoliciesRecipeUpdateStepMsiInstallationArgs:
 
 class GuestPoliciesRecipeUpdateStepRpmInstallationArgsDict(TypedDict):
     artifact_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepRpmInstallationArgs:
@@ -1757,7 +1729,6 @@ class GuestPoliciesRecipeUpdateStepScriptRunArgsDict(TypedDict):
     script: pulumi.Input[_builtins.str]
     allowed_exit_codes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GuestPoliciesRecipeUpdateStepScriptRunArgs:
@@ -1811,7 +1782,6 @@ class OsPolicyAssignmentInstanceFilterArgsDict(TypedDict):
             Sequence[pulumi.Input[OsPolicyAssignmentInstanceFilterInventoryArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentInstanceFilterArgs:
@@ -1905,7 +1875,6 @@ class OsPolicyAssignmentInstanceFilterArgs:
 
 class OsPolicyAssignmentInstanceFilterExclusionLabelArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentInstanceFilterExclusionLabelArgs:
@@ -1926,7 +1895,6 @@ class OsPolicyAssignmentInstanceFilterExclusionLabelArgs:
 
 class OsPolicyAssignmentInstanceFilterInclusionLabelArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentInstanceFilterInclusionLabelArgs:
@@ -1948,7 +1916,6 @@ class OsPolicyAssignmentInstanceFilterInclusionLabelArgs:
 class OsPolicyAssignmentInstanceFilterInventoryArgsDict(TypedDict):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentInstanceFilterInventoryArgs:
@@ -1977,7 +1944,6 @@ class OsPolicyAssignmentOsPolicyArgsDict(TypedDict):
     ]
     allow_no_resource_group_match: NotRequired[pulumi.Input[_builtins.bool]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyArgs:
@@ -2044,7 +2010,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupArgs:
@@ -2106,7 +2071,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupArgs:
 class OsPolicyAssignmentOsPolicyResourceGroupInventoryFilterArgsDict(TypedDict):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupInventoryFilterArgs:
@@ -2141,7 +2105,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceArgsDict(TypedDict):
     repository: NotRequired[
         pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceArgs:
@@ -2231,7 +2194,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgsDict(TypedDict):
     enforce: NotRequired[
         pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecArgs:
@@ -2284,7 +2246,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgsDict(TypedDi
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceArgs:
@@ -2353,7 +2314,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgsDict(Typ
             OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileArgs:
@@ -2426,7 +2386,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileGcsArgsDict(
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileGcsArgs:
@@ -2458,7 +2417,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDi
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs:
@@ -2489,7 +2447,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgsDict(TypedD
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateArgs:
@@ -2562,7 +2519,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgsDict(
             OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileArgs:
@@ -2635,7 +2591,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileGcsArgsDict
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileGcsArgs:
@@ -2667,7 +2622,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgsD
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceExecValidateFileRemoteArgs:
@@ -2696,7 +2650,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgsDict(TypedDict):
         pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgsDict]
     ]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileArgs:
@@ -2757,7 +2710,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgsDict(TypedDict)
             OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileArgs:
@@ -2820,7 +2772,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgsDict(TypedDi
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgs:
@@ -2850,7 +2801,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileGcsArgs:
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceFileFileRemoteArgs:
@@ -2894,7 +2844,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgsDict(TypedDict):
     zypper: NotRequired[
         pulumi.Input[OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
@@ -3030,7 +2979,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgArgs:
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgAptArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgAptArgs:
@@ -3046,7 +2994,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebArgsDict(TypedDict):
         OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebArgs:
@@ -3091,7 +3038,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgsDict(TypedD
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceArgs:
@@ -3160,7 +3106,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceGcsArgsDict(Typ
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceGcsArgs:
@@ -3192,7 +3137,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict(
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
@@ -3215,7 +3159,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgGoogetArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgGoogetArgs:
@@ -3231,7 +3174,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgsDict(TypedDict):
         OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgsDict
     ]
     properties: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiArgs:
@@ -3280,7 +3222,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgsDict(TypedD
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceArgs:
@@ -3349,7 +3290,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceGcsArgsDict(Typ
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs:
@@ -3381,7 +3321,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict(
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs:
@@ -3407,7 +3346,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmArgsDict(TypedDict):
         OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmArgs:
@@ -3452,7 +3390,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgsDict(TypedD
             OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceArgs:
@@ -3521,7 +3458,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceGcsArgsDict(Typ
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs:
@@ -3553,7 +3489,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict(
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
@@ -3576,7 +3511,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgs:
@@ -3589,7 +3523,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgYumArgs:
 
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourcePkgZypperArgs:
@@ -3621,7 +3554,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgsDict(TypedDic
             OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryArgs:
@@ -3722,7 +3654,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgsDict(Typed
     distribution: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
     gpg_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgs:
@@ -3766,7 +3697,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryAptArgs:
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryGooArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryGooArgs:
@@ -3789,7 +3719,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgsDict(Typed
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryYumArgs:
@@ -3833,7 +3762,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgsDict(
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgs:
@@ -3873,7 +3801,6 @@ class OsPolicyAssignmentOsPolicyResourceGroupResourceRepositoryZypperArgs:
 class OsPolicyAssignmentRolloutArgsDict(TypedDict):
     disruption_budget: pulumi.Input[OsPolicyAssignmentRolloutDisruptionBudgetArgsDict]
     min_wait_duration: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentRolloutArgs:
@@ -3901,7 +3828,6 @@ class OsPolicyAssignmentRolloutArgs:
 class OsPolicyAssignmentRolloutDisruptionBudgetArgsDict(TypedDict):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class OsPolicyAssignmentRolloutDisruptionBudgetArgs:
@@ -3934,7 +3860,6 @@ class PatchDeploymentInstanceFilterArgsDict(TypedDict):
     ]
     instances: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentInstanceFilterArgs:
@@ -4006,7 +3931,6 @@ class PatchDeploymentInstanceFilterArgs:
 
 class PatchDeploymentInstanceFilterGroupLabelArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentInstanceFilterGroupLabelArgs:
@@ -4023,7 +3947,6 @@ class PatchDeploymentInstanceFilterGroupLabelArgs:
 
 class PatchDeploymentOneTimeScheduleArgsDict(TypedDict):
     execute_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentOneTimeScheduleArgs:
@@ -4047,7 +3970,6 @@ class PatchDeploymentPatchConfigArgsDict(TypedDict):
     ]
     yum: NotRequired[pulumi.Input[PatchDeploymentPatchConfigYumArgsDict]]
     zypper: NotRequired[pulumi.Input[PatchDeploymentPatchConfigZypperArgsDict]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigArgs:
@@ -4138,7 +4060,6 @@ class PatchDeploymentPatchConfigAptArgsDict(TypedDict):
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     exclusive_packages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigAptArgs:
@@ -4177,7 +4098,6 @@ class PatchDeploymentPatchConfigAptArgs:
 
 class PatchDeploymentPatchConfigGooArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigGooArgs:
@@ -4195,7 +4115,6 @@ class PatchDeploymentPatchConfigPostStepArgsDict(TypedDict):
     windows_exec_step_config: NotRequired[
         pulumi.Input[PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPostStepArgs:
@@ -4249,7 +4168,6 @@ class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgsDict(TypedDict):
     ]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigArgs:
@@ -4307,7 +4225,6 @@ class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectArgsDict(Typ
     bucket: pulumi.Input[_builtins.str]
     generation_number: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectArgs:
@@ -4345,7 +4262,6 @@ class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgsDict(TypedDict)
     ]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigArgs:
@@ -4407,7 +4323,6 @@ class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectArgsDict(
     bucket: pulumi.Input[_builtins.str]
     generation_number: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectArgs:
@@ -4441,7 +4356,6 @@ class PatchDeploymentPatchConfigPreStepArgsDict(TypedDict):
     windows_exec_step_config: NotRequired[
         pulumi.Input[PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPreStepArgs:
@@ -4495,7 +4409,6 @@ class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgsDict(TypedDict):
     ]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigArgs:
@@ -4553,7 +4466,6 @@ class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectArgsDict(Type
     bucket: pulumi.Input[_builtins.str]
     generation_number: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectArgs:
@@ -4591,7 +4503,6 @@ class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgsDict(TypedDict):
     ]
     interpreter: NotRequired[pulumi.Input[_builtins.str]]
     local_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigArgs:
@@ -4653,7 +4564,6 @@ class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectArgsDict(
     bucket: pulumi.Input[_builtins.str]
     generation_number: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectArgs:
@@ -4684,7 +4594,6 @@ class PatchDeploymentPatchConfigWindowsUpdateArgsDict(TypedDict):
     classifications: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     excludes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     exclusive_patches: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigWindowsUpdateArgs:
@@ -4732,7 +4641,6 @@ class PatchDeploymentPatchConfigYumArgsDict(TypedDict):
     exclusive_packages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     minimal: NotRequired[pulumi.Input[_builtins.bool]]
     security: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigYumArgs:
@@ -4782,7 +4690,6 @@ class PatchDeploymentPatchConfigZypperArgsDict(TypedDict):
     severities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     with_optional: NotRequired[pulumi.Input[_builtins.bool]]
     with_update: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentPatchConfigZypperArgs:
@@ -4854,7 +4761,6 @@ class PatchDeploymentRecurringScheduleArgsDict(TypedDict):
     next_execute_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     weekly: NotRequired[pulumi.Input[PatchDeploymentRecurringScheduleWeeklyArgsDict]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleArgs:
@@ -4936,7 +4842,6 @@ class PatchDeploymentRecurringScheduleMonthlyArgsDict(TypedDict):
     week_day_of_month: NotRequired[
         pulumi.Input[PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleMonthlyArgs:
@@ -4972,7 +4877,6 @@ class PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
     week_ordinal: pulumi.Input[_builtins.int]
     day_offset: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthArgs:
@@ -5004,7 +4908,6 @@ class PatchDeploymentRecurringScheduleTimeOfDayArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleTimeOfDayArgs:
@@ -5040,7 +4943,6 @@ class PatchDeploymentRecurringScheduleTimeOfDayArgs:
 class PatchDeploymentRecurringScheduleTimeZoneArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleTimeZoneArgs:
@@ -5063,7 +4965,6 @@ class PatchDeploymentRecurringScheduleTimeZoneArgs:
 
 class PatchDeploymentRecurringScheduleWeeklyArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRecurringScheduleWeeklyArgs:
@@ -5077,7 +4978,6 @@ class PatchDeploymentRecurringScheduleWeeklyArgs:
 class PatchDeploymentRolloutArgsDict(TypedDict):
     disruption_budget: pulumi.Input[PatchDeploymentRolloutDisruptionBudgetArgsDict]
     mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRolloutArgs:
@@ -5105,7 +5005,6 @@ class PatchDeploymentRolloutArgs:
 class PatchDeploymentRolloutDisruptionBudgetArgsDict(TypedDict):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
     percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PatchDeploymentRolloutDisruptionBudgetArgs:
@@ -5133,7 +5032,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceArgsDict(TypedDict):
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceArgs:
@@ -5197,7 +5095,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     revision_id: NotRequired[pulumi.Input[_builtins.str]]
     rollout_state: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
@@ -5360,7 +5257,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs:
@@ -5484,7 +5380,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgs:
@@ -5507,7 +5402,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgs:
@@ -5531,7 +5425,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgs:
@@ -5566,7 +5459,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     ]
     allow_no_resource_group_match: NotRequired[pulumi.Input[_builtins.bool]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgs:
@@ -5651,7 +5543,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgs:
@@ -5729,7 +5620,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgs:
@@ -5774,7 +5664,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgs:
@@ -5892,7 +5781,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs:
@@ -5953,7 +5841,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs:
@@ -6026,7 +5913,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs:
@@ -6099,7 +5985,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs:
@@ -6131,7 +6016,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs:
@@ -6164,7 +6048,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs:
@@ -6237,7 +6120,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs:
@@ -6310,7 +6192,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs:
@@ -6342,7 +6223,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs:
@@ -6375,7 +6255,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         ]
     ]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs:
@@ -6446,7 +6325,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs:
@@ -6519,7 +6397,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs:
@@ -6551,7 +6428,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs:
@@ -6611,7 +6487,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs:
@@ -6791,7 +6666,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs:
@@ -6809,7 +6683,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs:
@@ -6856,7 +6729,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs:
@@ -6929,7 +6801,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs:
@@ -6961,7 +6832,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
@@ -6986,7 +6856,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs:
@@ -7004,7 +6873,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict
     ]
     properties: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs:
@@ -7055,7 +6923,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs:
@@ -7128,7 +6995,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs:
@@ -7160,7 +7026,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs:
@@ -7188,7 +7053,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs:
@@ -7235,7 +7099,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs:
@@ -7308,7 +7171,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs:
@@ -7340,7 +7202,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
@@ -7365,7 +7226,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs:
@@ -7380,7 +7240,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs:
@@ -7414,7 +7273,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
             V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs:
@@ -7523,7 +7381,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     distribution: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
     gpg_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs:
@@ -7569,7 +7426,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     name: pulumi.Input[_builtins.str]
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs:
@@ -7594,7 +7450,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs:
@@ -7638,7 +7493,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs:
@@ -7682,7 +7536,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
         V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict
     ]
     min_wait_duration: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs:
@@ -7719,7 +7572,6 @@ class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Paylo
 ):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs:
@@ -7750,7 +7602,6 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationScopeArgs:
@@ -7805,7 +7656,6 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorArgsDict(TypedDict)
             V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySelectorArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorArgs:
@@ -7864,7 +7714,6 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorLocationSelectorArg
     TypedDict
 ):
     included_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorLocationSelectorArgs:
@@ -7890,7 +7739,6 @@ class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySe
 ):
     included_folders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_projects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationScopeSelectorResourceHierarchySelectorArgs:
@@ -7942,7 +7790,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStateArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStateArgs:
@@ -8040,7 +7887,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateArgsDi
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateArgs:
@@ -8140,7 +7986,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorA
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorArgs:
@@ -8201,7 +8046,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorD
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStateCurrentIterationStateErrorDetailArgs:
@@ -8241,7 +8085,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateArgsD
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateArgs:
@@ -8341,7 +8184,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateError
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateErrorArgs:
@@ -8402,7 +8244,6 @@ class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateError
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForFolderOrchestrationStatePreviousIterationStateErrorDetailArgs:
@@ -8430,7 +8271,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceArgsDict(TypedDict)
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceArgs:
@@ -8494,7 +8334,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     revision_id: NotRequired[pulumi.Input[_builtins.str]]
     rollout_state: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
@@ -8657,7 +8496,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs:
@@ -8781,7 +8619,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgs:
@@ -8804,7 +8641,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgs:
@@ -8828,7 +8664,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgs:
@@ -8863,7 +8698,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     ]
     allow_no_resource_group_match: NotRequired[pulumi.Input[_builtins.bool]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgs:
@@ -8948,7 +8782,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgs:
@@ -9026,7 +8859,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgs:
@@ -9071,7 +8903,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgs:
@@ -9189,7 +9020,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs:
@@ -9250,7 +9080,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs:
@@ -9323,7 +9152,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs:
@@ -9396,7 +9224,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs:
@@ -9428,7 +9255,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs:
@@ -9461,7 +9287,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs:
@@ -9534,7 +9359,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs:
@@ -9607,7 +9431,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs:
@@ -9639,7 +9462,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs:
@@ -9672,7 +9494,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         ]
     ]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs:
@@ -9743,7 +9564,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs:
@@ -9816,7 +9636,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs:
@@ -9848,7 +9667,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs:
@@ -9908,7 +9726,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs:
@@ -10088,7 +9905,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs:
@@ -10106,7 +9922,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs:
@@ -10153,7 +9968,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs:
@@ -10226,7 +10040,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs:
@@ -10258,7 +10071,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
@@ -10283,7 +10095,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs:
@@ -10301,7 +10112,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict
     ]
     properties: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs:
@@ -10352,7 +10162,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs:
@@ -10425,7 +10234,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs:
@@ -10457,7 +10265,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs:
@@ -10485,7 +10292,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs:
@@ -10532,7 +10338,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs:
@@ -10605,7 +10410,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs:
@@ -10637,7 +10441,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
@@ -10662,7 +10465,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs:
@@ -10677,7 +10479,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs:
@@ -10711,7 +10512,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
             V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs:
@@ -10820,7 +10620,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     distribution: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
     gpg_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs:
@@ -10866,7 +10665,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     name: pulumi.Input[_builtins.str]
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs:
@@ -10891,7 +10689,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs:
@@ -10935,7 +10732,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs:
@@ -10979,7 +10775,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
         V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict
     ]
     min_wait_duration: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs:
@@ -11016,7 +10811,6 @@ class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV
 ):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs:
@@ -11047,7 +10841,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeArgs:
@@ -11102,7 +10895,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorArgsDict(Type
             V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHierarchySelectorArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorArgs:
@@ -11161,7 +10953,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorLocationSelec
     TypedDict
 ):
     included_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorLocationSelectorArgs:
@@ -11187,7 +10978,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHiera
 ):
     included_folders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_projects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationScopeSelectorResourceHierarchySelectorArgs:
@@ -11235,7 +11025,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateArgsDict(TypedDict):
             V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStateArgs:
@@ -11317,7 +11106,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateArgs:
@@ -11405,7 +11193,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateErrorArgs:
@@ -11466,7 +11253,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationState
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStateCurrentIterationStateErrorDetailArgs:
@@ -11502,7 +11288,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateArgs:
@@ -11590,7 +11375,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorArgs:
@@ -11651,7 +11435,6 @@ class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStat
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorForOrganizationOrchestrationStatePreviousIterationStateErrorDetailArgs:
@@ -11679,7 +11462,6 @@ class V2PolicyOrchestratorOrchestratedResourceArgsDict(TypedDict):
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceArgs:
@@ -11742,7 +11524,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgsDic
     revision_id: NotRequired[pulumi.Input[_builtins.str]]
     rollout_state: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadArgs:
@@ -11899,7 +11680,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterArgs:
@@ -12023,7 +11803,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelArgs:
@@ -12046,7 +11825,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
     TypedDict
 ):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelArgs:
@@ -12070,7 +11848,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanc
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoryArgs:
@@ -12105,7 +11882,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     ]
     allow_no_resource_group_match: NotRequired[pulumi.Input[_builtins.bool]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyArgs:
@@ -12190,7 +11966,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupArgs:
@@ -12268,7 +12043,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     os_short_name: pulumi.Input[_builtins.str]
     os_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupInventoryFilterArgs:
@@ -12313,7 +12087,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceArgs:
@@ -12431,7 +12204,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecArgs:
@@ -12492,7 +12264,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceArgs:
@@ -12565,7 +12336,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileArgs:
@@ -12638,7 +12408,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileGcsArgs:
@@ -12670,7 +12439,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecEnforceFileRemoteArgs:
@@ -12703,7 +12471,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     ]
     output_file_path: NotRequired[pulumi.Input[_builtins.str]]
     script: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateArgs:
@@ -12776,7 +12543,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileArgs:
@@ -12849,7 +12615,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileGcsArgs:
@@ -12881,7 +12646,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceExecValidateFileRemoteArgs:
@@ -12914,7 +12678,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         ]
     ]
     permissions: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileArgs:
@@ -12985,7 +12748,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileArgs:
@@ -13058,7 +12820,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileGcsArgs:
@@ -13090,7 +12851,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceFileFileRemoteArgs:
@@ -13150,7 +12910,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgArgs:
@@ -13330,7 +13089,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgAptArgs:
@@ -13348,7 +13106,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebArgs:
@@ -13395,7 +13152,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceArgs:
@@ -13468,7 +13224,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceGcsArgs:
@@ -13500,7 +13255,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgDebSourceRemoteArgs:
@@ -13525,7 +13279,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgGoogetArgs:
@@ -13543,7 +13296,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgsDict
     ]
     properties: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiArgs:
@@ -13594,7 +13346,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceArgs:
@@ -13667,7 +13418,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceGcsArgs:
@@ -13699,7 +13449,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgMsiSourceRemoteArgs:
@@ -13727,7 +13476,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
         V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgsDict
     ]
     pull_deps: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmArgs:
@@ -13774,7 +13522,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceArgs:
@@ -13847,7 +13594,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceGcsArgs:
@@ -13879,7 +13625,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     uri: pulumi.Input[_builtins.str]
     sha256_checksum: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgRpmSourceRemoteArgs:
@@ -13904,7 +13649,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgYumArgs:
@@ -13919,7 +13663,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourcePkgZypperArgs:
@@ -13953,7 +13696,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
             V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryArgs:
@@ -14062,7 +13804,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     distribution: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
     gpg_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryAptArgs:
@@ -14108,7 +13849,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
 ):
     name: pulumi.Input[_builtins.str]
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryGooArgs:
@@ -14133,7 +13873,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryYumArgs:
@@ -14177,7 +13916,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolic
     id: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     gpg_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicyResourceGroupResourceRepositoryZypperArgs:
@@ -14221,7 +13959,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout
         V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgsDict
     ]
     min_wait_duration: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutArgs:
@@ -14258,7 +13995,6 @@ class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout
 ):
     fixed: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetArgs:
@@ -14287,7 +14023,6 @@ class V2PolicyOrchestratorOrchestrationScopeArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationScopeArgs:
@@ -14334,7 +14069,6 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorArgsDict(TypedDict):
             V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationScopeSelectorArgs:
@@ -14389,7 +14123,6 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorArgs:
 
 class V2PolicyOrchestratorOrchestrationScopeSelectorLocationSelectorArgsDict(TypedDict):
     included_locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationScopeSelectorLocationSelectorArgs:
@@ -14415,7 +14148,6 @@ class V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArg
 ):
     included_folders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_projects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationScopeSelectorResourceHierarchySelectorArgs:
@@ -14463,7 +14195,6 @@ class V2PolicyOrchestratorOrchestrationStateArgsDict(TypedDict):
             V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStateArgs:
@@ -14541,7 +14272,6 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateArgsDict(TypedD
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateArgs:
@@ -14629,7 +14359,6 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgsDict(
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorArgs:
@@ -14690,7 +14419,6 @@ class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailArgs
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailArgs:
@@ -14724,7 +14452,6 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgsDict(Typed
     rollout_resource: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateArgs:
@@ -14812,7 +14539,6 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgsDict(
         ]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorArgs:
@@ -14873,7 +14599,6 @@ class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailArg
 ):
     type_url: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailArgs:

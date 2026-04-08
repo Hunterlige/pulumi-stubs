@@ -89,7 +89,6 @@ class ClusterAutomatedBackupConfigArgsDict(TypedDict):
         ClusterAutomatedBackupConfigFixedFrequencyScheduleArgsDict
     ]
     retention: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupConfigArgs:
@@ -121,7 +120,6 @@ class ClusterAutomatedBackupConfigFixedFrequencyScheduleArgsDict(TypedDict):
     start_time: pulumi.Input[
         ClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupConfigFixedFrequencyScheduleArgs:
@@ -149,7 +147,6 @@ class ClusterAutomatedBackupConfigFixedFrequencyScheduleArgs:
 
 class ClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgsDict(TypedDict):
     hours: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeArgs:
@@ -182,7 +179,6 @@ class ClusterCrossClusterReplicationConfigArgsDict(TypedDict):
         ]
     ]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigArgs:
@@ -299,7 +295,6 @@ class ClusterCrossClusterReplicationConfigMembershipArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigMembershipArgs:
@@ -381,7 +376,6 @@ class ClusterCrossClusterReplicationConfigMembershipArgs:
 class ClusterCrossClusterReplicationConfigMembershipPrimaryClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigMembershipPrimaryClusterArgs:
@@ -405,7 +399,6 @@ class ClusterCrossClusterReplicationConfigMembershipPrimaryClusterArgs:
 class ClusterCrossClusterReplicationConfigMembershipSecondaryClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigMembershipSecondaryClusterArgs:
@@ -429,7 +422,6 @@ class ClusterCrossClusterReplicationConfigMembershipSecondaryClusterArgs:
 class ClusterCrossClusterReplicationConfigPrimaryClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigPrimaryClusterArgs:
@@ -453,7 +445,6 @@ class ClusterCrossClusterReplicationConfigPrimaryClusterArgs:
 class ClusterCrossClusterReplicationConfigSecondaryClusterArgsDict(TypedDict):
     cluster: NotRequired[pulumi.Input[_builtins.str]]
     uid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterCrossClusterReplicationConfigSecondaryClusterArgs:
@@ -478,7 +469,6 @@ class ClusterDiscoveryEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     psc_config: NotRequired[pulumi.Input[ClusterDiscoveryEndpointPscConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterDiscoveryEndpointArgs:
@@ -511,7 +501,6 @@ class ClusterDiscoveryEndpointArgs:
 
 class ClusterDiscoveryEndpointPscConfigArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterDiscoveryEndpointPscConfigArgs:
@@ -526,7 +515,6 @@ class ClusterDiscoveryEndpointPscConfigArgs:
 
 class ClusterGcsSourceArgsDict(TypedDict):
     uris: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ClusterGcsSourceArgs:
@@ -549,7 +537,6 @@ class ClusterMaintenancePolicyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyArgs:
@@ -603,7 +590,6 @@ class ClusterMaintenancePolicyWeeklyMaintenanceWindowArgsDict(TypedDict):
         ClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict
     ]
     duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyWeeklyMaintenanceWindowArgs:
@@ -644,7 +630,6 @@ class ClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict(TypedDict
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgs:
@@ -681,7 +666,6 @@ class ClusterMaintenanceScheduleArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     schedule_deadline_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenanceScheduleArgs:
@@ -710,7 +694,6 @@ class ClusterMaintenanceScheduleArgs:
 
 class ClusterManagedBackupSourceArgsDict(TypedDict):
     backup: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterManagedBackupSourceArgs:
@@ -725,7 +708,6 @@ class ClusterManagedServerCaArgsDict(TypedDict):
     ca_certs: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[ClusterManagedServerCaCaCertArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterManagedServerCaArgs:
@@ -753,7 +735,6 @@ class ClusterManagedServerCaArgs:
 
 class ClusterManagedServerCaCaCertArgsDict(TypedDict):
     certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterManagedServerCaCaCertArgs:
@@ -778,7 +759,6 @@ class ClusterPersistenceConfigArgsDict(TypedDict):
     aof_config: NotRequired[pulumi.Input[ClusterPersistenceConfigAofConfigArgsDict]]
     mode: NotRequired[pulumi.Input[_builtins.str]]
     rdb_config: NotRequired[pulumi.Input[ClusterPersistenceConfigRdbConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterPersistenceConfigArgs:
@@ -815,7 +795,6 @@ class ClusterPersistenceConfigArgs:
 
 class ClusterPersistenceConfigAofConfigArgsDict(TypedDict):
     append_fsync: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPersistenceConfigAofConfigArgs:
@@ -831,7 +810,6 @@ class ClusterPersistenceConfigAofConfigArgs:
 class ClusterPersistenceConfigRdbConfigArgsDict(TypedDict):
     rdb_snapshot_period: NotRequired[pulumi.Input[_builtins.str]]
     rdb_snapshot_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPersistenceConfigRdbConfigArgs:
@@ -854,7 +832,6 @@ class ClusterPersistenceConfigRdbConfigArgs:
 
 class ClusterPscConfigArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterPscConfigArgs:
@@ -871,7 +848,6 @@ class ClusterPscConnectionArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPscConnectionArgs:
@@ -913,7 +889,6 @@ class ClusterPscConnectionArgs:
 class ClusterPscServiceAttachmentArgsDict(TypedDict):
     connection_type: NotRequired[pulumi.Input[_builtins.str]]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPscServiceAttachmentArgs:
@@ -936,7 +911,6 @@ class ClusterPscServiceAttachmentArgs:
 
 class ClusterStateInfoArgsDict(TypedDict):
     update_info: NotRequired[pulumi.Input[ClusterStateInfoUpdateInfoArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterStateInfoArgs:
@@ -956,7 +930,6 @@ class ClusterStateInfoArgs:
 class ClusterStateInfoUpdateInfoArgsDict(TypedDict):
     target_replica_count: NotRequired[pulumi.Input[_builtins.int]]
     target_shard_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterStateInfoUpdateInfoArgs:
@@ -987,7 +960,6 @@ class ClusterUserCreatedConnectionsClusterEndpointArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterUserCreatedConnectionsClusterEndpointArgs:
@@ -1035,7 +1007,6 @@ class ClusterUserCreatedConnectionsClusterEndpointConnectionArgsDict(TypedDict):
             ClusterUserCreatedConnectionsClusterEndpointConnectionPscConnectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterUserCreatedConnectionsClusterEndpointConnectionArgs:
@@ -1078,7 +1049,6 @@ class ClusterUserCreatedConnectionsClusterEndpointConnectionPscConnectionArgsDic
     connection_type: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     psc_connection_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterUserCreatedConnectionsClusterEndpointConnectionPscConnectionArgs:
@@ -1138,7 +1108,6 @@ class ClusterUserCreatedConnectionsClusterEndpointConnectionPscConnectionArgs:
 class ClusterZoneDistributionConfigArgsDict(TypedDict):
     mode: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterZoneDistributionConfigArgs:
@@ -1170,7 +1139,6 @@ class InstanceMaintenancePolicyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyArgs:
@@ -1230,7 +1198,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgsDict(TypedDict):
         InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict
     ]
     duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowArgs:
@@ -1273,7 +1240,6 @@ class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgsDict(TypedDic
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeArgs:
@@ -1310,7 +1276,6 @@ class InstanceMaintenanceScheduleArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     schedule_deadline_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceScheduleArgs:
@@ -1340,7 +1305,6 @@ class InstanceMaintenanceScheduleArgs:
 class InstanceNodeArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceNodeArgs:
@@ -1366,7 +1330,6 @@ class InstancePersistenceConfigArgsDict(TypedDict):
     rdb_next_snapshot_time: NotRequired[pulumi.Input[_builtins.str]]
     rdb_snapshot_period: NotRequired[pulumi.Input[_builtins.str]]
     rdb_snapshot_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePersistenceConfigArgs:
@@ -1405,7 +1368,6 @@ class InstanceServerCaCertArgsDict(TypedDict):
     expire_time: NotRequired[pulumi.Input[_builtins.str]]
     serial_number: NotRequired[pulumi.Input[_builtins.str]]
     sha1_fingerprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceServerCaCertArgs:

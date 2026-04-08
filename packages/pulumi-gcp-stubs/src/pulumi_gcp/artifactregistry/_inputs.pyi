@@ -67,7 +67,6 @@ class RepositoryCleanupPolicyArgsDict(TypedDict):
     most_recent_versions: NotRequired[
         pulumi.Input[RepositoryCleanupPolicyMostRecentVersionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryCleanupPolicyArgs:
@@ -122,7 +121,6 @@ class RepositoryCleanupPolicyConditionArgsDict(TypedDict):
     version_name_prefixes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryCleanupPolicyConditionArgs:
@@ -190,7 +188,6 @@ class RepositoryCleanupPolicyMostRecentVersionsArgsDict(TypedDict):
     package_name_prefixes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryCleanupPolicyMostRecentVersionsArgs:
@@ -219,7 +216,6 @@ class RepositoryCleanupPolicyMostRecentVersionsArgs:
 
 class RepositoryDockerConfigArgsDict(TypedDict):
     immutable_tags: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RepositoryDockerConfigArgs:
@@ -236,7 +232,6 @@ class RepositoryIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamBindingConditionArgs:
@@ -267,7 +262,6 @@ class RepositoryIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryIamMemberConditionArgs:
@@ -297,7 +291,6 @@ class RepositoryIamMemberConditionArgs:
 class RepositoryMavenConfigArgsDict(TypedDict):
     allow_snapshot_overwrites: NotRequired[pulumi.Input[_builtins.bool]]
     version_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryMavenConfigArgs:
@@ -347,7 +340,6 @@ class RepositoryRemoteRepositoryConfigArgsDict(TypedDict):
     yum_repository: NotRequired[
         pulumi.Input[RepositoryRemoteRepositoryConfigYumRepositoryArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigArgs:
@@ -506,7 +498,6 @@ class RepositoryRemoteRepositoryConfigAptRepositoryArgsDict(TypedDict):
             RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigAptRepositoryArgs:
@@ -539,7 +530,6 @@ class RepositoryRemoteRepositoryConfigAptRepositoryArgs:
 class RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgsDict(TypedDict):
     repository_base: pulumi.Input[_builtins.str]
     repository_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgs:
@@ -562,7 +552,6 @@ class RepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryArgs:
 
 class RepositoryRemoteRepositoryConfigCommonRepositoryArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigCommonRepositoryArgs:
@@ -580,7 +569,6 @@ class RepositoryRemoteRepositoryConfigDockerRepositoryArgsDict(TypedDict):
         ]
     ]
     public_repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigDockerRepositoryArgs:
@@ -622,7 +610,6 @@ class RepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryArgsDict(
     TypedDict
 ):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryArgs:
@@ -642,7 +629,6 @@ class RepositoryRemoteRepositoryConfigMavenRepositoryArgsDict(TypedDict):
         ]
     ]
     public_repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigMavenRepositoryArgs:
@@ -684,7 +670,6 @@ class RepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryArgsDict(
     TypedDict
 ):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryArgs:
@@ -704,7 +689,6 @@ class RepositoryRemoteRepositoryConfigNpmRepositoryArgsDict(TypedDict):
         ]
     ]
     public_repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigNpmRepositoryArgs:
@@ -742,7 +726,6 @@ class RepositoryRemoteRepositoryConfigNpmRepositoryArgs:
 
 class RepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryArgs:
@@ -762,7 +745,6 @@ class RepositoryRemoteRepositoryConfigPythonRepositoryArgsDict(TypedDict):
         ]
     ]
     public_repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigPythonRepositoryArgs:
@@ -804,7 +786,6 @@ class RepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryArgsDict(
     TypedDict
 ):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryArgs:
@@ -823,7 +804,6 @@ class RepositoryRemoteRepositoryConfigUpstreamCredentialsArgsDict(TypedDict):
             RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigUpstreamCredentialsArgs:
@@ -860,7 +840,6 @@ class RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredent
 ):
     password_secret_version: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsArgs:
@@ -887,7 +866,6 @@ class RepositoryRemoteRepositoryConfigYumRepositoryArgsDict(TypedDict):
             RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigYumRepositoryArgs:
@@ -920,7 +898,6 @@ class RepositoryRemoteRepositoryConfigYumRepositoryArgs:
 class RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgsDict(TypedDict):
     repository_base: pulumi.Input[_builtins.str]
     repository_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryArgs:
@@ -949,7 +926,6 @@ class RepositoryVirtualRepositoryConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RepositoryVirtualRepositoryConfigArgs:
@@ -989,7 +965,6 @@ class RepositoryVirtualRepositoryConfigUpstreamPolicyArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     priority: NotRequired[pulumi.Input[_builtins.int]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryVirtualRepositoryConfigUpstreamPolicyArgs:
@@ -1020,7 +995,6 @@ class RepositoryVulnerabilityScanningConfigArgsDict(TypedDict):
     enablement_config: NotRequired[pulumi.Input[_builtins.str]]
     enablement_state: NotRequired[pulumi.Input[_builtins.str]]
     enablement_state_reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RepositoryVulnerabilityScanningConfigArgs:

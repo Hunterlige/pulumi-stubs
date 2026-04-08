@@ -107,7 +107,6 @@ class AccessBoundaryPolicyRuleArgsDict(TypedDict):
         pulumi.Input[AccessBoundaryPolicyRuleAccessBoundaryRuleArgsDict]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessBoundaryPolicyRuleArgs:
@@ -145,7 +144,6 @@ class AccessBoundaryPolicyRuleAccessBoundaryRuleArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     available_resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessBoundaryPolicyRuleAccessBoundaryRuleArgs:
@@ -202,7 +200,6 @@ class AccessBoundaryPolicyRuleAccessBoundaryRuleAvailabilityConditionArgsDict(
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AccessBoundaryPolicyRuleAccessBoundaryRuleAvailabilityConditionArgs:
@@ -238,7 +235,6 @@ class AccessBoundaryPolicyRuleAccessBoundaryRuleAvailabilityConditionArgs:
 class DenyPolicyRuleArgsDict(TypedDict):
     deny_rule: NotRequired[pulumi.Input[DenyPolicyRuleDenyRuleArgsDict]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DenyPolicyRuleArgs:
@@ -271,7 +267,6 @@ class DenyPolicyRuleDenyRuleArgsDict(TypedDict):
     exception_principals: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DenyPolicyRuleDenyRuleArgs:
@@ -345,7 +340,6 @@ class DenyPolicyRuleDenyRuleDenialConditionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DenyPolicyRuleDenyRuleDenialConditionArgs:
@@ -383,7 +377,6 @@ class FoldersPolicyBindingConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FoldersPolicyBindingConditionArgs:
@@ -418,7 +411,6 @@ class FoldersPolicyBindingConditionArgs:
 
 class FoldersPolicyBindingTargetArgsDict(TypedDict):
     principal_set: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FoldersPolicyBindingTargetArgs:
@@ -436,7 +428,6 @@ class OrganizationsPolicyBindingConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationsPolicyBindingConditionArgs:
@@ -471,7 +462,6 @@ class OrganizationsPolicyBindingConditionArgs:
 
 class OrganizationsPolicyBindingTargetArgsDict(TypedDict):
     principal_set: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationsPolicyBindingTargetArgs:
@@ -489,7 +479,6 @@ class PrincipalAccessBoundaryPolicyDetailsArgsDict(TypedDict):
         Sequence[pulumi.Input[PrincipalAccessBoundaryPolicyDetailsRuleArgsDict]]
     ]
     enforcement_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrincipalAccessBoundaryPolicyDetailsArgs:
@@ -525,7 +514,6 @@ class PrincipalAccessBoundaryPolicyDetailsRuleArgsDict(TypedDict):
     effect: pulumi.Input[_builtins.str]
     resources: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrincipalAccessBoundaryPolicyDetailsRuleArgs:
@@ -557,7 +545,6 @@ class ProjectsPolicyBindingConditionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectsPolicyBindingConditionArgs:
@@ -592,7 +579,6 @@ class ProjectsPolicyBindingConditionArgs:
 
 class ProjectsPolicyBindingTargetArgsDict(TypedDict):
     principal_set: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectsPolicyBindingTargetArgs:
@@ -614,7 +600,6 @@ class WorkforcePoolAccessRestrictionsArgsDict(TypedDict):
         ]
     ]
     disable_programmatic_signin: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolAccessRestrictionsArgs:
@@ -660,7 +645,6 @@ class WorkforcePoolAccessRestrictionsArgs:
 
 class WorkforcePoolAccessRestrictionsAllowedServiceArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolAccessRestrictionsAllowedServiceArgs:
@@ -677,7 +661,6 @@ class WorkforcePoolIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolIamBindingConditionArgs:
@@ -708,7 +691,6 @@ class WorkforcePoolIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolIamMemberConditionArgs:
@@ -747,7 +729,6 @@ class WorkforcePoolProviderExtendedAttributesOauth2ClientArgsDict(TypedDict):
             WorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtendedAttributesOauth2ClientArgs:
@@ -822,7 +803,6 @@ class WorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretArgsDict(
             WorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretArgs:
@@ -859,7 +839,6 @@ class WorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueArgsDi
 ):
     plain_text: pulumi.Input[_builtins.str]
     thumbprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueArgs:
@@ -884,7 +863,6 @@ class WorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersArgsDict
     TypedDict
 ):
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersArgs:
@@ -909,7 +887,6 @@ class WorkforcePoolProviderExtraAttributesOauth2ClientArgsDict(TypedDict):
             WorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtraAttributesOauth2ClientArgs:
@@ -982,7 +959,6 @@ class WorkforcePoolProviderExtraAttributesOauth2ClientClientSecretArgsDict(Typed
             WorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtraAttributesOauth2ClientClientSecretArgs:
@@ -1019,7 +995,6 @@ class WorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueArgsDict(
 ):
     plain_text: pulumi.Input[_builtins.str]
     thumbprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueArgs:
@@ -1044,7 +1019,6 @@ class WorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersArgsDict(
     TypedDict
 ):
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersArgs:
@@ -1063,7 +1037,6 @@ class WorkforcePoolProviderKeyKeyDataArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     not_after_time: NotRequired[pulumi.Input[_builtins.str]]
     not_before_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderKeyKeyDataArgs:
@@ -1112,7 +1085,6 @@ class WorkforcePoolProviderOidcArgsDict(TypedDict):
     web_sso_config: NotRequired[
         pulumi.Input[WorkforcePoolProviderOidcWebSsoConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderOidcArgs:
@@ -1165,7 +1137,6 @@ class WorkforcePoolProviderOidcArgs:
 
 class WorkforcePoolProviderOidcClientSecretArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[WorkforcePoolProviderOidcClientSecretValueArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderOidcClientSecretArgs:
@@ -1190,7 +1161,6 @@ class WorkforcePoolProviderOidcClientSecretArgs:
 class WorkforcePoolProviderOidcClientSecretValueArgsDict(TypedDict):
     plain_text: pulumi.Input[_builtins.str]
     thumbprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderOidcClientSecretValueArgs:
@@ -1215,7 +1185,6 @@ class WorkforcePoolProviderOidcWebSsoConfigArgsDict(TypedDict):
     assertion_claims_behavior: pulumi.Input[_builtins.str]
     response_type: pulumi.Input[_builtins.str]
     additional_scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderOidcWebSsoConfigArgs:
@@ -1250,7 +1219,6 @@ class WorkforcePoolProviderOidcWebSsoConfigArgs:
 
 class WorkforcePoolProviderSamlArgsDict(TypedDict):
     idp_metadata_xml: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkforcePoolProviderSamlArgs:
@@ -1267,7 +1235,6 @@ class WorkloadIdentityPoolIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolIamBindingConditionArgs:
@@ -1298,7 +1265,6 @@ class WorkloadIdentityPoolIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolIamMemberConditionArgs:
@@ -1330,7 +1296,6 @@ class WorkloadIdentityPoolInlineCertificateIssuanceConfigArgsDict(TypedDict):
     key_algorithm: NotRequired[pulumi.Input[_builtins.str]]
     lifetime: NotRequired[pulumi.Input[_builtins.str]]
     rotation_window_percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolInlineCertificateIssuanceConfigArgs:
@@ -1377,7 +1342,6 @@ class WorkloadIdentityPoolInlineTrustConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolInlineTrustConfigArgs:
@@ -1430,7 +1394,6 @@ class WorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundleArgsDict(TypedDi
         ]
     ]
     trust_domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundleArgs:
@@ -1478,7 +1441,6 @@ class WorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundleTrustAnchorArgsD
     TypedDict
 ):
     pem_certificate: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundleTrustAnchorArgs:
@@ -1491,7 +1453,6 @@ class WorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundleTrustAnchorArgs:
 
 class WorkloadIdentityPoolManagedIdentityAttestationRuleArgsDict(TypedDict):
     google_cloud_resource: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolManagedIdentityAttestationRuleArgs:
@@ -1506,7 +1467,6 @@ class WorkloadIdentityPoolManagedIdentityAttestationRuleArgs:
 
 class WorkloadIdentityPoolNamespaceOwnerServiceArgsDict(TypedDict):
     principal_subject: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolNamespaceOwnerServiceArgs:
@@ -1521,7 +1481,6 @@ class WorkloadIdentityPoolNamespaceOwnerServiceArgs:
 
 class WorkloadIdentityPoolProviderAwsArgsDict(TypedDict):
     account_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderAwsArgs:
@@ -1536,7 +1495,6 @@ class WorkloadIdentityPoolProviderOidcArgsDict(TypedDict):
     issuer_uri: pulumi.Input[_builtins.str]
     allowed_audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     jwks_json: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderOidcArgs:
@@ -1571,7 +1529,6 @@ class WorkloadIdentityPoolProviderOidcArgs:
 
 class WorkloadIdentityPoolProviderSamlArgsDict(TypedDict):
     idp_metadata_xml: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderSamlArgs:
@@ -1586,7 +1543,6 @@ class WorkloadIdentityPoolProviderSamlArgs:
 
 class WorkloadIdentityPoolProviderX509ArgsDict(TypedDict):
     trust_store: pulumi.Input[WorkloadIdentityPoolProviderX509TrustStoreArgsDict]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderX509Args:
@@ -1620,7 +1576,6 @@ class WorkloadIdentityPoolProviderX509TrustStoreArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderX509TrustStoreArgs:
@@ -1689,7 +1644,6 @@ class WorkloadIdentityPoolProviderX509TrustStoreArgs:
 
 class WorkloadIdentityPoolProviderX509TrustStoreIntermediateCaArgsDict(TypedDict):
     pem_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderX509TrustStoreIntermediateCaArgs:
@@ -1704,7 +1658,6 @@ class WorkloadIdentityPoolProviderX509TrustStoreIntermediateCaArgs:
 
 class WorkloadIdentityPoolProviderX509TrustStoreTrustAnchorArgsDict(TypedDict):
     pem_certificate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadIdentityPoolProviderX509TrustStoreTrustAnchorArgs:

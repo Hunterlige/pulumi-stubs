@@ -19,7 +19,6 @@ __all__ = [
 class ClusterEncryptionDetailArgsDict(TypedDict):
     encryption_status: pulumi.Input[_builtins.str]
     encryption_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionDetailArgs:
@@ -43,7 +42,6 @@ class ClusterEncryptionDetailArgs:
 class ClusterMultiRegionPropertiesArgsDict(TypedDict):
     clusters: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     witness_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMultiRegionPropertiesArgs:
@@ -70,7 +68,6 @@ class ClusterMultiRegionPropertiesArgs:
 
 class ClusterPeeringTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterPeeringTimeoutsArgs:
@@ -87,7 +84,6 @@ class ClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterTimeoutsArgs:

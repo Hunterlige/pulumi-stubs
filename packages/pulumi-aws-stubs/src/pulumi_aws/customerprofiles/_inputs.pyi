@@ -47,7 +47,6 @@ class DomainMatchingArgsDict(TypedDict):
     auto_merging: NotRequired[pulumi.Input[DomainMatchingAutoMergingArgsDict]]
     exporting_config: NotRequired[pulumi.Input[DomainMatchingExportingConfigArgsDict]]
     job_schedule: NotRequired[pulumi.Input[DomainMatchingJobScheduleArgsDict]]
-    ...
 
 @pulumi.input_type
 class DomainMatchingArgs:
@@ -99,7 +98,6 @@ class DomainMatchingAutoMergingArgsDict(TypedDict):
         pulumi.Input[DomainMatchingAutoMergingConsolidationArgsDict]
     ]
     min_allowed_confidence_score_for_merging: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class DomainMatchingAutoMergingArgs:
@@ -154,7 +152,6 @@ class DomainMatchingAutoMergingArgs:
 class DomainMatchingAutoMergingConflictResolutionArgsDict(TypedDict):
     conflict_resolving_model: pulumi.Input[_builtins.str]
     source_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMatchingAutoMergingConflictResolutionArgs:
@@ -179,7 +176,6 @@ class DomainMatchingAutoMergingConsolidationArgsDict(TypedDict):
     matching_attributes_lists: pulumi.Input[
         Sequence[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ]
-    ...
 
 @pulumi.input_type
 class DomainMatchingAutoMergingConsolidationArgs:
@@ -209,7 +205,6 @@ class DomainMatchingExportingConfigArgsDict(TypedDict):
     s3_exporting: NotRequired[
         pulumi.Input[DomainMatchingExportingConfigS3ExportingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainMatchingExportingConfigArgs:
@@ -234,7 +229,6 @@ class DomainMatchingExportingConfigArgs:
 class DomainMatchingExportingConfigS3ExportingArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainMatchingExportingConfigS3ExportingArgs:
@@ -258,7 +252,6 @@ class DomainMatchingExportingConfigS3ExportingArgs:
 class DomainMatchingJobScheduleArgsDict(TypedDict):
     day_of_the_week: pulumi.Input[_builtins.str]
     time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DomainMatchingJobScheduleArgs:
@@ -298,7 +291,6 @@ class DomainRuleBasedMatchingArgsDict(TypedDict):
     max_allowed_rule_level_for_matching: NotRequired[pulumi.Input[_builtins.int]]
     max_allowed_rule_level_for_merging: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingArgs:
@@ -407,7 +399,6 @@ class DomainRuleBasedMatchingAttributeTypesSelectorArgsDict(TypedDict):
     addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     email_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     phone_numbers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingAttributeTypesSelectorArgs:
@@ -459,7 +450,6 @@ class DomainRuleBasedMatchingAttributeTypesSelectorArgs:
 class DomainRuleBasedMatchingConflictResolutionArgsDict(TypedDict):
     conflict_resolving_model: pulumi.Input[_builtins.str]
     source_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingConflictResolutionArgs:
@@ -484,7 +474,6 @@ class DomainRuleBasedMatchingExportingConfigArgsDict(TypedDict):
     s3_exporting: NotRequired[
         pulumi.Input[DomainRuleBasedMatchingExportingConfigS3ExportingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingExportingConfigArgs:
@@ -513,7 +502,6 @@ class DomainRuleBasedMatchingExportingConfigArgs:
 class DomainRuleBasedMatchingExportingConfigS3ExportingArgsDict(TypedDict):
     s3_bucket_name: pulumi.Input[_builtins.str]
     s3_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingExportingConfigS3ExportingArgs:
@@ -536,7 +524,6 @@ class DomainRuleBasedMatchingExportingConfigS3ExportingArgs:
 
 class DomainRuleBasedMatchingMatchingRuleArgsDict(TypedDict):
     rules: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DomainRuleBasedMatchingMatchingRuleArgs:
@@ -560,7 +547,6 @@ class ProfileAddressArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfileAddressArgs:
@@ -640,7 +626,6 @@ class ProfileBillingAddressArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfileBillingAddressArgs:
@@ -720,7 +705,6 @@ class ProfileMailingAddressArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfileMailingAddressArgs:
@@ -800,7 +784,6 @@ class ProfileShippingAddressArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProfileShippingAddressArgs:

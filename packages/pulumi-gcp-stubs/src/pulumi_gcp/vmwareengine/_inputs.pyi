@@ -73,7 +73,6 @@ class ClusterAutoscalingSettingsArgsDict(TypedDict):
     cool_down_period: NotRequired[pulumi.Input[_builtins.str]]
     max_cluster_node_count: NotRequired[pulumi.Input[_builtins.int]]
     min_cluster_node_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterAutoscalingSettingsArgs:
@@ -134,7 +133,6 @@ class ClusterAutoscalingSettingsAutoscalingPolicyArgsDict(TypedDict):
             ClusterAutoscalingSettingsAutoscalingPolicyStorageThresholdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterAutoscalingSettingsAutoscalingPolicyArgs:
@@ -227,7 +225,6 @@ class ClusterAutoscalingSettingsAutoscalingPolicyConsumedMemoryThresholdsArgsDic
 ):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ClusterAutoscalingSettingsAutoscalingPolicyConsumedMemoryThresholdsArgs:
@@ -251,7 +248,6 @@ class ClusterAutoscalingSettingsAutoscalingPolicyConsumedMemoryThresholdsArgs:
 class ClusterAutoscalingSettingsAutoscalingPolicyCpuThresholdsArgsDict(TypedDict):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ClusterAutoscalingSettingsAutoscalingPolicyCpuThresholdsArgs:
@@ -275,7 +271,6 @@ class ClusterAutoscalingSettingsAutoscalingPolicyCpuThresholdsArgs:
 class ClusterAutoscalingSettingsAutoscalingPolicyStorageThresholdsArgsDict(TypedDict):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ClusterAutoscalingSettingsAutoscalingPolicyStorageThresholdsArgs:
@@ -304,7 +299,6 @@ class ClusterDatastoreMountConfigArgsDict(TypedDict):
     ignore_colocation: NotRequired[pulumi.Input[_builtins.bool]]
     nfs_version: NotRequired[pulumi.Input[_builtins.str]]
     servers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterDatastoreMountConfigArgs:
@@ -370,7 +364,6 @@ class ClusterDatastoreMountConfigDatastoreNetworkArgsDict(TypedDict):
     connection_count: NotRequired[pulumi.Input[_builtins.int]]
     mtu: NotRequired[pulumi.Input[_builtins.int]]
     network_peering: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterDatastoreMountConfigDatastoreNetworkArgs:
@@ -407,7 +400,6 @@ class ClusterNodeTypeConfigArgsDict(TypedDict):
     node_count: pulumi.Input[_builtins.int]
     node_type_id: pulumi.Input[_builtins.str]
     custom_core_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterNodeTypeConfigArgs:
@@ -441,7 +433,6 @@ class DatastoreNfsDatastoreArgsDict(TypedDict):
     third_party_file_service: NotRequired[
         pulumi.Input[DatastoreNfsDatastoreThirdPartyFileServiceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DatastoreNfsDatastoreArgs:
@@ -478,7 +469,6 @@ class DatastoreNfsDatastoreArgs:
 class DatastoreNfsDatastoreGoogleFileServiceArgsDict(TypedDict):
     filestore_instance: NotRequired[pulumi.Input[_builtins.str]]
     netapp_volume: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatastoreNfsDatastoreGoogleFileServiceArgs:
@@ -503,7 +493,6 @@ class DatastoreNfsDatastoreThirdPartyFileServiceArgsDict(TypedDict):
     file_share: pulumi.Input[_builtins.str]
     network: pulumi.Input[_builtins.str]
     servers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class DatastoreNfsDatastoreThirdPartyFileServiceArgs:
@@ -533,7 +522,6 @@ class DatastoreNfsDatastoreThirdPartyFileServiceArgs:
 class ExternalAccessRuleDestinationIpRangeArgsDict(TypedDict):
     external_address: NotRequired[pulumi.Input[_builtins.str]]
     ip_address_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExternalAccessRuleDestinationIpRangeArgs:
@@ -557,7 +545,6 @@ class ExternalAccessRuleDestinationIpRangeArgs:
 class ExternalAccessRuleSourceIpRangeArgsDict(TypedDict):
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     ip_address_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExternalAccessRuleSourceIpRangeArgs:
@@ -581,7 +568,6 @@ class ExternalAccessRuleSourceIpRangeArgs:
 class NetworkPolicyExternalIpArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkPolicyExternalIpArgs:
@@ -605,7 +591,6 @@ class NetworkPolicyExternalIpArgs:
 class NetworkPolicyInternetAccessArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkPolicyInternetAccessArgs:
@@ -629,7 +614,6 @@ class NetworkPolicyInternetAccessArgs:
 class NetworkVpcNetworkArgsDict(TypedDict):
     network: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkVpcNetworkArgs:
@@ -655,7 +639,6 @@ class PrivateCloudHcxArgsDict(TypedDict):
     internal_ip: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudHcxArgs:
@@ -701,7 +684,6 @@ class PrivateCloudManagementClusterArgsDict(TypedDict):
     stretched_cluster_config: NotRequired[
         pulumi.Input[PrivateCloudManagementClusterStretchedClusterConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterArgs:
@@ -784,7 +766,6 @@ class PrivateCloudManagementClusterAutoscalingSettingsArgsDict(TypedDict):
     cool_down_period: NotRequired[pulumi.Input[_builtins.str]]
     max_cluster_node_count: NotRequired[pulumi.Input[_builtins.int]]
     min_cluster_node_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterAutoscalingSettingsArgs:
@@ -861,7 +842,6 @@ class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyArgsDict(
             PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyStorageThresholdsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyArgs:
@@ -962,7 +942,6 @@ class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyConsumedM
 ):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyConsumedMemoryThresholdsArgs:
@@ -988,7 +967,6 @@ class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyCpuThresh
 ):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyCpuThresholdsArgs:
@@ -1014,7 +992,6 @@ class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyStorageTh
 ):
     scale_in: pulumi.Input[_builtins.int]
     scale_out: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicyStorageThresholdsArgs:
@@ -1039,7 +1016,6 @@ class PrivateCloudManagementClusterNodeTypeConfigArgsDict(TypedDict):
     node_count: pulumi.Input[_builtins.int]
     node_type_id: pulumi.Input[_builtins.str]
     custom_core_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterNodeTypeConfigArgs:
@@ -1069,7 +1045,6 @@ class PrivateCloudManagementClusterNodeTypeConfigArgs:
 class PrivateCloudManagementClusterStretchedClusterConfigArgsDict(TypedDict):
     preferred_location: NotRequired[pulumi.Input[_builtins.str]]
     secondary_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudManagementClusterStretchedClusterConfigArgs:
@@ -1096,7 +1071,6 @@ class PrivateCloudNetworkConfigArgsDict(TypedDict):
     management_ip_address_layout_version: NotRequired[pulumi.Input[_builtins.int]]
     vmware_engine_network: NotRequired[pulumi.Input[_builtins.str]]
     vmware_engine_network_canonical: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudNetworkConfigArgs:
@@ -1150,7 +1124,6 @@ class PrivateCloudNsxArgsDict(TypedDict):
     internal_ip: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudNsxArgs:
@@ -1188,7 +1161,6 @@ class PrivateCloudVcenterArgsDict(TypedDict):
     internal_ip: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateCloudVcenterArgs:
@@ -1224,7 +1196,6 @@ class PrivateCloudVcenterArgs:
 class SubnetDhcpAddressRangeArgsDict(TypedDict):
     first_address: NotRequired[pulumi.Input[_builtins.str]]
     last_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SubnetDhcpAddressRangeArgs:

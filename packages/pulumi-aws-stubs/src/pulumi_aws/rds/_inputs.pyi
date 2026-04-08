@@ -65,7 +65,6 @@ class ClusterMasterUserSecretArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMasterUserSecretArgs:
@@ -96,7 +95,6 @@ class ClusterParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     apply_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterParameterGroupParameterArgs:
@@ -129,7 +127,6 @@ class ClusterRestoreToPointInTimeArgsDict(TypedDict):
     source_cluster_identifier: NotRequired[pulumi.Input[_builtins.str]]
     source_cluster_resource_id: NotRequired[pulumi.Input[_builtins.str]]
     use_latest_restorable_time: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreToPointInTimeArgs:
@@ -180,7 +177,6 @@ class ClusterS3ImportArgsDict(TypedDict):
     source_engine: pulumi.Input[_builtins.str]
     source_engine_version: pulumi.Input[_builtins.str]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterS3ImportArgs:
@@ -226,7 +222,6 @@ class ClusterScalingConfigurationArgsDict(TypedDict):
     seconds_before_timeout: NotRequired[pulumi.Input[_builtins.int]]
     seconds_until_auto_pause: NotRequired[pulumi.Input[_builtins.int]]
     timeout_action: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterScalingConfigurationArgs:
@@ -277,7 +272,6 @@ class ClusterServerlessv2ScalingConfigurationArgsDict(TypedDict):
     max_capacity: pulumi.Input[_builtins.float]
     min_capacity: pulumi.Input[_builtins.float]
     seconds_until_auto_pause: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterServerlessv2ScalingConfigurationArgs:
@@ -308,7 +302,6 @@ class ClusterServerlessv2ScalingConfigurationArgs:
 
 class ClusterSnapshotCopyTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterSnapshotCopyTimeoutsArgs:
@@ -324,7 +317,6 @@ class ClusterSnapshotCopyTimeoutsArgs:
 class ExportTaskTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExportTaskTimeoutsArgs:
@@ -348,7 +340,6 @@ class ExportTaskTimeoutsArgs:
 class GlobalClusterGlobalClusterMemberArgsDict(TypedDict):
     db_cluster_arn: NotRequired[pulumi.Input[_builtins.str]]
     is_writer: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GlobalClusterGlobalClusterMemberArgs:
@@ -371,7 +362,6 @@ class GlobalClusterGlobalClusterMemberArgs:
 
 class InstanceBlueGreenUpdateArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceBlueGreenUpdateArgs:
@@ -387,7 +377,6 @@ class InstanceBlueGreenUpdateArgs:
 class InstanceDesiredStateTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceDesiredStateTimeoutsArgs:
@@ -412,7 +401,6 @@ class InstanceListenerEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     hosted_zone_id: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceListenerEndpointArgs:
@@ -443,7 +431,6 @@ class InstanceMasterUserSecretArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
     secret_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMasterUserSecretArgs:
@@ -476,7 +463,6 @@ class InstanceRestoreToPointInTimeArgsDict(TypedDict):
     source_db_instance_identifier: NotRequired[pulumi.Input[_builtins.str]]
     source_dbi_resource_id: NotRequired[pulumi.Input[_builtins.str]]
     use_latest_restorable_time: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceRestoreToPointInTimeArgs:
@@ -533,7 +519,6 @@ class InstanceS3ImportArgsDict(TypedDict):
     source_engine: pulumi.Input[_builtins.str]
     source_engine_version: pulumi.Input[_builtins.str]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceS3ImportArgs:
@@ -575,7 +560,6 @@ class InstanceS3ImportArgs:
 class IntegrationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntegrationTimeoutsArgs:
@@ -609,7 +593,6 @@ class OptionGroupOptionArgsDict(TypedDict):
     vpc_security_group_memberships: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class OptionGroupOptionArgs:
@@ -680,7 +663,6 @@ class OptionGroupOptionArgs:
 class OptionGroupOptionOptionSettingArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class OptionGroupOptionOptionSettingArgs:
@@ -705,7 +687,6 @@ class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
     apply_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:
@@ -739,7 +720,6 @@ class ProxyAuthArgsDict(TypedDict):
     iam_auth: NotRequired[pulumi.Input[_builtins.str]]
     secret_arn: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProxyAuthArgs:
@@ -794,7 +774,6 @@ class ProxyDefaultTargetGroupConnectionPoolConfigArgsDict(TypedDict):
     session_pinning_filters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ProxyDefaultTargetGroupConnectionPoolConfigArgs:
@@ -846,7 +825,6 @@ class ProxyDefaultTargetGroupConnectionPoolConfigArgs:
 class ReservedInstanceRecurringChargeArgsDict(TypedDict):
     recurring_charge_amount: NotRequired[pulumi.Input[_builtins.int]]
     recurring_charge_frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ReservedInstanceRecurringChargeArgs:
@@ -873,7 +851,6 @@ class ShardGroupTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ShardGroupTimeoutsArgs:
@@ -903,7 +880,6 @@ class ShardGroupTimeoutsArgs:
 class GetClustersFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetClustersFilterArgs:
@@ -924,7 +900,6 @@ class GetClustersFilterArgs:
 class GetEngineVersionFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetEngineVersionFilterArgs:
@@ -945,7 +920,6 @@ class GetEngineVersionFilterArgs:
 class GetInstancesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetInstancesFilterArgs:

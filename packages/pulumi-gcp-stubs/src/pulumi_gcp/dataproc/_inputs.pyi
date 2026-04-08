@@ -393,7 +393,6 @@ __all__ = [
 class AutoscalingPolicyBasicAlgorithmArgsDict(TypedDict):
     yarn_config: pulumi.Input[AutoscalingPolicyBasicAlgorithmYarnConfigArgsDict]
     cooldown_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicyBasicAlgorithmArgs:
@@ -424,7 +423,6 @@ class AutoscalingPolicyBasicAlgorithmYarnConfigArgsDict(TypedDict):
     scale_up_factor: pulumi.Input[_builtins.float]
     scale_down_min_worker_fraction: NotRequired[pulumi.Input[_builtins.float]]
     scale_up_min_worker_fraction: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicyBasicAlgorithmYarnConfigArgs:
@@ -475,7 +473,6 @@ class AutoscalingPolicyIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicyIamBindingConditionArgs:
@@ -506,7 +503,6 @@ class AutoscalingPolicyIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicyIamMemberConditionArgs:
@@ -537,7 +533,6 @@ class AutoscalingPolicySecondaryWorkerConfigArgsDict(TypedDict):
     max_instances: NotRequired[pulumi.Input[_builtins.int]]
     min_instances: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicySecondaryWorkerConfigArgs:
@@ -568,7 +563,6 @@ class AutoscalingPolicyWorkerConfigArgsDict(TypedDict):
     max_instances: pulumi.Input[_builtins.int]
     min_instances: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AutoscalingPolicyWorkerConfigArgs:
@@ -602,7 +596,6 @@ class BatchEnvironmentConfigArgsDict(TypedDict):
     peripherals_config: NotRequired[
         pulumi.Input[BatchEnvironmentConfigPeripheralsConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BatchEnvironmentConfigArgs:
@@ -646,7 +639,6 @@ class BatchEnvironmentConfigExecutionConfigArgsDict(TypedDict):
     staging_bucket: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork_uri: NotRequired[pulumi.Input[_builtins.str]]
     ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchEnvironmentConfigExecutionConfigArgs:
@@ -722,7 +714,6 @@ class BatchEnvironmentConfigExecutionConfigArgs:
 
 class BatchEnvironmentConfigExecutionConfigAuthenticationConfigArgsDict(TypedDict):
     user_workload_authentication_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchEnvironmentConfigExecutionConfigAuthenticationConfigArgs:
@@ -748,7 +739,6 @@ class BatchEnvironmentConfigPeripheralsConfigArgsDict(TypedDict):
             BatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class BatchEnvironmentConfigPeripheralsConfigArgs:
@@ -790,7 +780,6 @@ class BatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigArgsDict(
     TypedDict
 ):
     dataproc_cluster: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigArgs:
@@ -810,7 +799,6 @@ class BatchPysparkBatchArgsDict(TypedDict):
     jar_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     main_python_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     python_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BatchPysparkBatchArgs:
@@ -890,7 +878,6 @@ class BatchRuntimeConfigArgsDict(TypedDict):
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchRuntimeConfigArgs:
@@ -955,7 +942,6 @@ class BatchRuntimeConfigArgs:
 
 class BatchRuntimeConfigAutotuningConfigArgsDict(TypedDict):
     scenarios: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BatchRuntimeConfigAutotuningConfigArgs:
@@ -984,7 +970,6 @@ class BatchRuntimeInfoArgsDict(TypedDict):
     diagnostic_output_uri: NotRequired[pulumi.Input[_builtins.str]]
     endpoints: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     output_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchRuntimeInfoArgs:
@@ -1056,7 +1041,6 @@ class BatchRuntimeInfoApproximateUsageArgsDict(TypedDict):
     milli_accelerator_seconds: NotRequired[pulumi.Input[_builtins.str]]
     milli_dcu_seconds: NotRequired[pulumi.Input[_builtins.str]]
     shuffle_storage_gb_seconds: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchRuntimeInfoApproximateUsageArgs:
@@ -1101,7 +1085,6 @@ class BatchRuntimeInfoCurrentUsageArgsDict(TypedDict):
     shuffle_storage_gb: NotRequired[pulumi.Input[_builtins.str]]
     shuffle_storage_gb_premium: NotRequired[pulumi.Input[_builtins.str]]
     snapshot_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchRuntimeInfoCurrentUsageArgs:
@@ -1161,7 +1144,6 @@ class BatchSparkBatchArgsDict(TypedDict):
     jar_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchSparkBatchArgs:
@@ -1229,7 +1211,6 @@ class BatchSparkRBatchArgsDict(TypedDict):
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     main_r_file_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchSparkRBatchArgs:
@@ -1280,7 +1261,6 @@ class BatchSparkSqlBatchArgsDict(TypedDict):
     query_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class BatchSparkSqlBatchArgs:
@@ -1323,7 +1303,6 @@ class BatchStateHistoryArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
     state_message: NotRequired[pulumi.Input[_builtins.str]]
     state_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BatchStateHistoryArgs:
@@ -1398,7 +1377,6 @@ class ClusterClusterConfigArgsDict(TypedDict):
     staging_bucket: NotRequired[pulumi.Input[_builtins.str]]
     temp_bucket: NotRequired[pulumi.Input[_builtins.str]]
     worker_config: NotRequired[pulumi.Input[ClusterClusterConfigWorkerConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigArgs:
@@ -1629,7 +1607,6 @@ class ClusterClusterConfigArgs:
 
 class ClusterClusterConfigAutoscalingConfigArgsDict(TypedDict):
     policy_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAutoscalingConfigArgs:
@@ -1645,7 +1622,6 @@ class ClusterClusterConfigAuxiliaryNodeGroupArgsDict(TypedDict):
         Sequence[pulumi.Input[ClusterClusterConfigAuxiliaryNodeGroupNodeGroupArgsDict]]
     ]
     node_group_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAuxiliaryNodeGroupArgs:
@@ -1685,7 +1661,6 @@ class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupArgsDict(TypedDict):
             ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupArgs:
@@ -1746,7 +1721,6 @@ class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigArgsDict(Typ
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigArgs:
@@ -1848,7 +1822,6 @@ class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigAcceleratorA
 ):
     accelerator_count: pulumi.Input[_builtins.int]
     accelerator_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigAcceleratorArgs:
@@ -1876,7 +1849,6 @@ class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigDiskConfigAr
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     local_ssd_interface: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigAuxiliaryNodeGroupNodeGroupNodeGroupConfigDiskConfigArgs:
@@ -1913,7 +1885,6 @@ class ClusterClusterConfigDataprocMetricConfigArgsDict(TypedDict):
     metrics: pulumi.Input[
         Sequence[pulumi.Input[ClusterClusterConfigDataprocMetricConfigMetricArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigDataprocMetricConfigArgs:
@@ -1942,7 +1913,6 @@ class ClusterClusterConfigDataprocMetricConfigArgs:
 class ClusterClusterConfigDataprocMetricConfigMetricArgsDict(TypedDict):
     metric_source: pulumi.Input[_builtins.str]
     metric_overrides: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigDataprocMetricConfigMetricArgs:
@@ -1971,7 +1941,6 @@ class ClusterClusterConfigDataprocMetricConfigMetricArgs:
 
 class ClusterClusterConfigEncryptionConfigArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigEncryptionConfigArgs:
@@ -1985,7 +1954,6 @@ class ClusterClusterConfigEncryptionConfigArgs:
 class ClusterClusterConfigEndpointConfigArgsDict(TypedDict):
     enable_http_port_access: pulumi.Input[_builtins.bool]
     http_ports: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigEndpointConfigArgs:
@@ -2040,7 +2008,6 @@ class ClusterClusterConfigGceClusterConfigArgsDict(TypedDict):
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigGceClusterConfigArgs:
@@ -2197,7 +2164,6 @@ class ClusterClusterConfigGceClusterConfigArgs:
 
 class ClusterClusterConfigGceClusterConfigConfidentialInstanceConfigArgsDict(TypedDict):
     enable_confidential_compute: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigGceClusterConfigConfidentialInstanceConfigArgs:
@@ -2216,7 +2182,6 @@ class ClusterClusterConfigGceClusterConfigConfidentialInstanceConfigArgs:
 
 class ClusterClusterConfigGceClusterConfigNodeGroupAffinityArgsDict(TypedDict):
     node_group_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigGceClusterConfigNodeGroupAffinityArgs:
@@ -2231,7 +2196,6 @@ class ClusterClusterConfigGceClusterConfigReservationAffinityArgsDict(TypedDict)
     consume_reservation_type: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigGceClusterConfigReservationAffinityArgs:
@@ -2268,7 +2232,6 @@ class ClusterClusterConfigGceClusterConfigShieldedInstanceConfigArgsDict(TypedDi
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigGceClusterConfigShieldedInstanceConfigArgs:
@@ -2300,7 +2263,6 @@ class ClusterClusterConfigGceClusterConfigShieldedInstanceConfigArgs:
 class ClusterClusterConfigInitializationActionArgsDict(TypedDict):
     script: pulumi.Input[_builtins.str]
     timeout_sec: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigInitializationActionArgs:
@@ -2327,7 +2289,6 @@ class ClusterClusterConfigLifecycleConfigArgsDict(TypedDict):
     idle_delete_ttl: NotRequired[pulumi.Input[_builtins.str]]
     idle_start_time: NotRequired[pulumi.Input[_builtins.str]]
     idle_stop_ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigLifecycleConfigArgs:
@@ -2383,7 +2344,6 @@ class ClusterClusterConfigMasterConfigArgsDict(TypedDict):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigArgs:
@@ -2484,7 +2444,6 @@ class ClusterClusterConfigMasterConfigArgs:
 class ClusterClusterConfigMasterConfigAcceleratorArgsDict(TypedDict):
     accelerator_count: pulumi.Input[_builtins.int]
     accelerator_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigAcceleratorArgs:
@@ -2510,7 +2469,6 @@ class ClusterClusterConfigMasterConfigDiskConfigArgsDict(TypedDict):
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     local_ssd_interface: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigDiskConfigArgs:
@@ -2562,7 +2520,6 @@ class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyArgs:
@@ -2646,7 +2603,6 @@ class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelection
 ):
     machine_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     rank: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListArgs:
@@ -2678,7 +2634,6 @@ class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelection
 ):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     vm_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionResultArgs:
@@ -2701,7 +2656,6 @@ class ClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelection
 
 class ClusterClusterConfigMetastoreConfigArgsDict(TypedDict):
     dataproc_metastore_service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigMetastoreConfigArgs:
@@ -2726,7 +2680,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigArgsDict(TypedDict):
     instance_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
     preemptibility: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigArgs:
@@ -2804,7 +2757,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigDiskConfigArgsDict(TypedDict):
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     local_ssd_interface: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigDiskConfigArgs:
@@ -2863,7 +2815,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyArgsDi
             ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyArgs:
@@ -2970,7 +2921,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstan
 ):
     machine_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     rank: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListArgs:
@@ -3002,7 +2952,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstan
 ):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     vm_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultArgs:
@@ -3028,7 +2977,6 @@ class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvis
 ):
     standard_capacity_base: NotRequired[pulumi.Input[_builtins.int]]
     standard_capacity_percent_above_base: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixArgs:
@@ -3062,7 +3010,6 @@ class ClusterClusterConfigSecurityConfigArgsDict(TypedDict):
     kerberos_config: NotRequired[
         pulumi.Input[ClusterClusterConfigSecurityConfigKerberosConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigSecurityConfigArgs:
@@ -3109,7 +3056,6 @@ class ClusterClusterConfigSecurityConfigIdentityConfigArgsDict(TypedDict):
     user_service_account_mapping: pulumi.Input[
         Mapping[str, pulumi.Input[_builtins.str]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigSecurityConfigIdentityConfigArgs:
@@ -3146,7 +3092,6 @@ class ClusterClusterConfigSecurityConfigKerberosConfigArgsDict(TypedDict):
     tgt_lifetime_hours: NotRequired[pulumi.Input[_builtins.int]]
     truststore_password_uri: NotRequired[pulumi.Input[_builtins.str]]
     truststore_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigSecurityConfigKerberosConfigArgs:
@@ -3264,7 +3209,6 @@ class ClusterClusterConfigSoftwareConfigArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigSoftwareConfigArgs:
@@ -3333,7 +3277,6 @@ class ClusterClusterConfigWorkerConfigArgsDict(TypedDict):
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     min_num_instances: NotRequired[pulumi.Input[_builtins.int]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigArgs:
@@ -3440,7 +3383,6 @@ class ClusterClusterConfigWorkerConfigArgs:
 class ClusterClusterConfigWorkerConfigAcceleratorArgsDict(TypedDict):
     accelerator_count: pulumi.Input[_builtins.int]
     accelerator_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigAcceleratorArgs:
@@ -3466,7 +3408,6 @@ class ClusterClusterConfigWorkerConfigDiskConfigArgsDict(TypedDict):
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     local_ssd_interface: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigDiskConfigArgs:
@@ -3518,7 +3459,6 @@ class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyArgs:
@@ -3602,7 +3542,6 @@ class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelection
 ):
     machine_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     rank: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListArgs:
@@ -3634,7 +3573,6 @@ class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelection
 ):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     vm_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultArgs:
@@ -3659,7 +3597,6 @@ class ClusterIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterIAMBindingConditionArgs:
@@ -3690,7 +3627,6 @@ class ClusterIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterIAMMemberConditionArgs:
@@ -3725,7 +3661,6 @@ class ClusterVirtualClusterConfigArgsDict(TypedDict):
         pulumi.Input[ClusterVirtualClusterConfigKubernetesClusterConfigArgsDict]
     ]
     staging_bucket: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigArgs:
@@ -3785,7 +3720,6 @@ class ClusterVirtualClusterConfigAuxiliaryServicesConfigArgsDict(TypedDict):
             ClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigAuxiliaryServicesConfigArgs:
@@ -3844,7 +3778,6 @@ class ClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigArgsDict(
     TypedDict
 ):
     dataproc_metastore_service: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigArgs:
@@ -3865,7 +3798,6 @@ class ClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig
     TypedDict
 ):
     dataproc_cluster: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigArgs:
@@ -3886,7 +3818,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigArgsDict(TypedDict):
         ClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigArgsDict
     ]
     kubernetes_namespace: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigArgs:
@@ -3948,7 +3879,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigArgs:
@@ -4008,7 +3938,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePool
             ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetArgs:
@@ -4066,7 +3995,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePool
             ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigArgs:
@@ -4132,7 +4060,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePool
 ):
     max_node_count: NotRequired[pulumi.Input[_builtins.int]]
     min_node_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingArgs:
@@ -4161,7 +4088,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePool
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     preemptible: NotRequired[pulumi.Input[_builtins.bool]]
     spot: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigArgs:
@@ -4205,7 +4131,6 @@ class ClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig
 ):
     component_version: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigArgs:
@@ -4241,7 +4166,6 @@ class GdcApplicationEnvironmentSparkApplicationEnvironmentConfigArgsDict(TypedDi
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     default_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GdcApplicationEnvironmentSparkApplicationEnvironmentConfigArgs:
@@ -4270,7 +4194,6 @@ class GdcApplicationEnvironmentSparkApplicationEnvironmentConfigArgs:
 
 class GdcServiceInstanceGdceClusterArgsDict(TypedDict):
     gdce_cluster: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GdcServiceInstanceGdceClusterArgs:
@@ -4294,7 +4217,6 @@ class GdcSparkApplicationPysparkApplicationConfigArgsDict(TypedDict):
     file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     jar_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     python_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GdcSparkApplicationPysparkApplicationConfigArgs:
@@ -4370,7 +4292,6 @@ class GdcSparkApplicationSparkApplicationConfigArgsDict(TypedDict):
     jar_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GdcSparkApplicationSparkApplicationConfigArgs:
@@ -4438,7 +4359,6 @@ class GdcSparkApplicationSparkRApplicationConfigArgsDict(TypedDict):
     archive_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     args: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GdcSparkApplicationSparkRApplicationConfigArgs:
@@ -4492,7 +4412,6 @@ class GdcSparkApplicationSparkSqlApplicationConfigArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class GdcSparkApplicationSparkSqlApplicationConfigArgs:
@@ -4550,7 +4469,6 @@ class GdcSparkApplicationSparkSqlApplicationConfigArgs:
 
 class GdcSparkApplicationSparkSqlApplicationConfigQueryListArgsDict(TypedDict):
     queries: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class GdcSparkApplicationSparkSqlApplicationConfigQueryListArgs:
@@ -4572,7 +4490,6 @@ class JobHadoopConfigArgsDict(TypedDict):
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobHadoopConfigArgs:
@@ -4659,7 +4576,6 @@ class JobHadoopConfigArgs:
 
 class JobHadoopConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobHadoopConfigLoggingConfigArgs:
@@ -4687,7 +4603,6 @@ class JobHiveConfigArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class JobHiveConfigArgs:
@@ -4760,7 +4675,6 @@ class JobIAMBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobIAMBindingConditionArgs:
@@ -4791,7 +4705,6 @@ class JobIAMMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobIAMMemberConditionArgs:
@@ -4828,7 +4741,6 @@ class JobPigConfigArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class JobPigConfigArgs:
@@ -4909,7 +4821,6 @@ class JobPigConfigArgs:
 
 class JobPigConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobPigConfigLoggingConfigArgs:
@@ -4931,7 +4842,6 @@ class JobPigConfigLoggingConfigArgs:
 class JobPlacementArgsDict(TypedDict):
     cluster_name: pulumi.Input[_builtins.str]
     cluster_uuid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobPlacementArgs:
@@ -4960,7 +4870,6 @@ class JobPrestoConfigArgsDict(TypedDict):
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     query_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     query_lists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobPrestoConfigArgs:
@@ -5035,7 +4944,6 @@ class JobPrestoConfigArgs:
 
 class JobPrestoConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobPrestoConfigLoggingConfigArgs:
@@ -5063,7 +4971,6 @@ class JobPysparkConfigArgsDict(TypedDict):
     logging_config: NotRequired[pulumi.Input[JobPysparkConfigLoggingConfigArgsDict]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     python_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobPysparkConfigArgs:
@@ -5156,7 +5063,6 @@ class JobPysparkConfigArgs:
 
 class JobPysparkConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobPysparkConfigLoggingConfigArgs:
@@ -5177,7 +5083,6 @@ class JobPysparkConfigLoggingConfigArgs:
 
 class JobReferenceArgsDict(TypedDict):
     job_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobReferenceArgs:
@@ -5193,7 +5098,6 @@ class JobReferenceArgs:
 class JobSchedulingArgsDict(TypedDict):
     max_failures_per_hour: pulumi.Input[_builtins.int]
     max_failures_total: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class JobSchedulingArgs:
@@ -5223,7 +5127,6 @@ class JobSparkConfigArgsDict(TypedDict):
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobSparkConfigArgs:
@@ -5310,7 +5213,6 @@ class JobSparkConfigArgs:
 
 class JobSparkConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobSparkConfigLoggingConfigArgs:
@@ -5338,7 +5240,6 @@ class JobSparksqlConfigArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class JobSparksqlConfigArgs:
@@ -5415,7 +5316,6 @@ class JobSparksqlConfigArgs:
 
 class JobSparksqlConfigLoggingConfigArgsDict(TypedDict):
     driver_log_levels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class JobSparksqlConfigLoggingConfigArgs:
@@ -5439,7 +5339,6 @@ class JobStatusArgsDict(TypedDict):
     state: NotRequired[pulumi.Input[_builtins.str]]
     state_start_time: NotRequired[pulumi.Input[_builtins.str]]
     substate: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobStatusArgs:
@@ -5476,7 +5375,6 @@ class MetastoreDatabaseIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreDatabaseIamBindingConditionArgs:
@@ -5507,7 +5405,6 @@ class MetastoreDatabaseIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreDatabaseIamMemberConditionArgs:
@@ -5538,7 +5435,6 @@ class MetastoreFederationBackendMetastoreArgsDict(TypedDict):
     metastore_type: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     rank: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MetastoreFederationBackendMetastoreArgs:
@@ -5569,7 +5465,6 @@ class MetastoreFederationIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreFederationIamBindingConditionArgs:
@@ -5600,7 +5495,6 @@ class MetastoreFederationIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreFederationIamMemberConditionArgs:
@@ -5629,7 +5523,6 @@ class MetastoreFederationIamMemberConditionArgs:
 
 class MetastoreServiceEncryptionConfigArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceEncryptionConfigArgs:
@@ -5658,7 +5551,6 @@ class MetastoreServiceHiveMetastoreConfigArgsDict(TypedDict):
     kerberos_config: NotRequired[
         pulumi.Input[MetastoreServiceHiveMetastoreConfigKerberosConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceHiveMetastoreConfigArgs:
@@ -5747,7 +5639,6 @@ class MetastoreServiceHiveMetastoreConfigAuxiliaryVersionArgsDict(TypedDict):
     config_overrides: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceHiveMetastoreConfigAuxiliaryVersionArgs:
@@ -5786,7 +5677,6 @@ class MetastoreServiceHiveMetastoreConfigKerberosConfigArgsDict(TypedDict):
     ]
     krb5_config_gcs_uri: pulumi.Input[_builtins.str]
     principal: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceHiveMetastoreConfigKerberosConfigArgs:
@@ -5824,7 +5714,6 @@ class MetastoreServiceHiveMetastoreConfigKerberosConfigArgs:
 
 class MetastoreServiceHiveMetastoreConfigKerberosConfigKeytabArgsDict(TypedDict):
     cloud_secret: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceHiveMetastoreConfigKerberosConfigKeytabArgs:
@@ -5839,7 +5728,6 @@ class MetastoreServiceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceIamBindingConditionArgs:
@@ -5870,7 +5758,6 @@ class MetastoreServiceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceIamMemberConditionArgs:
@@ -5900,7 +5787,6 @@ class MetastoreServiceIamMemberConditionArgs:
 class MetastoreServiceMaintenanceWindowArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
     hour_of_day: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceMaintenanceWindowArgs:
@@ -5925,7 +5811,6 @@ class MetastoreServiceMetadataIntegrationArgsDict(TypedDict):
     data_catalog_config: pulumi.Input[
         MetastoreServiceMetadataIntegrationDataCatalogConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceMetadataIntegrationArgs:
@@ -5949,7 +5834,6 @@ class MetastoreServiceMetadataIntegrationArgs:
 
 class MetastoreServiceMetadataIntegrationDataCatalogConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceMetadataIntegrationDataCatalogConfigArgs:
@@ -5965,7 +5849,6 @@ class MetastoreServiceNetworkConfigArgsDict(TypedDict):
         Sequence[pulumi.Input[MetastoreServiceNetworkConfigConsumerArgsDict]]
     ]
     custom_routes_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceNetworkConfigArgs:
@@ -6000,7 +5883,6 @@ class MetastoreServiceNetworkConfigArgs:
 class MetastoreServiceNetworkConfigConsumerArgsDict(TypedDict):
     subnetwork: pulumi.Input[_builtins.str]
     endpoint_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceNetworkConfigConsumerArgs:
@@ -6027,7 +5909,6 @@ class MetastoreServiceScalingConfigArgsDict(TypedDict):
     ]
     instance_size: NotRequired[pulumi.Input[_builtins.str]]
     scaling_factor: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceScalingConfigArgs:
@@ -6069,7 +5950,6 @@ class MetastoreServiceScalingConfigAutoscalingConfigArgsDict(TypedDict):
     limit_config: NotRequired[
         pulumi.Input[MetastoreServiceScalingConfigAutoscalingConfigLimitConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceScalingConfigAutoscalingConfigArgs:
@@ -6110,7 +5990,6 @@ class MetastoreServiceScalingConfigAutoscalingConfigArgs:
 class MetastoreServiceScalingConfigAutoscalingConfigLimitConfigArgsDict(TypedDict):
     max_scaling_factor: NotRequired[pulumi.Input[_builtins.float]]
     min_scaling_factor: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceScalingConfigAutoscalingConfigLimitConfigArgs:
@@ -6136,7 +6015,6 @@ class MetastoreServiceScheduledBackupArgsDict(TypedDict):
     cron_schedule: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceScheduledBackupArgs:
@@ -6171,7 +6049,6 @@ class MetastoreServiceScheduledBackupArgs:
 
 class MetastoreServiceTelemetryConfigArgsDict(TypedDict):
     log_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreServiceTelemetryConfigArgs:
@@ -6188,7 +6065,6 @@ class MetastoreTableIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreTableIamBindingConditionArgs:
@@ -6219,7 +6095,6 @@ class MetastoreTableIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetastoreTableIamMemberConditionArgs:
@@ -6253,7 +6128,6 @@ class SessionTemplateEnvironmentConfigArgsDict(TypedDict):
     peripherals_config: NotRequired[
         pulumi.Input[SessionTemplateEnvironmentConfigPeripheralsConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SessionTemplateEnvironmentConfigArgs:
@@ -6309,7 +6183,6 @@ class SessionTemplateEnvironmentConfigExecutionConfigArgsDict(TypedDict):
     staging_bucket: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork_uri: NotRequired[pulumi.Input[_builtins.str]]
     ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionTemplateEnvironmentConfigExecutionConfigArgs:
@@ -6393,7 +6266,6 @@ class SessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigArgsDic
     TypedDict
 ):
     user_workload_authentication_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigArgs:
@@ -6419,7 +6291,6 @@ class SessionTemplateEnvironmentConfigPeripheralsConfigArgsDict(TypedDict):
             SessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SessionTemplateEnvironmentConfigPeripheralsConfigArgs:
@@ -6461,7 +6332,6 @@ class SessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigA
     TypedDict
 ):
     dataproc_cluster: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigArgs:
@@ -6477,7 +6347,6 @@ class SessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigA
 class SessionTemplateJupyterSessionArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     kernel: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionTemplateJupyterSessionArgs:
@@ -6505,7 +6374,6 @@ class SessionTemplateRuntimeConfigArgsDict(TypedDict):
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionTemplateRuntimeConfigArgs:
@@ -6558,7 +6426,6 @@ class SessionTemplateSparkConnectSessionArgs:
 
 class WorkflowTemplateEncryptionConfigArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateEncryptionConfigArgs:
@@ -6586,7 +6453,6 @@ class WorkflowTemplateJobArgsDict(TypedDict):
     spark_job: NotRequired[pulumi.Input[WorkflowTemplateJobSparkJobArgsDict]]
     spark_r_job: NotRequired[pulumi.Input[WorkflowTemplateJobSparkRJobArgsDict]]
     spark_sql_job: NotRequired[pulumi.Input[WorkflowTemplateJobSparkSqlJobArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobArgs:
@@ -6716,7 +6582,6 @@ class WorkflowTemplateJobHadoopJobArgsDict(TypedDict):
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobHadoopJobArgs:
@@ -6808,7 +6673,6 @@ class WorkflowTemplateJobHadoopJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobHadoopJobLoggingConfigArgs:
@@ -6838,7 +6702,6 @@ class WorkflowTemplateJobHiveJobArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobHiveJobArgs:
@@ -6909,7 +6772,6 @@ class WorkflowTemplateJobHiveJobArgs:
 
 class WorkflowTemplateJobHiveJobQueryListArgsDict(TypedDict):
     queries: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobHiveJobQueryListArgs:
@@ -6934,7 +6796,6 @@ class WorkflowTemplateJobPigJobArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPigJobArgs:
@@ -7019,7 +6880,6 @@ class WorkflowTemplateJobPigJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPigJobLoggingConfigArgs:
@@ -7042,7 +6902,6 @@ class WorkflowTemplateJobPigJobLoggingConfigArgs:
 
 class WorkflowTemplateJobPigJobQueryListArgsDict(TypedDict):
     queries: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPigJobQueryListArgs:
@@ -7065,7 +6924,6 @@ class WorkflowTemplateJobPrestoJobArgsDict(TypedDict):
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     query_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     query_list: NotRequired[pulumi.Input[WorkflowTemplateJobPrestoJobQueryListArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPrestoJobArgs:
@@ -7145,7 +7003,6 @@ class WorkflowTemplateJobPrestoJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPrestoJobLoggingConfigArgs:
@@ -7168,7 +7025,6 @@ class WorkflowTemplateJobPrestoJobLoggingConfigArgs:
 
 class WorkflowTemplateJobPrestoJobQueryListArgsDict(TypedDict):
     queries: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPrestoJobQueryListArgs:
@@ -7192,7 +7048,6 @@ class WorkflowTemplateJobPysparkJobArgsDict(TypedDict):
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     python_file_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPysparkJobArgs:
@@ -7290,7 +7145,6 @@ class WorkflowTemplateJobPysparkJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobPysparkJobLoggingConfigArgs:
@@ -7314,7 +7168,6 @@ class WorkflowTemplateJobPysparkJobLoggingConfigArgs:
 class WorkflowTemplateJobSchedulingArgsDict(TypedDict):
     max_failures_per_hour: NotRequired[pulumi.Input[_builtins.int]]
     max_failures_total: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSchedulingArgs:
@@ -7346,7 +7199,6 @@ class WorkflowTemplateJobSparkJobArgsDict(TypedDict):
     main_class: NotRequired[pulumi.Input[_builtins.str]]
     main_jar_file_uri: NotRequired[pulumi.Input[_builtins.str]]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkJobArgs:
@@ -7438,7 +7290,6 @@ class WorkflowTemplateJobSparkJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkJobLoggingConfigArgs:
@@ -7468,7 +7319,6 @@ class WorkflowTemplateJobSparkRJobArgsDict(TypedDict):
         pulumi.Input[WorkflowTemplateJobSparkRJobLoggingConfigArgsDict]
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkRJobArgs:
@@ -7542,7 +7392,6 @@ class WorkflowTemplateJobSparkRJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkRJobLoggingConfigArgs:
@@ -7576,7 +7425,6 @@ class WorkflowTemplateJobSparkSqlJobArgsDict(TypedDict):
     script_variables: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkSqlJobArgs:
@@ -7656,7 +7504,6 @@ class WorkflowTemplateJobSparkSqlJobLoggingConfigArgsDict(TypedDict):
     driver_log_levels: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkSqlJobLoggingConfigArgs:
@@ -7679,7 +7526,6 @@ class WorkflowTemplateJobSparkSqlJobLoggingConfigArgs:
 
 class WorkflowTemplateJobSparkSqlJobQueryListArgsDict(TypedDict):
     queries: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateJobSparkSqlJobQueryListArgs:
@@ -7697,7 +7543,6 @@ class WorkflowTemplateParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     validation: NotRequired[pulumi.Input[WorkflowTemplateParameterValidationArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateParameterArgs:
@@ -7739,7 +7584,6 @@ class WorkflowTemplateParameterArgs:
 class WorkflowTemplateParameterValidationArgsDict(TypedDict):
     regex: NotRequired[pulumi.Input[WorkflowTemplateParameterValidationRegexArgsDict]]
     values: NotRequired[pulumi.Input[WorkflowTemplateParameterValidationValuesArgsDict]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateParameterValidationArgs:
@@ -7776,7 +7620,6 @@ class WorkflowTemplateParameterValidationArgs:
 
 class WorkflowTemplateParameterValidationRegexArgsDict(TypedDict):
     regexes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateParameterValidationRegexArgs:
@@ -7791,7 +7634,6 @@ class WorkflowTemplateParameterValidationRegexArgs:
 
 class WorkflowTemplateParameterValidationValuesArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplateParameterValidationValuesArgs:
@@ -7811,7 +7653,6 @@ class WorkflowTemplatePlacementArgsDict(TypedDict):
     managed_cluster: NotRequired[
         pulumi.Input[WorkflowTemplatePlacementManagedClusterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementArgs:
@@ -7848,7 +7689,6 @@ class WorkflowTemplatePlacementArgs:
 class WorkflowTemplatePlacementClusterSelectorArgsDict(TypedDict):
     cluster_labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementClusterSelectorArgs:
@@ -7877,7 +7717,6 @@ class WorkflowTemplatePlacementManagedClusterArgsDict(TypedDict):
     cluster_name: pulumi.Input[_builtins.str]
     config: pulumi.Input[WorkflowTemplatePlacementManagedClusterConfigArgsDict]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterArgs:
@@ -7980,7 +7819,6 @@ class WorkflowTemplatePlacementManagedClusterConfigArgsDict(TypedDict):
     worker_config: NotRequired[
         pulumi.Input[WorkflowTemplatePlacementManagedClusterConfigWorkerConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigArgs:
@@ -8284,7 +8122,6 @@ class WorkflowTemplatePlacementManagedClusterConfigArgs:
 
 class WorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigArgsDict(TypedDict):
     policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigArgs:
@@ -8299,7 +8136,6 @@ class WorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigArgs:
 
 class WorkflowTemplatePlacementManagedClusterConfigEncryptionConfigArgsDict(TypedDict):
     gce_pd_kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigEncryptionConfigArgs:
@@ -8315,7 +8151,6 @@ class WorkflowTemplatePlacementManagedClusterConfigEncryptionConfigArgs:
 class WorkflowTemplatePlacementManagedClusterConfigEndpointConfigArgsDict(TypedDict):
     enable_http_port_access: NotRequired[pulumi.Input[_builtins.bool]]
     http_ports: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigEndpointConfigArgs:
@@ -8371,7 +8206,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigArgsDict(Type
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigArgs:
@@ -8523,7 +8357,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffi
     TypedDict
 ):
     node_group: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityArgs:
@@ -8540,7 +8373,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAf
     consume_reservation_type: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityArgs:
@@ -8579,7 +8411,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInsta
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigArgs:
@@ -8614,7 +8445,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigArgsDict(Type
             WorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigNamespacedGkeDeploymentTargetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigArgs:
@@ -8651,7 +8481,6 @@ class WorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigNamespacedGke
 ):
     cluster_namespace: NotRequired[pulumi.Input[_builtins.str]]
     target_gke_cluster: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigNamespacedGkeDeploymentTargetArgs:
@@ -8677,7 +8506,6 @@ class WorkflowTemplatePlacementManagedClusterConfigInitializationActionArgsDict(
 ):
     executable_file: NotRequired[pulumi.Input[_builtins.str]]
     execution_timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigInitializationActionArgs:
@@ -8703,7 +8531,6 @@ class WorkflowTemplatePlacementManagedClusterConfigLifecycleConfigArgsDict(Typed
     auto_delete_ttl: NotRequired[pulumi.Input[_builtins.str]]
     idle_delete_ttl: NotRequired[pulumi.Input[_builtins.str]]
     idle_start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigLifecycleConfigArgs:
@@ -8767,7 +8594,6 @@ class WorkflowTemplatePlacementManagedClusterConfigMasterConfigArgsDict(TypedDic
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
     preemptibility: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigMasterConfigArgs:
@@ -8922,7 +8748,6 @@ class WorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorArgsDi
 ):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorArgs:
@@ -8949,7 +8774,6 @@ class WorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigArgsDic
     boot_disk_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigArgs:
@@ -8981,7 +8805,6 @@ class WorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfi
 ):
     instance_group_manager_name: NotRequired[pulumi.Input[_builtins.str]]
     instance_template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigArgs:
@@ -9006,7 +8829,6 @@ class WorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfi
 
 class WorkflowTemplatePlacementManagedClusterConfigMetastoreConfigArgsDict(TypedDict):
     dataproc_metastore_service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigMetastoreConfigArgs:
@@ -9052,7 +8874,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigArgsDict
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
     preemptibility: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigArgs:
@@ -9207,7 +9028,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelera
 ):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorArgs:
@@ -9234,7 +9054,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConf
     boot_disk_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigArgs:
@@ -9266,7 +9085,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedG
 ):
     instance_group_manager_name: NotRequired[pulumi.Input[_builtins.str]]
     instance_template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigArgs:
@@ -9295,7 +9113,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecurityConfigArgsDict(TypedD
             WorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecurityConfigArgs:
@@ -9345,7 +9162,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigA
     tgt_lifetime_hours: NotRequired[pulumi.Input[_builtins.int]]
     truststore: NotRequired[pulumi.Input[_builtins.str]]
     truststore_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigArgs:
@@ -9458,7 +9274,6 @@ class WorkflowTemplatePlacementManagedClusterConfigSoftwareConfigArgsDict(TypedD
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigSoftwareConfigArgs:
@@ -9528,7 +9343,6 @@ class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigArgsDict(TypedDic
     min_cpu_platform: NotRequired[pulumi.Input[_builtins.str]]
     num_instances: NotRequired[pulumi.Input[_builtins.int]]
     preemptibility: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigArgs:
@@ -9683,7 +9497,6 @@ class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorArgsDi
 ):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorArgs:
@@ -9710,7 +9523,6 @@ class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigArgsDic
     boot_disk_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     boot_disk_type: NotRequired[pulumi.Input[_builtins.str]]
     num_local_ssds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigArgs:
@@ -9742,7 +9554,6 @@ class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfi
 ):
     instance_group_manager_name: NotRequired[pulumi.Input[_builtins.str]]
     instance_template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigArgs:

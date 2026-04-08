@@ -115,7 +115,6 @@ class BackupPlanAssociationRulesConfigInfoArgsDict(TypedDict):
     last_backup_state: NotRequired[pulumi.Input[_builtins.str]]
     last_successful_backup_consistency_time: NotRequired[pulumi.Input[_builtins.str]]
     rule_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupPlanAssociationRulesConfigInfoArgs:
@@ -184,7 +183,6 @@ class BackupPlanAssociationRulesConfigInfoArgs:
 class BackupPlanAssociationRulesConfigInfoLastBackupErrorArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.float]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupPlanAssociationRulesConfigInfoLastBackupErrorArgs:
@@ -209,7 +207,6 @@ class BackupPlanBackupRuleArgsDict(TypedDict):
     backup_retention_days: pulumi.Input[_builtins.int]
     rule_id: pulumi.Input[_builtins.str]
     standard_schedule: pulumi.Input[BackupPlanBackupRuleStandardScheduleArgsDict]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupRuleArgs:
@@ -253,7 +250,6 @@ class BackupPlanBackupRuleStandardScheduleArgsDict(TypedDict):
     week_day_of_month: NotRequired[
         pulumi.Input[BackupPlanBackupRuleStandardScheduleWeekDayOfMonthArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupRuleStandardScheduleArgs:
@@ -351,7 +347,6 @@ class BackupPlanBackupRuleStandardScheduleArgs:
 class BackupPlanBackupRuleStandardScheduleBackupWindowArgsDict(TypedDict):
     start_hour_of_day: pulumi.Input[_builtins.int]
     end_hour_of_day: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupRuleStandardScheduleBackupWindowArgs:
@@ -375,7 +370,6 @@ class BackupPlanBackupRuleStandardScheduleBackupWindowArgs:
 class BackupPlanBackupRuleStandardScheduleWeekDayOfMonthArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
     week_of_month: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BackupPlanBackupRuleStandardScheduleWeekDayOfMonthArgs:
@@ -398,7 +392,6 @@ class BackupPlanBackupRuleStandardScheduleWeekDayOfMonthArgs:
 
 class BackupVaultEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupVaultEncryptionConfigArgs:
@@ -414,7 +407,6 @@ class BackupVaultEncryptionConfigArgs:
 class ManagementServerManagementUriArgsDict(TypedDict):
     api: NotRequired[pulumi.Input[_builtins.str]]
     web_ui: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementServerManagementUriArgs:
@@ -438,7 +430,6 @@ class ManagementServerManagementUriArgs:
 class ManagementServerNetworkArgsDict(TypedDict):
     network: pulumi.Input[_builtins.str]
     peering_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementServerNetworkArgs:
@@ -562,7 +553,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesArgsDict(TypedDict):
     tags: NotRequired[
         pulumi.Input[RestoreWorkloadComputeInstanceRestorePropertiesTagsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesArgs:
@@ -1046,7 +1036,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeaturesArgs
     enable_uefi_networking: NotRequired[pulumi.Input[_builtins.bool]]
     threads_per_core: NotRequired[pulumi.Input[_builtins.int]]
     visible_core_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeaturesArgs:
@@ -1089,7 +1078,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinityArgsDict(
     consume_allocation_type: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinityArgs:
@@ -1124,7 +1112,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesConfidentialInstanceConfigA
     TypedDict
 ):
     enable_confidential_compute: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesConfidentialInstanceConfigArgs:
@@ -1174,7 +1161,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesDiskArgsDict(TypedDict):
     saved_state: NotRequired[pulumi.Input[_builtins.str]]
     source: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesDiskArgs:
@@ -1353,7 +1339,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesDiskDiskEncryptionKeyArgsDi
     kms_key_service_account: NotRequired[pulumi.Input[_builtins.str]]
     raw_key: NotRequired[pulumi.Input[_builtins.str]]
     rsa_encrypted_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesDiskDiskEncryptionKeyArgs:
@@ -1390,7 +1375,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesDiskGuestOsFeatureArgsDict(
     TypedDict
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesDiskGuestOsFeatureArgs:
@@ -1408,7 +1392,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesDiskInitializeParamsArgsDic
 ):
     disk_name: NotRequired[pulumi.Input[_builtins.str]]
     replica_zones: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesDiskInitializeParamsArgs:
@@ -1437,7 +1420,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesDiskInitializeParamsArgs:
 
 class RestoreWorkloadComputeInstanceRestorePropertiesDisplayDeviceArgsDict(TypedDict):
     enable_display: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesDisplayDeviceArgs:
@@ -1455,7 +1437,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesGuestAcceleratorArgsDict(
 ):
     accelerator_count: NotRequired[pulumi.Input[_builtins.int]]
     accelerator_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesGuestAcceleratorArgs:
@@ -1483,7 +1464,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKeyArgsDi
     kms_key_service_account: NotRequired[pulumi.Input[_builtins.str]]
     raw_key: NotRequired[pulumi.Input[_builtins.str]]
     rsa_encrypted_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKeyArgs:
@@ -1519,7 +1499,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKeyArgs:
 class RestoreWorkloadComputeInstanceRestorePropertiesLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesLabelArgs:
@@ -1550,7 +1529,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesMetadataArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesMetadataArgs:
@@ -1597,7 +1575,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesMetadataArgs:
 class RestoreWorkloadComputeInstanceRestorePropertiesMetadataItemArgsDict(TypedDict):
     key: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesMetadataItemArgs:
@@ -1658,7 +1635,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceArgsDict(
     queue_count: NotRequired[pulumi.Input[_builtins.int]]
     stack_type: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceArgs:
@@ -1845,7 +1821,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceAccessConfi
     public_ptr_domain_name: NotRequired[pulumi.Input[_builtins.str]]
     set_public_ptr: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceAccessConfigArgs:
@@ -1909,7 +1884,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceAliasIpRang
 ):
     ip_cidr_range: NotRequired[pulumi.Input[_builtins.str]]
     subnetwork_range_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceAliasIpRangeArgs:
@@ -1941,7 +1915,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceIpv6AccessC
     public_ptr_domain_name: NotRequired[pulumi.Input[_builtins.str]]
     set_public_ptr: NotRequired[pulumi.Input[_builtins.bool]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaceIpv6AccessConfigArgs:
@@ -2004,7 +1977,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformanceConfigArg
     TypedDict
 ):
     total_egress_bandwidth_tier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformanceConfigArgs:
@@ -2031,7 +2003,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesParamsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesParamsArgs:
@@ -2080,7 +2051,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTagArg
 ):
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesParamsResourceManagerTagArgs:
@@ -2128,7 +2098,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingArgsDict(TypedDic
     preemptible: NotRequired[pulumi.Input[_builtins.bool]]
     provisioning_model: NotRequired[pulumi.Input[_builtins.str]]
     termination_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingArgs:
@@ -2267,7 +2236,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryT
 ):
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingLocalSsdRecoveryTimeoutArgs:
@@ -2293,7 +2261,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDurationArg
 ):
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingMaxRunDurationArgs:
@@ -2320,7 +2287,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinityArgsD
     key: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinityArgs:
@@ -2354,7 +2320,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinityArgs:
 class RestoreWorkloadComputeInstanceRestorePropertiesServiceAccountArgsDict(TypedDict):
     email: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesServiceAccountArgs:
@@ -2385,7 +2350,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfigArgsD
     enable_integrity_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     enable_secure_boot: NotRequired[pulumi.Input[_builtins.bool]]
     enable_vtpm: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfigArgs:
@@ -2416,7 +2380,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfigArgs:
 
 class RestoreWorkloadComputeInstanceRestorePropertiesTagsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceRestorePropertiesTagsArgs:
@@ -2438,7 +2401,6 @@ class RestoreWorkloadComputeInstanceRestorePropertiesTagsArgs:
 class RestoreWorkloadComputeInstanceTargetEnvironmentArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadComputeInstanceTargetEnvironmentArgs:
@@ -2497,7 +2459,6 @@ class RestoreWorkloadDiskRestorePropertiesArgsDict(TypedDict):
     ]
     resource_policies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     storage_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskRestorePropertiesArgs:
@@ -2705,7 +2666,6 @@ class RestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyArgsDict(TypedDict):
     kms_key_service_account: NotRequired[pulumi.Input[_builtins.str]]
     raw_key: NotRequired[pulumi.Input[_builtins.str]]
     rsa_encrypted_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyArgs:
@@ -2740,7 +2700,6 @@ class RestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyArgs:
 
 class RestoreWorkloadDiskRestorePropertiesGuestOsFeatureArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskRestorePropertiesGuestOsFeatureArgs:
@@ -2756,7 +2715,6 @@ class RestoreWorkloadDiskRestorePropertiesGuestOsFeatureArgs:
 class RestoreWorkloadDiskRestorePropertiesLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskRestorePropertiesLabelArgs:
@@ -2780,7 +2738,6 @@ class RestoreWorkloadDiskRestorePropertiesLabelArgs:
 class RestoreWorkloadDiskRestorePropertiesResourceManagerTagArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskRestorePropertiesResourceManagerTagArgs:
@@ -2804,7 +2761,6 @@ class RestoreWorkloadDiskRestorePropertiesResourceManagerTagArgs:
 class RestoreWorkloadDiskTargetEnvironmentArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     zone: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadDiskTargetEnvironmentArgs:
@@ -2829,7 +2785,6 @@ class RestoreWorkloadRegionDiskTargetEnvironmentArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
     replica_zones: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadRegionDiskTargetEnvironmentArgs:
@@ -2862,7 +2817,6 @@ class RestoreWorkloadTargetResourceArgsDict(TypedDict):
     gcp_resource: NotRequired[
         pulumi.Input[RestoreWorkloadTargetResourceGcpResourceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadTargetResourceArgs:
@@ -2888,7 +2842,6 @@ class RestoreWorkloadTargetResourceGcpResourceArgsDict(TypedDict):
     gcp_resourcename: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RestoreWorkloadTargetResourceGcpResourceArgs:

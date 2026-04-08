@@ -10,7 +10,6 @@ __all__ = ["SavingsPlanTimeoutsArgs", "SavingsPlanTimeoutsArgsDict"]
 class SavingsPlanTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SavingsPlanTimeoutsArgs:

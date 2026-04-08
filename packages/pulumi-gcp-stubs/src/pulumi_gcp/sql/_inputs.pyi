@@ -82,7 +82,6 @@ class DatabaseInstanceCloneArgsDict(TypedDict):
     preferred_zone: NotRequired[pulumi.Input[_builtins.str]]
     source_instance_deletion_time: NotRequired[pulumi.Input[_builtins.str]]
     source_project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceCloneArgs:
@@ -147,7 +146,6 @@ class DatabaseInstanceDnsNameArgsDict(TypedDict):
     connection_type: NotRequired[pulumi.Input[_builtins.str]]
     dns_scope: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceDnsNameArgs:
@@ -178,7 +176,6 @@ class DatabaseInstanceIpAddressArgsDict(TypedDict):
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     time_to_retire: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceIpAddressArgs:
@@ -211,7 +208,6 @@ class DatabaseInstancePointInTimeRestoreContextArgsDict(TypedDict):
     point_in_time: NotRequired[pulumi.Input[_builtins.str]]
     preferred_zone: NotRequired[pulumi.Input[_builtins.str]]
     target_instance: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstancePointInTimeRestoreContextArgs:
@@ -263,7 +259,6 @@ class DatabaseInstanceReplicaConfigurationArgsDict(TypedDict):
     ssl_cipher: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
     verify_server_certificate: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceReplicaConfigurationArgs:
@@ -350,7 +345,6 @@ class DatabaseInstanceReplicationClusterArgsDict(TypedDict):
     dr_replica: NotRequired[pulumi.Input[_builtins.bool]]
     failover_dr_replica_name: NotRequired[pulumi.Input[_builtins.str]]
     psa_write_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceReplicationClusterArgs:
@@ -383,7 +377,6 @@ class DatabaseInstanceRestoreBackupContextArgsDict(TypedDict):
     backup_run_id: pulumi.Input[_builtins.int]
     instance_id: NotRequired[pulumi.Input[_builtins.str]]
     project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceRestoreBackupContextArgs:
@@ -416,7 +409,6 @@ class DatabaseInstanceServerCaCertArgsDict(TypedDict):
     create_time: NotRequired[pulumi.Input[_builtins.str]]
     expiration_time: NotRequired[pulumi.Input[_builtins.str]]
     sha1_fingerprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceServerCaCertArgs:
@@ -528,7 +520,6 @@ class DatabaseInstanceSettingsArgsDict(TypedDict):
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
     user_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     version: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsArgs:
@@ -927,7 +918,6 @@ class DatabaseInstanceSettingsArgs:
 
 class DatabaseInstanceSettingsActiveDirectoryConfigArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsActiveDirectoryConfigArgs:
@@ -940,7 +930,6 @@ class DatabaseInstanceSettingsActiveDirectoryConfigArgs:
 
 class DatabaseInstanceSettingsAdvancedMachineFeaturesArgsDict(TypedDict):
     threads_per_core: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsAdvancedMachineFeaturesArgs:
@@ -966,7 +955,6 @@ class DatabaseInstanceSettingsBackupConfigurationArgsDict(TypedDict):
     point_in_time_recovery_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     transaction_log_retention_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsBackupConfigurationArgs:
@@ -1053,7 +1041,6 @@ class DatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsArgsDict
 ):
     retained_backups: pulumi.Input[_builtins.int]
     retention_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsArgs:
@@ -1083,7 +1070,6 @@ class DatabaseInstanceSettingsConnectionPoolConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsConnectionPoolConfigArgs:
@@ -1130,7 +1116,6 @@ class DatabaseInstanceSettingsConnectionPoolConfigArgs:
 class DatabaseInstanceSettingsConnectionPoolConfigFlagArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsConnectionPoolConfigFlagArgs:
@@ -1153,7 +1138,6 @@ class DatabaseInstanceSettingsConnectionPoolConfigFlagArgs:
 
 class DatabaseInstanceSettingsDataCacheConfigArgsDict(TypedDict):
     data_cache_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsDataCacheConfigArgs:
@@ -1169,7 +1153,6 @@ class DatabaseInstanceSettingsDataCacheConfigArgs:
 class DatabaseInstanceSettingsDatabaseFlagArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsDatabaseFlagArgs:
@@ -1194,7 +1177,6 @@ class DatabaseInstanceSettingsDenyMaintenancePeriodArgsDict(TypedDict):
     end_date: pulumi.Input[_builtins.str]
     start_date: pulumi.Input[_builtins.str]
     time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsDenyMaintenancePeriodArgs:
@@ -1224,7 +1206,6 @@ class DatabaseInstanceSettingsDenyMaintenancePeriodArgs:
 class DatabaseInstanceSettingsFinalBackupConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     retention_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsFinalBackupConfigArgs:
@@ -1252,7 +1233,6 @@ class DatabaseInstanceSettingsInsightsConfigArgsDict(TypedDict):
     query_string_length: NotRequired[pulumi.Input[_builtins.int]]
     record_application_tags: NotRequired[pulumi.Input[_builtins.bool]]
     record_client_address: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsInsightsConfigArgs:
@@ -1332,7 +1312,6 @@ class DatabaseInstanceSettingsIpConfigurationArgsDict(TypedDict):
     server_ca_mode: NotRequired[pulumi.Input[_builtins.str]]
     server_ca_pool: NotRequired[pulumi.Input[_builtins.str]]
     ssl_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsIpConfigurationArgs:
@@ -1467,7 +1446,6 @@ class DatabaseInstanceSettingsIpConfigurationAuthorizedNetworkArgsDict(TypedDict
     value: pulumi.Input[_builtins.str]
     expiration_time: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsIpConfigurationAuthorizedNetworkArgs:
@@ -1509,7 +1487,6 @@ class DatabaseInstanceSettingsIpConfigurationPscConfigArgsDict(TypedDict):
         ]
     ]
     psc_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsIpConfigurationPscConfigArgs:
@@ -1585,7 +1562,6 @@ class DatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionArgsDict(
     consumer_service_project_id: NotRequired[pulumi.Input[_builtins.str]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionArgs:
@@ -1630,7 +1606,6 @@ class DatabaseInstanceSettingsLocationPreferenceArgsDict(TypedDict):
     follow_gae_application: NotRequired[pulumi.Input[_builtins.str]]
     secondary_zone: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsLocationPreferenceArgs:
@@ -1661,7 +1636,6 @@ class DatabaseInstanceSettingsMaintenanceWindowArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.int]]
     hour: NotRequired[pulumi.Input[_builtins.int]]
     update_track: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsMaintenanceWindowArgs:
@@ -1695,7 +1669,6 @@ class DatabaseInstanceSettingsPasswordValidationPolicyArgsDict(TypedDict):
     min_length: NotRequired[pulumi.Input[_builtins.int]]
     password_change_interval: NotRequired[pulumi.Input[_builtins.str]]
     reuse_interval: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsPasswordValidationPolicyArgs:
@@ -1760,7 +1733,6 @@ class DatabaseInstanceSettingsReadPoolAutoScaleConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsReadPoolAutoScaleConfigArgs:
@@ -1847,7 +1819,6 @@ class DatabaseInstanceSettingsReadPoolAutoScaleConfigArgs:
 class DatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricArgsDict(TypedDict):
     metric: NotRequired[pulumi.Input[_builtins.str]]
     target_value: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricArgs:
@@ -1872,7 +1843,6 @@ class DatabaseInstanceSettingsSqlServerAuditConfigArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     retention_interval: NotRequired[pulumi.Input[_builtins.str]]
     upload_interval: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatabaseInstanceSettingsSqlServerAuditConfigArgs:
@@ -1907,7 +1877,6 @@ class UserPasswordPolicyArgsDict(TypedDict):
     statuses: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[UserPasswordPolicyStatusArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class UserPasswordPolicyArgs:
@@ -1970,7 +1939,6 @@ class UserPasswordPolicyArgs:
 class UserPasswordPolicyStatusArgsDict(TypedDict):
     locked: NotRequired[pulumi.Input[_builtins.bool]]
     password_expiration_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPasswordPolicyStatusArgs:
@@ -1996,7 +1964,6 @@ class UserPasswordPolicyStatusArgs:
 class UserSqlServerUserDetailArgsDict(TypedDict):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     server_roles: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class UserSqlServerUserDetailArgs:

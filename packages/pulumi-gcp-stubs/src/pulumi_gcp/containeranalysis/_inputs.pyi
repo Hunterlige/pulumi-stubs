@@ -24,7 +24,6 @@ __all__ = [
 
 class NoteAttestationAuthorityArgsDict(TypedDict):
     hint: pulumi.Input[NoteAttestationAuthorityHintArgsDict]
-    ...
 
 @pulumi.input_type
 class NoteAttestationAuthorityArgs:
@@ -39,7 +38,6 @@ class NoteAttestationAuthorityArgs:
 
 class NoteAttestationAuthorityHintArgsDict(TypedDict):
     human_readable_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NoteAttestationAuthorityHintArgs:
@@ -56,7 +54,6 @@ class NoteIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NoteIamBindingConditionArgs:
@@ -87,7 +84,6 @@ class NoteIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NoteIamMemberConditionArgs:
@@ -117,7 +113,6 @@ class NoteIamMemberConditionArgs:
 class NoteRelatedUrlArgsDict(TypedDict):
     url: pulumi.Input[_builtins.str]
     label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NoteRelatedUrlArgs:
@@ -143,7 +138,6 @@ class OccurenceAttestationArgsDict(TypedDict):
     signatures: pulumi.Input[
         Sequence[pulumi.Input[OccurenceAttestationSignatureArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class OccurenceAttestationArgs:
@@ -174,7 +168,6 @@ class OccurenceAttestationArgs:
 class OccurenceAttestationSignatureArgsDict(TypedDict):
     public_key_id: pulumi.Input[_builtins.str]
     signature: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OccurenceAttestationSignatureArgs:

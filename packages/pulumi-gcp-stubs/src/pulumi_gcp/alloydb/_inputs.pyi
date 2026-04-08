@@ -96,7 +96,6 @@ __all__ = [
 
 class BackupEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BackupEncryptionConfigArgs:
@@ -112,7 +111,6 @@ class BackupEncryptionConfigArgs:
 class BackupEncryptionInfoArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BackupEncryptionInfoArgs:
@@ -142,7 +140,6 @@ class BackupEncryptionInfoArgs:
 class BackupExpiryQuantityArgsDict(TypedDict):
     retention_count: NotRequired[pulumi.Input[_builtins.int]]
     total_retention_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class BackupExpiryQuantityArgs:
@@ -180,7 +177,6 @@ class ClusterAutomatedBackupPolicyArgsDict(TypedDict):
     weekly_schedule: NotRequired[
         pulumi.Input[ClusterAutomatedBackupPolicyWeeklyScheduleArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyArgs:
@@ -277,7 +273,6 @@ class ClusterAutomatedBackupPolicyArgs:
 
 class ClusterAutomatedBackupPolicyEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyEncryptionConfigArgs:
@@ -292,7 +287,6 @@ class ClusterAutomatedBackupPolicyEncryptionConfigArgs:
 
 class ClusterAutomatedBackupPolicyQuantityBasedRetentionArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyQuantityBasedRetentionArgs:
@@ -307,7 +301,6 @@ class ClusterAutomatedBackupPolicyQuantityBasedRetentionArgs:
 
 class ClusterAutomatedBackupPolicyTimeBasedRetentionArgsDict(TypedDict):
     retention_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyTimeBasedRetentionArgs:
@@ -327,7 +320,6 @@ class ClusterAutomatedBackupPolicyWeeklyScheduleArgsDict(TypedDict):
         ]
     ]
     days_of_weeks: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyWeeklyScheduleArgs:
@@ -374,7 +366,6 @@ class ClusterAutomatedBackupPolicyWeeklyScheduleStartTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterAutomatedBackupPolicyWeeklyScheduleStartTimeArgs:
@@ -409,7 +400,6 @@ class ClusterAutomatedBackupPolicyWeeklyScheduleStartTimeArgs:
 
 class ClusterBackupSourceArgsDict(TypedDict):
     backup_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterBackupSourceArgs:
@@ -424,7 +414,6 @@ class ClusterBackupSourceArgs:
 
 class ClusterBackupdrBackupSourceArgsDict(TypedDict):
     backup: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterBackupdrBackupSourceArgs:
@@ -443,7 +432,6 @@ class ClusterContinuousBackupConfigArgsDict(TypedDict):
         pulumi.Input[ClusterContinuousBackupConfigEncryptionConfigArgsDict]
     ]
     recovery_window_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterContinuousBackupConfigArgs:
@@ -481,7 +469,6 @@ class ClusterContinuousBackupConfigArgs:
 
 class ClusterContinuousBackupConfigEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterContinuousBackupConfigEncryptionConfigArgs:
@@ -503,7 +490,6 @@ class ClusterContinuousBackupInfoArgsDict(TypedDict):
         ]
     ]
     schedules: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterContinuousBackupInfoArgs:
@@ -562,7 +548,6 @@ class ClusterContinuousBackupInfoArgs:
 class ClusterContinuousBackupInfoEncryptionInfoArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterContinuousBackupInfoEncryptionInfoArgs:
@@ -591,7 +576,6 @@ class ClusterContinuousBackupInfoEncryptionInfoArgs:
 
 class ClusterDataplexConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ClusterDataplexConfigArgs:
@@ -604,7 +588,6 @@ class ClusterDataplexConfigArgs:
 
 class ClusterEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionConfigArgs:
@@ -620,7 +603,6 @@ class ClusterEncryptionConfigArgs:
 class ClusterEncryptionInfoArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ClusterEncryptionInfoArgs:
@@ -652,7 +634,6 @@ class ClusterInitialUserArgsDict(TypedDict):
     password_wo: NotRequired[pulumi.Input[_builtins.str]]
     password_wo_version: NotRequired[pulumi.Input[_builtins.str]]
     user: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterInitialUserArgs:
@@ -693,7 +674,6 @@ class ClusterMaintenanceUpdatePolicyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenanceUpdatePolicyArgs:
@@ -734,7 +714,6 @@ class ClusterMaintenanceUpdatePolicyMaintenanceWindowArgsDict(TypedDict):
     start_time: pulumi.Input[
         ClusterMaintenanceUpdatePolicyMaintenanceWindowStartTimeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenanceUpdatePolicyMaintenanceWindowArgs:
@@ -769,7 +748,6 @@ class ClusterMaintenanceUpdatePolicyMaintenanceWindowStartTimeArgsDict(TypedDict
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenanceUpdatePolicyMaintenanceWindowStartTimeArgs:
@@ -806,7 +784,6 @@ class ClusterMigrationSourceArgsDict(TypedDict):
     host_port: NotRequired[pulumi.Input[_builtins.str]]
     reference_id: NotRequired[pulumi.Input[_builtins.str]]
     source_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMigrationSourceArgs:
@@ -836,7 +813,6 @@ class ClusterMigrationSourceArgs:
 class ClusterNetworkConfigArgsDict(TypedDict):
     allocated_ip_range: NotRequired[pulumi.Input[_builtins.str]]
     network: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkConfigArgs:
@@ -860,7 +836,6 @@ class ClusterNetworkConfigArgs:
 class ClusterPscConfigArgsDict(TypedDict):
     psc_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     service_owned_project_number: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterPscConfigArgs:
@@ -885,7 +860,6 @@ class ClusterPscConfigArgs:
 
 class ClusterRestoreBackupSourceArgsDict(TypedDict):
     backup_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreBackupSourceArgs:
@@ -898,7 +872,6 @@ class ClusterRestoreBackupSourceArgs:
 
 class ClusterRestoreBackupdrBackupSourceArgsDict(TypedDict):
     backup: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreBackupdrBackupSourceArgs:
@@ -912,7 +885,6 @@ class ClusterRestoreBackupdrBackupSourceArgs:
 class ClusterRestoreBackupdrPitrSourceArgsDict(TypedDict):
     data_source: pulumi.Input[_builtins.str]
     point_in_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreBackupdrPitrSourceArgs:
@@ -936,7 +908,6 @@ class ClusterRestoreBackupdrPitrSourceArgs:
 class ClusterRestoreContinuousBackupSourceArgsDict(TypedDict):
     cluster: pulumi.Input[_builtins.str]
     point_in_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterRestoreContinuousBackupSourceArgs:
@@ -959,7 +930,6 @@ class ClusterRestoreContinuousBackupSourceArgs:
 
 class ClusterSecondaryConfigArgsDict(TypedDict):
     primary_cluster_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterSecondaryConfigArgs:
@@ -977,7 +947,6 @@ class ClusterTrialMetadataArgsDict(TypedDict):
     grace_end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
     upgrade_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterTrialMetadataArgs:
@@ -1015,7 +984,6 @@ class InstanceClientConnectionConfigArgsDict(TypedDict):
     ssl_config: NotRequired[
         pulumi.Input[InstanceClientConnectionConfigSslConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceClientConnectionConfigArgs:
@@ -1044,7 +1012,6 @@ class InstanceClientConnectionConfigArgs:
 
 class InstanceClientConnectionConfigSslConfigArgsDict(TypedDict):
     ssl_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceClientConnectionConfigSslConfigArgs:
@@ -1061,7 +1028,6 @@ class InstanceConnectionPoolConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     flags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     pooler_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceConnectionPoolConfigArgs:
@@ -1095,7 +1061,6 @@ class InstanceConnectionPoolConfigArgs:
 class InstanceMachineConfigArgsDict(TypedDict):
     cpu_count: NotRequired[pulumi.Input[_builtins.int]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceMachineConfigArgs:
@@ -1127,7 +1092,6 @@ class InstanceNetworkConfigArgsDict(TypedDict):
     ]
     enable_outbound_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
     enable_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkConfigArgs:
@@ -1187,7 +1151,6 @@ class InstanceNetworkConfigArgs:
 
 class InstanceNetworkConfigAuthorizedExternalNetworkArgsDict(TypedDict):
     cidr_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkConfigAuthorizedExternalNetworkArgs:
@@ -1210,7 +1173,6 @@ class InstanceObservabilityConfigArgsDict(TypedDict):
     track_active_queries: NotRequired[pulumi.Input[_builtins.bool]]
     track_wait_event_types: NotRequired[pulumi.Input[_builtins.bool]]
     track_wait_events: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceObservabilityConfigArgs:
@@ -1295,7 +1257,6 @@ class InstancePscInstanceConfigArgsDict(TypedDict):
         ]
     ]
     service_attachment_link: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscInstanceConfigArgs:
@@ -1380,7 +1341,6 @@ class InstancePscInstanceConfigPscAutoConnectionArgsDict(TypedDict):
     consumer_project: NotRequired[pulumi.Input[_builtins.str]]
     ip_address: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscInstanceConfigPscAutoConnectionArgs:
@@ -1421,7 +1381,6 @@ class InstancePscInstanceConfigPscAutoConnectionArgs:
 
 class InstancePscInstanceConfigPscInterfaceConfigArgsDict(TypedDict):
     network_attachment_resource: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscInstanceConfigPscInterfaceConfigArgs:
@@ -1443,7 +1402,6 @@ class InstanceQueryInsightsConfigArgsDict(TypedDict):
     query_string_length: NotRequired[pulumi.Input[_builtins.int]]
     record_application_tags: NotRequired[pulumi.Input[_builtins.bool]]
     record_client_address: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceQueryInsightsConfigArgs:
@@ -1480,7 +1438,6 @@ class InstanceQueryInsightsConfigArgs:
 
 class InstanceReadPoolConfigArgsDict(TypedDict):
     node_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceReadPoolConfigArgs:

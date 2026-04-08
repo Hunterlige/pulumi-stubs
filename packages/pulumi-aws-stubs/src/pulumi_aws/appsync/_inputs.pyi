@@ -118,7 +118,6 @@ class ApiEventConfigArgsDict(TypedDict):
         Sequence[pulumi.Input[ApiEventConfigDefaultSubscribeAuthModeArgsDict]]
     ]
     log_config: NotRequired[pulumi.Input[ApiEventConfigLogConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigArgs:
@@ -208,7 +207,6 @@ class ApiEventConfigAuthProviderArgsDict(TypedDict):
     openid_connect_config: NotRequired[
         pulumi.Input[ApiEventConfigAuthProviderOpenidConnectConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigAuthProviderArgs:
@@ -271,7 +269,6 @@ class ApiEventConfigAuthProviderCognitoConfigArgsDict(TypedDict):
     aws_region: pulumi.Input[_builtins.str]
     user_pool_id: pulumi.Input[_builtins.str]
     app_id_client_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigAuthProviderCognitoConfigArgs:
@@ -302,7 +299,6 @@ class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgsDict(TypedDict):
     authorizer_uri: pulumi.Input[_builtins.str]
     authorizer_result_ttl_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     identity_validation_expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigAuthProviderLambdaAuthorizerConfigArgs:
@@ -342,7 +338,6 @@ class ApiEventConfigAuthProviderOpenidConnectConfigArgsDict(TypedDict):
     auth_ttl: NotRequired[pulumi.Input[_builtins.int]]
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     iat_ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigAuthProviderOpenidConnectConfigArgs:
@@ -377,7 +372,6 @@ class ApiEventConfigAuthProviderOpenidConnectConfigArgs:
 
 class ApiEventConfigConnectionAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigConnectionAuthModeArgs:
@@ -390,7 +384,6 @@ class ApiEventConfigConnectionAuthModeArgs:
 
 class ApiEventConfigDefaultPublishAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigDefaultPublishAuthModeArgs:
@@ -403,7 +396,6 @@ class ApiEventConfigDefaultPublishAuthModeArgs:
 
 class ApiEventConfigDefaultSubscribeAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigDefaultSubscribeAuthModeArgs:
@@ -417,7 +409,6 @@ class ApiEventConfigDefaultSubscribeAuthModeArgs:
 class ApiEventConfigLogConfigArgsDict(TypedDict):
     cloudwatch_logs_role_arn: pulumi.Input[_builtins.str]
     log_level: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApiEventConfigLogConfigArgs:
@@ -445,7 +436,6 @@ class ChannelNamespaceHandlerConfigsArgsDict(TypedDict):
     on_subscribe: NotRequired[
         pulumi.Input[ChannelNamespaceHandlerConfigsOnSubscribeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsArgs:
@@ -484,7 +474,6 @@ class ChannelNamespaceHandlerConfigsOnPublishArgsDict(TypedDict):
     integration: pulumi.Input[
         ChannelNamespaceHandlerConfigsOnPublishIntegrationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnPublishArgs:
@@ -519,7 +508,6 @@ class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgsDict(TypedDict):
             ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgs:
@@ -557,7 +545,6 @@ class ChannelNamespaceHandlerConfigsOnPublishIntegrationArgs:
 
 class ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgsDict(TypedDict):
     invoke_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnPublishIntegrationLambdaConfigArgs:
@@ -575,7 +562,6 @@ class ChannelNamespaceHandlerConfigsOnSubscribeArgsDict(TypedDict):
     integration: pulumi.Input[
         ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnSubscribeArgs:
@@ -610,7 +596,6 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgsDict(TypedDict):
             ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationArgs:
@@ -652,7 +637,6 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgsDict(
     TypedDict
 ):
     invoke_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgs:
@@ -667,7 +651,6 @@ class ChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfigArgs:
 
 class ChannelNamespacePublishAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ChannelNamespacePublishAuthModeArgs:
@@ -680,7 +663,6 @@ class ChannelNamespacePublishAuthModeArgs:
 
 class ChannelNamespaceSubscribeAuthModeArgsDict(TypedDict):
     auth_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ChannelNamespaceSubscribeAuthModeArgs:
@@ -699,7 +681,6 @@ class DataSourceDynamodbConfigArgsDict(TypedDict):
     region: NotRequired[pulumi.Input[_builtins.str]]
     use_caller_credentials: NotRequired[pulumi.Input[_builtins.bool]]
     versioned: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DataSourceDynamodbConfigArgs:
@@ -748,7 +729,6 @@ class DataSourceDynamodbConfigDeltaSyncConfigArgsDict(TypedDict):
     delta_sync_table_name: pulumi.Input[_builtins.str]
     base_table_ttl: NotRequired[pulumi.Input[_builtins.int]]
     delta_sync_table_ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DataSourceDynamodbConfigDeltaSyncConfigArgs:
@@ -778,7 +758,6 @@ class DataSourceDynamodbConfigDeltaSyncConfigArgs:
 class DataSourceElasticsearchConfigArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceElasticsearchConfigArgs:
@@ -801,7 +780,6 @@ class DataSourceElasticsearchConfigArgs:
 
 class DataSourceEventBridgeConfigArgsDict(TypedDict):
     event_bus_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceEventBridgeConfigArgs:
@@ -817,7 +795,6 @@ class DataSourceHttpConfigArgsDict(TypedDict):
     authorization_config: NotRequired[
         pulumi.Input[DataSourceHttpConfigAuthorizationConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceHttpConfigArgs:
@@ -849,7 +826,6 @@ class DataSourceHttpConfigAuthorizationConfigArgsDict(TypedDict):
     aws_iam_config: NotRequired[
         pulumi.Input[DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DataSourceHttpConfigAuthorizationConfigArgs:
@@ -884,7 +860,6 @@ class DataSourceHttpConfigAuthorizationConfigArgs:
 class DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgsDict(TypedDict):
     signing_region: NotRequired[pulumi.Input[_builtins.str]]
     signing_service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgs:
@@ -907,7 +882,6 @@ class DataSourceHttpConfigAuthorizationConfigAwsIamConfigArgs:
 
 class DataSourceLambdaConfigArgsDict(TypedDict):
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataSourceLambdaConfigArgs:
@@ -921,7 +895,6 @@ class DataSourceLambdaConfigArgs:
 class DataSourceOpensearchserviceConfigArgsDict(TypedDict):
     endpoint: pulumi.Input[_builtins.str]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceOpensearchserviceConfigArgs:
@@ -947,7 +920,6 @@ class DataSourceRelationalDatabaseConfigArgsDict(TypedDict):
         pulumi.Input[DataSourceRelationalDatabaseConfigHttpEndpointConfigArgsDict]
     ]
     source_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceRelationalDatabaseConfigArgs:
@@ -985,7 +957,6 @@ class DataSourceRelationalDatabaseConfigHttpEndpointConfigArgsDict(TypedDict):
     database_name: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
     schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataSourceRelationalDatabaseConfigHttpEndpointConfigArgs:
@@ -1027,7 +998,6 @@ class DataSourceRelationalDatabaseConfigHttpEndpointConfigArgs:
 class FunctionRuntimeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     runtime_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FunctionRuntimeArgs:
@@ -1054,7 +1024,6 @@ class FunctionSyncConfigArgsDict(TypedDict):
     lambda_conflict_handler_config: NotRequired[
         pulumi.Input[FunctionSyncConfigLambdaConflictHandlerConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FunctionSyncConfigArgs:
@@ -1092,7 +1061,6 @@ class FunctionSyncConfigArgs:
 
 class FunctionSyncConfigLambdaConflictHandlerConfigArgsDict(TypedDict):
     lambda_conflict_handler_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FunctionSyncConfigLambdaConflictHandlerConfigArgs:
@@ -1124,7 +1092,6 @@ class GraphQLApiAdditionalAuthenticationProviderArgsDict(TypedDict):
     user_pool_config: NotRequired[
         pulumi.Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GraphQLApiAdditionalAuthenticationProviderArgs:
@@ -1206,7 +1173,6 @@ class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgsDict(
     authorizer_uri: pulumi.Input[_builtins.str]
     authorizer_result_ttl_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     identity_validation_expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiAdditionalAuthenticationProviderLambdaAuthorizerConfigArgs:
@@ -1246,7 +1212,6 @@ class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigArgsDict(Type
     auth_ttl: NotRequired[pulumi.Input[_builtins.int]]
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     iat_ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigArgs:
@@ -1283,7 +1248,6 @@ class GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgsDict(TypedDict
     user_pool_id: pulumi.Input[_builtins.str]
     app_id_client_regex: NotRequired[pulumi.Input[_builtins.str]]
     aws_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiAdditionalAuthenticationProviderUserPoolConfigArgs:
@@ -1314,7 +1278,6 @@ class GraphQLApiEnhancedMetricsConfigArgsDict(TypedDict):
     data_source_level_metrics_behavior: pulumi.Input[_builtins.str]
     operation_level_metrics_config: pulumi.Input[_builtins.str]
     resolver_level_metrics_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GraphQLApiEnhancedMetricsConfigArgs:
@@ -1347,7 +1310,6 @@ class GraphQLApiLambdaAuthorizerConfigArgsDict(TypedDict):
     authorizer_uri: pulumi.Input[_builtins.str]
     authorizer_result_ttl_in_seconds: NotRequired[pulumi.Input[_builtins.int]]
     identity_validation_expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiLambdaAuthorizerConfigArgs:
@@ -1386,7 +1348,6 @@ class GraphQLApiLogConfigArgsDict(TypedDict):
     cloudwatch_logs_role_arn: pulumi.Input[_builtins.str]
     field_log_level: pulumi.Input[_builtins.str]
     exclude_verbose_content: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiLogConfigArgs:
@@ -1420,7 +1381,6 @@ class GraphQLApiOpenidConnectConfigArgsDict(TypedDict):
     auth_ttl: NotRequired[pulumi.Input[_builtins.int]]
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     iat_ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiOpenidConnectConfigArgs:
@@ -1458,7 +1418,6 @@ class GraphQLApiUserPoolConfigArgsDict(TypedDict):
     user_pool_id: pulumi.Input[_builtins.str]
     app_id_client_regex: NotRequired[pulumi.Input[_builtins.str]]
     aws_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GraphQLApiUserPoolConfigArgs:
@@ -1494,7 +1453,6 @@ class GraphQLApiUserPoolConfigArgs:
 class ResolverCachingConfigArgsDict(TypedDict):
     caching_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ttl: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ResolverCachingConfigArgs:
@@ -1523,7 +1481,6 @@ class ResolverCachingConfigArgs:
 
 class ResolverPipelineConfigArgsDict(TypedDict):
     functions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ResolverPipelineConfigArgs:
@@ -1545,7 +1502,6 @@ class ResolverPipelineConfigArgs:
 class ResolverRuntimeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     runtime_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResolverRuntimeArgs:
@@ -1572,7 +1528,6 @@ class ResolverSyncConfigArgsDict(TypedDict):
     lambda_conflict_handler_config: NotRequired[
         pulumi.Input[ResolverSyncConfigLambdaConflictHandlerConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ResolverSyncConfigArgs:
@@ -1610,7 +1565,6 @@ class ResolverSyncConfigArgs:
 
 class ResolverSyncConfigLambdaConflictHandlerConfigArgsDict(TypedDict):
     lambda_conflict_handler_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResolverSyncConfigLambdaConflictHandlerConfigArgs:
@@ -1629,7 +1583,6 @@ class ResolverSyncConfigLambdaConflictHandlerConfigArgs:
 
 class SourceApiAssociationSourceApiAssociationConfigArgsDict(TypedDict):
     merge_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SourceApiAssociationSourceApiAssociationConfigArgs:
@@ -1644,7 +1597,6 @@ class SourceApiAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SourceApiAssociationTimeoutsArgs:

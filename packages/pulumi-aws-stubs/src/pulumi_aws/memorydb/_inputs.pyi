@@ -27,7 +27,6 @@ __all__ = [
 class ClusterClusterEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterClusterEndpointArgs:
@@ -53,7 +52,6 @@ class ClusterShardArgsDict(TypedDict):
     nodes: NotRequired[pulumi.Input[Sequence[pulumi.Input[ClusterShardNodeArgsDict]]]]
     num_nodes: NotRequired[pulumi.Input[_builtins.int]]
     slots: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterShardArgs:
@@ -100,7 +98,6 @@ class ClusterShardNodeArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ClusterShardNodeEndpointArgsDict]]]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterShardNodeArgs:
@@ -147,7 +144,6 @@ class ClusterShardNodeArgs:
 class ClusterShardNodeEndpointArgsDict(TypedDict):
     address: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterShardNodeEndpointArgs:
@@ -172,7 +168,6 @@ class MultiRegionClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultiRegionClusterTimeoutsArgs:
@@ -202,7 +197,6 @@ class MultiRegionClusterTimeoutsArgs:
 class ParameterGroupParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ParameterGroupParameterArgs:
@@ -238,7 +232,6 @@ class SnapshotClusterConfigurationArgsDict(TypedDict):
     subnet_group_name: NotRequired[pulumi.Input[_builtins.str]]
     topic_arn: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SnapshotClusterConfigurationArgs:
@@ -337,7 +330,6 @@ class UserAuthenticationModeArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     password_count: NotRequired[pulumi.Input[_builtins.int]]
     passwords: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class UserAuthenticationModeArgs:

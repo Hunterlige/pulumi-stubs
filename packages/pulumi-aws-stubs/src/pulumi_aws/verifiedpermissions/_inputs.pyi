@@ -45,7 +45,6 @@ class IdentitySourceConfigurationArgsDict(TypedDict):
     open_id_connect_configuration: NotRequired[
         pulumi.Input[IdentitySourceConfigurationOpenIdConnectConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationArgs:
@@ -96,7 +95,6 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationArgsDict(TypedDict)
             IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationCognitoUserPoolConfigurationArgs:
@@ -148,7 +146,6 @@ class IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationA
     TypedDict
 ):
     group_entity_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationArgs:
@@ -172,7 +169,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationArgsDict(TypedDict):
             IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationOpenIdConnectConfigurationArgs:
@@ -238,7 +234,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArg
 ):
     group_claim: pulumi.Input[_builtins.str]
     group_entity_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationArgs:
@@ -272,7 +267,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgsDic
             IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionArgs:
@@ -332,7 +326,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessT
 ):
     audiences: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principal_id_claim: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyArgs:
@@ -362,7 +355,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentit
 ):
     client_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     principal_id_claim: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyArgs:
@@ -390,7 +382,6 @@ class IdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentit
 class PolicyDefinitionArgsDict(TypedDict):
     static: NotRequired[pulumi.Input[PolicyDefinitionStaticArgsDict]]
     template_linked: NotRequired[pulumi.Input[PolicyDefinitionTemplateLinkedArgsDict]]
-    ...
 
 @pulumi.input_type
 class PolicyDefinitionArgs:
@@ -420,7 +411,6 @@ class PolicyDefinitionArgs:
 class PolicyDefinitionStaticArgsDict(TypedDict):
     statement: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PolicyDefinitionStaticArgs:
@@ -447,7 +437,6 @@ class PolicyDefinitionTemplateLinkedArgsDict(TypedDict):
         pulumi.Input[PolicyDefinitionTemplateLinkedPrincipalArgsDict]
     ]
     resource: NotRequired[pulumi.Input[PolicyDefinitionTemplateLinkedResourceArgsDict]]
-    ...
 
 @pulumi.input_type
 class PolicyDefinitionTemplateLinkedArgs:
@@ -489,7 +478,6 @@ class PolicyDefinitionTemplateLinkedArgs:
 class PolicyDefinitionTemplateLinkedPrincipalArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
     entity_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyDefinitionTemplateLinkedPrincipalArgs:
@@ -513,7 +501,6 @@ class PolicyDefinitionTemplateLinkedPrincipalArgs:
 class PolicyDefinitionTemplateLinkedResourceArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
     entity_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyDefinitionTemplateLinkedResourceArgs:
@@ -536,7 +523,6 @@ class PolicyDefinitionTemplateLinkedResourceArgs:
 
 class PolicyStoreValidationSettingsArgsDict(TypedDict):
     mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PolicyStoreValidationSettingsArgs:
@@ -549,7 +535,6 @@ class PolicyStoreValidationSettingsArgs:
 
 class SchemaDefinitionArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SchemaDefinitionArgs:

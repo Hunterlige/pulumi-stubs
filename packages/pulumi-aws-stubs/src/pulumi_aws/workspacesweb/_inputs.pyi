@@ -51,7 +51,6 @@ class DataProtectionSettingsInlineRedactionConfigurationArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     global_exempt_urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DataProtectionSettingsInlineRedactionConfigurationArgs:
@@ -140,7 +139,6 @@ class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternArgs:
@@ -250,7 +248,6 @@ class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCu
     pattern_regex: pulumi.Input[_builtins.str]
     keyword_regex: NotRequired[pulumi.Input[_builtins.str]]
     pattern_description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternArgs:
@@ -288,7 +285,6 @@ class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRe
 ):
     redaction_place_holder_type: pulumi.Input[_builtins.str]
     redaction_place_holder_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderArgs:
@@ -314,7 +310,6 @@ class DataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRe
 class IpAccessSettingsIpRuleArgsDict(TypedDict):
     ip_range: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IpAccessSettingsIpRuleArgs:
@@ -339,7 +334,6 @@ class PortalTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PortalTimeoutsArgs:
@@ -369,7 +363,6 @@ class PortalTimeoutsArgs:
 class SessionLoggerEventFilterArgsDict(TypedDict):
     all: NotRequired[pulumi.Input[SessionLoggerEventFilterAllArgsDict]]
     includes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SessionLoggerEventFilterArgs:
@@ -402,7 +395,6 @@ class SessionLoggerEventFilterAllArgs:
 
 class SessionLoggerLogConfigurationArgsDict(TypedDict):
     s3: NotRequired[pulumi.Input[SessionLoggerLogConfigurationS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class SessionLoggerLogConfigurationArgs:
@@ -425,7 +417,6 @@ class SessionLoggerLogConfigurationS3ArgsDict(TypedDict):
     log_file_format: pulumi.Input[_builtins.str]
     bucket_owner: NotRequired[pulumi.Input[_builtins.str]]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SessionLoggerLogConfigurationS3Args:
@@ -471,7 +462,6 @@ class TrustStoreCertificateArgsDict(TypedDict):
     not_valid_before: NotRequired[pulumi.Input[_builtins.str]]
     subject: NotRequired[pulumi.Input[_builtins.str]]
     thumbprint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustStoreCertificateArgs:
@@ -535,7 +525,6 @@ class UserSettingsCookieSynchronizationConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserSettingsCookieSynchronizationConfigurationArgs:
@@ -618,7 +607,6 @@ class UserSettingsCookieSynchronizationConfigurationAllowlistArgsDict(TypedDict)
     domain: pulumi.Input[_builtins.str]
     name: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserSettingsCookieSynchronizationConfigurationAllowlistArgs:
@@ -649,7 +637,6 @@ class UserSettingsCookieSynchronizationConfigurationBlocklistArgsDict(TypedDict)
     domain: pulumi.Input[_builtins.str]
     name: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserSettingsCookieSynchronizationConfigurationBlocklistArgs:
@@ -683,7 +670,6 @@ class UserSettingsToolbarConfigurationArgsDict(TypedDict):
     max_display_resolution: NotRequired[pulumi.Input[_builtins.str]]
     toolbar_type: NotRequired[pulumi.Input[_builtins.str]]
     visual_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserSettingsToolbarConfigurationArgs:

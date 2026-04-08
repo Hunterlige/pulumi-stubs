@@ -270,7 +270,6 @@ __all__ = [
 
 class AnycastIpListTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AnycastIpListTimeoutsArgs:
@@ -295,7 +294,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginArgsDict(TypedDict):
     ]
     enable_accept_encoding_brotli: NotRequired[pulumi.Input[_builtins.bool]]
     enable_accept_encoding_gzip: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginArgs:
@@ -382,7 +380,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgsDict(
             CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigArgs:
@@ -424,7 +421,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArg
     TypedDict
 ):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesArgs:
@@ -452,7 +448,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgsDict(
             CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigArgs:
@@ -494,7 +489,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArg
     TypedDict
 ):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersArgs:
@@ -522,7 +516,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgsD
             CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigArgs:
@@ -564,7 +557,6 @@ class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQuery
     TypedDict
 ):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsArgs:
@@ -591,7 +583,6 @@ class ConnectionFunctionConnectionFunctionConfigArgsDict(TypedDict):
             ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionFunctionConnectionFunctionConfigArgs:
@@ -639,7 +630,6 @@ class ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgsDict
     TypedDict
 ):
     key_value_store_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationArgs:
@@ -656,7 +646,6 @@ class ConnectionGroupTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionGroupTimeoutsArgs:
@@ -686,7 +675,6 @@ class ConnectionGroupTimeoutsArgs:
 class ContinuousDeploymentPolicyStagingDistributionDnsNamesArgsDict(TypedDict):
     quantity: pulumi.Input[_builtins.int]
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ContinuousDeploymentPolicyStagingDistributionDnsNamesArgs:
@@ -719,7 +707,6 @@ class ContinuousDeploymentPolicyTrafficConfigArgsDict(TypedDict):
     single_weight_config: NotRequired[
         pulumi.Input[ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ContinuousDeploymentPolicyTrafficConfigArgs:
@@ -771,7 +758,6 @@ class ContinuousDeploymentPolicyTrafficConfigArgs:
 class ContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigArgs:
@@ -799,7 +785,6 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgsDict(TypedDic
             ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigArgs:
@@ -842,7 +827,6 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickiness
 ):
     idle_ttl: pulumi.Input[_builtins.int]
     maximum_ttl: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigArgs:
@@ -865,7 +849,6 @@ class ContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickiness
 
 class DistributionConnectionFunctionAssociationArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionConnectionFunctionAssociationArgs:
@@ -881,7 +864,6 @@ class DistributionCustomErrorResponseArgsDict(TypedDict):
     error_caching_min_ttl: NotRequired[pulumi.Input[_builtins.int]]
     response_code: NotRequired[pulumi.Input[_builtins.int]]
     response_page_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionCustomErrorResponseArgs:
@@ -955,7 +937,6 @@ class DistributionDefaultCacheBehaviorArgsDict(TypedDict):
     smooth_streaming: NotRequired[pulumi.Input[_builtins.bool]]
     trusted_key_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     trusted_signers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorArgs:
@@ -1191,7 +1172,6 @@ class DistributionDefaultCacheBehaviorForwardedValuesArgsDict(TypedDict):
     query_string_cache_keys: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorForwardedValuesArgs:
@@ -1244,7 +1224,6 @@ class DistributionDefaultCacheBehaviorForwardedValuesArgs:
 class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgsDict(TypedDict):
     forward: pulumi.Input[_builtins.str]
     whitelisted_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgs:
@@ -1274,7 +1253,6 @@ class DistributionDefaultCacheBehaviorForwardedValuesCookiesArgs:
 class DistributionDefaultCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorFunctionAssociationArgs:
@@ -1297,7 +1275,6 @@ class DistributionDefaultCacheBehaviorFunctionAssociationArgs:
 
 class DistributionDefaultCacheBehaviorGrpcConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorGrpcConfigArgs:
@@ -1314,7 +1291,6 @@ class DistributionDefaultCacheBehaviorLambdaFunctionAssociationArgsDict(TypedDic
     event_type: pulumi.Input[_builtins.str]
     lambda_arn: pulumi.Input[_builtins.str]
     include_body: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionDefaultCacheBehaviorLambdaFunctionAssociationArgs:
@@ -1345,7 +1321,6 @@ class DistributionLoggingConfigArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     include_cookies: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionLoggingConfigArgs:
@@ -1414,7 +1389,6 @@ class DistributionOrderedCacheBehaviorArgsDict(TypedDict):
     smooth_streaming: NotRequired[pulumi.Input[_builtins.bool]]
     trusted_key_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     trusted_signers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorArgs:
@@ -1656,7 +1630,6 @@ class DistributionOrderedCacheBehaviorForwardedValuesArgsDict(TypedDict):
     query_string_cache_keys: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorForwardedValuesArgs:
@@ -1709,7 +1682,6 @@ class DistributionOrderedCacheBehaviorForwardedValuesArgs:
 class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgsDict(TypedDict):
     forward: pulumi.Input[_builtins.str]
     whitelisted_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs:
@@ -1739,7 +1711,6 @@ class DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs:
 class DistributionOrderedCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorFunctionAssociationArgs:
@@ -1762,7 +1733,6 @@ class DistributionOrderedCacheBehaviorFunctionAssociationArgs:
 
 class DistributionOrderedCacheBehaviorGrpcConfigArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorGrpcConfigArgs:
@@ -1779,7 +1749,6 @@ class DistributionOrderedCacheBehaviorLambdaFunctionAssociationArgsDict(TypedDic
     event_type: pulumi.Input[_builtins.str]
     lambda_arn: pulumi.Input[_builtins.str]
     include_body: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionOrderedCacheBehaviorLambdaFunctionAssociationArgs:
@@ -1827,7 +1796,6 @@ class DistributionOriginArgsDict(TypedDict):
     vpc_origin_config: NotRequired[
         pulumi.Input[DistributionOriginVpcOriginConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionOriginArgs:
@@ -1948,7 +1916,6 @@ class DistributionOriginArgs:
 class DistributionOriginCustomHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionOriginCustomHeaderArgs:
@@ -1977,7 +1944,6 @@ class DistributionOriginCustomOriginConfigArgsDict(TypedDict):
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
     origin_keepalive_timeout: NotRequired[pulumi.Input[_builtins.int]]
     origin_read_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DistributionOriginCustomOriginConfigArgs:
@@ -2038,7 +2004,6 @@ class DistributionOriginGroupArgsDict(TypedDict):
     failover_criteria: pulumi.Input[DistributionOriginGroupFailoverCriteriaArgsDict]
     members: pulumi.Input[Sequence[pulumi.Input[DistributionOriginGroupMemberArgsDict]]]
     origin_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionOriginGroupArgs:
@@ -2078,7 +2043,6 @@ class DistributionOriginGroupArgs:
 
 class DistributionOriginGroupFailoverCriteriaArgsDict(TypedDict):
     status_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class DistributionOriginGroupFailoverCriteriaArgs:
@@ -2095,7 +2059,6 @@ class DistributionOriginGroupFailoverCriteriaArgs:
 
 class DistributionOriginGroupMemberArgsDict(TypedDict):
     origin_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionOriginGroupMemberArgs:
@@ -2109,7 +2072,6 @@ class DistributionOriginGroupMemberArgs:
 class DistributionOriginOriginShieldArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     origin_shield_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionOriginOriginShieldArgs:
@@ -2132,7 +2094,6 @@ class DistributionOriginOriginShieldArgs:
 
 class DistributionOriginS3OriginConfigArgsDict(TypedDict):
     origin_access_identity: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionOriginS3OriginConfigArgs:
@@ -2150,7 +2111,6 @@ class DistributionOriginVpcOriginConfigArgsDict(TypedDict):
     origin_keepalive_timeout: NotRequired[pulumi.Input[_builtins.int]]
     origin_read_timeout: NotRequired[pulumi.Input[_builtins.int]]
     owner_account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionOriginVpcOriginConfigArgs:
@@ -2187,7 +2147,6 @@ class DistributionOriginVpcOriginConfigArgs:
 
 class DistributionRestrictionsArgsDict(TypedDict):
     geo_restriction: pulumi.Input[DistributionRestrictionsGeoRestrictionArgsDict]
-    ...
 
 @pulumi.input_type
 class DistributionRestrictionsArgs:
@@ -2209,7 +2168,6 @@ class DistributionRestrictionsArgs:
 class DistributionRestrictionsGeoRestrictionArgsDict(TypedDict):
     restriction_type: pulumi.Input[_builtins.str]
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionRestrictionsGeoRestrictionArgs:
@@ -2242,7 +2200,6 @@ class DistributionTenantCustomizationsArgsDict(TypedDict):
         pulumi.Input[DistributionTenantCustomizationsGeoRestrictionArgsDict]
     ]
     web_acl: NotRequired[pulumi.Input[DistributionTenantCustomizationsWebAclArgsDict]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantCustomizationsArgs:
@@ -2293,7 +2250,6 @@ class DistributionTenantCustomizationsArgs:
 
 class DistributionTenantCustomizationsCertificateArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantCustomizationsCertificateArgs:
@@ -2309,7 +2265,6 @@ class DistributionTenantCustomizationsCertificateArgs:
 class DistributionTenantCustomizationsGeoRestrictionArgsDict(TypedDict):
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     restriction_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantCustomizationsGeoRestrictionArgs:
@@ -2337,7 +2292,6 @@ class DistributionTenantCustomizationsGeoRestrictionArgs:
 class DistributionTenantCustomizationsWebAclArgsDict(TypedDict):
     action: NotRequired[pulumi.Input[_builtins.str]]
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantCustomizationsWebAclArgs:
@@ -2361,7 +2315,6 @@ class DistributionTenantCustomizationsWebAclArgs:
 class DistributionTenantDomainArgsDict(TypedDict):
     domain: pulumi.Input[_builtins.str]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantDomainArgs:
@@ -2388,7 +2341,6 @@ class DistributionTenantManagedCertificateRequestArgsDict(TypedDict):
     ]
     primary_domain_name: NotRequired[pulumi.Input[_builtins.str]]
     validation_token_host: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantManagedCertificateRequestArgs:
@@ -2424,7 +2376,6 @@ class DistributionTenantManagedCertificateRequestArgs:
 class DistributionTenantParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DistributionTenantParameterArgs:
@@ -2449,7 +2400,6 @@ class DistributionTenantTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionTenantTimeoutsArgs:
@@ -2481,7 +2431,6 @@ class DistributionTrustedKeyGroupArgsDict(TypedDict):
     items: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DistributionTrustedKeyGroupItemArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionTrustedKeyGroupArgs:
@@ -2516,7 +2465,6 @@ class DistributionTrustedKeyGroupArgs:
 class DistributionTrustedKeyGroupItemArgsDict(TypedDict):
     key_group_id: NotRequired[pulumi.Input[_builtins.str]]
     key_pair_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionTrustedKeyGroupItemArgs:
@@ -2548,7 +2496,6 @@ class DistributionTrustedSignerArgsDict(TypedDict):
     items: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[DistributionTrustedSignerItemArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionTrustedSignerArgs:
@@ -2583,7 +2530,6 @@ class DistributionTrustedSignerArgs:
 class DistributionTrustedSignerItemArgsDict(TypedDict):
     aws_account_number: NotRequired[pulumi.Input[_builtins.str]]
     key_pair_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class DistributionTrustedSignerItemArgs:
@@ -2616,7 +2562,6 @@ class DistributionViewerCertificateArgsDict(TypedDict):
     iam_certificate_id: NotRequired[pulumi.Input[_builtins.str]]
     minimum_protocol_version: NotRequired[pulumi.Input[_builtins.str]]
     ssl_support_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DistributionViewerCertificateArgs:
@@ -2666,7 +2611,6 @@ class DistributionViewerMtlsConfigArgsDict(TypedDict):
     trust_store_config: NotRequired[
         pulumi.Input[DistributionViewerMtlsConfigTrustStoreConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class DistributionViewerMtlsConfigArgs:
@@ -2698,7 +2642,6 @@ class DistributionViewerMtlsConfigTrustStoreConfigArgsDict(TypedDict):
     trust_store_id: pulumi.Input[_builtins.str]
     advertise_trust_store_ca_names: NotRequired[pulumi.Input[_builtins.bool]]
     ignore_certificate_expiry: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DistributionViewerMtlsConfigTrustStoreConfigArgs:
@@ -2736,7 +2679,6 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigArgsDict(TypedDict):
         FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgsDict
     ]
     forward_when_content_type_is_unknown: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigContentTypeProfileConfigArgs:
@@ -2780,7 +2722,6 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesArgs:
@@ -2824,7 +2765,6 @@ class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemA
     content_type: pulumi.Input[_builtins.str]
     format: pulumi.Input[_builtins.str]
     profile_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemArgs:
@@ -2858,7 +2798,6 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigArgsDict(TypedDict):
             FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigQueryArgProfileConfigArgs:
@@ -2912,7 +2851,6 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesArgs:
@@ -2961,7 +2899,6 @@ class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemArgsDic
 ):
     profile_id: pulumi.Input[_builtins.str]
     query_arg: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemArgs:
@@ -2990,7 +2927,6 @@ class FieldLevelEncryptionProfileEncryptionEntitiesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionProfileEncryptionEntitiesArgs:
@@ -3034,7 +2970,6 @@ class FieldLevelEncryptionProfileEncryptionEntitiesItemArgsDict(TypedDict):
     ]
     provider_id: pulumi.Input[_builtins.str]
     public_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionProfileEncryptionEntitiesItemArgs:
@@ -3074,7 +3009,6 @@ class FieldLevelEncryptionProfileEncryptionEntitiesItemArgs:
 
 class FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgs:
@@ -3095,7 +3029,6 @@ class FieldLevelEncryptionProfileEncryptionEntitiesItemFieldPatternsArgs:
 
 class KeyValueStoreTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KeyValueStoreTimeoutsArgs:
@@ -3111,7 +3044,6 @@ class KeyValueStoreTimeoutsArgs:
 class KeyvaluestoreKeysExclusiveResourceKeyValuePairArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KeyvaluestoreKeysExclusiveResourceKeyValuePairArgs:
@@ -3136,7 +3068,6 @@ class MonitoringSubscriptionMonitoringSubscriptionArgsDict(TypedDict):
     realtime_metrics_subscription_config: pulumi.Input[
         MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class MonitoringSubscriptionMonitoringSubscriptionArgs:
@@ -3166,7 +3097,6 @@ class MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionCon
     TypedDict
 ):
     realtime_metrics_subscription_status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigArgs:
@@ -3190,7 +3120,6 @@ class MultitenantDistributionActiveTrustedKeyGroupArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionActiveTrustedKeyGroupArgs:
@@ -3235,7 +3164,6 @@ class MultitenantDistributionActiveTrustedKeyGroupArgs:
 class MultitenantDistributionActiveTrustedKeyGroupItemArgsDict(TypedDict):
     key_group_id: NotRequired[pulumi.Input[_builtins.str]]
     key_pair_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionActiveTrustedKeyGroupItemArgs:
@@ -3296,7 +3224,6 @@ class MultitenantDistributionCacheBehaviorArgsDict(TypedDict):
     trusted_key_groups: NotRequired[
         pulumi.Input[MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCacheBehaviorArgs:
@@ -3468,7 +3395,6 @@ class MultitenantDistributionCacheBehaviorArgs:
 class MultitenantDistributionCacheBehaviorAllowedMethodsArgsDict(TypedDict):
     cached_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     items: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCacheBehaviorAllowedMethodsArgs:
@@ -3494,7 +3420,6 @@ class MultitenantDistributionCacheBehaviorAllowedMethodsArgs:
 class MultitenantDistributionCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCacheBehaviorFunctionAssociationArgs:
@@ -3519,7 +3444,6 @@ class MultitenantDistributionCacheBehaviorLambdaFunctionAssociationArgsDict(Type
     event_type: pulumi.Input[_builtins.str]
     lambda_function_arn: pulumi.Input[_builtins.str]
     include_body: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCacheBehaviorLambdaFunctionAssociationArgs:
@@ -3549,7 +3473,6 @@ class MultitenantDistributionCacheBehaviorLambdaFunctionAssociationArgs:
 class MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCacheBehaviorTrustedKeyGroupsArgs:
@@ -3579,7 +3502,6 @@ class MultitenantDistributionCustomErrorResponseArgsDict(TypedDict):
     error_caching_min_ttl: NotRequired[pulumi.Input[_builtins.int]]
     response_code: NotRequired[pulumi.Input[_builtins.str]]
     response_page_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionCustomErrorResponseArgs:
@@ -3647,7 +3569,6 @@ class MultitenantDistributionDefaultCacheBehaviorArgsDict(TypedDict):
             MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionDefaultCacheBehaviorArgs:
@@ -3821,7 +3742,6 @@ class MultitenantDistributionDefaultCacheBehaviorArgs:
 class MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgsDict(TypedDict):
     cached_methods: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     items: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgs:
@@ -3847,7 +3767,6 @@ class MultitenantDistributionDefaultCacheBehaviorAllowedMethodsArgs:
 class MultitenantDistributionDefaultCacheBehaviorFunctionAssociationArgsDict(TypedDict):
     event_type: pulumi.Input[_builtins.str]
     function_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionDefaultCacheBehaviorFunctionAssociationArgs:
@@ -3874,7 +3793,6 @@ class MultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationArgsDi
     event_type: pulumi.Input[_builtins.str]
     lambda_function_arn: pulumi.Input[_builtins.str]
     include_body: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationArgs:
@@ -3904,7 +3822,6 @@ class MultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationArgs:
 class MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsArgs:
@@ -3959,7 +3876,6 @@ class MultitenantDistributionOriginArgsDict(TypedDict):
             Sequence[pulumi.Input[MultitenantDistributionOriginVpcOriginConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginArgs:
@@ -4113,7 +4029,6 @@ class MultitenantDistributionOriginArgs:
 class MultitenantDistributionOriginCustomHeaderArgsDict(TypedDict):
     header_name: pulumi.Input[_builtins.str]
     header_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginCustomHeaderArgs:
@@ -4142,7 +4057,6 @@ class MultitenantDistributionOriginCustomOriginConfigArgsDict(TypedDict):
     ip_address_type: NotRequired[pulumi.Input[_builtins.str]]
     origin_keepalive_timeout: NotRequired[pulumi.Input[_builtins.int]]
     origin_read_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginCustomOriginConfigArgs:
@@ -4207,7 +4121,6 @@ class MultitenantDistributionOriginGroupArgsDict(TypedDict):
     members: pulumi.Input[
         Sequence[pulumi.Input[MultitenantDistributionOriginGroupMemberArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginGroupArgs:
@@ -4254,7 +4167,6 @@ class MultitenantDistributionOriginGroupArgs:
 
 class MultitenantDistributionOriginGroupFailoverCriteriaArgsDict(TypedDict):
     status_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginGroupFailoverCriteriaArgs:
@@ -4271,7 +4183,6 @@ class MultitenantDistributionOriginGroupFailoverCriteriaArgs:
 
 class MultitenantDistributionOriginGroupMemberArgsDict(TypedDict):
     origin_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginGroupMemberArgs:
@@ -4285,7 +4196,6 @@ class MultitenantDistributionOriginGroupMemberArgs:
 class MultitenantDistributionOriginOriginShieldArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     origin_shield_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginOriginShieldArgs:
@@ -4310,7 +4220,6 @@ class MultitenantDistributionOriginVpcOriginConfigArgsDict(TypedDict):
     vpc_origin_id: pulumi.Input[_builtins.str]
     origin_keepalive_timeout: NotRequired[pulumi.Input[_builtins.int]]
     origin_read_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionOriginVpcOriginConfigArgs:
@@ -4343,7 +4252,6 @@ class MultitenantDistributionRestrictionsArgsDict(TypedDict):
     geo_restriction: pulumi.Input[
         MultitenantDistributionRestrictionsGeoRestrictionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionRestrictionsArgs:
@@ -4367,7 +4275,6 @@ class MultitenantDistributionRestrictionsArgs:
 class MultitenantDistributionRestrictionsGeoRestrictionArgsDict(TypedDict):
     restriction_type: pulumi.Input[_builtins.str]
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionRestrictionsGeoRestrictionArgs:
@@ -4402,7 +4309,6 @@ class MultitenantDistributionTenantConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionTenantConfigArgs:
@@ -4455,7 +4361,6 @@ class MultitenantDistributionTenantConfigParameterDefinitionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionTenantConfigParameterDefinitionArgs:
@@ -4517,7 +4422,6 @@ class MultitenantDistributionTenantConfigParameterDefinitionDefinitionArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionTenantConfigParameterDefinitionDefinitionArgs:
@@ -4567,7 +4471,6 @@ class MultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSche
     required: pulumi.Input[_builtins.bool]
     comment: NotRequired[pulumi.Input[_builtins.str]]
     default_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaArgs:
@@ -4598,7 +4501,6 @@ class MultitenantDistributionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionTimeoutsArgs:
@@ -4630,7 +4532,6 @@ class MultitenantDistributionViewerCertificateArgsDict(TypedDict):
     cloudfront_default_certificate: NotRequired[pulumi.Input[_builtins.bool]]
     minimum_protocol_version: NotRequired[pulumi.Input[_builtins.str]]
     ssl_support_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MultitenantDistributionViewerCertificateArgs:
@@ -4672,7 +4573,6 @@ class MultitenantDistributionViewerCertificateArgs:
 class OriginRequestPolicyCookiesConfigArgsDict(TypedDict):
     cookie_behavior: pulumi.Input[_builtins.str]
     cookies: NotRequired[pulumi.Input[OriginRequestPolicyCookiesConfigCookiesArgsDict]]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyCookiesConfigArgs:
@@ -4701,7 +4601,6 @@ class OriginRequestPolicyCookiesConfigArgs:
 
 class OriginRequestPolicyCookiesConfigCookiesArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyCookiesConfigCookiesArgs:
@@ -4723,7 +4622,6 @@ class OriginRequestPolicyCookiesConfigCookiesArgs:
 class OriginRequestPolicyHeadersConfigArgsDict(TypedDict):
     header_behavior: NotRequired[pulumi.Input[_builtins.str]]
     headers: NotRequired[pulumi.Input[OriginRequestPolicyHeadersConfigHeadersArgsDict]]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyHeadersConfigArgs:
@@ -4752,7 +4650,6 @@ class OriginRequestPolicyHeadersConfigArgs:
 
 class OriginRequestPolicyHeadersConfigHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyHeadersConfigHeadersArgs:
@@ -4776,7 +4673,6 @@ class OriginRequestPolicyQueryStringsConfigArgsDict(TypedDict):
     query_strings: NotRequired[
         pulumi.Input[OriginRequestPolicyQueryStringsConfigQueryStringsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyQueryStringsConfigArgs:
@@ -4810,7 +4706,6 @@ class OriginRequestPolicyQueryStringsConfigArgs:
 
 class OriginRequestPolicyQueryStringsConfigQueryStringsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class OriginRequestPolicyQueryStringsConfigQueryStringsArgs:
@@ -4834,7 +4729,6 @@ class RealtimeLogConfigEndpointArgsDict(TypedDict):
         RealtimeLogConfigEndpointKinesisStreamConfigArgsDict
     ]
     stream_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RealtimeLogConfigEndpointArgs:
@@ -4864,7 +4758,6 @@ class RealtimeLogConfigEndpointArgs:
 class RealtimeLogConfigEndpointKinesisStreamConfigArgsDict(TypedDict):
     role_arn: pulumi.Input[_builtins.str]
     stream_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RealtimeLogConfigEndpointKinesisStreamConfigArgs:
@@ -4901,7 +4794,6 @@ class ResponseHeadersPolicyCorsConfigArgsDict(TypedDict):
         pulumi.Input[ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgsDict]
     ]
     access_control_max_age_sec: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCorsConfigArgs:
@@ -4994,7 +4886,6 @@ class ResponseHeadersPolicyCorsConfigArgs:
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgs:
@@ -5015,7 +4906,6 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowHeadersArgs:
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgs:
@@ -5036,7 +4926,6 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowMethodsArgs:
 
 class ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgs:
@@ -5057,7 +4946,6 @@ class ResponseHeadersPolicyCorsConfigAccessControlAllowOriginsArgs:
 
 class ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgsDict(TypedDict):
     items: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCorsConfigAccessControlExposeHeadersArgs:
@@ -5082,7 +4970,6 @@ class ResponseHeadersPolicyCustomHeadersConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[ResponseHeadersPolicyCustomHeadersConfigItemArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCustomHeadersConfigArgs:
@@ -5118,7 +5005,6 @@ class ResponseHeadersPolicyCustomHeadersConfigItemArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
     override: pulumi.Input[_builtins.bool]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyCustomHeadersConfigItemArgs:
@@ -5151,7 +5037,6 @@ class ResponseHeadersPolicyRemoveHeadersConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[ResponseHeadersPolicyRemoveHeadersConfigItemArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyRemoveHeadersConfigArgs:
@@ -5185,7 +5070,6 @@ class ResponseHeadersPolicyRemoveHeadersConfigArgs:
 
 class ResponseHeadersPolicyRemoveHeadersConfigItemArgsDict(TypedDict):
     header: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyRemoveHeadersConfigItemArgs:
@@ -5221,7 +5105,6 @@ class ResponseHeadersPolicySecurityHeadersConfigArgsDict(TypedDict):
     xss_protection: NotRequired[
         pulumi.Input[ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigArgs:
@@ -5353,7 +5236,6 @@ class ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgsDict(
 ):
     content_security_policy: pulumi.Input[_builtins.str]
     override: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgs:
@@ -5376,7 +5258,6 @@ class ResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyArgs:
 
 class ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgsDict(TypedDict):
     override: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgs:
@@ -5390,7 +5271,6 @@ class ResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsArgs:
 class ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgsDict(TypedDict):
     frame_option: pulumi.Input[_builtins.str]
     override: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgs:
@@ -5414,7 +5294,6 @@ class ResponseHeadersPolicySecurityHeadersConfigFrameOptionsArgs:
 class ResponseHeadersPolicySecurityHeadersConfigReferrerPolicyArgsDict(TypedDict):
     override: pulumi.Input[_builtins.bool]
     referrer_policy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigReferrerPolicyArgs:
@@ -5442,7 +5321,6 @@ class ResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityArgsDict(
     override: pulumi.Input[_builtins.bool]
     include_subdomains: NotRequired[pulumi.Input[_builtins.bool]]
     preload: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityArgs:
@@ -5480,7 +5358,6 @@ class ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgsDict(TypedDict)
     protection: pulumi.Input[_builtins.bool]
     mode_block: NotRequired[pulumi.Input[_builtins.bool]]
     report_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgs:
@@ -5516,7 +5393,6 @@ class ResponseHeadersPolicySecurityHeadersConfigXssProtectionArgs:
 class ResponseHeadersPolicyServerTimingHeadersConfigArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     sampling_rate: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class ResponseHeadersPolicyServerTimingHeadersConfigArgs:
@@ -5541,7 +5417,6 @@ class TrustStoreCaCertificatesBundleSourceArgsDict(TypedDict):
     ca_certificates_bundle_s3_location: pulumi.Input[
         TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class TrustStoreCaCertificatesBundleSourceArgs:
@@ -5574,7 +5449,6 @@ class TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgsDict
     key: pulumi.Input[_builtins.str]
     region: pulumi.Input[_builtins.str]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationArgs:
@@ -5611,7 +5485,6 @@ class TrustStoreTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustStoreTimeoutsArgs:
@@ -5642,7 +5515,6 @@ class VpcOriginTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpcOriginTimeoutsArgs:
@@ -5678,7 +5550,6 @@ class VpcOriginVpcOriginEndpointConfigArgsDict(TypedDict):
     origin_ssl_protocols: pulumi.Input[
         VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class VpcOriginVpcOriginEndpointConfigArgs:
@@ -5733,7 +5604,6 @@ class VpcOriginVpcOriginEndpointConfigArgs:
 class VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgsDict(TypedDict):
     items: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     quantity: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class VpcOriginVpcOriginEndpointConfigOriginSslProtocolsArgs:

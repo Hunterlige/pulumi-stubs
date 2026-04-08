@@ -187,7 +187,6 @@ class CapacityProviderAutoScalingGroupProviderArgsDict(TypedDict):
         pulumi.Input[CapacityProviderAutoScalingGroupProviderManagedScalingArgsDict]
     ]
     managed_termination_protection: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderAutoScalingGroupProviderArgs:
@@ -241,7 +240,6 @@ class CapacityProviderAutoScalingGroupProviderManagedScalingArgsDict(TypedDict):
     minimum_scaling_step_size: NotRequired[pulumi.Input[_builtins.int]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     target_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderAutoScalingGroupProviderManagedScalingArgs:
@@ -295,7 +293,6 @@ class CapacityProviderManagedInstancesProviderArgsDict(TypedDict):
         ]
     ]
     propagate_tags: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderArgs:
@@ -360,7 +357,6 @@ class CapacityProviderManagedInstancesProviderInfrastructureOptimizationArgsDict
     TypedDict
 ):
     scale_in_after: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInfrastructureOptimizationArgs:
@@ -390,7 +386,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateArgsDict(Typ
             CapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateArgs:
@@ -555,7 +550,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
             CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsArgs:
@@ -922,7 +916,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCountArgs:
@@ -948,7 +941,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibArgs:
@@ -974,7 +966,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsArgs:
@@ -1000,7 +991,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpuArgs:
@@ -1026,7 +1016,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMibArgs:
@@ -1052,7 +1041,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsArgs:
@@ -1078,7 +1066,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.int]]
     min: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCountArgs:
@@ -1104,7 +1091,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbArgs:
@@ -1130,7 +1116,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequ
 ):
     min: pulumi.Input[_builtins.int]
     max: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCountArgs:
@@ -1156,7 +1141,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfi
 ):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfigurationArgs:
@@ -1187,7 +1171,6 @@ class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfi
     TypedDict
 ):
     storage_size_gib: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CapacityProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfigurationArgs:
@@ -1204,7 +1187,6 @@ class ClusterCapacityProvidersDefaultCapacityProviderStrategyArgsDict(TypedDict)
     capacity_provider: pulumi.Input[_builtins.str]
     base: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ClusterCapacityProvidersDefaultCapacityProviderStrategyArgs:
@@ -1238,7 +1220,6 @@ class ClusterConfigurationArgsDict(TypedDict):
     managed_storage_configuration: NotRequired[
         pulumi.Input[ClusterConfigurationManagedStorageConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterConfigurationArgs:
@@ -1289,7 +1270,6 @@ class ClusterConfigurationExecuteCommandConfigurationArgsDict(TypedDict):
         ]
     ]
     logging: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterConfigurationExecuteCommandConfigurationArgs:
@@ -1341,7 +1321,6 @@ class ClusterConfigurationExecuteCommandConfigurationLogConfigurationArgsDict(
     s3_bucket_encryption_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     s3_bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     s3_key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterConfigurationExecuteCommandConfigurationLogConfigurationArgs:
@@ -1393,7 +1372,6 @@ class ClusterConfigurationExecuteCommandConfigurationLogConfigurationArgs:
 class ClusterConfigurationManagedStorageConfigurationArgsDict(TypedDict):
     fargate_ephemeral_storage_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterConfigurationManagedStorageConfigurationArgs:
@@ -1422,7 +1400,6 @@ class ClusterConfigurationManagedStorageConfigurationArgs:
 
 class ClusterServiceConnectDefaultsArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterServiceConnectDefaultsArgs:
@@ -1436,7 +1413,6 @@ class ClusterServiceConnectDefaultsArgs:
 class ClusterSettingArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterSettingArgs:
@@ -1460,7 +1436,6 @@ class ClusterSettingArgs:
 class ExpressGatewayServiceIngressPathArgsDict(TypedDict):
     access_type: pulumi.Input[_builtins.str]
     endpoint: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServiceIngressPathArgs:
@@ -1484,7 +1459,6 @@ class ExpressGatewayServiceIngressPathArgs:
 class ExpressGatewayServiceNetworkConfigurationArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServiceNetworkConfigurationArgs:
@@ -1537,7 +1511,6 @@ class ExpressGatewayServicePrimaryContainerArgsDict(TypedDict):
             Sequence[pulumi.Input[ExpressGatewayServicePrimaryContainerSecretArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServicePrimaryContainerArgs:
@@ -1673,7 +1646,6 @@ class ExpressGatewayServicePrimaryContainerArgs:
 class ExpressGatewayServicePrimaryContainerAwsLogsConfigurationArgsDict(TypedDict):
     log_group: pulumi.Input[_builtins.str]
     log_stream_prefix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServicePrimaryContainerAwsLogsConfigurationArgs:
@@ -1697,7 +1669,6 @@ class ExpressGatewayServicePrimaryContainerAwsLogsConfigurationArgs:
 class ExpressGatewayServicePrimaryContainerEnvironmentArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServicePrimaryContainerEnvironmentArgs:
@@ -1720,7 +1691,6 @@ class ExpressGatewayServicePrimaryContainerEnvironmentArgs:
 
 class ExpressGatewayServicePrimaryContainerRepositoryCredentialsArgsDict(TypedDict):
     credentials_parameter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServicePrimaryContainerRepositoryCredentialsArgs:
@@ -1736,7 +1706,6 @@ class ExpressGatewayServicePrimaryContainerRepositoryCredentialsArgs:
 class ExpressGatewayServicePrimaryContainerSecretArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value_from: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServicePrimaryContainerSecretArgs:
@@ -1762,7 +1731,6 @@ class ExpressGatewayServiceScalingTargetArgsDict(TypedDict):
     auto_scaling_target_value: pulumi.Input[_builtins.int]
     max_task_count: pulumi.Input[_builtins.int]
     min_task_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServiceScalingTargetArgs:
@@ -1799,7 +1767,6 @@ class ExpressGatewayServiceTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExpressGatewayServiceTimeoutsArgs:
@@ -1830,7 +1797,6 @@ class ServiceAlarmsArgsDict(TypedDict):
     alarm_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     enable: pulumi.Input[_builtins.bool]
     rollback: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ServiceAlarmsArgs:
@@ -1863,7 +1829,6 @@ class ServiceCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
     base: NotRequired[pulumi.Input[_builtins.int]]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceCapacityProviderStrategyArgs:
@@ -1893,7 +1858,6 @@ class ServiceCapacityProviderStrategyArgs:
 class ServiceDeploymentCircuitBreakerArgsDict(TypedDict):
     enable: pulumi.Input[_builtins.bool]
     rollback: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentCircuitBreakerArgs:
@@ -1928,7 +1892,6 @@ class ServiceDeploymentConfigurationArgsDict(TypedDict):
         pulumi.Input[ServiceDeploymentConfigurationLinearConfigurationArgsDict]
     ]
     strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentConfigurationArgs:
@@ -2009,7 +1972,6 @@ class ServiceDeploymentConfigurationArgs:
 class ServiceDeploymentConfigurationCanaryConfigurationArgsDict(TypedDict):
     canary_bake_time_in_minutes: NotRequired[pulumi.Input[_builtins.str]]
     canary_percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentConfigurationCanaryConfigurationArgs:
@@ -2037,7 +1999,6 @@ class ServiceDeploymentConfigurationLifecycleHookArgsDict(TypedDict):
     lifecycle_stages: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     role_arn: pulumi.Input[_builtins.str]
     hook_details: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentConfigurationLifecycleHookArgs:
@@ -2077,7 +2038,6 @@ class ServiceDeploymentConfigurationLifecycleHookArgs:
 class ServiceDeploymentConfigurationLinearConfigurationArgsDict(TypedDict):
     step_bake_time_in_minutes: NotRequired[pulumi.Input[_builtins.str]]
     step_percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentConfigurationLinearConfigurationArgs:
@@ -2102,7 +2062,6 @@ class ServiceDeploymentConfigurationLinearConfigurationArgs:
 
 class ServiceDeploymentControllerArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceDeploymentControllerArgs:
@@ -2123,7 +2082,6 @@ class ServiceLoadBalancerArgsDict(TypedDict):
     ]
     elb_name: NotRequired[pulumi.Input[_builtins.str]]
     target_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceLoadBalancerArgs:
@@ -2174,7 +2132,6 @@ class ServiceLoadBalancerAdvancedConfigurationArgsDict(TypedDict):
     production_listener_rule: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     test_listener_rule: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceLoadBalancerAdvancedConfigurationArgs:
@@ -2211,7 +2168,6 @@ class ServiceNetworkConfigurationArgsDict(TypedDict):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     assign_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServiceNetworkConfigurationArgs:
@@ -2247,7 +2203,6 @@ class ServiceNetworkConfigurationArgs:
 class ServiceOrderedPlacementStrategyArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceOrderedPlacementStrategyArgs:
@@ -2271,7 +2226,6 @@ class ServiceOrderedPlacementStrategyArgs:
 class ServicePlacementConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServicePlacementConstraintArgs:
@@ -2306,7 +2260,6 @@ class ServiceServiceConnectConfigurationArgsDict(TypedDict):
             Sequence[pulumi.Input[ServiceServiceConnectConfigurationServiceArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationArgs:
@@ -2387,7 +2340,6 @@ class ServiceServiceConnectConfigurationArgs:
 class ServiceServiceConnectConfigurationAccessLogConfigurationArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
     include_query_parameters: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationAccessLogConfigurationArgs:
@@ -2422,7 +2374,6 @@ class ServiceServiceConnectConfigurationLogConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationLogConfigurationArgs:
@@ -2487,7 +2438,6 @@ class ServiceServiceConnectConfigurationLogConfigurationArgs:
 class ServiceServiceConnectConfigurationLogConfigurationSecretOptionArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value_from: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationLogConfigurationSecretOptionArgs:
@@ -2525,7 +2475,6 @@ class ServiceServiceConnectConfigurationServiceArgsDict(TypedDict):
         pulumi.Input[ServiceServiceConnectConfigurationServiceTimeoutArgsDict]
     ]
     tls: NotRequired[pulumi.Input[ServiceServiceConnectConfigurationServiceTlsArgsDict]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceArgs:
@@ -2627,7 +2576,6 @@ class ServiceServiceConnectConfigurationServiceClientAliasArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceClientAliasArgs:
@@ -2691,7 +2639,6 @@ class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleArgsDic
             ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleArgs:
@@ -2730,7 +2677,6 @@ class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderA
     value: pulumi.Input[
         ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderArgs:
@@ -2766,7 +2712,6 @@ class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderV
     TypedDict
 ):
     exact: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderValueArgs:
@@ -2780,7 +2725,6 @@ class ServiceServiceConnectConfigurationServiceClientAliasTestTrafficRuleHeaderV
 class ServiceServiceConnectConfigurationServiceTimeoutArgsDict(TypedDict):
     idle_timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
     per_request_timeout_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceTimeoutArgs:
@@ -2809,7 +2753,6 @@ class ServiceServiceConnectConfigurationServiceTlsArgsDict(TypedDict):
     ]
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceTlsArgs:
@@ -2851,7 +2794,6 @@ class ServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityArgsDict(
     TypedDict
 ):
     aws_pca_authority_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityArgs:
@@ -2869,7 +2811,6 @@ class ServiceServiceRegistriesArgsDict(TypedDict):
     container_name: NotRequired[pulumi.Input[_builtins.str]]
     container_port: NotRequired[pulumi.Input[_builtins.int]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ServiceServiceRegistriesArgs:
@@ -2905,7 +2846,6 @@ class ServiceServiceRegistriesArgs:
 class ServiceVolumeConfigurationArgsDict(TypedDict):
     managed_ebs_volume: pulumi.Input[ServiceVolumeConfigurationManagedEbsVolumeArgsDict]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceVolumeConfigurationArgs:
@@ -2952,7 +2892,6 @@ class ServiceVolumeConfigurationManagedEbsVolumeArgsDict(TypedDict):
     throughput: NotRequired[pulumi.Input[_builtins.int]]
     volume_initialization_rate: NotRequired[pulumi.Input[_builtins.int]]
     volume_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceVolumeConfigurationManagedEbsVolumeArgs:
@@ -3062,7 +3001,6 @@ class ServiceVolumeConfigurationManagedEbsVolumeTagSpecificationArgsDict(TypedDi
     resource_type: pulumi.Input[_builtins.str]
     propagate_tags: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ServiceVolumeConfigurationManagedEbsVolumeTagSpecificationArgs:
@@ -3097,7 +3035,6 @@ class ServiceVpcLatticeConfigurationArgsDict(TypedDict):
     port_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     target_group_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ServiceVpcLatticeConfigurationArgs:
@@ -3126,7 +3063,6 @@ class ServiceVpcLatticeConfigurationArgs:
 
 class TaskDefinitionEphemeralStorageArgsDict(TypedDict):
     size_in_gib: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionEphemeralStorageArgs:
@@ -3140,7 +3076,6 @@ class TaskDefinitionEphemeralStorageArgs:
 class TaskDefinitionPlacementConstraintArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     expression: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionPlacementConstraintArgs:
@@ -3165,7 +3100,6 @@ class TaskDefinitionProxyConfigurationArgsDict(TypedDict):
     container_name: pulumi.Input[_builtins.str]
     properties: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionProxyConfigurationArgs:
@@ -3201,7 +3135,6 @@ class TaskDefinitionProxyConfigurationArgs:
 class TaskDefinitionRuntimePlatformArgsDict(TypedDict):
     cpu_architecture: NotRequired[pulumi.Input[_builtins.str]]
     operating_system_family: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionRuntimePlatformArgs:
@@ -3237,7 +3170,6 @@ class TaskDefinitionVolumeArgsDict(TypedDict):
         ]
     ]
     host_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeArgs:
@@ -3319,7 +3251,6 @@ class TaskDefinitionVolumeDockerVolumeConfigurationArgsDict(TypedDict):
     driver_opts: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     scope: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeDockerVolumeConfigurationArgs:
@@ -3378,7 +3309,6 @@ class TaskDefinitionVolumeEfsVolumeConfigurationArgsDict(TypedDict):
     root_directory: NotRequired[pulumi.Input[_builtins.str]]
     transit_encryption: NotRequired[pulumi.Input[_builtins.str]]
     transit_encryption_port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeEfsVolumeConfigurationArgs:
@@ -3435,7 +3365,6 @@ class TaskDefinitionVolumeEfsVolumeConfigurationArgs:
 class TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigArgsDict(TypedDict):
     access_point_id: NotRequired[pulumi.Input[_builtins.str]]
     iam: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigArgs:
@@ -3462,7 +3391,6 @@ class TaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationArgsDict(TypedD
     ]
     file_system_id: pulumi.Input[_builtins.str]
     root_directory: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationArgs:
@@ -3505,7 +3433,6 @@ class TaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationCo
 ):
     credentials_parameter: pulumi.Input[_builtins.str]
     domain: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigArgs:
@@ -3530,7 +3457,6 @@ class TaskSetCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: pulumi.Input[_builtins.str]
     weight: pulumi.Input[_builtins.int]
     base: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TaskSetCapacityProviderStrategyArgs:
@@ -3562,7 +3488,6 @@ class TaskSetLoadBalancerArgsDict(TypedDict):
     container_port: NotRequired[pulumi.Input[_builtins.int]]
     load_balancer_name: NotRequired[pulumi.Input[_builtins.str]]
     target_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TaskSetLoadBalancerArgs:
@@ -3599,7 +3524,6 @@ class TaskSetNetworkConfigurationArgsDict(TypedDict):
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     assign_public_ip: NotRequired[pulumi.Input[_builtins.bool]]
     security_groups: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TaskSetNetworkConfigurationArgs:
@@ -3635,7 +3559,6 @@ class TaskSetNetworkConfigurationArgs:
 class TaskSetScaleArgsDict(TypedDict):
     unit: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class TaskSetScaleArgs:
@@ -3661,7 +3584,6 @@ class TaskSetServiceRegistriesArgsDict(TypedDict):
     container_name: NotRequired[pulumi.Input[_builtins.str]]
     container_port: NotRequired[pulumi.Input[_builtins.int]]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TaskSetServiceRegistriesArgs:
@@ -3698,7 +3620,6 @@ class GetTaskExecutionCapacityProviderStrategyArgsDict(TypedDict):
     capacity_provider: _builtins.str
     base: NotRequired[_builtins.int]
     weight: NotRequired[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionCapacityProviderStrategyArgs:
@@ -3729,7 +3650,6 @@ class GetTaskExecutionNetworkConfigurationArgsDict(TypedDict):
     subnets: Sequence[_builtins.str]
     assign_public_ip: NotRequired[_builtins.bool]
     security_groups: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionNetworkConfigurationArgs:
@@ -3764,7 +3684,6 @@ class GetTaskExecutionOverridesArgsDict(TypedDict):
     execution_role_arn: NotRequired[_builtins.str]
     memory: NotRequired[_builtins.str]
     task_role_arn: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionOverridesArgs:
@@ -3821,7 +3740,6 @@ class GetTaskExecutionOverridesContainerOverrideArgsDict(TypedDict):
     resource_requirements: NotRequired[
         Sequence[GetTaskExecutionOverridesContainerOverrideResourceRequirementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionOverridesContainerOverrideArgs:
@@ -3897,7 +3815,6 @@ class GetTaskExecutionOverridesContainerOverrideArgs:
 class GetTaskExecutionOverridesContainerOverrideEnvironmentArgsDict(TypedDict):
     key: _builtins.str
     value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionOverridesContainerOverrideEnvironmentArgs:
@@ -3916,7 +3833,6 @@ class GetTaskExecutionOverridesContainerOverrideEnvironmentArgs:
 class GetTaskExecutionOverridesContainerOverrideResourceRequirementArgsDict(TypedDict):
     type: _builtins.str
     value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionOverridesContainerOverrideResourceRequirementArgs:
@@ -3935,7 +3851,6 @@ class GetTaskExecutionOverridesContainerOverrideResourceRequirementArgs:
 class GetTaskExecutionPlacementConstraintArgsDict(TypedDict):
     type: _builtins.str
     expression: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionPlacementConstraintArgs:
@@ -3956,7 +3871,6 @@ class GetTaskExecutionPlacementConstraintArgs:
 class GetTaskExecutionPlacementStrategyArgsDict(TypedDict):
     type: _builtins.str
     field: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTaskExecutionPlacementStrategyArgs:

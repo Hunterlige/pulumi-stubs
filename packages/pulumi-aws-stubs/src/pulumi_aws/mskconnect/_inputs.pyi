@@ -53,7 +53,6 @@ class ConnectorCapacityArgsDict(TypedDict):
     provisioned_capacity: NotRequired[
         pulumi.Input[ConnectorCapacityProvisionedCapacityArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorCapacityArgs:
@@ -94,7 +93,6 @@ class ConnectorCapacityAutoscalingArgsDict(TypedDict):
     scale_out_policy: NotRequired[
         pulumi.Input[ConnectorCapacityAutoscalingScaleOutPolicyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorCapacityAutoscalingArgs:
@@ -149,7 +147,6 @@ class ConnectorCapacityAutoscalingArgs:
 
 class ConnectorCapacityAutoscalingScaleInPolicyArgsDict(TypedDict):
     cpu_utilization_percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectorCapacityAutoscalingScaleInPolicyArgs:
@@ -168,7 +165,6 @@ class ConnectorCapacityAutoscalingScaleInPolicyArgs:
 
 class ConnectorCapacityAutoscalingScaleOutPolicyArgsDict(TypedDict):
     cpu_utilization_percentage: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectorCapacityAutoscalingScaleOutPolicyArgs:
@@ -188,7 +184,6 @@ class ConnectorCapacityAutoscalingScaleOutPolicyArgs:
 class ConnectorCapacityProvisionedCapacityArgsDict(TypedDict):
     worker_count: pulumi.Input[_builtins.int]
     mcu_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectorCapacityProvisionedCapacityArgs:
@@ -211,7 +206,6 @@ class ConnectorCapacityProvisionedCapacityArgs:
 
 class ConnectorKafkaClusterArgsDict(TypedDict):
     apache_kafka_cluster: pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectorKafkaClusterArgs:
@@ -233,7 +227,6 @@ class ConnectorKafkaClusterArgs:
 class ConnectorKafkaClusterApacheKafkaClusterArgsDict(TypedDict):
     bootstrap_servers: pulumi.Input[_builtins.str]
     vpc: pulumi.Input[ConnectorKafkaClusterApacheKafkaClusterVpcArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectorKafkaClusterApacheKafkaClusterArgs:
@@ -259,7 +252,6 @@ class ConnectorKafkaClusterApacheKafkaClusterArgs:
 class ConnectorKafkaClusterApacheKafkaClusterVpcArgsDict(TypedDict):
     security_groups: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnets: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ConnectorKafkaClusterApacheKafkaClusterVpcArgs:
@@ -286,7 +278,6 @@ class ConnectorKafkaClusterApacheKafkaClusterVpcArgs:
 
 class ConnectorKafkaClusterClientAuthenticationArgsDict(TypedDict):
     authentication_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorKafkaClusterClientAuthenticationArgs:
@@ -301,7 +292,6 @@ class ConnectorKafkaClusterClientAuthenticationArgs:
 
 class ConnectorKafkaClusterEncryptionInTransitArgsDict(TypedDict):
     encryption_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorKafkaClusterEncryptionInTransitArgs:
@@ -316,7 +306,6 @@ class ConnectorKafkaClusterEncryptionInTransitArgs:
 
 class ConnectorLogDeliveryArgsDict(TypedDict):
     worker_log_delivery: pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectorLogDeliveryArgs:
@@ -343,7 +332,6 @@ class ConnectorLogDeliveryWorkerLogDeliveryArgsDict(TypedDict):
         pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgsDict]
     ]
     s3: NotRequired[pulumi.Input[ConnectorLogDeliveryWorkerLogDeliveryS3ArgsDict]]
-    ...
 
 @pulumi.input_type
 class ConnectorLogDeliveryWorkerLogDeliveryArgs:
@@ -397,7 +385,6 @@ class ConnectorLogDeliveryWorkerLogDeliveryArgs:
 class ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     log_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgs:
@@ -421,7 +408,6 @@ class ConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsArgs:
 class ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     delivery_stream: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorLogDeliveryWorkerLogDeliveryFirehoseArgs:
@@ -446,7 +432,6 @@ class ConnectorLogDeliveryWorkerLogDeliveryS3ArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorLogDeliveryWorkerLogDeliveryS3Args:
@@ -475,7 +460,6 @@ class ConnectorLogDeliveryWorkerLogDeliveryS3Args:
 
 class ConnectorPluginArgsDict(TypedDict):
     custom_plugin: pulumi.Input[ConnectorPluginCustomPluginArgsDict]
-    ...
 
 @pulumi.input_type
 class ConnectorPluginArgs:
@@ -491,7 +475,6 @@ class ConnectorPluginArgs:
 class ConnectorPluginCustomPluginArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     revision: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ConnectorPluginCustomPluginArgs:
@@ -515,7 +498,6 @@ class ConnectorPluginCustomPluginArgs:
 class ConnectorWorkerConfigurationArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     revision: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ConnectorWorkerConfigurationArgs:
@@ -538,7 +520,6 @@ class ConnectorWorkerConfigurationArgs:
 
 class CustomPluginLocationArgsDict(TypedDict):
     s3: pulumi.Input[CustomPluginLocationS3ArgsDict]
-    ...
 
 @pulumi.input_type
 class CustomPluginLocationArgs:
@@ -553,7 +534,6 @@ class CustomPluginLocationS3ArgsDict(TypedDict):
     bucket_arn: pulumi.Input[_builtins.str]
     file_key: pulumi.Input[_builtins.str]
     object_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomPluginLocationS3Args:

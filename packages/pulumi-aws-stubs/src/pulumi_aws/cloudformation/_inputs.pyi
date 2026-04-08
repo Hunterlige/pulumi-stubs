@@ -31,7 +31,6 @@ __all__ = [
 class CloudFormationTypeLoggingConfigArgsDict(TypedDict):
     log_group_name: pulumi.Input[_builtins.str]
     log_role_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudFormationTypeLoggingConfigArgs:
@@ -59,7 +58,6 @@ class StackInstancesDeploymentTargetsArgsDict(TypedDict):
     organizational_unit_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class StackInstancesDeploymentTargetsArgs:
@@ -110,7 +108,6 @@ class StackInstancesOperationPreferencesArgsDict(TypedDict):
     max_concurrent_percentage: NotRequired[pulumi.Input[_builtins.int]]
     region_concurrency_type: NotRequired[pulumi.Input[_builtins.str]]
     region_orders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class StackInstancesOperationPreferencesArgs:
@@ -181,7 +178,6 @@ class StackInstancesStackInstanceSummaryArgsDict(TypedDict):
     stack_set_id: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
     status_reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackInstancesStackInstanceSummaryArgs:
@@ -247,7 +243,6 @@ class StackInstancesStackInstanceSummaryArgs:
 class StackSetAutoDeploymentArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     retain_stacks_on_account_removal: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StackSetAutoDeploymentArgs:
@@ -279,7 +274,6 @@ class StackSetInstanceDeploymentTargetsArgsDict(TypedDict):
     organizational_unit_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class StackSetInstanceDeploymentTargetsArgs:
@@ -330,7 +324,6 @@ class StackSetInstanceOperationPreferencesArgsDict(TypedDict):
     max_concurrent_percentage: NotRequired[pulumi.Input[_builtins.int]]
     region_concurrency_type: NotRequired[pulumi.Input[_builtins.str]]
     region_orders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class StackSetInstanceOperationPreferencesArgs:
@@ -395,7 +388,6 @@ class StackSetInstanceStackInstanceSummaryArgsDict(TypedDict):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
     organizational_unit_id: NotRequired[pulumi.Input[_builtins.str]]
     stack_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StackSetInstanceStackInstanceSummaryArgs:
@@ -424,7 +416,6 @@ class StackSetInstanceStackInstanceSummaryArgs:
 
 class StackSetManagedExecutionArgsDict(TypedDict):
     active: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StackSetManagedExecutionArgs:
@@ -444,7 +435,6 @@ class StackSetOperationPreferencesArgsDict(TypedDict):
     max_concurrent_percentage: NotRequired[pulumi.Input[_builtins.int]]
     region_concurrency_type: NotRequired[pulumi.Input[_builtins.str]]
     region_orders: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class StackSetOperationPreferencesArgs:

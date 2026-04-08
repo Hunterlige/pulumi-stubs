@@ -316,7 +316,6 @@ class ConnectionProfileForwardSshConnectivityArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     private_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileForwardSshConnectivityArgs:
@@ -358,7 +357,6 @@ class ConnectionProfileForwardSshConnectivityArgs:
 class ConnectionProfileGcsProfileArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     root_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileGcsProfileArgs:
@@ -396,7 +394,6 @@ class ConnectionProfileMongodbProfileArgsDict(TypedDict):
     standard_connection_format: NotRequired[
         pulumi.Input[ConnectionProfileMongodbProfileStandardConnectionFormatArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMongodbProfileArgs:
@@ -500,7 +497,6 @@ class ConnectionProfileMongodbProfileArgs:
 class ConnectionProfileMongodbProfileHostAddressArgsDict(TypedDict):
     hostname: pulumi.Input[_builtins.str]
     port: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMongodbProfileHostAddressArgs:
@@ -535,7 +531,6 @@ class ConnectionProfileMongodbProfileSslConfigArgsDict(TypedDict):
     client_key: NotRequired[pulumi.Input[_builtins.str]]
     client_key_set: NotRequired[pulumi.Input[_builtins.bool]]
     secret_manager_stored_client_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMongodbProfileSslConfigArgs:
@@ -592,7 +587,6 @@ class ConnectionProfileMongodbProfileSslConfigArgs:
 
 class ConnectionProfileMongodbProfileStandardConnectionFormatArgsDict(TypedDict):
     direct_connection: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMongodbProfileStandardConnectionFormatArgs:
@@ -614,7 +608,6 @@ class ConnectionProfileMysqlProfileArgsDict(TypedDict):
     ssl_config: NotRequired[
         pulumi.Input[ConnectionProfileMysqlProfileSslConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMysqlProfileArgs:
@@ -676,7 +669,6 @@ class ConnectionProfileMysqlProfileSslConfigArgsDict(TypedDict):
     client_certificate_set: NotRequired[pulumi.Input[_builtins.bool]]
     client_key: NotRequired[pulumi.Input[_builtins.str]]
     client_key_set: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileMysqlProfileSslConfigArgs:
@@ -731,7 +723,6 @@ class ConnectionProfileOracleProfileArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     secret_manager_stored_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileOracleProfileArgs:
@@ -802,7 +793,6 @@ class ConnectionProfilePostgresqlProfileArgsDict(TypedDict):
     ssl_config: NotRequired[
         pulumi.Input[ConnectionProfilePostgresqlProfileSslConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlProfileArgs:
@@ -875,7 +865,6 @@ class ConnectionProfilePostgresqlProfileSslConfigArgsDict(TypedDict):
             ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlProfileSslConfigArgs:
@@ -934,7 +923,6 @@ class ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgs
     ca_certificate: pulumi.Input[_builtins.str]
     client_certificate: pulumi.Input[_builtins.str]
     client_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgs:
@@ -963,7 +951,6 @@ class ConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationArgs
 
 class ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgsDict(TypedDict):
     ca_certificate: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgs:
@@ -976,7 +963,6 @@ class ConnectionProfilePostgresqlProfileSslConfigServerVerificationArgs:
 
 class ConnectionProfilePrivateConnectivityArgsDict(TypedDict):
     private_connection: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectionProfilePrivateConnectivityArgs:
@@ -997,7 +983,6 @@ class ConnectionProfileSalesforceProfileArgsDict(TypedDict):
     user_credentials: NotRequired[
         pulumi.Input[ConnectionProfileSalesforceProfileUserCredentialsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileSalesforceProfileArgs:
@@ -1050,7 +1035,6 @@ class ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgsDict(TypedDic
     client_id: NotRequired[pulumi.Input[_builtins.str]]
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     secret_manager_stored_client_secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileSalesforceProfileOauth2ClientCredentialsArgs:
@@ -1089,7 +1073,6 @@ class ConnectionProfileSalesforceProfileUserCredentialsArgsDict(TypedDict):
     secret_manager_stored_security_token: NotRequired[pulumi.Input[_builtins.str]]
     security_token: NotRequired[pulumi.Input[_builtins.str]]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileSalesforceProfileUserCredentialsArgs:
@@ -1141,7 +1124,6 @@ class ConnectionProfileSalesforceProfileUserCredentialsArgs:
 class ConnectionProfileSpannerProfileArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     host: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileSpannerProfileArgs:
@@ -1169,7 +1151,6 @@ class ConnectionProfileSqlServerProfileArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     port: NotRequired[pulumi.Input[_builtins.int]]
     secret_manager_stored_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionProfileSqlServerProfileArgs:
@@ -1221,7 +1202,6 @@ class ConnectionProfileSqlServerProfileArgs:
 class PrivateConnectionErrorArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PrivateConnectionErrorArgs:
@@ -1250,7 +1230,6 @@ class PrivateConnectionErrorArgs:
 
 class PrivateConnectionPscInterfaceConfigArgsDict(TypedDict):
     network_attachment: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PrivateConnectionPscInterfaceConfigArgs:
@@ -1266,7 +1245,6 @@ class PrivateConnectionPscInterfaceConfigArgs:
 class PrivateConnectionVpcPeeringConfigArgsDict(TypedDict):
     subnet: pulumi.Input[_builtins.str]
     vpc: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PrivateConnectionVpcPeeringConfigArgs:
@@ -1309,7 +1287,6 @@ class StreamBackfillAllArgsDict(TypedDict):
     sql_server_excluded_objects: NotRequired[
         pulumi.Input[StreamBackfillAllSqlServerExcludedObjectsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllArgs:
@@ -1409,7 +1386,6 @@ class StreamBackfillAllMongodbExcludedObjectsArgsDict(TypedDict):
     databases: pulumi.Input[
         Sequence[pulumi.Input[StreamBackfillAllMongodbExcludedObjectsDatabaseArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMongodbExcludedObjectsArgs:
@@ -1446,7 +1422,6 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMongodbExcludedObjectsDatabaseArgs:
@@ -1507,7 +1482,6 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgs:
@@ -1559,7 +1533,6 @@ class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionArgs:
 
 class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionFieldArgsDict(TypedDict):
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMongodbExcludedObjectsDatabaseCollectionFieldArgs:
@@ -1578,7 +1551,6 @@ class StreamBackfillAllMysqlExcludedObjectsArgsDict(TypedDict):
             pulumi.Input[StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMysqlExcludedObjectsArgs:
@@ -1619,7 +1591,6 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseArgs:
@@ -1680,7 +1651,6 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableArgs:
@@ -1740,7 +1710,6 @@ class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableMysqlColumnArg
     nullable: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllMysqlExcludedObjectsMysqlDatabaseMysqlTableMysqlColumnArgs:
@@ -1797,7 +1766,6 @@ class StreamBackfillAllOracleExcludedObjectsArgsDict(TypedDict):
             pulumi.Input[StreamBackfillAllOracleExcludedObjectsOracleSchemaArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllOracleExcludedObjectsArgs:
@@ -1838,7 +1806,6 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaArgs:
@@ -1899,7 +1866,6 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableArgsDict(Type
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableArgs:
@@ -1961,7 +1927,6 @@ class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableOracleColumnA
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllOracleExcludedObjectsOracleSchemaOracleTableOracleColumnArgs:
@@ -2032,7 +1997,6 @@ class StreamBackfillAllPostgresqlExcludedObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllPostgresqlExcludedObjectsArgs:
@@ -2079,7 +2043,6 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaArgs:
@@ -2142,7 +2105,6 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableArgs:
@@ -2203,7 +2165,6 @@ class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTableP
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgs:
@@ -2264,7 +2225,6 @@ class StreamBackfillAllSalesforceExcludedObjectsArgsDict(TypedDict):
     objects: pulumi.Input[
         Sequence[pulumi.Input[StreamBackfillAllSalesforceExcludedObjectsObjectArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSalesforceExcludedObjectsArgs:
@@ -2301,7 +2261,6 @@ class StreamBackfillAllSalesforceExcludedObjectsObjectArgsDict(TypedDict):
         ]
     ]
     object_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSalesforceExcludedObjectsObjectArgs:
@@ -2351,7 +2310,6 @@ class StreamBackfillAllSalesforceExcludedObjectsObjectArgs:
 
 class StreamBackfillAllSalesforceExcludedObjectsObjectFieldArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSalesforceExcludedObjectsObjectFieldArgs:
@@ -2368,7 +2326,6 @@ class StreamBackfillAllSpannerExcludedObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
         Sequence[pulumi.Input[StreamBackfillAllSpannerExcludedObjectsSchemaArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSpannerExcludedObjectsArgs:
@@ -2403,7 +2360,6 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSpannerExcludedObjectsSchemaArgs:
@@ -2458,7 +2414,6 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaTableArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSpannerExcludedObjectsSchemaTableArgs:
@@ -2513,7 +2468,6 @@ class StreamBackfillAllSpannerExcludedObjectsSchemaTableColumnArgsDict(TypedDict
     data_type: NotRequired[pulumi.Input[_builtins.str]]
     is_primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSpannerExcludedObjectsSchemaTableColumnArgs:
@@ -2550,7 +2504,6 @@ class StreamBackfillAllSqlServerExcludedObjectsArgsDict(TypedDict):
     schemas: pulumi.Input[
         Sequence[pulumi.Input[StreamBackfillAllSqlServerExcludedObjectsSchemaArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSqlServerExcludedObjectsArgs:
@@ -2587,7 +2540,6 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSqlServerExcludedObjectsSchemaArgs:
@@ -2646,7 +2598,6 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaTableArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSqlServerExcludedObjectsSchemaTableArgs:
@@ -2705,7 +2656,6 @@ class StreamBackfillAllSqlServerExcludedObjectsSchemaTableColumnArgsDict(TypedDi
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamBackfillAllSqlServerExcludedObjectsSchemaTableColumnArgs:
@@ -2776,7 +2726,6 @@ class StreamDestinationConfigArgsDict(TypedDict):
     gcs_destination_config: NotRequired[
         pulumi.Input[StreamDestinationConfigGcsDestinationConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigArgs:
@@ -2842,7 +2791,6 @@ class StreamDestinationConfigBigqueryDestinationConfigArgsDict(TypedDict):
             StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigBigqueryDestinationConfigArgs:
@@ -2966,7 +2914,6 @@ class StreamDestinationConfigBigqueryDestinationConfigBlmtConfigArgsDict(TypedDi
     file_format: pulumi.Input[_builtins.str]
     table_format: pulumi.Input[_builtins.str]
     root_path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigBigqueryDestinationConfigBlmtConfigArgs:
@@ -3015,7 +2962,6 @@ class StreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetArgsDic
     TypedDict
 ):
     dataset_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetArgs:
@@ -3033,7 +2979,6 @@ class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArg
         StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateArgsDict
     ]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsArgs:
@@ -3071,7 +3016,6 @@ class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDat
     location: pulumi.Input[_builtins.str]
     dataset_id_prefix: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateArgs:
@@ -3108,7 +3052,6 @@ class StreamDestinationConfigGcsDestinationConfigArgsDict(TypedDict):
         pulumi.Input[StreamDestinationConfigGcsDestinationConfigJsonFileFormatArgsDict]
     ]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigGcsDestinationConfigArgs:
@@ -3178,7 +3121,6 @@ class StreamDestinationConfigGcsDestinationConfigAvroFileFormatArgs:
 class StreamDestinationConfigGcsDestinationConfigJsonFileFormatArgsDict(TypedDict):
     compression: NotRequired[pulumi.Input[_builtins.str]]
     schema_file_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamDestinationConfigGcsDestinationConfigJsonFileFormatArgs:
@@ -3204,7 +3146,6 @@ class StreamRuleSetArgsDict(TypedDict):
         Sequence[pulumi.Input[StreamRuleSetCustomizationRuleArgsDict]]
     ]
     object_filter: pulumi.Input[StreamRuleSetObjectFilterArgsDict]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetArgs:
@@ -3239,7 +3180,6 @@ class StreamRuleSetCustomizationRuleArgsDict(TypedDict):
     bigquery_partitioning: NotRequired[
         pulumi.Input[StreamRuleSetCustomizationRuleBigqueryPartitioningArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleArgs:
@@ -3284,7 +3224,6 @@ class StreamRuleSetCustomizationRuleArgs:
 
 class StreamRuleSetCustomizationRuleBigqueryClusteringArgsDict(TypedDict):
     columns: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleBigqueryClusteringArgs:
@@ -3314,7 +3253,6 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningArgsDict(TypedDict):
             StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleBigqueryPartitioningArgs:
@@ -3404,7 +3342,6 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningIngestionTimePartitionAr
     TypedDict
 ):
     partitioning_time_granularity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleBigqueryPartitioningIngestionTimePartitionArgs:
@@ -3430,7 +3367,6 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningIntegerRangePartitionArg
     end: pulumi.Input[_builtins.int]
     interval: pulumi.Input[_builtins.int]
     start: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleBigqueryPartitioningIntegerRangePartitionArgs:
@@ -3468,7 +3404,6 @@ class StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgsDic
 ):
     column: pulumi.Input[_builtins.str]
     partitioning_time_granularity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetCustomizationRuleBigqueryPartitioningTimeUnitPartitionArgs:
@@ -3497,7 +3432,6 @@ class StreamRuleSetObjectFilterArgsDict(TypedDict):
     source_object_identifier: NotRequired[
         pulumi.Input[StreamRuleSetObjectFilterSourceObjectIdentifierArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterArgs:
@@ -3559,7 +3493,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierArgsDict(TypedDict):
             StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierArgs:
@@ -3732,7 +3665,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgsDict(
 ):
     collection: pulumi.Input[_builtins.str]
     database: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgs:
@@ -3756,7 +3688,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierMongodbIdentifierArgs:
 class StreamRuleSetObjectFilterSourceObjectIdentifierMysqlIdentifierArgsDict(TypedDict):
     database: pulumi.Input[_builtins.str]
     table: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierMysqlIdentifierArgs:
@@ -3782,7 +3713,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierOracleIdentifierArgsDict(
 ):
     schema: pulumi.Input[_builtins.str]
     table: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierOracleIdentifierArgs:
@@ -3808,7 +3738,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierPostgresqlIdentifierArgsDic
 ):
     schema: pulumi.Input[_builtins.str]
     table: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierPostgresqlIdentifierArgs:
@@ -3833,7 +3762,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSalesforceIdentifierArgsDic
     TypedDict
 ):
     object_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierSalesforceIdentifierArgs:
@@ -3849,7 +3777,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSpannerIdentifierArgsDict(
 ):
     table: pulumi.Input[_builtins.str]
     schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierSpannerIdentifierArgs:
@@ -3875,7 +3802,6 @@ class StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgsDict
 ):
     schema: pulumi.Input[_builtins.str]
     table: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamRuleSetObjectFilterSourceObjectIdentifierSqlServerIdentifierArgs:
@@ -3919,7 +3845,6 @@ class StreamSourceConfigArgsDict(TypedDict):
     sql_server_source_config: NotRequired[
         pulumi.Input[StreamSourceConfigSqlServerSourceConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigArgs:
@@ -4028,7 +3953,6 @@ class StreamSourceConfigMongodbSourceConfigArgsDict(TypedDict):
         pulumi.Input[StreamSourceConfigMongodbSourceConfigIncludeObjectsArgsDict]
     ]
     max_concurrent_backfill_tasks: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigArgs:
@@ -4091,7 +4015,6 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsArgs:
@@ -4146,7 +4069,6 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseArgsDict(TypedD
         ]
     ]
     database: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseArgs:
@@ -4209,7 +4131,6 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionArgs:
@@ -4263,7 +4184,6 @@ class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionField
     TypedDict
 ):
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigExcludeObjectsDatabaseCollectionFieldArgs:
@@ -4286,7 +4206,6 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsArgs:
@@ -4341,7 +4260,6 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseArgsDict(TypedD
         ]
     ]
     database: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseArgs:
@@ -4404,7 +4322,6 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionArgsD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionArgs:
@@ -4458,7 +4375,6 @@ class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionField
     TypedDict
 ):
     field: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMongodbSourceConfigIncludeObjectsDatabaseCollectionFieldArgs:
@@ -4484,7 +4400,6 @@ class StreamSourceConfigMysqlSourceConfigArgsDict(TypedDict):
     ]
     max_concurrent_backfill_tasks: NotRequired[pulumi.Input[_builtins.int]]
     max_concurrent_cdc_tasks: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigArgs:
@@ -4586,7 +4501,6 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsArgs:
@@ -4635,7 +4549,6 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseArgs:
@@ -4698,7 +4611,6 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableArgs:
@@ -4758,7 +4670,6 @@ class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableMy
     nullable: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabaseMysqlTableMysqlColumnArgs:
@@ -4823,7 +4734,6 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsArgs:
@@ -4872,7 +4782,6 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseArgs:
@@ -4935,7 +4844,6 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableAr
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableArgs:
@@ -4995,7 +4903,6 @@ class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableMy
     nullable: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabaseMysqlTableMysqlColumnArgs:
@@ -5061,7 +4968,6 @@ class StreamSourceConfigOracleSourceConfigArgsDict(TypedDict):
     stream_large_objects: NotRequired[
         pulumi.Input[StreamSourceConfigOracleSourceConfigStreamLargeObjectsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigArgs:
@@ -5170,7 +5076,6 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigExcludeObjectsArgs:
@@ -5219,7 +5124,6 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaArgs:
@@ -5282,7 +5186,6 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableArgs:
@@ -5344,7 +5247,6 @@ class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableO
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemaOracleTableOracleColumnArgs:
@@ -5415,7 +5317,6 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigIncludeObjectsArgs:
@@ -5464,7 +5365,6 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaArgs:
@@ -5527,7 +5427,6 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableArgs:
@@ -5589,7 +5488,6 @@ class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableO
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemaOracleTableOracleColumnArgs:
@@ -5668,7 +5566,6 @@ class StreamSourceConfigPostgresqlSourceConfigArgsDict(TypedDict):
         pulumi.Input[StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgsDict]
     ]
     max_concurrent_backfill_tasks: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigArgs:
@@ -5741,7 +5638,6 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsArgs:
@@ -5792,7 +5688,6 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaArgs:
@@ -5855,7 +5750,6 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPost
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPostgresqlTableArgs:
@@ -5916,7 +5810,6 @@ class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPost
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgs:
@@ -5981,7 +5874,6 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsArgs:
@@ -6032,7 +5924,6 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaArgs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaArgs:
@@ -6095,7 +5986,6 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPost
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPostgresqlTableArgs:
@@ -6156,7 +6046,6 @@ class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPost
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemaPostgresqlTablePostgresqlColumnArgs:
@@ -6221,7 +6110,6 @@ class StreamSourceConfigSalesforceSourceConfigArgsDict(TypedDict):
     include_objects: NotRequired[
         pulumi.Input[StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigArgs:
@@ -6278,7 +6166,6 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsArgs:
@@ -6327,7 +6214,6 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectArgsDict(Typed
         ]
     ]
     object_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectArgs:
@@ -6381,7 +6267,6 @@ class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectFieldArgsDict(
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectFieldArgs:
@@ -6402,7 +6287,6 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsArgs:
@@ -6451,7 +6335,6 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectArgsDict(Typed
         ]
     ]
     object_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectArgs:
@@ -6505,7 +6388,6 @@ class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectFieldArgsDict(
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectFieldArgs:
@@ -6531,7 +6413,6 @@ class StreamSourceConfigSpannerSourceConfigArgsDict(TypedDict):
     max_concurrent_backfill_tasks: NotRequired[pulumi.Input[_builtins.int]]
     max_concurrent_cdc_tasks: NotRequired[pulumi.Input[_builtins.int]]
     spanner_rpc_priority: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigArgs:
@@ -6626,7 +6507,6 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsArgs:
@@ -6673,7 +6553,6 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaArgs:
@@ -6734,7 +6613,6 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableArgs:
@@ -6791,7 +6669,6 @@ class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableColumnArgsDi
     data_type: NotRequired[pulumi.Input[_builtins.str]]
     is_primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigExcludeObjectsSchemaTableColumnArgs:
@@ -6832,7 +6709,6 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsArgs:
@@ -6879,7 +6755,6 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaArgs:
@@ -6940,7 +6815,6 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableArgs:
@@ -6997,7 +6871,6 @@ class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableColumnArgsDi
     data_type: NotRequired[pulumi.Input[_builtins.str]]
     is_primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     ordinal_position: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSpannerSourceConfigIncludeObjectsSchemaTableColumnArgs:
@@ -7045,7 +6918,6 @@ class StreamSourceConfigSqlServerSourceConfigArgsDict(TypedDict):
     transaction_logs: NotRequired[
         pulumi.Input[StreamSourceConfigSqlServerSourceConfigTransactionLogsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigArgs:
@@ -7154,7 +7026,6 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsArgs:
@@ -7203,7 +7074,6 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaArgs:
@@ -7266,7 +7136,6 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableArgs:
@@ -7327,7 +7196,6 @@ class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableColumnArgs
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemaTableColumnArgs:
@@ -7392,7 +7260,6 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsArgs:
@@ -7441,7 +7308,6 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaArgs:
@@ -7504,7 +7370,6 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableArgs:
@@ -7565,7 +7430,6 @@ class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableColumnArgs
     precision: NotRequired[pulumi.Input[_builtins.int]]
     primary_key: NotRequired[pulumi.Input[_builtins.bool]]
     scale: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class StreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemaTableColumnArgs:

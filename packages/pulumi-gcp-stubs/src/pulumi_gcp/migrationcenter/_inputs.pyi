@@ -46,7 +46,6 @@ class PreferenceSetVirtualMachinePreferencesArgsDict(TypedDict):
             PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesArgs:
@@ -162,7 +161,6 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgsDict(Typ
             PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesArgs:
@@ -212,7 +210,6 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePrefe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesArgs:
@@ -260,7 +257,6 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePrefe
     TypedDict
 ):
     code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesArgs:
@@ -275,7 +271,6 @@ class PreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePrefe
 
 class PreferenceSetVirtualMachinePreferencesRegionPreferencesArgsDict(TypedDict):
     preferred_regions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesRegionPreferencesArgs:
@@ -309,7 +304,6 @@ class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesArgs:
@@ -375,7 +369,6 @@ class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypeArgsDi
     TypedDict
 ):
     node_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypeArgs:
@@ -393,7 +386,6 @@ class PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgsDict(Type
     cpu_overcommit_ratio: NotRequired[pulumi.Input[_builtins.float]]
     memory_overcommit_ratio: NotRequired[pulumi.Input[_builtins.float]]
     storage_deduplication_compression_ratio: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class PreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesArgs:

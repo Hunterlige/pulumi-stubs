@@ -82,7 +82,6 @@ class ConsentStoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConsentStoreIamBindingConditionArgs:
@@ -113,7 +112,6 @@ class ConsentStoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConsentStoreIamMemberConditionArgs:
@@ -142,7 +140,6 @@ class ConsentStoreIamMemberConditionArgs:
 
 class DatasetEncryptionSpecArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetEncryptionSpecArgs:
@@ -159,7 +156,6 @@ class DatasetIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetIamBindingConditionArgs:
@@ -190,7 +186,6 @@ class DatasetIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DatasetIamMemberConditionArgs:
@@ -221,7 +216,6 @@ class DicomStoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DicomStoreIamBindingConditionArgs:
@@ -252,7 +246,6 @@ class DicomStoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DicomStoreIamMemberConditionArgs:
@@ -282,7 +275,6 @@ class DicomStoreIamMemberConditionArgs:
 class DicomStoreNotificationConfigArgsDict(TypedDict):
     pubsub_topic: pulumi.Input[_builtins.str]
     send_for_bulk_import: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DicomStoreNotificationConfigArgs:
@@ -307,7 +299,6 @@ class DicomStoreStreamConfigArgsDict(TypedDict):
     bigquery_destination: pulumi.Input[
         DicomStoreStreamConfigBigqueryDestinationArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DicomStoreStreamConfigArgs:
@@ -330,7 +321,6 @@ class DicomStoreStreamConfigArgs:
 
 class DicomStoreStreamConfigBigqueryDestinationArgsDict(TypedDict):
     table_uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DicomStoreStreamConfigBigqueryDestinationArgs:
@@ -353,7 +343,6 @@ class FhirStoreConsentConfigArgsDict(TypedDict):
     enforced_admin_consents: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FhirStoreConsentConfigArgs:
@@ -418,7 +407,6 @@ class FhirStoreConsentConfigArgs:
 
 class FhirStoreConsentConfigAccessDeterminationLogConfigArgsDict(TypedDict):
     log_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreConsentConfigAccessDeterminationLogConfigArgs:
@@ -433,7 +421,6 @@ class FhirStoreConsentConfigAccessDeterminationLogConfigArgs:
 
 class FhirStoreConsentConfigConsentHeaderHandlingArgsDict(TypedDict):
     profile: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreConsentConfigConsentHeaderHandlingArgs:
@@ -450,7 +437,6 @@ class FhirStoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreIamBindingConditionArgs:
@@ -481,7 +467,6 @@ class FhirStoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreIamMemberConditionArgs:
@@ -512,7 +497,6 @@ class FhirStoreNotificationConfigArgsDict(TypedDict):
     pubsub_topic: pulumi.Input[_builtins.str]
     send_full_resource: NotRequired[pulumi.Input[_builtins.bool]]
     send_previous_resource_on_delete: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FhirStoreNotificationConfigArgs:
@@ -546,7 +530,6 @@ class FhirStoreNotificationConfigArgs:
 class FhirStoreStreamConfigArgsDict(TypedDict):
     bigquery_destination: pulumi.Input[FhirStoreStreamConfigBigqueryDestinationArgsDict]
     resource_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FhirStoreStreamConfigArgs:
@@ -584,7 +567,6 @@ class FhirStoreStreamConfigBigqueryDestinationArgsDict(TypedDict):
     schema_config: pulumi.Input[
         FhirStoreStreamConfigBigqueryDestinationSchemaConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FhirStoreStreamConfigBigqueryDestinationArgs:
@@ -620,7 +602,6 @@ class FhirStoreStreamConfigBigqueryDestinationSchemaConfigArgsDict(TypedDict):
         ]
     ]
     schema_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreStreamConfigBigqueryDestinationSchemaConfigArgs:
@@ -669,7 +650,6 @@ class FhirStoreStreamConfigBigqueryDestinationSchemaConfigLastUpdatedPartitionCo
 ):
     type: pulumi.Input[_builtins.str]
     expiration_ms: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FhirStoreStreamConfigBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigArgs:
@@ -698,7 +678,6 @@ class FhirStoreValidationConfigArgsDict(TypedDict):
     enabled_implementation_guides: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FhirStoreValidationConfigArgs:
@@ -759,7 +738,6 @@ class Hl7StoreIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Hl7StoreIamBindingConditionArgs:
@@ -790,7 +768,6 @@ class Hl7StoreIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Hl7StoreIamMemberConditionArgs:
@@ -819,7 +796,6 @@ class Hl7StoreIamMemberConditionArgs:
 
 class Hl7StoreNotificationConfigArgsDict(TypedDict):
     pubsub_topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class Hl7StoreNotificationConfigArgs:
@@ -833,7 +809,6 @@ class Hl7StoreNotificationConfigArgs:
 class Hl7StoreNotificationConfigsArgsDict(TypedDict):
     pubsub_topic: pulumi.Input[_builtins.str]
     filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Hl7StoreNotificationConfigsArgs:
@@ -859,7 +834,6 @@ class Hl7StoreParserConfigArgsDict(TypedDict):
     schema: NotRequired[pulumi.Input[_builtins.str]]
     segment_terminator: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class Hl7StoreParserConfigArgs:
@@ -894,7 +868,6 @@ class Hl7StoreParserConfigArgs:
 
 class PipelineJobBackfillPipelineJobArgsDict(TypedDict):
     mapping_pipeline_job: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineJobBackfillPipelineJobArgs:
@@ -914,7 +887,6 @@ class PipelineJobMappingPipelineJobArgsDict(TypedDict):
         pulumi.Input[PipelineJobMappingPipelineJobFhirStreamingSourceArgsDict]
     ]
     reconciliation_destination: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PipelineJobMappingPipelineJobArgs:
@@ -967,7 +939,6 @@ class PipelineJobMappingPipelineJobArgs:
 class PipelineJobMappingPipelineJobFhirStreamingSourceArgsDict(TypedDict):
     fhir_store: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineJobMappingPipelineJobFhirStreamingSourceArgs:
@@ -995,7 +966,6 @@ class PipelineJobMappingPipelineJobMappingConfigArgsDict(TypedDict):
             PipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineJobMappingPipelineJobMappingConfigArgs:
@@ -1034,7 +1004,6 @@ class PipelineJobMappingPipelineJobMappingConfigArgs:
 class PipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceArgsDict(TypedDict):
     import_uri_prefix: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineJobMappingPipelineJobMappingConfigWhistleConfigSourceArgs:
@@ -1059,7 +1028,6 @@ class PipelineJobReconciliationPipelineJobArgsDict(TypedDict):
     matching_uri_prefix: pulumi.Input[_builtins.str]
     merge_config: pulumi.Input[PipelineJobReconciliationPipelineJobMergeConfigArgsDict]
     fhir_store_destination: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineJobReconciliationPipelineJobArgs:
@@ -1095,7 +1063,6 @@ class PipelineJobReconciliationPipelineJobMergeConfigArgsDict(TypedDict):
         PipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceArgsDict
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineJobReconciliationPipelineJobMergeConfigArgs:
@@ -1132,7 +1099,6 @@ class PipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceArgsDict
 ):
     import_uri_prefix: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceArgs:
@@ -1155,7 +1121,6 @@ class PipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceArgs:
 
 class WorkspaceSettingsArgsDict(TypedDict):
     data_project_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WorkspaceSettingsArgs:

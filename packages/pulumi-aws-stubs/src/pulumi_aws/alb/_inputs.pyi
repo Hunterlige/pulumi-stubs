@@ -119,7 +119,6 @@ class ListenerDefaultActionArgsDict(TypedDict):
     order: NotRequired[pulumi.Input[_builtins.int]]
     redirect: NotRequired[pulumi.Input[ListenerDefaultActionRedirectArgsDict]]
     target_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionArgs:
@@ -222,7 +221,6 @@ class ListenerDefaultActionAuthenticateCognitoArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     session_cookie_name: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionAuthenticateCognitoArgs:
@@ -301,7 +299,6 @@ class ListenerDefaultActionAuthenticateOidcArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     session_cookie_name: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionAuthenticateOidcArgs:
@@ -388,7 +385,6 @@ class ListenerDefaultActionFixedResponseArgsDict(TypedDict):
     content_type: pulumi.Input[_builtins.str]
     message_body: NotRequired[pulumi.Input[_builtins.str]]
     status_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionFixedResponseArgs:
@@ -422,7 +418,6 @@ class ListenerDefaultActionForwardArgsDict(TypedDict):
     stickiness: NotRequired[
         pulumi.Input[ListenerDefaultActionForwardStickinessArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionForwardArgs:
@@ -463,7 +458,6 @@ class ListenerDefaultActionForwardArgs:
 class ListenerDefaultActionForwardStickinessArgsDict(TypedDict):
     duration: pulumi.Input[_builtins.int]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionForwardStickinessArgs:
@@ -487,7 +481,6 @@ class ListenerDefaultActionForwardStickinessArgs:
 class ListenerDefaultActionForwardTargetGroupArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionForwardTargetGroupArgs:
@@ -518,7 +511,6 @@ class ListenerDefaultActionJwtValidationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionJwtValidationArgs:
@@ -572,7 +564,6 @@ class ListenerDefaultActionJwtValidationAdditionalClaimArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionJwtValidationAdditionalClaimArgs:
@@ -606,7 +597,6 @@ class ListenerDefaultActionRedirectArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     query: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerDefaultActionRedirectArgs:
@@ -656,7 +646,6 @@ class ListenerMutualAuthenticationArgsDict(TypedDict):
     advertise_trust_store_ca_names: NotRequired[pulumi.Input[_builtins.str]]
     ignore_client_certificate_expiry: NotRequired[pulumi.Input[_builtins.bool]]
     trust_store_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerMutualAuthenticationArgs:
@@ -711,7 +700,6 @@ class ListenerRuleActionArgsDict(TypedDict):
     order: NotRequired[pulumi.Input[_builtins.int]]
     redirect: NotRequired[pulumi.Input[ListenerRuleActionRedirectArgsDict]]
     target_group_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionArgs:
@@ -811,7 +799,6 @@ class ListenerRuleActionAuthenticateCognitoArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     session_cookie_name: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionAuthenticateCognitoArgs:
@@ -890,7 +877,6 @@ class ListenerRuleActionAuthenticateOidcArgsDict(TypedDict):
     scope: NotRequired[pulumi.Input[_builtins.str]]
     session_cookie_name: NotRequired[pulumi.Input[_builtins.str]]
     session_timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionAuthenticateOidcArgs:
@@ -977,7 +963,6 @@ class ListenerRuleActionFixedResponseArgsDict(TypedDict):
     content_type: pulumi.Input[_builtins.str]
     message_body: NotRequired[pulumi.Input[_builtins.str]]
     status_code: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionFixedResponseArgs:
@@ -1009,7 +994,6 @@ class ListenerRuleActionForwardArgsDict(TypedDict):
         Sequence[pulumi.Input[ListenerRuleActionForwardTargetGroupArgsDict]]
     ]
     stickiness: NotRequired[pulumi.Input[ListenerRuleActionForwardStickinessArgsDict]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionForwardArgs:
@@ -1050,7 +1034,6 @@ class ListenerRuleActionForwardArgs:
 class ListenerRuleActionForwardStickinessArgsDict(TypedDict):
     duration: pulumi.Input[_builtins.int]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionForwardStickinessArgs:
@@ -1074,7 +1057,6 @@ class ListenerRuleActionForwardStickinessArgs:
 class ListenerRuleActionForwardTargetGroupArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
     weight: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionForwardTargetGroupArgs:
@@ -1105,7 +1087,6 @@ class ListenerRuleActionJwtValidationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionJwtValidationArgs:
@@ -1157,7 +1138,6 @@ class ListenerRuleActionJwtValidationAdditionalClaimArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionJwtValidationAdditionalClaimArgs:
@@ -1191,7 +1171,6 @@ class ListenerRuleActionRedirectArgsDict(TypedDict):
     port: NotRequired[pulumi.Input[_builtins.str]]
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     query: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleActionRedirectArgs:
@@ -1247,7 +1226,6 @@ class ListenerRuleConditionArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[ListenerRuleConditionQueryStringArgsDict]]]
     ]
     source_ip: NotRequired[pulumi.Input[ListenerRuleConditionSourceIpArgsDict]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionArgs:
@@ -1330,7 +1308,6 @@ class ListenerRuleConditionArgs:
 class ListenerRuleConditionHostHeaderArgsDict(TypedDict):
     regex_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionHostHeaderArgs:
@@ -1365,7 +1342,6 @@ class ListenerRuleConditionHttpHeaderArgsDict(TypedDict):
     http_header_name: pulumi.Input[_builtins.str]
     regex_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionHttpHeaderArgs:
@@ -1404,7 +1380,6 @@ class ListenerRuleConditionHttpHeaderArgs:
 
 class ListenerRuleConditionHttpRequestMethodArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionHttpRequestMethodArgs:
@@ -1420,7 +1395,6 @@ class ListenerRuleConditionHttpRequestMethodArgs:
 class ListenerRuleConditionPathPatternArgsDict(TypedDict):
     regex_values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     values: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionPathPatternArgs:
@@ -1454,7 +1428,6 @@ class ListenerRuleConditionPathPatternArgs:
 class ListenerRuleConditionQueryStringArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionQueryStringArgs:
@@ -1477,7 +1450,6 @@ class ListenerRuleConditionQueryStringArgs:
 
 class ListenerRuleConditionSourceIpArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ListenerRuleConditionSourceIpArgs:
@@ -1498,7 +1470,6 @@ class ListenerRuleTransformArgsDict(TypedDict):
     url_rewrite_config: NotRequired[
         pulumi.Input[ListenerRuleTransformUrlRewriteConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerRuleTransformArgs:
@@ -1542,7 +1513,6 @@ class ListenerRuleTransformHostHeaderRewriteConfigArgsDict(TypedDict):
     rewrite: NotRequired[
         pulumi.Input[ListenerRuleTransformHostHeaderRewriteConfigRewriteArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerRuleTransformHostHeaderRewriteConfigArgs:
@@ -1571,7 +1541,6 @@ class ListenerRuleTransformHostHeaderRewriteConfigArgs:
 class ListenerRuleTransformHostHeaderRewriteConfigRewriteArgsDict(TypedDict):
     regex: pulumi.Input[_builtins.str]
     replace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ListenerRuleTransformHostHeaderRewriteConfigRewriteArgs:
@@ -1596,7 +1565,6 @@ class ListenerRuleTransformUrlRewriteConfigArgsDict(TypedDict):
     rewrite: NotRequired[
         pulumi.Input[ListenerRuleTransformUrlRewriteConfigRewriteArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ListenerRuleTransformUrlRewriteConfigArgs:
@@ -1621,7 +1589,6 @@ class ListenerRuleTransformUrlRewriteConfigArgs:
 class ListenerRuleTransformUrlRewriteConfigRewriteArgsDict(TypedDict):
     regex: pulumi.Input[_builtins.str]
     replace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ListenerRuleTransformUrlRewriteConfigRewriteArgs:
@@ -1646,7 +1613,6 @@ class LoadBalancerAccessLogsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerAccessLogsArgs:
@@ -1677,7 +1643,6 @@ class LoadBalancerConnectionLogsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerConnectionLogsArgs:
@@ -1708,7 +1673,6 @@ class LoadBalancerHealthCheckLogsArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerHealthCheckLogsArgs:
@@ -1737,7 +1701,6 @@ class LoadBalancerHealthCheckLogsArgs:
 
 class LoadBalancerIpamPoolsArgsDict(TypedDict):
     ipv4_ipam_pool_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LoadBalancerIpamPoolsArgs:
@@ -1752,7 +1715,6 @@ class LoadBalancerIpamPoolsArgs:
 
 class LoadBalancerMinimumLoadBalancerCapacityArgsDict(TypedDict):
     capacity_units: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class LoadBalancerMinimumLoadBalancerCapacityArgs:
@@ -1769,7 +1731,6 @@ class LoadBalancerSubnetMappingArgsDict(TypedDict):
     ipv6_address: NotRequired[pulumi.Input[_builtins.str]]
     outpost_id: NotRequired[pulumi.Input[_builtins.str]]
     private_ipv4_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LoadBalancerSubnetMappingArgs:
@@ -1818,7 +1779,6 @@ class TargetGroupHealthCheckArgsDict(TypedDict):
     protocol: NotRequired[pulumi.Input[_builtins.str]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
     unhealthy_threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TargetGroupHealthCheckArgs:
@@ -1886,7 +1846,6 @@ class TargetGroupStickinessArgsDict(TypedDict):
     cookie_duration: NotRequired[pulumi.Input[_builtins.int]]
     cookie_name: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TargetGroupStickinessArgs:
@@ -1922,7 +1881,6 @@ class TargetGroupStickinessArgs:
 class TargetGroupTargetFailoverArgsDict(TypedDict):
     on_deregistration: pulumi.Input[_builtins.str]
     on_unhealthy: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TargetGroupTargetFailoverArgs:
@@ -1950,7 +1908,6 @@ class TargetGroupTargetGroupHealthArgsDict(TypedDict):
     unhealthy_state_routing: NotRequired[
         pulumi.Input[TargetGroupTargetGroupHealthUnhealthyStateRoutingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TargetGroupTargetGroupHealthArgs:
@@ -1991,7 +1948,6 @@ class TargetGroupTargetGroupHealthArgs:
 class TargetGroupTargetGroupHealthDnsFailoverArgsDict(TypedDict):
     minimum_healthy_targets_count: NotRequired[pulumi.Input[_builtins.str]]
     minimum_healthy_targets_percentage: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetGroupTargetGroupHealthDnsFailoverArgs:
@@ -2023,7 +1979,6 @@ class TargetGroupTargetGroupHealthDnsFailoverArgs:
 class TargetGroupTargetGroupHealthUnhealthyStateRoutingArgsDict(TypedDict):
     minimum_healthy_targets_count: NotRequired[pulumi.Input[_builtins.int]]
     minimum_healthy_targets_percentage: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TargetGroupTargetGroupHealthUnhealthyStateRoutingArgs:
@@ -2055,7 +2010,6 @@ class TargetGroupTargetGroupHealthUnhealthyStateRoutingArgs:
 class TargetGroupTargetHealthStateArgsDict(TypedDict):
     enable_unhealthy_connection_termination: pulumi.Input[_builtins.bool]
     unhealthy_draining_interval: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TargetGroupTargetHealthStateArgs:

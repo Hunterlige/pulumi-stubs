@@ -30,7 +30,6 @@ class EndpointAccessVpcEndpointArgsDict(TypedDict):
     ]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointAccessVpcEndpointArgs:
@@ -79,7 +78,6 @@ class EndpointAccessVpcEndpointNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointAccessVpcEndpointNetworkInterfaceArgs:
@@ -115,7 +113,6 @@ class EndpointAccessVpcEndpointNetworkInterfaceArgs:
 class WorkgroupConfigParameterArgsDict(TypedDict):
     parameter_key: pulumi.Input[_builtins.str]
     parameter_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkgroupConfigParameterArgs:
@@ -142,7 +139,6 @@ class WorkgroupEndpointArgsDict(TypedDict):
     vpc_endpoints: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WorkgroupEndpointVpcEndpointArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkgroupEndpointArgs:
@@ -188,7 +184,6 @@ class WorkgroupEndpointVpcEndpointArgsDict(TypedDict):
     ]
     vpc_endpoint_id: NotRequired[pulumi.Input[_builtins.str]]
     vpc_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupEndpointVpcEndpointArgs:
@@ -237,7 +232,6 @@ class WorkgroupEndpointVpcEndpointNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
     private_ip_address: NotRequired[pulumi.Input[_builtins.str]]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkgroupEndpointVpcEndpointNetworkInterfaceArgs:
@@ -273,7 +267,6 @@ class WorkgroupEndpointVpcEndpointNetworkInterfaceArgs:
 class WorkgroupPricePerformanceTargetArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     level: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WorkgroupPricePerformanceTargetArgs:

@@ -587,7 +587,6 @@ __all__ = [
 class ConversationProfileAutomatedAgentConfigArgsDict(TypedDict):
     agent: pulumi.Input[_builtins.str]
     session_ttl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileAutomatedAgentConfigArgs:
@@ -629,7 +628,6 @@ class ConversationProfileHumanAgentAssistantConfigArgsDict(TypedDict):
             ConversationProfileHumanAgentAssistantConfigNotificationConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigArgs:
@@ -745,7 +743,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgsDic
     ]
     generators: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     group_suggestion_responses: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigArgs:
@@ -852,7 +849,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
             ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigArgs:
@@ -1033,7 +1029,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
 ):
     baseline_model_version: NotRequired[pulumi.Input[_builtins.str]]
     model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationModelConfigArgs:
@@ -1058,7 +1053,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     recent_sentences_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigConversationProcessConfigArgs:
@@ -1101,7 +1095,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
             ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigSectionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigArgs:
@@ -1243,7 +1236,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     drop_handoff_messages: NotRequired[pulumi.Input[_builtins.bool]]
     drop_ivr_messages: NotRequired[pulumi.Input[_builtins.bool]]
     drop_virtual_agent_messages: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgs:
@@ -1281,7 +1273,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
             ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgs:
@@ -1323,7 +1314,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgs:
@@ -1340,7 +1330,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     documents: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigDocumentQuerySourceArgs:
@@ -1357,7 +1346,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     knowledge_bases: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigKnowledgeBaseQuerySourceArgs:
@@ -1380,7 +1368,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     section_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigQueryConfigSectionsArgs:
@@ -1405,7 +1392,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
     TypedDict
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionFeatureArgs:
@@ -1423,7 +1409,6 @@ class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeature
 ):
     no_small_talk: NotRequired[pulumi.Input[_builtins.bool]]
     only_end_user: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgs:
@@ -1461,7 +1446,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs
     ]
     generators: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     group_suggestion_responses: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigArgs:
@@ -1568,7 +1552,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
             ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigArgs:
@@ -1749,7 +1732,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
 ):
     baseline_model_version: NotRequired[pulumi.Input[_builtins.str]]
     model: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationModelConfigArgs:
@@ -1774,7 +1756,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     TypedDict
 ):
     recent_sentences_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigConversationProcessConfigArgs:
@@ -1807,7 +1788,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
             ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigSectionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigArgs:
@@ -1903,7 +1883,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     drop_handoff_messages: NotRequired[pulumi.Input[_builtins.bool]]
     drop_ivr_messages: NotRequired[pulumi.Input[_builtins.bool]]
     drop_virtual_agent_messages: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigContextFilterSettingsArgs:
@@ -1941,7 +1920,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
             ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceArgs:
@@ -1983,7 +1961,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     TypedDict
 ):
     agent: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigDialogflowQuerySourceHumanAgentSideConfigArgs:
@@ -2000,7 +1977,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     TypedDict
 ):
     section_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigQueryConfigSectionsArgs:
@@ -2025,7 +2001,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
     TypedDict
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionFeatureArgs:
@@ -2043,7 +2018,6 @@ class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeat
 ):
     no_small_talk: NotRequired[pulumi.Input[_builtins.bool]]
     only_end_user: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigSuggestionTriggerSettingsArgs:
@@ -2069,7 +2043,6 @@ class ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgsDict(
 ):
     enable_entity_extraction: NotRequired[pulumi.Input[_builtins.bool]]
     enable_sentiment_analysis: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgs:
@@ -2097,7 +2070,6 @@ class ConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigArgs:
 class ConversationProfileHumanAgentAssistantConfigNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentAssistantConfigNotificationConfigArgs:
@@ -2122,7 +2094,6 @@ class ConversationProfileHumanAgentHandoffConfigArgsDict(TypedDict):
     live_person_config: NotRequired[
         pulumi.Input[ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentHandoffConfigArgs:
@@ -2150,7 +2121,6 @@ class ConversationProfileHumanAgentHandoffConfigArgs:
 
 class ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgsDict(TypedDict):
     account_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgs:
@@ -2163,7 +2133,6 @@ class ConversationProfileHumanAgentHandoffConfigLivePersonConfigArgs:
 
 class ConversationProfileLoggingConfigArgsDict(TypedDict):
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileLoggingConfigArgs:
@@ -2183,7 +2152,6 @@ class ConversationProfileLoggingConfigArgs:
 class ConversationProfileNewMessageEventNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileNewMessageEventNotificationConfigArgs:
@@ -2207,7 +2175,6 @@ class ConversationProfileNewMessageEventNotificationConfigArgs:
 class ConversationProfileNewRecognitionResultNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileNewRecognitionResultNotificationConfigArgs:
@@ -2231,7 +2198,6 @@ class ConversationProfileNewRecognitionResultNotificationConfigArgs:
 class ConversationProfileNotificationConfigArgsDict(TypedDict):
     message_format: NotRequired[pulumi.Input[_builtins.str]]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileNotificationConfigArgs:
@@ -2260,7 +2226,6 @@ class ConversationProfileSttConfigArgsDict(TypedDict):
     sample_rate_hertz: NotRequired[pulumi.Input[_builtins.int]]
     speech_model_variant: NotRequired[pulumi.Input[_builtins.str]]
     use_timeout_based_endpointing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileSttConfigArgs:
@@ -2323,7 +2288,6 @@ class ConversationProfileTtsConfigArgsDict(TypedDict):
     speaking_rate: NotRequired[pulumi.Input[_builtins.float]]
     voice: NotRequired[pulumi.Input[ConversationProfileTtsConfigVoiceArgsDict]]
     volume_gain_db: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileTtsConfigArgs:
@@ -2375,7 +2339,6 @@ class ConversationProfileTtsConfigArgs:
 class ConversationProfileTtsConfigVoiceArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     ssml_gender: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConversationProfileTtsConfigVoiceArgs:
@@ -2409,7 +2372,6 @@ class CxAgentAdvancedSettingsArgsDict(TypedDict):
     speech_settings: NotRequired[
         pulumi.Input[CxAgentAdvancedSettingsSpeechSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxAgentAdvancedSettingsArgs:
@@ -2473,7 +2435,6 @@ class CxAgentAdvancedSettingsArgs:
 
 class CxAgentAdvancedSettingsAudioExportGcsDestinationArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxAgentAdvancedSettingsAudioExportGcsDestinationArgs:
@@ -2490,7 +2451,6 @@ class CxAgentAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxAgentAdvancedSettingsDtmfSettingsArgs:
@@ -2521,7 +2481,6 @@ class CxAgentAdvancedSettingsLoggingSettingsArgsDict(TypedDict):
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     enable_interaction_logging: NotRequired[pulumi.Input[_builtins.bool]]
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxAgentAdvancedSettingsLoggingSettingsArgs:
@@ -2561,7 +2520,6 @@ class CxAgentAdvancedSettingsSpeechSettingsArgsDict(TypedDict):
     models: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     no_speech_timeout: NotRequired[pulumi.Input[_builtins.str]]
     use_timeout_based_endpointing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxAgentAdvancedSettingsSpeechSettingsArgs:
@@ -2604,7 +2562,6 @@ class CxAgentAdvancedSettingsSpeechSettingsArgs:
 
 class CxAgentAnswerFeedbackSettingsArgsDict(TypedDict):
     enable_answer_feedback: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxAgentAnswerFeedbackSettingsArgs:
@@ -2623,7 +2580,6 @@ class CxAgentClientCertificateSettingsArgsDict(TypedDict):
     private_key: pulumi.Input[_builtins.str]
     ssl_certificate: pulumi.Input[_builtins.str]
     passphrase: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxAgentClientCertificateSettingsArgs:
@@ -2652,7 +2608,6 @@ class CxAgentClientCertificateSettingsArgs:
 
 class CxAgentGenAppBuilderSettingsArgsDict(TypedDict):
     engine: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxAgentGenAppBuilderSettingsArgs:
@@ -2667,7 +2622,6 @@ class CxAgentGitIntegrationSettingsArgsDict(TypedDict):
     github_settings: NotRequired[
         pulumi.Input[CxAgentGitIntegrationSettingsGithubSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxAgentGitIntegrationSettingsArgs:
@@ -2695,7 +2649,6 @@ class CxAgentGitIntegrationSettingsGithubSettingsArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     repository_uri: NotRequired[pulumi.Input[_builtins.str]]
     tracking_branch: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxAgentGitIntegrationSettingsGithubSettingsArgs:
@@ -2740,7 +2693,6 @@ class CxAgentGitIntegrationSettingsGithubSettingsArgs:
 
 class CxAgentPersonalizationSettingsArgsDict(TypedDict):
     default_end_user_metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxAgentPersonalizationSettingsArgs:
@@ -2759,7 +2711,6 @@ class CxAgentPersonalizationSettingsArgs:
 
 class CxAgentSpeechToTextSettingsArgsDict(TypedDict):
     enable_speech_adaptation: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxAgentSpeechToTextSettingsArgs:
@@ -2778,7 +2729,6 @@ class CxAgentSpeechToTextSettingsArgs:
 
 class CxAgentTextToSpeechSettingsArgsDict(TypedDict):
     synthesize_speech_configs: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxAgentTextToSpeechSettingsArgs:
@@ -2798,7 +2748,6 @@ class CxAgentTextToSpeechSettingsArgs:
 class CxEntityTypeEntityArgsDict(TypedDict):
     synonyms: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxEntityTypeEntityArgs:
@@ -2825,7 +2774,6 @@ class CxEntityTypeEntityArgs:
 
 class CxEntityTypeExcludedPhraseArgsDict(TypedDict):
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxEntityTypeExcludedPhraseArgs:
@@ -2840,7 +2788,6 @@ class CxEntityTypeExcludedPhraseArgs:
 
 class CxEnvironmentVersionConfigArgsDict(TypedDict):
     version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxEnvironmentVersionConfigArgs:
@@ -2862,7 +2809,6 @@ class CxFlowAdvancedSettingsArgsDict(TypedDict):
     speech_settings: NotRequired[
         pulumi.Input[CxFlowAdvancedSettingsSpeechSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowAdvancedSettingsArgs:
@@ -2926,7 +2872,6 @@ class CxFlowAdvancedSettingsArgs:
 
 class CxFlowAdvancedSettingsAudioExportGcsDestinationArgsDict(TypedDict):
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowAdvancedSettingsAudioExportGcsDestinationArgs:
@@ -2943,7 +2888,6 @@ class CxFlowAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxFlowAdvancedSettingsDtmfSettingsArgs:
@@ -2974,7 +2918,6 @@ class CxFlowAdvancedSettingsLoggingSettingsArgsDict(TypedDict):
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     enable_interaction_logging: NotRequired[pulumi.Input[_builtins.bool]]
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowAdvancedSettingsLoggingSettingsArgs:
@@ -3014,7 +2957,6 @@ class CxFlowAdvancedSettingsSpeechSettingsArgsDict(TypedDict):
     models: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     no_speech_timeout: NotRequired[pulumi.Input[_builtins.str]]
     use_timeout_based_endpointing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowAdvancedSettingsSpeechSettingsArgs:
@@ -3063,7 +3005,6 @@ class CxFlowEventHandlerArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxFlowEventHandlerTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerArgs:
@@ -3136,7 +3077,6 @@ class CxFlowEventHandlerTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentArgs:
@@ -3264,7 +3204,6 @@ class CxFlowEventHandlerTriggerFulfillmentArgs:
 
 class CxFlowEventHandlerTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentConditionalCaseArgs:
@@ -3304,7 +3243,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxFlowEventHandlerTriggerFulfillmentMessageTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
@@ -3443,7 +3381,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageArgs:
 
 class CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
@@ -3458,7 +3395,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
 
 class CxFlowEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -3475,7 +3411,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDi
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -3507,7 +3442,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
 class CxFlowEventHandlerTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessagePlayAudioArgs:
@@ -3534,7 +3468,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -3548,7 +3481,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
 class CxFlowEventHandlerTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentMessageTextArgs:
@@ -3578,7 +3510,6 @@ class CxFlowEventHandlerTriggerFulfillmentMessageTextArgs:
 class CxFlowEventHandlerTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowEventHandlerTriggerFulfillmentSetParameterActionArgs:
@@ -3615,7 +3546,6 @@ class CxFlowKnowledgeConnectorSettingsArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsArgs:
@@ -3696,7 +3626,6 @@ class CxFlowKnowledgeConnectorSettingsDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
     data_store_type: NotRequired[pulumi.Input[_builtins.str]]
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsDataStoreConnectionArgs:
@@ -3762,7 +3691,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentArgs:
@@ -3945,7 +3873,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgsDict
             CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
@@ -4031,7 +3958,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSett
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     interdigit_timeout_duration: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgs:
@@ -4080,7 +4006,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingS
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     enable_interaction_logging: NotRequired[pulumi.Input[_builtins.bool]]
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgs:
@@ -4122,7 +4047,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     models: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     no_speech_timeout: NotRequired[pulumi.Input[_builtins.str]]
     use_timeout_based_endpointing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgs:
@@ -4167,7 +4091,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgsDict(
     TypedDict
 ):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgs:
@@ -4236,7 +4159,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgsDict(TypedDic
             CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
@@ -4490,7 +4412,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSucce
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgs:
@@ -4523,7 +4444,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffA
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -4548,7 +4468,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgs:
@@ -4598,7 +4517,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegment
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     audio: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegmentArgs:
@@ -4633,7 +4551,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextAr
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -4667,7 +4584,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgsDict
 ):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs:
@@ -4694,7 +4610,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -4708,7 +4623,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
@@ -4740,7 +4654,6 @@ class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgsDi
 ):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgs:
@@ -4765,7 +4678,6 @@ class CxFlowNluSettingsArgsDict(TypedDict):
     classification_threshold: NotRequired[pulumi.Input[_builtins.float]]
     model_training_mode: NotRequired[pulumi.Input[_builtins.str]]
     model_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowNluSettingsArgs:
@@ -4803,7 +4715,6 @@ class CxFlowTransitionRouteArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxFlowTransitionRouteTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteArgs:
@@ -4883,7 +4794,6 @@ class CxFlowTransitionRouteTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentArgs:
@@ -5009,7 +4919,6 @@ class CxFlowTransitionRouteTriggerFulfillmentArgs:
 
 class CxFlowTransitionRouteTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentConditionalCaseArgs:
@@ -5051,7 +4960,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxFlowTransitionRouteTriggerFulfillmentMessageTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageArgs:
@@ -5198,7 +5106,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
@@ -5213,7 +5120,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
 
 class CxFlowTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -5230,7 +5136,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgsDict(Type
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -5262,7 +5167,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
 class CxFlowTransitionRouteTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessagePlayAudioArgs:
@@ -5289,7 +5193,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgsDic
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -5303,7 +5206,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
 class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgs:
@@ -5333,7 +5235,6 @@ class CxFlowTransitionRouteTriggerFulfillmentMessageTextArgs:
 class CxFlowTransitionRouteTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxFlowTransitionRouteTriggerFulfillmentSetParameterActionArgs:
@@ -5363,7 +5264,6 @@ class CxGenerativeSettingsFallbackSettingsArgsDict(TypedDict):
         ]
     ]
     selected_prompt: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsFallbackSettingsArgs:
@@ -5411,7 +5311,6 @@ class CxGenerativeSettingsFallbackSettingsPromptTemplateArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     frozen: NotRequired[pulumi.Input[_builtins.bool]]
     prompt_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsFallbackSettingsPromptTemplateArgs:
@@ -5449,7 +5348,6 @@ class CxGenerativeSettingsGenerativeSafetySettingsArgsDict(TypedDict):
         ]
     ]
     default_banned_phrase_match_strategy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsGenerativeSafetySettingsArgs:
@@ -5508,7 +5406,6 @@ class CxGenerativeSettingsGenerativeSafetySettingsArgs:
 class CxGenerativeSettingsGenerativeSafetySettingsBannedPhraseArgsDict(TypedDict):
     language_code: pulumi.Input[_builtins.str]
     text: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsGenerativeSafetySettingsBannedPhraseArgs:
@@ -5536,7 +5433,6 @@ class CxGenerativeSettingsKnowledgeConnectorSettingsArgsDict(TypedDict):
     business: NotRequired[pulumi.Input[_builtins.str]]
     business_description: NotRequired[pulumi.Input[_builtins.str]]
     disable_data_store_fallback: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsKnowledgeConnectorSettingsArgs:
@@ -5586,7 +5482,6 @@ class CxGenerativeSettingsKnowledgeConnectorSettingsArgs:
 class CxGenerativeSettingsLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     prompt_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGenerativeSettingsLlmModelSettingsArgs:
@@ -5610,7 +5505,6 @@ class CxGenerativeSettingsLlmModelSettingsArgs:
 class CxGeneratorLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     prompt_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGeneratorLlmModelSettingsArgs:
@@ -5636,7 +5530,6 @@ class CxGeneratorModelParameterArgsDict(TypedDict):
     temperature: NotRequired[pulumi.Input[_builtins.float]]
     top_k: NotRequired[pulumi.Input[_builtins.int]]
     top_p: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class CxGeneratorModelParameterArgs:
@@ -5672,7 +5565,6 @@ class CxGeneratorModelParameterArgs:
 class CxGeneratorPlaceholderArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGeneratorPlaceholderArgs:
@@ -5695,7 +5587,6 @@ class CxGeneratorPlaceholderArgs:
 
 class CxGeneratorPromptTextArgsDict(TypedDict):
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxGeneratorPromptTextArgs:
@@ -5713,7 +5604,6 @@ class CxIntentParameterArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     is_list: NotRequired[pulumi.Input[_builtins.bool]]
     redact: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxIntentParameterArgs:
@@ -5750,7 +5640,6 @@ class CxIntentTrainingPhraseArgsDict(TypedDict):
     parts: pulumi.Input[Sequence[pulumi.Input[CxIntentTrainingPhrasePartArgsDict]]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     repeat_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxIntentTrainingPhraseArgs:
@@ -5785,7 +5674,6 @@ class CxIntentTrainingPhraseArgs:
 class CxIntentTrainingPhrasePartArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
     parameter_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxIntentTrainingPhrasePartArgs:
@@ -5808,7 +5696,6 @@ class CxIntentTrainingPhrasePartArgs:
 
 class CxPageAdvancedSettingsArgsDict(TypedDict):
     dtmf_settings: NotRequired[pulumi.Input[CxPageAdvancedSettingsDtmfSettingsArgsDict]]
-    ...
 
 @pulumi.input_type
 class CxPageAdvancedSettingsArgs:
@@ -5833,7 +5720,6 @@ class CxPageAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxPageAdvancedSettingsDtmfSettingsArgs:
@@ -5877,7 +5763,6 @@ class CxPageEntryFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentArgs:
@@ -5969,7 +5854,6 @@ class CxPageEntryFulfillmentArgs:
 
 class CxPageEntryFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentConditionalCaseArgs:
@@ -6001,7 +5885,6 @@ class CxPageEntryFulfillmentMessageArgsDict(TypedDict):
         pulumi.Input[CxPageEntryFulfillmentMessageTelephonyTransferCallArgsDict]
     ]
     text: NotRequired[pulumi.Input[CxPageEntryFulfillmentMessageTextArgsDict]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageArgs:
@@ -6106,7 +5989,6 @@ class CxPageEntryFulfillmentMessageArgs:
 
 class CxPageEntryFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageConversationSuccessArgs:
@@ -6121,7 +6003,6 @@ class CxPageEntryFulfillmentMessageConversationSuccessArgs:
 
 class CxPageEntryFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageLiveAgentHandoffArgs:
@@ -6138,7 +6019,6 @@ class CxPageEntryFulfillmentMessageOutputAudioTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageOutputAudioTextArgs:
@@ -6170,7 +6050,6 @@ class CxPageEntryFulfillmentMessageOutputAudioTextArgs:
 class CxPageEntryFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessagePlayAudioArgs:
@@ -6195,7 +6074,6 @@ class CxPageEntryFulfillmentMessagePlayAudioArgs:
 
 class CxPageEntryFulfillmentMessageTelephonyTransferCallArgsDict(TypedDict):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageTelephonyTransferCallArgs:
@@ -6209,7 +6087,6 @@ class CxPageEntryFulfillmentMessageTelephonyTransferCallArgs:
 class CxPageEntryFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentMessageTextArgs:
@@ -6239,7 +6116,6 @@ class CxPageEntryFulfillmentMessageTextArgs:
 class CxPageEntryFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEntryFulfillmentSetParameterActionArgs:
@@ -6268,7 +6144,6 @@ class CxPageEventHandlerArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxPageEventHandlerTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerArgs:
@@ -6340,7 +6215,6 @@ class CxPageEventHandlerTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentArgs:
@@ -6460,7 +6334,6 @@ class CxPageEventHandlerTriggerFulfillmentArgs:
 
 class CxPageEventHandlerTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentConditionalCaseArgs:
@@ -6500,7 +6373,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxPageEventHandlerTriggerFulfillmentMessageTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageArgs:
@@ -6639,7 +6511,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageArgs:
 
 class CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
@@ -6654,7 +6525,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
 
 class CxPageEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -6671,7 +6541,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgsDict(TypedDi
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -6703,7 +6572,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
 class CxPageEventHandlerTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessagePlayAudioArgs:
@@ -6730,7 +6598,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgsDict(
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -6744,7 +6611,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
 class CxPageEventHandlerTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentMessageTextArgs:
@@ -6774,7 +6640,6 @@ class CxPageEventHandlerTriggerFulfillmentMessageTextArgs:
 class CxPageEventHandlerTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageEventHandlerTriggerFulfillmentSetParameterActionArgs:
@@ -6799,7 +6664,6 @@ class CxPageFormArgsDict(TypedDict):
     parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[CxPageFormParameterArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormArgs:
@@ -6832,7 +6696,6 @@ class CxPageFormParameterArgsDict(TypedDict):
     is_list: NotRequired[pulumi.Input[_builtins.bool]]
     redact: NotRequired[pulumi.Input[_builtins.bool]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterArgs:
@@ -6905,7 +6768,6 @@ class CxPageFormParameterAdvancedSettingsArgsDict(TypedDict):
     dtmf_settings: NotRequired[
         pulumi.Input[CxPageFormParameterAdvancedSettingsDtmfSettingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterAdvancedSettingsArgs:
@@ -6935,7 +6797,6 @@ class CxPageFormParameterAdvancedSettingsDtmfSettingsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterAdvancedSettingsDtmfSettingsArgs:
@@ -6975,7 +6836,6 @@ class CxPageFormParameterFillBehaviorArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorArgs:
@@ -7065,7 +6925,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgsDict(TypedDict)
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentArgs:
@@ -7203,7 +7062,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentConditionalCaseArgs
     TypedDict
 ):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentConditionalCaseArgs:
@@ -7249,7 +7107,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgsDict(Typ
             CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageArgs:
@@ -7412,7 +7269,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageConversation
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageConversationSuccessArgs:
@@ -7429,7 +7285,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageLiveAgentHan
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageLiveAgentHandoffArgs:
@@ -7448,7 +7303,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageOutputAudioT
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageOutputAudioTextArgs:
@@ -7482,7 +7336,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessagePlayAudioArg
 ):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessagePlayAudioArgs:
@@ -7509,7 +7362,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTelephonyTra
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTelephonyTransferCallArgs:
@@ -7525,7 +7377,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgsDict
 ):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentMessageTextArgs:
@@ -7557,7 +7408,6 @@ class CxPageFormParameterFillBehaviorInitialPromptFulfillmentSetParameterActionA
 ):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorInitialPromptFulfillmentSetParameterActionArgs:
@@ -7588,7 +7438,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerArgsDict(TypedDict):
             CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerArgs:
@@ -7677,7 +7526,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgsD
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentArgs:
@@ -7815,7 +7663,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentCondi
     TypedDict
 ):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentConditionalCaseArgs:
@@ -7863,7 +7710,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
             CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageArgs:
@@ -8026,7 +7872,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageConversationSuccessArgs:
@@ -8043,7 +7888,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -8062,7 +7906,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -8096,7 +7939,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
 ):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessagePlayAudioArgs:
@@ -8123,7 +7965,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -8139,7 +7980,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessa
 ):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentMessageTextArgs:
@@ -8171,7 +8011,6 @@ class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentSetPa
 ):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageFormParameterFillBehaviorRepromptEventHandlerTriggerFulfillmentSetParameterActionArgs:
@@ -8208,7 +8047,6 @@ class CxPageKnowledgeConnectorSettingsArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsArgs:
@@ -8289,7 +8127,6 @@ class CxPageKnowledgeConnectorSettingsDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
     data_store_type: NotRequired[pulumi.Input[_builtins.str]]
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsDataStoreConnectionArgs:
@@ -8355,7 +8192,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentArgs:
@@ -8538,7 +8374,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgsDict
             CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsArgs:
@@ -8624,7 +8459,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSett
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
     interdigit_timeout_duration: NotRequired[pulumi.Input[_builtins.str]]
     max_digits: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsArgs:
@@ -8673,7 +8507,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingS
     enable_consent_based_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     enable_interaction_logging: NotRequired[pulumi.Input[_builtins.bool]]
     enable_stackdriver_logging: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsArgs:
@@ -8715,7 +8548,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSe
     models: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     no_speech_timeout: NotRequired[pulumi.Input[_builtins.str]]
     use_timeout_based_endpointing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsArgs:
@@ -8760,7 +8592,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgsDict(
     TypedDict
 ):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentConditionalCaseArgs:
@@ -8829,7 +8660,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgsDict(TypedDic
             CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageArgs:
@@ -9083,7 +8913,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSucce
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageConversationSuccessArgs:
@@ -9116,7 +8945,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffA
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -9141,7 +8969,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioArgs:
@@ -9191,7 +9018,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegment
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     audio: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageMixedAudioSegmentArgs:
@@ -9226,7 +9052,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextAr
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -9260,7 +9085,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgsDict
 ):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagePlayAudioArgs:
@@ -9287,7 +9111,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -9301,7 +9124,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTelephonyTransfer
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentMessageTextArgs:
@@ -9333,7 +9155,6 @@ class CxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgsDi
 ):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionArgs:
@@ -9363,7 +9184,6 @@ class CxPageTransitionRouteArgsDict(TypedDict):
     trigger_fulfillment: NotRequired[
         pulumi.Input[CxPageTransitionRouteTriggerFulfillmentArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteArgs:
@@ -9443,7 +9263,6 @@ class CxPageTransitionRouteTriggerFulfillmentArgsDict(TypedDict):
     ]
     tag: NotRequired[pulumi.Input[_builtins.str]]
     webhook: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentArgs:
@@ -9569,7 +9388,6 @@ class CxPageTransitionRouteTriggerFulfillmentArgs:
 
 class CxPageTransitionRouteTriggerFulfillmentConditionalCaseArgsDict(TypedDict):
     cases: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentConditionalCaseArgs:
@@ -9611,7 +9429,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxPageTransitionRouteTriggerFulfillmentMessageTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageArgs:
@@ -9758,7 +9575,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgsDict(
     TypedDict
 ):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
@@ -9773,7 +9589,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageConversationSuccessArgs:
 
 class CxPageTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgsDict(TypedDict):
     metadata: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageLiveAgentHandoffArgs:
@@ -9790,7 +9605,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgsDict(Type
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     ssml: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
@@ -9822,7 +9636,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageOutputAudioTextArgs:
 class CxPageTransitionRouteTriggerFulfillmentMessagePlayAudioArgsDict(TypedDict):
     audio_uri: pulumi.Input[_builtins.str]
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessagePlayAudioArgs:
@@ -9849,7 +9662,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgsDic
     TypedDict
 ):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
@@ -9863,7 +9675,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTelephonyTransferCallArgs:
 class CxPageTransitionRouteTriggerFulfillmentMessageTextArgsDict(TypedDict):
     allow_playback_interruption: NotRequired[pulumi.Input[_builtins.bool]]
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentMessageTextArgs:
@@ -9893,7 +9704,6 @@ class CxPageTransitionRouteTriggerFulfillmentMessageTextArgs:
 class CxPageTransitionRouteTriggerFulfillmentSetParameterActionArgsDict(TypedDict):
     parameter: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPageTransitionRouteTriggerFulfillmentSetParameterActionArgs:
@@ -9919,7 +9729,6 @@ class CxPlaybookInstructionArgsDict(TypedDict):
     steps: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[CxPlaybookInstructionStepArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class CxPlaybookInstructionArgs:
@@ -9954,7 +9763,6 @@ class CxPlaybookInstructionArgs:
 class CxPlaybookInstructionStepArgsDict(TypedDict):
     steps: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPlaybookInstructionStepArgs:
@@ -9978,7 +9786,6 @@ class CxPlaybookInstructionStepArgs:
 class CxPlaybookLlmModelSettingsArgsDict(TypedDict):
     model: NotRequired[pulumi.Input[_builtins.str]]
     prompt_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxPlaybookLlmModelSettingsArgs:
@@ -10004,7 +9811,6 @@ class CxSecuritySettingsAudioExportSettingsArgsDict(TypedDict):
     audio_format: NotRequired[pulumi.Input[_builtins.str]]
     enable_audio_redaction: NotRequired[pulumi.Input[_builtins.bool]]
     gcs_bucket: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxSecuritySettingsAudioExportSettingsArgs:
@@ -10039,7 +9845,6 @@ class CxSecuritySettingsAudioExportSettingsArgs:
 
 class CxSecuritySettingsInsightsExportSettingsArgsDict(TypedDict):
     enable_insights_export: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class CxSecuritySettingsInsightsExportSettingsArgs:
@@ -10062,7 +9867,6 @@ class CxTestCaseLastTestResultArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     test_result: NotRequired[pulumi.Input[_builtins.str]]
     test_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultArgs:
@@ -10125,7 +9929,6 @@ class CxTestCaseLastTestResultConversationTurnArgsDict(TypedDict):
     virtual_agent_output: NotRequired[
         pulumi.Input[CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnArgs:
@@ -10175,7 +9978,6 @@ class CxTestCaseLastTestResultConversationTurnUserInputArgsDict(TypedDict):
         pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputInputArgsDict]
     ]
     is_webhook_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnUserInputArgs:
@@ -10234,7 +10036,6 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxTestCaseLastTestResultConversationTurnUserInputInputTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnUserInputInputArgs:
@@ -10307,7 +10108,6 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputArgs:
 class CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgsDict(TypedDict):
     digits: NotRequired[pulumi.Input[_builtins.str]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgs:
@@ -10330,7 +10130,6 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputDtmfArgs:
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputEventArgsDict(TypedDict):
     event: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnUserInputInputEventArgs:
@@ -10343,7 +10142,6 @@ class CxTestCaseLastTestResultConversationTurnUserInputInputEventArgs:
 
 class CxTestCaseLastTestResultConversationTurnUserInputInputTextArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnUserInputInputTextArgs:
@@ -10389,7 +10187,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgsDict(TypedDi
             CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputArgs:
@@ -10548,7 +10345,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputCurrentPageArgsD
 ):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputCurrentPageArgs:
@@ -10574,7 +10370,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputDifferenceArgsDi
 ):
     description: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputDifferenceArgs:
@@ -10601,7 +10396,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputStatusArgsDict(
     code: NotRequired[pulumi.Input[_builtins.int]]
     details: NotRequired[pulumi.Input[_builtins.str]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputStatusArgs:
@@ -10632,7 +10426,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTextResponseArgs
     TypedDict
 ):
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTextResponseArgs:
@@ -10656,7 +10449,6 @@ class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentA
 ):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseLastTestResultConversationTurnVirtualAgentOutputTriggeredIntentArgs:
@@ -10684,7 +10476,6 @@ class CxTestCaseTestCaseConversationTurnArgsDict(TypedDict):
     virtual_agent_output: NotRequired[
         pulumi.Input[CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnArgs:
@@ -10730,7 +10521,6 @@ class CxTestCaseTestCaseConversationTurnUserInputArgsDict(TypedDict):
         pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputArgsDict]
     ]
     is_webhook_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnUserInputArgs:
@@ -10787,7 +10577,6 @@ class CxTestCaseTestCaseConversationTurnUserInputInputArgsDict(TypedDict):
     text: NotRequired[
         pulumi.Input[CxTestCaseTestCaseConversationTurnUserInputInputTextArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnUserInputInputArgs:
@@ -10856,7 +10645,6 @@ class CxTestCaseTestCaseConversationTurnUserInputInputArgs:
 class CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgsDict(TypedDict):
     digits: NotRequired[pulumi.Input[_builtins.str]]
     finish_digit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgs:
@@ -10879,7 +10667,6 @@ class CxTestCaseTestCaseConversationTurnUserInputInputDtmfArgs:
 
 class CxTestCaseTestCaseConversationTurnUserInputInputEventArgsDict(TypedDict):
     event: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnUserInputInputEventArgs:
@@ -10892,7 +10679,6 @@ class CxTestCaseTestCaseConversationTurnUserInputInputEventArgs:
 
 class CxTestCaseTestCaseConversationTurnUserInputInputTextArgsDict(TypedDict):
     text: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnUserInputInputTextArgs:
@@ -10924,7 +10710,6 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgsDict(TypedDict):
             CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputArgs:
@@ -11025,7 +10810,6 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputCurrentPageArgsDict(
 ):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputCurrentPageArgs:
@@ -11050,7 +10834,6 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTextResponseArgsDict(
     TypedDict
 ):
     texts: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTextResponseArgs:
@@ -11074,7 +10857,6 @@ class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgsDic
 ):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestCaseConversationTurnVirtualAgentOutputTriggeredIntentArgs:
@@ -11101,7 +10883,6 @@ class CxTestCaseTestConfigArgsDict(TypedDict):
     tracking_parameters: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class CxTestCaseTestConfigArgs:
@@ -11140,7 +10921,6 @@ class CxToolConnectorSpecArgsDict(TypedDict):
     end_user_auth_config: NotRequired[
         pulumi.Input[CxToolConnectorSpecEndUserAuthConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecArgs:
@@ -11184,7 +10964,6 @@ class CxToolConnectorSpecActionArgsDict(TypedDict):
     ]
     input_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     output_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecActionArgs:
@@ -11239,7 +11018,6 @@ class CxToolConnectorSpecActionArgs:
 class CxToolConnectorSpecActionEntityOperationArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
     operation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecActionEntityOperationArgs:
@@ -11267,7 +11045,6 @@ class CxToolConnectorSpecEndUserAuthConfigArgsDict(TypedDict):
     oauth2_jwt_bearer_config: NotRequired[
         pulumi.Input[CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecEndUserAuthConfigArgs:
@@ -11312,7 +11089,6 @@ class CxToolConnectorSpecEndUserAuthConfigArgs:
 
 class CxToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgsDict(TypedDict):
     oauth_token: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs:
@@ -11327,7 +11103,6 @@ class CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDict(TypedDic
     client_key: pulumi.Input[_builtins.str]
     issuer: pulumi.Input[_builtins.str]
     subject: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs:
@@ -11359,7 +11134,6 @@ class CxToolDataStoreSpecArgsDict(TypedDict):
         Sequence[pulumi.Input[CxToolDataStoreSpecDataStoreConnectionArgsDict]]
     ]
     fallback_prompt: pulumi.Input[CxToolDataStoreSpecFallbackPromptArgsDict]
-    ...
 
 @pulumi.input_type
 class CxToolDataStoreSpecArgs:
@@ -11399,7 +11173,6 @@ class CxToolDataStoreSpecDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
     data_store_type: NotRequired[pulumi.Input[_builtins.str]]
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolDataStoreSpecDataStoreConnectionArgs:
@@ -11437,7 +11210,6 @@ class CxToolDataStoreSpecFallbackPromptArgs:
 class CxToolFunctionSpecArgsDict(TypedDict):
     input_schema: NotRequired[pulumi.Input[_builtins.str]]
     output_schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolFunctionSpecArgs:
@@ -11465,7 +11237,6 @@ class CxToolOpenApiSpecArgsDict(TypedDict):
         pulumi.Input[CxToolOpenApiSpecServiceDirectoryConfigArgsDict]
     ]
     tls_config: NotRequired[pulumi.Input[CxToolOpenApiSpecTlsConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecArgs:
@@ -11525,7 +11296,6 @@ class CxToolOpenApiSpecAuthenticationArgsDict(TypedDict):
     service_agent_auth_config: NotRequired[
         pulumi.Input[CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecAuthenticationArgs:
@@ -11599,7 +11369,6 @@ class CxToolOpenApiSpecAuthenticationApiKeyConfigArgsDict(TypedDict):
     request_location: pulumi.Input[_builtins.str]
     api_key: NotRequired[pulumi.Input[_builtins.str]]
     secret_version_for_api_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecAuthenticationApiKeyConfigArgs:
@@ -11637,7 +11406,6 @@ class CxToolOpenApiSpecAuthenticationApiKeyConfigArgs:
 class CxToolOpenApiSpecAuthenticationBearerTokenConfigArgsDict(TypedDict):
     secret_version_for_token: NotRequired[pulumi.Input[_builtins.str]]
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecAuthenticationBearerTokenConfigArgs:
@@ -11667,7 +11435,6 @@ class CxToolOpenApiSpecAuthenticationOauthConfigArgsDict(TypedDict):
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     secret_version_for_client_secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecAuthenticationOauthConfigArgs:
@@ -11722,7 +11489,6 @@ class CxToolOpenApiSpecAuthenticationOauthConfigArgs:
 
 class CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict(TypedDict):
     service_agent_auth: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
@@ -11737,7 +11503,6 @@ class CxToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
 
 class CxToolOpenApiSpecServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecServiceDirectoryConfigArgs:
@@ -11752,7 +11517,6 @@ class CxToolOpenApiSpecTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
         Sequence[pulumi.Input[CxToolOpenApiSpecTlsConfigCaCertArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecTlsConfigArgs:
@@ -11779,7 +11543,6 @@ class CxToolOpenApiSpecTlsConfigArgs:
 class CxToolOpenApiSpecTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
     display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolOpenApiSpecTlsConfigCaCertArgs:
@@ -11809,7 +11572,6 @@ class CxToolVersionToolArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     open_api_spec: NotRequired[pulumi.Input[CxToolVersionToolOpenApiSpecArgsDict]]
     tool_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolArgs:
@@ -11894,7 +11656,6 @@ class CxToolVersionToolConnectorSpecArgsDict(TypedDict):
     end_user_auth_config: NotRequired[
         pulumi.Input[CxToolVersionToolConnectorSpecEndUserAuthConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecArgs:
@@ -11950,7 +11711,6 @@ class CxToolVersionToolConnectorSpecActionArgsDict(TypedDict):
     ]
     input_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     output_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecActionArgs:
@@ -12009,7 +11769,6 @@ class CxToolVersionToolConnectorSpecActionArgs:
 class CxToolVersionToolConnectorSpecActionEntityOperationArgsDict(TypedDict):
     entity_id: pulumi.Input[_builtins.str]
     operation: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecActionEntityOperationArgs:
@@ -12041,7 +11800,6 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigArgsDict(TypedDict):
             CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecEndUserAuthConfigArgs:
@@ -12100,7 +11858,6 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgsDic
     TypedDict
 ):
     oauth_token: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2AuthCodeConfigArgs:
@@ -12117,7 +11874,6 @@ class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgsDi
     client_key: pulumi.Input[_builtins.str]
     issuer: pulumi.Input[_builtins.str]
     subject: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolConnectorSpecEndUserAuthConfigOauth2JwtBearerConfigArgs:
@@ -12151,7 +11907,6 @@ class CxToolVersionToolDataStoreSpecArgsDict(TypedDict):
         ]
     ]
     fallback_prompt: pulumi.Input[CxToolVersionToolDataStoreSpecFallbackPromptArgsDict]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolDataStoreSpecArgs:
@@ -12195,7 +11950,6 @@ class CxToolVersionToolDataStoreSpecDataStoreConnectionArgsDict(TypedDict):
     data_store: NotRequired[pulumi.Input[_builtins.str]]
     data_store_type: NotRequired[pulumi.Input[_builtins.str]]
     document_processing_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolDataStoreSpecDataStoreConnectionArgs:
@@ -12233,7 +11987,6 @@ class CxToolVersionToolDataStoreSpecFallbackPromptArgs:
 class CxToolVersionToolFunctionSpecArgsDict(TypedDict):
     input_schema: NotRequired[pulumi.Input[_builtins.str]]
     output_schema: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolFunctionSpecArgs:
@@ -12263,7 +12016,6 @@ class CxToolVersionToolOpenApiSpecArgsDict(TypedDict):
         pulumi.Input[CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgsDict]
     ]
     tls_config: NotRequired[pulumi.Input[CxToolVersionToolOpenApiSpecTlsConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecArgs:
@@ -12337,7 +12089,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationArgsDict(TypedDict):
             CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecAuthenticationArgs:
@@ -12429,7 +12180,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgsDict(TypedDict):
     request_location: pulumi.Input[_builtins.str]
     api_key: NotRequired[pulumi.Input[_builtins.str]]
     secret_version_for_api_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgs:
@@ -12467,7 +12217,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigArgs:
 class CxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigArgsDict(TypedDict):
     secret_version_for_token: NotRequired[pulumi.Input[_builtins.str]]
     token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigArgs:
@@ -12497,7 +12246,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgsDict(TypedDict):
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     secret_version_for_client_secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecAuthenticationOauthConfigArgs:
@@ -12554,7 +12302,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgsDict(
     TypedDict
 ):
     service_agent_auth: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
@@ -12569,7 +12316,6 @@ class CxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigArgs:
 
 class CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgsDict(TypedDict):
     service: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecServiceDirectoryConfigArgs:
@@ -12584,7 +12330,6 @@ class CxToolVersionToolOpenApiSpecTlsConfigArgsDict(TypedDict):
     ca_certs: pulumi.Input[
         Sequence[pulumi.Input[CxToolVersionToolOpenApiSpecTlsConfigCaCertArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecTlsConfigArgs:
@@ -12613,7 +12358,6 @@ class CxToolVersionToolOpenApiSpecTlsConfigArgs:
 class CxToolVersionToolOpenApiSpecTlsConfigCaCertArgsDict(TypedDict):
     cert: pulumi.Input[_builtins.str]
     display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxToolVersionToolOpenApiSpecTlsConfigCaCertArgs:
@@ -12638,7 +12382,6 @@ class CxVersionNluSettingArgsDict(TypedDict):
     classification_threshold: NotRequired[pulumi.Input[_builtins.float]]
     model_training_mode: NotRequired[pulumi.Input[_builtins.str]]
     model_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxVersionNluSettingArgs:
@@ -12696,7 +12439,6 @@ class CxWebhookGenericWebServiceArgsDict(TypedDict):
     ]
     service_agent_auth: NotRequired[pulumi.Input[_builtins.str]]
     webhook_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxWebhookGenericWebServiceArgs:
@@ -12853,7 +12595,6 @@ class CxWebhookGenericWebServiceOauthConfigArgsDict(TypedDict):
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     secret_version_for_client_secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxWebhookGenericWebServiceOauthConfigArgs:
@@ -12903,7 +12644,6 @@ class CxWebhookGenericWebServiceOauthConfigArgs:
 class CxWebhookGenericWebServiceSecretVersionsForRequestHeaderArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxWebhookGenericWebServiceSecretVersionsForRequestHeaderArgs:
@@ -12926,7 +12666,6 @@ class CxWebhookGenericWebServiceSecretVersionsForRequestHeaderArgs:
 
 class CxWebhookGenericWebServiceServiceAccountAuthConfigArgsDict(TypedDict):
     service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxWebhookGenericWebServiceServiceAccountAuthConfigArgs:
@@ -12942,7 +12681,6 @@ class CxWebhookServiceDirectoryArgsDict(TypedDict):
     generic_web_service: NotRequired[
         pulumi.Input[CxWebhookServiceDirectoryGenericWebServiceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CxWebhookServiceDirectoryArgs:
@@ -13001,7 +12739,6 @@ class CxWebhookServiceDirectoryGenericWebServiceArgsDict(TypedDict):
     ]
     service_agent_auth: NotRequired[pulumi.Input[_builtins.str]]
     webhook_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxWebhookServiceDirectoryGenericWebServiceArgs:
@@ -13169,7 +12906,6 @@ class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgsDict(TypedDict):
     client_secret: NotRequired[pulumi.Input[_builtins.str]]
     scopes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     secret_version_for_client_secret: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CxWebhookServiceDirectoryGenericWebServiceOauthConfigArgs:
@@ -13221,7 +12957,6 @@ class CxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaderAr
 ):
     key: pulumi.Input[_builtins.str]
     secret_version: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaderArgs:
@@ -13246,7 +12981,6 @@ class CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgsDict
     TypedDict
 ):
     service_account: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgs:
@@ -13259,7 +12993,6 @@ class CxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigArgs:
 
 class EncryptionSpecEncryptionSpecArgsDict(TypedDict):
     kms_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EncryptionSpecEncryptionSpecArgs:
@@ -13273,7 +13006,6 @@ class EncryptionSpecEncryptionSpecArgs:
 class EntityTypeEntityArgsDict(TypedDict):
     synonyms: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EntityTypeEntityArgs:
@@ -13296,7 +13028,6 @@ class EntityTypeEntityArgs:
 
 class FulfillmentFeatureArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FulfillmentFeatureArgs:
@@ -13314,7 +13045,6 @@ class FulfillmentGenericWebServiceArgsDict(TypedDict):
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
     username: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FulfillmentGenericWebServiceArgs:
@@ -13358,7 +13088,6 @@ class GeneratorInferenceParameterArgsDict(TypedDict):
     temperature: NotRequired[pulumi.Input[_builtins.float]]
     top_k: NotRequired[pulumi.Input[_builtins.int]]
     top_p: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class GeneratorInferenceParameterArgs:
@@ -13406,7 +13135,6 @@ class GeneratorSummarizationContextArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextArgs:
@@ -13492,7 +13220,6 @@ class GeneratorSummarizationContextFewShotExampleArgsDict(TypedDict):
             GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleArgs:
@@ -13577,7 +13304,6 @@ class GeneratorSummarizationContextFewShotExampleConversationContextArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleConversationContextArgs:
@@ -13628,7 +13354,6 @@ class GeneratorSummarizationContextFewShotExampleConversationContextMessageEntry
     language_code: NotRequired[pulumi.Input[_builtins.str]]
     role: NotRequired[pulumi.Input[_builtins.str]]
     text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleConversationContextMessageEntryArgs:
@@ -13667,7 +13392,6 @@ class GeneratorSummarizationContextFewShotExampleOutputArgsDict(TypedDict):
             GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleOutputArgs:
@@ -13709,7 +13433,6 @@ class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgsDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionArgs:
@@ -13752,7 +13475,6 @@ class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionSummaryS
 ):
     section: pulumi.Input[_builtins.str]
     summary: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleOutputSummarySuggestionSummarySectionArgs:
@@ -13785,7 +13507,6 @@ class GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleSummarizationSectionListArgs:
@@ -13835,7 +13556,6 @@ class GeneratorSummarizationContextFewShotExampleSummarizationSectionListSummari
     definition: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextFewShotExampleSummarizationSectionListSummarizationSectionArgs:
@@ -13866,7 +13586,6 @@ class GeneratorSummarizationContextSummarizationSectionArgsDict(TypedDict):
     definition: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GeneratorSummarizationContextSummarizationSectionArgs:
@@ -13896,7 +13615,6 @@ class GeneratorSummarizationContextSummarizationSectionArgs:
 class IntentFollowupIntentInfoArgsDict(TypedDict):
     followup_intent_name: NotRequired[pulumi.Input[_builtins.str]]
     parent_followup_intent_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class IntentFollowupIntentInfoArgs:

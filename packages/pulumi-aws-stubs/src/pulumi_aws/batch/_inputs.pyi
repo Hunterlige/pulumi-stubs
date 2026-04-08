@@ -96,7 +96,6 @@ class ComputeEnvironmentComputeResourcesArgsDict(TypedDict):
     security_group_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     spot_iam_fleet_role: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ComputeEnvironmentComputeResourcesArgs:
@@ -261,7 +260,6 @@ class ComputeEnvironmentComputeResourcesEc2ConfigurationArgsDict(TypedDict):
     image_id_override: NotRequired[pulumi.Input[_builtins.str]]
     image_kubernetes_version: NotRequired[pulumi.Input[_builtins.str]]
     image_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ComputeEnvironmentComputeResourcesEc2ConfigurationArgs:
@@ -294,7 +292,6 @@ class ComputeEnvironmentComputeResourcesLaunchTemplateArgsDict(TypedDict):
     launch_template_id: NotRequired[pulumi.Input[_builtins.str]]
     launch_template_name: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ComputeEnvironmentComputeResourcesLaunchTemplateArgs:
@@ -324,7 +321,6 @@ class ComputeEnvironmentComputeResourcesLaunchTemplateArgs:
 class ComputeEnvironmentEksConfigurationArgsDict(TypedDict):
     eks_cluster_arn: pulumi.Input[_builtins.str]
     kubernetes_namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ComputeEnvironmentEksConfigurationArgs:
@@ -348,7 +344,6 @@ class ComputeEnvironmentEksConfigurationArgs:
 class ComputeEnvironmentUpdatePolicyArgsDict(TypedDict):
     job_execution_timeout_minutes: NotRequired[pulumi.Input[_builtins.int]]
     terminate_jobs_on_update: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ComputeEnvironmentUpdatePolicyArgs:
@@ -377,7 +372,6 @@ class ComputeEnvironmentUpdatePolicyArgs:
 
 class JobDefinitionEksPropertiesArgsDict(TypedDict):
     pod_properties: pulumi.Input[JobDefinitionEksPropertiesPodPropertiesArgsDict]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesArgs:
@@ -432,7 +426,6 @@ class JobDefinitionEksPropertiesPodPropertiesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesArgs:
@@ -626,7 +619,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesContainerArgs:
@@ -782,7 +774,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerArgs:
 class JobDefinitionEksPropertiesPodPropertiesContainerEnvArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesContainerEnvArgs:
@@ -806,7 +797,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerEnvArgs:
 class JobDefinitionEksPropertiesPodPropertiesContainerResourcesArgsDict(TypedDict):
     limits: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     requests: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesContainerResourcesArgs:
@@ -846,7 +836,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerSecurityContextArgsDict(
     run_as_group: NotRequired[pulumi.Input[_builtins.int]]
     run_as_non_root: NotRequired[pulumi.Input[_builtins.bool]]
     run_as_user: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesContainerSecurityContextArgs:
@@ -899,7 +888,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerVolumeMountArgsDict(TypedD
     mount_path: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     read_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesContainerVolumeMountArgs:
@@ -928,7 +916,6 @@ class JobDefinitionEksPropertiesPodPropertiesContainerVolumeMountArgs:
 
 class JobDefinitionEksPropertiesPodPropertiesImagePullSecretArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesImagePullSecretArgs:
@@ -973,7 +960,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesInitContainerArgs:
@@ -1135,7 +1121,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerArgs:
 class JobDefinitionEksPropertiesPodPropertiesInitContainerEnvArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesInitContainerEnvArgs:
@@ -1159,7 +1144,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerEnvArgs:
 class JobDefinitionEksPropertiesPodPropertiesInitContainerResourcesArgsDict(TypedDict):
     limits: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     requests: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesInitContainerResourcesArgs:
@@ -1199,7 +1183,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerSecurityContextArgsDic
     run_as_group: NotRequired[pulumi.Input[_builtins.int]]
     run_as_non_root: NotRequired[pulumi.Input[_builtins.bool]]
     run_as_user: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesInitContainerSecurityContextArgs:
@@ -1254,7 +1237,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerVolumeMountArgsDict(
     mount_path: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     read_only: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesInitContainerVolumeMountArgs:
@@ -1283,7 +1265,6 @@ class JobDefinitionEksPropertiesPodPropertiesInitContainerVolumeMountArgs:
 
 class JobDefinitionEksPropertiesPodPropertiesMetadataArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesMetadataArgs:
@@ -1313,7 +1294,6 @@ class JobDefinitionEksPropertiesPodPropertiesVolumeArgsDict(TypedDict):
     secret: NotRequired[
         pulumi.Input[JobDefinitionEksPropertiesPodPropertiesVolumeSecretArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesVolumeArgs:
@@ -1382,7 +1362,6 @@ class JobDefinitionEksPropertiesPodPropertiesVolumeArgs:
 class JobDefinitionEksPropertiesPodPropertiesVolumeEmptyDirArgsDict(TypedDict):
     size_limit: pulumi.Input[_builtins.str]
     medium: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesVolumeEmptyDirArgs:
@@ -1405,7 +1384,6 @@ class JobDefinitionEksPropertiesPodPropertiesVolumeEmptyDirArgs:
 
 class JobDefinitionEksPropertiesPodPropertiesVolumeHostPathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesVolumeHostPathArgs:
@@ -1419,7 +1397,6 @@ class JobDefinitionEksPropertiesPodPropertiesVolumeHostPathArgs:
 class JobDefinitionEksPropertiesPodPropertiesVolumeSecretArgsDict(TypedDict):
     secret_name: pulumi.Input[_builtins.str]
     optional: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionEksPropertiesPodPropertiesVolumeSecretArgs:
@@ -1447,7 +1424,6 @@ class JobDefinitionRetryStrategyArgsDict(TypedDict):
             Sequence[pulumi.Input[JobDefinitionRetryStrategyEvaluateOnExitArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class JobDefinitionRetryStrategyArgs:
@@ -1490,7 +1466,6 @@ class JobDefinitionRetryStrategyEvaluateOnExitArgsDict(TypedDict):
     on_exit_code: NotRequired[pulumi.Input[_builtins.str]]
     on_reason: NotRequired[pulumi.Input[_builtins.str]]
     on_status_reason: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionRetryStrategyEvaluateOnExitArgs:
@@ -1525,7 +1500,6 @@ class JobDefinitionRetryStrategyEvaluateOnExitArgs:
 
 class JobDefinitionTimeoutArgsDict(TypedDict):
     attempt_duration_seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobDefinitionTimeoutArgs:
@@ -1545,7 +1519,6 @@ class JobDefinitionTimeoutArgs:
 class JobQueueComputeEnvironmentOrderArgsDict(TypedDict):
     compute_environment: pulumi.Input[_builtins.str]
     order: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class JobQueueComputeEnvironmentOrderArgs:
@@ -1571,7 +1544,6 @@ class JobQueueJobStateTimeLimitActionArgsDict(TypedDict):
     max_time_seconds: pulumi.Input[_builtins.int]
     reason: pulumi.Input[_builtins.str]
     state: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class JobQueueJobStateTimeLimitActionArgs:
@@ -1608,7 +1580,6 @@ class JobQueueTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobQueueTimeoutsArgs:
@@ -1645,7 +1616,6 @@ class SchedulingPolicyFairSharePolicyArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SchedulingPolicyFairSharePolicyArgs:
@@ -1696,7 +1666,6 @@ class SchedulingPolicyFairSharePolicyArgs:
 class SchedulingPolicyFairSharePolicyShareDistributionArgsDict(TypedDict):
     share_identifier: pulumi.Input[_builtins.str]
     weight_factor: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SchedulingPolicyFairSharePolicyShareDistributionArgs:

@@ -26,7 +26,6 @@ class CertificateAuthorityCertificateAuthorityConfigurationArgsDict(TypedDict):
     subject: pulumi.Input[
         CertificateAuthorityCertificateAuthorityConfigurationSubjectArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class CertificateAuthorityCertificateAuthorityConfigurationArgs:
@@ -78,7 +77,6 @@ class CertificateAuthorityCertificateAuthorityConfigurationSubjectArgsDict(Typed
     state: NotRequired[pulumi.Input[_builtins.str]]
     surname: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateAuthorityCertificateAuthorityConfigurationSubjectArgs:
@@ -178,7 +176,6 @@ class CertificateAuthorityRevocationConfigurationArgsDict(TypedDict):
             CertificateAuthorityRevocationConfigurationOcspConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateAuthorityRevocationConfigurationArgs:
@@ -236,7 +233,6 @@ class CertificateAuthorityRevocationConfigurationCrlConfigurationArgsDict(TypedD
     expiration_in_days: NotRequired[pulumi.Input[_builtins.int]]
     s3_bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     s3_object_acl: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateAuthorityRevocationConfigurationCrlConfigurationArgs:
@@ -284,7 +280,6 @@ class CertificateAuthorityRevocationConfigurationCrlConfigurationArgs:
 class CertificateAuthorityRevocationConfigurationOcspConfigurationArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     ocsp_custom_cname: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateAuthorityRevocationConfigurationOcspConfigurationArgs:
@@ -308,7 +303,6 @@ class CertificateAuthorityRevocationConfigurationOcspConfigurationArgs:
 class CertificateValidityArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CertificateValidityArgs:

@@ -9,7 +9,6 @@ __all__ = ["EndpointNetworkInterfaceArgs", "EndpointNetworkInterfaceArgsDict"]
 
 class EndpointNetworkInterfaceArgsDict(TypedDict):
     network_interface_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointNetworkInterfaceArgs:

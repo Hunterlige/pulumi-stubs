@@ -36,7 +36,6 @@ class EventSourcesConfigEventSourceArgsDict(TypedDict):
             pulumi.Input[EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EventSourcesConfigEventSourceArgs:
@@ -68,7 +67,6 @@ class EventSourcesConfigEventSourceArgs:
 
 class EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgsDict(TypedDict):
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgs:
@@ -82,7 +80,6 @@ class EventSourcesConfigEventSourceAmazonCodeGuruProfilerArgs:
 class NotificationChannelFiltersArgsDict(TypedDict):
     message_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     severities: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class NotificationChannelFiltersArgs:
@@ -115,7 +112,6 @@ class NotificationChannelFiltersArgs:
 
 class NotificationChannelSnsArgsDict(TypedDict):
     topic_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NotificationChannelSnsArgs:
@@ -128,7 +124,6 @@ class NotificationChannelSnsArgs:
 
 class ResourceCollectionCloudformationArgsDict(TypedDict):
     stack_names: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ResourceCollectionCloudformationArgs:
@@ -146,7 +141,6 @@ class ResourceCollectionCloudformationArgs:
 class ResourceCollectionTagsArgsDict(TypedDict):
     app_boundary_key: pulumi.Input[_builtins.str]
     tag_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ResourceCollectionTagsArgs:
@@ -173,7 +167,6 @@ class ServiceIntegrationKmsServerSideEncryptionArgsDict(TypedDict):
     kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
     opt_in_status: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceIntegrationKmsServerSideEncryptionArgs:
@@ -202,7 +195,6 @@ class ServiceIntegrationKmsServerSideEncryptionArgs:
 
 class ServiceIntegrationLogsAnomalyDetectionArgsDict(TypedDict):
     opt_in_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceIntegrationLogsAnomalyDetectionArgs:
@@ -217,7 +209,6 @@ class ServiceIntegrationLogsAnomalyDetectionArgs:
 
 class ServiceIntegrationOpsCenterArgsDict(TypedDict):
     opt_in_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ServiceIntegrationOpsCenterArgs:
@@ -233,7 +224,6 @@ class ServiceIntegrationOpsCenterArgs:
 class GetNotificationChannelFilterArgsDict(TypedDict):
     message_types: Sequence[_builtins.str]
     severities: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetNotificationChannelFilterArgs:
@@ -256,7 +246,6 @@ class GetNotificationChannelFilterArgs:
 
 class GetNotificationChannelSnArgsDict(TypedDict):
     topic_arn: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetNotificationChannelSnArgs:

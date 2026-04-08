@@ -199,7 +199,6 @@ __all__ = [
 class AuthorityAccessUrlArgsDict(TypedDict):
     ca_certificate_access_url: NotRequired[pulumi.Input[_builtins.str]]
     crl_access_urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorityAccessUrlArgs:
@@ -232,7 +231,6 @@ class AuthorityConfigArgsDict(TypedDict):
     subject_config: pulumi.Input[AuthorityConfigSubjectConfigArgsDict]
     x509_config: pulumi.Input[AuthorityConfigX509ConfigArgsDict]
     subject_key_id: NotRequired[pulumi.Input[AuthorityConfigSubjectKeyIdArgsDict]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigArgs:
@@ -268,7 +266,6 @@ class AuthorityConfigSubjectConfigArgsDict(TypedDict):
     subject_alt_name: NotRequired[
         pulumi.Input[AuthorityConfigSubjectConfigSubjectAltNameArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigSubjectConfigArgs:
@@ -305,7 +302,6 @@ class AuthorityConfigSubjectConfigSubjectArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     street_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigSubjectConfigSubjectArgs:
@@ -367,7 +363,6 @@ class AuthorityConfigSubjectConfigSubjectAltNameArgsDict(TypedDict):
     email_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigSubjectConfigSubjectAltNameArgs:
@@ -420,7 +415,6 @@ class AuthorityConfigSubjectConfigSubjectAltNameArgs:
 
 class AuthorityConfigSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigSubjectKeyIdArgs:
@@ -448,7 +442,6 @@ class AuthorityConfigX509ConfigArgsDict(TypedDict):
     policy_ids: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[AuthorityConfigX509ConfigPolicyIdArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigArgs:
@@ -542,7 +535,6 @@ class AuthorityConfigX509ConfigAdditionalExtensionArgsDict(TypedDict):
         AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgsDict
     ]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigAdditionalExtensionArgs:
@@ -578,7 +570,6 @@ class AuthorityConfigX509ConfigAdditionalExtensionArgs:
 
 class AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigAdditionalExtensionObjectIdArgs:
@@ -602,7 +593,6 @@ class AuthorityConfigX509ConfigCaOptionsArgsDict(TypedDict):
     max_issuer_path_length: NotRequired[pulumi.Input[_builtins.int]]
     non_ca: NotRequired[pulumi.Input[_builtins.bool]]
     zero_max_issuer_path_length: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigCaOptionsArgs:
@@ -651,7 +641,6 @@ class AuthorityConfigX509ConfigKeyUsageArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigKeyUsageArgs:
@@ -727,7 +716,6 @@ class AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgsDict(TypedDict):
     encipher_only: NotRequired[pulumi.Input[_builtins.bool]]
     key_agreement: NotRequired[pulumi.Input[_builtins.bool]]
     key_encipherment: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigKeyUsageBaseKeyUsageArgs:
@@ -797,7 +785,6 @@ class AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     ocsp_signing: NotRequired[pulumi.Input[_builtins.bool]]
     server_auth: NotRequired[pulumi.Input[_builtins.bool]]
     time_stamping: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
@@ -844,7 +831,6 @@ class AuthorityConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
 
 class AuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgs:
@@ -881,7 +867,6 @@ class AuthorityConfigX509ConfigNameConstraintsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     permitted_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigNameConstraintsArgs:
@@ -994,7 +979,6 @@ class AuthorityConfigX509ConfigNameConstraintsArgs:
 
 class AuthorityConfigX509ConfigPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class AuthorityConfigX509ConfigPolicyIdArgs:
@@ -1016,7 +1000,6 @@ class AuthorityConfigX509ConfigPolicyIdArgs:
 class AuthorityKeySpecArgsDict(TypedDict):
     algorithm: NotRequired[pulumi.Input[_builtins.str]]
     cloud_kms_key_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AuthorityKeySpecArgs:
@@ -1042,7 +1025,6 @@ class AuthoritySubordinateConfigArgsDict(TypedDict):
     pem_issuer_chain: NotRequired[
         pulumi.Input[AuthoritySubordinateConfigPemIssuerChainArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AuthoritySubordinateConfigArgs:
@@ -1072,7 +1054,6 @@ class AuthoritySubordinateConfigArgs:
 
 class AuthoritySubordinateConfigPemIssuerChainArgsDict(TypedDict):
     pem_certificates: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthoritySubordinateConfigPemIssuerChainArgs:
@@ -1098,7 +1079,6 @@ class AuthorityUserDefinedAccessUrlsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     crl_access_urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class AuthorityUserDefinedAccessUrlsArgs:
@@ -1133,7 +1113,6 @@ class AuthorityUserDefinedAccessUrlsArgs:
 
 class CaPoolEncryptionSpecArgsDict(TypedDict):
     cloud_kms_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolEncryptionSpecArgs:
@@ -1150,7 +1129,6 @@ class CaPoolIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolIamBindingConditionArgs:
@@ -1181,7 +1159,6 @@ class CaPoolIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolIamMemberConditionArgs:
@@ -1223,7 +1200,6 @@ class CaPoolIssuancePolicyArgsDict(TypedDict):
         pulumi.Input[CaPoolIssuancePolicyIdentityConstraintsArgsDict]
     ]
     maximum_lifetime: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyArgs:
@@ -1301,7 +1277,6 @@ class CaPoolIssuancePolicyArgs:
 class CaPoolIssuancePolicyAllowedIssuanceModesArgsDict(TypedDict):
     allow_config_based_issuance: pulumi.Input[_builtins.bool]
     allow_csr_based_issuance: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyAllowedIssuanceModesArgs:
@@ -1327,7 +1302,6 @@ class CaPoolIssuancePolicyAllowedKeyTypeArgsDict(TypedDict):
         pulumi.Input[CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgsDict]
     ]
     rsa: NotRequired[pulumi.Input[CaPoolIssuancePolicyAllowedKeyTypeRsaArgsDict]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyAllowedKeyTypeArgs:
@@ -1365,7 +1339,6 @@ class CaPoolIssuancePolicyAllowedKeyTypeArgs:
 
 class CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgsDict(TypedDict):
     signature_algorithm: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgs:
@@ -1381,7 +1354,6 @@ class CaPoolIssuancePolicyAllowedKeyTypeEllipticCurveArgs:
 class CaPoolIssuancePolicyAllowedKeyTypeRsaArgsDict(TypedDict):
     max_modulus_size: NotRequired[pulumi.Input[_builtins.str]]
     min_modulus_size: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyAllowedKeyTypeRsaArgs:
@@ -1423,7 +1395,6 @@ class CaPoolIssuancePolicyBaselineValuesArgsDict(TypedDict):
             Sequence[pulumi.Input[CaPoolIssuancePolicyBaselineValuesPolicyIdArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesArgs:
@@ -1543,7 +1514,6 @@ class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgsDict(TypedDict):
         CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgsDict
     ]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgs:
@@ -1583,7 +1553,6 @@ class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionArgs:
 
 class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesAdditionalExtensionObjectIdArgs:
@@ -1607,7 +1576,6 @@ class CaPoolIssuancePolicyBaselineValuesCaOptionsArgsDict(TypedDict):
     max_issuer_path_length: NotRequired[pulumi.Input[_builtins.int]]
     non_ca: NotRequired[pulumi.Input[_builtins.bool]]
     zero_max_issuer_path_length: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesCaOptionsArgs:
@@ -1658,7 +1626,6 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesKeyUsageArgs:
@@ -1742,7 +1709,6 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageArgsDict(TypedDict):
     encipher_only: NotRequired[pulumi.Input[_builtins.bool]]
     key_agreement: NotRequired[pulumi.Input[_builtins.bool]]
     key_encipherment: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageArgs:
@@ -1812,7 +1778,6 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageArgsDict(TypedDi
     ocsp_signing: NotRequired[pulumi.Input[_builtins.bool]]
     server_auth: NotRequired[pulumi.Input[_builtins.bool]]
     time_stamping: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageArgs:
@@ -1861,7 +1826,6 @@ class CaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsageArgsDict(
     TypedDict
 ):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsageArgs:
@@ -1898,7 +1862,6 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     permitted_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
@@ -2011,7 +1974,6 @@ class CaPoolIssuancePolicyBaselineValuesNameConstraintsArgs:
 
 class CaPoolIssuancePolicyBaselineValuesPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyBaselineValuesPolicyIdArgs:
@@ -2036,7 +1998,6 @@ class CaPoolIssuancePolicyIdentityConstraintsArgsDict(TypedDict):
     cel_expression: NotRequired[
         pulumi.Input[CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyIdentityConstraintsArgs:
@@ -2081,7 +2042,6 @@ class CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolIssuancePolicyIdentityConstraintsCelExpressionArgs:
@@ -2118,7 +2078,6 @@ class CaPoolPublishingOptionsArgsDict(TypedDict):
     publish_ca_cert: pulumi.Input[_builtins.bool]
     publish_crl: pulumi.Input[_builtins.bool]
     encoding_format: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CaPoolPublishingOptionsArgs:
@@ -2194,7 +2153,6 @@ class CertificateCertificateDescriptionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionArgs:
@@ -2393,7 +2351,6 @@ class CertificateCertificateDescriptionArgs:
 
 class CertificateCertificateDescriptionAuthorityKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionAuthorityKeyIdArgs:
@@ -2408,7 +2365,6 @@ class CertificateCertificateDescriptionAuthorityKeyIdArgs:
 
 class CertificateCertificateDescriptionCertFingerprintArgsDict(TypedDict):
     sha256_hash: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionCertFingerprintArgs:
@@ -2424,7 +2380,6 @@ class CertificateCertificateDescriptionCertFingerprintArgs:
 class CertificateCertificateDescriptionPublicKeyArgsDict(TypedDict):
     format: NotRequired[pulumi.Input[_builtins.str]]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionPublicKeyArgs:
@@ -2468,7 +2423,6 @@ class CertificateCertificateDescriptionSubjectDescriptionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectDescriptionArgs:
@@ -2580,7 +2534,6 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectArgsDict(TypedDi
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     street_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectDescriptionSubjectArgs:
@@ -2653,7 +2606,6 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgsDict(
     email_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameArgs:
@@ -2753,7 +2705,6 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
         ]
     ]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSanArgs:
@@ -2813,7 +2764,6 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
     TypedDict
 ):
     object_id_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSanObectIdArgs:
@@ -2836,7 +2786,6 @@ class CertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSan
 
 class CertificateCertificateDescriptionSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionSubjectKeyIdArgs:
@@ -2896,7 +2845,6 @@ class CertificateCertificateDescriptionX509DescriptionArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionArgs:
@@ -3106,7 +3054,6 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionArgsDic
         ]
     ]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionArgs:
@@ -3166,7 +3113,6 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionObjectI
     TypedDict
 ):
     object_id_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionObjectIdArgs:
@@ -3190,7 +3136,6 @@ class CertificateCertificateDescriptionX509DescriptionAdditionalExtensionObjectI
 class CertificateCertificateDescriptionX509DescriptionCaOptionArgsDict(TypedDict):
     is_ca: NotRequired[pulumi.Input[_builtins.bool]]
     max_issuer_path_length: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionCaOptionArgs:
@@ -3239,7 +3184,6 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionKeyUsageArgs:
@@ -3365,7 +3309,6 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageArgsDi
     encipher_only: NotRequired[pulumi.Input[_builtins.bool]]
     key_agreement: NotRequired[pulumi.Input[_builtins.bool]]
     key_encipherment: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageArgs:
@@ -3437,7 +3380,6 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageAr
     ocsp_signing: NotRequired[pulumi.Input[_builtins.bool]]
     server_auth: NotRequired[pulumi.Input[_builtins.bool]]
     time_stamping: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageArgs:
@@ -3486,7 +3428,6 @@ class CertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKey
     TypedDict
 ):
     object_id_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsageArgs:
@@ -3525,7 +3466,6 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgsDict(Typ
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     permitted_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
@@ -3638,7 +3578,6 @@ class CertificateCertificateDescriptionX509DescriptionNameConstraintArgs:
 
 class CertificateCertificateDescriptionX509DescriptionPolicyIdArgsDict(TypedDict):
     object_id_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CertificateCertificateDescriptionX509DescriptionPolicyIdArgs:
@@ -3664,7 +3603,6 @@ class CertificateConfigArgsDict(TypedDict):
     subject_config: pulumi.Input[CertificateConfigSubjectConfigArgsDict]
     x509_config: pulumi.Input[CertificateConfigX509ConfigArgsDict]
     subject_key_id: NotRequired[pulumi.Input[CertificateConfigSubjectKeyIdArgsDict]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigArgs:
@@ -3706,7 +3644,6 @@ class CertificateConfigArgs:
 class CertificateConfigPublicKeyArgsDict(TypedDict):
     format: pulumi.Input[_builtins.str]
     key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigPublicKeyArgs:
@@ -3732,7 +3669,6 @@ class CertificateConfigSubjectConfigArgsDict(TypedDict):
     subject_alt_name: NotRequired[
         pulumi.Input[CertificateConfigSubjectConfigSubjectAltNameArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateConfigSubjectConfigArgs:
@@ -3771,7 +3707,6 @@ class CertificateConfigSubjectConfigSubjectArgsDict(TypedDict):
     postal_code: NotRequired[pulumi.Input[_builtins.str]]
     province: NotRequired[pulumi.Input[_builtins.str]]
     street_address: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigSubjectConfigSubjectArgs:
@@ -3833,7 +3768,6 @@ class CertificateConfigSubjectConfigSubjectAltNameArgsDict(TypedDict):
     email_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigSubjectConfigSubjectAltNameArgs:
@@ -3886,7 +3820,6 @@ class CertificateConfigSubjectConfigSubjectAltNameArgs:
 
 class CertificateConfigSubjectKeyIdArgsDict(TypedDict):
     key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigSubjectKeyIdArgs:
@@ -3918,7 +3851,6 @@ class CertificateConfigX509ConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[CertificateConfigX509ConfigPolicyIdArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigArgs:
@@ -4026,7 +3958,6 @@ class CertificateConfigX509ConfigAdditionalExtensionArgsDict(TypedDict):
         CertificateConfigX509ConfigAdditionalExtensionObjectIdArgsDict
     ]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigAdditionalExtensionArgs:
@@ -4062,7 +3993,6 @@ class CertificateConfigX509ConfigAdditionalExtensionArgs:
 
 class CertificateConfigX509ConfigAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigAdditionalExtensionObjectIdArgs:
@@ -4086,7 +4016,6 @@ class CertificateConfigX509ConfigCaOptionsArgsDict(TypedDict):
     max_issuer_path_length: NotRequired[pulumi.Input[_builtins.int]]
     non_ca: NotRequired[pulumi.Input[_builtins.bool]]
     zero_max_issuer_path_length: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigCaOptionsArgs:
@@ -4137,7 +4066,6 @@ class CertificateConfigX509ConfigKeyUsageArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigKeyUsageArgs:
@@ -4216,7 +4144,6 @@ class CertificateConfigX509ConfigKeyUsageBaseKeyUsageArgsDict(TypedDict):
     encipher_only: NotRequired[pulumi.Input[_builtins.bool]]
     key_agreement: NotRequired[pulumi.Input[_builtins.bool]]
     key_encipherment: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigKeyUsageBaseKeyUsageArgs:
@@ -4286,7 +4213,6 @@ class CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgsDict(TypedDict):
     ocsp_signing: NotRequired[pulumi.Input[_builtins.bool]]
     server_auth: NotRequired[pulumi.Input[_builtins.bool]]
     time_stamping: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
@@ -4333,7 +4259,6 @@ class CertificateConfigX509ConfigKeyUsageExtendedKeyUsageArgs:
 
 class CertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsageArgs:
@@ -4370,7 +4295,6 @@ class CertificateConfigX509ConfigNameConstraintsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     permitted_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigNameConstraintsArgs:
@@ -4483,7 +4407,6 @@ class CertificateConfigX509ConfigNameConstraintsArgs:
 
 class CertificateConfigX509ConfigPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateConfigX509ConfigPolicyIdArgs:
@@ -4505,7 +4428,6 @@ class CertificateConfigX509ConfigPolicyIdArgs:
 class CertificateRevocationDetailArgsDict(TypedDict):
     revocation_state: NotRequired[pulumi.Input[_builtins.str]]
     revocation_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateRevocationDetailArgs:
@@ -4530,7 +4452,6 @@ class CertificateTemplateIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplateIamBindingConditionArgs:
@@ -4561,7 +4482,6 @@ class CertificateTemplateIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplateIamMemberConditionArgs:
@@ -4594,7 +4514,6 @@ class CertificateTemplateIdentityConstraintsArgsDict(TypedDict):
     cel_expression: NotRequired[
         pulumi.Input[CertificateTemplateIdentityConstraintsCelExpressionArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateTemplateIdentityConstraintsArgs:
@@ -4639,7 +4558,6 @@ class CertificateTemplateIdentityConstraintsCelExpressionArgsDict(TypedDict):
     expression: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplateIdentityConstraintsCelExpressionArgs:
@@ -4683,7 +4601,6 @@ class CertificateTemplatePassthroughExtensionsArgsDict(TypedDict):
         ]
     ]
     known_extensions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePassthroughExtensionsArgs:
@@ -4741,7 +4658,6 @@ class CertificateTemplatePassthroughExtensionsArgs:
 
 class CertificateTemplatePassthroughExtensionsAdditionalExtensionArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePassthroughExtensionsAdditionalExtensionArgs:
@@ -4785,7 +4701,6 @@ class CertificateTemplatePredefinedValuesArgsDict(TypedDict):
             Sequence[pulumi.Input[CertificateTemplatePredefinedValuesPolicyIdArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesArgs:
@@ -4911,7 +4826,6 @@ class CertificateTemplatePredefinedValuesAdditionalExtensionArgsDict(TypedDict):
     ]
     value: pulumi.Input[_builtins.str]
     critical: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesAdditionalExtensionArgs:
@@ -4951,7 +4865,6 @@ class CertificateTemplatePredefinedValuesAdditionalExtensionArgs:
 
 class CertificateTemplatePredefinedValuesAdditionalExtensionObjectIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesAdditionalExtensionObjectIdArgs:
@@ -4975,7 +4888,6 @@ class CertificateTemplatePredefinedValuesCaOptionsArgsDict(TypedDict):
     max_issuer_path_length: NotRequired[pulumi.Input[_builtins.int]]
     null_ca: NotRequired[pulumi.Input[_builtins.bool]]
     zero_max_issuer_path_length: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesCaOptionsArgs:
@@ -5028,7 +4940,6 @@ class CertificateTemplatePredefinedValuesKeyUsageArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesKeyUsageArgs:
@@ -5120,7 +5031,6 @@ class CertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageArgsDict(TypedDict)
     encipher_only: NotRequired[pulumi.Input[_builtins.bool]]
     key_agreement: NotRequired[pulumi.Input[_builtins.bool]]
     key_encipherment: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageArgs:
@@ -5190,7 +5100,6 @@ class CertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageArgsDict(TypedD
     ocsp_signing: NotRequired[pulumi.Input[_builtins.bool]]
     server_auth: NotRequired[pulumi.Input[_builtins.bool]]
     time_stamping: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageArgs:
@@ -5239,7 +5148,6 @@ class CertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsageArgsDict
     TypedDict
 ):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsageArgs:
@@ -5276,7 +5184,6 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     permitted_uris: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesNameConstraintsArgs:
@@ -5389,7 +5296,6 @@ class CertificateTemplatePredefinedValuesNameConstraintsArgs:
 
 class CertificateTemplatePredefinedValuesPolicyIdArgsDict(TypedDict):
     object_id_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class CertificateTemplatePredefinedValuesPolicyIdArgs:

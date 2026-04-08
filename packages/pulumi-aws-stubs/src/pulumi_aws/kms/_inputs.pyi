@@ -19,7 +19,6 @@ __all__ = [
 class CustomKeyStoreXksProxyAuthenticationCredentialArgsDict(TypedDict):
     access_key_id: pulumi.Input[_builtins.str]
     raw_secret_access_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CustomKeyStoreXksProxyAuthenticationCredentialArgs:
@@ -47,7 +46,6 @@ class GrantConstraintArgsDict(TypedDict):
     encryption_context_subset: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class GrantConstraintArgs:
@@ -85,7 +83,6 @@ class GetSecretSecretArgsDict(TypedDict):
     payload: _builtins.str
     context: NotRequired[Mapping[str, _builtins.str]]
     grant_tokens: NotRequired[Sequence[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GetSecretSecretArgs:
@@ -125,7 +122,6 @@ class GetSecretsSecretArgsDict(TypedDict):
     encryption_algorithm: NotRequired[_builtins.str]
     grant_tokens: NotRequired[Sequence[_builtins.str]]
     key_id: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetSecretsSecretArgs:

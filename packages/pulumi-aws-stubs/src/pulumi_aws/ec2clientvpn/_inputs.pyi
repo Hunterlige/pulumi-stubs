@@ -26,7 +26,6 @@ class EndpointAuthenticationOptionArgsDict(TypedDict):
     root_certificate_chain_arn: NotRequired[pulumi.Input[_builtins.str]]
     saml_provider_arn: NotRequired[pulumi.Input[_builtins.str]]
     self_service_saml_provider_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointAuthenticationOptionArgs:
@@ -74,7 +73,6 @@ class EndpointAuthenticationOptionArgs:
 class EndpointClientConnectOptionsArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     lambda_function_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointClientConnectOptionsArgs:
@@ -98,7 +96,6 @@ class EndpointClientConnectOptionsArgs:
 class EndpointClientLoginBannerOptionsArgsDict(TypedDict):
     banner_text: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EndpointClientLoginBannerOptionsArgs:
@@ -121,7 +118,6 @@ class EndpointClientLoginBannerOptionsArgs:
 
 class EndpointClientRouteEnforcementOptionsArgsDict(TypedDict):
     enforced: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EndpointClientRouteEnforcementOptionsArgs:
@@ -138,7 +134,6 @@ class EndpointConnectionLogOptionsArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     cloudwatch_log_group: NotRequired[pulumi.Input[_builtins.str]]
     cloudwatch_log_stream: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EndpointConnectionLogOptionsArgs:
@@ -168,7 +163,6 @@ class EndpointConnectionLogOptionsArgs:
 class GetEndpointFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetEndpointFilterArgs:

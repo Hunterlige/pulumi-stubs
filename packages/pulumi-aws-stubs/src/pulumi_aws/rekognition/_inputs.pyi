@@ -42,7 +42,6 @@ __all__ = [
 
 class CollectionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CollectionTimeoutsArgs:
@@ -58,7 +57,6 @@ class CollectionTimeoutsArgs:
 class ProjectTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectTimeoutsArgs:
@@ -81,7 +79,6 @@ class ProjectTimeoutsArgs:
 
 class StreamProcessorDataSharingPreferenceArgsDict(TypedDict):
     opt_in: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class StreamProcessorDataSharingPreferenceArgs:
@@ -94,7 +91,6 @@ class StreamProcessorDataSharingPreferenceArgs:
 
 class StreamProcessorInputArgsDict(TypedDict):
     kinesis_video_stream: pulumi.Input[StreamProcessorInputKinesisVideoStreamArgsDict]
-    ...
 
 @pulumi.input_type
 class StreamProcessorInputArgs:
@@ -115,7 +111,6 @@ class StreamProcessorInputArgs:
 
 class StreamProcessorInputKinesisVideoStreamArgsDict(TypedDict):
     arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StreamProcessorInputKinesisVideoStreamArgs:
@@ -128,7 +123,6 @@ class StreamProcessorInputKinesisVideoStreamArgs:
 
 class StreamProcessorNotificationChannelArgsDict(TypedDict):
     sns_topic_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorNotificationChannelArgs:
@@ -148,7 +142,6 @@ class StreamProcessorOutputArgsDict(TypedDict):
     s3_destination: NotRequired[
         pulumi.Input[StreamProcessorOutputS3DestinationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class StreamProcessorOutputArgs:
@@ -183,7 +176,6 @@ class StreamProcessorOutputArgs:
 
 class StreamProcessorOutputKinesisDataStreamArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorOutputKinesisDataStreamArgs:
@@ -199,7 +191,6 @@ class StreamProcessorOutputKinesisDataStreamArgs:
 class StreamProcessorOutputS3DestinationArgsDict(TypedDict):
     bucket: NotRequired[pulumi.Input[_builtins.str]]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorOutputS3DestinationArgs:
@@ -229,7 +220,6 @@ class StreamProcessorRegionsOfInterestArgsDict(TypedDict):
             Sequence[pulumi.Input[StreamProcessorRegionsOfInterestPolygonArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class StreamProcessorRegionsOfInterestArgs:
@@ -279,7 +269,6 @@ class StreamProcessorRegionsOfInterestBoundingBoxArgsDict(TypedDict):
     left: NotRequired[pulumi.Input[_builtins.float]]
     top: NotRequired[pulumi.Input[_builtins.float]]
     width: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorRegionsOfInterestBoundingBoxArgs:
@@ -315,7 +304,6 @@ class StreamProcessorRegionsOfInterestBoundingBoxArgs:
 class StreamProcessorRegionsOfInterestPolygonArgsDict(TypedDict):
     x: NotRequired[pulumi.Input[_builtins.float]]
     y: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorRegionsOfInterestPolygonArgs:
@@ -341,7 +329,6 @@ class StreamProcessorSettingsArgsDict(TypedDict):
         pulumi.Input[StreamProcessorSettingsConnectedHomeArgsDict]
     ]
     face_search: NotRequired[pulumi.Input[StreamProcessorSettingsFaceSearchArgsDict]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorSettingsArgs:
@@ -377,7 +364,6 @@ class StreamProcessorSettingsArgs:
 class StreamProcessorSettingsConnectedHomeArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     min_confidence: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorSettingsConnectedHomeArgs:
@@ -405,7 +391,6 @@ class StreamProcessorSettingsConnectedHomeArgs:
 class StreamProcessorSettingsFaceSearchArgsDict(TypedDict):
     collection_id: pulumi.Input[_builtins.str]
     face_match_threshold: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorSettingsFaceSearchArgs:
@@ -430,7 +415,6 @@ class StreamProcessorTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class StreamProcessorTimeoutsArgs:

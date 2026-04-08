@@ -11,7 +11,6 @@ class DataIntegrationScheduleConfigArgsDict(TypedDict):
     first_execution_from: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     schedule_expression: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class DataIntegrationScheduleConfigArgs:

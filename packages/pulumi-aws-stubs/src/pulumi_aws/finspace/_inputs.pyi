@@ -51,7 +51,6 @@ class KxClusterAutoScalingConfigurationArgsDict(TypedDict):
     min_node_count: pulumi.Input[_builtins.int]
     scale_in_cooldown_seconds: pulumi.Input[_builtins.float]
     scale_out_cooldown_seconds: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class KxClusterAutoScalingConfigurationArgs:
@@ -99,7 +98,6 @@ class KxClusterAutoScalingConfigurationArgs:
 class KxClusterCacheStorageConfigurationArgsDict(TypedDict):
     size: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxClusterCacheStorageConfigurationArgs:
@@ -123,7 +121,6 @@ class KxClusterCacheStorageConfigurationArgs:
 class KxClusterCapacityConfigurationArgsDict(TypedDict):
     node_count: pulumi.Input[_builtins.int]
     node_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxClusterCapacityConfigurationArgs:
@@ -148,7 +145,6 @@ class KxClusterCodeArgsDict(TypedDict):
     s3_bucket: pulumi.Input[_builtins.str]
     s3_key: pulumi.Input[_builtins.str]
     s3_object_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KxClusterCodeArgs:
@@ -184,7 +180,6 @@ class KxClusterDatabaseArgsDict(TypedDict):
     ]
     changeset_id: NotRequired[pulumi.Input[_builtins.str]]
     dataview_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KxClusterDatabaseArgs:
@@ -235,7 +230,6 @@ class KxClusterDatabaseArgs:
 class KxClusterDatabaseCacheConfigurationArgsDict(TypedDict):
     cache_type: pulumi.Input[_builtins.str]
     db_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class KxClusterDatabaseCacheConfigurationArgs:
@@ -264,7 +258,6 @@ class KxClusterSavedownStorageConfigurationArgsDict(TypedDict):
     size: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
     volume_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class KxClusterSavedownStorageConfigurationArgs:
@@ -297,7 +290,6 @@ class KxClusterScalingGroupConfigurationArgsDict(TypedDict):
     scaling_group_name: pulumi.Input[_builtins.str]
     cpu: NotRequired[pulumi.Input[_builtins.float]]
     memory_limit: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class KxClusterScalingGroupConfigurationArgs:
@@ -338,7 +330,6 @@ class KxClusterScalingGroupConfigurationArgs:
 
 class KxClusterTickerplantLogConfigurationArgsDict(TypedDict):
     tickerplant_log_volumes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class KxClusterTickerplantLogConfigurationArgs:
@@ -362,7 +353,6 @@ class KxClusterVpcConfigurationArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxClusterVpcConfigurationArgs:
@@ -405,7 +395,6 @@ class KxDataviewSegmentConfigurationArgsDict(TypedDict):
     db_paths: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     volume_name: pulumi.Input[_builtins.str]
     on_demand: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class KxDataviewSegmentConfigurationArgs:
@@ -435,7 +424,6 @@ class KxDataviewSegmentConfigurationArgs:
 class KxEnvironmentCustomDnsConfigurationArgsDict(TypedDict):
     custom_dns_server_ip: pulumi.Input[_builtins.str]
     custom_dns_server_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxEnvironmentCustomDnsConfigurationArgs:
@@ -468,7 +456,6 @@ class KxEnvironmentTransitGatewayConfigurationArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class KxEnvironmentTransitGatewayConfigurationArgs:
@@ -541,7 +528,6 @@ class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationA
             KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationArgs:
@@ -625,7 +611,6 @@ class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationI
 ):
     code: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeArgs:
@@ -651,7 +636,6 @@ class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationP
 ):
     from_: pulumi.Input[_builtins.int]
     to: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class KxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeArgs:
@@ -673,7 +657,6 @@ class KxVolumeAttachedClusterArgsDict(TypedDict):
     cluster_name: pulumi.Input[_builtins.str]
     cluster_status: pulumi.Input[_builtins.str]
     cluster_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxVolumeAttachedClusterArgs:
@@ -703,7 +686,6 @@ class KxVolumeAttachedClusterArgs:
 class KxVolumeNas1ConfigurationArgsDict(TypedDict):
     size: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class KxVolumeNas1ConfigurationArgs:

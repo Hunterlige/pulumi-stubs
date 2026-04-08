@@ -97,7 +97,6 @@ class EnvironmentConfigArgsDict(TypedDict):
     workloads_config: NotRequired[
         pulumi.Input[EnvironmentConfigWorkloadsConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigArgs:
@@ -328,7 +327,6 @@ class EnvironmentConfigDataRetentionConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigDataRetentionConfigArgs:
@@ -412,7 +410,6 @@ class EnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigArgsDict
 ):
     retention_days: NotRequired[pulumi.Input[_builtins.int]]
     retention_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigArgs:
@@ -435,7 +432,6 @@ class EnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigArgs:
 
 class EnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigArgsDict(TypedDict):
     storage_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigArgs:
@@ -451,7 +447,6 @@ class EnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigArgs:
 class EnvironmentConfigDatabaseConfigArgsDict(TypedDict):
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigDatabaseConfigArgs:
@@ -474,7 +469,6 @@ class EnvironmentConfigDatabaseConfigArgs:
 
 class EnvironmentConfigEncryptionConfigArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigEncryptionConfigArgs:
@@ -489,7 +483,6 @@ class EnvironmentConfigMaintenanceWindowArgsDict(TypedDict):
     end_time: pulumi.Input[_builtins.str]
     recurrence: pulumi.Input[_builtins.str]
     start_time: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigMaintenanceWindowArgs:
@@ -527,7 +520,6 @@ class EnvironmentConfigMasterAuthorizedNetworksConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigMasterAuthorizedNetworksConfigArgs:
@@ -580,7 +572,6 @@ class EnvironmentConfigMasterAuthorizedNetworksConfigArgs:
 class EnvironmentConfigMasterAuthorizedNetworksConfigCidrBlockArgsDict(TypedDict):
     cidr_block: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigMasterAuthorizedNetworksConfigCidrBlockArgs:
@@ -617,7 +608,6 @@ class EnvironmentConfigNodeConfigArgsDict(TypedDict):
     subnetwork: NotRequired[pulumi.Input[_builtins.str]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigNodeConfigArgs:
@@ -733,7 +723,6 @@ class EnvironmentConfigNodeConfigIpAllocationPolicyArgsDict(TypedDict):
     services_ipv4_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
     services_secondary_range_name: NotRequired[pulumi.Input[_builtins.str]]
     use_ip_aliases: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigNodeConfigIpAllocationPolicyArgs:
@@ -789,7 +778,6 @@ class EnvironmentConfigPrivateEnvironmentConfigArgsDict(TypedDict):
     enable_privately_used_public_ips: NotRequired[pulumi.Input[_builtins.bool]]
     master_ipv4_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
     web_server_ipv4_cidr_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigPrivateEnvironmentConfigArgs:
@@ -872,7 +860,6 @@ class EnvironmentConfigRecoveryConfigArgsDict(TypedDict):
     scheduled_snapshots_config: NotRequired[
         pulumi.Input[EnvironmentConfigRecoveryConfigScheduledSnapshotsConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigRecoveryConfigArgs:
@@ -903,7 +890,6 @@ class EnvironmentConfigRecoveryConfigScheduledSnapshotsConfigArgsDict(TypedDict)
     snapshot_creation_schedule: NotRequired[pulumi.Input[_builtins.str]]
     snapshot_location: NotRequired[pulumi.Input[_builtins.str]]
     time_zone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigRecoveryConfigScheduledSnapshotsConfigArgs:
@@ -951,7 +937,6 @@ class EnvironmentConfigSoftwareConfigArgsDict(TypedDict):
     python_version: NotRequired[pulumi.Input[_builtins.str]]
     scheduler_count: NotRequired[pulumi.Input[_builtins.int]]
     web_server_plugins_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigSoftwareConfigArgs:
@@ -1039,7 +1024,6 @@ class EnvironmentConfigSoftwareConfigArgs:
 
 class EnvironmentConfigSoftwareConfigCloudDataLineageIntegrationArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigSoftwareConfigCloudDataLineageIntegrationArgs:
@@ -1052,7 +1036,6 @@ class EnvironmentConfigSoftwareConfigCloudDataLineageIntegrationArgs:
 
 class EnvironmentConfigWebServerConfigArgsDict(TypedDict):
     machine_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWebServerConfigArgs:
@@ -1073,7 +1056,6 @@ class EnvironmentConfigWebServerNetworkAccessControlArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWebServerNetworkAccessControlArgs:
@@ -1120,7 +1102,6 @@ class EnvironmentConfigWebServerNetworkAccessControlArgs:
 class EnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeArgsDict(TypedDict):
     value: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeArgs:
@@ -1155,7 +1136,6 @@ class EnvironmentConfigWorkloadsConfigArgsDict(TypedDict):
         pulumi.Input[EnvironmentConfigWorkloadsConfigWebServerArgsDict]
     ]
     worker: NotRequired[pulumi.Input[EnvironmentConfigWorkloadsConfigWorkerArgsDict]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigArgs:
@@ -1233,7 +1213,6 @@ class EnvironmentConfigWorkloadsConfigDagProcessorArgsDict(TypedDict):
     cpu: NotRequired[pulumi.Input[_builtins.float]]
     memory_gb: NotRequired[pulumi.Input[_builtins.float]]
     storage_gb: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigDagProcessorArgs:
@@ -1271,7 +1250,6 @@ class EnvironmentConfigWorkloadsConfigSchedulerArgsDict(TypedDict):
     cpu: NotRequired[pulumi.Input[_builtins.float]]
     memory_gb: NotRequired[pulumi.Input[_builtins.float]]
     storage_gb: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigSchedulerArgs:
@@ -1308,7 +1286,6 @@ class EnvironmentConfigWorkloadsConfigTriggererArgsDict(TypedDict):
     count: pulumi.Input[_builtins.int]
     cpu: pulumi.Input[_builtins.float]
     memory_gb: pulumi.Input[_builtins.float]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigTriggererArgs:
@@ -1339,7 +1316,6 @@ class EnvironmentConfigWorkloadsConfigWebServerArgsDict(TypedDict):
     cpu: NotRequired[pulumi.Input[_builtins.float]]
     memory_gb: NotRequired[pulumi.Input[_builtins.float]]
     storage_gb: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigWebServerArgs:
@@ -1372,7 +1348,6 @@ class EnvironmentConfigWorkloadsConfigWorkerArgsDict(TypedDict):
     memory_gb: NotRequired[pulumi.Input[_builtins.float]]
     min_count: NotRequired[pulumi.Input[_builtins.int]]
     storage_gb: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class EnvironmentConfigWorkloadsConfigWorkerArgs:
@@ -1413,7 +1388,6 @@ class EnvironmentConfigWorkloadsConfigWorkerArgs:
 
 class EnvironmentStorageConfigArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EnvironmentStorageConfigArgs:

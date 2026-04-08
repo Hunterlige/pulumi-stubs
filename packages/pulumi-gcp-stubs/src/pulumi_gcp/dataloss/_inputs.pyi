@@ -821,7 +821,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigArgsDict(TypedDict):
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigArgs:
@@ -909,7 +908,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsArgs:
@@ -970,7 +968,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformA
             PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformArgs:
@@ -1093,7 +1090,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformR
     blue: NotRequired[pulumi.Input[_builtins.float]]
     green: NotRequired[pulumi.Input[_builtins.float]]
     red: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformRedactionColorArgs:
@@ -1130,7 +1126,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesArgs:
@@ -1178,7 +1173,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesInfoTypeArgs:
@@ -1226,7 +1220,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformS
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigImageTransformationsTransformSelectedInfoTypesInfoTypeSensitivityScoreArgs:
@@ -1247,7 +1240,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsArgsDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsArgs:
@@ -1300,7 +1292,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationArgs:
@@ -1371,7 +1362,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationInfoTypeArgs:
@@ -1419,7 +1409,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgs:
@@ -1489,7 +1478,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationArgs:
@@ -1773,7 +1761,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgs:
@@ -1833,7 +1820,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketArgs:
@@ -1923,7 +1909,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs:
@@ -2014,7 +1999,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs:
@@ -2048,7 +2032,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs:
@@ -2099,7 +2082,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgs:
@@ -2190,7 +2172,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs:
@@ -2224,7 +2205,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs:
@@ -2275,7 +2255,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs:
@@ -2366,7 +2345,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs:
@@ -2400,7 +2378,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs:
@@ -2448,7 +2425,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     masking_character: NotRequired[pulumi.Input[_builtins.str]]
     number_to_mask: NotRequired[pulumi.Input[_builtins.int]]
     reverse_order: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgs:
@@ -2515,7 +2491,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     characters_to_skip: NotRequired[pulumi.Input[_builtins.str]]
     common_characters_to_ignore: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgs:
@@ -2556,7 +2531,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgs:
@@ -2638,7 +2612,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs:
@@ -2669,7 +2642,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs:
@@ -2752,7 +2724,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs:
@@ -2777,7 +2748,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs:
@@ -2792,7 +2762,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs:
@@ -2813,7 +2782,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs:
@@ -2861,7 +2829,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -2880,7 +2847,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgs:
@@ -2930,7 +2896,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs:
@@ -3013,7 +2978,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs:
@@ -3038,7 +3002,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs:
@@ -3053,7 +3016,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs:
@@ -3085,7 +3047,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs:
@@ -3185,7 +3146,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs:
@@ -3216,7 +3176,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs:
@@ -3299,7 +3258,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs:
@@ -3324,7 +3282,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs:
@@ -3339,7 +3296,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs:
@@ -3360,7 +3316,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs:
@@ -3408,7 +3363,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -3434,7 +3388,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgs:
@@ -3505,7 +3458,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgs:
@@ -3534,7 +3486,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
             PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs:
@@ -3617,7 +3568,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs:
@@ -3642,7 +3592,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs:
@@ -3657,7 +3606,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs:
@@ -3678,7 +3626,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     upper_bound: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs:
@@ -3732,7 +3679,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     float_value: NotRequired[pulumi.Input[_builtins.float]]
     integer_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs:
@@ -3758,7 +3704,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
 ):
     float_value: NotRequired[pulumi.Input[_builtins.float]]
     integer_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs:
@@ -3793,7 +3738,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     new_value: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigArgs:
@@ -3838,7 +3782,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgs:
@@ -3935,7 +3878,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs:
@@ -3969,7 +3911,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs:
@@ -4008,7 +3949,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     word_list: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgs:
@@ -4038,7 +3978,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs:
@@ -4055,7 +3994,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransfo
     TypedDict
 ):
     part_to_extract: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgs:
@@ -4089,7 +4027,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgsDict(
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsArgs:
@@ -4193,7 +4130,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationArgs:
@@ -4308,7 +4244,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionArgs:
@@ -4349,7 +4284,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     logical_operator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsArgs:
@@ -4399,7 +4333,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsArgs:
@@ -4455,7 +4388,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionArgs:
@@ -4514,7 +4446,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionFieldArgs:
@@ -4546,7 +4477,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueArgs:
@@ -4643,7 +4573,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueDateValueArgs:
@@ -4677,7 +4606,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationConditionExpressionsConditionsConditionValueTimeValueArgs:
@@ -4714,7 +4642,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationFieldArgs:
@@ -4737,7 +4664,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsArgs:
@@ -4790,7 +4716,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationArgs:
@@ -4861,7 +4786,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationInfoTypeArgs:
@@ -4909,7 +4833,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationInfoTypeSensitivityScoreArgs:
@@ -4983,7 +4906,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationArgs:
@@ -5278,7 +5200,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigArgs:
@@ -5332,7 +5253,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketArgs:
@@ -5422,7 +5342,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs:
@@ -5513,7 +5432,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs:
@@ -5547,7 +5465,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs:
@@ -5598,7 +5515,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinArgs:
@@ -5689,7 +5605,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs:
@@ -5723,7 +5638,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs:
@@ -5774,7 +5688,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs:
@@ -5865,7 +5778,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs:
@@ -5899,7 +5811,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs:
@@ -5947,7 +5858,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     masking_character: NotRequired[pulumi.Input[_builtins.str]]
     number_to_mask: NotRequired[pulumi.Input[_builtins.int]]
     reverse_order: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigArgs:
@@ -6014,7 +5924,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     characters_to_skip: NotRequired[pulumi.Input[_builtins.str]]
     common_characters_to_ignore: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgs:
@@ -6051,7 +5960,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigArgs:
@@ -6121,7 +6029,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs:
@@ -6150,7 +6057,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs:
@@ -6233,7 +6139,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs:
@@ -6258,7 +6163,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs:
@@ -6273,7 +6177,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs:
@@ -6294,7 +6197,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs:
@@ -6342,7 +6244,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -6359,7 +6260,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     crypto_key: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigArgs:
@@ -6403,7 +6303,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs:
@@ -6486,7 +6385,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs:
@@ -6511,7 +6409,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs:
@@ -6526,7 +6423,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs:
@@ -6556,7 +6452,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs:
@@ -6650,7 +6545,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs:
@@ -6679,7 +6573,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs:
@@ -6762,7 +6655,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs:
@@ -6787,7 +6679,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs:
@@ -6802,7 +6693,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs:
@@ -6823,7 +6713,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs:
@@ -6871,7 +6760,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -6897,7 +6785,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigArgs:
@@ -6968,7 +6855,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigContextArgs:
@@ -6997,7 +6883,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs:
@@ -7080,7 +6965,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs:
@@ -7105,7 +6989,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs:
@@ -7120,7 +7003,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs:
@@ -7141,7 +7023,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     upper_bound: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs:
@@ -7195,7 +7076,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     float_value: NotRequired[pulumi.Input[_builtins.float]]
     integer_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs:
@@ -7221,7 +7101,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     float_value: NotRequired[pulumi.Input[_builtins.float]]
     integer_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs:
@@ -7256,7 +7135,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     new_value: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigArgs:
@@ -7301,7 +7179,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueArgs:
@@ -7398,7 +7275,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs:
@@ -7432,7 +7308,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs:
@@ -7471,7 +7346,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     word_list: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigArgs:
@@ -7501,7 +7375,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs:
@@ -7526,7 +7399,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     part_to_extract: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationInfoTypeTransformationsTransformationPrimitiveTransformationTimePartConfigArgs:
@@ -7595,7 +7467,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationTimePartConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationArgs:
@@ -7869,7 +7740,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigArgs:
@@ -7929,7 +7799,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketArgs:
@@ -8020,7 +7889,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxArgs:
@@ -8117,7 +7985,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxDateValueArgs:
@@ -8151,7 +8018,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMaxTimeValueArgs:
@@ -8203,7 +8069,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinArgs:
@@ -8300,7 +8165,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinDateValueArgs:
@@ -8334,7 +8198,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketMinTimeValueArgs:
@@ -8386,7 +8249,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueArgs:
@@ -8483,7 +8345,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueDateValueArgs:
@@ -8517,7 +8378,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationBucketingConfigBucketReplacementValueTimeValueArgs:
@@ -8565,7 +8425,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     masking_character: NotRequired[pulumi.Input[_builtins.str]]
     number_to_mask: NotRequired[pulumi.Input[_builtins.int]]
     reverse_order: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCharacterMaskConfigArgs:
@@ -8632,7 +8491,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     characters_to_skip: NotRequired[pulumi.Input[_builtins.str]]
     common_characters_to_ignore: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreArgs:
@@ -8673,7 +8531,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigArgs:
@@ -8755,7 +8612,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigContextArgs:
@@ -8786,7 +8642,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyArgs:
@@ -8869,7 +8724,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedArgs:
@@ -8894,7 +8748,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientArgs:
@@ -8909,7 +8762,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedArgs:
@@ -8930,7 +8782,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeArgs:
@@ -8978,7 +8829,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -8997,7 +8847,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigArgs:
@@ -9047,7 +8896,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyArgs:
@@ -9130,7 +8978,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedArgs:
@@ -9155,7 +9002,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyTransientArgs:
@@ -9170,7 +9016,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedArgs:
@@ -9202,7 +9047,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigArgs:
@@ -9302,7 +9146,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigContextArgs:
@@ -9333,7 +9176,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyArgs:
@@ -9416,7 +9258,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedArgs:
@@ -9441,7 +9282,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientArgs:
@@ -9456,7 +9296,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedArgs:
@@ -9477,7 +9316,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeArgs:
@@ -9525,7 +9363,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeSensitivityScoreArgs:
@@ -9551,7 +9388,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigArgs:
@@ -9622,7 +9458,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigContextArgs:
@@ -9653,7 +9488,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyArgs:
@@ -9736,7 +9570,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
 ):
     crypto_key_name: pulumi.Input[_builtins.str]
     wrapped_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedArgs:
@@ -9761,7 +9594,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyTransientArgs:
@@ -9776,7 +9608,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedArgs:
@@ -9797,7 +9628,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     upper_bound: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigArgs:
@@ -9865,7 +9695,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundArgs:
@@ -9962,7 +9791,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueArgs:
@@ -9996,7 +9824,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueArgs:
@@ -10048,7 +9875,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundArgs:
@@ -10145,7 +9971,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueArgs:
@@ -10179,7 +10004,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueArgs:
@@ -10226,7 +10050,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     new_value: pulumi.Input[
         PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigArgs:
@@ -10271,7 +10094,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueArgs:
@@ -10368,7 +10190,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueDateValueArgs:
@@ -10402,7 +10223,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceConfigNewValueTimeValueArgs:
@@ -10443,7 +10263,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigArgs:
@@ -10479,7 +10298,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationReplaceDictionaryConfigWordListArgs:
@@ -10496,7 +10314,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTran
     TypedDict
 ):
     part_to_extract: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationPrimitiveTransformationTimePartConfigArgs:
@@ -10517,7 +10334,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionArgs:
@@ -10557,7 +10373,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionArgs:
@@ -10598,7 +10413,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
         ]
     ]
     logical_operator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsArgs:
@@ -10648,7 +10462,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsArgs:
@@ -10704,7 +10517,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
             PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionArgs:
@@ -10763,7 +10575,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     TypedDict
 ):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionFieldArgs:
@@ -10795,7 +10606,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
         ]
     ]
     timestamp_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueArgs:
@@ -10892,7 +10702,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueDateValueArgs:
@@ -10926,7 +10735,6 @@ class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSup
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsRecordSuppressionConditionExpressionsConditionsConditionValueTimeValueArgs:
@@ -10978,7 +10786,6 @@ class PreventionDiscoveryConfigActionArgsDict(TypedDict):
     tag_resources: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigActionTagResourcesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionArgs:
@@ -11086,7 +10893,6 @@ class PreventionDiscoveryConfigActionExportDataArgsDict(TypedDict):
             PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionExportDataArgs:
@@ -11137,7 +10943,6 @@ class PreventionDiscoveryConfigActionExportDataProfileTableArgsDict(TypedDict):
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionExportDataProfileTableArgs:
@@ -11168,7 +10973,6 @@ class PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgsDict(Typed
     dataset_id: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionExportDataSampleFindingsTableArgs:
@@ -11204,7 +11008,6 @@ class PreventionDiscoveryConfigActionPubSubNotificationArgsDict(TypedDict):
         ]
     ]
     topic: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionPubSubNotificationArgs:
@@ -11262,7 +11065,6 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionArgsDict(
             PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionArgs:
@@ -11307,7 +11109,6 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpression
         ]
     ]
     logical_operator: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsArgs:
@@ -11362,7 +11163,6 @@ class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpression
 ):
     minimum_risk_score: NotRequired[pulumi.Input[_builtins.str]]
     minimum_sensitivity_score: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionPubSubNotificationPubsubConditionExpressionsConditionArgs:
@@ -11417,7 +11217,6 @@ class PreventionDiscoveryConfigActionTagResourcesArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionTagResourcesArgs:
@@ -11488,7 +11287,6 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionArgsDict(TypedDict)
     tag: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionTagResourcesTagConditionArgs:
@@ -11541,7 +11339,6 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArg
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArgs:
@@ -11554,7 +11351,6 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionSensitivityScoreArg
 
 class PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgsDict(TypedDict):
     namespaced_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgs:
@@ -11570,7 +11366,6 @@ class PreventionDiscoveryConfigActionTagResourcesTagConditionTagArgs:
 class PreventionDiscoveryConfigErrorArgsDict(TypedDict):
     details: NotRequired[pulumi.Input[PreventionDiscoveryConfigErrorDetailsArgsDict]]
     timestamp: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigErrorArgs:
@@ -11603,7 +11398,6 @@ class PreventionDiscoveryConfigErrorDetailsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]]
     ]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigErrorDetailsArgs:
@@ -11650,7 +11444,6 @@ class PreventionDiscoveryConfigOrgConfigArgsDict(TypedDict):
         pulumi.Input[PreventionDiscoveryConfigOrgConfigLocationArgsDict]
     ]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigOrgConfigArgs:
@@ -11681,7 +11474,6 @@ class PreventionDiscoveryConfigOrgConfigArgs:
 class PreventionDiscoveryConfigOrgConfigLocationArgsDict(TypedDict):
     folder_id: NotRequired[pulumi.Input[_builtins.str]]
     organization_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigOrgConfigLocationArgs:
@@ -11708,7 +11500,6 @@ class PreventionDiscoveryConfigOtherCloudStartingLocationArgsDict(TypedDict):
             PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigOtherCloudStartingLocationArgs:
@@ -11741,7 +11532,6 @@ class PreventionDiscoveryConfigOtherCloudStartingLocationArgs:
 class PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgsDict(TypedDict):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
     all_asset_inventory_assets: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationArgs:
@@ -11780,7 +11570,6 @@ class PreventionDiscoveryConfigTargetArgsDict(TypedDict):
     secrets_target: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigTargetSecretsTargetArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetArgs:
@@ -11879,7 +11668,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetArgsDict(TypedDict):
     filter: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetFilterArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetArgs:
@@ -11972,7 +11760,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgsDict(TypedDict):
             PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceArgs:
@@ -12054,7 +11841,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceInspectTemplateModifie
     TypedDict
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceInspectTemplateModifiedCadenceArgs:
@@ -12072,7 +11858,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceA
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceSchemaModifiedCadenceArgs:
@@ -12102,7 +11887,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceAr
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetCadenceTableModifiedCadenceArgs:
@@ -12140,7 +11924,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgsDict(TypedDict)
             PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsArgs:
@@ -12210,7 +11993,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgsDic
 ):
     min_age: NotRequired[pulumi.Input[_builtins.str]]
     min_row_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgs:
@@ -12233,7 +12015,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetConditionsOrConditionsArgs:
 
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgsDict(TypedDict):
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetConditionsTypesArgs:
@@ -12272,7 +12053,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterArgsDict(TypedDict):
     tables: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterArgs:
@@ -12356,7 +12136,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTableReferenceArgsDict(
     dataset_id: pulumi.Input[_builtins.str]
     table_id: pulumi.Input[_builtins.str]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTableReferenceArgs:
@@ -12389,7 +12168,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgsDict(TypedDic
             PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesArgs:
@@ -12433,7 +12211,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArg
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesArgs:
@@ -12483,7 +12260,6 @@ class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesPat
     dataset_id_regex: NotRequired[pulumi.Input[_builtins.str]]
     project_id_regex: NotRequired[pulumi.Input[_builtins.str]]
     table_id_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetBigQueryTargetFilterTablesIncludeRegexesPatternArgs:
@@ -12523,7 +12299,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgsDict(TypedDict):
             PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
@@ -12601,7 +12376,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetArgs:
 class PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgsDict(TypedDict):
     database_engines: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetConditionsArgs:
@@ -12652,7 +12426,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgsDict(TypedDict):
     others: NotRequired[
         pulumi.Input[PreventionDiscoveryConfigTargetCloudSqlTargetFilterOthersArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterArgs:
@@ -12728,7 +12501,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionArgsDict(Type
             PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionArgs:
@@ -12772,7 +12544,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesArgs:
@@ -12823,7 +12594,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexe
     database_resource_name_regex: NotRequired[pulumi.Input[_builtins.str]]
     instance_regex: NotRequired[pulumi.Input[_builtins.str]]
     project_id_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterCollectionIncludeRegexesPatternArgs:
@@ -12865,7 +12635,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetFilterDatabaseResourceReferen
     database_resource: pulumi.Input[_builtins.str]
     instance: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetFilterDatabaseResourceReferenceArgs:
@@ -12916,7 +12685,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgsDict(Typ
             PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifiedCadenceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceArgs:
@@ -12981,7 +12749,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceInspectTempl
     TypedDict
 ):
     frequency: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadenceArgs:
@@ -12997,7 +12764,6 @@ class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifi
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
     types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudSqlTargetGenerationCadenceSchemaModifiedCadenceArgs:
@@ -13039,7 +12805,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetArgsDict(TypedDict):
             PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetArgs:
@@ -13132,7 +12897,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsArgsDict(TypedD
     ]
     created_after: NotRequired[pulumi.Input[_builtins.str]]
     min_age: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsArgs:
@@ -13185,7 +12949,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageCon
     included_object_attributes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetConditionsCloudStorageConditionsArgs:
@@ -13240,7 +13003,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgsDict(TypedDict)
             PreventionDiscoveryConfigTargetCloudStorageTargetFilterOthersArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterArgs:
@@ -13321,7 +13083,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCloudStorageResourc
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCloudStorageResourceReferenceArgs:
@@ -13355,7 +13116,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgsDict(
             PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionArgs:
@@ -13422,7 +13182,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesArgs:
@@ -13474,7 +13233,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
             PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternCloudStorageRegexArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternArgs:
@@ -13511,7 +13269,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRe
 ):
     bucket_name_regex: NotRequired[pulumi.Input[_builtins.str]]
     project_id_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeRegexesPatternCloudStorageRegexArgs:
@@ -13544,7 +13301,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTa
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsArgs:
@@ -13593,7 +13349,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTa
 ):
     namespaced_tag_key: NotRequired[pulumi.Input[_builtins.str]]
     namespaced_tag_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetFilterCollectionIncludeTagsTagFilterArgs:
@@ -13631,7 +13386,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceArgsDict
         ]
     ]
     refresh_frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceArgs:
@@ -13673,7 +13427,6 @@ class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceInspectT
     TypedDict
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetCloudStorageTargetGenerationCadenceInspectTemplateModifiedCadenceArgs:
@@ -13704,7 +13457,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetArgsDict(TypedDict):
             PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetArgs:
@@ -13809,7 +13561,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsArgsDict(TypedDic
         ]
     ]
     min_age: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsArgs:
@@ -13854,7 +13605,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketCon
     object_storage_classes: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketConditionsArgs:
@@ -13889,7 +13639,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetConditionsAmazonS3BucketCon
 
 class PreventionDiscoveryConfigTargetOtherCloudTargetDataSourceTypeArgsDict(TypedDict):
     data_source: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetDataSourceTypeArgs:
@@ -13924,7 +13673,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgsDict(TypedDict):
             PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterArgs:
@@ -14008,7 +13756,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionArgsDict(
             PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionArgs:
@@ -14052,7 +13799,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesArgs:
@@ -14104,7 +13850,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
             PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternArgs:
@@ -14145,7 +13890,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
         ]
     ]
     bucket_name_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexArgs:
@@ -14187,7 +13931,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRege
     TypedDict
 ):
     account_id_regex: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterCollectionIncludeRegexesPatternAmazonS3BucketRegexAwsAccountRegexArgs:
@@ -14216,7 +13959,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceArgsDic
             PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceArgs:
@@ -14257,7 +13999,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS
         ]
     ]
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketArgs:
@@ -14299,7 +14040,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS
     TypedDict
 ):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetFilterSingleResourceAmazonS3BucketAwsAccountArgs:
@@ -14321,7 +14061,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgsDict(
         ]
     ]
     refresh_frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceArgs:
@@ -14363,7 +14102,6 @@ class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceInspectTem
     TypedDict
 ):
     frequency: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionDiscoveryConfigTargetOtherCloudTargetGenerationCadenceInspectTemplateModifiedCadenceArgs:
@@ -14413,7 +14151,6 @@ class PreventionInspectTemplateInspectConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigArgs:
@@ -14581,7 +14318,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeArgsDict(TypedDict):
             PreventionInspectTemplateInspectConfigCustomInfoTypeSurrogateTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeArgs:
@@ -14735,7 +14471,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgsDict(Typ
             PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryArgs:
@@ -14794,7 +14529,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryCloudStorage
     TypedDict
 ):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgs:
@@ -14809,7 +14543,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgs
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeDictionaryWordListArgs:
@@ -14830,7 +14563,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgsDict(Typed
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeArgs:
@@ -14878,7 +14610,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivitySco
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgs:
@@ -14892,7 +14623,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeInfoTypeSensitivitySco
 class PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeRegexArgs:
@@ -14923,7 +14653,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgsDi
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgs:
@@ -14936,7 +14665,6 @@ class PreventionInspectTemplateInspectConfigCustomInfoTypeSensitivityScoreArgs:
 
 class PreventionInspectTemplateInspectConfigCustomInfoTypeStoredTypeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigCustomInfoTypeStoredTypeArgs:
@@ -14963,7 +14691,6 @@ class PreventionInspectTemplateInspectConfigInfoTypeArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigInfoTypeArgs:
@@ -15007,7 +14734,6 @@ class PreventionInspectTemplateInspectConfigInfoTypeArgs:
 
 class PreventionInspectTemplateInspectConfigInfoTypeSensitivityScoreArgsDict(TypedDict):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigInfoTypeSensitivityScoreArgs:
@@ -15030,7 +14756,6 @@ class PreventionInspectTemplateInspectConfigLimitsArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigLimitsArgs:
@@ -15095,7 +14820,6 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeArgsDict
             PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeArgs:
@@ -15143,7 +14867,6 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgs:
@@ -15191,7 +14914,6 @@ class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgs:
@@ -15213,7 +14935,6 @@ class PreventionInspectTemplateInspectConfigRuleSetArgsDict(TypedDict):
             pulumi.Input[PreventionInspectTemplateInspectConfigRuleSetRuleArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetArgs:
@@ -15274,7 +14995,6 @@ class PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetInfoTypeArgs:
@@ -15322,7 +15042,6 @@ class PreventionInspectTemplateInspectConfigRuleSetInfoTypeSensitivityScoreArgsD
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetInfoTypeSensitivityScoreArgs:
@@ -15344,7 +15063,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleArgsDict(TypedDict):
             PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleArgs:
@@ -15417,7 +15135,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgsDict(Typ
             PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleArgs:
@@ -15537,7 +15254,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryAr
             PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryArgs:
@@ -15596,7 +15312,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryCl
     TypedDict
 ):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgs:
@@ -15611,7 +15326,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWo
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgs:
@@ -15633,7 +15347,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
     proximity: pulumi.Input[
         PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgs:
@@ -15681,7 +15394,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
 ):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgs:
@@ -15713,7 +15425,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHot
 ):
     window_after: NotRequired[pulumi.Input[_builtins.int]]
     window_before: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgs:
@@ -15744,7 +15455,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgs:
@@ -15792,7 +15502,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeArgs:
@@ -15840,7 +15549,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoT
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgs:
@@ -15856,7 +15564,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgsDic
 ):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleExclusionRuleRegexArgs:
@@ -15893,7 +15600,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgsDict(Typed
     proximity: pulumi.Input[
         PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleArgs:
@@ -15958,7 +15664,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexAr
 ):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgs:
@@ -15990,7 +15695,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleLikelihoodAdju
 ):
     fixed_likelihood: NotRequired[pulumi.Input[_builtins.str]]
     relative_likelihood: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgs:
@@ -16016,7 +15720,6 @@ class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgsD
 ):
     window_after: NotRequired[pulumi.Input[_builtins.int]]
     window_before: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionInspectTemplateInspectConfigRuleSetRuleHotwordRuleProximityArgs:
@@ -16048,7 +15751,6 @@ class PreventionJobTriggerInspectJobArgsDict(TypedDict):
         pulumi.Input[PreventionJobTriggerInspectJobInspectConfigArgsDict]
     ]
     inspect_template_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobArgs:
@@ -16136,7 +15838,6 @@ class PreventionJobTriggerInspectJobActionArgsDict(TypedDict):
     save_findings: NotRequired[
         pulumi.Input[PreventionJobTriggerInspectJobActionSaveFindingsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionArgs:
@@ -16303,7 +16004,6 @@ class PreventionJobTriggerInspectJobActionDeidentifyArgsDict(TypedDict):
             PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionDeidentifyArgs:
@@ -16382,7 +16082,6 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgsDict
     deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
     image_redact_template: NotRequired[pulumi.Input[_builtins.str]]
     structured_deidentify_template: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationConfigArgs:
@@ -16419,7 +16118,6 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorage
     table: pulumi.Input[
         PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigTableArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigArgs:
@@ -16451,7 +16149,6 @@ class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorage
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionDeidentifyTransformationDetailsStorageConfigTableArgs:
@@ -16486,7 +16183,6 @@ class PreventionJobTriggerInspectJobActionJobNotificationEmailsArgs:
 
 class PreventionJobTriggerInspectJobActionPubSubArgsDict(TypedDict):
     topic: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionPubSubArgs:
@@ -16529,7 +16225,6 @@ class PreventionJobTriggerInspectJobActionSaveFindingsArgsDict(TypedDict):
     output_config: pulumi.Input[
         PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionSaveFindingsArgs:
@@ -16567,7 +16262,6 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgsDict(Typed
             PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigArgs:
@@ -16632,7 +16326,6 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigStoragePathArg
     TypedDict
 ):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigStoragePathArgs:
@@ -16649,7 +16342,6 @@ class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgsDict(
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobActionSaveFindingsOutputConfigTableArgs:
@@ -16708,7 +16400,6 @@ class PreventionJobTriggerInspectJobInspectConfigArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigArgs:
@@ -16880,7 +16571,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgsDict(TypedDic
             PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSurrogateTypeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeArgs:
@@ -17044,7 +16734,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgsDic
             PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryArgs:
@@ -17103,7 +16792,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryCloudSt
     TypedDict
 ):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryCloudStoragePathArgs:
@@ -17118,7 +16806,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordLis
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeDictionaryWordListArgs:
@@ -17141,7 +16828,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgsDict(
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeArgs:
@@ -17189,7 +16875,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivi
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivityScoreArgs:
@@ -17203,7 +16888,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeInfoTypeSensitivi
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeRegexArgs:
@@ -17234,7 +16918,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSensitivityScoreA
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeSensitivityScoreArgs:
@@ -17250,7 +16933,6 @@ class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeStoredTypeArgsDic
 ):
     name: pulumi.Input[_builtins.str]
     create_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigCustomInfoTypeStoredTypeArgs:
@@ -17287,7 +16969,6 @@ class PreventionJobTriggerInspectJobInspectConfigInfoTypeArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigInfoTypeArgs:
@@ -17335,7 +17016,6 @@ class PreventionJobTriggerInspectJobInspectConfigInfoTypeSensitivityScoreArgsDic
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigInfoTypeSensitivityScoreArgs:
@@ -17358,7 +17038,6 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsArgsDict(TypedDict):
     ]
     max_findings_per_item: NotRequired[pulumi.Input[_builtins.int]]
     max_findings_per_request: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigLimitsArgs:
@@ -17425,7 +17104,6 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeArg
         ]
     ]
     max_findings: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeArgs:
@@ -17473,7 +17151,6 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInf
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeArgs:
@@ -17521,7 +17198,6 @@ class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInf
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreArgs:
@@ -17547,7 +17223,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetArgs:
@@ -17622,7 +17297,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeArgsDict(TypedDi
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeArgs:
@@ -17670,7 +17344,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeSensitivityScore
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypeSensitivityScoreArgs:
@@ -17692,7 +17365,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgsDict(TypedDict):
             PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleArgs:
@@ -17771,7 +17443,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgsDic
             PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleArgs:
@@ -17891,7 +17562,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
             PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryArgs:
@@ -17950,7 +17620,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
     TypedDict
 ):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryCloudStoragePathArgs:
@@ -17965,7 +17634,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDiction
     TypedDict
 ):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleDictionaryWordListArgs:
@@ -17991,7 +17659,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
             PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordArgs:
@@ -18051,7 +17718,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
 ):
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     pattern: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordHotwordRegexArgs:
@@ -18083,7 +17749,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
 ):
     window_after: NotRequired[pulumi.Input[_builtins.int]]
     window_before: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeByHotwordProximityArgs:
@@ -18114,7 +17779,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesArgs:
@@ -18162,7 +17826,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeArgs:
@@ -18210,7 +17873,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExclude
     TypedDict
 ):
     score: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleExcludeInfoTypesInfoTypeSensitivityScoreArgs:
@@ -18226,7 +17888,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexAr
 ):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleExclusionRuleRegexArgs:
@@ -18271,7 +17932,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgsDict(
             PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximityArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleArgs:
@@ -18354,7 +18014,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleHotwordRe
 ):
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
     pattern: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleHotwordRegexArgs:
@@ -18386,7 +18045,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleLikelihoo
 ):
     fixed_likelihood: NotRequired[pulumi.Input[_builtins.str]]
     relative_likelihood: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleLikelihoodAdjustmentArgs:
@@ -18412,7 +18070,6 @@ class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximity
 ):
     window_after: NotRequired[pulumi.Input[_builtins.int]]
     window_before: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobInspectConfigRuleSetRuleHotwordRuleProximityArgs:
@@ -18453,7 +18110,6 @@ class PreventionJobTriggerInspectJobStorageConfigArgsDict(TypedDict):
     timespan_config: NotRequired[
         pulumi.Input[PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigArgs:
@@ -18589,7 +18245,6 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgsDict(TypedDi
     rows_limit: NotRequired[pulumi.Input[_builtins.int]]
     rows_limit_percent: NotRequired[pulumi.Input[_builtins.int]]
     sample_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsArgs:
@@ -18742,7 +18397,6 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldArg
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldArgs:
@@ -18757,7 +18411,6 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingField
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldArgs:
@@ -18772,7 +18425,6 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldArg
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldArgs:
@@ -18789,7 +18441,6 @@ class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceAr
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceArgs:
@@ -18825,7 +18476,6 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgsDict(Typ
     file_types: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     files_limit_percent: NotRequired[pulumi.Input[_builtins.int]]
     sample_method: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsArgs:
@@ -18896,7 +18546,6 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetArgsD
         ]
     ]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetArgs:
@@ -18940,7 +18589,6 @@ class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegex
     bucket_name: pulumi.Input[_builtins.str]
     exclude_regexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     include_regexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetArgs:
@@ -18986,7 +18634,6 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgsDict(TypedD
     partition_id: pulumi.Input[
         PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsArgs:
@@ -19033,7 +18680,6 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindArgs:
@@ -19049,7 +18695,6 @@ class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgs
 ):
     project_id: pulumi.Input[_builtins.str]
     namespace_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdArgs:
@@ -19081,7 +18726,6 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgsDict(TypedDict
             PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsArgs:
@@ -19153,7 +18797,6 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgsDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsArgs:
@@ -19201,7 +18844,6 @@ class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdenti
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldArgs:
@@ -19221,7 +18863,6 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgsDict(TypedDic
             PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigTimespanConfigArgs:
@@ -19281,7 +18922,6 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArg
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArgs:
@@ -19295,7 +18935,6 @@ class PreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldArg
 class PreventionJobTriggerTriggerArgsDict(TypedDict):
     manual: NotRequired[pulumi.Input[PreventionJobTriggerTriggerManualArgsDict]]
     schedule: NotRequired[pulumi.Input[PreventionJobTriggerTriggerScheduleArgsDict]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerTriggerArgs:
@@ -19332,7 +18971,6 @@ class PreventionJobTriggerTriggerManualArgs:
 
 class PreventionJobTriggerTriggerScheduleArgsDict(TypedDict):
     recurrence_period_duration: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PreventionJobTriggerTriggerScheduleArgs:
@@ -19356,7 +18994,6 @@ class PreventionStoredInfoTypeDictionaryArgsDict(TypedDict):
     word_list: NotRequired[
         pulumi.Input[PreventionStoredInfoTypeDictionaryWordListArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeDictionaryArgs:
@@ -19397,7 +19034,6 @@ class PreventionStoredInfoTypeDictionaryArgs:
 
 class PreventionStoredInfoTypeDictionaryCloudStoragePathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeDictionaryCloudStoragePathArgs:
@@ -19410,7 +19046,6 @@ class PreventionStoredInfoTypeDictionaryCloudStoragePathArgs:
 
 class PreventionStoredInfoTypeDictionaryWordListArgsDict(TypedDict):
     words: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeDictionaryWordListArgs:
@@ -19435,7 +19070,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryArgsDict(TypedDict):
             PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryArgs:
@@ -19506,7 +19140,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgsDict(TypedDi
     table: pulumi.Input[
         PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldArgs:
@@ -19553,7 +19186,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldArgs:
@@ -19570,7 +19202,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgsDict(
     dataset_id: pulumi.Input[_builtins.str]
     project_id: pulumi.Input[_builtins.str]
     table_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableArgs:
@@ -19601,7 +19232,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgsDict(
     TypedDict
 ):
     url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgs:
@@ -19614,7 +19244,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetArgs:
 
 class PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgs:
@@ -19628,7 +19257,6 @@ class PreventionStoredInfoTypeLargeCustomDictionaryOutputPathArgs:
 class PreventionStoredInfoTypeRegexArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
     group_indexes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class PreventionStoredInfoTypeRegexArgs:

@@ -80,7 +80,6 @@ class MediaInsightsPipelineConfigurationElementArgsDict(TypedDict):
             MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementArgs:
@@ -301,7 +300,6 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     vocabulary_filter_method: NotRequired[pulumi.Input[_builtins.str]]
     vocabulary_filter_name: NotRequired[pulumi.Input[_builtins.str]]
     vocabulary_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationArgs:
@@ -430,7 +428,6 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProc
     output_location: pulumi.Input[_builtins.str]
     content_redaction_output: NotRequired[pulumi.Input[_builtins.str]]
     output_encryption_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsArgs:
@@ -482,7 +479,6 @@ class MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigur
     vocabulary_filter_method: NotRequired[pulumi.Input[_builtins.str]]
     vocabulary_filter_name: NotRequired[pulumi.Input[_builtins.str]]
     vocabulary_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementAmazonTranscribeProcessorConfigurationArgs:
@@ -579,7 +575,6 @@ class MediaInsightsPipelineConfigurationElementKinesisDataStreamSinkConfiguratio
     TypedDict
 ):
     insights_target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementKinesisDataStreamSinkConfigurationArgs:
@@ -594,7 +589,6 @@ class MediaInsightsPipelineConfigurationElementLambdaFunctionSinkConfigurationAr
     TypedDict
 ):
     insights_target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementLambdaFunctionSinkConfigurationArgs:
@@ -609,7 +603,6 @@ class MediaInsightsPipelineConfigurationElementS3RecordingSinkConfigurationArgsD
     TypedDict
 ):
     destination: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementS3RecordingSinkConfigurationArgs:
@@ -626,7 +619,6 @@ class MediaInsightsPipelineConfigurationElementSnsTopicSinkConfigurationArgsDict
     TypedDict
 ):
     insights_target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementSnsTopicSinkConfigurationArgs:
@@ -641,7 +633,6 @@ class MediaInsightsPipelineConfigurationElementSqsQueueSinkConfigurationArgsDict
     TypedDict
 ):
     insights_target: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementSqsQueueSinkConfigurationArgs:
@@ -657,7 +648,6 @@ class MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurat
 ):
     speaker_search_status: pulumi.Input[_builtins.str]
     voice_tone_analysis_status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationElementVoiceAnalyticsProcessorConfigurationArgs:
@@ -687,7 +677,6 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgsDict(Typed
         ]
     ]
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationArgs:
@@ -750,7 +739,6 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgsDict(
             MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleArgs:
@@ -838,7 +826,6 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleIssueDetec
     TypedDict
 ):
     rule_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleIssueDetectionConfigurationArgs:
@@ -855,7 +842,6 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleKeywordMat
     keywords: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     rule_name: pulumi.Input[_builtins.str]
     negate: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleKeywordMatchConfigurationArgs:
@@ -888,7 +874,6 @@ class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentC
     rule_name: pulumi.Input[_builtins.str]
     sentiment_type: pulumi.Input[_builtins.str]
     time_period: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class MediaInsightsPipelineConfigurationRealTimeAlertConfigurationRuleSentimentConfigurationArgs:

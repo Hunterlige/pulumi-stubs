@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-gcp-stubs"
-version = "9.16.0.20260403"
+version = "9.16.0.20260407"
 description = "Type stubs for pulumi-gcp Python SDK"
 license = "MIT"
 classifiers = [
@@ -18,7 +18,7 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.9,<4"
 dependencies = [
-  "pulumi-gcp==9",
+  "pulumi-gcp>=9",
 ]
 
 [build-system]

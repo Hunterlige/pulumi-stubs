@@ -155,7 +155,6 @@ class AlertPolicyAlertStrategyArgsDict(TypedDict):
     notification_rate_limit: NotRequired[
         pulumi.Input[AlertPolicyAlertStrategyNotificationRateLimitArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyAlertStrategyArgs:
@@ -235,7 +234,6 @@ class AlertPolicyAlertStrategyNotificationChannelStrategyArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     renotify_interval: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyAlertStrategyNotificationChannelStrategyArgs:
@@ -264,7 +262,6 @@ class AlertPolicyAlertStrategyNotificationChannelStrategyArgs:
 
 class AlertPolicyAlertStrategyNotificationRateLimitArgsDict(TypedDict):
     period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyAlertStrategyNotificationRateLimitArgs:
@@ -296,7 +293,6 @@ class AlertPolicyConditionArgsDict(TypedDict):
         pulumi.Input[AlertPolicyConditionConditionThresholdArgsDict]
     ]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionArgs:
@@ -412,7 +408,6 @@ class AlertPolicyConditionConditionAbsentArgsDict(TypedDict):
     trigger: NotRequired[
         pulumi.Input[AlertPolicyConditionConditionAbsentTriggerArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionAbsentArgs:
@@ -478,7 +473,6 @@ class AlertPolicyConditionConditionAbsentAggregationArgsDict(TypedDict):
     cross_series_reducer: NotRequired[pulumi.Input[_builtins.str]]
     group_by_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     per_series_aligner: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionAbsentAggregationArgs:
@@ -520,7 +514,6 @@ class AlertPolicyConditionConditionAbsentAggregationArgs:
 class AlertPolicyConditionConditionAbsentTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionAbsentTriggerArgs:
@@ -546,7 +539,6 @@ class AlertPolicyConditionConditionMatchedLogArgsDict(TypedDict):
     label_extractors: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionMatchedLogArgs:
@@ -582,7 +574,6 @@ class AlertPolicyConditionConditionMonitoringQueryLanguageArgsDict(TypedDict):
             AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionMonitoringQueryLanguageArgs:
@@ -633,7 +624,6 @@ class AlertPolicyConditionConditionMonitoringQueryLanguageArgs:
 class AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionMonitoringQueryLanguageTriggerArgs:
@@ -662,7 +652,6 @@ class AlertPolicyConditionConditionPrometheusQueryLanguageArgsDict(TypedDict):
     evaluation_interval: NotRequired[pulumi.Input[_builtins.str]]
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     rule_group: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionPrometheusQueryLanguageArgs:
@@ -730,7 +719,6 @@ class AlertPolicyConditionConditionSqlArgsDict(TypedDict):
     row_count_test: NotRequired[
         pulumi.Input[AlertPolicyConditionConditionSqlRowCountTestArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlArgs:
@@ -807,7 +795,6 @@ class AlertPolicyConditionConditionSqlArgs:
 
 class AlertPolicyConditionConditionSqlBooleanTestArgsDict(TypedDict):
     column: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlBooleanTestArgs:
@@ -823,7 +810,6 @@ class AlertPolicyConditionConditionSqlDailyArgsDict(TypedDict):
     execution_time: NotRequired[
         pulumi.Input[AlertPolicyConditionConditionSqlDailyExecutionTimeArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlDailyArgs:
@@ -860,7 +846,6 @@ class AlertPolicyConditionConditionSqlDailyExecutionTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlDailyExecutionTimeArgs:
@@ -896,7 +881,6 @@ class AlertPolicyConditionConditionSqlDailyExecutionTimeArgs:
 class AlertPolicyConditionConditionSqlHourlyArgsDict(TypedDict):
     periodicity: pulumi.Input[_builtins.int]
     minute_offset: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlHourlyArgs:
@@ -919,7 +903,6 @@ class AlertPolicyConditionConditionSqlHourlyArgs:
 
 class AlertPolicyConditionConditionSqlMinutesArgsDict(TypedDict):
     periodicity: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlMinutesArgs:
@@ -933,7 +916,6 @@ class AlertPolicyConditionConditionSqlMinutesArgs:
 class AlertPolicyConditionConditionSqlRowCountTestArgsDict(TypedDict):
     comparison: pulumi.Input[_builtins.str]
     threshold: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionSqlRowCountTestArgs:
@@ -983,7 +965,6 @@ class AlertPolicyConditionConditionThresholdArgsDict(TypedDict):
     trigger: NotRequired[
         pulumi.Input[AlertPolicyConditionConditionThresholdTriggerArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionThresholdArgs:
@@ -1129,7 +1110,6 @@ class AlertPolicyConditionConditionThresholdAggregationArgsDict(TypedDict):
     cross_series_reducer: NotRequired[pulumi.Input[_builtins.str]]
     group_by_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     per_series_aligner: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionThresholdAggregationArgs:
@@ -1173,7 +1153,6 @@ class AlertPolicyConditionConditionThresholdDenominatorAggregationArgsDict(Typed
     cross_series_reducer: NotRequired[pulumi.Input[_builtins.str]]
     group_by_fields: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     per_series_aligner: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionThresholdDenominatorAggregationArgs:
@@ -1214,7 +1193,6 @@ class AlertPolicyConditionConditionThresholdDenominatorAggregationArgs:
 
 class AlertPolicyConditionConditionThresholdForecastOptionsArgsDict(TypedDict):
     forecast_horizon: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionThresholdForecastOptionsArgs:
@@ -1230,7 +1208,6 @@ class AlertPolicyConditionConditionThresholdForecastOptionsArgs:
 class AlertPolicyConditionConditionThresholdTriggerArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     percent: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyConditionConditionThresholdTriggerArgs:
@@ -1254,7 +1231,6 @@ class AlertPolicyConditionConditionThresholdTriggerArgs:
 class AlertPolicyCreationRecordArgsDict(TypedDict):
     mutate_time: NotRequired[pulumi.Input[_builtins.str]]
     mutated_by: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyCreationRecordArgs:
@@ -1282,7 +1258,6 @@ class AlertPolicyDocumentationArgsDict(TypedDict):
     ]
     mime_type: NotRequired[pulumi.Input[_builtins.str]]
     subject: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyDocumentationArgs:
@@ -1329,7 +1304,6 @@ class AlertPolicyDocumentationArgs:
 class AlertPolicyDocumentationLinkArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AlertPolicyDocumentationLinkArgs:
@@ -1352,7 +1326,6 @@ class AlertPolicyDocumentationLinkArgs:
 
 class CustomServiceTelemetryArgsDict(TypedDict):
     resource_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CustomServiceTelemetryArgs:
@@ -1368,7 +1341,6 @@ class CustomServiceTelemetryArgs:
 class GenericServiceBasicServiceArgsDict(TypedDict):
     service_labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     service_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GenericServiceBasicServiceArgs:
@@ -1397,7 +1369,6 @@ class GenericServiceBasicServiceArgs:
 
 class GenericServiceTelemetryArgsDict(TypedDict):
     resource_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GenericServiceTelemetryArgs:
@@ -1414,7 +1385,6 @@ class MetricDescriptorLabelArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     value_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetricDescriptorLabelArgs:
@@ -1444,7 +1414,6 @@ class MetricDescriptorLabelArgs:
 class MetricDescriptorMetadataArgsDict(TypedDict):
     ingest_delay: NotRequired[pulumi.Input[_builtins.str]]
     sample_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MetricDescriptorMetadataArgs:
@@ -1475,7 +1444,6 @@ class NotificationChannelSensitiveLabelsArgsDict(TypedDict):
     service_key: NotRequired[pulumi.Input[_builtins.str]]
     service_key_wo: NotRequired[pulumi.Input[_builtins.str]]
     service_key_wo_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NotificationChannelSensitiveLabelsArgs:
@@ -1544,7 +1512,6 @@ class SloBasicSliArgsDict(TypedDict):
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SloBasicSliArgs:
@@ -1599,7 +1566,6 @@ class SloBasicSliArgs:
 
 class SloBasicSliAvailabilityArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SloBasicSliAvailabilityArgs:
@@ -1614,7 +1580,6 @@ class SloBasicSliAvailabilityArgs:
 
 class SloBasicSliLatencyArgsDict(TypedDict):
     threshold: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SloBasicSliLatencyArgs:
@@ -1632,7 +1597,6 @@ class SloRequestBasedSliArgsDict(TypedDict):
     good_total_ratio: NotRequired[
         pulumi.Input[SloRequestBasedSliGoodTotalRatioArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class SloRequestBasedSliArgs:
@@ -1668,7 +1632,6 @@ class SloRequestBasedSliArgs:
 class SloRequestBasedSliDistributionCutArgsDict(TypedDict):
     distribution_filter: pulumi.Input[_builtins.str]
     range: pulumi.Input[SloRequestBasedSliDistributionCutRangeArgsDict]
-    ...
 
 @pulumi.input_type
 class SloRequestBasedSliDistributionCutArgs:
@@ -1694,7 +1657,6 @@ class SloRequestBasedSliDistributionCutArgs:
 class SloRequestBasedSliDistributionCutRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SloRequestBasedSliDistributionCutRangeArgs:
@@ -1719,7 +1681,6 @@ class SloRequestBasedSliGoodTotalRatioArgsDict(TypedDict):
     bad_service_filter: NotRequired[pulumi.Input[_builtins.str]]
     good_service_filter: NotRequired[pulumi.Input[_builtins.str]]
     total_service_filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SloRequestBasedSliGoodTotalRatioArgs:
@@ -1758,7 +1719,6 @@ class SloWindowsBasedSliArgsDict(TypedDict):
         pulumi.Input[SloWindowsBasedSliMetricSumInRangeArgsDict]
     ]
     window_period: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliArgs:
@@ -1826,7 +1786,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdArgsDict(TypedDict):
         pulumi.Input[SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgsDict]
     ]
     threshold: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdArgs:
@@ -1893,7 +1852,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgsDict(Typed
     locations: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     methods: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     versions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceArgs:
@@ -1982,7 +1940,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityAr
     TypedDict
 ):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityArgs:
@@ -1999,7 +1956,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyArgsDic
     TypedDict
 ):
     threshold: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyArgs:
@@ -2021,7 +1977,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgsDict(TypedDict):
             SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceArgs:
@@ -2083,7 +2038,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgsDic
     range: pulumi.Input[
         SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutArgs:
@@ -2120,7 +2074,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeAr
 ):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeArgs:
@@ -2147,7 +2100,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgsDict
     bad_service_filter: NotRequired[pulumi.Input[_builtins.str]]
     good_service_filter: NotRequired[pulumi.Input[_builtins.str]]
     total_service_filter: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgs:
@@ -2177,7 +2129,6 @@ class SloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioArgs:
 class SloWindowsBasedSliMetricMeanInRangeArgsDict(TypedDict):
     range: pulumi.Input[SloWindowsBasedSliMetricMeanInRangeRangeArgsDict]
     time_series: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliMetricMeanInRangeArgs:
@@ -2203,7 +2154,6 @@ class SloWindowsBasedSliMetricMeanInRangeArgs:
 class SloWindowsBasedSliMetricMeanInRangeRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliMetricMeanInRangeRangeArgs:
@@ -2227,7 +2177,6 @@ class SloWindowsBasedSliMetricMeanInRangeRangeArgs:
 class SloWindowsBasedSliMetricSumInRangeArgsDict(TypedDict):
     range: pulumi.Input[SloWindowsBasedSliMetricSumInRangeRangeArgsDict]
     time_series: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliMetricSumInRangeArgs:
@@ -2253,7 +2202,6 @@ class SloWindowsBasedSliMetricSumInRangeArgs:
 class SloWindowsBasedSliMetricSumInRangeRangeArgsDict(TypedDict):
     max: NotRequired[pulumi.Input[_builtins.float]]
     min: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class SloWindowsBasedSliMetricSumInRangeRangeArgs:
@@ -2280,7 +2228,6 @@ class UptimeCheckConfigContentMatcherArgsDict(TypedDict):
         pulumi.Input[UptimeCheckConfigContentMatcherJsonPathMatcherArgsDict]
     ]
     matcher: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigContentMatcherArgs:
@@ -2319,7 +2266,6 @@ class UptimeCheckConfigContentMatcherArgs:
 class UptimeCheckConfigContentMatcherJsonPathMatcherArgsDict(TypedDict):
     json_path: pulumi.Input[_builtins.str]
     json_matcher: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigContentMatcherJsonPathMatcherArgs:
@@ -2365,7 +2311,6 @@ class UptimeCheckConfigHttpCheckArgsDict(TypedDict):
     ]
     use_ssl: NotRequired[pulumi.Input[_builtins.bool]]
     validate_ssl: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigHttpCheckArgs:
@@ -2515,7 +2460,6 @@ class UptimeCheckConfigHttpCheckArgs:
 class UptimeCheckConfigHttpCheckAcceptedResponseStatusCodeArgsDict(TypedDict):
     status_class: NotRequired[pulumi.Input[_builtins.str]]
     status_value: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigHttpCheckAcceptedResponseStatusCodeArgs:
@@ -2541,7 +2485,6 @@ class UptimeCheckConfigHttpCheckAuthInfoArgsDict(TypedDict):
     password: NotRequired[pulumi.Input[_builtins.str]]
     password_wo: NotRequired[pulumi.Input[_builtins.str]]
     password_wo_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigHttpCheckAuthInfoArgs:
@@ -2576,7 +2519,6 @@ class UptimeCheckConfigHttpCheckAuthInfoArgs:
 
 class UptimeCheckConfigHttpCheckPingConfigArgsDict(TypedDict):
     pings_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigHttpCheckPingConfigArgs:
@@ -2589,7 +2531,6 @@ class UptimeCheckConfigHttpCheckPingConfigArgs:
 
 class UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgs:
@@ -2605,7 +2546,6 @@ class UptimeCheckConfigHttpCheckServiceAgentAuthenticationArgs:
 class UptimeCheckConfigMonitoredResourceArgsDict(TypedDict):
     labels: pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigMonitoredResourceArgs:
@@ -2631,7 +2571,6 @@ class UptimeCheckConfigMonitoredResourceArgs:
 class UptimeCheckConfigResourceGroupArgsDict(TypedDict):
     group_id: NotRequired[pulumi.Input[_builtins.str]]
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigResourceGroupArgs:
@@ -2656,7 +2595,6 @@ class UptimeCheckConfigSyntheticMonitorArgsDict(TypedDict):
     cloud_function_v2: pulumi.Input[
         UptimeCheckConfigSyntheticMonitorCloudFunctionV2ArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigSyntheticMonitorArgs:
@@ -2679,7 +2617,6 @@ class UptimeCheckConfigSyntheticMonitorArgs:
 
 class UptimeCheckConfigSyntheticMonitorCloudFunctionV2ArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigSyntheticMonitorCloudFunctionV2Args:
@@ -2693,7 +2630,6 @@ class UptimeCheckConfigSyntheticMonitorCloudFunctionV2Args:
 class UptimeCheckConfigTcpCheckArgsDict(TypedDict):
     port: pulumi.Input[_builtins.int]
     ping_config: NotRequired[pulumi.Input[UptimeCheckConfigTcpCheckPingConfigArgsDict]]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigTcpCheckArgs:
@@ -2722,7 +2658,6 @@ class UptimeCheckConfigTcpCheckArgs:
 
 class UptimeCheckConfigTcpCheckPingConfigArgsDict(TypedDict):
     pings_count: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class UptimeCheckConfigTcpCheckPingConfigArgs:

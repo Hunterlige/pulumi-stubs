@@ -78,7 +78,6 @@ class LifecyclePolicyPolicyDetailsArgsDict(TypedDict):
         ]
     ]
     target_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsArgs:
@@ -233,7 +232,6 @@ class LifecyclePolicyPolicyDetailsActionArgsDict(TypedDict):
         ]
     ]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsActionArgs:
@@ -279,7 +277,6 @@ class LifecyclePolicyPolicyDetailsActionCrossRegionCopyArgsDict(TypedDict):
             LifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsActionCrossRegionCopyArgs:
@@ -337,7 +334,6 @@ class LifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationAr
 ):
     cmk_arn: NotRequired[pulumi.Input[_builtins.str]]
     encrypted: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationArgs:
@@ -361,7 +357,6 @@ class LifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationAr
 class LifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleArgsDict(TypedDict):
     interval: pulumi.Input[_builtins.int]
     interval_unit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleArgs:
@@ -385,7 +380,6 @@ class LifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleArgs:
 class LifecyclePolicyPolicyDetailsEventSourceArgsDict(TypedDict):
     parameters: pulumi.Input[LifecyclePolicyPolicyDetailsEventSourceParametersArgsDict]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsEventSourceArgs:
@@ -414,7 +408,6 @@ class LifecyclePolicyPolicyDetailsEventSourceParametersArgsDict(TypedDict):
     description_regex: pulumi.Input[_builtins.str]
     event_type: pulumi.Input[_builtins.str]
     snapshot_owners: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsEventSourceParametersArgs:
@@ -451,7 +444,6 @@ class LifecyclePolicyPolicyDetailsExclusionsArgsDict(TypedDict):
     exclude_volume_types: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsExclusionsArgs:
@@ -493,7 +485,6 @@ class LifecyclePolicyPolicyDetailsExclusionsArgs:
 class LifecyclePolicyPolicyDetailsParametersArgsDict(TypedDict):
     exclude_boot_volume: NotRequired[pulumi.Input[_builtins.bool]]
     no_reboot: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsParametersArgs:
@@ -542,7 +533,6 @@ class LifecyclePolicyPolicyDetailsScheduleArgsDict(TypedDict):
     ]
     tags_to_add: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     variable_tags: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleArgs:
@@ -712,7 +702,6 @@ class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArgsDict(TypedDict):
     archive_retain_rule: pulumi.Input[
         LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArgs:
@@ -744,7 +733,6 @@ class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleArgsDict(
     retention_archive_tier: pulumi.Input[
         LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleArgs:
@@ -776,7 +764,6 @@ class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionA
     count: NotRequired[pulumi.Input[_builtins.int]]
     interval: NotRequired[pulumi.Input[_builtins.int]]
     interval_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTierArgs:
@@ -812,7 +799,6 @@ class LifecyclePolicyPolicyDetailsScheduleCreateRuleArgsDict(TypedDict):
         pulumi.Input[LifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsArgsDict]
     ]
     times: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleCreateRuleArgs:
@@ -875,7 +861,6 @@ class LifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsArgsDict(TypedDict):
     execution_timeout: NotRequired[pulumi.Input[_builtins.int]]
     maximum_retry_count: NotRequired[pulumi.Input[_builtins.int]]
     stages: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsArgs:
@@ -948,7 +933,6 @@ class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleArgsDict(TypedDict)
     ]
     target: NotRequired[pulumi.Input[_builtins.str]]
     target_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleArgs:
@@ -1038,7 +1022,6 @@ class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleArgsDi
 ):
     interval: pulumi.Input[_builtins.int]
     interval_unit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleArgs:
@@ -1064,7 +1047,6 @@ class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleArgsDict(
 ):
     interval: pulumi.Input[_builtins.int]
     interval_unit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleArgs:
@@ -1089,7 +1071,6 @@ class LifecyclePolicyPolicyDetailsScheduleDeprecateRuleArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     interval: NotRequired[pulumi.Input[_builtins.int]]
     interval_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleDeprecateRuleArgs:
@@ -1121,7 +1102,6 @@ class LifecyclePolicyPolicyDetailsScheduleFastRestoreRuleArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     interval: NotRequired[pulumi.Input[_builtins.int]]
     interval_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleFastRestoreRuleArgs:
@@ -1162,7 +1142,6 @@ class LifecyclePolicyPolicyDetailsScheduleRetainRuleArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[_builtins.int]]
     interval: NotRequired[pulumi.Input[_builtins.int]]
     interval_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleRetainRuleArgs:
@@ -1193,7 +1172,6 @@ class LifecyclePolicyPolicyDetailsScheduleShareRuleArgsDict(TypedDict):
     target_accounts: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     unshare_interval: NotRequired[pulumi.Input[_builtins.int]]
     unshare_interval_unit: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LifecyclePolicyPolicyDetailsScheduleShareRuleArgs:

@@ -170,7 +170,6 @@ class AutonomousDatabasePropertiesArgsDict(TypedDict):
     total_auto_backup_storage_size_gbs: NotRequired[pulumi.Input[_builtins.float]]
     used_data_storage_size_tbs: NotRequired[pulumi.Input[_builtins.int]]
     vault_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesArgs:
@@ -710,7 +709,6 @@ class AutonomousDatabasePropertiesArgs:
 class AutonomousDatabasePropertiesApexDetailArgsDict(TypedDict):
     apex_version: NotRequired[pulumi.Input[_builtins.str]]
     ords_version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesApexDetailArgs:
@@ -754,7 +752,6 @@ class AutonomousDatabasePropertiesConnectionStringArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesConnectionStringArgs:
@@ -861,7 +858,6 @@ class AutonomousDatabasePropertiesConnectionStringAllConnectionStringArgsDict(
     high: NotRequired[pulumi.Input[_builtins.str]]
     low: NotRequired[pulumi.Input[_builtins.str]]
     medium: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesConnectionStringAllConnectionStringArgs:
@@ -898,7 +894,6 @@ class AutonomousDatabasePropertiesConnectionStringProfileArgsDict(TypedDict):
     syntax_format: NotRequired[pulumi.Input[_builtins.str]]
     tls_authentication: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesConnectionStringProfileArgs:
@@ -970,7 +965,6 @@ class AutonomousDatabasePropertiesConnectionUrlArgsDict(TypedDict):
     mongo_db_uri: NotRequired[pulumi.Input[_builtins.str]]
     ords_uri: NotRequired[pulumi.Input[_builtins.str]]
     sql_dev_web_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesConnectionUrlArgs:
@@ -1039,7 +1033,6 @@ class AutonomousDatabasePropertiesConnectionUrlArgs:
 
 class AutonomousDatabasePropertiesCustomerContactArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesCustomerContactArgs:
@@ -1056,7 +1049,6 @@ class AutonomousDatabasePropertiesLocalStandbyDbArgsDict(TypedDict):
     lag_time_duration: NotRequired[pulumi.Input[_builtins.str]]
     lifecycle_details: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesLocalStandbyDbArgs:
@@ -1123,7 +1115,6 @@ class AutonomousDatabasePropertiesScheduledOperationDetailArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesScheduledOperationDetailArgs:
@@ -1213,7 +1204,6 @@ class AutonomousDatabasePropertiesScheduledOperationDetailStartTimeArgsDict(Type
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesScheduledOperationDetailStartTimeArgs:
@@ -1251,7 +1241,6 @@ class AutonomousDatabasePropertiesScheduledOperationDetailStopTimeArgsDict(Typed
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabasePropertiesScheduledOperationDetailStopTimeArgs:
@@ -1287,7 +1276,6 @@ class AutonomousDatabasePropertiesScheduledOperationDetailStopTimeArgs:
 class AutonomousDatabaseSourceConfigArgsDict(TypedDict):
     automatic_backups_replication_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     autonomous_database: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class AutonomousDatabaseSourceConfigArgs:
@@ -1352,7 +1340,6 @@ class CloudExadataInfrastructurePropertiesArgsDict(TypedDict):
     storage_count: NotRequired[pulumi.Input[_builtins.int]]
     storage_server_version: NotRequired[pulumi.Input[_builtins.str]]
     total_storage_size_gb: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructurePropertiesArgs:
@@ -1581,7 +1568,6 @@ class CloudExadataInfrastructurePropertiesArgs:
 
 class CloudExadataInfrastructurePropertiesCustomerContactArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructurePropertiesCustomerContactArgs:
@@ -1602,7 +1588,6 @@ class CloudExadataInfrastructurePropertiesMaintenanceWindowArgsDict(TypedDict):
     patching_mode: NotRequired[pulumi.Input[_builtins.str]]
     preference: NotRequired[pulumi.Input[_builtins.str]]
     weeks_of_months: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructurePropertiesMaintenanceWindowArgs:
@@ -1728,7 +1713,6 @@ class CloudVmClusterPropertiesArgsDict(TypedDict):
     storage_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     system_version: NotRequired[pulumi.Input[_builtins.str]]
     time_zone: NotRequired[pulumi.Input[CloudVmClusterPropertiesTimeZoneArgsDict]]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterPropertiesArgs:
@@ -1970,7 +1954,6 @@ class CloudVmClusterPropertiesDiagnosticsDataCollectionOptionsArgsDict(TypedDict
     diagnostics_events_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     health_monitoring_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     incident_logs_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterPropertiesDiagnosticsDataCollectionOptionsArgs:
@@ -2004,7 +1987,6 @@ class CloudVmClusterPropertiesDiagnosticsDataCollectionOptionsArgs:
 class CloudVmClusterPropertiesTimeZoneArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterPropertiesTimeZoneArgs:
@@ -2051,7 +2033,6 @@ class DbSystemPropertiesArgsDict(TypedDict):
     private_ip: NotRequired[pulumi.Input[_builtins.str]]
     reco_storage_size_gb: NotRequired[pulumi.Input[_builtins.int]]
     time_zone: NotRequired[pulumi.Input[DbSystemPropertiesTimeZoneArgsDict]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesArgs:
@@ -2207,7 +2188,6 @@ class DbSystemPropertiesArgs:
 class DbSystemPropertiesDataCollectionOptionsArgsDict(TypedDict):
     is_diagnostics_events_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     is_incident_logs_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDataCollectionOptionsArgs:
@@ -2239,7 +2219,6 @@ class DbSystemPropertiesDbHomeArgsDict(TypedDict):
     db_version: pulumi.Input[_builtins.str]
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     is_unified_auditing_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeArgs:
@@ -2291,7 +2270,6 @@ class DbSystemPropertiesDbHomeDatabaseArgsDict(TypedDict):
         pulumi.Input[DbSystemPropertiesDbHomeDatabasePropertiesArgsDict]
     ]
     tde_wallet_password: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeDatabaseArgs:
@@ -2402,7 +2380,6 @@ class DbSystemPropertiesDbHomeDatabasePropertiesArgsDict(TypedDict):
         pulumi.Input[DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigArgsDict]
     ]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeDatabasePropertiesArgs:
@@ -2468,7 +2445,6 @@ class DbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigArgsDict
 ):
     management_state: NotRequired[pulumi.Input[_builtins.str]]
     management_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigArgs:
@@ -2505,7 +2481,6 @@ class DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigArgsDict(TypedDict
         ]
     ]
     retention_period_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigArgs:
@@ -2593,7 +2568,6 @@ class DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationD
     TypedDict
 ):
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailArgs:
@@ -2608,7 +2582,6 @@ class DbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationD
 
 class DbSystemPropertiesDbSystemOptionsArgsDict(TypedDict):
     storage_management: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesDbSystemOptionsArgs:
@@ -2623,7 +2596,6 @@ class DbSystemPropertiesDbSystemOptionsArgs:
 
 class DbSystemPropertiesTimeZoneArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DbSystemPropertiesTimeZoneArgs:
@@ -2660,7 +2632,6 @@ class ExadbVmClusterPropertiesArgsDict(TypedDict):
     oci_uri: NotRequired[pulumi.Input[_builtins.str]]
     scan_listener_port_tcp: NotRequired[pulumi.Input[_builtins.int]]
     time_zone: NotRequired[pulumi.Input[ExadbVmClusterPropertiesTimeZoneArgsDict]]
-    ...
 
 @pulumi.input_type
 class ExadbVmClusterPropertiesArgs:
@@ -2814,7 +2785,6 @@ class ExadbVmClusterPropertiesDataCollectionOptionsArgsDict(TypedDict):
     is_diagnostics_events_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     is_health_monitoring_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     is_incident_logs_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ExadbVmClusterPropertiesDataCollectionOptionsArgs:
@@ -2854,7 +2824,6 @@ class ExadbVmClusterPropertiesDataCollectionOptionsArgs:
 class ExadbVmClusterPropertiesTimeZoneArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExadbVmClusterPropertiesTimeZoneArgs:
@@ -2877,7 +2846,6 @@ class ExadbVmClusterPropertiesTimeZoneArgs:
 
 class ExadbVmClusterPropertiesVmFileSystemStorageArgsDict(TypedDict):
     size_in_gbs_per_node: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class ExadbVmClusterPropertiesVmFileSystemStorageArgs:
@@ -2909,7 +2877,6 @@ class ExascaleDbStorageVaultPropertiesArgsDict(TypedDict):
     ]
     vm_cluster_count: NotRequired[pulumi.Input[_builtins.int]]
     vm_cluster_ids: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class ExascaleDbStorageVaultPropertiesArgs:
@@ -3019,7 +2986,6 @@ class ExascaleDbStorageVaultPropertiesArgs:
 class ExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsArgsDict(TypedDict):
     total_size_gbs: pulumi.Input[_builtins.int]
     available_size_gbs: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class ExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsArgs:
@@ -3043,7 +3009,6 @@ class ExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsArgs:
 class ExascaleDbStorageVaultPropertiesTimeZoneArgsDict(TypedDict):
     id: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExascaleDbStorageVaultPropertiesTimeZoneArgs:

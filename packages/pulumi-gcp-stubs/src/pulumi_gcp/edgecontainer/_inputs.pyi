@@ -58,7 +58,6 @@ __all__ = [
 
 class ClusterAuthorizationArgsDict(TypedDict):
     admin_users: pulumi.Input[ClusterAuthorizationAdminUsersArgsDict]
-    ...
 
 @pulumi.input_type
 class ClusterAuthorizationArgs:
@@ -73,7 +72,6 @@ class ClusterAuthorizationArgs:
 
 class ClusterAuthorizationAdminUsersArgsDict(TypedDict):
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClusterAuthorizationAdminUsersArgs:
@@ -87,7 +85,6 @@ class ClusterAuthorizationAdminUsersArgs:
 class ClusterControlPlaneArgsDict(TypedDict):
     local: NotRequired[pulumi.Input[ClusterControlPlaneLocalArgsDict]]
     remote: NotRequired[pulumi.Input[ClusterControlPlaneRemoteArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneArgs:
@@ -117,7 +114,6 @@ class ClusterControlPlaneEncryptionArgsDict(TypedDict):
             Sequence[pulumi.Input[ClusterControlPlaneEncryptionKmsStatusArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneEncryptionArgs:
@@ -168,7 +164,6 @@ class ClusterControlPlaneEncryptionArgs:
 class ClusterControlPlaneEncryptionKmsStatusArgsDict(TypedDict):
     code: NotRequired[pulumi.Input[_builtins.int]]
     message: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneEncryptionKmsStatusArgs:
@@ -194,7 +189,6 @@ class ClusterControlPlaneLocalArgsDict(TypedDict):
     node_count: NotRequired[pulumi.Input[_builtins.int]]
     node_location: NotRequired[pulumi.Input[_builtins.str]]
     shared_deployment_policy: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneLocalArgs:
@@ -231,7 +225,6 @@ class ClusterControlPlaneLocalArgs:
 
 class ClusterControlPlaneRemoteArgsDict(TypedDict):
     node_location: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterControlPlaneRemoteArgs:
@@ -247,7 +240,6 @@ class ClusterControlPlaneRemoteArgs:
 class ClusterFleetArgsDict(TypedDict):
     project: pulumi.Input[_builtins.str]
     membership: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterFleetArgs:
@@ -279,7 +271,6 @@ class ClusterMaintenanceEventArgsDict(TypedDict):
     type: NotRequired[pulumi.Input[_builtins.str]]
     update_time: NotRequired[pulumi.Input[_builtins.str]]
     uuid: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenanceEventArgs:
@@ -355,7 +346,6 @@ class ClusterMaintenancePolicyArgsDict(TypedDict):
             Sequence[pulumi.Input[ClusterMaintenancePolicyMaintenanceExclusionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyArgs:
@@ -398,7 +388,6 @@ class ClusterMaintenancePolicyMaintenanceExclusionArgsDict(TypedDict):
     window: NotRequired[
         pulumi.Input[ClusterMaintenancePolicyMaintenanceExclusionWindowArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyMaintenanceExclusionArgs:
@@ -433,7 +422,6 @@ class ClusterMaintenancePolicyMaintenanceExclusionArgs:
 class ClusterMaintenancePolicyMaintenanceExclusionWindowArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyMaintenanceExclusionWindowArgs:
@@ -458,7 +446,6 @@ class ClusterMaintenancePolicyWindowArgsDict(TypedDict):
     recurring_window: pulumi.Input[
         ClusterMaintenancePolicyWindowRecurringWindowArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyWindowArgs:
@@ -484,7 +471,6 @@ class ClusterMaintenancePolicyWindowRecurringWindowArgsDict(TypedDict):
     window: NotRequired[
         pulumi.Input[ClusterMaintenancePolicyWindowRecurringWindowWindowArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyWindowRecurringWindowArgs:
@@ -519,7 +505,6 @@ class ClusterMaintenancePolicyWindowRecurringWindowArgs:
 class ClusterMaintenancePolicyWindowRecurringWindowWindowArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterMaintenancePolicyWindowRecurringWindowWindowArgs:
@@ -550,7 +535,6 @@ class ClusterNetworkingArgsDict(TypedDict):
     services_ipv6_cidr_blocks: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ClusterNetworkingArgs:
@@ -611,7 +595,6 @@ class ClusterNetworkingArgs:
 
 class ClusterSystemAddonsConfigArgsDict(TypedDict):
     ingress: NotRequired[pulumi.Input[ClusterSystemAddonsConfigIngressArgsDict]]
-    ...
 
 @pulumi.input_type
 class ClusterSystemAddonsConfigArgs:
@@ -633,7 +616,6 @@ class ClusterSystemAddonsConfigArgs:
 class ClusterSystemAddonsConfigIngressArgsDict(TypedDict):
     disabled: NotRequired[pulumi.Input[_builtins.bool]]
     ipv4_vip: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClusterSystemAddonsConfigIngressArgs:
@@ -658,7 +640,6 @@ class NodePoolLocalDiskEncryptionArgsDict(TypedDict):
     kms_key: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_active_version: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NodePoolLocalDiskEncryptionArgs:
@@ -687,7 +668,6 @@ class NodePoolLocalDiskEncryptionArgs:
 
 class NodePoolNodeConfigArgsDict(TypedDict):
     labels: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class NodePoolNodeConfigArgs:
@@ -715,7 +695,6 @@ class VpnConnectionDetailArgsDict(TypedDict):
     ]
     error: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionDetailArgs:
@@ -772,7 +751,6 @@ class VpnConnectionDetailArgs:
 
 class VpnConnectionDetailCloudRouterArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionDetailCloudRouterArgs:
@@ -787,7 +765,6 @@ class VpnConnectionDetailCloudRouterArgs:
 
 class VpnConnectionDetailCloudVpnArgsDict(TypedDict):
     gateway: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionDetailCloudVpnArgs:
@@ -802,7 +779,6 @@ class VpnConnectionDetailCloudVpnArgs:
 
 class VpnConnectionVpcProjectArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class VpnConnectionVpcProjectArgs:

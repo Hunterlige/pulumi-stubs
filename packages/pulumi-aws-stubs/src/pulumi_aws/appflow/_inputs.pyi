@@ -245,7 +245,6 @@ class ConnectorProfileConnectorProfileConfigArgsDict(TypedDict):
     connector_profile_properties: pulumi.Input[
         ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigArgs:
@@ -381,7 +380,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgsDict(
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsArgs:
@@ -809,7 +807,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude
 ):
     api_key: pulumi.Input[_builtins.str]
     secret_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeArgs:
@@ -854,7 +851,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2ArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorArgs:
@@ -966,7 +962,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
 ):
     api_key: pulumi.Input[_builtins.str]
     api_secret_key: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyArgs:
@@ -992,7 +987,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicArgs:
@@ -1020,7 +1014,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
     credentials_map: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomArgs:
@@ -1059,7 +1052,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
         ]
     ]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2Args:
@@ -1120,7 +1112,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomCon
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestArgs:
@@ -1146,7 +1137,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogAr
 ):
     api_key: pulumi.Input[_builtins.str]
     application_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogArgs:
@@ -1171,7 +1161,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace
     TypedDict
 ):
     api_token: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceArgs:
@@ -1194,7 +1183,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAna
         ]
     ]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsArgs:
@@ -1255,7 +1243,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAna
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestArgs:
@@ -1286,7 +1273,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode
         ]
     ]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeArgs:
@@ -1335,7 +1321,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestArgs:
@@ -1363,7 +1348,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexu
     datakey: pulumi.Input[_builtins.str]
     secret_access_key: pulumi.Input[_builtins.str]
     user_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusArgs:
@@ -1407,7 +1391,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoAr
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoArgs:
@@ -1462,7 +1445,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOa
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestArgs:
@@ -1488,7 +1470,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftA
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftArgs:
@@ -1522,7 +1503,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforc
         ]
     ]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceArgs:
@@ -1589,7 +1569,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforc
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestArgs:
@@ -1623,7 +1602,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataA
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataArgs:
@@ -1683,7 +1661,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataB
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsArgs:
@@ -1716,7 +1693,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataO
         ]
     ]
     refresh_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsArgs:
@@ -1777,7 +1753,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataO
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestArgs:
@@ -1803,7 +1778,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNo
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowArgs:
@@ -1828,7 +1802,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularA
     TypedDict
 ):
     api_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularArgs:
@@ -1850,7 +1823,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgs
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackArgs:
@@ -1905,7 +1877,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOaut
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestArgs:
@@ -1931,7 +1902,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeArgs:
@@ -1956,7 +1926,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicr
     TypedDict
 ):
     api_secret_key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroArgs:
@@ -1972,7 +1941,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaArgs
 ):
     password: pulumi.Input[_builtins.str]
     username: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaArgs:
@@ -2004,7 +1972,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskAr
             ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskArgs:
@@ -2059,7 +2026,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOa
 ):
     auth_code: NotRequired[pulumi.Input[_builtins.str]]
     redirect_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestArgs:
@@ -2173,7 +2139,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgsDict(
             ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesArgs:
@@ -2615,7 +2580,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
     profile_properties: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorArgs:
@@ -2667,7 +2631,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConn
     token_url_custom_properties: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesArgs:
@@ -2704,7 +2667,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogArg
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogArgs:
@@ -2719,7 +2681,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceA
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceArgs:
@@ -2750,7 +2711,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusArgs:
@@ -2765,7 +2725,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoArg
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoArgs:
@@ -2786,7 +2745,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftAr
     data_api_role_arn: NotRequired[pulumi.Input[_builtins.str]]
     database_name: NotRequired[pulumi.Input[_builtins.str]]
     database_url: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftArgs:
@@ -2845,7 +2803,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce
     use_privatelink_for_metadata_and_authorization: NotRequired[
         pulumi.Input[_builtins.bool]
     ]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceArgs:
@@ -2892,7 +2849,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataAr
         ]
     ]
     private_link_service_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataArgs:
@@ -2968,7 +2924,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOa
     auth_code_url: pulumi.Input[_builtins.str]
     oauth_scopes: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     token_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesArgs:
@@ -3001,7 +2956,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowArgs:
@@ -3024,7 +2978,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackArgsD
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackArgs:
@@ -3045,7 +2998,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeA
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     private_link_service_name: NotRequired[pulumi.Input[_builtins.str]]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeArgs:
@@ -3110,7 +3062,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaArgsD
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaArgs:
@@ -3125,7 +3076,6 @@ class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArg
     TypedDict
 ):
     instance_url: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskArgs:
@@ -3143,7 +3093,6 @@ class FlowDestinationFlowConfigArgsDict(TypedDict):
     ]
     api_version: NotRequired[pulumi.Input[_builtins.str]]
     connector_profile_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigArgs:
@@ -3249,7 +3198,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesArgsDict(TypedDict)
             FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesArgs:
@@ -3561,7 +3509,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs
     ]
     id_field_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     write_operation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorArgs:
@@ -3635,7 +3582,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErro
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigArgs:
@@ -3671,7 +3617,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesArg
 ):
     domain_name: pulumi.Input[_builtins.str]
     object_type_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesArgs:
@@ -3701,7 +3646,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgsDict
             FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeArgs:
@@ -3745,7 +3689,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHan
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigArgs:
@@ -3785,7 +3728,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgsDict(
             FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeArgs:
@@ -3829,7 +3771,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandl
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigArgs:
@@ -3875,7 +3816,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoArgsDict(Typ
             FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoArgs:
@@ -3919,7 +3859,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlin
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigArgs:
@@ -3961,7 +3900,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgsDict(
             FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftArgs:
@@ -4017,7 +3955,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandli
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigArgs:
@@ -4056,7 +3993,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3ArgsDict(TypedDic
             FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3Args:
@@ -4115,7 +4051,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
         ]
     ]
     preserve_source_data_typing: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigArgs:
@@ -4189,7 +4124,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
 ):
     aggregation_type: NotRequired[pulumi.Input[_builtins.str]]
     target_file_size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigArgs:
@@ -4216,7 +4150,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatCon
     prefix_format: NotRequired[pulumi.Input[_builtins.str]]
     prefix_hierarchies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     prefix_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigArgs:
@@ -4261,7 +4194,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgsDict(
     ]
     id_field_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     write_operation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceArgs:
@@ -4329,7 +4261,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHand
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigArgs:
@@ -4376,7 +4307,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgsDict(
         ]
     ]
     write_operation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataArgs:
@@ -4461,7 +4391,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandli
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigArgs:
@@ -4497,7 +4426,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResp
 ):
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigArgs:
@@ -4529,7 +4457,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgsDict(
             FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeArgs:
@@ -4585,7 +4512,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandl
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigArgs:
@@ -4624,7 +4550,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgsDict(
         FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigArgsDict
     ]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverArgs:
@@ -4674,7 +4599,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
         ]
     ]
     file_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigArgs:
@@ -4733,7 +4657,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
     TypedDict
 ):
     aggregation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigArgs:
@@ -4752,7 +4675,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFor
     prefix_type: pulumi.Input[_builtins.str]
     prefix_format: NotRequired[pulumi.Input[_builtins.str]]
     prefix_hierarchies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigArgs:
@@ -4794,7 +4716,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgsDict(Typ
     ]
     id_field_names: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     write_operation_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskArgs:
@@ -4856,7 +4777,6 @@ class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlin
     bucket_name: NotRequired[pulumi.Input[_builtins.str]]
     bucket_prefix: NotRequired[pulumi.Input[_builtins.str]]
     fail_on_first_destination_error: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigArgs:
@@ -4891,7 +4811,6 @@ class FlowMetadataCatalogConfigArgsDict(TypedDict):
     glue_data_catalog: NotRequired[
         pulumi.Input[FlowMetadataCatalogConfigGlueDataCatalogArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlowMetadataCatalogConfigArgs:
@@ -4917,7 +4836,6 @@ class FlowMetadataCatalogConfigGlueDataCatalogArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
     role_arn: pulumi.Input[_builtins.str]
     table_prefix: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowMetadataCatalogConfigGlueDataCatalogArgs:
@@ -4954,7 +4872,6 @@ class FlowSourceFlowConfigArgsDict(TypedDict):
     incremental_pull_config: NotRequired[
         pulumi.Input[FlowSourceFlowConfigIncrementalPullConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigArgs:
@@ -5008,7 +4925,6 @@ class FlowSourceFlowConfigArgs:
 
 class FlowSourceFlowConfigIncrementalPullConfigArgsDict(TypedDict):
     datetime_type_field_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigIncrementalPullConfigArgs:
@@ -5078,7 +4994,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgsDict(TypedDict):
     zendesk: NotRequired[
         pulumi.Input[FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
@@ -5369,7 +5284,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesAmplitudeArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesAmplitudeArgs:
@@ -5385,7 +5299,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgsDict(Typed
     custom_properties: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgs:
@@ -5414,7 +5327,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgs:
@@ -5427,7 +5339,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesDatadogArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgs:
@@ -5440,7 +5351,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesDynatraceArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgs:
@@ -5453,7 +5363,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgs:
@@ -5466,7 +5375,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesInforNexusArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesMarketoArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesMarketoArgs:
@@ -5485,7 +5393,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesS3ArgsDict(TypedDict):
             FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesS3Args:
@@ -5533,7 +5440,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgsDict
     TypedDict
 ):
     s3_input_file_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigArgs:
@@ -5551,7 +5457,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSalesforceArgsDict(TypedDict)
     data_transfer_api: NotRequired[pulumi.Input[_builtins.str]]
     enable_dynamic_field_update: NotRequired[pulumi.Input[_builtins.bool]]
     include_deleted_records: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSalesforceArgs:
@@ -5600,7 +5505,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgsDict(TypedDict):
             FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataArgs:
@@ -5665,7 +5569,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigArgsD
     TypedDict
 ):
     max_page_size: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigArgs:
@@ -5680,7 +5583,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgs
     TypedDict
 ):
     max_page_size: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgs:
@@ -5693,7 +5595,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigArgs
 
 class FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgs:
@@ -5706,7 +5607,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesServiceNowArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSingularArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSingularArgs:
@@ -5719,7 +5619,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSingularArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesSlackArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesSlackArgs:
@@ -5732,7 +5631,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesSlackArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesTrendmicroArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesTrendmicroArgs:
@@ -5749,7 +5647,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgsDict(TypedDict):
     include_all_versions: NotRequired[pulumi.Input[_builtins.bool]]
     include_renditions: NotRequired[pulumi.Input[_builtins.bool]]
     include_source_files: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgs:
@@ -5790,7 +5687,6 @@ class FlowSourceFlowConfigSourceConnectorPropertiesVeevaArgs:
 
 class FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgsDict(TypedDict):
     object: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FlowSourceFlowConfigSourceConnectorPropertiesZendeskArgs:
@@ -5811,7 +5707,6 @@ class FlowTaskArgsDict(TypedDict):
     task_properties: NotRequired[
         pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class FlowTaskArgs:
@@ -5890,7 +5785,6 @@ class FlowTaskConnectorOperatorArgsDict(TypedDict):
     trendmicro: NotRequired[pulumi.Input[_builtins.str]]
     veeva: NotRequired[pulumi.Input[_builtins.str]]
     zendesk: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowTaskConnectorOperatorArgs:
@@ -6000,7 +5894,6 @@ class FlowTriggerConfigArgsDict(TypedDict):
     trigger_properties: NotRequired[
         pulumi.Input[FlowTriggerConfigTriggerPropertiesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlowTriggerConfigArgs:
@@ -6031,7 +5924,6 @@ class FlowTriggerConfigTriggerPropertiesArgsDict(TypedDict):
     scheduled: NotRequired[
         pulumi.Input[FlowTriggerConfigTriggerPropertiesScheduledArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class FlowTriggerConfigTriggerPropertiesArgs:
@@ -6061,7 +5953,6 @@ class FlowTriggerConfigTriggerPropertiesScheduledArgsDict(TypedDict):
     schedule_offset: NotRequired[pulumi.Input[_builtins.int]]
     schedule_start_time: NotRequired[pulumi.Input[_builtins.str]]
     timezone: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FlowTriggerConfigTriggerPropertiesScheduledArgs:

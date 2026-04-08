@@ -25,7 +25,6 @@ __all__ = [
 class MonitorLocalResourceArgsDict(TypedDict):
     identifier: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MonitorLocalResourceArgs:
@@ -49,7 +48,6 @@ class MonitorLocalResourceArgs:
 class MonitorRemoteResourceArgsDict(TypedDict):
     identifier: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MonitorRemoteResourceArgs:
@@ -74,7 +72,6 @@ class MonitorTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MonitorTimeoutsArgs:
@@ -104,7 +101,6 @@ class MonitorTimeoutsArgs:
 class ScopeTargetArgsDict(TypedDict):
     region: pulumi.Input[_builtins.str]
     target_identifier: pulumi.Input[ScopeTargetTargetIdentifierArgsDict]
-    ...
 
 @pulumi.input_type
 class ScopeTargetArgs:
@@ -130,7 +126,6 @@ class ScopeTargetArgs:
 class ScopeTargetTargetIdentifierArgsDict(TypedDict):
     target_id: pulumi.Input[ScopeTargetTargetIdentifierTargetIdArgsDict]
     target_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScopeTargetTargetIdentifierArgs:
@@ -155,7 +150,6 @@ class ScopeTargetTargetIdentifierArgs:
 
 class ScopeTargetTargetIdentifierTargetIdArgsDict(TypedDict):
     account_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ScopeTargetTargetIdentifierTargetIdArgs:
@@ -170,7 +164,6 @@ class ScopeTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ScopeTimeoutsArgs:

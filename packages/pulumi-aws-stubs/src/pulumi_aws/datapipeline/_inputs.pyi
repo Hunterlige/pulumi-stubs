@@ -27,7 +27,6 @@ class PipelineDefinitionParameterObjectArgsDict(TypedDict):
             Sequence[pulumi.Input[PipelineDefinitionParameterObjectAttributeArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineDefinitionParameterObjectArgs:
@@ -68,7 +67,6 @@ class PipelineDefinitionParameterObjectArgs:
 class PipelineDefinitionParameterObjectAttributeArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     string_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineDefinitionParameterObjectAttributeArgs:
@@ -92,7 +90,6 @@ class PipelineDefinitionParameterObjectAttributeArgs:
 class PipelineDefinitionParameterValueArgsDict(TypedDict):
     id: pulumi.Input[_builtins.str]
     string_value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class PipelineDefinitionParameterValueArgs:
@@ -121,7 +118,6 @@ class PipelineDefinitionPipelineObjectArgsDict(TypedDict):
             Sequence[pulumi.Input[PipelineDefinitionPipelineObjectFieldArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class PipelineDefinitionPipelineObjectArgs:
@@ -167,7 +163,6 @@ class PipelineDefinitionPipelineObjectFieldArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     ref_value: NotRequired[pulumi.Input[_builtins.str]]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PipelineDefinitionPipelineObjectFieldArgs:
@@ -197,7 +192,6 @@ class PipelineDefinitionPipelineObjectFieldArgs:
 class GetPipelineDefinitionParameterValueArgsDict(TypedDict):
     id: _builtins.str
     string_value: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetPipelineDefinitionParameterValueArgs:

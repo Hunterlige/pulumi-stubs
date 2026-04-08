@@ -52,7 +52,6 @@ class DefaultRouteTableAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultRouteTableAssociationTimeoutsArgs:
@@ -83,7 +82,6 @@ class DefaultRouteTablePropagationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DefaultRouteTablePropagationTimeoutsArgs:
@@ -113,7 +111,6 @@ class DefaultRouteTablePropagationTimeoutsArgs:
 class InstanceConnectEndpointTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceConnectEndpointTimeoutsArgs:
@@ -136,7 +133,6 @@ class InstanceConnectEndpointTimeoutsArgs:
 
 class PeeringAttachmentOptionsArgsDict(TypedDict):
     dynamic_routing: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PeeringAttachmentOptionsArgs:
@@ -152,7 +148,6 @@ class PeeringAttachmentOptionsArgs:
 class GetAttachmentFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAttachmentFilterArgs:
@@ -173,7 +168,6 @@ class GetAttachmentFilterArgs:
 class GetAttachmentsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetAttachmentsFilterArgs:
@@ -194,7 +188,6 @@ class GetAttachmentsFilterArgs:
 class GetConnectFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetConnectFilterArgs:
@@ -215,7 +208,6 @@ class GetConnectFilterArgs:
 class GetConnectPeerFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetConnectPeerFilterArgs:
@@ -236,7 +228,6 @@ class GetConnectPeerFilterArgs:
 class GetDirectConnectGatewayAttachmentFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetDirectConnectGatewayAttachmentFilterArgs:
@@ -257,7 +248,6 @@ class GetDirectConnectGatewayAttachmentFilterArgs:
 class GetMulticastDomainFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetMulticastDomainFilterArgs:
@@ -278,7 +268,6 @@ class GetMulticastDomainFilterArgs:
 class GetPeeringAttachmentFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPeeringAttachmentFilterArgs:
@@ -299,7 +288,6 @@ class GetPeeringAttachmentFilterArgs:
 class GetPeeringAttachmentsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetPeeringAttachmentsFilterArgs:
@@ -320,7 +308,6 @@ class GetPeeringAttachmentsFilterArgs:
 class GetRouteTableAssociationsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTableAssociationsFilterArgs:
@@ -341,7 +328,6 @@ class GetRouteTableAssociationsFilterArgs:
 class GetRouteTableFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTableFilterArgs:
@@ -362,7 +348,6 @@ class GetRouteTableFilterArgs:
 class GetRouteTablePropagationsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTablePropagationsFilterArgs:
@@ -383,7 +368,6 @@ class GetRouteTablePropagationsFilterArgs:
 class GetRouteTableRoutesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetRouteTableRoutesFilterArgs:
@@ -404,7 +388,6 @@ class GetRouteTableRoutesFilterArgs:
 class GetTransitGatewayFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetTransitGatewayFilterArgs:
@@ -425,7 +408,6 @@ class GetTransitGatewayFilterArgs:
 class GetVpcAttachmentFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcAttachmentFilterArgs:
@@ -446,7 +428,6 @@ class GetVpcAttachmentFilterArgs:
 class GetVpcAttachmentsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpcAttachmentsFilterArgs:
@@ -467,7 +448,6 @@ class GetVpcAttachmentsFilterArgs:
 class GetVpnAttachmentFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetVpnAttachmentFilterArgs:

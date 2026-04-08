@@ -91,7 +91,6 @@ __all__ = [
 class BitbucketServerConfigConnectedRepositoryArgsDict(TypedDict):
     project_key: pulumi.Input[_builtins.str]
     repo_slug: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BitbucketServerConfigConnectedRepositoryArgs:
@@ -116,7 +115,6 @@ class BitbucketServerConfigSecretsArgsDict(TypedDict):
     admin_access_token_version_name: pulumi.Input[_builtins.str]
     read_access_token_version_name: pulumi.Input[_builtins.str]
     webhook_secret_version_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class BitbucketServerConfigSecretsArgs:
@@ -145,7 +143,6 @@ class BitbucketServerConfigSecretsArgs:
 
 class TriggerApprovalConfigArgsDict(TypedDict):
     approval_required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TriggerApprovalConfigArgs:
@@ -166,7 +163,6 @@ class TriggerBitbucketServerTriggerConfigArgsDict(TypedDict):
         pulumi.Input[TriggerBitbucketServerTriggerConfigPullRequestArgsDict]
     ]
     push: NotRequired[pulumi.Input[TriggerBitbucketServerTriggerConfigPushArgsDict]]
-    ...
 
 @pulumi.input_type
 class TriggerBitbucketServerTriggerConfigArgs:
@@ -222,7 +218,6 @@ class TriggerBitbucketServerTriggerConfigPullRequestArgsDict(TypedDict):
     branch: pulumi.Input[_builtins.str]
     comment_control: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TriggerBitbucketServerTriggerConfigPullRequestArgs:
@@ -253,7 +248,6 @@ class TriggerBitbucketServerTriggerConfigPushArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBitbucketServerTriggerConfigPushArgs:
@@ -295,7 +289,6 @@ class TriggerBuildArgsDict(TypedDict):
     substitutions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     tags: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     timeout: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArgs:
@@ -415,7 +408,6 @@ class TriggerBuildArtifactsArgsDict(TypedDict):
     python_packages: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TriggerBuildArtifactsPythonPackageArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsArgs:
@@ -499,7 +491,6 @@ class TriggerBuildArtifactsMavenArtifactArgsDict(TypedDict):
     path: NotRequired[pulumi.Input[_builtins.str]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsMavenArtifactArgs:
@@ -541,7 +532,6 @@ class TriggerBuildArtifactsMavenArtifactArgs:
 class TriggerBuildArtifactsNpmPackageArgsDict(TypedDict):
     package_path: NotRequired[pulumi.Input[_builtins.str]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsNpmPackageArgs:
@@ -568,7 +558,6 @@ class TriggerBuildArtifactsObjectsArgsDict(TypedDict):
     timings: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[TriggerBuildArtifactsObjectsTimingArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsObjectsArgs:
@@ -613,7 +602,6 @@ class TriggerBuildArtifactsObjectsArgs:
 class TriggerBuildArtifactsObjectsTimingArgsDict(TypedDict):
     end_time: NotRequired[pulumi.Input[_builtins.str]]
     start_time: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsObjectsTimingArgs:
@@ -637,7 +625,6 @@ class TriggerBuildArtifactsObjectsTimingArgs:
 class TriggerBuildArtifactsPythonPackageArgsDict(TypedDict):
     paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildArtifactsPythonPackageArgs:
@@ -666,7 +653,6 @@ class TriggerBuildAvailableSecretsArgsDict(TypedDict):
     secret_managers: pulumi.Input[
         Sequence[pulumi.Input[TriggerBuildAvailableSecretsSecretManagerArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TriggerBuildAvailableSecretsArgs:
@@ -695,7 +681,6 @@ class TriggerBuildAvailableSecretsArgs:
 class TriggerBuildAvailableSecretsSecretManagerArgsDict(TypedDict):
     env: pulumi.Input[_builtins.str]
     version_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TriggerBuildAvailableSecretsSecretManagerArgs:
@@ -733,7 +718,6 @@ class TriggerBuildOptionsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[TriggerBuildOptionsVolumeArgsDict]]]
     ]
     worker_pool: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildOptionsArgs:
@@ -842,7 +826,6 @@ class TriggerBuildOptionsArgs:
 class TriggerBuildOptionsVolumeArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     path: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildOptionsVolumeArgs:
@@ -866,7 +849,6 @@ class TriggerBuildOptionsVolumeArgs:
 class TriggerBuildSecretArgsDict(TypedDict):
     kms_key_name: pulumi.Input[_builtins.str]
     secret_env: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildSecretArgs:
@@ -896,7 +878,6 @@ class TriggerBuildSecretArgs:
 class TriggerBuildSourceArgsDict(TypedDict):
     repo_source: NotRequired[pulumi.Input[TriggerBuildSourceRepoSourceArgsDict]]
     storage_source: NotRequired[pulumi.Input[TriggerBuildSourceStorageSourceArgsDict]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildSourceArgs:
@@ -936,7 +917,6 @@ class TriggerBuildSourceRepoSourceArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     substitutions: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     tag_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildSourceRepoSourceArgs:
@@ -1003,7 +983,6 @@ class TriggerBuildSourceStorageSourceArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     object: pulumi.Input[_builtins.str]
     generation: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildSourceStorageSourceArgs:
@@ -1047,7 +1026,6 @@ class TriggerBuildStepArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[TriggerBuildStepVolumeArgsDict]]]
     ]
     wait_fors: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TriggerBuildStepArgs:
@@ -1172,7 +1150,6 @@ class TriggerBuildStepArgs:
 class TriggerBuildStepVolumeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TriggerBuildStepVolumeArgs:
@@ -1200,7 +1177,6 @@ class TriggerDeveloperConnectEventConfigArgsDict(TypedDict):
         pulumi.Input[TriggerDeveloperConnectEventConfigPullRequestArgsDict]
     ]
     push: NotRequired[pulumi.Input[TriggerDeveloperConnectEventConfigPushArgsDict]]
-    ...
 
 @pulumi.input_type
 class TriggerDeveloperConnectEventConfigArgs:
@@ -1252,7 +1228,6 @@ class TriggerDeveloperConnectEventConfigPullRequestArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     comment_control: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TriggerDeveloperConnectEventConfigPullRequestArgs:
@@ -1283,7 +1258,6 @@ class TriggerDeveloperConnectEventConfigPushArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerDeveloperConnectEventConfigPushArgs:
@@ -1318,7 +1292,6 @@ class TriggerGitFileSourceArgsDict(TypedDict):
     repository: NotRequired[pulumi.Input[_builtins.str]]
     revision: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerGitFileSourceArgs:
@@ -1377,7 +1350,6 @@ class TriggerGithubArgsDict(TypedDict):
     owner: NotRequired[pulumi.Input[_builtins.str]]
     pull_request: NotRequired[pulumi.Input[TriggerGithubPullRequestArgsDict]]
     push: NotRequired[pulumi.Input[TriggerGithubPushArgsDict]]
-    ...
 
 @pulumi.input_type
 class TriggerGithubArgs:
@@ -1426,7 +1398,6 @@ class TriggerGithubPullRequestArgsDict(TypedDict):
     branch: pulumi.Input[_builtins.str]
     comment_control: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TriggerGithubPullRequestArgs:
@@ -1457,7 +1428,6 @@ class TriggerGithubPushArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerGithubPushArgs:
@@ -1489,7 +1459,6 @@ class TriggerPubsubConfigArgsDict(TypedDict):
     service_account_email: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     subscription: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerPubsubConfigArgs:
@@ -1528,7 +1497,6 @@ class TriggerRepositoryEventConfigArgsDict(TypedDict):
     ]
     push: NotRequired[pulumi.Input[TriggerRepositoryEventConfigPushArgsDict]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerRepositoryEventConfigArgs:
@@ -1567,7 +1535,6 @@ class TriggerRepositoryEventConfigPullRequestArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     comment_control: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TriggerRepositoryEventConfigPullRequestArgs:
@@ -1598,7 +1565,6 @@ class TriggerRepositoryEventConfigPushArgsDict(TypedDict):
     branch: NotRequired[pulumi.Input[_builtins.str]]
     invert_regex: NotRequired[pulumi.Input[_builtins.bool]]
     tag: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerRepositoryEventConfigPushArgs:
@@ -1632,7 +1598,6 @@ class TriggerSourceToBuildArgsDict(TypedDict):
     github_enterprise_config: NotRequired[pulumi.Input[_builtins.str]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
     uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerSourceToBuildArgs:
@@ -1687,7 +1652,6 @@ class TriggerTriggerTemplateArgsDict(TypedDict):
     project_id: NotRequired[pulumi.Input[_builtins.str]]
     repo_name: NotRequired[pulumi.Input[_builtins.str]]
     tag_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerTriggerTemplateArgs:
@@ -1741,7 +1705,6 @@ class TriggerTriggerTemplateArgs:
 class TriggerWebhookConfigArgsDict(TypedDict):
     secret: pulumi.Input[_builtins.str]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerWebhookConfigArgs:
@@ -1765,7 +1728,6 @@ class TriggerWebhookConfigArgs:
 class WorkerPoolNetworkConfigArgsDict(TypedDict):
     peered_network: pulumi.Input[_builtins.str]
     peered_network_ip_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkerPoolNetworkConfigArgs:
@@ -1789,7 +1751,6 @@ class WorkerPoolNetworkConfigArgs:
 class WorkerPoolPrivateServiceConnectArgsDict(TypedDict):
     network_attachment: pulumi.Input[_builtins.str]
     route_all_traffic: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkerPoolPrivateServiceConnectArgs:
@@ -1815,7 +1776,6 @@ class WorkerPoolWorkerConfigArgsDict(TypedDict):
     enable_nested_virtualization: NotRequired[pulumi.Input[_builtins.bool]]
     machine_type: NotRequired[pulumi.Input[_builtins.str]]
     no_external_ip: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkerPoolWorkerConfigArgs:

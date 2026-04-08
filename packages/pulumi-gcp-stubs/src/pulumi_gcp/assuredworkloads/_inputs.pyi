@@ -31,7 +31,6 @@ class WorkloadComplianceStatusArgsDict(TypedDict):
     active_violation_counts: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
     ]
-    ...
 
 @pulumi.input_type
 class WorkloadComplianceStatusArgs:
@@ -68,7 +67,6 @@ class WorkloadEkmProvisioningResponseArgsDict(TypedDict):
     ekm_provisioning_error_domain: NotRequired[pulumi.Input[_builtins.str]]
     ekm_provisioning_error_mapping: NotRequired[pulumi.Input[_builtins.str]]
     ekm_provisioning_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadEkmProvisioningResponseArgs:
@@ -106,7 +104,6 @@ class WorkloadEkmProvisioningResponseArgs:
 class WorkloadKmsSettingsArgsDict(TypedDict):
     next_rotation_time: pulumi.Input[_builtins.str]
     rotation_period: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WorkloadKmsSettingsArgs:
@@ -131,7 +128,6 @@ class WorkloadPartnerPermissionsArgsDict(TypedDict):
     assured_workloads_monitoring: NotRequired[pulumi.Input[_builtins.bool]]
     data_logs_viewer: NotRequired[pulumi.Input[_builtins.bool]]
     service_access_approver: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WorkloadPartnerPermissionsArgs:
@@ -167,7 +163,6 @@ class WorkloadPartnerPermissionsArgs:
 class WorkloadResourceArgsDict(TypedDict):
     resource_id: NotRequired[pulumi.Input[_builtins.int]]
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadResourceArgs:
@@ -192,7 +187,6 @@ class WorkloadResourceSettingArgsDict(TypedDict):
     display_name: NotRequired[pulumi.Input[_builtins.str]]
     resource_id: NotRequired[pulumi.Input[_builtins.str]]
     resource_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadResourceSettingArgs:
@@ -222,7 +216,6 @@ class WorkloadResourceSettingArgs:
 class WorkloadSaaEnrollmentResponseArgsDict(TypedDict):
     setup_errors: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     setup_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadSaaEnrollmentResponseArgs:
@@ -251,7 +244,6 @@ class WorkloadSaaEnrollmentResponseArgs:
 
 class WorkloadWorkloadOptionsArgsDict(TypedDict):
     kaj_enrollment_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WorkloadWorkloadOptionsArgs:

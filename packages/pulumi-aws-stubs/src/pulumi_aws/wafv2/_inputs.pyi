@@ -2006,7 +2006,6 @@ __all__ = [
 
 class RegexPatternSetRegularExpressionArgsDict(TypedDict):
     regex_string: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RegexPatternSetRegularExpressionArgs:
@@ -2021,7 +2020,6 @@ class RuleGroupCustomResponseBodyArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupCustomResponseBodyArgs:
@@ -2058,7 +2056,6 @@ class RuleGroupRuleArgsDict(TypedDict):
     rule_labels: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleRuleLabelArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleArgs:
@@ -2130,7 +2127,6 @@ class RuleGroupRuleActionArgsDict(TypedDict):
     captcha: NotRequired[pulumi.Input[RuleGroupRuleActionCaptchaArgsDict]]
     challenge: NotRequired[pulumi.Input[RuleGroupRuleActionChallengeArgsDict]]
     count: NotRequired[pulumi.Input[RuleGroupRuleActionCountArgsDict]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionArgs:
@@ -2177,7 +2173,6 @@ class RuleGroupRuleActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[RuleGroupRuleActionAllowCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionAllowArgs:
@@ -2209,7 +2204,6 @@ class RuleGroupRuleActionAllowCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionAllowCustomRequestHandlingArgs:
@@ -2248,7 +2242,6 @@ class RuleGroupRuleActionAllowCustomRequestHandlingArgs:
 class RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderArgs:
@@ -2273,7 +2266,6 @@ class RuleGroupRuleActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
         pulumi.Input[RuleGroupRuleActionBlockCustomResponseArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionBlockArgs:
@@ -2306,7 +2298,6 @@ class RuleGroupRuleActionBlockCustomResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionBlockCustomResponseArgs:
@@ -2365,7 +2356,6 @@ class RuleGroupRuleActionBlockCustomResponseArgs:
 class RuleGroupRuleActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionBlockCustomResponseResponseHeaderArgs:
@@ -2390,7 +2380,6 @@ class RuleGroupRuleActionCaptchaArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[RuleGroupRuleActionCaptchaCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCaptchaArgs:
@@ -2424,7 +2413,6 @@ class RuleGroupRuleActionCaptchaCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCaptchaCustomRequestHandlingArgs:
@@ -2465,7 +2453,6 @@ class RuleGroupRuleActionCaptchaCustomRequestHandlingArgs:
 class RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -2490,7 +2477,6 @@ class RuleGroupRuleActionChallengeArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[RuleGroupRuleActionChallengeCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionChallengeArgs:
@@ -2524,7 +2510,6 @@ class RuleGroupRuleActionChallengeCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionChallengeCustomRequestHandlingArgs:
@@ -2565,7 +2550,6 @@ class RuleGroupRuleActionChallengeCustomRequestHandlingArgs:
 class RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -2590,7 +2574,6 @@ class RuleGroupRuleActionCountArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[RuleGroupRuleActionCountCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCountArgs:
@@ -2622,7 +2605,6 @@ class RuleGroupRuleActionCountCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCountCustomRequestHandlingArgs:
@@ -2661,7 +2643,6 @@ class RuleGroupRuleActionCountCustomRequestHandlingArgs:
 class RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderArgs:
@@ -2686,7 +2667,6 @@ class RuleGroupRuleCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
         pulumi.Input[RuleGroupRuleCaptchaConfigImmunityTimePropertyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleCaptchaConfigArgs:
@@ -2712,7 +2692,6 @@ class RuleGroupRuleCaptchaConfigArgs:
 
 class RuleGroupRuleCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleCaptchaConfigImmunityTimePropertyArgs:
@@ -2727,7 +2706,6 @@ class RuleGroupRuleCaptchaConfigImmunityTimePropertyArgs:
 
 class RuleGroupRuleRuleLabelArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleRuleLabelArgs:
@@ -2775,7 +2753,6 @@ class RuleGroupRuleStatementArgsDict(TypedDict):
     xss_match_statement: NotRequired[
         pulumi.Input[RuleGroupRuleStatementXssMatchStatementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementArgs:
@@ -2970,7 +2947,6 @@ class RuleGroupRuleStatementArgs:
 
 class RuleGroupRuleStatementAndStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementAndStatementArgs:
@@ -2994,7 +2970,6 @@ class RuleGroupRuleStatementAsnMatchStatementArgsDict(TypedDict):
     forwarded_ip_config: NotRequired[
         pulumi.Input[RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementAsnMatchStatementArgs:
@@ -3029,7 +3004,6 @@ class RuleGroupRuleStatementAsnMatchStatementArgs:
 class RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementAsnMatchStatementForwardedIpConfigArgs:
@@ -3063,7 +3037,6 @@ class RuleGroupRuleStatementByteMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[RuleGroupRuleStatementByteMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementArgs:
@@ -3203,7 +3176,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgsDict(TypedDict):
             RuleGroupRuleStatementByteMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchArgs:
@@ -3550,7 +3522,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchBodyArgs:
@@ -3573,7 +3544,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesArgsDict(TypedD
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesArgs:
@@ -3633,7 +3603,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArg
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -3703,7 +3672,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderArgsDict(TypedDi
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderArgs:
@@ -3751,7 +3719,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -3819,7 +3786,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgsDict(
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
@@ -3836,7 +3802,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -3853,7 +3818,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -3873,7 +3837,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(Typed
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs:
@@ -3928,7 +3891,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAr
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -3998,7 +3960,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
@@ -4013,7 +3974,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArg
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -4028,7 +3988,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs:
@@ -4052,7 +4011,6 @@ class RuleGroupRuleStatementByteMatchStatementFieldToMatchUriPathArgs:
 class RuleGroupRuleStatementByteMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementByteMatchStatementTextTransformationArgs:
@@ -4078,7 +4036,6 @@ class RuleGroupRuleStatementGeoMatchStatementArgsDict(TypedDict):
     forwarded_ip_config: NotRequired[
         pulumi.Input[RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementGeoMatchStatementArgs:
@@ -4115,7 +4072,6 @@ class RuleGroupRuleStatementGeoMatchStatementArgs:
 class RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigArgs:
@@ -4143,7 +4099,6 @@ class RuleGroupRuleStatementIpSetReferenceStatementArgsDict(TypedDict):
             RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementIpSetReferenceStatementArgs:
@@ -4187,7 +4142,6 @@ class RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDic
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
@@ -4217,7 +4171,6 @@ class RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
 class RuleGroupRuleStatementLabelMatchStatementArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementLabelMatchStatementArgs:
@@ -4240,7 +4193,6 @@ class RuleGroupRuleStatementLabelMatchStatementArgs:
 
 class RuleGroupRuleStatementNotStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementNotStatementArgs:
@@ -4261,7 +4213,6 @@ class RuleGroupRuleStatementNotStatementArgs:
 
 class RuleGroupRuleStatementOrStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementOrStatementArgs:
@@ -4297,7 +4248,6 @@ class RuleGroupRuleStatementRateBasedStatementArgsDict(TypedDict):
     scope_down_statement: NotRequired[
         pulumi.Input[RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementArgs:
@@ -4438,7 +4388,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyArgs:
@@ -4700,7 +4649,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieArgs:
@@ -4749,7 +4697,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieTextTransformationA
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgs:
@@ -4787,7 +4734,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderArgsDict(TypedDict)
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderArgs:
@@ -4836,7 +4782,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationA
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgs:
@@ -4875,7 +4820,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs:
@@ -4892,7 +4836,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs:
@@ -4909,7 +4852,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgsDict(
     TypedDict
 ):
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs:
@@ -4929,7 +4871,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgsDict(Typ
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
@@ -4978,7 +4919,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransfor
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformationArgs:
@@ -5007,7 +4947,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringArgs:
@@ -5050,7 +4989,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringTextTransforma
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformationArgs:
@@ -5079,7 +5017,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgsDict(TypedDict
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathArgs:
@@ -5122,7 +5059,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathTextTransformation
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArgs:
@@ -5146,7 +5082,6 @@ class RuleGroupRuleStatementRateBasedStatementCustomKeyUriPathTextTransformation
 class RuleGroupRuleStatementRateBasedStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementForwardedIpConfigArgs:
@@ -5233,7 +5168,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgsDict(TypedDi
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementArgs:
@@ -5545,7 +5479,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs:
@@ -5573,7 +5506,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatemen
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgs:
@@ -5616,7 +5548,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatemen
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs:
@@ -5654,7 +5585,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgs:
@@ -5808,7 +5738,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgs:
@@ -6175,7 +6104,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs:
@@ -6200,7 +6128,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs:
@@ -6260,7 +6187,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -6332,7 +6258,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderArgs:
@@ -6380,7 +6305,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -6448,7 +6372,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
@@ -6465,7 +6388,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -6482,7 +6404,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -6504,7 +6425,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs:
@@ -6559,7 +6479,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -6631,7 +6550,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
@@ -6646,7 +6564,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -6661,7 +6578,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs:
@@ -6687,7 +6603,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStateme
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformationArgs:
@@ -6717,7 +6632,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatemen
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgs:
@@ -6762,7 +6676,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatemen
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs:
@@ -6792,7 +6705,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceSt
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgs:
@@ -6836,7 +6748,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceSt
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
@@ -6868,7 +6779,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatem
 ):
     key: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgs:
@@ -6893,7 +6803,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs:
@@ -6916,7 +6825,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementArgsD
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[RuleGroupRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs:
@@ -6951,7 +6859,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgs:
@@ -7099,7 +7006,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs:
@@ -7466,7 +7372,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs:
@@ -7491,7 +7396,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs:
@@ -7551,7 +7455,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -7623,7 +7526,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderArgs:
@@ -7671,7 +7573,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -7739,7 +7640,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
@@ -7756,7 +7656,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -7773,7 +7672,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -7795,7 +7693,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
@@ -7850,7 +7747,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -7922,7 +7818,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
@@ -7937,7 +7832,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -7952,7 +7846,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
@@ -7978,7 +7871,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatem
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementTextTransformationArgs:
@@ -8015,7 +7907,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgs:
@@ -8163,7 +8054,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
@@ -8530,7 +8420,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
@@ -8555,7 +8444,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs:
@@ -8615,7 +8503,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgs:
@@ -8687,7 +8574,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs:
@@ -8735,7 +8621,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs:
@@ -8803,7 +8688,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderArgs:
@@ -8820,7 +8704,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs:
@@ -8837,7 +8720,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs:
@@ -8859,7 +8741,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs:
@@ -8914,7 +8795,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -8986,7 +8866,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs:
@@ -9001,7 +8880,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs:
@@ -9016,7 +8894,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs:
@@ -9042,7 +8919,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetR
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationArgs:
@@ -9080,7 +8956,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgs:
@@ -9234,7 +9109,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs:
@@ -9601,7 +9475,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs:
@@ -9626,7 +9499,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs:
@@ -9686,7 +9558,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgs:
@@ -9758,7 +9629,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderArgs:
@@ -9806,7 +9676,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs:
@@ -9874,7 +9743,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
@@ -9891,7 +9759,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
@@ -9908,7 +9775,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
@@ -9930,7 +9796,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
@@ -9985,7 +9850,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -10057,7 +9921,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
@@ -10072,7 +9935,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs:
@@ -10087,7 +9949,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
@@ -10113,7 +9974,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintSt
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationArgs:
@@ -10150,7 +10010,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
         ]
     ]
     sensitivity_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgs:
@@ -10298,7 +10157,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs:
@@ -10665,7 +10523,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs:
@@ -10690,7 +10547,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs:
@@ -10750,7 +10606,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -10822,7 +10677,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderArgs:
@@ -10870,7 +10724,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -10938,7 +10791,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
@@ -10955,7 +10807,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -10972,7 +10823,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -10994,7 +10844,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
@@ -11049,7 +10898,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -11121,7 +10969,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
@@ -11136,7 +10983,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -11151,7 +10997,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
@@ -11177,7 +11022,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStateme
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationArgs:
@@ -11213,7 +11057,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgs:
@@ -11355,7 +11198,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
             RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgs:
@@ -11722,7 +11564,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs:
@@ -11747,7 +11588,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs:
@@ -11807,7 +11647,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -11879,7 +11718,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderArgs:
@@ -11927,7 +11765,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -11995,7 +11832,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
@@ -12012,7 +11848,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -12029,7 +11864,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -12051,7 +11885,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs:
@@ -12106,7 +11939,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -12178,7 +12010,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
@@ -12193,7 +12024,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -12208,7 +12038,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs:
@@ -12234,7 +12063,6 @@ class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatemen
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationArgs:
@@ -12267,7 +12095,6 @@ class RuleGroupRuleStatementRegexMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementArgs:
@@ -12405,7 +12232,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgsDict(TypedDict):
             RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchArgs:
@@ -12756,7 +12582,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs
 
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchBodyArgs:
@@ -12779,7 +12604,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesArgsDict(Typed
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesArgs:
@@ -12839,7 +12663,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAr
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -12909,7 +12732,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderArgsDict(TypedD
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderArgs:
@@ -12957,7 +12779,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArg
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -13025,7 +12846,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgsDict(
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
@@ -13042,7 +12862,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDic
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -13059,7 +12878,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDic
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -13079,7 +12897,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(Type
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
@@ -13134,7 +12951,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternA
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -13206,7 +13022,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
@@ -13221,7 +13036,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentAr
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -13236,7 +13050,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
@@ -13260,7 +13073,6 @@ class RuleGroupRuleStatementRegexMatchStatementFieldToMatchUriPathArgs:
 class RuleGroupRuleStatementRegexMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexMatchStatementTextTransformationArgs:
@@ -13295,7 +13107,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgsDict(TypedDict)
             RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementArgs:
@@ -13443,7 +13254,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDic
             RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
@@ -13810,7 +13620,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArg
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
@@ -13835,7 +13644,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs:
@@ -13895,7 +13703,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookies
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgs:
@@ -13967,7 +13774,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderA
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs:
@@ -14015,7 +13821,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderM
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs:
@@ -14083,7 +13888,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderO
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderArgs:
@@ -14100,7 +13904,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fing
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs:
@@ -14117,7 +13920,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fing
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs:
@@ -14139,7 +13941,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBod
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs:
@@ -14194,7 +13995,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBod
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -14266,7 +14066,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleH
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs:
@@ -14281,7 +14080,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQ
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs:
@@ -14296,7 +14094,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFrag
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs:
@@ -14322,7 +14119,6 @@ class RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationA
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementRegexPatternSetReferenceStatementTextTransformationArgs:
@@ -14356,7 +14152,6 @@ class RuleGroupRuleStatementSizeConstraintStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementArgs:
@@ -14502,7 +14297,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgsDict(TypedDic
             RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchArgs:
@@ -14865,7 +14659,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArguments
 
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBodyArgs:
@@ -14890,7 +14683,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs:
@@ -14950,7 +14742,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatte
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgs:
@@ -15022,7 +14813,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderArgsDict(
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderArgs:
@@ -15070,7 +14860,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatter
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs:
@@ -15138,7 +14927,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgsDi
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
@@ -15155,7 +14943,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArg
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
@@ -15172,7 +14959,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArg
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
@@ -15194,7 +14980,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
@@ -15249,7 +15034,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatt
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -15321,7 +15105,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgsD
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
@@ -15336,7 +15119,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgume
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs:
@@ -15351,7 +15133,6 @@ class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDi
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
@@ -15377,7 +15158,6 @@ class RuleGroupRuleStatementSizeConstraintStatementTextTransformationArgsDict(
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSizeConstraintStatementTextTransformationArgs:
@@ -15410,7 +15190,6 @@ class RuleGroupRuleStatementSqliMatchStatementArgsDict(TypedDict):
         pulumi.Input[RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgsDict]
     ]
     sensitivity_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementArgs:
@@ -15544,7 +15323,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgsDict(TypedDict):
             RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchArgs:
@@ -15891,7 +15669,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchBodyArgs:
@@ -15914,7 +15691,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesArgsDict(TypedD
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesArgs:
@@ -15974,7 +15750,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArg
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -16044,7 +15819,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderArgsDict(TypedDi
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderArgs:
@@ -16092,7 +15866,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -16160,7 +15933,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgsDict(
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
@@ -16177,7 +15949,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -16194,7 +15965,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -16214,7 +15984,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(Typed
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
@@ -16269,7 +16038,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAr
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -16339,7 +16107,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
@@ -16354,7 +16121,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArg
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -16369,7 +16135,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
@@ -16393,7 +16158,6 @@ class RuleGroupRuleStatementSqliMatchStatementFieldToMatchUriPathArgs:
 class RuleGroupRuleStatementSqliMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementSqliMatchStatementTextTransformationArgs:
@@ -16425,7 +16189,6 @@ class RuleGroupRuleStatementXssMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementArgs:
@@ -16549,7 +16312,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchArgs:
@@ -16884,7 +16646,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchBodyArgs:
@@ -16907,7 +16668,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesArgsDict(TypedDi
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesArgs:
@@ -16967,7 +16727,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -17037,7 +16796,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderArgsDict(TypedDic
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderArgs:
@@ -17085,7 +16843,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsD
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -17151,7 +16908,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllAr
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgsDict(TypedDict):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
@@ -17168,7 +16924,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -17185,7 +16940,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -17205,7 +16959,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(TypedD
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs:
@@ -17260,7 +17013,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArg
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -17330,7 +17082,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgsDict(
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
@@ -17345,7 +17096,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -17358,7 +17108,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs
 
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs:
@@ -17380,7 +17129,6 @@ class RuleGroupRuleStatementXssMatchStatementFieldToMatchUriPathArgs:
 class RuleGroupRuleStatementXssMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleStatementXssMatchStatementTextTransformationArgs:
@@ -17405,7 +17153,6 @@ class RuleGroupRuleVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
     metric_name: pulumi.Input[_builtins.str]
     sampled_requests_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RuleGroupRuleVisibilityConfigArgs:
@@ -17436,7 +17183,6 @@ class RuleGroupVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
     metric_name: pulumi.Input[_builtins.str]
     sampled_requests_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class RuleGroupVisibilityConfigArgs:
@@ -17467,7 +17213,6 @@ class WebAclAssociationConfigArgsDict(TypedDict):
     request_bodies: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WebAclAssociationConfigRequestBodyArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigArgs:
@@ -17509,7 +17254,6 @@ class WebAclAssociationConfigRequestBodyArgsDict(TypedDict):
     verified_access_instance: NotRequired[
         pulumi.Input[WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyArgs:
@@ -17597,7 +17341,6 @@ class WebAclAssociationConfigRequestBodyArgs:
 
 class WebAclAssociationConfigRequestBodyApiGatewayArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyApiGatewayArgs:
@@ -17612,7 +17355,6 @@ class WebAclAssociationConfigRequestBodyApiGatewayArgs:
 
 class WebAclAssociationConfigRequestBodyAppRunnerServiceArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyAppRunnerServiceArgs:
@@ -17627,7 +17369,6 @@ class WebAclAssociationConfigRequestBodyAppRunnerServiceArgs:
 
 class WebAclAssociationConfigRequestBodyCloudfrontArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyCloudfrontArgs:
@@ -17642,7 +17383,6 @@ class WebAclAssociationConfigRequestBodyCloudfrontArgs:
 
 class WebAclAssociationConfigRequestBodyCognitoUserPoolArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyCognitoUserPoolArgs:
@@ -17657,7 +17397,6 @@ class WebAclAssociationConfigRequestBodyCognitoUserPoolArgs:
 
 class WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgsDict(TypedDict):
     default_size_inspection_limit: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclAssociationConfigRequestBodyVerifiedAccessInstanceArgs:
@@ -17674,7 +17413,6 @@ class WebAclCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
         pulumi.Input[WebAclCaptchaConfigImmunityTimePropertyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclCaptchaConfigArgs:
@@ -17697,7 +17435,6 @@ class WebAclCaptchaConfigArgs:
 
 class WebAclCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WebAclCaptchaConfigImmunityTimePropertyArgs:
@@ -17714,7 +17451,6 @@ class WebAclChallengeConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
         pulumi.Input[WebAclChallengeConfigImmunityTimePropertyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclChallengeConfigArgs:
@@ -17738,7 +17474,6 @@ class WebAclChallengeConfigArgs:
 
 class WebAclChallengeConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WebAclChallengeConfigImmunityTimePropertyArgs:
@@ -17755,7 +17490,6 @@ class WebAclCustomResponseBodyArgsDict(TypedDict):
     content: pulumi.Input[_builtins.str]
     content_type: pulumi.Input[_builtins.str]
     key: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclCustomResponseBodyArgs:
@@ -17788,7 +17522,6 @@ class WebAclDataProtectionConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[WebAclDataProtectionConfigDataProtectionArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclDataProtectionConfigArgs:
@@ -17825,7 +17558,6 @@ class WebAclDataProtectionConfigDataProtectionArgsDict(TypedDict):
     field: pulumi.Input[WebAclDataProtectionConfigDataProtectionFieldArgsDict]
     exclude_rate_based_details: NotRequired[pulumi.Input[_builtins.bool]]
     exclude_rule_match_details: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WebAclDataProtectionConfigDataProtectionArgs:
@@ -17869,7 +17601,6 @@ class WebAclDataProtectionConfigDataProtectionArgs:
 class WebAclDataProtectionConfigDataProtectionFieldArgsDict(TypedDict):
     field_type: pulumi.Input[_builtins.str]
     field_keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclDataProtectionConfigDataProtectionFieldArgs:
@@ -17897,7 +17628,6 @@ class WebAclDataProtectionConfigDataProtectionFieldArgs:
 class WebAclDefaultActionArgsDict(TypedDict):
     allow: NotRequired[pulumi.Input[WebAclDefaultActionAllowArgsDict]]
     block: NotRequired[pulumi.Input[WebAclDefaultActionBlockArgsDict]]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionArgs:
@@ -17922,7 +17652,6 @@ class WebAclDefaultActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[WebAclDefaultActionAllowCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionAllowArgs:
@@ -17954,7 +17683,6 @@ class WebAclDefaultActionAllowCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionAllowCustomRequestHandlingArgs:
@@ -17993,7 +17721,6 @@ class WebAclDefaultActionAllowCustomRequestHandlingArgs:
 class WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderArgs:
@@ -18018,7 +17745,6 @@ class WebAclDefaultActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
         pulumi.Input[WebAclDefaultActionBlockCustomResponseArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionBlockArgs:
@@ -18051,7 +17777,6 @@ class WebAclDefaultActionBlockCustomResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionBlockCustomResponseArgs:
@@ -18110,7 +17835,6 @@ class WebAclDefaultActionBlockCustomResponseArgs:
 class WebAclDefaultActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclDefaultActionBlockCustomResponseResponseHeaderArgs:
@@ -18136,7 +17860,6 @@ class WebAclLoggingConfigurationLoggingFilterArgsDict(TypedDict):
     filters: pulumi.Input[
         Sequence[pulumi.Input[WebAclLoggingConfigurationLoggingFilterFilterArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationLoggingFilterArgs:
@@ -18176,7 +17899,6 @@ class WebAclLoggingConfigurationLoggingFilterFilterArgsDict(TypedDict):
         ]
     ]
     requirement: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationLoggingFilterFilterArgs:
@@ -18231,7 +17953,6 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionArgsDict(TypedDict):
             WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationLoggingFilterFilterConditionArgs:
@@ -18290,7 +18011,6 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionArgsD
     TypedDict
 ):
     action: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionArgs:
@@ -18305,7 +18025,6 @@ class WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionAr
     TypedDict
 ):
     label_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionArgs:
@@ -18329,7 +18048,6 @@ class WebAclLoggingConfigurationRedactedFieldArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclLoggingConfigurationRedactedFieldUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationRedactedFieldArgs:
@@ -18416,7 +18134,6 @@ class WebAclLoggingConfigurationRedactedFieldQueryStringArgs:
 
 class WebAclLoggingConfigurationRedactedFieldSingleHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclLoggingConfigurationRedactedFieldSingleHeaderArgs:
@@ -18445,7 +18162,6 @@ class WebAclRuleArgsDict(TypedDict):
     rule_labels: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[WebAclRuleRuleLabelArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleArgs:
@@ -18533,7 +18249,6 @@ class WebAclRuleActionArgsDict(TypedDict):
     captcha: NotRequired[pulumi.Input[WebAclRuleActionCaptchaArgsDict]]
     challenge: NotRequired[pulumi.Input[WebAclRuleActionChallengeArgsDict]]
     count: NotRequired[pulumi.Input[WebAclRuleActionCountArgsDict]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionArgs:
@@ -18578,7 +18293,6 @@ class WebAclRuleActionAllowArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[WebAclRuleActionAllowCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionAllowArgs:
@@ -18606,7 +18320,6 @@ class WebAclRuleActionAllowCustomRequestHandlingArgsDict(TypedDict):
             pulumi.Input[WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionAllowCustomRequestHandlingArgs:
@@ -18641,7 +18354,6 @@ class WebAclRuleActionAllowCustomRequestHandlingArgs:
 class WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionAllowCustomRequestHandlingInsertHeaderArgs:
@@ -18666,7 +18378,6 @@ class WebAclRuleActionBlockArgsDict(TypedDict):
     custom_response: NotRequired[
         pulumi.Input[WebAclRuleActionBlockCustomResponseArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionBlockArgs:
@@ -18697,7 +18408,6 @@ class WebAclRuleActionBlockCustomResponseArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionBlockCustomResponseArgs:
@@ -18752,7 +18462,6 @@ class WebAclRuleActionBlockCustomResponseArgs:
 class WebAclRuleActionBlockCustomResponseResponseHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionBlockCustomResponseResponseHeaderArgs:
@@ -18777,7 +18486,6 @@ class WebAclRuleActionCaptchaArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[WebAclRuleActionCaptchaCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCaptchaArgs:
@@ -18807,7 +18515,6 @@ class WebAclRuleActionCaptchaCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCaptchaCustomRequestHandlingArgs:
@@ -18846,7 +18553,6 @@ class WebAclRuleActionCaptchaCustomRequestHandlingArgs:
 class WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -18871,7 +18577,6 @@ class WebAclRuleActionChallengeArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[WebAclRuleActionChallengeCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionChallengeArgs:
@@ -18903,7 +18608,6 @@ class WebAclRuleActionChallengeCustomRequestHandlingArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionChallengeCustomRequestHandlingArgs:
@@ -18942,7 +18646,6 @@ class WebAclRuleActionChallengeCustomRequestHandlingArgs:
 class WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -18967,7 +18670,6 @@ class WebAclRuleActionCountArgsDict(TypedDict):
     custom_request_handling: NotRequired[
         pulumi.Input[WebAclRuleActionCountCustomRequestHandlingArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCountArgs:
@@ -18995,7 +18697,6 @@ class WebAclRuleActionCountCustomRequestHandlingArgsDict(TypedDict):
             pulumi.Input[WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCountCustomRequestHandlingArgs:
@@ -19030,7 +18731,6 @@ class WebAclRuleActionCountCustomRequestHandlingArgs:
 class WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleActionCountCustomRequestHandlingInsertHeaderArgs:
@@ -19055,7 +18755,6 @@ class WebAclRuleCaptchaConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
         pulumi.Input[WebAclRuleCaptchaConfigImmunityTimePropertyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleCaptchaConfigArgs:
@@ -19079,7 +18778,6 @@ class WebAclRuleCaptchaConfigArgs:
 
 class WebAclRuleCaptchaConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleCaptchaConfigImmunityTimePropertyArgs:
@@ -19096,7 +18794,6 @@ class WebAclRuleChallengeConfigArgsDict(TypedDict):
     immunity_time_property: NotRequired[
         pulumi.Input[WebAclRuleChallengeConfigImmunityTimePropertyArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleChallengeConfigArgs:
@@ -19122,7 +18819,6 @@ class WebAclRuleChallengeConfigArgs:
 
 class WebAclRuleChallengeConfigImmunityTimePropertyArgsDict(TypedDict):
     immunity_time: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleChallengeConfigImmunityTimePropertyArgs:
@@ -19153,7 +18849,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupArgs:
@@ -19261,7 +18956,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgsDict(
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsArgs:
@@ -19378,7 +19072,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetArgs:
@@ -19480,7 +19173,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionArgs:
@@ -19614,7 +19306,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifiers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgs:
@@ -19633,7 +19324,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgs:
@@ -19648,7 +19338,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgs:
@@ -19663,7 +19352,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifiers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgs:
@@ -19682,7 +19370,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgs:
@@ -19716,7 +19403,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionArgs:
@@ -19822,7 +19508,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
 ):
     failure_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     success_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgs:
@@ -19857,7 +19542,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgs:
@@ -19894,7 +19578,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     identifier: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgs:
@@ -19930,7 +19613,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
 ):
     failure_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
     success_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgs:
@@ -19964,7 +19646,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
         ]
     ]
     sensitivity_to_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetArgs:
@@ -20010,7 +19691,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgs:
@@ -20056,7 +19736,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
         ]
     ]
     sensitivity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgs:
@@ -20116,7 +19795,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     regex_string: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionArgs:
@@ -20144,7 +19822,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetArgs:
@@ -20225,7 +19902,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionArgs:
@@ -20290,7 +19966,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgs:
@@ -20305,7 +19980,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgs:
@@ -20339,7 +20013,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
             WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionArgs:
@@ -20445,7 +20118,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
 ):
     failure_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     success_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgs:
@@ -20480,7 +20152,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgs:
@@ -20517,7 +20188,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     identifier: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJsonArgs:
@@ -20553,7 +20223,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
 ):
     failure_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
     success_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgs:
@@ -20583,7 +20252,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManage
 ):
     inspection_level: pulumi.Input[_builtins.str]
     enable_machine_learning: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetArgs:
@@ -20613,7 +20281,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideArgsDict(Typed
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideArgs:
@@ -20679,7 +20346,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArg
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseArgs:
@@ -20811,7 +20477,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowArgs:
@@ -20855,7 +20520,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs:
@@ -20904,7 +20568,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAll
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgs:
@@ -20933,7 +20596,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockArgs:
@@ -20979,7 +20641,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseArgs:
@@ -21042,7 +20703,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlo
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgs:
@@ -21071,7 +20731,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaArgs:
@@ -21115,7 +20774,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs:
@@ -21164,7 +20822,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCap
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -21193,7 +20850,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeArgs:
@@ -21237,7 +20893,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs:
@@ -21286,7 +20941,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCha
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -21315,7 +20969,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
             WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountArgs:
@@ -21359,7 +21012,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingArgs:
@@ -21408,7 +21060,6 @@ class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCou
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgs:
@@ -21440,7 +21091,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceArgs:
@@ -21497,7 +21147,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideArgsDict(Typ
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideArgs:
@@ -21563,7 +21212,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseArgs:
@@ -21695,7 +21343,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowArgs:
@@ -21739,7 +21386,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs:
@@ -21788,7 +21434,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseA
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgs:
@@ -21817,7 +21462,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockArgs:
@@ -21863,7 +21507,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseArgs:
@@ -21926,7 +21569,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseB
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgs:
@@ -21955,7 +21597,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaArgs:
@@ -21999,7 +21640,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs:
@@ -22048,7 +21688,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -22077,7 +21716,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeArgs:
@@ -22121,7 +21759,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs:
@@ -22170,7 +21807,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -22199,7 +21835,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountArgs:
@@ -22243,7 +21878,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingArgs:
@@ -22292,7 +21926,6 @@ class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgs:
@@ -22317,7 +21950,6 @@ class WebAclRuleGroupAssociationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationTimeoutsArgs:
@@ -22348,7 +21980,6 @@ class WebAclRuleGroupAssociationVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
     metric_name: pulumi.Input[_builtins.str]
     sampled_requests_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class WebAclRuleGroupAssociationVisibilityConfigArgs:
@@ -22378,7 +22009,6 @@ class WebAclRuleGroupAssociationVisibilityConfigArgs:
 class WebAclRuleOverrideActionArgsDict(TypedDict):
     count: NotRequired[pulumi.Input[WebAclRuleOverrideActionCountArgsDict]]
     none: NotRequired[pulumi.Input[WebAclRuleOverrideActionNoneArgsDict]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleOverrideActionArgs:
@@ -22415,7 +22045,6 @@ class WebAclRuleOverrideActionNoneArgs:
 
 class WebAclRuleRuleLabelArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleRuleLabelArgs:
@@ -22469,7 +22098,6 @@ class WebAclRuleStatementArgsDict(TypedDict):
     xss_match_statement: NotRequired[
         pulumi.Input[WebAclRuleStatementXssMatchStatementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementArgs:
@@ -22681,7 +22309,6 @@ class WebAclRuleStatementArgs:
 
 class WebAclRuleStatementAndStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementAndStatementArgs:
@@ -22705,7 +22332,6 @@ class WebAclRuleStatementAsnMatchStatementArgsDict(TypedDict):
     forwarded_ip_config: NotRequired[
         pulumi.Input[WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementAsnMatchStatementArgs:
@@ -22740,7 +22366,6 @@ class WebAclRuleStatementAsnMatchStatementArgs:
 class WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementAsnMatchStatementForwardedIpConfigArgs:
@@ -22774,7 +22399,6 @@ class WebAclRuleStatementByteMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementArgs:
@@ -22908,7 +22532,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclRuleStatementByteMatchStatementFieldToMatchUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchArgs:
@@ -23237,7 +22860,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchBodyArgs:
@@ -23260,7 +22882,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesArgsDict(TypedDict
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesArgs:
@@ -23320,7 +22941,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgsDi
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -23390,7 +23010,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderArgsDict(TypedDict)
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderArgs:
@@ -23438,7 +23057,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgsDic
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -23504,7 +23122,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderMatchPatternAllArgs
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgsDict(TypedDict):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
@@ -23521,7 +23138,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -23538,7 +23154,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -23558,7 +23173,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyArgsDict(TypedDic
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyArgs:
@@ -23613,7 +23227,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgsD
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -23681,7 +23294,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchQueryStringArgs:
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
@@ -23696,7 +23308,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgsDi
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -23709,7 +23320,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
 
 class WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementFieldToMatchUriFragmentArgs:
@@ -23731,7 +23341,6 @@ class WebAclRuleStatementByteMatchStatementFieldToMatchUriPathArgs:
 class WebAclRuleStatementByteMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementByteMatchStatementTextTransformationArgs:
@@ -23757,7 +23366,6 @@ class WebAclRuleStatementGeoMatchStatementArgsDict(TypedDict):
     forwarded_ip_config: NotRequired[
         pulumi.Input[WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementGeoMatchStatementArgs:
@@ -23794,7 +23402,6 @@ class WebAclRuleStatementGeoMatchStatementArgs:
 class WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementGeoMatchStatementForwardedIpConfigArgs:
@@ -23822,7 +23429,6 @@ class WebAclRuleStatementIpSetReferenceStatementArgsDict(TypedDict):
             WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementIpSetReferenceStatementArgs:
@@ -23866,7 +23472,6 @@ class WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict(
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
@@ -23896,7 +23501,6 @@ class WebAclRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
 class WebAclRuleStatementLabelMatchStatementArgsDict(TypedDict):
     key: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementLabelMatchStatementArgs:
@@ -23944,7 +23548,6 @@ class WebAclRuleStatementManagedRuleGroupStatementArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementArgs:
@@ -24097,7 +23700,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgsDict
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsernameFieldArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigArgs:
@@ -24270,7 +23872,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetArgs:
@@ -24366,7 +23967,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionArgs:
@@ -24500,7 +24100,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifiers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionAddressFieldsArgs:
@@ -24519,7 +24118,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionEmailFieldArgs:
@@ -24534,7 +24132,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPasswordFieldArgs:
@@ -24549,7 +24146,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifiers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFieldsArgs:
@@ -24568,7 +24164,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetRequestInspectionUsernameFieldArgs:
@@ -24602,7 +24197,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionArgs:
@@ -24708,7 +24302,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
 ):
     failure_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     success_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionBodyContainsArgs:
@@ -24743,7 +24336,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionHeaderArgs:
@@ -24780,7 +24372,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     identifier: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionJsonArgs:
@@ -24816,7 +24407,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
 ):
     failure_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
     success_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAcfpRuleSetResponseInspectionStatusCodeArgs:
@@ -24848,7 +24438,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgsDict
     ]
     sensitivity_to_block: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetArgs:
@@ -24886,7 +24475,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     challenge: pulumi.Input[
         WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigArgs:
@@ -24926,7 +24514,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
         ]
     ]
     sensitivity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeArgs:
@@ -24986,7 +24573,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     regex_string: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpressionArgs:
@@ -25014,7 +24600,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetArgs:
@@ -25091,7 +24676,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     username_field: pulumi.Input[
         WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionArgs:
@@ -25144,7 +24728,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionPasswordFieldArgs:
@@ -25159,7 +24742,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetRequestInspectionUsernameFieldArgs:
@@ -25193,7 +24775,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
             WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionArgs:
@@ -25299,7 +24880,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
 ):
     failure_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     success_strings: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionBodyContainsArgs:
@@ -25334,7 +24914,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     name: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionHeaderArgs:
@@ -25371,7 +24950,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
     failure_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     identifier: pulumi.Input[_builtins.str]
     success_values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionJsonArgs:
@@ -25407,7 +24985,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
 ):
     failure_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
     success_codes: pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesAtpRuleSetResponseInspectionStatusCodeArgs:
@@ -25437,7 +25014,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManag
 ):
     inspection_level: pulumi.Input[_builtins.str]
     enable_machine_learning: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigAwsManagedRulesBotControlRuleSetArgs:
@@ -25464,7 +25040,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigPassword
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigPasswordFieldArgs:
@@ -25479,7 +25054,6 @@ class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsername
     TypedDict
 ):
     identifier: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigUsernameFieldArgs:
@@ -25495,7 +25069,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideArgsDict(Typ
         WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseArgsDict
     ]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideArgs:
@@ -25555,7 +25128,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseArgs:
@@ -25687,7 +25259,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowArgs:
@@ -25729,7 +25300,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs:
@@ -25772,7 +25342,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseA
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgs:
@@ -25801,7 +25370,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockArgs:
@@ -25847,7 +25415,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseArgs:
@@ -25910,7 +25477,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseB
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgs:
@@ -25939,7 +25505,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaArgs:
@@ -25981,7 +25546,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs:
@@ -26024,7 +25588,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -26053,7 +25616,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeArgs:
@@ -26095,7 +25657,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs:
@@ -26138,7 +25699,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -26167,7 +25727,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountArgs:
@@ -26209,7 +25768,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgs:
@@ -26252,7 +25810,6 @@ class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseC
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgs:
@@ -26339,7 +25896,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgsDict(Typ
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementArgs:
@@ -26651,7 +26207,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAndStatement
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAndStatementArgs:
@@ -26679,7 +26234,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStat
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementArgs:
@@ -26722,7 +26276,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStat
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs:
@@ -26760,7 +26313,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementArgs:
@@ -26914,7 +26466,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchArgs:
@@ -27281,7 +26832,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs:
@@ -27306,7 +26856,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs:
@@ -27366,7 +26915,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -27438,7 +26986,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderArgs:
@@ -27486,7 +27033,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -27554,7 +27100,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
@@ -27571,7 +27116,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -27588,7 +27132,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -27610,7 +27153,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs:
@@ -27665,7 +27207,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -27737,7 +27278,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
@@ -27752,7 +27292,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -27767,7 +27306,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs:
@@ -27793,7 +27331,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchSta
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementByteMatchStatementTextTransformationArgs:
@@ -27823,7 +27360,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStat
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementArgs:
@@ -27868,7 +27404,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStat
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs:
@@ -27898,7 +27433,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferen
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementArgs:
@@ -27942,7 +27476,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferen
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
@@ -27974,7 +27507,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchSt
 ):
     key: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementLabelMatchStatementArgs:
@@ -27999,7 +27531,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatement
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementArgs:
@@ -28022,7 +27553,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOrStatementA
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOrStatementArgs:
@@ -28057,7 +27587,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementArgs:
@@ -28205,7 +27734,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs:
@@ -28572,7 +28100,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs:
@@ -28597,7 +28124,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs:
@@ -28657,7 +28183,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -28729,7 +28254,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderArgs:
@@ -28777,7 +28301,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -28845,7 +28368,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
@@ -28862,7 +28384,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -28879,7 +28400,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -28901,7 +28421,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
@@ -28956,7 +28475,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -29028,7 +28546,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
@@ -29043,7 +28560,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -29058,7 +28574,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
@@ -29084,7 +28599,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchSt
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexMatchStatementTextTransformationArgs:
@@ -29121,7 +28635,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementArgs:
@@ -29269,7 +28782,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
@@ -29636,7 +29148,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
@@ -29661,7 +29172,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs:
@@ -29721,7 +29231,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgs:
@@ -29793,7 +29302,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs:
@@ -29841,7 +29349,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs:
@@ -29909,7 +29416,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderArgs:
@@ -29926,7 +29432,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs:
@@ -29943,7 +29448,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs:
@@ -29965,7 +29469,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs:
@@ -30020,7 +29523,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -30092,7 +29594,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs:
@@ -30107,7 +29608,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs:
@@ -30122,7 +29622,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs:
@@ -30148,7 +29647,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPattern
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationArgs:
@@ -30186,7 +29684,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementArgs:
@@ -30340,7 +29837,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs:
@@ -30707,7 +30203,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs:
@@ -30732,7 +30227,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs:
@@ -30792,7 +30286,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgs:
@@ -30864,7 +30357,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderArgs:
@@ -30912,7 +30404,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs:
@@ -30980,7 +30471,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
@@ -30997,7 +30487,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
@@ -31014,7 +30503,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
@@ -31036,7 +30524,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
@@ -31091,7 +30578,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -31163,7 +30649,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
@@ -31178,7 +30663,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs:
@@ -31193,7 +30677,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
@@ -31219,7 +30702,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstrai
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementTextTransformationArgs:
@@ -31256,7 +30738,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
         ]
     ]
     sensitivity_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementArgs:
@@ -31404,7 +30885,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs:
@@ -31771,7 +31251,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs:
@@ -31796,7 +31275,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs:
@@ -31856,7 +31334,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -31928,7 +31405,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderArgs:
@@ -31976,7 +31452,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -32044,7 +31519,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
@@ -32061,7 +31535,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -32078,7 +31551,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -32100,7 +31572,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
@@ -32155,7 +31626,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -32227,7 +31697,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
@@ -32242,7 +31711,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -32257,7 +31725,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
@@ -32283,7 +31750,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchSta
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSqliMatchStatementTextTransformationArgs:
@@ -32319,7 +31785,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementArgs:
@@ -32461,7 +31926,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
             WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchArgs:
@@ -32828,7 +32292,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs:
@@ -32853,7 +32316,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs:
@@ -32913,7 +32375,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -32985,7 +32446,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderArgs:
@@ -33033,7 +32493,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -33101,7 +32560,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
@@ -33118,7 +32576,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -33135,7 +32592,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -33157,7 +32613,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs:
@@ -33212,7 +32667,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -33284,7 +32738,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
@@ -33299,7 +32752,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -33314,7 +32766,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs:
@@ -33340,7 +32791,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStatementTextTransformationArgs:
@@ -33363,7 +32813,6 @@ class WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementXssMatchStat
 
 class WebAclRuleStatementNotStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementNotStatementArgs:
@@ -33384,7 +32833,6 @@ class WebAclRuleStatementNotStatementArgs:
 
 class WebAclRuleStatementOrStatementArgsDict(TypedDict):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementOrStatementArgs:
@@ -33420,7 +32868,6 @@ class WebAclRuleStatementRateBasedStatementArgsDict(TypedDict):
     scope_down_statement: NotRequired[
         pulumi.Input[WebAclRuleStatementRateBasedStatementScopeDownStatementArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementArgs:
@@ -33553,7 +33000,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyArgs:
@@ -33797,7 +33243,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyCookieArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyCookieArgs:
@@ -33846,7 +33291,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgs
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyCookieTextTransformationArgs:
@@ -33882,7 +33326,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyHeaderArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyHeaderArgs:
@@ -33931,7 +33374,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgs
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyHeaderTextTransformationArgs:
@@ -33966,7 +33408,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyIpArgs:
 
 class WebAclRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs:
@@ -33981,7 +33422,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyJa3FingerprintArgs:
 
 class WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs:
@@ -33996,7 +33436,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyJa4FingerprintArgs:
 
 class WebAclRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgsDict(TypedDict):
     namespace: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyLabelNamespaceArgs:
@@ -34016,7 +33455,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgsDict(TypedD
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentArgs:
@@ -34065,7 +33503,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformat
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryArgumentTextTransformationArgs:
@@ -34094,7 +33531,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringArgsDict(TypedDic
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringArgs:
@@ -34137,7 +33573,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformatio
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyQueryStringTextTransformationArgs:
@@ -34166,7 +33601,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyUriPathArgs:
@@ -34209,7 +33643,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArg
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArgs:
@@ -34233,7 +33666,6 @@ class WebAclRuleStatementRateBasedStatementCustomKeyUriPathTextTransformationArg
 class WebAclRuleStatementRateBasedStatementForwardedIpConfigArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementForwardedIpConfigArgs:
@@ -34320,7 +33752,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementArgsDict(TypedDict)
             WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementArgs:
@@ -34632,7 +34063,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementArgsDic
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementArgs:
@@ -34660,7 +34090,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementAr
             WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementArgs:
@@ -34703,7 +34132,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementFo
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementAsnMatchStatementForwardedIpConfigArgs:
@@ -34741,7 +34169,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementA
             WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementArgs:
@@ -34895,7 +34322,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
             WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchArgs:
@@ -35262,7 +34688,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBodyArgs:
@@ -35287,7 +34712,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesArgs:
@@ -35347,7 +34771,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -35419,7 +34842,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderArgs:
@@ -35467,7 +34889,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -35535,7 +34956,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeaderOrderArgs:
@@ -35552,7 +34972,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -35569,7 +34988,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -35591,7 +35009,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyArgs:
@@ -35646,7 +35063,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -35718,7 +35134,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderArgs:
@@ -35733,7 +35148,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -35748,7 +35162,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementF
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriFragmentArgs:
@@ -35774,7 +35187,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementT
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementTextTransformationArgs:
@@ -35804,7 +35216,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementAr
             WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementArgs:
@@ -35849,7 +35260,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementFo
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigArgs:
@@ -35879,7 +35289,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceState
             WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementArgs:
@@ -35923,7 +35332,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceState
     fallback_behavior: pulumi.Input[_builtins.str]
     header_name: pulumi.Input[_builtins.str]
     position: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigArgs:
@@ -35955,7 +35363,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement
 ):
     key: pulumi.Input[_builtins.str]
     scope: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementArgs:
@@ -35980,7 +35387,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementArgsDic
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementArgs:
@@ -36003,7 +35409,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementArgsDict
     TypedDict
 ):
     statements: pulumi.Input[Sequence[pulumi.Input[WebAclRuleStatementArgsDict]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementArgs:
@@ -36038,7 +35443,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementArgs:
@@ -36186,7 +35590,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchArgs:
@@ -36553,7 +35956,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchBodyArgs:
@@ -36578,7 +35980,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesArgs:
@@ -36638,7 +36039,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -36710,7 +36110,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderArgs:
@@ -36758,7 +36157,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -36826,7 +36224,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
@@ -36843,7 +36240,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -36860,7 +36256,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -36882,7 +36277,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
@@ -36937,7 +36331,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -37009,7 +36402,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
@@ -37024,7 +36416,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -37039,7 +36430,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
@@ -37065,7 +36455,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatement
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexMatchStatementTextTransformationArgs:
@@ -37102,7 +36491,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementArgs:
@@ -37250,7 +36638,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
             WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
@@ -37617,7 +37004,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
@@ -37642,7 +37028,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs:
@@ -37702,7 +37087,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgs:
@@ -37774,7 +37158,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs:
@@ -37822,7 +37205,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs:
@@ -37890,7 +37272,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderArgs:
@@ -37907,7 +37288,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs:
@@ -37924,7 +37304,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs:
@@ -37946,7 +37325,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs:
@@ -38001,7 +37379,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -38073,7 +37450,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs:
@@ -38088,7 +37464,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs:
@@ -38103,7 +37478,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs:
@@ -38129,7 +37503,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetRefe
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementRegexPatternSetReferenceStatementTextTransformationArgs:
@@ -38167,7 +37540,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
             WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementArgs:
@@ -38321,7 +37693,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
             WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchArgs:
@@ -38688,7 +38059,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchBodyArgs:
@@ -38713,7 +38083,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesArgs:
@@ -38773,7 +38142,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgs:
@@ -38845,7 +38213,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderArgs:
@@ -38893,7 +38260,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs:
@@ -38961,7 +38327,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
@@ -38978,7 +38343,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
@@ -38995,7 +38359,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
@@ -39017,7 +38380,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
@@ -39072,7 +38434,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -39144,7 +38505,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
@@ -39159,7 +38519,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs:
@@ -39174,7 +38533,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
@@ -39200,7 +38558,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintState
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSizeConstraintStatementTextTransformationArgs:
@@ -39237,7 +38594,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementA
         ]
     ]
     sensitivity_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementArgs:
@@ -39385,7 +38741,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
             WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchArgs:
@@ -39752,7 +39107,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyArgs:
@@ -39777,7 +39131,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesArgs:
@@ -39837,7 +39190,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -39909,7 +39261,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderArgs:
@@ -39957,7 +39308,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -40025,7 +39375,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
@@ -40042,7 +39391,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -40059,7 +39407,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -40081,7 +39428,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
@@ -40136,7 +39482,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -40208,7 +39553,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
@@ -40223,7 +39567,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -40238,7 +39581,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementF
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
@@ -40264,7 +39606,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementT
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementTextTransformationArgs:
@@ -40300,7 +39641,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementAr
             WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementArgs:
@@ -40442,7 +39782,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
             WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchArgs:
@@ -40809,7 +40148,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchBodyArgs:
@@ -40834,7 +40172,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesArgs:
@@ -40894,7 +40231,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -40966,7 +40302,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderArgs:
@@ -41014,7 +40349,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -41082,7 +40416,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
@@ -41099,7 +40432,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -41116,7 +40448,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -41138,7 +40469,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyArgs:
@@ -41193,7 +40523,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -41265,7 +40594,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
@@ -41280,7 +40608,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -41295,7 +40622,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFi
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementFieldToMatchUriFragmentArgs:
@@ -41321,7 +40647,6 @@ class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTe
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRateBasedStatementScopeDownStatementXssMatchStatementTextTransformationArgs:
@@ -41354,7 +40679,6 @@ class WebAclRuleStatementRegexMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementArgs:
@@ -41482,7 +40806,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclRuleStatementRegexMatchStatementFieldToMatchUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchArgs:
@@ -41811,7 +41134,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchBodyArgs:
@@ -41834,7 +41156,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesArgsDict(TypedDic
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesArgs:
@@ -41894,7 +41215,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgsD
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -41964,7 +41284,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderArgsDict(TypedDict
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderArgs:
@@ -42012,7 +41331,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgsDi
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -42078,7 +41396,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderMatchPatternAllArg
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgsDict(TypedDict):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchHeaderOrderArgs:
@@ -42095,7 +41412,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -42112,7 +41428,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -42132,7 +41447,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgsDict(TypedDi
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyArgs:
@@ -42187,7 +41501,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -42255,7 +41568,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchQueryStringArgs:
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleHeaderArgs:
@@ -42270,7 +41582,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgsD
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -42283,7 +41594,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchSingleQueryArgumentArgs:
 
 class WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementFieldToMatchUriFragmentArgs:
@@ -42305,7 +41615,6 @@ class WebAclRuleStatementRegexMatchStatementFieldToMatchUriPathArgs:
 class WebAclRuleStatementRegexMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexMatchStatementTextTransformationArgs:
@@ -42340,7 +41649,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementArgsDict(TypedDict):
             WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementArgs:
@@ -42488,7 +41796,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgsDict(
             WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchArgs:
@@ -42855,7 +42162,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgsDi
     TypedDict
 ):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchBodyArgs:
@@ -42880,7 +42186,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArg
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesArgs:
@@ -42940,7 +42245,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMat
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternArgs:
@@ -43012,7 +42316,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderArgs:
@@ -43060,7 +42363,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatc
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderMatchPatternArgs:
@@ -43128,7 +42430,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrde
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrderArgs:
@@ -43145,7 +42446,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerp
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa3FingerprintArgs:
@@ -43162,7 +42462,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4Fingerp
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJa4FingerprintArgs:
@@ -43184,7 +42483,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyAr
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyArgs:
@@ -43239,7 +42537,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMa
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -43311,7 +42608,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHead
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderArgs:
@@ -43326,7 +42622,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQuer
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentArgs:
@@ -43341,7 +42636,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmen
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchUriFragmentArgs:
@@ -43367,7 +42661,6 @@ class WebAclRuleStatementRegexPatternSetReferenceStatementTextTransformationArgs
 ):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRegexPatternSetReferenceStatementTextTransformationArgs:
@@ -43399,7 +42692,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementArgs:
@@ -43456,7 +42748,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideArgsDict(
         WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseArgsDict
     ]
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideArgs:
@@ -43516,7 +42807,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseArgs:
@@ -43648,7 +42938,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowArgs:
@@ -43690,7 +42979,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingArgs:
@@ -43733,7 +43021,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeaderArgs:
@@ -43762,7 +43049,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockArgs:
@@ -43808,7 +43094,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseArgs:
@@ -43871,7 +43156,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseBlockCustomResponseResponseHeaderArgs:
@@ -43900,7 +43184,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaArgs:
@@ -43942,7 +43225,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingArgs:
@@ -43985,7 +43267,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeaderArgs:
@@ -44014,7 +43295,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeArgs:
@@ -44056,7 +43336,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingArgs:
@@ -44099,7 +43378,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeaderArgs:
@@ -44128,7 +43406,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountArgs:
@@ -44170,7 +43447,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingArgs:
@@ -44213,7 +43489,6 @@ class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUs
 ):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeaderArgs:
@@ -44247,7 +43522,6 @@ class WebAclRuleStatementSizeConstraintStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[WebAclRuleStatementSizeConstraintStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementArgs:
@@ -44391,7 +43665,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgsDict(TypedDict):
             WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPathArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchArgs:
@@ -44742,7 +44015,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsArg
 
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchBodyArgs:
@@ -44765,7 +44037,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesArgsDict(Type
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesArgs:
@@ -44825,7 +44096,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternA
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternArgs:
@@ -44895,7 +44165,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderArgsDict(Typed
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderArgs:
@@ -44943,7 +44212,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternAr
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderMatchPatternArgs:
@@ -45011,7 +44279,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgsDict(
     TypedDict
 ):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchHeaderOrderArgs:
@@ -45028,7 +44295,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgsDi
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa3FingerprintArgs:
@@ -45045,7 +44311,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgsDi
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJa4FingerprintArgs:
@@ -45065,7 +44330,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgsDict(Typ
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyArgs:
@@ -45120,7 +44384,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -45192,7 +44455,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgsDict
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleHeaderArgs:
@@ -45207,7 +44469,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentA
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentArgs:
@@ -45222,7 +44483,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgsDict(
     TypedDict
 ):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriFragmentArgs:
@@ -45246,7 +44506,6 @@ class WebAclRuleStatementSizeConstraintStatementFieldToMatchUriPathArgs:
 class WebAclRuleStatementSizeConstraintStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSizeConstraintStatementTextTransformationArgs:
@@ -45279,7 +44538,6 @@ class WebAclRuleStatementSqliMatchStatementArgsDict(TypedDict):
         pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchArgsDict]
     ]
     sensitivity_level: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementArgs:
@@ -45407,7 +44665,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclRuleStatementSqliMatchStatementFieldToMatchUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchArgs:
@@ -45736,7 +44993,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchBodyArgs:
@@ -45759,7 +45015,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesArgsDict(TypedDict
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesArgs:
@@ -45819,7 +45074,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgsDi
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -45889,7 +45143,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderArgsDict(TypedDict)
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderArgs:
@@ -45937,7 +45190,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgsDic
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -46003,7 +45255,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderMatchPatternAllArgs
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgsDict(TypedDict):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchHeaderOrderArgs:
@@ -46020,7 +45271,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -46037,7 +45287,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgsDict(
     TypedDict
 ):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -46057,7 +45306,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgsDict(TypedDic
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyArgs:
@@ -46112,7 +45360,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgsD
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -46180,7 +45427,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchQueryStringArgs:
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeaderArgs:
@@ -46195,7 +45441,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgsDi
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -46208,7 +45453,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchSingleQueryArgumentArgs:
 
 class WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementFieldToMatchUriFragmentArgs:
@@ -46230,7 +45474,6 @@ class WebAclRuleStatementSqliMatchStatementFieldToMatchUriPathArgs:
 class WebAclRuleStatementSqliMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementSqliMatchStatementTextTransformationArgs:
@@ -46260,7 +45503,6 @@ class WebAclRuleStatementXssMatchStatementArgsDict(TypedDict):
     field_to_match: NotRequired[
         pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementArgs:
@@ -46378,7 +45620,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchArgsDict(TypedDict):
     uri_path: NotRequired[
         pulumi.Input[WebAclRuleStatementXssMatchStatementFieldToMatchUriPathArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchArgs:
@@ -46701,7 +45942,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArgumentsArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchBodyArgsDict(TypedDict):
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchBodyArgs:
@@ -46724,7 +45964,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesArgsDict(TypedDict)
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesArgs:
@@ -46784,7 +46023,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgsDic
     ]
     excluded_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_cookies: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternArgs:
@@ -46854,7 +46092,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderArgsDict(TypedDict):
     ]
     match_scope: pulumi.Input[_builtins.str]
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderArgs:
@@ -46902,7 +46139,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgsDict
     ]
     excluded_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     included_headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternArgs:
@@ -46968,7 +46204,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderMatchPatternAllArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgsDict(TypedDict):
     oversize_handling: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
@@ -46983,7 +46218,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchHeaderOrderArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
@@ -46998,7 +46232,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJa3FingerprintArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgsDict(TypedDict):
     fallback_behavior: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchJa4FingerprintArgs:
@@ -47018,7 +46251,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyArgsDict(TypedDict
     match_scope: pulumi.Input[_builtins.str]
     invalid_fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
     oversize_handling: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyArgs:
@@ -47073,7 +46305,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgsDi
         ]
     ]
     included_paths: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternArgs:
@@ -47141,7 +46372,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchQueryStringArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchSingleHeaderArgs:
@@ -47156,7 +46386,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgsDic
     TypedDict
 ):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
@@ -47169,7 +46398,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchSingleQueryArgumentArgs:
 
 class WebAclRuleStatementXssMatchStatementFieldToMatchUriFragmentArgsDict(TypedDict):
     fallback_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementFieldToMatchUriFragmentArgs:
@@ -47191,7 +46419,6 @@ class WebAclRuleStatementXssMatchStatementFieldToMatchUriPathArgs:
 class WebAclRuleStatementXssMatchStatementTextTransformationArgsDict(TypedDict):
     priority: pulumi.Input[_builtins.int]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class WebAclRuleStatementXssMatchStatementTextTransformationArgs:
@@ -47216,7 +46443,6 @@ class WebAclRuleVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
     metric_name: pulumi.Input[_builtins.str]
     sampled_requests_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class WebAclRuleVisibilityConfigArgs:
@@ -47247,7 +46473,6 @@ class WebAclVisibilityConfigArgsDict(TypedDict):
     cloudwatch_metrics_enabled: pulumi.Input[_builtins.bool]
     metric_name: pulumi.Input[_builtins.str]
     sampled_requests_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class WebAclVisibilityConfigArgs:

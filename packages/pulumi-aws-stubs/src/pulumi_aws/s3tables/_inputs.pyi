@@ -47,7 +47,6 @@ __all__ = [
 class TableBucketEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
     sse_algorithm: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableBucketEncryptionConfigurationArgs:
@@ -72,7 +71,6 @@ class TableBucketMaintenanceConfigurationArgsDict(TypedDict):
     iceberg_unreferenced_file_removal: pulumi.Input[
         TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class TableBucketMaintenanceConfigurationArgs:
@@ -105,7 +103,6 @@ class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgsDict(
         TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsArgsDict
     ]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalArgs:
@@ -142,7 +139,6 @@ class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsA
 ):
     non_current_days: pulumi.Input[_builtins.int]
     unreferenced_days: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsArgs:
@@ -167,7 +163,6 @@ class TableBucketReplicationRuleArgsDict(TypedDict):
     destinations: pulumi.Input[
         Sequence[pulumi.Input[TableBucketReplicationRuleDestinationArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TableBucketReplicationRuleArgs:
@@ -195,7 +190,6 @@ class TableBucketReplicationRuleArgs:
 
 class TableBucketReplicationRuleDestinationArgsDict(TypedDict):
     destination_table_bucket_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableBucketReplicationRuleDestinationArgs:
@@ -211,7 +205,6 @@ class TableBucketReplicationRuleDestinationArgs:
 class TableEncryptionConfigurationArgsDict(TypedDict):
     kms_key_arn: pulumi.Input[_builtins.str]
     sse_algorithm: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableEncryptionConfigurationArgs:
@@ -239,7 +232,6 @@ class TableMaintenanceConfigurationArgsDict(TypedDict):
     iceberg_snapshot_management: pulumi.Input[
         TableMaintenanceConfigurationIcebergSnapshotManagementArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class TableMaintenanceConfigurationArgs:
@@ -278,7 +270,6 @@ class TableMaintenanceConfigurationIcebergCompactionArgsDict(TypedDict):
         TableMaintenanceConfigurationIcebergCompactionSettingsArgsDict
     ]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableMaintenanceConfigurationIcebergCompactionArgs:
@@ -308,7 +299,6 @@ class TableMaintenanceConfigurationIcebergCompactionArgs:
 
 class TableMaintenanceConfigurationIcebergCompactionSettingsArgsDict(TypedDict):
     target_file_size_mb: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TableMaintenanceConfigurationIcebergCompactionSettingsArgs:
@@ -326,7 +316,6 @@ class TableMaintenanceConfigurationIcebergSnapshotManagementArgsDict(TypedDict):
         TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgsDict
     ]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableMaintenanceConfigurationIcebergSnapshotManagementArgs:
@@ -361,7 +350,6 @@ class TableMaintenanceConfigurationIcebergSnapshotManagementArgs:
 class TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgsDict(TypedDict):
     max_snapshot_age_hours: pulumi.Input[_builtins.int]
     min_snapshots_to_keep: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgs:
@@ -384,7 +372,6 @@ class TableMaintenanceConfigurationIcebergSnapshotManagementSettingsArgs:
 
 class TableMetadataArgsDict(TypedDict):
     iceberg: pulumi.Input[TableMetadataIcebergArgsDict]
-    ...
 
 @pulumi.input_type
 class TableMetadataArgs:
@@ -399,7 +386,6 @@ class TableMetadataArgs:
 
 class TableMetadataIcebergArgsDict(TypedDict):
     schema: pulumi.Input[TableMetadataIcebergSchemaArgsDict]
-    ...
 
 @pulumi.input_type
 class TableMetadataIcebergArgs:
@@ -416,7 +402,6 @@ class TableMetadataIcebergSchemaArgsDict(TypedDict):
     fields: pulumi.Input[
         Sequence[pulumi.Input[TableMetadataIcebergSchemaFieldArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TableMetadataIcebergSchemaArgs:
@@ -444,7 +429,6 @@ class TableMetadataIcebergSchemaFieldArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableMetadataIcebergSchemaFieldArgs:
@@ -475,7 +459,6 @@ class TableReplicationRuleArgsDict(TypedDict):
     destinations: pulumi.Input[
         Sequence[pulumi.Input[TableReplicationRuleDestinationArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class TableReplicationRuleArgs:
@@ -501,7 +484,6 @@ class TableReplicationRuleArgs:
 
 class TableReplicationRuleDestinationArgsDict(TypedDict):
     destination_table_bucket_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableReplicationRuleDestinationArgs:

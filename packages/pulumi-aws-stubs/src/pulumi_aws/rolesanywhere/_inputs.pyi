@@ -20,7 +20,6 @@ class TrustAnchorNotificationSettingArgsDict(TypedDict):
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
     event: NotRequired[pulumi.Input[_builtins.str]]
     threshold: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TrustAnchorNotificationSettingArgs:
@@ -62,7 +61,6 @@ class TrustAnchorNotificationSettingArgs:
 class TrustAnchorSourceArgsDict(TypedDict):
     source_data: pulumi.Input[TrustAnchorSourceSourceDataArgsDict]
     source_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TrustAnchorSourceArgs:
@@ -86,7 +84,6 @@ class TrustAnchorSourceArgs:
 class TrustAnchorSourceSourceDataArgsDict(TypedDict):
     acm_pca_arn: NotRequired[pulumi.Input[_builtins.str]]
     x509_certificate_data: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TrustAnchorSourceSourceDataArgs:

@@ -81,7 +81,6 @@ __all__ = [
 class BotAssociationLexBotArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     lex_region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BotAssociationLexBotArgs:
@@ -106,7 +105,6 @@ class HoursOfOperationConfigArgsDict(TypedDict):
     day: pulumi.Input[_builtins.str]
     end_time: pulumi.Input[HoursOfOperationConfigEndTimeArgsDict]
     start_time: pulumi.Input[HoursOfOperationConfigStartTimeArgsDict]
-    ...
 
 @pulumi.input_type
 class HoursOfOperationConfigArgs:
@@ -136,7 +134,6 @@ class HoursOfOperationConfigArgs:
 class HoursOfOperationConfigEndTimeArgsDict(TypedDict):
     hours: pulumi.Input[_builtins.int]
     minutes: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class HoursOfOperationConfigEndTimeArgs:
@@ -160,7 +157,6 @@ class HoursOfOperationConfigEndTimeArgs:
 class HoursOfOperationConfigStartTimeArgsDict(TypedDict):
     hours: pulumi.Input[_builtins.int]
     minutes: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class HoursOfOperationConfigStartTimeArgs:
@@ -195,7 +191,6 @@ class InstanceStorageConfigStorageConfigArgsDict(TypedDict):
     s3_config: NotRequired[
         pulumi.Input[InstanceStorageConfigStorageConfigS3ConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigArgs:
@@ -276,7 +271,6 @@ class InstanceStorageConfigStorageConfigArgs:
 
 class InstanceStorageConfigStorageConfigKinesisFirehoseConfigArgsDict(TypedDict):
     firehose_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigKinesisFirehoseConfigArgs:
@@ -289,7 +283,6 @@ class InstanceStorageConfigStorageConfigKinesisFirehoseConfigArgs:
 
 class InstanceStorageConfigStorageConfigKinesisStreamConfigArgsDict(TypedDict):
     stream_arn: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigKinesisStreamConfigArgs:
@@ -306,7 +299,6 @@ class InstanceStorageConfigStorageConfigKinesisVideoStreamConfigArgsDict(TypedDi
     ]
     prefix: pulumi.Input[_builtins.str]
     retention_period_hours: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigKinesisVideoStreamConfigArgs:
@@ -349,7 +341,6 @@ class InstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig
 ):
     encryption_type: pulumi.Input[_builtins.str]
     key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigArgs:
@@ -376,7 +367,6 @@ class InstanceStorageConfigStorageConfigS3ConfigArgsDict(TypedDict):
     encryption_config: NotRequired[
         pulumi.Input[InstanceStorageConfigStorageConfigS3ConfigEncryptionConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigS3ConfigArgs:
@@ -417,7 +407,6 @@ class InstanceStorageConfigStorageConfigS3ConfigArgs:
 class InstanceStorageConfigStorageConfigS3ConfigEncryptionConfigArgsDict(TypedDict):
     encryption_type: pulumi.Input[_builtins.str]
     key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceStorageConfigStorageConfigS3ConfigEncryptionConfigArgs:
@@ -441,7 +430,6 @@ class InstanceStorageConfigStorageConfigS3ConfigEncryptionConfigArgs:
 class PhoneNumberStatusArgsDict(TypedDict):
     message: NotRequired[pulumi.Input[_builtins.str]]
     status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PhoneNumberStatusArgs:
@@ -466,7 +454,6 @@ class QueueOutboundCallerConfigArgsDict(TypedDict):
     outbound_caller_id_name: NotRequired[pulumi.Input[_builtins.str]]
     outbound_caller_id_number_id: NotRequired[pulumi.Input[_builtins.str]]
     outbound_flow_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class QueueOutboundCallerConfigArgs:
@@ -512,7 +499,6 @@ class QuickConnectQuickConnectConfigArgsDict(TypedDict):
             Sequence[pulumi.Input[QuickConnectQuickConnectConfigUserConfigArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class QuickConnectQuickConnectConfigArgs:
@@ -598,7 +584,6 @@ class QuickConnectQuickConnectConfigArgs:
 
 class QuickConnectQuickConnectConfigPhoneConfigArgsDict(TypedDict):
     phone_number: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QuickConnectQuickConnectConfigPhoneConfigArgs:
@@ -612,7 +597,6 @@ class QuickConnectQuickConnectConfigPhoneConfigArgs:
 class QuickConnectQuickConnectConfigQueueConfigArgsDict(TypedDict):
     contact_flow_id: pulumi.Input[_builtins.str]
     queue_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QuickConnectQuickConnectConfigQueueConfigArgs:
@@ -636,7 +620,6 @@ class QuickConnectQuickConnectConfigQueueConfigArgs:
 class QuickConnectQuickConnectConfigUserConfigArgsDict(TypedDict):
     contact_flow_id: pulumi.Input[_builtins.str]
     user_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class QuickConnectQuickConnectConfigUserConfigArgs:
@@ -663,7 +646,6 @@ class RoutingProfileMediaConcurrencyArgsDict(TypedDict):
     cross_channel_behavior: NotRequired[
         pulumi.Input[RoutingProfileMediaConcurrencyCrossChannelBehaviorArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class RoutingProfileMediaConcurrencyArgs:
@@ -703,7 +685,6 @@ class RoutingProfileMediaConcurrencyArgs:
 
 class RoutingProfileMediaConcurrencyCrossChannelBehaviorArgsDict(TypedDict):
     behavior_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RoutingProfileMediaConcurrencyCrossChannelBehaviorArgs:
@@ -721,7 +702,6 @@ class RoutingProfileQueueConfigArgsDict(TypedDict):
     queue_id: pulumi.Input[_builtins.str]
     queue_arn: NotRequired[pulumi.Input[_builtins.str]]
     queue_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RoutingProfileQueueConfigArgs:
@@ -792,7 +772,6 @@ class UserHierarchyGroupHierarchyPathArgsDict(TypedDict):
             Sequence[pulumi.Input[UserHierarchyGroupHierarchyPathLevelTwoArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathArgs:
@@ -920,7 +899,6 @@ class UserHierarchyGroupHierarchyPathLevelFifeArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathLevelFifeArgs:
@@ -951,7 +929,6 @@ class UserHierarchyGroupHierarchyPathLevelFourArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathLevelFourArgs:
@@ -982,7 +959,6 @@ class UserHierarchyGroupHierarchyPathLevelOneArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathLevelOneArgs:
@@ -1013,7 +989,6 @@ class UserHierarchyGroupHierarchyPathLevelThreeArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathLevelThreeArgs:
@@ -1044,7 +1019,6 @@ class UserHierarchyGroupHierarchyPathLevelTwoArgsDict(TypedDict):
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyGroupHierarchyPathLevelTwoArgs:
@@ -1087,7 +1061,6 @@ class UserHierarchyStructureHierarchyStructureArgsDict(TypedDict):
     level_two: NotRequired[
         pulumi.Input[UserHierarchyStructureHierarchyStructureLevelTwoArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureArgs:
@@ -1185,7 +1158,6 @@ class UserHierarchyStructureHierarchyStructureLevelFiveArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureLevelFiveArgs:
@@ -1216,7 +1188,6 @@ class UserHierarchyStructureHierarchyStructureLevelFourArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureLevelFourArgs:
@@ -1247,7 +1218,6 @@ class UserHierarchyStructureHierarchyStructureLevelOneArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureLevelOneArgs:
@@ -1278,7 +1248,6 @@ class UserHierarchyStructureHierarchyStructureLevelThreeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureLevelThreeArgs:
@@ -1309,7 +1278,6 @@ class UserHierarchyStructureHierarchyStructureLevelTwoArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     arn: NotRequired[pulumi.Input[_builtins.str]]
     id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserHierarchyStructureHierarchyStructureLevelTwoArgs:
@@ -1341,7 +1309,6 @@ class UserIdentityInfoArgsDict(TypedDict):
     first_name: NotRequired[pulumi.Input[_builtins.str]]
     last_name: NotRequired[pulumi.Input[_builtins.str]]
     secondary_email: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserIdentityInfoArgs:
@@ -1379,7 +1346,6 @@ class UserPhoneConfigArgsDict(TypedDict):
     after_contact_work_time_limit: NotRequired[pulumi.Input[_builtins.int]]
     auto_accept: NotRequired[pulumi.Input[_builtins.bool]]
     desk_phone_number: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class UserPhoneConfigArgs:
@@ -1419,7 +1385,6 @@ class UserPhoneConfigArgs:
 class GetBotAssociationLexBotArgsDict(TypedDict):
     lex_region: _builtins.str
     name: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetBotAssociationLexBotArgs:

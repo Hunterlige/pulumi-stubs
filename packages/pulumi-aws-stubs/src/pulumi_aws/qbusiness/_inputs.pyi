@@ -16,7 +16,6 @@ __all__ = [
 
 class ApplicationAttachmentsConfigurationArgsDict(TypedDict):
     attachments_control_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationAttachmentsConfigurationArgs:
@@ -31,7 +30,6 @@ class ApplicationAttachmentsConfigurationArgs:
 
 class ApplicationEncryptionConfigurationArgsDict(TypedDict):
     kms_key_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ApplicationEncryptionConfigurationArgs:
@@ -46,7 +44,6 @@ class ApplicationTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ApplicationTimeoutsArgs:

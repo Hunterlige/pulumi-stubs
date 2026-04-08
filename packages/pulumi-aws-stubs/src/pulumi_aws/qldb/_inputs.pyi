@@ -10,7 +10,6 @@ __all__ = ["StreamKinesisConfigurationArgs", "StreamKinesisConfigurationArgsDict
 class StreamKinesisConfigurationArgsDict(TypedDict):
     stream_arn: pulumi.Input[_builtins.str]
     aggregation_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class StreamKinesisConfigurationArgs:

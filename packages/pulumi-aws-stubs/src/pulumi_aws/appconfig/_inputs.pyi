@@ -23,7 +23,6 @@ __all__ = [
 class ConfigurationProfileValidatorArgsDict(TypedDict):
     type: pulumi.Input[_builtins.str]
     content: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConfigurationProfileValidatorArgs:
@@ -47,7 +46,6 @@ class ConfigurationProfileValidatorArgs:
 class EnvironmentMonitorArgsDict(TypedDict):
     alarm_arn: pulumi.Input[_builtins.str]
     alarm_role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnvironmentMonitorArgs:
@@ -70,7 +68,6 @@ class EnvironmentMonitorArgs:
 
 class EventIntegrationEventFilterArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class EventIntegrationEventFilterArgs:
@@ -84,7 +81,6 @@ class EventIntegrationEventFilterArgs:
 class ExtensionActionPointArgsDict(TypedDict):
     actions: pulumi.Input[Sequence[pulumi.Input[ExtensionActionPointActionArgsDict]]]
     point: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ExtensionActionPointArgs:
@@ -115,7 +111,6 @@ class ExtensionActionPointActionArgsDict(TypedDict):
     uri: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     role_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ExtensionActionPointActionArgs:
@@ -152,7 +147,6 @@ class ExtensionParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
     required: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class ExtensionParameterArgs:

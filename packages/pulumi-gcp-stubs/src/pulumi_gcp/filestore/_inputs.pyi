@@ -36,7 +36,6 @@ __all__ = [
 
 class InstanceDirectoryServicesArgsDict(TypedDict):
     ldap: NotRequired[pulumi.Input[InstanceDirectoryServicesLdapArgsDict]]
-    ...
 
 @pulumi.input_type
 class InstanceDirectoryServicesArgs:
@@ -58,7 +57,6 @@ class InstanceDirectoryServicesLdapArgsDict(TypedDict):
     servers: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     groups_ou: NotRequired[pulumi.Input[_builtins.str]]
     users_ou: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceDirectoryServicesLdapArgs:
@@ -98,7 +96,6 @@ class InstanceEffectiveReplicationArgsDict(TypedDict):
         ]
     ]
     role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceEffectiveReplicationArgs:
@@ -139,7 +136,6 @@ class InstanceEffectiveReplicationReplicaArgsDict(TypedDict):
     peer_instance: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
     state_reasons: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class InstanceEffectiveReplicationReplicaArgs:
@@ -186,7 +182,6 @@ class InstanceFileSharesArgsDict(TypedDict):
     ]
     source_backup: NotRequired[pulumi.Input[_builtins.str]]
     source_backupdr_backup: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceFileSharesArgs:
@@ -243,7 +238,6 @@ class InstanceFileSharesNfsExportOptionArgsDict(TypedDict):
     ip_ranges: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     network: NotRequired[pulumi.Input[_builtins.str]]
     squash_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceFileSharesNfsExportOptionArgs:
@@ -297,7 +291,6 @@ class InstanceInitialReplicationArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[InstanceInitialReplicationReplicaArgsDict]]]
     ]
     role: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceInitialReplicationArgs:
@@ -331,7 +324,6 @@ class InstanceInitialReplicationArgs:
 
 class InstanceInitialReplicationReplicaArgsDict(TypedDict):
     peer_instance: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceInitialReplicationReplicaArgs:
@@ -349,7 +341,6 @@ class InstanceNetworkArgsDict(TypedDict):
     ip_addresses: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     psc_config: NotRequired[pulumi.Input[InstanceNetworkPscConfigArgsDict]]
     reserved_ip_range: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkArgs:
@@ -404,7 +395,6 @@ class InstanceNetworkArgs:
 
 class InstanceNetworkPscConfigArgsDict(TypedDict):
     endpoint_project: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceNetworkPscConfigArgs:
@@ -420,7 +410,6 @@ class InstanceNetworkPscConfigArgs:
 class InstancePerformanceConfigArgsDict(TypedDict):
     fixed_iops: NotRequired[pulumi.Input[InstancePerformanceConfigFixedIopsArgsDict]]
     iops_per_tb: NotRequired[pulumi.Input[InstancePerformanceConfigIopsPerTbArgsDict]]
-    ...
 
 @pulumi.input_type
 class InstancePerformanceConfigArgs:
@@ -455,7 +444,6 @@ class InstancePerformanceConfigArgs:
 
 class InstancePerformanceConfigFixedIopsArgsDict(TypedDict):
     max_iops: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstancePerformanceConfigFixedIopsArgs:
@@ -470,7 +458,6 @@ class InstancePerformanceConfigFixedIopsArgs:
 
 class InstancePerformanceConfigIopsPerTbArgsDict(TypedDict):
     max_iops_per_tb: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstancePerformanceConfigIopsPerTbArgs:

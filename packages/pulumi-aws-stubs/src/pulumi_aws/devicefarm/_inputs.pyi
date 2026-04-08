@@ -16,7 +16,6 @@ class DevicePoolRuleArgsDict(TypedDict):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
     operator: NotRequired[pulumi.Input[_builtins.str]]
     value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DevicePoolRuleArgs:
@@ -47,7 +46,6 @@ class TestGridProjectVpcConfigArgsDict(TypedDict):
     security_group_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     subnet_ids: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     vpc_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TestGridProjectVpcConfigArgs:

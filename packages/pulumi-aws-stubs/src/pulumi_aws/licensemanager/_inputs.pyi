@@ -15,7 +15,6 @@ __all__ = [
 class GetLicenseGrantsFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetLicenseGrantsFilterArgs:
@@ -36,7 +35,6 @@ class GetLicenseGrantsFilterArgs:
 class GetReceivedLicensesFilterArgsDict(TypedDict):
     name: _builtins.str
     values: Sequence[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetReceivedLicensesFilterArgs:

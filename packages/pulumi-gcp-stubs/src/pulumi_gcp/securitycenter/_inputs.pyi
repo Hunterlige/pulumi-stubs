@@ -115,7 +115,6 @@ class FolderCustomModuleCustomConfigArgsDict(TypedDict):
         pulumi.Input[FolderCustomModuleCustomConfigCustomOutputArgsDict]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigArgs:
@@ -185,7 +184,6 @@ class FolderCustomModuleCustomConfigCustomOutputArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigCustomOutputArgs:
@@ -230,7 +228,6 @@ class FolderCustomModuleCustomConfigCustomOutputPropertyArgsDict(TypedDict):
             FolderCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -275,7 +272,6 @@ class FolderCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict(
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -313,7 +309,6 @@ class FolderCustomModuleCustomConfigPredicateArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigPredicateArgs:
@@ -348,7 +343,6 @@ class FolderCustomModuleCustomConfigPredicateArgs:
 
 class FolderCustomModuleCustomConfigResourceSelectorArgsDict(TypedDict):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FolderCustomModuleCustomConfigResourceSelectorArgs:
@@ -365,7 +359,6 @@ class FolderCustomModuleCustomConfigResourceSelectorArgs:
 
 class FolderNotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FolderNotificationConfigStreamingConfigArgs:
@@ -380,7 +373,6 @@ class InstanceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamBindingConditionArgs:
@@ -411,7 +403,6 @@ class InstanceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceIamMemberConditionArgs:
@@ -459,7 +450,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict(
         ]
     ]
     severity: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigArgs:
@@ -567,7 +557,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutpu
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputArgs:
@@ -620,7 +609,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutpu
             ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -665,7 +653,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutpu
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -705,7 +692,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigPredicateAr
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigPredicateArgs:
@@ -742,7 +728,6 @@ class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigResourceSel
     TypedDict
 ):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorArgs:
@@ -774,7 +759,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigArgsD
         ]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigArgs:
@@ -870,7 +854,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCusto
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputArgs:
@@ -923,7 +906,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCusto
             ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -968,7 +950,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCusto
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -1008,7 +989,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigPredi
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigPredicateArgs:
@@ -1045,7 +1025,6 @@ class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigResou
     TypedDict
 ):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ManagementOrganizationSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorArgs:
@@ -1077,7 +1056,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigArgsDict(
         ]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigArgs:
@@ -1173,7 +1151,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutp
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputArgs:
@@ -1226,7 +1203,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutp
             ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -1271,7 +1247,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutp
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -1311,7 +1286,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateA
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateArgs:
@@ -1348,7 +1322,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSe
     TypedDict
 ):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorArgs:
@@ -1365,7 +1338,6 @@ class ManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSe
 
 class NotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NotificationConfigStreamingConfigArgs:
@@ -1387,7 +1359,6 @@ class OrganizationCustomModuleCustomConfigArgsDict(TypedDict):
         pulumi.Input[OrganizationCustomModuleCustomConfigCustomOutputArgsDict]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigArgs:
@@ -1464,7 +1435,6 @@ class OrganizationCustomModuleCustomConfigCustomOutputArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigCustomOutputArgs:
@@ -1515,7 +1485,6 @@ class OrganizationCustomModuleCustomConfigCustomOutputPropertyArgsDict(TypedDict
             OrganizationCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -1560,7 +1529,6 @@ class OrganizationCustomModuleCustomConfigCustomOutputPropertyValueExpressionArg
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -1598,7 +1566,6 @@ class OrganizationCustomModuleCustomConfigPredicateArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigPredicateArgs:
@@ -1633,7 +1600,6 @@ class OrganizationCustomModuleCustomConfigPredicateArgs:
 
 class OrganizationCustomModuleCustomConfigResourceSelectorArgsDict(TypedDict):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class OrganizationCustomModuleCustomConfigResourceSelectorArgs:
@@ -1659,7 +1625,6 @@ class ProjectCustomModuleCustomConfigArgsDict(TypedDict):
         pulumi.Input[ProjectCustomModuleCustomConfigCustomOutputArgsDict]
     ]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigArgs:
@@ -1731,7 +1696,6 @@ class ProjectCustomModuleCustomConfigCustomOutputArgsDict(TypedDict):
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigCustomOutputArgs:
@@ -1780,7 +1744,6 @@ class ProjectCustomModuleCustomConfigCustomOutputPropertyArgsDict(TypedDict):
             ProjectCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigCustomOutputPropertyArgs:
@@ -1825,7 +1788,6 @@ class ProjectCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgsDict
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigCustomOutputPropertyValueExpressionArgs:
@@ -1863,7 +1825,6 @@ class ProjectCustomModuleCustomConfigPredicateArgsDict(TypedDict):
     description: NotRequired[pulumi.Input[_builtins.str]]
     location: NotRequired[pulumi.Input[_builtins.str]]
     title: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigPredicateArgs:
@@ -1898,7 +1859,6 @@ class ProjectCustomModuleCustomConfigPredicateArgs:
 
 class ProjectCustomModuleCustomConfigResourceSelectorArgsDict(TypedDict):
     resource_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class ProjectCustomModuleCustomConfigResourceSelectorArgs:
@@ -1915,7 +1875,6 @@ class ProjectCustomModuleCustomConfigResourceSelectorArgs:
 
 class ProjectNotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ProjectNotificationConfigStreamingConfigArgs:
@@ -1930,7 +1889,6 @@ class SourceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SourceIamBindingConditionArgs:
@@ -1961,7 +1919,6 @@ class SourceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SourceIamMemberConditionArgs:
@@ -1990,7 +1947,6 @@ class SourceIamMemberConditionArgs:
 
 class V2FolderNotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2FolderNotificationConfigStreamingConfigArgs:
@@ -2003,7 +1959,6 @@ class V2FolderNotificationConfigStreamingConfigArgs:
 
 class V2OrganizationNotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2OrganizationNotificationConfigStreamingConfigArgs:
@@ -2018,7 +1973,6 @@ class V2OrganizationSourceIamBindingConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2OrganizationSourceIamBindingConditionArgs:
@@ -2049,7 +2003,6 @@ class V2OrganizationSourceIamMemberConditionArgsDict(TypedDict):
     expression: pulumi.Input[_builtins.str]
     title: pulumi.Input[_builtins.str]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class V2OrganizationSourceIamMemberConditionArgs:
@@ -2078,7 +2031,6 @@ class V2OrganizationSourceIamMemberConditionArgs:
 
 class V2ProjectNotificationConfigStreamingConfigArgsDict(TypedDict):
     filter: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class V2ProjectNotificationConfigStreamingConfigArgs:

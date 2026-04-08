@@ -23,7 +23,6 @@ __all__ = [
 class EnrollmentStatusTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class EnrollmentStatusTimeoutsArgs:
@@ -46,7 +45,6 @@ class EnrollmentStatusTimeoutsArgs:
 
 class RecommendationPreferencesExternalMetricsPreferenceArgsDict(TypedDict):
     source: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecommendationPreferencesExternalMetricsPreferenceArgs:
@@ -61,7 +59,6 @@ class RecommendationPreferencesPreferredResourceArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     exclude_lists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     include_lists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class RecommendationPreferencesPreferredResourceArgs:
@@ -103,7 +100,6 @@ class RecommendationPreferencesPreferredResourceArgs:
 class RecommendationPreferencesScopeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class RecommendationPreferencesScopeArgs:
@@ -129,7 +125,6 @@ class RecommendationPreferencesUtilizationPreferenceArgsDict(TypedDict):
     metric_parameters: pulumi.Input[
         RecommendationPreferencesUtilizationPreferenceMetricParametersArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class RecommendationPreferencesUtilizationPreferenceArgs:
@@ -164,7 +159,6 @@ class RecommendationPreferencesUtilizationPreferenceArgs:
 class RecommendationPreferencesUtilizationPreferenceMetricParametersArgsDict(TypedDict):
     headroom: pulumi.Input[_builtins.str]
     threshold: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class RecommendationPreferencesUtilizationPreferenceMetricParametersArgs:

@@ -65,7 +65,6 @@ class GlobalSecondaryIndexKeySchemaArgsDict(TypedDict):
     attribute_name: pulumi.Input[_builtins.str]
     attribute_type: pulumi.Input[_builtins.str]
     key_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexKeySchemaArgs:
@@ -95,7 +94,6 @@ class GlobalSecondaryIndexKeySchemaArgs:
 class GlobalSecondaryIndexOnDemandThroughputArgsDict(TypedDict):
     max_read_request_units: NotRequired[pulumi.Input[_builtins.int]]
     max_write_request_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexOnDemandThroughputArgs:
@@ -119,7 +117,6 @@ class GlobalSecondaryIndexOnDemandThroughputArgs:
 class GlobalSecondaryIndexProjectionArgsDict(TypedDict):
     projection_type: pulumi.Input[_builtins.str]
     non_key_attributes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexProjectionArgs:
@@ -149,7 +146,6 @@ class GlobalSecondaryIndexProjectionArgs:
 class GlobalSecondaryIndexProvisionedThroughputArgsDict(TypedDict):
     read_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
     write_capacity_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexProvisionedThroughputArgs:
@@ -174,7 +170,6 @@ class GlobalSecondaryIndexTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexTimeoutsArgs:
@@ -204,7 +199,6 @@ class GlobalSecondaryIndexTimeoutsArgs:
 class GlobalSecondaryIndexWarmThroughputArgsDict(TypedDict):
     read_units_per_second: pulumi.Input[_builtins.int]
     write_units_per_second: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GlobalSecondaryIndexWarmThroughputArgs:
@@ -227,7 +221,6 @@ class GlobalSecondaryIndexWarmThroughputArgs:
 
 class GlobalTableReplicaArgsDict(TypedDict):
     region_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GlobalTableReplicaArgs:
@@ -241,7 +234,6 @@ class GlobalTableReplicaArgs:
 class TableAttributeArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableAttributeArgs:
@@ -266,7 +258,6 @@ class TableExportIncrementalExportSpecificationArgsDict(TypedDict):
     export_from_time: NotRequired[pulumi.Input[_builtins.str]]
     export_to_time: NotRequired[pulumi.Input[_builtins.str]]
     export_view_type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableExportIncrementalExportSpecificationArgs:
@@ -310,7 +301,6 @@ class TableGlobalSecondaryIndexArgsDict(TypedDict):
         pulumi.Input[TableGlobalSecondaryIndexWarmThroughputArgsDict]
     ]
     write_capacity: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableGlobalSecondaryIndexArgs:
@@ -414,7 +404,6 @@ class TableGlobalSecondaryIndexArgs:
 class TableGlobalSecondaryIndexKeySchemaArgsDict(TypedDict):
     attribute_name: pulumi.Input[_builtins.str]
     key_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class TableGlobalSecondaryIndexKeySchemaArgs:
@@ -438,7 +427,6 @@ class TableGlobalSecondaryIndexKeySchemaArgs:
 class TableGlobalSecondaryIndexOnDemandThroughputArgsDict(TypedDict):
     max_read_request_units: NotRequired[pulumi.Input[_builtins.int]]
     max_write_request_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableGlobalSecondaryIndexOnDemandThroughputArgs:
@@ -462,7 +450,6 @@ class TableGlobalSecondaryIndexOnDemandThroughputArgs:
 class TableGlobalSecondaryIndexWarmThroughputArgsDict(TypedDict):
     read_units_per_second: NotRequired[pulumi.Input[_builtins.int]]
     write_units_per_second: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableGlobalSecondaryIndexWarmThroughputArgs:
@@ -485,7 +472,6 @@ class TableGlobalSecondaryIndexWarmThroughputArgs:
 
 class TableGlobalTableWitnessArgsDict(TypedDict):
     region_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableGlobalTableWitnessArgs:
@@ -505,7 +491,6 @@ class TableImportTableArgsDict(TypedDict):
     input_format_options: NotRequired[
         pulumi.Input[TableImportTableInputFormatOptionsArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class TableImportTableArgs:
@@ -548,7 +533,6 @@ class TableImportTableArgs:
 
 class TableImportTableInputFormatOptionsArgsDict(TypedDict):
     csv: NotRequired[pulumi.Input[TableImportTableInputFormatOptionsCsvArgsDict]]
-    ...
 
 @pulumi.input_type
 class TableImportTableInputFormatOptionsArgs:
@@ -570,7 +554,6 @@ class TableImportTableInputFormatOptionsArgs:
 class TableImportTableInputFormatOptionsCsvArgsDict(TypedDict):
     delimiter: NotRequired[pulumi.Input[_builtins.str]]
     header_lists: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TableImportTableInputFormatOptionsCsvArgs:
@@ -601,7 +584,6 @@ class TableImportTableS3BucketSourceArgsDict(TypedDict):
     bucket: pulumi.Input[_builtins.str]
     bucket_owner: NotRequired[pulumi.Input[_builtins.str]]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableImportTableS3BucketSourceArgs:
@@ -633,7 +615,6 @@ class TableLocalSecondaryIndexArgsDict(TypedDict):
     projection_type: pulumi.Input[_builtins.str]
     range_key: pulumi.Input[_builtins.str]
     non_key_attributes: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class TableLocalSecondaryIndexArgs:
@@ -675,7 +656,6 @@ class TableLocalSecondaryIndexArgs:
 class TableOnDemandThroughputArgsDict(TypedDict):
     max_read_request_units: NotRequired[pulumi.Input[_builtins.int]]
     max_write_request_units: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableOnDemandThroughputArgs:
@@ -699,7 +679,6 @@ class TableOnDemandThroughputArgs:
 class TablePointInTimeRecoveryArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     recovery_period_in_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TablePointInTimeRecoveryArgs:
@@ -730,7 +709,6 @@ class TableReplicaArgsDict(TypedDict):
     propagate_tags: NotRequired[pulumi.Input[_builtins.bool]]
     stream_arn: NotRequired[pulumi.Input[_builtins.str]]
     stream_label: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableReplicaArgs:
@@ -798,7 +776,6 @@ class TableReplicaArgs:
 class TableServerSideEncryptionArgsDict(TypedDict):
     enabled: pulumi.Input[_builtins.bool]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TableServerSideEncryptionArgs:
@@ -822,7 +799,6 @@ class TableServerSideEncryptionArgs:
 class TableTtlArgsDict(TypedDict):
     attribute_name: NotRequired[pulumi.Input[_builtins.str]]
     enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class TableTtlArgs:
@@ -846,7 +822,6 @@ class TableTtlArgs:
 class TableWarmThroughputArgsDict(TypedDict):
     read_units_per_second: NotRequired[pulumi.Input[_builtins.int]]
     write_units_per_second: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TableWarmThroughputArgs:
@@ -870,7 +845,6 @@ class TableWarmThroughputArgs:
 class GetTableServerSideEncryptionArgsDict(TypedDict):
     enabled: _builtins.bool
     kms_key_arn: _builtins.str
-    ...
 
 @pulumi.input_type
 class GetTableServerSideEncryptionArgs:

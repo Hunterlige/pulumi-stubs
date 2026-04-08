@@ -169,7 +169,6 @@ class CatalogDatabaseCreateTableDefaultPermissionArgsDict(TypedDict):
     principal: NotRequired[
         pulumi.Input[CatalogDatabaseCreateTableDefaultPermissionPrincipalArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogDatabaseCreateTableDefaultPermissionArgs:
@@ -209,7 +208,6 @@ class CatalogDatabaseCreateTableDefaultPermissionArgs:
 
 class CatalogDatabaseCreateTableDefaultPermissionPrincipalArgsDict(TypedDict):
     data_lake_principal_identifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogDatabaseCreateTableDefaultPermissionPrincipalArgs:
@@ -231,7 +229,6 @@ class CatalogDatabaseCreateTableDefaultPermissionPrincipalArgs:
 class CatalogDatabaseFederatedDatabaseArgsDict(TypedDict):
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
     identifier: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogDatabaseFederatedDatabaseArgs:
@@ -256,7 +253,6 @@ class CatalogDatabaseTargetDatabaseArgsDict(TypedDict):
     catalog_id: pulumi.Input[_builtins.str]
     database_name: pulumi.Input[_builtins.str]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogDatabaseTargetDatabaseArgs:
@@ -285,7 +281,6 @@ class CatalogDatabaseTargetDatabaseArgs:
 
 class CatalogTableOpenTableFormatInputArgsDict(TypedDict):
     iceberg_input: pulumi.Input[CatalogTableOpenTableFormatInputIcebergInputArgsDict]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputArgs:
@@ -312,7 +307,6 @@ class CatalogTableOpenTableFormatInputIcebergInputArgsDict(TypedDict):
         ]
     ]
     version: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputArgs:
@@ -370,7 +364,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputArgsDict(Type
             CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputArgs:
@@ -471,7 +464,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
         ]
     ]
     spec_id: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecArgs:
@@ -522,7 +514,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
     source_id: pulumi.Input[_builtins.int]
     transform: pulumi.Input[_builtins.str]
     field_id: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldArgs:
@@ -570,7 +561,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaArgsDic
     ]
     schema_id: NotRequired[pulumi.Input[_builtins.int]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaArgs:
@@ -642,7 +632,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldAr
     doc: NotRequired[pulumi.Input[_builtins.str]]
     initial_default: NotRequired[pulumi.Input[_builtins.str]]
     write_default: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldArgs:
@@ -704,7 +693,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderArgs
         ]
     ]
     order_id: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderArgs:
@@ -755,7 +743,6 @@ class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFiel
     null_order: pulumi.Input[_builtins.str]
     source_id: pulumi.Input[_builtins.int]
     transform: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldArgs:
@@ -799,7 +786,6 @@ class CatalogTableOptimizerConfigurationArgsDict(TypedDict):
     retention_configuration: NotRequired[
         pulumi.Input[CatalogTableOptimizerConfigurationRetentionConfigurationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogTableOptimizerConfigurationArgs:
@@ -868,7 +854,6 @@ class CatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationArgsDict(
             CatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationArgs:
@@ -906,7 +891,6 @@ class CatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergCo
     location: NotRequired[pulumi.Input[_builtins.str]]
     orphan_file_retention_period_in_days: NotRequired[pulumi.Input[_builtins.int]]
     run_rate_in_hours: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationArgs:
@@ -945,7 +929,6 @@ class CatalogTableOptimizerConfigurationRetentionConfigurationArgsDict(TypedDict
             CatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogTableOptimizerConfigurationRetentionConfigurationArgs:
@@ -984,7 +967,6 @@ class CatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurati
     number_of_snapshots_to_retain: NotRequired[pulumi.Input[_builtins.int]]
     run_rate_in_hours: NotRequired[pulumi.Input[_builtins.int]]
     snapshot_retention_period_in_days: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationArgs:
@@ -1029,7 +1011,6 @@ class CatalogTablePartitionIndexArgsDict(TypedDict):
     index_name: pulumi.Input[_builtins.str]
     keys: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     index_status: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTablePartitionIndexArgs:
@@ -1061,7 +1042,6 @@ class CatalogTablePartitionKeyArgsDict(TypedDict):
     comment: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTablePartitionKeyArgs:
@@ -1131,7 +1111,6 @@ class CatalogTableStorageDescriptorArgsDict(TypedDict):
         ]
     ]
     stored_as_sub_directories: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorArgs:
@@ -1300,7 +1279,6 @@ class CatalogTableStorageDescriptorColumnArgsDict(TypedDict):
     comment: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorColumnArgs:
@@ -1345,7 +1323,6 @@ class CatalogTableStorageDescriptorSchemaReferenceArgsDict(TypedDict):
         pulumi.Input[CatalogTableStorageDescriptorSchemaReferenceSchemaIdArgsDict]
     ]
     schema_version_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorSchemaReferenceArgs:
@@ -1387,7 +1364,6 @@ class CatalogTableStorageDescriptorSchemaReferenceSchemaIdArgsDict(TypedDict):
     registry_name: NotRequired[pulumi.Input[_builtins.str]]
     schema_arn: NotRequired[pulumi.Input[_builtins.str]]
     schema_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorSchemaReferenceSchemaIdArgs:
@@ -1418,7 +1394,6 @@ class CatalogTableStorageDescriptorSerDeInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     serialization_library: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorSerDeInfoArgs:
@@ -1461,7 +1436,6 @@ class CatalogTableStorageDescriptorSkewedInfoArgsDict(TypedDict):
     skewed_column_values: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorSkewedInfoArgs:
@@ -1509,7 +1483,6 @@ class CatalogTableStorageDescriptorSkewedInfoArgs:
 class CatalogTableStorageDescriptorSortColumnArgsDict(TypedDict):
     column: pulumi.Input[_builtins.str]
     sort_order: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CatalogTableStorageDescriptorSortColumnArgs:
@@ -1535,7 +1508,6 @@ class CatalogTableTargetTableArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
     name: pulumi.Input[_builtins.str]
     region: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableTargetTableArgs:
@@ -1584,7 +1556,6 @@ class CatalogTableViewDefinitionArgsDict(TypedDict):
     sub_objects: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     view_version_id: NotRequired[pulumi.Input[_builtins.int]]
     view_version_token: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableViewDefinitionArgs:
@@ -1682,7 +1653,6 @@ class CatalogTableViewDefinitionRepresentationArgsDict(TypedDict):
     validation_connection: NotRequired[pulumi.Input[_builtins.str]]
     view_expanded_text: NotRequired[pulumi.Input[_builtins.str]]
     view_original_text: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CatalogTableViewDefinitionRepresentationArgs:
@@ -1731,7 +1701,6 @@ class ClassifierCsvClassifierArgsDict(TypedDict):
     headers: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     quote_symbol: NotRequired[pulumi.Input[_builtins.str]]
     serde: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassifierCsvClassifierArgs:
@@ -1810,7 +1779,6 @@ class ClassifierGrokClassifierArgsDict(TypedDict):
     classification: pulumi.Input[_builtins.str]
     grok_pattern: pulumi.Input[_builtins.str]
     custom_patterns: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ClassifierGrokClassifierArgs:
@@ -1839,7 +1807,6 @@ class ClassifierGrokClassifierArgs:
 
 class ClassifierJsonClassifierArgsDict(TypedDict):
     json_path: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClassifierJsonClassifierArgs:
@@ -1853,7 +1820,6 @@ class ClassifierJsonClassifierArgs:
 class ClassifierXmlClassifierArgsDict(TypedDict):
     classification: pulumi.Input[_builtins.str]
     row_tag: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class ClassifierXmlClassifierArgs:
@@ -1880,7 +1846,6 @@ class ConnectionPhysicalConnectionRequirementsArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     subnet_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class ConnectionPhysicalConnectionRequirementsArgs:
@@ -1919,7 +1884,6 @@ class CrawlerCatalogTargetArgsDict(TypedDict):
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
     dlq_event_queue_arn: NotRequired[pulumi.Input[_builtins.str]]
     event_queue_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CrawlerCatalogTargetArgs:
@@ -1963,7 +1927,6 @@ class CrawlerDeltaTargetArgsDict(TypedDict):
     write_manifest: pulumi.Input[_builtins.bool]
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
     create_native_delta_table: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CrawlerDeltaTargetArgs:
@@ -2004,7 +1967,6 @@ class CrawlerDynamodbTargetArgsDict(TypedDict):
     path: pulumi.Input[_builtins.str]
     scan_all: NotRequired[pulumi.Input[_builtins.bool]]
     scan_rate: NotRequired[pulumi.Input[_builtins.float]]
-    ...
 
 @pulumi.input_type
 class CrawlerDynamodbTargetArgs:
@@ -2036,7 +1998,6 @@ class CrawlerHudiTargetArgsDict(TypedDict):
     paths: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
     exclusions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CrawlerHudiTargetArgs:
@@ -2078,7 +2039,6 @@ class CrawlerIcebergTargetArgsDict(TypedDict):
     paths: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
     exclusions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CrawlerIcebergTargetArgs:
@@ -2122,7 +2082,6 @@ class CrawlerJdbcTargetArgsDict(TypedDict):
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
     exclusions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class CrawlerJdbcTargetArgs:
@@ -2168,7 +2127,6 @@ class CrawlerJdbcTargetArgs:
 class CrawlerLakeFormationConfigurationArgsDict(TypedDict):
     account_id: NotRequired[pulumi.Input[_builtins.str]]
     use_lake_formation_credentials: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CrawlerLakeFormationConfigurationArgs:
@@ -2195,7 +2153,6 @@ class CrawlerLakeFormationConfigurationArgs:
 
 class CrawlerLineageConfigurationArgsDict(TypedDict):
     crawler_lineage_settings: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CrawlerLineageConfigurationArgs:
@@ -2216,7 +2173,6 @@ class CrawlerMongodbTargetArgsDict(TypedDict):
     connection_name: pulumi.Input[_builtins.str]
     path: pulumi.Input[_builtins.str]
     scan_all: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class CrawlerMongodbTargetArgs:
@@ -2245,7 +2201,6 @@ class CrawlerMongodbTargetArgs:
 
 class CrawlerRecrawlPolicyArgsDict(TypedDict):
     recrawl_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CrawlerRecrawlPolicyArgs:
@@ -2265,7 +2220,6 @@ class CrawlerS3TargetArgsDict(TypedDict):
     event_queue_arn: NotRequired[pulumi.Input[_builtins.str]]
     exclusions: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     sample_size: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class CrawlerS3TargetArgs:
@@ -2317,7 +2271,6 @@ class CrawlerS3TargetArgs:
 class CrawlerSchemaChangePolicyArgsDict(TypedDict):
     delete_behavior: NotRequired[pulumi.Input[_builtins.str]]
     update_behavior: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CrawlerSchemaChangePolicyArgs:
@@ -2345,7 +2298,6 @@ class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsArgsDict(TypedDi
     encryption_at_rest: pulumi.Input[
         DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsArgs:
@@ -2393,7 +2345,6 @@ class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswo
 ):
     return_connection_password_encrypted: pulumi.Input[_builtins.bool]
     aws_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionArgs:
@@ -2422,7 +2373,6 @@ class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest
     catalog_encryption_mode: pulumi.Input[_builtins.str]
     catalog_encryption_service_role: NotRequired[pulumi.Input[_builtins.str]]
     sse_aws_kms_key_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestArgs:
@@ -2457,7 +2407,6 @@ class DataQualityRulesetTargetTableArgsDict(TypedDict):
     database_name: pulumi.Input[_builtins.str]
     table_name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class DataQualityRulesetTargetTableArgs:
@@ -2489,7 +2438,6 @@ class JobCommandArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     python_version: NotRequired[pulumi.Input[_builtins.str]]
     runtime: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobCommandArgs:
@@ -2524,7 +2472,6 @@ class JobCommandArgs:
 
 class JobExecutionPropertyArgsDict(TypedDict):
     max_concurrent_runs: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobExecutionPropertyArgs:
@@ -2539,7 +2486,6 @@ class JobExecutionPropertyArgs:
 
 class JobNotificationPropertyArgsDict(TypedDict):
     notify_delay_after: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class JobNotificationPropertyArgs:
@@ -2561,7 +2507,6 @@ class JobSourceControlDetailsArgsDict(TypedDict):
     owner: NotRequired[pulumi.Input[_builtins.str]]
     provider: NotRequired[pulumi.Input[_builtins.str]]
     repository: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class JobSourceControlDetailsArgs:
@@ -2623,7 +2568,6 @@ class MLTransformInputRecordTableArgsDict(TypedDict):
     table_name: pulumi.Input[_builtins.str]
     catalog_id: NotRequired[pulumi.Input[_builtins.str]]
     connection_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MLTransformInputRecordTableArgs:
@@ -2661,7 +2605,6 @@ class MLTransformParametersArgsDict(TypedDict):
         MLTransformParametersFindMatchesParametersArgsDict
     ]
     transform_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class MLTransformParametersArgs:
@@ -2693,7 +2636,6 @@ class MLTransformParametersFindMatchesParametersArgsDict(TypedDict):
     enforce_provided_labels: NotRequired[pulumi.Input[_builtins.bool]]
     precision_recall_trade_off: NotRequired[pulumi.Input[_builtins.float]]
     primary_key_column_name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MLTransformParametersFindMatchesParametersArgs:
@@ -2735,7 +2677,6 @@ class MLTransformParametersFindMatchesParametersArgs:
 class MLTransformSchemaArgsDict(TypedDict):
     data_type: NotRequired[pulumi.Input[_builtins.str]]
     name: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class MLTransformSchemaArgs:
@@ -2760,7 +2701,6 @@ class PartitionIndexPartitionIndexArgsDict(TypedDict):
     index_name: NotRequired[pulumi.Input[_builtins.str]]
     index_status: NotRequired[pulumi.Input[_builtins.str]]
     keys: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class PartitionIndexPartitionIndexArgs:
@@ -2811,7 +2751,6 @@ class PartitionStorageDescriptorArgsDict(TypedDict):
         ]
     ]
     stored_as_sub_directories: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class PartitionStorageDescriptorArgs:
@@ -2960,7 +2899,6 @@ class PartitionStorageDescriptorColumnArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     comment: NotRequired[pulumi.Input[_builtins.str]]
     type: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PartitionStorageDescriptorColumnArgs:
@@ -2991,7 +2929,6 @@ class PartitionStorageDescriptorSerDeInfoArgsDict(TypedDict):
     name: NotRequired[pulumi.Input[_builtins.str]]
     parameters: NotRequired[pulumi.Input[Mapping[str, pulumi.Input[_builtins.str]]]]
     serialization_library: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class PartitionStorageDescriptorSerDeInfoArgs:
@@ -3034,7 +2971,6 @@ class PartitionStorageDescriptorSkewedInfoArgsDict(TypedDict):
     skewed_column_values: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class PartitionStorageDescriptorSkewedInfoArgs:
@@ -3082,7 +3018,6 @@ class PartitionStorageDescriptorSkewedInfoArgs:
 class PartitionStorageDescriptorSortColumnArgsDict(TypedDict):
     column: pulumi.Input[_builtins.str]
     sort_order: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class PartitionStorageDescriptorSortColumnArgs:
@@ -3113,7 +3048,6 @@ class SecurityConfigurationEncryptionConfigurationArgsDict(TypedDict):
     s3_encryption: pulumi.Input[
         SecurityConfigurationEncryptionConfigurationS3EncryptionArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class SecurityConfigurationEncryptionConfigurationArgs:
@@ -3176,7 +3110,6 @@ class SecurityConfigurationEncryptionConfigurationCloudwatchEncryptionArgsDict(
 ):
     cloudwatch_encryption_mode: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityConfigurationEncryptionConfigurationCloudwatchEncryptionArgs:
@@ -3204,7 +3137,6 @@ class SecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionArgsDict
 ):
     job_bookmarks_encryption_mode: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionArgs:
@@ -3232,7 +3164,6 @@ class SecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionArgs:
 class SecurityConfigurationEncryptionConfigurationS3EncryptionArgsDict(TypedDict):
     kms_key_arn: NotRequired[pulumi.Input[_builtins.str]]
     s3_encryption_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class SecurityConfigurationEncryptionConfigurationS3EncryptionArgs:
@@ -3262,7 +3193,6 @@ class TriggerActionArgsDict(TypedDict):
     ]
     security_configuration: NotRequired[pulumi.Input[_builtins.str]]
     timeout: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TriggerActionArgs:
@@ -3321,7 +3251,6 @@ class TriggerActionArgs:
 
 class TriggerActionNotificationPropertyArgsDict(TypedDict):
     notify_delay_after: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TriggerActionNotificationPropertyArgs:
@@ -3337,7 +3266,6 @@ class TriggerActionNotificationPropertyArgs:
 class TriggerEventBatchingConditionArgsDict(TypedDict):
     batch_size: pulumi.Input[_builtins.int]
     batch_window: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class TriggerEventBatchingConditionArgs:
@@ -3361,7 +3289,6 @@ class TriggerEventBatchingConditionArgs:
 class TriggerPredicateArgsDict(TypedDict):
     conditions: pulumi.Input[Sequence[pulumi.Input[TriggerPredicateConditionArgsDict]]]
     logical: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerPredicateArgs:
@@ -3392,7 +3319,6 @@ class TriggerPredicateConditionArgsDict(TypedDict):
     job_name: NotRequired[pulumi.Input[_builtins.str]]
     logical_operator: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class TriggerPredicateConditionArgs:
@@ -3434,7 +3360,6 @@ class TriggerPredicateConditionArgs:
 class UserDefinedFunctionResourceUriArgsDict(TypedDict):
     resource_type: pulumi.Input[_builtins.str]
     uri: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class UserDefinedFunctionResourceUriArgs:
@@ -3459,7 +3384,6 @@ class GetScriptDagEdgeArgsDict(TypedDict):
     source: _builtins.str
     target: _builtins.str
     target_parameter: NotRequired[_builtins.str]
-    ...
 
 @pulumi.input_type
 class GetScriptDagEdgeArgs:
@@ -3491,7 +3415,6 @@ class GetScriptDagNodeArgsDict(TypedDict):
     id: _builtins.str
     node_type: _builtins.str
     line_number: NotRequired[_builtins.int]
-    ...
 
 @pulumi.input_type
 class GetScriptDagNodeArgs:
@@ -3528,7 +3451,6 @@ class GetScriptDagNodeArgArgsDict(TypedDict):
     name: _builtins.str
     value: _builtins.str
     param: NotRequired[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class GetScriptDagNodeArgArgs:

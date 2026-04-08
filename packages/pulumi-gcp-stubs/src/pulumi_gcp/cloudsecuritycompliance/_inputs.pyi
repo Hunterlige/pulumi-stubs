@@ -148,7 +148,6 @@ class CloudControlParameterSpecArgsDict(TypedDict):
         ]
     ]
     validation: NotRequired[pulumi.Input[CloudControlParameterSpecValidationArgsDict]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecArgs:
@@ -265,7 +264,6 @@ class CloudControlParameterSpecDefaultValueArgsDict(TypedDict):
         pulumi.Input[CloudControlParameterSpecDefaultValueStringListValueArgsDict]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecDefaultValueArgs:
@@ -333,7 +331,6 @@ class CloudControlParameterSpecDefaultValueOneofValueArgsDict(TypedDict):
             CloudControlParameterSpecDefaultValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecDefaultValueOneofValueArgs:
@@ -378,7 +375,6 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueArgsDict(Type
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecDefaultValueOneofValueParameterValueArgs:
@@ -432,7 +428,6 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListVal
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueArgs:
@@ -447,7 +442,6 @@ class CloudControlParameterSpecDefaultValueOneofValueParameterValueStringListVal
 
 class CloudControlParameterSpecDefaultValueStringListValueArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecDefaultValueStringListValueArgs:
@@ -481,7 +475,6 @@ class CloudControlParameterSpecSubParameterArgsDict(TypedDict):
     validation: NotRequired[
         pulumi.Input[CloudControlParameterSpecSubParameterValidationArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterArgs:
@@ -601,7 +594,6 @@ class CloudControlParameterSpecSubParameterDefaultValueArgsDict(TypedDict):
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterDefaultValueArgs:
@@ -679,7 +671,6 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueArgsDict(TypedD
             CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueArgs:
@@ -728,7 +719,6 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueA
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueArgs:
@@ -782,7 +772,6 @@ class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueS
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterDefaultValueOneofValueParameterValueStringListValueArgs:
@@ -799,7 +788,6 @@ class CloudControlParameterSpecSubParameterDefaultValueStringListValueArgsDict(
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterDefaultValueStringListValueArgs:
@@ -823,7 +811,6 @@ class CloudControlParameterSpecSubParameterSubstitutionRuleArgsDict(TypedDict):
             CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstitutionRuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterSubstitutionRuleArgs:
@@ -882,7 +869,6 @@ class CloudControlParameterSpecSubParameterSubstitutionRuleAttributeSubstitution
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterSubstitutionRuleAttributeSubstitutionRuleArgs:
@@ -899,7 +885,6 @@ class CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstituti
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterSubstitutionRulePlaceholderSubstitutionRuleArgs:
@@ -926,7 +911,6 @@ class CloudControlParameterSpecSubParameterValidationArgsDict(TypedDict):
             CloudControlParameterSpecSubParameterValidationRegexpPatternArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationArgs:
@@ -1002,7 +986,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesArgsDict(Typed
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesArgs:
@@ -1056,7 +1039,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgsDict(
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueArgs:
@@ -1138,7 +1120,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
             CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueArgs:
@@ -1187,7 +1168,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueArgs:
@@ -1241,7 +1221,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValu
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueOneofValueParameterValueStringListValueArgs:
@@ -1258,7 +1237,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringLis
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringListValueArgs:
@@ -1274,7 +1252,6 @@ class CloudControlParameterSpecSubParameterValidationAllowedValuesValueStringLis
 class CloudControlParameterSpecSubParameterValidationIntRangeArgsDict(TypedDict):
     max: pulumi.Input[_builtins.str]
     min: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationIntRangeArgs:
@@ -1294,7 +1271,6 @@ class CloudControlParameterSpecSubParameterValidationIntRangeArgs:
 
 class CloudControlParameterSpecSubParameterValidationRegexpPatternArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubParameterValidationRegexpPatternArgs:
@@ -1316,7 +1292,6 @@ class CloudControlParameterSpecSubstitutionRuleArgsDict(TypedDict):
             CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubstitutionRuleArgs:
@@ -1375,7 +1350,6 @@ class CloudControlParameterSpecSubstitutionRuleAttributeSubstitutionRuleArgsDict
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubstitutionRuleAttributeSubstitutionRuleArgs:
@@ -1392,7 +1366,6 @@ class CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgsDi
     TypedDict
 ):
     attribute: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecSubstitutionRulePlaceholderSubstitutionRuleArgs:
@@ -1415,7 +1388,6 @@ class CloudControlParameterSpecValidationArgsDict(TypedDict):
     regexp_pattern: NotRequired[
         pulumi.Input[CloudControlParameterSpecValidationRegexpPatternArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationArgs:
@@ -1477,7 +1449,6 @@ class CloudControlParameterSpecValidationAllowedValuesArgsDict(TypedDict):
             pulumi.Input[CloudControlParameterSpecValidationAllowedValuesValueArgsDict]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesArgs:
@@ -1523,7 +1494,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueArgsDict(TypedDict):
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesValueArgs:
@@ -1605,7 +1575,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgsDict(
             CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueArgs:
@@ -1654,7 +1623,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterVa
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueArgs:
@@ -1708,7 +1676,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterVa
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesValueOneofValueParameterValueStringListValueArgs:
@@ -1725,7 +1692,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgsDi
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgs:
@@ -1741,7 +1707,6 @@ class CloudControlParameterSpecValidationAllowedValuesValueStringListValueArgs:
 class CloudControlParameterSpecValidationIntRangeArgsDict(TypedDict):
     max: pulumi.Input[_builtins.str]
     min: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationIntRangeArgs:
@@ -1761,7 +1726,6 @@ class CloudControlParameterSpecValidationIntRangeArgs:
 
 class CloudControlParameterSpecValidationRegexpPatternArgsDict(TypedDict):
     pattern: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudControlParameterSpecValidationRegexpPatternArgs:
@@ -1776,7 +1740,6 @@ class CloudControlRuleArgsDict(TypedDict):
     rule_action_types: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     cel_expression: NotRequired[pulumi.Input[CloudControlRuleCelExpressionArgsDict]]
     description: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudControlRuleArgs:
@@ -1816,7 +1779,6 @@ class CloudControlRuleCelExpressionArgsDict(TypedDict):
     resource_types_values: NotRequired[
         pulumi.Input[CloudControlRuleCelExpressionResourceTypesValuesArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class CloudControlRuleCelExpressionArgs:
@@ -1850,7 +1812,6 @@ class CloudControlRuleCelExpressionArgs:
 
 class CloudControlRuleCelExpressionResourceTypesValuesArgsDict(TypedDict):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class CloudControlRuleCelExpressionResourceTypesValuesArgs:
@@ -1871,7 +1832,6 @@ class FrameworkCloudControlDetailArgsDict(TypedDict):
             Sequence[pulumi.Input[FrameworkCloudControlDetailParameterArgsDict]]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailArgs:
@@ -1918,7 +1878,6 @@ class FrameworkCloudControlDetailParameterArgsDict(TypedDict):
     parameter_value: pulumi.Input[
         FrameworkCloudControlDetailParameterParameterValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterArgs:
@@ -1960,7 +1919,6 @@ class FrameworkCloudControlDetailParameterParameterValueArgsDict(TypedDict):
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterParameterValueArgs:
@@ -2038,7 +1996,6 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueArgsDict(Typed
             FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterParameterValueOneofValueArgs:
@@ -2087,7 +2044,6 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValue
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueArgs:
@@ -2141,7 +2097,6 @@ class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValue
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterParameterValueOneofValueParameterValueStringListValueArgs:
@@ -2158,7 +2113,6 @@ class FrameworkCloudControlDetailParameterParameterValueStringListValueArgsDict(
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FrameworkCloudControlDetailParameterParameterValueStringListValueArgs:
@@ -2173,7 +2127,6 @@ class FrameworkCloudControlDetailParameterParameterValueStringListValueArgs:
 
 class FrameworkDeploymentCloudControlDeploymentReferenceArgsDict(TypedDict):
     cloud_control_deployment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlDeploymentReferenceArgs:
@@ -2195,7 +2148,6 @@ class FrameworkDeploymentCloudControlMetadataArgsDict(TypedDict):
         FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgsDict
     ]
     enforcement_mode: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataArgs:
@@ -2239,7 +2191,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgsDict(TypedDi
             ]
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsArgs:
@@ -2302,7 +2253,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterArgsDic
     parameter_value: pulumi.Input[
         FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueArgsDict
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterArgs:
@@ -2350,7 +2300,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueArgs:
@@ -2432,7 +2381,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
             FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueArgs:
@@ -2481,7 +2429,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
         ]
     ]
     string_value: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueArgs:
@@ -2535,7 +2482,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueOneofValueParameterValueStringListValueArgs:
@@ -2552,7 +2498,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
     TypedDict
 ):
     values: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParameterValueStringListValueArgs:
@@ -2568,7 +2513,6 @@ class FrameworkDeploymentCloudControlMetadataCloudControlDetailsParameterParamet
 class FrameworkDeploymentFrameworkArgsDict(TypedDict):
     framework: pulumi.Input[_builtins.str]
     major_revision_id: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentFrameworkArgs:
@@ -2596,7 +2540,6 @@ class FrameworkDeploymentTargetResourceConfigArgsDict(TypedDict):
             FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentTargetResourceConfigArgs:
@@ -2649,7 +2592,6 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgsDic
             FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigArgs:
@@ -2709,7 +2651,6 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderC
 ):
     folder_display_name: pulumi.Input[_builtins.str]
     parent: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigArgs:
@@ -2736,7 +2677,6 @@ class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProject
     billing_account_id: pulumi.Input[_builtins.str]
     parent: pulumi.Input[_builtins.str]
     project_display_name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class FrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigArgs:

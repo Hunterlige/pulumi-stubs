@@ -44,7 +44,6 @@ class InstanceAdminSettingsArgsDict(TypedDict):
     allowed_email_domains: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     ]
-    ...
 
 @pulumi.input_type
 class InstanceAdminSettingsArgs:
@@ -68,7 +67,6 @@ class InstanceAdminSettingsArgs:
 class InstanceControlledEgressConfigArgsDict(TypedDict):
     egress_fqdns: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
     marketplace_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InstanceControlledEgressConfigArgs:
@@ -98,7 +96,6 @@ class InstanceControlledEgressConfigArgs:
 class InstanceCustomDomainArgsDict(TypedDict):
     domain: NotRequired[pulumi.Input[_builtins.str]]
     state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceCustomDomainArgs:
@@ -123,7 +120,6 @@ class InstanceDenyMaintenancePeriodArgsDict(TypedDict):
     end_date: pulumi.Input[InstanceDenyMaintenancePeriodEndDateArgsDict]
     start_date: pulumi.Input[InstanceDenyMaintenancePeriodStartDateArgsDict]
     time: pulumi.Input[InstanceDenyMaintenancePeriodTimeArgsDict]
-    ...
 
 @pulumi.input_type
 class InstanceDenyMaintenancePeriodArgs:
@@ -160,7 +156,6 @@ class InstanceDenyMaintenancePeriodEndDateArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceDenyMaintenancePeriodEndDateArgs:
@@ -191,7 +186,6 @@ class InstanceDenyMaintenancePeriodStartDateArgsDict(TypedDict):
     day: NotRequired[pulumi.Input[_builtins.int]]
     month: NotRequired[pulumi.Input[_builtins.int]]
     year: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceDenyMaintenancePeriodStartDateArgs:
@@ -223,7 +217,6 @@ class InstanceDenyMaintenancePeriodTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceDenyMaintenancePeriodTimeArgs:
@@ -260,7 +253,6 @@ class InstanceEncryptionConfigArgsDict(TypedDict):
     kms_key_name: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_name_version: NotRequired[pulumi.Input[_builtins.str]]
     kms_key_state: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstanceEncryptionConfigArgs:
@@ -290,7 +282,6 @@ class InstanceEncryptionConfigArgs:
 class InstanceMaintenanceWindowArgsDict(TypedDict):
     day_of_week: pulumi.Input[_builtins.str]
     start_time: pulumi.Input[InstanceMaintenanceWindowStartTimeArgsDict]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceWindowArgs:
@@ -318,7 +309,6 @@ class InstanceMaintenanceWindowStartTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceMaintenanceWindowStartTimeArgs:
@@ -354,7 +344,6 @@ class InstanceMaintenanceWindowStartTimeArgs:
 class InstanceOauthConfigArgsDict(TypedDict):
     client_id: pulumi.Input[_builtins.str]
     client_secret: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class InstanceOauthConfigArgs:
@@ -379,7 +368,6 @@ class InstancePeriodicExportConfigArgsDict(TypedDict):
     gcs_uri: pulumi.Input[_builtins.str]
     kms_key: pulumi.Input[_builtins.str]
     start_time: pulumi.Input[InstancePeriodicExportConfigStartTimeArgsDict]
-    ...
 
 @pulumi.input_type
 class InstancePeriodicExportConfigArgs:
@@ -413,7 +401,6 @@ class InstancePeriodicExportConfigStartTimeArgsDict(TypedDict):
     minutes: NotRequired[pulumi.Input[_builtins.int]]
     nanos: NotRequired[pulumi.Input[_builtins.int]]
     seconds: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstancePeriodicExportConfigStartTimeArgs:
@@ -452,7 +439,6 @@ class InstancePscConfigArgsDict(TypedDict):
     service_attachments: NotRequired[
         pulumi.Input[Sequence[pulumi.Input[InstancePscConfigServiceAttachmentArgsDict]]]
     ]
-    ...
 
 @pulumi.input_type
 class InstancePscConfigArgs:
@@ -504,7 +490,6 @@ class InstancePscConfigServiceAttachmentArgsDict(TypedDict):
     connection_status: NotRequired[pulumi.Input[_builtins.str]]
     local_fqdn: NotRequired[pulumi.Input[_builtins.str]]
     target_service_attachment_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InstancePscConfigServiceAttachmentArgs:
@@ -539,7 +524,6 @@ class InstanceUserMetadataArgsDict(TypedDict):
     additional_developer_user_count: NotRequired[pulumi.Input[_builtins.int]]
     additional_standard_user_count: NotRequired[pulumi.Input[_builtins.int]]
     additional_viewer_user_count: NotRequired[pulumi.Input[_builtins.int]]
-    ...
 
 @pulumi.input_type
 class InstanceUserMetadataArgs:

@@ -29,7 +29,6 @@ class InvocationLoggingConfigurationLoggingConfigArgsDict(TypedDict):
     ]
     text_data_delivery_enabled: NotRequired[pulumi.Input[_builtins.bool]]
     video_data_delivery_enabled: NotRequired[pulumi.Input[_builtins.bool]]
-    ...
 
 @pulumi.input_type
 class InvocationLoggingConfigurationLoggingConfigArgs:
@@ -118,7 +117,6 @@ class InvocationLoggingConfigurationLoggingConfigCloudwatchConfigArgsDict(TypedD
             InvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigArgsDict
         ]
     ]
-    ...
 
 @pulumi.input_type
 class InvocationLoggingConfigurationLoggingConfigCloudwatchConfigArgs:
@@ -167,7 +165,6 @@ class InvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDelive
 ):
     bucket_name: pulumi.Input[_builtins.str]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigArgs:
@@ -191,7 +188,6 @@ class InvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDelive
 class InvocationLoggingConfigurationLoggingConfigS3ConfigArgsDict(TypedDict):
     bucket_name: pulumi.Input[_builtins.str]
     key_prefix: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class InvocationLoggingConfigurationLoggingConfigS3ConfigArgs:

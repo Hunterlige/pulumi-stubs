@@ -10,7 +10,6 @@ __all__ = ["StatementParameterArgs", "StatementParameterArgsDict"]
 class StatementParameterArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
     value: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class StatementParameterArgs:

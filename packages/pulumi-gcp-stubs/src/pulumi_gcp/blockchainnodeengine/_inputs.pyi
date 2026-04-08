@@ -27,7 +27,6 @@ class BlockchainNodesConnectionInfoArgsDict(TypedDict):
         ]
     ]
     service_attachment: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesConnectionInfoArgs:
@@ -68,7 +67,6 @@ class BlockchainNodesConnectionInfoArgs:
 class BlockchainNodesConnectionInfoEndpointInfoArgsDict(TypedDict):
     json_rpc_api_endpoint: NotRequired[pulumi.Input[_builtins.str]]
     websockets_api_endpoint: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesConnectionInfoEndpointInfoArgs:
@@ -109,7 +107,6 @@ class BlockchainNodesEthereumDetailsArgsDict(TypedDict):
     validator_config: NotRequired[
         pulumi.Input[BlockchainNodesEthereumDetailsValidatorConfigArgsDict]
     ]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesEthereumDetailsArgs:
@@ -215,7 +212,6 @@ class BlockchainNodesEthereumDetailsAdditionalEndpointArgsDict(TypedDict):
     execution_client_prometheus_metrics_api_endpoint: NotRequired[
         pulumi.Input[_builtins.str]
     ]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesEthereumDetailsAdditionalEndpointArgs:
@@ -256,7 +252,6 @@ class BlockchainNodesEthereumDetailsAdditionalEndpointArgs:
 
 class BlockchainNodesEthereumDetailsGethDetailsArgsDict(TypedDict):
     garbage_collection_mode: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesEthereumDetailsGethDetailsArgs:
@@ -273,7 +268,6 @@ class BlockchainNodesEthereumDetailsGethDetailsArgs:
 
 class BlockchainNodesEthereumDetailsValidatorConfigArgsDict(TypedDict):
     mev_relay_urls: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]]
-    ...
 
 @pulumi.input_type
 class BlockchainNodesEthereumDetailsValidatorConfigArgs:

@@ -75,7 +75,6 @@ class CloudAutonomousVmClusterMaintenanceWindowArgsDict(TypedDict):
         ]
     ]
     weeks_of_months: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CloudAutonomousVmClusterMaintenanceWindowArgs:
@@ -182,7 +181,6 @@ class CloudAutonomousVmClusterMaintenanceWindowArgs:
 
 class CloudAutonomousVmClusterMaintenanceWindowDaysOfWeekArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudAutonomousVmClusterMaintenanceWindowDaysOfWeekArgs:
@@ -195,7 +193,6 @@ class CloudAutonomousVmClusterMaintenanceWindowDaysOfWeekArgs:
 
 class CloudAutonomousVmClusterMaintenanceWindowMonthArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudAutonomousVmClusterMaintenanceWindowMonthArgs:
@@ -210,7 +207,6 @@ class CloudAutonomousVmClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudAutonomousVmClusterTimeoutsArgs:
@@ -239,7 +235,6 @@ class CloudAutonomousVmClusterTimeoutsArgs:
 
 class CloudExadataInfrastructureCustomerContactsToSendToOciArgsDict(TypedDict):
     email: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructureCustomerContactsToSendToOciArgs:
@@ -274,7 +269,6 @@ class CloudExadataInfrastructureMaintenanceWindowArgsDict(TypedDict):
         ]
     ]
     weeks_of_months: NotRequired[pulumi.Input[Sequence[pulumi.Input[_builtins.int]]]]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructureMaintenanceWindowArgs:
@@ -399,7 +393,6 @@ class CloudExadataInfrastructureMaintenanceWindowArgs:
 
 class CloudExadataInfrastructureMaintenanceWindowDaysOfWeekArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructureMaintenanceWindowDaysOfWeekArgs:
@@ -412,7 +405,6 @@ class CloudExadataInfrastructureMaintenanceWindowDaysOfWeekArgs:
 
 class CloudExadataInfrastructureMaintenanceWindowMonthArgsDict(TypedDict):
     name: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructureMaintenanceWindowMonthArgs:
@@ -427,7 +419,6 @@ class CloudExadataInfrastructureTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudExadataInfrastructureTimeoutsArgs:
@@ -458,7 +449,6 @@ class CloudVmClusterDataCollectionOptionsArgsDict(TypedDict):
     is_diagnostics_events_enabled: pulumi.Input[_builtins.bool]
     is_health_monitoring_enabled: pulumi.Input[_builtins.bool]
     is_incident_logs_enabled: pulumi.Input[_builtins.bool]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterDataCollectionOptionsArgs:
@@ -492,7 +482,6 @@ class CloudVmClusterIormConfigCacheArgsDict(TypedDict):
     lifecycle_details: pulumi.Input[_builtins.str]
     lifecycle_state: pulumi.Input[_builtins.str]
     objective: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterIormConfigCacheArgs:
@@ -540,7 +529,6 @@ class CloudVmClusterIormConfigCacheDbPlanArgsDict(TypedDict):
     db_name: pulumi.Input[_builtins.str]
     flash_cache_limit: pulumi.Input[_builtins.str]
     share: pulumi.Input[_builtins.int]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterIormConfigCacheDbPlanArgs:
@@ -571,7 +559,6 @@ class CloudVmClusterTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class CloudVmClusterTimeoutsArgs:
@@ -620,7 +607,6 @@ class NetworkManagedServiceArgsDict(TypedDict):
     zero_etl_accesses: pulumi.Input[
         Sequence[pulumi.Input[NetworkManagedServiceZeroEtlAccessArgsDict]]
     ]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceArgs:
@@ -746,7 +732,6 @@ class NetworkManagedServiceKmsAccessArgsDict(TypedDict):
     ipv4_addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     kms_policy_document: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceKmsAccessArgs:
@@ -784,7 +769,6 @@ class NetworkManagedServiceKmsAccessArgs:
 class NetworkManagedServiceManagedS3BackupAccessArgsDict(TypedDict):
     ipv4_addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceManagedS3BackupAccessArgs:
@@ -812,7 +796,6 @@ class NetworkManagedServiceS3AccessArgsDict(TypedDict):
     ipv4_addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     s3_policy_document: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceS3AccessArgs:
@@ -850,7 +833,6 @@ class NetworkManagedServiceS3AccessArgs:
 class NetworkManagedServiceServiceNetworkEndpointArgsDict(TypedDict):
     vpc_endpoint_id: pulumi.Input[_builtins.str]
     vpc_endpoint_type: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceServiceNetworkEndpointArgs:
@@ -876,7 +858,6 @@ class NetworkManagedServiceStsAccessArgsDict(TypedDict):
     ipv4_addresses: pulumi.Input[Sequence[pulumi.Input[_builtins.str]]]
     status: pulumi.Input[_builtins.str]
     sts_policy_document: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceStsAccessArgs:
@@ -914,7 +895,6 @@ class NetworkManagedServiceStsAccessArgs:
 class NetworkManagedServiceZeroEtlAccessArgsDict(TypedDict):
     cidr: pulumi.Input[_builtins.str]
     status: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkManagedServiceZeroEtlAccessArgs:
@@ -938,7 +918,6 @@ class NetworkManagedServiceZeroEtlAccessArgs:
 class NetworkOciDnsForwardingConfigArgsDict(TypedDict):
     domain_name: pulumi.Input[_builtins.str]
     oci_dns_listener_ip: pulumi.Input[_builtins.str]
-    ...
 
 @pulumi.input_type
 class NetworkOciDnsForwardingConfigArgs:
@@ -963,7 +942,6 @@ class NetworkPeeringConnectionTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkPeeringConnectionTimeoutsArgs:
@@ -994,7 +972,6 @@ class NetworkTimeoutsArgsDict(TypedDict):
     create: NotRequired[pulumi.Input[_builtins.str]]
     delete: NotRequired[pulumi.Input[_builtins.str]]
     update: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class NetworkTimeoutsArgs:

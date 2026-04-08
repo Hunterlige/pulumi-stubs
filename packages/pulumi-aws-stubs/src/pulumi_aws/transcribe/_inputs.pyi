@@ -11,7 +11,6 @@ class LanguageModelInputDataConfigArgsDict(TypedDict):
     data_access_role_arn: pulumi.Input[_builtins.str]
     s3_uri: pulumi.Input[_builtins.str]
     tuning_data_s3_uri: NotRequired[pulumi.Input[_builtins.str]]
-    ...
 
 @pulumi.input_type
 class LanguageModelInputDataConfigArgs:
