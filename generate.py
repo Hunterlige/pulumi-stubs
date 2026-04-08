@@ -27,6 +27,13 @@ def generate_stubs():
         )
         _ = subprocess.run(
             [
+                "touch",
+                f"typings/{package_name}/__init__.py",
+            ],
+            check=True,
+        )
+        _ = subprocess.run(
+            [
                 "mv",
                 f"typings/{package_name}",
                 f"packages/{package}-stubs/src/{package_name}",
