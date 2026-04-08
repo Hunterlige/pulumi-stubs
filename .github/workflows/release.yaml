@@ -33,4 +33,4 @@ jobs:
         run: cd packages/${{ inputs.package }} && uv build
 
       - name: Publish package
-        run: cd packages/${{ inputs.package }} && uv publish --index testpypi
+        run: cd packages/${{ inputs.package }} && uv publish --index testpypi -u __token__ -t ${{ secrets.PYPI_TOKEN }}
