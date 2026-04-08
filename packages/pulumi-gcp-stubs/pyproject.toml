@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-gcp-stubs"
-version = "9.16.0.20260407"
+version = "9.16.0.20260408"
 description = "Type stubs for pulumi-gcp Python SDK"
 license = "MIT"
 classifiers = [

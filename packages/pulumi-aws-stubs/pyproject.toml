@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-aws-stubs"
-version = "7.23.0.20260407"
+version = "7.23.0.20260408"
 description = "Type stubs for pulumi-aws Python SDK"
 license = "MIT"
 classifiers = [

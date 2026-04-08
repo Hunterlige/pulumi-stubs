@@ -412,7 +412,7 @@ wheels = [
 
 [[package]]
 name = "pulumi-aws-stubs"
-version = "7.23.0.20260407"
+version = "7.23.0.20260408"
 source = { editable = "." }
 dependencies = [
     { name = "pulumi-aws" },

@@ -412,7 +412,7 @@ wheels = [
 
 [[package]]
 name = "pulumi-gcp-stubs"
-version = "9.16.0.20260407"
+version = "9.16.0.20260408"
 source = { editable = "." }
 dependencies = [
     { name = "pulumi-gcp" },

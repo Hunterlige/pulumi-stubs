@@ -1,6 +1,6 @@
 [project]
 name = "pulumi-azure-native-stubs"
-version = "3.16.0.20260407"
+version = "3.16.0.20260408"
 description = "Type stubs for pulumi-azure-native Python SDK"
 license = "MIT"
 classifiers = [
