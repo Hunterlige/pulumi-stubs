@@ -16,7 +16,7 @@ classifiers = [
   "Typing :: Stubs Only",
 ]
 readme = "README.md"
-requires-python = ">=3.9,<4"
+requires-python = ">=3.14,<4"
 dependencies = [
   "pulumi-azure-native>=3",
 ]
